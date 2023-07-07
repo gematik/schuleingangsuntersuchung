@@ -1,0 +1,7 @@
+canonical: https://www.oegd.de/fhir/seu/
+version: 0.1.0
+fhirVersion: 4.0.1
+FSHOnly: true
+dependencies:
+  de.basisprofil.r4: 1.3.2
+  hl7.fhir.r4.core: 4.0.1
