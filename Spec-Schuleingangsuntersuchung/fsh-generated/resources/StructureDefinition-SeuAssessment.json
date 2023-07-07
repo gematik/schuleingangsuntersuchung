@@ -57,7 +57,11 @@
       {
         "id": "Observation.code",
         "path": "Observation.code",
-        "mustSupport": true
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.oegd.de/fhir/seu//ValueSet/SeuAssessmentArtVs"
+        }
       },
       {
         "id": "Observation.code.coding",

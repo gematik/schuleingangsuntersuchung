@@ -3,8 +3,8 @@
   "status": "draft",
   "name": "SeuAssessmentResultVs",
   "id": "SeuAssessmentResultVs",
-  "title": "SEU Assessment Result ",
-  "description": "Diese Codes enthalten die möglichen Antworten eines Assessments",
+  "title": "SEU Assessment Result",
+  "description": "Diese Codes enthalten die möglichen Antworten einer Untersuchung",
   "url": "https://www.oegd.de/fhir/seu//ValueSet/SeuAssessmentResultVs",
   "compose": {
     "include": [

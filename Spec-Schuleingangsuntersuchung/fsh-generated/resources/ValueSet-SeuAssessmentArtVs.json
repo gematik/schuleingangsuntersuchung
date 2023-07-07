@@ -1,0 +1,74 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SeuAssessmentArtVs",
+  "id": "SeuAssessmentArtVs",
+  "title": "SEU Assessment Type",
+  "description": "Dieses CodeSystem enthält die Untersuchungsarten",
+  "url": "https://www.oegd.de/fhir/seu//ValueSet/SeuAssessmentArtVs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "87276001",
+            "display": "Nutritional status"
+          },
+          {
+            "code": "79984008",
+            "display": "Skeletal muscle system structure (body structure)"
+          },
+          {
+            "code": "113192009",
+            "display": "Skeletal system structure (body structure)"
+          },
+          {
+            "code": "394591006",
+            "display": "Neurological Status"
+          },
+          {
+            "code": "123036008",
+            "display": "Endocrine function"
+          },
+          {
+            "code": "719983008",
+            "display": "Breathing process (qualifier value)"
+          },
+          {
+            "code": "70337006",
+            "display": "Cardiovascular function"
+          },
+          {
+            "code": "818983003",
+            "display": "Abdomen"
+          },
+          {
+            "code": "39937001",
+            "display": "Skin"
+          },
+          {
+            "code": "386045008",
+            "display": "Hair"
+          },
+          {
+            "code": "770802007",
+            "display": "Nail unit structure (body structure)"
+          },
+          {
+            "code": "271928008",
+            "display": "Ear, nose and throat test finding"
+          },
+          {
+            "code": "27624003",
+            "display": "Chronic disease (disorder)"
+          },
+          {
+            "code": "21134002",
+            "display": "Disability (finding)"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -4,6 +4,7 @@ Id: SeuAssessment
 * status MS
 * category MS
 * code MS
+* code from SeuAssessmentArtVs
 * code.coding MS
 * subject MS
 * encounter MS
