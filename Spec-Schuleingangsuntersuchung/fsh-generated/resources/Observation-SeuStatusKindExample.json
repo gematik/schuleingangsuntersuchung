@@ -1,0 +1,32 @@
+{
+  "resourceType": "Observation",
+  "id": "SeuStatusKindExample",
+  "meta": {
+    "profile": [
+      "https://www.oegd.de/fhir/seu//StructureDefinition/SeuStatusKind"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "308402004",
+        "system": "http://snomed.info/sct",
+        "display": "Child development status (finding)"
+      }
+    ]
+  },
+  "status": "final",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "regel",
+        "system": "https://www.oegd.de/fhir/seu//CodeSystem/SeuStatusKindCs",
+        "display": "Regel"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/OegdSeuPerson-Example"
+  },
+  "effectiveDateTime": "2023-01-01"
+}

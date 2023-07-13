@@ -31,3 +31,16 @@ Description: "Dieses CodeSystem enthält die Untersuchungsarten"
 * $sct#271928008 "Ear, nose and throat test finding"
 * $sct#27624003 "Chronic disease (disorder)"
 * $sct#21134002 "Disability (finding)"
+
+CodeSystem:  SeuStatusKindCs
+Id: SeuStatusKindCs
+Title: "SEU Status Kind"
+* #regel "Regelstufe"
+* #kann "Kannstufe"
+* #eingangsstufe "Eingangsstufe"
+
+ValueSet: SeuStatusKindVs
+Id: SeuStatusKindVs
+Title: "SEU Status Kind"
+Description: "Diese Codes enthalten die möglichen Status des Kindes"
+* include codes from system SeuStatusKindCs
