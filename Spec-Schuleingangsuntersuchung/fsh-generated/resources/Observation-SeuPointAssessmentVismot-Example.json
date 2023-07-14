@@ -10,8 +10,9 @@
   "code": {
     "coding": [
       {
-        "code": "koord",
-        "display": "Regelstufe"
+        "code": "vismot",
+        "system": "https://www.oegd.de/fhir/seu//CodeSystem/SeuPointAssessmentTypesCs",
+        "display": "Visuomotorik"
       }
     ]
   },

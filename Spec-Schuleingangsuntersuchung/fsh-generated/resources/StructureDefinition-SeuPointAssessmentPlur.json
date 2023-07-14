@@ -1,8 +1,8 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "SeuPointAssessmentPraep",
-  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/SeuPointAssessmentPraep",
-  "name": "SeuPointAssessmentPraep",
+  "id": "SeuPointAssessmentPlur",
+  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/SeuPointAssessmentPlur",
+  "name": "SeuPointAssessmentPlur",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -50,9 +50,9 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "praep",
+              "code": "plur",
               "system": "https://www.oegd.de/fhir/seu//CodeSystem/SeuPointAssessmentTypesCs",
-              "display": "SOPESS-Präpositionen"
+              "display": "SOPESS-Pluralbildung"
             }
           ]
         }
@@ -76,7 +76,7 @@
         "id": "Observation.referenceRange:abnormal.high",
         "path": "Observation.referenceRange.high",
         "patternQuantity": {
-          "value": 4,
+          "value": 3,
           "code": "1",
           "system": "http://unitsofmeasure.org",
           "unit": "Punktwert"
@@ -91,7 +91,7 @@
         "id": "Observation.referenceRange:borderline.low",
         "path": "Observation.referenceRange.low",
         "patternQuantity": {
-          "value": 5,
+          "value": 4,
           "code": "1",
           "system": "http://unitsofmeasure.org",
           "unit": "Punktwert"
@@ -126,7 +126,7 @@
         "id": "Observation.referenceRange:normal.high",
         "path": "Observation.referenceRange.high",
         "patternQuantity": {
-          "value": 8,
+          "value": 7,
           "code": "1",
           "system": "http://unitsofmeasure.org",
           "unit": "Punktwert"

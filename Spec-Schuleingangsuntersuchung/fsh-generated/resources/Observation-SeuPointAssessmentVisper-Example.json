@@ -1,18 +1,18 @@
 {
   "resourceType": "Observation",
-  "id": "SeuPointAssessmentPswoe-Example",
+  "id": "SeuPointAssessmentVisper-Example",
   "meta": {
     "profile": [
-      "https://www.oegd.de/fhir/seu//StructureDefinition/SeuPointAssessmentPswoe"
+      "https://www.oegd.de/fhir/seu//StructureDefinition/SeuPointAssessmentVisper"
     ]
   },
   "status": "final",
   "code": {
     "coding": [
       {
-        "code": "pswoe",
-        "system": "https://www.oegd.de/fhir/seu//CodeSystem/SeuPointAssessmentTypesCs",
-        "display": "Sprachkompetenz und audit. Invormationsverarbeitung"
+        "code": "311886005",
+        "system": "http://snomed.info/sct",
+        "display": "Visual perception, function"
       }
     ]
   },
@@ -36,7 +36,7 @@
     },
     {
       "low": {
-        "value": 4,
+        "value": 9,
         "code": "1",
         "system": "http://unitsofmeasure.org",
         "unit": "Punktwert"
@@ -53,7 +53,7 @@
     },
     {
       "low": {
-        "value": 5,
+        "value": 11,
         "code": "1",
         "system": "http://unitsofmeasure.org",
         "unit": "Punktwert"
@@ -74,7 +74,7 @@
   },
   "effectiveDateTime": "2023-01-01",
   "valueQuantity": {
-    "value": 6,
+    "value": 14,
     "code": "1",
     "system": "http://unitsofmeasure.org",
     "unit": "Punktwert"

@@ -1,7 +1,7 @@
 Profile: SeuPointAssessmentPraep
 Parent: SeuPointAssessment
 Id: SeuPointAssessmentPraep
-* code = #koord "Regelstufe"
+* code = SeuPointAssessmentTypesCs#praep "SOPESS-Präpositionen"
 * referenceRange[abnormal].low = 0 '1' "Punktwert"
 * referenceRange[abnormal].high = 4 '1' "Punktwert"
 * referenceRange[borderline].low = 5 '1' "Punktwert"

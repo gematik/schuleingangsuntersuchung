@@ -37,7 +37,6 @@ Title: "SEU Point Assessment Types"
 * #pswoe "Sprachkompetenz und audit. Invormationsverarbeitung"
 * #praep "SOPESS-Präpositionen"
 * #plur "SOPESS-Pluralbildung"
-* #visper "Visuelle Perzeption"
 * #zaehl "SOPESS-Zahlen und Mengenwissen"
 * #meng "SOPESS- Mengenvergleich, Simultanerfassung"
 * #selaufm "SOPESS- Selektive-Aufmerksamkeit"
@@ -47,6 +46,7 @@ Id: SeuPointAssessmentTypesVs
 Title: "SEU Status Kind"
 Description: "Diese Codes enthalten die möglichen SEU Point Assessment Types"
 * include codes from system SeuPointAssessmentTypesCs
+* $sct#311886005 "Visual perception, function"
 
 ValueSet: SeuReferenceRangeTypeVs
 Id: SeuReferenceRangeTypeVs

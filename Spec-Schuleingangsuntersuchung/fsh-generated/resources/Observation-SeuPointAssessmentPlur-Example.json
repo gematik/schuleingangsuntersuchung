@@ -1,18 +1,18 @@
 {
   "resourceType": "Observation",
-  "id": "SeuPointAssessmentPswoe-Example",
+  "id": "SeuPointAssessmentPlur-Example",
   "meta": {
     "profile": [
-      "https://www.oegd.de/fhir/seu//StructureDefinition/SeuPointAssessmentPswoe"
+      "https://www.oegd.de/fhir/seu//StructureDefinition/SeuPointAssessmentPlur"
     ]
   },
   "status": "final",
   "code": {
     "coding": [
       {
-        "code": "pswoe",
+        "code": "plur",
         "system": "https://www.oegd.de/fhir/seu//CodeSystem/SeuPointAssessmentTypesCs",
-        "display": "Sprachkompetenz und audit. Invormationsverarbeitung"
+        "display": "SOPESS-Pluralbildung"
       }
     ]
   },
@@ -53,7 +53,7 @@
     },
     {
       "low": {
-        "value": 5,
+        "value": 6,
         "code": "1",
         "system": "http://unitsofmeasure.org",
         "unit": "Punktwert"
@@ -74,7 +74,7 @@
   },
   "effectiveDateTime": "2023-01-01",
   "valueQuantity": {
-    "value": 6,
+    "value": 7,
     "code": "1",
     "system": "http://unitsofmeasure.org",
     "unit": "Punktwert"

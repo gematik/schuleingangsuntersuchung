@@ -1,7 +1,7 @@
 Profile: SeuPointAssessmentKoord
 Parent: SeuPointAssessment
 Id: SeuPointAssessmentKoord
-* code = #koord "Regelstufe"
+* code = SeuPointAssessmentTypesCs#koord "Regelstufe"
 * referenceRange[abnormal].low = 0 '1' "Punktwert"
 * referenceRange[abnormal].high = 6 '1' "Punktwert"
 * referenceRange[borderline].low = 7 '1' "Punktwert"

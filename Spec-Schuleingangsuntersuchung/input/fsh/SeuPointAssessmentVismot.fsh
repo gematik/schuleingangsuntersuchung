@@ -1,7 +1,7 @@
 Profile: SeuPointAssessmentVismot
 Parent: SeuPointAssessment
 Id: SeuPointAssessmentVismot
-* code = #koord "Regelstufe"
+* code = SeuPointAssessmentTypesCs#vismot "Visuomotorik"
 * referenceRange[abnormal].low = 0 '1' "Punktwert"
 * referenceRange[abnormal].high = 4 '1' "Punktwert"
 * referenceRange[borderline].low = 5 '1' "Punktwert"

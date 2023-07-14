@@ -1,8 +1,8 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "SeuPointAssessmentPraep",
-  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/SeuPointAssessmentPraep",
-  "name": "SeuPointAssessmentPraep",
+  "id": "SeuPointAssessmentVisper",
+  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/SeuPointAssessmentVisper",
+  "name": "SeuPointAssessmentVisper",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -50,9 +50,9 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "praep",
-              "system": "https://www.oegd.de/fhir/seu//CodeSystem/SeuPointAssessmentTypesCs",
-              "display": "SOPESS-Präpositionen"
+              "code": "311886005",
+              "system": "http://snomed.info/sct",
+              "display": "Visual perception, function"
             }
           ]
         }
@@ -76,7 +76,7 @@
         "id": "Observation.referenceRange:abnormal.high",
         "path": "Observation.referenceRange.high",
         "patternQuantity": {
-          "value": 4,
+          "value": 8,
           "code": "1",
           "system": "http://unitsofmeasure.org",
           "unit": "Punktwert"
@@ -91,7 +91,7 @@
         "id": "Observation.referenceRange:borderline.low",
         "path": "Observation.referenceRange.low",
         "patternQuantity": {
-          "value": 5,
+          "value": 9,
           "code": "1",
           "system": "http://unitsofmeasure.org",
           "unit": "Punktwert"
@@ -101,7 +101,7 @@
         "id": "Observation.referenceRange:borderline.high",
         "path": "Observation.referenceRange.high",
         "patternQuantity": {
-          "value": 5,
+          "value": 10,
           "code": "1",
           "system": "http://unitsofmeasure.org",
           "unit": "Punktwert"
@@ -116,7 +116,7 @@
         "id": "Observation.referenceRange:normal.low",
         "path": "Observation.referenceRange.low",
         "patternQuantity": {
-          "value": 6,
+          "value": 11,
           "code": "1",
           "system": "http://unitsofmeasure.org",
           "unit": "Punktwert"
@@ -126,7 +126,7 @@
         "id": "Observation.referenceRange:normal.high",
         "path": "Observation.referenceRange.high",
         "patternQuantity": {
-          "value": 8,
+          "value": 15,
           "code": "1",
           "system": "http://unitsofmeasure.org",
           "unit": "Punktwert"

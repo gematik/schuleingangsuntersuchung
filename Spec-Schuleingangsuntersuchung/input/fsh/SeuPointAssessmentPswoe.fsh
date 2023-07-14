@@ -1,7 +1,7 @@
 Profile: SeuPointAssessmentPswoe
 Parent: SeuPointAssessment
 Id: SeuPointAssessmentPswoe
-* code = #koord "Regelstufe"
+* code = SeuPointAssessmentTypesCs#pswoe "Sprachkompetenz und audit. Invormationsverarbeitung"
 * referenceRange[abnormal].low = 0 '1' "Punktwert"
 * referenceRange[abnormal].high = 3 '1' "Punktwert"
 * referenceRange[borderline].low = 4 '1' "Punktwert"

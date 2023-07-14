@@ -28,10 +28,6 @@
       "display": "SOPESS-Pluralbildung"
     },
     {
-      "code": "visper",
-      "display": "Visuelle Perzeption"
-    },
-    {
       "code": "zaehl",
       "display": "SOPESS-Zahlen und Mengenwissen"
     },
@@ -44,5 +40,5 @@
       "display": "SOPESS- Selektive-Aufmerksamkeit"
     }
   ],
-  "count": 9
+  "count": 8
 }

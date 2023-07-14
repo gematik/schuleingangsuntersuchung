@@ -10,6 +10,15 @@
     "include": [
       {
         "system": "https://www.oegd.de/fhir/seu//CodeSystem/SeuPointAssessmentTypesCs"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "311886005",
+            "display": "Visual perception, function"
+          }
+        ]
       }
     ]
   }

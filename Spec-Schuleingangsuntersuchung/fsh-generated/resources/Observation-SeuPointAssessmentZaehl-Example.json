@@ -1,18 +1,18 @@
 {
   "resourceType": "Observation",
-  "id": "SeuPointAssessmentPswoe-Example",
+  "id": "SeuPointAssessmentZaehl-Example",
   "meta": {
     "profile": [
-      "https://www.oegd.de/fhir/seu//StructureDefinition/SeuPointAssessmentPswoe"
+      "https://www.oegd.de/fhir/seu//StructureDefinition/SeuPointAssessmentZaehl"
     ]
   },
   "status": "final",
   "code": {
     "coding": [
       {
-        "code": "pswoe",
+        "code": "zaehl",
         "system": "https://www.oegd.de/fhir/seu//CodeSystem/SeuPointAssessmentTypesCs",
-        "display": "Sprachkompetenz und audit. Invormationsverarbeitung"
+        "display": "SOPESS-Zahlen und Mengenwissen"
       }
     ]
   },
@@ -36,7 +36,7 @@
     },
     {
       "low": {
-        "value": 4,
+        "value": 13,
         "code": "1",
         "system": "http://unitsofmeasure.org",
         "unit": "Punktwert"
@@ -53,7 +53,7 @@
     },
     {
       "low": {
-        "value": 5,
+        "value": 17,
         "code": "1",
         "system": "http://unitsofmeasure.org",
         "unit": "Punktwert"
@@ -74,7 +74,7 @@
   },
   "effectiveDateTime": "2023-01-01",
   "valueQuantity": {
-    "value": 6,
+    "value": 14,
     "code": "1",
     "system": "http://unitsofmeasure.org",
     "unit": "Punktwert"

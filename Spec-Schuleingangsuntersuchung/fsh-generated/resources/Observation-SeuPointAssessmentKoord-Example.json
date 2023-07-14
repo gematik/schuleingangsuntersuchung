@@ -11,6 +11,7 @@
     "coding": [
       {
         "code": "koord",
+        "system": "https://www.oegd.de/fhir/seu//CodeSystem/SeuPointAssessmentTypesCs",
         "display": "Regelstufe"
       }
     ]
