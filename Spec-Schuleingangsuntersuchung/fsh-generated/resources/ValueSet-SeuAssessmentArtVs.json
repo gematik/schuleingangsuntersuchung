@@ -66,6 +66,26 @@
           {
             "code": "21134002",
             "display": "Disability (finding)"
+          },
+          {
+            "code": "717038004",
+            "display": "Test of Language Competence score"
+          },
+          {
+            "code": "1173048002",
+            "display": "Auditory perception function"
+          },
+          {
+            "code": "311886005",
+            "display": "Visual perception, function"
+          },
+          {
+            "code": "282716004",
+            "display": "Gross motor functions"
+          },
+          {
+            "code": "284363000",
+            "display": "Fine motor functions"
           }
         ]
       }

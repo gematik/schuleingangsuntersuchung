@@ -14,6 +14,19 @@ Id: SeuStatusKind
 * valueCodeableConcept.coding.code MS
 * valueCodeableConcept.coding.system MS
 
+CodeSystem:  SeuStatusKindCs
+Id: SeuStatusKindCs
+Title: "SEU Status Kind"
+* #regel "Regelstufe"
+* #kann "Kannstufe"
+* #eingangsstufe "Eingangsstufe"
+
+ValueSet: SeuStatusKindVs
+Id: SeuStatusKindVs
+Title: "SEU Status Kind"
+Description: "Diese Codes enthalten die möglichen Status des Kindes"
+* include codes from system SeuStatusKindCs
+
 Instance: SeuStatusKindExample
 InstanceOf: SeuStatusKind
 Usage: #example
