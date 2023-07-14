@@ -1,0 +1,48 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SeuPointAssessmentTypesCs",
+  "id": "SeuPointAssessmentTypesCs",
+  "title": "SEU Point Assessment Types",
+  "url": "https://www.oegd.de/fhir/seu//CodeSystem/SeuPointAssessmentTypesCs",
+  "concept": [
+    {
+      "code": "koord",
+      "display": "Regelstufe"
+    },
+    {
+      "code": "vismot",
+      "display": "Visuomotorik"
+    },
+    {
+      "code": "pswoe",
+      "display": "Sprachkompetenz und audit. Invormationsverarbeitung"
+    },
+    {
+      "code": "praep",
+      "display": "SOPESS-Präpositionen"
+    },
+    {
+      "code": "plur",
+      "display": "SOPESS-Pluralbildung"
+    },
+    {
+      "code": "visper",
+      "display": "Visuelle Perzeption"
+    },
+    {
+      "code": "zaehl",
+      "display": "SOPESS-Zahlen und Mengenwissen"
+    },
+    {
+      "code": "meng",
+      "display": "SOPESS- Mengenvergleich, Simultanerfassung"
+    },
+    {
+      "code": "selaufm",
+      "display": "SOPESS- Selektive-Aufmerksamkeit"
+    }
+  ],
+  "count": 9
+}

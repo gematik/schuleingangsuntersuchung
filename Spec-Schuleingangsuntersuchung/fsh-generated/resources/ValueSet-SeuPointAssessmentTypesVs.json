@@ -1,0 +1,16 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SeuPointAssessmentTypesVs",
+  "id": "SeuPointAssessmentTypesVs",
+  "title": "SEU Status Kind",
+  "description": "Diese Codes enthalten die möglichen SEU Point Assessment Types",
+  "url": "https://www.oegd.de/fhir/seu//ValueSet/SeuPointAssessmentTypesVs",
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu//CodeSystem/SeuPointAssessmentTypesCs"
+      }
+    ]
+  }
+}

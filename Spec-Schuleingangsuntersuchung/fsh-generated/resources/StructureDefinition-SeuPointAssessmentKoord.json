@@ -1,0 +1,179 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "SeuPointAssessmentKoord",
+  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/SeuPointAssessmentKoord",
+  "name": "SeuPointAssessmentKoord",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "https://www.oegd.de/fhir/seu//StructureDefinition/SeuPointAssessment",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "koord",
+              "display": "Regelstufe"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.referenceRange",
+        "path": "Observation.referenceRange",
+        "min": 3
+      },
+      {
+        "id": "Observation.referenceRange:abnormal",
+        "path": "Observation.referenceRange",
+        "sliceName": "abnormal",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange:abnormal.low",
+        "path": "Observation.referenceRange.low",
+        "patternQuantity": {
+          "value": 0,
+          "code": "1",
+          "system": "http://unitsofmeasure.org",
+          "unit": "Punktwert"
+        }
+      },
+      {
+        "id": "Observation.referenceRange:abnormal.high",
+        "path": "Observation.referenceRange.high",
+        "patternQuantity": {
+          "value": 6,
+          "code": "1",
+          "system": "http://unitsofmeasure.org",
+          "unit": "Punktwert"
+        }
+      },
+      {
+        "id": "Observation.referenceRange:abnormal.type",
+        "path": "Observation.referenceRange.type",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "263654008",
+              "system": "http://snomed.info/sct",
+              "display": "Abnormal (qualifier value)"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.referenceRange:borderline",
+        "path": "Observation.referenceRange",
+        "sliceName": "borderline",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange:borderline.low",
+        "path": "Observation.referenceRange.low",
+        "patternQuantity": {
+          "value": 7,
+          "code": "1",
+          "system": "http://unitsofmeasure.org",
+          "unit": "Punktwert"
+        }
+      },
+      {
+        "id": "Observation.referenceRange:borderline.high",
+        "path": "Observation.referenceRange.high",
+        "patternQuantity": {
+          "value": 8,
+          "code": "1",
+          "system": "http://unitsofmeasure.org",
+          "unit": "Punktwert"
+        }
+      },
+      {
+        "id": "Observation.referenceRange:borderline.type",
+        "path": "Observation.referenceRange.type",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "17621005",
+              "system": "http://snomed.info/sct",
+              "display": "Borderline (qualifier value)"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.referenceRange:normal",
+        "path": "Observation.referenceRange",
+        "sliceName": "normal",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.referenceRange:normal.low",
+        "path": "Observation.referenceRange.low",
+        "patternQuantity": {
+          "value": 9,
+          "code": "1",
+          "system": "http://unitsofmeasure.org",
+          "unit": "Punktwert"
+        }
+      },
+      {
+        "id": "Observation.referenceRange:normal.type",
+        "path": "Observation.referenceRange.type",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "263654008",
+              "system": "http://snomed.info/sct",
+              "display": "Normal (qualifier value)"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
