@@ -1,12 +1,11 @@
 {
   "resourceType": "Observation",
-  "id": "SeuAssessmentExample",
+  "id": "SeuAssessmentExampleNeurological",
   "meta": {
     "profile": [
       "https://www.oegd.de/fhir/seu//StructureDefinition/SeuAssessment"
     ]
   },
-  "status": "final",
   "category": [
     {
       "coding": [
@@ -18,21 +17,22 @@
       ]
     }
   ],
+  "status": "final",
   "code": {
     "coding": [
       {
-        "code": "87276001",
+        "code": "394591006",
         "system": "http://snomed.info/sct",
-        "display": "Nutritional Status"
+        "display": "Neurological Status"
       }
     ]
   },
   "valueCodeableConcept": {
     "coding": [
       {
-        "code": "A",
+        "code": "I",
         "system": "https://www.oegd.de/fhir/seu//CodeSystem/SeuAssessmentResultCs",
-        "display": "Arztbrief"
+        "display": "In Ordnung"
       }
     ]
   },

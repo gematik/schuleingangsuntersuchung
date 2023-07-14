@@ -1,0 +1,43 @@
+{
+  "resourceType": "Observation",
+  "id": "SeuAssessmentExampleChronicDisease",
+  "meta": {
+    "profile": [
+      "https://www.oegd.de/fhir/seu//StructureDefinition/SeuAssessment"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "exam",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "display": "Exam"
+        }
+      ]
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "27624003",
+        "system": "http://snomed.info/sct",
+        "display": "Chronic disease (disorder)"
+      }
+    ]
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "U",
+        "system": "https://www.oegd.de/fhir/seu//CodeSystem/SeuAssessmentResultCs",
+        "display": "Unbekannt"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/OegdSeuPerson-Example"
+  },
+  "effectiveDateTime": "2023-01-01"
+}
