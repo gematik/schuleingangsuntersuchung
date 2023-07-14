@@ -124,5 +124,18 @@
     }
   ],
   "gender": "female",
-  "birthDate": "1964-08-12"
+  "birthDate": "1964-08-12",
+  "communication": [
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "nl",
+            "system": "urn:ietf:bcp:47",
+            "display": "Dutch"
+          }
+        ]
+      }
+    }
+  ]
 }

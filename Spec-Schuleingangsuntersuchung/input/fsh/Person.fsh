@@ -83,6 +83,14 @@ Id: OegdSeuPerson
   * extension contains GenderOtherDE named Geschlecht-Administrativ 0..1 MS
 * deceased[x] only dateTime
 * deceasedDateTime MS
+* communication MS
+  * language MS
+  * preferred MS
+  * ^slicing.discriminator.type = #pattern
+  * ^slicing.discriminator.path = "$this"
+  * ^slicing.rules = #open
+* communication contains erstsprache 1..1 MS
+* communication[erstsprache].preferred = true
 
 Extension: OegdSeuVerwandtePersonUebermittlungsssperreReligionExtension
 Id: OegdSeuVerwandtePersonUebermittlungsssperreReligionExtension
@@ -157,5 +165,6 @@ Usage: #example
 * address[Postfach].city = "Musterhausen"
 * address[Postfach].postalCode = "98764"
 * address[Postfach].country = "DE"
+* communication[erstsprache].language = urn:ietf:bcp:47#nl "Dutch"
 
 // TODO: Postfach weglassen?
