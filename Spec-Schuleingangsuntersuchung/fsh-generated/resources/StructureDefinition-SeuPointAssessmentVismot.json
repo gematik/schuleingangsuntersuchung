@@ -1,8 +1,8 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "SeuPointAssessmentKoord",
-  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/SeuPointAssessmentKoord",
-  "name": "SeuPointAssessmentKoord",
+  "id": "SeuPointAssessmentVismot",
+  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/SeuPointAssessmentVismot",
+  "name": "SeuPointAssessmentVismot",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -75,7 +75,7 @@
         "id": "Observation.referenceRange:abnormal.high",
         "path": "Observation.referenceRange.high",
         "patternQuantity": {
-          "value": 6,
+          "value": 4,
           "code": "1",
           "system": "http://unitsofmeasure.org",
           "unit": "Punktwert"
@@ -90,7 +90,7 @@
         "id": "Observation.referenceRange:borderline.low",
         "path": "Observation.referenceRange.low",
         "patternQuantity": {
-          "value": 7,
+          "value": 5,
           "code": "1",
           "system": "http://unitsofmeasure.org",
           "unit": "Punktwert"
@@ -100,7 +100,7 @@
         "id": "Observation.referenceRange:borderline.high",
         "path": "Observation.referenceRange.high",
         "patternQuantity": {
-          "value": 8,
+          "value": 6,
           "code": "1",
           "system": "http://unitsofmeasure.org",
           "unit": "Punktwert"
@@ -115,7 +115,7 @@
         "id": "Observation.referenceRange:normal.low",
         "path": "Observation.referenceRange.low",
         "patternQuantity": {
-          "value": 9,
+          "value": 7,
           "code": "1",
           "system": "http://unitsofmeasure.org",
           "unit": "Punktwert"
@@ -125,7 +125,7 @@
         "id": "Observation.referenceRange:normal.high",
         "path": "Observation.referenceRange.high",
         "patternQuantity": {
-          "value": 30,
+          "value": 12,
           "code": "1",
           "system": "http://unitsofmeasure.org",
           "unit": "Punktwert"

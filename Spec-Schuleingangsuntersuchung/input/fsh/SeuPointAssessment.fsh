@@ -22,6 +22,12 @@ Id: SeuPointAssessment
 * referenceRange.high MS
 * referenceRange.type 1..1 MS
 * referenceRange.type from SeuReferenceRangeTypeVs
+* referenceRange contains abnormal 1..1 MS and 
+    borderline 1..1 MS and 
+    normal 1..1 MS
+* referenceRange[abnormal].type = $sct#263654008 "Abnormal (qualifier value)"
+* referenceRange[borderline].type = $sct#17621005 "Borderline (qualifier value)"
+* referenceRange[normal].type = $sct#263654008 "Normal (qualifier value)"
 
 CodeSystem:  SeuPointAssessmentTypesCs
 Id: SeuPointAssessmentTypesCs
