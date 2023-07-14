@@ -1,0 +1,81 @@
+{
+  "resourceType": "Observation",
+  "id": "SeuPointAssessmentPswoe-Example",
+  "meta": {
+    "profile": [
+      "https://www.oegd.de/fhir/seu//StructureDefinition/SeuPointAssessmentPswoe"
+    ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "koord",
+        "display": "Regelstufe"
+      }
+    ]
+  },
+  "referenceRange": [
+    {
+      "low": {
+        "value": 0,
+        "code": "1",
+        "system": "http://unitsofmeasure.org",
+        "unit": "Punktwert"
+      },
+      "type": {
+        "coding": [
+          {
+            "code": "263654008",
+            "system": "http://snomed.info/sct",
+            "display": "Abnormal (qualifier value)"
+          }
+        ]
+      }
+    },
+    {
+      "low": {
+        "value": 4,
+        "code": "1",
+        "system": "http://unitsofmeasure.org",
+        "unit": "Punktwert"
+      },
+      "type": {
+        "coding": [
+          {
+            "code": "17621005",
+            "system": "http://snomed.info/sct",
+            "display": "Borderline (qualifier value)"
+          }
+        ]
+      }
+    },
+    {
+      "low": {
+        "value": 5,
+        "code": "1",
+        "system": "http://unitsofmeasure.org",
+        "unit": "Punktwert"
+      },
+      "type": {
+        "coding": [
+          {
+            "code": "263654008",
+            "system": "http://snomed.info/sct",
+            "display": "Normal (qualifier value)"
+          }
+        ]
+      }
+    }
+  ],
+  "subject": {
+    "reference": "Patient/OegdSeuPerson-Example"
+  },
+  "effectiveDateTime": "2023-01-01",
+  "valueQuantity": {
+    "value": 6,
+    "code": "1",
+    "system": "http://unitsofmeasure.org",
+    "unit": "Punktwert"
+  }
+}
