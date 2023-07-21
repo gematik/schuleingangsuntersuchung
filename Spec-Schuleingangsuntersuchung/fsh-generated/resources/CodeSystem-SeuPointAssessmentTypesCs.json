@@ -38,7 +38,11 @@
     {
       "code": "selaufm",
       "display": "SOPESS- Selektive-Aufmerksamkeit"
+    },
+    {
+      "code": "dys",
+      "display": "Anzahl auffälliger Laut/Stammfehler"
     }
   ],
-  "count": 8
+  "count": 9
 }

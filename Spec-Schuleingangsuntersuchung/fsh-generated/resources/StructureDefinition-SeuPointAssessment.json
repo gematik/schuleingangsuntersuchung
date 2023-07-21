@@ -112,9 +112,7 @@
               "path": "type"
             }
           ],
-          "rules": "open",
-          "ordered": false,
-          "description": "Slice based on the component.code pattern"
+          "rules": "open"
         },
         "min": 3,
         "mustSupport": true

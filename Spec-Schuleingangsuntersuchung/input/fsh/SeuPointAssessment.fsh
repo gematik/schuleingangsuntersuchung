@@ -15,8 +15,6 @@ Id: SeuPointAssessment
 * referenceRange ^slicing.discriminator.type = #pattern
 * referenceRange ^slicing.discriminator.path = "type"
 * referenceRange ^slicing.rules = #open
-* referenceRange ^slicing.ordered = false
-* referenceRange ^slicing.description = "Slice based on the component.code pattern"
 * referenceRange MS
 * referenceRange.low 1..1 MS
 * referenceRange.high MS
@@ -40,6 +38,7 @@ Title: "SEU Point Assessment Types"
 * #zaehl "SOPESS-Zahlen und Mengenwissen"
 * #meng "SOPESS- Mengenvergleich, Simultanerfassung"
 * #selaufm "SOPESS- Selektive-Aufmerksamkeit"
+* #dys "Anzahl auffälliger Laut/Stammfehler"
 
 ValueSet: SeuPointAssessmentTypesVs
 Id: SeuPointAssessmentTypesVs
