@@ -16,16 +16,20 @@ Id: SeuPointAssessment
 * referenceRange ^slicing.discriminator.path = "type"
 * referenceRange ^slicing.rules = #open
 * referenceRange MS
-* referenceRange.low 1..1 MS
-* referenceRange.high 1..1 MS
 * referenceRange.type 1..1 MS
 * referenceRange.type from SeuReferenceRangeTypeVs
 * referenceRange contains abnormal 1..1 MS and 
     borderline 1..1 MS and 
     normal 1..1 MS
 * referenceRange[abnormal].type = $sct#263654008 "Abnormal (qualifier value)"
+* referenceRange[abnormal].low 1..1 MS
+* referenceRange[abnormal].high 1..1 MS
 * referenceRange[borderline].type = $sct#17621005 "Borderline (qualifier value)"
+* referenceRange[borderline].low 1..1 MS
+* referenceRange[borderline].high 1..1 MS
 * referenceRange[normal].type = $sct#263654008 "Normal (qualifier value)"
+* referenceRange[normal].low 1..1 MS
+* referenceRange[normal].high 1..1 MS
 
 CodeSystem:  SeuPointAssessmentTypesCs
 Id: SeuPointAssessmentTypesCs
