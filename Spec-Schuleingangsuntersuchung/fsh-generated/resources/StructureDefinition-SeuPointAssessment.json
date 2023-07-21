@@ -126,6 +126,7 @@
       {
         "id": "Observation.referenceRange.high",
         "path": "Observation.referenceRange.high",
+        "min": 1,
         "mustSupport": true
       },
       {

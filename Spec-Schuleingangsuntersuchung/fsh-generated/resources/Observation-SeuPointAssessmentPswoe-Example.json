@@ -24,6 +24,12 @@
         "system": "http://unitsofmeasure.org",
         "unit": "Punktwert"
       },
+      "high": {
+        "value": 3,
+        "code": "1",
+        "system": "http://unitsofmeasure.org",
+        "unit": "Punktwert"
+      },
       "type": {
         "coding": [
           {
@@ -36,6 +42,12 @@
     },
     {
       "low": {
+        "value": 4,
+        "code": "1",
+        "system": "http://unitsofmeasure.org",
+        "unit": "Punktwert"
+      },
+      "high": {
         "value": 4,
         "code": "1",
         "system": "http://unitsofmeasure.org",
@@ -54,6 +66,12 @@
     {
       "low": {
         "value": 5,
+        "code": "1",
+        "system": "http://unitsofmeasure.org",
+        "unit": "Punktwert"
+      },
+      "high": {
+        "value": 6,
         "code": "1",
         "system": "http://unitsofmeasure.org",
         "unit": "Punktwert"

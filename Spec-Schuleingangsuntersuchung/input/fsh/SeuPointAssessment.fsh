@@ -17,7 +17,7 @@ Id: SeuPointAssessment
 * referenceRange ^slicing.rules = #open
 * referenceRange MS
 * referenceRange.low 1..1 MS
-* referenceRange.high MS
+* referenceRange.high 1..1 MS
 * referenceRange.type 1..1 MS
 * referenceRange.type from SeuReferenceRangeTypeVs
 * referenceRange contains abnormal 1..1 MS and 
