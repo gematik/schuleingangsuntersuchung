@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "OegdSeuVerwandtePersonUebermittlungsssperreReligionExtension",
-  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuVerwandtePersonUebermittlungsssperreReligionExtension",
-  "name": "OegdSeuVerwandtePersonUebermittlungsssperreReligionExtension",
-  "title": "Verwandte Person Übermittlungssperre Religion Extension",
+  "id": "OegdSeuPersonUebermittlungsssperreAdressbuchExtension",
+  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPersonUebermittlungsssperreAdressbuchExtension",
+  "name": "OegdSeuPersonUebermittlungsssperreAdressbuchExtension",
+  "title": "Verwandte Person Übermittlungssperre Adressbuch Extension",
   "status": "draft",
-  "description": "Datenübermittlungen an öffentlich-rechtliche Religionsgemeinschaften",
+  "description": "Auskünfte an Adressbuchverlage",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -30,8 +30,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Verwandte Person Übermittlungssperre Religion Extension",
-        "definition": "Datenübermittlungen an öffentlich-rechtliche Religionsgemeinschaften"
+        "short": "Verwandte Person Übermittlungssperre Adressbuch Extension",
+        "definition": "Auskünfte an Adressbuchverlage"
       },
       {
         "id": "Extension.extension",
@@ -41,7 +41,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuVerwandtePersonUebermittlungsssperreReligionExtension"
+        "fixedUri": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPersonUebermittlungsssperreAdressbuchExtension"
       },
       {
         "id": "Extension.value[x]",

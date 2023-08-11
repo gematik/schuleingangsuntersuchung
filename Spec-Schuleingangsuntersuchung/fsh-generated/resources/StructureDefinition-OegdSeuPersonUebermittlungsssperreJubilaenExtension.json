@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "OegdSeuVerwandtePersonUebermittlungsssperrePolitikExtension",
-  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuVerwandtePersonUebermittlungsssperrePolitikExtension",
-  "name": "OegdSeuVerwandtePersonUebermittlungsssperrePolitikExtension",
-  "title": "Verwandte Person Übermittlungssperre Politik Extension",
+  "id": "OegdSeuPersonUebermittlungsssperreJubilaenExtension",
+  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPersonUebermittlungsssperreJubilaenExtension",
+  "name": "OegdSeuPersonUebermittlungsssperreJubilaenExtension",
+  "title": "Verwandte Person Übermittlungssperre Jubilaen Extension",
   "status": "draft",
-  "description": "Auskünfte an Parteien, Wählergruppen und andere Träger  von   Wahlvorschlägen",
+  "description": "Auskünfte über Alters- und Ehejubiläen",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -30,8 +30,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Verwandte Person Übermittlungssperre Politik Extension",
-        "definition": "Auskünfte an Parteien, Wählergruppen und andere Träger  von   Wahlvorschlägen"
+        "short": "Verwandte Person Übermittlungssperre Jubilaen Extension",
+        "definition": "Auskünfte über Alters- und Ehejubiläen"
       },
       {
         "id": "Extension.extension",
@@ -41,7 +41,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuVerwandtePersonUebermittlungsssperrePolitikExtension"
+        "fixedUri": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPersonUebermittlungsssperreJubilaenExtension"
       },
       {
         "id": "Extension.value[x]",

@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "OegdSeuVerwandtePersonUebermittlungsssperreJubilaenExtension",
-  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuVerwandtePersonUebermittlungsssperreJubilaenExtension",
-  "name": "OegdSeuVerwandtePersonUebermittlungsssperreJubilaenExtension",
-  "title": "Verwandte Person Übermittlungssperre Jubilaen Extension",
+  "id": "OegdSeuPersonUebermittlungsssperreBundeswehrExtension",
+  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPersonUebermittlungsssperreBundeswehrExtension",
+  "name": "OegdSeuPersonUebermittlungsssperreBundeswehrExtension",
+  "title": "Verwandte Person Übermittlungssperre Bundeswehr Extension",
   "status": "draft",
-  "description": "Auskünfte über Alters- und Ehejubiläen",
+  "description": "Datenübermittlung an das Bundesamt für Personalmanagement der Bundeswehr",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -30,8 +30,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Verwandte Person Übermittlungssperre Jubilaen Extension",
-        "definition": "Auskünfte über Alters- und Ehejubiläen"
+        "short": "Verwandte Person Übermittlungssperre Bundeswehr Extension",
+        "definition": "Datenübermittlung an das Bundesamt für Personalmanagement der Bundeswehr"
       },
       {
         "id": "Extension.extension",
@@ -41,7 +41,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuVerwandtePersonUebermittlungsssperreJubilaenExtension"
+        "fixedUri": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPersonUebermittlungsssperreBundeswehrExtension"
       },
       {
         "id": "Extension.value[x]",

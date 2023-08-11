@@ -81,7 +81,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuVerwandtePersonUebermittlungsssperreReligionExtension"
+              "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPersonUebermittlungsssperreReligionExtension"
             ]
           }
         ],
@@ -97,7 +97,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuVerwandtePersonUebermittlungsssperrePolitikExtension"
+              "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPersonUebermittlungsssperrePolitikExtension"
             ]
           }
         ],
@@ -113,7 +113,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuVerwandtePersonUebermittlungsssperreJubilaenExtension"
+              "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPersonUebermittlungsssperreJubilaenExtension"
             ]
           }
         ],
@@ -129,7 +129,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuVerwandtePersonUebermittlungsssperreAdressbuchExtension"
+              "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPersonUebermittlungsssperreAdressbuchExtension"
             ]
           }
         ],
@@ -145,7 +145,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuVerwandtePersonUebermittlungsssperreBundeswehrExtension"
+              "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPersonUebermittlungsssperreBundeswehrExtension"
             ]
           }
         ],

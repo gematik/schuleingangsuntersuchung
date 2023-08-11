@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "OegdSeuVerwandtePersonUebermittlungsssperreBundeswehrExtension",
-  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuVerwandtePersonUebermittlungsssperreBundeswehrExtension",
-  "name": "OegdSeuVerwandtePersonUebermittlungsssperreBundeswehrExtension",
-  "title": "Verwandte Person Übermittlungssperre Bundeswehr Extension",
+  "id": "OegdSeuPersonUebermittlungsssperrePolitikExtension",
+  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPersonUebermittlungsssperrePolitikExtension",
+  "name": "OegdSeuPersonUebermittlungsssperrePolitikExtension",
+  "title": "Verwandte Person Übermittlungssperre Politik Extension",
   "status": "draft",
-  "description": "Datenübermittlung an das Bundesamt für Personalmanagement der Bundeswehr",
+  "description": "Auskünfte an Parteien, Wählergruppen und andere Träger  von   Wahlvorschlägen",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -30,8 +30,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Verwandte Person Übermittlungssperre Bundeswehr Extension",
-        "definition": "Datenübermittlung an das Bundesamt für Personalmanagement der Bundeswehr"
+        "short": "Verwandte Person Übermittlungssperre Politik Extension",
+        "definition": "Auskünfte an Parteien, Wählergruppen und andere Träger  von   Wahlvorschlägen"
       },
       {
         "id": "Extension.extension",
@@ -41,7 +41,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuVerwandtePersonUebermittlungsssperreBundeswehrExtension"
+        "fixedUri": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPersonUebermittlungsssperrePolitikExtension"
       },
       {
         "id": "Extension.value[x]",

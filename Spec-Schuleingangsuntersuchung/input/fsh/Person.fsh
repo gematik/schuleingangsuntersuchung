@@ -75,11 +75,11 @@ Id: OegdSeuPerson
 * extension contains 
     http://hl7.org/fhir/StructureDefinition/patient-birthPlace named Geburtsort 0..1 MS and 
     http://hl7.org/fhir/StructureDefinition/patient-nationality named Staatsangehoerigkeit 0.. MS and 
-    OegdSeuVerwandtePersonUebermittlungsssperreReligionExtension named SperreReligion 0..1 MS and 
-    OegdSeuVerwandtePersonUebermittlungsssperrePolitikExtension named SperrePolitik 0..1 MS and
-    OegdSeuVerwandtePersonUebermittlungsssperreJubilaenExtension named SperreJubilaen 0..1 MS and
-    OegdSeuVerwandtePersonUebermittlungsssperreAdressbuchExtension named SperreAddressbuch 0..1 MS and
-    OegdSeuVerwandtePersonUebermittlungsssperreBundeswehrExtension named SperreBundeswehr 0..1 MS
+    OegdSeuPersonUebermittlungsssperreReligionExtension named SperreReligion 0..1 MS and 
+    OegdSeuPersonUebermittlungsssperrePolitikExtension named SperrePolitik 0..1 MS and
+    OegdSeuPersonUebermittlungsssperreJubilaenExtension named SperreJubilaen 0..1 MS and
+    OegdSeuPersonUebermittlungsssperreAdressbuchExtension named SperreAddressbuch 0..1 MS and
+    OegdSeuPersonUebermittlungsssperreBundeswehrExtension named SperreBundeswehr 0..1 MS
 * gender 1.. MS
   * extension contains GenderOtherDE named Geschlecht-Administrativ 0..1 MS
 * deceased[x] only dateTime
@@ -93,32 +93,32 @@ Id: OegdSeuPerson
 * communication contains erstsprache 1..1 MS
 * communication[erstsprache].preferred = true
 
-Extension: OegdSeuVerwandtePersonUebermittlungsssperreReligionExtension
-Id: OegdSeuVerwandtePersonUebermittlungsssperreReligionExtension
+Extension: OegdSeuPersonUebermittlungsssperreReligionExtension
+Id: OegdSeuPersonUebermittlungsssperreReligionExtension
 Title:  "Verwandte Person Übermittlungssperre Religion Extension"
 Description: "Datenübermittlungen an öffentlich-rechtliche Religionsgemeinschaften"
 * value[x] only boolean
 
-Extension: OegdSeuVerwandtePersonUebermittlungsssperrePolitikExtension
-Id: OegdSeuVerwandtePersonUebermittlungsssperrePolitikExtension
+Extension: OegdSeuPersonUebermittlungsssperrePolitikExtension
+Id: OegdSeuPersonUebermittlungsssperrePolitikExtension
 Title:  "Verwandte Person Übermittlungssperre Politik Extension"
 Description: "Auskünfte an Parteien, Wählergruppen und andere Träger  von   Wahlvorschlägen"
 * value[x] only boolean
 
-Extension: OegdSeuVerwandtePersonUebermittlungsssperreJubilaenExtension
-Id: OegdSeuVerwandtePersonUebermittlungsssperreJubilaenExtension
+Extension: OegdSeuPersonUebermittlungsssperreJubilaenExtension
+Id: OegdSeuPersonUebermittlungsssperreJubilaenExtension
 Title:  "Verwandte Person Übermittlungssperre Jubilaen Extension"
 Description: "Auskünfte über Alters- und Ehejubiläen"
 * value[x] only boolean
 
-Extension: OegdSeuVerwandtePersonUebermittlungsssperreAdressbuchExtension
-Id: OegdSeuVerwandtePersonUebermittlungsssperreAdressbuchExtension
+Extension: OegdSeuPersonUebermittlungsssperreAdressbuchExtension
+Id: OegdSeuPersonUebermittlungsssperreAdressbuchExtension
 Title:  "Verwandte Person Übermittlungssperre Adressbuch Extension"
 Description: "Auskünfte an Adressbuchverlage"
 * value[x] only boolean
 
-Extension: OegdSeuVerwandtePersonUebermittlungsssperreBundeswehrExtension
-Id: OegdSeuVerwandtePersonUebermittlungsssperreBundeswehrExtension
+Extension: OegdSeuPersonUebermittlungsssperreBundeswehrExtension
+Id: OegdSeuPersonUebermittlungsssperreBundeswehrExtension
 Title:  "Verwandte Person Übermittlungssperre Bundeswehr Extension"
 Description: "Datenübermittlung an das Bundesamt für Personalmanagement der Bundeswehr"
 * value[x] only boolean
