@@ -80,7 +80,8 @@ Id: OegdSeuPerson
     OegdSeuPersonUebermittlungsssperrePolitikExtension named SperrePolitik 0..1 MS and
     OegdSeuPersonUebermittlungsssperreJubilaenExtension named SperreJubilaen 0..1 MS and
     OegdSeuPersonUebermittlungsssperreAdressbuchExtension named SperreAddressbuch 0..1 MS and
-    OegdSeuPersonUebermittlungsssperreBundeswehrExtension named SperreBundeswehr 0..1 MS
+    OegdSeuPersonUebermittlungsssperreBundeswehrExtension named SperreBundeswehr 0..1 MS and
+    OegdSeuPersonMigrationshintergrundExtension named Migrationshintergrund 0..1 MS
 * gender 1.. MS
   * extension contains GenderOtherDE named Geschlecht-Administrativ 0..1 MS
 * deceased[x] only dateTime
@@ -124,9 +125,36 @@ Title:  "Verwandte Person Übermittlungssperre Bundeswehr Extension"
 Description: "Datenübermittlung an das Bundesamt für Personalmanagement der Bundeswehr"
 * value[x] only boolean
 
+Extension: OegdSeuPersonMigrationshintergrundExtension
+Id: OegdSeuPersonMigrationshintergrundExtension
+Title:  "Migrationshintergrund"
+* value[x] only CodeableConcept
+* valueCodeableConcept from SeuPersonRaceVs
+
+CodeSystem:  SeuPersonRaceCs
+Id: SeuPersonRaceCs
+Title: "SEU Sprachlich-ethnischer Familienhintergrund"
+* #0 "Deutschland"
+* #1 "Türkei"
+* #2 "GUS/Osteuropa"
+* #3 "Europäische Mittelmeerländer, inkl. Balkan"
+* #4 "Arabischer Raum (Marokko, Afghan., Pakistan, Syrien, Irak,… Nordafrika)"
+* #5 "Nordeuropa / sonst. Westeuropa"
+* #6 "(Schwarz-)Afrika, südlich der Sahara"
+* #7 "Asien"
+* #8 "Lateinamerika" 
+* #9 "Sonstige Staaten (Nordamerika, Australien, usw)"
+
+ValueSet: SeuPersonRaceVs
+Id: SeuPersonRaceVs
+Title: "SEU Sprachlich-ethnischer Familienhintergrund"
+* include codes from system SeuPersonRaceCs
+
 Instance: OegdSeuPerson-Example
 InstanceOf: OegdSeuPerson
 Usage: #example
+* extension[SperreBundeswehr].valueBoolean = true
+* extension[Migrationshintergrund].valueCodeableConcept = SeuPersonRaceCs#2 "GUS/Osteuropa"
 * identifier[SteuerId].type = https://www.oegd.de/fhir/seu/#tax-id
 * identifier[SteuerId].system = "https://www.oegd.de/fhir/seu/"
 * identifier[SteuerId].value = "2398423874"

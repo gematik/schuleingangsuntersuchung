@@ -56,6 +56,24 @@
       }
     }
   ],
+  "extension": [
+    {
+      "url": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPersonUebermittlungsssperreBundeswehrExtension",
+      "valueBoolean": true
+    },
+    {
+      "url": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPersonMigrationshintergrundExtension",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "2",
+            "system": "https://www.oegd.de/fhir/seu//CodeSystem/SeuPersonRaceCs",
+            "display": "GUS/Osteuropa"
+          }
+        ]
+      }
+    }
+  ],
   "identifier": [
     {
       "type": {

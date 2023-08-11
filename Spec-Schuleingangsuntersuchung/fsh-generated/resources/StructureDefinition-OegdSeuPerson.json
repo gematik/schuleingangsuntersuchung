@@ -152,6 +152,22 @@
         "mustSupport": true
       },
       {
+        "id": "Patient.extension:Migrationshintergrund",
+        "path": "Patient.extension",
+        "sliceName": "Migrationshintergrund",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPersonMigrationshintergrundExtension"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "Patient.identifier",
         "path": "Patient.identifier",
         "slicing": {
