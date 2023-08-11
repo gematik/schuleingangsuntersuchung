@@ -4,7 +4,7 @@
   "content": "complete",
   "name": "SeuPersonDeutschkenntnisCs",
   "id": "SeuPersonDeutschkenntnisCs",
-  "title": "SEU Sprachlich-ethnischer Familienhintergrund",
+  "title": "Deutschkenntnis",
   "url": "https://www.oegd.de/fhir/seu//CodeSystem/SeuPersonDeutschkenntnisCs",
   "concept": [
     {

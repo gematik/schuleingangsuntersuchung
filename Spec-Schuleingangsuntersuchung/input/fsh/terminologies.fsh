@@ -19,7 +19,7 @@ Title: "SEU Sprachlich-ethnischer Familienhintergrund"
 
 CodeSystem:  SeuPersonDeutschkenntnisCs
 Id: SeuPersonDeutschkenntnisCs
-Title: "SEU Sprachlich-ethnischer Familienhintergrund"
+Title: "Deutschkenntnis"
 * #1 "kein Deutschverständnis"
 * #2 "rudimentär"
 * #3 "flüssig mit erheblichen Fehlern"
@@ -30,3 +30,16 @@ ValueSet: SeuPersonDeutschkenntnisVs
 Id: SeuPersonDeutschkenntnisVs
 Title: "Deutschkenntnis"
 * include codes from system SeuPersonDeutschkenntnisCs
+
+CodeSystem:  SeuVerwandtePersonDeutschkenntnisCs
+Id: SeuVerwandtePersonDeutschkenntnisCs
+Title: "Deutschkenntnis"
+* #1 "rudimentär"
+* #2 "fehlerhaft"
+* #3 "fehlerfrei"
+* #9 "unbekannt"
+
+ValueSet: SeuVerwandtePersonDeutschkenntnisVs
+Id: SeuVerwandtePersonDeutschkenntnisVs
+Title: "Deutschkenntnis"
+* include codes from system SeuVerwandtePersonDeutschkenntnisCs

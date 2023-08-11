@@ -448,6 +448,69 @@
           }
         ],
         "mustSupport": true
+      },
+      {
+        "id": "RelatedPerson.communication",
+        "path": "RelatedPerson.communication",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "RelatedPerson.communication.language",
+        "path": "RelatedPerson.communication.language",
+        "mustSupport": true
+      },
+      {
+        "id": "RelatedPerson.communication:deutsch",
+        "path": "RelatedPerson.communication",
+        "sliceName": "deutsch",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "RelatedPerson.communication:deutsch.extension",
+        "path": "RelatedPerson.communication.extension",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "RelatedPerson.communication:deutsch.extension:deutschkenntnis",
+        "path": "RelatedPerson.communication.extension",
+        "sliceName": "deutschkenntnis",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuVerwandtePersonDeutschkenntnisExtension"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "RelatedPerson.communication:deutsch.language",
+        "path": "RelatedPerson.communication.language",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "de",
+              "system": "urn:ietf:bcp:47",
+              "display": "German"
+            }
+          ]
+        }
       }
     ]
   }

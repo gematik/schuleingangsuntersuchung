@@ -68,6 +68,15 @@ Id: OegdSeuVerwandtePerson
   OegdSeuVerwandtePersonDatEndeExtension named DatEnde 0..1 and 
   OegdSeuVerwandtePersonAuskunftssperreGrundExtension named AuskunftssperreGrund 0..1 and
   OegdSeuVerwandtePersonAuskunftssperreFristExtension named AuskunftssperreFrist 0..1
+* communication MS
+  * language MS
+  * ^slicing.discriminator.type = #pattern
+  * ^slicing.discriminator.path = "$this"
+  * ^slicing.rules = #open
+* communication contains deutsch 1..1 MS
+* communication[deutsch].language = urn:ietf:bcp:47#de "German"
+* communication[deutsch].extension 1..* MS
+* communication[deutsch].extension contains OegdSeuVerwandtePersonDeutschkenntnisExtension named deutschkenntnis 1..1 MS
 
 Extension: OegdSeuVerwandtePersonDatEndeExtension
 Id: OegdSeuVerwandtePersonDatEndeExtension
@@ -83,6 +92,12 @@ Extension: OegdSeuVerwandtePersonAuskunftssperreFristExtension
 Id: OegdSeuVerwandtePersonAuskunftssperreFristExtension
 Title:  "Verwandte Person Auskunftssperre Frist Extension"
 * value[x] only dateTime
+
+Extension: OegdSeuVerwandtePersonDeutschkenntnisExtension
+Id: OegdSeuVerwandtePersonDeutschkenntnisExtension
+Title:  "Deutschkenntnisse"
+* value[x] only CodeableConcept
+* valueCodeableConcept from SeuPersonDeutschkenntnisVs
 
 // Instance: OegdSeuVerwandtePerson-Example
 // InstanceOf: OegdSeuVerwandtePerson
