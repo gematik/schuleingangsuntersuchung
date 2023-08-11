@@ -8,7 +8,6 @@ Id: SeuAssessment
 * code from SeuAssessmentArtVs
 * code.coding MS
 * subject MS
-* encounter MS
 * effective[x] MS
 * value[x] only CodeableConcept
 * valueCodeableConcept MS

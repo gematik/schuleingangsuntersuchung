@@ -1,0 +1,15 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SeuRiskFactorVs",
+  "id": "SeuRiskFactorVs",
+  "title": "SEU Risikofaktoren",
+  "url": "https://www.oegd.de/fhir/seu//ValueSet/SeuRiskFactorVs",
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu//CodeSystem/SeuRiskFactorCs"
+      }
+    ]
+  }
+}
