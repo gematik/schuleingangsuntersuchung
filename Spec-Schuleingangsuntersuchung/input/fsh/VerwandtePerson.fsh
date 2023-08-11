@@ -62,6 +62,7 @@ Id: OegdSeuVerwandtePerson
   * postalCode 1.. MS
   * country 1.. MS
     * obeys address-cnt-2or3-char
+  * extension contains OegdSeuWohnungsInhaberExtension named wohnungsinhaber 0..1 MS
 * extension 0..* MS
 * extension contains 
   OegdSeuVerwandtePersonDatEndeExtension named DatEnde 0..1 and 

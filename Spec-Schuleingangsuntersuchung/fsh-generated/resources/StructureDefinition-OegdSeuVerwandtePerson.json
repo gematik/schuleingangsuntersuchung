@@ -273,6 +273,22 @@
         "mustSupport": true
       },
       {
+        "id": "RelatedPerson.address:Strassenanschrift.extension:wohnungsinhaber",
+        "path": "RelatedPerson.address.extension",
+        "sliceName": "wohnungsinhaber",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuWohnungsInhaberExtension"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "RelatedPerson.address:Strassenanschrift.type",
         "path": "RelatedPerson.address.type",
         "min": 1,

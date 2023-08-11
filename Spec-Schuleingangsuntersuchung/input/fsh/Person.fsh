@@ -72,6 +72,7 @@ Id: OegdSeuPerson
   * postalCode 1.. MS
   * country 1.. MS
     * obeys address-cnt-2or3-char
+  * extension contains OegdSeuWohnungsInhaberExtension named wohnungsinhaber 0..1 MS
 * extension contains 
     http://hl7.org/fhir/StructureDefinition/patient-birthPlace named Geburtsort 0..1 MS and 
     http://hl7.org/fhir/StructureDefinition/patient-nationality named Staatsangehoerigkeit 0.. MS and 
@@ -161,6 +162,7 @@ Usage: #example
 * address[Strassenanschrift].city.extension[=].valueString = "03 2 54 021"
 * address[Strassenanschrift].postalCode = "98764"
 * address[Strassenanschrift].country = "DE"
+* address[Strassenanschrift].extension[wohnungsinhaber].valueString = "Erika Gabler"
 * address[Postfach].type = #postal
 * address[Postfach].line = "Postfach 8 15"
   * extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox"

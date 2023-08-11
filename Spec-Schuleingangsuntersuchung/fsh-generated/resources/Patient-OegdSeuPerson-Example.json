@@ -73,6 +73,12 @@
   "address": [
     {
       "type": "both",
+      "extension": [
+        {
+          "url": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuWohnungsInhaberExtension",
+          "valueString": "Erika Gabler"
+        }
+      ],
       "line": [
         "Musterweg 2",
         "3. Etage"
