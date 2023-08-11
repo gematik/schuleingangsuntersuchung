@@ -1,0 +1,21 @@
+{
+  "resourceType": "Condition",
+  "id": "SeuChronicDisease-Example",
+  "meta": {
+    "profile": [
+      "https://www.oegd.de/fhir/seu//StructureDefinition/SeuChronicDisease"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "56265001",
+        "system": "http://snomed.info/sct",
+        "display": "Heart disease (disorder)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/OegdSeuPerson-Example"
+  }
+}
