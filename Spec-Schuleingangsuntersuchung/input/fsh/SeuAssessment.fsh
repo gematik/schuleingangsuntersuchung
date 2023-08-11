@@ -33,7 +33,7 @@ Description: "Diese Codes enthalten die möglichen Antworten einer Untersuchung"
 ValueSet: SeuAssessmentArtVs
 Id: SeuAssessmentArtVs
 Title: "SEU Assessment Type"
-Description: "Dieses CodeSystem enthält die Untersuchungsarten"
+Description: "Dieses ValueSet enthält die Untersuchungsarten"
 * $sct#87276001 "Nutritional status"
 * $sct#79984008 "Skeletal muscle system structure (body structure)"
 * $sct#113192009 "Skeletal system structure (body structure)"

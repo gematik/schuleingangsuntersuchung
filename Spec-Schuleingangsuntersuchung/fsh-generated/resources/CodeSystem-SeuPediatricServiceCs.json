@@ -1,0 +1,20 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SeuPediatricServiceCs",
+  "id": "SeuPediatricServiceCs",
+  "title": "Sozialpädiatrische Leistungen",
+  "url": "https://www.oegd.de/fhir/seu//CodeSystem/SeuPediatricServiceCs",
+  "concept": [
+    {
+      "code": "sonstige",
+      "display": "Sonstige Hilfen"
+    },
+    {
+      "code": "info",
+      "display": "Infobrief Schule"
+    }
+  ],
+  "count": 2
+}
