@@ -3,7 +3,7 @@
   "id": "OegdSeuPersonUebermittlungsssperreReligionExtension",
   "url": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPersonUebermittlungsssperreReligionExtension",
   "name": "OegdSeuPersonUebermittlungsssperreReligionExtension",
-  "title": "Verwandte Person Übermittlungssperre Religion Extension",
+  "title": "Übermittlungssperre Religion",
   "status": "draft",
   "description": "Datenübermittlungen an öffentlich-rechtliche Religionsgemeinschaften",
   "fhirVersion": "4.0.1",
@@ -30,7 +30,7 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Verwandte Person Übermittlungssperre Religion Extension",
+        "short": "Übermittlungssperre Religion",
         "definition": "Datenübermittlungen an öffentlich-rechtliche Religionsgemeinschaften"
       },
       {

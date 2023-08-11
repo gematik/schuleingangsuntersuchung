@@ -626,7 +626,7 @@
           ],
           "rules": "open"
         },
-        "min": 1,
+        "min": 2,
         "mustSupport": true
       },
       {
@@ -638,6 +638,49 @@
         "id": "Patient.communication.preferred",
         "path": "Patient.communication.preferred",
         "mustSupport": true
+      },
+      {
+        "id": "Patient.communication:deutsch",
+        "path": "Patient.communication",
+        "sliceName": "deutsch",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.communication:deutsch.extension",
+        "path": "Patient.communication.extension",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.communication:deutsch.extension:deutschkenntnis",
+        "path": "Patient.communication.extension",
+        "sliceName": "deutschkenntnis",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPersonDeutschkenntnisExtension"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.communication:deutsch.language",
+        "path": "Patient.communication.language",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "de",
+              "system": "urn:ietf:bcp:47",
+              "display": "German"
+            }
+          ]
+        }
       },
       {
         "id": "Patient.communication:erstsprache",

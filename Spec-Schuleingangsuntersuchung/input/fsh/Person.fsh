@@ -92,36 +92,39 @@ Id: OegdSeuPerson
   * ^slicing.discriminator.type = #pattern
   * ^slicing.discriminator.path = "$this"
   * ^slicing.rules = #open
-* communication contains erstsprache 1..1 MS
+* communication contains deutsch 1..1 MS and erstsprache 1..1 MS
+* communication[deutsch].language = urn:ietf:bcp:47#de "German"
+* communication[deutsch].extension 1..* MS
+* communication[deutsch].extension contains OegdSeuPersonDeutschkenntnisExtension named deutschkenntnis 1..1 MS
 * communication[erstsprache].preferred = true
 
 Extension: OegdSeuPersonUebermittlungsssperreReligionExtension
 Id: OegdSeuPersonUebermittlungsssperreReligionExtension
-Title:  "Verwandte Person Übermittlungssperre Religion Extension"
+Title:  "Übermittlungssperre Religion"
 Description: "Datenübermittlungen an öffentlich-rechtliche Religionsgemeinschaften"
 * value[x] only boolean
 
 Extension: OegdSeuPersonUebermittlungsssperrePolitikExtension
 Id: OegdSeuPersonUebermittlungsssperrePolitikExtension
-Title:  "Verwandte Person Übermittlungssperre Politik Extension"
-Description: "Auskünfte an Parteien, Wählergruppen und andere Träger  von   Wahlvorschlägen"
+Title:  "Übermittlungssperre Politik"
+Description: "Auskünfte an Parteien, Wählergruppen und andere Träger von Wahlvorschlägen"
 * value[x] only boolean
 
 Extension: OegdSeuPersonUebermittlungsssperreJubilaenExtension
 Id: OegdSeuPersonUebermittlungsssperreJubilaenExtension
-Title:  "Verwandte Person Übermittlungssperre Jubilaen Extension"
+Title:  "Übermittlungssperre Jubilaen"
 Description: "Auskünfte über Alters- und Ehejubiläen"
 * value[x] only boolean
 
 Extension: OegdSeuPersonUebermittlungsssperreAdressbuchExtension
 Id: OegdSeuPersonUebermittlungsssperreAdressbuchExtension
-Title:  "Verwandte Person Übermittlungssperre Adressbuch Extension"
+Title:  "Übermittlungssperre Adressbuch"
 Description: "Auskünfte an Adressbuchverlage"
 * value[x] only boolean
 
 Extension: OegdSeuPersonUebermittlungsssperreBundeswehrExtension
 Id: OegdSeuPersonUebermittlungsssperreBundeswehrExtension
-Title:  "Verwandte Person Übermittlungssperre Bundeswehr Extension"
+Title:  "Übermittlungssperre Bundeswehr"
 Description: "Datenübermittlung an das Bundesamt für Personalmanagement der Bundeswehr"
 * value[x] only boolean
 
@@ -131,24 +134,11 @@ Title:  "Migrationshintergrund"
 * value[x] only CodeableConcept
 * valueCodeableConcept from SeuPersonRaceVs
 
-CodeSystem:  SeuPersonRaceCs
-Id: SeuPersonRaceCs
-Title: "SEU Sprachlich-ethnischer Familienhintergrund"
-* #0 "Deutschland"
-* #1 "Türkei"
-* #2 "GUS/Osteuropa"
-* #3 "Europäische Mittelmeerländer, inkl. Balkan"
-* #4 "Arabischer Raum (Marokko, Afghan., Pakistan, Syrien, Irak,… Nordafrika)"
-* #5 "Nordeuropa / sonst. Westeuropa"
-* #6 "(Schwarz-)Afrika, südlich der Sahara"
-* #7 "Asien"
-* #8 "Lateinamerika" 
-* #9 "Sonstige Staaten (Nordamerika, Australien, usw)"
-
-ValueSet: SeuPersonRaceVs
-Id: SeuPersonRaceVs
-Title: "SEU Sprachlich-ethnischer Familienhintergrund"
-* include codes from system SeuPersonRaceCs
+Extension: OegdSeuPersonDeutschkenntnisExtension
+Id: OegdSeuPersonDeutschkenntnisExtension
+Title:  "Deutschkenntnisse"
+* value[x] only CodeableConcept
+* valueCodeableConcept from SeuPersonDeutschkenntnisVs
 
 Instance: OegdSeuPerson-Example
 InstanceOf: OegdSeuPerson
@@ -199,5 +189,6 @@ Usage: #example
 * address[Postfach].postalCode = "98764"
 * address[Postfach].country = "DE"
 * communication[erstsprache].language = urn:ietf:bcp:47#nl "Dutch"
+* communication[deutsch].extension[deutschkenntnis].valueCodeableConcept = SeuPersonDeutschkenntnisCs#4 "flüssig mit leichten Fehlern"
 
 // TODO: Postfach weglassen?

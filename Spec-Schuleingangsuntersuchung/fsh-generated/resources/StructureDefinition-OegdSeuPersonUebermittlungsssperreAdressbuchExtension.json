@@ -3,7 +3,7 @@
   "id": "OegdSeuPersonUebermittlungsssperreAdressbuchExtension",
   "url": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPersonUebermittlungsssperreAdressbuchExtension",
   "name": "OegdSeuPersonUebermittlungsssperreAdressbuchExtension",
-  "title": "Verwandte Person Übermittlungssperre Adressbuch Extension",
+  "title": "Übermittlungssperre Adressbuch",
   "status": "draft",
   "description": "Auskünfte an Adressbuchverlage",
   "fhirVersion": "4.0.1",
@@ -30,7 +30,7 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Verwandte Person Übermittlungssperre Adressbuch Extension",
+        "short": "Übermittlungssperre Adressbuch",
         "definition": "Auskünfte an Adressbuchverlage"
       },
       {

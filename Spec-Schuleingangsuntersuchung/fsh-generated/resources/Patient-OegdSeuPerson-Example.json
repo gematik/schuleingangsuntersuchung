@@ -56,6 +56,44 @@
       }
     }
   ],
+  "communication": [
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "de",
+            "system": "urn:ietf:bcp:47",
+            "display": "German"
+          }
+        ]
+      },
+      "extension": [
+        {
+          "url": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPersonDeutschkenntnisExtension",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "4",
+                "system": "https://www.oegd.de/fhir/seu//CodeSystem/SeuPersonDeutschkenntnisCs",
+                "display": "flüssig mit leichten Fehlern"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "nl",
+            "system": "urn:ietf:bcp:47",
+            "display": "Dutch"
+          }
+        ]
+      }
+    }
+  ],
   "extension": [
     {
       "url": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPersonUebermittlungsssperreBundeswehrExtension",
@@ -156,18 +194,5 @@
     }
   ],
   "gender": "female",
-  "birthDate": "1964-08-12",
-  "communication": [
-    {
-      "language": {
-        "coding": [
-          {
-            "code": "nl",
-            "system": "urn:ietf:bcp:47",
-            "display": "Dutch"
-          }
-        ]
-      }
-    }
-  ]
+  "birthDate": "1964-08-12"
 }

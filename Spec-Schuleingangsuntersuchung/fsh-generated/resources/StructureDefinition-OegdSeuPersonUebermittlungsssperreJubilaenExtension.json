@@ -3,7 +3,7 @@
   "id": "OegdSeuPersonUebermittlungsssperreJubilaenExtension",
   "url": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPersonUebermittlungsssperreJubilaenExtension",
   "name": "OegdSeuPersonUebermittlungsssperreJubilaenExtension",
-  "title": "Verwandte Person Übermittlungssperre Jubilaen Extension",
+  "title": "Übermittlungssperre Jubilaen",
   "status": "draft",
   "description": "Auskünfte über Alters- und Ehejubiläen",
   "fhirVersion": "4.0.1",
@@ -30,7 +30,7 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Verwandte Person Übermittlungssperre Jubilaen Extension",
+        "short": "Übermittlungssperre Jubilaen",
         "definition": "Auskünfte über Alters- und Ehejubiläen"
       },
       {

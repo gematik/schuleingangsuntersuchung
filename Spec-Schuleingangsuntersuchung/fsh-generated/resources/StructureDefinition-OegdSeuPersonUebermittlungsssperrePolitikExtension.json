@@ -3,9 +3,9 @@
   "id": "OegdSeuPersonUebermittlungsssperrePolitikExtension",
   "url": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPersonUebermittlungsssperrePolitikExtension",
   "name": "OegdSeuPersonUebermittlungsssperrePolitikExtension",
-  "title": "Verwandte Person Übermittlungssperre Politik Extension",
+  "title": "Übermittlungssperre Politik",
   "status": "draft",
-  "description": "Auskünfte an Parteien, Wählergruppen und andere Träger  von   Wahlvorschlägen",
+  "description": "Auskünfte an Parteien, Wählergruppen und andere Träger von Wahlvorschlägen",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -30,8 +30,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Verwandte Person Übermittlungssperre Politik Extension",
-        "definition": "Auskünfte an Parteien, Wählergruppen und andere Träger  von   Wahlvorschlägen"
+        "short": "Übermittlungssperre Politik",
+        "definition": "Auskünfte an Parteien, Wählergruppen und andere Träger von Wahlvorschlägen"
       },
       {
         "id": "Extension.extension",
