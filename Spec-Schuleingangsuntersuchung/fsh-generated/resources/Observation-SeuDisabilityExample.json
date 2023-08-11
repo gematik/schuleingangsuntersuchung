@@ -1,0 +1,43 @@
+{
+  "resourceType": "Observation",
+  "id": "SeuDisabilityExample",
+  "meta": {
+    "profile": [
+      "https://www.oegd.de/fhir/seu//StructureDefinition/SeuDisability"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "21134002",
+        "system": "http://snomed.info/sct",
+        "display": "Disability (finding)"
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "exam",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "display": "Exam"
+        }
+      ]
+    }
+  ],
+  "status": "final",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "K",
+        "system": "https://www.oegd.de/fhir/seu//CodeSystem/SeuDisabilityTypeCs",
+        "display": "Körperlich"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/OegdSeuPerson-Example"
+  },
+  "effectiveDateTime": "2023-01-01"
+}
