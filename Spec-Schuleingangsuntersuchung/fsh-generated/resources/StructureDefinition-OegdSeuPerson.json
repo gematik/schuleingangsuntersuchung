@@ -464,6 +464,22 @@
         "mustSupport": true
       },
       {
+        "id": "Patient.address:Strassenanschrift.city.extension:gemeindeschluessel",
+        "path": "Patient.address.city.extension",
+        "sliceName": "gemeindeschluessel",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "http://fhir.de/StructureDefinition/destatis/ags"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "Patient.address:Strassenanschrift.postalCode",
         "path": "Patient.address.postalCode",
         "min": 1,

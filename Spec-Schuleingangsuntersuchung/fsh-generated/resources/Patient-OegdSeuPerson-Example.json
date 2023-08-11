@@ -100,6 +100,14 @@
         }
       ],
       "city": "Musterhausen",
+      "_city": {
+        "extension": [
+          {
+            "url": "http://fhir.de/StructureDefinition/destatis/ags",
+            "valueString": "03 2 54 021"
+          }
+        ]
+      },
       "postalCode": "98764",
       "country": "DE"
     },
