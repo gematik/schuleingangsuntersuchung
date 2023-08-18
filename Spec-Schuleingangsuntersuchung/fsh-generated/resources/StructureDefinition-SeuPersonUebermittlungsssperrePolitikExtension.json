@@ -1,8 +1,8 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "OegdSeuPersonUebermittlungsssperrePolitikExtension",
-  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPersonUebermittlungsssperrePolitikExtension",
-  "name": "OegdSeuPersonUebermittlungsssperrePolitikExtension",
+  "id": "SeuPersonUebermittlungsssperrePolitikExtension",
+  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/SeuPersonUebermittlungsssperrePolitikExtension",
+  "name": "SeuPersonUebermittlungsssperrePolitikExtension",
   "title": "Übermittlungssperre Politik",
   "status": "draft",
   "description": "Auskünfte an Parteien, Wählergruppen und andere Träger von Wahlvorschlägen",
@@ -41,7 +41,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPersonUebermittlungsssperrePolitikExtension"
+        "fixedUri": "https://www.oegd.de/fhir/seu//StructureDefinition/SeuPersonUebermittlungsssperrePolitikExtension"
       },
       {
         "id": "Extension.value[x]",

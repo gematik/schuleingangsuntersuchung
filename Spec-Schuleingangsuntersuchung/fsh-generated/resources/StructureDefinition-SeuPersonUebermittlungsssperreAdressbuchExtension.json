@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "OegdSeuPersonUebermittlungsssperreJubilaenExtension",
-  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPersonUebermittlungsssperreJubilaenExtension",
-  "name": "OegdSeuPersonUebermittlungsssperreJubilaenExtension",
-  "title": "Übermittlungssperre Jubilaen",
+  "id": "SeuPersonUebermittlungsssperreAdressbuchExtension",
+  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/SeuPersonUebermittlungsssperreAdressbuchExtension",
+  "name": "SeuPersonUebermittlungsssperreAdressbuchExtension",
+  "title": "Übermittlungssperre Adressbuch",
   "status": "draft",
-  "description": "Auskünfte über Alters- und Ehejubiläen",
+  "description": "Auskünfte an Adressbuchverlage",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -30,8 +30,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Übermittlungssperre Jubilaen",
-        "definition": "Auskünfte über Alters- und Ehejubiläen"
+        "short": "Übermittlungssperre Adressbuch",
+        "definition": "Auskünfte an Adressbuchverlage"
       },
       {
         "id": "Extension.extension",
@@ -41,7 +41,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPersonUebermittlungsssperreJubilaenExtension"
+        "fixedUri": "https://www.oegd.de/fhir/seu//StructureDefinition/SeuPersonUebermittlungsssperreAdressbuchExtension"
       },
       {
         "id": "Extension.value[x]",

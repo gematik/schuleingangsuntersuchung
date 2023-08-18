@@ -1,9 +1,9 @@
 {
   "resourceType": "Patient",
-  "id": "OegdSeuPersonBeispiel",
+  "id": "SeuPersonBeispiel",
   "meta": {
     "profile": [
-      "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPerson"
+      "https://www.oegd.de/fhir/seu//StructureDefinition/SeuPerson"
     ]
   },
   "name": [
@@ -69,7 +69,7 @@
       },
       "extension": [
         {
-          "url": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPersonDeutschkenntnisExtension",
+          "url": "https://www.oegd.de/fhir/seu//StructureDefinition/SeuPersonDeutschkenntnisExtension",
           "valueCodeableConcept": {
             "coding": [
               {
@@ -96,11 +96,11 @@
   ],
   "extension": [
     {
-      "url": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPersonUebermittlungsssperreBundeswehrExtension",
+      "url": "https://www.oegd.de/fhir/seu//StructureDefinition/SeuPersonUebermittlungsssperreBundeswehrExtension",
       "valueBoolean": true
     },
     {
-      "url": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPersonMigrationshintergrundExtension",
+      "url": "https://www.oegd.de/fhir/seu//StructureDefinition/SeuPersonMigrationshintergrundExtension",
       "valueCodeableConcept": {
         "coding": [
           {

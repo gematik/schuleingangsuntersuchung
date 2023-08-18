@@ -25,6 +25,6 @@ Usage: #example
 * code.coding[0] = $loinc#8302-2 "Body height"
 * code.coding[+] = $sct#50373000 "Body height measure"
 * code.text = "Körpergröße"
-* subject = Reference(OegdSeuPersonBeispiel)
+* subject = Reference(SeuPersonBeispiel)
 * effectiveDateTime = "2023-01-01"
 * valueQuantity = 192 'cm' "centimeter"

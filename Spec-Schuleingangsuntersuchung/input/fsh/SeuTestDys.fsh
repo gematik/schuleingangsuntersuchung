@@ -8,6 +8,6 @@ Id: SeuTestDys
 Instance: SeuTestDysBeispiel
 InstanceOf: SeuTestDys
 Usage: #example
-* subject = Reference(OegdSeuPersonBeispiel)
+* subject = Reference(SeuPersonBeispiel)
 * effectiveDateTime = "2023-01-01"
 * valueQuantity = 2 '1' "Punktwert"

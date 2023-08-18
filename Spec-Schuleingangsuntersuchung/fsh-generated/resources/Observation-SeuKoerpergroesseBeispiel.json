@@ -41,7 +41,7 @@
     "text": "Körpergröße"
   },
   "subject": {
-    "reference": "Patient/OegdSeuPersonBeispiel"
+    "reference": "Patient/SeuPersonBeispiel"
   },
   "effectiveDateTime": "2023-01-01"
 }

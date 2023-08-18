@@ -1,6 +1,6 @@
-Profile: OegdSeuPerson
+Profile: SeuPerson
 Parent: Patient
-Id: OegdSeuPerson
+Id: SeuPerson
 * identifier MS
   * ^slicing.discriminator.type = #pattern
   * ^slicing.discriminator.path = "$this"
@@ -76,12 +76,12 @@ Id: OegdSeuPerson
 * extension contains 
     http://hl7.org/fhir/StructureDefinition/patient-birthPlace named Geburtsort 0..1 MS and 
     http://hl7.org/fhir/StructureDefinition/patient-nationality named Staatsangehoerigkeit 0.. MS and 
-    OegdSeuPersonUebermittlungsssperreReligionExtension named SperreReligion 0..1 MS and 
-    OegdSeuPersonUebermittlungsssperrePolitikExtension named SperrePolitik 0..1 MS and
-    OegdSeuPersonUebermittlungsssperreJubilaenExtension named SperreJubilaen 0..1 MS and
-    OegdSeuPersonUebermittlungsssperreAdressbuchExtension named SperreAddressbuch 0..1 MS and
-    OegdSeuPersonUebermittlungsssperreBundeswehrExtension named SperreBundeswehr 0..1 MS and
-    OegdSeuPersonMigrationshintergrundExtension named Migrationshintergrund 0..1 MS
+    SeuPersonUebermittlungsssperreReligionExtension named SperreReligion 0..1 MS and 
+    SeuPersonUebermittlungsssperrePolitikExtension named SperrePolitik 0..1 MS and
+    SeuPersonUebermittlungsssperreJubilaenExtension named SperreJubilaen 0..1 MS and
+    SeuPersonUebermittlungsssperreAdressbuchExtension named SperreAddressbuch 0..1 MS and
+    SeuPersonUebermittlungsssperreBundeswehrExtension named SperreBundeswehr 0..1 MS and
+    SeuPersonMigrationshintergrundExtension named Migrationshintergrund 0..1 MS
 * gender 1.. MS
   * extension contains GenderOtherDE named Geschlecht-Administrativ 0..1 MS
 * deceased[x] only dateTime
@@ -95,53 +95,53 @@ Id: OegdSeuPerson
 * communication contains deutsch 1..1 MS and erstsprache 1..1 MS
 * communication[deutsch].language = urn:ietf:bcp:47#de "German"
 * communication[deutsch].extension 1..* MS
-* communication[deutsch].extension contains OegdSeuPersonDeutschkenntnisExtension named deutschkenntnis 1..1 MS
+* communication[deutsch].extension contains SeuPersonDeutschkenntnisExtension named deutschkenntnis 1..1 MS
 * communication[erstsprache].preferred = true
 
-Extension: OegdSeuPersonUebermittlungsssperreReligionExtension
-Id: OegdSeuPersonUebermittlungsssperreReligionExtension
+Extension: SeuPersonUebermittlungsssperreReligionExtension
+Id: SeuPersonUebermittlungsssperreReligionExtension
 Title:  "Übermittlungssperre Religion"
 Description: "Datenübermittlungen an öffentlich-rechtliche Religionsgemeinschaften"
 * value[x] only boolean
 
-Extension: OegdSeuPersonUebermittlungsssperrePolitikExtension
-Id: OegdSeuPersonUebermittlungsssperrePolitikExtension
+Extension: SeuPersonUebermittlungsssperrePolitikExtension
+Id: SeuPersonUebermittlungsssperrePolitikExtension
 Title:  "Übermittlungssperre Politik"
 Description: "Auskünfte an Parteien, Wählergruppen und andere Träger von Wahlvorschlägen"
 * value[x] only boolean
 
-Extension: OegdSeuPersonUebermittlungsssperreJubilaenExtension
-Id: OegdSeuPersonUebermittlungsssperreJubilaenExtension
+Extension: SeuPersonUebermittlungsssperreJubilaenExtension
+Id: SeuPersonUebermittlungsssperreJubilaenExtension
 Title:  "Übermittlungssperre Jubilaen"
 Description: "Auskünfte über Alters- und Ehejubiläen"
 * value[x] only boolean
 
-Extension: OegdSeuPersonUebermittlungsssperreAdressbuchExtension
-Id: OegdSeuPersonUebermittlungsssperreAdressbuchExtension
+Extension: SeuPersonUebermittlungsssperreAdressbuchExtension
+Id: SeuPersonUebermittlungsssperreAdressbuchExtension
 Title:  "Übermittlungssperre Adressbuch"
 Description: "Auskünfte an Adressbuchverlage"
 * value[x] only boolean
 
-Extension: OegdSeuPersonUebermittlungsssperreBundeswehrExtension
-Id: OegdSeuPersonUebermittlungsssperreBundeswehrExtension
+Extension: SeuPersonUebermittlungsssperreBundeswehrExtension
+Id: SeuPersonUebermittlungsssperreBundeswehrExtension
 Title:  "Übermittlungssperre Bundeswehr"
 Description: "Datenübermittlung an das Bundesamt für Personalmanagement der Bundeswehr"
 * value[x] only boolean
 
-Extension: OegdSeuPersonMigrationshintergrundExtension
-Id: OegdSeuPersonMigrationshintergrundExtension
+Extension: SeuPersonMigrationshintergrundExtension
+Id: SeuPersonMigrationshintergrundExtension
 Title:  "Migrationshintergrund"
 * value[x] only CodeableConcept
 * valueCodeableConcept from SeuPersonEthnieVs
 
-Extension: OegdSeuPersonDeutschkenntnisExtension
-Id: OegdSeuPersonDeutschkenntnisExtension
+Extension: SeuPersonDeutschkenntnisExtension
+Id: SeuPersonDeutschkenntnisExtension
 Title:  "Deutschkenntnisse"
 * value[x] only CodeableConcept
 * valueCodeableConcept from SeuPersonDeutschkenntnisVs
 
-Instance: OegdSeuPersonBeispiel
-InstanceOf: OegdSeuPerson
+Instance: SeuPersonBeispiel
+InstanceOf: SeuPerson
 Usage: #example
 * extension[SperreBundeswehr].valueBoolean = true
 * extension[Migrationshintergrund].valueCodeableConcept = SeuPersonEthnieCs#2 "GUS/Osteuropa"

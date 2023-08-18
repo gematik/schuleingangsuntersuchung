@@ -17,6 +17,6 @@ InstanceOf: SeuMehraufwand
 Usage: #example
 * status = #final
 * valueBoolean = true
-* subject = Reference(OegdSeuPersonBeispiel)
+* subject = Reference(SeuPersonBeispiel)
 * effectiveDateTime = "2023-01-01"
 * category = $observation-category#exam "Exam"

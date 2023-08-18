@@ -29,7 +29,7 @@ Usage: #example
 * category[vs-cat] = $observation-category#vital-signs "Vital Signs"
 * code = $loinc#85354-9 "Blood pressure panel with all children optional"
 * code.text = "Systolischer und Diastolischer Blutdruck"
-* subject = Reference(OegdSeuPersonBeispiel)
+* subject = Reference(SeuPersonBeispiel)
 * effectiveDateTime = "2012-09-17"
 * bodySite = $sct#368209003 "Right arm"
 * component[SystolicBP].valueQuantity = 102 'mm[Hg]' "mmHg"

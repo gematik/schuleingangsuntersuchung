@@ -1,8 +1,8 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "OegdSeuPerson",
-  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPerson",
-  "name": "OegdSeuPerson",
+  "id": "SeuPerson",
+  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/SeuPerson",
+  "name": "SeuPerson",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -81,7 +81,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPersonUebermittlungsssperreReligionExtension"
+              "https://www.oegd.de/fhir/seu//StructureDefinition/SeuPersonUebermittlungsssperreReligionExtension"
             ]
           }
         ],
@@ -97,7 +97,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPersonUebermittlungsssperrePolitikExtension"
+              "https://www.oegd.de/fhir/seu//StructureDefinition/SeuPersonUebermittlungsssperrePolitikExtension"
             ]
           }
         ],
@@ -113,7 +113,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPersonUebermittlungsssperreJubilaenExtension"
+              "https://www.oegd.de/fhir/seu//StructureDefinition/SeuPersonUebermittlungsssperreJubilaenExtension"
             ]
           }
         ],
@@ -129,7 +129,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPersonUebermittlungsssperreAdressbuchExtension"
+              "https://www.oegd.de/fhir/seu//StructureDefinition/SeuPersonUebermittlungsssperreAdressbuchExtension"
             ]
           }
         ],
@@ -145,7 +145,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPersonUebermittlungsssperreBundeswehrExtension"
+              "https://www.oegd.de/fhir/seu//StructureDefinition/SeuPersonUebermittlungsssperreBundeswehrExtension"
             ]
           }
         ],
@@ -161,7 +161,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPersonMigrationshintergrundExtension"
+              "https://www.oegd.de/fhir/seu//StructureDefinition/SeuPersonMigrationshintergrundExtension"
             ]
           }
         ],
@@ -527,7 +527,7 @@
             "severity": "warning",
             "human": "The content of the country element (if present) SHALL be selected EITHER from ValueSet ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2 OR MAY be selected from ISO Country Alpha-3 Value Set http://hl7.org/fhir/ValueSet/iso3166-1-3, IF the country is not specified in value Set ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2.",
             "expression": "country.empty() or (country.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-2') or country.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-3'))",
-            "source": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPerson"
+            "source": "https://www.oegd.de/fhir/seu//StructureDefinition/SeuPerson"
           }
         ],
         "mustSupport": true
@@ -609,7 +609,7 @@
             "severity": "warning",
             "human": "The content of the country element (if present) SHALL be selected EITHER from ValueSet ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2 OR MAY be selected from ISO Country Alpha-3 Value Set http://hl7.org/fhir/ValueSet/iso3166-1-3, IF the country is not specified in value Set ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2.",
             "expression": "country.empty() or (country.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-2') or country.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-3'))",
-            "source": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPerson"
+            "source": "https://www.oegd.de/fhir/seu//StructureDefinition/SeuPerson"
           }
         ],
         "mustSupport": true
@@ -663,7 +663,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPersonDeutschkenntnisExtension"
+              "https://www.oegd.de/fhir/seu//StructureDefinition/SeuPersonDeutschkenntnisExtension"
             ]
           }
         ],

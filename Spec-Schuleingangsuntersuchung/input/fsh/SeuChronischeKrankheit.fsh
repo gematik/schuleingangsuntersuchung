@@ -13,4 +13,4 @@ Instance: SeuChronischeKrankheitBeispiel
 InstanceOf: SeuChronischeKrankheit
 Usage: #example
 * code = $sct#56265001 "Heart disease (disorder)"
-* subject = Reference(OegdSeuPersonBeispiel)
+* subject = Reference(SeuPersonBeispiel)

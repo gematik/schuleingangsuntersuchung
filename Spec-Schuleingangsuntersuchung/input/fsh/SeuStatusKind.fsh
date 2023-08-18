@@ -32,5 +32,5 @@ InstanceOf: SeuStatusKind
 Usage: #example
 * status = #final
 * valueCodeableConcept = SeuStatusKindCs#regel "Regel"
-* subject = Reference(OegdSeuPersonBeispiel)
+* subject = Reference(SeuPersonBeispiel)
 * effectiveDateTime = "2023-01-01"

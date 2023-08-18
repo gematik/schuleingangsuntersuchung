@@ -33,4 +33,4 @@ Instance: SeuPaediatrischeLeistungBeispiel
 InstanceOf: SeuPaediatrischeLeistung
 Usage: #example
 * code = $sct#410279000 "Caretaking/parenting skills education, guidance, and counseling (procedure)"
-* subject = Reference(OegdSeuPersonBeispiel)
+* subject = Reference(SeuPersonBeispiel)

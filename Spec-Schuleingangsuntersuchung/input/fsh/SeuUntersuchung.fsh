@@ -62,7 +62,7 @@ Usage: #example
 * category = $observation-category#exam "Exam"
 * code = $sct#87276001 "Nutritional Status"
 * valueCodeableConcept = SeuUntersuchungsErgebnisCs#A "Arztbrief"
-* subject = Reference(OegdSeuPersonBeispiel)
+* subject = Reference(SeuPersonBeispiel)
 * effectiveDateTime = "2023-01-01"
 
 Instance: SeuUntersuchungBeispielMuskel
@@ -72,7 +72,7 @@ Usage: #example
 * category = $observation-category#exam "Exam"
 * code = $sct#79984008 "Skeletal muscle system structure (body structure)"
 * valueCodeableConcept = SeuUntersuchungsErgebnisCs#I "In Ordnung"
-* subject = Reference(OegdSeuPersonBeispiel)
+* subject = Reference(SeuPersonBeispiel)
 * effectiveDateTime = "2023-01-01"
 
 Instance: SeuUntersuchungBeispielNeurologie
@@ -82,7 +82,7 @@ Usage: #example
 * category = $observation-category#exam "Exam"
 * code = $sct#394591006 "Neurological Status"
 * valueCodeableConcept = SeuUntersuchungsErgebnisCs#I "In Ordnung"
-* subject = Reference(OegdSeuPersonBeispiel)
+* subject = Reference(SeuPersonBeispiel)
 * effectiveDateTime = "2023-01-01"
 
 Instance: SeuUntersuchungBeispielEndokrineFunktion
@@ -92,7 +92,7 @@ Usage: #example
 * category = $observation-category#exam "Exam"
 * code = $sct#123036008 "Endocrine function"
 * valueCodeableConcept = SeuUntersuchungsErgebnisCs#G "Grenzwertig"
-* subject = Reference(OegdSeuPersonBeispiel)
+* subject = Reference(SeuPersonBeispiel)
 * effectiveDateTime = "2023-01-01"
 
 Instance: SeuUntersuchungBeispielChronischeKrankheit
@@ -102,5 +102,5 @@ Usage: #example
 * category = $observation-category#exam "Exam"
 * code = $sct#27624003 "Chronic disease (disorder)"
 * valueCodeableConcept = SeuUntersuchungsErgebnisCs#U "Unbekannt"
-* subject = Reference(OegdSeuPersonBeispiel)
+* subject = Reference(SeuPersonBeispiel)
 * effectiveDateTime = "2023-01-01"

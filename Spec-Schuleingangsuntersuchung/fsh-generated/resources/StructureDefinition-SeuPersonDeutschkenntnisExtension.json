@@ -1,11 +1,10 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "OegdSeuPersonUebermittlungsssperreBundeswehrExtension",
-  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPersonUebermittlungsssperreBundeswehrExtension",
-  "name": "OegdSeuPersonUebermittlungsssperreBundeswehrExtension",
-  "title": "Übermittlungssperre Bundeswehr",
+  "id": "SeuPersonDeutschkenntnisExtension",
+  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/SeuPersonDeutschkenntnisExtension",
+  "name": "SeuPersonDeutschkenntnisExtension",
+  "title": "Deutschkenntnisse",
   "status": "draft",
-  "description": "Datenübermittlung an das Bundesamt für Personalmanagement der Bundeswehr",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -30,8 +29,7 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Übermittlungssperre Bundeswehr",
-        "definition": "Datenübermittlung an das Bundesamt für Personalmanagement der Bundeswehr"
+        "short": "Deutschkenntnisse"
       },
       {
         "id": "Extension.extension",
@@ -41,16 +39,20 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPersonUebermittlungsssperreBundeswehrExtension"
+        "fixedUri": "https://www.oegd.de/fhir/seu//StructureDefinition/SeuPersonDeutschkenntnisExtension"
       },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
         "type": [
           {
-            "code": "boolean"
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.oegd.de/fhir/seu//ValueSet/SeuPersonDeutschkenntnisVs"
+        }
       }
     ]
   }

@@ -12,6 +12,6 @@ Id: SeuTestPraep
 Instance: SeuTestPraepBeispiel
 InstanceOf: SeuTestPraep
 Usage: #example
-* subject = Reference(OegdSeuPersonBeispiel)
+* subject = Reference(SeuPersonBeispiel)
 * effectiveDateTime = "2023-01-01"
 * valueQuantity = 5 '1' "Punktwert"

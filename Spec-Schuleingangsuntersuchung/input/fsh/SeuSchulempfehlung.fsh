@@ -38,5 +38,5 @@ Usage: #example
 * status = #final
 * category = $observation-category#exam "Exam"
 * valueCodeableConcept = SeuSchulempfehlungCs#nein "keine regelabweichende Schulempfehlung"
-* subject = Reference(OegdSeuPersonBeispiel)
+* subject = Reference(SeuPersonBeispiel)
 * effectiveDateTime = "2023-01-01"

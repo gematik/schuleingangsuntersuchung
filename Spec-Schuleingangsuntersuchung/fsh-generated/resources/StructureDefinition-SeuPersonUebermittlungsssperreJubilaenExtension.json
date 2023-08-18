@@ -1,10 +1,11 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "OegdSeuPersonDeutschkenntnisExtension",
-  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPersonDeutschkenntnisExtension",
-  "name": "OegdSeuPersonDeutschkenntnisExtension",
-  "title": "Deutschkenntnisse",
+  "id": "SeuPersonUebermittlungsssperreJubilaenExtension",
+  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/SeuPersonUebermittlungsssperreJubilaenExtension",
+  "name": "SeuPersonUebermittlungsssperreJubilaenExtension",
+  "title": "Übermittlungssperre Jubilaen",
   "status": "draft",
+  "description": "Auskünfte über Alters- und Ehejubiläen",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -29,7 +30,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Deutschkenntnisse"
+        "short": "Übermittlungssperre Jubilaen",
+        "definition": "Auskünfte über Alters- und Ehejubiläen"
       },
       {
         "id": "Extension.extension",
@@ -39,20 +41,16 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPersonDeutschkenntnisExtension"
+        "fixedUri": "https://www.oegd.de/fhir/seu//StructureDefinition/SeuPersonUebermittlungsssperreJubilaenExtension"
       },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "boolean"
           }
-        ],
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://www.oegd.de/fhir/seu//ValueSet/SeuPersonDeutschkenntnisVs"
-        }
+        ]
       }
     ]
   }

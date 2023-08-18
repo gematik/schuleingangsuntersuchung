@@ -35,6 +35,6 @@ InstanceOf: SeuBehinderung
 Usage: #example
 * status = #final
 * valueCodeableConcept = SeuBehinderungsTypCs#K "Körperlich"
-* subject = Reference(OegdSeuPersonBeispiel)
+* subject = Reference(SeuPersonBeispiel)
 * effectiveDateTime = "2023-01-01"
 * category = $observation-category#exam "Exam"

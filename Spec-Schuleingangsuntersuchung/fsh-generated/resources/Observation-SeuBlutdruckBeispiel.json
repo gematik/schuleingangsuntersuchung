@@ -64,7 +64,7 @@
   ],
   "status": "final",
   "subject": {
-    "reference": "Patient/OegdSeuPersonBeispiel"
+    "reference": "Patient/SeuPersonBeispiel"
   },
   "effectiveDateTime": "2012-09-17",
   "bodySite": {
