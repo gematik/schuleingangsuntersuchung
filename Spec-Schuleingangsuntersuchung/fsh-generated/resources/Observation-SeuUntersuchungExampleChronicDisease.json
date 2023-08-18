@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "SeuAssessmentExampleChronicDisease",
+  "id": "SeuUntersuchungExampleChronicDisease",
   "meta": {
     "profile": [
-      "https://www.oegd.de/fhir/seu//StructureDefinition/SeuAssessment"
+      "https://www.oegd.de/fhir/seu//StructureDefinition/SeuUntersuchung"
     ]
   },
   "category": [
@@ -31,7 +31,7 @@
     "coding": [
       {
         "code": "U",
-        "system": "https://www.oegd.de/fhir/seu//CodeSystem/SeuAssessmentResultCs",
+        "system": "https://www.oegd.de/fhir/seu//CodeSystem/SeuUntersuchungsErgebnisCs",
         "display": "Unbekannt"
       }
     ]

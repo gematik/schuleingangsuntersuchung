@@ -1,8 +1,8 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "SeuAssessment",
-  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/SeuAssessment",
-  "name": "SeuAssessment",
+  "id": "SeuUntersuchung",
+  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/SeuUntersuchung",
+  "name": "SeuUntersuchung",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -69,7 +69,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.oegd.de/fhir/seu//ValueSet/SeuAssessmentArtVs"
+          "valueSet": "https://www.oegd.de/fhir/seu//ValueSet/SeuUntersuchungsArtVs"
         }
       },
       {
@@ -95,7 +95,11 @@
             "code": "CodeableConcept"
           }
         ],
-        "mustSupport": true
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.oegd.de/fhir/seu//ValueSet/SeuUntersuchungsErgebnisVs"
+        }
       },
       {
         "id": "Observation.value[x].coding",

@@ -2,10 +2,10 @@
   "resourceType": "CodeSystem",
   "status": "draft",
   "content": "complete",
-  "name": "SeuAssessmentResultCs",
-  "id": "SeuAssessmentResultCs",
-  "title": "SEU Assessment Results",
-  "url": "https://www.oegd.de/fhir/seu//CodeSystem/SeuAssessmentResultCs",
+  "name": "SeuUntersuchungsErgebnisCs",
+  "id": "SeuUntersuchungsErgebnisCs",
+  "title": "SEU Untersuchungsergebnis",
+  "url": "https://www.oegd.de/fhir/seu//CodeSystem/SeuUntersuchungsErgebnisCs",
   "concept": [
     {
       "code": "I",
