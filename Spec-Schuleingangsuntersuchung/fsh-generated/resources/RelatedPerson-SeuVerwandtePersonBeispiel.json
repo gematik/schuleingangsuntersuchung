@@ -1,0 +1,149 @@
+{
+  "resourceType": "RelatedPerson",
+  "id": "SeuVerwandtePersonBeispiel",
+  "meta": {
+    "profile": [
+      "https://www.oegd.de/fhir/seu//StructureDefinition/SeuVerwandtePerson"
+    ]
+  },
+  "name": [
+    {
+      "use": "official",
+      "family": "Gräfin von Musterfrau",
+      "_family": {
+        "extension": [
+          {
+            "url": "http://fhir.de/StructureDefinition/humanname-namenszusatz",
+            "valueString": "Graf"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+            "valueString": "Musterfrau"
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-prefix",
+            "valueString": "von"
+          }
+        ]
+      },
+      "given": [
+        "Erika"
+      ],
+      "prefix": [
+        "Dr."
+      ],
+      "_prefix": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+              "valueCode": "AC"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "use": "maiden",
+      "family": "Gabler",
+      "_family": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+            "valueString": "Gabler"
+          }
+        ]
+      }
+    }
+  ],
+  "communication": [
+    {
+      "language": {
+        "coding": [
+          {
+            "code": "de",
+            "system": "urn:ietf:bcp:47",
+            "display": "German"
+          }
+        ]
+      },
+      "extension": [
+        {
+          "url": "https://www.oegd.de/fhir/seu//StructureDefinition/SeuVerwandtePersonDeutschkenntnisExtension",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "4",
+                "system": "https://www.oegd.de/fhir/seu//CodeSystem/SeuPersonDeutschkenntnisCs",
+                "display": "flüssig mit leichten Fehlern"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "extension": [
+    {
+      "url": "https://www.oegd.de/fhir/seu//StructureDefinition/SeuVerwandtePersonAuskunftssperreGrundExtension",
+      "valueString": "Schwerwiegender Grund"
+    },
+    {
+      "url": "https://www.oegd.de/fhir/seu//StructureDefinition/SeuVerwandtePersonAuskunftssperreFristExtension",
+      "valueDateTime": "2024-01-01"
+    }
+  ],
+  "address": [
+    {
+      "type": "both",
+      "extension": [
+        {
+          "url": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuWohnungsInhaberExtension",
+          "valueString": "Erika Gabler"
+        }
+      ],
+      "line": [
+        "Musterstrasse 18",
+        "1. Etage"
+      ],
+      "_line": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+              "valueString": "Musterstrasse"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+              "valueString": "18"
+            }
+          ]
+        },
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator",
+              "valueString": "1. Etage"
+            }
+          ]
+        }
+      ],
+      "city": "Musterhausen",
+      "_city": {
+        "extension": [
+          {
+            "url": "http://fhir.de/StructureDefinition/destatis/ags",
+            "valueString": "03 2 54 021"
+          }
+        ]
+      },
+      "postalCode": "98764",
+      "country": "DE"
+    }
+  ],
+  "gender": "female",
+  "patient": {
+    "reference": "Patient/SeuPersonBeispiel"
+  },
+  "birthDate": "1952-01-17"
+}
