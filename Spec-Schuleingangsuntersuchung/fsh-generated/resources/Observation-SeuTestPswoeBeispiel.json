@@ -1,18 +1,18 @@
 {
   "resourceType": "Observation",
-  "id": "SeuTestZaehl-Example",
+  "id": "SeuTestPswoeBeispiel",
   "meta": {
     "profile": [
-      "https://www.oegd.de/fhir/seu//StructureDefinition/SeuTestZaehl"
+      "https://www.oegd.de/fhir/seu//StructureDefinition/SeuTestPswoe"
     ]
   },
   "status": "final",
   "code": {
     "coding": [
       {
-        "code": "zaehl",
+        "code": "pswoe",
         "system": "https://www.oegd.de/fhir/seu//CodeSystem/SeuTestTypesCs",
-        "display": "SOPESS-Zahlen und Mengenwissen"
+        "display": "Sprachkompetenz und audit. Invormationsverarbeitung"
       }
     ]
   },
@@ -25,7 +25,7 @@
         "unit": "Punktwert"
       },
       "high": {
-        "value": 12,
+        "value": 3,
         "code": "1",
         "system": "http://unitsofmeasure.org",
         "unit": "Punktwert"
@@ -42,13 +42,13 @@
     },
     {
       "low": {
-        "value": 13,
+        "value": 4,
         "code": "1",
         "system": "http://unitsofmeasure.org",
         "unit": "Punktwert"
       },
       "high": {
-        "value": 16,
+        "value": 4,
         "code": "1",
         "system": "http://unitsofmeasure.org",
         "unit": "Punktwert"
@@ -65,13 +65,13 @@
     },
     {
       "low": {
-        "value": 17,
+        "value": 5,
         "code": "1",
         "system": "http://unitsofmeasure.org",
         "unit": "Punktwert"
       },
       "high": {
-        "value": 20,
+        "value": 6,
         "code": "1",
         "system": "http://unitsofmeasure.org",
         "unit": "Punktwert"
@@ -88,11 +88,11 @@
     }
   ],
   "subject": {
-    "reference": "Patient/OegdSeuPerson-Example"
+    "reference": "Patient/OegdSeuPersonBeispiel"
   },
   "effectiveDateTime": "2023-01-01",
   "valueQuantity": {
-    "value": 14,
+    "value": 6,
     "code": "1",
     "system": "http://unitsofmeasure.org",
     "unit": "Punktwert"

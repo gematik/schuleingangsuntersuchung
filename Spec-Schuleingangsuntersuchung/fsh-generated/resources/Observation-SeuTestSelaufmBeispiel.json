@@ -1,18 +1,18 @@
 {
   "resourceType": "Observation",
-  "id": "SeuTestPraep-Example",
+  "id": "SeuTestSelaufmBeispiel",
   "meta": {
     "profile": [
-      "https://www.oegd.de/fhir/seu//StructureDefinition/SeuTestPraep"
+      "https://www.oegd.de/fhir/seu//StructureDefinition/SeuTestSelaufm"
     ]
   },
   "status": "final",
   "code": {
     "coding": [
       {
-        "code": "praep",
+        "code": "selaufm",
         "system": "https://www.oegd.de/fhir/seu//CodeSystem/SeuTestTypesCs",
-        "display": "SOPESS-Präpositionen"
+        "display": "SOPESS- Selektive-Aufmerksamkeit"
       }
     ]
   },
@@ -25,7 +25,7 @@
         "unit": "Punktwert"
       },
       "high": {
-        "value": 4,
+        "value": 10,
         "code": "1",
         "system": "http://unitsofmeasure.org",
         "unit": "Punktwert"
@@ -42,13 +42,13 @@
     },
     {
       "low": {
-        "value": 5,
+        "value": 11,
         "code": "1",
         "system": "http://unitsofmeasure.org",
         "unit": "Punktwert"
       },
       "high": {
-        "value": 5,
+        "value": 13,
         "code": "1",
         "system": "http://unitsofmeasure.org",
         "unit": "Punktwert"
@@ -65,13 +65,13 @@
     },
     {
       "low": {
-        "value": 6,
+        "value": 14,
         "code": "1",
         "system": "http://unitsofmeasure.org",
         "unit": "Punktwert"
       },
       "high": {
-        "value": 8,
+        "value": 29,
         "code": "1",
         "system": "http://unitsofmeasure.org",
         "unit": "Punktwert"
@@ -88,11 +88,11 @@
     }
   ],
   "subject": {
-    "reference": "Patient/OegdSeuPerson-Example"
+    "reference": "Patient/OegdSeuPersonBeispiel"
   },
   "effectiveDateTime": "2023-01-01",
   "valueQuantity": {
-    "value": 5,
+    "value": 28,
     "code": "1",
     "system": "http://unitsofmeasure.org",
     "unit": "Punktwert"

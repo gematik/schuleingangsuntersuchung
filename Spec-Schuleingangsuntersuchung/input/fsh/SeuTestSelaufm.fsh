@@ -9,9 +9,9 @@ Id: SeuTestSelaufm
 * referenceRange[normal].low = 14 '1' "Punktwert"
 * referenceRange[normal].high = 29 '1' "Punktwert"
 
-Instance: SeuTestSelaufm-Example
+Instance: SeuTestSelaufmBeispiel
 InstanceOf: SeuTestSelaufm
 Usage: #example
-* subject = Reference(OegdSeuPerson-Example)
+* subject = Reference(OegdSeuPersonBeispiel)
 * effectiveDateTime = "2023-01-01"
 * valueQuantity = 28 '1' "Punktwert"

@@ -9,8 +9,8 @@ Id: SeuChronischeKrankheit
 * code.coding MS
 * subject MS
 
-Instance: SeuChronischeKrankheit-Example
+Instance: SeuChronischeKrankheitBeispiel
 InstanceOf: SeuChronischeKrankheit
 Usage: #example
 * code = $sct#56265001 "Heart disease (disorder)"
-* subject = Reference(OegdSeuPerson-Example)
+* subject = Reference(OegdSeuPersonBeispiel)

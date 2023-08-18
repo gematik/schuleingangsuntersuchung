@@ -9,9 +9,9 @@ Id: SeuTestVisper
 * referenceRange[normal].low = 11 '1' "Punktwert"
 * referenceRange[normal].high = 15 '1' "Punktwert"
 
-Instance: SeuTestVisper-Example
+Instance: SeuTestVisperBeispiel
 InstanceOf: SeuTestVisper
 Usage: #example
-* subject = Reference(OegdSeuPerson-Example)
+* subject = Reference(OegdSeuPersonBeispiel)
 * effectiveDateTime = "2023-01-01"
 * valueQuantity = 14 '1' "Punktwert"

@@ -99,7 +99,7 @@ Title:  "Deutschkenntnisse"
 * value[x] only CodeableConcept
 * valueCodeableConcept from SeuPersonDeutschkenntnisVs
 
-// Instance: SeuVerwandtePerson-Example
+// Instance: SeuVerwandtePersonBeispiel
 // InstanceOf: SeuVerwandtePerson
 // Usage: #example
 // TODO Create example

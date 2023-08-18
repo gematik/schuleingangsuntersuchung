@@ -9,9 +9,9 @@ Id: SeuTestPraep
 * referenceRange[normal].low = 6 '1' "Punktwert"
 * referenceRange[normal].high = 8 '1' "Punktwert"
 
-Instance: SeuTestPraep-Example
+Instance: SeuTestPraepBeispiel
 InstanceOf: SeuTestPraep
 Usage: #example
-* subject = Reference(OegdSeuPerson-Example)
+* subject = Reference(OegdSeuPersonBeispiel)
 * effectiveDateTime = "2023-01-01"
 * valueQuantity = 5 '1' "Punktwert"

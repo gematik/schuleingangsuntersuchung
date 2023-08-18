@@ -30,11 +30,11 @@ Id: SeuRisikofaktorVs
 Title: "SEU Risikofaktoren"
 * include codes from system SeuRisikofaktorCs
 
-Instance: SeuRisikofaktorExample
+Instance: SeuRisikofaktorBeispiel
 InstanceOf: SeuRisikofaktor
 Usage: #example
 * status = #final
 * category = $observation-category#social-history "Social History"
 * valueCodeableConcept = SeuRisikofaktorCs#familie "Familie"
-* subject = Reference(OegdSeuPerson-Example)
+* subject = Reference(OegdSeuPersonBeispiel)
 * effectiveDateTime = "2023-01-01"

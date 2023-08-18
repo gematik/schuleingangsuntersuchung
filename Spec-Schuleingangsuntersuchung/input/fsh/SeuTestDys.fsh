@@ -5,9 +5,9 @@ Id: SeuTestDys
 * referenceRange.low = 0 '1' "Punktwert"
 * referenceRange.high = 10 '1' "Punktwert"
 
-Instance: SeuTestDys-Example
+Instance: SeuTestDysBeispiel
 InstanceOf: SeuTestDys
 Usage: #example
-* subject = Reference(OegdSeuPerson-Example)
+* subject = Reference(OegdSeuPersonBeispiel)
 * effectiveDateTime = "2023-01-01"
 * valueQuantity = 2 '1' "Punktwert"

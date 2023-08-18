@@ -1,6 +1,6 @@
 {
   "resourceType": "Patient",
-  "id": "OegdSeuPerson-Example",
+  "id": "OegdSeuPersonBeispiel",
   "meta": {
     "profile": [
       "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuPerson"

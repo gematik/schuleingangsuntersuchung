@@ -140,7 +140,7 @@ Title:  "Deutschkenntnisse"
 * value[x] only CodeableConcept
 * valueCodeableConcept from SeuPersonDeutschkenntnisVs
 
-Instance: OegdSeuPerson-Example
+Instance: OegdSeuPersonBeispiel
 InstanceOf: OegdSeuPerson
 Usage: #example
 * extension[SperreBundeswehr].valueBoolean = true

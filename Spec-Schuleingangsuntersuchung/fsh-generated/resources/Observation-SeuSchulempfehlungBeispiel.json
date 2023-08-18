@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "SeuSchulempfehlungExample",
+  "id": "SeuSchulempfehlungBeispiel",
   "meta": {
     "profile": [
       "https://www.oegd.de/fhir/seu//StructureDefinition/SeuSchulempfehlung"
@@ -37,7 +37,7 @@
     ]
   },
   "subject": {
-    "reference": "Patient/OegdSeuPerson-Example"
+    "reference": "Patient/OegdSeuPersonBeispiel"
   },
   "effectiveDateTime": "2023-01-01"
 }

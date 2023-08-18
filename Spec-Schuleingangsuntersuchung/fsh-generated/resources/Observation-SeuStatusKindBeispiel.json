@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "SeuStatusKindExample",
+  "id": "SeuStatusKindBeispiel",
   "meta": {
     "profile": [
       "https://www.oegd.de/fhir/seu//StructureDefinition/SeuStatusKind"
@@ -26,7 +26,7 @@
     ]
   },
   "subject": {
-    "reference": "Patient/OegdSeuPerson-Example"
+    "reference": "Patient/OegdSeuPersonBeispiel"
   },
   "effectiveDateTime": "2023-01-01"
 }

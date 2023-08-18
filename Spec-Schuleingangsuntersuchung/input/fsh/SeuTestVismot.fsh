@@ -9,9 +9,9 @@ Id: SeuTestVismot
 * referenceRange[normal].low = 7 '1' "Punktwert"
 * referenceRange[normal].high = 12 '1' "Punktwert"
 
-Instance: SeuTestVismot-Example
+Instance: SeuTestVismotBeispiel
 InstanceOf: SeuTestVismot
 Usage: #example
-* subject = Reference(OegdSeuPerson-Example)
+* subject = Reference(OegdSeuPersonBeispiel)
 * effectiveDateTime = "2023-01-01"
 * valueQuantity = 6 '1' "Punktwert"

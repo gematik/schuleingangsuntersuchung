@@ -1,18 +1,18 @@
 {
   "resourceType": "Observation",
-  "id": "SeuTestKoord-Example",
+  "id": "SeuTestMengBeispiel",
   "meta": {
     "profile": [
-      "https://www.oegd.de/fhir/seu//StructureDefinition/SeuTestKoord"
+      "https://www.oegd.de/fhir/seu//StructureDefinition/SeuTestMeng"
     ]
   },
   "status": "final",
   "code": {
     "coding": [
       {
-        "code": "koord",
+        "code": "meng",
         "system": "https://www.oegd.de/fhir/seu//CodeSystem/SeuTestTypesCs",
-        "display": "Regelstufe"
+        "display": "SOPESS- Mengenvergleich, Simultanerfassung"
       }
     ]
   },
@@ -25,7 +25,7 @@
         "unit": "Punktwert"
       },
       "high": {
-        "value": 6,
+        "value": 10,
         "code": "1",
         "system": "http://unitsofmeasure.org",
         "unit": "Punktwert"
@@ -42,13 +42,13 @@
     },
     {
       "low": {
-        "value": 7,
+        "value": 11,
         "code": "1",
         "system": "http://unitsofmeasure.org",
         "unit": "Punktwert"
       },
       "high": {
-        "value": 8,
+        "value": 13,
         "code": "1",
         "system": "http://unitsofmeasure.org",
         "unit": "Punktwert"
@@ -65,13 +65,13 @@
     },
     {
       "low": {
-        "value": 9,
+        "value": 14,
         "code": "1",
         "system": "http://unitsofmeasure.org",
         "unit": "Punktwert"
       },
       "high": {
-        "value": 30,
+        "value": 16,
         "code": "1",
         "system": "http://unitsofmeasure.org",
         "unit": "Punktwert"
@@ -88,11 +88,11 @@
     }
   ],
   "subject": {
-    "reference": "Patient/OegdSeuPerson-Example"
+    "reference": "Patient/OegdSeuPersonBeispiel"
   },
   "effectiveDateTime": "2023-01-01",
   "valueQuantity": {
-    "value": 12,
+    "value": 15,
     "code": "1",
     "system": "http://unitsofmeasure.org",
     "unit": "Punktwert"

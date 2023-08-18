@@ -29,8 +29,8 @@ Title: "SEU Assessment Result"
 * $sct#702971000 "Counseling for childhood immunization (procedure)"
 * $sct#306238000 "Referral to Social Services (procedure)"
 
-Instance: SeuPediatricServiceExample
+Instance: SeuPediatricServiceBeispiel
 InstanceOf: SeuPediatricService
 Usage: #example
 * code = $sct#410279000 "Caretaking/parenting skills education, guidance, and counseling (procedure)"
-* subject = Reference(OegdSeuPerson-Example)
+* subject = Reference(OegdSeuPersonBeispiel)

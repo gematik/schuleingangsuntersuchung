@@ -21,7 +21,7 @@ Id: SeuBlutdruck
 * component[DiastolicBP].value[x] MS
 * component[DiastolicBP].valueQuantity MS
 
-Instance: SeuBlutdruckExample
+Instance: SeuBlutdruckBeispiel
 InstanceOf: SeuBlutdruck
 Usage: #example
 * meta.profile[0] = "http://fhir.de/StructureDefinition/observation-de-vitalsign-blutdruck"
@@ -29,7 +29,7 @@ Usage: #example
 * category[vs-cat] = $observation-category#vital-signs "Vital Signs"
 * code = $loinc#85354-9 "Blood pressure panel with all children optional"
 * code.text = "Systolischer und Diastolischer Blutdruck"
-* subject = Reference(OegdSeuPerson-Example)
+* subject = Reference(OegdSeuPersonBeispiel)
 * effectiveDateTime = "2012-09-17"
 * bodySite = $sct#368209003 "Right arm"
 * component[SystolicBP].valueQuantity = 102 'mm[Hg]' "mmHg"

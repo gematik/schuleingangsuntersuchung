@@ -1,6 +1,6 @@
 {
   "resourceType": "ServiceRequest",
-  "id": "SeuPediatricServiceExample",
+  "id": "SeuPediatricServiceBeispiel",
   "meta": {
     "profile": [
       "https://www.oegd.de/fhir/seu//StructureDefinition/SeuPediatricService"
@@ -18,6 +18,6 @@
     ]
   },
   "subject": {
-    "reference": "Patient/OegdSeuPerson-Example"
+    "reference": "Patient/OegdSeuPersonBeispiel"
   }
 }

@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "SeuUntersuchungExampleNutrition",
+  "id": "SeuUntersuchungBeispielMuskel",
   "meta": {
     "profile": [
       "https://www.oegd.de/fhir/seu//StructureDefinition/SeuUntersuchung"
@@ -21,23 +21,23 @@
   "code": {
     "coding": [
       {
-        "code": "87276001",
+        "code": "79984008",
         "system": "http://snomed.info/sct",
-        "display": "Nutritional Status"
+        "display": "Skeletal muscle system structure (body structure)"
       }
     ]
   },
   "valueCodeableConcept": {
     "coding": [
       {
-        "code": "A",
+        "code": "I",
         "system": "https://www.oegd.de/fhir/seu//CodeSystem/SeuUntersuchungsErgebnisCs",
-        "display": "Arztbrief"
+        "display": "In Ordnung"
       }
     ]
   },
   "subject": {
-    "reference": "Patient/OegdSeuPerson-Example"
+    "reference": "Patient/OegdSeuPersonBeispiel"
   },
   "effectiveDateTime": "2023-01-01"
 }

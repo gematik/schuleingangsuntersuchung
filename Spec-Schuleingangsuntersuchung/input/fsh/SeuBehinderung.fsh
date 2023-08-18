@@ -30,11 +30,11 @@ Title: "SEU Behinderungsart"
 Description: "Diese Codes enthalten alle Behinderungsarten"
 * include codes from system SeuBehinderungsTypCs
 
-Instance: SeuBehinderungExample
+Instance: SeuBehinderungBeispiel
 InstanceOf: SeuBehinderung
 Usage: #example
 * status = #final
 * valueCodeableConcept = SeuBehinderungsTypCs#K "Körperlich"
-* subject = Reference(OegdSeuPerson-Example)
+* subject = Reference(OegdSeuPersonBeispiel)
 * effectiveDateTime = "2023-01-01"
 * category = $observation-category#exam "Exam"

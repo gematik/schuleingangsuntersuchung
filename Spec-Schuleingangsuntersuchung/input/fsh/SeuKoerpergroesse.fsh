@@ -15,7 +15,7 @@ Id: SeuKoerpergroesse
 * valueQuantity.system MS
 * valueQuantity.code MS
 
-Instance: SeuKoerpergroesse-Example
+Instance: SeuKoerpergroesseBeispiel
 InstanceOf: SeuKoerpergroesse
 Usage: #example
 * meta.profile[0] = "http://hl7.org/fhir/StructureDefinition/bodyheight"
@@ -25,6 +25,6 @@ Usage: #example
 * code.coding[0] = $loinc#8302-2 "Body height"
 * code.coding[+] = $sct#50373000 "Body height measure"
 * code.text = "Körpergröße"
-* subject = Reference(OegdSeuPerson-Example)
+* subject = Reference(OegdSeuPersonBeispiel)
 * effectiveDateTime = "2023-01-01"
 * valueQuantity = 192 'cm' "centimeter"

@@ -1,18 +1,18 @@
 {
   "resourceType": "Observation",
-  "id": "SeuTestPlur-Example",
+  "id": "SeuTestPraepBeispiel",
   "meta": {
     "profile": [
-      "https://www.oegd.de/fhir/seu//StructureDefinition/SeuTestPlur"
+      "https://www.oegd.de/fhir/seu//StructureDefinition/SeuTestPraep"
     ]
   },
   "status": "final",
   "code": {
     "coding": [
       {
-        "code": "plur",
+        "code": "praep",
         "system": "https://www.oegd.de/fhir/seu//CodeSystem/SeuTestTypesCs",
-        "display": "SOPESS-Pluralbildung"
+        "display": "SOPESS-Präpositionen"
       }
     ]
   },
@@ -25,7 +25,7 @@
         "unit": "Punktwert"
       },
       "high": {
-        "value": 3,
+        "value": 4,
         "code": "1",
         "system": "http://unitsofmeasure.org",
         "unit": "Punktwert"
@@ -42,7 +42,7 @@
     },
     {
       "low": {
-        "value": 4,
+        "value": 5,
         "code": "1",
         "system": "http://unitsofmeasure.org",
         "unit": "Punktwert"
@@ -71,7 +71,7 @@
         "unit": "Punktwert"
       },
       "high": {
-        "value": 7,
+        "value": 8,
         "code": "1",
         "system": "http://unitsofmeasure.org",
         "unit": "Punktwert"
@@ -88,11 +88,11 @@
     }
   ],
   "subject": {
-    "reference": "Patient/OegdSeuPerson-Example"
+    "reference": "Patient/OegdSeuPersonBeispiel"
   },
   "effectiveDateTime": "2023-01-01",
   "valueQuantity": {
-    "value": 7,
+    "value": 5,
     "code": "1",
     "system": "http://unitsofmeasure.org",
     "unit": "Punktwert"

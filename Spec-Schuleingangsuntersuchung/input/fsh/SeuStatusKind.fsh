@@ -27,10 +27,10 @@ Title: "SEU Status Kind"
 Description: "Diese Codes enthalten die möglichen Status des Kindes"
 * include codes from system SeuStatusKindCs
 
-Instance: SeuStatusKindExample
+Instance: SeuStatusKindBeispiel
 InstanceOf: SeuStatusKind
 Usage: #example
 * status = #final
 * valueCodeableConcept = SeuStatusKindCs#regel "Regel"
-* subject = Reference(OegdSeuPerson-Example)
+* subject = Reference(OegdSeuPersonBeispiel)
 * effectiveDateTime = "2023-01-01"

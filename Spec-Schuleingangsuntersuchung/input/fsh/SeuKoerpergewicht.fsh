@@ -15,7 +15,7 @@ Id: SeuKoerpergewicht
 * valueQuantity.system MS
 * valueQuantity.code MS
 
-Instance: SeuKoerpergewicht-Example
+Instance: SeuKoerpergewichtBeispiel
 InstanceOf: SeuKoerpergewicht
 Usage: #example
 * meta.profile[0] = "http://hl7.org/fhir/StructureDefinition/bodyweight"
@@ -25,6 +25,6 @@ Usage: #example
 * code.coding[0] = $loinc#29463-7 "Body weight"
 * code.coding[+] = $sct#27113001 "Body weight"
 * code.text = "Körpergewicht"
-* subject = Reference(OegdSeuPerson-Example)
+* subject = Reference(OegdSeuPersonBeispiel)
 * effectiveDateTime = "2023-01-01"
 * valueQuantity = 81 'kg' "kilogram"

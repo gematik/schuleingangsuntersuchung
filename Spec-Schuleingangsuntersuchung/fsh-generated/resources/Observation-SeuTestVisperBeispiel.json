@@ -1,18 +1,18 @@
 {
   "resourceType": "Observation",
-  "id": "SeuTestVismot-Example",
+  "id": "SeuTestVisperBeispiel",
   "meta": {
     "profile": [
-      "https://www.oegd.de/fhir/seu//StructureDefinition/SeuTestVismot"
+      "https://www.oegd.de/fhir/seu//StructureDefinition/SeuTestVisper"
     ]
   },
   "status": "final",
   "code": {
     "coding": [
       {
-        "code": "vismot",
-        "system": "https://www.oegd.de/fhir/seu//CodeSystem/SeuTestTypesCs",
-        "display": "Visuomotorik"
+        "code": "311886005",
+        "system": "http://snomed.info/sct",
+        "display": "Visual perception, function"
       }
     ]
   },
@@ -25,7 +25,7 @@
         "unit": "Punktwert"
       },
       "high": {
-        "value": 4,
+        "value": 8,
         "code": "1",
         "system": "http://unitsofmeasure.org",
         "unit": "Punktwert"
@@ -42,13 +42,13 @@
     },
     {
       "low": {
-        "value": 5,
+        "value": 9,
         "code": "1",
         "system": "http://unitsofmeasure.org",
         "unit": "Punktwert"
       },
       "high": {
-        "value": 6,
+        "value": 10,
         "code": "1",
         "system": "http://unitsofmeasure.org",
         "unit": "Punktwert"
@@ -65,13 +65,13 @@
     },
     {
       "low": {
-        "value": 7,
+        "value": 11,
         "code": "1",
         "system": "http://unitsofmeasure.org",
         "unit": "Punktwert"
       },
       "high": {
-        "value": 12,
+        "value": 15,
         "code": "1",
         "system": "http://unitsofmeasure.org",
         "unit": "Punktwert"
@@ -88,11 +88,11 @@
     }
   ],
   "subject": {
-    "reference": "Patient/OegdSeuPerson-Example"
+    "reference": "Patient/OegdSeuPersonBeispiel"
   },
   "effectiveDateTime": "2023-01-01",
   "valueQuantity": {
-    "value": 6,
+    "value": 14,
     "code": "1",
     "system": "http://unitsofmeasure.org",
     "unit": "Punktwert"

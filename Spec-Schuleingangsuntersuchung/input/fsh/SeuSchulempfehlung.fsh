@@ -32,11 +32,11 @@ Id: SeuSchulempfehlungVs
 Title: "SEU Schulempfehlungen"
 * include codes from system SeuSchulempfehlungCs
 
-Instance: SeuSchulempfehlungExample
+Instance: SeuSchulempfehlungBeispiel
 InstanceOf: SeuSchulempfehlung
 Usage: #example
 * status = #final
 * category = $observation-category#exam "Exam"
 * valueCodeableConcept = SeuSchulempfehlungCs#nein "keine regelabweichende Schulempfehlung"
-* subject = Reference(OegdSeuPerson-Example)
+* subject = Reference(OegdSeuPersonBeispiel)
 * effectiveDateTime = "2023-01-01"

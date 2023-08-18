@@ -1,11 +1,11 @@
 {
   "resourceType": "Observation",
-  "id": "SeuKoerpergroesse-Example",
+  "id": "SeuKoerpergewichtBeispiel",
   "meta": {
     "profile": [
-      "https://www.oegd.de/fhir/seu//StructureDefinition/SeuKoerpergroesse",
-      "http://hl7.org/fhir/StructureDefinition/bodyheight",
-      "http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergroesse"
+      "https://www.oegd.de/fhir/seu//StructureDefinition/SeuKoerpergewicht",
+      "http://hl7.org/fhir/StructureDefinition/bodyweight",
+      "http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergewicht"
     ]
   },
   "category": [
@@ -20,28 +20,28 @@
   ],
   "valueQuantity": {
     "system": "http://unitsofmeasure.org",
-    "value": 192,
-    "code": "cm",
-    "unit": "centimeter"
+    "value": 81,
+    "code": "kg",
+    "unit": "kilogram"
   },
   "status": "final",
   "code": {
     "coding": [
       {
-        "code": "8302-2",
+        "code": "29463-7",
         "system": "http://loinc.org",
-        "display": "Body height"
+        "display": "Body weight"
       },
       {
-        "code": "50373000",
+        "code": "27113001",
         "system": "http://snomed.info/sct",
-        "display": "Body height measure"
+        "display": "Body weight"
       }
     ],
-    "text": "Körpergröße"
+    "text": "Körpergewicht"
   },
   "subject": {
-    "reference": "Patient/OegdSeuPerson-Example"
+    "reference": "Patient/OegdSeuPersonBeispiel"
   },
   "effectiveDateTime": "2023-01-01"
 }
