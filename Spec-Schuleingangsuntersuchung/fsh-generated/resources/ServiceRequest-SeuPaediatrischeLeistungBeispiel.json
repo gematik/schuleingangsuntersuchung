@@ -1,9 +1,9 @@
 {
   "resourceType": "ServiceRequest",
-  "id": "SeuPediatricServiceBeispiel",
+  "id": "SeuPaediatrischeLeistungBeispiel",
   "meta": {
     "profile": [
-      "https://www.oegd.de/fhir/seu//StructureDefinition/SeuPediatricService"
+      "https://www.oegd.de/fhir/seu//StructureDefinition/SeuPaediatrischeLeistung"
     ]
   },
   "status": "active",

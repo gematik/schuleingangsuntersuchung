@@ -2,10 +2,10 @@
   "resourceType": "CodeSystem",
   "status": "draft",
   "content": "complete",
-  "name": "SeuPediatricServiceCs",
-  "id": "SeuPediatricServiceCs",
+  "name": "SeuPaediatrischeLeistungCs",
+  "id": "SeuPaediatrischeLeistungCs",
   "title": "Sozialpädiatrische Leistungen",
-  "url": "https://www.oegd.de/fhir/seu//CodeSystem/SeuPediatricServiceCs",
+  "url": "https://www.oegd.de/fhir/seu//CodeSystem/SeuPaediatrischeLeistungCs",
   "concept": [
     {
       "code": "sonstige",

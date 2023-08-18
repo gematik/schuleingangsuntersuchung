@@ -1,8 +1,8 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "SeuPediatricService",
-  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/SeuPediatricService",
-  "name": "SeuPediatricService",
+  "id": "SeuPaediatrischeLeistung",
+  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/SeuPaediatrischeLeistung",
+  "name": "SeuPaediatrischeLeistung",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -57,7 +57,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.oegd.de/fhir/seu//ValueSet/SeuPediatricServiceVs"
+          "valueSet": "https://www.oegd.de/fhir/seu//ValueSet/SeuPaediatrischeLeistungVs"
         }
       },
       {

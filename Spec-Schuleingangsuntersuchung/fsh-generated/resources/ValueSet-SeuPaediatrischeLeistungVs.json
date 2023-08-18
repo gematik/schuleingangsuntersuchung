@@ -1,14 +1,14 @@
 {
   "resourceType": "ValueSet",
   "status": "draft",
-  "name": "SeuPediatricServiceVs",
-  "id": "SeuPediatricServiceVs",
+  "name": "SeuPaediatrischeLeistungVs",
+  "id": "SeuPaediatrischeLeistungVs",
   "title": "SEU Assessment Result",
-  "url": "https://www.oegd.de/fhir/seu//ValueSet/SeuPediatricServiceVs",
+  "url": "https://www.oegd.de/fhir/seu//ValueSet/SeuPaediatrischeLeistungVs",
   "compose": {
     "include": [
       {
-        "system": "https://www.oegd.de/fhir/seu//CodeSystem/SeuPediatricServiceCs"
+        "system": "https://www.oegd.de/fhir/seu//CodeSystem/SeuPaediatrischeLeistungCs"
       },
       {
         "system": "http://snomed.info/sct",
