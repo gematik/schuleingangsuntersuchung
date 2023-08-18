@@ -1,9 +1,9 @@
 {
   "resourceType": "Condition",
-  "id": "SeuChronicDisease-Example",
+  "id": "SeuChronischeKrankheit-Example",
   "meta": {
     "profile": [
-      "https://www.oegd.de/fhir/seu//StructureDefinition/SeuChronicDisease"
+      "https://www.oegd.de/fhir/seu//StructureDefinition/SeuChronischeKrankheit"
     ]
   },
   "code": {

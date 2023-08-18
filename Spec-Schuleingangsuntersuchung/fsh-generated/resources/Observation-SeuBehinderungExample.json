@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "SeuDisabilityExample",
+  "id": "SeuBehinderungExample",
   "meta": {
     "profile": [
-      "https://www.oegd.de/fhir/seu//StructureDefinition/SeuDisability"
+      "https://www.oegd.de/fhir/seu//StructureDefinition/SeuBehinderung"
     ]
   },
   "code": {
@@ -31,7 +31,7 @@
     "coding": [
       {
         "code": "K",
-        "system": "https://www.oegd.de/fhir/seu//CodeSystem/SeuDisabilityTypeCs",
+        "system": "https://www.oegd.de/fhir/seu//CodeSystem/SeuBehinderungTypeCs",
         "display": "Körperlich"
       }
     ]

@@ -1,8 +1,8 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "SeuDisability",
-  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/SeuDisability",
-  "name": "SeuDisability",
+  "id": "SeuBehinderung",
+  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/SeuBehinderung",
+  "name": "SeuBehinderung",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "mapping": [

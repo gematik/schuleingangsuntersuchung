@@ -1,8 +1,8 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "SeuChronicDisease",
-  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/SeuChronicDisease",
-  "name": "SeuChronicDisease",
+  "id": "SeuChronischeKrankheit",
+  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/SeuChronischeKrankheit",
+  "name": "SeuChronischeKrankheit",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "mapping": [

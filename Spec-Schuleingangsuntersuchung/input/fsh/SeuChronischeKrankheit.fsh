@@ -1,6 +1,6 @@
-Profile: SeuChronicDisease
+Profile: SeuChronischeKrankheit
 Parent: Condition
-Id: SeuChronicDisease
+Id: SeuChronischeKrankheit
 * clinicalStatus MS
 * clinicalStatus = http://terminology.hl7.org/CodeSystem/condition-clinical#active "Active"
 * category MS
@@ -9,8 +9,8 @@ Id: SeuChronicDisease
 * code.coding MS
 * subject MS
 
-Instance: SeuChronicDisease-Example
-InstanceOf: SeuChronicDisease
+Instance: SeuChronischeKrankheit-Example
+InstanceOf: SeuChronischeKrankheit
 Usage: #example
 * code = $sct#56265001 "Heart disease (disorder)"
 * subject = Reference(OegdSeuPerson-Example)
