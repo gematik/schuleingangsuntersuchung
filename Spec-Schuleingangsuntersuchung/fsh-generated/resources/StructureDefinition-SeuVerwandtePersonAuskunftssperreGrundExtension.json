@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "OegdSeuVerwandtePersonDatEndeExtension",
-  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuVerwandtePersonDatEndeExtension",
-  "name": "OegdSeuVerwandtePersonDatEndeExtension",
-  "title": "Verwandte Person DatEnde Extension",
+  "id": "SeuVerwandtePersonAuskunftssperreGrundExtension",
+  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/SeuVerwandtePersonAuskunftssperreGrundExtension",
+  "name": "SeuVerwandtePersonAuskunftssperreGrundExtension",
+  "title": "Verwandte Person Auskunftssperre Grund Extension",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -29,7 +29,7 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Verwandte Person DatEnde Extension"
+        "short": "Verwandte Person Auskunftssperre Grund Extension"
       },
       {
         "id": "Extension.extension",
@@ -39,14 +39,14 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuVerwandtePersonDatEndeExtension"
+        "fixedUri": "https://www.oegd.de/fhir/seu//StructureDefinition/SeuVerwandtePersonAuskunftssperreGrundExtension"
       },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
         "type": [
           {
-            "code": "dateTime"
+            "code": "string"
           }
         ]
       }

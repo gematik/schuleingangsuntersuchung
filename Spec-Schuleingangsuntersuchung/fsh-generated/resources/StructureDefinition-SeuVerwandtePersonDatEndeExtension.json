@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "OegdSeuVerwandtePersonDeutschkenntnisExtension",
-  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuVerwandtePersonDeutschkenntnisExtension",
-  "name": "OegdSeuVerwandtePersonDeutschkenntnisExtension",
-  "title": "Deutschkenntnisse",
+  "id": "SeuVerwandtePersonDatEndeExtension",
+  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/SeuVerwandtePersonDatEndeExtension",
+  "name": "SeuVerwandtePersonDatEndeExtension",
+  "title": "Verwandte Person DatEnde Extension",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -29,7 +29,7 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Deutschkenntnisse"
+        "short": "Verwandte Person DatEnde Extension"
       },
       {
         "id": "Extension.extension",
@@ -39,20 +39,16 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuVerwandtePersonDeutschkenntnisExtension"
+        "fixedUri": "https://www.oegd.de/fhir/seu//StructureDefinition/SeuVerwandtePersonDatEndeExtension"
       },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
         "type": [
           {
-            "code": "CodeableConcept"
+            "code": "dateTime"
           }
-        ],
-        "binding": {
-          "strength": "required",
-          "valueSet": "https://www.oegd.de/fhir/seu//ValueSet/SeuPersonDeutschkenntnisVs"
-        }
+        ]
       }
     ]
   }

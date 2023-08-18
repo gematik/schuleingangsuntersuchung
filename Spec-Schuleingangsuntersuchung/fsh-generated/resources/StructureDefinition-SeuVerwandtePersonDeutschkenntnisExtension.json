@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "OegdSeuVerwandtePersonAuskunftssperreFristExtension",
-  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuVerwandtePersonAuskunftssperreFristExtension",
-  "name": "OegdSeuVerwandtePersonAuskunftssperreFristExtension",
-  "title": "Verwandte Person Auskunftssperre Frist Extension",
+  "id": "SeuVerwandtePersonDeutschkenntnisExtension",
+  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/SeuVerwandtePersonDeutschkenntnisExtension",
+  "name": "SeuVerwandtePersonDeutschkenntnisExtension",
+  "title": "Deutschkenntnisse",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -29,7 +29,7 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Verwandte Person Auskunftssperre Frist Extension"
+        "short": "Deutschkenntnisse"
       },
       {
         "id": "Extension.extension",
@@ -39,16 +39,20 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuVerwandtePersonAuskunftssperreFristExtension"
+        "fixedUri": "https://www.oegd.de/fhir/seu//StructureDefinition/SeuVerwandtePersonDeutschkenntnisExtension"
       },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
         "type": [
           {
-            "code": "dateTime"
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.oegd.de/fhir/seu//ValueSet/SeuPersonDeutschkenntnisVs"
+        }
       }
     ]
   }

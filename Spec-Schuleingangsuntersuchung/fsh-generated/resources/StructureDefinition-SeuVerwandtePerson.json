@@ -1,8 +1,8 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "OegdSeuVerwandtePerson",
-  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuVerwandtePerson",
-  "name": "OegdSeuVerwandtePerson",
+  "id": "SeuVerwandtePerson",
+  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/SeuVerwandtePerson",
+  "name": "SeuVerwandtePerson",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -44,7 +44,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuVerwandtePersonDatEndeExtension"
+              "https://www.oegd.de/fhir/seu//StructureDefinition/SeuVerwandtePersonDatEndeExtension"
             ]
           }
         ]
@@ -59,7 +59,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuVerwandtePersonAuskunftssperreGrundExtension"
+              "https://www.oegd.de/fhir/seu//StructureDefinition/SeuVerwandtePersonAuskunftssperreGrundExtension"
             ]
           }
         ]
@@ -74,7 +74,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuVerwandtePersonAuskunftssperreFristExtension"
+              "https://www.oegd.de/fhir/seu//StructureDefinition/SeuVerwandtePersonAuskunftssperreFristExtension"
             ]
           }
         ]
@@ -362,7 +362,7 @@
             "severity": "warning",
             "human": "The content of the country element (if present) SHALL be selected EITHER from ValueSet ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2 OR MAY be selected from ISO Country Alpha-3 Value Set http://hl7.org/fhir/ValueSet/iso3166-1-3, IF the country is not specified in value Set ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2.",
             "expression": "country.empty() or (country.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-2') or country.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-3'))",
-            "source": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuVerwandtePerson"
+            "source": "https://www.oegd.de/fhir/seu//StructureDefinition/SeuVerwandtePerson"
           }
         ],
         "mustSupport": true
@@ -444,7 +444,7 @@
             "severity": "warning",
             "human": "The content of the country element (if present) SHALL be selected EITHER from ValueSet ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2 OR MAY be selected from ISO Country Alpha-3 Value Set http://hl7.org/fhir/ValueSet/iso3166-1-3, IF the country is not specified in value Set ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2.",
             "expression": "country.empty() or (country.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-2') or country.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-3'))",
-            "source": "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuVerwandtePerson"
+            "source": "https://www.oegd.de/fhir/seu//StructureDefinition/SeuVerwandtePerson"
           }
         ],
         "mustSupport": true
@@ -493,7 +493,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.oegd.de/fhir/seu//StructureDefinition/OegdSeuVerwandtePersonDeutschkenntnisExtension"
+              "https://www.oegd.de/fhir/seu//StructureDefinition/SeuVerwandtePersonDeutschkenntnisExtension"
             ]
           }
         ],

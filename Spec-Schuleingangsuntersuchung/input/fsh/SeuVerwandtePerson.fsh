@@ -1,6 +1,6 @@
-Profile: OegdSeuVerwandtePerson
+Profile: SeuVerwandtePerson
 Parent: RelatedPerson
-Id: OegdSeuVerwandtePerson
+Id: SeuVerwandtePerson
 * patient 1..1 MS
   * reference 1..
 * name MS
@@ -65,9 +65,9 @@ Id: OegdSeuVerwandtePerson
   * extension contains OegdSeuWohnungsInhaberExtension named wohnungsinhaber 0..1 MS
 * extension 0..* MS
 * extension contains 
-  OegdSeuVerwandtePersonDatEndeExtension named DatEnde 0..1 and 
-  OegdSeuVerwandtePersonAuskunftssperreGrundExtension named AuskunftssperreGrund 0..1 and
-  OegdSeuVerwandtePersonAuskunftssperreFristExtension named AuskunftssperreFrist 0..1
+  SeuVerwandtePersonDatEndeExtension named DatEnde 0..1 and 
+  SeuVerwandtePersonAuskunftssperreGrundExtension named AuskunftssperreGrund 0..1 and
+  SeuVerwandtePersonAuskunftssperreFristExtension named AuskunftssperreFrist 0..1
 * communication MS
   * language MS
   * ^slicing.discriminator.type = #pattern
@@ -76,30 +76,30 @@ Id: OegdSeuVerwandtePerson
 * communication contains deutsch 1..1 MS
 * communication[deutsch].language = urn:ietf:bcp:47#de "German"
 * communication[deutsch].extension 1..* MS
-* communication[deutsch].extension contains OegdSeuVerwandtePersonDeutschkenntnisExtension named deutschkenntnis 1..1 MS
+* communication[deutsch].extension contains SeuVerwandtePersonDeutschkenntnisExtension named deutschkenntnis 1..1 MS
 
-Extension: OegdSeuVerwandtePersonDatEndeExtension
-Id: OegdSeuVerwandtePersonDatEndeExtension
+Extension: SeuVerwandtePersonDatEndeExtension
+Id: SeuVerwandtePersonDatEndeExtension
 Title:  "Verwandte Person DatEnde Extension"
 * value[x] only dateTime
 
-Extension: OegdSeuVerwandtePersonAuskunftssperreGrundExtension
-Id: OegdSeuVerwandtePersonAuskunftssperreGrundExtension
+Extension: SeuVerwandtePersonAuskunftssperreGrundExtension
+Id: SeuVerwandtePersonAuskunftssperreGrundExtension
 Title:  "Verwandte Person Auskunftssperre Grund Extension"
 * value[x] only string
 
-Extension: OegdSeuVerwandtePersonAuskunftssperreFristExtension
-Id: OegdSeuVerwandtePersonAuskunftssperreFristExtension
+Extension: SeuVerwandtePersonAuskunftssperreFristExtension
+Id: SeuVerwandtePersonAuskunftssperreFristExtension
 Title:  "Verwandte Person Auskunftssperre Frist Extension"
 * value[x] only dateTime
 
-Extension: OegdSeuVerwandtePersonDeutschkenntnisExtension
-Id: OegdSeuVerwandtePersonDeutschkenntnisExtension
+Extension: SeuVerwandtePersonDeutschkenntnisExtension
+Id: SeuVerwandtePersonDeutschkenntnisExtension
 Title:  "Deutschkenntnisse"
 * value[x] only CodeableConcept
 * valueCodeableConcept from SeuPersonDeutschkenntnisVs
 
-// Instance: OegdSeuVerwandtePerson-Example
-// InstanceOf: OegdSeuVerwandtePerson
+// Instance: SeuVerwandtePerson-Example
+// InstanceOf: SeuVerwandtePerson
 // Usage: #example
 // TODO Create example
