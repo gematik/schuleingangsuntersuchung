@@ -132,7 +132,7 @@ Extension: OegdSeuPersonMigrationshintergrundExtension
 Id: OegdSeuPersonMigrationshintergrundExtension
 Title:  "Migrationshintergrund"
 * value[x] only CodeableConcept
-* valueCodeableConcept from SeuPersonRaceVs
+* valueCodeableConcept from SeuPersonEthnieVs
 
 Extension: OegdSeuPersonDeutschkenntnisExtension
 Id: OegdSeuPersonDeutschkenntnisExtension
@@ -144,7 +144,7 @@ Instance: OegdSeuPerson-Example
 InstanceOf: OegdSeuPerson
 Usage: #example
 * extension[SperreBundeswehr].valueBoolean = true
-* extension[Migrationshintergrund].valueCodeableConcept = SeuPersonRaceCs#2 "GUS/Osteuropa"
+* extension[Migrationshintergrund].valueCodeableConcept = SeuPersonEthnieCs#2 "GUS/Osteuropa"
 * identifier[SteuerId].type = https://www.oegd.de/fhir/seu/#tax-id
 * identifier[SteuerId].system = "https://www.oegd.de/fhir/seu/"
 * identifier[SteuerId].value = "2398423874"

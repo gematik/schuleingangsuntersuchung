@@ -1,5 +1,5 @@
-CodeSystem:  SeuPersonRaceCs
-Id: SeuPersonRaceCs
+CodeSystem:  SeuPersonEthnieCs
+Id: SeuPersonEthnieCs
 Title: "SEU Sprachlich-ethnischer Familienhintergrund"
 * #0 "Deutschland"
 * #1 "Türkei"
@@ -12,10 +12,10 @@ Title: "SEU Sprachlich-ethnischer Familienhintergrund"
 * #8 "Lateinamerika" 
 * #9 "Sonstige Staaten (Nordamerika, Australien, usw)"
 
-ValueSet: SeuPersonRaceVs
-Id: SeuPersonRaceVs
+ValueSet: SeuPersonEthnieVs
+Id: SeuPersonEthnieVs
 Title: "SEU Sprachlich-ethnischer Familienhintergrund"
-* include codes from system SeuPersonRaceCs
+* include codes from system SeuPersonEthnieCs
 
 CodeSystem:  SeuPersonDeutschkenntnisCs
 Id: SeuPersonDeutschkenntnisCs
