@@ -1,0 +1,100 @@
+{
+  "resourceType": "Observation",
+  "id": "SeuTestSelaufm-Example",
+  "meta": {
+    "profile": [
+      "https://www.oegd.de/fhir/seu//StructureDefinition/SeuTestSelaufm"
+    ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "selaufm",
+        "system": "https://www.oegd.de/fhir/seu//CodeSystem/SeuTestTypesCs",
+        "display": "SOPESS- Selektive-Aufmerksamkeit"
+      }
+    ]
+  },
+  "referenceRange": [
+    {
+      "low": {
+        "value": 0,
+        "code": "1",
+        "system": "http://unitsofmeasure.org",
+        "unit": "Punktwert"
+      },
+      "high": {
+        "value": 10,
+        "code": "1",
+        "system": "http://unitsofmeasure.org",
+        "unit": "Punktwert"
+      },
+      "type": {
+        "coding": [
+          {
+            "code": "263654008",
+            "system": "http://snomed.info/sct",
+            "display": "Abnormal (qualifier value)"
+          }
+        ]
+      }
+    },
+    {
+      "low": {
+        "value": 11,
+        "code": "1",
+        "system": "http://unitsofmeasure.org",
+        "unit": "Punktwert"
+      },
+      "high": {
+        "value": 13,
+        "code": "1",
+        "system": "http://unitsofmeasure.org",
+        "unit": "Punktwert"
+      },
+      "type": {
+        "coding": [
+          {
+            "code": "17621005",
+            "system": "http://snomed.info/sct",
+            "display": "Borderline (qualifier value)"
+          }
+        ]
+      }
+    },
+    {
+      "low": {
+        "value": 14,
+        "code": "1",
+        "system": "http://unitsofmeasure.org",
+        "unit": "Punktwert"
+      },
+      "high": {
+        "value": 29,
+        "code": "1",
+        "system": "http://unitsofmeasure.org",
+        "unit": "Punktwert"
+      },
+      "type": {
+        "coding": [
+          {
+            "code": "263654008",
+            "system": "http://snomed.info/sct",
+            "display": "Normal (qualifier value)"
+          }
+        ]
+      }
+    }
+  ],
+  "subject": {
+    "reference": "Patient/OegdSeuPerson-Example"
+  },
+  "effectiveDateTime": "2023-01-01",
+  "valueQuantity": {
+    "value": 28,
+    "code": "1",
+    "system": "http://unitsofmeasure.org",
+    "unit": "Punktwert"
+  }
+}

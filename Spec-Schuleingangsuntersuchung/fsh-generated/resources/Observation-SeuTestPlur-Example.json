@@ -1,0 +1,100 @@
+{
+  "resourceType": "Observation",
+  "id": "SeuTestPlur-Example",
+  "meta": {
+    "profile": [
+      "https://www.oegd.de/fhir/seu//StructureDefinition/SeuTestPlur"
+    ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "plur",
+        "system": "https://www.oegd.de/fhir/seu//CodeSystem/SeuTestTypesCs",
+        "display": "SOPESS-Pluralbildung"
+      }
+    ]
+  },
+  "referenceRange": [
+    {
+      "low": {
+        "value": 0,
+        "code": "1",
+        "system": "http://unitsofmeasure.org",
+        "unit": "Punktwert"
+      },
+      "high": {
+        "value": 3,
+        "code": "1",
+        "system": "http://unitsofmeasure.org",
+        "unit": "Punktwert"
+      },
+      "type": {
+        "coding": [
+          {
+            "code": "263654008",
+            "system": "http://snomed.info/sct",
+            "display": "Abnormal (qualifier value)"
+          }
+        ]
+      }
+    },
+    {
+      "low": {
+        "value": 4,
+        "code": "1",
+        "system": "http://unitsofmeasure.org",
+        "unit": "Punktwert"
+      },
+      "high": {
+        "value": 5,
+        "code": "1",
+        "system": "http://unitsofmeasure.org",
+        "unit": "Punktwert"
+      },
+      "type": {
+        "coding": [
+          {
+            "code": "17621005",
+            "system": "http://snomed.info/sct",
+            "display": "Borderline (qualifier value)"
+          }
+        ]
+      }
+    },
+    {
+      "low": {
+        "value": 6,
+        "code": "1",
+        "system": "http://unitsofmeasure.org",
+        "unit": "Punktwert"
+      },
+      "high": {
+        "value": 7,
+        "code": "1",
+        "system": "http://unitsofmeasure.org",
+        "unit": "Punktwert"
+      },
+      "type": {
+        "coding": [
+          {
+            "code": "263654008",
+            "system": "http://snomed.info/sct",
+            "display": "Normal (qualifier value)"
+          }
+        ]
+      }
+    }
+  ],
+  "subject": {
+    "reference": "Patient/OegdSeuPerson-Example"
+  },
+  "effectiveDateTime": "2023-01-01",
+  "valueQuantity": {
+    "value": 7,
+    "code": "1",
+    "system": "http://unitsofmeasure.org",
+    "unit": "Punktwert"
+  }
+}

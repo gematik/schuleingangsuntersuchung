@@ -105,7 +105,7 @@
         "coding": [
           {
             "code": "2",
-            "system": "https://www.oegd.de/fhir/seu//CodeSystem/SeuPersonRaceCs",
+            "system": "https://www.oegd.de/fhir/seu//CodeSystem/SeuPersonEthnieCs",
             "display": "GUS/Osteuropa"
           }
         ]

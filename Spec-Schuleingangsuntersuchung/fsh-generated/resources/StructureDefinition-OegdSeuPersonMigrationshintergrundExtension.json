@@ -51,7 +51,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.oegd.de/fhir/seu//ValueSet/SeuPersonRaceVs"
+          "valueSet": "https://www.oegd.de/fhir/seu//ValueSet/SeuPersonEthnieVs"
         }
       }
     ]
