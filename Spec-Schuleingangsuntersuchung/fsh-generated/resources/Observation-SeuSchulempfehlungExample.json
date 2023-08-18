@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "SeuSchoolRecommendationExampleNutrition",
+  "id": "SeuSchulempfehlungExample",
   "meta": {
     "profile": [
-      "https://www.oegd.de/fhir/seu//StructureDefinition/SeuSchoolRecommendation"
+      "https://www.oegd.de/fhir/seu//StructureDefinition/SeuSchulempfehlung"
     ]
   },
   "code": {
@@ -31,7 +31,7 @@
     "coding": [
       {
         "code": "nein",
-        "system": "https://www.oegd.de/fhir/seu//CodeSystem/SeuSchoolRecommendationCs",
+        "system": "https://www.oegd.de/fhir/seu//CodeSystem/SeuSchulempfehlungCs",
         "display": "keine regelabweichende Schulempfehlung"
       }
     ]

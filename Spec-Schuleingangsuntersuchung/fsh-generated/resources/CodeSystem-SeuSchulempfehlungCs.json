@@ -2,10 +2,10 @@
   "resourceType": "CodeSystem",
   "status": "draft",
   "content": "complete",
-  "name": "SeuSchoolRecommendationCs",
-  "id": "SeuSchoolRecommendationCs",
+  "name": "SeuSchulempfehlungCs",
+  "id": "SeuSchulempfehlungCs",
   "title": "SEU Schulempfehlungen",
-  "url": "https://www.oegd.de/fhir/seu//CodeSystem/SeuSchoolRecommendationCs",
+  "url": "https://www.oegd.de/fhir/seu//CodeSystem/SeuSchulempfehlungCs",
   "concept": [
     {
       "code": "nein",

@@ -1,6 +1,6 @@
-Profile: SeuSchoolRecommendation
+Profile: SeuSchulempfehlung
 Parent: Observation
-Id: SeuSchoolRecommendation
+Id: SeuSchulempfehlung
 * status MS
 * category MS
 * category = $observation-category#exam "Exam"
@@ -10,14 +10,14 @@ Id: SeuSchoolRecommendation
 * subject MS
 * effective[x] MS
 * value[x] only CodeableConcept
-* valueCodeableConcept from SeuSchoolRecommendationVs
+* valueCodeableConcept from SeuSchulempfehlungVs
 * valueCodeableConcept MS
 * valueCodeableConcept.coding MS
 * valueCodeableConcept.coding.code MS
 * valueCodeableConcept.coding.system MS
 
-CodeSystem:  SeuSchoolRecommendationCs
-Id: SeuSchoolRecommendationCs
+CodeSystem:  SeuSchulempfehlungCs
+Id: SeuSchulempfehlungCs
 Title: "SEU Schulempfehlungen"
 * #nein "keine regelabweichende Schulempfehlung"
 * #zurk "Zurückstellung Regelkind"
@@ -27,16 +27,16 @@ Title: "SEU Schulempfehlungen"
 * #zukk "Zurückstellung Kannkind"
 * #sopf "Sonderpädagogische Förderung"
 
-ValueSet: SeuSchoolRecommendationVs
-Id: SeuSchoolRecommendationVs
+ValueSet: SeuSchulempfehlungVs
+Id: SeuSchulempfehlungVs
 Title: "SEU Schulempfehlungen"
-* include codes from system SeuSchoolRecommendationCs
+* include codes from system SeuSchulempfehlungCs
 
-Instance: SeuSchoolRecommendationExampleNutrition
-InstanceOf: SeuSchoolRecommendation
+Instance: SeuSchulempfehlungExample
+InstanceOf: SeuSchulempfehlung
 Usage: #example
 * status = #final
 * category = $observation-category#exam "Exam"
-* valueCodeableConcept = SeuSchoolRecommendationCs#nein "keine regelabweichende Schulempfehlung"
+* valueCodeableConcept = SeuSchulempfehlungCs#nein "keine regelabweichende Schulempfehlung"
 * subject = Reference(OegdSeuPerson-Example)
 * effectiveDateTime = "2023-01-01"

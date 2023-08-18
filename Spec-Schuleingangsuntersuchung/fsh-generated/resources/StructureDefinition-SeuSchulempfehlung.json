@@ -1,8 +1,8 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "SeuSchoolRecommendation",
-  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/SeuSchoolRecommendation",
-  "name": "SeuSchoolRecommendation",
+  "id": "SeuSchulempfehlung",
+  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/SeuSchulempfehlung",
+  "name": "SeuSchulempfehlung",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -103,7 +103,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.oegd.de/fhir/seu//ValueSet/SeuSchoolRecommendationVs"
+          "valueSet": "https://www.oegd.de/fhir/seu//ValueSet/SeuSchulempfehlungVs"
         }
       },
       {
