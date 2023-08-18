@@ -58,7 +58,8 @@ Id: SeuVerwandtePerson
     * extension[Adresszusatz] 0..1 MS
     * extension[Postfach] 0..0
   * city 1.. MS
-    * extension contains $ags named gemeindeschluessel 0..1 MS
+    * extension contains $ags named gemeindeschluessel 0..1 MS and 
+      SeuFruehererGemeindeNameExtension named frueherergemeindename 0..1 MS
   * postalCode 1.. MS
   * country 1.. MS
     * obeys address-cnt-2or3-char

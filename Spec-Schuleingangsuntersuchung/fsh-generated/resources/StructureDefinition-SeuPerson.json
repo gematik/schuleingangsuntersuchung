@@ -512,6 +512,22 @@
         "mustSupport": true
       },
       {
+        "id": "Patient.address:Strassenanschrift.city.extension:frueherergemeindename",
+        "path": "Patient.address.city.extension",
+        "sliceName": "frueherergemeindename",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.oegd.de/fhir/seu//StructureDefinition/SeuFruehererGemeindeNameExtension"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "Patient.address:Strassenanschrift.postalCode",
         "path": "Patient.address.postalCode",
         "min": 1,

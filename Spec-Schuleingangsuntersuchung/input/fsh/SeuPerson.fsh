@@ -68,7 +68,7 @@ Id: SeuPerson
     * extension[Adresszusatz] 0..1 MS
     * extension[Postfach] 0..0
   * city 1.. MS
-    * extension contains $ags named gemeindeschluessel 0..1 MS
+    * extension contains http://fhir.de/StructureDefinition/destatis/ags named gemeindeschluessel 0..1 MS and SeuFruehererGemeindeNameExtension named frueherergemeindename 0..1 MS
   * postalCode 1.. MS
   * country 1.. MS
     * obeys address-cnt-2or3-char
@@ -176,6 +176,8 @@ Usage: #example
 * address[Strassenanschrift].line[+].extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator"
 * address[Strassenanschrift].line[=].extension.valueString = "3. Etage"
 * address[Strassenanschrift].city = "Musterhausen"
+* address[Strassenanschrift].city.extension[+].url = "https://www.oegd.de/fhir/seu//StructureDefinition/SeuFruehererGemeindeNameExtension"
+* address[Strassenanschrift].city.extension[=].valueString = "Altes Musterhausen"
 * address[Strassenanschrift].city.extension[+].url = $ags
 * address[Strassenanschrift].city.extension[=].valueString = "03 2 54 021"
 * address[Strassenanschrift].postalCode = "98764"

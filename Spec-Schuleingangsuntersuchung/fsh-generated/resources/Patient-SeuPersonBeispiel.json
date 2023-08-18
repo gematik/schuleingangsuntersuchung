@@ -165,6 +165,10 @@
       "_city": {
         "extension": [
           {
+            "url": "https://www.oegd.de/fhir/seu//StructureDefinition/SeuFruehererGemeindeNameExtension",
+            "valueString": "Altes Musterhausen"
+          },
+          {
             "url": "http://fhir.de/StructureDefinition/destatis/ags",
             "valueString": "03 2 54 021"
           }

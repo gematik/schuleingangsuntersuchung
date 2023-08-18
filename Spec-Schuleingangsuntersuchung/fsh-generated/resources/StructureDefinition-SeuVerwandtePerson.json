@@ -347,6 +347,22 @@
         "mustSupport": true
       },
       {
+        "id": "RelatedPerson.address:Strassenanschrift.city.extension:frueherergemeindename",
+        "path": "RelatedPerson.address.city.extension",
+        "sliceName": "frueherergemeindename",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.oegd.de/fhir/seu//StructureDefinition/SeuFruehererGemeindeNameExtension"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "RelatedPerson.address:Strassenanschrift.postalCode",
         "path": "RelatedPerson.address.postalCode",
         "min": 1,
