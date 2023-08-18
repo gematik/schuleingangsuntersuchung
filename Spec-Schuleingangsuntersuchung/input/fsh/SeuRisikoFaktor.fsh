@@ -1,6 +1,6 @@
-Profile: SeuRiskFactor
+Profile: SeuRisikofaktor
 Parent: Observation
-Id: SeuRiskFactor
+Id: SeuRisikofaktor
 * status MS
 * category MS
 * category = $observation-category#social-history "Social History"
@@ -10,14 +10,14 @@ Id: SeuRiskFactor
 * subject MS
 * effective[x] MS
 * value[x] only CodeableConcept
-* valueCodeableConcept from SeuRiskFactorVs
+* valueCodeableConcept from SeuRisikofaktorVs
 * valueCodeableConcept MS
 * valueCodeableConcept.coding MS
 * valueCodeableConcept.coding.code MS
 * valueCodeableConcept.coding.system MS
 
-CodeSystem:  SeuRiskFactorCs
-Id: SeuRiskFactorCs
+CodeSystem:  SeuRisikofaktorCs
+Id: SeuRisikofaktorCs
 Title: "SEU Risikofaktoren"
 * #familie "Familie"
 * #nonkompliance "Nonkompliance"
@@ -25,16 +25,16 @@ Title: "SEU Risikofaktoren"
 * #migration "Migration"
 * #sonstiges "Sonstiges Risiko"
 
-ValueSet: SeuRiskFactorVs
-Id: SeuRiskFactorVs
+ValueSet: SeuRisikofaktorVs
+Id: SeuRisikofaktorVs
 Title: "SEU Risikofaktoren"
-* include codes from system SeuRiskFactorCs
+* include codes from system SeuRisikofaktorCs
 
-Instance: SeuRiskFactorExampleNutrition
-InstanceOf: SeuRiskFactor
+Instance: SeuRisikofaktorExample
+InstanceOf: SeuRisikofaktor
 Usage: #example
 * status = #final
 * category = $observation-category#social-history "Social History"
-* valueCodeableConcept = SeuRiskFactorCs#familie "Familie"
+* valueCodeableConcept = SeuRisikofaktorCs#familie "Familie"
 * subject = Reference(OegdSeuPerson-Example)
 * effectiveDateTime = "2023-01-01"

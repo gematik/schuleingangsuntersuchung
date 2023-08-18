@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "SeuRiskFactorExampleNutrition",
+  "id": "SeuRisikofaktorExample",
   "meta": {
     "profile": [
-      "https://www.oegd.de/fhir/seu//StructureDefinition/SeuRiskFactor"
+      "https://www.oegd.de/fhir/seu//StructureDefinition/SeuRisikofaktor"
     ]
   },
   "code": {
@@ -31,7 +31,7 @@
     "coding": [
       {
         "code": "familie",
-        "system": "https://www.oegd.de/fhir/seu//CodeSystem/SeuRiskFactorCs",
+        "system": "https://www.oegd.de/fhir/seu//CodeSystem/SeuRisikofaktorCs",
         "display": "Familie"
       }
     ]

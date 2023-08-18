@@ -2,10 +2,10 @@
   "resourceType": "CodeSystem",
   "status": "draft",
   "content": "complete",
-  "name": "SeuRiskFactorCs",
-  "id": "SeuRiskFactorCs",
+  "name": "SeuRisikofaktorCs",
+  "id": "SeuRisikofaktorCs",
   "title": "SEU Risikofaktoren",
-  "url": "https://www.oegd.de/fhir/seu//CodeSystem/SeuRiskFactorCs",
+  "url": "https://www.oegd.de/fhir/seu//CodeSystem/SeuRisikofaktorCs",
   "concept": [
     {
       "code": "familie",
