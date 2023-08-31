@@ -59,16 +59,16 @@ Id: VerwandtePerson
     * extension[Postfach] 0..0
   * city 1.. MS
     * extension contains $ags named gemeindeschluessel 0..1 MS and 
-      FruehererGemeindeNameExtension named frueherergemeindename 0..1 MS
+      FruehererGemeindeNameEX named frueherergemeindename 0..1 MS
   * postalCode 1.. MS
   * country 1.. MS
     * obeys address-cnt-2or3-char
-  * extension contains WohnungsInhaberExtension named wohnungsinhaber 0..1 MS
+  * extension contains WohnungsInhaberEX named wohnungsinhaber 0..1 MS
 * extension 0..* MS
 * extension contains 
-  VerwandtePersonDatEndeExtension named DatEnde 0..1 and 
-  VerwandtePersonAuskunftssperreGrundExtension named AuskunftssperreGrund 0..1 and
-  VerwandtePersonAuskunftssperreFristExtension named AuskunftssperreFrist 0..1
+  VerwandtePersonDatEndeEX named DatEnde 0..1 and 
+  VerwandtePersonAuskunftssperreGrundEX named AuskunftssperreGrund 0..1 and
+  VerwandtePersonAuskunftssperreFristEX named AuskunftssperreFrist 0..1
 * communication MS
   * language MS
   * ^slicing.discriminator.type = #pattern
@@ -77,25 +77,25 @@ Id: VerwandtePerson
 * communication contains deutsch 1..1 MS
 * communication[deutsch].language = urn:ietf:bcp:47#de "German"
 * communication[deutsch].extension 1..* MS
-* communication[deutsch].extension contains VerwandtePersonDeutschkenntnisExtension named deutschkenntnis 1..1 MS
+* communication[deutsch].extension contains VerwandtePersonDeutschkenntnisEX named deutschkenntnis 1..1 MS
 
-Extension: VerwandtePersonDatEndeExtension
-Id: VerwandtePersonDatEndeExtension
-Title:  "Verwandte Person DatEnde Extension"
+Extension: VerwandtePersonDatEndeEX
+Id: VerwandtePersonDatEndeEX
+Title:  "Verwandte Person DatEnde EX"
 * value[x] only dateTime
 
-Extension: VerwandtePersonAuskunftssperreGrundExtension
-Id: VerwandtePersonAuskunftssperreGrundExtension
+Extension: VerwandtePersonAuskunftssperreGrundEX
+Id: VerwandtePersonAuskunftssperreGrundEX
 Title:  "Verwandte Person Auskunftssperre Grund Extension"
 * value[x] only string
 
-Extension: VerwandtePersonAuskunftssperreFristExtension
-Id: VerwandtePersonAuskunftssperreFristExtension
+Extension: VerwandtePersonAuskunftssperreFristEX
+Id: VerwandtePersonAuskunftssperreFristEX
 Title:  "Verwandte Person Auskunftssperre Frist Extension"
 * value[x] only dateTime
 
-Extension: VerwandtePersonDeutschkenntnisExtension
-Id: VerwandtePersonDeutschkenntnisExtension
+Extension: VerwandtePersonDeutschkenntnisEX
+Id: VerwandtePersonDeutschkenntnisEX
 Title:  "Deutschkenntnisse"
 * value[x] only CodeableConcept
 * valueCodeableConcept from PersonDeutschkenntnisVS
@@ -103,8 +103,8 @@ Title:  "Deutschkenntnisse"
 Instance: VerwandtePersonBeispiel
 InstanceOf: VerwandtePerson
 Usage: #example
-* extension[VerwandtePersonAuskunftssperreGrundExtension].valueString = "Schwerwiegender Grund"
-* extension[VerwandtePersonAuskunftssperreFristExtension].valueDateTime = "2024-01-01"
+* extension[VerwandtePersonAuskunftssperreGrundEX].valueString = "Schwerwiegender Grund"
+* extension[VerwandtePersonAuskunftssperreFristEX].valueDateTime = "2024-01-01"
 * name[Name].use = #official
 * name[Name].family = "Gräfin von Musterfrau"
   * extension[0].url = "http://fhir.de/StructureDefinition/humanname-namenszusatz"

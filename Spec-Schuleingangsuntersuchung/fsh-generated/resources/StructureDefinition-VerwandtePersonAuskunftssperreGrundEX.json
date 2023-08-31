@@ -1,11 +1,10 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "PersonUebermittlungsssperreReligionExtension",
-  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/PersonUebermittlungsssperreReligionExtension",
-  "name": "PersonUebermittlungsssperreReligionExtension",
-  "title": "Übermittlungssperre Religion",
+  "id": "VerwandtePersonAuskunftssperreGrundEX",
+  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/VerwandtePersonAuskunftssperreGrundEX",
+  "name": "VerwandtePersonAuskunftssperreGrundEX",
+  "title": "Verwandte Person Auskunftssperre Grund Extension",
   "status": "draft",
-  "description": "Datenübermittlungen an öffentlich-rechtliche Religionsgemeinschaften",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -30,8 +29,7 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Übermittlungssperre Religion",
-        "definition": "Datenübermittlungen an öffentlich-rechtliche Religionsgemeinschaften"
+        "short": "Verwandte Person Auskunftssperre Grund Extension"
       },
       {
         "id": "Extension.extension",
@@ -41,14 +39,14 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.oegd.de/fhir/seu//StructureDefinition/PersonUebermittlungsssperreReligionExtension"
+        "fixedUri": "https://www.oegd.de/fhir/seu//StructureDefinition/VerwandtePersonAuskunftssperreGrundEX"
       },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
         "type": [
           {
-            "code": "boolean"
+            "code": "string"
           }
         ]
       }

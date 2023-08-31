@@ -68,20 +68,20 @@ Id: Person
     * extension[Adresszusatz] 0..1 MS
     * extension[Postfach] 0..0
   * city 1.. MS
-    * extension contains http://fhir.de/StructureDefinition/destatis/ags named gemeindeschluessel 0..1 MS and FruehererGemeindeNameExtension named frueherergemeindename 0..1 MS
+    * extension contains http://fhir.de/StructureDefinition/destatis/ags named gemeindeschluessel 0..1 MS and FruehererGemeindeNameEX named frueherergemeindename 0..1 MS
   * postalCode 1.. MS
   * country 1.. MS
     * obeys address-cnt-2or3-char
-  * extension contains WohnungsInhaberExtension named wohnungsinhaber 0..1 MS
+  * extension contains WohnungsInhaberEX named wohnungsinhaber 0..1 MS
 * extension contains 
     http://hl7.org/fhir/StructureDefinition/patient-birthPlace named Geburtsort 0..1 MS and 
     http://hl7.org/fhir/StructureDefinition/patient-nationality named Staatsangehoerigkeit 0.. MS and 
-    PersonUebermittlungsssperreReligionExtension named SperreReligion 0..1 MS and 
-    PersonUebermittlungsssperrePolitikExtension named SperrePolitik 0..1 MS and
-    PersonUebermittlungsssperreJubilaenExtension named SperreJubilaen 0..1 MS and
-    PersonUebermittlungsssperreAdressbuchExtension named SperreAddressbuch 0..1 MS and
-    PersonUebermittlungsssperreBundeswehrExtension named SperreBundeswehr 0..1 MS and
-    PersonMigrationshintergrundExtension named Migrationshintergrund 0..1 MS
+    PersonUebermittlungsssperreReligionEX named SperreReligion 0..1 MS and 
+    PersonUebermittlungsssperrePolitikEX named SperrePolitik 0..1 MS and
+    PersonUebermittlungsssperreJubilaenEX named SperreJubilaen 0..1 MS and
+    PersonUebermittlungsssperreAdressbuchEX named SperreAddressbuch 0..1 MS and
+    PersonUebermittlungsssperreBundeswehrEX named SperreBundeswehr 0..1 MS and
+    PersonMigrationshintergrundEX named Migrationshintergrund 0..1 MS
 * gender 1.. MS
   * extension contains GenderOtherDE named Geschlecht-Administrativ 0..1 MS
 * deceased[x] only dateTime
@@ -95,47 +95,47 @@ Id: Person
 * communication contains deutsch 1..1 MS and erstsprache 1..1 MS
 * communication[deutsch].language = urn:ietf:bcp:47#de "German"
 * communication[deutsch].extension 1..* MS
-* communication[deutsch].extension contains PersonDeutschkenntnisExtension named deutschkenntnis 1..1 MS
+* communication[deutsch].extension contains PersonDeutschkenntnisEX named deutschkenntnis 1..1 MS
 * communication[erstsprache].preferred = true
 
-Extension: PersonUebermittlungsssperreReligionExtension
-Id: PersonUebermittlungsssperreReligionExtension
+Extension: PersonUebermittlungsssperreReligionEX
+Id: PersonUebermittlungsssperreReligionEX
 Title:  "Übermittlungssperre Religion"
 Description: "Datenübermittlungen an öffentlich-rechtliche Religionsgemeinschaften"
 * value[x] only boolean
 
-Extension: PersonUebermittlungsssperrePolitikExtension
-Id: PersonUebermittlungsssperrePolitikExtension
+Extension: PersonUebermittlungsssperrePolitikEX
+Id: PersonUebermittlungsssperrePolitikEX
 Title:  "Übermittlungssperre Politik"
 Description: "Auskünfte an Parteien, Wählergruppen und andere Träger von Wahlvorschlägen"
 * value[x] only boolean
 
-Extension: PersonUebermittlungsssperreJubilaenExtension
-Id: PersonUebermittlungsssperreJubilaenExtension
+Extension: PersonUebermittlungsssperreJubilaenEX
+Id: PersonUebermittlungsssperreJubilaenEX
 Title:  "Übermittlungssperre Jubilaen"
 Description: "Auskünfte über Alters- und Ehejubiläen"
 * value[x] only boolean
 
-Extension: PersonUebermittlungsssperreAdressbuchExtension
-Id: PersonUebermittlungsssperreAdressbuchExtension
+Extension: PersonUebermittlungsssperreAdressbuchEX
+Id: PersonUebermittlungsssperreAdressbuchEX
 Title:  "Übermittlungssperre Adressbuch"
 Description: "Auskünfte an Adressbuchverlage"
 * value[x] only boolean
 
-Extension: PersonUebermittlungsssperreBundeswehrExtension
-Id: PersonUebermittlungsssperreBundeswehrExtension
+Extension: PersonUebermittlungsssperreBundeswehrEX
+Id: PersonUebermittlungsssperreBundeswehrEX
 Title:  "Übermittlungssperre Bundeswehr"
 Description: "Datenübermittlung an das Bundesamt für Personalmanagement der Bundeswehr"
 * value[x] only boolean
 
-Extension: PersonMigrationshintergrundExtension
-Id: PersonMigrationshintergrundExtension
+Extension: PersonMigrationshintergrundEX
+Id: PersonMigrationshintergrundEX
 Title:  "Migrationshintergrund"
 * value[x] only CodeableConcept
 * valueCodeableConcept from PersonEthnieVS
 
-Extension: PersonDeutschkenntnisExtension
-Id: PersonDeutschkenntnisExtension
+Extension: PersonDeutschkenntnisEX
+Id: PersonDeutschkenntnisEX
 Title:  "Deutschkenntnisse"
 * value[x] only CodeableConcept
 * valueCodeableConcept from PersonDeutschkenntnisVS
@@ -176,7 +176,7 @@ Usage: #example
 * address[Strassenanschrift].line[+].extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator"
 * address[Strassenanschrift].line[=].extension.valueString = "3. Etage"
 * address[Strassenanschrift].city = "Musterhausen"
-* address[Strassenanschrift].city.extension[+].url = "https://www.oegd.de/fhir/seu//StructureDefinition/FruehererGemeindeNameExtension"
+* address[Strassenanschrift].city.extension[+].url = "https://www.oegd.de/fhir/seu//StructureDefinition/FruehererGemeindeNameEX"
 * address[Strassenanschrift].city.extension[=].valueString = "Altes Musterhausen"
 * address[Strassenanschrift].city.extension[+].url = $ags
 * address[Strassenanschrift].city.extension[=].valueString = "03 2 54 021"

@@ -81,7 +81,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.oegd.de/fhir/seu//StructureDefinition/PersonUebermittlungsssperreReligionExtension"
+              "https://www.oegd.de/fhir/seu//StructureDefinition/PersonUebermittlungsssperreReligionEX"
             ]
           }
         ],
@@ -97,7 +97,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.oegd.de/fhir/seu//StructureDefinition/PersonUebermittlungsssperrePolitikExtension"
+              "https://www.oegd.de/fhir/seu//StructureDefinition/PersonUebermittlungsssperrePolitikEX"
             ]
           }
         ],
@@ -113,7 +113,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.oegd.de/fhir/seu//StructureDefinition/PersonUebermittlungsssperreJubilaenExtension"
+              "https://www.oegd.de/fhir/seu//StructureDefinition/PersonUebermittlungsssperreJubilaenEX"
             ]
           }
         ],
@@ -129,7 +129,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.oegd.de/fhir/seu//StructureDefinition/PersonUebermittlungsssperreAdressbuchExtension"
+              "https://www.oegd.de/fhir/seu//StructureDefinition/PersonUebermittlungsssperreAdressbuchEX"
             ]
           }
         ],
@@ -145,7 +145,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.oegd.de/fhir/seu//StructureDefinition/PersonUebermittlungsssperreBundeswehrExtension"
+              "https://www.oegd.de/fhir/seu//StructureDefinition/PersonUebermittlungsssperreBundeswehrEX"
             ]
           }
         ],
@@ -161,7 +161,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.oegd.de/fhir/seu//StructureDefinition/PersonMigrationshintergrundExtension"
+              "https://www.oegd.de/fhir/seu//StructureDefinition/PersonMigrationshintergrundEX"
             ]
           }
         ],
@@ -447,7 +447,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.oegd.de/fhir/seu//StructureDefinition/WohnungsInhaberExtension"
+              "https://www.oegd.de/fhir/seu//StructureDefinition/WohnungsInhaberEX"
             ]
           }
         ],
@@ -521,7 +521,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.oegd.de/fhir/seu//StructureDefinition/FruehererGemeindeNameExtension"
+              "https://www.oegd.de/fhir/seu//StructureDefinition/FruehererGemeindeNameEX"
             ]
           }
         ],
@@ -679,7 +679,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.oegd.de/fhir/seu//StructureDefinition/PersonDeutschkenntnisExtension"
+              "https://www.oegd.de/fhir/seu//StructureDefinition/PersonDeutschkenntnisEX"
             ]
           }
         ],

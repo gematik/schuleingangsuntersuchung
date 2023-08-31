@@ -44,7 +44,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.oegd.de/fhir/seu//StructureDefinition/VerwandtePersonDatEndeExtension"
+              "https://www.oegd.de/fhir/seu//StructureDefinition/VerwandtePersonDatEndeEX"
             ]
           }
         ]
@@ -59,7 +59,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.oegd.de/fhir/seu//StructureDefinition/VerwandtePersonAuskunftssperreGrundExtension"
+              "https://www.oegd.de/fhir/seu//StructureDefinition/VerwandtePersonAuskunftssperreGrundEX"
             ]
           }
         ]
@@ -74,7 +74,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.oegd.de/fhir/seu//StructureDefinition/VerwandtePersonAuskunftssperreFristExtension"
+              "https://www.oegd.de/fhir/seu//StructureDefinition/VerwandtePersonAuskunftssperreFristEX"
             ]
           }
         ]
@@ -282,7 +282,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.oegd.de/fhir/seu//StructureDefinition/WohnungsInhaberExtension"
+              "https://www.oegd.de/fhir/seu//StructureDefinition/WohnungsInhaberEX"
             ]
           }
         ],
@@ -356,7 +356,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.oegd.de/fhir/seu//StructureDefinition/FruehererGemeindeNameExtension"
+              "https://www.oegd.de/fhir/seu//StructureDefinition/FruehererGemeindeNameEX"
             ]
           }
         ],
@@ -509,7 +509,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.oegd.de/fhir/seu//StructureDefinition/VerwandtePersonDeutschkenntnisExtension"
+              "https://www.oegd.de/fhir/seu//StructureDefinition/VerwandtePersonDeutschkenntnisEX"
             ]
           }
         ],

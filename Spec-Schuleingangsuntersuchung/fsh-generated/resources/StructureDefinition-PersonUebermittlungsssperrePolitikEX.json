@@ -1,11 +1,11 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "PersonUebermittlungsssperreJubilaenExtension",
-  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/PersonUebermittlungsssperreJubilaenExtension",
-  "name": "PersonUebermittlungsssperreJubilaenExtension",
-  "title": "Übermittlungssperre Jubilaen",
+  "id": "PersonUebermittlungsssperrePolitikEX",
+  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/PersonUebermittlungsssperrePolitikEX",
+  "name": "PersonUebermittlungsssperrePolitikEX",
+  "title": "Übermittlungssperre Politik",
   "status": "draft",
-  "description": "Auskünfte über Alters- und Ehejubiläen",
+  "description": "Auskünfte an Parteien, Wählergruppen und andere Träger von Wahlvorschlägen",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -30,8 +30,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Übermittlungssperre Jubilaen",
-        "definition": "Auskünfte über Alters- und Ehejubiläen"
+        "short": "Übermittlungssperre Politik",
+        "definition": "Auskünfte an Parteien, Wählergruppen und andere Träger von Wahlvorschlägen"
       },
       {
         "id": "Extension.extension",
@@ -41,7 +41,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.oegd.de/fhir/seu//StructureDefinition/PersonUebermittlungsssperreJubilaenExtension"
+        "fixedUri": "https://www.oegd.de/fhir/seu//StructureDefinition/PersonUebermittlungsssperrePolitikEX"
       },
       {
         "id": "Extension.value[x]",

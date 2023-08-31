@@ -1,10 +1,11 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "VerwandtePersonAuskunftssperreFristExtension",
-  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/VerwandtePersonAuskunftssperreFristExtension",
-  "name": "VerwandtePersonAuskunftssperreFristExtension",
-  "title": "Verwandte Person Auskunftssperre Frist Extension",
+  "id": "WohnungsInhaberEX",
+  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/WohnungsInhaberEX",
+  "name": "WohnungsInhaberEX",
+  "title": "Wohnungsinhaber Extension",
   "status": "draft",
+  "description": "Angabe des Wohnungsinhabers",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -29,7 +30,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Verwandte Person Auskunftssperre Frist Extension"
+        "short": "Wohnungsinhaber Extension",
+        "definition": "Angabe des Wohnungsinhabers"
       },
       {
         "id": "Extension.extension",
@@ -39,14 +41,14 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.oegd.de/fhir/seu//StructureDefinition/VerwandtePersonAuskunftssperreFristExtension"
+        "fixedUri": "https://www.oegd.de/fhir/seu//StructureDefinition/WohnungsInhaberEX"
       },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
         "type": [
           {
-            "code": "dateTime"
+            "code": "string"
           }
         ]
       }

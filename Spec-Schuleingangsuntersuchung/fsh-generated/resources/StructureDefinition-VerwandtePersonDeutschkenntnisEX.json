@@ -1,11 +1,10 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "PersonUebermittlungsssperrePolitikExtension",
-  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/PersonUebermittlungsssperrePolitikExtension",
-  "name": "PersonUebermittlungsssperrePolitikExtension",
-  "title": "Übermittlungssperre Politik",
+  "id": "VerwandtePersonDeutschkenntnisEX",
+  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/VerwandtePersonDeutschkenntnisEX",
+  "name": "VerwandtePersonDeutschkenntnisEX",
+  "title": "Deutschkenntnisse",
   "status": "draft",
-  "description": "Auskünfte an Parteien, Wählergruppen und andere Träger von Wahlvorschlägen",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -30,8 +29,7 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Übermittlungssperre Politik",
-        "definition": "Auskünfte an Parteien, Wählergruppen und andere Träger von Wahlvorschlägen"
+        "short": "Deutschkenntnisse"
       },
       {
         "id": "Extension.extension",
@@ -41,16 +39,20 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.oegd.de/fhir/seu//StructureDefinition/PersonUebermittlungsssperrePolitikExtension"
+        "fixedUri": "https://www.oegd.de/fhir/seu//StructureDefinition/VerwandtePersonDeutschkenntnisEX"
       },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
         "type": [
           {
-            "code": "boolean"
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.oegd.de/fhir/seu//ValueSet/PersonDeutschkenntnisVS"
+        }
       }
     ]
   }

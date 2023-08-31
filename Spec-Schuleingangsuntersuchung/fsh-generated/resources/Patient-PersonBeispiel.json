@@ -69,7 +69,7 @@
       },
       "extension": [
         {
-          "url": "https://www.oegd.de/fhir/seu//StructureDefinition/PersonDeutschkenntnisExtension",
+          "url": "https://www.oegd.de/fhir/seu//StructureDefinition/PersonDeutschkenntnisEX",
           "valueCodeableConcept": {
             "coding": [
               {
@@ -96,11 +96,11 @@
   ],
   "extension": [
     {
-      "url": "https://www.oegd.de/fhir/seu//StructureDefinition/PersonUebermittlungsssperreBundeswehrExtension",
+      "url": "https://www.oegd.de/fhir/seu//StructureDefinition/PersonUebermittlungsssperreBundeswehrEX",
       "valueBoolean": true
     },
     {
-      "url": "https://www.oegd.de/fhir/seu//StructureDefinition/PersonMigrationshintergrundExtension",
+      "url": "https://www.oegd.de/fhir/seu//StructureDefinition/PersonMigrationshintergrundEX",
       "valueCodeableConcept": {
         "coding": [
           {
@@ -131,7 +131,7 @@
       "type": "both",
       "extension": [
         {
-          "url": "https://www.oegd.de/fhir/seu//StructureDefinition/WohnungsInhaberExtension",
+          "url": "https://www.oegd.de/fhir/seu//StructureDefinition/WohnungsInhaberEX",
           "valueString": "Erika Gabler"
         }
       ],
@@ -165,7 +165,7 @@
       "_city": {
         "extension": [
           {
-            "url": "https://www.oegd.de/fhir/seu//StructureDefinition/FruehererGemeindeNameExtension",
+            "url": "https://www.oegd.de/fhir/seu//StructureDefinition/FruehererGemeindeNameEX",
             "valueString": "Altes Musterhausen"
           },
           {

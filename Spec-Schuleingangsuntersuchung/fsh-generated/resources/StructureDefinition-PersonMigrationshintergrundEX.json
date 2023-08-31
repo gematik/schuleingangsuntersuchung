@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "VerwandtePersonDatEndeExtension",
-  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/VerwandtePersonDatEndeExtension",
-  "name": "VerwandtePersonDatEndeExtension",
-  "title": "Verwandte Person DatEnde Extension",
+  "id": "PersonMigrationshintergrundEX",
+  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/PersonMigrationshintergrundEX",
+  "name": "PersonMigrationshintergrundEX",
+  "title": "Migrationshintergrund",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -29,7 +29,7 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Verwandte Person DatEnde Extension"
+        "short": "Migrationshintergrund"
       },
       {
         "id": "Extension.extension",
@@ -39,16 +39,20 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.oegd.de/fhir/seu//StructureDefinition/VerwandtePersonDatEndeExtension"
+        "fixedUri": "https://www.oegd.de/fhir/seu//StructureDefinition/PersonMigrationshintergrundEX"
       },
       {
         "id": "Extension.value[x]",
         "path": "Extension.value[x]",
         "type": [
           {
-            "code": "dateTime"
+            "code": "CodeableConcept"
           }
-        ]
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.oegd.de/fhir/seu//ValueSet/PersonEthnieVS"
+        }
       }
     ]
   }
