@@ -6,7 +6,7 @@ Id: Test
 * category MS
 * category = $observation-category#exam "Exam"
 * code MS
-* code from TestTypesVs
+* code from TestTypesVS
 * code.coding MS
 * subject MS
 * encounter MS
@@ -17,7 +17,7 @@ Id: Test
 * referenceRange ^slicing.rules = #open
 * referenceRange MS
 * referenceRange.type 1..1 MS
-* referenceRange.type from ReferenceRangeTypeVs
+* referenceRange.type from ReferenceRangeTypeVS
 * referenceRange contains abnormal 1..1 MS and 
     borderline 1..1 MS and 
     normal 1..1 MS
@@ -31,8 +31,8 @@ Id: Test
 * referenceRange[normal].low 1..1 MS
 * referenceRange[normal].high 1..1 MS
 
-CodeSystem:  TestTypesCs
-Id: TestTypesCs
+CodeSystem:  TestTypesCS
+Id: TestTypesCS
 Title: "SEU Point Assessment Types"
 * #koord "Regelstufe"
 * #vismot "Visuomotorik"
@@ -44,15 +44,15 @@ Title: "SEU Point Assessment Types"
 * #selaufm "SOPESS- Selektive-Aufmerksamkeit"
 * #dys "Anzahl auffälliger Laut/Stammfehler"
 
-ValueSet: TestTypesVs
-Id: TestTypesVs
+ValueSet: TestTypesVS
+Id: TestTypesVS
 Title: "SEU Status Kind"
 Description: "Diese Codes enthalten die möglichen SEU Point Assessment Types"
-* include codes from system TestTypesCs
+* include codes from system TestTypesCS
 * $sct#311886005 "Visual perception, function"
 
-ValueSet: ReferenceRangeTypeVs
-Id: ReferenceRangeTypeVs
+ValueSet: ReferenceRangeTypeVS
+Id: ReferenceRangeTypeVS
 Title: "SEU Point Assessment Reference Range"
 * $sct#17621005 "Normal (qualifier value)"
 * $sct#371932001 "Borderline normal (qualifier value)"

@@ -57,7 +57,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.oegd.de/fhir/seu//ValueSet/PaediatrischeLeistungVs"
+          "valueSet": "https://www.oegd.de/fhir/seu//ValueSet/PaediatrischeLeistungVS"
         }
       },
       {

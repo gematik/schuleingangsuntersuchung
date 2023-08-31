@@ -2,10 +2,10 @@
   "resourceType": "CodeSystem",
   "status": "draft",
   "content": "complete",
-  "name": "StatusKindCs",
-  "id": "StatusKindCs",
+  "name": "StatusKindCS",
+  "id": "StatusKindCS",
   "title": "SEU Status Kind",
-  "url": "https://www.oegd.de/fhir/seu//CodeSystem/StatusKindCs",
+  "url": "https://www.oegd.de/fhir/seu//CodeSystem/StatusKindCS",
   "concept": [
     {
       "code": "regel",

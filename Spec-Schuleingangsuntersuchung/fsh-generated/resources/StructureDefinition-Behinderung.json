@@ -103,7 +103,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.oegd.de/fhir/seu//ValueSet/BehinderungsTypVs"
+          "valueSet": "https://www.oegd.de/fhir/seu//ValueSet/BehinderungsTypVS"
         }
       },
       {

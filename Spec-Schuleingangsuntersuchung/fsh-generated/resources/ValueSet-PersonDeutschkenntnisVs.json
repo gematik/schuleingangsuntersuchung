@@ -1,14 +1,14 @@
 {
   "resourceType": "ValueSet",
   "status": "draft",
-  "name": "PersonDeutschkenntnisVs",
-  "id": "PersonDeutschkenntnisVs",
+  "name": "PersonDeutschkenntnisVS",
+  "id": "PersonDeutschkenntnisVS",
   "title": "Deutschkenntnis",
-  "url": "https://www.oegd.de/fhir/seu//ValueSet/PersonDeutschkenntnisVs",
+  "url": "https://www.oegd.de/fhir/seu//ValueSet/PersonDeutschkenntnisVS",
   "compose": {
     "include": [
       {
-        "system": "https://www.oegd.de/fhir/seu//CodeSystem/PersonDeutschkenntnisCs"
+        "system": "https://www.oegd.de/fhir/seu//CodeSystem/PersonDeutschkenntnisCS"
       }
     ]
   }

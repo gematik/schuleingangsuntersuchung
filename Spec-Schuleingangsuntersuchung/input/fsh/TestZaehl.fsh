@@ -1,7 +1,7 @@
 Profile: TestZaehl
 Parent: Test
 Id: TestZaehl
-* code = TestTypesCs#zaehl "SOPESS-Zahlen und Mengenwissen"
+* code = TestTypesCS#zaehl "SOPESS-Zahlen und Mengenwissen"
 * referenceRange[abnormal].low = 0 '1' "Punktwert"
 * referenceRange[abnormal].high = 12 '1' "Punktwert"
 * referenceRange[borderline].low = 13 '1' "Punktwert"

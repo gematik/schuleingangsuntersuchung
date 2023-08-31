@@ -9,28 +9,28 @@ Id: StatusKind
 * effective[x] MS
 * value[x] only CodeableConcept
 * valueCodeableConcept MS
-* valueCodeableConcept from StatusKindVs
+* valueCodeableConcept from StatusKindVS
 * valueCodeableConcept.coding MS
 * valueCodeableConcept.coding.code MS
 * valueCodeableConcept.coding.system MS
 
-CodeSystem:  StatusKindCs
-Id: StatusKindCs
+CodeSystem:  StatusKindCS
+Id: StatusKindCS
 Title: "SEU Status Kind"
 * #regel "Regelstufe"
 * #kann "Kannstufe"
 * #eingangsstufe "Eingangsstufe"
 
-ValueSet: StatusKindVs
-Id: StatusKindVs
+ValueSet: StatusKindVS
+Id: StatusKindVS
 Title: "SEU Status Kind"
 Description: "Diese Codes enthalten die möglichen Status des Kindes"
-* include codes from system StatusKindCs
+* include codes from system StatusKindCS
 
 Instance: StatusKindBeispiel
 InstanceOf: StatusKind
 Usage: #example
 * status = #final
-* valueCodeableConcept = StatusKindCs#regel "Regel"
+* valueCodeableConcept = StatusKindCS#regel "Regel"
 * subject = Reference(PersonBeispiel)
 * effectiveDateTime = "2023-01-01"

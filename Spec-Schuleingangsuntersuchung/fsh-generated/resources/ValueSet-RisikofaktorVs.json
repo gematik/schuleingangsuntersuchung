@@ -1,14 +1,14 @@
 {
   "resourceType": "ValueSet",
   "status": "draft",
-  "name": "RisikofaktorVs",
-  "id": "RisikofaktorVs",
+  "name": "RisikofaktorVS",
+  "id": "RisikofaktorVS",
   "title": "SEU Risikofaktoren",
-  "url": "https://www.oegd.de/fhir/seu//ValueSet/RisikofaktorVs",
+  "url": "https://www.oegd.de/fhir/seu//ValueSet/RisikofaktorVS",
   "compose": {
     "include": [
       {
-        "system": "https://www.oegd.de/fhir/seu//CodeSystem/RisikofaktorCs"
+        "system": "https://www.oegd.de/fhir/seu//CodeSystem/RisikofaktorCS"
       }
     ]
   }

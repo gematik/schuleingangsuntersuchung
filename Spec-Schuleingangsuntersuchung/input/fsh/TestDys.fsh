@@ -1,7 +1,7 @@
 Profile: TestDys
 Parent: Test
 Id: TestDys
-* code = TestTypesCs#dys "Anzahl auffälliger Laut/Stammfehler"
+* code = TestTypesCS#dys "Anzahl auffälliger Laut/Stammfehler"
 * referenceRange.low = 0 '1' "Punktwert"
 * referenceRange.high = 10 '1' "Punktwert"
 

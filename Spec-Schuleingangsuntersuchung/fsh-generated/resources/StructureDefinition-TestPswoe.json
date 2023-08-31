@@ -51,7 +51,7 @@
           "coding": [
             {
               "code": "pswoe",
-              "system": "https://www.oegd.de/fhir/seu//CodeSystem/TestTypesCs",
+              "system": "https://www.oegd.de/fhir/seu//CodeSystem/TestTypesCS",
               "display": "Sprachkompetenz und audit. Invormationsverarbeitung"
             }
           ]

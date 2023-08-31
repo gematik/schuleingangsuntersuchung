@@ -2,10 +2,10 @@
   "resourceType": "CodeSystem",
   "status": "draft",
   "content": "complete",
-  "name": "PersonEthnieCs",
-  "id": "PersonEthnieCs",
+  "name": "PersonEthnieCS",
+  "id": "PersonEthnieCS",
   "title": "SEU Sprachlich-ethnischer Familienhintergrund",
-  "url": "https://www.oegd.de/fhir/seu//CodeSystem/PersonEthnieCs",
+  "url": "https://www.oegd.de/fhir/seu//CodeSystem/PersonEthnieCS",
   "concept": [
     {
       "code": "0",

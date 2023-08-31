@@ -70,7 +70,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.oegd.de/fhir/seu//ValueSet/TestTypesVs"
+          "valueSet": "https://www.oegd.de/fhir/seu//ValueSet/TestTypesVS"
         }
       },
       {
@@ -124,7 +124,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.oegd.de/fhir/seu//ValueSet/ReferenceRangeTypeVs"
+          "valueSet": "https://www.oegd.de/fhir/seu//ValueSet/ReferenceRangeTypeVS"
         }
       },
       {

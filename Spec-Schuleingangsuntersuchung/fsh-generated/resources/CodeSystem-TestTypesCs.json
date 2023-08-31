@@ -2,10 +2,10 @@
   "resourceType": "CodeSystem",
   "status": "draft",
   "content": "complete",
-  "name": "TestTypesCs",
-  "id": "TestTypesCs",
+  "name": "TestTypesCS",
+  "id": "TestTypesCS",
   "title": "SEU Point Assessment Types",
-  "url": "https://www.oegd.de/fhir/seu//CodeSystem/TestTypesCs",
+  "url": "https://www.oegd.de/fhir/seu//CodeSystem/TestTypesCS",
   "concept": [
     {
       "code": "koord",

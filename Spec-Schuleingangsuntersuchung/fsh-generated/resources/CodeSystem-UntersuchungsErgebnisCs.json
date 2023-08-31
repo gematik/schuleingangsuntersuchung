@@ -2,10 +2,10 @@
   "resourceType": "CodeSystem",
   "status": "draft",
   "content": "complete",
-  "name": "UntersuchungsErgebnisCs",
-  "id": "UntersuchungsErgebnisCs",
+  "name": "UntersuchungsErgebnisCS",
+  "id": "UntersuchungsErgebnisCS",
   "title": "SEU Untersuchungsergebnis",
-  "url": "https://www.oegd.de/fhir/seu//CodeSystem/UntersuchungsErgebnisCs",
+  "url": "https://www.oegd.de/fhir/seu//CodeSystem/UntersuchungsErgebnisCS",
   "concept": [
     {
       "code": "I",

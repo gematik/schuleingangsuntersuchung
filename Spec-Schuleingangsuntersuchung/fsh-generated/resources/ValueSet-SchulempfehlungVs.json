@@ -1,14 +1,14 @@
 {
   "resourceType": "ValueSet",
   "status": "draft",
-  "name": "SchulempfehlungVs",
-  "id": "SchulempfehlungVs",
+  "name": "SchulempfehlungVS",
+  "id": "SchulempfehlungVS",
   "title": "SEU Schulempfehlungen",
-  "url": "https://www.oegd.de/fhir/seu//ValueSet/SchulempfehlungVs",
+  "url": "https://www.oegd.de/fhir/seu//ValueSet/SchulempfehlungVS",
   "compose": {
     "include": [
       {
-        "system": "https://www.oegd.de/fhir/seu//CodeSystem/SchulempfehlungCs"
+        "system": "https://www.oegd.de/fhir/seu//CodeSystem/SchulempfehlungCS"
       }
     ]
   }

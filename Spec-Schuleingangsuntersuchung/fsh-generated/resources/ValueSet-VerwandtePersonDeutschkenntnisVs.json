@@ -1,14 +1,14 @@
 {
   "resourceType": "ValueSet",
   "status": "draft",
-  "name": "VerwandtePersonDeutschkenntnisVs",
-  "id": "VerwandtePersonDeutschkenntnisVs",
+  "name": "VerwandtePersonDeutschkenntnisVS",
+  "id": "VerwandtePersonDeutschkenntnisVS",
   "title": "Deutschkenntnis",
-  "url": "https://www.oegd.de/fhir/seu//ValueSet/VerwandtePersonDeutschkenntnisVs",
+  "url": "https://www.oegd.de/fhir/seu//ValueSet/VerwandtePersonDeutschkenntnisVS",
   "compose": {
     "include": [
       {
-        "system": "https://www.oegd.de/fhir/seu//CodeSystem/VerwandtePersonDeutschkenntnisCs"
+        "system": "https://www.oegd.de/fhir/seu//CodeSystem/VerwandtePersonDeutschkenntnisCS"
       }
     ]
   }

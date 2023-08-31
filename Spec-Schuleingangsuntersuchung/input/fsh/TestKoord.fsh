@@ -1,7 +1,7 @@
 Profile: TestKoord
 Parent: Test
 Id: TestKoord
-* code = TestTypesCs#koord "Regelstufe"
+* code = TestTypesCS#koord "Regelstufe"
 * referenceRange[abnormal].low = 0 '1' "Punktwert"
 * referenceRange[abnormal].high = 6 '1' "Punktwert"
 * referenceRange[borderline].low = 7 '1' "Punktwert"

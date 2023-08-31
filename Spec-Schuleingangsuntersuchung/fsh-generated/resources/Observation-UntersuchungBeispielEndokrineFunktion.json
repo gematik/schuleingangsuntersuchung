@@ -31,7 +31,7 @@
     "coding": [
       {
         "code": "G",
-        "system": "https://www.oegd.de/fhir/seu//CodeSystem/UntersuchungsErgebnisCs",
+        "system": "https://www.oegd.de/fhir/seu//CodeSystem/UntersuchungsErgebnisCS",
         "display": "Grenzwertig"
       }
     ]

@@ -51,7 +51,7 @@
           "coding": [
             {
               "code": "koord",
-              "system": "https://www.oegd.de/fhir/seu//CodeSystem/TestTypesCs",
+              "system": "https://www.oegd.de/fhir/seu//CodeSystem/TestTypesCS",
               "display": "Regelstufe"
             }
           ]

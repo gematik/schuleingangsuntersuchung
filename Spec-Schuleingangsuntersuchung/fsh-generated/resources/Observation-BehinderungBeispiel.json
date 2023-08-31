@@ -31,7 +31,7 @@
     "coding": [
       {
         "code": "K",
-        "system": "https://www.oegd.de/fhir/seu//CodeSystem/BehinderungsTypCs",
+        "system": "https://www.oegd.de/fhir/seu//CodeSystem/BehinderungsTypCS",
         "display": "Körperlich"
       }
     ]

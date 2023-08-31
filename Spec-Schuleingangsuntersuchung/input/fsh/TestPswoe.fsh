@@ -1,7 +1,7 @@
 Profile: TestPswoe
 Parent: Test
 Id: TestPswoe
-* code = TestTypesCs#pswoe "Sprachkompetenz und audit. Invormationsverarbeitung"
+* code = TestTypesCS#pswoe "Sprachkompetenz und audit. Invormationsverarbeitung"
 * referenceRange[abnormal].low = 0 '1' "Punktwert"
 * referenceRange[abnormal].high = 3 '1' "Punktwert"
 * referenceRange[borderline].low = 4 '1' "Punktwert"

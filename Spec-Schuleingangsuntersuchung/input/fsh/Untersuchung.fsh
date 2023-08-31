@@ -5,19 +5,19 @@ Id: Untersuchung
 * category MS
 * category = $observation-category#exam "Exam"
 * code MS
-* code from UntersuchungsArtVs
+* code from UntersuchungsArtVS
 * code.coding MS
 * subject MS
 * effective[x] MS
 * value[x] only CodeableConcept
 * valueCodeableConcept MS
-* valueCodeableConcept from UntersuchungsErgebnisVs
+* valueCodeableConcept from UntersuchungsErgebnisVS
 * valueCodeableConcept.coding MS
 * valueCodeableConcept.coding.code MS
 * valueCodeableConcept.coding.system MS
 
-CodeSystem:  UntersuchungsErgebnisCs
-Id: UntersuchungsErgebnisCs
+CodeSystem:  UntersuchungsErgebnisCS
+Id: UntersuchungsErgebnisCS
 Title: "SEU Untersuchungsergebnis"
 * #I "In Ordnung"
 * #B "Behandelt"
@@ -25,14 +25,14 @@ Title: "SEU Untersuchungsergebnis"
 * #G "Grenzwertig"
 * #U "Unbekannt"
 
-ValueSet: UntersuchungsErgebnisVs
-Id: UntersuchungsErgebnisVs
+ValueSet: UntersuchungsErgebnisVS
+Id: UntersuchungsErgebnisVS
 Title: "SEU Untersuchungsergebnis"
 Description: "Diese Codes enthalten die möglichen Ergebnisse einer Untersuchung"
-* include codes from system UntersuchungsErgebnisCs
+* include codes from system UntersuchungsErgebnisCS
 
-ValueSet: UntersuchungsArtVs
-Id: UntersuchungsArtVs
+ValueSet: UntersuchungsArtVS
+Id: UntersuchungsArtVS
 Title: "SEU Assessment Type"
 Description: "Dieses ValueSet enthält die Untersuchungsarten"
 * $sct#87276001 "Nutritional status"
@@ -61,7 +61,7 @@ Usage: #example
 * status = #final
 * category = $observation-category#exam "Exam"
 * code = $sct#87276001 "Nutritional Status"
-* valueCodeableConcept = UntersuchungsErgebnisCs#A "Arztbrief"
+* valueCodeableConcept = UntersuchungsErgebnisCS#A "Arztbrief"
 * subject = Reference(PersonBeispiel)
 * effectiveDateTime = "2023-01-01"
 
@@ -71,7 +71,7 @@ Usage: #example
 * status = #final
 * category = $observation-category#exam "Exam"
 * code = $sct#79984008 "Skeletal muscle system structure (body structure)"
-* valueCodeableConcept = UntersuchungsErgebnisCs#I "In Ordnung"
+* valueCodeableConcept = UntersuchungsErgebnisCS#I "In Ordnung"
 * subject = Reference(PersonBeispiel)
 * effectiveDateTime = "2023-01-01"
 
@@ -81,7 +81,7 @@ Usage: #example
 * status = #final
 * category = $observation-category#exam "Exam"
 * code = $sct#394591006 "Neurological Status"
-* valueCodeableConcept = UntersuchungsErgebnisCs#I "In Ordnung"
+* valueCodeableConcept = UntersuchungsErgebnisCS#I "In Ordnung"
 * subject = Reference(PersonBeispiel)
 * effectiveDateTime = "2023-01-01"
 
@@ -91,7 +91,7 @@ Usage: #example
 * status = #final
 * category = $observation-category#exam "Exam"
 * code = $sct#123036008 "Endocrine function"
-* valueCodeableConcept = UntersuchungsErgebnisCs#G "Grenzwertig"
+* valueCodeableConcept = UntersuchungsErgebnisCS#G "Grenzwertig"
 * subject = Reference(PersonBeispiel)
 * effectiveDateTime = "2023-01-01"
 
@@ -101,6 +101,6 @@ Usage: #example
 * status = #final
 * category = $observation-category#exam "Exam"
 * code = $sct#27624003 "Chronic disease (disorder)"
-* valueCodeableConcept = UntersuchungsErgebnisCs#U "Unbekannt"
+* valueCodeableConcept = UntersuchungsErgebnisCS#U "Unbekannt"
 * subject = Reference(PersonBeispiel)
 * effectiveDateTime = "2023-01-01"

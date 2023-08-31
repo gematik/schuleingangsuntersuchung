@@ -51,7 +51,7 @@
           "coding": [
             {
               "code": "dys",
-              "system": "https://www.oegd.de/fhir/seu//CodeSystem/TestTypesCs",
+              "system": "https://www.oegd.de/fhir/seu//CodeSystem/TestTypesCS",
               "display": "Anzahl auffälliger Laut/Stammfehler"
             }
           ]

@@ -2,10 +2,10 @@
   "resourceType": "CodeSystem",
   "status": "draft",
   "content": "complete",
-  "name": "PersonDeutschkenntnisCs",
-  "id": "PersonDeutschkenntnisCs",
+  "name": "PersonDeutschkenntnisCS",
+  "id": "PersonDeutschkenntnisCS",
   "title": "Deutschkenntnis",
-  "url": "https://www.oegd.de/fhir/seu//CodeSystem/PersonDeutschkenntnisCs",
+  "url": "https://www.oegd.de/fhir/seu//CodeSystem/PersonDeutschkenntnisCS",
   "concept": [
     {
       "code": "1",

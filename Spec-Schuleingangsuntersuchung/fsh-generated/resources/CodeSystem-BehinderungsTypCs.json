@@ -2,10 +2,10 @@
   "resourceType": "CodeSystem",
   "status": "draft",
   "content": "complete",
-  "name": "BehinderungsTypCs",
-  "id": "BehinderungsTypCs",
+  "name": "BehinderungsTypCS",
+  "id": "BehinderungsTypCS",
   "title": "SEU Behinderungsart",
-  "url": "https://www.oegd.de/fhir/seu//CodeSystem/BehinderungsTypCs",
+  "url": "https://www.oegd.de/fhir/seu//CodeSystem/BehinderungsTypCS",
   "concept": [
     {
       "code": "K",

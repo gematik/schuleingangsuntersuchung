@@ -11,30 +11,30 @@ Id: Behinderung
 * effective[x] MS
 * value[x] only CodeableConcept 
 * valueCodeableConcept MS
-* valueCodeableConcept from BehinderungsTypVs
+* valueCodeableConcept from BehinderungsTypVS
 * valueCodeableConcept.coding MS
 * valueCodeableConcept.coding.code MS
 * valueCodeableConcept.coding.system MS
 
-CodeSystem:  BehinderungsTypCs
-Id: BehinderungsTypCs
+CodeSystem:  BehinderungsTypCS
+Id: BehinderungsTypCS
 Title: "SEU Behinderungsart"
 * #K "Körperlich"
 * #G "Geistig"
 * #S "Seelisch"
 * #M "Mehrfach"
 
-ValueSet: BehinderungsTypVs
-Id: BehinderungsTypVs
+ValueSet: BehinderungsTypVS
+Id: BehinderungsTypVS
 Title: "SEU Behinderungsart"
 Description: "Diese Codes enthalten alle Behinderungsarten"
-* include codes from system BehinderungsTypCs
+* include codes from system BehinderungsTypCS
 
 Instance: BehinderungBeispiel
 InstanceOf: Behinderung
 Usage: #example
 * status = #final
-* valueCodeableConcept = BehinderungsTypCs#K "Körperlich"
+* valueCodeableConcept = BehinderungsTypCS#K "Körperlich"
 * subject = Reference(PersonBeispiel)
 * effectiveDateTime = "2023-01-01"
 * category = $observation-category#exam "Exam"

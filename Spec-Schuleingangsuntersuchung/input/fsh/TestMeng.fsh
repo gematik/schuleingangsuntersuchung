@@ -1,7 +1,7 @@
 Profile: TestMeng
 Parent: Test
 Id: TestMeng
-* code = TestTypesCs#meng "SOPESS- Mengenvergleich, Simultanerfassung"
+* code = TestTypesCS#meng "SOPESS- Mengenvergleich, Simultanerfassung"
 * referenceRange[abnormal].low = 0 '1' "Punktwert"
 * referenceRange[abnormal].high = 10 '1' "Punktwert"
 * referenceRange[borderline].low = 11 '1' "Punktwert"

@@ -4,22 +4,22 @@ Id: PaediatrischeLeistung
 * status MS
 * status = #active
 * code MS
-* code from PaediatrischeLeistungVs
+* code from PaediatrischeLeistungVS
 * code.coding MS
 * subject MS
 * intent MS 
 * intent = #directive
 
-CodeSystem:  PaediatrischeLeistungCs
-Id: PaediatrischeLeistungCs
+CodeSystem:  PaediatrischeLeistungCS
+Id: PaediatrischeLeistungCS
 Title: "Sozialpädiatrische Leistungen"
 * #sonstige "Sonstige Hilfen"
 * #info "Infobrief Schule"
 
-ValueSet: PaediatrischeLeistungVs
-Id: PaediatrischeLeistungVs
+ValueSet: PaediatrischeLeistungVS
+Id: PaediatrischeLeistungVS
 Title: "SEU Assessment Result"
-* include codes from system PaediatrischeLeistungCs
+* include codes from system PaediatrischeLeistungCS
 * $sct#409063005 "Counseling (procedure)"
 * $sct#409065003 "Education programs education, guidance and counseling (procedure)"
 * $sct#723401005 "Motor planning skills training (procedure)"

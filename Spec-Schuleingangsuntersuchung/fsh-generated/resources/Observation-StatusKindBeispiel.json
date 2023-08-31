@@ -20,7 +20,7 @@
     "coding": [
       {
         "code": "regel",
-        "system": "https://www.oegd.de/fhir/seu//CodeSystem/StatusKindCs",
+        "system": "https://www.oegd.de/fhir/seu//CodeSystem/StatusKindCS",
         "display": "Regel"
       }
     ]

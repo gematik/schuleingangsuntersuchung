@@ -10,14 +10,14 @@ Id: Schulempfehlung
 * subject MS
 * effective[x] MS
 * value[x] only CodeableConcept
-* valueCodeableConcept from SchulempfehlungVs
+* valueCodeableConcept from SchulempfehlungVS
 * valueCodeableConcept MS
 * valueCodeableConcept.coding MS
 * valueCodeableConcept.coding.code MS
 * valueCodeableConcept.coding.system MS
 
-CodeSystem:  SchulempfehlungCs
-Id: SchulempfehlungCs
+CodeSystem:  SchulempfehlungCS
+Id: SchulempfehlungCS
 Title: "SEU Schulempfehlungen"
 * #nein "keine regelabweichende Schulempfehlung"
 * #zurk "Zurückstellung Regelkind"
@@ -27,16 +27,16 @@ Title: "SEU Schulempfehlungen"
 * #zukk "Zurückstellung Kannkind"
 * #sopf "Sonderpädagogische Förderung"
 
-ValueSet: SchulempfehlungVs
-Id: SchulempfehlungVs
+ValueSet: SchulempfehlungVS
+Id: SchulempfehlungVS
 Title: "SEU Schulempfehlungen"
-* include codes from system SchulempfehlungCs
+* include codes from system SchulempfehlungCS
 
 Instance: SchulempfehlungBeispiel
 InstanceOf: Schulempfehlung
 Usage: #example
 * status = #final
 * category = $observation-category#exam "Exam"
-* valueCodeableConcept = SchulempfehlungCs#nein "keine regelabweichende Schulempfehlung"
+* valueCodeableConcept = SchulempfehlungCS#nein "keine regelabweichende Schulempfehlung"
 * subject = Reference(PersonBeispiel)
 * effectiveDateTime = "2023-01-01"

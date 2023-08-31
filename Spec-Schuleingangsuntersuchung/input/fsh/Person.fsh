@@ -132,19 +132,19 @@ Extension: PersonMigrationshintergrundExtension
 Id: PersonMigrationshintergrundExtension
 Title:  "Migrationshintergrund"
 * value[x] only CodeableConcept
-* valueCodeableConcept from PersonEthnieVs
+* valueCodeableConcept from PersonEthnieVS
 
 Extension: PersonDeutschkenntnisExtension
 Id: PersonDeutschkenntnisExtension
 Title:  "Deutschkenntnisse"
 * value[x] only CodeableConcept
-* valueCodeableConcept from PersonDeutschkenntnisVs
+* valueCodeableConcept from PersonDeutschkenntnisVS
 
 Instance: PersonBeispiel
 InstanceOf: Person
 Usage: #example
 * extension[SperreBundeswehr].valueBoolean = true
-* extension[Migrationshintergrund].valueCodeableConcept = PersonEthnieCs#2 "GUS/Osteuropa"
+* extension[Migrationshintergrund].valueCodeableConcept = PersonEthnieCS#2 "GUS/Osteuropa"
 * identifier[SteuerId].type = https://www.oegd.de/fhir/seu/#tax-id
 * identifier[SteuerId].system = "https://www.oegd.de/fhir/seu/"
 * identifier[SteuerId].value = "2398423874"
@@ -191,6 +191,6 @@ Usage: #example
 * address[Postfach].postalCode = "98764"
 * address[Postfach].country = "DE"
 * communication[erstsprache].language = urn:ietf:bcp:47#nl "Dutch"
-* communication[deutsch].extension[deutschkenntnis].valueCodeableConcept = PersonDeutschkenntnisCs#4 "flüssig mit leichten Fehlern"
+* communication[deutsch].extension[deutschkenntnis].valueCodeableConcept = PersonDeutschkenntnisCS#4 "flüssig mit leichten Fehlern"
 
 // TODO: Postfach weglassen?

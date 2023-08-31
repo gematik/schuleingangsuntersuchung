@@ -1,7 +1,7 @@
 Profile: TestSelaufm
 Parent: Test
 Id: TestSelaufm
-* code = TestTypesCs#selaufm "SOPESS- Selektive-Aufmerksamkeit"
+* code = TestTypesCS#selaufm "SOPESS- Selektive-Aufmerksamkeit"
 * referenceRange[abnormal].low = 0 '1' "Punktwert"
 * referenceRange[abnormal].high = 10 '1' "Punktwert"
 * referenceRange[borderline].low = 11 '1' "Punktwert"

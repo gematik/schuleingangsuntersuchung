@@ -10,14 +10,14 @@ Id: Risikofaktor
 * subject MS
 * effective[x] MS
 * value[x] only CodeableConcept
-* valueCodeableConcept from RisikofaktorVs
+* valueCodeableConcept from RisikofaktorVS
 * valueCodeableConcept MS
 * valueCodeableConcept.coding MS
 * valueCodeableConcept.coding.code MS
 * valueCodeableConcept.coding.system MS
 
-CodeSystem:  RisikofaktorCs
-Id: RisikofaktorCs
+CodeSystem:  RisikofaktorCS
+Id: RisikofaktorCS
 Title: "SEU Risikofaktoren"
 * #familie "Familie"
 * #nonkompliance "Nonkompliance"
@@ -25,16 +25,16 @@ Title: "SEU Risikofaktoren"
 * #migration "Migration"
 * #sonstiges "Sonstiges Risiko"
 
-ValueSet: RisikofaktorVs
-Id: RisikofaktorVs
+ValueSet: RisikofaktorVS
+Id: RisikofaktorVS
 Title: "SEU Risikofaktoren"
-* include codes from system RisikofaktorCs
+* include codes from system RisikofaktorCS
 
 Instance: RisikofaktorBeispiel
 InstanceOf: Risikofaktor
 Usage: #example
 * status = #final
 * category = $observation-category#social-history "Social History"
-* valueCodeableConcept = RisikofaktorCs#familie "Familie"
+* valueCodeableConcept = RisikofaktorCS#familie "Familie"
 * subject = Reference(PersonBeispiel)
 * effectiveDateTime = "2023-01-01"

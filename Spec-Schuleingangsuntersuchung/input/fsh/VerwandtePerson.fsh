@@ -98,7 +98,7 @@ Extension: VerwandtePersonDeutschkenntnisExtension
 Id: VerwandtePersonDeutschkenntnisExtension
 Title:  "Deutschkenntnisse"
 * value[x] only CodeableConcept
-* valueCodeableConcept from PersonDeutschkenntnisVs
+* valueCodeableConcept from PersonDeutschkenntnisVS
 
 Instance: VerwandtePersonBeispiel
 InstanceOf: VerwandtePerson
@@ -139,4 +139,4 @@ Usage: #example
 * address[Strassenanschrift].postalCode = "98764"
 * address[Strassenanschrift].country = "DE"
 * address[Strassenanschrift].extension[wohnungsinhaber].valueString = "Erika Gabler"
-* communication[deutsch].extension[deutschkenntnis].valueCodeableConcept = PersonDeutschkenntnisCs#4 "flüssig mit leichten Fehlern"
+* communication[deutsch].extension[deutschkenntnis].valueCodeableConcept = PersonDeutschkenntnisCS#4 "flüssig mit leichten Fehlern"

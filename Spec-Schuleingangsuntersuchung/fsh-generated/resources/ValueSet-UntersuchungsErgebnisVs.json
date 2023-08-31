@@ -1,15 +1,15 @@
 {
   "resourceType": "ValueSet",
   "status": "draft",
-  "name": "UntersuchungsErgebnisVs",
-  "id": "UntersuchungsErgebnisVs",
+  "name": "UntersuchungsErgebnisVS",
+  "id": "UntersuchungsErgebnisVS",
   "title": "SEU Untersuchungsergebnis",
   "description": "Diese Codes enthalten die möglichen Ergebnisse einer Untersuchung",
-  "url": "https://www.oegd.de/fhir/seu//ValueSet/UntersuchungsErgebnisVs",
+  "url": "https://www.oegd.de/fhir/seu//ValueSet/UntersuchungsErgebnisVS",
   "compose": {
     "include": [
       {
-        "system": "https://www.oegd.de/fhir/seu//CodeSystem/UntersuchungsErgebnisCs"
+        "system": "https://www.oegd.de/fhir/seu//CodeSystem/UntersuchungsErgebnisCS"
       }
     ]
   }
