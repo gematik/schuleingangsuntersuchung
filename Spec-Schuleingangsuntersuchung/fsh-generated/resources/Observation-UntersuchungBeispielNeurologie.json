@@ -1,0 +1,43 @@
+{
+  "resourceType": "Observation",
+  "id": "UntersuchungBeispielNeurologie",
+  "meta": {
+    "profile": [
+      "https://www.oegd.de/fhir/seu//StructureDefinition/Untersuchung"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "exam",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "display": "Exam"
+        }
+      ]
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "394591006",
+        "system": "http://snomed.info/sct",
+        "display": "Neurological Status"
+      }
+    ]
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "I",
+        "system": "https://www.oegd.de/fhir/seu//CodeSystem/UntersuchungsErgebnisCs",
+        "display": "In Ordnung"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/PersonBeispiel"
+  },
+  "effectiveDateTime": "2023-01-01"
+}

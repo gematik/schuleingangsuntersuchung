@@ -1,5 +1,5 @@
-CodeSystem:  SeuPersonEthnieCs
-Id: SeuPersonEthnieCs
+CodeSystem:  PersonEthnieCs
+Id: PersonEthnieCs
 Title: "SEU Sprachlich-ethnischer Familienhintergrund"
 * #0 "Deutschland"
 * #1 "Türkei"
@@ -12,13 +12,13 @@ Title: "SEU Sprachlich-ethnischer Familienhintergrund"
 * #8 "Lateinamerika" 
 * #9 "Sonstige Staaten (Nordamerika, Australien, usw)"
 
-ValueSet: SeuPersonEthnieVs
-Id: SeuPersonEthnieVs
+ValueSet: PersonEthnieVs
+Id: PersonEthnieVs
 Title: "SEU Sprachlich-ethnischer Familienhintergrund"
-* include codes from system SeuPersonEthnieCs
+* include codes from system PersonEthnieCs
 
-CodeSystem:  SeuPersonDeutschkenntnisCs
-Id: SeuPersonDeutschkenntnisCs
+CodeSystem:  PersonDeutschkenntnisCs
+Id: PersonDeutschkenntnisCs
 Title: "Deutschkenntnis"
 * #1 "kein Deutschverständnis"
 * #2 "rudimentär"
@@ -26,20 +26,20 @@ Title: "Deutschkenntnis"
 * #4 "flüssig mit leichten Fehlern"
 * #5 "fehlerfreies Deutsch"
 
-ValueSet: SeuPersonDeutschkenntnisVs
-Id: SeuPersonDeutschkenntnisVs
+ValueSet: PersonDeutschkenntnisVs
+Id: PersonDeutschkenntnisVs
 Title: "Deutschkenntnis"
-* include codes from system SeuPersonDeutschkenntnisCs
+* include codes from system PersonDeutschkenntnisCs
 
-CodeSystem:  SeuVerwandtePersonDeutschkenntnisCs
-Id: SeuVerwandtePersonDeutschkenntnisCs
+CodeSystem:  VerwandtePersonDeutschkenntnisCs
+Id: VerwandtePersonDeutschkenntnisCs
 Title: "Deutschkenntnis"
 * #1 "rudimentär"
 * #2 "fehlerhaft"
 * #3 "fehlerfrei"
 * #9 "unbekannt"
 
-ValueSet: SeuVerwandtePersonDeutschkenntnisVs
-Id: SeuVerwandtePersonDeutschkenntnisVs
+ValueSet: VerwandtePersonDeutschkenntnisVs
+Id: VerwandtePersonDeutschkenntnisVs
 Title: "Deutschkenntnis"
-* include codes from system SeuVerwandtePersonDeutschkenntnisCs
+* include codes from system VerwandtePersonDeutschkenntnisCs

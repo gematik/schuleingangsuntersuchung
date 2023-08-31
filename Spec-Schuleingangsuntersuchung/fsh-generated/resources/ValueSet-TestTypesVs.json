@@ -1,0 +1,25 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "TestTypesVs",
+  "id": "TestTypesVs",
+  "title": "SEU Status Kind",
+  "description": "Diese Codes enthalten die möglichen SEU Point Assessment Types",
+  "url": "https://www.oegd.de/fhir/seu//ValueSet/TestTypesVs",
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu//CodeSystem/TestTypesCs"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "311886005",
+            "display": "Visual perception, function"
+          }
+        ]
+      }
+    ]
+  }
+}

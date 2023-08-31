@@ -1,0 +1,16 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "BehinderungsTypVs",
+  "id": "BehinderungsTypVs",
+  "title": "SEU Behinderungsart",
+  "description": "Diese Codes enthalten alle Behinderungsarten",
+  "url": "https://www.oegd.de/fhir/seu//ValueSet/BehinderungsTypVs",
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu//CodeSystem/BehinderungsTypCs"
+      }
+    ]
+  }
+}

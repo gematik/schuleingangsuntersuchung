@@ -1,0 +1,15 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "PersonEthnieVs",
+  "id": "PersonEthnieVs",
+  "title": "SEU Sprachlich-ethnischer Familienhintergrund",
+  "url": "https://www.oegd.de/fhir/seu//ValueSet/PersonEthnieVs",
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu//CodeSystem/PersonEthnieCs"
+      }
+    ]
+  }
+}
