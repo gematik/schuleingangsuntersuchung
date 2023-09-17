@@ -1,10 +1,3 @@
----
-subject: http://example.org/CodeSystem/MeinCodeSystem
----
-|Hinweis|Diese Box bitte entfernen!|
-|-
-|![Information](https://wiki.hl7.de/images/thumb/Under_construction_icon-blue.svg/100px-Under_construction_icon-blue.svg.png)|Diese Seite ist ein Template, das bei Verwendung für ein konkretes Profil angepasst werden muss!|
-
 ## {{link}}
 
 ### Metadaten
@@ -13,7 +6,7 @@ subject: http://example.org/CodeSystem/MeinCodeSystem
 from
 	CodeSystem
 where
-	url = 'http://example.org/CodeSystem/MeinCodeSystem'
+	url = 'https://www.oegd.de/fhir/seu/CodeSystem/BehinderungsTypCS'
 select
 	Beschreibung: description, CanonicalURL: url, Status: status, Version: version
 ```
@@ -29,7 +22,7 @@ select
 from
 	CodeSystem
 where
-	url = 'http://example.org/CodeSystem/MeinCodeSystem'
+	url = 'https://www.oegd.de/fhir/seu/CodeSystem/BehinderungsTypCS'
 for concept
 select
 	Code: code, Anzeigetext: display, Definition: definition
