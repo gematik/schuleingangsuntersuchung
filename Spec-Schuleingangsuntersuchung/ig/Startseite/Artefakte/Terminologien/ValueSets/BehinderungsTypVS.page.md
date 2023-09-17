@@ -1,10 +1,6 @@
 ---
-subject: http://example.org/ValueSet/MeinValueSet
+subject: https://www.oegd.de/fhir/seu/ValueSet/BehinderungsTypVS
 ---
-|Hinweis|Diese Box bitte entfernen!|
-|-
-|![Information](https://wiki.hl7.de/images/thumb/Under_construction_icon-blue.svg/100px-Under_construction_icon-blue.svg.png)|Diese Seite ist ein Template, das bei Verwendung für ein konkretes Profil angepasst werden muss!|
-
 
 ## {{link}}
 
@@ -14,7 +10,7 @@ subject: http://example.org/ValueSet/MeinValueSet
 from
 	ValueSet
 where
-	url = 'http://example.org/ValueSet/MeinValueSet'
+	url = 'https://www.oegd.de/fhir/seu/ValueSet/BehinderungsTypVS'
 select
 	CanonicalURL: url, Status: status, Version: version
 ```
@@ -30,7 +26,7 @@ select
 from
 	ValueSet
 where
-	url = 'http://example.org/ValueSet/MeinValueSet'
+	url = 'https://www.oegd.de/fhir/seu/ValueSet/BehinderungsTypVS'
 select
 	Beschreibung: description
 ```
