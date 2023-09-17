@@ -1,12 +1,8 @@
-|Hinweis|Diese Box bitte entfernen!|
-|-
-|![Information](https://wiki.hl7.de/images/thumb/Under_construction_icon-blue.svg/100px-Under_construction_icon-blue.svg.png)|Diese Seite ist ein Template, das bei Verwendung für ein konkretes Projekt angepasst werden muss! Ein Beispiel für eine vollständig ausgefüllte Startseite ist z.B. auf der Seite {{pagelink:Meta}} zu finden|
-
 # {{page-title}} 
 
 
 <!-- hier Logo des Projektes oder der hauptverantwortlichen Organisation einfügen-->
-<img src="https://meineOrganisation/meinLogo.png" alt="logo" width="200" align="right" style="margin:20px 20px"/>
+<img src="https://www.bundesgesundheitsministerium.de/fileadmin/_processed_/8/e/csm_Logo_Rki_110711_6d286bc563.jpg" alt="logo" width="200" align="right" style="margin:20px 20px"/>
 
 <!-- hier Projektlink einfügen-->
 <a href="https://simplifier.net/..." class="btn btn-primary">zum Projekt auf Simplifier</a>
@@ -16,41 +12,49 @@
 -->
 
 ### Zusammenfassung
-<!-- hier Kurzbeschreibung des Projektes einfügen-->
+Die Schuleingangsuntersuchung dient der Überprüfung des Gesundheitszustands von Kindern und der Sicherstellung, dass diese optimal auf den Schuleintritt vorbereitet sind. Um diesen Prozess zu optimieren und die Qualität der Gesundheitsversorgung zu verbessern, wurde die vorliegende FHIR-Spezifikation entwickelt.
+
+Diese FHIR-Spezifikation bietet eine standardisierte und interoperable Methode zur Erfassung und Übermittlung von Gesundheitsdaten im Zusammenhang mit der Schuleingangsuntersuchung. Die Spezifikation wurde in enger Zusammenarbeit mit Fachleuten aus dem Gesundheitswesen, dem Bildungsbereich und der IT-Branche entwickelt und stellt sicher, dass Datenschutz und Sicherheit gewährleistet sind.
+
+Dieser Implementierungsleitfaden bietet eine umfassende Übersicht über die Standards, Datenstrukturen und Ressourcen, die für die Schuleingangsuntersuchung von Bedeutung sind. Diese Spezifikation dient als Leitfaden für Entwickler, Gesundheitseinrichtungen und Schulen, um sie in ihre Systeme zu integrieren und den Prozess der Schuleingangsuntersuchung zu optimieren.
+
 
 ### Anfangs- und (geplantes) Enddatum
 
+Anfangsdatum: September 2023
+Enddatum: Noch nicht geplant
+
 ### Status
 
-Version: <!--semVer-Version, z.B.: 1.0.1 oder 3.1.4-->
+Version: 0.9.0
 
-Reifegrad: <!-- Draft, STU (Standard for Trial Use) oder Normativ--> 
+Reifegrad: Draft 
 
-Abstimmungsverfahren: <!-- geplant | laufend | abgeschlossen -->
+Abstimmungsverfahren: geplant
 
 ### Mitwirkungs- und Kommentierungsmöglichkeiten
+
+Mitwirkungs- und Kommentierungsmöglichkeiten werden zurzeit ausgearbeitet.
 <!--- z.B. Jira-Links oder GitHub IssueTracker für Kommentare und Change-Requests, alternative Kommentierungsplattformen, 
 eMail-Verteiler für Interessenten, GoogleGroups, Chats, Foren o.ä.  --->
 
 ### Beteiligte Organsiationen
-* 
-*
-*
+* Bundesministerium für Gesundheit
+* Robert Koch-Institut
+* Gesundheitsamt Hessen
+* Gefyra GmbH
 
 ### Fürsorger
 <!-- Namen und Kontaktdaten der verantwortlichen Personen /Ansprechpartner-->
-*
-*
-*
+* Yannick Börner
+* Patrick Werner
 
 
 ### Weitere Links
 <!-- z. B. Beschreibungen des UseCases, Datenmodell, ges. Vorgaben, fachliche Anforderungen, relevante Spezifikationen-->
-* 
-*
-*
-
-
+* https://www.lgl.bayern.de/gesundheit/praevention/kindergesundheit/schuleingangsuntersuchung/index.htm 
+* https://stadt.muenchen.de/service/info/sg-schulgesundheit/10278765/ 
+* https://www.lgl.bayern.de/das_lgl/aufgaben_zustaendigkeiten/ge_aufgaben/ge4_schuleingangsuntersuchung.htm 
 
 
 
