@@ -1,7 +1,3 @@
-|Hinweis|Diese Box bitte entfernen!|
-|-
-|![Information](https://wiki.hl7.de/images/thumb/Under_construction_icon-blue.svg/100px-Under_construction_icon-blue.svg.png)|Diese Seite ist ein Template, das bei Verwendung für ein konkretes Projekt angepasst werden muss!|
-
 ## {{page-title}}
 
 ### Schlüsselworte
