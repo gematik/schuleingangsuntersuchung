@@ -1,11 +1,9 @@
 - name: Index
   filename: Index.page.md
 - name: Inhaltsverzeichnis
-  filename: Inhaltsverzeichnis-duplicate-2.page.md
+  filename: Inhaltsverzeichnis.page.md
 - name: ReleaseNotes
   filename: ReleaseNotes.page.md
-- name: Über dieses Template
-  filename: Über-dieses-Template
 - name: Über diese Spezifikation
   filename: Über-diese-Spezifikation
 - name: Artefakte
