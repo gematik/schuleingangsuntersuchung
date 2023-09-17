@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "TestVismot",
-  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/TestVismot",
+  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/TestVismot",
   "name": "TestVismot",
   "status": "draft",
   "fhirVersion": "4.0.1",
@@ -40,7 +40,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "https://www.oegd.de/fhir/seu//StructureDefinition/Test",
+  "baseDefinition": "https://www.oegd.de/fhir/seu/StructureDefinition/Test",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -51,7 +51,7 @@
           "coding": [
             {
               "code": "vismot",
-              "system": "https://www.oegd.de/fhir/seu//CodeSystem/TestTypesCS",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/TestTypesCS",
               "display": "Visuomotorik"
             }
           ]

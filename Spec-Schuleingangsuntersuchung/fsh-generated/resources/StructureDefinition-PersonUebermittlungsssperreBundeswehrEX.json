@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "PersonUebermittlungsssperreBundeswehrEX",
-  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/PersonUebermittlungsssperreBundeswehrEX",
+  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/PersonUebermittlungsssperreBundeswehrEX",
   "name": "PersonUebermittlungsssperreBundeswehrEX",
   "title": "Übermittlungssperre Bundeswehr",
   "status": "draft",
@@ -41,7 +41,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.oegd.de/fhir/seu//StructureDefinition/PersonUebermittlungsssperreBundeswehrEX"
+        "fixedUri": "https://www.oegd.de/fhir/seu/StructureDefinition/PersonUebermittlungsssperreBundeswehrEX"
       },
       {
         "id": "Extension.value[x]",

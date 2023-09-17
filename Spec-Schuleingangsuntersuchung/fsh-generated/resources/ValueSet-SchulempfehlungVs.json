@@ -4,11 +4,11 @@
   "name": "SchulempfehlungVS",
   "id": "SchulempfehlungVS",
   "title": "SEU Schulempfehlungen",
-  "url": "https://www.oegd.de/fhir/seu//ValueSet/SchulempfehlungVS",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/SchulempfehlungVS",
   "compose": {
     "include": [
       {
-        "system": "https://www.oegd.de/fhir/seu//CodeSystem/SchulempfehlungCS"
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SchulempfehlungCS"
       }
     ]
   }

@@ -4,11 +4,11 @@
   "name": "VerwandtePersonDeutschkenntnisVS",
   "id": "VerwandtePersonDeutschkenntnisVS",
   "title": "Deutschkenntnis",
-  "url": "https://www.oegd.de/fhir/seu//ValueSet/VerwandtePersonDeutschkenntnisVS",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/VerwandtePersonDeutschkenntnisVS",
   "compose": {
     "include": [
       {
-        "system": "https://www.oegd.de/fhir/seu//CodeSystem/VerwandtePersonDeutschkenntnisCS"
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/VerwandtePersonDeutschkenntnisCS"
       }
     ]
   }

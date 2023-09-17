@@ -3,7 +3,7 @@
   "id": "BlutdruckBeispiel",
   "meta": {
     "profile": [
-      "https://www.oegd.de/fhir/seu//StructureDefinition/Blutdruck",
+      "https://www.oegd.de/fhir/seu/StructureDefinition/Blutdruck",
       "http://fhir.de/StructureDefinition/observation-de-vitalsign-blutdruck"
     ]
   },

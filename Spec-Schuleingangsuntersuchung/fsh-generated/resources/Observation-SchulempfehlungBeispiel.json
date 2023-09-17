@@ -3,7 +3,7 @@
   "id": "SchulempfehlungBeispiel",
   "meta": {
     "profile": [
-      "https://www.oegd.de/fhir/seu//StructureDefinition/Schulempfehlung"
+      "https://www.oegd.de/fhir/seu/StructureDefinition/Schulempfehlung"
     ]
   },
   "code": {
@@ -31,7 +31,7 @@
     "coding": [
       {
         "code": "nein",
-        "system": "https://www.oegd.de/fhir/seu//CodeSystem/SchulempfehlungCS",
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SchulempfehlungCS",
         "display": "keine regelabweichende Schulempfehlung"
       }
     ]

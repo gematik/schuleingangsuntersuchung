@@ -5,7 +5,7 @@
   "id": "UntersuchungsArtVS",
   "title": "SEU Assessment Type",
   "description": "Dieses ValueSet enthält die Untersuchungsarten",
-  "url": "https://www.oegd.de/fhir/seu//ValueSet/UntersuchungsArtVS",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/UntersuchungsArtVS",
   "compose": {
     "include": [
       {

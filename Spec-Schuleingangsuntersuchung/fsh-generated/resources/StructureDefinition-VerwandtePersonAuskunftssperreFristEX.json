@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "VerwandtePersonAuskunftssperreFristEX",
-  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/VerwandtePersonAuskunftssperreFristEX",
+  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/VerwandtePersonAuskunftssperreFristEX",
   "name": "VerwandtePersonAuskunftssperreFristEX",
   "title": "Verwandte Person Auskunftssperre Frist Extension",
   "status": "draft",
@@ -39,7 +39,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.oegd.de/fhir/seu//StructureDefinition/VerwandtePersonAuskunftssperreFristEX"
+        "fixedUri": "https://www.oegd.de/fhir/seu/StructureDefinition/VerwandtePersonAuskunftssperreFristEX"
       },
       {
         "id": "Extension.value[x]",

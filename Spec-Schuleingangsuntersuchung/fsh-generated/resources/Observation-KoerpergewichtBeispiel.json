@@ -3,7 +3,7 @@
   "id": "KoerpergewichtBeispiel",
   "meta": {
     "profile": [
-      "https://www.oegd.de/fhir/seu//StructureDefinition/Koerpergewicht",
+      "https://www.oegd.de/fhir/seu/StructureDefinition/Koerpergewicht",
       "http://hl7.org/fhir/StructureDefinition/bodyweight",
       "http://fhir.de/StructureDefinition/observation-de-vitalsign-koerpergewicht"
     ]

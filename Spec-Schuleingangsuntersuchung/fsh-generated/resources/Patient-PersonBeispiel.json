@@ -3,7 +3,7 @@
   "id": "PersonBeispiel",
   "meta": {
     "profile": [
-      "https://www.oegd.de/fhir/seu//StructureDefinition/Person"
+      "https://www.oegd.de/fhir/seu/StructureDefinition/Person"
     ]
   },
   "name": [
@@ -69,12 +69,12 @@
       },
       "extension": [
         {
-          "url": "https://www.oegd.de/fhir/seu//StructureDefinition/PersonDeutschkenntnisEX",
+          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/PersonDeutschkenntnisEX",
           "valueCodeableConcept": {
             "coding": [
               {
                 "code": "4",
-                "system": "https://www.oegd.de/fhir/seu//CodeSystem/PersonDeutschkenntnisCS",
+                "system": "https://www.oegd.de/fhir/seu/CodeSystem/PersonDeutschkenntnisCS",
                 "display": "flüssig mit leichten Fehlern"
               }
             ]
@@ -96,16 +96,16 @@
   ],
   "extension": [
     {
-      "url": "https://www.oegd.de/fhir/seu//StructureDefinition/PersonUebermittlungsssperreBundeswehrEX",
+      "url": "https://www.oegd.de/fhir/seu/StructureDefinition/PersonUebermittlungsssperreBundeswehrEX",
       "valueBoolean": true
     },
     {
-      "url": "https://www.oegd.de/fhir/seu//StructureDefinition/PersonMigrationshintergrundEX",
+      "url": "https://www.oegd.de/fhir/seu/StructureDefinition/PersonMigrationshintergrundEX",
       "valueCodeableConcept": {
         "coding": [
           {
             "code": "2",
-            "system": "https://www.oegd.de/fhir/seu//CodeSystem/PersonEthnieCS",
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PersonEthnieCS",
             "display": "GUS/Osteuropa"
           }
         ]
@@ -131,7 +131,7 @@
       "type": "both",
       "extension": [
         {
-          "url": "https://www.oegd.de/fhir/seu//StructureDefinition/WohnungsInhaberEX",
+          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/WohnungsInhaberEX",
           "valueString": "Erika Gabler"
         }
       ],

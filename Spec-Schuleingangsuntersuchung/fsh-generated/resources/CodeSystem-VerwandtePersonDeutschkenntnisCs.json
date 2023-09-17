@@ -5,7 +5,7 @@
   "name": "VerwandtePersonDeutschkenntnisCS",
   "id": "VerwandtePersonDeutschkenntnisCS",
   "title": "Deutschkenntnis",
-  "url": "https://www.oegd.de/fhir/seu//CodeSystem/VerwandtePersonDeutschkenntnisCS",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/VerwandtePersonDeutschkenntnisCS",
   "concept": [
     {
       "code": "1",

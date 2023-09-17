@@ -5,7 +5,7 @@
   "name": "RisikofaktorCS",
   "id": "RisikofaktorCS",
   "title": "SEU Risikofaktoren",
-  "url": "https://www.oegd.de/fhir/seu//CodeSystem/RisikofaktorCS",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/RisikofaktorCS",
   "concept": [
     {
       "code": "familie",

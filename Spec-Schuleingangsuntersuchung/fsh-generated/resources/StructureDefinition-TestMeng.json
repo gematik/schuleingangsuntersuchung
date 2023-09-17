@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "TestMeng",
-  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/TestMeng",
+  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/TestMeng",
   "name": "TestMeng",
   "status": "draft",
   "fhirVersion": "4.0.1",
@@ -40,7 +40,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "https://www.oegd.de/fhir/seu//StructureDefinition/Test",
+  "baseDefinition": "https://www.oegd.de/fhir/seu/StructureDefinition/Test",
   "derivation": "constraint",
   "differential": {
     "element": [
@@ -51,7 +51,7 @@
           "coding": [
             {
               "code": "meng",
-              "system": "https://www.oegd.de/fhir/seu//CodeSystem/TestTypesCS",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/TestTypesCS",
               "display": "SOPESS- Mengenvergleich, Simultanerfassung"
             }
           ]

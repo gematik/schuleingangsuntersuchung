@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "PaediatrischeLeistung",
-  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/PaediatrischeLeistung",
+  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/PaediatrischeLeistung",
   "name": "PaediatrischeLeistung",
   "status": "draft",
   "fhirVersion": "4.0.1",
@@ -57,7 +57,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.oegd.de/fhir/seu//ValueSet/PaediatrischeLeistungVS"
+          "valueSet": "https://www.oegd.de/fhir/seu/ValueSet/PaediatrischeLeistungVS"
         }
       },
       {

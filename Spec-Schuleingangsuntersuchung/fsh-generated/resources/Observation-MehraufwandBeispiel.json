@@ -3,7 +3,7 @@
   "id": "MehraufwandBeispiel",
   "meta": {
     "profile": [
-      "https://www.oegd.de/fhir/seu//StructureDefinition/Mehraufwand"
+      "https://www.oegd.de/fhir/seu/StructureDefinition/Mehraufwand"
     ]
   },
   "code": {

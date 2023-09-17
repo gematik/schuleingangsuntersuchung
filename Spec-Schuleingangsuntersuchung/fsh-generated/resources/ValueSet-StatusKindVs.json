@@ -5,11 +5,11 @@
   "id": "StatusKindVS",
   "title": "SEU Status Kind",
   "description": "Diese Codes enthalten die möglichen Status des Kindes",
-  "url": "https://www.oegd.de/fhir/seu//ValueSet/StatusKindVS",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/StatusKindVS",
   "compose": {
     "include": [
       {
-        "system": "https://www.oegd.de/fhir/seu//CodeSystem/StatusKindCS"
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/StatusKindCS"
       }
     ]
   }

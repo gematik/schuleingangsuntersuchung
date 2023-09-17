@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "Untersuchung",
-  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/Untersuchung",
+  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/Untersuchung",
   "name": "Untersuchung",
   "status": "draft",
   "fhirVersion": "4.0.1",
@@ -69,7 +69,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.oegd.de/fhir/seu//ValueSet/UntersuchungsArtVS"
+          "valueSet": "https://www.oegd.de/fhir/seu/ValueSet/UntersuchungsArtVS"
         }
       },
       {
@@ -98,7 +98,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.oegd.de/fhir/seu//ValueSet/UntersuchungsErgebnisVS"
+          "valueSet": "https://www.oegd.de/fhir/seu/ValueSet/UntersuchungsErgebnisVS"
         }
       },
       {

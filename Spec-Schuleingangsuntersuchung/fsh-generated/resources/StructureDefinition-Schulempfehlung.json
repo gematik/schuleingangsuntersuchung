@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "Schulempfehlung",
-  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/Schulempfehlung",
+  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/Schulempfehlung",
   "name": "Schulempfehlung",
   "status": "draft",
   "fhirVersion": "4.0.1",
@@ -103,7 +103,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.oegd.de/fhir/seu//ValueSet/SchulempfehlungVS"
+          "valueSet": "https://www.oegd.de/fhir/seu/ValueSet/SchulempfehlungVS"
         }
       },
       {

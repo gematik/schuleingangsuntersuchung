@@ -3,7 +3,7 @@
   "id": "TestSelaufmBeispiel",
   "meta": {
     "profile": [
-      "https://www.oegd.de/fhir/seu//StructureDefinition/TestSelaufm"
+      "https://www.oegd.de/fhir/seu/StructureDefinition/TestSelaufm"
     ]
   },
   "status": "final",
@@ -11,7 +11,7 @@
     "coding": [
       {
         "code": "selaufm",
-        "system": "https://www.oegd.de/fhir/seu//CodeSystem/TestTypesCS",
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/TestTypesCS",
         "display": "SOPESS- Selektive-Aufmerksamkeit"
       }
     ]

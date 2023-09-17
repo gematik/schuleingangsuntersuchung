@@ -4,11 +4,11 @@
   "name": "PaediatrischeLeistungVS",
   "id": "PaediatrischeLeistungVS",
   "title": "SEU Assessment Result",
-  "url": "https://www.oegd.de/fhir/seu//ValueSet/PaediatrischeLeistungVS",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/PaediatrischeLeistungVS",
   "compose": {
     "include": [
       {
-        "system": "https://www.oegd.de/fhir/seu//CodeSystem/PaediatrischeLeistungCS"
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/PaediatrischeLeistungCS"
       },
       {
         "system": "http://snomed.info/sct",

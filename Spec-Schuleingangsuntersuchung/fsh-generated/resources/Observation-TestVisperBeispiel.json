@@ -3,7 +3,7 @@
   "id": "TestVisperBeispiel",
   "meta": {
     "profile": [
-      "https://www.oegd.de/fhir/seu//StructureDefinition/TestVisper"
+      "https://www.oegd.de/fhir/seu/StructureDefinition/TestVisper"
     ]
   },
   "status": "final",

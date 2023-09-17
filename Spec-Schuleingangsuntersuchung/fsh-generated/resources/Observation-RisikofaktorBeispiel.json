@@ -3,7 +3,7 @@
   "id": "RisikofaktorBeispiel",
   "meta": {
     "profile": [
-      "https://www.oegd.de/fhir/seu//StructureDefinition/Risikofaktor"
+      "https://www.oegd.de/fhir/seu/StructureDefinition/Risikofaktor"
     ]
   },
   "code": {
@@ -31,7 +31,7 @@
     "coding": [
       {
         "code": "familie",
-        "system": "https://www.oegd.de/fhir/seu//CodeSystem/RisikofaktorCS",
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/RisikofaktorCS",
         "display": "Familie"
       }
     ]

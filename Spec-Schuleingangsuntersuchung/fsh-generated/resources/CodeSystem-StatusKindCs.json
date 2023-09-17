@@ -5,7 +5,7 @@
   "name": "StatusKindCS",
   "id": "StatusKindCS",
   "title": "SEU Status Kind",
-  "url": "https://www.oegd.de/fhir/seu//CodeSystem/StatusKindCS",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/StatusKindCS",
   "concept": [
     {
       "code": "regel",

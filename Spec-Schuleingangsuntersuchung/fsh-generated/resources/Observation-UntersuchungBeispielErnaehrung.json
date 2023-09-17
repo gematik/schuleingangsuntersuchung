@@ -3,7 +3,7 @@
   "id": "UntersuchungBeispielErnaehrung",
   "meta": {
     "profile": [
-      "https://www.oegd.de/fhir/seu//StructureDefinition/Untersuchung"
+      "https://www.oegd.de/fhir/seu/StructureDefinition/Untersuchung"
     ]
   },
   "category": [
@@ -31,7 +31,7 @@
     "coding": [
       {
         "code": "A",
-        "system": "https://www.oegd.de/fhir/seu//CodeSystem/UntersuchungsErgebnisCS",
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/UntersuchungsErgebnisCS",
         "display": "Arztbrief"
       }
     ]

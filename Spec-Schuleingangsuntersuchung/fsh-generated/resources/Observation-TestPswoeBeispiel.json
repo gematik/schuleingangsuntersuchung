@@ -3,7 +3,7 @@
   "id": "TestPswoeBeispiel",
   "meta": {
     "profile": [
-      "https://www.oegd.de/fhir/seu//StructureDefinition/TestPswoe"
+      "https://www.oegd.de/fhir/seu/StructureDefinition/TestPswoe"
     ]
   },
   "status": "final",
@@ -11,7 +11,7 @@
     "coding": [
       {
         "code": "pswoe",
-        "system": "https://www.oegd.de/fhir/seu//CodeSystem/TestTypesCS",
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/TestTypesCS",
         "display": "Sprachkompetenz und audit. Invormationsverarbeitung"
       }
     ]

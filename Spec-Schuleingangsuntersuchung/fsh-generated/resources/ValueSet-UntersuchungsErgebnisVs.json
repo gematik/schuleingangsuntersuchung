@@ -5,11 +5,11 @@
   "id": "UntersuchungsErgebnisVS",
   "title": "SEU Untersuchungsergebnis",
   "description": "Diese Codes enthalten die möglichen Ergebnisse einer Untersuchung",
-  "url": "https://www.oegd.de/fhir/seu//ValueSet/UntersuchungsErgebnisVS",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/UntersuchungsErgebnisVS",
   "compose": {
     "include": [
       {
-        "system": "https://www.oegd.de/fhir/seu//CodeSystem/UntersuchungsErgebnisCS"
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/UntersuchungsErgebnisCS"
       }
     ]
   }

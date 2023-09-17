@@ -5,11 +5,11 @@
   "id": "TestTypesVS",
   "title": "SEU Status Kind",
   "description": "Diese Codes enthalten die möglichen SEU Point Assessment Types",
-  "url": "https://www.oegd.de/fhir/seu//ValueSet/TestTypesVS",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/TestTypesVS",
   "compose": {
     "include": [
       {
-        "system": "https://www.oegd.de/fhir/seu//CodeSystem/TestTypesCS"
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/TestTypesCS"
       },
       {
         "system": "http://snomed.info/sct",

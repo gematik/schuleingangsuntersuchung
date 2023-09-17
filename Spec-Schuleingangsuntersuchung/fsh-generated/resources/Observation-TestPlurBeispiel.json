@@ -3,7 +3,7 @@
   "id": "TestPlurBeispiel",
   "meta": {
     "profile": [
-      "https://www.oegd.de/fhir/seu//StructureDefinition/TestPlur"
+      "https://www.oegd.de/fhir/seu/StructureDefinition/TestPlur"
     ]
   },
   "status": "final",
@@ -11,7 +11,7 @@
     "coding": [
       {
         "code": "plur",
-        "system": "https://www.oegd.de/fhir/seu//CodeSystem/TestTypesCS",
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/TestTypesCS",
         "display": "SOPESS-Pluralbildung"
       }
     ]

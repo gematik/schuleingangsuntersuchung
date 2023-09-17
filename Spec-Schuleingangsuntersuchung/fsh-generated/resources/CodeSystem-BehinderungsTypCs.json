@@ -5,7 +5,7 @@
   "name": "BehinderungsTypCS",
   "id": "BehinderungsTypCS",
   "title": "SEU Behinderungsart",
-  "url": "https://www.oegd.de/fhir/seu//CodeSystem/BehinderungsTypCS",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/BehinderungsTypCS",
   "concept": [
     {
       "code": "K",

@@ -5,7 +5,7 @@
   "name": "SchulempfehlungCS",
   "id": "SchulempfehlungCS",
   "title": "SEU Schulempfehlungen",
-  "url": "https://www.oegd.de/fhir/seu//CodeSystem/SchulempfehlungCS",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/SchulempfehlungCS",
   "concept": [
     {
       "code": "nein",

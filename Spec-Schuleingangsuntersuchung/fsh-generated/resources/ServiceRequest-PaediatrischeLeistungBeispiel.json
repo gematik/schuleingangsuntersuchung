@@ -3,7 +3,7 @@
   "id": "PaediatrischeLeistungBeispiel",
   "meta": {
     "profile": [
-      "https://www.oegd.de/fhir/seu//StructureDefinition/PaediatrischeLeistung"
+      "https://www.oegd.de/fhir/seu/StructureDefinition/PaediatrischeLeistung"
     ]
   },
   "status": "active",

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "FruehererGemeindeNameEX",
-  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/FruehererGemeindeNameEX",
+  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/FruehererGemeindeNameEX",
   "name": "FruehererGemeindeNameEX",
   "title": "Früherer Gemeindename Extension",
   "status": "draft",
@@ -41,7 +41,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.oegd.de/fhir/seu//StructureDefinition/FruehererGemeindeNameEX"
+        "fixedUri": "https://www.oegd.de/fhir/seu/StructureDefinition/FruehererGemeindeNameEX"
       },
       {
         "id": "Extension.value[x]",

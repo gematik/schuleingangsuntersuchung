@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "TestVisper",
-  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/TestVisper",
+  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/TestVisper",
   "name": "TestVisper",
   "status": "draft",
   "fhirVersion": "4.0.1",
@@ -40,7 +40,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "Observation",
-  "baseDefinition": "https://www.oegd.de/fhir/seu//StructureDefinition/Test",
+  "baseDefinition": "https://www.oegd.de/fhir/seu/StructureDefinition/Test",
   "derivation": "constraint",
   "differential": {
     "element": [

@@ -5,11 +5,11 @@
   "id": "BehinderungsTypVS",
   "title": "SEU Behinderungsart",
   "description": "Diese Codes enthalten alle Behinderungsarten",
-  "url": "https://www.oegd.de/fhir/seu//ValueSet/BehinderungsTypVS",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/BehinderungsTypVS",
   "compose": {
     "include": [
       {
-        "system": "https://www.oegd.de/fhir/seu//CodeSystem/BehinderungsTypCS"
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/BehinderungsTypCS"
       }
     ]
   }

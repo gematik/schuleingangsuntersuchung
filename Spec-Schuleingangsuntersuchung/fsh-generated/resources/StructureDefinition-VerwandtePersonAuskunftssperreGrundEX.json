@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "VerwandtePersonAuskunftssperreGrundEX",
-  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/VerwandtePersonAuskunftssperreGrundEX",
+  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/VerwandtePersonAuskunftssperreGrundEX",
   "name": "VerwandtePersonAuskunftssperreGrundEX",
   "title": "Verwandte Person Auskunftssperre Grund Extension",
   "status": "draft",
@@ -39,7 +39,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.oegd.de/fhir/seu//StructureDefinition/VerwandtePersonAuskunftssperreGrundEX"
+        "fixedUri": "https://www.oegd.de/fhir/seu/StructureDefinition/VerwandtePersonAuskunftssperreGrundEX"
       },
       {
         "id": "Extension.value[x]",

@@ -5,7 +5,7 @@
   "name": "PersonEthnieCS",
   "id": "PersonEthnieCS",
   "title": "SEU Sprachlich-ethnischer Familienhintergrund",
-  "url": "https://www.oegd.de/fhir/seu//CodeSystem/PersonEthnieCS",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/PersonEthnieCS",
   "concept": [
     {
       "code": "0",

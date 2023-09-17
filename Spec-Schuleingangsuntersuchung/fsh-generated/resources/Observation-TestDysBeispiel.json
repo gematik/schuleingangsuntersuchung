@@ -3,7 +3,7 @@
   "id": "TestDysBeispiel",
   "meta": {
     "profile": [
-      "https://www.oegd.de/fhir/seu//StructureDefinition/TestDys"
+      "https://www.oegd.de/fhir/seu/StructureDefinition/TestDys"
     ]
   },
   "status": "final",
@@ -11,7 +11,7 @@
     "coding": [
       {
         "code": "dys",
-        "system": "https://www.oegd.de/fhir/seu//CodeSystem/TestTypesCS",
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/TestTypesCS",
         "display": "Anzahl auffälliger Laut/Stammfehler"
       }
     ]

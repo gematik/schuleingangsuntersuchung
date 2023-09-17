@@ -3,7 +3,7 @@
   "id": "TestZaehlBeispiel",
   "meta": {
     "profile": [
-      "https://www.oegd.de/fhir/seu//StructureDefinition/TestZaehl"
+      "https://www.oegd.de/fhir/seu/StructureDefinition/TestZaehl"
     ]
   },
   "status": "final",
@@ -11,7 +11,7 @@
     "coding": [
       {
         "code": "zaehl",
-        "system": "https://www.oegd.de/fhir/seu//CodeSystem/TestTypesCS",
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/TestTypesCS",
         "display": "SOPESS-Zahlen und Mengenwissen"
       }
     ]

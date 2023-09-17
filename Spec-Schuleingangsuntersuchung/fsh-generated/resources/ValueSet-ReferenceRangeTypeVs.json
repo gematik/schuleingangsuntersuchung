@@ -4,7 +4,7 @@
   "name": "ReferenceRangeTypeVS",
   "id": "ReferenceRangeTypeVS",
   "title": "SEU Point Assessment Reference Range",
-  "url": "https://www.oegd.de/fhir/seu//ValueSet/ReferenceRangeTypeVS",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/ReferenceRangeTypeVS",
   "compose": {
     "include": [
       {

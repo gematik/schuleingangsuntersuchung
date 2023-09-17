@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "Risikofaktor",
-  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/Risikofaktor",
+  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/Risikofaktor",
   "name": "Risikofaktor",
   "status": "draft",
   "fhirVersion": "4.0.1",
@@ -103,7 +103,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.oegd.de/fhir/seu//ValueSet/RisikofaktorVS"
+          "valueSet": "https://www.oegd.de/fhir/seu/ValueSet/RisikofaktorVS"
         }
       },
       {

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "PersonUebermittlungsssperrePolitikEX",
-  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/PersonUebermittlungsssperrePolitikEX",
+  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/PersonUebermittlungsssperrePolitikEX",
   "name": "PersonUebermittlungsssperrePolitikEX",
   "title": "Übermittlungssperre Politik",
   "status": "draft",
@@ -41,7 +41,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.oegd.de/fhir/seu//StructureDefinition/PersonUebermittlungsssperrePolitikEX"
+        "fixedUri": "https://www.oegd.de/fhir/seu/StructureDefinition/PersonUebermittlungsssperrePolitikEX"
       },
       {
         "id": "Extension.value[x]",

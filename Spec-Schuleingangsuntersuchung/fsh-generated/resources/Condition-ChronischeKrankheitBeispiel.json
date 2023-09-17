@@ -3,7 +3,7 @@
   "id": "ChronischeKrankheitBeispiel",
   "meta": {
     "profile": [
-      "https://www.oegd.de/fhir/seu//StructureDefinition/ChronischeKrankheit"
+      "https://www.oegd.de/fhir/seu/StructureDefinition/ChronischeKrankheit"
     ]
   },
   "code": {

@@ -5,7 +5,7 @@
   "name": "PaediatrischeLeistungCS",
   "id": "PaediatrischeLeistungCS",
   "title": "Sozialpädiatrische Leistungen",
-  "url": "https://www.oegd.de/fhir/seu//CodeSystem/PaediatrischeLeistungCS",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/PaediatrischeLeistungCS",
   "concept": [
     {
       "code": "sonstige",

@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "Test",
-  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/Test",
+  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/Test",
   "name": "Test",
   "status": "draft",
   "fhirVersion": "4.0.1",
@@ -70,7 +70,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.oegd.de/fhir/seu//ValueSet/TestTypesVS"
+          "valueSet": "https://www.oegd.de/fhir/seu/ValueSet/TestTypesVS"
         }
       },
       {
@@ -124,7 +124,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.oegd.de/fhir/seu//ValueSet/ReferenceRangeTypeVS"
+          "valueSet": "https://www.oegd.de/fhir/seu/ValueSet/ReferenceRangeTypeVS"
         }
       },
       {

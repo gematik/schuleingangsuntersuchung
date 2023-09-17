@@ -5,7 +5,7 @@
   "name": "UntersuchungsErgebnisCS",
   "id": "UntersuchungsErgebnisCS",
   "title": "SEU Untersuchungsergebnis",
-  "url": "https://www.oegd.de/fhir/seu//CodeSystem/UntersuchungsErgebnisCS",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/UntersuchungsErgebnisCS",
   "concept": [
     {
       "code": "I",

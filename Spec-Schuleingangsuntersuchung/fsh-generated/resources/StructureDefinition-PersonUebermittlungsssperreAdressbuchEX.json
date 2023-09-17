@@ -1,7 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "PersonUebermittlungsssperreAdressbuchEX",
-  "url": "https://www.oegd.de/fhir/seu//StructureDefinition/PersonUebermittlungsssperreAdressbuchEX",
+  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/PersonUebermittlungsssperreAdressbuchEX",
   "name": "PersonUebermittlungsssperreAdressbuchEX",
   "title": "Übermittlungssperre Adressbuch",
   "status": "draft",
@@ -41,7 +41,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.oegd.de/fhir/seu//StructureDefinition/PersonUebermittlungsssperreAdressbuchEX"
+        "fixedUri": "https://www.oegd.de/fhir/seu/StructureDefinition/PersonUebermittlungsssperreAdressbuchEX"
       },
       {
         "id": "Extension.value[x]",

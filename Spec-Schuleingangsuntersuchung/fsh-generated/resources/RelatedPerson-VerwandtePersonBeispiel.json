@@ -3,7 +3,7 @@
   "id": "VerwandtePersonBeispiel",
   "meta": {
     "profile": [
-      "https://www.oegd.de/fhir/seu//StructureDefinition/VerwandtePerson"
+      "https://www.oegd.de/fhir/seu/StructureDefinition/VerwandtePerson"
     ]
   },
   "name": [
@@ -69,12 +69,12 @@
       },
       "extension": [
         {
-          "url": "https://www.oegd.de/fhir/seu//StructureDefinition/VerwandtePersonDeutschkenntnisEX",
+          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/VerwandtePersonDeutschkenntnisEX",
           "valueCodeableConcept": {
             "coding": [
               {
                 "code": "4",
-                "system": "https://www.oegd.de/fhir/seu//CodeSystem/PersonDeutschkenntnisCS",
+                "system": "https://www.oegd.de/fhir/seu/CodeSystem/PersonDeutschkenntnisCS",
                 "display": "flüssig mit leichten Fehlern"
               }
             ]
@@ -85,11 +85,11 @@
   ],
   "extension": [
     {
-      "url": "https://www.oegd.de/fhir/seu//StructureDefinition/VerwandtePersonAuskunftssperreGrundEX",
+      "url": "https://www.oegd.de/fhir/seu/StructureDefinition/VerwandtePersonAuskunftssperreGrundEX",
       "valueString": "Schwerwiegender Grund"
     },
     {
-      "url": "https://www.oegd.de/fhir/seu//StructureDefinition/VerwandtePersonAuskunftssperreFristEX",
+      "url": "https://www.oegd.de/fhir/seu/StructureDefinition/VerwandtePersonAuskunftssperreFristEX",
       "valueDateTime": "2024-01-01"
     }
   ],
@@ -98,7 +98,7 @@
       "type": "both",
       "extension": [
         {
-          "url": "https://www.oegd.de/fhir/seu//StructureDefinition/WohnungsInhaberEX",
+          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/WohnungsInhaberEX",
           "valueString": "Erika Gabler"
         }
       ],
