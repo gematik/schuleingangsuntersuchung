@@ -1,5 +1,5 @@
 ---
-subject: https://www.oegd.de/fhir/seu/StructureDefinition/FruehererGemeindeNameEX
+subject: https://www.oegd.de/fhir/seu/StructureDefinition/PersonUebermittlungsssperreJubilaenEX
 expand: 2
 ---
 
@@ -11,7 +11,7 @@ expand: 2
 from
 	StructureDefinition
 where
-	url = 'https://www.oegd.de/fhir/seu/StructureDefinition/FruehererGemeindeNameEX'
+	url = 'https://www.oegd.de/fhir/seu/StructureDefinition/PersonUebermittlungsssperreJubilaenEX'
 select
 	CanonicalURL: url, Kontext: context.expression, Status: status, Version: version
 ```
@@ -25,7 +25,7 @@ select
     from
     	StructureDefinition
     where
-	    url = 'https://www.oegd.de/fhir/seu/StructureDefinition/FruehererGemeindeNameEX'
+	    url = 'https://www.oegd.de/fhir/seu/StructureDefinition/PersonUebermittlungsssperreJubilaenEX'
     select
 	    Beschreibung: description
     ```
