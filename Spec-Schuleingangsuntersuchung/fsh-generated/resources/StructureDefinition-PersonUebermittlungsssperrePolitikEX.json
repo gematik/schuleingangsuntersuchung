@@ -5,7 +5,7 @@
   "name": "PersonUebermittlungsssperrePolitikEX",
   "title": "Übermittlungssperre Politik",
   "status": "draft",
-  "description": "Auskünfte an Parteien, Wählergruppen und andere Träger von Wahlvorschlägen",
+  "description": "Diese Extension enthält Angaben zur Übermittlungssperre bezüglich Auskünften an Parteien, Wählergruppen und andere Träger von Wahlvorschlägen",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -31,7 +31,7 @@
         "id": "Extension",
         "path": "Extension",
         "short": "Übermittlungssperre Politik",
-        "definition": "Auskünfte an Parteien, Wählergruppen und andere Träger von Wahlvorschlägen"
+        "definition": "Diese Extension enthält Angaben zur Übermittlungssperre bezüglich Auskünften an Parteien, Wählergruppen und andere Träger von Wahlvorschlägen"
       },
       {
         "id": "Extension.extension",

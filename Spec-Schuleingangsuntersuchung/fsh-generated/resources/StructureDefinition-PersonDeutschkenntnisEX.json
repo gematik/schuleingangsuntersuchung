@@ -5,6 +5,7 @@
   "name": "PersonDeutschkenntnisEX",
   "title": "Deutschkenntnisse",
   "status": "draft",
+  "description": "Diese Extension enthält Angaben zu den Deutschkenntnissen der betreffenden Person in codierter Form",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -29,7 +30,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Deutschkenntnisse"
+        "short": "Deutschkenntnisse",
+        "definition": "Diese Extension enthält Angaben zu den Deutschkenntnissen der betreffenden Person in codierter Form"
       },
       {
         "id": "Extension.extension",

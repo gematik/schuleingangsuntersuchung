@@ -5,7 +5,7 @@
   "name": "FruehererGemeindeNameEX",
   "title": "Früherer Gemeindename Extension",
   "status": "draft",
-  "description": "Angabe des früheren Gemeindenamens",
+  "description": "Diese Extension enthält nähere Informationen zur Angabe des früheren Gemeindenamens",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -31,7 +31,7 @@
         "id": "Extension",
         "path": "Extension",
         "short": "Früherer Gemeindename Extension",
-        "definition": "Angabe des früheren Gemeindenamens"
+        "definition": "Diese Extension enthält nähere Informationen zur Angabe des früheren Gemeindenamens"
       },
       {
         "id": "Extension.extension",

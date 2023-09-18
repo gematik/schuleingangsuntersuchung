@@ -5,7 +5,7 @@
   "name": "PersonUebermittlungsssperreJubilaenEX",
   "title": "Übermittlungssperre Jubilaen",
   "status": "draft",
-  "description": "Auskünfte über Alters- und Ehejubiläen",
+  "description": "Diese Extension enthält Angaben zur Übermittlungssperre bezüglich Auskünften über Alters- und Ehejubiläen",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -31,7 +31,7 @@
         "id": "Extension",
         "path": "Extension",
         "short": "Übermittlungssperre Jubilaen",
-        "definition": "Auskünfte über Alters- und Ehejubiläen"
+        "definition": "Diese Extension enthält Angaben zur Übermittlungssperre bezüglich Auskünften über Alters- und Ehejubiläen"
       },
       {
         "id": "Extension.extension",

@@ -5,7 +5,7 @@
   "name": "PersonUebermittlungsssperreAdressbuchEX",
   "title": "Übermittlungssperre Adressbuch",
   "status": "draft",
-  "description": "Auskünfte an Adressbuchverlage",
+  "description": "Diese Extension enthält Angaben zur Übermittlungssperre bezüglich Auskünften an Adressbuchverläge",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -31,7 +31,7 @@
         "id": "Extension",
         "path": "Extension",
         "short": "Übermittlungssperre Adressbuch",
-        "definition": "Auskünfte an Adressbuchverlage"
+        "definition": "Diese Extension enthält Angaben zur Übermittlungssperre bezüglich Auskünften an Adressbuchverläge"
       },
       {
         "id": "Extension.extension",

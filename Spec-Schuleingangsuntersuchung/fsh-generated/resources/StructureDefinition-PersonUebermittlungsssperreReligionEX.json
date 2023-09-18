@@ -5,7 +5,7 @@
   "name": "PersonUebermittlungsssperreReligionEX",
   "title": "Übermittlungssperre Religion",
   "status": "draft",
-  "description": "Datenübermittlungen an öffentlich-rechtliche Religionsgemeinschaften",
+  "description": "Diese Extension enthält Angaben zur Übermittlungssperre bezüglich Datenübermittlungen an öffentlich-rechtliche Religionsgemeinschaften",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -31,7 +31,7 @@
         "id": "Extension",
         "path": "Extension",
         "short": "Übermittlungssperre Religion",
-        "definition": "Datenübermittlungen an öffentlich-rechtliche Religionsgemeinschaften"
+        "definition": "Diese Extension enthält Angaben zur Übermittlungssperre bezüglich Datenübermittlungen an öffentlich-rechtliche Religionsgemeinschaften"
       },
       {
         "id": "Extension.extension",

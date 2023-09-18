@@ -5,6 +5,7 @@
   "name": "VerwandtePersonAuskunftssperreFristEX",
   "title": "Verwandte Person Auskunftssperre Frist Extension",
   "status": "draft",
+  "description": "Diese Extension enthält Angaben zur Frist der Auskunftssperre der verwandten Person",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -29,7 +30,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Verwandte Person Auskunftssperre Frist Extension"
+        "short": "Verwandte Person Auskunftssperre Frist Extension",
+        "definition": "Diese Extension enthält Angaben zur Frist der Auskunftssperre der verwandten Person"
       },
       {
         "id": "Extension.extension",

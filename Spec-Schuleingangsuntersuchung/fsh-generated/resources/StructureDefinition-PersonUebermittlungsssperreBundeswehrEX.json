@@ -5,7 +5,7 @@
   "name": "PersonUebermittlungsssperreBundeswehrEX",
   "title": "Übermittlungssperre Bundeswehr",
   "status": "draft",
-  "description": "Datenübermittlung an das Bundesamt für Personalmanagement der Bundeswehr",
+  "description": "Diese Extension enthält Angaben zur Übermittlungssperre bezüglich Datenübermittlungen an das Bundesamt für Personalmanagement der Bundeswehr",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -31,7 +31,7 @@
         "id": "Extension",
         "path": "Extension",
         "short": "Übermittlungssperre Bundeswehr",
-        "definition": "Datenübermittlung an das Bundesamt für Personalmanagement der Bundeswehr"
+        "definition": "Diese Extension enthält Angaben zur Übermittlungssperre bezüglich Datenübermittlungen an das Bundesamt für Personalmanagement der Bundeswehr"
       },
       {
         "id": "Extension.extension",

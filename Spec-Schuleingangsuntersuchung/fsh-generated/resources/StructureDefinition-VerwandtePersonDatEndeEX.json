@@ -5,6 +5,7 @@
   "name": "VerwandtePersonDatEndeEX",
   "title": "Verwandte Person DatEnde EX",
   "status": "draft",
+  "description": "Diese Extension enthält Angaben zum DatEndeEX einer verwandten Person",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -29,7 +30,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Verwandte Person DatEnde EX"
+        "short": "Verwandte Person DatEnde EX",
+        "definition": "Diese Extension enthält Angaben zum DatEndeEX einer verwandten Person"
       },
       {
         "id": "Extension.extension",

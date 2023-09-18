@@ -5,6 +5,7 @@
   "name": "VerwandtePersonAuskunftssperreGrundEX",
   "title": "Verwandte Person Auskunftssperre Grund Extension",
   "status": "draft",
+  "description": "Diese Extension enthält Angaben zur Auskunftssperre der verwandten Person",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -29,7 +30,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "Verwandte Person Auskunftssperre Grund Extension"
+        "short": "Verwandte Person Auskunftssperre Grund Extension",
+        "definition": "Diese Extension enthält Angaben zur Auskunftssperre der verwandten Person"
       },
       {
         "id": "Extension.extension",

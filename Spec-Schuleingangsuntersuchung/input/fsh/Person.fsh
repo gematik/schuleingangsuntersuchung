@@ -101,42 +101,44 @@ Id: Person
 Extension: PersonUebermittlungsssperreReligionEX
 Id: PersonUebermittlungsssperreReligionEX
 Title:  "Übermittlungssperre Religion"
-Description: "Datenübermittlungen an öffentlich-rechtliche Religionsgemeinschaften"
+Description: "Diese Extension enthält Angaben zur Übermittlungssperre bezüglich Datenübermittlungen an öffentlich-rechtliche Religionsgemeinschaften"
 * value[x] only boolean
 
 Extension: PersonUebermittlungsssperrePolitikEX
 Id: PersonUebermittlungsssperrePolitikEX
 Title:  "Übermittlungssperre Politik"
-Description: "Auskünfte an Parteien, Wählergruppen und andere Träger von Wahlvorschlägen"
+Description: "Diese Extension enthält Angaben zur Übermittlungssperre bezüglich Auskünften an Parteien, Wählergruppen und andere Träger von Wahlvorschlägen"
 * value[x] only boolean
 
 Extension: PersonUebermittlungsssperreJubilaenEX
 Id: PersonUebermittlungsssperreJubilaenEX
 Title:  "Übermittlungssperre Jubilaen"
-Description: "Auskünfte über Alters- und Ehejubiläen"
+Description: "Diese Extension enthält Angaben zur Übermittlungssperre bezüglich Auskünften über Alters- und Ehejubiläen"
 * value[x] only boolean
 
 Extension: PersonUebermittlungsssperreAdressbuchEX
 Id: PersonUebermittlungsssperreAdressbuchEX
 Title:  "Übermittlungssperre Adressbuch"
-Description: "Auskünfte an Adressbuchverlage"
+Description: "Diese Extension enthält Angaben zur Übermittlungssperre bezüglich Auskünften an Adressbuchverläge"
 * value[x] only boolean
 
 Extension: PersonUebermittlungsssperreBundeswehrEX
 Id: PersonUebermittlungsssperreBundeswehrEX
 Title:  "Übermittlungssperre Bundeswehr"
-Description: "Datenübermittlung an das Bundesamt für Personalmanagement der Bundeswehr"
+Description: "Diese Extension enthält Angaben zur Übermittlungssperre bezüglich Datenübermittlungen an das Bundesamt für Personalmanagement der Bundeswehr"
 * value[x] only boolean
 
 Extension: PersonMigrationshintergrundEX
 Id: PersonMigrationshintergrundEX
 Title:  "Migrationshintergrund"
+Description: "Diese Extension enthält Angaben zum Migrationshintergrund der betreffenden Person in codierter Form"
 * value[x] only CodeableConcept
 * valueCodeableConcept from PersonEthnieVS
 
 Extension: PersonDeutschkenntnisEX
 Id: PersonDeutschkenntnisEX
 Title:  "Deutschkenntnisse"
+Description: "Diese Extension enthält Angaben zu den Deutschkenntnissen der betreffenden Person in codierter Form"
 * value[x] only CodeableConcept
 * valueCodeableConcept from PersonDeutschkenntnisVS
 

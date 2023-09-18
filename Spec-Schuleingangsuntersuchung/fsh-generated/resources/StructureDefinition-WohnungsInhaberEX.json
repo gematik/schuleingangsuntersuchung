@@ -5,7 +5,7 @@
   "name": "WohnungsInhaberEX",
   "title": "Wohnungsinhaber Extension",
   "status": "draft",
-  "description": "Angabe des Wohnungsinhabers",
+  "description": "Diese Extension enthält nähere Informationen zur Angabe des Wohnungsinhabers",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -31,7 +31,7 @@
         "id": "Extension",
         "path": "Extension",
         "short": "Wohnungsinhaber Extension",
-        "definition": "Angabe des Wohnungsinhabers"
+        "definition": "Diese Extension enthält nähere Informationen zur Angabe des Wohnungsinhabers"
       },
       {
         "id": "Extension.extension",

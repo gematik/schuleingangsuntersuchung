@@ -82,21 +82,25 @@ Id: VerwandtePerson
 Extension: VerwandtePersonDatEndeEX
 Id: VerwandtePersonDatEndeEX
 Title:  "Verwandte Person DatEnde EX"
+Description: "Diese Extension enthält Angaben zum DatEndeEX einer verwandten Person"
 * value[x] only dateTime
 
 Extension: VerwandtePersonAuskunftssperreGrundEX
 Id: VerwandtePersonAuskunftssperreGrundEX
 Title:  "Verwandte Person Auskunftssperre Grund Extension"
+Description: "Diese Extension enthält Angaben zur Auskunftssperre der verwandten Person"
 * value[x] only string
 
 Extension: VerwandtePersonAuskunftssperreFristEX
 Id: VerwandtePersonAuskunftssperreFristEX
 Title:  "Verwandte Person Auskunftssperre Frist Extension"
+Description: "Diese Extension enthält Angaben zur Frist der Auskunftssperre der verwandten Person"
 * value[x] only dateTime
 
 Extension: VerwandtePersonDeutschkenntnisEX
 Id: VerwandtePersonDeutschkenntnisEX
 Title:  "Deutschkenntnisse"
+Description: "Diese Extension enthält Angaben zu Deutschkenntnissen der verwandten Person"
 * value[x] only CodeableConcept
 * valueCodeableConcept from PersonDeutschkenntnisVS
 
