@@ -1,11 +1,7 @@
 ---
-subject: http://example.org/StructureDefinition/MeineExtension
+subject: https://www.oegd.de/fhir/seu/StructureDefinition/VerwandtePersonAuskunftssperreFristEX
 expand: 2
 ---
-
-|Hinweis|Diese Box bitte entfernen!|
-|-
-|![Information](https://wiki.hl7.de/images/thumb/Under_construction_icon-blue.svg/100px-Under_construction_icon-blue.svg.png)|Diese Seite ist ein Template, das bei Verwendung für ein konkretes Profil angepasst werden muss!|
 
 ## {{link}}
 
@@ -15,7 +11,7 @@ expand: 2
 from
 	StructureDefinition
 where
-	url = 'http://example.org/StructureDefinition/MeineExtension'
+	url = 'https://www.oegd.de/fhir/seu/StructureDefinition/VerwandtePersonAuskunftssperreFristEX'
 select
 	CanonicalURL: url, Kontext: context.expression, Status: status, Version: version
 ```
@@ -29,7 +25,7 @@ select
     from
     	StructureDefinition
     where
-	    url = 'http://example.org/StructureDefinition/MeineExtension'
+	    url = 'https://www.oegd.de/fhir/seu/StructureDefinition/VerwandtePersonAuskunftssperreFristEX'
     select
 	    Beschreibung: description
     ```
