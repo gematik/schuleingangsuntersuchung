@@ -1,11 +1,7 @@
 ---
-subject: http://example.org/StructureDefinition/MeinPatientProfil
+subject: https://www.oegd.de/fhir/seu/StructureDefinition/Behinderung
 expand: 1
 ---
-
-|Hinweis|Diese Box bitte entfernen!|
-|-
-|![Information](https://wiki.hl7.de/images/thumb/Under_construction_icon-blue.svg/100px-Under_construction_icon-blue.svg.png)|Diese Seite ist ein Template, das bei Verwendung für ein konkretes Profil angepasst werden muss!|
 
 ## {{link}}
 
@@ -15,11 +11,10 @@ expand: 1
 from
 	StructureDefinition
 where
-	url = 'http://example.org/StructureDefinition/MeinPatientProfil'
+	url = 'https://www.oegd.de/fhir/seu/StructureDefinition/Behinderung'
 select
 	Canonical: url, Status: status, Version: version, Basis: baseDefinition
 ```
-
 
 
 ### Inhalt
@@ -31,7 +26,7 @@ select
         from
 	        StructureDefinition
         where
-	        url = 'http://example.org/StructureDefinition/MeinPatientProfil'
+	        url = 'https://www.oegd.de/fhir/seu/StructureDefinition/Behinderung'
         select
 	        Beschreibung: description
         with
@@ -41,7 +36,7 @@ select
         from 
             StructureDefinition 
         where 
-            url = 'http://example.org/StructureDefinition/MeinPatientProfil' 
+            url = 'https://www.oegd.de/fhir/seu/StructureDefinition/Behinderung' 
         for 
             differential.element 
             where 
@@ -60,7 +55,7 @@ select
 from 
     StructureDefinition
 where 
-    url = 'http://example.org/StructureDefinition/MeinPatientProfil' 
+    url = 'https://www.oegd.de/fhir/seu/StructureDefinition/Behinderung' 
 for 
     snapshot.element
     where 
@@ -71,7 +66,7 @@ for
 
 ### Constraints/Invarianten
 @``` 
-from StructureDefinition where url = 'http://example.org/StructureDefinition/MeinPatientProfil' for differential.element.constraint select Name: key, Schweregrad: severity, Beschreibung: human, Ausdruck: expression
+from StructureDefinition where url = 'https://www.oegd.de/fhir/seu/StructureDefinition/Behinderung' for differential.element.constraint select Name: key, Schweregrad: severity, Beschreibung: human, Ausdruck: expression
 ```
 
 ### RestFul API
@@ -111,38 +106,18 @@ select Name: name, Spezifikation: definition, Verbindlichkeit: extension('http:/
 
 ### Beispiele
 <!-- Funktion der Beispiele beschreiben!-->
-#### valider Minimaldatensatz eines Patienten
+#### Beispieldatensatz
 <tabs>
     <tab title="Übersicht">      
-        {{render:BeispielPatient.xml}}
+        {{render:BeispielBehinderung}}
     </tab>
     <tab title="XML">      
-        {{xml:BeispielPatient.xml}}
+        {{xml:BeispielBehinderung}}
     </tab>
     <tab title="JSON">
-        {{json:BeispielPatient.xml}}
+        {{json:BeispielBehinderung}}
     </tab>
     <tab title="Link">
-        {{link:BeispielPatient.xml}}
+        {{link:BeispielBehinderung}}
     </tab>
 </tabs>
-
-#### valider Minimaldatensatz mit überlangem Nachnamen (erzeugt beim Validieren eine Warnung)
-<tabs>
-    <tab title="Übersicht">      
-        {{render:BeispielPatientNachnameZuLang.xml}}
-    </tab>
-    <tab title="XML">      
-        {{xml:BeispielPatientNachnameZuLang.xml}}
-    </tab>
-    <tab title="JSON">
-        {{json:BeispielPatientNachnameZuLang.xml}}
-    </tab>
-    <tab title="Link">
-        {{link:BeispielPatientNachnameZuLang.xml}}
-    </tab>
-</tabs>
-
-### Mappings
-
-
