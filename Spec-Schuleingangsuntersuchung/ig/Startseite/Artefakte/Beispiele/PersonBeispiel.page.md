@@ -5,12 +5,12 @@
 #### valider Minimaldatensatz eines Patienten
 <tabs>
     <tab title="Übersicht">      
-        {{render:Patient-PersonBeispiel}}
+        {{render:PersonBeispiel}}
     </tab>
     <tab title="JSON">
-        {{json:Patient-PersonBeispiel}}
+        {{json:PersonBeispiel}}
     </tab>
     <tab title="XML">
-        {{xml:Patient-PersonBeispiel}}
+        {{xml:PersonBeispiel}}
     </tab>
 </tabs>
