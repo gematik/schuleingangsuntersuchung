@@ -1,5 +1,5 @@
 ---
-subject: https://www.oegd.de/fhir/seu/StructureDefinition/Behinderung
+subject: https://www.oegd.de/fhir/seu/StructureDefinition/Blutdruck
 expand: 1
 ---
 
@@ -11,7 +11,7 @@ expand: 1
 from
 	StructureDefinition
 where
-	url = 'https://www.oegd.de/fhir/seu/StructureDefinition/Behinderung'
+	url = 'https://www.oegd.de/fhir/seu/StructureDefinition/Blutdruck'
 select
 	Canonical: url, Status: status, Version: version, Basis: baseDefinition
 ```
@@ -26,7 +26,7 @@ select
         from
 	        StructureDefinition
         where
-	        url = 'https://www.oegd.de/fhir/seu/StructureDefinition/Behinderung'
+	        url = 'https://www.oegd.de/fhir/seu/StructureDefinition/Blutdruck'
         select
 	        Beschreibung: description
         with
@@ -36,7 +36,7 @@ select
         from 
             StructureDefinition 
         where 
-            url = 'https://www.oegd.de/fhir/seu/StructureDefinition/Behinderung' 
+            url = 'https://www.oegd.de/fhir/seu/StructureDefinition/Blutdruck' 
         for 
             differential.element 
             where 
@@ -55,7 +55,7 @@ select
 from 
     StructureDefinition
 where 
-    url = 'https://www.oegd.de/fhir/seu/StructureDefinition/Behinderung' 
+    url = 'https://www.oegd.de/fhir/seu/StructureDefinition/Blutdruck' 
 for 
     snapshot.element
     where 
@@ -66,7 +66,7 @@ for
 
 ### Constraints/Invarianten
 @``` 
-from StructureDefinition where url = 'https://www.oegd.de/fhir/seu/StructureDefinition/Behinderung' for differential.element.constraint select Name: key, Schweregrad: severity, Beschreibung: human, Ausdruck: expression
+from StructureDefinition where url = 'https://www.oegd.de/fhir/seu/StructureDefinition/Blutdruck' for differential.element.constraint select Name: key, Schweregrad: severity, Beschreibung: human, Ausdruck: expression
 ```
 
 ### RestFul API
@@ -109,15 +109,15 @@ select Name: name, Spezifikation: definition, Verbindlichkeit: extension('http:/
 #### Beispieldatensatz
 <tabs>
     <tab title="Übersicht">      
-        {{render:BehinderungBeispiel}}
+        {{render:BlutdruckBeispiel}}
     </tab>
     <tab title="XML">      
-        {{xml:BehinderungBeispiel}}
+        {{xml:BlutdruckBeispiel}}
     </tab>
     <tab title="JSON">
-        {{json:BehinderungBeispiel}}
+        {{json:BlutdruckBeispiel}}
     </tab>
     <tab title="Link">
-        {{link:BehinderungBeispiel}}
+        {{link:BlutdruckBeispiel}}
     </tab>
 </tabs>
