@@ -1,6 +1,6 @@
 ## {{page-title}}
 
-### Ressourcentyp: Observation
+### Ressourcentyp: ServiceRequest
 
 #### Beispiel des Datensatzes zur pädiatrischen Leistung
 

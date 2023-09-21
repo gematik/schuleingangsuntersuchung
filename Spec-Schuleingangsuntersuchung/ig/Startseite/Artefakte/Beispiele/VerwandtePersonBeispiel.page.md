@@ -1,6 +1,6 @@
 ## {{page-title}}
 
-### Ressourcentyp: Observation
+### Ressourcentyp: RelatedPerson
 
 #### Beispiel des Datensatzes zur verwandten Person
 
