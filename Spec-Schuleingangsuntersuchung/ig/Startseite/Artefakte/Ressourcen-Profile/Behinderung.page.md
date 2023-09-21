@@ -109,15 +109,15 @@ select Name: name, Spezifikation: definition, Verbindlichkeit: extension('http:/
 #### Beispieldatensatz
 <tabs>
     <tab title="Übersicht">      
-        {{render:BeispielBehinderung}}
+        {{render:BehinderungBeispiel}}
     </tab>
     <tab title="XML">      
-        {{xml:BeispielBehinderung}}
+        {{xml:BehinderungBeispiel}}
     </tab>
     <tab title="JSON">
-        {{json:BeispielBehinderung}}
+        {{json:BehinderungBeispiel}}
     </tab>
     <tab title="Link">
-        {{link:BeispielBehinderung}}
+        {{link:BehinderungBeispiel}}
     </tab>
 </tabs>
