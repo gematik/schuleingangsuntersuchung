@@ -2,7 +2,7 @@
 
 ### Ressourcentyp: Patient
 
-#### valider Minimaldatensatz eines Patienten
+#### Beispiel des Datensatzes einer Person
 <tabs>
     <tab title="Übersicht">      
         {{render:PersonBeispiel}}
