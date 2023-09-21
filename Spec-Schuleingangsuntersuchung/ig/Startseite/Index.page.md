@@ -2,7 +2,7 @@
 
 
 <!-- hier Logo des Projektes oder der hauptverantwortlichen Organisation einfügen-->
-<img src="https://www.bundesgesundheitsministerium.de/fileadmin/_processed_/8/e/csm_Logo_Rki_110711_6d286bc563.jpg" alt="logo" width="200" align="right" style="margin:20px 20px"/>
+<img src="https://raw.githubusercontent.com/gematik/spec-ISiK-Basismodul/master-isik-stufe-2/Material/Gematik_Logo_Flag.png" alt="logo" width="200" align="right" style="margin:20px 20px"/>
 
 <!-- hier Projektlink einfügen-->
 <a href="https://simplifier.net/schuleingangsuntersuchung" class="btn btn-primary">zum Projekt auf Simplifier</a>
