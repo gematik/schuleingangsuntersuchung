@@ -5,7 +5,7 @@
 <img src="https://www.bundesgesundheitsministerium.de/fileadmin/_processed_/8/e/csm_Logo_Rki_110711_6d286bc563.jpg" alt="logo" width="200" align="right" style="margin:20px 20px"/>
 
 <!-- hier Projektlink einfügen-->
-<a href="https://simplifier.net/..." class="btn btn-primary">zum Projekt auf Simplifier</a>
+<a href="https://simplifier.net/schuleingangsuntersuchung" class="btn btn-primary">zum Projekt auf Simplifier</a>
 
 <!--Bei Verwendung von GitHub Workflows: Build Status einfügen, z.B.:
 [![CI (FHIR Validation)](https://github.com/meineOrganisation/meinProjekt/actions/workflows/main.yml/badge.svg)](https://github.com/meineOrganisation/meinProjekt/actions/workflows/main.yml)
