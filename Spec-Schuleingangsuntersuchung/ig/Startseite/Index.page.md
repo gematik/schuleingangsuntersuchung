@@ -1,8 +1,8 @@
 # {{page-title}} 
 
+<img src="https://raw.githubusercontent.com/gematik/spec-ISiK-Basismodul/master-isik-stufe-2/Material/Gematik_Logo_Flag.png" alt="gematik logo" width="400">
 
-<!-- hier Logo des Projektes oder der hauptverantwortlichen Organisation einfügen-->
-<img src="https://raw.githubusercontent.com/gematik/spec-ISiK-Basismodul/master-isik-stufe-2/Material/Gematik_Logo_Flag.png" alt="logo" width="200" align="right" style="margin:20px 20px"/>
+## ÖGD Schuleingangsuntersuchung
 
 <!-- hier Projektlink einfügen-->
 <a href="https://simplifier.net/schuleingangsuntersuchung" class="btn btn-primary">zum Projekt auf Simplifier</a>
