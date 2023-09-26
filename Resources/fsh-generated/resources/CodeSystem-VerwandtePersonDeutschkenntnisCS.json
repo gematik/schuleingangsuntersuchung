@@ -1,0 +1,28 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "VerwandtePersonDeutschkenntnisCS",
+  "id": "VerwandtePersonDeutschkenntnisCS",
+  "title": "Deutschkenntnis",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/VerwandtePersonDeutschkenntnisCS",
+  "concept": [
+    {
+      "code": "1",
+      "display": "rudimentär"
+    },
+    {
+      "code": "2",
+      "display": "fehlerhaft"
+    },
+    {
+      "code": "3",
+      "display": "fehlerfrei"
+    },
+    {
+      "code": "9",
+      "display": "unbekannt"
+    }
+  ],
+  "count": 4
+}

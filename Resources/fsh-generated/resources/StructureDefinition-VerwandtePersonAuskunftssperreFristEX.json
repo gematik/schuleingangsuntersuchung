@@ -1,0 +1,57 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "VerwandtePersonAuskunftssperreFristEX",
+  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/VerwandtePersonAuskunftssperreFristEX",
+  "name": "VerwandtePersonAuskunftssperreFristEX",
+  "title": "Verwandte Person Auskunftssperre Frist Extension",
+  "status": "draft",
+  "description": "Diese Extension enthält Angaben zur Frist der Auskunftssperre der verwandten Person",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Verwandte Person Auskunftssperre Frist Extension",
+        "definition": "Diese Extension enthält Angaben zur Frist der Auskunftssperre der verwandten Person"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://www.oegd.de/fhir/seu/StructureDefinition/VerwandtePersonAuskunftssperreFristEX"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ]
+      }
+    ]
+  }
+}

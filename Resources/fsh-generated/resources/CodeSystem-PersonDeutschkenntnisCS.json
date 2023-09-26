@@ -1,0 +1,32 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "PersonDeutschkenntnisCS",
+  "id": "PersonDeutschkenntnisCS",
+  "title": "Deutschkenntnis",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/PersonDeutschkenntnisCS",
+  "concept": [
+    {
+      "code": "1",
+      "display": "kein Deutschverständnis"
+    },
+    {
+      "code": "2",
+      "display": "rudimentär"
+    },
+    {
+      "code": "3",
+      "display": "flüssig mit erheblichen Fehlern"
+    },
+    {
+      "code": "4",
+      "display": "flüssig mit leichten Fehlern"
+    },
+    {
+      "code": "5",
+      "display": "fehlerfreies Deutsch"
+    }
+  ],
+  "count": 5
+}

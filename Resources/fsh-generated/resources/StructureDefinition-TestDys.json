@@ -1,0 +1,86 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "TestDys",
+  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/TestDys",
+  "name": "TestDys",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "https://www.oegd.de/fhir/seu/StructureDefinition/Test",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "dys",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/TestTypesCS",
+              "display": "Anzahl auffälliger Laut/Stammfehler"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.referenceRange",
+        "path": "Observation.referenceRange"
+      },
+      {
+        "id": "Observation.referenceRange.low",
+        "path": "Observation.referenceRange.low",
+        "patternQuantity": {
+          "value": 0,
+          "code": "1",
+          "system": "http://unitsofmeasure.org",
+          "unit": "Punktwert"
+        }
+      },
+      {
+        "id": "Observation.referenceRange.high",
+        "path": "Observation.referenceRange.high",
+        "patternQuantity": {
+          "value": 10,
+          "code": "1",
+          "system": "http://unitsofmeasure.org",
+          "unit": "Punktwert"
+        }
+      }
+    ]
+  }
+}
