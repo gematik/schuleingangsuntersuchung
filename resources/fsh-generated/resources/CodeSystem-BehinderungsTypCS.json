@@ -1,0 +1,28 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "BehinderungsTypCS",
+  "id": "BehinderungsTypCS",
+  "title": "SEU Behinderungsart",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/BehinderungsTypCS",
+  "concept": [
+    {
+      "code": "K",
+      "display": "Körperlich"
+    },
+    {
+      "code": "G",
+      "display": "Geistig"
+    },
+    {
+      "code": "S",
+      "display": "Seelisch"
+    },
+    {
+      "code": "M",
+      "display": "Mehrfach"
+    }
+  ],
+  "count": 4
+}

@@ -1,0 +1,32 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "RisikofaktorCS",
+  "id": "RisikofaktorCS",
+  "title": "SEU Risikofaktoren",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/RisikofaktorCS",
+  "concept": [
+    {
+      "code": "familie",
+      "display": "Familie"
+    },
+    {
+      "code": "nonkompliance",
+      "display": "Nonkompliance"
+    },
+    {
+      "code": "sozial",
+      "display": "Sozial"
+    },
+    {
+      "code": "migration",
+      "display": "Migration"
+    },
+    {
+      "code": "sonstiges",
+      "display": "Sonstiges Risiko"
+    }
+  ],
+  "count": 5
+}
