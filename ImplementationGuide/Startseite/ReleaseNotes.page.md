@@ -1,5 +1,11 @@
 ## {{page-title}}
 
+### Version 0.9.1 <!-- Major Version-->
+
+#### Package (Verlinkung folgt)
+
+* `changed` Aufteilung der Spezifikation in Personenmeldung und SOPESS
+
 ### Version 0.9.0 <!-- Major Version-->
 
 #### Package (Verlinkung folgt)

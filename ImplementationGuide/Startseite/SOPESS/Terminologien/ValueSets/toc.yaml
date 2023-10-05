@@ -4,10 +4,6 @@
   filename: BehinderungsTypVS.page.md
 - name: PaediatrischeLeistungVS
   filename: PaediatrischeLeistungVS.page.md
-- name: PersonDeutschkenntnisVS
-  filename: PersonDeutschkenntnisVS.page.md
-- name: PersonEthnieVS
-  filename: PersonEthnieVS.page.md
 - name: ReferenceRangeTypeVS
   filename: ReferenceRangeTypeVS.page.md
 - name: RisikofaktorVS
@@ -22,5 +18,3 @@
   filename: UntersuchungsArtVS.page.md
 - name: UntersuchungsErgebnisVS
   filename: UntersuchungsErgebnisVS.page.md
-- name: VerwandtePersonDeutschkenntnisVS
-  filename: VerwandtePersonDeutschkenntnisVS.page.md
