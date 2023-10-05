@@ -1,6 +1,6 @@
 ## {{page-title}}
 
-### Version 0.9.0 <!-- Major Version-->
+### Version 0.1.0 <!-- Major Version-->
 
 #### Package (Verlinkung folgt)
 

@@ -1,7 +1,5 @@
 - name: Index
   filename: Index.page.md
-- name: PersonBeispiel
-  filename: PersonBeispiel.page.md
 - name: ChronischeKrankheitBeispiel
   filename: ChronischeKrankheitBeispiel.page.md
 - name: BehinderungBeispiel
@@ -50,7 +48,5 @@
   filename: UntersuchungBeispielMuskel.page.md
 - name: UntersuchungBeispielNeurologie
   filename: UntersuchungBeispielNeurologie.page.md
-- name: VerwandtePersonBeispiel
-  filename: VerwandtePersonBeispiel.page.md
 - name: PaediatrischeLeistungBeispiel
   filename: PaediatrischeLeistungBeispiel.page.md

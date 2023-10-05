@@ -4,10 +4,6 @@
   filename: BehinderungsTypCS.page.md
 - name: PaediatrischeLeistungCS
   filename: PaediatrischeLeistungCS.page.md
-- name: PersonDeutschkenntnisCS
-  filename: PersonDeutschkenntnisCS.page.md
-- name: PersonEthnieCS
-  filename: PersonEthnieCS.page.md
 - name: RisikofaktorCS
   filename: RisikofaktorCS.page.md
 - name: Schulempfehlung
@@ -18,5 +14,3 @@
   filename: TestTypesCS.page.md
 - name: UntersuchungsErgebnisCS
   filename: UntersuchungsErgebnisCS.page.md
-- name: VerwandtePersonDeutschkenntnisCS
-  filename: VerwandtePersonDeutschkenntnisCS.page.md

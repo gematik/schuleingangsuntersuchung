@@ -1,0 +1,8 @@
+- name: Index
+  filename: Index.page.md
+- name: PersonDeutschkenntnisCS
+  filename: PersonDeutschkenntnisCS.page.md
+- name: PersonEthnieCS
+  filename: PersonEthnieCS.page.md
+- name: VerwandtePersonDeutschkenntnisCS
+  filename: VerwandtePersonDeutschkenntnisCS.page.md
