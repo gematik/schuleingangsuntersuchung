@@ -1,0 +1,10 @@
+- name: Index
+  filename: Index.page.md
+- name: Ressourcen-Profile
+  filename: Ressourcen-Profile
+- name: Terminologien
+  filename: Terminologien
+- name: Invarianten
+  filename: Invarianten.page.md
+- name: Beispiele
+  filename: Beispiele
