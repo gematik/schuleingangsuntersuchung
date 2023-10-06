@@ -19,13 +19,13 @@
   "referenceRange": [
     {
       "low": {
-        "value": 0,
+        "value": 10,
         "code": "1",
         "system": "http://unitsofmeasure.org",
         "unit": "Punktwert"
       },
       "high": {
-        "value": 10,
+        "value": 30,
         "code": "1",
         "system": "http://unitsofmeasure.org",
         "unit": "Punktwert"
@@ -42,7 +42,7 @@
     },
     {
       "low": {
-        "value": 0,
+        "value": 9,
         "code": "1",
         "system": "http://unitsofmeasure.org",
         "unit": "Punktwert"
@@ -71,7 +71,7 @@
         "unit": "Punktwert"
       },
       "high": {
-        "value": 10,
+        "value": 8,
         "code": "1",
         "system": "http://unitsofmeasure.org",
         "unit": "Punktwert"

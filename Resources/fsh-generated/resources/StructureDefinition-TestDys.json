@@ -58,11 +58,62 @@
         }
       },
       {
-        "id": "Observation.referenceRange",
-        "path": "Observation.referenceRange"
+        "id": "Observation.referenceRange:abnormal",
+        "path": "Observation.referenceRange",
+        "sliceName": "abnormal"
       },
       {
-        "id": "Observation.referenceRange.low",
+        "id": "Observation.referenceRange:abnormal.low",
+        "path": "Observation.referenceRange.low",
+        "patternQuantity": {
+          "value": 10,
+          "code": "1",
+          "system": "http://unitsofmeasure.org",
+          "unit": "Punktwert"
+        }
+      },
+      {
+        "id": "Observation.referenceRange:abnormal.high",
+        "path": "Observation.referenceRange.high",
+        "patternQuantity": {
+          "value": 30,
+          "code": "1",
+          "system": "http://unitsofmeasure.org",
+          "unit": "Punktwert"
+        }
+      },
+      {
+        "id": "Observation.referenceRange:borderline",
+        "path": "Observation.referenceRange",
+        "sliceName": "borderline"
+      },
+      {
+        "id": "Observation.referenceRange:borderline.low",
+        "path": "Observation.referenceRange.low",
+        "patternQuantity": {
+          "value": 9,
+          "code": "1",
+          "system": "http://unitsofmeasure.org",
+          "unit": "Punktwert"
+        }
+      },
+      {
+        "id": "Observation.referenceRange:borderline.high",
+        "path": "Observation.referenceRange.high",
+        "patternQuantity": {
+          "value": 10,
+          "code": "1",
+          "system": "http://unitsofmeasure.org",
+          "unit": "Punktwert"
+        }
+      },
+      {
+        "id": "Observation.referenceRange:normal",
+        "path": "Observation.referenceRange",
+        "sliceName": "normal"
+      },
+      {
+        "id": "Observation.referenceRange:normal.low",
         "path": "Observation.referenceRange.low",
         "patternQuantity": {
           "value": 0,
@@ -72,10 +123,10 @@
         }
       },
       {
-        "id": "Observation.referenceRange.high",
+        "id": "Observation.referenceRange:normal.high",
         "path": "Observation.referenceRange.high",
         "patternQuantity": {
-          "value": 10,
+          "value": 8,
           "code": "1",
           "system": "http://unitsofmeasure.org",
           "unit": "Punktwert"
