@@ -1,0 +1,78 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Geschwister",
+  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/Geschwister",
+  "name": "Geschwister",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "FamilyMemberHistory",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/FamilyMemberHistory",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "FamilyMemberHistory.status",
+        "path": "FamilyMemberHistory.status",
+        "patternCode": "completed",
+        "mustSupport": true
+      },
+      {
+        "id": "FamilyMemberHistory.patient",
+        "path": "FamilyMemberHistory.patient",
+        "mustSupport": true
+      },
+      {
+        "id": "FamilyMemberHistory.relationship",
+        "path": "FamilyMemberHistory.relationship",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "SIB",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+              "display": "Sibling"
+            }
+          ]
+        }
+      },
+      {
+        "id": "FamilyMemberHistory.sex",
+        "path": "FamilyMemberHistory.sex",
+        "mustSupport": true
+      },
+      {
+        "id": "FamilyMemberHistory.born[x]",
+        "path": "FamilyMemberHistory.born[x]",
+        "type": [
+          {
+            "code": "date"
+          }
+        ],
+        "mustSupport": true
+      }
+    ]
+  }
+}
