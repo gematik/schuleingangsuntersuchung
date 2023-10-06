@@ -1,5 +1,7 @@
 - name: Index
   filename: Index.page.md
+- name: GeburtsregionBeispiel
+  filename: GeburtsregionBeispiel.page.md
 - name: ChronischeKrankheitBeispiel
   filename: ChronischeKrankheitBeispiel.page.md
 - name: BehinderungBeispiel

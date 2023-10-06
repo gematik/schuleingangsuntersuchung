@@ -1,6 +1,6 @@
-CodeSystem:  PersonEthnieCS
-Id: PersonEthnieCS
-Title: "SEU Sprachlich-ethnischer Familienhintergrund"
+CodeSystem:  GeburtsregionCS
+Id: GeburtsregionCS
+Title: "SOPESS Sprachlich-ethnischer Familienhintergrund"
 * #0 "Deutschland"
 * #1 "Türkei"
 * #2 "GUS/Osteuropa"
@@ -12,10 +12,10 @@ Title: "SEU Sprachlich-ethnischer Familienhintergrund"
 * #8 "Lateinamerika" 
 * #9 "Sonstige Staaten (Nordamerika, Australien, usw)"
 
-ValueSet: PersonEthnieVS
-Id: PersonEthnieVS
-Title: "SEU Sprachlich-ethnischer Familienhintergrund"
-* include codes from system PersonEthnieCS
+ValueSet: GeburtsregionVS
+Id: GeburtsregionVS
+Title: "SOPESS Sprachlich-ethnischer Familienhintergrund"
+* include codes from system GeburtsregionCS
 
 CodeSystem:  PersonDeutschkenntnisCS
 Id: PersonDeutschkenntnisCS

@@ -80,8 +80,7 @@ Id: Person
     PersonUebermittlungsssperrePolitikEX named SperrePolitik 0..1 MS and
     PersonUebermittlungsssperreJubilaenEX named SperreJubilaen 0..1 MS and
     PersonUebermittlungsssperreAdressbuchEX named SperreAddressbuch 0..1 MS and
-    PersonUebermittlungsssperreBundeswehrEX named SperreBundeswehr 0..1 MS and
-    PersonMigrationshintergrundEX named Migrationshintergrund 0..1 MS
+    PersonUebermittlungsssperreBundeswehrEX named SperreBundeswehr 0..1 MS
 * gender 1.. MS
   * extension contains GenderOtherDE named Geschlecht-Administrativ 0..1 MS
 * deceased[x] only dateTime
@@ -123,18 +122,10 @@ Title:  "Übermittlungssperre Bundeswehr"
 Description: "Diese Extension enthält Angaben zur Übermittlungssperre bezüglich Datenübermittlungen an das Bundesamt für Personalmanagement der Bundeswehr"
 * value[x] only boolean
 
-Extension: PersonMigrationshintergrundEX
-Id: PersonMigrationshintergrundEX
-Title:  "Migrationshintergrund"
-Description: "Diese Extension enthält Angaben zum Migrationshintergrund der betreffenden Person in codierter Form"
-* value[x] only CodeableConcept
-* valueCodeableConcept from PersonEthnieVS
-
 Instance: PersonBeispiel
 InstanceOf: Person
 Usage: #example
 * extension[SperreBundeswehr].valueBoolean = true
-* extension[Migrationshintergrund].valueCodeableConcept = PersonEthnieCS#2 "GUS/Osteuropa"
 * identifier[SteuerId].type = https://www.oegd.de/fhir/seu/#tax-id
 * identifier[SteuerId].system = "https://www.oegd.de/fhir/seu/"
 * identifier[SteuerId].value = "2398423874"
