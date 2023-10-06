@@ -1,9 +1,9 @@
 {
   "resourceType": "Observation",
-  "id": "DeutschkenntnisBeispiel",
+  "id": "PersonDeutschkenntnisBeispiel",
   "meta": {
     "profile": [
-      "https://www.oegd.de/fhir/seu/StructureDefinition/Deutschkenntnis"
+      "https://www.oegd.de/fhir/seu/StructureDefinition/PersonDeutschkenntnis"
     ]
   },
   "status": "final",

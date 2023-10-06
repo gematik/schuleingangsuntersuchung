@@ -2,6 +2,8 @@
   filename: Index.page.md
 - name: PersonDeutschkenntnis
   filename: PersonDeutschkenntnis.page.md
+- name: VerwandtePersonDeutschkenntnis
+  filename: VerwandtePersonDeutschkenntnis.page.md
 - name: Erstsprache
   filename: Erstsprache.page.md
 - name: Geburtsregion
