@@ -1,0 +1,31 @@
+{
+  "resourceType": "Observation",
+  "id": "DeutschkenntnisBeispiel",
+  "meta": {
+    "profile": [
+      "https://www.oegd.de/fhir/seu/StructureDefinition/Deutschkenntnis"
+    ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "297490002",
+        "system": "http://snomed.info/sct",
+        "display": "German language (qualifier value)"
+      }
+    ]
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "4",
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/PersonDeutschkenntnisCS",
+        "display": "flüssig mit leichten Fehlern"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/PersonBeispiel"
+  }
+}

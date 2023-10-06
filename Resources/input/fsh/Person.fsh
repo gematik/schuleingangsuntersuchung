@@ -92,11 +92,6 @@ Id: Person
   * ^slicing.discriminator.type = #pattern
   * ^slicing.discriminator.path = "$this"
   * ^slicing.rules = #open
-* communication contains deutsch 1..1 MS and erstsprache 1..1 MS
-* communication[deutsch].language = urn:ietf:bcp:47#de "German"
-* communication[deutsch].extension 1..* MS
-* communication[deutsch].extension contains PersonDeutschkenntnisEX named deutschkenntnis 1..1 MS
-* communication[erstsprache].preferred = true
 
 Extension: PersonUebermittlungsssperreReligionEX
 Id: PersonUebermittlungsssperreReligionEX
@@ -134,13 +129,6 @@ Title:  "Migrationshintergrund"
 Description: "Diese Extension enthält Angaben zum Migrationshintergrund der betreffenden Person in codierter Form"
 * value[x] only CodeableConcept
 * valueCodeableConcept from PersonEthnieVS
-
-Extension: PersonDeutschkenntnisEX
-Id: PersonDeutschkenntnisEX
-Title:  "Deutschkenntnisse"
-Description: "Diese Extension enthält Angaben zu den Deutschkenntnissen der betreffenden Person in codierter Form"
-* value[x] only CodeableConcept
-* valueCodeableConcept from PersonDeutschkenntnisVS
 
 Instance: PersonBeispiel
 InstanceOf: Person
@@ -192,7 +180,5 @@ Usage: #example
 * address[Postfach].city = "Musterhausen"
 * address[Postfach].postalCode = "98764"
 * address[Postfach].country = "DE"
-* communication[erstsprache].language = urn:ietf:bcp:47#nl "Dutch"
-* communication[deutsch].extension[deutschkenntnis].valueCodeableConcept = PersonDeutschkenntnisCS#4 "flüssig mit leichten Fehlern"
 
 // TODO: Postfach weglassen?
