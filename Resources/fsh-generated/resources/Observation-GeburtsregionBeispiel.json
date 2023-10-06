@@ -1,0 +1,31 @@
+{
+  "resourceType": "Observation",
+  "id": "GeburtsregionBeispiel",
+  "meta": {
+    "profile": [
+      "https://www.oegd.de/fhir/seu/StructureDefinition/Geburtsregion"
+    ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "169812000",
+        "system": "http://snomed.info/sct",
+        "display": "Place of birth (observable entity)"
+      }
+    ]
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "0",
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/GeburtsregionCS",
+        "display": "Deutschland"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/PersonBeispiel"
+  }
+}

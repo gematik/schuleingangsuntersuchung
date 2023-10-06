@@ -1,0 +1,31 @@
+{
+  "resourceType": "Observation",
+  "id": "ErstspracheBeispiel",
+  "meta": {
+    "profile": [
+      "https://www.oegd.de/fhir/seu/StructureDefinition/Erstsprache"
+    ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "224076006",
+        "system": "http://snomed.info/sct",
+        "display": "First language (observable entity)"
+      }
+    ]
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "nl",
+        "system": "urn:ietf:bcp:47",
+        "display": "Dutch"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/PersonBeispiel"
+  }
+}

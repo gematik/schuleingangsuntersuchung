@@ -2,8 +2,12 @@ Profile: TestDys
 Parent: Test
 Id: TestDys
 * code = TestTypesCS#dys "Anzahl auffälliger Laut/Stammfehler"
-* referenceRange.low = 0 '1' "Punktwert"
-* referenceRange.high = 10 '1' "Punktwert"
+* referenceRange[abnormal].low = 10 '1' "Punktwert"
+* referenceRange[abnormal].high = 30 '1' "Punktwert"
+* referenceRange[borderline].low = 9 '1' "Punktwert"
+* referenceRange[borderline].high = 10 '1' "Punktwert"
+* referenceRange[normal].low = 0 '1' "Punktwert"
+* referenceRange[normal].high = 8 '1' "Punktwert"
 
 Instance: TestDysBeispiel
 InstanceOf: TestDys

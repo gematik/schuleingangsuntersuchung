@@ -56,33 +56,6 @@
       }
     }
   ],
-  "communication": [
-    {
-      "language": {
-        "coding": [
-          {
-            "code": "de",
-            "system": "urn:ietf:bcp:47",
-            "display": "German"
-          }
-        ]
-      },
-      "extension": [
-        {
-          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/VerwandtePersonDeutschkenntnisEX",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "code": "4",
-                "system": "https://www.oegd.de/fhir/seu/CodeSystem/PersonDeutschkenntnisCS",
-                "display": "flüssig mit leichten Fehlern"
-              }
-            ]
-          }
-        }
-      ]
-    }
-  ],
   "extension": [
     {
       "url": "https://www.oegd.de/fhir/seu/StructureDefinition/VerwandtePersonAuskunftssperreGrundEX",

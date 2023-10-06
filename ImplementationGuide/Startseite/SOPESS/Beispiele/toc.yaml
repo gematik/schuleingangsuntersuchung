@@ -1,5 +1,13 @@
 - name: Index
   filename: Index.page.md
+- name: PersonDeutschkenntnisBeispiel
+  filename: PersonDeutschkenntnisBeispiel.page.md
+- name: VerwandtePersonDeutschkenntnisBeispiel
+  filename: VerwandtePersonDeutschkenntnisBeispiel.page.md
+- name: ErstspracheBeispiel
+  filename: ErstspracheBeispiel.page.md
+- name: GeburtsregionBeispiel
+  filename: GeburtsregionBeispiel.page.md
 - name: ChronischeKrankheitBeispiel
   filename: ChronischeKrankheitBeispiel.page.md
 - name: BehinderungBeispiel

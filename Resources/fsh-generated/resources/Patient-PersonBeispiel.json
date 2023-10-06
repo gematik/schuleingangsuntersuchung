@@ -56,60 +56,10 @@
       }
     }
   ],
-  "communication": [
-    {
-      "language": {
-        "coding": [
-          {
-            "code": "de",
-            "system": "urn:ietf:bcp:47",
-            "display": "German"
-          }
-        ]
-      },
-      "extension": [
-        {
-          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/PersonDeutschkenntnisEX",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "code": "4",
-                "system": "https://www.oegd.de/fhir/seu/CodeSystem/PersonDeutschkenntnisCS",
-                "display": "flüssig mit leichten Fehlern"
-              }
-            ]
-          }
-        }
-      ]
-    },
-    {
-      "language": {
-        "coding": [
-          {
-            "code": "nl",
-            "system": "urn:ietf:bcp:47",
-            "display": "Dutch"
-          }
-        ]
-      }
-    }
-  ],
   "extension": [
     {
       "url": "https://www.oegd.de/fhir/seu/StructureDefinition/PersonUebermittlungsssperreBundeswehrEX",
       "valueBoolean": true
-    },
-    {
-      "url": "https://www.oegd.de/fhir/seu/StructureDefinition/PersonMigrationshintergrundEX",
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "code": "2",
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PersonEthnieCS",
-            "display": "GUS/Osteuropa"
-          }
-        ]
-      }
     }
   ],
   "identifier": [

@@ -1,0 +1,31 @@
+{
+  "resourceType": "Observation",
+  "id": "VerwandtePersonDeutschkenntnisBeispiel",
+  "meta": {
+    "profile": [
+      "https://www.oegd.de/fhir/seu/StructureDefinition/VerwandtePersonDeutschkenntnis"
+    ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "297490002",
+        "system": "http://snomed.info/sct",
+        "display": "German language (qualifier value)"
+      }
+    ]
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "1",
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/VerwandtePersonDeutschkenntnisCS",
+        "display": "rudimentär"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/PersonBeispiel"
+  }
+}

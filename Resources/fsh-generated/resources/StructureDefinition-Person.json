@@ -152,22 +152,6 @@
         "mustSupport": true
       },
       {
-        "id": "Patient.extension:Migrationshintergrund",
-        "path": "Patient.extension",
-        "sliceName": "Migrationshintergrund",
-        "min": 0,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://www.oegd.de/fhir/seu/StructureDefinition/PersonMigrationshintergrundEX"
-            ]
-          }
-        ],
-        "mustSupport": true
-      },
-      {
         "id": "Patient.identifier",
         "path": "Patient.identifier",
         "slicing": {
@@ -629,87 +613,6 @@
           }
         ],
         "mustSupport": true
-      },
-      {
-        "id": "Patient.communication",
-        "path": "Patient.communication",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "pattern",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        },
-        "min": 2,
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.communication.language",
-        "path": "Patient.communication.language",
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.communication.preferred",
-        "path": "Patient.communication.preferred",
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.communication:deutsch",
-        "path": "Patient.communication",
-        "sliceName": "deutsch",
-        "min": 1,
-        "max": "1",
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.communication:deutsch.extension",
-        "path": "Patient.communication.extension",
-        "min": 1,
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.communication:deutsch.extension:deutschkenntnis",
-        "path": "Patient.communication.extension",
-        "sliceName": "deutschkenntnis",
-        "min": 1,
-        "max": "1",
-        "type": [
-          {
-            "code": "Extension",
-            "profile": [
-              "https://www.oegd.de/fhir/seu/StructureDefinition/PersonDeutschkenntnisEX"
-            ]
-          }
-        ],
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.communication:deutsch.language",
-        "path": "Patient.communication.language",
-        "patternCodeableConcept": {
-          "coding": [
-            {
-              "code": "de",
-              "system": "urn:ietf:bcp:47",
-              "display": "German"
-            }
-          ]
-        }
-      },
-      {
-        "id": "Patient.communication:erstsprache",
-        "path": "Patient.communication",
-        "sliceName": "erstsprache",
-        "min": 1,
-        "max": "1",
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.communication:erstsprache.preferred",
-        "path": "Patient.communication.preferred",
-        "patternBoolean": true
       }
     ]
   }

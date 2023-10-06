@@ -1,0 +1,15 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "GeburtsregionVS",
+  "id": "GeburtsregionVS",
+  "title": "SOPESS Sprachlich-ethnischer Familienhintergrund",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/GeburtsregionVS",
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/GeburtsregionCS"
+      }
+    ]
+  }
+}

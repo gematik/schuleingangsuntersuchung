@@ -1,5 +1,13 @@
 - name: Index
   filename: Index.page.md
+- name: PersonDeutschkenntnis
+  filename: PersonDeutschkenntnis.page.md
+- name: VerwandtePersonDeutschkenntnis
+  filename: VerwandtePersonDeutschkenntnis.page.md
+- name: Erstsprache
+  filename: Erstsprache.page.md
+- name: Geburtsregion
+  filename: Geburtsregion.page.md
 - name: Behinderung
   filename: Behinderung.page.md
 - name: Blutdruck
