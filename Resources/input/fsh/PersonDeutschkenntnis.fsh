@@ -1,6 +1,6 @@
-Profile: Deutschkenntnis
+Profile: PersonDeutschkenntnis
 Parent: Observation
-Id: Deutschkenntnis
+Id: PersonDeutschkenntnis
 * status MS
 * status = #final
 * category MS
@@ -17,8 +17,8 @@ Id: Deutschkenntnis
 * valueCodeableConcept.coding.code MS
 * valueCodeableConcept.coding.system MS
 
-Instance: DeutschkenntnisBeispiel
-InstanceOf: Deutschkenntnis
+Instance: PersonDeutschkenntnisBeispiel
+InstanceOf: PersonDeutschkenntnis
 Usage: #example
 * valueCodeableConcept = PersonDeutschkenntnisCS#4 "flüssig mit leichten Fehlern"
 * subject = Reference(PersonBeispiel)

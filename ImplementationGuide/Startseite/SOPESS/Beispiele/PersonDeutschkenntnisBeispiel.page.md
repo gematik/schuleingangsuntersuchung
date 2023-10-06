@@ -6,12 +6,12 @@
 
 <tabs>
     <tab title="Übersicht">      
-        {{render:DeutschkenntnisBeispiel}}
+        {{render:PersonDeutschkenntnisBeispiel}}
     </tab>
     <tab title="JSON">
-        {{json:DeutschkenntnisBeispiel}}
+        {{json:PersonDeutschkenntnisBeispiel}}
     </tab>
     <tab title="XML">
-        {{xml:DeutschkenntnisBeispiel}}
+        {{xml:PersonDeutschkenntnisBeispiel}}
     </tab>
 </tabs>

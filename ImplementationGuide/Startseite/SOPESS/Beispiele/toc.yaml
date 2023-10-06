@@ -1,9 +1,9 @@
 - name: Index
   filename: Index.page.md
 - name: Deutschkenntnis
-  filename: Deutschkenntnis.page.md
-- name: Erstsprache
-  filename: Erstsprache.page.md
+  filename: PersonDeutschkenntnisBeispiel.page.md
+- name: ErstspracheBeispiel
+  filename: ErstspracheBeispiel.page.md
 - name: GeburtsregionBeispiel
   filename: GeburtsregionBeispiel.page.md
 - name: ChronischeKrankheitBeispiel

@@ -1,7 +1,7 @@
 - name: Index
   filename: Index.page.md
-- name: Deutschkenntnis
-  filename: Deutschkenntnis.page.md
+- name: PersonDeutschkenntnis
+  filename: PersonDeutschkenntnis.page.md
 - name: Erstsprache
   filename: Erstsprache.page.md
 - name: Geburtsregion
