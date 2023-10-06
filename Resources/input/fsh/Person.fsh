@@ -85,12 +85,6 @@ Id: Person
   * extension contains GenderOtherDE named Geschlecht-Administrativ 0..1 MS
 * deceased[x] only dateTime
 * deceasedDateTime MS
-* communication MS
-  * language MS
-  * preferred MS
-  * ^slicing.discriminator.type = #pattern
-  * ^slicing.discriminator.path = "$this"
-  * ^slicing.rules = #open
 
 Extension: PersonUebermittlungsssperreReligionEX
 Id: PersonUebermittlungsssperreReligionEX

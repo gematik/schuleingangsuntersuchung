@@ -69,15 +69,6 @@ Id: VerwandtePerson
   VerwandtePersonDatEndeEX named DatEnde 0..1 and 
   VerwandtePersonAuskunftssperreGrundEX named AuskunftssperreGrund 0..1 and
   VerwandtePersonAuskunftssperreFristEX named AuskunftssperreFrist 0..1
-* communication MS
-  * language MS
-  * ^slicing.discriminator.type = #pattern
-  * ^slicing.discriminator.path = "$this"
-  * ^slicing.rules = #open
-* communication contains deutsch 1..1 MS
-* communication[deutsch].language = urn:ietf:bcp:47#de "German"
-* communication[deutsch].extension 1..* MS
-* communication[deutsch].extension contains VerwandtePersonDeutschkenntnisEX named deutschkenntnis 1..1 MS
 
 Extension: VerwandtePersonDatEndeEX
 Id: VerwandtePersonDatEndeEX
@@ -96,13 +87,6 @@ Id: VerwandtePersonAuskunftssperreFristEX
 Title:  "Verwandte Person Auskunftssperre Frist Extension"
 Description: "Diese Extension enthält Angaben zur Frist der Auskunftssperre der verwandten Person"
 * value[x] only dateTime
-
-Extension: VerwandtePersonDeutschkenntnisEX
-Id: VerwandtePersonDeutschkenntnisEX
-Title:  "Deutschkenntnisse"
-Description: "Diese Extension enthält Angaben zu Deutschkenntnissen der verwandten Person"
-* value[x] only CodeableConcept
-* valueCodeableConcept from PersonDeutschkenntnisVS
 
 Instance: VerwandtePersonBeispiel
 InstanceOf: VerwandtePerson
@@ -143,4 +127,3 @@ Usage: #example
 * address[Strassenanschrift].postalCode = "98764"
 * address[Strassenanschrift].country = "DE"
 * address[Strassenanschrift].extension[wohnungsinhaber].valueString = "Erika Gabler"
-* communication[deutsch].extension[deutschkenntnis].valueCodeableConcept = PersonDeutschkenntnisCS#4 "flüssig mit leichten Fehlern"

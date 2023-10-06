@@ -613,30 +613,6 @@
           }
         ],
         "mustSupport": true
-      },
-      {
-        "id": "Patient.communication",
-        "path": "Patient.communication",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "pattern",
-              "path": "$this"
-            }
-          ],
-          "rules": "open"
-        },
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.communication.language",
-        "path": "Patient.communication.language",
-        "mustSupport": true
-      },
-      {
-        "id": "Patient.communication.preferred",
-        "path": "Patient.communication.preferred",
-        "mustSupport": true
       }
     ]
   }
