@@ -145,14 +145,12 @@
         "id": "RelatedPerson.name:Name.family.extension:nachname",
         "path": "RelatedPerson.name.family.extension",
         "sliceName": "nachname",
-        "max": "1",
         "mustSupport": true
       },
       {
         "id": "RelatedPerson.name:Name.family.extension:vorsatzwort",
         "path": "RelatedPerson.name.family.extension",
         "sliceName": "vorsatzwort",
-        "max": "1",
         "mustSupport": true
       },
       {
@@ -219,14 +217,12 @@
         "id": "RelatedPerson.name:Geburtsname.family.extension:nachname",
         "path": "RelatedPerson.name.family.extension",
         "sliceName": "nachname",
-        "max": "1",
         "mustSupport": true
       },
       {
         "id": "RelatedPerson.name:Geburtsname.family.extension:vorsatzwort",
         "path": "RelatedPerson.name.family.extension",
         "sliceName": "vorsatzwort",
-        "max": "1",
         "mustSupport": true
       },
       {
