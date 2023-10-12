@@ -1,0 +1,28 @@
+{
+  "resourceType": "Observation",
+  "id": "GeburtsgewichtBeispiel",
+  "meta": {
+    "profile": [
+      "https://www.oegd.de/fhir/seu/StructureDefinition/Geburtsgewicht"
+    ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "364589006",
+        "system": "http://snomed.info/sct",
+        "display": "Birth weight (observable entity)"
+      }
+    ]
+  },
+  "valueQuantity": {
+    "unit": "Gram",
+    "system": "http://unitsofmeasure.org",
+    "code": "g",
+    "value": 1000
+  },
+  "subject": {
+    "reference": "Patient/PersonBeispiel"
+  }
+}
