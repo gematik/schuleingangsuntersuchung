@@ -1,8 +1,8 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "Brillentraeger",
-  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/Brillentraeger",
-  "name": "Brillentraeger",
+  "id": "Schwangerschaftsverlauf",
+  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/Schwangerschaftsverlauf",
+  "name": "Schwangerschaftsverlauf",
   "status": "draft",
   "fhirVersion": "4.0.1",
   "mapping": [
@@ -70,9 +70,9 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "225582009",
+              "code": "118185001",
               "system": "http://snomed.info/sct",
-              "display": "Wears glasses (finding)"
+              "display": "Finding related to pregnancy (finding)"
             }
           ]
         },
@@ -93,9 +93,28 @@
         "path": "Observation.value[x]",
         "type": [
           {
-            "code": "boolean"
+            "code": "CodeableConcept"
           }
         ],
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.oegd.de/fhir/seu/ValueSet/SchwangerschaftsverlaufsTypVS"
+        }
+      },
+      {
+        "id": "Observation.value[x].coding",
+        "path": "Observation.value[x].coding",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x].coding.system",
+        "path": "Observation.value[x].coding.system",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.value[x].coding.code",
+        "path": "Observation.value[x].coding.code",
         "mustSupport": true
       }
     ]

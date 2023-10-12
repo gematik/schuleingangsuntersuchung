@@ -1,0 +1,31 @@
+{
+  "resourceType": "Observation",
+  "id": "SchwangerschaftsverlaufBeispiel",
+  "meta": {
+    "profile": [
+      "https://www.oegd.de/fhir/seu/StructureDefinition/Schwangerschaftsverlauf"
+    ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "118185001",
+        "system": "http://snomed.info/sct",
+        "display": "Finding related to pregnancy (finding)"
+      }
+    ]
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "72892002",
+        "system": "http://snomed.info/sct",
+        "display": "Normal pregnancy (finding)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/PersonBeispiel"
+  }
+}

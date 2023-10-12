@@ -9,7 +9,6 @@ Id: Brillentraeger
 * code = $sct#225582009 "Wears glasses (finding)"
 * code.coding MS
 * subject MS
-* effective[x] MS
 * value[x] only boolean
 * valueBoolean MS
 
@@ -18,4 +17,3 @@ InstanceOf: Brillentraeger
 Usage: #example
 * valueBoolean = true
 * subject = Reference(PersonBeispiel)
-* effectiveDateTime = "2023-01-01"
