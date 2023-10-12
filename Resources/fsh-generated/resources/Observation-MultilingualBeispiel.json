@@ -1,0 +1,23 @@
+{
+  "resourceType": "Observation",
+  "id": "MultilingualBeispiel",
+  "meta": {
+    "profile": [
+      "https://www.oegd.de/fhir/seu/StructureDefinition/Multilingual"
+    ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "3281000175104",
+        "system": "http://snomed.info/sct",
+        "display": "Speaks multiple languages (finding)"
+      }
+    ]
+  },
+  "valueBoolean": true,
+  "subject": {
+    "reference": "Patient/PersonBeispiel"
+  }
+}
