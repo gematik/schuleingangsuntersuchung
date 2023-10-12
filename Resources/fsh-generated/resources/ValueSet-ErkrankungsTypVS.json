@@ -62,6 +62,10 @@
           {
             "code": "35253001",
             "display": "Attention deficit hyperactivity disorder, predominantly inattentive type (disorder)"
+          },
+          {
+            "code": "14304000",
+            "display": "Disorder of thyroid gland (disorder)"
           }
         ]
       }

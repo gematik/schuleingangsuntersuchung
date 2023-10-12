@@ -27,6 +27,7 @@ Description: "Dieses ValueSet enthält alle validen Erkrankungsarten des Elternf
 * include $sct#90708001 "Kidney disease (disorder)"
 * include $sct#41368006 "Disorder of urinary tract proper (disorder)"
 * include $sct#35253001 "Attention deficit hyperactivity disorder, predominantly inattentive type (disorder)"
+* include $sct#14304000 "Disorder of thyroid gland (disorder)"
 
 Instance: ErkrankungBeispiel
 InstanceOf: Erkrankung
