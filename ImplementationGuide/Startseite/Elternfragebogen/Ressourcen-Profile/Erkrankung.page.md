@@ -1,5 +1,5 @@
 ---
-subject: https://www.oegd.de/fhir/seu/StructureDefinition/Geschwister
+subject: https://www.oegd.de/fhir/seu/StructureDefinition/Erkrankung
 expand: 1
 ---
 
@@ -11,7 +11,7 @@ expand: 1
 from
 	StructureDefinition
 where
-	url = 'https://www.oegd.de/fhir/seu/StructureDefinition/Geschwister'
+	url = 'https://www.oegd.de/fhir/seu/StructureDefinition/Erkrankung'
 select
 	Canonical: url, Status: status, Version: version, Basis: baseDefinition
 ```
@@ -26,7 +26,7 @@ select
         from
 	        StructureDefinition
         where
-	        url = 'https://www.oegd.de/fhir/seu/StructureDefinition/Geschwister'
+	        url = 'https://www.oegd.de/fhir/seu/StructureDefinition/Erkrankung'
         select
 	        Beschreibung: description
         with
@@ -36,7 +36,7 @@ select
         from 
             StructureDefinition 
         where 
-            url = 'https://www.oegd.de/fhir/seu/StructureDefinition/Geschwister' 
+            url = 'https://www.oegd.de/fhir/seu/StructureDefinition/Erkrankung' 
         for 
             differential.element 
             where 
@@ -55,7 +55,7 @@ select
 from 
     StructureDefinition
 where 
-    url = 'https://www.oegd.de/fhir/seu/StructureDefinition/Geschwister' 
+    url = 'https://www.oegd.de/fhir/seu/StructureDefinition/Erkrankung' 
 for 
     snapshot.element
     where 
@@ -66,7 +66,7 @@ for
 
 ### Constraints/Invarianten
 @``` 
-from StructureDefinition where url = 'https://www.oegd.de/fhir/seu/StructureDefinition/Geschwister' for differential.element.constraint select Name: key, Schweregrad: severity, Beschreibung: human, Ausdruck: expression
+from StructureDefinition where url = 'https://www.oegd.de/fhir/seu/StructureDefinition/Erkrankung' for differential.element.constraint select Name: key, Schweregrad: severity, Beschreibung: human, Ausdruck: expression
 ```
 
 ### RestFul API
@@ -76,7 +76,7 @@ from StructureDefinition where url = 'https://www.oegd.de/fhir/seu/StructureDefi
 @```
 from
 	CapabilityStatement
-where rest.resource.type = 'Observation' 
+where rest.resource.type = 'Condition' 
 for  rest.resource.interaction
  select Interaktion: code, Verbindlichkeit: extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').value
 ```
@@ -85,7 +85,7 @@ for  rest.resource.interaction
 @```
 from
 	CapabilityStatement
-where rest.resource.type = 'Observation' 
+where rest.resource.type = 'Condition' 
 for rest.resource.searchParam  
 select Parameter: name, Typ: type, Verbindlichkeit: extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').value
 ```
@@ -94,7 +94,7 @@ select Parameter: name, Typ: type, Verbindlichkeit: extension('http://hl7.org/fh
 @```
 from
 	CapabilityStatement
-where rest.resource.type = 'Observation' 
+where rest.resource.type = 'Condition' 
 for rest.resource.operation  
 select Name: name, Spezifikation: definition, Verbindlichkeit: extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').value
 ```  
@@ -109,15 +109,15 @@ select Name: name, Spezifikation: definition, Verbindlichkeit: extension('http:/
 #### Beispieldatensatz
 <tabs>
     <tab title="Übersicht">      
-        {{render:GeschwisterBeispiel}}
+        {{render:ErkrankungBeispiel}}
     </tab>
     <tab title="XML">      
-        {{xml:GeschwisterBeispiel}}
+        {{xml:ErkrankungBeispiel}}
     </tab>
     <tab title="JSON">
-        {{json:GeschwisterBeispiel}}
+        {{json:ErkrankungBeispiel}}
     </tab>
     <tab title="Link">
-        {{link:GeschwisterBeispiel}}
+        {{link:ErkrankungBeispiel}}
     </tab>
 </tabs>
