@@ -1,0 +1,24 @@
+{
+  "resourceType": "Observation",
+  "id": "KitaBeispiel",
+  "meta": {
+    "profile": [
+      "https://www.oegd.de/fhir/seu/StructureDefinition/Kita"
+    ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "161117005",
+        "system": "http://snomed.info/sct",
+        "display": "Nursery (finding)"
+      }
+    ]
+  },
+  "valueInteger": 36,
+  "subject": {
+    "reference": "Patient/PersonBeispiel"
+  },
+  "effectiveDateTime": "2023-01-01"
+}
