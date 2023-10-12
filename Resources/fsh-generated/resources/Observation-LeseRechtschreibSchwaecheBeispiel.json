@@ -1,0 +1,24 @@
+{
+  "resourceType": "Observation",
+  "id": "LeseRechtschreibSchwaecheBeispiel",
+  "meta": {
+    "profile": [
+      "https://www.oegd.de/fhir/seu/StructureDefinition/LeseRechtschreibSchwaeche"
+    ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "59770006",
+        "system": "http://snomed.info/sct",
+        "display": "Dyslexia (finding)"
+      }
+    ]
+  },
+  "valueBoolean": true,
+  "subject": {
+    "reference": "Patient/PersonBeispiel"
+  },
+  "effectiveDateTime": "2023-01-01"
+}
