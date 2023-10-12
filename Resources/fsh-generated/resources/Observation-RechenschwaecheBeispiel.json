@@ -1,0 +1,24 @@
+{
+  "resourceType": "Observation",
+  "id": "RechenschwaecheBeispiel",
+  "meta": {
+    "profile": [
+      "https://www.oegd.de/fhir/seu/StructureDefinition/Rechenschwaeche"
+    ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "47916000",
+        "system": "http://snomed.info/sct",
+        "display": "Developmental arithmetic disorder (disorder)"
+      }
+    ]
+  },
+  "valueBoolean": true,
+  "subject": {
+    "reference": "Patient/PersonBeispiel"
+  },
+  "effectiveDateTime": "2023-01-01"
+}
