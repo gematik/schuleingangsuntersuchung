@@ -1,0 +1,31 @@
+{
+  "resourceType": "Observation",
+  "id": "GeburtsverlaufBeispiel",
+  "meta": {
+    "profile": [
+      "https://www.oegd.de/fhir/seu/StructureDefinition/Geburtsverlauf"
+    ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "118215003",
+        "system": "http://snomed.info/sct",
+        "display": "Delivery finding (finding)"
+      }
+    ]
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "48782003",
+        "system": "http://snomed.info/sct",
+        "display": "Delivery normal (finding)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/PersonBeispiel"
+  }
+}

@@ -15,4 +15,6 @@
 - name: Geburtsgewicht
   filename: Geburtsgewicht.page.md
 - name: Schwangerschaftsverlauf
-  filename: Schwangerschaftsverlauf.page
+  filename: Schwangerschaftsverlauf.page.md
+- name: Geburtsverlauf
+  filename: Geburtsverlauf.page.md
