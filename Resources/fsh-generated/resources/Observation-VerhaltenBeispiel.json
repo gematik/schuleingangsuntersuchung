@@ -1,0 +1,31 @@
+{
+  "resourceType": "Observation",
+  "id": "VerhaltenBeispiel",
+  "meta": {
+    "profile": [
+      "https://www.oegd.de/fhir/seu/StructureDefinition/Verhalten"
+    ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "25786006",
+        "system": "http://snomed.info/sct",
+        "display": "Abnormal behavior (finding)"
+      }
+    ]
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "1",
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/VerhaltensTypCS",
+        "display": "Zu Hause beim Spielen sehr leicht ablenkbar und unkonzentriert."
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/PersonBeispiel"
+  }
+}
