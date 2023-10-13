@@ -2,15 +2,15 @@
 
 ### Ressourcentyp: Observation
 
-#### Beispiel des Datensatzes einer Erkrankung
+#### Beispiel des Datensatzes einer Sehstoerung
 <tabs>
     <tab title="Übersicht">      
-        {{render:ErkrankungBeispiel}}
+        {{render:SehstoerungBeispiel}}
     </tab>
     <tab title="JSON">
-        {{json:ErkrankungBeispiel}}
+        {{json:SehstoerungBeispiel}}
     </tab>
     <tab title="XML">
-        {{xml:ErkrankungBeispiel}}
+        {{xml:SehstoerungBeispiel}}
     </tab>
 </tabs>
