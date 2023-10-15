@@ -1,0 +1,22 @@
+{
+  "resourceType": "Procedure",
+  "id": "KrankenhausaufenthaltBeispiel",
+  "meta": {
+    "profile": [
+      "https://www.oegd.de/fhir/seu/StructureDefinition/Krankenhausaufenthalt"
+    ]
+  },
+  "status": "completed",
+  "code": {
+    "coding": [
+      {
+        "code": "32485007",
+        "system": "http://snomed.info/sct",
+        "display": "Hospital admission (procedure)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/PersonBeispiel"
+  }
+}
