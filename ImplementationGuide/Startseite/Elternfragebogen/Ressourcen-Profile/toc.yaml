@@ -28,3 +28,5 @@
   filename: Hoerstoerung.page.md
 - name: Krankenhausaufenthalt
   filename: Krankenhausaufenthalt.page.md
+- name: Operation
+  filename: Operation.page.md
