@@ -1,0 +1,37 @@
+{
+  "resourceType": "Condition",
+  "id": "HoerstoerungBeispiel",
+  "meta": {
+    "profile": [
+      "https://www.oegd.de/fhir/seu/StructureDefinition/Hoerstoerung"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "problem-list-item"
+        }
+      ]
+    }
+  ],
+  "clinicalStatus": {
+    "coding": [
+      {
+        "code": "unknown"
+      }
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "3561000119106",
+        "system": "http://snomed.info/sct",
+        "display": "Severe hearing loss (disorder)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/PersonBeispiel"
+  }
+}
