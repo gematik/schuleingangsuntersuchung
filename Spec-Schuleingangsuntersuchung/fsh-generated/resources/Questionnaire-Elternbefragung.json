@@ -1,0 +1,420 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "Elternbefragung",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext",
+      "extension": [
+        {
+          "url": "name",
+          "valueId": "patient"
+        },
+        {
+          "url": "type",
+          "valueCode": "Patient"
+        },
+        {
+          "url": "descripton",
+          "valueString": "Patientenkontext"
+        }
+      ]
+    }
+  ],
+  "status": "draft",
+  "item": [
+    {
+      "type": "group",
+      "linkId": "1",
+      "text": "Personenbezogene Daten Kind",
+      "item": [
+        {
+          "type": "string",
+          "linkId": "1.1",
+          "text": "Nachname des Kindes",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%patient.name[0].family"
+              }
+            }
+          ]
+        },
+        {
+          "type": "string",
+          "linkId": "1.2",
+          "text": "Vorname des Kindes",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%patient.name[0].given[0]"
+              }
+            }
+          ]
+        },
+        {
+          "type": "date",
+          "linkId": "1.3",
+          "text": "Geburtsdatum",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%patient.birthdate"
+              }
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "linkId": "1.4",
+          "text": "Staatsangehörigkeit"
+        },
+        {
+          "type": "choice",
+          "linkId": "1.5",
+          "text": "Geburtsland"
+        },
+        {
+          "type": "boolean",
+          "linkId": "1.6",
+          "text": "In Deutschland geboren"
+        },
+        {
+          "linkId": "1.6.1",
+          "type": "date",
+          "text": "Seit wann wohnt das Kind in Deutschland?",
+          "enableWhen": [
+            {
+              "question": "1.6",
+              "operator": "=",
+              "answerBoolean": false
+            }
+          ]
+        },
+        {
+          "type": "string",
+          "linkId": "1.7",
+          "text": "Geburtsort"
+        },
+        {
+          "type": "choice",
+          "linkId": "1.8",
+          "text": "Geschlecht"
+        },
+        {
+          "type": "string",
+          "linkId": "1.9",
+          "text": "PLZ"
+        },
+        {
+          "type": "string",
+          "linkId": "1.10",
+          "text": "Wohnort"
+        },
+        {
+          "type": "string",
+          "linkId": "1.10",
+          "text": "Straße"
+        },
+        {
+          "type": "choice",
+          "linkId": "1.11",
+          "text": "Kind lebt hauptsächlich bei"
+        },
+        {
+          "enableWhen": [
+            {
+              "question": "1.11.1",
+              "operator": "=",
+              "answerCoding": {
+                "code": "other"
+              }
+            }
+          ],
+          "type": "string",
+          "linkId": "1.11.2",
+          "text": "Kind lebt hauptsächlich bei"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "linkId": "2",
+      "text": "Personenbezogene Daten Personenberechtigter",
+      "item": [
+        {
+          "type": "choice",
+          "linkId": "2.1",
+          "text": "Anrede"
+        },
+        {
+          "type": "string",
+          "linkId": "2.2",
+          "text": "Nachname",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%patient.name[0].family"
+              }
+            }
+          ]
+        },
+        {
+          "type": "string",
+          "linkId": "2.3",
+          "text": "Vorname",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%patient.name[0].given[0]"
+              }
+            }
+          ]
+        },
+        {
+          "type": "string",
+          "linkId": "2.4",
+          "text": "PLZ"
+        },
+        {
+          "type": "string",
+          "linkId": "2.5",
+          "text": "Wohnort"
+        },
+        {
+          "type": "string",
+          "linkId": "2.6",
+          "text": "Straße"
+        },
+        {
+          "type": "string",
+          "linkId": "2.7",
+          "text": "Telefonnummer"
+        },
+        {
+          "type": "string",
+          "linkId": "2.7",
+          "text": "Email"
+        },
+        {
+          "type": "choice",
+          "linkId": "2.8",
+          "text": "Staatsangehörigkeit"
+        },
+        {
+          "type": "choice",
+          "linkId": "2.9",
+          "text": "Herkunftsland"
+        },
+        {
+          "type": "choice",
+          "linkId": "2.9",
+          "text": "Muttersprache"
+        },
+        {
+          "type": "date",
+          "linkId": "2.9",
+          "text": "Geburtsdatum"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "linkId": "3",
+      "text": "Familiendaten",
+      "item": [
+        {
+          "type": "integer",
+          "linkId": "3.1",
+          "text": "Anzahl der Geschwister"
+        },
+        {
+          "type": "group",
+          "linkId": "3.1.1",
+          "text": "Details Geschwister",
+          "repeats": true,
+          "enableWhen": [
+            {
+              "question": "3.1",
+              "operator": ">",
+              "answerInteger": 0
+            }
+          ],
+          "item": [
+            {
+              "type": "date",
+              "linkId": "3.1.1.1",
+              "text": "Geburtsdatum des Geschwisters"
+            },
+            {
+              "type": "choice",
+              "linkId": "3.1.1.1",
+              "text": "Geschlecht des Geschwisters"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "linkId": "3.2",
+          "text": "Familiäre Vorgeschichte",
+          "item": [
+            {
+              "type": "boolean",
+              "linkId": "3.2.1",
+              "text": "Brillenträger"
+            },
+            {
+              "type": "boolean",
+              "linkId": "3.2.2",
+              "text": "Lese/Rechtschreibschwäche"
+            },
+            {
+              "type": "boolean",
+              "linkId": "3.2.3",
+              "text": "Rechenschwäche"
+            },
+            {
+              "type": "choice",
+              "linkId": "3.2.4",
+              "text": "Erkrankung"
+            },
+            {
+              "type": "choice",
+              "linkId": "3.2.5",
+              "text": "Chronische Erkrankung"
+            },
+            {
+              "type": "choice",
+              "linkId": "3.2.6",
+              "text": "Behinderung"
+            },
+            {
+              "type": "choice",
+              "linkId": "3.2.7",
+              "text": "Schilddrüsenerkrankung"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "linkId": "4",
+      "text": "Kinderbetreuung",
+      "item": [
+        {
+          "type": "integer",
+          "linkId": "4.1",
+          "text": "Besuch Kita/Krippe (Dauer in Jahren)"
+        },
+        {
+          "type": "integer",
+          "linkId": "4.2",
+          "text": "Dauer Kita/Krippe pro Woche in Stunden"
+        },
+        {
+          "type": "integer",
+          "linkId": "4.3",
+          "text": "Dauer Kita/Krippe pro Woche in Stunden"
+        },
+        {
+          "type": "date",
+          "linkId": "4.4",
+          "text": "Angabe des Datums, seit wann das Kind keine Kita mehr besucht."
+        },
+        {
+          "type": "boolean",
+          "linkId": "4.5",
+          "text": "Besucht ihr Kind eine andere Fomr der Tagesbetreuung?"
+        },
+        {
+          "type": "string",
+          "linkId": "4.6",
+          "text": "Name des Kindergartens",
+          "enableWhen": [
+            {
+              "question": "4.5",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ]
+        },
+        {
+          "type": "boolean",
+          "linkId": "4.7",
+          "text": "Erfolgte die Betreung auch durch eine Tagesmutter?"
+        },
+        {
+          "type": "date",
+          "linkId": "4.8",
+          "text": "Seit welchem Jahr ist die Tagesmutter im Einsatz?",
+          "enableWhen": [
+            {
+              "question": "4.7",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ]
+        },
+        {
+          "type": "boolean",
+          "linkId": "4.7",
+          "text": "Erfolgte die Betreung auch durch eine Tagesmutter?"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "linkId": "5",
+      "text": "Schwangerschaft und Geburt",
+      "item": [
+        {
+          "type": "integer",
+          "linkId": "5.1",
+          "text": "Dauer der Schwangerschaft (in Wochen)"
+        },
+        {
+          "type": "integer",
+          "linkId": "5.2",
+          "text": "Geburtsgewicht (in Gramm)"
+        },
+        {
+          "type": "integer",
+          "linkId": "5.3",
+          "text": "Geburtslänge (in cm)"
+        },
+        {
+          "type": "boolean",
+          "linkId": "5.4",
+          "text": "Waren Geburtsgewicht und Geburtslänge normal?"
+        },
+        {
+          "type": "choice",
+          "linkId": "5.5",
+          "text": "Auffälligkeit bei der Geburt",
+          "repeats": true
+        },
+        {
+          "type": "choice",
+          "linkId": "5.6",
+          "text": "Auffälligkeit in der Schwangerschaft",
+          "repeats": true
+        },
+        {
+          "type": "integer",
+          "linkId": "5.7",
+          "text": "Stillzeit in Monaten"
+        }
+      ]
+    }
+  ]
+}
