@@ -1,0 +1,52 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "FoerderungCS",
+  "id": "FoerderungCS",
+  "title": "Elternfragebogen Förderungen",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/FoerderungCS",
+  "concept": [
+    {
+      "code": "vorkurs-deutsch",
+      "display": "Vorkurs Deutsch"
+    },
+    {
+      "code": "sprachtherapie",
+      "display": "Sprachtherapie"
+    },
+    {
+      "code": "fruehfoerderung",
+      "display": "Frühförderung"
+    },
+    {
+      "code": "ergotherapie",
+      "display": "Ergotherapie"
+    },
+    {
+      "code": "psychomotorik",
+      "display": "Psychomotorik"
+    },
+    {
+      "code": "physiotherapie",
+      "display": "Physiotherapie"
+    },
+    {
+      "code": "erziehungsberatung",
+      "display": "Psychologe Erziehungsberatung"
+    },
+    {
+      "code": "betreuung",
+      "display": "Integrative Betreuung"
+    },
+    {
+      "code": "sonstige",
+      "display": "Sonstige Förderung"
+    },
+    {
+      "code": "kuren",
+      "display": "Kuren"
+    }
+  ],
+  "count": 10
+}

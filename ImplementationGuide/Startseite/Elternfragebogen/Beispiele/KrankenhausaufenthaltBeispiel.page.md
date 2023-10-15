@@ -1,6 +1,6 @@
 ## {{page-title}}
 
-### Ressourcentyp: Observation
+### Ressourcentyp: Procedure
 
 #### Beispiel des Datensatzes eines Krankenhausaufenthalts
 <tabs>

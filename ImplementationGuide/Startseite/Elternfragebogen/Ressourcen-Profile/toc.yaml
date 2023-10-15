@@ -30,3 +30,5 @@
   filename: Krankenhausaufenthalt.page.md
 - name: Operation
   filename: Operation.page.md
+- name: Foerderung
+  filename: Foerderung.page.md
