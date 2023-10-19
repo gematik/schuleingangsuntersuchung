@@ -122,6 +122,20 @@
         "id": "Practitioner.name:Name.prefix.extension:prefix-qualifier.value[x]",
         "path": "Practitioner.name.prefix.extension.value[x]",
         "fixedCode": "AC"
+      },
+      {
+        "id": "Practitioner.qualification",
+        "path": "Practitioner.qualification",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.qualification.code",
+        "path": "Practitioner.qualification.code",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.oegd.de/fhir/seu/ValueSet/ArztTypVS"
+        }
       }
     ]
   }

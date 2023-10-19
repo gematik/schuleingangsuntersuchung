@@ -1,0 +1,26 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "ArztTypVS",
+  "id": "ArztTypVS",
+  "title": "Elternfragebogen Arzt Typ",
+  "description": "Dieses ValueSet enthält alle validen Arzttypen des Elternfragebogens",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/ArztTypVS",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "82296001",
+            "display": "Pediatrician (occupation)"
+          },
+          {
+            "code": "309395003",
+            "display": "Hospital specialist (occupation)"
+          }
+        ]
+      }
+    ]
+  }
+}

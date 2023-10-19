@@ -35,5 +35,18 @@
         }
       ]
     }
+  ],
+  "qualification": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "82296001",
+            "system": "http://snomed.info/sct",
+            "display": "Pediatrician (occupation)"
+          }
+        ]
+      }
+    }
   ]
 }
