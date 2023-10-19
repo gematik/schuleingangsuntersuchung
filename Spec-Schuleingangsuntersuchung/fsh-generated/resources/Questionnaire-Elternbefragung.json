@@ -415,6 +415,139 @@
           "text": "Stillzeit in Monaten"
         }
       ]
+    },
+    {
+      "type": "group",
+      "linkId": "6",
+      "text": "Sprache",
+      "item": [
+        {
+          "type": "choice",
+          "linkId": "6.1",
+          "text": "Welche Sprachen werden Zuhause gesprochen?",
+          "repeats": true
+        },
+        {
+          "type": "choice",
+          "linkId": "6.2",
+          "text": "Mutersprache des Kindes"
+        },
+        {
+          "type": "choice",
+          "linkId": "6.3",
+          "text": "Teilnahme des Kindes an einem Deutschkurs"
+        },
+        {
+          "type": "boolean",
+          "linkId": "6.4",
+          "text": "Sprachauffälligkeiten"
+        },
+        {
+          "type": "choice",
+          "linkId": "6.5",
+          "text": "Kontakt zu Deutschsprechenden"
+        },
+        {
+          "type": "integer",
+          "linkId": "6.6.2",
+          "text": "Monate",
+          "enableWhen": [
+            {
+              "question": "6.5",
+              "operator": "=",
+              "answerCoding": {
+                "code": "nichtSeitGeburt"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "linkId": "7",
+      "text": "Entwicklung",
+      "item": [
+        {
+          "type": "boolean",
+          "linkId": "7.1",
+          "text": "Sind Sie mit der Entwicklung ihres Kinds zufrieden?"
+        },
+        {
+          "type": "text",
+          "linkId": "7.2",
+          "text": "Mit was sind Sie Unzufrieden?",
+          "enableWhen": [
+            {
+              "question": "7.1",
+              "operator": "=",
+              "answerBoolean": false
+            }
+          ]
+        },
+        {
+          "type": "integer",
+          "linkId": "7.3",
+          "text": "Freies Laufen ab? (Monate)"
+        },
+        {
+          "type": "integer",
+          "linkId": "7.4",
+          "text": "Erste Worte ab? (Monate)"
+        },
+        {
+          "type": "integer",
+          "linkId": "7.5",
+          "text": "Erste Sätze ab? (Monate)"
+        },
+        {
+          "type": "integer",
+          "linkId": "7.6",
+          "text": "Tagsüber ohne Windeln ab? (Jahre)"
+        },
+        {
+          "type": "integer",
+          "linkId": "7.7",
+          "text": "Nachts ohne Windeln ab? (Jahre)"
+        },
+        {
+          "type": "boolean",
+          "linkId": "7.8",
+          "text": "Besonderheiten in der Säuglings- u. Kleinkinderzeit?"
+        },
+        {
+          "type": "text",
+          "linkId": "7.9",
+          "text": "Welche Besonderheiten lagen vor?",
+          "enableWhen": [
+            {
+              "question": "7.8",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ]
+        },
+        {
+          "type": "choice",
+          "linkId": "7.9",
+          "text": "Links- oder Rechtshänder"
+        },
+        {
+          "type": "text",
+          "linkId": "7.10",
+          "text": "Angabe zu Entwicklungsverzögerungen, bspw. beim Erlernen des Sitzens/Laufens"
+        },
+        {
+          "type": "choice",
+          "linkId": "7.11",
+          "text": "Auffälligkeit des Verhaltens"
+        },
+        {
+          "type": "boolean",
+          "linkId": "7.12",
+          "text": "Sorgen Sie sich um die Entwicklung ihres Kindes?"
+        }
+      ]
     }
   ]
 }

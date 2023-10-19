@@ -293,7 +293,7 @@ Description: ""
     * type = #choice
     * linkId = "6.1"
     * text = "Welche Sprachen werden Zuhause gesprochen?"
-    * repeats = #true
+    * repeats = true
   * item[+]
     * type = #choice
     * linkId = "6.2"
@@ -365,18 +365,30 @@ Description: ""
     * linkId = "7.7"
     * text = "Nachts ohne Windeln ab? (Jahre)"
   * item[+]
-      * type = #boolean
-      * linkId = "7.8"
-      * text = "Besonderheiten in der Säuglings- u. Kleinkinderzeit?"
-    * item[+]
-      * type = #text
-      * linkId = "7.9"
-      * text = "Welche Besonderheiten lagen vor?"
-      * enableWhen[+]
-        * question = "7.8"
-        * operator = #=
-        * answerBoolean = true
+    * type = #boolean
+    * linkId = "7.8"
+    * text = "Besonderheiten in der Säuglings- u. Kleinkinderzeit?"
+  * item[+]
+    * type = #text
+    * linkId = "7.9"
+    * text = "Welche Besonderheiten lagen vor?"
+    * enableWhen[+]
+      * question = "7.8"
+      * operator = #=
+      * answerBoolean = true
   * item[+]
     * type = #choice
     * linkId = "7.9"
     * text = "Links- oder Rechtshänder"
+  * item[+]
+    * type = #text
+    * linkId = "7.10"
+    * text = "Angabe zu Entwicklungsverzögerungen, bspw. beim Erlernen des Sitzens/Laufens"
+  * item[+]
+    * type = #choice
+    * linkId = "7.11"
+    * text = "Auffälligkeit des Verhaltens"  
+  * item[+]
+    * type = #boolean
+    * linkId = "7.12"
+    * text = "Sorgen Sie sich um die Entwicklung ihres Kindes?"  
