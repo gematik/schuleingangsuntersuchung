@@ -1,0 +1,23 @@
+{
+  "resourceType": "Observation",
+  "id": "BesonderheitenBeispiel",
+  "meta": {
+    "profile": [
+      "https://www.oegd.de/fhir/seu/StructureDefinition/Besonderheiten"
+    ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "866145009",
+        "system": "http://snomed.info/sct",
+        "display": "General patient record note (record artifact)"
+      }
+    ]
+  },
+  "valueString": "Polyphasischer Schlaf beobachtet",
+  "subject": {
+    "reference": "Patient/PersonBeispiel"
+  }
+}
