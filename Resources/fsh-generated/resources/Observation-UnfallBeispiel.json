@@ -1,0 +1,31 @@
+{
+  "resourceType": "Observation",
+  "id": "UnfallBeispiel",
+  "meta": {
+    "profile": [
+      "https://www.oegd.de/fhir/seu/StructureDefinition/Unfall"
+    ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "418019003",
+        "system": "http://snomed.info/sct",
+        "display": "Accidental event (event)"
+      }
+    ]
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "125605004",
+        "system": "http://snomed.info/sct",
+        "display": "Fracture of bone (disorder)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/PersonBeispiel"
+  }
+}

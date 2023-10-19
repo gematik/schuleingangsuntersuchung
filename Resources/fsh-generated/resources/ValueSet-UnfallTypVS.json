@@ -1,0 +1,42 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "UnfallTypVS",
+  "id": "UnfallTypVS",
+  "title": "Elternfragebogen Unfallart",
+  "description": "Dieses ValueSet enthält alle validen Unfallarten des Elternfragebogens",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/UnfallTypVS",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "110030002",
+            "display": "Concussion injury of brain (disorder)"
+          },
+          {
+            "code": "283396008",
+            "display": "Incised wound (disorder)"
+          },
+          {
+            "code": "75478009",
+            "display": "Poisoning (disorder)"
+          },
+          {
+            "code": "125666000",
+            "display": "Burn (disorder)"
+          },
+          {
+            "code": "125605004",
+            "display": "Fracture of bone (disorder)"
+          },
+          {
+            "code": "417163006",
+            "display": "Traumatic or non-traumatic injury (disorder)"
+          }
+        ]
+      }
+    ]
+  }
+}
