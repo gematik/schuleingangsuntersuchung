@@ -1,0 +1,128 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "Arzt",
+  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/Arzt",
+  "name": "Arzt",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "servd",
+      "uri": "http://www.omg.org/spec/ServD/1.0/",
+      "name": "ServD"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Practitioner",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Practitioner",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Practitioner.name",
+        "path": "Practitioner.name",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.name:Name",
+        "path": "Practitioner.name",
+        "sliceName": "Name",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "HumanName",
+            "profile": [
+              "http://fhir.de/StructureDefinition/humanname-de-basis"
+            ]
+          }
+        ],
+        "patternHumanName": {
+          "use": "official"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.name:Name.use",
+        "path": "Practitioner.name.use",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.name:Name.family",
+        "path": "Practitioner.name.family",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.name:Name.family.extension:namenszusatz",
+        "path": "Practitioner.name.family.extension",
+        "sliceName": "namenszusatz",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.name:Name.family.extension:nachname",
+        "path": "Practitioner.name.family.extension",
+        "sliceName": "nachname",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.name:Name.family.extension:vorsatzwort",
+        "path": "Practitioner.name.family.extension",
+        "sliceName": "vorsatzwort",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.name:Name.given",
+        "path": "Practitioner.name.given",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.name:Name.prefix",
+        "path": "Practitioner.name.prefix",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.name:Name.prefix.extension:prefix-qualifier",
+        "path": "Practitioner.name.prefix.extension",
+        "sliceName": "prefix-qualifier",
+        "max": "1",
+        "mustSupport": true
+      },
+      {
+        "id": "Practitioner.name:Name.prefix.extension:prefix-qualifier.value[x]",
+        "path": "Practitioner.name.prefix.extension.value[x]",
+        "fixedCode": "AC"
+      }
+    ]
+  }
+}

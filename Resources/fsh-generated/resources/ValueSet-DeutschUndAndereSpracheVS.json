@@ -1,0 +1,30 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "DeutschUndAndereSpracheVS",
+  "id": "DeutschUndAndereSpracheVS",
+  "title": "DeutschUndAndereSpracheVS",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/DeutschUndAndereSpracheVS",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:ietf:bcp:47",
+        "concept": [
+          {
+            "code": "de",
+            "display": "Deutsch"
+          }
+        ]
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "74964007",
+            "display": "Andere Sprache"
+          }
+        ]
+      }
+    ]
+  }
+}

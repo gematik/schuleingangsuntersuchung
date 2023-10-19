@@ -1,0 +1,39 @@
+{
+  "resourceType": "Practitioner",
+  "id": "ArztBeispiel",
+  "meta": {
+    "profile": [
+      "https://www.oegd.de/fhir/seu/StructureDefinition/Arzt"
+    ]
+  },
+  "name": [
+    {
+      "use": "official",
+      "family": "Musterarzt",
+      "_family": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/humanname-own-name",
+            "valueString": "Musterarzt"
+          }
+        ]
+      },
+      "given": [
+        "Erika"
+      ],
+      "prefix": [
+        "Dr."
+      ],
+      "_prefix": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier",
+              "valueCode": "AC"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
