@@ -1,7 +1,6 @@
 CodeSystem: BefundBewertungBielefelderModellCS
 Id: BefundBewertungBielefelderModellCS
 Title: "BefundBewertungBielefelderModellCS"
-Description: ""
 * #A "Ein Befund, der eine weitere ärztliche Abklärung erfordert und dessen Abklärung durch die Schulärztin oder den Schularzt veranlasst wird"
 * #B "Ein Befund, dessen Behandlung ausreichend durchgeführt wird oder bereits eingeleitet ist"
 * #D "Ein Befund, der eine erhebliche und nicht nur vorübergehende Leistungsbeeinträchtigung für das Kind im Sinne des § 2 Absatz (1)Satz 1 SGB IX bedeutet"
@@ -12,20 +11,17 @@ Description: ""
 ValueSet: BefundBewertungBielefelderModellVS
 Id: BefundBewertungBielefelderModellVS
 Title: "BefundBewertungBielefelderModellVS"
-Description: ""
 * include codes from system BefundBewertungBielefelderModellCS
 
 ValueSet: DeutschUndAndereSpracheVS
 Id: DeutschUndAndereSpracheVS
 Title: "DeutschUndAndereSpracheVS"
-Description: ""
 * $bcp47#de "Deutsch"
 * $sct#74964007 "Andere Sprache"
 
 CodeSystem: DeutschkenntnisseCS
 Id: DeutschkenntnisseCS
 Title: "DeutschkenntnisseCS"
-Description: ""
 * #1 "Das Kind spricht kein Deutsch"
 * #2 "Das Kind spricht nur radebrechend Deutsch"
 * #3 "Das Kind spricht flüssig Deutsch, jedoch mit erheblichen Fehlern"
@@ -35,5 +31,4 @@ Description: ""
 ValueSet: DeutschkenntnisseVS
 Id: DeutschkenntnisseVS
 Title: "DeutschkenntnisseVS"
-Description: ""
 * include codes from system DeutschkenntnisseCS

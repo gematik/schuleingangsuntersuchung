@@ -2,7 +2,6 @@ Instance: Elternbefragung
 InstanceOf: Questionnaire
 Usage: #example
 Title: "Elternbefragung"
-Description: ""
 * insert launchContext("patient", #Patient, "Patientenkontext")
 * status = #draft
 * item[+]
