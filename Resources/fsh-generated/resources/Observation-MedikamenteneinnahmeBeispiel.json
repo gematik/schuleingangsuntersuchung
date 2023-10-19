@@ -1,0 +1,23 @@
+{
+  "resourceType": "Observation",
+  "id": "MedikamenteneinnahmeBeispiel",
+  "meta": {
+    "profile": [
+      "https://www.oegd.de/fhir/seu/StructureDefinition/Medikamenteneinnahme"
+    ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "129019007",
+        "system": "http://snomed.info/sct",
+        "display": "Taking medication (observable entity)"
+      }
+    ]
+  },
+  "valueString": "Amlodipin jeden Morgen",
+  "subject": {
+    "reference": "Patient/PersonBeispiel"
+  }
+}
