@@ -1,0 +1,52 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "VerhaltensTypCS",
+  "id": "VerhaltensTypCS",
+  "title": "SEU Behinderungsart",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/VerhaltensTypCS",
+  "concept": [
+    {
+      "code": "1",
+      "display": "Zu Hause beim Spielen sehr leicht ablenkbar und unkonzentriert."
+    },
+    {
+      "code": "2",
+      "display": "Im Kindergarten sehr leicht ablenkbar und unkonzentriert."
+    },
+    {
+      "code": "3",
+      "display": "Zu Hause (z. B. beim Essen) sehr unruhig, zappelig, kann nicht stillsitzen."
+    },
+    {
+      "code": "4",
+      "display": "Im Kindergarten sehr unruhig, zappelig, kann nicht stillsitzen."
+    },
+    {
+      "code": "5",
+      "display": "Zu Hause häufig ungehorsam (starrköpfig)."
+    },
+    {
+      "code": "6",
+      "display": "Im Kindergarten häufig ungehorsam (starrköpfig)."
+    },
+    {
+      "code": "7",
+      "display": "Prügelt sich häufig mit anderen Kindern."
+    },
+    {
+      "code": "8",
+      "display": "Von anderen Kindern häufig geärgert, gehänselt, verprügelt."
+    },
+    {
+      "code": "9",
+      "display": "Angst vor anderen Kindern."
+    },
+    {
+      "code": "10",
+      "display": "In den letzten 3 Monaten nachts mehr als 2 mal pro Monat eingenässt."
+    }
+  ],
+  "count": 10
+}

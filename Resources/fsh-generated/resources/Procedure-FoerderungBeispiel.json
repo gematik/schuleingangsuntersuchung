@@ -1,0 +1,27 @@
+{
+  "resourceType": "Procedure",
+  "id": "FoerderungBeispiel",
+  "meta": {
+    "profile": [
+      "https://www.oegd.de/fhir/seu/StructureDefinition/Foerderung"
+    ]
+  },
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/PersonBeispiel"
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "sonstige",
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/FoerderungCS",
+        "display": "Sonstige Förderung"
+      }
+    ]
+  },
+  "note": [
+    {
+      "text": "Professionelle Emotional Förderung"
+    }
+  ]
+}

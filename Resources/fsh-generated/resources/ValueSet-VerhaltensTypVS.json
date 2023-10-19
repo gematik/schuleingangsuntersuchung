@@ -1,0 +1,16 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "VerhaltensTypVS",
+  "id": "VerhaltensTypVS",
+  "title": "Elternfragebogen Verhaltensauffälligkeit",
+  "description": "Dieses ValueSet enthält alle validen Verhaltenauffälligkeiten des Elternfragebogens",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/VerhaltensTypVS",
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/VerhaltensTypCS"
+      }
+    ]
+  }
+}

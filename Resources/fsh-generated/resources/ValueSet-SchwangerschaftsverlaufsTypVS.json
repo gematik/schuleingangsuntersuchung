@@ -1,0 +1,30 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SchwangerschaftsverlaufsTypVS",
+  "id": "SchwangerschaftsverlaufsTypVS",
+  "title": "Elternfragebogen Schwangerschaftsverlaufsart",
+  "description": "Dieses ValueSet enthält alle validen Schwangerschaftsverlaufsarten des Elternfragebogens",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/SchwangerschaftsverlaufsTypVS",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "72892002",
+            "display": "Normal pregnancy (finding)"
+          },
+          {
+            "code": "11082009",
+            "display": "Abnormal pregnancy (finding)"
+          },
+          {
+            "code": "261665006",
+            "display": "Unknown (qualifier value)"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "resourceType": "Condition",
+  "id": "ErkrankungBeispiel",
+  "meta": {
+    "profile": [
+      "https://www.oegd.de/fhir/seu/StructureDefinition/Erkrankung"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "300959008",
+        "system": "http://snomed.info/sct",
+        "display": "Allergic cough (finding)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/PersonBeispiel"
+  }
+}

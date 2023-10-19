@@ -1,0 +1,23 @@
+{
+  "resourceType": "Observation",
+  "id": "BrillentraegerBeispiel",
+  "meta": {
+    "profile": [
+      "https://www.oegd.de/fhir/seu/StructureDefinition/Brillentraeger"
+    ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "225582009",
+        "system": "http://snomed.info/sct",
+        "display": "Wears glasses (finding)"
+      }
+    ]
+  },
+  "valueBoolean": true,
+  "subject": {
+    "reference": "Patient/PersonBeispiel"
+  }
+}

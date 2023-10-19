@@ -1,0 +1,74 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "ErkrankungsTypVS",
+  "id": "ErkrankungsTypVS",
+  "title": "Elternfragebogen Erkrankungsart",
+  "description": "Dieses ValueSet enthält alle validen Erkrankungsarten des Elternfragebogens",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/ErkrankungsTypVS",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "300959008",
+            "display": "Allergic cough (finding)"
+          },
+          {
+            "code": "128351009",
+            "display": "Eye infection (disorder)"
+          },
+          {
+            "code": "43275000",
+            "display": "Otitis (disorder)"
+          },
+          {
+            "code": "7180009",
+            "display": "Meningitis (disorder)"
+          },
+          {
+            "code": "195967001",
+            "display": "Asthma (disorder)"
+          },
+          {
+            "code": "84757009",
+            "display": "Epilepsy (disorder)"
+          },
+          {
+            "code": "41497008",
+            "display": "Febrile convulsion (finding)"
+          },
+          {
+            "code": "53891004",
+            "display": "Lichen simplex chronicus (disorder)"
+          },
+          {
+            "code": "38907003",
+            "display": "Varicella (disorder)"
+          },
+          {
+            "code": "724630004",
+            "display": "Problem of hip (finding)"
+          },
+          {
+            "code": "90708001",
+            "display": "Kidney disease (disorder)"
+          },
+          {
+            "code": "41368006",
+            "display": "Disorder of urinary tract proper (disorder)"
+          },
+          {
+            "code": "35253001",
+            "display": "Attention deficit hyperactivity disorder, predominantly inattentive type (disorder)"
+          },
+          {
+            "code": "14304000",
+            "display": "Disorder of thyroid gland (disorder)"
+          }
+        ]
+      }
+    ]
+  }
+}
