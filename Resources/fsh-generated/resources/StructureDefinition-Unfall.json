@@ -45,6 +45,44 @@
   "differential": {
     "element": [
       {
+        "id": "Observation.extension",
+        "path": "Observation.extension",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.extension:UnfallOrt",
+        "path": "Observation.extension",
+        "sliceName": "UnfallOrt",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.oegd.de/fhir/seu/StructureDefinition/UnfallOrtEX"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.extension:UnfallBeschwerden",
+        "path": "Observation.extension",
+        "sliceName": "UnfallBeschwerden",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.oegd.de/fhir/seu/StructureDefinition/UnfallBeschwerdenEX"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "Observation.status",
         "path": "Observation.status",
         "patternCode": "final",

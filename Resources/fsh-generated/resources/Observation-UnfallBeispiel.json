@@ -16,6 +16,24 @@
       }
     ]
   },
+  "extension": [
+    {
+      "url": "https://www.oegd.de/fhir/seu/StructureDefinition/UnfallOrtEX",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "272510001",
+            "system": "http://snomed.info/sct",
+            "display": "Road (environment)"
+          }
+        ]
+      }
+    },
+    {
+      "url": "https://www.oegd.de/fhir/seu/StructureDefinition/UnfallBeschwerdenEX",
+      "valueString": "Leichter Schmerz an Bruchstelle"
+    }
+  ],
   "valueCodeableConcept": {
     "coding": [
       {

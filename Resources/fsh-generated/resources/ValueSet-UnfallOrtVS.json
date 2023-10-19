@@ -1,0 +1,34 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "UnfallOrtVS",
+  "id": "UnfallOrtVS",
+  "title": "Elternfragebogen Unfallort",
+  "description": "Dieses ValueSet enthält alle Unfallorte des Elternfragebogens",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/UnfallOrtVS",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "264362003",
+            "display": "Home (environment)"
+          },
+          {
+            "code": "285084006",
+            "display": "Day nursery (environment)"
+          },
+          {
+            "code": "272510001",
+            "display": "Road (environment)"
+          },
+          {
+            "code": "257557008",
+            "display": "Place (environment)"
+          }
+        ]
+      }
+    ]
+  }
+}
