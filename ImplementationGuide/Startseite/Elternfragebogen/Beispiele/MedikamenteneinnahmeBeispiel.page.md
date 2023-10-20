@@ -2,15 +2,15 @@
 
 ### Ressourcentyp: Observation
 
-#### Beispiel des Datensatzes von Besonderheiten
+#### Beispiel des Datensatzes einer Medikamenteneinnahme
 <tabs>
     <tab title="Übersicht">      
-        {{render:BesonderheitenBeispiel}}
+        {{render:MedikamenteneinnahmeBeispiel}}
     </tab>
     <tab title="JSON">
-        {{json:BesonderheitenBeispiel}}
+        {{json:MedikamenteneinnahmeBeispiel}}
     </tab>
     <tab title="XML">
-        {{xml:BesonderheitenBeispiel}}
+        {{xml:MedikamenteneinnahmeBeispiel}}
     </tab>
 </tabs>
