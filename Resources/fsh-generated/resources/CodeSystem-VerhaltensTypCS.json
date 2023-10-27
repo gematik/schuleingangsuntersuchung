@@ -4,49 +4,109 @@
   "content": "complete",
   "name": "VerhaltensTypCS",
   "id": "VerhaltensTypCS",
-  "title": "SEU Behinderungsart",
+  "title": "SEU Verhaltensauffälligkeit",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/VerhaltensTypCS",
   "concept": [
     {
       "code": "1",
-      "display": "Zu Hause beim Spielen sehr leicht ablenkbar und unkonzentriert."
+      "display": "Konzentrationsstörung"
     },
     {
       "code": "2",
-      "display": "Im Kindergarten sehr leicht ablenkbar und unkonzentriert."
+      "display": "Bettnässen"
     },
     {
       "code": "3",
-      "display": "Zu Hause (z. B. beim Essen) sehr unruhig, zappelig, kann nicht stillsitzen."
+      "display": "Einkoten"
     },
     {
       "code": "4",
-      "display": "Im Kindergarten sehr unruhig, zappelig, kann nicht stillsitzen."
+      "display": "Ängstlichkeit"
     },
     {
       "code": "5",
-      "display": "Zu Hause häufig ungehorsam (starrköpfig)."
+      "display": "Aggressivität"
     },
     {
       "code": "6",
-      "display": "Im Kindergarten häufig ungehorsam (starrköpfig)."
+      "display": "Schlafstörung"
     },
     {
       "code": "7",
-      "display": "Prügelt sich häufig mit anderen Kindern."
+      "display": "Hyperaktivität"
     },
     {
       "code": "8",
-      "display": "Von anderen Kindern häufig geärgert, gehänselt, verprügelt."
+      "display": "Riskantes Handeln"
     },
     {
       "code": "9",
-      "display": "Angst vor anderen Kindern."
+      "display": "Schlechter Appetit"
     },
     {
       "code": "10",
-      "display": "In den letzten 3 Monaten nachts mehr als 2 mal pro Monat eingenässt."
+      "display": "Wenig Ausdauer beim Spielen"
+    },
+    {
+      "code": "11",
+      "display": "Spät gesprochen"
+    },
+    {
+      "code": "12",
+      "display": "Neigung zum Erbrechen"
+    },
+    {
+      "code": "13",
+      "display": "Kann nicht zuhören"
+    },
+    {
+      "code": "14",
+      "display": "Noch Sprachschwierigkeiten"
+    },
+    {
+      "code": "15",
+      "display": "Häufig Bauchschmerzen"
+    },
+    {
+      "code": "16",
+      "display": "Regt sich schnell auf"
+    },
+    {
+      "code": "17",
+      "display": "Ungeschicklichkeit beim Malen"
+    },
+    {
+      "code": "18",
+      "display": "Schlafstörungen"
+    },
+    {
+      "code": "19",
+      "display": "Zerstört viel Spielzeug"
+    },
+    {
+      "code": "20",
+      "display": "Benutzen der linken Hand"
+    },
+    {
+      "code": "21",
+      "display": "Nägel knabbern"
+    },
+    {
+      "code": "22",
+      "display": "Ist schnell entmutigt"
+    },
+    {
+      "code": "23",
+      "display": "Häufiges Hinfallen"
+    },
+    {
+      "code": "24",
+      "display": "Großer Bewegungsdrang"
+    },
+    {
+      "code": "25",
+      "display": "Kann sich schlecht an Regeln halten"
     }
   ],
-  "count": 10
+  "count": 25
 }

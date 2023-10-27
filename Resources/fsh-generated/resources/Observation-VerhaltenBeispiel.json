@@ -21,7 +21,7 @@
       {
         "code": "1",
         "system": "https://www.oegd.de/fhir/seu/CodeSystem/VerhaltensTypCS",
-        "display": "Zu Hause beim Spielen sehr leicht ablenkbar und unkonzentriert."
+        "display": "Konzentrationsstörung"
       }
     ]
   },

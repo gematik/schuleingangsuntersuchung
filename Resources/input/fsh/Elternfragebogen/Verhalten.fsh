@@ -9,12 +9,13 @@ Id: Verhalten
 * code.coding MS
 * code = $sct#25786006 "Abnormal behavior (finding)"
 * subject MS
-* value[x] only CodeableConcept 
+* value[x] only CodeableConcept or string
 * valueCodeableConcept MS
 * valueCodeableConcept from VerhaltensTypVS
 * valueCodeableConcept.coding MS
 * valueCodeableConcept.coding.code MS
 * valueCodeableConcept.coding.system MS
+* valueString MS
 
 ValueSet: VerhaltensTypVS
 Id: VerhaltensTypVS
@@ -24,20 +25,35 @@ Description: "Dieses ValueSet enthält alle validen Verhaltenauffälligkeiten de
 
 CodeSystem:  VerhaltensTypCS
 Id: VerhaltensTypCS
-Title: "SEU Behinderungsart"
-* #1 "Zu Hause beim Spielen sehr leicht ablenkbar und unkonzentriert."
-* #2 "Im Kindergarten sehr leicht ablenkbar und unkonzentriert."
-* #3 "Zu Hause (z. B. beim Essen) sehr unruhig, zappelig, kann nicht stillsitzen."
-* #4 "Im Kindergarten sehr unruhig, zappelig, kann nicht stillsitzen."
-* #5 "Zu Hause häufig ungehorsam (starrköpfig)."
-* #6 "Im Kindergarten häufig ungehorsam (starrköpfig)."
-* #7 "Prügelt sich häufig mit anderen Kindern."
-* #8 "Von anderen Kindern häufig geärgert, gehänselt, verprügelt."
-* #9 "Angst vor anderen Kindern."
-* #10 "In den letzten 3 Monaten nachts mehr als 2 mal pro Monat eingenässt."
+Title: "SEU Verhaltensauffälligkeit"
+* #1 "Konzentrationsstörung"
+* #2 "Bettnässen"
+* #3 "Einkoten"
+* #4 "Ängstlichkeit"
+* #5 "Aggressivität"
+* #6 "Schlafstörung"
+* #7 "Hyperaktivität"
+* #8 "Riskantes Handeln"
+* #9 "Schlechter Appetit"
+* #10 "Wenig Ausdauer beim Spielen"
+* #11 "Spät gesprochen"
+* #12 "Neigung zum Erbrechen"
+* #13 "Kann nicht zuhören"
+* #14 "Noch Sprachschwierigkeiten"
+* #15 "Häufig Bauchschmerzen"
+* #16 "Regt sich schnell auf"
+* #17 "Ungeschicklichkeit beim Malen"
+* #18 "Schlafstörungen"
+* #19 "Zerstört viel Spielzeug"
+* #20 "Benutzen der linken Hand"
+* #21 "Nägel knabbern"
+* #22 "Ist schnell entmutigt"
+* #23 "Häufiges Hinfallen"
+* #24 "Großer Bewegungsdrang"
+* #25 "Kann sich schlecht an Regeln halten"
 
 Instance: VerhaltenBeispiel
 InstanceOf: Verhalten
 Usage: #example
-* valueCodeableConcept = VerhaltensTypCS#1 "Zu Hause beim Spielen sehr leicht ablenkbar und unkonzentriert."
+* valueCodeableConcept = VerhaltensTypCS#1 "Konzentrationsstörung"
 * subject = Reference(PersonBeispiel)
