@@ -17,7 +17,7 @@ Id: Erkrankung
 ValueSet: ErkrankungsTypVS
 Id: ErkrankungsTypVS
 Title: "Elternfragebogen Erkrankungsart"
-Description: "Dieses ValueSet enthält alle validen Erkrankungsarten des Elternfragebogens"
+Description: "Dieses ValueSet enthält alle validen Erkrankungen und Infektionserkrankungen des Elternfragebogens"
 * include $sct#84757009 "Epilepsy (disorder)"
 * include $sct#35253001 "Attention deficit hyperactivity disorder, predominantly inattentive type (disorder)"
 * include $sct#286378009 "Difficulty talking (finding)"
@@ -37,6 +37,19 @@ Description: "Dieses ValueSet enthält alle validen Erkrankungsarten des Elternf
 * include $sct#73211009 "Diabetes mellitus (disorder)"
 * include $sct#35919005 "Pervasive developmental disorder (disorder)"
 * include $sct#14304000 "Disorder of thyroid gland (disorder)"
+* include $sct#840539006 "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)"
+* include $sct#266108008 "Hand foot and mouth disease (disorder)"
+* include $sct#240668005 "Borreliosis (disorder)"
+* include $sct#66071002 "Viral hepatitis type B (disorder)"
+* include $sct#7180009 "Meningitis (disorder)"
+* include $sct#27836007 "Pertussis (disorder)"
+* include $sct#14189004 "Measles (disorder)"
+* include $sct#36989005 "Mumps (disorder)"
+* include $sct#34730008 "Primate erythroparvovirus 1 infection (disorder)"
+* include $sct#36653000 "Rubella (disorder)"
+* include $sct#18624000 "Disease caused by Rotavirus (disorder)"
+* include $sct#30242009 "Scarlet fever (disorder)"
+* include $sct#38907003 "Varicella (disorder)"
 
 Instance: ErkrankungBeispiel
 InstanceOf: Erkrankung

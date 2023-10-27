@@ -4,7 +4,7 @@
   "name": "ErkrankungsTypVS",
   "id": "ErkrankungsTypVS",
   "title": "Elternfragebogen Erkrankungsart",
-  "description": "Dieses ValueSet enthält alle validen Erkrankungsarten des Elternfragebogens",
+  "description": "Dieses ValueSet enthält alle validen Erkrankungen und Infektionserkrankungen des Elternfragebogens",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/ErkrankungsTypVS",
   "compose": {
     "include": [
@@ -86,6 +86,58 @@
           {
             "code": "14304000",
             "display": "Disorder of thyroid gland (disorder)"
+          },
+          {
+            "code": "840539006",
+            "display": "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)"
+          },
+          {
+            "code": "266108008",
+            "display": "Hand foot and mouth disease (disorder)"
+          },
+          {
+            "code": "240668005",
+            "display": "Borreliosis (disorder)"
+          },
+          {
+            "code": "66071002",
+            "display": "Viral hepatitis type B (disorder)"
+          },
+          {
+            "code": "7180009",
+            "display": "Meningitis (disorder)"
+          },
+          {
+            "code": "27836007",
+            "display": "Pertussis (disorder)"
+          },
+          {
+            "code": "14189004",
+            "display": "Measles (disorder)"
+          },
+          {
+            "code": "36989005",
+            "display": "Mumps (disorder)"
+          },
+          {
+            "code": "34730008",
+            "display": "Primate erythroparvovirus 1 infection (disorder)"
+          },
+          {
+            "code": "36653000",
+            "display": "Rubella (disorder)"
+          },
+          {
+            "code": "18624000",
+            "display": "Disease caused by Rotavirus (disorder)"
+          },
+          {
+            "code": "30242009",
+            "display": "Scarlet fever (disorder)"
+          },
+          {
+            "code": "38907003",
+            "display": "Varicella (disorder)"
           }
         ]
       }
