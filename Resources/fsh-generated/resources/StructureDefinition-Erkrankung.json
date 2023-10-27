@@ -83,8 +83,23 @@
         "mustSupport": true
       },
       {
+        "id": "Condition.code.text",
+        "path": "Condition.code.text",
+        "mustSupport": true
+      },
+      {
         "id": "Condition.subject",
         "path": "Condition.subject",
+        "mustSupport": true
+      },
+      {
+        "id": "Condition.onset[x]",
+        "path": "Condition.onset[x]",
+        "type": [
+          {
+            "code": "dateTime"
+          }
+        ],
         "mustSupport": true
       }
     ]

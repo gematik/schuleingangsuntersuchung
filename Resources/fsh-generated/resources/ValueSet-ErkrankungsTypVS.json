@@ -12,56 +12,76 @@
         "system": "http://snomed.info/sct",
         "concept": [
           {
-            "code": "300959008",
-            "display": "Allergic cough (finding)"
-          },
-          {
-            "code": "128351009",
-            "display": "Eye infection (disorder)"
-          },
-          {
-            "code": "43275000",
-            "display": "Otitis (disorder)"
-          },
-          {
-            "code": "7180009",
-            "display": "Meningitis (disorder)"
-          },
-          {
-            "code": "195967001",
-            "display": "Asthma (disorder)"
-          },
-          {
             "code": "84757009",
             "display": "Epilepsy (disorder)"
           },
           {
-            "code": "41497008",
-            "display": "Febrile convulsion (finding)"
+            "code": "35253001",
+            "display": "Attention deficit hyperactivity disorder, predominantly inattentive type (disorder)"
           },
           {
-            "code": "53891004",
-            "display": "Lichen simplex chronicus (disorder)"
+            "code": "286378009",
+            "display": "Difficulty talking (finding)"
           },
           {
-            "code": "38907003",
-            "display": "Varicella (disorder)"
+            "code": "95677002",
+            "display": "Disorder of vision (disorder)"
           },
           {
-            "code": "724630004",
-            "display": "Problem of hip (finding)"
+            "code": "128540005",
+            "display": "Hearing disorder (disorder)"
           },
           {
-            "code": "90708001",
-            "display": "Kidney disease (disorder)"
+            "code": "56265001",
+            "display": "Heart disease (disorder)"
           },
           {
             "code": "41368006",
             "display": "Disorder of urinary tract proper (disorder)"
           },
           {
-            "code": "35253001",
-            "display": "Attention deficit hyperactivity disorder, predominantly inattentive type (disorder)"
+            "code": "300959008",
+            "display": "Allergic cough (finding)"
+          },
+          {
+            "code": "195967001",
+            "display": "Asthma (disorder)"
+          },
+          {
+            "code": "422290000",
+            "display": "Allergic disorder of skin (disorder)"
+          },
+          {
+            "code": "53891004",
+            "display": "Lichen simplex chronicus (disorder)"
+          },
+          {
+            "code": "414285001",
+            "display": "Allergy to food (finding)"
+          },
+          {
+            "code": "363346000",
+            "display": "Malignant neoplastic disease (disorder)"
+          },
+          {
+            "code": "118935006",
+            "display": "Disorder of hip region (disorder)"
+          },
+          {
+            "code": "410730009",
+            "display": "Disorder of spinal region (disorder)"
+          },
+          {
+            "code": "60342002",
+            "display": "Movement disorder (disorder)"
+          },
+          {
+            "code": "73211009",
+            "display": "Diabetes mellitus (disorder)"
+          },
+          {
+            "code": "35919005",
+            "display": "Pervasive developmental disorder (disorder)"
           },
           {
             "code": "14304000",

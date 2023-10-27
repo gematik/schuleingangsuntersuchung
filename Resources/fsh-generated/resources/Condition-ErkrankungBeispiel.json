@@ -6,6 +6,7 @@
       "https://www.oegd.de/fhir/seu/StructureDefinition/Erkrankung"
     ]
   },
+  "onsetDateTime": "2023-01-01",
   "code": {
     "coding": [
       {
