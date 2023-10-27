@@ -1,0 +1,28 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "FoerderungStatusCS",
+  "id": "FoerderungStatusCS",
+  "title": "Elternfragebogen Förderungstatus",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/FoerderungStatusCS",
+  "concept": [
+    {
+      "code": "nein",
+      "display": "Nein"
+    },
+    {
+      "code": "abgeschlossen",
+      "display": "Abgeschlossen"
+    },
+    {
+      "code": "laufend",
+      "display": "Läuft z.Zt. noch"
+    },
+    {
+      "code": "geplant",
+      "display": "Geplant"
+    }
+  ],
+  "count": 4
+}

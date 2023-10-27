@@ -76,7 +76,7 @@ from StructureDefinition where url = 'https://www.oegd.de/fhir/seu/StructureDefi
 @```
 from
 	CapabilityStatement
-where rest.resource.type = 'Procedure' 
+where rest.resource.type = 'Observation' 
 for  rest.resource.interaction
  select Interaktion: code, Verbindlichkeit: extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').value
 ```
@@ -85,7 +85,7 @@ for  rest.resource.interaction
 @```
 from
 	CapabilityStatement
-where rest.resource.type = 'Procedure' 
+where rest.resource.type = 'Observation' 
 for rest.resource.searchParam  
 select Parameter: name, Typ: type, Verbindlichkeit: extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').value
 ```
@@ -94,7 +94,7 @@ select Parameter: name, Typ: type, Verbindlichkeit: extension('http://hl7.org/fh
 @```
 from
 	CapabilityStatement
-where rest.resource.type = 'Procedure' 
+where rest.resource.type = 'Observation' 
 for rest.resource.Foerderung  
 select Name: name, Spezifikation: definition, Verbindlichkeit: extension('http://hl7.org/fhir/StructureDefinition/capabilitystatement-expectation').value
 ```  

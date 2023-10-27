@@ -1,13 +1,18 @@
 Profile: Foerderung
-Parent: Procedure
+Parent: Observation
 Id: Foerderung
 * status MS
-* status = #completed
+* status = #final
+* category MS
+* category = $observation-category#social-history "Social History"
 * code MS
-* code from FoerderungVS (required)
+* code from FoerderungVS
 * code.coding MS
 * subject MS
-* note MS
+* value[x] 1..1 MS
+* value[x] only CodeableConcept or string
+* valueCodeableConcept MS
+* valueString MS
 
 ValueSet: FoerderungVS
 Id: FoerderungVS
@@ -29,9 +34,23 @@ Title: "Elternfragebogen Förderungen"
 * #sonstige "Sonstige Förderung"
 * #kuren "Kuren"
 
+ValueSet: FoerderungStatusVS
+Id: FoerderungStatusVS
+Title: "Elternfragebogen Förderungstatus"
+Description: "Dieses ValueSet enthält alle validen Förderungstatus des Elternfragebogens"
+* include codes from system FoerderungCS
+
+CodeSystem: FoerderungStatusCS
+Id: FoerderungStatusCS
+Title: "Elternfragebogen Förderungstatus"
+* #nein "Nein"
+* #abgeschlossen "Abgeschlossen"
+* #laufend "Läuft z.Zt. noch"
+* #geplant "Geplant"
+
 Instance: FoerderungBeispiel
 InstanceOf: Foerderung
 Usage: #example
 * subject = Reference(PersonBeispiel)
 * code = FoerderungCS#sonstige "Sonstige Förderung"
-* note.text = "Professionelle Emotional Förderung"
+* valueCodeableConcept = FoerderungStatusCS#nein "Nein"

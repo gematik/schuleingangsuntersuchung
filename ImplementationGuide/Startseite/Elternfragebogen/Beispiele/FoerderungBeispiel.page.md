@@ -1,6 +1,6 @@
 ## {{page-title}}
 
-### Ressourcentyp: Procedure
+### Ressourcentyp: Observation
 
 #### Beispiel des Datensatzes einer Foerderung
 <tabs>
