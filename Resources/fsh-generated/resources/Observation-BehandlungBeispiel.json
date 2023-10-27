@@ -1,0 +1,23 @@
+{
+  "resourceType": "Observation",
+  "id": "BehandlungBeispiel",
+  "meta": {
+    "profile": [
+      "https://www.oegd.de/fhir/seu/StructureDefinition/Behandlung"
+    ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "182991002",
+        "system": "http://snomed.info/sct",
+        "display": "Treatment given (situation)"
+      }
+    ]
+  },
+  "valueBoolean": true,
+  "subject": {
+    "reference": "Patient/PersonBeispiel"
+  }
+}
