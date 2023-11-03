@@ -1,6 +1,6 @@
 - name: Index
   filename: Index.page.md
-- name: Fragebogen
+- name: Elternfragebogen
   filename: Elternfragebogen-Schuleingangsuntersuchung.md
 - name: Ressourcen-Profile
   filename: Ressourcen-Profile
