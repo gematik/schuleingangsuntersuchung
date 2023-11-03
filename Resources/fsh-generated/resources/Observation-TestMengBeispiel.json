@@ -12,7 +12,7 @@
       {
         "code": "meng",
         "system": "https://www.oegd.de/fhir/seu/CodeSystem/TestTypesCS",
-        "display": "SOPESS- Mengenvergleich, Simultanerfassung"
+        "display": "Sozialpädiatrisches Entwicklungsscreening- Mengenvergleich, Simultanerfassung"
       }
     ]
   },

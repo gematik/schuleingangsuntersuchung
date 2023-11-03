@@ -38,10 +38,11 @@ Mitwirkungs- und Kommentierungsmöglichkeiten werden zurzeit ausgearbeitet.
 <!--- z.B. Jira-Links oder GitHub IssueTracker für Kommentare und Change-Requests, alternative Kommentierungsplattformen, 
 eMail-Verteiler für Interessenten, GoogleGroups, Chats, Foren o.ä.  --->
 
-### Beteiligte Organsiationen
+### Beteiligte Organisationen
 * Bundesministerium für Gesundheit
+* Gematik
 * Robert Koch-Institut
-* Gesundheitsamt Hessen
+* ELFA Interoperabilität
 * Gefyra GmbH
 
 ### Fürsorger
@@ -50,11 +51,14 @@ eMail-Verteiler für Interessenten, GoogleGroups, Chats, Foren o.ä.  --->
 * Patrick Werner
 
 
-### Weitere Links
+[//]: # (### Weitere Links)
 <!-- z. B. Beschreibungen des UseCases, Datenmodell, ges. Vorgaben, fachliche Anforderungen, relevante Spezifikationen-->
-* https://www.lgl.bayern.de/gesundheit/praevention/kindergesundheit/schuleingangsuntersuchung/index.htm 
-* https://stadt.muenchen.de/service/info/sg-schulgesundheit/10278765/ 
-* https://www.lgl.bayern.de/das_lgl/aufgaben_zustaendigkeiten/ge_aufgaben/ge4_schuleingangsuntersuchung.htm 
+
+[//]: # (* https://www.lgl.bayern.de/gesundheit/praevention/kindergesundheit/schuleingangsuntersuchung/index.htm )
+
+[//]: # (* https://stadt.muenchen.de/service/info/sg-schulgesundheit/10278765/ )
+
+[//]: # (* https://www.lgl.bayern.de/das_lgl/aufgaben_zustaendigkeiten/ge_aufgaben/ge4_schuleingangsuntersuchung.htm )
 
 
 

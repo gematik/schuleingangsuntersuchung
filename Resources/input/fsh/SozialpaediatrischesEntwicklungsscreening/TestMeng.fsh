@@ -1,17 +1,17 @@
-Profile: TestSelaufm
+Profile: TestMeng
 Parent: Test
-Id: TestSelaufm
-* code = TestTypesCS#selaufm "SOPESS- Selektive-Aufmerksamkeit"
+Id: TestMeng
+* code = TestTypesCS#meng "Sozialpädiatrisches Entwicklungsscreening- Mengenvergleich, Simultanerfassung"
 * referenceRange[abnormal].low = 0 '1' "Punktwert"
 * referenceRange[abnormal].high = 10 '1' "Punktwert"
 * referenceRange[borderline].low = 11 '1' "Punktwert"
 * referenceRange[borderline].high = 13 '1' "Punktwert"
 * referenceRange[normal].low = 14 '1' "Punktwert"
-* referenceRange[normal].high = 29 '1' "Punktwert"
+* referenceRange[normal].high = 16 '1' "Punktwert"
 
-Instance: TestSelaufmBeispiel
-InstanceOf: TestSelaufm
+Instance: TestMengBeispiel
+InstanceOf: TestMeng
 Usage: #example
 * subject = Reference(PersonBeispiel)
 * effectiveDateTime = "2023-01-01"
-* valueQuantity = 28 '1' "Punktwert"
+* valueQuantity = 15 '1' "Punktwert"

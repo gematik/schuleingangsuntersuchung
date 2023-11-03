@@ -1,6 +1,6 @@
 CodeSystem:  GeburtsregionCS
 Id: GeburtsregionCS
-Title: "SOPESS Sprachlich-ethnischer Familienhintergrund"
+Title: "Sozialpädiatrisches Entwicklungsscreening Sprachlich-ethnischer Familienhintergrund"
 * #0 "Deutschland"
 * #1 "Türkei"
 * #2 "GUS/Osteuropa"
@@ -14,7 +14,7 @@ Title: "SOPESS Sprachlich-ethnischer Familienhintergrund"
 
 ValueSet: GeburtsregionVS
 Id: GeburtsregionVS
-Title: "SOPESS Sprachlich-ethnischer Familienhintergrund"
+Title: "Sozialpädiatrisches Entwicklungsscreening Sprachlich-ethnischer Familienhintergrund"
 * include codes from system GeburtsregionCS
 
 CodeSystem:  PersonDeutschkenntnisCS
