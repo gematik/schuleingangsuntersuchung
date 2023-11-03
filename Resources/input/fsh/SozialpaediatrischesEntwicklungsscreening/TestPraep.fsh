@@ -1,7 +1,7 @@
 Profile: TestPraep
 Parent: Test
 Id: TestPraep
-* code = TestTypesCS#praep "SOPESS-Präpositionen"
+* code = TestTypesCS#praep "Sozialpädiatrisches Entwicklungsscreening-Präpositionen"
 * referenceRange[abnormal].low = 0 '1' "Punktwert"
 * referenceRange[abnormal].high = 4 '1' "Punktwert"
 * referenceRange[borderline].low = 5 '1' "Punktwert"

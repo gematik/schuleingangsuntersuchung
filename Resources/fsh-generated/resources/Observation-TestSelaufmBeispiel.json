@@ -12,7 +12,7 @@
       {
         "code": "selaufm",
         "system": "https://www.oegd.de/fhir/seu/CodeSystem/TestTypesCS",
-        "display": "SOPESS- Selektive-Aufmerksamkeit"
+        "display": "Sozialpädiatrisches Entwicklungsscreening- Selektive-Aufmerksamkeit"
       }
     ]
   },

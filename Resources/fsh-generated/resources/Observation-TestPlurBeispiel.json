@@ -12,7 +12,7 @@
       {
         "code": "plur",
         "system": "https://www.oegd.de/fhir/seu/CodeSystem/TestTypesCS",
-        "display": "SOPESS-Pluralbildung"
+        "display": "Sozialpädiatrisches Entwicklungsscreening-Pluralbildung"
       }
     ]
   },

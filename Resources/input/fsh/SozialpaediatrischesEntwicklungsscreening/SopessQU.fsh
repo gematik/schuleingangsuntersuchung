@@ -1,7 +1,7 @@
-Instance: SOPESS
+Instance: SozialpaediatrischesEntwicklungsscreening
 InstanceOf: Questionnaire
 Usage: #example
-Title: "SOPESS Fragebogen"
+Title: "Sozialpädiatrisches Entwicklungsscreening Fragebogen"
 * insert launchContext("patient", #Patient, "Patientenkontext")
 * status = #draft
 * item[+]

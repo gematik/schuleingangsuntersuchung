@@ -4,7 +4,7 @@
   "content": "complete",
   "name": "GeburtsregionCS",
   "id": "GeburtsregionCS",
-  "title": "SOPESS Sprachlich-ethnischer Familienhintergrund",
+  "title": "Sozialpädiatrisches Entwicklungsscreening Sprachlich-ethnischer Familienhintergrund",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/GeburtsregionCS",
   "concept": [
     {

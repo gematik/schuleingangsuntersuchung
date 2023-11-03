@@ -90,14 +90,12 @@
         "id": "Practitioner.name:Name.family.extension:nachname",
         "path": "Practitioner.name.family.extension",
         "sliceName": "nachname",
-        "max": "1",
         "mustSupport": true
       },
       {
         "id": "Practitioner.name:Name.family.extension:vorsatzwort",
         "path": "Practitioner.name.family.extension",
         "sliceName": "vorsatzwort",
-        "max": "1",
         "mustSupport": true
       },
       {

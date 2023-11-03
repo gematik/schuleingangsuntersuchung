@@ -52,7 +52,7 @@
             {
               "code": "zaehl",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/TestTypesCS",
-              "display": "SOPESS-Zahlen und Mengenwissen"
+              "display": "Sozialpädiatrisches Entwicklungsscreening-Zahlen und Mengenwissen"
             }
           ]
         }

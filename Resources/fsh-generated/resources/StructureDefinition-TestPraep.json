@@ -52,7 +52,7 @@
             {
               "code": "praep",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/TestTypesCS",
-              "display": "SOPESS-Präpositionen"
+              "display": "Sozialpädiatrisches Entwicklungsscreening-Präpositionen"
             }
           ]
         }
