@@ -1,8 +1,8 @@
 Instance: Elternbefragung
 InstanceOf: Questionnaire
 Usage: #example
-Title: "Elternbefragung"
 * insert launchContext("patient", #Patient, "Patientenkontext")
+* title = "Elternfragebogen"
 * status = #draft
 * item[+]
   * type = #group

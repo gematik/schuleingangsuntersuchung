@@ -1,7 +1,8 @@
 Instance: SozialpaediatrischesEntwicklungsscreening
 InstanceOf: Questionnaire
 Usage: #example
-Title: "Sozialpädiatrisches Entwicklungsscreening Fragebogen"
+//Title: "Sozialpädiatrisches Entwicklungsscreening Fragebogen"
+* title = "Sozialpaediatrisches Entwicklungsscreening"
 * insert launchContext("patient", #Patient, "Patientenkontext")
 * status = #draft
 * item[+]
