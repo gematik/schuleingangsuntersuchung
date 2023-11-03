@@ -1,0 +1,131 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "SozialpaediatrischesEntwicklungsscreening",
+  "title": "Sozialpaediatrisches Entwicklungsscreening",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext",
+      "extension": [
+        {
+          "url": "name",
+          "valueId": "patient"
+        },
+        {
+          "url": "type",
+          "valueCode": "Patient"
+        },
+        {
+          "url": "descripton",
+          "valueString": "Patientenkontext"
+        }
+      ]
+    }
+  ],
+  "status": "draft",
+  "item": [
+    {
+      "type": "integer",
+      "linkId": "1",
+      "text": "Zählen"
+    },
+    {
+      "type": "integer",
+      "linkId": "2",
+      "text": "Mengenvorwissen"
+    },
+    {
+      "type": "integer",
+      "linkId": "3",
+      "text": "Selektive Aufmerksamkeit"
+    },
+    {
+      "type": "integer",
+      "linkId": "4",
+      "text": "Visuomotorik"
+    },
+    {
+      "type": "integer",
+      "linkId": "5",
+      "text": "Visuelles Wahrnehmen und Schlussfolgern"
+    },
+    {
+      "type": "integer",
+      "linkId": "6",
+      "text": "Körperkoordination"
+    },
+    {
+      "type": "choice",
+      "linkId": "7",
+      "text": "Erstsprache",
+      "answerValueSet": "https://www.oegd.de/fhir/seu/ValueSet/DeutschUndAndereSpracheVS"
+    },
+    {
+      "type": "choice",
+      "linkId": "8",
+      "text": "Deutschkenntnisse",
+      "answerValueSet": "https://www.oegd.de/fhir/seu/ValueSet/DeutschkenntnisseVS"
+    },
+    {
+      "type": "integer",
+      "linkId": "9",
+      "text": "Präpositionen"
+    },
+    {
+      "type": "integer",
+      "linkId": "10",
+      "text": "Pluralbildung"
+    },
+    {
+      "type": "integer",
+      "linkId": "11",
+      "text": "Pseudowörter"
+    },
+    {
+      "type": "integer",
+      "linkId": "12",
+      "text": "Artikulation"
+    },
+    {
+      "type": "choice",
+      "linkId": "13",
+      "text": "Befund: Zahlen- und Mengenvorwissen",
+      "answerValueSet": "https://www.oegd.de/fhir/seu/ValueSet/BefundBewertungBielefelderModellVS"
+    },
+    {
+      "type": "choice",
+      "linkId": "14",
+      "text": "Befund: Visuomotorik",
+      "answerValueSet": "https://www.oegd.de/fhir/seu/ValueSet/BefundBewertungBielefelderModellVS"
+    },
+    {
+      "type": "choice",
+      "linkId": "15",
+      "text": "Befund: Selektive Aufmerksamkeit",
+      "answerValueSet": "https://www.oegd.de/fhir/seu/ValueSet/BefundBewertungBielefelderModellVS"
+    },
+    {
+      "type": "choice",
+      "linkId": "16",
+      "text": "Befund: Visuelles Wahrnehmen und Schlussfolgern",
+      "answerValueSet": "https://www.oegd.de/fhir/seu/ValueSet/BefundBewertungBielefelderModellVS"
+    },
+    {
+      "type": "choice",
+      "linkId": "17",
+      "text": "Befund: Visuelles Wahrnehmen und Schlussfolgern",
+      "answerValueSet": "https://www.oegd.de/fhir/seu/ValueSet/BefundBewertungBielefelderModellVS"
+    },
+    {
+      "type": "choice",
+      "linkId": "18",
+      "text": "Befund: Sprache/Sprechen",
+      "answerValueSet": "https://www.oegd.de/fhir/seu/ValueSet/BefundBewertungBielefelderModellVS"
+    },
+    {
+      "type": "choice",
+      "linkId": "19",
+      "text": "Befund: Körperkoordination",
+      "answerValueSet": "https://www.oegd.de/fhir/seu/ValueSet/BefundBewertungBielefelderModellVS"
+    }
+  ]
+}
