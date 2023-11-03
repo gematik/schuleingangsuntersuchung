@@ -2,7 +2,7 @@
 
 ### Elternfragebogen Schuleingangsuntersuchung
 <tabs>
-    <tab title="Übersicht">      
+    <tab title="Table">      
         {{render:Elternbefragung}}
     </tab>
     <tab title="JSON">
