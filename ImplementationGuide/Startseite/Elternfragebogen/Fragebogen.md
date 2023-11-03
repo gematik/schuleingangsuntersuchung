@@ -1,5 +1,7 @@
 ## {{page-title}}
 
+<img src="https://github.com/gematik/schuleingangsuntersuchung/blob/main/ImplementationGuide/images/questionnaire-Elternfragebogen.png?raw=true" alt="gematik logo" width="400"/>
+
 ### Elternfragebogen Schuleingangsuntersuchung
 <tabs>
     <tab title="Table">      

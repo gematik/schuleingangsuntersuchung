@@ -4,8 +4,8 @@
 
 #### Beispiel des Datensatzes von Besonderheiten
 <tabs>
-    <tab title="Übersicht">      
-        {{render:BesonderheitenBeispiel}}
+    <tab title="Table">      
+        {{table:BesonderheitenBeispiel}}
     </tab>
     <tab title="JSON">
         {{json:BesonderheitenBeispiel}}
