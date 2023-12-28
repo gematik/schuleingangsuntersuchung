@@ -8,3 +8,5 @@
   filename: Begriffsdefinitionen.page.md
 - name: Informationsmodell
   filename: Informationsmodell.page.md
+- name: FHIR-Questionnaires
+  filename: FHIR-Questionnaires.page.md
