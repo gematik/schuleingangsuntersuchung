@@ -1,8 +1,11 @@
 Instance: Elternbefragung
 InstanceOf: Questionnaire
 Usage: #example
+Title: "Elternbefragung"
+Description: ""
+* url = "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung"
+* title = "SEU Elternfragebogen Maximaldatensatz"
 * insert launchContext("patient", #Patient, "Patientenkontext")
-* title = "Elternfragebogen"
 * status = #draft
 * item[+]
   * type = #group
@@ -27,7 +30,7 @@ Usage: #example
     * type = #choice
     * linkId = "1.4"
     * text = "Staatsangehörigkeit"
-//TODO: initial expression
+  //TODO: initial expression
   * item[+]
     * type = #choice
     * linkId = "1.5"
@@ -36,7 +39,6 @@ Usage: #example
     * type = #boolean
     * linkId = "1.6"
     * text = "In Deutschland geboren"
-  
   * item[+]
     * linkId = "1.6.1"
     * type = #date
@@ -63,23 +65,22 @@ Usage: #example
     * text = "Wohnort"
   * item[+]
     * type = #string
-    * linkId = "1.10"
+    * linkId = "1.11"
     * text = "Straße"
   * item[+]
     * type = #choice
-    * linkId = "1.11"
+    * linkId = "1.12"
     * text = "Kind lebt hauptsächlich bei"
-// Freitext falls Kind bei "other" lebt
+  // Freitext falls Kind bei "other" lebt
   * item[+]
     * enableWhen[+]
-      * question = "1.11.1"
+      * question = "1.12"
       * operator = #=
       * answerCoding
-// TODO Add System        
-//          * system = $yesNo
+  // TODO Add System        
         * code = #other
     * type = #string
-    * linkId = "1.11.2"
+    * linkId = "1.12.1"
     * text = "Kind lebt hauptsächlich bei"
 //********************************************
 // Personenbezogene Daten Personenberechtigter
@@ -119,23 +120,23 @@ Usage: #example
     * text = "Telefonnummer"
   * item[+]
     * type = #string
-    * linkId = "2.7"
+    * linkId = "2.8"
     * text = "Email"
   * item[+]
     * type = #choice
-    * linkId = "2.8"
+    * linkId = "2.9"
     * text = "Staatsangehörigkeit"
   * item[+]
     * type = #choice
-    * linkId = "2.9"
+    * linkId = "2.10"
     * text = "Herkunftsland"
   * item[+]
     * type = #choice
-    * linkId = "2.9"
+    * linkId = "2.11"
     * text = "Muttersprache"
   * item[+]
     * type = #date
-    * linkId = "2.9"
+    * linkId = "2.12"
     * text = "Geburtsdatum"
 //********************************************
 // Familiendaten
@@ -162,7 +163,7 @@ Usage: #example
       * text = "Geburtsdatum des Geschwisters"
     * item[+]
       * type = #choice
-      * linkId = "3.1.1.1"
+      * linkId = "3.1.1.2"
       * text = "Geschlecht des Geschwisters"
   * item[+]
     * type = #group
@@ -242,10 +243,6 @@ Usage: #example
       * question = "4.7"
       * operator = #=
       * answerBoolean = true      
-  * item[+]
-    * type = #boolean
-    * linkId = "4.7"
-    * text = "Erfolgte die Betreung auch durch eine Tagesmutter?"
 //********************************************
 // Schwangerschaft und Geburt
 * item[+]
@@ -369,7 +366,7 @@ Usage: #example
     * text = "Besonderheiten in der Säuglings- u. Kleinkinderzeit?"
   * item[+]
     * type = #text
-    * linkId = "7.9"
+    * linkId = "7.8.1"
     * text = "Welche Besonderheiten lagen vor?"
     * enableWhen[+]
       * question = "7.8"
@@ -401,223 +398,203 @@ Usage: #example
     * type = #boolean
     * linkId = "8.1"
     * text = "In regelmäßiger ärtzlicher bzw. psychologischer Behandlung"
-    * item[+]
-      * type = #text
-      * linkId = "8.1.1"
-      * text = "Freitext Angabe, abhängig zu 'Regelmäßig_Behandlung'. Angabe zu Grund und Fachrichtung"
-      * enableWhen[+]
-        * question = "8.1"
-        * operator = #=
-        * answerBoolean = true
   * item[+]
-    * type = #boolean
+    * type = #text
     * linkId = "8.2"
-    * text = "Sehstörung"
+    * text = "Freitext Angabe, abhängig zu 'Regelmäßig_Behandlung'. Angabe zu Grund und Fachrichtung"
+    * enableWhen[+]
+      * question = "8.1"
+      * operator = #=
+      * answerBoolean = true
   * item[+]
     * type = #boolean
     * linkId = "8.3"
-    * text = "Sprachstörung"
+    * text = "Sehstörung vorhanden?"
   * item[+]
     * type = #boolean
     * linkId = "8.4"
-    * text = "Schielbehandlung"  
+    * text = "Sprachstörung vorhanden?"
   * item[+]
     * type = #boolean
     * linkId = "8.5"
-    * text = "Brillenträger"  
+    * text = "Schielbehandlung?"
   * item[+]
-    * type = #date
+    * type = #boolean
     * linkId = "8.6"
-    * text = "Letzte Untersuchung beim Augenarzt"
+    * text = "Brillenträger?"
   * item[+]
     * type = #date
     * linkId = "8.7"
-    * text = "Letzte Untersuchung beim Zahnarzt"
+    * text = "Letzte Untersuchung beim Augenarzt?"
   * item[+]
-    * type = #boolean
+    * type = #date
     * linkId = "8.8"
-    * text = "Schwere angeborene Hörstörung vorhanden?"
-    * item[+]
-      * type = #choice
-      * linkId = "8.8.1"
-      * text = "Wo besteht die schwere Hörstörung?"
-      * enableWhen[+]
-        * question = "8.8"
-        * operator = #=
-        * answerBoolean = true
-    * item[+]
-      * type = #boolean
-      * linkId = "8.8.2"
-      * text = "Werden Hörgeräte genutzt/benötigt?"
-      * enableWhen[+]
-        * question = "8.8"
-        * operator = #=
-        * answerBoolean = true
-      * item[+]
-        * type = #date
-        * linkId = "8.8.2.1"
-        * text = "Beginn Hörgerätnutzung (links)"
-        * enableWhen[+]
-          * question = "8.8.2"
-          * operator = #=
-          * answerBoolean = true
-      * item[+]
-        * type = #date
-        * linkId = "8.8.2.2"
-        * text = "Beginn Hörgerätnutzung (rechts)"
-        * enableWhen[+]
-          * question = "8.8.2"
-          * operator = #=
-          * answerBoolean = true
-    * item[+]
-      * type = #boolean
-      * linkId = "8.8.3"
-      * text = "Wurde ein Cochleaimplantat implantiert?"
-      * enableWhen[+]
-        * question = "8.8"
-        * operator = #=
-        * answerBoolean = true
-      * item[+]
-        * type = #date
-        * linkId = "8.8.3.1"
-        * text = "Implantation Cochlea (links)"
-        * enableWhen[+]
-          * question = "8.8.3"
-          * operator = #=
-          * answerBoolean = true
-      * item[+]
-        * type = #date
-        * linkId = "8.8.3.2"
-        * text = "Implantation Cochlea (rechts)"
-        * enableWhen[+]
-          * question = "8.8.3"
-          * operator = #=
-          * answerBoolean = true
+    * text = "Letzte Untersuchung beim Zahnarzt?"
   * item[+]
     * type = #boolean
     * linkId = "8.9"
-    * text = "Stoffwechsel oder Hormonstörung vorhanden?"
+    * text = "Schwere Hörstörung vorhanden?"
+  * item[+]
+    * type = #group
+    * linkId = "8.9.G"
+    * text = "Details: Angeborene schwere Hörstörung"
+    * enableWhen[+]
+      * question = "8.9"
+      * operator = #=
+      * answerBoolean = true
     * item[+]
-      * type = #choice
-      * linkId = "8.9.1"
-      * text = "Stoffwechsel oder Hormonstörung:"
+      * type = #group
+      * linkId = "8.9.G.hoergeraete.G"
+      * text = "Hörgeräte"
       * repeats = true
-      * enableWhen[+]
-        * question = "8.9"
-        * operator = #=
-        * answerBoolean = true
+      * item[+]
+        * type = #choice
+        * linkId = "8.9.G.hoergeraete.G.1"
+        * text = "Höregerätseite"
       * item[+]
         * type = #date
-        * linkId = "8.9.1.1"
-        * text = "Diagnosestellung:"
-        * repeats = true
-        * enableWhen[+]
-          * question = "8.9"
-          * operator = #=
-          * answerBoolean = true
+        * linkId = "8.9.G.hoergeraete.G.2"
+        * text = "Beginn des Tragens"
+    * item[+]
+      * type = #group
+      * linkId = "8.9.G.cochlea.G"
+      * text = "Cochleaimplantate"
+      * repeats = true
+      * item[+]
+        * type = #choice
+        * linkId = "8.9.G.cochlea.G.1"
+        * text = "Cochleaimplantat-Seite"
+      * item[+]
+        * type = #date
+        * linkId = "8.9.G.cochlea.G.2"
+        * text = "Beginn des Tragens"
   * item[+]
-    * type = #open-choice
-    * linkId = "8.10"
+    * type = #group
+    * linkId = "8.10g"
+    * text = "Stoffwechsel & Hormonstörungen"
+    * repeats = true
+    * item[+]
+      * type = #choice
+      * linkId = "8.10g.1"
+      * text = "Art der Störung oder Erkrankung"
+    * item[+]
+      * type = #date
+      * linkId = "8.10g.2"
+      * text = "Beginn der Erkrankung"
+  * item[+]
+    * type = #group
+    * linkId = "8.11.g"
     * text = "Erkrankungen"
     * repeats = true
     * item[+]
+      * type = #open-choice
+      * linkId = "8.11.g.1"
+      * text = "Erkrankung"
+    * item[+]  
       * type = #date
-      * linkId = "8.10.1"
-      * text = "Erstdiagnose"
-      * repeats = true
-      * enableWhen[+]
-        * question = "8.10"
-        * operator = #exists
-        * answerBoolean = true
+      * linkId = "8.11.g.2"
+      * text = "Erkrankungsbeginn"
+    * item[+]        
+      * type = #boolean
+      * linkId = "8.11.g.3"
+      * text = "Durch Ärzt:in festgestellt"
   * item[+]
-    * type = #open-choice
-    * linkId = "8.11"
-    * text = "Durchgemachte Infektionskrankheiten"
+    * type = #group
+    * linkId = "8.12.g"
+    * text = "Infektionskrankheiten"
     * repeats = true
     * item[+]
+      * type = #open-choice
+      * linkId = "8.12.g.1"
+      * text = "Infektionskrankheit"
+    * item[+]  
       * type = #date
-      * linkId = "8.11.1"
-      * text = "Wann?"
-      * repeats = true
-      * enableWhen[+]
-        * question = "8.11"
-        * operator = #=
-        * answerCoding = #keine
+      * linkId = "8.12.g.2"
+      * text = "Erkrankungsbeginn"
   * item[+]
-    * type = #boolean
-    * linkId = "8.12"
-    * text = "Allergietest durchgeführt"
-  * item[+]
-    * type = #boolean
-    * linkId = "8.13"
-    * text = "Entwicklungsdiagnostik durchgeführt"
-  * item[+]
-    * type = #boolean
-    * linkId = "8.14"
-    * text = "Behinderntenausweis vorhanden?"
+    * type = #group
+    * linkId = "8.13.g"
+    * text = "Erkrankungen im letzten Jahr"
+    * repeats = true
     * item[+]
-      * type = #choice
-      * linkId = "8.14.1"
-      * text = "Merkzeichen auf Behindertenausweis:"
-      * repeats = true
-      * enableWhen[+]
-        * question = "8.14"
-        * operator = #=
-        * answerBoolean = true
+      * type = #open-choice
+      * linkId = "8.13.g.1"
+      * text = "Erkrankung"
+    * item[+]        
+      * type = #date
+      * linkId = "8.13.g.2"
+      * text = "Erkrankungsbeginn"
+// TODO: VS Binding: nein
+  * item[+]
+    * type = #open-choice
+    * linkId = "8.14"
+    * text = "Chronische Erkrankung"
+    * repeats = true  
+  * item[+]
+    * type = #boolean
+    * linkId = "8.15"
+    * text = "Krankenhausaufenthalt"
+  * item[+]
+    * type = #boolean
+    * linkId = "8.16"
+    * text = "Allergietest"
+  * item[+]
+    * type = #boolean
+    * linkId = "8.17"
+    * text = "Entwicklungsdiagnostik"
+  * item[+]
+    * type = #boolean
+    * linkId = "8.18"
+    * text = "Behindertenausweis vorhanden"
   * item[+]
     * type = #choice
-    * linkId = "8.15"
+    * linkId = "8.19"
     * text = "Grad der Behinderung"
   * item[+]
-    * type = #open-choice
-    * linkId = "8.16"
-    * text = "Art der Behinderung"
-  * item[+]
     * type = #choice
-    * linkId = "8.17"
+    * linkId = "8.20"
     * text = "Pflegegrad"
   * item[+]
+    * type = #open-choice
+    * linkId = "8.21"
+    * text = "Schwere Behinderung"
+  * item[+]
     * type = #choice
-    * linkId = "8.18"
-    * text = "Werden regelmäßig Medikamente eingenommen? Falls ja, welche?"
-    * repeats = true
-    * item[+]
-      * type = #boolean
-      * linkId = "8.18.1"
-      * text = "Muss das Medikament in der Schule eingenommen werden?"
-      * enableWhen[+]
-        * question = "8.18"
-        * operator = #!=
-        * answerCoding = #keine
+    * linkId = "8.22"
+    * text = "Behinderung Merkzeichen"
+  * item[+]
+    * type = #open-choice
+    * linkId = "8.23"
+    * text = "Regelmäßige Medikamenteneinnahme"
+  * item[+]
+    * type = #open-choice
+    * linkId = "8.24"
+    * text = "Medikamenteneinnahme in der Schulzeit"
+  * item[+]
+    * type = #open-choice
+    * linkId = "8.25"
+    * text = "Eine Erkrankung, die in einer Notfallsituation beachtet werden muss"
   * item[+]
     * type = #text
-    * linkId = "8.18a"
-    * text = "Erkrankungen, die in einer Notfallsituation beachtet werden müssen"      
-  * item[+]
-    * type = #text
-    * linkId = "8.19"
-    * text = "Sonstige gesundheitliche Probleme"
+    * linkId = "8.26"
+    * text = "Sonstige Probleme"
   * item[+]
     * type = #boolean
-    * linkId = "8.20"
-    * text = "Hatte ihr Kind bereits eine ambulante oder stationäre OP?"
+    * linkId = "8.27"
+    * text = "Wurde ihr Kind operiert"
+  * item[+]
+    * type = #group
+    * linkId = "8.28.g"
+    * text = "Hatte ihr Kinde einen Unfall"
     * repeats = true
     * item[+]
       * type = #choice
-      * linkId = "8.20.1"
-      * text = "Wo fand der Unfall statt?"
-      * enableWhen[+]
-        * question = "8.20"
-        * operator = #=
-        * answerBoolean = true
+      * linkId = "8.28.g.1"
+      * text = "Ort des Unfall"
     * item[+]
       * type = #choice
-      * linkId = "8.20.1"
-      * text = "Art der Verletzung"
-      * enableWhen[+]
-        * question = "8.20"
-        * operator = #=
-        * answerBoolean = true
+      * linkId = "8.28.g.2"
+      * text = "Art des Unfalls"
 //********************************************
 // Förderungen
 * item[+]
@@ -627,7 +604,7 @@ Usage: #example
   * item[+]
     * type = #boolean
     * linkId = "9.1"
-    * text = "Teilnahme an Vorkurs Deutsch"
+    * text = "Teilnahme am Vorkurs Deutsch"
   * item[+]
     * type = #choice
     * linkId = "9.2"
@@ -659,219 +636,107 @@ Usage: #example
   * item[+]
     * type = #choice
     * linkId = "9.9"
-    * text = "Integrative_Betreuuung"
+    * text = "Integrative Betreuung"
   * item[+]
     * type = #text
     * linkId = "9.10"
-    * text = "Sonstige_Förderung"
+    * text = "Sonstige Förderung"
   * item[+]
-    * type = #boolean
-    * linkId = "9.11"
+    * type = #group
+    * linkId = "9.11.g"
     * text = "Kuren"
     * repeats = true
     * item[+]
-      * type = #open-choice
-      * linkId = "9.11.1"
-      * text = "Art der Kur"
-      * enableWhen[+]
-        * question = "9.11"
-        * operator = #=
-        * answerBoolean = true
+      * type = #date
+      * linkId = "9.11.g.1"
+      * text = "Wann"
     * item[+]
-      * type = #open-choice
-      * linkId = "9.11.1"
-      * text = "Art der Kur"
-      * enableWhen[+]
-        * question = "9.11"
-        * operator = #=
-        * answerBoolean = true
+      * type = #text
+      * linkId = "9.11.g.2"
+      * text = "Behandlungsschwerpunkt"
 //********************************************
 // Medienkonsum
 * item[+]
-  * type = #group
-  * linkId = "10"
-  * text = "Medienkonsum"
+  * insert addGroup("10", "Medienkonsum")
   * item[+]
-    * type = #quantity
-    * linkId = "10.1"
-    * text = "Medienkonsum: Durchschnittliche Stunden pro Tag"
+    * insert addItem("10.1", #integer, "Durchschnittlich pro Tag am Fernseher/Smartphone/Tablet/Spielkonsole/Computer")
+    * insert uunit(h, "Stunden")
   * item[+]
-    * type = #boolean
-    * linkId = "10.2"
-    * text = "Fernsehgerät/Computer/Spielkonsole im Zimmer"
+    * insert addItem("10.2", #boolean, "Fernsehgerät/Computer/Spielkonsole im Zimmer?")
 //********************************************
 // Arzt
 * item[+]
-  * type = #group
-  * linkId = "11"
-  * text = "Arzt"
+  * insert addGroup("11", "Arzt")
   * item[+]
-    * type = #boolean
-    * linkId = "11.1"
-    * text = "Hat das Kind bislang Behandlung oder Untersützung erhalten?"
+    * insert addItem("11.1", #boolean, "Hat das Kind bislang ärztliche Behandlung oder Untersützung erhalten?")
   * item[+]
-    * type = #string
-    * linkId = "11.2"
-    * text = "Name des Kinderarztes"
+    * insert addItem("11.2", #string, "Name Kinderarzt")
   * item[+]
-    * type = #string
-    * linkId = "11.3"
-    * repeats = true
-    * text = "Weitere Fachärzte (zusätzlich zu Hausarzt)"
+    * insert addItem("11.3", #string, "Name Facharzt")
 //********************************************
 // Sonstiges
 * item[+]
-  * type = #group
-  * linkId = "12"
-  * text = "Sonstiges"
+  * insert addGroup("12", "Sonstiges")
   * item[+]
-    * type = #choice
-    * linkId = "12.1"
-    * text = "Beratung in Erziehungsberatungsstelle"
+    * insert addItem("12.1", #choice, "Beratung Erziehungsberatungsstelle")
   * item[+]
-    * type = #choice
-    * linkId = "12.2"
-    * text = "Beratung in Sozialpädiatrischen Zentrum (SPZ)"
+    * insert addItem("12.2", #choice, "Beratung Sozialpädiatrisches Zentrum SPZ")
   * item[+]
-    * type = #boolean
-    * linkId = "12.3"
-    * text = "Netzwerk_GesundeKinder"
+    * insert addItem("12.3", #boolean, "Teilnahme Netzwerk Gesunde Kinder")
     * item[+]
-      * type = #quantity
-      * linkId = "12.3.1"
-      * text = "Netzwerk_GesundeKinder_Dauer in Jahren"
+      * insert addItem("12.3.1", #integer, "Wie lange?")
+      * insert uunit(a, "Jahre")
       * enableWhen[+]
         * question = "12.3"
         * operator = #=
         * answerBoolean = true
   * item[+]
-    * type = #boolean
-    * linkId = "12.4"
-    * text = "KISS Sprachsscreening"
+    * insert addItem("12.4", #boolean, "KISS Sprachscreening")
   * item[+]
-    * type = #choice
-    * linkId = "12.5"
-    * text = "Raucher Haushalt"
+    * insert addItem("12.5", #choice, "Raucherhaushalt")
   * item[+]
-    * type = #text
-    * linkId = "12.6"
-    * text = "Freie Angabe zu Stärken/Begabung/Besonderheiten des Kindes"
+    * insert addItem("12.6", #text, "Stärken/Begabung/Besonderheiten des Kindes")
   * item[+]
-    * type = #boolean
-    * linkId = "12.7"
-    * text = "Treibt ihr Kind regelmäßig Sport?"
-    * item[+]
-      * type = #text
-      * linkId = "12.7.1"
-      * text = "Sportart & Verein"
-      * repeats = true
-      * enableWhen[+]
-        * question = "12.7"
-        * operator = #=
-        * answerBoolean = true
+    * insert addItem("12.7", #boolean, "Regelmäßig Sport")
   * item[+]
-    * type = #boolean
-    * linkId = "12.8"
-    * text = "Kann ihr Kind schwimmen?"
+    * insert addItem("12.8", #text, "Sportart und Verein")
   * item[+]
-    * type = #boolean
-    * linkId = "12.9"
-    * text = "Seepferdchenabzeichen vorhanden?"
+    * insert addItem("12.9", #boolean, "Schwimmfähig")
   * item[+]
-    * type = #integer
-    * linkId = "12.10"
-    * text = "Vorgangsnummer"
+    * insert addItem("12.10", #boolean, "Seepferdchenabzeichen")
 //********************************************
-// Informationen Eltern
+// Sonstiges
 * item[+]
-  * type = #group
-  * linkId = "13"
-  * text = "Informationen Eltern"
+  * insert addGroup("13", "Informationen Eltern")
   * item[+]
-    * type = #choice
-    * linkId = "13.1"
-    * text = "Schulabschluss Elternteil1"
+    * insert addItem("13.1", #choice, "Schulabschluss 1. Elternteil")
   * item[+]
-    * type = #choice
-    * linkId = "13.2"
-    * text = "Schulabschluss Elternteil2"
+    * insert addItem("13.2", #choice, "Schulabschluss 2. Elternteil")
   * item[+]
-    * type = #choice
-    * linkId = "13.3"
-    * text = "Berufsausbildung Elternteil1"
+    * insert addItem("13.3", #choice, "Berufsabschluss 1. Elternteil")
   * item[+]
-    * type = #choice
-    * linkId = "13.4"
-    * text = "Berufsausbildung Elternteil2"
+    * insert addItem("13.4", #choice, "Berufsabschluss 2. Elternteil")
   * item[+]
-    * type = #choice
-    * linkId = "13.5"
-    * text = "Berufstätigkeit Elternteil1"
-    * item[+]
-      * type = #text
-      * linkId = "13.5.1"
-      * text = "Grund der Beschäftigungslosigkeit"
-      * enableWhen[+]
-        * question = "13.5"
-        * operator = #=
-        * answerCoding = #keine
-    * item[+]
-      * type = #boolean
-      * linkId = "13.5.2"
-      * text = "Schichtdienst"
-      * enableWhen[+]
-        * question = "13.5"
-        * operator = #!=
-        * answerCoding = #keine
+    * insert addItem("13.5", #choice, "Berufstätigkeit 1. Elternteil")
   * item[+]
-    * type = #choice
-    * linkId = "13.6"
-    * text = "Berufstätigkeit Elternteil2"
-    * item[+]
-      * type = #text
-      * linkId = "13.6.1"
-      * text = "Grund der Beschäftigungslosigkeit"
-      * enableWhen[+]
-        * question = "13.6"
-        * operator = #=
-        * answerCoding = #keine
-    * item[+]
-      * type = #boolean
-      * linkId = "13.6.2"
-      * text = "Schichtdienst"
-      * enableWhen[+]
-        * question = "13.6"
-        * operator = #!=
-        * answerCoding = #keine
+    * insert addItem("13.6", #choice, "Berufstätigkeit 2. Elternteil")
   * item[+]
-    * type = #integer
-    * linkId = "13.7"
-    * text = "Anzahl Erwachsene im Haushalt"
+    * insert addItem("13.7", #integer, [["Anzahl der Kinder im Haushalt. Kinder unter 18 Jahren, einzuschulendes Kind mitgerechnet"]])
   * item[+]
-    * type = #integer
-    * linkId = "13.8"
-    * text = "Anzahl Kinder unter 18 Jahren, einzuschulendes Kind mitgerechnet im Haushalt"
+    * insert addItem("13.8", #integer, "Anzahl der Erwachsene im Haushalt")
   * item[+]
-    * type = #date
-    * linkId = "13.9"
-    * text = "Datum seitdem Elternteil1 in Deutschland lebt"
+    * insert addItem("13.9", #date, "Datum seit dem der 1. Elternteil in Deutschland lebt.")
   * item[+]
-    * type = #date
-    * linkId = "13.10"
-    * text = "Datum seitdem Elternteil2 in Deutschland lebt"
+    * insert addItem("13.10", #date, "Datum seit dem der 2. Elternteil in Deutschland lebt.")
   * item[+]
-    * type = #choice
-    * linkId = "13.11"
-    * text = "Wer hat diesen Fragebogen ausgefüllt"
+    * insert addItem("13.11", #choice, "Wer hat diesen Fragebogen ausgefüllt")
   * item[+]
-    * type = #boolean
-    * linkId = "13.12"
-    * text = "Einwilligung zur Datenerhebung früherer Untersuchungen, welche beim Gesundheitsamt vorliegent"
+    * insert addItem("13.12", #boolean, [["Einwilligung zur Datenerhebung früherer Untersuchungen, welche beim Gesundheitsamt vorliegen"]])
   * item[+]
-    * type = #boolean
-    * linkId = "13.13"
-    * text = "Einwilligung zur Einsicht von Unterlagen zur Frühförderung, falls diese vorliegen"
+    * insert addItem("13.13", #boolean, [["Einwilligung zur Einsicht von Unterlagen zur Frühförderung, falls diese vorliegen"]])
   * item[+]
-    * type = #boolean
-    * linkId = "13.14"
-    * text = "Soll das Kind an einer Nachnmittagsbetreuung teilnehmen?"
+    * insert addItem("13.14", #boolean, "Ob das Kind an einer Nachmittagsbetreuung teilnehmen soll")
+  * item[+]
+    * insert addItem("13.15", #boolean, "Arbeitet der 1. Elternteil im Schichtdienst?")
+  * item[+]
+    * insert addItem("13.16", #boolean, "Arbeitet der 2. Elternteil im Schichtdienst?")
