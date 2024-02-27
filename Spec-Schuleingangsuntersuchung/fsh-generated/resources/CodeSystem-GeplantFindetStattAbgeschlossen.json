@@ -1,0 +1,21 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "GeplantFindetStattAbgeschlossen",
+  "id": "GeplantFindetStattAbgeschlossen",
+  "title": "GeplantFindetStattAbgeschlossen",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/GeplantFindetStattAbgeschlossen",
+  "concept": [
+    {
+      "code": "geplant"
+    },
+    {
+      "code": "findetStatt"
+    },
+    {
+      "code": "abgeschlossen"
+    }
+  ],
+  "count": 3
+}
