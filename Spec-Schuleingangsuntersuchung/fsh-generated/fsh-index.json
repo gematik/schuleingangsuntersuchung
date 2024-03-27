@@ -1,0 +1,754 @@
+[
+  {
+    "outputFile": "CodeSystem-BefundBewertungBielefelderModellCS.json",
+    "fshName": "BefundBewertungBielefelderModellCS",
+    "fshType": "CodeSystem",
+    "fshFile": "Questionnaire/SOPESS/Terminology.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "CodeSystem-BehinderungsTypCS.json",
+    "fshName": "BehinderungsTypCS",
+    "fshType": "CodeSystem",
+    "fshFile": "Behinderung.fsh",
+    "startLine": 19,
+    "endLine": 25
+  },
+  {
+    "outputFile": "CodeSystem-DeutschkenntnisseCS.json",
+    "fshName": "DeutschkenntnisseCS",
+    "fshType": "CodeSystem",
+    "fshFile": "Questionnaire/SOPESS/Terminology.fsh",
+    "startLine": 25,
+    "endLine": 33
+  },
+  {
+    "outputFile": "CodeSystem-GeplantFindetStattAbgeschlossen.json",
+    "fshName": "GeplantFindetStattAbgeschlossen",
+    "fshType": "CodeSystem",
+    "fshFile": "Questionnaire/Elternfragebogen/Terminology.fsh",
+    "startLine": 1,
+    "endLine": 6
+  },
+  {
+    "outputFile": "CodeSystem-PaediatrischeLeistungCS.json",
+    "fshName": "PaediatrischeLeistungCS",
+    "fshType": "CodeSystem",
+    "fshFile": "PaediatrischeLeistung.fsh",
+    "startLine": 13,
+    "endLine": 17
+  },
+  {
+    "outputFile": "CodeSystem-PersonDeutschkenntnisCS.json",
+    "fshName": "PersonDeutschkenntnisCS",
+    "fshType": "CodeSystem",
+    "fshFile": "terminologies.fsh",
+    "startLine": 20,
+    "endLine": 27
+  },
+  {
+    "outputFile": "CodeSystem-PersonEthnieCS.json",
+    "fshName": "PersonEthnieCS",
+    "fshType": "CodeSystem",
+    "fshFile": "terminologies.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "CodeSystem-RisikofaktorCS.json",
+    "fshName": "RisikofaktorCS",
+    "fshType": "CodeSystem",
+    "fshFile": "Risikofaktor.fsh",
+    "startLine": 19,
+    "endLine": 26
+  },
+  {
+    "outputFile": "CodeSystem-SchulempfehlungCS.json",
+    "fshName": "SchulempfehlungCS",
+    "fshType": "CodeSystem",
+    "fshFile": "Schulempfehlung.fsh",
+    "startLine": 19,
+    "endLine": 28
+  },
+  {
+    "outputFile": "CodeSystem-StatusKindCS.json",
+    "fshName": "StatusKindCS",
+    "fshType": "CodeSystem",
+    "fshFile": "StatusKind.fsh",
+    "startLine": 17,
+    "endLine": 22
+  },
+  {
+    "outputFile": "CodeSystem-TestTypesCS.json",
+    "fshName": "TestTypesCS",
+    "fshType": "CodeSystem",
+    "fshFile": "Test.fsh",
+    "startLine": 34,
+    "endLine": 45
+  },
+  {
+    "outputFile": "CodeSystem-UntersuchungsErgebnisCS.json",
+    "fshName": "UntersuchungsErgebnisCS",
+    "fshType": "CodeSystem",
+    "fshFile": "Untersuchung.fsh",
+    "startLine": 19,
+    "endLine": 26
+  },
+  {
+    "outputFile": "CodeSystem-VerwandtePersonDeutschkenntnisCS.json",
+    "fshName": "VerwandtePersonDeutschkenntnisCS",
+    "fshType": "CodeSystem",
+    "fshFile": "terminologies.fsh",
+    "startLine": 34,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Condition-ChronischeKrankheitBeispiel.json",
+    "fshName": "ChronischeKrankheitBeispiel",
+    "fshType": "Instance",
+    "fshFile": "ChronischeKrankheit.fsh",
+    "startLine": 12,
+    "endLine": 16
+  },
+  {
+    "outputFile": "Observation-BehinderungBeispiel.json",
+    "fshName": "BehinderungBeispiel",
+    "fshType": "Instance",
+    "fshFile": "Behinderung.fsh",
+    "startLine": 33,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Observation-BlutdruckBeispiel.json",
+    "fshName": "BlutdruckBeispiel",
+    "fshType": "Instance",
+    "fshFile": "Blutdruck.fsh",
+    "startLine": 24,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Observation-KoerpergewichtBeispiel.json",
+    "fshName": "KoerpergewichtBeispiel",
+    "fshType": "Instance",
+    "fshFile": "Koerpergewicht.fsh",
+    "startLine": 18,
+    "endLine": 30
+  },
+  {
+    "outputFile": "Observation-KoerpergroesseBeispiel.json",
+    "fshName": "KoerpergroesseBeispiel",
+    "fshType": "Instance",
+    "fshFile": "Koerpergroesse.fsh",
+    "startLine": 18,
+    "endLine": 30
+  },
+  {
+    "outputFile": "Observation-MehraufwandBeispiel.json",
+    "fshName": "MehraufwandBeispiel",
+    "fshType": "Instance",
+    "fshFile": "Mehraufwand.fsh",
+    "startLine": 15,
+    "endLine": 22
+  },
+  {
+    "outputFile": "Observation-RisikofaktorBeispiel.json",
+    "fshName": "RisikofaktorBeispiel",
+    "fshType": "Instance",
+    "fshFile": "Risikofaktor.fsh",
+    "startLine": 33,
+    "endLine": 40
+  },
+  {
+    "outputFile": "Observation-SchulempfehlungBeispiel.json",
+    "fshName": "SchulempfehlungBeispiel",
+    "fshType": "Instance",
+    "fshFile": "Schulempfehlung.fsh",
+    "startLine": 35,
+    "endLine": 42
+  },
+  {
+    "outputFile": "Observation-StatusKindBeispiel.json",
+    "fshName": "StatusKindBeispiel",
+    "fshType": "Instance",
+    "fshFile": "StatusKind.fsh",
+    "startLine": 30,
+    "endLine": 36
+  },
+  {
+    "outputFile": "Observation-TestDysBeispiel.json",
+    "fshName": "TestDysBeispiel",
+    "fshType": "Instance",
+    "fshFile": "TestDys.fsh",
+    "startLine": 8,
+    "endLine": 13
+  },
+  {
+    "outputFile": "Observation-TestKoordBeispiel.json",
+    "fshName": "TestKoordBeispiel",
+    "fshType": "Instance",
+    "fshFile": "TestKoord.fsh",
+    "startLine": 12,
+    "endLine": 17
+  },
+  {
+    "outputFile": "Observation-TestMengBeispiel.json",
+    "fshName": "TestMengBeispiel",
+    "fshType": "Instance",
+    "fshFile": "TestMeng.fsh",
+    "startLine": 12,
+    "endLine": 17
+  },
+  {
+    "outputFile": "Observation-TestPlurBeispiel.json",
+    "fshName": "TestPlurBeispiel",
+    "fshType": "Instance",
+    "fshFile": "TestPlur.fsh",
+    "startLine": 12,
+    "endLine": 17
+  },
+  {
+    "outputFile": "Observation-TestPraepBeispiel.json",
+    "fshName": "TestPraepBeispiel",
+    "fshType": "Instance",
+    "fshFile": "TestPraep.fsh",
+    "startLine": 12,
+    "endLine": 17
+  },
+  {
+    "outputFile": "Observation-TestPswoeBeispiel.json",
+    "fshName": "TestPswoeBeispiel",
+    "fshType": "Instance",
+    "fshFile": "TestPswoe.fsh",
+    "startLine": 12,
+    "endLine": 17
+  },
+  {
+    "outputFile": "Observation-TestSelaufmBeispiel.json",
+    "fshName": "TestSelaufmBeispiel",
+    "fshType": "Instance",
+    "fshFile": "TestSelaufm.fsh",
+    "startLine": 12,
+    "endLine": 17
+  },
+  {
+    "outputFile": "Observation-TestVismotBeispiel.json",
+    "fshName": "TestVismotBeispiel",
+    "fshType": "Instance",
+    "fshFile": "TestVismot.fsh",
+    "startLine": 12,
+    "endLine": 17
+  },
+  {
+    "outputFile": "Observation-TestVisperBeispiel.json",
+    "fshName": "TestVisperBeispiel",
+    "fshType": "Instance",
+    "fshFile": "TestVisper.fsh",
+    "startLine": 12,
+    "endLine": 17
+  },
+  {
+    "outputFile": "Observation-TestZaehlBeispiel.json",
+    "fshName": "TestZaehlBeispiel",
+    "fshType": "Instance",
+    "fshFile": "TestZaehl.fsh",
+    "startLine": 12,
+    "endLine": 17
+  },
+  {
+    "outputFile": "Observation-UntersuchungBeispielChronischeKrankheit.json",
+    "fshName": "UntersuchungBeispielChronischeKrankheit",
+    "fshType": "Instance",
+    "fshFile": "Untersuchung.fsh",
+    "startLine": 98,
+    "endLine": 106
+  },
+  {
+    "outputFile": "Observation-UntersuchungBeispielEndokrineFunktion.json",
+    "fshName": "UntersuchungBeispielEndokrineFunktion",
+    "fshType": "Instance",
+    "fshFile": "Untersuchung.fsh",
+    "startLine": 88,
+    "endLine": 96
+  },
+  {
+    "outputFile": "Observation-UntersuchungBeispielErnaehrung.json",
+    "fshName": "UntersuchungBeispielErnaehrung",
+    "fshType": "Instance",
+    "fshFile": "Untersuchung.fsh",
+    "startLine": 58,
+    "endLine": 66
+  },
+  {
+    "outputFile": "Observation-UntersuchungBeispielMuskel.json",
+    "fshName": "UntersuchungBeispielMuskel",
+    "fshType": "Instance",
+    "fshFile": "Untersuchung.fsh",
+    "startLine": 68,
+    "endLine": 76
+  },
+  {
+    "outputFile": "Observation-UntersuchungBeispielNeurologie.json",
+    "fshName": "UntersuchungBeispielNeurologie",
+    "fshType": "Instance",
+    "fshFile": "Untersuchung.fsh",
+    "startLine": 78,
+    "endLine": 86
+  },
+  {
+    "outputFile": "Patient-PersonBeispiel.json",
+    "fshName": "PersonBeispiel",
+    "fshType": "Instance",
+    "fshFile": "Person.fsh",
+    "startLine": 145,
+    "endLine": 196
+  },
+  {
+    "outputFile": "Questionnaire-SEU-Elternbefragung.json",
+    "fshName": "Elternbefragung",
+    "fshType": "Instance",
+    "fshFile": "Questionnaire/Elternfragebogen/ElternfragebogenQU.fsh",
+    "startLine": 1,
+    "endLine": 743
+  },
+  {
+    "outputFile": "Questionnaire-SOPESS.json",
+    "fshName": "SOPESS",
+    "fshType": "Instance",
+    "fshFile": "Questionnaire/SOPESS/SopessQU.fsh",
+    "startLine": 1,
+    "endLine": 92
+  },
+  {
+    "outputFile": "RelatedPerson-VerwandtePersonBeispiel.json",
+    "fshName": "VerwandtePersonBeispiel",
+    "fshType": "Instance",
+    "fshFile": "VerwandtePerson.fsh",
+    "startLine": 107,
+    "endLine": 146
+  },
+  {
+    "outputFile": "ServiceRequest-PaediatrischeLeistungBeispiel.json",
+    "fshName": "PaediatrischeLeistungBeispiel",
+    "fshType": "Instance",
+    "fshFile": "PaediatrischeLeistung.fsh",
+    "startLine": 32,
+    "endLine": 36
+  },
+  {
+    "outputFile": "StructureDefinition-Behinderung.json",
+    "fshName": "Behinderung",
+    "fshType": "Profile",
+    "fshFile": "Behinderung.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "StructureDefinition-Blutdruck.json",
+    "fshName": "Blutdruck",
+    "fshType": "Profile",
+    "fshFile": "Blutdruck.fsh",
+    "startLine": 1,
+    "endLine": 22
+  },
+  {
+    "outputFile": "StructureDefinition-ChronischeKrankheit.json",
+    "fshName": "ChronischeKrankheit",
+    "fshType": "Profile",
+    "fshFile": "ChronischeKrankheit.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "StructureDefinition-FruehererGemeindeNameEX.json",
+    "fshName": "FruehererGemeindeNameEX",
+    "fshType": "Extension",
+    "fshFile": "extensions.fsh",
+    "startLine": 7,
+    "endLine": 11
+  },
+  {
+    "outputFile": "StructureDefinition-Koerpergewicht.json",
+    "fshName": "Koerpergewicht",
+    "fshType": "Profile",
+    "fshFile": "Koerpergewicht.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "StructureDefinition-Koerpergroesse.json",
+    "fshName": "Koerpergroesse",
+    "fshType": "Profile",
+    "fshFile": "Koerpergroesse.fsh",
+    "startLine": 1,
+    "endLine": 16
+  },
+  {
+    "outputFile": "StructureDefinition-Mehraufwand.json",
+    "fshName": "Mehraufwand",
+    "fshType": "Profile",
+    "fshFile": "Mehraufwand.fsh",
+    "startLine": 1,
+    "endLine": 13
+  },
+  {
+    "outputFile": "StructureDefinition-PaediatrischeLeistung.json",
+    "fshName": "PaediatrischeLeistung",
+    "fshType": "Profile",
+    "fshFile": "PaediatrischeLeistung.fsh",
+    "startLine": 1,
+    "endLine": 11
+  },
+  {
+    "outputFile": "StructureDefinition-Person.json",
+    "fshName": "Person",
+    "fshType": "Profile",
+    "fshFile": "Person.fsh",
+    "startLine": 1,
+    "endLine": 99
+  },
+  {
+    "outputFile": "StructureDefinition-PersonDeutschkenntnisEX.json",
+    "fshName": "PersonDeutschkenntnisEX",
+    "fshType": "Extension",
+    "fshFile": "Person.fsh",
+    "startLine": 138,
+    "endLine": 143
+  },
+  {
+    "outputFile": "StructureDefinition-PersonMigrationshintergrundEX.json",
+    "fshName": "PersonMigrationshintergrundEX",
+    "fshType": "Extension",
+    "fshFile": "Person.fsh",
+    "startLine": 131,
+    "endLine": 136
+  },
+  {
+    "outputFile": "StructureDefinition-PersonUebermittlungsssperreAdressbuchEX.json",
+    "fshName": "PersonUebermittlungsssperreAdressbuchEX",
+    "fshType": "Extension",
+    "fshFile": "Person.fsh",
+    "startLine": 119,
+    "endLine": 123
+  },
+  {
+    "outputFile": "StructureDefinition-PersonUebermittlungsssperreBundeswehrEX.json",
+    "fshName": "PersonUebermittlungsssperreBundeswehrEX",
+    "fshType": "Extension",
+    "fshFile": "Person.fsh",
+    "startLine": 125,
+    "endLine": 129
+  },
+  {
+    "outputFile": "StructureDefinition-PersonUebermittlungsssperreJubilaenEX.json",
+    "fshName": "PersonUebermittlungsssperreJubilaenEX",
+    "fshType": "Extension",
+    "fshFile": "Person.fsh",
+    "startLine": 113,
+    "endLine": 117
+  },
+  {
+    "outputFile": "StructureDefinition-PersonUebermittlungsssperrePolitikEX.json",
+    "fshName": "PersonUebermittlungsssperrePolitikEX",
+    "fshType": "Extension",
+    "fshFile": "Person.fsh",
+    "startLine": 107,
+    "endLine": 111
+  },
+  {
+    "outputFile": "StructureDefinition-PersonUebermittlungsssperreReligionEX.json",
+    "fshName": "PersonUebermittlungsssperreReligionEX",
+    "fshType": "Extension",
+    "fshFile": "Person.fsh",
+    "startLine": 101,
+    "endLine": 105
+  },
+  {
+    "outputFile": "StructureDefinition-Risikofaktor.json",
+    "fshName": "Risikofaktor",
+    "fshType": "Profile",
+    "fshFile": "Risikofaktor.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "StructureDefinition-Schulempfehlung.json",
+    "fshName": "Schulempfehlung",
+    "fshType": "Profile",
+    "fshFile": "Schulempfehlung.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "StructureDefinition-StatusKind.json",
+    "fshName": "StatusKind",
+    "fshType": "Profile",
+    "fshFile": "StatusKind.fsh",
+    "startLine": 1,
+    "endLine": 15
+  },
+  {
+    "outputFile": "StructureDefinition-Test.json",
+    "fshName": "Test",
+    "fshType": "Profile",
+    "fshFile": "Test.fsh",
+    "startLine": 1,
+    "endLine": 32
+  },
+  {
+    "outputFile": "StructureDefinition-TestDys.json",
+    "fshName": "TestDys",
+    "fshType": "Profile",
+    "fshFile": "TestDys.fsh",
+    "startLine": 1,
+    "endLine": 6
+  },
+  {
+    "outputFile": "StructureDefinition-TestKoord.json",
+    "fshName": "TestKoord",
+    "fshType": "Profile",
+    "fshFile": "TestKoord.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "StructureDefinition-TestMeng.json",
+    "fshName": "TestMeng",
+    "fshType": "Profile",
+    "fshFile": "TestMeng.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "StructureDefinition-TestPlur.json",
+    "fshName": "TestPlur",
+    "fshType": "Profile",
+    "fshFile": "TestPlur.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "StructureDefinition-TestPraep.json",
+    "fshName": "TestPraep",
+    "fshType": "Profile",
+    "fshFile": "TestPraep.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "StructureDefinition-TestPswoe.json",
+    "fshName": "TestPswoe",
+    "fshType": "Profile",
+    "fshFile": "TestPswoe.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "StructureDefinition-TestSelaufm.json",
+    "fshName": "TestSelaufm",
+    "fshType": "Profile",
+    "fshFile": "TestSelaufm.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "StructureDefinition-TestVismot.json",
+    "fshName": "TestVismot",
+    "fshType": "Profile",
+    "fshFile": "TestVismot.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "StructureDefinition-TestVisper.json",
+    "fshName": "TestVisper",
+    "fshType": "Profile",
+    "fshFile": "TestVisper.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "StructureDefinition-TestZaehl.json",
+    "fshName": "TestZaehl",
+    "fshType": "Profile",
+    "fshFile": "TestZaehl.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
+    "outputFile": "StructureDefinition-Untersuchung.json",
+    "fshName": "Untersuchung",
+    "fshType": "Profile",
+    "fshFile": "Untersuchung.fsh",
+    "startLine": 1,
+    "endLine": 17
+  },
+  {
+    "outputFile": "StructureDefinition-VerwandtePerson.json",
+    "fshName": "VerwandtePerson",
+    "fshType": "Profile",
+    "fshFile": "VerwandtePerson.fsh",
+    "startLine": 1,
+    "endLine": 80
+  },
+  {
+    "outputFile": "StructureDefinition-VerwandtePersonAuskunftssperreFristEX.json",
+    "fshName": "VerwandtePersonAuskunftssperreFristEX",
+    "fshType": "Extension",
+    "fshFile": "VerwandtePerson.fsh",
+    "startLine": 94,
+    "endLine": 98
+  },
+  {
+    "outputFile": "StructureDefinition-VerwandtePersonAuskunftssperreGrundEX.json",
+    "fshName": "VerwandtePersonAuskunftssperreGrundEX",
+    "fshType": "Extension",
+    "fshFile": "VerwandtePerson.fsh",
+    "startLine": 88,
+    "endLine": 92
+  },
+  {
+    "outputFile": "StructureDefinition-VerwandtePersonDatEndeEX.json",
+    "fshName": "VerwandtePersonDatEndeEX",
+    "fshType": "Extension",
+    "fshFile": "VerwandtePerson.fsh",
+    "startLine": 82,
+    "endLine": 86
+  },
+  {
+    "outputFile": "StructureDefinition-VerwandtePersonDeutschkenntnisEX.json",
+    "fshName": "VerwandtePersonDeutschkenntnisEX",
+    "fshType": "Extension",
+    "fshFile": "VerwandtePerson.fsh",
+    "startLine": 100,
+    "endLine": 105
+  },
+  {
+    "outputFile": "StructureDefinition-WohnungsInhaberEX.json",
+    "fshName": "WohnungsInhaberEX",
+    "fshType": "Extension",
+    "fshFile": "extensions.fsh",
+    "startLine": 1,
+    "endLine": 5
+  },
+  {
+    "outputFile": "ValueSet-BefundBewertungBielefelderModellVS.json",
+    "fshName": "BefundBewertungBielefelderModellVS",
+    "fshType": "ValueSet",
+    "fshFile": "Questionnaire/SOPESS/Terminology.fsh",
+    "startLine": 12,
+    "endLine": 16
+  },
+  {
+    "outputFile": "ValueSet-BehinderungsTypVS.json",
+    "fshName": "BehinderungsTypVS",
+    "fshType": "ValueSet",
+    "fshFile": "Behinderung.fsh",
+    "startLine": 27,
+    "endLine": 31
+  },
+  {
+    "outputFile": "ValueSet-DeutschUndAndereSpracheVS.json",
+    "fshName": "DeutschUndAndereSpracheVS",
+    "fshType": "ValueSet",
+    "fshFile": "Questionnaire/SOPESS/Terminology.fsh",
+    "startLine": 18,
+    "endLine": 23
+  },
+  {
+    "outputFile": "ValueSet-DeutschkenntnisseVS.json",
+    "fshName": "DeutschkenntnisseVS",
+    "fshType": "ValueSet",
+    "fshFile": "Questionnaire/SOPESS/Terminology.fsh",
+    "startLine": 35,
+    "endLine": 39
+  },
+  {
+    "outputFile": "ValueSet-PaediatrischeLeistungVS.json",
+    "fshName": "PaediatrischeLeistungVS",
+    "fshType": "ValueSet",
+    "fshFile": "PaediatrischeLeistung.fsh",
+    "startLine": 19,
+    "endLine": 30
+  },
+  {
+    "outputFile": "ValueSet-PersonDeutschkenntnisVS.json",
+    "fshName": "PersonDeutschkenntnisVS",
+    "fshType": "ValueSet",
+    "fshFile": "terminologies.fsh",
+    "startLine": 29,
+    "endLine": 32
+  },
+  {
+    "outputFile": "ValueSet-PersonEthnieVS.json",
+    "fshName": "PersonEthnieVS",
+    "fshType": "ValueSet",
+    "fshFile": "terminologies.fsh",
+    "startLine": 15,
+    "endLine": 18
+  },
+  {
+    "outputFile": "ValueSet-ReferenceRangeTypeVS.json",
+    "fshName": "ReferenceRangeTypeVS",
+    "fshType": "ValueSet",
+    "fshFile": "Test.fsh",
+    "startLine": 54,
+    "endLine": 59
+  },
+  {
+    "outputFile": "ValueSet-RisikofaktorVS.json",
+    "fshName": "RisikofaktorVS",
+    "fshType": "ValueSet",
+    "fshFile": "Risikofaktor.fsh",
+    "startLine": 28,
+    "endLine": 31
+  },
+  {
+    "outputFile": "ValueSet-SchulempfehlungVS.json",
+    "fshName": "SchulempfehlungVS",
+    "fshType": "ValueSet",
+    "fshFile": "Schulempfehlung.fsh",
+    "startLine": 30,
+    "endLine": 33
+  },
+  {
+    "outputFile": "ValueSet-StatusKindVS.json",
+    "fshName": "StatusKindVS",
+    "fshType": "ValueSet",
+    "fshFile": "StatusKind.fsh",
+    "startLine": 24,
+    "endLine": 28
+  },
+  {
+    "outputFile": "ValueSet-TestTypesVS.json",
+    "fshName": "TestTypesVS",
+    "fshType": "ValueSet",
+    "fshFile": "Test.fsh",
+    "startLine": 47,
+    "endLine": 52
+  },
+  {
+    "outputFile": "ValueSet-UntersuchungsArtVS.json",
+    "fshName": "UntersuchungsArtVS",
+    "fshType": "ValueSet",
+    "fshFile": "Untersuchung.fsh",
+    "startLine": 34,
+    "endLine": 56
+  },
+  {
+    "outputFile": "ValueSet-UntersuchungsErgebnisVS.json",
+    "fshName": "UntersuchungsErgebnisVS",
+    "fshType": "ValueSet",
+    "fshFile": "Untersuchung.fsh",
+    "startLine": 28,
+    "endLine": 32
+  },
+  {
+    "outputFile": "ValueSet-VerwandtePersonDeutschkenntnisVS.json",
+    "fshName": "VerwandtePersonDeutschkenntnisVS",
+    "fshType": "ValueSet",
+    "fshFile": "terminologies.fsh",
+    "startLine": 42,
+    "endLine": 45
+  }
+]

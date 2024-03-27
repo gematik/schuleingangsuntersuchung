@@ -1,6 +1,6 @@
 {
   "resourceType": "Questionnaire",
-  "id": "Elternbefragung",
+  "id": "SEU-Elternbefragung",
   "url": "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung",
   "title": "SEU Elternfragebogen Maximaldatensatz",
   "extension": [
@@ -27,12 +27,12 @@
     {
       "type": "group",
       "linkId": "1",
-      "text": "Personenbezogene Daten Kind",
+      "text": "(1) Personenbezogene Daten Kind",
       "item": [
         {
           "type": "string",
           "linkId": "1.1",
-          "text": "Nachname des Kindes",
+          "text": "(1.1) Nachname des Kindes",
           "extension": [
             {
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
@@ -46,7 +46,7 @@
         {
           "type": "string",
           "linkId": "1.2",
-          "text": "Vorname des Kindes",
+          "text": "(1.2) Vorname des Kindes",
           "extension": [
             {
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
@@ -60,7 +60,7 @@
         {
           "type": "date",
           "linkId": "1.3",
-          "text": "Geburtsdatum",
+          "text": "(1.3) Geburtsdatum",
           "extension": [
             {
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
@@ -74,22 +74,22 @@
         {
           "type": "choice",
           "linkId": "1.4",
-          "text": "Staatsangehörigkeit"
+          "text": "(1.4) Staatsangehörigkeit"
         },
         {
           "type": "choice",
           "linkId": "1.5",
-          "text": "Geburtsland"
+          "text": "(1.5) Geburtsland"
         },
         {
           "type": "boolean",
           "linkId": "1.6",
-          "text": "In Deutschland geboren"
+          "text": "(1.6) In Deutschland geboren"
         },
         {
           "linkId": "1.6.1",
           "type": "date",
-          "text": "Seit wann wohnt das Kind in Deutschland?",
+          "text": "(1.6.1) Seit wann wohnt das Kind in Deutschland?",
           "enableWhen": [
             {
               "question": "1.6",
@@ -101,32 +101,32 @@
         {
           "type": "string",
           "linkId": "1.7",
-          "text": "Geburtsort"
+          "text": "(1.7) Geburtsort"
         },
         {
           "type": "choice",
           "linkId": "1.8",
-          "text": "Geschlecht"
+          "text": "(1.8) Geschlecht"
         },
         {
           "type": "string",
           "linkId": "1.9",
-          "text": "PLZ"
+          "text": "(1.9) PLZ"
         },
         {
           "type": "string",
           "linkId": "1.10",
-          "text": "Wohnort"
+          "text": "(1.10) Wohnort"
         },
         {
           "type": "string",
           "linkId": "1.11",
-          "text": "Straße"
+          "text": "(1.11) Straße"
         },
         {
           "type": "choice",
           "linkId": "1.12",
-          "text": "Kind lebt hauptsächlich bei"
+          "text": "(1.12) Kind lebt hauptsächlich bei"
         },
         {
           "enableWhen": [
@@ -140,24 +140,24 @@
           ],
           "type": "string",
           "linkId": "1.12.1",
-          "text": "Kind lebt hauptsächlich bei"
+          "text": "(1.12.1) Kind lebt hauptsächlich bei"
         }
       ]
     },
     {
       "type": "group",
       "linkId": "2",
-      "text": "Personenbezogene Daten Personenberechtigter",
+      "text": "(2) Personenbezogene Daten Personenberechtigter",
       "item": [
         {
           "type": "choice",
           "linkId": "2.1",
-          "text": "Anrede"
+          "text": "(2.1) Anrede"
         },
         {
           "type": "string",
           "linkId": "2.2",
-          "text": "Nachname",
+          "text": "(2.2) Nachname",
           "extension": [
             {
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
@@ -171,7 +171,7 @@
         {
           "type": "string",
           "linkId": "2.3",
-          "text": "Vorname",
+          "text": "(2.3) Vorname",
           "extension": [
             {
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
@@ -185,64 +185,64 @@
         {
           "type": "string",
           "linkId": "2.4",
-          "text": "PLZ"
+          "text": "(2.4) PLZ"
         },
         {
           "type": "string",
           "linkId": "2.5",
-          "text": "Wohnort"
+          "text": "(2.5) Wohnort"
         },
         {
           "type": "string",
           "linkId": "2.6",
-          "text": "Straße"
+          "text": "(2.6) Straße"
         },
         {
           "type": "string",
           "linkId": "2.7",
-          "text": "Telefonnummer"
+          "text": "(2.7) Telefonnummer"
         },
         {
           "type": "string",
           "linkId": "2.8",
-          "text": "Email"
+          "text": "(2.8) Email"
         },
         {
           "type": "choice",
           "linkId": "2.9",
-          "text": "Staatsangehörigkeit"
+          "text": "(2.9) Staatsangehörigkeit"
         },
         {
           "type": "choice",
           "linkId": "2.10",
-          "text": "Herkunftsland"
+          "text": "(2.10) Herkunftsland"
         },
         {
           "type": "choice",
           "linkId": "2.11",
-          "text": "Muttersprache"
+          "text": "(2.11) Muttersprache"
         },
         {
           "type": "date",
           "linkId": "2.12",
-          "text": "Geburtsdatum"
+          "text": "(2.12) Geburtsdatum"
         }
       ]
     },
     {
       "type": "group",
       "linkId": "3",
-      "text": "Familiendaten",
+      "text": "(3) Familiendaten",
       "item": [
         {
           "type": "integer",
           "linkId": "3.1",
-          "text": "Anzahl der Geschwister"
+          "text": "(3.1) Anzahl der Geschwister"
         },
         {
           "type": "group",
           "linkId": "3.1.1",
-          "text": "Details Geschwister",
+          "text": "(3.1.1) Details Geschwister",
           "repeats": true,
           "enableWhen": [
             {
@@ -255,54 +255,54 @@
             {
               "type": "date",
               "linkId": "3.1.1.1",
-              "text": "Geburtsdatum des Geschwisters"
+              "text": "(3.1.1.1) Geburtsdatum des Geschwisters"
             },
             {
               "type": "choice",
               "linkId": "3.1.1.2",
-              "text": "Geschlecht des Geschwisters"
+              "text": "(3.1.1.2) Geschlecht des Geschwisters"
             }
           ]
         },
         {
           "type": "group",
           "linkId": "3.2",
-          "text": "Familiäre Vorgeschichte",
+          "text": "(3.2) Familiäre Vorgeschichte",
           "item": [
             {
               "type": "boolean",
               "linkId": "3.2.1",
-              "text": "Brillenträger"
+              "text": "(3.2.1) Brillenträger"
             },
             {
               "type": "boolean",
               "linkId": "3.2.2",
-              "text": "Lese/Rechtschreibschwäche"
+              "text": "(3.2.2) Lese/Rechtschreibschwäche"
             },
             {
               "type": "boolean",
               "linkId": "3.2.3",
-              "text": "Rechenschwäche"
+              "text": "(3.2.3) Rechenschwäche"
             },
             {
               "type": "choice",
               "linkId": "3.2.4",
-              "text": "Erkrankung"
+              "text": "(3.2.4) Erkrankung"
             },
             {
               "type": "choice",
               "linkId": "3.2.5",
-              "text": "Chronische Erkrankung"
+              "text": "(3.2.5) Chronische Erkrankung"
             },
             {
               "type": "choice",
               "linkId": "3.2.6",
-              "text": "Behinderung"
+              "text": "(3.2.6) Behinderung"
             },
             {
               "type": "choice",
               "linkId": "3.2.7",
-              "text": "Schilddrüsenerkrankung"
+              "text": "(3.2.7) Schilddrüsenerkrankung"
             }
           ]
         }
@@ -311,37 +311,37 @@
     {
       "type": "group",
       "linkId": "4",
-      "text": "Kinderbetreuung",
+      "text": "(4) Kinderbetreuung",
       "item": [
         {
           "type": "integer",
           "linkId": "4.1",
-          "text": "Besuch Kita/Krippe (Dauer in Jahren)"
+          "text": "(4.1) Besuch Kita/Krippe (Dauer in Jahren)"
         },
         {
           "type": "integer",
           "linkId": "4.2",
-          "text": "Dauer Kita/Krippe pro Woche in Stunden"
+          "text": "(4.2) Dauer Kita/Krippe pro Woche in Stunden"
         },
         {
           "type": "integer",
           "linkId": "4.3",
-          "text": "Dauer Kita/Krippe pro Woche in Stunden"
+          "text": "(4.3) Dauer Kita/Krippe pro Woche in Stunden"
         },
         {
           "type": "date",
           "linkId": "4.4",
-          "text": "Angabe des Datums, seit wann das Kind keine Kita mehr besucht."
+          "text": "(4.4) Angabe des Datums, seit wann das Kind keine Kita mehr besucht."
         },
         {
           "type": "boolean",
           "linkId": "4.5",
-          "text": "Besucht ihr Kind eine andere Fomr der Tagesbetreuung?"
+          "text": "(4.5) Besucht ihr Kind eine andere Form der Tagesbetreuung?"
         },
         {
           "type": "string",
           "linkId": "4.6",
-          "text": "Name des Kindergartens",
+          "text": "(4.6) Name des Kindergartens",
           "enableWhen": [
             {
               "question": "4.5",
@@ -353,12 +353,12 @@
         {
           "type": "boolean",
           "linkId": "4.7",
-          "text": "Erfolgte die Betreung auch durch eine Tagesmutter?"
+          "text": "(4.7) Erfolgte die Betreuung auch durch eine Tagesmutter?"
         },
         {
           "type": "date",
           "linkId": "4.8",
-          "text": "Seit welchem Jahr ist die Tagesmutter im Einsatz?",
+          "text": "(4.8) Seit welchem Jahr ist die Tagesmutter im Einsatz?",
           "enableWhen": [
             {
               "question": "4.7",
@@ -372,82 +372,82 @@
     {
       "type": "group",
       "linkId": "5",
-      "text": "Schwangerschaft und Geburt",
+      "text": "(5) Schwangerschaft und Geburt",
       "item": [
         {
           "type": "integer",
           "linkId": "5.1",
-          "text": "Dauer der Schwangerschaft (in Wochen)"
+          "text": "(5.1) Dauer der Schwangerschaft (in Wochen)"
         },
         {
           "type": "integer",
           "linkId": "5.2",
-          "text": "Geburtsgewicht (in Gramm)"
+          "text": "(5.2) Geburtsgewicht (in Gramm)"
         },
         {
           "type": "integer",
           "linkId": "5.3",
-          "text": "Geburtslänge (in cm)"
+          "text": "(5.3) Geburtslänge (in cm)"
         },
         {
           "type": "boolean",
           "linkId": "5.4",
-          "text": "Waren Geburtsgewicht und Geburtslänge normal?"
+          "text": "(5.4) Waren Geburtsgewicht und Geburtslänge normal?"
         },
         {
           "type": "choice",
           "linkId": "5.5",
-          "text": "Auffälligkeit bei der Geburt",
+          "text": "(5.5) Auffälligkeit bei der Geburt",
           "repeats": true
         },
         {
           "type": "choice",
           "linkId": "5.6",
-          "text": "Auffälligkeit in der Schwangerschaft",
+          "text": "(5.6) Auffälligkeit in der Schwangerschaft",
           "repeats": true
         },
         {
           "type": "integer",
           "linkId": "5.7",
-          "text": "Stillzeit in Monaten"
+          "text": "(5.7) Stillzeit in Monaten"
         }
       ]
     },
     {
       "type": "group",
       "linkId": "6",
-      "text": "Sprache",
+      "text": "(6) Sprache",
       "item": [
         {
           "type": "choice",
           "linkId": "6.1",
-          "text": "Welche Sprachen werden Zuhause gesprochen?",
+          "text": "(6.1) Welche Sprachen werden Zuhause gesprochen?",
           "repeats": true
         },
         {
           "type": "choice",
           "linkId": "6.2",
-          "text": "Mutersprache des Kindes"
+          "text": "(6.2) Muttersprache des Kindes"
         },
         {
           "type": "choice",
           "linkId": "6.3",
-          "text": "Teilnahme des Kindes an einem Deutschkurs"
+          "text": "(6.3) Teilnahme des Kindes an einem Deutschkurs"
         },
         {
           "type": "boolean",
           "linkId": "6.4",
-          "text": "Sprachauffälligkeiten"
+          "text": "(6.4) Sprachauffälligkeiten"
         },
         {
           "type": "choice",
           "linkId": "6.5",
-          "text": "Kontakt zu Deutschsprechenden"
+          "text": "(6.5) Kontakt zu Deutschsprechenden"
         },
         {
-          "type": "integer",
-          "linkId": "6.6.2",
-          "text": "Monate",
+          "type": "group",
+          "linkId": "6.6",
+          "text": "(6.6) Kontakt zu Deutschprechenden seit Alter:",
           "enableWhen": [
             {
               "question": "6.5",
@@ -456,6 +456,18 @@
                 "code": "nichtSeitGeburt"
               }
             }
+          ],
+          "item": [
+            {
+              "type": "integer",
+              "linkId": "6.6.1",
+              "text": "(6.6.1) Jahre"
+            },
+            {
+              "type": "integer",
+              "linkId": "6.6.2",
+              "text": "(6.6.2) Monate"
+            }
           ]
         }
       ]
@@ -463,17 +475,17 @@
     {
       "type": "group",
       "linkId": "7",
-      "text": "Entwicklung",
+      "text": "(7) Entwicklung",
       "item": [
         {
           "type": "boolean",
           "linkId": "7.1",
-          "text": "Sind Sie mit der Entwicklung ihres Kinds zufrieden?"
+          "text": "(7.1) Sind Sie mit der Entwicklung ihres Kinds zufrieden?"
         },
         {
           "type": "text",
           "linkId": "7.2",
-          "text": "Mit was sind Sie Unzufrieden?",
+          "text": "(7.2) Mit was sind Sie Unzufrieden?",
           "enableWhen": [
             {
               "question": "7.1",
@@ -485,37 +497,37 @@
         {
           "type": "integer",
           "linkId": "7.3",
-          "text": "Freies Laufen ab? (Monate)"
+          "text": "(7.3) Freies Laufen ab? (Monate)"
         },
         {
           "type": "integer",
           "linkId": "7.4",
-          "text": "Erste Worte ab? (Monate)"
+          "text": "(7.4) Erste Worte ab? (Monate)"
         },
         {
           "type": "integer",
           "linkId": "7.5",
-          "text": "Erste Sätze ab? (Monate)"
+          "text": "(7.5) Erste Sätze ab? (Monate)"
         },
         {
           "type": "integer",
           "linkId": "7.6",
-          "text": "Tagsüber ohne Windeln ab? (Jahre)"
+          "text": "(7.6) Tagsüber ohne Windeln ab? (Jahre)"
         },
         {
           "type": "integer",
           "linkId": "7.7",
-          "text": "Nachts ohne Windeln ab? (Jahre)"
+          "text": "(7.7) Nachts ohne Windeln ab? (Jahre)"
         },
         {
           "type": "boolean",
           "linkId": "7.8",
-          "text": "Besonderheiten in der Säuglings- u. Kleinkinderzeit?"
+          "text": "(7.8) Besonderheiten in der Säuglings- u. Kleinkinderzeit?"
         },
         {
           "type": "text",
           "linkId": "7.8.1",
-          "text": "Welche Besonderheiten lagen vor?",
+          "text": "(7.8.1) Welche Besonderheiten lagen vor?",
           "enableWhen": [
             {
               "question": "7.8",
@@ -527,39 +539,39 @@
         {
           "type": "choice",
           "linkId": "7.9",
-          "text": "Links- oder Rechtshänder"
+          "text": "(7.9) Links- oder Rechtshänder"
         },
         {
           "type": "text",
           "linkId": "7.10",
-          "text": "Angabe zu Entwicklungsverzögerungen, bspw. beim Erlernen des Sitzens/Laufens"
+          "text": "(7.10) Angabe zu Entwicklungsverzögerungen, bspw. beim Erlernen des Sitzens/Laufens"
         },
         {
           "type": "choice",
           "linkId": "7.11",
-          "text": "Auffälligkeit des Verhaltens"
+          "text": "(7.11) Auffälligkeit des Verhaltens"
         },
         {
           "type": "boolean",
           "linkId": "7.12",
-          "text": "Sorgen Sie sich um die Entwicklung ihres Kindes?"
+          "text": "(7.12) Sorgen Sie sich um die Entwicklung ihres Kindes?"
         }
       ]
     },
     {
       "type": "group",
       "linkId": "8",
-      "text": "Erkrankungen und gesundheitliche Einschränkungen",
+      "text": "(8) Erkrankungen und gesundheitliche Einschränkungen",
       "item": [
         {
           "type": "boolean",
           "linkId": "8.1",
-          "text": "In regelmäßiger ärtzlicher bzw. psychologischer Behandlung"
+          "text": "(8.1) In regelmäßiger ärztlicher bzw. psychologischer Behandlung"
         },
         {
           "type": "text",
           "linkId": "8.2",
-          "text": "Freitext Angabe, abhängig zu 'Regelmäßig_Behandlung'. Angabe zu Grund und Fachrichtung",
+          "text": "(8.2) Freitext Angabe, abhängig zu 'Regelmäßig_Behandlung'. Angabe zu Grund und Fachrichtung",
           "enableWhen": [
             {
               "question": "8.1",
@@ -571,42 +583,42 @@
         {
           "type": "boolean",
           "linkId": "8.3",
-          "text": "Sehstörung vorhanden?"
+          "text": "(8.3) Sehstörung vorhanden?"
         },
         {
           "type": "boolean",
           "linkId": "8.4",
-          "text": "Sprachstörung vorhanden?"
+          "text": "(8.4) Sprachstörung vorhanden?"
         },
         {
           "type": "boolean",
           "linkId": "8.5",
-          "text": "Schielbehandlung?"
+          "text": "(8.5) Schielbehandlung?"
         },
         {
           "type": "boolean",
           "linkId": "8.6",
-          "text": "Brillenträger?"
+          "text": "(8.6) Brillenträger?"
         },
         {
           "type": "date",
           "linkId": "8.7",
-          "text": "Letzte Untersuchung beim Augenarzt?"
+          "text": "(8.7) Letzte Untersuchung beim Augenarzt?"
         },
         {
           "type": "date",
           "linkId": "8.8",
-          "text": "Letzte Untersuchung beim Zahnarzt?"
+          "text": "(8.8) Letzte Untersuchung beim Zahnarzt?"
         },
         {
           "type": "boolean",
           "linkId": "8.9",
-          "text": "Schwere Hörstörung vorhanden?"
+          "text": "(8.9) Schwere Hörstörung vorhanden?"
         },
         {
           "type": "group",
           "linkId": "8.9.G",
-          "text": "Details: Angeborene schwere Hörstörung",
+          "text": "(8.9.G) Details: Angeborene schwere Hörstörung",
           "enableWhen": [
             {
               "question": "8.9",
@@ -618,36 +630,36 @@
             {
               "type": "group",
               "linkId": "8.9.G.hoergeraete.G",
-              "text": "Hörgeräte",
+              "text": "(8.9.G.hoergeraete.G) Hörgeräte",
               "repeats": true,
               "item": [
                 {
                   "type": "choice",
                   "linkId": "8.9.G.hoergeraete.G.1",
-                  "text": "Höregerätseite"
+                  "text": "(8.9.G.hoergeraete.G.1) Höregerätseite"
                 },
                 {
                   "type": "date",
                   "linkId": "8.9.G.hoergeraete.G.2",
-                  "text": "Beginn des Tragens"
+                  "text": "(8.9.G.hoergeraete.G.2) Beginn des Tragens"
                 }
               ]
             },
             {
               "type": "group",
               "linkId": "8.9.G.cochlea.G",
-              "text": "Cochleaimplantate",
+              "text": "(8.9.G.cochlea.G) Cochleaimplantate",
               "repeats": true,
               "item": [
                 {
                   "type": "choice",
                   "linkId": "8.9.G.cochlea.G.1",
-                  "text": "Cochleaimplantat-Seite"
+                  "text": "(8.9.G.cochlea.G.1) Cochleaimplantat-Seite"
                 },
                 {
                   "type": "date",
                   "linkId": "8.9.G.cochlea.G.2",
-                  "text": "Beginn des Tragens"
+                  "text": "(8.9.G.cochlea.G.2) Beginn des Tragens"
                 }
               ]
             }
@@ -656,166 +668,166 @@
         {
           "type": "group",
           "linkId": "8.10g",
-          "text": "Stoffwechsel & Hormonstörungen",
+          "text": "(8.10g) Stoffwechsel & Hormonstörungen",
           "repeats": true,
           "item": [
             {
               "type": "choice",
               "linkId": "8.10g.1",
-              "text": "Art der Störung oder Erkrankung"
+              "text": "(8.10g.1) Art der Störung oder Erkrankung"
             },
             {
               "type": "date",
               "linkId": "8.10g.2",
-              "text": "Beginn der Erkrankung"
+              "text": "(8.10g.2) Beginn der Erkrankung"
             }
           ]
         },
         {
           "type": "group",
           "linkId": "8.11.g",
-          "text": "Erkrankungen",
+          "text": "(8.11.g) Erkrankungen",
           "repeats": true,
           "item": [
             {
               "type": "open-choice",
               "linkId": "8.11.g.1",
-              "text": "Erkrankung"
+              "text": "(8.11.g.1) Erkrankung"
             },
             {
               "type": "date",
               "linkId": "8.11.g.2",
-              "text": "Erkrankungsbeginn"
+              "text": "(8.11.g.2) Erkrankungsbeginn"
             },
             {
               "type": "boolean",
               "linkId": "8.11.g.3",
-              "text": "Durch Ärzt:in festgestellt"
+              "text": "(8.11.g.3) Durch Ärzt:in festgestellt"
             }
           ]
         },
         {
           "type": "group",
           "linkId": "8.12.g",
-          "text": "Infektionskrankheiten",
+          "text": "(8.12.g) Infektionskrankheiten",
           "repeats": true,
           "item": [
             {
               "type": "open-choice",
               "linkId": "8.12.g.1",
-              "text": "Infektionskrankheit"
+              "text": "(8.12.g.1) Infektionskrankheit"
             },
             {
               "type": "date",
               "linkId": "8.12.g.2",
-              "text": "Erkrankungsbeginn"
+              "text": "(8.12.g.2) Erkrankungsbeginn"
             }
           ]
         },
         {
           "type": "group",
           "linkId": "8.13.g",
-          "text": "Erkrankungen im letzten Jahr",
+          "text": "(8.13.g) Erkrankungen im letzten Jahr",
           "repeats": true,
           "item": [
             {
               "type": "open-choice",
               "linkId": "8.13.g.1",
-              "text": "Erkrankung"
+              "text": "(8.13.g.1) Erkrankung"
             },
             {
               "type": "date",
               "linkId": "8.13.g.2",
-              "text": "Erkrankungsbeginn"
+              "text": "(8.13.g.2) Erkrankungsbeginn"
             }
           ]
         },
         {
           "type": "open-choice",
           "linkId": "8.14",
-          "text": "Chronische Erkrankung",
+          "text": "(8.14) Chronische Erkrankung",
           "repeats": true
         },
         {
           "type": "boolean",
           "linkId": "8.15",
-          "text": "Krankenhausaufenthalt"
+          "text": "(8.15) Krankenhausaufenthalt"
         },
         {
           "type": "boolean",
           "linkId": "8.16",
-          "text": "Allergietest"
+          "text": "(8.16) Allergietest"
         },
         {
           "type": "boolean",
           "linkId": "8.17",
-          "text": "Entwicklungsdiagnostik"
+          "text": "(8.17) Entwicklungsdiagnostik"
         },
         {
           "type": "boolean",
           "linkId": "8.18",
-          "text": "Behindertenausweis vorhanden"
+          "text": "(8.18) Behindertenausweis vorhanden"
         },
         {
           "type": "choice",
           "linkId": "8.19",
-          "text": "Grad der Behinderung"
+          "text": "(8.19) Grad der Behinderung"
         },
         {
           "type": "choice",
           "linkId": "8.20",
-          "text": "Pflegegrad"
+          "text": "(8.20) Pflegegrad"
         },
         {
           "type": "open-choice",
           "linkId": "8.21",
-          "text": "Schwere Behinderung"
+          "text": "(8.21) Schwere Behinderung"
         },
         {
           "type": "choice",
           "linkId": "8.22",
-          "text": "Behinderung Merkzeichen"
+          "text": "(8.22) Behinderung Merkzeichen"
         },
         {
           "type": "open-choice",
           "linkId": "8.23",
-          "text": "Regelmäßige Medikamenteneinnahme"
+          "text": "(8.23) Regelmäßige Medikamenteneinnahme"
         },
         {
           "type": "open-choice",
           "linkId": "8.24",
-          "text": "Medikamenteneinnahme in der Schulzeit"
+          "text": "(8.24) Medikamenteneinnahme in der Schulzeit"
         },
         {
           "type": "open-choice",
           "linkId": "8.25",
-          "text": "Eine Erkrankung, die in einer Notfallsituation beachtet werden muss"
+          "text": "(8.25) Eine Erkrankung, die in einer Notfallsituation beachtet werden muss"
         },
         {
           "type": "text",
           "linkId": "8.26",
-          "text": "Sonstige Probleme"
+          "text": "(8.26) Sonstige Probleme"
         },
         {
           "type": "boolean",
           "linkId": "8.27",
-          "text": "Wurde ihr Kind operiert"
+          "text": "(8.27) Wurde ihr Kind operiert"
         },
         {
           "type": "group",
           "linkId": "8.28.g",
-          "text": "Hatte ihr Kinde einen Unfall",
+          "text": "(8.28.g) Hatte ihr Kinde einen Unfall",
           "repeats": true,
           "item": [
             {
               "type": "choice",
               "linkId": "8.28.g.1",
-              "text": "Ort des Unfall"
+              "text": "(8.28.g.1) Ort des Unfall"
             },
             {
               "type": "choice",
               "linkId": "8.28.g.2",
-              "text": "Art des Unfalls"
+              "text": "(8.28.g.2) Art des Unfalls"
             }
           ]
         }
@@ -824,73 +836,73 @@
     {
       "type": "group",
       "linkId": "9",
-      "text": "Förderungen",
+      "text": "(9) Förderungen",
       "item": [
         {
           "type": "boolean",
           "linkId": "9.1",
-          "text": "Teilnahme am Vorkurs Deutsch"
+          "text": "(9.1) Teilnahme am Vorkurs Deutsch"
         },
         {
           "type": "choice",
           "linkId": "9.2",
-          "text": "Sprachtherapie"
+          "text": "(9.2) Sprachtherapie"
         },
         {
           "type": "choice",
           "linkId": "9.3",
-          "text": "Frühförderung"
+          "text": "(9.3) Frühförderung"
         },
         {
           "type": "choice",
           "linkId": "9.4",
-          "text": "Ergotherapie"
+          "text": "(9.4) Ergotherapie"
         },
         {
           "type": "choice",
           "linkId": "9.5",
-          "text": "Psychomotorik"
+          "text": "(9.5) Psychomotorik"
         },
         {
           "type": "choice",
           "linkId": "9.6",
-          "text": "Physiotherapie"
+          "text": "(9.6) Physiotherapie"
         },
         {
           "type": "choice",
           "linkId": "9.7",
-          "text": "Psychologische Erziehungsberatung"
+          "text": "(9.7) Psychologische Erziehungsberatung"
         },
         {
           "type": "choice",
           "linkId": "9.8",
-          "text": "Krankengymnastik"
+          "text": "(9.8) Krankengymnastik"
         },
         {
           "type": "choice",
           "linkId": "9.9",
-          "text": "Integrative Betreuung"
+          "text": "(9.9) Integrative Betreuung"
         },
         {
           "type": "text",
           "linkId": "9.10",
-          "text": "Sonstige Förderung"
+          "text": "(9.10) Sonstige Förderung"
         },
         {
           "type": "group",
           "linkId": "9.11.g",
-          "text": "Kuren",
+          "text": "(9.11.g) Kuren",
           "repeats": true,
           "item": [
             {
               "type": "date",
               "linkId": "9.11.g.1",
-              "text": "Wann"
+              "text": "(9.11.g.1) Wann"
             },
             {
               "type": "text",
               "linkId": "9.11.g.2",
-              "text": "Behandlungsschwerpunkt"
+              "text": "(9.11.g.2) Behandlungsschwerpunkt"
             }
           ]
         }
@@ -899,12 +911,12 @@
     {
       "linkId": "10",
       "type": "group",
-      "text": "Medienkonsum",
+      "text": "(10) Medienkonsum",
       "item": [
         {
           "linkId": "10.1",
           "type": "integer",
-          "text": "Durchschnittlich pro Tag am Fernseher/Smartphone/Tablet/Spielkonsole/Computer",
+          "text": "(10.1) Durchschnittlich pro Tag am Fernseher/Smartphone/Tablet/Spielkonsole/Computer",
           "code": [
             {
               "code": "10.1",
@@ -925,7 +937,7 @@
         {
           "linkId": "10.2",
           "type": "boolean",
-          "text": "Fernsehgerät/Computer/Spielkonsole im Zimmer?",
+          "text": "(10.2) Fernsehgerät/Computer/Spielkonsole im Zimmer?",
           "code": [
             {
               "code": "10.2",
@@ -938,12 +950,12 @@
     {
       "linkId": "11",
       "type": "group",
-      "text": "Arzt",
+      "text": "(11) Arzt",
       "item": [
         {
           "linkId": "11.1",
           "type": "boolean",
-          "text": "Hat das Kind bislang ärztliche Behandlung oder Untersützung erhalten?",
+          "text": "(11.1) Hat das Kind bislang ärztliche Behandlung oder Untersützung erhalten?",
           "code": [
             {
               "code": "11.1",
@@ -954,7 +966,7 @@
         {
           "linkId": "11.2",
           "type": "string",
-          "text": "Name Kinderarzt",
+          "text": "(11.2) Name Kinderarzt",
           "code": [
             {
               "code": "11.2",
@@ -965,7 +977,7 @@
         {
           "linkId": "11.3",
           "type": "string",
-          "text": "Name Facharzt",
+          "text": "(11.3) Name Facharzt",
           "code": [
             {
               "code": "11.3",
@@ -978,12 +990,12 @@
     {
       "linkId": "12",
       "type": "group",
-      "text": "Sonstiges",
+      "text": "(12) Sonstiges",
       "item": [
         {
           "linkId": "12.1",
           "type": "choice",
-          "text": "Beratung Erziehungsberatungsstelle",
+          "text": "(12.1) Beratung Erziehungsberatungsstelle",
           "code": [
             {
               "code": "12.1",
@@ -994,7 +1006,7 @@
         {
           "linkId": "12.2",
           "type": "choice",
-          "text": "Beratung Sozialpädiatrisches Zentrum SPZ",
+          "text": "(12.2) Beratung Sozialpädiatrisches Zentrum SPZ",
           "code": [
             {
               "code": "12.2",
@@ -1005,7 +1017,7 @@
         {
           "linkId": "12.3",
           "type": "boolean",
-          "text": "Teilnahme Netzwerk Gesunde Kinder",
+          "text": "(12.3) Teilnahme Netzwerk Gesunde Kinder",
           "code": [
             {
               "code": "12.3",
@@ -1016,7 +1028,7 @@
             {
               "linkId": "12.3.1",
               "type": "integer",
-              "text": "Wie lange?",
+              "text": "(12.3.1) Wie lange?",
               "code": [
                 {
                   "code": "12.3.1",
@@ -1046,7 +1058,7 @@
         {
           "linkId": "12.4",
           "type": "boolean",
-          "text": "KISS Sprachscreening",
+          "text": "(12.4) KISS Sprachscreening",
           "code": [
             {
               "code": "12.4",
@@ -1057,7 +1069,7 @@
         {
           "linkId": "12.5",
           "type": "choice",
-          "text": "Raucherhaushalt",
+          "text": "(12.5) Raucherhaushalt",
           "code": [
             {
               "code": "12.5",
@@ -1068,7 +1080,7 @@
         {
           "linkId": "12.6",
           "type": "text",
-          "text": "Stärken/Begabung/Besonderheiten des Kindes",
+          "text": "(12.6) Stärken/Begabung/Besonderheiten des Kindes",
           "code": [
             {
               "code": "12.6",
@@ -1079,7 +1091,7 @@
         {
           "linkId": "12.7",
           "type": "boolean",
-          "text": "Regelmäßig Sport",
+          "text": "(12.7) Regelmäßig Sport",
           "code": [
             {
               "code": "12.7",
@@ -1090,7 +1102,7 @@
         {
           "linkId": "12.8",
           "type": "text",
-          "text": "Sportart und Verein",
+          "text": "(12.8) Sportart und Verein",
           "code": [
             {
               "code": "12.8",
@@ -1101,7 +1113,7 @@
         {
           "linkId": "12.9",
           "type": "boolean",
-          "text": "Schwimmfähig",
+          "text": "(12.9) Schwimmfähig",
           "code": [
             {
               "code": "12.9",
@@ -1112,7 +1124,7 @@
         {
           "linkId": "12.10",
           "type": "boolean",
-          "text": "Seepferdchenabzeichen",
+          "text": "(12.10) Seepferdchenabzeichen",
           "code": [
             {
               "code": "12.10",
@@ -1125,12 +1137,12 @@
     {
       "linkId": "13",
       "type": "group",
-      "text": "Informationen Eltern",
+      "text": "(13) Informationen Eltern",
       "item": [
         {
           "linkId": "13.1",
           "type": "choice",
-          "text": "Schulabschluss 1. Elternteil",
+          "text": "(13.1) Schulabschluss 1. Elternteil",
           "code": [
             {
               "code": "13.1",
@@ -1141,7 +1153,7 @@
         {
           "linkId": "13.2",
           "type": "choice",
-          "text": "Schulabschluss 2. Elternteil",
+          "text": "(13.2) Schulabschluss 2. Elternteil",
           "code": [
             {
               "code": "13.2",
@@ -1152,7 +1164,7 @@
         {
           "linkId": "13.3",
           "type": "choice",
-          "text": "Berufsabschluss 1. Elternteil",
+          "text": "(13.3) Berufsabschluss 1. Elternteil",
           "code": [
             {
               "code": "13.3",
@@ -1163,7 +1175,7 @@
         {
           "linkId": "13.4",
           "type": "choice",
-          "text": "Berufsabschluss 2. Elternteil",
+          "text": "(13.4) Berufsabschluss 2. Elternteil",
           "code": [
             {
               "code": "13.4",
@@ -1174,7 +1186,7 @@
         {
           "linkId": "13.5",
           "type": "choice",
-          "text": "Berufstätigkeit 1. Elternteil",
+          "text": "(13.5) Berufstätigkeit 1. Elternteil",
           "code": [
             {
               "code": "13.5",
@@ -1185,7 +1197,7 @@
         {
           "linkId": "13.6",
           "type": "choice",
-          "text": "Berufstätigkeit 2. Elternteil",
+          "text": "(13.6) Berufstätigkeit 2. Elternteil",
           "code": [
             {
               "code": "13.6",
@@ -1196,7 +1208,7 @@
         {
           "linkId": "13.7",
           "type": "integer",
-          "text": "Anzahl der Kinder im Haushalt. Kinder unter 18 Jahren, einzuschulendes Kind mitgerechnet",
+          "text": "(13.7) Anzahl der Kinder im Haushalt. Kinder unter 18 Jahren, einzuschulendes Kind mitgerechnet",
           "code": [
             {
               "code": "13.7",
@@ -1207,7 +1219,7 @@
         {
           "linkId": "13.8",
           "type": "integer",
-          "text": "Anzahl der Erwachsene im Haushalt",
+          "text": "(13.8) Anzahl der Erwachsene im Haushalt",
           "code": [
             {
               "code": "13.8",
@@ -1218,7 +1230,7 @@
         {
           "linkId": "13.9",
           "type": "date",
-          "text": "Datum seit dem der 1. Elternteil in Deutschland lebt.",
+          "text": "(13.9) Datum seit dem der 1. Elternteil in Deutschland lebt.",
           "code": [
             {
               "code": "13.9",
@@ -1229,7 +1241,7 @@
         {
           "linkId": "13.10",
           "type": "date",
-          "text": "Datum seit dem der 2. Elternteil in Deutschland lebt.",
+          "text": "(13.10) Datum seit dem der 2. Elternteil in Deutschland lebt.",
           "code": [
             {
               "code": "13.10",
@@ -1240,7 +1252,7 @@
         {
           "linkId": "13.11",
           "type": "choice",
-          "text": "Wer hat diesen Fragebogen ausgefüllt",
+          "text": "(13.11) Wer hat diesen Fragebogen ausgefüllt",
           "code": [
             {
               "code": "13.11",
@@ -1251,7 +1263,7 @@
         {
           "linkId": "13.12",
           "type": "boolean",
-          "text": "Einwilligung zur Datenerhebung früherer Untersuchungen, welche beim Gesundheitsamt vorliegen",
+          "text": "(13.12) Einwilligung zur Datenerhebung früherer Untersuchungen, welche beim Gesundheitsamt vorliegen",
           "code": [
             {
               "code": "13.12",
@@ -1262,7 +1274,7 @@
         {
           "linkId": "13.13",
           "type": "boolean",
-          "text": "Einwilligung zur Einsicht von Unterlagen zur Frühförderung, falls diese vorliegen",
+          "text": "(13.13) Einwilligung zur Einsicht von Unterlagen zur Frühförderung, falls diese vorliegen",
           "code": [
             {
               "code": "13.13",
@@ -1273,7 +1285,7 @@
         {
           "linkId": "13.14",
           "type": "boolean",
-          "text": "Ob das Kind an einer Nachmittagsbetreuung teilnehmen soll",
+          "text": "(13.14) Ob das Kind an einer Nachmittagsbetreuung teilnehmen soll",
           "code": [
             {
               "code": "13.14",
@@ -1284,7 +1296,7 @@
         {
           "linkId": "13.15",
           "type": "boolean",
-          "text": "Arbeitet der 1. Elternteil im Schichtdienst?",
+          "text": "(13.15) Arbeitet der 1. Elternteil im Schichtdienst?",
           "code": [
             {
               "code": "13.15",
@@ -1295,7 +1307,7 @@
         {
           "linkId": "13.16",
           "type": "boolean",
-          "text": "Arbeitet der 2. Elternteil im Schichtdienst?",
+          "text": "(13.16) Arbeitet der 2. Elternteil im Schichtdienst?",
           "code": [
             {
               "code": "13.16",

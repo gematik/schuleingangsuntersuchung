@@ -43,15 +43,15 @@ RuleSet: questionnaireUnit(system, code)
   * valueCoding = {system}#{code}
 
 RuleSet: addItem(linkId, type, text)
-* linkId = {linkId}
+* linkId = "{linkId}"
 * type = {type}
-* text = {text}
+* text = "({linkId}) {text}"
 * code = $elternfragebogenKodierungen#{linkId}
 
 RuleSet: addGroup(linkId, text)
-* linkId = {linkId}
+* linkId = "{linkId}"
 * type = #group
-* text = {text}
+* text = "({linkId}) {text}"
 
 RuleSet: addRItem(linkId, type, text)
 * insert addItem({linkId}, {type}, {text})
