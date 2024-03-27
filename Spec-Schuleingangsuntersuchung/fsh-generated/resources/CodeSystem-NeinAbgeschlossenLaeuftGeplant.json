@@ -1,0 +1,28 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "NeinAbgeschlossenLaeuftGeplant",
+  "id": "NeinAbgeschlossenLaeuftGeplant",
+  "title": "NeinAbgeschlossenLaeuftGeplant",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/NeinAbgeschlossenLaeuftGeplant",
+  "concept": [
+    {
+      "code": "nein",
+      "display": "nein"
+    },
+    {
+      "code": "abgeschlossen",
+      "display": "abgeschlossen"
+    },
+    {
+      "code": "läuft",
+      "display": "läuft z.Zt. Noch"
+    },
+    {
+      "code": "geplant",
+      "display": "geplant"
+    }
+  ],
+  "count": 4
+}

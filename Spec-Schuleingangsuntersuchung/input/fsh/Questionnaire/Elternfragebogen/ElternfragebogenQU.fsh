@@ -2,7 +2,8 @@ Instance: Elternbefragung
 InstanceOf: Questionnaire
 Usage: #example
 Title: "Elternbefragung"
-Description: ""
+Description: "Elternbefragung"
+* contained[+] = NeinAbgeschlossenLaeuftGeplantVS
 * id = "SEU-Elternbefragung"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung"
 * title = "SEU Elternfragebogen Maximaldatensatz"
@@ -16,6 +17,9 @@ Description: ""
     * type = #string
     * linkId = "1.1"
     * text = "(1.1) Nachname des Kindes"
+      * extension[+]
+        * url = "http://hl7.org/fhir/StructureDefinition/rendering-style"
+        * valueString = "background-color: lime"
     * insert initialExpression("%patient.name[0].family")  
   * item[+]
     * type = #string
@@ -610,34 +614,42 @@ Description: ""
     * type = #choice
     * linkId = "9.2"
     * text = "(9.2) Sprachtherapie"
+    * answerValueSet = Canonical(NeinAbgeschlossenLaeuftGeplantVS)
   * item[+]
     * type = #choice
     * linkId = "9.3"
     * text = "(9.3) Frühförderung"
+    * answerValueSet = Canonical(NeinAbgeschlossenLaeuftGeplantVS)
   * item[+]
     * type = #choice
     * linkId = "9.4"
     * text = "(9.4) Ergotherapie"
+    * answerValueSet = Canonical(NeinAbgeschlossenLaeuftGeplantVS)
   * item[+]
     * type = #choice
     * linkId = "9.5"
     * text = "(9.5) Psychomotorik"
+    * answerValueSet = Canonical(NeinAbgeschlossenLaeuftGeplantVS)
   * item[+]
     * type = #choice
     * linkId = "9.6"
     * text = "(9.6) Physiotherapie"
+    * answerValueSet = Canonical(NeinAbgeschlossenLaeuftGeplantVS)
   * item[+]
     * type = #choice
     * linkId = "9.7"
     * text = "(9.7) Psychologische Erziehungsberatung"
+    * answerValueSet = Canonical(NeinAbgeschlossenLaeuftGeplantVS)
   * item[+]
     * type = #choice
     * linkId = "9.8"
     * text = "(9.8) Krankengymnastik"
+    * answerValueSet = Canonical(NeinAbgeschlossenLaeuftGeplantVS)
   * item[+]
     * type = #choice
     * linkId = "9.9"
     * text = "(9.9) Integrative Betreuung"
+    * answerValueSet = Canonical(NeinAbgeschlossenLaeuftGeplantVS)
   * item[+]
     * type = #text
     * linkId = "9.10"

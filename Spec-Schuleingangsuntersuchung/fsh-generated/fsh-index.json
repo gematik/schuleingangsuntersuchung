@@ -24,12 +24,12 @@
     "endLine": 33
   },
   {
-    "outputFile": "CodeSystem-GeplantFindetStattAbgeschlossen.json",
-    "fshName": "GeplantFindetStattAbgeschlossen",
+    "outputFile": "CodeSystem-NeinAbgeschlossenLaeuftGeplant.json",
+    "fshName": "NeinAbgeschlossenLaeuftGeplant",
     "fshType": "CodeSystem",
-    "fshFile": "Questionnaire/Elternfragebogen/Terminology.fsh",
+    "fshFile": "Questionnaire/Elternfragebogen/CodeSystem.fsh",
     "startLine": 1,
-    "endLine": 6
+    "endLine": 7
   },
   {
     "outputFile": "CodeSystem-PaediatrischeLeistungCS.json",
@@ -309,7 +309,7 @@
     "fshType": "Instance",
     "fshFile": "Questionnaire/Elternfragebogen/ElternfragebogenQU.fsh",
     "startLine": 1,
-    "endLine": 743
+    "endLine": 755
   },
   {
     "outputFile": "Questionnaire-SOPESS.json",
@@ -662,6 +662,14 @@
     "fshFile": "Questionnaire/SOPESS/Terminology.fsh",
     "startLine": 35,
     "endLine": 39
+  },
+  {
+    "outputFile": "ValueSet-NeinAbgeschlossenLaeuftGeplantVS.json",
+    "fshName": "NeinAbgeschlossenLaeuftGeplantVS",
+    "fshType": "ValueSet",
+    "fshFile": "Questionnaire/Elternfragebogen/ValueSet.fsh",
+    "startLine": 1,
+    "endLine": 5
   },
   {
     "outputFile": "ValueSet-PaediatrischeLeistungVS.json",

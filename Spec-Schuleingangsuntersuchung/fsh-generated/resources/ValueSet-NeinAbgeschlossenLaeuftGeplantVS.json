@@ -1,0 +1,16 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "NeinAbgeschlossenLaeuftGeplantVS",
+  "id": "NeinAbgeschlossenLaeuftGeplantVS",
+  "title": "NeinAbgeschlossenLaeuftGeplantVS",
+  "description": "NeinAbgeschlossenLaeuftGeplantVS",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/NeinAbgeschlossenLaeuftGeplantVS",
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/NeinAbgeschlossenLaeuftGeplant"
+      }
+    ]
+  }
+}

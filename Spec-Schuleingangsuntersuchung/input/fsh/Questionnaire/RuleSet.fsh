@@ -37,11 +37,6 @@ RuleSet: observationExtract
   * url = $sdc-questionnaire-observationExtract
   * valueBoolean = true
 
-RuleSet: questionnaireUnit(system, code)
-* extension[+]
-  * url = "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
-  * valueCoding = {system}#{code}
-
 RuleSet: addItem(linkId, type, text)
 * linkId = "{linkId}"
 * type = {type}

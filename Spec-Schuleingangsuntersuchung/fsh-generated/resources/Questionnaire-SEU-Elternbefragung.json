@@ -1,6 +1,67 @@
 {
   "resourceType": "Questionnaire",
   "id": "SEU-Elternbefragung",
+  "contained": [
+    {
+      "resourceType": "ValueSet",
+      "id": "NeinAbgeschlossenLaeuftGeplantVS",
+      "meta": {
+        "extension": [
+          {
+            "url": "http://hapifhir.io/fhir/StructureDefinition/valueset-expansion-message",
+            "valueString": "ValueSet \"ValueSet.url[https://www.oegd.de/fhir/seu/ValueSet/NeinAbgeschlossenLaeuftGeplantVS]\" has not yet been pre-expanded. Performing in-memory expansion without parameters. Current status: NOT_EXPANDED | The ValueSet is waiting to be picked up and pre-expanded by a scheduled task."
+          }
+        ]
+      },
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/NeinAbgeschlossenLaeuftGeplantVS",
+      "status": "active",
+      "compose": {
+        "include": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/NeinAbgeschlossenLaeuftGeplant"
+          }
+        ]
+      },
+      "expansion": {
+        "identifier": "a7608deb-c108-4588-8f1a-c298f13ad7d2",
+        "timestamp": "2024-03-27T12:20:50+00:00",
+        "total": 4,
+        "offset": 0,
+        "parameter": [
+          {
+            "name": "offset",
+            "valueInteger": 0
+          },
+          {
+            "name": "count",
+            "valueInteger": 1000
+          }
+        ],
+        "contains": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/NeinAbgeschlossenLaeuftGeplant",
+            "code": "nein",
+            "display": "nein"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/NeinAbgeschlossenLaeuftGeplant",
+            "code": "abgeschlossen",
+            "display": "abgeschlossen"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/NeinAbgeschlossenLaeuftGeplant",
+            "code": "läuft",
+            "display": "läuft z.Zt. Noch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/NeinAbgeschlossenLaeuftGeplant",
+            "code": "geplant",
+            "display": "geplant"
+          }
+        ]
+      }
+    }
+  ],
   "url": "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung",
   "title": "SEU Elternfragebogen Maximaldatensatz",
   "extension": [
@@ -33,6 +94,14 @@
           "type": "string",
           "linkId": "1.1",
           "text": "(1.1) Nachname des Kindes",
+          "_text": {
+            "extension": [
+              {
+                "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
+                "valueString": "background-color: lime"
+              }
+            ]
+          },
           "extension": [
             {
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
@@ -846,42 +915,50 @@
         {
           "type": "choice",
           "linkId": "9.2",
-          "text": "(9.2) Sprachtherapie"
+          "text": "(9.2) Sprachtherapie",
+          "answerValueSet": "#NeinAbgeschlossenLaeuftGeplantVS"
         },
         {
           "type": "choice",
           "linkId": "9.3",
-          "text": "(9.3) Frühförderung"
+          "text": "(9.3) Frühförderung",
+          "answerValueSet": "#NeinAbgeschlossenLaeuftGeplantVS"
         },
         {
           "type": "choice",
           "linkId": "9.4",
-          "text": "(9.4) Ergotherapie"
+          "text": "(9.4) Ergotherapie",
+          "answerValueSet": "#NeinAbgeschlossenLaeuftGeplantVS"
         },
         {
           "type": "choice",
           "linkId": "9.5",
-          "text": "(9.5) Psychomotorik"
+          "text": "(9.5) Psychomotorik",
+          "answerValueSet": "#NeinAbgeschlossenLaeuftGeplantVS"
         },
         {
           "type": "choice",
           "linkId": "9.6",
-          "text": "(9.6) Physiotherapie"
+          "text": "(9.6) Physiotherapie",
+          "answerValueSet": "#NeinAbgeschlossenLaeuftGeplantVS"
         },
         {
           "type": "choice",
           "linkId": "9.7",
-          "text": "(9.7) Psychologische Erziehungsberatung"
+          "text": "(9.7) Psychologische Erziehungsberatung",
+          "answerValueSet": "#NeinAbgeschlossenLaeuftGeplantVS"
         },
         {
           "type": "choice",
           "linkId": "9.8",
-          "text": "(9.8) Krankengymnastik"
+          "text": "(9.8) Krankengymnastik",
+          "answerValueSet": "#NeinAbgeschlossenLaeuftGeplantVS"
         },
         {
           "type": "choice",
           "linkId": "9.9",
-          "text": "(9.9) Integrative Betreuung"
+          "text": "(9.9) Integrative Betreuung",
+          "answerValueSet": "#NeinAbgeschlossenLaeuftGeplantVS"
         },
         {
           "type": "text",
