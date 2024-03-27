@@ -43,6 +43,10 @@ RuleSet: addItem(linkId, type, text)
 * text = "({linkId}) {text}"
 * code = $elternfragebogenKodierungen#{linkId}
 
+RuleSet: addItemMl(linkId, type, text, maxLen)
+* insert addItem({linkId}, {type}, {text})
+* maxLength = {maxLen}
+
 RuleSet: addGroup(linkId, text)
 * linkId = "{linkId}"
 * type = #group
@@ -52,7 +56,19 @@ RuleSet: addRItem(linkId, type, text)
 * insert addItem({linkId}, {type}, {text})
 * required = true
 
+RuleSet: addRItemMl(linkId, type, text, maxLen)
+* insert addItemMl({linkId}, {type}, {text}, {maxLen})
+* required = true
+
 RuleSet: uunit(code, display)
 * extension[+]
   * url = "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
   * valueCoding = $unitsofmeasure#{code} {display}
+
+RuleSet: calculatedExpression(name, expression)
+* extension[+]
+  * url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"
+  * valueExpression
+    * name = {name}
+    * language = #text/fhirpath
+    * expression = {expression}
