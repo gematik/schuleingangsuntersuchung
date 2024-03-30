@@ -16,6 +16,16 @@ Description: "Arztfragebogen"
 * contained[+] = ImpfungAntwortOhneAuffrischungVS
 * contained[+] = GenderDEVS
 * contained[+] = AnamneseBesonderheitenVS
+* contained[+] = AntwortGeschwisterVS
+* contained[+] = AntwortKindergartenBesuchVS
+* contained[+] = KindergartenArtVS
+* contained[+] = KontaktDeutscheSpracheVS
+* contained[+] = GesprocheneSpracheVS
+* contained[+] = HaendigkeitVS
+* contained[+] = SprachtherapieVS
+* contained[+] = TeilnahmeVorkursDeutschVS
+* contained[+] = AntwortAugenarztVS
+* contained[+] = AntwortenHoerstoerungVS
 * id = "SEU-Arztfragebogen"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Arztfragebogen"
 * title = "SEU Arztfragebogen Maximaldatensatz"

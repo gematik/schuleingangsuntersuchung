@@ -5,15 +5,15 @@ RuleSet: 2-af-untersuchungsverlauf
   * item[+] insert addGroup (2_1, Untersuchungsstatus)
     * item[+] insert addItem(2.1, #choice, Untersuchungsstatus)
       * answerValueSet = Canonical(UntersuchungsstatusVS)
-    * item[+] insert addItem(2.2, #date, Datum der Datenerfassung)
+    * item[+] insert addItem(2.2, #date, Datum der Datenerfassung) //TODO richtiges EnableWhen
       * insert EnableWhenCode(2.1, !=, UntersuchungsstatusCS, 01)
       * insert EnableWhenCode(2.1, !=, UntersuchungsstatusCS, 02)
       * insert EnableWhenCode(2.1, !=, UntersuchungsstatusCS, 03)
       * insert EnableWhenCode(2.1, !=, UntersuchungsstatusCS, 04)
-      * enableBehavior = #all
+      * enableBehavior = #any
     * item[+] insert addItem(2.3, #choice, Besonderheiten)
       * answerValueSet = Canonical(BesonderheitenVS)
-    * item[+] insert addItem(2.4, #boolean, [[Altersentspr. U-Nachweis erbracht (inkl. Teilnahme an SÄU)]]) //Vorbefüllung später egänzen
+    * item[+] insert addItem(2.4, #boolean, [[Altersentspr. U-Nachweis erbracht (inkl. Teilnahme an SÄU)]]) //TODO Vorbefüllung u.a. basierend auf berechnetem Alter, Feature-Set noch nicht ausreichend
   * item[+] insert addGroup (2_2, Verschickte Anschreiben)
     * item[+] insert addItem(2.5, #boolean, [[Einladung]])
     * item[+] insert addItem(2.6, #boolean, [[1. Mahnung ]])
@@ -47,7 +47,14 @@ RuleSet: 2-af-untersuchungsverlauf
     * item[+] insert addItem(2.25, #choice, [[Ans Jugendamt gemeldet]])
       * answerValueSet = Canonical(MeldungJugendamtVS)
     * item[+] insert addItem(2.26, #boolean, [[Mitteilungsbogen für Schule mitgegeben/verschickt]])
-    * item[+] insert addItem(2.27, #boolean, [[Kind abgeschlossen]]) //Vorbelegung basierend auf anderen Eingaben
+    * item[+] insert addItem(2.27, #string, [[Kind abgeschlossen]]) //TODO Vorbelegung basierend auf anderen Eingaben, alles expirimental hier
+      * insert calculatedExpression("calculateKindAbgeschlossen", [["%Answer226 = true or %Answer226.empty() = false or %Answer21 = 19 or %Answer21 = 10"]])
+    * insert variable("Answer226", [["item.where(linkId='2.26').answer.value"]])
+    * insert variable("Answer225", [["item.where(linkId='2.25').answer.valueCoding.code"]])
+    * insert variable("Answer21", [["item.where(linkId='2.1').answer.valueCoding.code"]])
+    * insert debug("%Answer226")
+    * insert debug("%Answer225")
+    * insert debug("%Answer21")
   * item[+] insert addGroup (2_7, Angaben zu Studienzwecken)
     * item[+] insert addItem(2.28, #boolean, [[Einwilligung Kontaktaufnahme]])
     * item[+] insert addItem(2.29, #boolean, [[Einwilligung Studienteilnahme]])
@@ -108,6 +115,26 @@ Id: MeldungJugendamtVS
 Title: "SEU Meldung Jugendamt"
 Description: "Diese Codes enthalten Besonderheiten"
 * include codes from system MeldungJugendamtCS
+* ^expansion.timestamp = "2024-03-30T13:28:00+00:00"
+* ^expansion.contains[+].system = Canonical(MeldungJugendamtCS)
+* ^expansion.contains[=].code = #1
+* ^expansion.contains[=].display = "aus Gründen des Kinderschutzes"
+* ^expansion.contains[+].system = Canonical(MeldungJugendamtCS)
+* ^expansion.contains[=].code = #2
+* ^expansion.contains[=].display = "Verweigerung Teilnahme rSEU"
+* ^expansion.contains[+].system = Canonical(MeldungJugendamtCS)
+* ^expansion.contains[=].code = #3
+* ^expansion.contains[=].display = "Verweigerung 1. SÄU"
+* ^expansion.contains[+].system = Canonical(MeldungJugendamtCS)
+* ^expansion.contains[=].code = #4
+* ^expansion.contains[=].display = "Verweigerung 2. SÄU"
+* ^expansion.contains[+].system = Canonical(MeldungJugendamtCS)
+* ^expansion.contains[=].code = #5
+* ^expansion.contains[=].display = "keine rSEU Teilnahme, Adresse unbekannt"
+* ^expansion.contains[+].system = Canonical(MeldungJugendamtCS)
+* ^expansion.contains[=].code = #6
+* ^expansion.contains[=].display = "sonstige Gründe"
+
 
 CodeSystem: DurchfuehrungSaeuCS
 Id: DurchfuehrungSaeuCS
@@ -190,3 +217,46 @@ Id: UntersuchungsstatusVS
 Title: "SEU Untersuchungsstatus"
 Description: "Diese Codes enthalten Untersuchungsstatus"
 * include codes from system UntersuchungsstatusCS
+* ^expansion.timestamp = "2024-03-30T13:28:00+00:00"
+* ^expansion.contains[+].system = Canonical(UntersuchungsstatusCS)
+* ^expansion.contains[=].code = #1
+* ^expansion.contains[=].display = "untersucht"
+* ^expansion.contains[+].system = Canonical(UntersuchungsstatusCS)
+* ^expansion.contains[=].code = #2
+* ^expansion.contains[=].display = "untersucht für anderen LK"
+* ^expansion.contains[+].system = Canonical(UntersuchungsstatusCS)
+* ^expansion.contains[=].code = #3
+* ^expansion.contains[=].display = "untersucht für anderes BL"
+* ^expansion.contains[+].system = Canonical(UntersuchungsstatusCS)
+* ^expansion.contains[=].code = #4
+* ^expansion.contains[=].display = "untersucht, Kind im Vorjahr zurückgestellt"
+* ^expansion.contains[+].system = Canonical(UntersuchungsstatusCS)
+* ^expansion.contains[=].code = #7
+* ^expansion.contains[=].display = "nicht erschienen, da verzogen"
+* ^expansion.contains[+].system = Canonical(UntersuchungsstatusCS)
+* ^expansion.contains[=].code = #8
+* ^expansion.contains[=].display = "nicht erschienen, weil Untersuchung in anderem LK"
+* ^expansion.contains[+].system = Canonical(UntersuchungsstatusCS)
+* ^expansion.contains[=].code = #9
+* ^expansion.contains[=].display = "nicht erschienen, weil Untersuchung in anderem BL"
+* ^expansion.contains[+].system = Canonical(UntersuchungsstatusCS)
+* ^expansion.contains[=].code = #10
+* ^expansion.contains[=].display = "nicht erschienen, amerikanische Basis/Nato/Europ. Patentamt"
+* ^expansion.contains[+].system = Canonical(UntersuchungsstatusCS)
+* ^expansion.contains[=].code = #11
+* ^expansion.contains[=].display = "nicht erschienen, lebt im Ausland"
+* ^expansion.contains[+].system = Canonical(UntersuchungsstatusCS)
+* ^expansion.contains[=].code = #12
+* ^expansion.contains[=].display = "nicht erschienen, da Adresse nicht ermittelbar"
+* ^expansion.contains[+].system = Canonical(UntersuchungsstatusCS)
+* ^expansion.contains[=].code = #13
+* ^expansion.contains[=].display = "nicht erschienen, bereits vor Screening zurückgestellt"
+* ^expansion.contains[+].system = Canonical(UntersuchungsstatusCS)
+* ^expansion.contains[=].code = #15
+* ^expansion.contains[=].display = "nicht erschienen, sonstige Gründe"
+* ^expansion.contains[+].system = Canonical(UntersuchungsstatusCS)
+* ^expansion.contains[=].code = #19
+* ^expansion.contains[=].display = "Verstorben"
+* ^expansion.contains[+].system = Canonical(UntersuchungsstatusCS)
+* ^expansion.contains[=].code = #20
+* ^expansion.contains[=].display = "nicht erschienen, nur nach Aktenlage"

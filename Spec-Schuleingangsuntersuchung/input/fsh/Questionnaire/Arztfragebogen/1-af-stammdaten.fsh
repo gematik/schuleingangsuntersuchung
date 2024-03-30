@@ -11,13 +11,12 @@ RuleSet: 1-af-stammdaten
   * item[+] insert addRItem(1.8, #integer, Geschlecht)
     * answerValueSet = Canonical(GenderDEVS)
   * item[+] insert addItem(1.9, #boolean, Kind lebt seit weniger als 1 Jahr in Deutschland)
-  * item[+] insert addItem(1.10, #integer, AKDB-Meldejahrgang) //Berechnung aus GebDatum
+  * item[+] insert addItem(1.10, #integer, AKDB-Meldejahrgang) //TODO Berechnung aus GebDatum; Feature-Set noch nicht gegeben
     * readOnly = true 
-  * item[+] insert addItem(1.11, #integer, Jahr der regulären Einschulung) //Berechnung aus GebDatum
-    //* insert calculatedExpression("AKDV-Meldejahrgang-berechnet", [["(%1.7).toQuantity('y') + 6"]])
+  * item[+] insert addItem(1.11, #integer, Jahr der regulären Einschulung) //TODO Berechnung aus GebDatum; Feature-Set noch nicht gegeben
     * readOnly = true
   * item[+] insert addItem(1.12, #integer, Teilnahme rSEU im 1. UJ)
-  * item[+] insert addItem(1.13, #integer, Import-Status) //Wie soll im Questionnaire damit umgegangen werden?
+  * item[+] insert addItem(1.13, #integer, Import-Status) //TODO Wie soll im Questionnaire damit umgegangen werden?
     * readOnly = true
 
 CodeSystem:  RegionCS
@@ -30,7 +29,7 @@ Title: "SEU Region"
 ValueSet: RegionVS
 Id: RegionVS
 Title: "SEU Region"
-Description: "Diese Codes enthalten die Art der Region"
+Description: "Diese Codes enthalten die Art einer Region in Deutschland"
 * include codes from system RegionCS
 
 Alias: $deGenderVS = http://fhir.de/CodeSystem/gender-amtlich-de
@@ -38,5 +37,5 @@ Alias: $deGenderVS = http://fhir.de/CodeSystem/gender-amtlich-de
 ValueSet: GenderDEVS
 Id: GenderDEVS
 Title: "SEU Gender DE"
-Description: "Diese Codes enthalten die Art der Region"
+Description: "Diese Codes enthalten die Angabe des Geschlechts"
 * include codes from system $deGenderVS
