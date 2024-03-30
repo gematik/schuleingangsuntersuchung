@@ -5,13 +5,13 @@ RuleSet: 2-af-untersuchungsverlauf
   * item[+] insert addGroup (2_1, Untersuchungsstatus)
     * item[+] insert addItem(2.1, #choice, Untersuchungsstatus)
       * answerValueSet = Canonical(UntersuchungsstatusVS)
-    * item[+] insert addRItem(2.2, #date, Datum der Datenerfassung)
+    * item[+] insert addItem(2.2, #date, Datum der Datenerfassung)
       * insert EnableWhenCode(2.1, !=, UntersuchungsstatusCS, 01)
       * insert EnableWhenCode(2.1, !=, UntersuchungsstatusCS, 02)
       * insert EnableWhenCode(2.1, !=, UntersuchungsstatusCS, 03)
       * insert EnableWhenCode(2.1, !=, UntersuchungsstatusCS, 04)
       * enableBehavior = #all
-    * item[+] insert addRItem(2.3, #choice, Besonderheiten)
+    * item[+] insert addItem(2.3, #choice, Besonderheiten)
       * answerValueSet = Canonical(BesonderheitenVS)
     * item[+] insert addItem(2.4, #boolean, [[Altersentspr. U-Nachweis erbracht (inkl. Teilnahme an SÄU)]]) //Vorbefüllung später egänzen
   * item[+] insert addGroup (2_2, Verschickte Anschreiben)
