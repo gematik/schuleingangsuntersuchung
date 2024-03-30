@@ -72,3 +72,9 @@ RuleSet: calculatedExpression(name, expression)
     * name = {name}
     * language = #text/fhirpath
     * expression = {expression}
+
+RuleSet: EnableWhenCode(question, operator, system, code)
+* enableWhen[+]
+  * question = "{question}"
+  * operator = #{operator}
+  * answerCoding = {system}#{code}
