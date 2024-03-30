@@ -84,3 +84,19 @@ RuleSet: EnableWhenBoolean(question, operator, boolean)
   * question = "{question}"
   * operator = #{operator}
   * answerBoolean = {boolean}
+
+RuleSet: variable(name, expression)
+* extension[+]
+  * url = "http://hl7.org/fhir/StructureDefinition/variable"
+  * valueExpression
+    * name = {name}
+    * language = #text/fhirpath
+    * expression = {expression}
+
+RuleSet: debug(variable)
+* item[+]
+  * linkId = {variable}
+  * type = #string
+  * text = {variable}
+  * readOnly = true
+  * insert calculatedExpression("debug", {variable})
