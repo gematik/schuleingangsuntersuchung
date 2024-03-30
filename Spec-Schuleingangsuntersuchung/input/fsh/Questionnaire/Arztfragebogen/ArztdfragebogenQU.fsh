@@ -15,6 +15,7 @@ Description: "Arztfragebogen"
 * contained[+] = ImpfungAntwortVS
 * contained[+] = ImpfungAntwortOhneAuffrischungVS
 * contained[+] = GenderDEVS
+* contained[+] = AnamneseBesonderheitenVS
 * id = "SEU-Arztfragebogen"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Arztfragebogen"
 * title = "SEU Arztfragebogen Maximaldatensatz"
