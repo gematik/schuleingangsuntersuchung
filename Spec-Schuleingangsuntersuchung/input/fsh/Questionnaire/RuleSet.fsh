@@ -78,3 +78,9 @@ RuleSet: EnableWhenCode(question, operator, system, code)
   * question = "{question}"
   * operator = #{operator}
   * answerCoding = {system}#{code}
+
+RuleSet: EnableWhenBoolean(question, operator, boolean)
+* enableWhen[+]
+  * question = "{question}"
+  * operator = #{operator}
+  * answerBoolean = {boolean}

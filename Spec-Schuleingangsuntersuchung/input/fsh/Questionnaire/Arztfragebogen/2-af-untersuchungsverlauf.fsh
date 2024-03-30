@@ -67,6 +67,30 @@ Description: "Diese Codes enthalten Besonderheiten"
 * $ISO639#RU "Russisch"
 * $ISO639#TR "Türkisch"
 * $ISO639#UK "Ukraninisch"
+* ^expansion.timestamp = "2024-03-30T13:28:00+00:00"
+* ^expansion.contains[+].system = $ISO639
+* ^expansion.contains[=].code = #SQ
+* ^expansion.contains[=].display = "Albanisch"
+* ^expansion.contains[+].system = $ISO639
+* ^expansion.contains[=].code = #AR
+* ^expansion.contains[=].display = "Arabisch"
+* ^expansion.contains[+].system = $ISO639
+* ^expansion.contains[=].code = #EN
+* ^expansion.contains[=].display = "Englisch"
+* ^expansion.contains[+].system = $ISO639
+* ^expansion.contains[=].code = #RO
+* ^expansion.contains[=].display = "Rumänisch"
+* ^expansion.contains[+].system = $ISO639
+* ^expansion.contains[=].code = #RU
+* ^expansion.contains[=].display = "Russisch"
+* ^expansion.contains[+].system = $ISO639
+* ^expansion.contains[=].code = #TR
+* ^expansion.contains[=].display = "Türkisch"
+* ^expansion.contains[+].system = $ISO639
+* ^expansion.contains[=].code = #UK
+* ^expansion.contains[=].display = "Ukraninisch"
+
+
 
 CodeSystem: MeldungJugendamtCS
 Id: MeldungJugendamtCS

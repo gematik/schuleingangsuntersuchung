@@ -9,7 +9,7 @@ RuleSet: 1-af-stammdaten
     * answerValueSet = Canonical(RegionVS)
   * item[+] insert addRItem(1.7, #date, Geburtsdatum)
   * item[+] insert addRItem(1.8, #integer, Geschlecht)
-    * answerValueSet = $deGenderVS
+    * answerValueSet = Canonical(GenderDEVS)
   * item[+] insert addItem(1.9, #boolean, Kind lebt seit weniger als 1 Jahr in Deutschland)
   * item[+] insert addItem(1.10, #integer, AKDB-Meldejahrgang) //Berechnung aus GebDatum
     * readOnly = true 
@@ -34,3 +34,9 @@ Description: "Diese Codes enthalten die Art der Region"
 * include codes from system RegionCS
 
 Alias: $deGenderVS = http://fhir.de/CodeSystem/gender-amtlich-de
+
+ValueSet: GenderDEVS
+Id: GenderDEVS
+Title: "SEU Gender DE"
+Description: "Diese Codes enthalten die Art der Region"
+* include codes from system $deGenderVS
