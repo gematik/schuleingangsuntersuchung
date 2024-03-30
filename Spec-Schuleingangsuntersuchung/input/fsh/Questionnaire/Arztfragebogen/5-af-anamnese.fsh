@@ -97,7 +97,7 @@ RuleSet: 5-af-anamnese
     * item[+] insert addItem(5.51, #boolean, [[regelmäßige Medikamenteneinnahme]])
     * item[+] insert addItem(5.52, #string, [[Art des Medikaments]])
       * insert EnableWhenBoolean(5.51, =, true)
-  * item[+] insert addGroup(5_10, Erkrankungen, die ggf. Notfallmaßnahmen erfordern)
+  * item[+] insert addGroup(5_10, [[Erkrankungen, die ggf. Notfallmaßnahmen erfordern]])
     * item[+] insert addItem(5.53, #boolean, [[Erkrankungen mit ggf. erfoderlichen Vorgehensweisen]])
     * item[+] insert addItem(5.54, #string, [[Erkrankung]])
       * insert EnableWhenBoolean(5.53, =, true)
