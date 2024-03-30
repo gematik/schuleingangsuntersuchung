@@ -50,6 +50,103 @@ RuleSet: 5-af-anamnese
       * answerValueSet = Canonical(TeilnahmeVorkursDeutschVS)
     * item[+] insert addItem(5.25, #choice, [[Sprachtherapie (Logopädie) jemals]])
       * answerValueSet = Canonical(SprachtherapieVS)
+  * item[+] insert addGroup(5_3, Angaben zu Vorerkrankungen oder gesundheitlichen Einschränkungen)
+    * item[+] insert addItem(5.26, #boolean, [[Augenarztbesuch]])
+    * item[+] insert addItem(5.27, #choice, [[Feststellung / Veranlassung Augenarzt]])
+      * answerValueSet = Canonical(AntwortAugenarztVS)
+      * insert EnableWhenBoolean(5.26, =, true)
+    * item[+] insert addItem(5.28, #boolean, [[Besuch beim Zahnarzt in letzten 12 Monaten]]) //TODO JN-KeineAngabe
+    * item[+] insert addItem(5.29, #boolean, [[Angeborene schwere Hörstörung]]) //TODO JN-KeineAngabe
+  * item[+] insert addGroup(5_4, Zusatzangaben zur Hörstörung)
+    * insert EnableWhenBoolean(2.29, =, true)
+    * item[+] insert addItem(5.30, #choice, [[Angeborene Hörstörung]])
+      * answerValueSet = Canonical(AntwortenHoerstoerungVS)
+    * item[+] insert addItem(5.31, #choice, [[mit Hörgerät versorgt]])
+      * answerValueSet = Canonical(AntwortenHoerstoerungVS)
+    * item[+] insert addItem(5.32, #choice, [[mit Cochlea-Implant versorgt]])
+      * answerValueSet = Canonical(AntwortenHoerstoerungVS)
+    * item[+] insert addItem(5.33, #boolean, [[Elterneinwilligung mitgegeben (Hören)]])
+  * item[+] insert addGroup(5_5, Stoffwechselstörung)
+    * item[+] insert addItem(5.34, #boolean, [[Stoffwechselerkrankung oder Hormonstörung (nur ärztl. diag. Befunde angeben)]])
+  * item[+] insert addGroup(5_6, Zusatzangaben zu Stoffwechselstörungen)
+    * insert EnableWhenBoolean(5.34, =, true)
+    * item[+] insert addItem(5.35, #boolean, [[MCAD-Mangel (nur ärztlich diag. Befunde angeben)]])
+    * item[+] insert addItem(5.36, #boolean, [[Hypothyreose (nur ärztlich diag. Befunde angeben)]])
+    * item[+] insert addItem(5.37, #boolean, [[Phenylketonurie (nur ärztlich diag. Befunde angeben)]])
+    * item[+] insert addItem(5.38, #boolean, [[AGS (nur ärztlich diag. Befunde angeben)]])
+    * item[+] insert addItem(5.39, #boolean, [[Mukoviszidose (nur ärztlich diag. Befunde angeben)]])
+    * item[+] insert addItem(5.40, #boolean, [[Diabetes mellitus (Typ 1) (nur ärztlich diag. Befunde angeben)]])
+    * item[+] insert addItem(5.41, #boolean, [[Diabetes mellitus (Typ 2) (nur ärztlich diag. Befunde angeben)]])
+    * item[+] insert addItem(5.42, #boolean, [[sonstige Stoffwechselerkrankungen (nur ärztlich diag. Befunde)]])
+    * item[+] insert addItem(5.43, #string, [[wenn ja, welche (nur ärztlich diag. Befunde)]])
+      * insert EnableWhenBoolean(5.42, =, true)
+    * item[+] insert addItem(5.44, #integer, [[Alter bei Diagnosestellung (in Jahren)]]) //TODO Hinweistext
+      * insert uunit(a, "Jahre")
+    * item[+] insert addItem(5.45, #integer, [[Alter bei Diagnosestellung (in Monaten)]])
+      * insert uunit(mo, "Monate")
+    * item[+] insert addItem(5.46, #boolean, [[Elterneinwilligung mitgegeben (Stoffwechselerkrankungen)]])
+  * item[+] insert addGroup(5_7, Chronische Erkankung)
+    * item[+] insert addItem(5.47, #boolean, [[Chronische Erkrankung]])
+    * item[+] insert addItem(5.48, #string, [[Art der chronischen Erkrankung]])
+      * insert EnableWhenBoolean(5.47, =, true)
+  * item[+] insert addGroup(5_8, Schwere Behinderung)
+    * item[+] insert addItem(5.49, #boolean, [[Schwere Behinderung]])
+    * item[+] insert addItem(5.50, #string, [[Art der Behinderung]])
+      * insert EnableWhenBoolean(5.49, =, true)
+  * item[+] insert addGroup(5_9, Medikamente)
+    * item[+] insert addItem(5.51, #boolean, [[regelmäßige Medikamenteneinnahme]])
+    * item[+] insert addItem(5.52, #string, [[Art des Medikaments]])
+      * insert EnableWhenBoolean(5.51, =, true)
+  * item[+] insert addGroup(5_10, Erkrankungen, die ggf. Notfallmaßnahmen erfordern)
+    * item[+] insert addItem(5.53, #boolean, [[Erkrankungen mit ggf. erfoderlichen Vorgehensweisen]])
+    * item[+] insert addItem(5.54, #string, [[Erkrankung]])
+      * insert EnableWhenBoolean(5.53, =, true)
+  * item[+] insert addGroup(5_11, Sonstige Angaben)
+    * item[+] insert addItem(5.55, #boolean, [[familiäre Leserechtschreibschwäche]])
+    * item[+] insert addItem(5.56, #boolean, [[familiäre Rechenschwäche]])
+  * item[+] insert addGroup(5_12, FREIWILLIGE Angaben zu den Personensorgeberechtigten)
+    * item[+] insert addItem(5.57, #choice, [[Anzahl Erwachsene im Haushalt]]) //TODO: CS
+    * item[+] insert addItem(5.58, #choice, [[Geburtsland Elternteil 1]]) //TODO: CS
+    * item[+] insert addItem(5.59, #choice, [[Geburtsland Elternteil 2]]) //TODO: CS
+    * item[+] insert addItem(5.60, #choice, [[Staatsangehörigkeit Elternteil 1]]) //TODO: CS
+    * item[+] insert addItem(5.61, #choice, [[Staatsangehörigkeit Elternteil 2]]) //TODO: CS
+    * item[+] insert addItem(5.62, #choice, [[Höchster Schulabschluss Elternteil 1]]) //TODO: CS
+    * item[+] insert addItem(5.63, #choice, [[Höchster Schulabschluss Elternteil 2]]) //TODO: CS
+    * item[+] insert addItem(5.64, #choice, [[Erwerbstätigkeit Elternteil 1]]) //TODO: CS
+    * item[+] insert addItem(5.65, #choice, [[Erwerbstätigkeit Elternteil 2]]) //TODO: CS
+
+CodeSystem: AntwortenHoerstoerungCS
+Id: AntwortenHoerstoerungCS
+Title: "SEU Antworten Hörstörung"
+* #1 "links"
+* #2 "rechts"
+* #3 "beidseitig"
+* #9 "keine Angaben"
+
+ValueSet: AntwortenHoerstoerungVS
+Id: AntwortenHoerstoerungVS
+Title: "SEU Antworten Hörstörung"
+Description: "Diese Codes enthalten die Art der Region"
+* include codes from system AntwortenHoerstoerungCS
+
+CodeSystem: AntwortAugenarztCS
+Id: AntwortAugenarztCS
+Title: "SEU Antwort Augenarzt"
+* #1 "unauffälliger Befund"
+* #2 "Kurzsichtigkeit (Myopie)"
+* #3 "Weitsichtigkeit (Hyperopie)"
+* #4 "Schielen"
+* #5 "Verordnung Brille"
+* #6 "Verordnung Brille bei Myopie"
+* #7 "Verodnung Brille bei Hyperopie"
+* #8 "Verordnung Brille bei Schielen"
+* #9 "keine Angaben"
+
+ValueSet: AntwortAugenarztVS
+Id: AntwortAugenarztVS
+Title: "SEU Antwort Augenarzt"
+Description: "Diese Codes enthalten die Art der Region"
+* include codes from system AntwortAugenarztCS
 
 CodeSystem: TeilnahmeVorkursDeutschCS
 Id: TeilnahmeVorkursDeutschCS

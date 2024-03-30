@@ -26,3 +26,5 @@ Description: "Arztfragebogen"
 * insert 2-af-untersuchungsverlauf
 * insert 3-af-impfungen
 * insert 4-af-gesfrueherkennung
+* insert 5-af-anamnese
+* insert 6-af-elternfragebogen
