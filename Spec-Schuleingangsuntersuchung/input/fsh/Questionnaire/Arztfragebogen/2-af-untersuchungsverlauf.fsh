@@ -67,40 +67,38 @@ RuleSet: 2-af-untersuchungsverlauf
     * item[+] insert addItem(2.30, #choice, [[Gewünschte Sprache Studie]])
       * answerValueSet = Canonical(SEU-AF-SpracheStudieVS)
 
-Alias: $ietf-47 = urn:ietf:bcp:47
-
 ValueSet: SEU-AF-SpracheStudieVS
 Id: SEU-AF-SpracheStudieVS
 Title: "SEU Sprache Studie"
 Description: "Dieses ValueSet enthält die auswählbaren Sprachen zu einer Studie. Als CodeSystem wird 'urn:ietf:bcp:47' als Basis genommen."
-* $ietf-47#SQ "Albanisch"
-* $ietf-47#AR "Arabisch"
-* $ietf-47#EN "Englisch"
-* $ietf-47#RO "Rumänisch"
-* $ietf-47#RU "Russisch"
-* $ietf-47#TR "Türkisch"
-* $ietf-47#UK "Ukraninisch"
+* $ietf-47#sq "Albanisch"
+* $ietf-47#ar "Arabisch"
+* $ietf-47#en "Englisch"
+* $ietf-47#ro "Rumänisch"
+* $ietf-47#ru "Russisch"
+* $ietf-47#tr "Türkisch"
+* $ietf-47#uk "Ukraninisch"
 * ^expansion.timestamp = "2024-03-30T13:28:00+00:00"
 * ^expansion.contains[+].system = $ietf-47
-* ^expansion.contains[=].code = #SQ
+* ^expansion.contains[=].code = #sq
 * ^expansion.contains[=].display = "Albanisch"
 * ^expansion.contains[+].system = $ietf-47
-* ^expansion.contains[=].code = #AR
+* ^expansion.contains[=].code = #ar
 * ^expansion.contains[=].display = "Arabisch"
 * ^expansion.contains[+].system = $ietf-47
-* ^expansion.contains[=].code = #EN
+* ^expansion.contains[=].code = #en
 * ^expansion.contains[=].display = "Englisch"
 * ^expansion.contains[+].system = $ietf-47
-* ^expansion.contains[=].code = #RO
+* ^expansion.contains[=].code = #ro
 * ^expansion.contains[=].display = "Rumänisch"
 * ^expansion.contains[+].system = $ietf-47
-* ^expansion.contains[=].code = #RU
+* ^expansion.contains[=].code = #ru
 * ^expansion.contains[=].display = "Russisch"
 * ^expansion.contains[+].system = $ietf-47
-* ^expansion.contains[=].code = #TR
+* ^expansion.contains[=].code = #tr
 * ^expansion.contains[=].display = "Türkisch"
 * ^expansion.contains[+].system = $ietf-47
-* ^expansion.contains[=].code = #UK
+* ^expansion.contains[=].code = #uk
 * ^expansion.contains[=].display = "Ukraninisch"
 
 CodeSystem: SEU-AF-MeldungJugendamtCS
@@ -279,25 +277,25 @@ Description: "Diese Codes enthalten Untersuchungsstatus der SEU"
 * include codes from system SEU-AF-UntersuchungsstatusCS
 * ^expansion.timestamp = "2024-03-30T13:28:00+00:00"
 * ^expansion.contains[+].system = Canonical(SEU-AF-UntersuchungsstatusCS)
-* ^expansion.contains[=].code = #1
+* ^expansion.contains[=].code = #01
 * ^expansion.contains[=].display = "untersucht"
 * ^expansion.contains[+].system = Canonical(SEU-AF-UntersuchungsstatusCS)
-* ^expansion.contains[=].code = #2
+* ^expansion.contains[=].code = #02
 * ^expansion.contains[=].display = "untersucht für anderen LK"
 * ^expansion.contains[+].system = Canonical(SEU-AF-UntersuchungsstatusCS)
-* ^expansion.contains[=].code = #3
+* ^expansion.contains[=].code = #03
 * ^expansion.contains[=].display = "untersucht für anderes BL"
 * ^expansion.contains[+].system = Canonical(SEU-AF-UntersuchungsstatusCS)
-* ^expansion.contains[=].code = #4
+* ^expansion.contains[=].code = #04
 * ^expansion.contains[=].display = "untersucht, Kind im Vorjahr zurückgestellt"
 * ^expansion.contains[+].system = Canonical(SEU-AF-UntersuchungsstatusCS)
-* ^expansion.contains[=].code = #7
+* ^expansion.contains[=].code = #07
 * ^expansion.contains[=].display = "nicht erschienen, da verzogen"
 * ^expansion.contains[+].system = Canonical(SEU-AF-UntersuchungsstatusCS)
-* ^expansion.contains[=].code = #8
+* ^expansion.contains[=].code = #08
 * ^expansion.contains[=].display = "nicht erschienen, weil Untersuchung in anderem LK"
 * ^expansion.contains[+].system = Canonical(SEU-AF-UntersuchungsstatusCS)
-* ^expansion.contains[=].code = #9
+* ^expansion.contains[=].code = #09
 * ^expansion.contains[=].display = "nicht erschienen, weil Untersuchung in anderem BL"
 * ^expansion.contains[+].system = Canonical(SEU-AF-UntersuchungsstatusCS)
 * ^expansion.contains[=].code = #10

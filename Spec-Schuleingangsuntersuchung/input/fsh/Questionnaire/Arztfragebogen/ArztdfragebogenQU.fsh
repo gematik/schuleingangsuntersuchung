@@ -13,7 +13,7 @@ Description: "Arztfragebogen"
 * contained[+] = SEU-AF-UntersuchungsstatusVS
 * contained[+] = SEU-AF-MasernimpfungNichtErforderlichGrundVS
 * contained[+] = SEU-AF-ImpfungAntwortVS
-* contained[+] = ImpfungAntwortOhneAuffrischungVS
+* contained[+] = SEU-AF-ImpfungAntwortOhneAuffrischungVS
 * contained[+] = GenderDEVS
 * contained[+] = SEU-AF-AnamneseBesonderheitenVS
 * contained[+] = SEU-AF-AntwortGeschwisterVS
@@ -31,6 +31,7 @@ Description: "Arztfragebogen"
 * contained[+] = SEU-AF-StaatsangehoerigkeitVS
 * contained[+] = SEU-AF-SchulabschlussVS
 * contained[+] = SEU-AF-ErwerbstaetigkeitVS
+* contained[+] = SEU-AF-AuswaehlbareElternspracheVS
 * id = "SEU-Arztfragebogen"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Arztfragebogen"
 * title = "SEU Arztfragebogen Maximaldatensatz"

@@ -8,7 +8,7 @@ RuleSet: 1-af-stammdaten
   * item[+] insert addRItem(1.6, #choice, Region)
     * answerValueSet = Canonical(SEU-AF-RegionArtVS)
   * item[+] insert addRItem(1.7, #date, Geburtsdatum)
-  * item[+] insert addRItem(1.8, #integer, Geschlecht)
+  * item[+] insert addRItem(1.8, #choice, Geschlecht)
     * answerValueSet = Canonical(GenderDEVS)
   * item[+] insert addItem(1.9, #boolean, Kind lebt seit weniger als 1 Jahr in Deutschland)
   * item[+] insert addItem(1.10, #integer, AKDB-Meldejahrgang) //TODO Berechnung aus GebDatum; Feature-Set noch nicht gegeben

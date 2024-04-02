@@ -29,13 +29,13 @@ RuleSet: 5-af-anamnese
       * item[+] insert addItem(5.15, #integer, [[Kontakt mit der deutschen Sprache ab welchem Alter (in Monaten)]])
         * insert uunit(mo, "Monate")
     * item[+] insert addItem(5.16, #choice, [[Elternsprache  1]])
-      //VS auf ISO Basis plus andere und keine Angabe
+      * answerValueSet = Canonical(SEU-AF-AuswaehlbareElternspracheVS)
     * item[+] insert addItem(5.17, #boolean, [[Elternsprache 1 andere]])
-      // * insert EnableWhenCode(5.16, =, TODO, 98)
+      * insert EnableWhenCode(5.16, =, SEU-AF-AuswaehlbareElternspracheErweiterungCS, 98)
     * item[+] insert addItem(5.18, #choice, [[Elternsprache  2]])
-      //VS auf ISO Basis plus andere und keine Angabe
+      * answerValueSet = Canonical(SEU-AF-AuswaehlbareElternspracheVS)
     * item[+] insert addItem(5.19, #boolean, [[Elternsprache 2 andere]])
-      // * insert EnableWhenCode(5.16, =, TODO, 98)
+      * insert EnableWhenCode(5.16, =, SEU-AF-AuswaehlbareElternspracheErweiterungCS, 98)
     * item[+] insert addItem(5.20, #choice, [[Zu Hause gesprochene Sprache(n)]])
       * answerValueSet = Canonical(SEU-AF-GesprocheneSpracheVS)
     * item[+] insert addItem(5.21, #string, [[Zu Hause gesprochene Sprache(n) andere]])
@@ -593,3 +593,77 @@ Description: "Diese Codes enthalten Angaben zur Erwerbstätigkeit"
 * ^expansion.contains[+].system = Canonical(SEU-AF-ErwerbstaetigkeitCS)
 * ^expansion.contains[=].code = #9
 * ^expansion.contains[=].display = "keine Angaben"
+
+CodeSystem: SEU-AF-AuswaehlbareElternspracheErweiterungCS
+Id: SEU-AF-AuswaehlbareElternspracheErweiterungCS
+Title: "SEU Erwerbstätigkeit"
+* #12 "Gebärdensprache"
+* #98 "andere"
+* #99 "keine Angabe"
+
+ValueSet: SEU-AF-AuswaehlbareElternspracheVS
+Id: SEU-AF-AuswaehlbareElternspracheVS
+Title: "SEU Auswählbare Elternsprache"
+Description: "Dieses ValueSet enthält die auswählbaren Elternsprachen. Als CodeSystem wird 'urn:ietf:bcp:47' als Basis genommen."
+* $ietf-47#de "Deutsch"
+* $ietf-47#en "Englisch"
+* $ietf-47#tr "Türkisch"
+* $ietf-47#ru "Russisch"
+* $ietf-47#sr "Serbisch" //montenegrisch fehlt, über sr?
+* $ietf-47#hr "Kroatisch"
+* $ietf-47#bs "Bosnisch"
+* $ietf-47#it "Italienisch"
+* $ietf-47#ar "Arabisch"
+* $ietf-47#ro "Rumänisch"
+* $ietf-47#pl "Polnisch"
+* $ietf-47#sq "Albanisch"
+* $ietf-47#uk "Ukraninisch"
+* include codes from system SEU-AF-AuswaehlbareElternspracheErweiterungCS
+* ^expansion.contains[+].system = $ietf-47
+* ^expansion.contains[=].code = #de
+* ^expansion.contains[=].display = "Deutsch"
+* ^expansion.contains[+].system = $ietf-47
+* ^expansion.contains[=].code = #en
+* ^expansion.contains[=].display = "Englisch"
+* ^expansion.contains[+].system = $ietf-47
+* ^expansion.contains[=].code = #tr
+* ^expansion.contains[=].display = "Türkisch"
+* ^expansion.contains[+].system = $ietf-47
+* ^expansion.contains[=].code = #ru
+* ^expansion.contains[=].display = "Russisch"
+* ^expansion.contains[+].system = $ietf-47
+* ^expansion.contains[=].code = #sr
+* ^expansion.contains[=].display = "Serbisch"
+* ^expansion.contains[+].system = $ietf-47
+* ^expansion.contains[=].code = #hr
+* ^expansion.contains[=].display = "Kroatisch"
+* ^expansion.contains[+].system = $ietf-47
+* ^expansion.contains[=].code = #bs
+* ^expansion.contains[=].display = "Bosnisch"
+* ^expansion.contains[+].system = $ietf-47
+* ^expansion.contains[=].code = #it
+* ^expansion.contains[=].display = "Italienisch"
+* ^expansion.contains[+].system = $ietf-47
+* ^expansion.contains[=].code = #ar
+* ^expansion.contains[=].display = "Arabisch"
+* ^expansion.contains[+].system = $ietf-47
+* ^expansion.contains[=].code = #ro
+* ^expansion.contains[=].display = "Rumänisch"
+* ^expansion.contains[+].system = $ietf-47
+* ^expansion.contains[=].code = #pl
+* ^expansion.contains[=].display = "Polnisch"
+* ^expansion.contains[+].system = $ietf-47
+* ^expansion.contains[=].code = #sq
+* ^expansion.contains[=].display = "Albanisch"
+* ^expansion.contains[+].system = $ietf-47
+* ^expansion.contains[=].code = #uk
+* ^expansion.contains[=].display = "Ukraninisch"
+* ^expansion.contains[+].system = Canonical(SEU-AF-AuswaehlbareElternspracheErweiterungCS)
+* ^expansion.contains[=].code = #12
+* ^expansion.contains[=].display = "Gebärdensprache"
+* ^expansion.contains[+].system = Canonical(SEU-AF-AuswaehlbareElternspracheErweiterungCS)
+* ^expansion.contains[=].code = #98
+* ^expansion.contains[=].display = "andere"
+* ^expansion.contains[+].system = Canonical(SEU-AF-AuswaehlbareElternspracheErweiterungCS)
+* ^expansion.contains[=].code = #99
+* ^expansion.contains[=].display = "keine Angabe"
