@@ -13,27 +13,27 @@ RuleSet: 3-af-impfungen
     * item[+] insert addItem(3.5, #choice, [[Pertussis]])
       * answerValueSet = Canonical(SEU-AF-ImpfungAntwortVS)
     * item[+] insert addItem(3.6, #choice, [[IPV]])
-      * answerValueSet = Canonical(ImpfungAntwortOhneAuffrischungVS)
+      * answerValueSet = Canonical(SEU-AF-ImpfungAntwortOhneAuffrischungVS)
     * item[+] insert addItem(3.7, #choice, [[HIB]])
-      * answerValueSet = Canonical(ImpfungAntwortOhneAuffrischungVS)
+      * answerValueSet = Canonical(SEU-AF-ImpfungAntwortOhneAuffrischungVS)
     * item[+] insert addItem(3.8, #choice, [[Hepatitis B]])
-      * answerValueSet = Canonical(ImpfungAntwortOhneAuffrischungVS)
+      * answerValueSet = Canonical(SEU-AF-ImpfungAntwortOhneAuffrischungVS)
     * item[+] insert addItem(3.9, #choice, [[Masern]])
-      * answerValueSet = Canonical(ImpfungAntwortOhneAuffrischungVS)
+      * answerValueSet = Canonical(SEU-AF-ImpfungAntwortOhneAuffrischungVS)
     * item[+] insert addItem(3.10, #choice, [[Mumps]])
-      * answerValueSet = Canonical(ImpfungAntwortOhneAuffrischungVS)
+      * answerValueSet = Canonical(SEU-AF-ImpfungAntwortOhneAuffrischungVS)
     * item[+] insert addItem(3.11, #choice, [[Röteln]])
-      * answerValueSet = Canonical(ImpfungAntwortOhneAuffrischungVS)
+      * answerValueSet = Canonical(SEU-AF-ImpfungAntwortOhneAuffrischungVS)
     * item[+] insert addItem(3.12, #choice, [[Varizellen]])
-      * answerValueSet = Canonical(ImpfungAntwortOhneAuffrischungVS)
+      * answerValueSet = Canonical(SEU-AF-ImpfungAntwortOhneAuffrischungVS)
     * item[+] insert addItem(3.13, #choice, [[Meningokokken]])
-      * answerValueSet = Canonical(ImpfungAntwortOhneAuffrischungVS)
+      * answerValueSet = Canonical(SEU-AF-ImpfungAntwortOhneAuffrischungVS)
     * item[+] insert addItem(3.14, #choice, [[Pneumokokken]])
-      * answerValueSet = Canonical(ImpfungAntwortOhneAuffrischungVS)
+      * answerValueSet = Canonical(SEU-AF-ImpfungAntwortOhneAuffrischungVS)
     * item[+] insert addItem(3.15, #choice, [[FSME]])
       * answerValueSet = Canonical(SEU-AF-ImpfungAntwortVS)
     * item[+] insert addItem(3.16, #choice, [[Rotaviren]])
-      * answerValueSet = Canonical(ImpfungAntwortOhneAuffrischungVS)
+      * answerValueSet = Canonical(SEU-AF-ImpfungAntwortOhneAuffrischungVS)
   * item[+] insert addGroup(3_1, Abfrage Impfungen - abgelent)
     * insert EnableWhenBoolean(3.2, =, true)
     * readOnly = true
@@ -50,39 +50,39 @@ RuleSet: 3-af-impfungen
       * initial.valueCoding = SEU-AF-ImpfungAntwortCS#0
       * readOnly = true
     * item[+] insert addItem(3.6, #choice, [[IPV]])
-      * answerValueSet = Canonical(ImpfungAntwortOhneAuffrischungVS)
+      * answerValueSet = Canonical(SEU-AF-ImpfungAntwortOhneAuffrischungVS)
       * initial.valueCoding = SEU-AF-ImpfungAntwortCS#0
       * readOnly = true
     * item[+] insert addItem(3.7, #choice, [[HIB]])
-      * answerValueSet = Canonical(ImpfungAntwortOhneAuffrischungVS)
+      * answerValueSet = Canonical(SEU-AF-ImpfungAntwortOhneAuffrischungVS)
       * initial.valueCoding = SEU-AF-ImpfungAntwortCS#0
       * readOnly = true
     * item[+] insert addItem(3.8, #choice, [[Hepatitis B]])
-      * answerValueSet = Canonical(ImpfungAntwortOhneAuffrischungVS)
+      * answerValueSet = Canonical(SEU-AF-ImpfungAntwortOhneAuffrischungVS)
       * initial.valueCoding = SEU-AF-ImpfungAntwortCS#0
       * readOnly = true
     * item[+] insert addItem(3.9, #choice, [[Masern]])
-      * answerValueSet = Canonical(ImpfungAntwortOhneAuffrischungVS)
+      * answerValueSet = Canonical(SEU-AF-ImpfungAntwortOhneAuffrischungVS)
       * initial.valueCoding = SEU-AF-ImpfungAntwortCS#0
       * readOnly = true
     * item[+] insert addItem(3.10, #choice, [[Mumps]])
-      * answerValueSet = Canonical(ImpfungAntwortOhneAuffrischungVS)
+      * answerValueSet = Canonical(SEU-AF-ImpfungAntwortOhneAuffrischungVS)
       * initial.valueCoding = SEU-AF-ImpfungAntwortCS#0
       * readOnly = true
     * item[+] insert addItem(3.11, #choice, [[Röteln]])
-      * answerValueSet = Canonical(ImpfungAntwortOhneAuffrischungVS)
+      * answerValueSet = Canonical(SEU-AF-ImpfungAntwortOhneAuffrischungVS)
       * initial.valueCoding = SEU-AF-ImpfungAntwortCS#0
       * readOnly = true
     * item[+] insert addItem(3.12, #choice, [[Varizellen]])
-      * answerValueSet = Canonical(ImpfungAntwortOhneAuffrischungVS)
+      * answerValueSet = Canonical(SEU-AF-ImpfungAntwortOhneAuffrischungVS)
       * initial.valueCoding = SEU-AF-ImpfungAntwortCS#0
       * readOnly = true
     * item[+] insert addItem(3.13, #choice, [[Meningokokken]])
-      * answerValueSet = Canonical(ImpfungAntwortOhneAuffrischungVS)
+      * answerValueSet = Canonical(SEU-AF-ImpfungAntwortOhneAuffrischungVS)
       * initial.valueCoding = SEU-AF-ImpfungAntwortCS#0
       * readOnly = true
     * item[+] insert addItem(3.14, #choice, [[Pneumokokken]])
-      * answerValueSet = Canonical(ImpfungAntwortOhneAuffrischungVS)
+      * answerValueSet = Canonical(SEU-AF-ImpfungAntwortOhneAuffrischungVS)
       * initial.valueCoding = SEU-AF-ImpfungAntwortCS#0
       * readOnly = true
     * item[+] insert addItem(3.15, #choice, [[FSME]])
@@ -90,7 +90,7 @@ RuleSet: 3-af-impfungen
       * initial.valueCoding = SEU-AF-ImpfungAntwortCS#0
       * readOnly = true
     * item[+] insert addItem(3.16, #choice, [[Rotaviren]])
-      * answerValueSet = Canonical(ImpfungAntwortOhneAuffrischungVS)
+      * answerValueSet = Canonical(SEU-AF-ImpfungAntwortOhneAuffrischungVS)
       * initial.valueCoding = SEU-AF-ImpfungAntwortCS#0
       * readOnly = true
   * item[+] insert addItem(3.17, #boolean, [[Immunität gegen Varizellen aufgrund durchgemachter Varizellenerkrankung]])
@@ -152,10 +152,10 @@ Description: "Diese Codes enthalten allgemeine Angaben über den Status einer Im
 * ^expansion.contains[=].code = #3
 * ^expansion.contains[=].display = "Grundimmunisierung abgeschlossen und 1+ Auffrischung"
 
-ValueSet: ImpfungAntwortOhneAuffrischungVS
-Id: ImpfungAntwortOhneAuffrischungVS
+ValueSet: SEU-AF-ImpfungAntwortOhneAuffrischungVS
+Id: SEU-AF-ImpfungAntwortOhneAuffrischungVS
 Title: "SEU Impfung Antwort ohne Auffrischung"
-Description: "Diese Codes enthalten die Art der Region"
+Description: "Diese Codes enthalten allgemeine Angaben über den Status einer Impfung ohne die Möglichkeit zur Angave der 1+ Auffrischung"
 * SEU-AF-ImpfungAntwortCS#0 "keine Impfung"
 * SEU-AF-ImpfungAntwortCS#0 "Grundimmunisierung unvollständig"
 * SEU-AF-ImpfungAntwortCS#2 "Grundimmunisierung abgeschlossen (ohne Auffrischung)"
