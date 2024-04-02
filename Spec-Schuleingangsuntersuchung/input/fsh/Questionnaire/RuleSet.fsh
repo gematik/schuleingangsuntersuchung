@@ -105,3 +105,14 @@ RuleSet: regEx(expression)
 * extension[+]
   * url = "http://hl7.org/fhir/StructureDefinition/regex"
   * valueString = {expression}
+
+RuleSet: helpItem (id, text)
+* linkId = "{id}"
+* type = #display
+* text = "{text}"
+* insert itemControl(#help)
+
+RuleSet: itemControl(code)
+* extension[+]
+  * url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
+  * valueCodeableConcept = http://hl7.org/fhir/questionnaire-item-control{code}
