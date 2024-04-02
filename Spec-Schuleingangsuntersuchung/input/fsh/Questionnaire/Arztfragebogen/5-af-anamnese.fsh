@@ -1,18 +1,18 @@
 RuleSet: 5-af-anamnese
 * item[+] insert addGroup(5, Anamnese)
   * item[+] insert addItem(5.1, #choice, [[Besonderheiten bei Anamnese]])
-    * answerValueSet = Canonical(AnamneseBesonderheitenVS)
+    * answerValueSet = Canonical(SEU-AF-AnamneseBesonderheitenVS)
   * item[+] insert addGroup(5_1, Anamnese)
-    * insert EnableWhenCode(5.1, !=, AnamneseBesonderheitenCS, 0)
+    * insert EnableWhenCode(5.1, !=, SEU-AF-AnamneseBesonderheitenCS, 0)
     * item[+] insert addItem(5.2, #choice, [[Geschwister]])
-      * answerValueSet = Canonical(AntwortGeschwisterVS)
-    * item[+] insert addItemMl(5.3, #string, Staatsangehörigkeit des Kindes, 20) //Darf ich hier das Länder-ISO dran binden?
-    * item[+] insert addItemMl(5.4, #string, Geburtsland des Kindes, 20) //Darf ich hier das Länder-ISO dran binden?
+      * answerValueSet = Canonical(SEU-AF-AntwortGeschwisterVS)
+    * item[+] insert addItemMl(5.3, #string, Staatsangehörigkeit des Kindes, 20) //TODO Darf ich hier das Länder-ISO dran binden? Laut Excel soll string der Datentyp sein
+    * item[+] insert addItemMl(5.4, #string, Geburtsland des Kindes, 20) //TODO Darf ich hier das Länder-ISO dran binden? Laut Excel soll string der Datentyp sein
     * item[+] insert addItem(5.5, #choice, [[Krippe/KITA/Kindergartenbesuch]])
-      * answerValueSet = Canonical(AntwortKindergartenBesuchVS)
+      * answerValueSet = Canonical(SEU-AF-AntwortKindergartenBesuchVS)
     * item[+] insert addItem(5.6, #boolean, [[Derzeitiger Besuch eines Kindergartens]])
     * item[+] insert addItem(5.7, #boolean, [[Art des Kindergartens]])
-      * answerValueSet = Canonical(KindergartenArtVS)
+      * answerValueSet = Canonical(SEU-AF-KindergartenArtVS)
     * item[+] insert addItem(5.8, #integer, [[Geburtsgewicht (in g)]])
       * insert uunit(g, "g")
     * item[+] insert addItem(5.9, #integer, [[Vollendete Schwangerschaftswochen]])
@@ -21,9 +21,9 @@ RuleSet: 5-af-anamnese
     * item[+] insert addItem(5.11, #boolean, [[Sprachauffälligkeit in Entwicklung]])
     * item[+] insert addItem(5.12, #boolean, [[Kind wächst mehrsprachig auf]])
     * item[+] insert addItem(5.13, #choice, [[Kontakt mit der deutschen Sprache]])
-      * answerValueSet = Canonical(KontaktDeutscheSpracheVS)
+      * answerValueSet = Canonical(SEU-AF-KontaktDeutscheSpracheVS)
     * item[+] insert addGroup(5_1_13, Kontakt mit der deutschen Sprache)
-      * insert EnableWhenCode(5.13, =, KontaktDeutscheSpracheCS, 2)
+      * insert EnableWhenCode(5.13, =, SEU-AF-KontaktDeutscheSpracheCS, 2)
       * item[+] insert addItem(5.14, #integer, [[Kontakt mit der deutschen Sprache ab welchem Alter (in Jahren)]])
         * insert uunit(a, "Jahre")
       * item[+] insert addItem(5.15, #integer, [[Kontakt mit der deutschen Sprache ab welchem Alter (in Monaten)]])
@@ -37,34 +37,34 @@ RuleSet: 5-af-anamnese
     * item[+] insert addItem(5.19, #boolean, [[Elternsprache 2 andere]])
       // * insert EnableWhenCode(5.16, =, TODO, 98)
     * item[+] insert addItem(5.20, #choice, [[Zu Hause gesprochene Sprache(n)]])
-      * answerValueSet = Canonical(GesprocheneSpracheVS)
+      * answerValueSet = Canonical(SEU-AF-GesprocheneSpracheVS)
     * item[+] insert addItem(5.21, #string, [[Zu Hause gesprochene Sprache(n) andere]])
-      * insert EnableWhenCode(5.20, =, GesprocheneSpracheCS, 2)
-      * insert EnableWhenCode(5.20, =, GesprocheneSpracheCS, 8)
+      * insert EnableWhenCode(5.20, =, SEU-AF-GesprocheneSpracheCS, 2)
+      * insert EnableWhenCode(5.20, =, SEU-AF-GesprocheneSpracheCS, 8)
       * enableBehavior = #any
     * item[+] insert addItem(5.22, #choice, [[Händigkeit]])
-      * answerValueSet = Canonical(HaendigkeitVS)
+      * answerValueSet = Canonical(SEU-AF-HaendigkeitVS)
     * item[+] insert addItem(5.23, #boolean, [[Auffälligkeiten im sozialen Verhalten (Stimmung, Konzentration, Verhalten, Umgang mit Anderen)]])
   * item[+] insert addGroup(5_2, Fördermaßnahmen oder Behandlungen)
     * item[+] insert addItem(5.24, #choice, [[Teilnahme Vorkurs Deutsch]])
-      * answerValueSet = Canonical(TeilnahmeVorkursDeutschVS)
+      * answerValueSet = Canonical(SEU-AF-TeilnahmeVorkursDeutschVS)
     * item[+] insert addItem(5.25, #choice, [[Sprachtherapie (Logopädie) jemals]])
-      * answerValueSet = Canonical(SprachtherapieVS)
+      * answerValueSet = Canonical(SEU-AF-SprachtherapieVS)
   * item[+] insert addGroup(5_3, Angaben zu Vorerkrankungen oder gesundheitlichen Einschränkungen)
     * item[+] insert addItem(5.26, #boolean, [[Augenarztbesuch]])
     * item[+] insert addItem(5.27, #choice, [[Feststellung / Veranlassung Augenarzt]])
-      * answerValueSet = Canonical(AntwortAugenarztVS)
+      * answerValueSet = Canonical(SEU-AF-AntwortAugenarztVS)
       * insert EnableWhenBoolean(5.26, =, true)
-    * item[+] insert addItem(5.28, #boolean, [[Besuch beim Zahnarzt in letzten 12 Monaten]]) //TODO JN-KeineAngabe
-    * item[+] insert addItem(5.29, #boolean, [[Angeborene schwere Hörstörung]]) //TODO JN-KeineAngabe
+    * item[+] insert addItem(5.28, #boolean, [[Besuch beim Zahnarzt in letzten 12 Monaten]]) //TODO-JS JN-KeineAngabe
+    * item[+] insert addItem(5.29, #boolean, [[Angeborene schwere Hörstörung]]) //TODO-JS JN-KeineAngabe
   * item[+] insert addGroup(5_4, Zusatzangaben zur Hörstörung)
     * insert EnableWhenBoolean(2.29, =, true)
     * item[+] insert addItem(5.30, #choice, [[Angeborene Hörstörung]])
-      * answerValueSet = Canonical(AntwortenHoerstoerungVS)
+      * answerValueSet = Canonical(SEU-AF-AntwortenHoerstoerungVS)
     * item[+] insert addItem(5.31, #choice, [[mit Hörgerät versorgt]])
-      * answerValueSet = Canonical(AntwortenHoerstoerungVS)
+      * answerValueSet = Canonical(SEU-AF-AntwortenHoerstoerungVS)
     * item[+] insert addItem(5.32, #choice, [[mit Cochlea-Implant versorgt]])
-      * answerValueSet = Canonical(AntwortenHoerstoerungVS)
+      * answerValueSet = Canonical(SEU-AF-AntwortenHoerstoerungVS)
     * item[+] insert addItem(5.33, #boolean, [[Elterneinwilligung mitgegeben (Hören)]])
   * item[+] insert addGroup(5_5, Stoffwechselstörung)
     * item[+] insert addItem(5.34, #boolean, [[Stoffwechselerkrankung oder Hormonstörung (nur ärztl. diag. Befunde angeben)]])
@@ -80,7 +80,7 @@ RuleSet: 5-af-anamnese
     * item[+] insert addItem(5.42, #boolean, [[sonstige Stoffwechselerkrankungen (nur ärztlich diag. Befunde)]])
     * item[+] insert addItem(5.43, #string, [[wenn ja, welche (nur ärztlich diag. Befunde)]])
       * insert EnableWhenBoolean(5.42, =, true)
-    * item[+] insert addItem(5.44, #integer, [[Alter bei Diagnosestellung (in Jahren)]]) //TODO Hinweistext
+    * item[+] insert addItem(5.44, #integer, [[Alter bei Diagnosestellung (in Jahren)]]) //TODO-JS Hinweistext
       * insert uunit(a, "Jahre")
     * item[+] insert addItem(5.45, #integer, [[Alter bei Diagnosestellung (in Monaten)]])
       * insert uunit(mo, "Monate")
@@ -105,32 +105,53 @@ RuleSet: 5-af-anamnese
     * item[+] insert addItem(5.55, #boolean, [[familiäre Leserechtschreibschwäche]])
     * item[+] insert addItem(5.56, #boolean, [[familiäre Rechenschwäche]])
   * item[+] insert addGroup(5_12, FREIWILLIGE Angaben zu den Personensorgeberechtigten)
-    * item[+] insert addItem(5.57, #choice, [[Anzahl Erwachsene im Haushalt]]) //TODO: CS
-    * item[+] insert addItem(5.58, #choice, [[Geburtsland Elternteil 1]]) //TODO: CS
-    * item[+] insert addItem(5.59, #choice, [[Geburtsland Elternteil 2]]) //TODO: CS
-    * item[+] insert addItem(5.60, #choice, [[Staatsangehörigkeit Elternteil 1]]) //TODO: CS
-    * item[+] insert addItem(5.61, #choice, [[Staatsangehörigkeit Elternteil 2]]) //TODO: CS
-    * item[+] insert addItem(5.62, #choice, [[Höchster Schulabschluss Elternteil 1]]) //TODO: CS
-    * item[+] insert addItem(5.63, #choice, [[Höchster Schulabschluss Elternteil 2]]) //TODO: CS
-    * item[+] insert addItem(5.64, #choice, [[Erwerbstätigkeit Elternteil 1]]) //TODO: CS
-    * item[+] insert addItem(5.65, #choice, [[Erwerbstätigkeit Elternteil 2]]) //TODO: CS
+    * item[+] insert addItem(5.57, #choice, [[Anzahl Erwachsene im Haushalt]])
+      * answerValueSet = Canonical(SEU-AF-AntwortErwachseneVS)
+    * item[+] insert addItem(5.58, #choice, [[Geburtsland Elternteil 1]])
+      * answerValueSet = Canonical(SEU-AF-GeburtslandVS)
+    * item[+] insert addItem(5.59, #choice, [[Geburtsland Elternteil 2]])
+      * answerValueSet = Canonical(SEU-AF-GeburtslandVS)
+    * item[+] insert addItem(5.60, #choice, [[Staatsangehörigkeit Elternteil 1]])
+      * answerValueSet = Canonical(SEU-AF-StaatsangehoerigkeitVS)
+    * item[+] insert addItem(5.61, #choice, [[Staatsangehörigkeit Elternteil 2]])
+      * answerValueSet = Canonical(SEU-AF-StaatsangehoerigkeitVS)
+    * item[+] insert addItem(5.62, #choice, [[Höchster Schulabschluss Elternteil 1]])
+      * answerValueSet = Canonical(SEU-AF-SchulabschlussVS)
+    * item[+] insert addItem(5.63, #choice, [[Höchster Schulabschluss Elternteil 2]])
+      * answerValueSet = Canonical(SEU-AF-SchulabschlussVS)
+    * item[+] insert addItem(5.64, #choice, [[Erwerbstätigkeit Elternteil 1]])
+      * answerValueSet = Canonical(SEU-AF-ErwerbstaetigkeitVS)
+    * item[+] insert addItem(5.65, #choice, [[Erwerbstätigkeit Elternteil 2]])
+      * answerValueSet = Canonical(SEU-AF-ErwerbstaetigkeitVS)
 
-CodeSystem: AntwortenHoerstoerungCS
-Id: AntwortenHoerstoerungCS
+CodeSystem: SEU-AF-AntwortenHoerstoerungCS
+Id: SEU-AF-AntwortenHoerstoerungCS
 Title: "SEU Antworten Hörstörung"
 * #1 "links"
 * #2 "rechts"
 * #3 "beidseitig"
 * #9 "keine Angaben"
 
-ValueSet: AntwortenHoerstoerungVS
-Id: AntwortenHoerstoerungVS
+ValueSet: SEU-AF-AntwortenHoerstoerungVS
+Id: SEU-AF-AntwortenHoerstoerungVS
 Title: "SEU Antworten Hörstörung"
-Description: "Diese Codes enthalten die Art der Region"
-* include codes from system AntwortenHoerstoerungCS
+Description: "Diese Codes enthalten die Antworten auf die Frage zu einer Hörstöhrung"
+* include codes from system SEU-AF-AntwortenHoerstoerungCS
+* ^expansion.contains[+].system = Canonical(SEU-AF-AntwortenHoerstoerungCS)
+* ^expansion.contains[=].code = #1
+* ^expansion.contains[=].display = "links"
+* ^expansion.contains[+].system = Canonical(SEU-AF-AntwortenHoerstoerungCS)
+* ^expansion.contains[=].code = #2
+* ^expansion.contains[=].display = "rechts"
+* ^expansion.contains[+].system = Canonical(SEU-AF-AntwortenHoerstoerungCS)
+* ^expansion.contains[=].code = #3
+* ^expansion.contains[=].display = "beidseitig"
+* ^expansion.contains[+].system = Canonical(SEU-AF-AntwortenHoerstoerungCS)
+* ^expansion.contains[=].code = #9
+* ^expansion.contains[=].display = "keine Angaben"
 
-CodeSystem: AntwortAugenarztCS
-Id: AntwortAugenarztCS
+CodeSystem: SEU-AF-AntwortAugenarztCS
+Id: SEU-AF-AntwortAugenarztCS
 Title: "SEU Antwort Augenarzt"
 * #1 "unauffälliger Befund"
 * #2 "Kurzsichtigkeit (Myopie)"
@@ -142,28 +163,67 @@ Title: "SEU Antwort Augenarzt"
 * #8 "Verordnung Brille bei Schielen"
 * #9 "keine Angaben"
 
-ValueSet: AntwortAugenarztVS
-Id: AntwortAugenarztVS
+ValueSet: SEU-AF-AntwortAugenarztVS
+Id: SEU-AF-AntwortAugenarztVS
 Title: "SEU Antwort Augenarzt"
-Description: "Diese Codes enthalten die Art der Region"
-* include codes from system AntwortAugenarztCS
+Description: "Diese Codes enthalten die Antworten auf Fragen zu einer Augenarztuntersuchung"
+* include codes from system SEU-AF-AntwortAugenarztCS
+* ^expansion.contains[+].system = Canonical(SEU-AF-AntwortAugenarztCS)
+* ^expansion.contains[=].code = #1
+* ^expansion.contains[=].display = "unauffälliger Befund"
+* ^expansion.contains[+].system = Canonical(SEU-AF-AntwortAugenarztCS)
+* ^expansion.contains[=].code = #2
+* ^expansion.contains[=].display = "Kurzsichtigkeit (Myopie)"
+* ^expansion.contains[+].system = Canonical(SEU-AF-AntwortAugenarztCS)
+* ^expansion.contains[=].code = #3
+* ^expansion.contains[=].display = "Weitsichtigkeit (Hyperopie)"
+* ^expansion.contains[+].system = Canonical(SEU-AF-AntwortAugenarztCS)
+* ^expansion.contains[=].code = #4
+* ^expansion.contains[=].display = "Schielen"
+* ^expansion.contains[+].system = Canonical(SEU-AF-AntwortAugenarztCS)
+* ^expansion.contains[=].code = #5
+* ^expansion.contains[=].display = "Verordnung Brille"
+* ^expansion.contains[+].system = Canonical(SEU-AF-AntwortAugenarztCS)
+* ^expansion.contains[=].code = #6
+* ^expansion.contains[=].display = "Verordnung Brille bei Myopie"
+* ^expansion.contains[+].system = Canonical(SEU-AF-AntwortAugenarztCS)
+* ^expansion.contains[=].code = #7
+* ^expansion.contains[=].display = "Verodnung Brille bei Hyperopie"
+* ^expansion.contains[+].system = Canonical(SEU-AF-AntwortAugenarztCS)
+* ^expansion.contains[=].code = #8
+* ^expansion.contains[=].display = "Verordnung Brille bei Schielen"
+* ^expansion.contains[+].system = Canonical(SEU-AF-AntwortAugenarztCS)
+* ^expansion.contains[=].code = #9
+* ^expansion.contains[=].display = "keine Angaben"
 
-CodeSystem: TeilnahmeVorkursDeutschCS
-Id: TeilnahmeVorkursDeutschCS
+CodeSystem: SEU-AF-TeilnahmeVorkursDeutschCS
+Id: SEU-AF-TeilnahmeVorkursDeutschCS
 Title: "SEU Teilnahme Vorkurs Deutsch"
 * #1 "ja"
 * #2 "nein"
 * #3 "geplant"
 * #9 "keine Angaben"
 
-ValueSet: TeilnahmeVorkursDeutschVS
-Id: TeilnahmeVorkursDeutschVS
+ValueSet: SEU-AF-TeilnahmeVorkursDeutschVS
+Id: SEU-AF-TeilnahmeVorkursDeutschVS
 Title: "SEU Teilnahme Vorkurs Deutsch"
-Description: "Diese Codes enthalten die Art der Region"
-* include codes from system TeilnahmeVorkursDeutschCS
+Description: "Diese Codes enthalten die Angabe über eine Teilnahme am Vorkurs Deutsch"
+* include codes from system SEU-AF-TeilnahmeVorkursDeutschCS
+* ^expansion.contains[+].system = Canonical(SEU-AF-TeilnahmeVorkursDeutschCS)
+* ^expansion.contains[=].code = #1
+* ^expansion.contains[=].display = "ja"
+* ^expansion.contains[+].system = Canonical(SEU-AF-TeilnahmeVorkursDeutschCS)
+* ^expansion.contains[=].code = #2
+* ^expansion.contains[=].display = "nein"
+* ^expansion.contains[+].system = Canonical(SEU-AF-TeilnahmeVorkursDeutschCS)
+* ^expansion.contains[=].code = #3
+* ^expansion.contains[=].display = "geplant"
+* ^expansion.contains[+].system = Canonical(SEU-AF-TeilnahmeVorkursDeutschCS)
+* ^expansion.contains[=].code = #9
+* ^expansion.contains[=].display = "keine Angaben"
 
-CodeSystem: SprachtherapieCS
-Id: SprachtherapieCS
+CodeSystem: SEU-AF-SprachtherapieCS
+Id: SEU-AF-SprachtherapieCS
 Title: "SEU Sprachtherapie"
 * #2 "nein"
 * #3 "abgeschlossen"
@@ -171,69 +231,129 @@ Title: "SEU Sprachtherapie"
 * #5 "geplant"
 * #9 "keine Angaben"
 
-ValueSet: SprachtherapieVS
-Id: SprachtherapieVS
+ValueSet: SEU-AF-SprachtherapieVS
+Id: SEU-AF-SprachtherapieVS
 Title: "SEU Sprachtherapie"
-Description: "Diese Codes enthalten die Art der Region"
-* include codes from system SprachtherapieCS
+Description: "Diese Codes enthalten Angaben zu einer Sprachtherapie"
+* include codes from system SEU-AF-SprachtherapieCS
+* ^expansion.contains[+].system = Canonical(SEU-AF-SprachtherapieCS)
+* ^expansion.contains[=].code = #2
+* ^expansion.contains[=].display = "nein"
+* ^expansion.contains[+].system = Canonical(SEU-AF-SprachtherapieCS)
+* ^expansion.contains[=].code = #3
+* ^expansion.contains[=].display = "abgeschlossen"
+* ^expansion.contains[+].system = Canonical(SEU-AF-SprachtherapieCS)
+* ^expansion.contains[=].code = #4
+* ^expansion.contains[=].display = "läuft noch"
+* ^expansion.contains[+].system = Canonical(SEU-AF-SprachtherapieCS)
+* ^expansion.contains[=].code = #5
+* ^expansion.contains[=].display = "geplant"
+* ^expansion.contains[+].system = Canonical(SEU-AF-SprachtherapieCS)
+* ^expansion.contains[=].code = #9
+* ^expansion.contains[=].display = "keine Angaben"
 
-CodeSystem: HaendigkeitCS
-Id: HaendigkeitCS
+CodeSystem: SEU-AF-HaendigkeitCS
+Id: SEU-AF-HaendigkeitCS
 Title: "SEU Händigkeit"
 * #1 "Rechtshänder"
 * #2 "Linkshänder"
 * #3 "noch unentschieden"
 * #9 "keine Angabe"
 
-ValueSet: HaendigkeitVS
-Id: HaendigkeitVS
+ValueSet: SEU-AF-HaendigkeitVS
+Id: SEU-AF-HaendigkeitVS
 Title: "SEU Händigkeit"
-Description: "Diese Codes enthalten die Art der Region"
-* include codes from system HaendigkeitCS
+Description: "Diese Codes enthalten Angaben zur Händigkeit"
+* include codes from system SEU-AF-HaendigkeitCS
+* ^expansion.contains[+].system = Canonical(SEU-AF-HaendigkeitCS)
+* ^expansion.contains[=].code = #1
+* ^expansion.contains[=].display = "Rechtshänder"
+* ^expansion.contains[+].system = Canonical(SEU-AF-HaendigkeitCS)
+* ^expansion.contains[=].code = #2
+* ^expansion.contains[=].display = "Linkshänder"
+* ^expansion.contains[+].system = Canonical(SEU-AF-HaendigkeitCS)
+* ^expansion.contains[=].code = #3
+* ^expansion.contains[=].display = "noch unentschieden"
+* ^expansion.contains[+].system = Canonical(SEU-AF-HaendigkeitCS)
+* ^expansion.contains[=].code = #9
+* ^expansion.contains[=].display = "keine Angabe"
 
-CodeSystem: GesprocheneSpracheCS
-Id: GesprocheneSpracheCS
+CodeSystem: SEU-AF-GesprocheneSpracheCS
+Id: SEU-AF-GesprocheneSpracheCS
 Title: "SEU Gesprochene Sprache"
 * #1 "Deutsch"
 * #2 "Deutsch UND andere"
 * #8 "Andere"
 * #9 "keine Angaben"
 
-ValueSet: GesprocheneSpracheVS
-Id: GesprocheneSpracheVS
+ValueSet: SEU-AF-GesprocheneSpracheVS
+Id: SEU-AF-GesprocheneSpracheVS
 Title: "SEU Gesprochene Sprache"
-Description: "Diese Codes enthalten die Art der Region"
-* include codes from system GesprocheneSpracheCS
+Description: "Diese Codes enthalten Angaben zur gesprochenen Sprache"
+* include codes from system SEU-AF-GesprocheneSpracheCS
+* ^expansion.contains[+].system = Canonical(SEU-AF-GesprocheneSpracheCS)
+* ^expansion.contains[=].code = #1
+* ^expansion.contains[=].display = "Deutsch"
+* ^expansion.contains[+].system = Canonical(SEU-AF-GesprocheneSpracheCS)
+* ^expansion.contains[=].code = #2
+* ^expansion.contains[=].display = "Deutsch UND andere"
+* ^expansion.contains[+].system = Canonical(SEU-AF-GesprocheneSpracheCS)
+* ^expansion.contains[=].code = #8
+* ^expansion.contains[=].display = "Andere"
+* ^expansion.contains[+].system = Canonical(SEU-AF-GesprocheneSpracheCS)
+* ^expansion.contains[=].code = #9
+* ^expansion.contains[=].display = "keine Angaben"
 
-CodeSystem: KontaktDeutscheSpracheCS
-Id: KontaktDeutscheSpracheCS
+CodeSystem: SEU-AF-KontaktDeutscheSpracheCS
+Id: SEU-AF-KontaktDeutscheSpracheCS
 Title: "SEU Kontakt mit der deutschen Sprache"
 * #1 "seit Geburt"
 * #2 "NICHT seit Geburt"
 * #9 "keine Angabe"
 
-ValueSet: KontaktDeutscheSpracheVS
-Id: KontaktDeutscheSpracheVS
+ValueSet: SEU-AF-KontaktDeutscheSpracheVS
+Id: SEU-AF-KontaktDeutscheSpracheVS
 Title: "SEU Kontakt mit der deutschen Sprache"
-Description: "Diese Codes enthalten die Art der Region"
-* include codes from system KontaktDeutscheSpracheCS
+Description: "Diese Codes enthalten Angaben über den Kontakt zur deutschen Sprache"
+* include codes from system SEU-AF-KontaktDeutscheSpracheCS
+* ^expansion.contains[+].system = Canonical(SEU-AF-KontaktDeutscheSpracheCS)
+* ^expansion.contains[=].code = #1
+* ^expansion.contains[=].display = "seit Geburt"
+* ^expansion.contains[+].system = Canonical(SEU-AF-KontaktDeutscheSpracheCS)
+* ^expansion.contains[=].code = #2
+* ^expansion.contains[=].display = "NICHT seit Geburt"
+* ^expansion.contains[+].system = Canonical(SEU-AF-KontaktDeutscheSpracheCS)
+* ^expansion.contains[=].code = #9
+* ^expansion.contains[=].display = "keine Angabe"
 
-CodeSystem: KindergartenArtCS
-Id: KindergartenArtCS
+CodeSystem: SEU-AF-KindergartenArtCS
+Id: SEU-AF-KindergartenArtCS
 Title: "SEU Art des Kindergarten"
 * #1 "Regel KiGa"
 * #2 "SVE"
 * #3 "HPT"
 * #9 "keine Angaben"
 
-ValueSet: KindergartenArtVS
-Id: KindergartenArtVS
+ValueSet: SEU-AF-KindergartenArtVS
+Id: SEU-AF-KindergartenArtVS
 Title: "SEU Art des Kindergarten"
-Description: "Diese Codes enthalten die Art der Region"
-* include codes from system KindergartenArtCS
+Description: "Diese Codes enthalten Abgaben über die Art des Kindergarten"
+* include codes from system SEU-AF-KindergartenArtCS
+* ^expansion.contains[+].system = Canonical(SEU-AF-KindergartenArtCS)
+* ^expansion.contains[=].code = #1
+* ^expansion.contains[=].display = "Regel KiGa"
+* ^expansion.contains[+].system = Canonical(SEU-AF-KindergartenArtCS)
+* ^expansion.contains[=].code = #2
+* ^expansion.contains[=].display = "SVE"
+* ^expansion.contains[+].system = Canonical(SEU-AF-KindergartenArtCS)
+* ^expansion.contains[=].code = #3
+* ^expansion.contains[=].display = "HPT"
+* ^expansion.contains[+].system = Canonical(SEU-AF-KindergartenArtCS)
+* ^expansion.contains[=].code = #9
+* ^expansion.contains[=].display = "keine Angaben"
 
-CodeSystem: AntwortKindergartenBesuchCS
-Id: AntwortKindergartenBesuchCS
+CodeSystem: SEU-AF-AntwortKindergartenBesuchCS
+Id: SEU-AF-AntwortKindergartenBesuchCS
 Title: "SEU Antwort Kindergartenbesuch"
 * #0 "0 Jahre"
 * #1 "1 Jahr"
@@ -243,14 +363,35 @@ Title: "SEU Antwort Kindergartenbesuch"
 * #5 "5 und mehr Jahre"
 * #9 "keine Angaben"
 
-ValueSet: AntwortKindergartenBesuchVS
-Id: AntwortKindergartenBesuchVS
+ValueSet: SEU-AF-AntwortKindergartenBesuchVS
+Id: SEU-AF-AntwortKindergartenBesuchVS
 Title: "SEU Antwort Kindergartenbesuch"
-Description: "Diese Codes enthalten die Art der Region"
-* include codes from system AntwortKindergartenBesuchCS
+Description: "Diese Codes enthalten Antwortmöglichkeiten zur Länge des Kindergartenbesuch"
+* include codes from system SEU-AF-AntwortKindergartenBesuchCS
+* ^expansion.contains[+].system = Canonical(SEU-AF-AntwortKindergartenBesuchCS)
+* ^expansion.contains[=].code = #0
+* ^expansion.contains[=].display = "0 Jahre"
+* ^expansion.contains[+].system = Canonical(SEU-AF-AntwortKindergartenBesuchCS)
+* ^expansion.contains[=].code = #1
+* ^expansion.contains[=].display = "1 Jahr"
+* ^expansion.contains[+].system = Canonical(SEU-AF-AntwortKindergartenBesuchCS)
+* ^expansion.contains[=].code = #2
+* ^expansion.contains[=].display = "2 Jahre"
+* ^expansion.contains[+].system = Canonical(SEU-AF-AntwortKindergartenBesuchCS)
+* ^expansion.contains[=].code = #3
+* ^expansion.contains[=].display = "3 Jahre"
+* ^expansion.contains[+].system = Canonical(SEU-AF-AntwortKindergartenBesuchCS)
+* ^expansion.contains[=].code = #4
+* ^expansion.contains[=].display = "4 Jahre"
+* ^expansion.contains[+].system = Canonical(SEU-AF-AntwortKindergartenBesuchCS)
+* ^expansion.contains[=].code = #5
+* ^expansion.contains[=].display = "5 und mehr Jahre"
+* ^expansion.contains[+].system = Canonical(SEU-AF-AntwortKindergartenBesuchCS)
+* ^expansion.contains[=].code = #9
+* ^expansion.contains[=].display = "keine Angaben"
 
-CodeSystem: AntwortGeschwisterCS
-Id: AntwortGeschwisterCS
+CodeSystem: SEU-AF-AntwortNummerierungPersonenCS
+Id: SEU-AF-AntwortNummerierungPersonenCS
 Title: "SEU Antwort Geschwister"
 * #0 "keine"
 * #1 "eins"
@@ -259,20 +400,196 @@ Title: "SEU Antwort Geschwister"
 * #4 "vier und mehr"
 * #9 "keine Angaben"
 
-ValueSet: AntwortGeschwisterVS
-Id: AntwortGeschwisterVS
+ValueSet: SEU-AF-AntwortGeschwisterVS
+Id: SEU-AF-AntwortGeschwisterVS
 Title: "SEU Antwort Geschwister"
-Description: "Diese Codes enthalten die Art der Region"
-* include codes from system AntwortGeschwisterCS
+Description: "Diese Codes enthalten Informationen über die Anzahl der Geschwister"
+* include codes from system SEU-AF-AntwortNummerierungPersonenCS
+* ^expansion.contains[+].system = Canonical(SEU-AF-AntwortNummerierungPersonenCS)
+* ^expansion.contains[=].code = #0
+* ^expansion.contains[=].display = "keine"
+* ^expansion.contains[+].system = Canonical(SEU-AF-AntwortNummerierungPersonenCS)
+* ^expansion.contains[=].code = #1
+* ^expansion.contains[=].display = "eins"
+* ^expansion.contains[+].system = Canonical(SEU-AF-AntwortNummerierungPersonenCS)
+* ^expansion.contains[=].code = #2
+* ^expansion.contains[=].display = "zwei"
+* ^expansion.contains[+].system = Canonical(SEU-AF-AntwortNummerierungPersonenCS)
+* ^expansion.contains[=].code = #3
+* ^expansion.contains[=].display = "drei"
+* ^expansion.contains[+].system = Canonical(SEU-AF-AntwortNummerierungPersonenCS)
+* ^expansion.contains[=].code = #4
+* ^expansion.contains[=].display = "vier und mehr"
+* ^expansion.contains[+].system = Canonical(SEU-AF-AntwortNummerierungPersonenCS)
+* ^expansion.contains[=].code = #9
+* ^expansion.contains[=].display = "keine Angaben"
 
-CodeSystem:  AnamneseBesonderheitenCS
-Id: AnamneseBesonderheitenCS
+ValueSet: SEU-AF-AntwortErwachseneVS
+Id: SEU-AF-AntwortErwachseneVS
+Title: "SEU Antwort Erwachsene"
+Description: "Diese Codes enthalten Informationen über die Anzahl der Erwachsenen"
+* SEU-AF-AntwortNummerierungPersonenCS#1
+* SEU-AF-AntwortNummerierungPersonenCS#2
+* SEU-AF-AntwortNummerierungPersonenCS#3
+* SEU-AF-AntwortNummerierungPersonenCS#4
+* SEU-AF-AntwortNummerierungPersonenCS#9
+* ^expansion.contains[+].system = Canonical(SEU-AF-AntwortNummerierungPersonenCS)
+* ^expansion.contains[=].code = #0
+* ^expansion.contains[=].display = "keine"
+* ^expansion.contains[+].system = Canonical(SEU-AF-AntwortNummerierungPersonenCS)
+* ^expansion.contains[=].code = #1
+* ^expansion.contains[=].display = "eins"
+* ^expansion.contains[+].system = Canonical(SEU-AF-AntwortNummerierungPersonenCS)
+* ^expansion.contains[=].code = #2
+* ^expansion.contains[=].display = "zwei"
+* ^expansion.contains[+].system = Canonical(SEU-AF-AntwortNummerierungPersonenCS)
+* ^expansion.contains[=].code = #3
+* ^expansion.contains[=].display = "drei"
+* ^expansion.contains[+].system = Canonical(SEU-AF-AntwortNummerierungPersonenCS)
+* ^expansion.contains[=].code = #4
+* ^expansion.contains[=].display = "vier und mehr"
+* ^expansion.contains[+].system = Canonical(SEU-AF-AntwortNummerierungPersonenCS)
+* ^expansion.contains[=].code = #9
+* ^expansion.contains[=].display = "keine Angaben"
+
+CodeSystem:  SEU-AF-AnamneseBesonderheitenCS
+Id: SEU-AF-AnamneseBesonderheitenCS
 Title: "SEU Anamnese Besonderheiten"
 * #0 "Es liegen keinerlei Angaben zur Anamnese vor"
 * #1 "Erschwert wegen unzureichender Deutschkenntnisse"
 
-ValueSet: AnamneseBesonderheitenVS
-Id: AnamneseBesonderheitenVS
+ValueSet: SEU-AF-AnamneseBesonderheitenVS
+Id: SEU-AF-AnamneseBesonderheitenVS
 Title: "SEU Anamnese Besonderheiten"
-Description: "Diese Codes enthalten die Art der Region"
-* include codes from system AnamneseBesonderheitenCS
+Description: "Diese Codes enthalten Besonderheiten bei der Anamnese einer SEU"
+* include codes from system SEU-AF-AnamneseBesonderheitenCS
+* ^expansion.contains[+].system = Canonical(SEU-AF-AnamneseBesonderheitenCS)
+* ^expansion.contains[=].code = #0
+* ^expansion.contains[=].display = "Es liegen keinerlei Angaben zur Anamnese vor"
+* ^expansion.contains[+].system = Canonical(SEU-AF-AnamneseBesonderheitenCS)
+* ^expansion.contains[=].code = #1
+* ^expansion.contains[=].display = "Erschwert wegen unzureichender Deutschkenntnisse"
+
+CodeSystem: SEU-AF-StaatsangehoerigkeitCS
+Id: SEU-AF-StaatsangehoerigkeitCS
+Title: "SEU Staatsangehörigkeit"
+* #1 "Deutsch"
+* #2 "Deutsch UND andere"
+* #3 "Andere"
+* #9 "keine Angaben"
+
+ValueSet: SEU-AF-StaatsangehoerigkeitVS
+Id: SEU-AF-StaatsangehoerigkeitVS
+Title: "SEU Staatsangehörigkeit"
+Description: "Diese Codes enthalten Angaben zur Staatsangehörigkeit"
+* include codes from system SEU-AF-StaatsangehoerigkeitCS
+* ^expansion.contains[+].system = Canonical(SEU-AF-GesprocheneSpracheCS)
+* ^expansion.contains[=].code = #1
+* ^expansion.contains[=].display = "Deutsch"
+* ^expansion.contains[+].system = Canonical(SEU-AF-GesprocheneSpracheCS)
+* ^expansion.contains[=].code = #2
+* ^expansion.contains[=].display = "Deutsch UND andere"
+* ^expansion.contains[+].system = Canonical(SEU-AF-GesprocheneSpracheCS)
+* ^expansion.contains[=].code = #3
+* ^expansion.contains[=].display = "Andere"
+* ^expansion.contains[+].system = Canonical(SEU-AF-GesprocheneSpracheCS)
+* ^expansion.contains[=].code = #9
+* ^expansion.contains[=].display = "keine Angaben"
+
+CodeSystem: SEU-AF-GeburtslandCS
+Id: SEU-AF-GeburtslandCS
+Title: "SEU Geburtsland"
+* #1 "Deutschland"
+* #2 "Anderes Land"
+* #9 "keine Angaben"
+
+ValueSet: SEU-AF-GeburtslandVS
+Id: SEU-AF-GeburtslandVS
+Title: "SEU Geburtsland"
+Description: "Diese Codes enthalten Angaben zum Geburtsland"
+* include codes from system SEU-AF-StaatsangehoerigkeitCS
+* ^expansion.contains[+].system = Canonical(SEU-AF-GeburtslandCS)
+* ^expansion.contains[=].code = #1
+* ^expansion.contains[=].display = "Deutschland"
+* ^expansion.contains[+].system = Canonical(SEU-AF-GeburtslandCS)
+* ^expansion.contains[=].code = #2
+* ^expansion.contains[=].display = "Anderes Land"
+* ^expansion.contains[+].system = Canonical(SEU-AF-GeburtslandCS)
+* ^expansion.contains[=].code = #9
+* ^expansion.contains[=].display = "keine Angaben"
+
+CodeSystem: SEU-AF-SchulabschlussCS
+Id: SEU-AF-SchulabschlussCS
+Title: "SEU Schulabschluss"
+* #1 "(noch) kein Schulabschluss"
+* #2 "Haupt-/Volks-/Mittelschulabschluss/Quali"
+* #3 "Realschulabschluss (Mittlere Reife)"
+* #4 "allgemeine/fachgebundene Hochschulreife"
+* #5 "Hochschul-/Universitätsabschluss"
+* #9 "keine Angaben"
+
+ValueSet: SEU-AF-SchulabschlussVS
+Id: SEU-AF-SchulabschlussVS
+Title: "SEU Schulabschluss"
+Description: "Diese Codes enthalten Angaben zum Schulabschluss"
+* include codes from system SEU-AF-SchulabschlussCS
+* ^expansion.contains[+].system = Canonical(SEU-AF-SchulabschlussCS)
+* ^expansion.contains[=].code = #1
+* ^expansion.contains[=].display = "(noch) kein Schulabschluss"
+* ^expansion.contains[+].system = Canonical(SEU-AF-SchulabschlussCS)
+* ^expansion.contains[=].code = #2
+* ^expansion.contains[=].display = "Haupt-/Volks-/Mittelschulabschluss/Quali"
+* ^expansion.contains[+].system = Canonical(SEU-AF-SchulabschlussCS)
+* ^expansion.contains[=].code = #3
+* ^expansion.contains[=].display = "Realschulabschluss (Mittlere Reife)"
+* ^expansion.contains[+].system = Canonical(SEU-AF-SchulabschlussCS)
+* ^expansion.contains[=].code = #4
+* ^expansion.contains[=].display = "allgemeine/fachgebundene Hochschulreife"
+* ^expansion.contains[+].system = Canonical(SEU-AF-SchulabschlussCS)
+* ^expansion.contains[=].code = #5
+* ^expansion.contains[=].display = "Hochschul-/Universitätsabschluss"
+* ^expansion.contains[+].system = Canonical(SEU-AF-SchulabschlussCS)
+* ^expansion.contains[=].code = #9
+* ^expansion.contains[=].display = "keine Angaben"
+
+CodeSystem: SEU-AF-ErwerbstaetigkeitCS
+Id: SEU-AF-ErwerbstaetigkeitCS
+Title: "SEU Erwerbstätigkeit"
+* #1 "vollzeit, mind. 35 Stunden"
+* #2 "teilzeit, 15-34 Stunden"
+* #3 "stundenweise, weniger als 15 Stunden"
+* #4 "vorübergehende Freistellung"
+* #5 "Ausbildung, Lehre, Umschulung"
+* #6 "nicht erwerbstätig, nicht arbeitssuchend"
+* #7 "nicht erwerbstätig, arbeitssuchend"
+* #9 "keine Angaben"
+
+ValueSet: SEU-AF-ErwerbstaetigkeitVS
+Id: SEU-AF-ErwerbstaetigkeitVS
+Title: "SEU Erwerbstätigkeit"
+Description: "Diese Codes enthalten Angaben zur Erwerbstätigkeit"
+* include codes from system SEU-AF-ErwerbstaetigkeitCS
+* ^expansion.contains[+].system = Canonical(SEU-AF-ErwerbstaetigkeitCS)
+* ^expansion.contains[=].code = #1
+* ^expansion.contains[=].display = "vollzeit, mind. 35 Stunden"
+* ^expansion.contains[+].system = Canonical(SEU-AF-ErwerbstaetigkeitCS)
+* ^expansion.contains[=].code = #2
+* ^expansion.contains[=].display = "teilzeit, 15-34 Stunden"
+* ^expansion.contains[+].system = Canonical(SEU-AF-ErwerbstaetigkeitCS)
+* ^expansion.contains[=].code = #3
+* ^expansion.contains[=].display = "stundenweise, weniger als 15 Stunden"
+* ^expansion.contains[+].system = Canonical(SEU-AF-ErwerbstaetigkeitCS)
+* ^expansion.contains[=].code = #4
+* ^expansion.contains[=].display = "vorübergehende Freistellung"
+* ^expansion.contains[+].system = Canonical(SEU-AF-ErwerbstaetigkeitCS)
+* ^expansion.contains[=].code = #5
+* ^expansion.contains[=].display = "Ausbildung, Lehre, Umschulung"
+* ^expansion.contains[+].system = Canonical(SEU-AF-ErwerbstaetigkeitCS)
+* ^expansion.contains[=].code = #6
+* ^expansion.contains[=].display = "nicht erwerbstätig, nicht arbeitssuchend"
+* ^expansion.contains[+].system = Canonical(SEU-AF-ErwerbstaetigkeitCS)
+* ^expansion.contains[=].code = #7
+* ^expansion.contains[=].display = "nicht erwerbstätig, arbeitssuchend"
+* ^expansion.contains[+].system = Canonical(SEU-AF-ErwerbstaetigkeitCS)
+* ^expansion.contains[=].code = #9
+* ^expansion.contains[=].display = "keine Angaben"

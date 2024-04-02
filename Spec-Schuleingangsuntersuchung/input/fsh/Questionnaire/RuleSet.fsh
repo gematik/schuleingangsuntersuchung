@@ -100,3 +100,8 @@ RuleSet: debug(variable)
   * text = {variable}
   * readOnly = true
   * insert calculatedExpression("debug", {variable})
+
+RuleSet: regEx(expression)
+* extension[+]
+  * url = "http://hl7.org/fhir/StructureDefinition/regex"
+  * valueString = {expression}

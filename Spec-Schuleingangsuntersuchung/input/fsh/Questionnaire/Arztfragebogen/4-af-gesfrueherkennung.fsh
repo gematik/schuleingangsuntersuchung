@@ -15,19 +15,17 @@ RuleSet: 4-af-gesfrueherkennung
   * item[+] insert addItem(4.11, #boolean, [[U8 nachgereicht ]])
     * insert EnableWhenBoolean(4.10, !=, true)
   * item[+] insert addItem(4.12, #date, [[Datum Eingang Vorlage U8]])
-  * insert variable("month", [["item.where(linkId='4.12').answer.valueDate"]]) //warum klappt das nicht???
-  * insert debug("%month")
-  * item[+] insert addItemMl(4.13, #integer, Alter zum Zeitpunkt U8-Nachweis, 2) //Automatisch berechnen
+  * item[+] insert addItemMl(4.13, #integer, Alter zum Zeitpunkt U8-Nachweis, 2) //TODO Automatisch berechnen aus GebDatum; Feature-Set noch nicht gegeben
     * insert calculatedExpression("Berechnung-Alter-in-Monaten", [["%month"]])
     * insert uunit(mo, "Monate")
   * item[+] insert addItem(4.14, #boolean, [[U9-Nachweis lag vor]])
   * item[+] insert addItem(4.15, #boolean, [[U9 nachgereicht ]])
-  * item[+] insert addItem(4.16, #date, [[Datum der U8-Untersuchung]]) //Validierung >2015
+  * item[+] insert addItem(4.16, #date, [[Datum der U8-Untersuchung]]) //TODO Validierung >=2015
   * item[+] insert addItemMl(4.17, #integer, Körpergröße aus U8-Untersuchung, 3)
     * insert uunit(cm, "cm")
   * item[+] insert addItemMl(4.18, #decimal, Gewicht aus U8-Untersuchung, 5)
     * insert uunit(kg, "kg")
-  * item[+] insert addItem(4.19, #date, [[Datum der U9-Untersuchung]]) //Validierung >2015
+  * item[+] insert addItem(4.19, #date, [[Datum der U9-Untersuchung]]) //TODO Validierung >=2015
   * item[+] insert addItemMl(4.20, #integer, Körpergröße aus U9-Untersuchung, 3)
     * insert uunit(cm, "cm")
   * item[+] insert addItemMl(4.21, #decimal, Gewicht aus U9-Untersuchung, 5)
