@@ -5,3 +5,4 @@ Alias: $ags = http://fhir.de/StructureDefinition/destatis/ags
 Alias: $bcp47 = urn:ietf:bcp:47
 
 Alias: $elternfragebogenKodierungen = https://www.oegd.de/fhir/seu/CodeSystem/Fragen
+Alias: $ietf-47 = urn:ietf:bcp:47
