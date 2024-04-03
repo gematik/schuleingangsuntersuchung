@@ -68,7 +68,7 @@ RuleSet: 7-af-fdsscreening
       * insert EnableWhenBoolean(7.29, exists, true)
       * insert EnableWhenBoolean(7.30, exists, true)
       * enableBehavior = #any
-      * item[+] insert addRItem(7.1, #date, [[Untersuchungsdatum]]) 
+      * item[+] insert addRItem(7.1, #date, [[Untersuchungsdatum]]) //TODO Validierung >2022
       * item[+] insert addRItem(7.2, #choice, [[Heutige Untersuchung]]) 
         * answerValueSet = Canonical(SEU-AF-UntersuchungsstatusFdSScreeningvS)
     * item[+] insert addItem(7.3, #integer, [[gemessene Körpergröße (in cm)]])
