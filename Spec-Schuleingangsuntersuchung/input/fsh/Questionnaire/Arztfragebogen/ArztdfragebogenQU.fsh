@@ -32,6 +32,9 @@ Description: "Arztfragebogen"
 * contained[+] = SEU-AF-SchulabschlussVS
 * contained[+] = SEU-AF-ErwerbstaetigkeitVS
 * contained[+] = SEU-AF-AuswaehlbareElternspracheVS
+* contained[+] = SEU-AF-UntersuchungsstatusFdSScreeningvS
+* contained[+] = SEU-AF-AntwortAuffaelligkeitVS
+* contained[+] = SEU-AF-AntwortAuffaelligkeitBeurteilbarVS
 * id = "SEU-Arztfragebogen"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Arztfragebogen"
 * title = "SEU Arztfragebogen Maximaldatensatz"
@@ -44,3 +47,4 @@ Description: "Arztfragebogen"
 * insert 4-af-gesfrueherkennung
 * insert 5-af-anamnese
 * insert 6-af-elternfragebogen
+* insert 7-af-fdsscreening
