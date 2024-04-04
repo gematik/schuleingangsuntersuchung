@@ -55,8 +55,10 @@ RuleSet: 5-af-anamnese
     * item[+] insert addItem(5.27, #choice, [[Feststellung / Veranlassung Augenarzt]])
       * answerValueSet = Canonical(SEU-AF-AntwortAugenarztVS)
       * insert EnableWhenBoolean(5.26, =, true)
-    * item[+] insert addItem(5.28, #boolean, [[Besuch beim Zahnarzt in letzten 12 Monaten]]) //TODO-JS JN-KeineAngabe
-    * item[+] insert addItem(5.29, #boolean, [[Angeborene schwere Hörstörung]]) //TODO-JS JN-KeineAngabe
+    * item[+] insert addItem(5.28, #choice, [[Besuch beim Zahnarzt in letzten 12 Monaten]])
+      * answerValueSet = Canonical(SEU-AF-JaNeinKeineAngabeVS)
+    * item[+] insert addItem(5.29, #boolean, [[Angeborene schwere Hörstörung]])
+      * answerValueSet = Canonical(SEU-AF-JaNeinKeineAngabeVS)
   * item[+] insert addGroup(5_4, Zusatzangaben zur Hörstörung)
     * insert EnableWhenBoolean(2.29, =, true)
     * item[+] insert addItem(5.30, #choice, [[Angeborene Hörstörung]])
@@ -80,10 +82,30 @@ RuleSet: 5-af-anamnese
     * item[+] insert addItem(5.42, #boolean, [[sonstige Stoffwechselerkrankungen (nur ärztlich diag. Befunde)]])
     * item[+] insert addItem(5.43, #string, [[wenn ja, welche (nur ärztlich diag. Befunde)]])
       * insert EnableWhenBoolean(5.42, =, true)
-    * item[+] insert addItem(5.44, #integer, [[Alter bei Diagnosestellung (in Jahren)]]) //TODO-JS Hinweistext
+    * item[+] insert addItem(5.44, #integer, [[Alter bei Diagnosestellung (in Jahren)]])
       * insert uunit(a, "Jahre")
+      * insert EnableWhenBoolean(5.35, =, true)
+      * insert EnableWhenBoolean(5.36, =, true)
+      * insert EnableWhenBoolean(5.37, =, true)
+      * insert EnableWhenBoolean(5.38, =, true)
+      * insert EnableWhenBoolean(5.39, =, true)
+      * insert EnableWhenBoolean(5.40, =, true)
+      * insert EnableWhenBoolean(5.41, =, true)
+      * insert EnableWhenBoolean(5.42, =, true)
+      * enableBehavior = #any
+      * item[+] insert helpItem(5.44H, [[Wurde mehr als 1 Erkrankung (Variablen 5.35 - 5.42) mit JA markiert, bitte das Alter bei Diagnosestellung der in der Reihenfolge zuerst aufgeführten Stoffwechselerkrankung angeben.]])
     * item[+] insert addItem(5.45, #integer, [[Alter bei Diagnosestellung (in Monaten)]])
       * insert uunit(mo, "Monate")
+      * insert EnableWhenBoolean(5.35, =, true)
+      * insert EnableWhenBoolean(5.36, =, true)
+      * insert EnableWhenBoolean(5.37, =, true)
+      * insert EnableWhenBoolean(5.38, =, true)
+      * insert EnableWhenBoolean(5.39, =, true)
+      * insert EnableWhenBoolean(5.40, =, true)
+      * insert EnableWhenBoolean(5.41, =, true)
+      * insert EnableWhenBoolean(5.42, =, true)
+      * enableBehavior = #any
+      * item[+] insert helpItem(5.44H, [[Wurde mehr als 1 Erkrankung (Variablen 5.35 - 5.42) mit JA markiert, bitte das Alter bei Diagnosestellung der in der Reihenfolge zuerst aufgeführten Stoffwechselerkrankung angeben.]])
     * item[+] insert addItem(5.46, #boolean, [[Elterneinwilligung mitgegeben (Stoffwechselerkrankungen)]])
   * item[+] insert addGroup(5_7, Chronische Erkankung)
     * item[+] insert addItem(5.47, #boolean, [[Chronische Erkrankung]])
@@ -196,29 +218,46 @@ Description: "Diese Codes enthalten die Antworten auf Fragen zu einer Augenarztu
 * ^expansion.contains[=].code = #9
 * ^expansion.contains[=].display = "keine Angaben"
 
-CodeSystem: SEU-AF-TeilnahmeVorkursDeutschCS
-Id: SEU-AF-TeilnahmeVorkursDeutschCS
-Title: "SEU Teilnahme Vorkurs Deutsch"
+CodeSystem: SEU-AF-JaNeinGeplantKeineAngabeCS
+Id: SEU-AF-JaNeinGeplantKeineAngabeCS
+Title: "SEU Ja-Nein-Geplant-KeineAngabe"
 * #1 "ja"
 * #2 "nein"
 * #3 "geplant"
 * #9 "keine Angaben"
 
+ValueSet: SEU-AF-JaNeinKeineAngabeVS
+Id: SEU-AF-JaNeinKeineAngabeVS
+Title: "SEU Ja-Nein-KeineAngabe"
+Description: "Diese Codes können Boolean erweitern um 'Keine Angabe'"
+* SEU-AF-JaNeinGeplantKeineAngabeCS#1 "ja"
+* SEU-AF-JaNeinGeplantKeineAngabeCS#2 "nein"
+* SEU-AF-JaNeinGeplantKeineAngabeCS#9 "keine Angaben"
+* ^expansion.contains[+].system = Canonical(SEU-AF-JaNeinGeplantKeineAngabeCS)
+* ^expansion.contains[=].code = #1
+* ^expansion.contains[=].display = "ja"
+* ^expansion.contains[+].system = Canonical(SEU-AF-JaNeinGeplantKeineAngabeCS)
+* ^expansion.contains[=].code = #2
+* ^expansion.contains[=].display = "nein"
+* ^expansion.contains[+].system = Canonical(SEU-AF-JaNeinGeplantKeineAngabeCS)
+* ^expansion.contains[=].code = #9
+* ^expansion.contains[=].display = "keine Angaben"
+
 ValueSet: SEU-AF-TeilnahmeVorkursDeutschVS
 Id: SEU-AF-TeilnahmeVorkursDeutschVS
 Title: "SEU Teilnahme Vorkurs Deutsch"
 Description: "Diese Codes enthalten die Angabe über eine Teilnahme am Vorkurs Deutsch"
-* include codes from system SEU-AF-TeilnahmeVorkursDeutschCS
-* ^expansion.contains[+].system = Canonical(SEU-AF-TeilnahmeVorkursDeutschCS)
+* include codes from system SEU-AF-JaNeinGeplantKeineAngabeCS
+* ^expansion.contains[+].system = Canonical(SEU-AF-JaNeinGeplantKeineAngabeCS)
 * ^expansion.contains[=].code = #1
 * ^expansion.contains[=].display = "ja"
-* ^expansion.contains[+].system = Canonical(SEU-AF-TeilnahmeVorkursDeutschCS)
+* ^expansion.contains[+].system = Canonical(SEU-AF-JaNeinGeplantKeineAngabeCS)
 * ^expansion.contains[=].code = #2
 * ^expansion.contains[=].display = "nein"
-* ^expansion.contains[+].system = Canonical(SEU-AF-TeilnahmeVorkursDeutschCS)
+* ^expansion.contains[+].system = Canonical(SEU-AF-JaNeinGeplantKeineAngabeCS)
 * ^expansion.contains[=].code = #3
 * ^expansion.contains[=].display = "geplant"
-* ^expansion.contains[+].system = Canonical(SEU-AF-TeilnahmeVorkursDeutschCS)
+* ^expansion.contains[+].system = Canonical(SEU-AF-JaNeinGeplantKeineAngabeCS)
 * ^expansion.contains[=].code = #9
 * ^expansion.contains[=].display = "keine Angaben"
 

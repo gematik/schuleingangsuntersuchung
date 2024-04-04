@@ -2,6 +2,9 @@
 
 RuleSet: 2-af-untersuchungsverlauf
 * item[+] insert addGroup(2, Angaben zum Untersuchungsverlauf)
+  * insert variable("Answer21", [["item.repeat(item).where(linkId='2.1').answer.valueCoding.code"]])
+  * insert variable("Answer225", [["item.repeat(item).where(linkId='2.25').answer.valueCoding.code"]])
+  * insert variable("Answer226", [["item.repeat(item).where(linkId='2.26').answer.value"]])
   * item[+] insert addGroup (2_1, Untersuchungsstatus)
     * item[+] insert addItem(2.1, #choice, Untersuchungsstatus)
       * answerValueSet = Canonical(SEU-AF-UntersuchungsstatusVS)
@@ -45,22 +48,17 @@ RuleSet: 2-af-untersuchungsverlauf
     * item[+] insert addItem(2.22, #choice, [[Durchführung 1. SÄU]])
       * answerValueSet = Canonical(SEU-AF-DurchfuehrungSaeuVS)
   * item[+] insert addGroup (2_5, Ergebnis nach der 1. schulärztlichen Untersuchung)
-    * item[+] insert addItem(2.21, #choice, [[Vorstellung beim Schularzt indiziert (2.SÄU)]])
+    * item[+] insert addItem(2.23, #choice, [[Vorstellung beim Schularzt indiziert (2.SÄU)]])
       * answerValueSet = Canonical(SEU-AF-VorstellungSchularztVS)
-    * item[+] insert addItem(2.22, #choice, [[Durchführung 2. SÄU]])
+    * item[+] insert addItem(2.24, #choice, [[Durchführung 2. SÄU]])
       * answerValueSet = Canonical(SEU-AF-DurchfuehrungSaeuVS)
   * item[+] insert addGroup (2_6, Gesamtergebnis zu rSEU/SEU)
     * item[+] insert addItem(2.25, #choice, [[Ans Jugendamt gemeldet]])
       * answerValueSet = Canonical(SEU-AF-MeldungJugendamtVS)
     * item[+] insert addItem(2.26, #boolean, [[Mitteilungsbogen für Schule mitgegeben/verschickt]])
-    * item[+] insert addItem(2.27, #string, [[Kind abgeschlossen]]) //TODO-JS Vorbelegung basierend auf anderen Eingaben, alles expirimental hier
-      * insert calculatedExpression("calculateKindAbgeschlossen", [["%Answer226 = true or %Answer226.empty() = false or %Answer21 = 19 or %Answer21 = 10"]])
-    * insert variable("Answer226", [["item.where(linkId='2.26').answer.value"]])
-    * insert variable("Answer225", [["item.where(linkId='2.25').answer.valueCoding.code"]])
-    * insert variable("Answer21", [["item.where(linkId='2.1').answer.valueCoding.code"]])
-    * insert debug("%Answer226")
-    * insert debug("%Answer225")
-    * insert debug("%Answer21")
+    * item[+] insert addItem(2.27, #string, [[Kind abgeschlossen]]) //TODO Klappt nur, wenn es String ist...
+      * insert calculatedExpression("calculateKindAbgeschlossen", [["%Answer226 or (%Answer225.empty() = false) or (%Answer21 = '19') or (%Answer21 = '10')"]])
+      * readOnly = true
   * item[+] insert addGroup (2_7, Angaben zu Studienzwecken)
     * item[+] insert addItem(2.28, #boolean, [[Einwilligung Kontaktaufnahme]])
     * item[+] insert addItem(2.29, #boolean, [[Einwilligung Studienteilnahme]])

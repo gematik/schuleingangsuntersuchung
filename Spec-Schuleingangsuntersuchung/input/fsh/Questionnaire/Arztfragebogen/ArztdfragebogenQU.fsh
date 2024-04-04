@@ -24,6 +24,7 @@ Description: "Arztfragebogen"
 * contained[+] = SEU-AF-HaendigkeitVS
 * contained[+] = SEU-AF-SprachtherapieVS
 * contained[+] = SEU-AF-TeilnahmeVorkursDeutschVS
+* contained[+] = SEU-AF-JaNeinKeineAngabeVS
 * contained[+] = SEU-AF-AntwortAugenarztVS
 * contained[+] = SEU-AF-AntwortenHoerstoerungVS
 * contained[+] = SEU-AF-AntwortErwachseneVS
