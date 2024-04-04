@@ -3,7 +3,23 @@ InstanceOf: Questionnaire
 Usage: #example
 Title: "Elternbefragung"
 Description: "Elternbefragung"
-* contained[+] = NeinAbgeschlossenLaeuftGeplantVS
+* contained[+] = SEU-EF-NeinAbgeschlossenLaeuftGeplantVS
+* contained[+] = DeuevAnlage8LaenderkennzeichenVS
+* contained[+] = LebtBeiVS
+* contained[+] = GenderDEVS
+* contained[+] = SEU-AF-AuswaehlbareElternspracheVS
+* contained[+] = ChronischeErkrankungenVS
+* contained[+] = JaNeinAngemeldetVS
+* contained[+] = RechtsLinksHaenderVS
+* contained[+] = AuffaelligkeitVerhaltenVS
+* contained[+] = LinksRechtsBeidseitsKeineAngabeVS
+* contained[+] = StoffwechselstoerungVS
+* contained[+] = ErkrankungVS
+* contained[+] = InfektionsKrankheitVS
+* contained[+] = ErkrankungenLetztesJahrVS
+* contained[+] = PflegegradVS
+* contained[+] = UnfallOrtVS
+* contained[+] = UnfallArtVS
 * id = "SEU-Elternbefragung"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung"
 * title = "SEU Elternfragebogen Maximaldatensatz"
@@ -17,9 +33,6 @@ Description: "Elternbefragung"
     * type = #string
     * linkId = "1.1"
     * text = "(1.1) Nachname des Kindes"
-      * extension[+]
-        * url = "http://hl7.org/fhir/StructureDefinition/rendering-style"
-        * valueString = "background-color: lime"
     * insert initialExpression("%patient.name[0].family")  
   * item[+]
     * type = #string
@@ -32,11 +45,13 @@ Description: "Elternbefragung"
     * text = "(1.3) Geburtsdatum"
     * insert initialExpression("%patient.birthdate")
   * item[+]
+    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
     * type = #choice
     * linkId = "1.4"
     * text = "(1.4) Staatsangehörigkeit"
   //TODO: initial expression
   * item[+]
+    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)  
     * type = #choice
     * linkId = "1.5"
     * text = "(1.5) Geburtsland"
@@ -57,6 +72,7 @@ Description: "Elternbefragung"
     * linkId = "1.7"
     * text = "(1.7) Geburtsort"
   * item[+]
+    * answerValueSet = Canonical(GenderDEVS)
     * type = #choice
     * linkId = "1.8"
     * text = "(1.8) Geschlecht"
@@ -73,17 +89,13 @@ Description: "Elternbefragung"
     * linkId = "1.11"
     * text = "(1.11) Straße"
   * item[+]
+    * answerValueSet = Canonical(LebtBeiVS)
     * type = #choice
     * linkId = "1.12"
     * text = "(1.12) Kind lebt hauptsächlich bei"
   // Freitext falls Kind bei "other" lebt
   * item[+]
-    * enableWhen[+]
-      * question = "1.12"
-      * operator = #=
-      * answerCoding
-  // TODO Add System        
-        * code = #other
+    * insert EnableWhenCode(1.12, =, LebtBeiCS, andere)
     * type = #string
     * linkId = "1.12.1"
     * text = "(1.12.1) Kind lebt hauptsächlich bei"
@@ -94,9 +106,10 @@ Description: "Elternbefragung"
   * linkId = "2"
   * text = "(2) Personenbezogene Daten Personenberechtigter"
   * item[+]
+    * answerValueSet = Canonical(GenderDEVS)
     * type = #choice
     * linkId = "2.1"
-    * text = "(2.1) Anrede"
+    * text = "(2.1) Geschlecht"
   * item[+]
     * type = #string
     * linkId = "2.2"
@@ -128,14 +141,17 @@ Description: "Elternbefragung"
     * linkId = "2.8"
     * text = "(2.8) Email"
   * item[+]
+    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
     * type = #choice
     * linkId = "2.9"
     * text = "(2.9) Staatsangehörigkeit"
   * item[+]
+    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
     * type = #choice
     * linkId = "2.10"
     * text = "(2.10) Herkunftsland"
   * item[+]
+    * answerValueSet = Canonical(SEU-AF-AuswaehlbareElternspracheVS)
     * type = #choice
     * linkId = "2.11"
     * text = "(2.11) Muttersprache"
@@ -187,6 +203,7 @@ Description: "Elternbefragung"
       * linkId = "3.2.3"
       * text = "(3.2.3) Rechenschwäche"
     * item[+]
+      * answerValueSet = Canonical(ChronischeErkrankungenVS)
       * type = #choice
       * linkId = "3.2.4"
       * text = "(3.2.4) Erkrankung"
@@ -194,14 +211,17 @@ Description: "Elternbefragung"
       * type = #choice
       * linkId = "3.2.5"
       * text = "(3.2.5) Chronische Erkrankung"
+        * extension[http://hl7.org/fhir/StructureDefinition/rendering-style].valueString = "background-color: crimson"
     * item[+]
       * type = #choice
       * linkId = "3.2.6"
       * text = "(3.2.6) Behinderung"
+        * extension[http://hl7.org/fhir/StructureDefinition/rendering-style].valueString = "background-color: crimson"
     * item[+]
       * type = #choice
       * linkId = "3.2.7"
       * text = "(3.2.7) Schilddrüsenerkrankung"
+        * extension[http://hl7.org/fhir/StructureDefinition/rendering-style].valueString = "background-color: crimson"
 //********************************************
 // Kinderbetreuung
 * item[+]
@@ -274,11 +294,13 @@ Description: "Elternbefragung"
     * type = #choice
     * linkId = "5.5"
     * text = "(5.5) Auffälligkeit bei der Geburt"
+      * extension[http://hl7.org/fhir/StructureDefinition/rendering-style].valueString = "background-color: crimson"    
     * repeats = true
   * item[+]
     * type = #choice
     * linkId = "5.6"
     * text = "(5.6) Auffälligkeit in der Schwangerschaft"
+      * extension[http://hl7.org/fhir/StructureDefinition/rendering-style].valueString = "background-color: crimson"
     * repeats = true
   * item[+]
     * type = #integer
@@ -291,15 +313,18 @@ Description: "Elternbefragung"
   * linkId = "6"
   * text = "(6) Sprache"
   * item[+]
+    * answerValueSet = Canonical(SEU-AF-AuswaehlbareElternspracheVS)
     * type = #choice
     * linkId = "6.1"
     * text = "(6.1) Welche Sprachen werden Zuhause gesprochen?"
     * repeats = true
   * item[+]
+    * answerValueSet = Canonical(SEU-AF-AuswaehlbareElternspracheVS)
     * type = #choice
     * linkId = "6.2"
     * text = "(6.2) Muttersprache des Kindes"
   * item[+]
+    * answerValueSet = Canonical(JaNeinAngemeldetVS)
     * type = #choice
     * linkId = "6.3"
     * text = "(6.3) Teilnahme des Kindes an einem Deutschkurs"
@@ -308,9 +333,9 @@ Description: "Elternbefragung"
     * linkId = "6.4"
     * text = "(6.4) Sprachauffälligkeiten"
   * item[+]
-    * type = #choice
+    * type = #boolean
     * linkId = "6.5"
-    * text = "(6.5) Kontakt zu Deutschsprechenden"
+    * text = "(6.5) Kontakt zu Deutschsprechenden seit Geburt?"
   * item[+]
     * type = #group
     * linkId = "6.6"
@@ -318,7 +343,7 @@ Description: "Elternbefragung"
     * enableWhen[+]
       * question = "6.5"
       * operator = #=
-      * answerCoding = #nichtSeitGeburt
+      * answerBoolean = false
     * item[+]
       * type = #integer
       * linkId = "6.6.1"
@@ -378,6 +403,7 @@ Description: "Elternbefragung"
       * operator = #=
       * answerBoolean = true
   * item[+]
+    * answerValueSet = Canonical(RechtsLinksHaenderVS)
     * type = #choice
     * linkId = "7.9"
     * text = "(7.9) Links- oder Rechtshänder"
@@ -386,7 +412,7 @@ Description: "Elternbefragung"
     * linkId = "7.10"
     * text = "(7.10) Angabe zu Entwicklungsverzögerungen, bspw. beim Erlernen des Sitzens/Laufens"
   * item[+]
-    * type = #choice
+    * type = #open-choice
     * linkId = "7.11"
     * text = "(7.11) Auffälligkeit des Verhaltens"  
   * item[+]
@@ -453,6 +479,7 @@ Description: "Elternbefragung"
       * text = "(8.9.G.hoergeraete.G) Hörgeräte"
       * repeats = true
       * item[+]
+        * answerValueSet = Canonical(LinksRechtsBeidseitsKeineAngabeVS)
         * type = #choice
         * linkId = "8.9.G.hoergeraete.G.1"
         * text = "(8.9.G.hoergeraete.G.1) Höregerätseite"
@@ -466,6 +493,7 @@ Description: "Elternbefragung"
       * text = "(8.9.G.cochlea.G) Cochleaimplantate"
       * repeats = true
       * item[+]
+        * answerValueSet = Canonical(LinksRechtsBeidseitsKeineAngabeVS)
         * type = #choice
         * linkId = "8.9.G.cochlea.G.1"
         * text = "(8.9.G.cochlea.G.1) Cochleaimplantat-Seite"
@@ -479,6 +507,7 @@ Description: "Elternbefragung"
     * text = "(8.10g) Stoffwechsel & Hormonstörungen"
     * repeats = true
     * item[+]
+      * answerValueSet = Canonical(StoffwechselstoerungVS)
       * type = #choice
       * linkId = "8.10g.1"
       * text = "(8.10g.1) Art der Störung oder Erkrankung"
@@ -492,6 +521,7 @@ Description: "Elternbefragung"
     * text = "(8.11.g) Erkrankungen"
     * repeats = true
     * item[+]
+      * answerValueSet = Canonical(ErkrankungVS)
       * type = #open-choice
       * linkId = "8.11.g.1"
       * text = "(8.11.g.1) Erkrankung"
@@ -509,6 +539,7 @@ Description: "Elternbefragung"
     * text = "(8.12.g) Infektionskrankheiten"
     * repeats = true
     * item[+]
+      * answerValueSet = Canonical(InfektionsKrankheitVS)
       * type = #open-choice
       * linkId = "8.12.g.1"
       * text = "(8.12.g.1) Infektionskrankheit"
@@ -522,6 +553,7 @@ Description: "Elternbefragung"
     * text = "(8.13.g) Erkrankungen im letzten Jahr"
     * repeats = true
     * item[+]
+      * answerValueSet = Canonical(ErkrankungenLetztesJahrVS)
       * type = #open-choice
       * linkId = "8.13.g.1"
       * text = "(8.13.g.1) Erkrankung"
@@ -531,9 +563,14 @@ Description: "Elternbefragung"
       * text = "(8.13.g.2) Erkrankungsbeginn"
     // TODO: VS Binding: nein
   * item[+]
-    * type = #open-choice
+    * type = #boolean
     * linkId = "8.14"
-    * text = "(8.14) Chronische Erkrankung"
+    * text = "(8.14) Chronische Erkrankung vorhanden"
+  * item[+]
+    * insert EnableWhenBoolean(8.14, =, true)
+    * type = #text
+    * linkId = "8.14"
+    * text = "(8.14.1) Welche Chronische Erkrankung"
     * repeats = true  
   * item[+]
     * type = #boolean
@@ -552,33 +589,60 @@ Description: "Elternbefragung"
     * linkId = "8.18"
     * text = "(8.18) Behindertenausweis vorhanden"
   * item[+]
-    * type = #choice
+    * type = #integer
     * linkId = "8.19"
     * text = "(8.19) Grad der Behinderung"
   * item[+]
+    * answerValueSet = Canonical(PflegegradVS)
     * type = #choice
     * linkId = "8.20"
     * text = "(8.20) Pflegegrad"
   * item[+]
-    * type = #open-choice
+    * type = #boolean
     * linkId = "8.21"
-    * text = "(8.21) Schwere Behinderung"
+    * text = "(8.21) Schwere Behinderung vorhanden?"
+    //TODO: auf group umbauen
   * item[+]
+    * insert EnableWhenBoolean(8.21, =, true)
+    * type = #text
+    * linkId = "8.21.1"
+    * text = "(8.21) Welche Behinderung"
+  * item[+]
+    * insert EnableWhenBoolean(8.21, =, true)
     * type = #choice
     * linkId = "8.22"
     * text = "(8.22) Behinderung Merkzeichen"
+      * extension[http://hl7.org/fhir/StructureDefinition/rendering-style].valueString = "background-color: crimson"
   * item[+]
-    * type = #open-choice
+    * type = #boolean
     * linkId = "8.23"
     * text = "(8.23) Regelmäßige Medikamenteneinnahme"
   * item[+]
-    * type = #open-choice
-    * linkId = "8.24"
-    * text = "(8.24) Medikamenteneinnahme in der Schulzeit"
+    * insert EnableWhenBoolean(8.23, =, true)
+    * type = #boolean
+    * linkId = "8.23.1"
+    * text = "(8.23.1) Welches Medikament"   
+    * repeats = true
   * item[+]
-    * type = #open-choice
+    * type = #boolean
+    * linkId = "8.24"
+    * text = "(8.24) Medikamenteneinnahme in der Schulzeit?"
+  * item[+]
+    * insert EnableWhenBoolean(8.24, =, true)
+    * type = #text
+    * linkId = "8.24.1"
+    * text = "(8.24.1) Welches Medikament"
+    * repeats = true
+  * item[+]
+    * type = #boolean
     * linkId = "8.25"
     * text = "(8.25) Eine Erkrankung, die in einer Notfallsituation beachtet werden muss"
+  * item[+]
+    * insert EnableWhenBoolean(8.25, =, true)
+    * type = #text
+    * linkId = "8.25.1"
+    * text = "(8.25.1) Welche Erkrankung"
+    * repeats = true
   * item[+]
     * type = #text
     * linkId = "8.26"
@@ -587,16 +651,19 @@ Description: "Elternbefragung"
     * type = #boolean
     * linkId = "8.27"
     * text = "(8.27) Wurde ihr Kind operiert"
+    //TODO: ambulant oder KH
   * item[+]
     * type = #group
     * linkId = "8.28.g"
     * text = "(8.28.g) Hatte ihr Kinde einen Unfall"
     * repeats = true
     * item[+]
+      * answerValueSet = Canonical(UnfallOrtVS)
       * type = #choice
       * linkId = "8.28.g.1"
       * text = "(8.28.g.1) Ort des Unfall"
     * item[+]
+      * answerValueSet = Canonical(UnfallArtVS)
       * type = #choice
       * linkId = "8.28.g.2"
       * text = "(8.28.g.2) Art des Unfalls"
@@ -614,42 +681,42 @@ Description: "Elternbefragung"
     * type = #choice
     * linkId = "9.2"
     * text = "(9.2) Sprachtherapie"
-    * answerValueSet = Canonical(NeinAbgeschlossenLaeuftGeplantVS)
+    * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
   * item[+]
     * type = #choice
     * linkId = "9.3"
     * text = "(9.3) Frühförderung"
-    * answerValueSet = Canonical(NeinAbgeschlossenLaeuftGeplantVS)
+    * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
   * item[+]
     * type = #choice
     * linkId = "9.4"
     * text = "(9.4) Ergotherapie"
-    * answerValueSet = Canonical(NeinAbgeschlossenLaeuftGeplantVS)
+    * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
   * item[+]
     * type = #choice
     * linkId = "9.5"
     * text = "(9.5) Psychomotorik"
-    * answerValueSet = Canonical(NeinAbgeschlossenLaeuftGeplantVS)
+    * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
   * item[+]
     * type = #choice
     * linkId = "9.6"
     * text = "(9.6) Physiotherapie"
-    * answerValueSet = Canonical(NeinAbgeschlossenLaeuftGeplantVS)
+    * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
   * item[+]
     * type = #choice
     * linkId = "9.7"
     * text = "(9.7) Psychologische Erziehungsberatung"
-    * answerValueSet = Canonical(NeinAbgeschlossenLaeuftGeplantVS)
+    * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
   * item[+]
     * type = #choice
     * linkId = "9.8"
     * text = "(9.8) Krankengymnastik"
-    * answerValueSet = Canonical(NeinAbgeschlossenLaeuftGeplantVS)
+    * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
   * item[+]
     * type = #choice
     * linkId = "9.9"
     * text = "(9.9) Integrative Betreuung"
-    * answerValueSet = Canonical(NeinAbgeschlossenLaeuftGeplantVS)
+    * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
   * item[+]
     * type = #text
     * linkId = "9.10"
