@@ -8,7 +8,7 @@ RuleSet: 1-af-stammdaten
   * item[+] insert addItemMl(1.5, #integer, Sprengel/Kiganr., 4)
   * item[+] insert addRItem(1.6, #choice, Region)
     * answerValueSet = Canonical(SEU-AF-RegionArtVS)
-  * item[+] insert addRItem(1.7, #date, Geburtsdatum)
+  * item[+] insert addRItem(1.7, #date, Geburtsdatum) //TODO-JS: Datumsformat TT.MM.JJJJ
   * item[+] insert addRItem(1.8, #choice, Geschlecht)
     * answerValueSet = Canonical(GenderDEVS)
   * item[+] insert addItem(1.9, #boolean, Kind lebt seit weniger als 1 Jahr in Deutschland)
@@ -16,7 +16,7 @@ RuleSet: 1-af-stammdaten
     * readOnly = true 
   * item[+] insert addItem(1.11, #integer, Jahr der regulären Einschulung) //TODO Berechnung aus GebDatum; Feature-Set noch nicht gegeben
     * readOnly = true
-  * item[+] insert addItem(1.12, #integer, Teilnahme rSEU im 1. UJ)
+  * item[+] insert addItem(1.12, #boolean, Teilnahme rSEU im 1. UJ)
   * item[+] insert addItem(1.13, #integer, Import-Status) //TODO Wie soll im Questionnaire damit umgegangen werden?
     * readOnly = true
 

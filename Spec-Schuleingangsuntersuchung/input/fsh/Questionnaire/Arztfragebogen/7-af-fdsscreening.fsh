@@ -2,6 +2,7 @@ RuleSet: 7-af-fdsscreening
 * item[+] insert addGroup(7, Befunde aus dem FdS-Screening)
   * item[+] insert addGroup(7_1, 1. Screening)
     * item[+] insert addGroup(7_1_1, Für Eingabe in der Untersuchung etwas erfassen) //Bildet das in der Excel beschriebe ab, aber finde ich grenzwertig... deshalb habe ich die optionalen ReadOnly gesetzt
+      * insert helpItem(7_1_1H, [["Geben Sie ab 7.3 etwas ein, um das Datum und die Angabe zur heutigen Untersuchung freizuschalten"]])
       * insert EnableWhenBoolean(7.3, exists, false)
       * insert EnableWhenBoolean(7.3, exists, false)
       * insert EnableWhenBoolean(7.4, exists, false)
