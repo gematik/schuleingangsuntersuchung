@@ -1,0 +1,40 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SEU-AF-AntwortenHoerstoerungVS",
+  "id": "SEU-AF-AntwortenHoerstoerungVS",
+  "title": "SEU Antworten Hörstörung",
+  "description": "Diese Codes enthalten die Antworten auf die Frage zu einer Hörstöhrung",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-AntwortenHoerstoerungVS",
+  "expansion": {
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-AntwortenHoerstoerungCS",
+        "code": "1",
+        "display": "links"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-AntwortenHoerstoerungCS",
+        "code": "2",
+        "display": "rechts"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-AntwortenHoerstoerungCS",
+        "code": "3",
+        "display": "beidseitig"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-AntwortenHoerstoerungCS",
+        "code": "9",
+        "display": "keine Angaben"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-AntwortenHoerstoerungCS"
+      }
+    ]
+  }
+}

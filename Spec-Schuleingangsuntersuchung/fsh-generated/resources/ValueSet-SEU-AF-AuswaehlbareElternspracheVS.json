@@ -1,0 +1,157 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SEU-AF-AuswaehlbareElternspracheVS",
+  "id": "SEU-AF-AuswaehlbareElternspracheVS",
+  "title": "SEU Auswählbare Elternsprache",
+  "description": "Dieses ValueSet enthält die auswählbaren Elternsprachen. Als CodeSystem wird 'urn:ietf:bcp:47' als Basis genommen.",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-AuswaehlbareElternspracheVS",
+  "expansion": {
+    "contains": [
+      {
+        "system": "urn:ietf:bcp:47",
+        "code": "de",
+        "display": "Deutsch"
+      },
+      {
+        "system": "urn:ietf:bcp:47",
+        "code": "en",
+        "display": "Englisch"
+      },
+      {
+        "system": "urn:ietf:bcp:47",
+        "code": "tr",
+        "display": "Türkisch"
+      },
+      {
+        "system": "urn:ietf:bcp:47",
+        "code": "ru",
+        "display": "Russisch"
+      },
+      {
+        "system": "urn:ietf:bcp:47",
+        "code": "sr",
+        "display": "Serbisch"
+      },
+      {
+        "system": "urn:ietf:bcp:47",
+        "code": "hr",
+        "display": "Kroatisch"
+      },
+      {
+        "system": "urn:ietf:bcp:47",
+        "code": "bs",
+        "display": "Bosnisch"
+      },
+      {
+        "system": "urn:ietf:bcp:47",
+        "code": "it",
+        "display": "Italienisch"
+      },
+      {
+        "system": "urn:ietf:bcp:47",
+        "code": "ar",
+        "display": "Arabisch"
+      },
+      {
+        "system": "urn:ietf:bcp:47",
+        "code": "ro",
+        "display": "Rumänisch"
+      },
+      {
+        "system": "urn:ietf:bcp:47",
+        "code": "pl",
+        "display": "Polnisch"
+      },
+      {
+        "system": "urn:ietf:bcp:47",
+        "code": "sq",
+        "display": "Albanisch"
+      },
+      {
+        "system": "urn:ietf:bcp:47",
+        "code": "uk",
+        "display": "Ukraninisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-AuswaehlbareElternspracheErweiterungCS",
+        "code": "12",
+        "display": "Gebärdensprache"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-AuswaehlbareElternspracheErweiterungCS",
+        "code": "98",
+        "display": "andere"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-AuswaehlbareElternspracheErweiterungCS",
+        "code": "99",
+        "display": "keine Angabe"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "urn:ietf:bcp:47",
+        "concept": [
+          {
+            "code": "de",
+            "display": "Deutsch"
+          },
+          {
+            "code": "en",
+            "display": "Englisch"
+          },
+          {
+            "code": "tr",
+            "display": "Türkisch"
+          },
+          {
+            "code": "ru",
+            "display": "Russisch"
+          },
+          {
+            "code": "sr",
+            "display": "Serbisch"
+          },
+          {
+            "code": "hr",
+            "display": "Kroatisch"
+          },
+          {
+            "code": "bs",
+            "display": "Bosnisch"
+          },
+          {
+            "code": "it",
+            "display": "Italienisch"
+          },
+          {
+            "code": "ar",
+            "display": "Arabisch"
+          },
+          {
+            "code": "ro",
+            "display": "Rumänisch"
+          },
+          {
+            "code": "pl",
+            "display": "Polnisch"
+          },
+          {
+            "code": "sq",
+            "display": "Albanisch"
+          },
+          {
+            "code": "uk",
+            "display": "Ukraninisch"
+          }
+        ]
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-AuswaehlbareElternspracheErweiterungCS"
+      }
+    ]
+  }
+}

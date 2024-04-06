@@ -8,9 +8,15 @@
       "text": "(1) Personenbezogene Daten Kind",
       "item": [
         {
-          "type": "string",
           "linkId": "1.1",
+          "type": "string",
           "text": "(1.1) Nachname des Kindes",
+          "code": [
+            {
+              "code": "1.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
           "extension": [
             {
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
@@ -1126,7 +1132,8 @@
               "code": "12.1",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
-          ]
+          ],
+          "answerValueSet": "#geplant-findet-statt-abgeschlossen-vs"
         },
         {
           "linkId": "12.2",
@@ -1137,7 +1144,8 @@
               "code": "12.2",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
-          ]
+          ],
+          "answerValueSet": "#geplant-findet-statt-abgeschlossen-vs"
         },
         {
           "linkId": "12.3",
@@ -1200,7 +1208,8 @@
               "code": "12.5",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
-          ]
+          ],
+          "answerValueSet": "#haeufigkeit-auswahl-vs"
         },
         {
           "linkId": "12.6",
@@ -1232,6 +1241,13 @@
             {
               "code": "12.8",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "12.7",
+              "operator": "=",
+              "answerBoolean": true
             }
           ]
         },
@@ -1273,7 +1289,8 @@
               "code": "13.1",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
-          ]
+          ],
+          "answerValueSet": "#bildungsabschluss-vs"
         },
         {
           "linkId": "13.2",
@@ -1284,7 +1301,8 @@
               "code": "13.2",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
-          ]
+          ],
+          "answerValueSet": "#bildungsabschluss-vs"
         },
         {
           "linkId": "13.3",
@@ -1295,7 +1313,8 @@
               "code": "13.3",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
-          ]
+          ],
+          "answerValueSet": "#berufsbildung-vs"
         },
         {
           "linkId": "13.4",
@@ -1306,7 +1325,8 @@
               "code": "13.4",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
-          ]
+          ],
+          "answerValueSet": "#berufsbildung-vs"
         },
         {
           "linkId": "13.5",
@@ -1316,6 +1336,28 @@
             {
               "code": "13.5",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "answerValueSet": "#erwerbsstatus-vs"
+        },
+        {
+          "linkId": "13.5.1",
+          "type": "text",
+          "text": "(13.5.1) Grund der Erwerbslosigkeit",
+          "code": [
+            {
+              "code": "13.5.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "13.5",
+              "operator": "=",
+              "answerCoding": {
+                "code": "nicht_erwerbstaetig",
+                "system": "https://www.oegd.de/fhir/seu/CodeSystem/erwerbsstatus-cs"
+              }
             }
           ]
         },
@@ -1327,6 +1369,28 @@
             {
               "code": "13.6",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "answerValueSet": "#erwerbsstatus-vs"
+        },
+        {
+          "linkId": "13.6.1",
+          "type": "text",
+          "text": "(13.6.1) Grund der Erwerbslosigkeit",
+          "code": [
+            {
+              "code": "13.6.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "13.6",
+              "operator": "=",
+              "answerCoding": {
+                "code": "nicht_erwerbstaetig",
+                "system": "https://www.oegd.de/fhir/seu/CodeSystem/erwerbsstatus-cs"
+              }
             }
           ]
         },
@@ -1383,7 +1447,8 @@
               "code": "13.11",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
-          ]
+          ],
+          "answerValueSet": "#familienrolle-vs"
         },
         {
           "linkId": "13.12",
@@ -4184,6 +4249,247 @@
         "include": [
           {
             "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallArtCS"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "geplant-findet-statt-abgeschlossen-vs",
+      "status": "draft",
+      "name": "GeplantFindetStattAbgeschlossenVS",
+      "title": "Geplant, Findet Statt, Abgeschlossen Value Set",
+      "description": "GeplantFindetStattAbgeschlossenVS",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/geplant-findet-statt-abgeschlossen-vs",
+      "expansion": {
+        "timestamp": "2024-04-06T12:00:00+00:00",
+        "contains": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/geplant-findet-statt-abgeschlossen-cs",
+            "code": "geplant",
+            "display": "Geplant"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/geplant-findet-statt-abgeschlossen-cs",
+            "code": "findet_statt",
+            "display": "Findet statt"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/geplant-findet-statt-abgeschlossen-cs",
+            "code": "abgeschlossen",
+            "display": "Abgeschlossen"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/geplant-findet-statt-abgeschlossen-cs"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "haeufigkeit-auswahl-vs",
+      "status": "draft",
+      "name": "HaeufigkeitAuswahlVS",
+      "title": "Häufigkeit Auswahl ValueSet",
+      "description": "HaeufigkeitAuswahlVS",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/haeufigkeit-auswahl-vs",
+      "expansion": {
+        "timestamp": "2024-04-06T12:00:00+00:00",
+        "contains": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/haeufigkeit-auswahl-cs",
+            "code": "gelegentlich",
+            "display": "Gelegentlich"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/haeufigkeit-auswahl-cs",
+            "code": "häufig",
+            "display": "Häufig"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/haeufigkeit-auswahl-cs",
+            "code": "nie",
+            "display": "Nie"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/haeufigkeit-auswahl-cs"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "bildungsabschluss-vs",
+      "status": "draft",
+      "name": "BildungsabschlussVS",
+      "title": "Bildungsabschluss ValueSet",
+      "description": "BildungsabschlussVS",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/bildungsabschluss-vs",
+      "expansion": {
+        "timestamp": "2024-04-06T12:00:00+00:00",
+        "contains": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/bildungsabschluss-cs",
+            "code": "kein_hauptschulabschluss",
+            "display": "Kein Hauptschulabschluss"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/bildungsabschluss-cs",
+            "code": "hauptschulabschluss",
+            "display": "Hauptschulabschluss"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/bildungsabschluss-cs",
+            "code": "mittlere_reife",
+            "display": "Mittlere Reife"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/bildungsabschluss-cs",
+            "code": "abitur",
+            "display": "Abitur"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/bildungsabschluss-cs"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "berufsbildung-vs",
+      "status": "draft",
+      "name": "BerufsbildungVS",
+      "title": "Berufsbildung ValueSet",
+      "description": "BerufsbildungVS",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/berufsbildung-vs",
+      "expansion": {
+        "timestamp": "2024-04-06T12:00:00+00:00",
+        "contains": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/berufsbildung-cs",
+            "code": "keine_berufsausbildung",
+            "display": "Keine abgeschlossene Berufsausbildung"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/berufsbildung-cs",
+            "code": "in_ausbildung_studium",
+            "display": "In Ausbildung/Studium"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/berufsbildung-cs",
+            "code": "berufsausbildung_fachschule",
+            "display": "Abgeschlossene Berufsausbildung/Fachschulabschluss"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/berufsbildung-cs",
+            "code": "abgeschlossenes_studium",
+            "display": "Abgeschlossenes Studium"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/berufsbildung-cs"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "erwerbsstatus-vs",
+      "status": "draft",
+      "name": "ErwerbsstatusVS",
+      "title": "Erwerbsstatus ValueSet",
+      "description": "ErwerbsstatusVS",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/erwerbsstatus-vs",
+      "expansion": {
+        "timestamp": "2024-04-06T12:00:00+00:00",
+        "contains": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/erwerbsstatus-cs",
+            "code": "nicht_erwerbstaetig",
+            "display": "Nicht erwerbstätig"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/erwerbsstatus-cs",
+            "code": "teilzeit",
+            "display": "Teilzeit"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/erwerbsstatus-cs",
+            "code": "vollzeit",
+            "display": "Vollzeit"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/erwerbsstatus-cs"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "familienrolle-vs",
+      "status": "draft",
+      "name": "FamilienrolleVS",
+      "title": "Familienrolle ValueSet",
+      "description": "FamilienrolleVS",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/familienrolle-vs",
+      "expansion": {
+        "timestamp": "2024-04-06T12:00:00+00:00",
+        "contains": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/familienrolle-cs",
+            "code": "mutter",
+            "display": "Mutter"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/familienrolle-cs",
+            "code": "vater",
+            "display": "Vater"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/familienrolle-cs",
+            "code": "pflegemutter",
+            "display": "Pflegemutter"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/familienrolle-cs",
+            "code": "pflegevater",
+            "display": "Pflegevater"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/familienrolle-cs",
+            "code": "geschwister",
+            "display": "Geschwister"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/familienrolle-cs",
+            "code": "andere_person",
+            "display": "Andere Person"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/familienrolle-cs"
           }
         ]
       }

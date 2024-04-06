@@ -1,0 +1,41 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "BerufsbildungVS",
+  "id": "berufsbildung-vs",
+  "title": "Berufsbildung ValueSet",
+  "description": "BerufsbildungVS",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/berufsbildung-vs",
+  "expansion": {
+    "timestamp": "2024-04-06T12:00:00+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/berufsbildung-cs",
+        "code": "keine_berufsausbildung",
+        "display": "Keine abgeschlossene Berufsausbildung"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/berufsbildung-cs",
+        "code": "in_ausbildung_studium",
+        "display": "In Ausbildung/Studium"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/berufsbildung-cs",
+        "code": "berufsausbildung_fachschule",
+        "display": "Abgeschlossene Berufsausbildung/Fachschulabschluss"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/berufsbildung-cs",
+        "code": "abgeschlossenes_studium",
+        "display": "Abgeschlossenes Studium"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/berufsbildung-cs"
+      }
+    ]
+  }
+}

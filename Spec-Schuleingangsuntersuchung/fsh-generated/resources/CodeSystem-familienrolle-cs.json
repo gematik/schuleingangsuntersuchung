@@ -1,0 +1,37 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "FamilienrolleCS",
+  "id": "familienrolle-cs",
+  "title": "Familienrolle CodeSystem",
+  "description": "FamilienrolleCS",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/familienrolle-cs",
+  "concept": [
+    {
+      "code": "mutter",
+      "display": "Mutter"
+    },
+    {
+      "code": "vater",
+      "display": "Vater"
+    },
+    {
+      "code": "pflegemutter",
+      "display": "Pflegemutter"
+    },
+    {
+      "code": "pflegevater",
+      "display": "Pflegevater"
+    },
+    {
+      "code": "geschwister",
+      "display": "Geschwister"
+    },
+    {
+      "code": "andere_person",
+      "display": "Andere Person"
+    }
+  ],
+  "count": 6
+}

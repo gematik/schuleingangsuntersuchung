@@ -1,0 +1,28 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU-AF-HaendigkeitCS",
+  "id": "SEU-AF-HaendigkeitCS",
+  "title": "SEU Händigkeit",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-HaendigkeitCS",
+  "concept": [
+    {
+      "code": "1",
+      "display": "Rechtshänder"
+    },
+    {
+      "code": "2",
+      "display": "Linkshänder"
+    },
+    {
+      "code": "3",
+      "display": "noch unentschieden"
+    },
+    {
+      "code": "9",
+      "display": "keine Angabe"
+    }
+  ],
+  "count": 4
+}

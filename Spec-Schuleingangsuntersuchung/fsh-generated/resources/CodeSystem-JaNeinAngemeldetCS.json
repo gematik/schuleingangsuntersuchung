@@ -1,0 +1,25 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "JaNeinAngemeldetCS",
+  "id": "JaNeinAngemeldetCS",
+  "title": "JaNeinAngemeldetCS",
+  "description": "JaNeinAngemeldetCS",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/JaNeinAngemeldetCS",
+  "concept": [
+    {
+      "code": "ja",
+      "display": "Ja"
+    },
+    {
+      "code": "nein",
+      "display": "Nein"
+    },
+    {
+      "code": "ist-angemeldet",
+      "display": "Ist angemeldet"
+    }
+  ],
+  "count": 3
+}

@@ -1,0 +1,28 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU-AF-DurchfuehrungSaeuCS",
+  "id": "SEU-AF-DurchfuehrungSaeuCS",
+  "title": "SEU Durchführung SÄU",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-DurchfuehrungSaeuCS",
+  "concept": [
+    {
+      "code": "1",
+      "display": "Ja"
+    },
+    {
+      "code": "2",
+      "display": "Nein"
+    },
+    {
+      "code": "3",
+      "display": "nicht mehr erforderlich"
+    },
+    {
+      "code": "4",
+      "display": "verweigert"
+    }
+  ],
+  "count": 4
+}

@@ -1,0 +1,40 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SEU-AF-AntwortenSAeUntersuchungVS",
+  "id": "SEU-AF-AntwortenSAeUntersuchungVS",
+  "title": "SEU Antworten schulärztliche Untersuchung",
+  "description": "Diese Codes enthalten die Antworten Fragen der schulärztlichen Untersuchung",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-AntwortenSAeUntersuchungVS",
+  "expansion": {
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-AntwortenSAeUntersuchungCS",
+        "code": "1",
+        "display": "ja"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-AntwortenSAeUntersuchungCS",
+        "code": "2",
+        "display": "nein"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-AntwortenSAeUntersuchungCS",
+        "code": "3",
+        "display": "nicht beurteilbar"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-AntwortenSAeUntersuchungCS",
+        "code": "4",
+        "display": "nicht überprüft"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-AntwortenSAeUntersuchungCS"
+      }
+    ]
+  }
+}

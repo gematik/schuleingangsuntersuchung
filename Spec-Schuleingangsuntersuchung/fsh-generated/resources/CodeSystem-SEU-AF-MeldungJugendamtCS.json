@@ -1,0 +1,36 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU-AF-MeldungJugendamtCS",
+  "id": "SEU-AF-MeldungJugendamtCS",
+  "title": "SEU-AF Meldung Jugendamt",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-MeldungJugendamtCS",
+  "concept": [
+    {
+      "code": "1",
+      "display": "aus Gründen des Kinderschutzes"
+    },
+    {
+      "code": "2",
+      "display": "Verweigerung Teilnahme rSEU"
+    },
+    {
+      "code": "3",
+      "display": "Verweigerung 1. SÄU"
+    },
+    {
+      "code": "4",
+      "display": "Verweigerung 2. SÄU"
+    },
+    {
+      "code": "5",
+      "display": "keine rSEU Teilnahme, Adresse unbekannt"
+    },
+    {
+      "code": "6",
+      "display": "sonstige Gründe"
+    }
+  ],
+  "count": 6
+}

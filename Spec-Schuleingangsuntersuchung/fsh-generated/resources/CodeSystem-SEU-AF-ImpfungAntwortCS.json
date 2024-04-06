@@ -1,0 +1,28 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU-AF-ImpfungAntwortCS",
+  "id": "SEU-AF-ImpfungAntwortCS",
+  "title": "SEU Impfung Antwort",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-ImpfungAntwortCS",
+  "concept": [
+    {
+      "code": "0",
+      "display": "keine Impfung"
+    },
+    {
+      "code": "1",
+      "display": "Grundimmunisierung unvollständig"
+    },
+    {
+      "code": "2",
+      "display": "Grundimmunisierung abgeschlossen (ohne Auffrischung)"
+    },
+    {
+      "code": "3",
+      "display": "Grundimmunisierung abgeschlossen und 1+ Auffrischung"
+    }
+  ],
+  "count": 4
+}

@@ -1,0 +1,36 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SEU-AF-RegionArtVS",
+  "id": "SEU-AF-RegionArtVS",
+  "title": "SEU-AF Art der Region",
+  "description": "Diese Codes enthalten die Art einer Region",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-RegionArtVS",
+  "expansion": {
+    "timestamp": "2024-03-30T13:28:00+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-RegionArtCS",
+        "code": "KFS",
+        "display": "Kreisfreie Stadt"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-RegionArtCS",
+        "code": "LK",
+        "display": "Landkreis"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-RegionArtCS",
+        "code": "UK",
+        "display": "Unbekannt"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-RegionArtCS"
+      }
+    ]
+  }
+}

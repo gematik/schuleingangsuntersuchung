@@ -1,0 +1,51 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "UnfallArtVS",
+  "id": "UnfallArtVS",
+  "title": "UnfallArtVS",
+  "description": "UnfallArtVS",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/UnfallArtVS",
+  "expansion": {
+    "timestamp": "2024-04-04T11:38:03+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallArtCS",
+        "code": "gehirnerschütterung",
+        "display": "Gehirnerschütterung"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallArtCS",
+        "code": "schwere_schnittverletzung",
+        "display": "Schwere Schnittverletzung"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallArtCS",
+        "code": "vergiftung",
+        "display": "Vergiftung"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallArtCS",
+        "code": "verbrennung",
+        "display": "Verbrennung"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallArtCS",
+        "code": "knochenbruch",
+        "display": "Knochenbruch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallArtCS",
+        "code": "andere",
+        "display": "Andere"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallArtCS"
+      }
+    ]
+  }
+}

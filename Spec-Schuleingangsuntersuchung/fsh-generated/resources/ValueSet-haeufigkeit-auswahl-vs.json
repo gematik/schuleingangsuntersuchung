@@ -1,0 +1,36 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "HaeufigkeitAuswahlVS",
+  "id": "haeufigkeit-auswahl-vs",
+  "title": "Häufigkeit Auswahl ValueSet",
+  "description": "HaeufigkeitAuswahlVS",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/haeufigkeit-auswahl-vs",
+  "expansion": {
+    "timestamp": "2024-04-06T12:00:00+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/haeufigkeit-auswahl-cs",
+        "code": "gelegentlich",
+        "display": "Gelegentlich"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/haeufigkeit-auswahl-cs",
+        "code": "häufig",
+        "display": "Häufig"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/haeufigkeit-auswahl-cs",
+        "code": "nie",
+        "display": "Nie"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/haeufigkeit-auswahl-cs"
+      }
+    ]
+  }
+}

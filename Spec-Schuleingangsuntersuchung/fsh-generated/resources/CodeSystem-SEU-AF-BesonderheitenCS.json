@@ -1,0 +1,24 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU-AF-BesonderheitenCS",
+  "id": "SEU-AF-BesonderheitenCS",
+  "title": "SEU Besonderheiten",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-BesonderheitenCS",
+  "concept": [
+    {
+      "code": "1",
+      "display": "Kind vor Abschluss von rSEU/SEU in anderen LK/BL/Ausland verzogen"
+    },
+    {
+      "code": "2",
+      "display": "Kind nach 1. Untersuchungsjahr zugezogen"
+    },
+    {
+      "code": "3",
+      "display": "rSEU/SEU aus sonstigen Gründen nicht beendet"
+    }
+  ],
+  "count": 3
+}

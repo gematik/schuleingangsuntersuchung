@@ -1,0 +1,25 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "GeplantFindetStattAbgeschlossenCS",
+  "id": "geplant-findet-statt-abgeschlossen-cs",
+  "title": "Geplant, Findet Statt, Abgeschlossen",
+  "description": "GeplantFindetStattAbgeschlossenCS",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/geplant-findet-statt-abgeschlossen-cs",
+  "concept": [
+    {
+      "code": "geplant",
+      "display": "Geplant"
+    },
+    {
+      "code": "findet_statt",
+      "display": "Findet statt"
+    },
+    {
+      "code": "abgeschlossen",
+      "display": "Abgeschlossen"
+    }
+  ],
+  "count": 3
+}

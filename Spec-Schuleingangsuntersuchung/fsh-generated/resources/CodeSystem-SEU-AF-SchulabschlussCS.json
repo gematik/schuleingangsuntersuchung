@@ -1,0 +1,36 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU-AF-SchulabschlussCS",
+  "id": "SEU-AF-SchulabschlussCS",
+  "title": "SEU Schulabschluss",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-SchulabschlussCS",
+  "concept": [
+    {
+      "code": "1",
+      "display": "(noch) kein Schulabschluss"
+    },
+    {
+      "code": "2",
+      "display": "Haupt-/Volks-/Mittelschulabschluss/Quali"
+    },
+    {
+      "code": "3",
+      "display": "Realschulabschluss (Mittlere Reife)"
+    },
+    {
+      "code": "4",
+      "display": "allgemeine/fachgebundene Hochschulreife"
+    },
+    {
+      "code": "5",
+      "display": "Hochschul-/Universitätsabschluss"
+    },
+    {
+      "code": "9",
+      "display": "keine Angaben"
+    }
+  ],
+  "count": 6
+}

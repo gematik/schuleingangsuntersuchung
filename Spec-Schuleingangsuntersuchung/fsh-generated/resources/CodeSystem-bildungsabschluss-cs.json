@@ -1,0 +1,29 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "BildungsabschlussCS",
+  "id": "bildungsabschluss-cs",
+  "title": "Bildungsabschluss CodeSystem",
+  "description": "BildungsabschlussCS",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/bildungsabschluss-cs",
+  "concept": [
+    {
+      "code": "kein_hauptschulabschluss",
+      "display": "Kein Hauptschulabschluss"
+    },
+    {
+      "code": "hauptschulabschluss",
+      "display": "Hauptschulabschluss"
+    },
+    {
+      "code": "mittlere_reife",
+      "display": "Mittlere Reife"
+    },
+    {
+      "code": "abitur",
+      "display": "Abitur"
+    }
+  ],
+  "count": 4
+}

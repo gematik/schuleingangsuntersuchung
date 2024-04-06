@@ -1,0 +1,40 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SEU-AF-HaendigkeitVS",
+  "id": "SEU-AF-HaendigkeitVS",
+  "title": "SEU Händigkeit",
+  "description": "Diese Codes enthalten Angaben zur Händigkeit",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-HaendigkeitVS",
+  "expansion": {
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-HaendigkeitCS",
+        "code": "1",
+        "display": "Rechtshänder"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-HaendigkeitCS",
+        "code": "2",
+        "display": "Linkshänder"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-HaendigkeitCS",
+        "code": "3",
+        "display": "noch unentschieden"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-HaendigkeitCS",
+        "code": "9",
+        "display": "keine Angabe"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-HaendigkeitCS"
+      }
+    ]
+  }
+}

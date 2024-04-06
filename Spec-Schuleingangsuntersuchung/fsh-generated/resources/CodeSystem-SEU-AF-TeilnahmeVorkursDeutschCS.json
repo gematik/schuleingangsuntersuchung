@@ -1,0 +1,28 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU-AF-TeilnahmeVorkursDeutschCS",
+  "id": "SEU-AF-TeilnahmeVorkursDeutschCS",
+  "title": "SEU Teilnahme Vorkurs Deutsch",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-TeilnahmeVorkursDeutschCS",
+  "concept": [
+    {
+      "code": "1",
+      "display": "ja"
+    },
+    {
+      "code": "2",
+      "display": "nein"
+    },
+    {
+      "code": "3",
+      "display": "geplant"
+    },
+    {
+      "code": "9",
+      "display": "keine Angaben"
+    }
+  ],
+  "count": 4
+}

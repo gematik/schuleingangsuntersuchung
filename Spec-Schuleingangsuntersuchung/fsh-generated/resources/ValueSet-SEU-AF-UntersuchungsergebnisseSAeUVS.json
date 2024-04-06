@@ -1,0 +1,70 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SEU-AF-UntersuchungsergebnisseSAeUVS",
+  "id": "SEU-AF-UntersuchungsergebnisseSAeUVS",
+  "title": "SEU Untersuchungsergebnisse SÄU",
+  "description": "Diese Codes enthalten Untersuchungsergebnisse der SÄU",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-UntersuchungsergebnisseSAeUVS",
+  "expansion": {
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS",
+        "code": "01",
+        "display": "unauffälliger Befund"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS",
+        "code": "02",
+        "display": "Abklärung beim Kinder-/Jugendarzt"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS",
+        "code": "03",
+        "display": "Abklärung durch sonstigen Facharzt"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS",
+        "code": "04",
+        "display": "Abklärung Frühförderstelle"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS",
+        "code": "05",
+        "display": "häusliche Förderung ausreichend"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS",
+        "code": "06",
+        "display": "Teilnahme Vorkurs Deutsch empfohlen"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS",
+        "code": "07",
+        "display": "Kind ist wegen des Befundes bereits in Behandlung"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS",
+        "code": "08",
+        "display": "Behinderung bzw. dauerhafte Schädigung des Kindes"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS",
+        "code": "09",
+        "display": "Testbereich nicht beurteilbar"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS",
+        "code": "10",
+        "display": "Testbereich nicht überprüft"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS"
+      }
+    ]
+  }
+}

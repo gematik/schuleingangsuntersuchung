@@ -1,0 +1,36 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU-AF-AntwortNummerierungPersonenCS",
+  "id": "SEU-AF-AntwortNummerierungPersonenCS",
+  "title": "SEU Antwort Geschwister",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-AntwortNummerierungPersonenCS",
+  "concept": [
+    {
+      "code": "0",
+      "display": "keine"
+    },
+    {
+      "code": "1",
+      "display": "eins"
+    },
+    {
+      "code": "2",
+      "display": "zwei"
+    },
+    {
+      "code": "3",
+      "display": "drei"
+    },
+    {
+      "code": "4",
+      "display": "vier und mehr"
+    },
+    {
+      "code": "9",
+      "display": "keine Angaben"
+    }
+  ],
+  "count": 6
+}

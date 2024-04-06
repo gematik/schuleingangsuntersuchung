@@ -1,0 +1,25 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "HaeufigkeitAuswahlCS",
+  "id": "haeufigkeit-auswahl-cs",
+  "title": "Häufigkeit Auswahl CodeSystem",
+  "description": "HaeufigkeitAuswahlCS",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/haeufigkeit-auswahl-cs",
+  "concept": [
+    {
+      "code": "gelegentlich",
+      "display": "Gelegentlich"
+    },
+    {
+      "code": "häufig",
+      "display": "Häufig"
+    },
+    {
+      "code": "nie",
+      "display": "Nie"
+    }
+  ],
+  "count": 3
+}

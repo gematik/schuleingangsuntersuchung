@@ -1,0 +1,40 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU-AF-AntwortKindergartenBesuchCS",
+  "id": "SEU-AF-AntwortKindergartenBesuchCS",
+  "title": "SEU Antwort Kindergartenbesuch",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-AntwortKindergartenBesuchCS",
+  "concept": [
+    {
+      "code": "0",
+      "display": "0 Jahre"
+    },
+    {
+      "code": "1",
+      "display": "1 Jahr"
+    },
+    {
+      "code": "2",
+      "display": "2 Jahre"
+    },
+    {
+      "code": "3",
+      "display": "3 Jahre"
+    },
+    {
+      "code": "4",
+      "display": "4 Jahre"
+    },
+    {
+      "code": "5",
+      "display": "5 und mehr Jahre"
+    },
+    {
+      "code": "9",
+      "display": "keine Angaben"
+    }
+  ],
+  "count": 7
+}

@@ -1,0 +1,28 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU-AF-StaatsangehoerigkeitCS",
+  "id": "SEU-AF-StaatsangehoerigkeitCS",
+  "title": "SEU Staatsangehörigkeit",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-StaatsangehoerigkeitCS",
+  "concept": [
+    {
+      "code": "1",
+      "display": "Deutsch"
+    },
+    {
+      "code": "2",
+      "display": "Deutsch UND andere"
+    },
+    {
+      "code": "3",
+      "display": "Andere"
+    },
+    {
+      "code": "9",
+      "display": "keine Angaben"
+    }
+  ],
+  "count": 4
+}

@@ -20,6 +20,12 @@ Description: "Elternbefragung"
 * contained[+] = PflegegradVS
 * contained[+] = UnfallOrtVS
 * contained[+] = UnfallArtVS
+* contained[+] = GeplantFindetStattAbgeschlossenVS
+* contained[+] = HaeufigkeitAuswahlVS
+* contained[+] = BildungsabschlussVS
+* contained[+] = BerufsbildungVS
+* contained[+] = ErwerbsstatusVS
+* contained[+] = FamilienrolleVS
 * id = "SEU-Elternbefragung"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung"
 * title = "SEU Elternfragebogen Maximaldatensatz"
@@ -30,10 +36,8 @@ Description: "Elternbefragung"
   * linkId = "1"
   * text = "(1) Personenbezogene Daten Kind"
   * item[+]
-    * type = #string
-    * linkId = "1.1"
-    * text = "(1.1) Nachname des Kindes"
-    * insert initialExpression("%patient.name[0].family")  
+    * insert addItem(1.1, #string, Nachname des Kindes)
+    * insert initialExpression("%patient.name[0].family")
   * item[+]
     * type = #string
     * linkId = "1.2"
@@ -759,8 +763,10 @@ Description: "Elternbefragung"
   * insert addGroup(12, Sonstiges)
   * item[+]
     * insert addItem(12.1, #choice, Beratung Erziehungsberatungsstelle)
+    * answerValueSet = Canonical(GeplantFindetStattAbgeschlossenVS)
   * item[+]
     * insert addItem(12.2, #choice, Beratung Sozialpädiatrisches Zentrum SPZ)
+    * answerValueSet = Canonical(GeplantFindetStattAbgeschlossenVS)
   * item[+]
     * insert addItem(12.3, #boolean, Teilnahme Netzwerk Gesunde Kinder)
     * item[+]
@@ -774,12 +780,14 @@ Description: "Elternbefragung"
     * insert addItem(12.4, #boolean, KISS Sprachscreening)
   * item[+]
     * insert addItem(12.5, #choice, Raucherhaushalt)
+    * answerValueSet = Canonical(HaeufigkeitAuswahlVS)    
   * item[+]
     * insert addItem(12.6, #text, Stärken/Begabung/Besonderheiten des Kindes)
   * item[+]
     * insert addItem(12.7, #boolean, Regelmäßig Sport)
   * item[+]
     * insert addItem(12.8, #text, Sportart und Verein)
+    * insert EnableWhenBoolean(12.7, =, true)
   * item[+]
     * insert addItem(12.9, #boolean, Schwimmfähig)
   * item[+]
@@ -790,16 +798,28 @@ Description: "Elternbefragung"
   * insert addGroup(13, Informationen Eltern)
   * item[+]
     * insert addItem(13.1, #choice, Schulabschluss 1. Elternteil)
+    * answerValueSet = Canonical(BildungsabschlussVS)
   * item[+]
     * insert addItem(13.2, #choice, Schulabschluss 2. Elternteil)
+    * answerValueSet = Canonical(BildungsabschlussVS)
   * item[+]
     * insert addItem(13.3, #choice, Berufsabschluss 1. Elternteil)
+    * answerValueSet = Canonical(BerufsbildungVS)    
   * item[+]
     * insert addItem(13.4, #choice, Berufsabschluss 2. Elternteil)
+    * answerValueSet = Canonical(BerufsbildungVS)  
   * item[+]
     * insert addItem(13.5, #choice, Berufstätigkeit 1. Elternteil)
+    * answerValueSet = Canonical(ErwerbsstatusVS)  
+  * item[+]
+    * insert addItem(13.5.1, #text, Grund der Erwerbslosigkeit)
+    * insert EnableWhenCode(13.5, =, ErwerbsstatusCS, nicht_erwerbstaetig)
   * item[+]
     * insert addItem(13.6, #choice, Berufstätigkeit 2. Elternteil)
+    * answerValueSet = Canonical(ErwerbsstatusVS)
+  * item[+]
+    * insert addItem(13.6.1, #text, Grund der Erwerbslosigkeit)
+    * insert EnableWhenCode(13.6, =, ErwerbsstatusCS, nicht_erwerbstaetig)
   * item[+]
     * insert addItem(13.7, #integer, [[Anzahl der Kinder im Haushalt. Kinder unter 18 Jahren, einzuschulendes Kind mitgerechnet]])
   * item[+]
@@ -810,6 +830,7 @@ Description: "Elternbefragung"
     * insert addItem(13.10, #date, Datum seit dem der 2. Elternteil in Deutschland lebt.)
   * item[+]
     * insert addItem(13.11, #choice, Wer hat diesen Fragebogen ausgefüllt)
+    * answerValueSet = Canonical(FamilienrolleVS)  
   * item[+]
     * insert addItem(13.12, #boolean, [[Einwilligung zur Datenerhebung früherer Untersuchungen, welche beim Gesundheitsamt vorliegen]])
   * item[+]

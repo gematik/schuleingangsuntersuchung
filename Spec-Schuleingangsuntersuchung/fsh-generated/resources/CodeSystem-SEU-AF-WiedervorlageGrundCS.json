@@ -1,0 +1,44 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU-AF-WiedervorlageGrundCS",
+  "id": "SEU-AF-WiedervorlageGrundCS",
+  "title": "SEU Wiedervorlage Grund",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-WiedervorlageGrundCS",
+  "concept": [
+    {
+      "code": "1",
+      "display": "1. Mahnung"
+    },
+    {
+      "code": "2",
+      "display": "2. Mahnung "
+    },
+    {
+      "code": "3",
+      "display": "U8/U9 nachgereicht"
+    },
+    {
+      "code": "4",
+      "display": "Einladung 1. SÄU"
+    },
+    {
+      "code": "5",
+      "display": "Einladung 2. SÄU"
+    },
+    {
+      "code": "6",
+      "display": "Meldung Jugendamt"
+    },
+    {
+      "code": "7",
+      "display": "Mitteilungsbogen verschicken"
+    },
+    {
+      "code": "8",
+      "display": "sonstiges"
+    }
+  ],
+  "count": 8
+}

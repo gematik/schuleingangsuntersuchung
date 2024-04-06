@@ -1,0 +1,25 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "ErwerbsstatusCS",
+  "id": "erwerbsstatus-cs",
+  "title": "Erwerbsstatus CodeSystem",
+  "description": "ErwerbsstatusCS",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/erwerbsstatus-cs",
+  "concept": [
+    {
+      "code": "nicht_erwerbstaetig",
+      "display": "Nicht erwerbstätig"
+    },
+    {
+      "code": "teilzeit",
+      "display": "Teilzeit"
+    },
+    {
+      "code": "vollzeit",
+      "display": "Vollzeit"
+    }
+  ],
+  "count": 3
+}

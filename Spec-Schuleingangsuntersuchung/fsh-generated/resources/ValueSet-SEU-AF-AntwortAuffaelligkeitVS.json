@@ -1,0 +1,45 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SEU-AF-AntwortAuffaelligkeitVS",
+  "id": "SEU-AF-AntwortAuffaelligkeitVS",
+  "title": "SEU Antwort Auffälligkeit",
+  "description": "Diese Codes enthalten Antwortmöglichkeiten zu Auffälligkeiten",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-AntwortAuffaelligkeitVS",
+  "expansion": {
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-AntwortAuffaelligkeitVS",
+        "code": "1",
+        "display": "ja"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-AntwortAuffaelligkeitVS",
+        "code": "2",
+        "display": "nein"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-AntwortAuffaelligkeitVS",
+        "code": "3",
+        "display": "nicht beurteilbar"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-AntwortAuffaelligkeitVS",
+        "code": "8",
+        "display": "Untersuchung nicht möglich"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-AntwortAuffaelligkeitVS",
+        "code": "9",
+        "display": "Untersuchung nicht durchgeführt"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-AntwortAuffaelligkeitCS"
+      }
+    ]
+  }
+}

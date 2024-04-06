@@ -1,0 +1,33 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "PflegegradCS",
+  "id": "PflegegradCS",
+  "title": "PflegegradCS",
+  "description": "PflegegradCS",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/PflegegradCS",
+  "concept": [
+    {
+      "code": "pflegegrad_1",
+      "display": "Pflegegrad 1"
+    },
+    {
+      "code": "pflegegrad_2",
+      "display": "Pflegegrad 2"
+    },
+    {
+      "code": "pflegegrad_3",
+      "display": "Pflegegrad 3"
+    },
+    {
+      "code": "pflegegrad_4",
+      "display": "Pflegegrad 4"
+    },
+    {
+      "code": "pflegegrad_5",
+      "display": "Pflegegrad 5"
+    }
+  ],
+  "count": 5
+}

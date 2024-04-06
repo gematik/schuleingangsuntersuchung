@@ -444,8 +444,56 @@
     "fshName": "DeuevAnlage8Laenderkennzeichen",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Elternfragebogen/CodeSystem.fsh",
-    "startLine": 184,
-    "endLine": 513
+    "startLine": 237,
+    "endLine": 566
+  },
+  {
+    "outputFile": "CodeSystem-berufsbildung-cs.json",
+    "fshName": "BerufsbildungCS",
+    "fshType": "CodeSystem",
+    "fshFile": "Questionnaire/Elternfragebogen/CodeSystem.fsh",
+    "startLine": 208,
+    "endLine": 215
+  },
+  {
+    "outputFile": "CodeSystem-bildungsabschluss-cs.json",
+    "fshName": "BildungsabschlussCS",
+    "fshType": "CodeSystem",
+    "fshFile": "Questionnaire/Elternfragebogen/CodeSystem.fsh",
+    "startLine": 199,
+    "endLine": 206
+  },
+  {
+    "outputFile": "CodeSystem-erwerbsstatus-cs.json",
+    "fshName": "ErwerbsstatusCS",
+    "fshType": "CodeSystem",
+    "fshFile": "Questionnaire/Elternfragebogen/CodeSystem.fsh",
+    "startLine": 217,
+    "endLine": 223
+  },
+  {
+    "outputFile": "CodeSystem-familienrolle-cs.json",
+    "fshName": "FamilienrolleCS",
+    "fshType": "CodeSystem",
+    "fshFile": "Questionnaire/Elternfragebogen/CodeSystem.fsh",
+    "startLine": 225,
+    "endLine": 234
+  },
+  {
+    "outputFile": "CodeSystem-geplant-findet-statt-abgeschlossen-cs.json",
+    "fshName": "GeplantFindetStattAbgeschlossenCS",
+    "fshType": "CodeSystem",
+    "fshFile": "Questionnaire/Elternfragebogen/CodeSystem.fsh",
+    "startLine": 183,
+    "endLine": 189
+  },
+  {
+    "outputFile": "CodeSystem-haeufigkeit-auswahl-cs.json",
+    "fshName": "HaeufigkeitAuswahlCS",
+    "fshType": "CodeSystem",
+    "fshFile": "Questionnaire/Elternfragebogen/CodeSystem.fsh",
+    "startLine": 191,
+    "endLine": 197
   },
   {
     "outputFile": "Condition-ChronischeKrankheitBeispiel.json",
@@ -661,7 +709,7 @@
     "fshType": "Instance",
     "fshFile": "Questionnaire/Elternfragebogen/ElternfragebogenQU.fsh",
     "startLine": 1,
-    "endLine": 822
+    "endLine": 843
   },
   {
     "outputFile": "Questionnaire-SOPESS.json",
@@ -988,8 +1036,8 @@
     "fshName": "AuffaelligkeitVerhaltenVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Elternfragebogen/ValueSet.fsh",
-    "startLine": 99,
-    "endLine": 176
+    "startLine": 132,
+    "endLine": 209
   },
   {
     "outputFile": "ValueSet-BefundBewertungBielefelderModellVS.json",
@@ -1020,8 +1068,8 @@
     "fshName": "DeuevAnlage8LaenderkennzeichenVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Elternfragebogen/ValueSet.fsh",
-    "startLine": 438,
-    "endLine": 1507
+    "startLine": 551,
+    "endLine": 1620
   },
   {
     "outputFile": "ValueSet-DeutschUndAndereSpracheVS.json",
@@ -1044,16 +1092,16 @@
     "fshName": "ErkrankungVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Elternfragebogen/ValueSet.fsh",
-    "startLine": 225,
-    "endLine": 287
+    "startLine": 258,
+    "endLine": 320
   },
   {
     "outputFile": "ValueSet-ErkrankungenLetztesJahrVS.json",
     "fshName": "ErkrankungenLetztesJahrVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Elternfragebogen/ValueSet.fsh",
-    "startLine": 335,
-    "endLine": 367
+    "startLine": 368,
+    "endLine": 400
   },
   {
     "outputFile": "ValueSet-GenderDEVS.json",
@@ -1068,8 +1116,8 @@
     "fshName": "InfektionsKrankheitVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Elternfragebogen/ValueSet.fsh",
-    "startLine": 289,
-    "endLine": 333
+    "startLine": 322,
+    "endLine": 366
   },
   {
     "outputFile": "ValueSet-JaNeinAngemeldetVS.json",
@@ -1092,8 +1140,8 @@
     "fshName": "LinksRechtsBeidseitsKeineAngabeVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Elternfragebogen/ValueSet.fsh",
-    "startLine": 178,
-    "endLine": 195
+    "startLine": 211,
+    "endLine": 228
   },
   {
     "outputFile": "ValueSet-PaediatrischeLeistungVS.json",
@@ -1124,16 +1172,16 @@
     "fshName": "PflegegradVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Elternfragebogen/ValueSet.fsh",
-    "startLine": 369,
-    "endLine": 389
+    "startLine": 402,
+    "endLine": 422
   },
   {
     "outputFile": "ValueSet-RechtsLinksHaenderVS.json",
     "fshName": "RechtsLinksHaenderVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Elternfragebogen/ValueSet.fsh",
-    "startLine": 83,
-    "endLine": 97
+    "startLine": 116,
+    "endLine": 130
   },
   {
     "outputFile": "ValueSet-ReferenceRangeTypeVS.json",
@@ -1444,8 +1492,8 @@
     "fshName": "StoffwechselstoerungVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Elternfragebogen/ValueSet.fsh",
-    "startLine": 197,
-    "endLine": 223
+    "startLine": 230,
+    "endLine": 256
   },
   {
     "outputFile": "ValueSet-TestTypesVS.json",
@@ -1460,16 +1508,16 @@
     "fshName": "UnfallArtVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Elternfragebogen/ValueSet.fsh",
-    "startLine": 413,
-    "endLine": 436
+    "startLine": 446,
+    "endLine": 469
   },
   {
     "outputFile": "ValueSet-UnfallOrtVS.json",
     "fshName": "UnfallOrtVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Elternfragebogen/ValueSet.fsh",
-    "startLine": 391,
-    "endLine": 411
+    "startLine": 424,
+    "endLine": 444
   },
   {
     "outputFile": "ValueSet-UntersuchungsArtVS.json",
@@ -1494,5 +1542,53 @@
     "fshFile": "terminologies.fsh",
     "startLine": 42,
     "endLine": 45
+  },
+  {
+    "outputFile": "ValueSet-berufsbildung-vs.json",
+    "fshName": "BerufsbildungVS",
+    "fshType": "ValueSet",
+    "fshFile": "Questionnaire/Elternfragebogen/ValueSet.fsh",
+    "startLine": 490,
+    "endLine": 507
+  },
+  {
+    "outputFile": "ValueSet-bildungsabschluss-vs.json",
+    "fshName": "BildungsabschlussVS",
+    "fshType": "ValueSet",
+    "fshFile": "Questionnaire/Elternfragebogen/ValueSet.fsh",
+    "startLine": 471,
+    "endLine": 488
+  },
+  {
+    "outputFile": "ValueSet-erwerbsstatus-vs.json",
+    "fshName": "ErwerbsstatusVS",
+    "fshType": "ValueSet",
+    "fshFile": "Questionnaire/Elternfragebogen/ValueSet.fsh",
+    "startLine": 509,
+    "endLine": 523
+  },
+  {
+    "outputFile": "ValueSet-familienrolle-vs.json",
+    "fshName": "FamilienrolleVS",
+    "fshType": "ValueSet",
+    "fshFile": "Questionnaire/Elternfragebogen/ValueSet.fsh",
+    "startLine": 525,
+    "endLine": 548
+  },
+  {
+    "outputFile": "ValueSet-geplant-findet-statt-abgeschlossen-vs.json",
+    "fshName": "GeplantFindetStattAbgeschlossenVS",
+    "fshType": "ValueSet",
+    "fshFile": "Questionnaire/Elternfragebogen/ValueSet.fsh",
+    "startLine": 83,
+    "endLine": 97
+  },
+  {
+    "outputFile": "ValueSet-haeufigkeit-auswahl-vs.json",
+    "fshName": "HaeufigkeitAuswahlVS",
+    "fshType": "ValueSet",
+    "fshFile": "Questionnaire/Elternfragebogen/ValueSet.fsh",
+    "startLine": 99,
+    "endLine": 113
   }
 ]

@@ -1,0 +1,30 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SEU-AF-AnamneseBesonderheitenVS",
+  "id": "SEU-AF-AnamneseBesonderheitenVS",
+  "title": "SEU Anamnese Besonderheiten",
+  "description": "Diese Codes enthalten Besonderheiten bei der Anamnese einer SEU",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-AnamneseBesonderheitenVS",
+  "expansion": {
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-AnamneseBesonderheitenCS",
+        "code": "0",
+        "display": "Es liegen keinerlei Angaben zur Anamnese vor"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-AnamneseBesonderheitenCS",
+        "code": "1",
+        "display": "Erschwert wegen unzureichender Deutschkenntnisse"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-AnamneseBesonderheitenCS"
+      }
+    ]
+  }
+}

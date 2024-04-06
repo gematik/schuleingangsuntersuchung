@@ -1,0 +1,29 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "LebtBeiCS",
+  "id": "LebtBeiCS",
+  "title": "LebtBeiCS",
+  "description": "LebtBeiCS",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/LebtBeiCS",
+  "concept": [
+    {
+      "code": "eltern",
+      "display": "Eltern"
+    },
+    {
+      "code": "mutter",
+      "display": "Mutter"
+    },
+    {
+      "code": "vater",
+      "display": "Vater"
+    },
+    {
+      "code": "andere",
+      "display": "Andere"
+    }
+  ],
+  "count": 4
+}

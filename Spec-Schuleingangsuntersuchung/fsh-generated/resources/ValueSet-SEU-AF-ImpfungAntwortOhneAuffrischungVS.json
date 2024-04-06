@@ -1,0 +1,46 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SEU-AF-ImpfungAntwortOhneAuffrischungVS",
+  "id": "SEU-AF-ImpfungAntwortOhneAuffrischungVS",
+  "title": "SEU Impfung Antwort ohne Auffrischung",
+  "description": "Diese Codes enthalten allgemeine Angaben über den Status einer Impfung ohne die Möglichkeit zur Angave der 1+ Auffrischung",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-ImpfungAntwortOhneAuffrischungVS",
+  "expansion": {
+    "timestamp": "2024-03-30T13:28:00+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-ImpfungAntwortCS",
+        "code": "0",
+        "display": "keine Impfung"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-ImpfungAntwortCS",
+        "code": "1",
+        "display": "Grundimmunisierung unvollständig"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-ImpfungAntwortCS",
+        "code": "2",
+        "display": "Grundimmunisierung abgeschlossen (ohne Auffrischung)"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-ImpfungAntwortCS",
+        "concept": [
+          {
+            "code": "0",
+            "display": "keine Impfung"
+          },
+          {
+            "code": "2",
+            "display": "Grundimmunisierung abgeschlossen (ohne Auffrischung)"
+          }
+        ]
+      }
+    ]
+  }
+}

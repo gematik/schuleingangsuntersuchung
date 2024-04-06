@@ -1,0 +1,24 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU-AF-VorstellungSchularztCS",
+  "id": "SEU-AF-VorstellungSchularztCS",
+  "title": "SEU Vorstellung Schularzt",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-VorstellungSchularztCS",
+  "concept": [
+    {
+      "code": "1",
+      "display": "Ja"
+    },
+    {
+      "code": "2",
+      "display": "Nein"
+    },
+    {
+      "code": "3",
+      "display": "Teilnahme empfohlen (freiwillig)"
+    }
+  ],
+  "count": 3
+}
