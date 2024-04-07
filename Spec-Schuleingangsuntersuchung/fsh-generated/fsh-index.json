@@ -709,7 +709,7 @@
     "fshType": "Instance",
     "fshFile": "Questionnaire/Elternfragebogen/ElternfragebogenQU.fsh",
     "startLine": 1,
-    "endLine": 843
+    "endLine": 817
   },
   {
     "outputFile": "Questionnaire-SOPESS.json",

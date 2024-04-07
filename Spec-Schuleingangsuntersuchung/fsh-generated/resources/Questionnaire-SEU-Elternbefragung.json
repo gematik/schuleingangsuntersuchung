@@ -28,9 +28,15 @@
           ]
         },
         {
-          "type": "string",
           "linkId": "1.2",
+          "type": "string",
           "text": "(1.2) Vorname des Kindes",
+          "code": [
+            {
+              "code": "1.2",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
           "extension": [
             {
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
@@ -42,9 +48,15 @@
           ]
         },
         {
-          "type": "date",
           "linkId": "1.3",
+          "type": "date",
           "text": "(1.3) Geburtsdatum",
+          "code": [
+            {
+              "code": "1.3",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
           "extension": [
             {
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
@@ -56,26 +68,50 @@
           ]
         },
         {
-          "answerValueSet": "#DeuevAnlage8LaenderkennzeichenVS",
-          "type": "choice",
           "linkId": "1.4",
-          "text": "(1.4) Staatsangehörigkeit"
-        },
-        {
-          "answerValueSet": "#DeuevAnlage8LaenderkennzeichenVS",
           "type": "choice",
-          "linkId": "1.5",
-          "text": "(1.5) Geburtsland"
+          "text": "(1.4) Staatsangehörigkeit",
+          "code": [
+            {
+              "code": "1.4",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "answerValueSet": "#DeuevAnlage8LaenderkennzeichenVS"
         },
         {
-          "type": "boolean",
+          "linkId": "1.5",
+          "type": "choice",
+          "text": "(1.5) Geburtsland",
+          "code": [
+            {
+              "code": "1.5",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "answerValueSet": "#DeuevAnlage8LaenderkennzeichenVS"
+        },
+        {
           "linkId": "1.6",
-          "text": "(1.6) In Deutschland geboren"
+          "type": "boolean",
+          "text": "(1.6) In Deutschland geboren",
+          "code": [
+            {
+              "code": "1.6",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
         },
         {
           "linkId": "1.6.1",
           "type": "date",
           "text": "(1.6.1) Seit wann wohnt das Kind in Deutschland?",
+          "code": [
+            {
+              "code": "1.6.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
           "enableWhen": [
             {
               "question": "1.6",
@@ -85,38 +121,83 @@
           ]
         },
         {
-          "type": "string",
           "linkId": "1.7",
-          "text": "(1.7) Geburtsort"
+          "type": "string",
+          "text": "(1.7) Geburtsort",
+          "code": [
+            {
+              "code": "1.7",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
         },
         {
-          "answerValueSet": "#GenderDEVS",
-          "type": "choice",
           "linkId": "1.8",
-          "text": "(1.8) Geschlecht"
-        },
-        {
-          "type": "string",
-          "linkId": "1.9",
-          "text": "(1.9) PLZ"
-        },
-        {
-          "type": "string",
-          "linkId": "1.10",
-          "text": "(1.10) Wohnort"
-        },
-        {
-          "type": "string",
-          "linkId": "1.11",
-          "text": "(1.11) Straße"
-        },
-        {
-          "answerValueSet": "#LebtBeiVS",
           "type": "choice",
-          "linkId": "1.12",
-          "text": "(1.12) Kind lebt hauptsächlich bei"
+          "text": "(1.8) Geschlecht",
+          "code": [
+            {
+              "code": "1.8",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "answerValueSet": "#GenderDEVS"
         },
         {
+          "linkId": "1.9",
+          "type": "string",
+          "text": "(1.9) PLZ",
+          "code": [
+            {
+              "code": "1.9",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "1.10",
+          "type": "string",
+          "text": "(1.10) Wohnort",
+          "code": [
+            {
+              "code": "1.10",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "1.11",
+          "type": "string",
+          "text": "(1.11) Straße",
+          "code": [
+            {
+              "code": "1.11",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "1.12",
+          "type": "choice",
+          "text": "(1.12) Kind lebt hauptsächlich bei",
+          "code": [
+            {
+              "code": "1.12",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "answerValueSet": "#LebtBeiVS"
+        },
+        {
+          "linkId": "1.12.1",
+          "type": "string",
+          "text": "(1.12.1) Kind lebt hauptsächlich bei",
+          "code": [
+            {
+              "code": "1.12.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
           "enableWhen": [
             {
               "question": "1.12",
@@ -126,10 +207,7 @@
                 "system": "https://www.oegd.de/fhir/seu/CodeSystem/LebtBeiCS"
               }
             }
-          ],
-          "type": "string",
-          "linkId": "1.12.1",
-          "text": "(1.12.1) Kind lebt hauptsächlich bei"
+          ]
         }
       ]
     },

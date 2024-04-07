@@ -39,70 +39,44 @@ Description: "Elternbefragung"
     * insert addItem(1.1, #string, Nachname des Kindes)
     * insert initialExpression("%patient.name[0].family")
   * item[+]
-    * type = #string
-    * linkId = "1.2"
-    * text = "(1.2) Vorname des Kindes"
+    * insert addItem(1.2, #string, Vorname des Kindes)
     * insert initialExpression("%patient.name[0].given[0]")
   * item[+]
-    * type = #date
-    * linkId = "1.3"
-    * text = "(1.3) Geburtsdatum"
+    * insert addItem(1.3, #date, Geburtsdatum)
     * insert initialExpression("%patient.birthdate")
   * item[+]
+    * insert addItem(1.4, #choice, Staatsangehörigkeit)
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
-    * type = #choice
-    * linkId = "1.4"
-    * text = "(1.4) Staatsangehörigkeit"
-  //TODO: initial expression
+    //TODO: initial expression
   * item[+]
-    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)  
-    * type = #choice
-    * linkId = "1.5"
-    * text = "(1.5) Geburtsland"
+    * insert addItem(1.5, #choice, Geburtsland)
+    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
   * item[+]
-    * type = #boolean
-    * linkId = "1.6"
-    * text = "(1.6) In Deutschland geboren"
+    * insert addItem(1.6, #boolean, In Deutschland geboren)
   * item[+]
-    * linkId = "1.6.1"
-    * type = #date
-    * text = "(1.6.1) Seit wann wohnt das Kind in Deutschland?"  
+    * insert addItem(1.6.1, #date, Seit wann wohnt das Kind in Deutschland?)
     * enableWhen[+]
       * question = "1.6"
       * operator = #=
       * answerBoolean = false
   * item[+]
-    * type = #string
-    * linkId = "1.7"
-    * text = "(1.7) Geburtsort"
+    * insert addItem(1.7, #string, Geburtsort)
   * item[+]
+    * insert addItem(1.8, #choice, Geschlecht)
     * answerValueSet = Canonical(GenderDEVS)
-    * type = #choice
-    * linkId = "1.8"
-    * text = "(1.8) Geschlecht"
   * item[+]
-    * type = #string
-    * linkId = "1.9"
-    * text = "(1.9) PLZ"
+    * insert addItem(1.9, #string, PLZ)
   * item[+]
-    * type = #string
-    * linkId = "1.10"
-    * text = "(1.10) Wohnort"
+    * insert addItem(1.10, #string, Wohnort)
   * item[+]
-    * type = #string
-    * linkId = "1.11"
-    * text = "(1.11) Straße"
+    * insert addItem(1.11, #string, Straße)
   * item[+]
+    * insert addItem(1.12, #choice, Kind lebt hauptsächlich bei)
     * answerValueSet = Canonical(LebtBeiVS)
-    * type = #choice
-    * linkId = "1.12"
-    * text = "(1.12) Kind lebt hauptsächlich bei"
-  // Freitext falls Kind bei "other" lebt
   * item[+]
+    * insert addItem(1.12.1, #string, Kind lebt hauptsächlich bei)
     * insert EnableWhenCode(1.12, =, LebtBeiCS, andere)
-    * type = #string
-    * linkId = "1.12.1"
-    * text = "(1.12.1) Kind lebt hauptsächlich bei"
+ // Freitext falls Kind bei "other" lebt
 //********************************************
 // Personenbezogene Daten Personenberechtigter
 * item[+]
