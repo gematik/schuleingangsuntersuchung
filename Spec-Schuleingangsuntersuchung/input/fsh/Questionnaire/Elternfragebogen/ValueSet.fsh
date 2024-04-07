@@ -112,6 +112,19 @@ Description: "HaeufigkeitAuswahlVS"
 * ^expansion.contains[=].code = #nie
 * ^expansion.contains[=].display = "Nie"
 
+ValueSet: VersorgungsartVS
+Id: versorgungsart-vs
+Title: "Versorgungsart ValueSet"
+Description: "VersorgungsartVS"
+* include codes from system VersorgungsartCS
+* ^expansion.timestamp = "2024-04-06T12:00:00+00:00"
+* ^expansion.contains[0].system = Canonical(VersorgungsartCS)
+* ^expansion.contains[=].code = #ambulant
+* ^expansion.contains[=].display = "Ambulant"
+* ^expansion.contains[+].system = Canonical(VersorgungsartCS)
+* ^expansion.contains[=].code = #krankenhaus
+* ^expansion.contains[=].display = "Krankenhaus"
+
 
 ValueSet: RechtsLinksHaenderVS
 Id: RechtsLinksHaenderVS

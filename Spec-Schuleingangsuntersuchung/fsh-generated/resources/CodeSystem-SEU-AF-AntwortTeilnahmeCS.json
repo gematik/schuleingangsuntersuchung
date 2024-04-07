@@ -1,0 +1,28 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU-AF-AntwortTeilnahmeCS",
+  "id": "SEU-AF-AntwortTeilnahmeCS",
+  "title": "SEU Antwort auf Fragen zur Teilnahme",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-AntwortTeilnahmeCS",
+  "concept": [
+    {
+      "code": "1",
+      "display": "ja"
+    },
+    {
+      "code": "2",
+      "display": "nein"
+    },
+    {
+      "code": "3",
+      "display": "teilweise"
+    },
+    {
+      "code": "9",
+      "display": "keine Angabe"
+    }
+  ],
+  "count": 4
+}

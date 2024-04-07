@@ -214,6 +214,14 @@ Description: "BerufsbildungCS"
 * #berufsausbildung_fachschule "Abgeschlossene Berufsausbildung/Fachschulabschluss"
 * #abgeschlossenes_studium "Abgeschlossenes Studium"
 
+CodeSystem: VersorgungsartCS
+Id: versorgungsart-cs
+Title: "Versorgungsart CodeSystem"
+Description: "VersorgungsartCS"
+* #ambulant "Ambulant"
+* #krankenhaus "Krankenhaus"
+
+
 CodeSystem: ErwerbsstatusCS
 Id: erwerbsstatus-cs
 Title: "Erwerbsstatus CodeSystem"

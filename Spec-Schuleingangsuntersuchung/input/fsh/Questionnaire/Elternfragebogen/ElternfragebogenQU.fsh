@@ -26,6 +26,7 @@ Description: "Elternbefragung"
 * contained[+] = BerufsbildungVS
 * contained[+] = ErwerbsstatusVS
 * contained[+] = FamilienrolleVS
+* contained[+] = VersorgungsartVS
 * id = "SEU-Elternbefragung"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung"
 * title = "SEU Elternfragebogen Maximaldatensatz"
@@ -76,7 +77,6 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItem(1.12.1, #string, Kind lebt hauptsächlich bei)
     * insert EnableWhenCode(1.12, =, LebtBeiCS, andere)
- // Freitext falls Kind bei "other" lebt
 //********************************************
 // Personenbezogene Daten Personenberechtigter
 * item[+]
@@ -189,17 +189,17 @@ Description: "Elternbefragung"
       * type = #choice
       * linkId = "3.2.5"
       * text = "(3.2.5) Chronische Erkrankung"
-        * extension[http://hl7.org/fhir/StructureDefinition/rendering-style].valueString = "background-color: crimson"
+        * extension[$rendering-style].valueString = "background-color: crimson"
     * item[+]
       * type = #choice
       * linkId = "3.2.6"
       * text = "(3.2.6) Behinderung"
-        * extension[http://hl7.org/fhir/StructureDefinition/rendering-style].valueString = "background-color: crimson"
+        * extension[$rendering-style].valueString = "background-color: crimson"
     * item[+]
       * type = #choice
       * linkId = "3.2.7"
       * text = "(3.2.7) Schilddrüsenerkrankung"
-        * extension[http://hl7.org/fhir/StructureDefinition/rendering-style].valueString = "background-color: crimson"
+        * extension[$rendering-style].valueString = "background-color: crimson"
 //********************************************
 // Kinderbetreuung
 * item[+]
@@ -272,13 +272,13 @@ Description: "Elternbefragung"
     * type = #choice
     * linkId = "5.5"
     * text = "(5.5) Auffälligkeit bei der Geburt"
-      * extension[http://hl7.org/fhir/StructureDefinition/rendering-style].valueString = "background-color: crimson"    
+      * extension[$rendering-style].valueString = "background-color: crimson"    
     * repeats = true
   * item[+]
     * type = #choice
     * linkId = "5.6"
     * text = "(5.6) Auffälligkeit in der Schwangerschaft"
-      * extension[http://hl7.org/fhir/StructureDefinition/rendering-style].valueString = "background-color: crimson"
+      * extension[$rendering-style].valueString = "background-color: crimson"
     * repeats = true
   * item[+]
     * type = #integer
@@ -539,17 +539,14 @@ Description: "Elternbefragung"
       * type = #date
       * linkId = "8.13.g.2"
       * text = "(8.13.g.2) Erkrankungsbeginn"
-    // TODO: VS Binding: nein
   * item[+]
     * type = #boolean
     * linkId = "8.14"
     * text = "(8.14) Chronische Erkrankung vorhanden"
-  * item[+]
-    * insert EnableWhenBoolean(8.14, =, true)
-    * type = #text
-    * linkId = "8.14"
-    * text = "(8.14.1) Welche Chronische Erkrankung"
-    * repeats = true  
+    * item[+]
+      * insert addItem(8.14.1, #string, Welche Erkrankung?)
+      * insert EnableWhenBoolean(8.14, =, true)
+      * repeats = true 
   * item[+]
     * type = #boolean
     * linkId = "8.15"
@@ -579,18 +576,18 @@ Description: "Elternbefragung"
     * type = #boolean
     * linkId = "8.21"
     * text = "(8.21) Schwere Behinderung vorhanden?"
-    //TODO: auf group umbauen
   * item[+]
+    * insert addGroup(8.21.g, Details Behinderung)
     * insert EnableWhenBoolean(8.21, =, true)
-    * type = #text
-    * linkId = "8.21.1"
-    * text = "(8.21) Welche Behinderung"
-  * item[+]
-    * insert EnableWhenBoolean(8.21, =, true)
-    * type = #choice
-    * linkId = "8.22"
-    * text = "(8.22) Behinderung Merkzeichen"
-      * extension[http://hl7.org/fhir/StructureDefinition/rendering-style].valueString = "background-color: crimson"
+    * item[+]
+      * type = #text
+      * linkId = "8.21.g.1"
+      * text = "(8.21) Welche Behinderung"
+    * item[+]
+      * type = #choice
+      * linkId = "8.21.g.2"
+      * text = "(8.22) Behinderung Merkzeichen"
+        * extension[$rendering-style].valueString = "background-color: crimson"
   * item[+]
     * type = #boolean
     * linkId = "8.23"
@@ -629,7 +626,10 @@ Description: "Elternbefragung"
     * type = #boolean
     * linkId = "8.27"
     * text = "(8.27) Wurde ihr Kind operiert"
-    //TODO: ambulant oder KH
+    * item[+]
+      * insert addItem(8.27.1, #choice, Wie fand die Operation statt?)
+      * insert EnableWhenBoolean(8.27, =, true)
+      * answerValueSet = Canonical(VersorgungsartVS)
   * item[+]
     * type = #group
     * linkId = "8.28.g"

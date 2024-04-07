@@ -1,11 +1,11 @@
 {
   "resourceType": "ValueSet",
   "status": "draft",
-  "name": "SEU-AF-TeilnahmeVorkursDeutschVS",
-  "id": "SEU-AF-TeilnahmeVorkursDeutschVS",
-  "title": "SEU Teilnahme Vorkurs Deutsch",
-  "description": "Diese Codes enthalten die Angabe über eine Teilnahme am Vorkurs Deutsch",
-  "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-TeilnahmeVorkursDeutschVS",
+  "name": "SEU-AF-JaNeinKeineAngabeVS",
+  "id": "SEU-AF-JaNeinKeineAngabeVS",
+  "title": "SEU Ja-Nein-KeineAngabe",
+  "description": "Diese Codes können Boolean erweitern um 'Keine Angabe'",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-JaNeinKeineAngabeVS",
   "expansion": {
     "contains": [
       {
@@ -20,11 +20,6 @@
       },
       {
         "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-JaNeinGeplantKeineAngabeCS",
-        "code": "3",
-        "display": "geplant"
-      },
-      {
-        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-JaNeinGeplantKeineAngabeCS",
         "code": "9",
         "display": "keine Angaben"
       }
@@ -33,7 +28,21 @@
   "compose": {
     "include": [
       {
-        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-JaNeinGeplantKeineAngabeCS"
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-JaNeinGeplantKeineAngabeCS",
+        "concept": [
+          {
+            "code": "1",
+            "display": "ja"
+          },
+          {
+            "code": "2",
+            "display": "nein"
+          },
+          {
+            "code": "9",
+            "display": "keine Angaben"
+          }
+        ]
       }
     ]
   }

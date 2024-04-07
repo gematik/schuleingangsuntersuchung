@@ -1,0 +1,21 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "VersorgungsartCS",
+  "id": "versorgungsart-cs",
+  "title": "Versorgungsart CodeSystem",
+  "description": "VersorgungsartCS",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/versorgungsart-cs",
+  "concept": [
+    {
+      "code": "ambulant",
+      "display": "Ambulant"
+    },
+    {
+      "code": "krankenhaus",
+      "display": "Krankenhaus"
+    }
+  ],
+  "count": 2
+}

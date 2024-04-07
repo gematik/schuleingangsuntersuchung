@@ -862,20 +862,28 @@
         {
           "type": "boolean",
           "linkId": "8.14",
-          "text": "(8.14) Chronische Erkrankung vorhanden"
-        },
-        {
-          "enableWhen": [
+          "text": "(8.14) Chronische Erkrankung vorhanden",
+          "item": [
             {
-              "question": "8.14",
-              "operator": "=",
-              "answerBoolean": true
+              "linkId": "8.14.1",
+              "type": "string",
+              "text": "(8.14.1) Welche Erkrankung?",
+              "code": [
+                {
+                  "code": "8.14.1",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "enableWhen": [
+                {
+                  "question": "8.14",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ],
+              "repeats": true
             }
-          ],
-          "type": "text",
-          "linkId": "8.14",
-          "text": "(8.14.1) Welche Chronische Erkrankung",
-          "repeats": true
+          ]
         },
         {
           "type": "boolean",
@@ -914,36 +922,36 @@
           "text": "(8.21) Schwere Behinderung vorhanden?"
         },
         {
-          "enableWhen": [
+          "item": [
             {
-              "question": "8.21",
-              "operator": "=",
-              "answerBoolean": true
-            }
-          ],
-          "type": "text",
-          "linkId": "8.21.1",
-          "text": "(8.21) Welche Behinderung"
-        },
-        {
-          "enableWhen": [
+              "type": "text",
+              "linkId": "8.21.g.1",
+              "text": "(8.21) Welche Behinderung"
+            },
             {
-              "question": "8.21",
-              "operator": "=",
-              "answerBoolean": true
-            }
-          ],
-          "type": "choice",
-          "linkId": "8.22",
-          "text": "(8.22) Behinderung Merkzeichen",
-          "_text": {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
-                "valueString": "background-color: crimson"
+              "type": "choice",
+              "linkId": "8.21.g.2",
+              "text": "(8.22) Behinderung Merkzeichen",
+              "_text": {
+                "extension": [
+                  {
+                    "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
+                    "valueString": "background-color: crimson"
+                  }
+                ]
               }
-            ]
-          }
+            }
+          ],
+          "linkId": "8.21.g",
+          "type": "group",
+          "text": "(8.21.g) Details Behinderung",
+          "enableWhen": [
+            {
+              "question": "8.21",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ]
         },
         {
           "type": "boolean",
@@ -1007,7 +1015,28 @@
         {
           "type": "boolean",
           "linkId": "8.27",
-          "text": "(8.27) Wurde ihr Kind operiert"
+          "text": "(8.27) Wurde ihr Kind operiert",
+          "item": [
+            {
+              "linkId": "8.27.1",
+              "type": "choice",
+              "text": "(8.27.1) Wie fand die Operation statt?",
+              "code": [
+                {
+                  "code": "8.27.1",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "enableWhen": [
+                {
+                  "question": "8.27",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ],
+              "answerValueSet": "#versorgungsart-vs"
+            }
+          ]
         },
         {
           "type": "group",
@@ -4568,6 +4597,37 @@
         "include": [
           {
             "system": "https://www.oegd.de/fhir/seu/CodeSystem/familienrolle-cs"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "versorgungsart-vs",
+      "status": "draft",
+      "name": "VersorgungsartVS",
+      "title": "Versorgungsart ValueSet",
+      "description": "VersorgungsartVS",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/versorgungsart-vs",
+      "expansion": {
+        "timestamp": "2024-04-06T12:00:00+00:00",
+        "contains": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/versorgungsart-cs",
+            "code": "ambulant",
+            "display": "Ambulant"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/versorgungsart-cs",
+            "code": "krankenhaus",
+            "display": "Krankenhaus"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/versorgungsart-cs"
           }
         ]
       }

@@ -6,3 +6,4 @@ Alias: $bcp47 = urn:ietf:bcp:47
 
 Alias: $elternfragebogenKodierungen = https://www.oegd.de/fhir/seu/CodeSystem/Fragen
 Alias: $ietf-47 = urn:ietf:bcp:47
+Alias: $rendering-style = http://hl7.org/fhir/StructureDefinition/rendering-style

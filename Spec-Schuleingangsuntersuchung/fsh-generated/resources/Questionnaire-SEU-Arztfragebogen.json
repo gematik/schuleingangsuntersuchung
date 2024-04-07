@@ -954,22 +954,22 @@
       "expansion": {
         "contains": [
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-TeilnahmeVorkursDeutschCS",
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-JaNeinGeplantKeineAngabeCS",
             "code": "1",
             "display": "ja"
           },
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-TeilnahmeVorkursDeutschCS",
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-JaNeinGeplantKeineAngabeCS",
             "code": "2",
             "display": "nein"
           },
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-TeilnahmeVorkursDeutschCS",
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-JaNeinGeplantKeineAngabeCS",
             "code": "3",
             "display": "geplant"
           },
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-TeilnahmeVorkursDeutschCS",
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-JaNeinGeplantKeineAngabeCS",
             "code": "9",
             "display": "keine Angaben"
           }
@@ -978,7 +978,56 @@
       "compose": {
         "include": [
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-TeilnahmeVorkursDeutschCS"
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-JaNeinGeplantKeineAngabeCS"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "SEU-AF-JaNeinKeineAngabeVS",
+      "status": "draft",
+      "name": "SEU-AF-JaNeinKeineAngabeVS",
+      "title": "SEU Ja-Nein-KeineAngabe",
+      "description": "Diese Codes können Boolean erweitern um 'Keine Angabe'",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-JaNeinKeineAngabeVS",
+      "expansion": {
+        "contains": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-JaNeinGeplantKeineAngabeCS",
+            "code": "1",
+            "display": "ja"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-JaNeinGeplantKeineAngabeCS",
+            "code": "2",
+            "display": "nein"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-JaNeinGeplantKeineAngabeCS",
+            "code": "9",
+            "display": "keine Angaben"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-JaNeinGeplantKeineAngabeCS",
+            "concept": [
+              {
+                "code": "1",
+                "display": "ja"
+              },
+              {
+                "code": "2",
+                "display": "nein"
+              },
+              {
+                "code": "9",
+                "display": "keine Angaben"
+              }
+            ]
           }
         ]
       }
@@ -1764,6 +1813,81 @@
           }
         ]
       }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "SEU-AF-VergleichSAeUntersuchungVS",
+      "status": "draft",
+      "name": "SEU-AF-VergleichSAeUntersuchungVS",
+      "title": "SEU Vergleich schulärztliche Untersuchungen",
+      "description": "Diese Codes enthalten Vergleichswerte von schulärztlichen Untersuchungen",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-VergleichSAeUntersuchungVS",
+      "expansion": {
+        "contains": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-VergleichSAeUntersuchungCS",
+            "code": "1",
+            "display": "ohne Veränderung"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-VergleichSAeUntersuchungCS",
+            "code": "2",
+            "display": "eine Verbesserung"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-VergleichSAeUntersuchungCS",
+            "code": "3",
+            "display": "eine Verschlechterung"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-VergleichSAeUntersuchungCS"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "SEU-AF-AntwortTeilnahmeVS",
+      "status": "draft",
+      "name": "SEU-AF-AntwortTeilnahmeVS",
+      "title": "SEU Antwort auf Fragen zur Teilnahme",
+      "description": "Diese Codes enthalten Antworten zur Teilnahme an etwas",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-AntwortTeilnahmeVS",
+      "expansion": {
+        "contains": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-AntwortTeilnahmeCS",
+            "code": "1",
+            "display": "ja"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-AntwortTeilnahmeCS",
+            "code": "2",
+            "display": "nein"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-AntwortTeilnahmeCS",
+            "code": "3",
+            "display": "teilweise"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-AntwortTeilnahmeCS",
+            "code": "9",
+            "display": "keine Angabe"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-AntwortTeilnahmeCS"
+          }
+        ]
+      }
     }
   ],
   "url": "https://www.oegd.de/fhir/seu/Questionnaire/Arztfragebogen",
@@ -1953,7 +2077,7 @@
         },
         {
           "linkId": "1.12",
-          "type": "integer",
+          "type": "boolean",
           "text": "(1.12) Teilnahme rSEU im 1. UJ",
           "code": [
             {
@@ -1980,6 +2104,32 @@
       "linkId": "2",
       "type": "group",
       "text": "(2) Angaben zum Untersuchungsverlauf",
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/variable",
+          "valueExpression": {
+            "name": "Answer21",
+            "language": "text/fhirpath",
+            "expression": "item.repeat(item).where(linkId='2.1').answer.valueCoding.code"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/variable",
+          "valueExpression": {
+            "name": "Answer225",
+            "language": "text/fhirpath",
+            "expression": "item.repeat(item).where(linkId='2.25').answer.valueCoding.code"
+          }
+        },
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/variable",
+          "valueExpression": {
+            "name": "Answer226",
+            "language": "text/fhirpath",
+            "expression": "item.repeat(item).where(linkId='2.26').answer.value"
+          }
+        }
+      ],
       "item": [
         {
           "linkId": "2_1",
@@ -2345,24 +2495,24 @@
           "text": "(2_5) Ergebnis nach der 1. schulärztlichen Untersuchung",
           "item": [
             {
-              "linkId": "2.21",
+              "linkId": "2.23",
               "type": "choice",
-              "text": "(2.21) Vorstellung beim Schularzt indiziert (2.SÄU)",
+              "text": "(2.23) Vorstellung beim Schularzt indiziert (2.SÄU)",
               "code": [
                 {
-                  "code": "2.21",
+                  "code": "2.23",
                   "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
                 }
               ],
               "answerValueSet": "#SEU-AF-VorstellungSchularztVS"
             },
             {
-              "linkId": "2.22",
+              "linkId": "2.24",
               "type": "choice",
-              "text": "(2.22) Durchführung 2. SÄU",
+              "text": "(2.24) Durchführung 2. SÄU",
               "code": [
                 {
-                  "code": "2.22",
+                  "code": "2.24",
                   "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
                 }
               ],
@@ -2414,84 +2564,11 @@
                   "valueExpression": {
                     "name": "calculateKindAbgeschlossen",
                     "language": "text/fhirpath",
-                    "expression": "%Answer226 = true or %Answer226.empty() = false or %Answer21 = 19 or %Answer21 = 10"
+                    "expression": "%Answer226 or (%Answer225.empty() = false) or (%Answer21 = '19') or (%Answer21 = '10')"
                   }
                 }
-              ]
-            },
-            {
-              "linkId": "%Answer226",
-              "type": "string",
-              "text": "%Answer226",
-              "readOnly": true,
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
-                  "valueExpression": {
-                    "name": "debug",
-                    "language": "text/fhirpath",
-                    "expression": "%Answer226"
-                  }
-                }
-              ]
-            },
-            {
-              "linkId": "%Answer225",
-              "type": "string",
-              "text": "%Answer225",
-              "readOnly": true,
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
-                  "valueExpression": {
-                    "name": "debug",
-                    "language": "text/fhirpath",
-                    "expression": "%Answer225"
-                  }
-                }
-              ]
-            },
-            {
-              "linkId": "%Answer21",
-              "type": "string",
-              "text": "%Answer21",
-              "readOnly": true,
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
-                  "valueExpression": {
-                    "name": "debug",
-                    "language": "text/fhirpath",
-                    "expression": "%Answer21"
-                  }
-                }
-              ]
-            }
-          ],
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/variable",
-              "valueExpression": {
-                "name": "Answer226",
-                "language": "text/fhirpath",
-                "expression": "item.where(linkId='2.26').answer.value"
-              }
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/variable",
-              "valueExpression": {
-                "name": "Answer225",
-                "language": "text/fhirpath",
-                "expression": "item.where(linkId='2.25').answer.valueCoding.code"
-              }
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/variable",
-              "valueExpression": {
-                "name": "Answer21",
-                "language": "text/fhirpath",
-                "expression": "item.where(linkId='2.1').answer.valueCoding.code"
-              }
+              ],
+              "readOnly": true
             }
           ]
         },
@@ -3074,16 +3151,23 @@
           ]
         },
         {
-          "linkId": "3.18",
-          "type": "boolean",
-          "text": "(3.18) Masernimpfung nicht erforderlich (ärztl. bestätigt), da",
-          "code": [
+          "linkId": "3_2",
+          "type": "group",
+          "text": "(3_2) Kontraindikation für Masernimpfung",
+          "item": [
             {
-              "code": "3.18",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+              "linkId": "3.18",
+              "type": "choice",
+              "text": "(3.18) Masernimpfung nicht erforderlich (ärztl. bestätigt), da",
+              "code": [
+                {
+                  "code": "3.18",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "answerValueSet": "#SEU-AF-MasernimpfungNichtErforderlichGrundVS"
             }
-          ],
-          "answerValueSet": "#SEU-AF-MasernimpfungNichtErforderlichGrundVS"
+          ]
         }
       ]
     },
@@ -3859,14 +3943,15 @@
             },
             {
               "linkId": "5.28",
-              "type": "boolean",
+              "type": "choice",
               "text": "(5.28) Besuch beim Zahnarzt in letzten 12 Monaten",
               "code": [
                 {
                   "code": "5.28",
                   "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
                 }
-              ]
+              ],
+              "answerValueSet": "#SEU-AF-JaNeinKeineAngabeVS"
             },
             {
               "linkId": "5.29",
@@ -3877,7 +3962,8 @@
                   "code": "5.29",
                   "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
                 }
-              ]
+              ],
+              "answerValueSet": "#SEU-AF-JaNeinKeineAngabeVS"
             }
           ]
         },
@@ -4097,6 +4183,69 @@
                     "display": "Jahre"
                   }
                 }
+              ],
+              "enableWhen": [
+                {
+                  "question": "5.35",
+                  "operator": "=",
+                  "answerBoolean": true
+                },
+                {
+                  "question": "5.36",
+                  "operator": "=",
+                  "answerBoolean": true
+                },
+                {
+                  "question": "5.37",
+                  "operator": "=",
+                  "answerBoolean": true
+                },
+                {
+                  "question": "5.38",
+                  "operator": "=",
+                  "answerBoolean": true
+                },
+                {
+                  "question": "5.39",
+                  "operator": "=",
+                  "answerBoolean": true
+                },
+                {
+                  "question": "5.40",
+                  "operator": "=",
+                  "answerBoolean": true
+                },
+                {
+                  "question": "5.41",
+                  "operator": "=",
+                  "answerBoolean": true
+                },
+                {
+                  "question": "5.42",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ],
+              "enableBehavior": "any",
+              "item": [
+                {
+                  "linkId": "5.44H",
+                  "type": "display",
+                  "text": "Wurde mehr als 1 Erkrankung (Variablen 5.35 - 5.42) mit JA markiert, bitte das Alter bei Diagnosestellung der in der Reihenfolge zuerst aufgeführten Stoffwechselerkrankung angeben.",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "code": "help",
+                            "system": "http://hl7.org/fhir/questionnaire-item-control"
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
               ]
             },
             {
@@ -4117,6 +4266,69 @@
                     "system": "http://unitsofmeasure.org",
                     "display": "Monate"
                   }
+                }
+              ],
+              "enableWhen": [
+                {
+                  "question": "5.35",
+                  "operator": "=",
+                  "answerBoolean": true
+                },
+                {
+                  "question": "5.36",
+                  "operator": "=",
+                  "answerBoolean": true
+                },
+                {
+                  "question": "5.37",
+                  "operator": "=",
+                  "answerBoolean": true
+                },
+                {
+                  "question": "5.38",
+                  "operator": "=",
+                  "answerBoolean": true
+                },
+                {
+                  "question": "5.39",
+                  "operator": "=",
+                  "answerBoolean": true
+                },
+                {
+                  "question": "5.40",
+                  "operator": "=",
+                  "answerBoolean": true
+                },
+                {
+                  "question": "5.41",
+                  "operator": "=",
+                  "answerBoolean": true
+                },
+                {
+                  "question": "5.42",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ],
+              "enableBehavior": "any",
+              "item": [
+                {
+                  "linkId": "5.44H",
+                  "type": "display",
+                  "text": "Wurde mehr als 1 Erkrankung (Variablen 5.35 - 5.42) mit JA markiert, bitte das Alter bei Diagnosestellung der in der Reihenfolge zuerst aufgeführten Stoffwechselerkrankung angeben.",
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                      "valueCodeableConcept": {
+                        "coding": [
+                          {
+                            "code": "help",
+                            "system": "http://hl7.org/fhir/questionnaire-item-control"
+                          }
+                        ]
+                      }
+                    }
+                  ]
                 }
               ]
             },
@@ -4499,9 +4711,22 @@
           "text": "(7_1) 1. Screening",
           "item": [
             {
-              "linkId": "7_1_1",
-              "type": "group",
-              "text": "(7_1_1) Für Eingabe in der Untersuchung etwas erfassen",
+              "linkId": "7_1_1H",
+              "type": "display",
+              "text": "Geben Sie ab 7.3 etwas ein, um das Datum und die Angabe zur heutigen Untersuchung freizuschalten",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "code": "help",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control"
+                      }
+                    ]
+                  }
+                }
+              ],
               "enableWhen": [
                 {
                   "question": "7.3",
@@ -6509,6 +6734,1209 @@
                       "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
                     }
                   ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "8",
+      "type": "group",
+      "text": "(8) Schulärztliche Untersuchung (1. SÄU)",
+      "item": [
+        {
+          "linkId": "9.1",
+          "type": "date",
+          "text": "(9.1) Datum 2. Schulärztliche Untersuchung (2. SÄU)",
+          "code": [
+            {
+              "code": "9.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "9.2",
+          "type": "boolean",
+          "text": "(9.2) NUR telefon. Kontaktaufnahme mit Eltern",
+          "code": [
+            {
+              "code": "9.2",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "9_1",
+          "type": "group",
+          "text": "(9_1) Grund für 2. Schulärztliche Untersuchung",
+          "item": [
+            {
+              "linkId": "9.3",
+              "type": "boolean",
+              "text": "(9.3) Indikation nach 1. SÄU",
+              "code": [
+                {
+                  "code": "9.3",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            },
+            {
+              "linkId": "9.4",
+              "type": "boolean",
+              "text": "(9.4) Auffälliges Ergebnis im 2. Screening",
+              "code": [
+                {
+                  "code": "9.4",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            },
+            {
+              "linkId": "9.5",
+              "type": "boolean",
+              "text": "(9.5) Kind besucht keine vorschulische Einrichtung",
+              "code": [
+                {
+                  "code": "9.5",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            },
+            {
+              "linkId": "9.6",
+              "type": "boolean",
+              "text": "(9.6) Eltern wünschen 2. schulärztliche Untersuchung",
+              "code": [
+                {
+                  "code": "9.6",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            },
+            {
+              "linkId": "9.7",
+              "type": "boolean",
+              "text": "(9.7) Kind in SVE, Sonderpädagogischer oder integrativer Einrichtung",
+              "code": [
+                {
+                  "code": "9.7",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            },
+            {
+              "linkId": "9.8",
+              "type": "boolean",
+              "text": "(9.8) Kinder-/Hausarzt empfiehlt SÄU",
+              "code": [
+                {
+                  "code": "9.8",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            },
+            {
+              "linkId": "9.9",
+              "type": "boolean",
+              "text": "(9.9) Verdacht Kindeswohlgefährdung",
+              "code": [
+                {
+                  "code": "9.9",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            },
+            {
+              "linkId": "9.10",
+              "type": "boolean",
+              "text": "(9.10) Sonstige Gründe",
+              "code": [
+                {
+                  "code": "9.10",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            },
+            {
+              "linkId": "9.11",
+              "type": "boolean",
+              "text": "(9.11) Keine Angabe",
+              "code": [
+                {
+                  "code": "9.11",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "9_2",
+          "type": "group",
+          "text": "(9_2) Körperliche Befunde der 2. Schulärztlichen Untersuchung",
+          "item": [
+            {
+              "linkId": "9.12",
+              "type": "integer",
+              "text": "(9.12) gemessene Körpergröße (in cm)",
+              "code": [
+                {
+                  "code": "9.12",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                  "valueCoding": {
+                    "code": "cm",
+                    "system": "http://unitsofmeasure.org",
+                    "display": "cm"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "9.13",
+              "type": "decimal",
+              "text": "(9.13) gemessenes Körpergewicht (in kg)",
+              "code": [
+                {
+                  "code": "9.13",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                  "valueCoding": {
+                    "code": "kg",
+                    "system": "http://unitsofmeasure.org",
+                    "display": "kg"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "9.14",
+              "type": "boolean",
+              "text": "(9.14) Körperliche Untersuchung nicht möglich",
+              "code": [
+                {
+                  "code": "9.14",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            },
+            {
+              "linkId": "9.15",
+              "type": "string",
+              "text": "(9.15) Anmerkungen intern",
+              "code": [
+                {
+                  "code": "9.15",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            },
+            {
+              "linkId": "9.16",
+              "type": "boolean",
+              "text": "(9.16) Bislang unbehandelte therapiebedürftige körperliche Befunde",
+              "code": [
+                {
+                  "code": "9.16",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            },
+            {
+              "linkId": "9.17",
+              "type": "string",
+              "text": "(9.17) Körperliche Befunde",
+              "code": [
+                {
+                  "code": "9.17",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "enableWhen": [
+                {
+                  "question": "9.16",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ]
+            },
+            {
+              "linkId": "9.18",
+              "type": "choice",
+              "text": "(9.18) Verhaltensauffälligkeiten beim Kind",
+              "code": [
+                {
+                  "code": "9.18",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "answerValueSet": "#SEU-AF-AntwortenSAeUntersuchungVS"
+            },
+            {
+              "linkId": "9.19",
+              "type": "choice",
+              "text": "(9.19) Umgangs-/Erziehungsprobleme Mutter/Vater - Kind",
+              "code": [
+                {
+                  "code": "9.19",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "answerValueSet": "#SEU-AF-AntwortenSAeUntersuchungVS"
+            },
+            {
+              "linkId": "9.20",
+              "type": "choice",
+              "text": "(9.20) Verdacht auf Vernachlässigung (Kleidung, Pflegezustand, Verhalten)",
+              "code": [
+                {
+                  "code": "9.20",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "answerValueSet": "#SEU-AF-AntwortenSAeUntersuchungVS"
+            },
+            {
+              "linkId": "9.21",
+              "type": "choice",
+              "text": "(9.21) Schlechte Mundgesundheit (Massive Karies, Zahnverlust, etc.)",
+              "code": [
+                {
+                  "code": "9.21",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "answerValueSet": "#SEU-AF-AntwortenSAeUntersuchungVS"
+            },
+            {
+              "linkId": "9.22",
+              "type": "choice",
+              "text": "(9.22) Hämatome, Narben, Verletzungen an untypischen Stellen",
+              "code": [
+                {
+                  "code": "9.22",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "answerValueSet": "#SEU-AF-AntwortenSAeUntersuchungVS"
+            },
+            {
+              "linkId": "9.23",
+              "type": "boolean",
+              "text": "(9.23) Impfungen wurden im Rahmen der 2. SÄU nachgeholt",
+              "code": [
+                {
+                  "code": "9.23",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            },
+            {
+              "linkId": "9.24",
+              "type": "string",
+              "text": "(9.24) Nachgeholte Impfungen im Rahmen der 2. SÄU",
+              "code": [
+                {
+                  "code": "9.24",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "enableWhen": [
+                {
+                  "question": "9.23",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ]
+            },
+            {
+              "linkId": "9.25",
+              "type": "boolean",
+              "text": "(9.25) weitere Abklärung körperl. Befunde durch Kinder-/Jugendarzt",
+              "code": [
+                {
+                  "code": "9.25",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            },
+            {
+              "linkId": "9.26",
+              "type": "boolean",
+              "text": "(9.26) weitere Abklärung körperl. Befunde durch Augenarzt",
+              "code": [
+                {
+                  "code": "9.26",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            },
+            {
+              "linkId": "9.27",
+              "type": "boolean",
+              "text": "(9.27) weitere Abklärung körperl. Befunde durch HNO-Arzt",
+              "code": [
+                {
+                  "code": "9.27",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            },
+            {
+              "linkId": "9.28",
+              "type": "boolean",
+              "text": "(9.28) weitere Abklärung körperl. Befunde durch Zahnarzt",
+              "code": [
+                {
+                  "code": "9.28",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            },
+            {
+              "linkId": "9.29",
+              "type": "boolean",
+              "text": "(9.29) weitere Abklärung körperl. Befunde durch sonst. Facharzt",
+              "code": [
+                {
+                  "code": "9.29",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            },
+            {
+              "linkId": "9.30",
+              "type": "boolean",
+              "text": "(9.30) weitere Abklärung sonstige",
+              "code": [
+                {
+                  "code": "9.30",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            },
+            {
+              "linkId": "9.31",
+              "type": "boolean",
+              "text": "(9.31) körpl. Befunde, die eine Relevanz für den Schulalltag haben",
+              "code": [
+                {
+                  "code": "9.31",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "9_3",
+          "type": "group",
+          "text": "(9_3) Untersuchungsergebnisse zur Entwicklung (2. SÄU)",
+          "item": [
+            {
+              "linkId": "9.32",
+              "type": "choice",
+              "text": "(9.32) Nonverbale Intelligenz (2. SÄU)",
+              "code": [
+                {
+                  "code": "9.32",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "answerValueSet": "#SEU-AF-UntersuchungsergebnisseSAeUVS"
+            },
+            {
+              "linkId": "9.33",
+              "type": "choice",
+              "text": "(9.33) Nonverbale Intelligenz (2. SÄU) - Vgl. zur 1. SÄU",
+              "code": [
+                {
+                  "code": "9.33",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "answerValueSet": "#SEU-AF-VergleichSAeUntersuchungVS",
+              "enableWhen": [
+                {
+                  "question": "9.32",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "02",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS"
+                  }
+                },
+                {
+                  "question": "9.32",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "03",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS"
+                  }
+                },
+                {
+                  "question": "9.32",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "04",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS"
+                  }
+                },
+                {
+                  "question": "9.32",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "05",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS"
+                  }
+                },
+                {
+                  "question": "9.32",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "06",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS"
+                  }
+                },
+                {
+                  "question": "9.32",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "07",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS"
+                  }
+                },
+                {
+                  "question": "9.32",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "08",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS"
+                  }
+                }
+              ],
+              "enableBehavior": "any"
+            },
+            {
+              "linkId": "9.34",
+              "type": "choice",
+              "text": "(9.34) Visuomotorik (2. SÄU)",
+              "code": [
+                {
+                  "code": "9.34",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "answerValueSet": "#SEU-AF-UntersuchungsergebnisseSAeUVS"
+            },
+            {
+              "linkId": "9.35",
+              "type": "choice",
+              "text": "(9.35) Visuomotorik (2. SÄU) - Vgl. zur 1. SÄU",
+              "code": [
+                {
+                  "code": "9.35",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "answerValueSet": "#SEU-AF-VergleichSAeUntersuchungVS",
+              "enableWhen": [
+                {
+                  "question": "9.34",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "02",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS"
+                  }
+                },
+                {
+                  "question": "9.34",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "03",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS"
+                  }
+                },
+                {
+                  "question": "9.34",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "04",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS"
+                  }
+                },
+                {
+                  "question": "9.34",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "05",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS"
+                  }
+                },
+                {
+                  "question": "9.34",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "06",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS"
+                  }
+                },
+                {
+                  "question": "9.34",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "07",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS"
+                  }
+                },
+                {
+                  "question": "9.34",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "08",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS"
+                  }
+                }
+              ],
+              "enableBehavior": "any"
+            },
+            {
+              "linkId": "9.36",
+              "type": "choice",
+              "text": "(9.36) Mengen- und Zahlenvorwissen (2. SÄU)",
+              "code": [
+                {
+                  "code": "9.36",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "answerValueSet": "#SEU-AF-UntersuchungsergebnisseSAeUVS"
+            },
+            {
+              "linkId": "9.37",
+              "type": "choice",
+              "text": "(9.37) Mengen- und Zahlenvorwissen (2. SÄU) - Vgl. zur 1. SÄU",
+              "code": [
+                {
+                  "code": "9.37",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "answerValueSet": "#SEU-AF-VergleichSAeUntersuchungVS",
+              "enableWhen": [
+                {
+                  "question": "9.36",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "02",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS"
+                  }
+                },
+                {
+                  "question": "9.36",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "03",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS"
+                  }
+                },
+                {
+                  "question": "9.36",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "04",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS"
+                  }
+                },
+                {
+                  "question": "9.36",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "05",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS"
+                  }
+                },
+                {
+                  "question": "9.36",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "06",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS"
+                  }
+                },
+                {
+                  "question": "9.36",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "07",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS"
+                  }
+                },
+                {
+                  "question": "9.36",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "08",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS"
+                  }
+                }
+              ],
+              "enableBehavior": "any"
+            },
+            {
+              "linkId": "9.38",
+              "type": "choice",
+              "text": "(9.38) Sprache (Grammatik, Verständnis, Wortschatz) (2. SÄU)",
+              "code": [
+                {
+                  "code": "9.38",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "answerValueSet": "#SEU-AF-UntersuchungsergebnisseSAeUVS"
+            },
+            {
+              "linkId": "9.39",
+              "type": "choice",
+              "text": "(9.39) Sprache (Grammatik, Verständnis, Wortschatz) (2. SÄU) - Vgl. zur 1. SÄU",
+              "code": [
+                {
+                  "code": "9.39",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "answerValueSet": "#SEU-AF-VergleichSAeUntersuchungVS",
+              "enableWhen": [
+                {
+                  "question": "9.38",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "02",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS"
+                  }
+                },
+                {
+                  "question": "9.38",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "03",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS"
+                  }
+                },
+                {
+                  "question": "9.38",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "04",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS"
+                  }
+                },
+                {
+                  "question": "9.38",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "05",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS"
+                  }
+                },
+                {
+                  "question": "9.38",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "06",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS"
+                  }
+                },
+                {
+                  "question": "9.38",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "07",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS"
+                  }
+                },
+                {
+                  "question": "9.38",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "08",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS"
+                  }
+                }
+              ],
+              "enableBehavior": "any"
+            },
+            {
+              "linkId": "9.40",
+              "type": "choice",
+              "text": "(9.40) Sprechen (Lautbildung, Stottern, Stimme) (2. SÄU)",
+              "code": [
+                {
+                  "code": "9.40",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "answerValueSet": "#SEU-AF-UntersuchungsergebnisseSAeUVS"
+            },
+            {
+              "linkId": "9.41",
+              "type": "choice",
+              "text": "(9.41) Sprechen (Lautbildung, Stottern, Stimme) (2. SÄU) - Vgl. zur 1. SÄU",
+              "code": [
+                {
+                  "code": "9.41",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "answerValueSet": "#SEU-AF-VergleichSAeUntersuchungVS",
+              "enableWhen": [
+                {
+                  "question": "9.40",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "02",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS"
+                  }
+                },
+                {
+                  "question": "9.40",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "03",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS"
+                  }
+                },
+                {
+                  "question": "9.40",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "04",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS"
+                  }
+                },
+                {
+                  "question": "9.40",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "05",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS"
+                  }
+                },
+                {
+                  "question": "9.40",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "06",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS"
+                  }
+                },
+                {
+                  "question": "9.40",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "07",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS"
+                  }
+                },
+                {
+                  "question": "9.40",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "08",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS"
+                  }
+                }
+              ],
+              "enableBehavior": "any"
+            },
+            {
+              "linkId": "9.42",
+              "type": "choice",
+              "text": "(9.42) Körperkoordination (2. SÄU)",
+              "code": [
+                {
+                  "code": "9.42",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "answerValueSet": "#SEU-AF-UntersuchungsergebnisseSAeUVS"
+            },
+            {
+              "linkId": "9.43",
+              "type": "choice",
+              "text": "(9.43) Körperkoordination (2. SÄU) - Vgl. zur 1. SÄU",
+              "code": [
+                {
+                  "code": "9.43",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "answerValueSet": "#SEU-AF-VergleichSAeUntersuchungVS",
+              "enableWhen": [
+                {
+                  "question": "9.42",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "02",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS"
+                  }
+                },
+                {
+                  "question": "9.42",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "03",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS"
+                  }
+                },
+                {
+                  "question": "9.42",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "04",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS"
+                  }
+                },
+                {
+                  "question": "9.42",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "05",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS"
+                  }
+                },
+                {
+                  "question": "9.42",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "06",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS"
+                  }
+                },
+                {
+                  "question": "9.42",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "07",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS"
+                  }
+                },
+                {
+                  "question": "9.42",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "08",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS"
+                  }
+                }
+              ],
+              "enableBehavior": "any"
+            },
+            {
+              "linkId": "9.44",
+              "type": "string",
+              "text": "(9.44) Anmerkungen intern (2. SÄU)",
+              "code": [
+                {
+                  "code": "9.44",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "9_4",
+          "type": "group",
+          "text": "(9_4) Folgende Maßnahmen haben seit der 1. SÄU stattgefunden oder laufen derzeit",
+          "item": [
+            {
+              "linkId": "9.45",
+              "type": "boolean",
+              "text": "(9.45) Frühförderung",
+              "code": [
+                {
+                  "code": "9.45",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            },
+            {
+              "linkId": "9.46",
+              "type": "boolean",
+              "text": "(9.46) Logopädie",
+              "code": [
+                {
+                  "code": "9.46",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            },
+            {
+              "linkId": "9.47",
+              "type": "boolean",
+              "text": "(9.47) Ergotherapie",
+              "code": [
+                {
+                  "code": "9.47",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            },
+            {
+              "linkId": "9.48",
+              "type": "boolean",
+              "text": "(9.48) Physiotherapie",
+              "code": [
+                {
+                  "code": "9.48",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            },
+            {
+              "linkId": "9.49",
+              "type": "boolean",
+              "text": "(9.49) Abklärung beim Kinder-/Jugendarzt",
+              "code": [
+                {
+                  "code": "9.49",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            },
+            {
+              "linkId": "9.50",
+              "type": "boolean",
+              "text": "(9.50) Abklärung beim Augenarzt",
+              "code": [
+                {
+                  "code": "9.50",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            },
+            {
+              "linkId": "9.51",
+              "type": "boolean",
+              "text": "(9.51) Abklärung beim HNO-Arzt",
+              "code": [
+                {
+                  "code": "9.51",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            },
+            {
+              "linkId": "9.52",
+              "type": "boolean",
+              "text": "(9.52) Abklärung beim Zahnarzt",
+              "code": [
+                {
+                  "code": "9.52",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            },
+            {
+              "linkId": "9.53",
+              "type": "boolean",
+              "text": "(9.53) Abklärung sonstiger Facharzt",
+              "code": [
+                {
+                  "code": "9.53",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            },
+            {
+              "linkId": "9.54",
+              "type": "boolean",
+              "text": "(9.54) Abklärung SPZ",
+              "code": [
+                {
+                  "code": "9.54",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            },
+            {
+              "linkId": "9.55",
+              "type": "boolean",
+              "text": "(9.55) Sonstiges",
+              "code": [
+                {
+                  "code": "9.55",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "9_5",
+          "type": "group",
+          "text": "(9_5) Vorkurs Deutsch",
+          "item": [
+            {
+              "linkId": "9.56",
+              "type": "boolean",
+              "text": "(9.56) Teilnahme Vorkurs Deutsch im Vorjahr empfohlen",
+              "code": [
+                {
+                  "code": "9.56",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            },
+            {
+              "linkId": "9.57",
+              "type": "choice",
+              "text": "(9.57) Teilnahme hat stattgefunden",
+              "code": [
+                {
+                  "code": "9.57",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "answerValueSet": "#SEU-AF-AntwortTeilnahmeVS",
+              "enableWhen": [
+                {
+                  "question": "9.56",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ]
+            },
+            {
+              "linkId": "9.58",
+              "type": "string",
+              "text": "(9.58) Gründe für NICHT-Teilnahme",
+              "code": [
+                {
+                  "code": "9.58",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "enableWhen": [
+                {
+                  "question": "9.57",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "2",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-AntwortTeilnahmeCS"
+                  }
+                },
+                {
+                  "question": "9.57",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "3",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-AntwortTeilnahmeCS"
+                  }
+                }
+              ],
+              "enableBehavior": "any"
+            }
+          ]
+        },
+        {
+          "linkId": "9_6",
+          "type": "group",
+          "text": "(9_6) Weitere Empfehlungen aus 2. Schulärztlicher Untersuchung zur Entwicklung",
+          "item": [
+            {
+              "linkId": "9.59",
+              "type": "boolean",
+              "text": "(9.59) Rückstellung empfohlen",
+              "code": [
+                {
+                  "code": "9.59",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            },
+            {
+              "linkId": "9.60",
+              "type": "boolean",
+              "text": "(9.60) Besuch Förderzentrum empfohlen",
+              "code": [
+                {
+                  "code": "9.60",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            },
+            {
+              "linkId": "9.61",
+              "type": "boolean",
+              "text": "(9.61) Sonstiges",
+              "code": [
+                {
+                  "code": "9.61",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            },
+            {
+              "linkId": "9.62",
+              "type": "boolean",
+              "text": "(9.62) Befunde, die eine Relevanz für den Schulalltag haben",
+              "code": [
+                {
+                  "code": "9.62",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "9_7",
+          "type": "group",
+          "text": "(9_7) Weitergabe folgender Informationen an die Schulleitung",
+          "item": [
+            {
+              "linkId": "9.63",
+              "type": "boolean",
+              "text": "(9.63) auffälliges Ergebnis bei Sprachstand, Vorkurs Deutsch erforderlich",
+              "code": [
+                {
+                  "code": "9.63",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            },
+            {
+              "linkId": "9.64",
+              "type": "boolean",
+              "text": "(9.64) individuelle Förderung erforderlich",
+              "code": [
+                {
+                  "code": "9.64",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            },
+            {
+              "linkId": "9.65",
+              "type": "boolean",
+              "text": "(9.65) med. Maßnahme ggf. erforderlich",
+              "code": [
+                {
+                  "code": "9.65",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
                 }
               ]
             }

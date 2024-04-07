@@ -1,0 +1,35 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SEU-AF-VergleichSAeUntersuchungVS",
+  "id": "SEU-AF-VergleichSAeUntersuchungVS",
+  "title": "SEU Vergleich schulärztliche Untersuchungen",
+  "description": "Diese Codes enthalten Vergleichswerte von schulärztlichen Untersuchungen",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-VergleichSAeUntersuchungVS",
+  "expansion": {
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-VergleichSAeUntersuchungCS",
+        "code": "1",
+        "display": "ohne Veränderung"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-VergleichSAeUntersuchungCS",
+        "code": "2",
+        "display": "eine Verbesserung"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-VergleichSAeUntersuchungCS",
+        "code": "3",
+        "display": "eine Verschlechterung"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-VergleichSAeUntersuchungCS"
+      }
+    ]
+  }
+}

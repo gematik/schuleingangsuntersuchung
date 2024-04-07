@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "VersorgungsartVS",
+  "id": "versorgungsart-vs",
+  "title": "Versorgungsart ValueSet",
+  "description": "VersorgungsartVS",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/versorgungsart-vs",
+  "expansion": {
+    "timestamp": "2024-04-06T12:00:00+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/versorgungsart-cs",
+        "code": "ambulant",
+        "display": "Ambulant"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/versorgungsart-cs",
+        "code": "krankenhaus",
+        "display": "Krankenhaus"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/versorgungsart-cs"
+      }
+    ]
+  }
+}
