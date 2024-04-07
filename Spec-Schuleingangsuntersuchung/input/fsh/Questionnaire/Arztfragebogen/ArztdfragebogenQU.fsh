@@ -24,6 +24,7 @@ Description: "Arztfragebogen"
 * contained[+] = SEU-AF-HaendigkeitVS
 * contained[+] = SEU-AF-SprachtherapieVS
 * contained[+] = SEU-AF-TeilnahmeVorkursDeutschVS
+* contained[+] = SEU-AF-JaNeinKeineAngabeVS
 * contained[+] = SEU-AF-AntwortAugenarztVS
 * contained[+] = SEU-AF-AntwortenHoerstoerungVS
 * contained[+] = SEU-AF-AntwortErwachseneVS
@@ -37,6 +38,8 @@ Description: "Arztfragebogen"
 * contained[+] = SEU-AF-AntwortAuffaelligkeitBeurteilbarVS
 * contained[+] = SEU-AF-AntwortenSAeUntersuchungVS
 * contained[+] = SEU-AF-UntersuchungsergebnisseSAeUVS
+* contained[+] = SEU-AF-VergleichSAeUntersuchungVS
+* contained[+] = SEU-AF-AntwortTeilnahmeVS
 * id = "SEU-Arztfragebogen"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Arztfragebogen"
 * title = "SEU Arztfragebogen Maximaldatensatz"
@@ -51,3 +54,4 @@ Description: "Arztfragebogen"
 * insert 6-af-elternfragebogen
 * insert 7-af-fdsscreening
 * insert 8-af-schulaerztlicheuntersuchung
+* insert 9-af-schulaerztlicheuntersuchung2

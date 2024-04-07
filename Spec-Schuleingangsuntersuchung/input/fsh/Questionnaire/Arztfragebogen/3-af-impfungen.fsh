@@ -94,8 +94,9 @@ RuleSet: 3-af-impfungen
       * initial.valueCoding = SEU-AF-ImpfungAntwortCS#0
       * readOnly = true
   * item[+] insert addItem(3.17, #boolean, [[Immunität gegen Varizellen aufgrund durchgemachter Varizellenerkrankung]])
-  * item[+] insert addItem(3.18, #boolean, [[Masernimpfung nicht erforderlich (ärztl. bestätigt), da]])
-    * answerValueSet = Canonical(SEU-AF-MasernimpfungNichtErforderlichGrundVS)
+  * item[+] insert addGroup(3_2, Kontraindikation für Masernimpfung)
+    * item[+] insert addItem(3.18, #choice, [[Masernimpfung nicht erforderlich (ärztl. bestätigt), da]])
+      * answerValueSet = Canonical(SEU-AF-MasernimpfungNichtErforderlichGrundVS)
 
 
 CodeSystem:  SEU-AF-MasernimpfungNichtErforderlichGrundCS
