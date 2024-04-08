@@ -363,7 +363,7 @@
                 "extension": [
                   {
                     "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
-                    "valueString": "background-color: crimson"
+                    "valueString": "background-color: red"
                   }
                 ]
               }
@@ -376,7 +376,7 @@
                 "extension": [
                   {
                     "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
-                    "valueString": "background-color: crimson"
+                    "valueString": "background-color: red"
                   }
                 ]
               }
@@ -389,7 +389,7 @@
                 "extension": [
                   {
                     "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
-                    "valueString": "background-color: crimson"
+                    "valueString": "background-color: red"
                   }
                 ]
               }
@@ -495,7 +495,7 @@
             "extension": [
               {
                 "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
-                "valueString": "background-color: crimson"
+                "valueString": "background-color: red"
               }
             ]
           },
@@ -509,7 +509,7 @@
             "extension": [
               {
                 "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
-                "valueString": "background-color: crimson"
+                "valueString": "background-color: red"
               }
             ]
           },
@@ -936,7 +936,7 @@
                 "extension": [
                   {
                     "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
-                    "valueString": "background-color: crimson"
+                    "valueString": "background-color: red"
                   }
                 ]
               }

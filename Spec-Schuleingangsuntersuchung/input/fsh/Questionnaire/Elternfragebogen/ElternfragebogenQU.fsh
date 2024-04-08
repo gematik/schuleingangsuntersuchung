@@ -189,17 +189,17 @@ Description: "Elternbefragung"
       * type = #choice
       * linkId = "3.2.5"
       * text = "(3.2.5) Chronische Erkrankung"
-        * extension[$rendering-style].valueString = "background-color: crimson"
+        * extension[$rendering-style].valueString = "background-color: red"
     * item[+]
       * type = #choice
       * linkId = "3.2.6"
       * text = "(3.2.6) Behinderung"
-        * extension[$rendering-style].valueString = "background-color: crimson"
+        * extension[$rendering-style].valueString = "background-color: red"
     * item[+]
       * type = #choice
       * linkId = "3.2.7"
       * text = "(3.2.7) Schilddrüsenerkrankung"
-        * extension[$rendering-style].valueString = "background-color: crimson"
+        * extension[$rendering-style].valueString = "background-color: red"
 //********************************************
 // Kinderbetreuung
 * item[+]
@@ -272,13 +272,13 @@ Description: "Elternbefragung"
     * type = #choice
     * linkId = "5.5"
     * text = "(5.5) Auffälligkeit bei der Geburt"
-      * extension[$rendering-style].valueString = "background-color: crimson"    
+      * extension[$rendering-style].valueString = "background-color: red"    
     * repeats = true
   * item[+]
     * type = #choice
     * linkId = "5.6"
     * text = "(5.6) Auffälligkeit in der Schwangerschaft"
-      * extension[$rendering-style].valueString = "background-color: crimson"
+      * extension[$rendering-style].valueString = "background-color: red"
     * repeats = true
   * item[+]
     * type = #integer
@@ -587,7 +587,7 @@ Description: "Elternbefragung"
       * type = #choice
       * linkId = "8.21.g.2"
       * text = "(8.22) Behinderung Merkzeichen"
-        * extension[$rendering-style].valueString = "background-color: crimson"
+        * extension[$rendering-style].valueString = "background-color: red"
   * item[+]
     * type = #boolean
     * linkId = "8.23"
