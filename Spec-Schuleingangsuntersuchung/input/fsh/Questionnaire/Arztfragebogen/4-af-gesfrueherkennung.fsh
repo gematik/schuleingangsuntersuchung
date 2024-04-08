@@ -16,7 +16,6 @@ RuleSet: 4-af-gesfrueherkennung
     * insert EnableWhenBoolean(4.10, !=, true)
   * item[+] insert addItem(4.12, #date, [[Datum Eingang Vorlage U8]])
   * item[+] insert addItemMl(4.13, #integer, Alter zum Zeitpunkt U8-Nachweis, 2) //TODO Automatisch berechnen aus GebDatum; Feature-Set noch nicht gegeben
-    * insert calculatedExpression("Berechnung-Alter-in-Monaten", [["%month"]])
     * insert uunit(mo, "Monate")
   * item[+] insert addItem(4.14, #boolean, [[U9-Nachweis lag vor]])
   * item[+] insert addItem(4.15, #boolean, [[U9 nachgereicht ]])

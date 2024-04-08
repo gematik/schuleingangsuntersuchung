@@ -6,8 +6,8 @@ RuleSet: 5-af-anamnese
     * insert EnableWhenCode(5.1, !=, SEU-AF-AnamneseBesonderheitenCS, 0)
     * item[+] insert addItem(5.2, #choice, [[Geschwister]])
       * answerValueSet = Canonical(SEU-AF-AntwortGeschwisterVS)
-    * item[+] insert addItemMl(5.3, #string, Staatsangehörigkeit des Kindes, 20) //TODO Darf ich hier das Länder-ISO dran binden? Laut Excel soll string der Datentyp sein
-    * item[+] insert addItemMl(5.4, #string, Geburtsland des Kindes, 20) //TODO Darf ich hier das Länder-ISO dran binden? Laut Excel soll string der Datentyp sein
+    * item[+] insert addItemMl(5.3, #string, Staatsangehörigkeit des Kindes, 20) //TODO-JS Darf ich hier das Länder-ISO dran binden? Laut Excel soll string der Datentyp sein
+    * item[+] insert addItemMl(5.4, #string, Geburtsland des Kindes, 20) //TODO-JS Darf ich hier das Länder-ISO dran binden? Laut Excel soll string der Datentyp sein
     * item[+] insert addItem(5.5, #choice, [[Krippe/KITA/Kindergartenbesuch]])
       * answerValueSet = Canonical(SEU-AF-AntwortKindergartenBesuchVS)
     * item[+] insert addItem(5.6, #boolean, [[Derzeitiger Besuch eines Kindergartens]])
