@@ -2,7 +2,7 @@ RuleSet: 8-af-schulaerztlicheuntersuchung
 * item[+] insert addGroup(8, [[Schulärztliche Untersuchung (1. SÄU)]])
   * item[+] insert addItem(8.1, #date, [[Datum 1. Schulärztliche Untersuchung (SÄU)]])
   * item[+] insert addItem(8.2, #boolean, [[NUR telefon. Kontaktaufnahme mit Eltern]])
-  * item[+] insert addGroup(8_1, [[Grund für 1. Schulärztliche Untersuchung]]) //TODO Min eins aus der Gruppe soll ausgefüllt sein
+  * item[+] insert addGroup(8_1, [[Grund für 1. Schulärztliche Untersuchung]]) //TODO Min eins aus der Gruppe soll ausgefüllt sein: Choice-type mit allen möglichkeiten und repeats
     * item[+] insert addItem(8.3, #boolean, [[Auffälligkeiten im Anamnesebogen]])
     * item[+] insert addItem(8.4, #boolean, [[Auffälliges Ergebnis im Elternfragebogen]])
     * item[+] insert addItem(8.5, #boolean, [[Auffälliger SDQ]])
