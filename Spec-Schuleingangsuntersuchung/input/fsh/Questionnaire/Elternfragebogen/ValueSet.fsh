@@ -560,6 +560,34 @@ Description: "FamilienrolleVS"
 * ^expansion.contains[=].code = #andere_person
 * ^expansion.contains[=].display = "Andere Person"
 
+ValueSet: ChronischeKrankheitenVS
+Id: chronische-krankheiten-vs
+Title: "ValueSet für chronische Krankheiten"
+Description: "Dieses ValueSet beinhaltet eine Auswahl von Codes für häufige chronische Krankheiten, definiert im zugehörigen CodeSystem."
+* include codes from system ChronischeKrankheiten
+* ^expansion.timestamp = "2024-04-12T15:47:43+00:00"
+* ^expansion.contains[0].system = Canonical(ChronischeKrankheiten)
+* ^expansion.contains[0].code = #asthma
+* ^expansion.contains[0].display = "Asthma bronchiale"
+* ^expansion.contains[1].system = Canonical(ChronischeKrankheiten)
+* ^expansion.contains[1].code = #rheuma
+* ^expansion.contains[1].display = "Rheuma"
+* ^expansion.contains[2].system = Canonical(ChronischeKrankheiten)
+* ^expansion.contains[2].code = #diabetes
+* ^expansion.contains[2].display = "Diabetes"
+* ^expansion.contains[3].system = Canonical(ChronischeKrankheiten)
+* ^expansion.contains[3].code = #epilepsie
+* ^expansion.contains[3].display = "Epilepsie"
+* ^expansion.contains[4].system = Canonical(ChronischeKrankheiten)
+* ^expansion.contains[4].code = #neurodermitis
+* ^expansion.contains[4].display = "Neurodermitis"
+* ^expansion.contains[5].system = Canonical(ChronischeKrankheiten)
+* ^expansion.contains[5].code = #adhs
+* ^expansion.contains[5].display = "Aufmerksamkeitsdefizit-/Hyperaktivitätsstörung (ADHS)"
+* ^expansion.contains[6].system = Canonical(ChronischeKrankheiten)
+* ^expansion.contains[6].code = #sonstiges
+* ^expansion.contains[6].display = "Sonstige chronische Krankheiten"
+
 
 ValueSet: DeuevAnlage8LaenderkennzeichenVS
 Id: DeuevAnlage8LaenderkennzeichenVS

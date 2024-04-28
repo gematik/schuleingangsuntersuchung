@@ -27,6 +27,7 @@ Description: "Elternbefragung"
 * contained[+] = ErwerbsstatusVS
 * contained[+] = FamilienrolleVS
 * contained[+] = VersorgungsartVS
+* contained[+] = ChronischeKrankheitenVS
 * id = "SEU-Elternbefragung"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung"
 * title = "SEU Elternfragebogen Maximaldatensatz"
@@ -186,20 +187,33 @@ Description: "Elternbefragung"
       * linkId = "3.2.4"
       * text = "(3.2.4) Erkrankung"
     * item[+]
+      * answerValueSet = Canonical(ChronischeKrankheitenVS)
       * type = #choice
       * linkId = "3.2.5"
       * text = "(3.2.5) Chronische Erkrankung"
-        * extension[$rendering-style].valueString = "background-color: red"
+      * item[+]
+        * insert EnableWhenCode(3.2.5, =, ChronischeKrankheiten, sonstiges)
+        * type = #string
+        * linkId = "3.2.5.1"
+        * text = "(3.2.5.1) Welche sonstige(n) chronischen Erkrankung(en)?"
     * item[+]
-      * type = #choice
+      * type = #boolean
       * linkId = "3.2.6"
       * text = "(3.2.6) Behinderung"
-        * extension[$rendering-style].valueString = "background-color: red"
+      * item[+]
+        * insert EnableWhenBoolean(3.2.6, =, true)
+        * type = #string
+        * linkId = "3.2.6.1"
+        * text = "(3.2.6.1) Welche Behinderung?"
     * item[+]
-      * type = #choice
+      * type = #boolean
       * linkId = "3.2.7"
       * text = "(3.2.7) Schilddrüsenerkrankung"
-        * extension[$rendering-style].valueString = "background-color: red"
+      * item[+]
+        * insert EnableWhenBoolean(3.2.7, =, true)
+        * type = #string
+        * linkId = "3.2.6.1"
+        * text = "(3.2.6.1) Welche Schilddrüsenerkrankung?"        
 //********************************************
 // Kinderbetreuung
 * item[+]
@@ -269,17 +283,23 @@ Description: "Elternbefragung"
     * linkId = "5.4"
     * text = "(5.4) Waren Geburtsgewicht und Geburtslänge normal?"
   * item[+]
-    * type = #choice
+    * type = #boolean
     * linkId = "5.5"
     * text = "(5.5) Auffälligkeit bei der Geburt"
-      * extension[$rendering-style].valueString = "background-color: red"    
-    * repeats = true
+    * item[+]
+      * insert EnableWhenBoolean(5.5, =, true)
+      * type = #string
+      * linkId = "5.5.1"
+      * text = "(5.5.1) Welche Auffälligkeit?"
   * item[+]
-    * type = #choice
+    * type = #boolean
     * linkId = "5.6"
     * text = "(5.6) Auffälligkeit in der Schwangerschaft"
-      * extension[$rendering-style].valueString = "background-color: red"
-    * repeats = true
+    * item[+]
+      * insert EnableWhenBoolean(5.6, =, true)
+      * type = #string
+      * linkId = "5.6.1"
+      * text = "(5.6.1) Welche Auffälligkeit?"      
   * item[+]
     * type = #integer
     * linkId = "5.7"
@@ -584,17 +604,16 @@ Description: "Elternbefragung"
       * linkId = "8.21.g.1"
       * text = "(8.21) Welche Behinderung"
     * item[+]
-      * type = #choice
+      * type = #text
       * linkId = "8.21.g.2"
       * text = "(8.22) Behinderung Merkzeichen"
-        * extension[$rendering-style].valueString = "background-color: red"
   * item[+]
     * type = #boolean
     * linkId = "8.23"
     * text = "(8.23) Regelmäßige Medikamenteneinnahme"
   * item[+]
     * insert EnableWhenBoolean(8.23, =, true)
-    * type = #boolean
+    * type = #string
     * linkId = "8.23.1"
     * text = "(8.23.1) Welches Medikament"   
     * repeats = true

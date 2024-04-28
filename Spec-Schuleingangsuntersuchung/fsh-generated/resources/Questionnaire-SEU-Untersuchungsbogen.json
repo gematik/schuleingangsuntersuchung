@@ -1,6 +1,6 @@
 {
   "resourceType": "Questionnaire",
-  "id": "SEU-Arztfragebogen",
+  "id": "SEU-Untersuchungsbogen",
   "contained": [
     {
       "resourceType": "ValueSet",
@@ -1890,8 +1890,8 @@
       }
     }
   ],
-  "url": "https://www.oegd.de/fhir/seu/Questionnaire/Arztfragebogen",
-  "title": "SEU Arztfragebogen Maximaldatensatz",
+  "url": "https://www.oegd.de/fhir/seu/Questionnaire/Untersuchungsbogen",
+  "title": "SEU Untersuchungsbogen Maximaldatensatz",
   "extension": [
     {
       "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext",
@@ -3341,14 +3341,6 @@
           ],
           "maxLength": 2,
           "extension": [
-            {
-              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression",
-              "valueExpression": {
-                "name": "Berechnung-Alter-in-Monaten",
-                "language": "text/fhirpath",
-                "expression": "%month"
-              }
-            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
               "valueCoding": {

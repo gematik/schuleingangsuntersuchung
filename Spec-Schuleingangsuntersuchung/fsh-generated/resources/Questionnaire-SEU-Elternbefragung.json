@@ -1,1620 +1,6 @@
 {
   "resourceType": "Questionnaire",
   "id": "SEU-Elternbefragung",
-  "item": [
-    {
-      "type": "group",
-      "linkId": "1",
-      "text": "(1) Personenbezogene Daten Kind",
-      "item": [
-        {
-          "linkId": "1.1",
-          "type": "string",
-          "text": "(1.1) Nachname des Kindes",
-          "code": [
-            {
-              "code": "1.1",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
-              "valueExpression": {
-                "language": "text/fhirpath",
-                "expression": "%patient.name[0].family"
-              }
-            }
-          ]
-        },
-        {
-          "linkId": "1.2",
-          "type": "string",
-          "text": "(1.2) Vorname des Kindes",
-          "code": [
-            {
-              "code": "1.2",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
-              "valueExpression": {
-                "language": "text/fhirpath",
-                "expression": "%patient.name[0].given[0]"
-              }
-            }
-          ]
-        },
-        {
-          "linkId": "1.3",
-          "type": "date",
-          "text": "(1.3) Geburtsdatum",
-          "code": [
-            {
-              "code": "1.3",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
-              "valueExpression": {
-                "language": "text/fhirpath",
-                "expression": "%patient.birthdate"
-              }
-            }
-          ]
-        },
-        {
-          "linkId": "1.4",
-          "type": "choice",
-          "text": "(1.4) Staatsangehörigkeit",
-          "code": [
-            {
-              "code": "1.4",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "answerValueSet": "#DeuevAnlage8LaenderkennzeichenVS"
-        },
-        {
-          "linkId": "1.5",
-          "type": "choice",
-          "text": "(1.5) Geburtsland",
-          "code": [
-            {
-              "code": "1.5",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "answerValueSet": "#DeuevAnlage8LaenderkennzeichenVS"
-        },
-        {
-          "linkId": "1.6",
-          "type": "boolean",
-          "text": "(1.6) In Deutschland geboren",
-          "code": [
-            {
-              "code": "1.6",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ]
-        },
-        {
-          "linkId": "1.6.1",
-          "type": "date",
-          "text": "(1.6.1) Seit wann wohnt das Kind in Deutschland?",
-          "code": [
-            {
-              "code": "1.6.1",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "enableWhen": [
-            {
-              "question": "1.6",
-              "operator": "=",
-              "answerBoolean": false
-            }
-          ]
-        },
-        {
-          "linkId": "1.7",
-          "type": "string",
-          "text": "(1.7) Geburtsort",
-          "code": [
-            {
-              "code": "1.7",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ]
-        },
-        {
-          "linkId": "1.8",
-          "type": "choice",
-          "text": "(1.8) Geschlecht",
-          "code": [
-            {
-              "code": "1.8",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "answerValueSet": "#GenderDEVS"
-        },
-        {
-          "linkId": "1.9",
-          "type": "string",
-          "text": "(1.9) PLZ",
-          "code": [
-            {
-              "code": "1.9",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ]
-        },
-        {
-          "linkId": "1.10",
-          "type": "string",
-          "text": "(1.10) Wohnort",
-          "code": [
-            {
-              "code": "1.10",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ]
-        },
-        {
-          "linkId": "1.11",
-          "type": "string",
-          "text": "(1.11) Straße",
-          "code": [
-            {
-              "code": "1.11",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ]
-        },
-        {
-          "linkId": "1.12",
-          "type": "choice",
-          "text": "(1.12) Kind lebt hauptsächlich bei",
-          "code": [
-            {
-              "code": "1.12",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "answerValueSet": "#LebtBeiVS"
-        },
-        {
-          "linkId": "1.12.1",
-          "type": "string",
-          "text": "(1.12.1) Kind lebt hauptsächlich bei",
-          "code": [
-            {
-              "code": "1.12.1",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "enableWhen": [
-            {
-              "question": "1.12",
-              "operator": "=",
-              "answerCoding": {
-                "code": "andere",
-                "system": "https://www.oegd.de/fhir/seu/CodeSystem/LebtBeiCS"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "linkId": "2",
-      "text": "(2) Personenbezogene Daten Personenberechtigter",
-      "item": [
-        {
-          "answerValueSet": "#GenderDEVS",
-          "type": "choice",
-          "linkId": "2.1",
-          "text": "(2.1) Geschlecht"
-        },
-        {
-          "type": "string",
-          "linkId": "2.2",
-          "text": "(2.2) Nachname",
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
-              "valueExpression": {
-                "language": "text/fhirpath",
-                "expression": "%patient.name[0].family"
-              }
-            }
-          ]
-        },
-        {
-          "type": "string",
-          "linkId": "2.3",
-          "text": "(2.3) Vorname",
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
-              "valueExpression": {
-                "language": "text/fhirpath",
-                "expression": "%patient.name[0].given[0]"
-              }
-            }
-          ]
-        },
-        {
-          "type": "string",
-          "linkId": "2.4",
-          "text": "(2.4) PLZ"
-        },
-        {
-          "type": "string",
-          "linkId": "2.5",
-          "text": "(2.5) Wohnort"
-        },
-        {
-          "type": "string",
-          "linkId": "2.6",
-          "text": "(2.6) Straße"
-        },
-        {
-          "type": "string",
-          "linkId": "2.7",
-          "text": "(2.7) Telefonnummer"
-        },
-        {
-          "type": "string",
-          "linkId": "2.8",
-          "text": "(2.8) Email"
-        },
-        {
-          "answerValueSet": "#DeuevAnlage8LaenderkennzeichenVS",
-          "type": "choice",
-          "linkId": "2.9",
-          "text": "(2.9) Staatsangehörigkeit"
-        },
-        {
-          "answerValueSet": "#DeuevAnlage8LaenderkennzeichenVS",
-          "type": "choice",
-          "linkId": "2.10",
-          "text": "(2.10) Herkunftsland"
-        },
-        {
-          "answerValueSet": "#SEU-AF-AuswaehlbareElternspracheVS",
-          "type": "choice",
-          "linkId": "2.11",
-          "text": "(2.11) Muttersprache"
-        },
-        {
-          "type": "date",
-          "linkId": "2.12",
-          "text": "(2.12) Geburtsdatum"
-        }
-      ]
-    },
-    {
-      "item": [
-        {
-          "type": "integer",
-          "linkId": "3.1",
-          "text": "(3.1) Anzahl der Geschwister"
-        },
-        {
-          "type": "group",
-          "linkId": "3.1.1",
-          "text": "(3.1.1) Details Geschwister",
-          "repeats": true,
-          "enableWhen": [
-            {
-              "question": "3.1",
-              "operator": ">",
-              "answerInteger": 0
-            }
-          ],
-          "item": [
-            {
-              "type": "date",
-              "linkId": "3.1.1.1",
-              "text": "(3.1.1.1) Geburtsdatum des Geschwisters"
-            },
-            {
-              "type": "choice",
-              "linkId": "3.1.1.2",
-              "text": "(3.1.1.2) Geschlecht des Geschwisters"
-            }
-          ]
-        },
-        {
-          "item": [
-            {
-              "type": "boolean",
-              "linkId": "3.2.1",
-              "text": "(3.2.1) Brillenträger"
-            },
-            {
-              "type": "boolean",
-              "linkId": "3.2.2",
-              "text": "(3.2.2) Lese/Rechtschreibschwäche"
-            },
-            {
-              "type": "boolean",
-              "linkId": "3.2.3",
-              "text": "(3.2.3) Rechenschwäche"
-            },
-            {
-              "answerValueSet": "#ChronischeErkrankungenVS",
-              "type": "choice",
-              "linkId": "3.2.4",
-              "text": "(3.2.4) Erkrankung"
-            },
-            {
-              "type": "choice",
-              "linkId": "3.2.5",
-              "text": "(3.2.5) Chronische Erkrankung",
-              "_text": {
-                "extension": [
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
-                    "valueString": "background-color: red"
-                  }
-                ]
-              }
-            },
-            {
-              "type": "choice",
-              "linkId": "3.2.6",
-              "text": "(3.2.6) Behinderung",
-              "_text": {
-                "extension": [
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
-                    "valueString": "background-color: red"
-                  }
-                ]
-              }
-            },
-            {
-              "type": "choice",
-              "linkId": "3.2.7",
-              "text": "(3.2.7) Schilddrüsenerkrankung",
-              "_text": {
-                "extension": [
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
-                    "valueString": "background-color: red"
-                  }
-                ]
-              }
-            }
-          ],
-          "type": "group",
-          "linkId": "3.2",
-          "text": "(3.2) Familiäre Vorgeschichte"
-        }
-      ],
-      "type": "group",
-      "linkId": "3",
-      "text": "(3) Familiendaten"
-    },
-    {
-      "type": "group",
-      "linkId": "4",
-      "text": "(4) Kinderbetreuung",
-      "item": [
-        {
-          "type": "integer",
-          "linkId": "4.1",
-          "text": "(4.1) Besuch Kita/Krippe (Dauer in Jahren)"
-        },
-        {
-          "type": "integer",
-          "linkId": "4.2",
-          "text": "(4.2) Dauer Kita/Krippe pro Woche in Stunden"
-        },
-        {
-          "type": "integer",
-          "linkId": "4.3",
-          "text": "(4.3) Dauer Kita/Krippe pro Woche in Stunden"
-        },
-        {
-          "type": "date",
-          "linkId": "4.4",
-          "text": "(4.4) Angabe des Datums, seit wann das Kind keine Kita mehr besucht."
-        },
-        {
-          "type": "boolean",
-          "linkId": "4.5",
-          "text": "(4.5) Besucht ihr Kind eine andere Form der Tagesbetreuung?"
-        },
-        {
-          "type": "string",
-          "linkId": "4.6",
-          "text": "(4.6) Name des Kindergartens",
-          "enableWhen": [
-            {
-              "question": "4.5",
-              "operator": "=",
-              "answerBoolean": true
-            }
-          ]
-        },
-        {
-          "type": "boolean",
-          "linkId": "4.7",
-          "text": "(4.7) Erfolgte die Betreuung auch durch eine Tagesmutter?"
-        },
-        {
-          "type": "date",
-          "linkId": "4.8",
-          "text": "(4.8) Seit welchem Jahr ist die Tagesmutter im Einsatz?",
-          "enableWhen": [
-            {
-              "question": "4.7",
-              "operator": "=",
-              "answerBoolean": true
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "item": [
-        {
-          "type": "integer",
-          "linkId": "5.1",
-          "text": "(5.1) Dauer der Schwangerschaft (in Wochen)"
-        },
-        {
-          "type": "integer",
-          "linkId": "5.2",
-          "text": "(5.2) Geburtsgewicht (in Gramm)"
-        },
-        {
-          "type": "integer",
-          "linkId": "5.3",
-          "text": "(5.3) Geburtslänge (in cm)"
-        },
-        {
-          "type": "boolean",
-          "linkId": "5.4",
-          "text": "(5.4) Waren Geburtsgewicht und Geburtslänge normal?"
-        },
-        {
-          "type": "choice",
-          "linkId": "5.5",
-          "text": "(5.5) Auffälligkeit bei der Geburt",
-          "_text": {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
-                "valueString": "background-color: red"
-              }
-            ]
-          },
-          "repeats": true
-        },
-        {
-          "type": "choice",
-          "linkId": "5.6",
-          "text": "(5.6) Auffälligkeit in der Schwangerschaft",
-          "_text": {
-            "extension": [
-              {
-                "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
-                "valueString": "background-color: red"
-              }
-            ]
-          },
-          "repeats": true
-        },
-        {
-          "type": "integer",
-          "linkId": "5.7",
-          "text": "(5.7) Stillzeit in Monaten"
-        }
-      ],
-      "type": "group",
-      "linkId": "5",
-      "text": "(5) Schwangerschaft und Geburt"
-    },
-    {
-      "type": "group",
-      "linkId": "6",
-      "text": "(6) Sprache",
-      "item": [
-        {
-          "answerValueSet": "#SEU-AF-AuswaehlbareElternspracheVS",
-          "type": "choice",
-          "linkId": "6.1",
-          "text": "(6.1) Welche Sprachen werden Zuhause gesprochen?",
-          "repeats": true
-        },
-        {
-          "answerValueSet": "#SEU-AF-AuswaehlbareElternspracheVS",
-          "type": "choice",
-          "linkId": "6.2",
-          "text": "(6.2) Muttersprache des Kindes"
-        },
-        {
-          "answerValueSet": "#JaNeinAngemeldetVS",
-          "type": "choice",
-          "linkId": "6.3",
-          "text": "(6.3) Teilnahme des Kindes an einem Deutschkurs"
-        },
-        {
-          "type": "boolean",
-          "linkId": "6.4",
-          "text": "(6.4) Sprachauffälligkeiten"
-        },
-        {
-          "type": "boolean",
-          "linkId": "6.5",
-          "text": "(6.5) Kontakt zu Deutschsprechenden seit Geburt?"
-        },
-        {
-          "type": "group",
-          "linkId": "6.6",
-          "text": "(6.6) Kontakt zu Deutschprechenden seit Alter:",
-          "enableWhen": [
-            {
-              "question": "6.5",
-              "operator": "=",
-              "answerBoolean": false
-            }
-          ],
-          "item": [
-            {
-              "type": "integer",
-              "linkId": "6.6.1",
-              "text": "(6.6.1) Jahre"
-            },
-            {
-              "type": "integer",
-              "linkId": "6.6.2",
-              "text": "(6.6.2) Monate"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "type": "group",
-      "linkId": "7",
-      "text": "(7) Entwicklung",
-      "item": [
-        {
-          "type": "boolean",
-          "linkId": "7.1",
-          "text": "(7.1) Sind Sie mit der Entwicklung ihres Kinds zufrieden?"
-        },
-        {
-          "type": "text",
-          "linkId": "7.2",
-          "text": "(7.2) Mit was sind Sie Unzufrieden?",
-          "enableWhen": [
-            {
-              "question": "7.1",
-              "operator": "=",
-              "answerBoolean": false
-            }
-          ]
-        },
-        {
-          "type": "integer",
-          "linkId": "7.3",
-          "text": "(7.3) Freies Laufen ab? (Monate)"
-        },
-        {
-          "type": "integer",
-          "linkId": "7.4",
-          "text": "(7.4) Erste Worte ab? (Monate)"
-        },
-        {
-          "type": "integer",
-          "linkId": "7.5",
-          "text": "(7.5) Erste Sätze ab? (Monate)"
-        },
-        {
-          "type": "integer",
-          "linkId": "7.6",
-          "text": "(7.6) Tagsüber ohne Windeln ab? (Jahre)"
-        },
-        {
-          "type": "integer",
-          "linkId": "7.7",
-          "text": "(7.7) Nachts ohne Windeln ab? (Jahre)"
-        },
-        {
-          "type": "boolean",
-          "linkId": "7.8",
-          "text": "(7.8) Besonderheiten in der Säuglings- u. Kleinkinderzeit?"
-        },
-        {
-          "type": "text",
-          "linkId": "7.8.1",
-          "text": "(7.8.1) Welche Besonderheiten lagen vor?",
-          "enableWhen": [
-            {
-              "question": "7.8",
-              "operator": "=",
-              "answerBoolean": true
-            }
-          ]
-        },
-        {
-          "answerValueSet": "#RechtsLinksHaenderVS",
-          "type": "choice",
-          "linkId": "7.9",
-          "text": "(7.9) Links- oder Rechtshänder"
-        },
-        {
-          "type": "text",
-          "linkId": "7.10",
-          "text": "(7.10) Angabe zu Entwicklungsverzögerungen, bspw. beim Erlernen des Sitzens/Laufens"
-        },
-        {
-          "type": "open-choice",
-          "linkId": "7.11",
-          "text": "(7.11) Auffälligkeit des Verhaltens"
-        },
-        {
-          "type": "boolean",
-          "linkId": "7.12",
-          "text": "(7.12) Sorgen Sie sich um die Entwicklung ihres Kindes?"
-        }
-      ]
-    },
-    {
-      "item": [
-        {
-          "type": "boolean",
-          "linkId": "8.1",
-          "text": "(8.1) In regelmäßiger ärztlicher bzw. psychologischer Behandlung"
-        },
-        {
-          "type": "text",
-          "linkId": "8.2",
-          "text": "(8.2) Freitext Angabe, abhängig zu 'Regelmäßig_Behandlung'. Angabe zu Grund und Fachrichtung",
-          "enableWhen": [
-            {
-              "question": "8.1",
-              "operator": "=",
-              "answerBoolean": true
-            }
-          ]
-        },
-        {
-          "type": "boolean",
-          "linkId": "8.3",
-          "text": "(8.3) Sehstörung vorhanden?"
-        },
-        {
-          "type": "boolean",
-          "linkId": "8.4",
-          "text": "(8.4) Sprachstörung vorhanden?"
-        },
-        {
-          "type": "boolean",
-          "linkId": "8.5",
-          "text": "(8.5) Schielbehandlung?"
-        },
-        {
-          "type": "boolean",
-          "linkId": "8.6",
-          "text": "(8.6) Brillenträger?"
-        },
-        {
-          "type": "date",
-          "linkId": "8.7",
-          "text": "(8.7) Letzte Untersuchung beim Augenarzt?"
-        },
-        {
-          "type": "date",
-          "linkId": "8.8",
-          "text": "(8.8) Letzte Untersuchung beim Zahnarzt?"
-        },
-        {
-          "type": "boolean",
-          "linkId": "8.9",
-          "text": "(8.9) Schwere Hörstörung vorhanden?"
-        },
-        {
-          "type": "group",
-          "linkId": "8.9.G",
-          "text": "(8.9.G) Details: Angeborene schwere Hörstörung",
-          "enableWhen": [
-            {
-              "question": "8.9",
-              "operator": "=",
-              "answerBoolean": true
-            }
-          ],
-          "item": [
-            {
-              "type": "group",
-              "linkId": "8.9.G.hoergeraete.G",
-              "text": "(8.9.G.hoergeraete.G) Hörgeräte",
-              "repeats": true,
-              "item": [
-                {
-                  "answerValueSet": "#LinksRechtsBeidseitsKeineAngabeVS",
-                  "type": "choice",
-                  "linkId": "8.9.G.hoergeraete.G.1",
-                  "text": "(8.9.G.hoergeraete.G.1) Höregerätseite"
-                },
-                {
-                  "type": "date",
-                  "linkId": "8.9.G.hoergeraete.G.2",
-                  "text": "(8.9.G.hoergeraete.G.2) Beginn des Tragens"
-                }
-              ]
-            },
-            {
-              "type": "group",
-              "linkId": "8.9.G.cochlea.G",
-              "text": "(8.9.G.cochlea.G) Cochleaimplantate",
-              "repeats": true,
-              "item": [
-                {
-                  "answerValueSet": "#LinksRechtsBeidseitsKeineAngabeVS",
-                  "type": "choice",
-                  "linkId": "8.9.G.cochlea.G.1",
-                  "text": "(8.9.G.cochlea.G.1) Cochleaimplantat-Seite"
-                },
-                {
-                  "type": "date",
-                  "linkId": "8.9.G.cochlea.G.2",
-                  "text": "(8.9.G.cochlea.G.2) Beginn des Tragens"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "group",
-          "linkId": "8.10g",
-          "text": "(8.10g) Stoffwechsel & Hormonstörungen",
-          "repeats": true,
-          "item": [
-            {
-              "answerValueSet": "#StoffwechselstoerungVS",
-              "type": "choice",
-              "linkId": "8.10g.1",
-              "text": "(8.10g.1) Art der Störung oder Erkrankung"
-            },
-            {
-              "type": "date",
-              "linkId": "8.10g.2",
-              "text": "(8.10g.2) Beginn der Erkrankung"
-            }
-          ]
-        },
-        {
-          "type": "group",
-          "linkId": "8.11.g",
-          "text": "(8.11.g) Erkrankungen",
-          "repeats": true,
-          "item": [
-            {
-              "answerValueSet": "#ErkrankungVS",
-              "type": "open-choice",
-              "linkId": "8.11.g.1",
-              "text": "(8.11.g.1) Erkrankung"
-            },
-            {
-              "type": "date",
-              "linkId": "8.11.g.2",
-              "text": "(8.11.g.2) Erkrankungsbeginn"
-            },
-            {
-              "type": "boolean",
-              "linkId": "8.11.g.3",
-              "text": "(8.11.g.3) Durch Ärzt:in festgestellt"
-            }
-          ]
-        },
-        {
-          "type": "group",
-          "linkId": "8.12.g",
-          "text": "(8.12.g) Infektionskrankheiten",
-          "repeats": true,
-          "item": [
-            {
-              "answerValueSet": "#InfektionsKrankheitVS",
-              "type": "open-choice",
-              "linkId": "8.12.g.1",
-              "text": "(8.12.g.1) Infektionskrankheit"
-            },
-            {
-              "type": "date",
-              "linkId": "8.12.g.2",
-              "text": "(8.12.g.2) Erkrankungsbeginn"
-            }
-          ]
-        },
-        {
-          "type": "group",
-          "linkId": "8.13.g",
-          "text": "(8.13.g) Erkrankungen im letzten Jahr",
-          "repeats": true,
-          "item": [
-            {
-              "answerValueSet": "#ErkrankungenLetztesJahrVS",
-              "type": "open-choice",
-              "linkId": "8.13.g.1",
-              "text": "(8.13.g.1) Erkrankung"
-            },
-            {
-              "type": "date",
-              "linkId": "8.13.g.2",
-              "text": "(8.13.g.2) Erkrankungsbeginn"
-            }
-          ]
-        },
-        {
-          "type": "boolean",
-          "linkId": "8.14",
-          "text": "(8.14) Chronische Erkrankung vorhanden",
-          "item": [
-            {
-              "linkId": "8.14.1",
-              "type": "string",
-              "text": "(8.14.1) Welche Erkrankung?",
-              "code": [
-                {
-                  "code": "8.14.1",
-                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-                }
-              ],
-              "enableWhen": [
-                {
-                  "question": "8.14",
-                  "operator": "=",
-                  "answerBoolean": true
-                }
-              ],
-              "repeats": true
-            }
-          ]
-        },
-        {
-          "type": "boolean",
-          "linkId": "8.15",
-          "text": "(8.15) Krankenhausaufenthalt"
-        },
-        {
-          "type": "boolean",
-          "linkId": "8.16",
-          "text": "(8.16) Allergietest"
-        },
-        {
-          "type": "boolean",
-          "linkId": "8.17",
-          "text": "(8.17) Entwicklungsdiagnostik"
-        },
-        {
-          "type": "boolean",
-          "linkId": "8.18",
-          "text": "(8.18) Behindertenausweis vorhanden"
-        },
-        {
-          "type": "integer",
-          "linkId": "8.19",
-          "text": "(8.19) Grad der Behinderung"
-        },
-        {
-          "answerValueSet": "#PflegegradVS",
-          "type": "choice",
-          "linkId": "8.20",
-          "text": "(8.20) Pflegegrad"
-        },
-        {
-          "type": "boolean",
-          "linkId": "8.21",
-          "text": "(8.21) Schwere Behinderung vorhanden?"
-        },
-        {
-          "item": [
-            {
-              "type": "text",
-              "linkId": "8.21.g.1",
-              "text": "(8.21) Welche Behinderung"
-            },
-            {
-              "type": "choice",
-              "linkId": "8.21.g.2",
-              "text": "(8.22) Behinderung Merkzeichen",
-              "_text": {
-                "extension": [
-                  {
-                    "url": "http://hl7.org/fhir/StructureDefinition/rendering-style",
-                    "valueString": "background-color: red"
-                  }
-                ]
-              }
-            }
-          ],
-          "linkId": "8.21.g",
-          "type": "group",
-          "text": "(8.21.g) Details Behinderung",
-          "enableWhen": [
-            {
-              "question": "8.21",
-              "operator": "=",
-              "answerBoolean": true
-            }
-          ]
-        },
-        {
-          "type": "boolean",
-          "linkId": "8.23",
-          "text": "(8.23) Regelmäßige Medikamenteneinnahme"
-        },
-        {
-          "enableWhen": [
-            {
-              "question": "8.23",
-              "operator": "=",
-              "answerBoolean": true
-            }
-          ],
-          "type": "boolean",
-          "linkId": "8.23.1",
-          "text": "(8.23.1) Welches Medikament",
-          "repeats": true
-        },
-        {
-          "type": "boolean",
-          "linkId": "8.24",
-          "text": "(8.24) Medikamenteneinnahme in der Schulzeit?"
-        },
-        {
-          "enableWhen": [
-            {
-              "question": "8.24",
-              "operator": "=",
-              "answerBoolean": true
-            }
-          ],
-          "type": "text",
-          "linkId": "8.24.1",
-          "text": "(8.24.1) Welches Medikament",
-          "repeats": true
-        },
-        {
-          "type": "boolean",
-          "linkId": "8.25",
-          "text": "(8.25) Eine Erkrankung, die in einer Notfallsituation beachtet werden muss"
-        },
-        {
-          "enableWhen": [
-            {
-              "question": "8.25",
-              "operator": "=",
-              "answerBoolean": true
-            }
-          ],
-          "type": "text",
-          "linkId": "8.25.1",
-          "text": "(8.25.1) Welche Erkrankung",
-          "repeats": true
-        },
-        {
-          "type": "text",
-          "linkId": "8.26",
-          "text": "(8.26) Sonstige Probleme"
-        },
-        {
-          "type": "boolean",
-          "linkId": "8.27",
-          "text": "(8.27) Wurde ihr Kind operiert",
-          "item": [
-            {
-              "linkId": "8.27.1",
-              "type": "choice",
-              "text": "(8.27.1) Wie fand die Operation statt?",
-              "code": [
-                {
-                  "code": "8.27.1",
-                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-                }
-              ],
-              "enableWhen": [
-                {
-                  "question": "8.27",
-                  "operator": "=",
-                  "answerBoolean": true
-                }
-              ],
-              "answerValueSet": "#versorgungsart-vs"
-            }
-          ]
-        },
-        {
-          "type": "group",
-          "linkId": "8.28.g",
-          "text": "(8.28.g) Hatte ihr Kinde einen Unfall",
-          "repeats": true,
-          "item": [
-            {
-              "answerValueSet": "#UnfallOrtVS",
-              "type": "choice",
-              "linkId": "8.28.g.1",
-              "text": "(8.28.g.1) Ort des Unfall"
-            },
-            {
-              "answerValueSet": "#UnfallArtVS",
-              "type": "choice",
-              "linkId": "8.28.g.2",
-              "text": "(8.28.g.2) Art des Unfalls"
-            }
-          ]
-        }
-      ],
-      "type": "group",
-      "linkId": "8",
-      "text": "(8) Erkrankungen und gesundheitliche Einschränkungen"
-    },
-    {
-      "type": "group",
-      "linkId": "9",
-      "text": "(9) Förderungen",
-      "item": [
-        {
-          "type": "boolean",
-          "linkId": "9.1",
-          "text": "(9.1) Teilnahme am Vorkurs Deutsch"
-        },
-        {
-          "type": "choice",
-          "linkId": "9.2",
-          "text": "(9.2) Sprachtherapie",
-          "answerValueSet": "#SEU-EF-NeinAbgeschlossenLaeuftGeplantVS"
-        },
-        {
-          "type": "choice",
-          "linkId": "9.3",
-          "text": "(9.3) Frühförderung",
-          "answerValueSet": "#SEU-EF-NeinAbgeschlossenLaeuftGeplantVS"
-        },
-        {
-          "type": "choice",
-          "linkId": "9.4",
-          "text": "(9.4) Ergotherapie",
-          "answerValueSet": "#SEU-EF-NeinAbgeschlossenLaeuftGeplantVS"
-        },
-        {
-          "type": "choice",
-          "linkId": "9.5",
-          "text": "(9.5) Psychomotorik",
-          "answerValueSet": "#SEU-EF-NeinAbgeschlossenLaeuftGeplantVS"
-        },
-        {
-          "type": "choice",
-          "linkId": "9.6",
-          "text": "(9.6) Physiotherapie",
-          "answerValueSet": "#SEU-EF-NeinAbgeschlossenLaeuftGeplantVS"
-        },
-        {
-          "type": "choice",
-          "linkId": "9.7",
-          "text": "(9.7) Psychologische Erziehungsberatung",
-          "answerValueSet": "#SEU-EF-NeinAbgeschlossenLaeuftGeplantVS"
-        },
-        {
-          "type": "choice",
-          "linkId": "9.8",
-          "text": "(9.8) Krankengymnastik",
-          "answerValueSet": "#SEU-EF-NeinAbgeschlossenLaeuftGeplantVS"
-        },
-        {
-          "type": "choice",
-          "linkId": "9.9",
-          "text": "(9.9) Integrative Betreuung",
-          "answerValueSet": "#SEU-EF-NeinAbgeschlossenLaeuftGeplantVS"
-        },
-        {
-          "type": "text",
-          "linkId": "9.10",
-          "text": "(9.10) Sonstige Förderung"
-        },
-        {
-          "type": "group",
-          "linkId": "9.11.g",
-          "text": "(9.11.g) Kuren",
-          "repeats": true,
-          "item": [
-            {
-              "type": "date",
-              "linkId": "9.11.g.1",
-              "text": "(9.11.g.1) Wann"
-            },
-            {
-              "type": "text",
-              "linkId": "9.11.g.2",
-              "text": "(9.11.g.2) Behandlungsschwerpunkt"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "linkId": "10",
-      "type": "group",
-      "text": "(10) Medienkonsum",
-      "item": [
-        {
-          "linkId": "10.1",
-          "type": "integer",
-          "text": "(10.1) Durchschnittlich pro Tag am Fernseher/Smartphone/Tablet/Spielkonsole/Computer",
-          "code": [
-            {
-              "code": "10.1",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
-              "valueCoding": {
-                "code": "h",
-                "system": "http://unitsofmeasure.org",
-                "display": "Stunden"
-              }
-            }
-          ]
-        },
-        {
-          "linkId": "10.2",
-          "type": "boolean",
-          "text": "(10.2) Fernsehgerät/Computer/Spielkonsole im Zimmer?",
-          "code": [
-            {
-              "code": "10.2",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "linkId": "11",
-      "type": "group",
-      "text": "(11) Arzt",
-      "item": [
-        {
-          "linkId": "11.1",
-          "type": "boolean",
-          "text": "(11.1) Hat das Kind bislang ärztliche Behandlung oder Untersützung erhalten?",
-          "code": [
-            {
-              "code": "11.1",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ]
-        },
-        {
-          "linkId": "11.2",
-          "type": "string",
-          "text": "(11.2) Name Kinderarzt",
-          "code": [
-            {
-              "code": "11.2",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ]
-        },
-        {
-          "linkId": "11.3",
-          "type": "string",
-          "text": "(11.3) Name Facharzt",
-          "code": [
-            {
-              "code": "11.3",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "linkId": "12",
-      "type": "group",
-      "text": "(12) Sonstiges",
-      "item": [
-        {
-          "linkId": "12.1",
-          "type": "choice",
-          "text": "(12.1) Beratung Erziehungsberatungsstelle",
-          "code": [
-            {
-              "code": "12.1",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "answerValueSet": "#geplant-findet-statt-abgeschlossen-vs"
-        },
-        {
-          "linkId": "12.2",
-          "type": "choice",
-          "text": "(12.2) Beratung Sozialpädiatrisches Zentrum SPZ",
-          "code": [
-            {
-              "code": "12.2",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "answerValueSet": "#geplant-findet-statt-abgeschlossen-vs"
-        },
-        {
-          "linkId": "12.3",
-          "type": "boolean",
-          "text": "(12.3) Teilnahme Netzwerk Gesunde Kinder",
-          "code": [
-            {
-              "code": "12.3",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "item": [
-            {
-              "linkId": "12.3.1",
-              "type": "integer",
-              "text": "(12.3.1) Wie lange?",
-              "code": [
-                {
-                  "code": "12.3.1",
-                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-                }
-              ],
-              "extension": [
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
-                  "valueCoding": {
-                    "code": "a",
-                    "system": "http://unitsofmeasure.org",
-                    "display": "Jahre"
-                  }
-                }
-              ],
-              "enableWhen": [
-                {
-                  "question": "12.3",
-                  "operator": "=",
-                  "answerBoolean": true
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "linkId": "12.4",
-          "type": "boolean",
-          "text": "(12.4) KISS Sprachscreening",
-          "code": [
-            {
-              "code": "12.4",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ]
-        },
-        {
-          "linkId": "12.5",
-          "type": "choice",
-          "text": "(12.5) Raucherhaushalt",
-          "code": [
-            {
-              "code": "12.5",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "answerValueSet": "#haeufigkeit-auswahl-vs"
-        },
-        {
-          "linkId": "12.6",
-          "type": "text",
-          "text": "(12.6) Stärken/Begabung/Besonderheiten des Kindes",
-          "code": [
-            {
-              "code": "12.6",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ]
-        },
-        {
-          "linkId": "12.7",
-          "type": "boolean",
-          "text": "(12.7) Regelmäßig Sport",
-          "code": [
-            {
-              "code": "12.7",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ]
-        },
-        {
-          "linkId": "12.8",
-          "type": "text",
-          "text": "(12.8) Sportart und Verein",
-          "code": [
-            {
-              "code": "12.8",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "enableWhen": [
-            {
-              "question": "12.7",
-              "operator": "=",
-              "answerBoolean": true
-            }
-          ]
-        },
-        {
-          "linkId": "12.9",
-          "type": "boolean",
-          "text": "(12.9) Schwimmfähig",
-          "code": [
-            {
-              "code": "12.9",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ]
-        },
-        {
-          "linkId": "12.10",
-          "type": "boolean",
-          "text": "(12.10) Seepferdchenabzeichen",
-          "code": [
-            {
-              "code": "12.10",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "linkId": "13",
-      "type": "group",
-      "text": "(13) Informationen Eltern",
-      "item": [
-        {
-          "linkId": "13.1",
-          "type": "choice",
-          "text": "(13.1) Schulabschluss 1. Elternteil",
-          "code": [
-            {
-              "code": "13.1",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "answerValueSet": "#bildungsabschluss-vs"
-        },
-        {
-          "linkId": "13.2",
-          "type": "choice",
-          "text": "(13.2) Schulabschluss 2. Elternteil",
-          "code": [
-            {
-              "code": "13.2",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "answerValueSet": "#bildungsabschluss-vs"
-        },
-        {
-          "linkId": "13.3",
-          "type": "choice",
-          "text": "(13.3) Berufsabschluss 1. Elternteil",
-          "code": [
-            {
-              "code": "13.3",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "answerValueSet": "#berufsbildung-vs"
-        },
-        {
-          "linkId": "13.4",
-          "type": "choice",
-          "text": "(13.4) Berufsabschluss 2. Elternteil",
-          "code": [
-            {
-              "code": "13.4",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "answerValueSet": "#berufsbildung-vs"
-        },
-        {
-          "linkId": "13.5",
-          "type": "choice",
-          "text": "(13.5) Berufstätigkeit 1. Elternteil",
-          "code": [
-            {
-              "code": "13.5",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "answerValueSet": "#erwerbsstatus-vs"
-        },
-        {
-          "linkId": "13.5.1",
-          "type": "text",
-          "text": "(13.5.1) Grund der Erwerbslosigkeit",
-          "code": [
-            {
-              "code": "13.5.1",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "enableWhen": [
-            {
-              "question": "13.5",
-              "operator": "=",
-              "answerCoding": {
-                "code": "nicht_erwerbstaetig",
-                "system": "https://www.oegd.de/fhir/seu/CodeSystem/erwerbsstatus-cs"
-              }
-            }
-          ]
-        },
-        {
-          "linkId": "13.6",
-          "type": "choice",
-          "text": "(13.6) Berufstätigkeit 2. Elternteil",
-          "code": [
-            {
-              "code": "13.6",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "answerValueSet": "#erwerbsstatus-vs"
-        },
-        {
-          "linkId": "13.6.1",
-          "type": "text",
-          "text": "(13.6.1) Grund der Erwerbslosigkeit",
-          "code": [
-            {
-              "code": "13.6.1",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "enableWhen": [
-            {
-              "question": "13.6",
-              "operator": "=",
-              "answerCoding": {
-                "code": "nicht_erwerbstaetig",
-                "system": "https://www.oegd.de/fhir/seu/CodeSystem/erwerbsstatus-cs"
-              }
-            }
-          ]
-        },
-        {
-          "linkId": "13.7",
-          "type": "integer",
-          "text": "(13.7) Anzahl der Kinder im Haushalt. Kinder unter 18 Jahren, einzuschulendes Kind mitgerechnet",
-          "code": [
-            {
-              "code": "13.7",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ]
-        },
-        {
-          "linkId": "13.8",
-          "type": "integer",
-          "text": "(13.8) Anzahl der Erwachsene im Haushalt",
-          "code": [
-            {
-              "code": "13.8",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ]
-        },
-        {
-          "linkId": "13.9",
-          "type": "date",
-          "text": "(13.9) Datum seit dem der 1. Elternteil in Deutschland lebt.",
-          "code": [
-            {
-              "code": "13.9",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ]
-        },
-        {
-          "linkId": "13.10",
-          "type": "date",
-          "text": "(13.10) Datum seit dem der 2. Elternteil in Deutschland lebt.",
-          "code": [
-            {
-              "code": "13.10",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ]
-        },
-        {
-          "linkId": "13.11",
-          "type": "choice",
-          "text": "(13.11) Wer hat diesen Fragebogen ausgefüllt",
-          "code": [
-            {
-              "code": "13.11",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "answerValueSet": "#familienrolle-vs"
-        },
-        {
-          "linkId": "13.12",
-          "type": "boolean",
-          "text": "(13.12) Einwilligung zur Datenerhebung früherer Untersuchungen, welche beim Gesundheitsamt vorliegen",
-          "code": [
-            {
-              "code": "13.12",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ]
-        },
-        {
-          "linkId": "13.13",
-          "type": "boolean",
-          "text": "(13.13) Einwilligung zur Einsicht von Unterlagen zur Frühförderung, falls diese vorliegen",
-          "code": [
-            {
-              "code": "13.13",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ]
-        },
-        {
-          "linkId": "13.14",
-          "type": "boolean",
-          "text": "(13.14) Ob das Kind an einer Nachmittagsbetreuung teilnehmen soll",
-          "code": [
-            {
-              "code": "13.14",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ]
-        },
-        {
-          "linkId": "13.15",
-          "type": "boolean",
-          "text": "(13.15) Arbeitet der 1. Elternteil im Schichtdienst?",
-          "code": [
-            {
-              "code": "13.15",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ]
-        },
-        {
-          "linkId": "13.16",
-          "type": "boolean",
-          "text": "(13.16) Arbeitet der 2. Elternteil im Schichtdienst?",
-          "code": [
-            {
-              "code": "13.16",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ]
-        }
-      ]
-    }
-  ],
   "contained": [
     {
       "resourceType": "ValueSet",
@@ -4631,6 +3017,62 @@
           }
         ]
       }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "chronische-krankheiten-vs",
+      "status": "draft",
+      "name": "ChronischeKrankheitenVS",
+      "title": "ValueSet für chronische Krankheiten",
+      "description": "Dieses ValueSet beinhaltet eine Auswahl von Codes für häufige chronische Krankheiten, definiert im zugehörigen CodeSystem.",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/chronische-krankheiten-vs",
+      "expansion": {
+        "timestamp": "2024-04-12T15:47:43+00:00",
+        "contains": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/chronische-krankheiten",
+            "code": "asthma",
+            "display": "Asthma bronchiale"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/chronische-krankheiten",
+            "code": "rheuma",
+            "display": "Rheuma"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/chronische-krankheiten",
+            "code": "diabetes",
+            "display": "Diabetes"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/chronische-krankheiten",
+            "code": "epilepsie",
+            "display": "Epilepsie"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/chronische-krankheiten",
+            "code": "neurodermitis",
+            "display": "Neurodermitis"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/chronische-krankheiten",
+            "code": "adhs",
+            "display": "Aufmerksamkeitsdefizit-/Hyperaktivitätsstörung (ADHS)"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/chronische-krankheiten",
+            "code": "sonstiges",
+            "display": "Sonstige chronische Krankheiten"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/chronische-krankheiten"
+          }
+        ]
+      }
     }
   ],
   "url": "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung",
@@ -4654,5 +3096,1643 @@
       ]
     }
   ],
-  "status": "draft"
+  "status": "draft",
+  "item": [
+    {
+      "type": "group",
+      "linkId": "1",
+      "text": "(1) Personenbezogene Daten Kind",
+      "item": [
+        {
+          "linkId": "1.1",
+          "type": "string",
+          "text": "(1.1) Nachname des Kindes",
+          "code": [
+            {
+              "code": "1.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%patient.name[0].family"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "1.2",
+          "type": "string",
+          "text": "(1.2) Vorname des Kindes",
+          "code": [
+            {
+              "code": "1.2",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%patient.name[0].given[0]"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "1.3",
+          "type": "date",
+          "text": "(1.3) Geburtsdatum",
+          "code": [
+            {
+              "code": "1.3",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%patient.birthdate"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "1.4",
+          "type": "choice",
+          "text": "(1.4) Staatsangehörigkeit",
+          "code": [
+            {
+              "code": "1.4",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "answerValueSet": "#DeuevAnlage8LaenderkennzeichenVS"
+        },
+        {
+          "linkId": "1.5",
+          "type": "choice",
+          "text": "(1.5) Geburtsland",
+          "code": [
+            {
+              "code": "1.5",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "answerValueSet": "#DeuevAnlage8LaenderkennzeichenVS"
+        },
+        {
+          "linkId": "1.6",
+          "type": "boolean",
+          "text": "(1.6) In Deutschland geboren",
+          "code": [
+            {
+              "code": "1.6",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "1.6.1",
+          "type": "date",
+          "text": "(1.6.1) Seit wann wohnt das Kind in Deutschland?",
+          "code": [
+            {
+              "code": "1.6.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "1.6",
+              "operator": "=",
+              "answerBoolean": false
+            }
+          ]
+        },
+        {
+          "linkId": "1.7",
+          "type": "string",
+          "text": "(1.7) Geburtsort",
+          "code": [
+            {
+              "code": "1.7",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "1.8",
+          "type": "choice",
+          "text": "(1.8) Geschlecht",
+          "code": [
+            {
+              "code": "1.8",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "answerValueSet": "#GenderDEVS"
+        },
+        {
+          "linkId": "1.9",
+          "type": "string",
+          "text": "(1.9) PLZ",
+          "code": [
+            {
+              "code": "1.9",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "1.10",
+          "type": "string",
+          "text": "(1.10) Wohnort",
+          "code": [
+            {
+              "code": "1.10",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "1.11",
+          "type": "string",
+          "text": "(1.11) Straße",
+          "code": [
+            {
+              "code": "1.11",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "1.12",
+          "type": "choice",
+          "text": "(1.12) Kind lebt hauptsächlich bei",
+          "code": [
+            {
+              "code": "1.12",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "answerValueSet": "#LebtBeiVS"
+        },
+        {
+          "linkId": "1.12.1",
+          "type": "string",
+          "text": "(1.12.1) Kind lebt hauptsächlich bei",
+          "code": [
+            {
+              "code": "1.12.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "1.12",
+              "operator": "=",
+              "answerCoding": {
+                "code": "andere",
+                "system": "https://www.oegd.de/fhir/seu/CodeSystem/LebtBeiCS"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "linkId": "2",
+      "text": "(2) Personenbezogene Daten Personenberechtigter",
+      "item": [
+        {
+          "answerValueSet": "#GenderDEVS",
+          "type": "choice",
+          "linkId": "2.1",
+          "text": "(2.1) Geschlecht"
+        },
+        {
+          "type": "string",
+          "linkId": "2.2",
+          "text": "(2.2) Nachname",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%patient.name[0].family"
+              }
+            }
+          ]
+        },
+        {
+          "type": "string",
+          "linkId": "2.3",
+          "text": "(2.3) Vorname",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%patient.name[0].given[0]"
+              }
+            }
+          ]
+        },
+        {
+          "type": "string",
+          "linkId": "2.4",
+          "text": "(2.4) PLZ"
+        },
+        {
+          "type": "string",
+          "linkId": "2.5",
+          "text": "(2.5) Wohnort"
+        },
+        {
+          "type": "string",
+          "linkId": "2.6",
+          "text": "(2.6) Straße"
+        },
+        {
+          "type": "string",
+          "linkId": "2.7",
+          "text": "(2.7) Telefonnummer"
+        },
+        {
+          "type": "string",
+          "linkId": "2.8",
+          "text": "(2.8) Email"
+        },
+        {
+          "answerValueSet": "#DeuevAnlage8LaenderkennzeichenVS",
+          "type": "choice",
+          "linkId": "2.9",
+          "text": "(2.9) Staatsangehörigkeit"
+        },
+        {
+          "answerValueSet": "#DeuevAnlage8LaenderkennzeichenVS",
+          "type": "choice",
+          "linkId": "2.10",
+          "text": "(2.10) Herkunftsland"
+        },
+        {
+          "answerValueSet": "#SEU-AF-AuswaehlbareElternspracheVS",
+          "type": "choice",
+          "linkId": "2.11",
+          "text": "(2.11) Muttersprache"
+        },
+        {
+          "type": "date",
+          "linkId": "2.12",
+          "text": "(2.12) Geburtsdatum"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "linkId": "3",
+      "text": "(3) Familiendaten",
+      "item": [
+        {
+          "type": "integer",
+          "linkId": "3.1",
+          "text": "(3.1) Anzahl der Geschwister"
+        },
+        {
+          "type": "group",
+          "linkId": "3.1.1",
+          "text": "(3.1.1) Details Geschwister",
+          "repeats": true,
+          "enableWhen": [
+            {
+              "question": "3.1",
+              "operator": ">",
+              "answerInteger": 0
+            }
+          ],
+          "item": [
+            {
+              "type": "date",
+              "linkId": "3.1.1.1",
+              "text": "(3.1.1.1) Geburtsdatum des Geschwisters"
+            },
+            {
+              "type": "choice",
+              "linkId": "3.1.1.2",
+              "text": "(3.1.1.2) Geschlecht des Geschwisters"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "linkId": "3.2",
+          "text": "(3.2) Familiäre Vorgeschichte",
+          "item": [
+            {
+              "type": "boolean",
+              "linkId": "3.2.1",
+              "text": "(3.2.1) Brillenträger"
+            },
+            {
+              "type": "boolean",
+              "linkId": "3.2.2",
+              "text": "(3.2.2) Lese/Rechtschreibschwäche"
+            },
+            {
+              "type": "boolean",
+              "linkId": "3.2.3",
+              "text": "(3.2.3) Rechenschwäche"
+            },
+            {
+              "answerValueSet": "#ChronischeErkrankungenVS",
+              "type": "choice",
+              "linkId": "3.2.4",
+              "text": "(3.2.4) Erkrankung"
+            },
+            {
+              "answerValueSet": "#chronische-krankheiten-vs",
+              "type": "choice",
+              "linkId": "3.2.5",
+              "text": "(3.2.5) Chronische Erkrankung",
+              "item": [
+                {
+                  "enableWhen": [
+                    {
+                      "question": "3.2.5",
+                      "operator": "=",
+                      "answerCoding": {
+                        "code": "sonstiges",
+                        "system": "https://www.oegd.de/fhir/seu/CodeSystem/chronische-krankheiten"
+                      }
+                    }
+                  ],
+                  "type": "string",
+                  "linkId": "3.2.5.1",
+                  "text": "(3.2.5.1) Welche sonstige(n) chronischen Erkrankung(en)?"
+                }
+              ]
+            },
+            {
+              "type": "boolean",
+              "linkId": "3.2.6",
+              "text": "(3.2.6) Behinderung",
+              "item": [
+                {
+                  "enableWhen": [
+                    {
+                      "question": "3.2.6",
+                      "operator": "=",
+                      "answerBoolean": true
+                    }
+                  ],
+                  "type": "string",
+                  "linkId": "3.2.6.1",
+                  "text": "(3.2.6.1) Welche Behinderung?"
+                }
+              ]
+            },
+            {
+              "type": "boolean",
+              "linkId": "3.2.7",
+              "text": "(3.2.7) Schilddrüsenerkrankung",
+              "item": [
+                {
+                  "enableWhen": [
+                    {
+                      "question": "3.2.7",
+                      "operator": "=",
+                      "answerBoolean": true
+                    }
+                  ],
+                  "type": "string",
+                  "linkId": "3.2.6.1",
+                  "text": "(3.2.6.1) Welche Schilddrüsenerkrankung?"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "linkId": "4",
+      "text": "(4) Kinderbetreuung",
+      "item": [
+        {
+          "type": "integer",
+          "linkId": "4.1",
+          "text": "(4.1) Besuch Kita/Krippe (Dauer in Jahren)"
+        },
+        {
+          "type": "integer",
+          "linkId": "4.2",
+          "text": "(4.2) Dauer Kita/Krippe pro Woche in Stunden"
+        },
+        {
+          "type": "integer",
+          "linkId": "4.3",
+          "text": "(4.3) Dauer Kita/Krippe pro Woche in Stunden"
+        },
+        {
+          "type": "date",
+          "linkId": "4.4",
+          "text": "(4.4) Angabe des Datums, seit wann das Kind keine Kita mehr besucht."
+        },
+        {
+          "type": "boolean",
+          "linkId": "4.5",
+          "text": "(4.5) Besucht ihr Kind eine andere Form der Tagesbetreuung?"
+        },
+        {
+          "type": "string",
+          "linkId": "4.6",
+          "text": "(4.6) Name des Kindergartens",
+          "enableWhen": [
+            {
+              "question": "4.5",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ]
+        },
+        {
+          "type": "boolean",
+          "linkId": "4.7",
+          "text": "(4.7) Erfolgte die Betreuung auch durch eine Tagesmutter?"
+        },
+        {
+          "type": "date",
+          "linkId": "4.8",
+          "text": "(4.8) Seit welchem Jahr ist die Tagesmutter im Einsatz?",
+          "enableWhen": [
+            {
+              "question": "4.7",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "linkId": "5",
+      "text": "(5) Schwangerschaft und Geburt",
+      "item": [
+        {
+          "type": "integer",
+          "linkId": "5.1",
+          "text": "(5.1) Dauer der Schwangerschaft (in Wochen)"
+        },
+        {
+          "type": "integer",
+          "linkId": "5.2",
+          "text": "(5.2) Geburtsgewicht (in Gramm)"
+        },
+        {
+          "type": "integer",
+          "linkId": "5.3",
+          "text": "(5.3) Geburtslänge (in cm)"
+        },
+        {
+          "type": "boolean",
+          "linkId": "5.4",
+          "text": "(5.4) Waren Geburtsgewicht und Geburtslänge normal?"
+        },
+        {
+          "type": "boolean",
+          "linkId": "5.5",
+          "text": "(5.5) Auffälligkeit bei der Geburt",
+          "item": [
+            {
+              "enableWhen": [
+                {
+                  "question": "5.5",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ],
+              "type": "string",
+              "linkId": "5.5.1",
+              "text": "(5.5.1) Welche Auffälligkeit?"
+            }
+          ]
+        },
+        {
+          "type": "boolean",
+          "linkId": "5.6",
+          "text": "(5.6) Auffälligkeit in der Schwangerschaft",
+          "item": [
+            {
+              "enableWhen": [
+                {
+                  "question": "5.6",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ],
+              "type": "string",
+              "linkId": "5.6.1",
+              "text": "(5.6.1) Welche Auffälligkeit?"
+            }
+          ]
+        },
+        {
+          "type": "integer",
+          "linkId": "5.7",
+          "text": "(5.7) Stillzeit in Monaten"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "linkId": "6",
+      "text": "(6) Sprache",
+      "item": [
+        {
+          "answerValueSet": "#SEU-AF-AuswaehlbareElternspracheVS",
+          "type": "choice",
+          "linkId": "6.1",
+          "text": "(6.1) Welche Sprachen werden Zuhause gesprochen?",
+          "repeats": true
+        },
+        {
+          "answerValueSet": "#SEU-AF-AuswaehlbareElternspracheVS",
+          "type": "choice",
+          "linkId": "6.2",
+          "text": "(6.2) Muttersprache des Kindes"
+        },
+        {
+          "answerValueSet": "#JaNeinAngemeldetVS",
+          "type": "choice",
+          "linkId": "6.3",
+          "text": "(6.3) Teilnahme des Kindes an einem Deutschkurs"
+        },
+        {
+          "type": "boolean",
+          "linkId": "6.4",
+          "text": "(6.4) Sprachauffälligkeiten"
+        },
+        {
+          "type": "boolean",
+          "linkId": "6.5",
+          "text": "(6.5) Kontakt zu Deutschsprechenden seit Geburt?"
+        },
+        {
+          "type": "group",
+          "linkId": "6.6",
+          "text": "(6.6) Kontakt zu Deutschprechenden seit Alter:",
+          "enableWhen": [
+            {
+              "question": "6.5",
+              "operator": "=",
+              "answerBoolean": false
+            }
+          ],
+          "item": [
+            {
+              "type": "integer",
+              "linkId": "6.6.1",
+              "text": "(6.6.1) Jahre"
+            },
+            {
+              "type": "integer",
+              "linkId": "6.6.2",
+              "text": "(6.6.2) Monate"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "linkId": "7",
+      "text": "(7) Entwicklung",
+      "item": [
+        {
+          "type": "boolean",
+          "linkId": "7.1",
+          "text": "(7.1) Sind Sie mit der Entwicklung ihres Kinds zufrieden?"
+        },
+        {
+          "type": "text",
+          "linkId": "7.2",
+          "text": "(7.2) Mit was sind Sie Unzufrieden?",
+          "enableWhen": [
+            {
+              "question": "7.1",
+              "operator": "=",
+              "answerBoolean": false
+            }
+          ]
+        },
+        {
+          "type": "integer",
+          "linkId": "7.3",
+          "text": "(7.3) Freies Laufen ab? (Monate)"
+        },
+        {
+          "type": "integer",
+          "linkId": "7.4",
+          "text": "(7.4) Erste Worte ab? (Monate)"
+        },
+        {
+          "type": "integer",
+          "linkId": "7.5",
+          "text": "(7.5) Erste Sätze ab? (Monate)"
+        },
+        {
+          "type": "integer",
+          "linkId": "7.6",
+          "text": "(7.6) Tagsüber ohne Windeln ab? (Jahre)"
+        },
+        {
+          "type": "integer",
+          "linkId": "7.7",
+          "text": "(7.7) Nachts ohne Windeln ab? (Jahre)"
+        },
+        {
+          "type": "boolean",
+          "linkId": "7.8",
+          "text": "(7.8) Besonderheiten in der Säuglings- u. Kleinkinderzeit?"
+        },
+        {
+          "type": "text",
+          "linkId": "7.8.1",
+          "text": "(7.8.1) Welche Besonderheiten lagen vor?",
+          "enableWhen": [
+            {
+              "question": "7.8",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ]
+        },
+        {
+          "answerValueSet": "#RechtsLinksHaenderVS",
+          "type": "choice",
+          "linkId": "7.9",
+          "text": "(7.9) Links- oder Rechtshänder"
+        },
+        {
+          "type": "text",
+          "linkId": "7.10",
+          "text": "(7.10) Angabe zu Entwicklungsverzögerungen, bspw. beim Erlernen des Sitzens/Laufens"
+        },
+        {
+          "type": "open-choice",
+          "linkId": "7.11",
+          "text": "(7.11) Auffälligkeit des Verhaltens"
+        },
+        {
+          "type": "boolean",
+          "linkId": "7.12",
+          "text": "(7.12) Sorgen Sie sich um die Entwicklung ihres Kindes?"
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "linkId": "8",
+      "text": "(8) Erkrankungen und gesundheitliche Einschränkungen",
+      "item": [
+        {
+          "type": "boolean",
+          "linkId": "8.1",
+          "text": "(8.1) In regelmäßiger ärztlicher bzw. psychologischer Behandlung"
+        },
+        {
+          "type": "text",
+          "linkId": "8.2",
+          "text": "(8.2) Freitext Angabe, abhängig zu 'Regelmäßig_Behandlung'. Angabe zu Grund und Fachrichtung",
+          "enableWhen": [
+            {
+              "question": "8.1",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ]
+        },
+        {
+          "type": "boolean",
+          "linkId": "8.3",
+          "text": "(8.3) Sehstörung vorhanden?"
+        },
+        {
+          "type": "boolean",
+          "linkId": "8.4",
+          "text": "(8.4) Sprachstörung vorhanden?"
+        },
+        {
+          "type": "boolean",
+          "linkId": "8.5",
+          "text": "(8.5) Schielbehandlung?"
+        },
+        {
+          "type": "boolean",
+          "linkId": "8.6",
+          "text": "(8.6) Brillenträger?"
+        },
+        {
+          "type": "date",
+          "linkId": "8.7",
+          "text": "(8.7) Letzte Untersuchung beim Augenarzt?"
+        },
+        {
+          "type": "date",
+          "linkId": "8.8",
+          "text": "(8.8) Letzte Untersuchung beim Zahnarzt?"
+        },
+        {
+          "type": "boolean",
+          "linkId": "8.9",
+          "text": "(8.9) Schwere Hörstörung vorhanden?"
+        },
+        {
+          "type": "group",
+          "linkId": "8.9.G",
+          "text": "(8.9.G) Details: Angeborene schwere Hörstörung",
+          "enableWhen": [
+            {
+              "question": "8.9",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "item": [
+            {
+              "type": "group",
+              "linkId": "8.9.G.hoergeraete.G",
+              "text": "(8.9.G.hoergeraete.G) Hörgeräte",
+              "repeats": true,
+              "item": [
+                {
+                  "answerValueSet": "#LinksRechtsBeidseitsKeineAngabeVS",
+                  "type": "choice",
+                  "linkId": "8.9.G.hoergeraete.G.1",
+                  "text": "(8.9.G.hoergeraete.G.1) Höregerätseite"
+                },
+                {
+                  "type": "date",
+                  "linkId": "8.9.G.hoergeraete.G.2",
+                  "text": "(8.9.G.hoergeraete.G.2) Beginn des Tragens"
+                }
+              ]
+            },
+            {
+              "type": "group",
+              "linkId": "8.9.G.cochlea.G",
+              "text": "(8.9.G.cochlea.G) Cochleaimplantate",
+              "repeats": true,
+              "item": [
+                {
+                  "answerValueSet": "#LinksRechtsBeidseitsKeineAngabeVS",
+                  "type": "choice",
+                  "linkId": "8.9.G.cochlea.G.1",
+                  "text": "(8.9.G.cochlea.G.1) Cochleaimplantat-Seite"
+                },
+                {
+                  "type": "date",
+                  "linkId": "8.9.G.cochlea.G.2",
+                  "text": "(8.9.G.cochlea.G.2) Beginn des Tragens"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "linkId": "8.10g",
+          "text": "(8.10g) Stoffwechsel & Hormonstörungen",
+          "repeats": true,
+          "item": [
+            {
+              "answerValueSet": "#StoffwechselstoerungVS",
+              "type": "choice",
+              "linkId": "8.10g.1",
+              "text": "(8.10g.1) Art der Störung oder Erkrankung"
+            },
+            {
+              "type": "date",
+              "linkId": "8.10g.2",
+              "text": "(8.10g.2) Beginn der Erkrankung"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "linkId": "8.11.g",
+          "text": "(8.11.g) Erkrankungen",
+          "repeats": true,
+          "item": [
+            {
+              "answerValueSet": "#ErkrankungVS",
+              "type": "open-choice",
+              "linkId": "8.11.g.1",
+              "text": "(8.11.g.1) Erkrankung"
+            },
+            {
+              "type": "date",
+              "linkId": "8.11.g.2",
+              "text": "(8.11.g.2) Erkrankungsbeginn"
+            },
+            {
+              "type": "boolean",
+              "linkId": "8.11.g.3",
+              "text": "(8.11.g.3) Durch Ärzt:in festgestellt"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "linkId": "8.12.g",
+          "text": "(8.12.g) Infektionskrankheiten",
+          "repeats": true,
+          "item": [
+            {
+              "answerValueSet": "#InfektionsKrankheitVS",
+              "type": "open-choice",
+              "linkId": "8.12.g.1",
+              "text": "(8.12.g.1) Infektionskrankheit"
+            },
+            {
+              "type": "date",
+              "linkId": "8.12.g.2",
+              "text": "(8.12.g.2) Erkrankungsbeginn"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "linkId": "8.13.g",
+          "text": "(8.13.g) Erkrankungen im letzten Jahr",
+          "repeats": true,
+          "item": [
+            {
+              "answerValueSet": "#ErkrankungenLetztesJahrVS",
+              "type": "open-choice",
+              "linkId": "8.13.g.1",
+              "text": "(8.13.g.1) Erkrankung"
+            },
+            {
+              "type": "date",
+              "linkId": "8.13.g.2",
+              "text": "(8.13.g.2) Erkrankungsbeginn"
+            }
+          ]
+        },
+        {
+          "type": "boolean",
+          "linkId": "8.14",
+          "text": "(8.14) Chronische Erkrankung vorhanden",
+          "item": [
+            {
+              "linkId": "8.14.1",
+              "type": "string",
+              "text": "(8.14.1) Welche Erkrankung?",
+              "code": [
+                {
+                  "code": "8.14.1",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "enableWhen": [
+                {
+                  "question": "8.14",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ],
+              "repeats": true
+            }
+          ]
+        },
+        {
+          "type": "boolean",
+          "linkId": "8.15",
+          "text": "(8.15) Krankenhausaufenthalt"
+        },
+        {
+          "type": "boolean",
+          "linkId": "8.16",
+          "text": "(8.16) Allergietest"
+        },
+        {
+          "type": "boolean",
+          "linkId": "8.17",
+          "text": "(8.17) Entwicklungsdiagnostik"
+        },
+        {
+          "type": "boolean",
+          "linkId": "8.18",
+          "text": "(8.18) Behindertenausweis vorhanden"
+        },
+        {
+          "type": "integer",
+          "linkId": "8.19",
+          "text": "(8.19) Grad der Behinderung"
+        },
+        {
+          "answerValueSet": "#PflegegradVS",
+          "type": "choice",
+          "linkId": "8.20",
+          "text": "(8.20) Pflegegrad"
+        },
+        {
+          "type": "boolean",
+          "linkId": "8.21",
+          "text": "(8.21) Schwere Behinderung vorhanden?"
+        },
+        {
+          "linkId": "8.21.g",
+          "type": "group",
+          "text": "(8.21.g) Details Behinderung",
+          "enableWhen": [
+            {
+              "question": "8.21",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "item": [
+            {
+              "type": "text",
+              "linkId": "8.21.g.1",
+              "text": "(8.21) Welche Behinderung"
+            },
+            {
+              "type": "text",
+              "linkId": "8.21.g.2",
+              "text": "(8.22) Behinderung Merkzeichen"
+            }
+          ]
+        },
+        {
+          "type": "boolean",
+          "linkId": "8.23",
+          "text": "(8.23) Regelmäßige Medikamenteneinnahme"
+        },
+        {
+          "enableWhen": [
+            {
+              "question": "8.23",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "type": "string",
+          "linkId": "8.23.1",
+          "text": "(8.23.1) Welches Medikament",
+          "repeats": true
+        },
+        {
+          "type": "boolean",
+          "linkId": "8.24",
+          "text": "(8.24) Medikamenteneinnahme in der Schulzeit?"
+        },
+        {
+          "enableWhen": [
+            {
+              "question": "8.24",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "type": "text",
+          "linkId": "8.24.1",
+          "text": "(8.24.1) Welches Medikament",
+          "repeats": true
+        },
+        {
+          "type": "boolean",
+          "linkId": "8.25",
+          "text": "(8.25) Eine Erkrankung, die in einer Notfallsituation beachtet werden muss"
+        },
+        {
+          "enableWhen": [
+            {
+              "question": "8.25",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "type": "text",
+          "linkId": "8.25.1",
+          "text": "(8.25.1) Welche Erkrankung",
+          "repeats": true
+        },
+        {
+          "type": "text",
+          "linkId": "8.26",
+          "text": "(8.26) Sonstige Probleme"
+        },
+        {
+          "type": "boolean",
+          "linkId": "8.27",
+          "text": "(8.27) Wurde ihr Kind operiert",
+          "item": [
+            {
+              "linkId": "8.27.1",
+              "type": "choice",
+              "text": "(8.27.1) Wie fand die Operation statt?",
+              "code": [
+                {
+                  "code": "8.27.1",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "enableWhen": [
+                {
+                  "question": "8.27",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ],
+              "answerValueSet": "#versorgungsart-vs"
+            }
+          ]
+        },
+        {
+          "type": "group",
+          "linkId": "8.28.g",
+          "text": "(8.28.g) Hatte ihr Kinde einen Unfall",
+          "repeats": true,
+          "item": [
+            {
+              "answerValueSet": "#UnfallOrtVS",
+              "type": "choice",
+              "linkId": "8.28.g.1",
+              "text": "(8.28.g.1) Ort des Unfall"
+            },
+            {
+              "answerValueSet": "#UnfallArtVS",
+              "type": "choice",
+              "linkId": "8.28.g.2",
+              "text": "(8.28.g.2) Art des Unfalls"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "linkId": "9",
+      "text": "(9) Förderungen",
+      "item": [
+        {
+          "type": "boolean",
+          "linkId": "9.1",
+          "text": "(9.1) Teilnahme am Vorkurs Deutsch"
+        },
+        {
+          "type": "choice",
+          "linkId": "9.2",
+          "text": "(9.2) Sprachtherapie",
+          "answerValueSet": "#SEU-EF-NeinAbgeschlossenLaeuftGeplantVS"
+        },
+        {
+          "type": "choice",
+          "linkId": "9.3",
+          "text": "(9.3) Frühförderung",
+          "answerValueSet": "#SEU-EF-NeinAbgeschlossenLaeuftGeplantVS"
+        },
+        {
+          "type": "choice",
+          "linkId": "9.4",
+          "text": "(9.4) Ergotherapie",
+          "answerValueSet": "#SEU-EF-NeinAbgeschlossenLaeuftGeplantVS"
+        },
+        {
+          "type": "choice",
+          "linkId": "9.5",
+          "text": "(9.5) Psychomotorik",
+          "answerValueSet": "#SEU-EF-NeinAbgeschlossenLaeuftGeplantVS"
+        },
+        {
+          "type": "choice",
+          "linkId": "9.6",
+          "text": "(9.6) Physiotherapie",
+          "answerValueSet": "#SEU-EF-NeinAbgeschlossenLaeuftGeplantVS"
+        },
+        {
+          "type": "choice",
+          "linkId": "9.7",
+          "text": "(9.7) Psychologische Erziehungsberatung",
+          "answerValueSet": "#SEU-EF-NeinAbgeschlossenLaeuftGeplantVS"
+        },
+        {
+          "type": "choice",
+          "linkId": "9.8",
+          "text": "(9.8) Krankengymnastik",
+          "answerValueSet": "#SEU-EF-NeinAbgeschlossenLaeuftGeplantVS"
+        },
+        {
+          "type": "choice",
+          "linkId": "9.9",
+          "text": "(9.9) Integrative Betreuung",
+          "answerValueSet": "#SEU-EF-NeinAbgeschlossenLaeuftGeplantVS"
+        },
+        {
+          "type": "text",
+          "linkId": "9.10",
+          "text": "(9.10) Sonstige Förderung"
+        },
+        {
+          "type": "group",
+          "linkId": "9.11.g",
+          "text": "(9.11.g) Kuren",
+          "repeats": true,
+          "item": [
+            {
+              "type": "date",
+              "linkId": "9.11.g.1",
+              "text": "(9.11.g.1) Wann"
+            },
+            {
+              "type": "text",
+              "linkId": "9.11.g.2",
+              "text": "(9.11.g.2) Behandlungsschwerpunkt"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "10",
+      "type": "group",
+      "text": "(10) Medienkonsum",
+      "item": [
+        {
+          "linkId": "10.1",
+          "type": "integer",
+          "text": "(10.1) Durchschnittlich pro Tag am Fernseher/Smartphone/Tablet/Spielkonsole/Computer",
+          "code": [
+            {
+              "code": "10.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "code": "h",
+                "system": "http://unitsofmeasure.org",
+                "display": "Stunden"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "10.2",
+          "type": "boolean",
+          "text": "(10.2) Fernsehgerät/Computer/Spielkonsole im Zimmer?",
+          "code": [
+            {
+              "code": "10.2",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "11",
+      "type": "group",
+      "text": "(11) Arzt",
+      "item": [
+        {
+          "linkId": "11.1",
+          "type": "boolean",
+          "text": "(11.1) Hat das Kind bislang ärztliche Behandlung oder Untersützung erhalten?",
+          "code": [
+            {
+              "code": "11.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "11.2",
+          "type": "string",
+          "text": "(11.2) Name Kinderarzt",
+          "code": [
+            {
+              "code": "11.2",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "11.3",
+          "type": "string",
+          "text": "(11.3) Name Facharzt",
+          "code": [
+            {
+              "code": "11.3",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "12",
+      "type": "group",
+      "text": "(12) Sonstiges",
+      "item": [
+        {
+          "linkId": "12.1",
+          "type": "choice",
+          "text": "(12.1) Beratung Erziehungsberatungsstelle",
+          "code": [
+            {
+              "code": "12.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "answerValueSet": "#geplant-findet-statt-abgeschlossen-vs"
+        },
+        {
+          "linkId": "12.2",
+          "type": "choice",
+          "text": "(12.2) Beratung Sozialpädiatrisches Zentrum SPZ",
+          "code": [
+            {
+              "code": "12.2",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "answerValueSet": "#geplant-findet-statt-abgeschlossen-vs"
+        },
+        {
+          "linkId": "12.3",
+          "type": "boolean",
+          "text": "(12.3) Teilnahme Netzwerk Gesunde Kinder",
+          "code": [
+            {
+              "code": "12.3",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "item": [
+            {
+              "linkId": "12.3.1",
+              "type": "integer",
+              "text": "(12.3.1) Wie lange?",
+              "code": [
+                {
+                  "code": "12.3.1",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                  "valueCoding": {
+                    "code": "a",
+                    "system": "http://unitsofmeasure.org",
+                    "display": "Jahre"
+                  }
+                }
+              ],
+              "enableWhen": [
+                {
+                  "question": "12.3",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "12.4",
+          "type": "boolean",
+          "text": "(12.4) KISS Sprachscreening",
+          "code": [
+            {
+              "code": "12.4",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "12.5",
+          "type": "choice",
+          "text": "(12.5) Raucherhaushalt",
+          "code": [
+            {
+              "code": "12.5",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "answerValueSet": "#haeufigkeit-auswahl-vs"
+        },
+        {
+          "linkId": "12.6",
+          "type": "text",
+          "text": "(12.6) Stärken/Begabung/Besonderheiten des Kindes",
+          "code": [
+            {
+              "code": "12.6",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "12.7",
+          "type": "boolean",
+          "text": "(12.7) Regelmäßig Sport",
+          "code": [
+            {
+              "code": "12.7",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "12.8",
+          "type": "text",
+          "text": "(12.8) Sportart und Verein",
+          "code": [
+            {
+              "code": "12.8",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "12.7",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ]
+        },
+        {
+          "linkId": "12.9",
+          "type": "boolean",
+          "text": "(12.9) Schwimmfähig",
+          "code": [
+            {
+              "code": "12.9",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "12.10",
+          "type": "boolean",
+          "text": "(12.10) Seepferdchenabzeichen",
+          "code": [
+            {
+              "code": "12.10",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "13",
+      "type": "group",
+      "text": "(13) Informationen Eltern",
+      "item": [
+        {
+          "linkId": "13.1",
+          "type": "choice",
+          "text": "(13.1) Schulabschluss 1. Elternteil",
+          "code": [
+            {
+              "code": "13.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "answerValueSet": "#bildungsabschluss-vs"
+        },
+        {
+          "linkId": "13.2",
+          "type": "choice",
+          "text": "(13.2) Schulabschluss 2. Elternteil",
+          "code": [
+            {
+              "code": "13.2",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "answerValueSet": "#bildungsabschluss-vs"
+        },
+        {
+          "linkId": "13.3",
+          "type": "choice",
+          "text": "(13.3) Berufsabschluss 1. Elternteil",
+          "code": [
+            {
+              "code": "13.3",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "answerValueSet": "#berufsbildung-vs"
+        },
+        {
+          "linkId": "13.4",
+          "type": "choice",
+          "text": "(13.4) Berufsabschluss 2. Elternteil",
+          "code": [
+            {
+              "code": "13.4",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "answerValueSet": "#berufsbildung-vs"
+        },
+        {
+          "linkId": "13.5",
+          "type": "choice",
+          "text": "(13.5) Berufstätigkeit 1. Elternteil",
+          "code": [
+            {
+              "code": "13.5",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "answerValueSet": "#erwerbsstatus-vs"
+        },
+        {
+          "linkId": "13.5.1",
+          "type": "text",
+          "text": "(13.5.1) Grund der Erwerbslosigkeit",
+          "code": [
+            {
+              "code": "13.5.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "13.5",
+              "operator": "=",
+              "answerCoding": {
+                "code": "nicht_erwerbstaetig",
+                "system": "https://www.oegd.de/fhir/seu/CodeSystem/erwerbsstatus-cs"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "13.6",
+          "type": "choice",
+          "text": "(13.6) Berufstätigkeit 2. Elternteil",
+          "code": [
+            {
+              "code": "13.6",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "answerValueSet": "#erwerbsstatus-vs"
+        },
+        {
+          "linkId": "13.6.1",
+          "type": "text",
+          "text": "(13.6.1) Grund der Erwerbslosigkeit",
+          "code": [
+            {
+              "code": "13.6.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "13.6",
+              "operator": "=",
+              "answerCoding": {
+                "code": "nicht_erwerbstaetig",
+                "system": "https://www.oegd.de/fhir/seu/CodeSystem/erwerbsstatus-cs"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "13.7",
+          "type": "integer",
+          "text": "(13.7) Anzahl der Kinder im Haushalt. Kinder unter 18 Jahren, einzuschulendes Kind mitgerechnet",
+          "code": [
+            {
+              "code": "13.7",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "13.8",
+          "type": "integer",
+          "text": "(13.8) Anzahl der Erwachsene im Haushalt",
+          "code": [
+            {
+              "code": "13.8",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "13.9",
+          "type": "date",
+          "text": "(13.9) Datum seit dem der 1. Elternteil in Deutschland lebt.",
+          "code": [
+            {
+              "code": "13.9",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "13.10",
+          "type": "date",
+          "text": "(13.10) Datum seit dem der 2. Elternteil in Deutschland lebt.",
+          "code": [
+            {
+              "code": "13.10",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "13.11",
+          "type": "choice",
+          "text": "(13.11) Wer hat diesen Fragebogen ausgefüllt",
+          "code": [
+            {
+              "code": "13.11",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "answerValueSet": "#familienrolle-vs"
+        },
+        {
+          "linkId": "13.12",
+          "type": "boolean",
+          "text": "(13.12) Einwilligung zur Datenerhebung früherer Untersuchungen, welche beim Gesundheitsamt vorliegen",
+          "code": [
+            {
+              "code": "13.12",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "13.13",
+          "type": "boolean",
+          "text": "(13.13) Einwilligung zur Einsicht von Unterlagen zur Frühförderung, falls diese vorliegen",
+          "code": [
+            {
+              "code": "13.13",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "13.14",
+          "type": "boolean",
+          "text": "(13.14) Ob das Kind an einer Nachmittagsbetreuung teilnehmen soll",
+          "code": [
+            {
+              "code": "13.14",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "13.15",
+          "type": "boolean",
+          "text": "(13.15) Arbeitet der 1. Elternteil im Schichtdienst?",
+          "code": [
+            {
+              "code": "13.15",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "13.16",
+          "type": "boolean",
+          "text": "(13.16) Arbeitet der 2. Elternteil im Schichtdienst?",
+          "code": [
+            {
+              "code": "13.16",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        }
+      ]
+    }
+  ]
 }

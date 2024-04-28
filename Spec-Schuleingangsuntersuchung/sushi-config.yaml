@@ -3,5 +3,5 @@ version: 0.1.0
 fhirVersion: 4.0.1
 FSHOnly: true
 dependencies:
-  de.basisprofil.r4: 1.4.0
+  de.basisprofil.r4: 1.5.0-ballot2
   hl7.fhir.r4.core: 4.0.1

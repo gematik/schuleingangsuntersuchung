@@ -241,6 +241,19 @@ Description: "FamilienrolleCS"
 * #geschwister "Geschwister"
 * #andere_person "Andere Person"
 
+CodeSystem: ChronischeKrankheiten
+Id: chronische-krankheiten
+Title: "CodeSystem für chronische Krankheiten"
+Description: "Dieses CodeSystem beinhaltet Codes für häufige chronische Krankheiten."
+* #asthma "Asthma bronchiale"
+* #rheuma "Rheuma"
+* #diabetes "Diabetes"
+* #epilepsie "Epilepsie"
+* #neurodermitis "Neurodermitis"
+* #adhs "Aufmerksamkeitsdefizit-/Hyperaktivitätsstörung (ADHS)"
+* #sonstiges "Sonstige chronische Krankheiten"
+
+
 
 CodeSystem: DeuevAnlage8Laenderkennzeichen
 Id: anlage-8-laenderkennzeichen
