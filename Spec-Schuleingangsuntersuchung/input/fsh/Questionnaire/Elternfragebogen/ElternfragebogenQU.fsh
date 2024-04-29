@@ -28,11 +28,21 @@ Description: "Elternbefragung"
 * contained[+] = FamilienrolleVS
 * contained[+] = VersorgungsartVS
 * contained[+] = ChronischeKrankheitenVS
+* contained[+] = UeberwiegendGesprocheneSpracheVS
+* contained[+] = EntwicklungVS
+* contained[+] = AtopischeErkrankungenVS
+* contained[+] = AllgemeineBeschwerdenVS
 * id = "SEU-Elternbefragung"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung"
 * title = "SEU Elternfragebogen Maximaldatensatz"
 * insert launchContext("patient", #Patient, "Patientenkontext")
 * status = #draft
+* item[+]
+  * insert addGroup(0, Schule & Vorgangsnummer)
+  * item[+]
+    * insert addItem(0.1, #string, Name der Schule)
+  * item[+]
+    * insert addItem(0.2, #string, Vorgangsnummer)
 * item[+]
   * type = #group
   * linkId = "1"
@@ -84,6 +94,7 @@ Description: "Elternbefragung"
   * type = #group
   * linkId = "2"
   * text = "(2) Personenbezogene Daten Personenberechtigter"
+  * repeats = true
   * item[+]
     * answerValueSet = Canonical(GenderDEVS)
     * type = #choice
@@ -221,6 +232,10 @@ Description: "Elternbefragung"
   * linkId = "4"
   * text = "(4) Kinderbetreuung"
   * item[+]
+    * insert addItem(4.0a, #boolean, Besucht Ihr Kind weniger als 5 Stunden täglich den Kindergarten?)
+  * item[+]
+    * insert addItem(4.0b, #boolean, [[Ist das Kind in einem Kindergarten/einer Kindertageseinrichtung]])
+  * item[+]
     * type = #integer
     * linkId = "4.1"
     * text = "(4.1) Besuch Kita/Krippe (Dauer in Jahren)"
@@ -276,8 +291,16 @@ Description: "Elternbefragung"
     * text = "(5.2) Geburtsgewicht (in Gramm)"
   * item[+]
     * type = #integer
-    * linkId = "5.3"
+    * linkId = "5.3a"
     * text = "(5.3) Geburtslänge (in cm)"
+  * item[+]
+    * type = #integer
+    * linkId = "5.3b"
+    * text = "(5.3b) Kopfumfang (in cm)"
+  * item[+]
+    * type = #integer
+    * linkId = "5.3c"
+    * text = "(5.3c) In welcher SS-Woche wurde ihr Kind geboren?"
   * item[+]
     * type = #boolean
     * linkId = "5.4"
@@ -294,7 +317,7 @@ Description: "Elternbefragung"
   * item[+]
     * type = #boolean
     * linkId = "5.6"
-    * text = "(5.6) Auffälligkeit in der Schwangerschaft"
+    * text = "(5.6) Auffälligkeit/Krankheit in der Schwangerschaft"
     * item[+]
       * insert EnableWhenBoolean(5.6, =, true)
       * type = #string
@@ -316,6 +339,12 @@ Description: "Elternbefragung"
     * linkId = "6.1"
     * text = "(6.1) Welche Sprachen werden Zuhause gesprochen?"
     * repeats = true
+  * item[+]
+    * answerValueSet = Canonical(UeberwiegendGesprocheneSpracheVS)
+    * type = #choice
+    * linkId = "6.1a"
+    * text = "(6.1a) Welche Sprachen wurden mit dem Kind in den ersten 4 Lebensjahren überwiegend gesprochen?"
+    * repeats = true    
   * item[+]
     * answerValueSet = Canonical(SEU-AF-AuswaehlbareElternspracheVS)
     * type = #choice
@@ -380,6 +409,11 @@ Description: "Elternbefragung"
     * type = #integer
     * linkId = "7.5"
     * text = "(7.5) Erste Sätze ab? (Monate)"
+  * item[+]
+    * answerValueSet = Canonical(EntwicklungVS)
+    * type = #choice
+    * linkId = "7.6a"
+    * text = "(7.6a) Tags und nachts sauber"    
   * item[+]
     * type = #integer
     * linkId = "7.6"
@@ -568,13 +602,28 @@ Description: "Elternbefragung"
       * insert EnableWhenBoolean(8.14, =, true)
       * repeats = true 
   * item[+]
+    * insert addItem(8.14a, #boolean, Muss Ihr Kind krankheitsbedingt eine spezielle Diät einhalten?)      
+  * item[+]
     * type = #boolean
     * linkId = "8.15"
     * text = "(8.15) Krankenhausaufenthalt"
+    * item[+]
+      * insert addItem(8.15.1, #string, Detaillierte Angaben zum Krankenhausaufenthalt?)
+      * insert EnableWhenBoolean(8.15, =, true)
   * item[+]
     * type = #boolean
     * linkId = "8.16"
     * text = "(8.16) Allergietest"
+  * item[+]
+    * answerValueSet = Canonical(AtopischeErkrankungenVS)  
+    * type = #choice
+    * linkId = "8.16a"
+    * text = "(8.16a) Besitzt Ihr Kind Allergien?"
+    * item[+]
+      * insert EnableWhenCode(8.16a, =, AtopischeErkrankungenCS, sonstiges)
+      * type = #string
+      * linkId = "8.16a.1"
+      * text = "(8.16a.1) Welche sonstigen Allergien?"  
   * item[+]
     * type = #boolean
     * linkId = "8.17"
@@ -664,6 +713,13 @@ Description: "Elternbefragung"
       * type = #choice
       * linkId = "8.28.g.2"
       * text = "(8.28.g.2) Art des Unfalls"
+  * item[+]
+    * insert addItem(8.29, #choice, Hat Ihr Kind häufiger Befindlichkeitsstörungen?)
+    * repeats = true 
+    * answerValueSet = Canonical(AllgemeineBeschwerdenVS)
+    * item[+]
+      * insert addItem(8.29.1, #string, Welche sonstige Befindlichkeitstörung?)
+      * insert EnableWhenCode(8.29, =, AllgemeineBeschwerdenCS, sonstige)
 //********************************************
 // Förderungen
 * item[+]
@@ -674,6 +730,8 @@ Description: "Elternbefragung"
     * type = #boolean
     * linkId = "9.1"
     * text = "(9.1) Teilnahme am Vorkurs Deutsch"
+  * item[+]
+    * insert addItem(9.1a, #boolean, [[Ist Ihr Kind zurzeit in Therapie (z.B. Logopädie-, Ergotherapie, Psychotherapie, Krankengymnastik)?]])    
   * item[+]
     * type = #choice
     * linkId = "9.2"
@@ -786,7 +844,7 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItem(12.10, #boolean, Seepferdchenabzeichen)
 //********************************************
-// Sonstiges
+// Informationen Eltern
 * item[+]
   * insert addGroup(13, Informationen Eltern)
   * item[+]

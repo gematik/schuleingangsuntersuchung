@@ -440,12 +440,28 @@
     "endLine": 40
   },
   {
+    "outputFile": "CodeSystem-allgemeine-beschwerden-cs.json",
+    "fshName": "AllgemeineBeschwerdenCS",
+    "fshType": "CodeSystem",
+    "fshFile": "Questionnaire/Elternfragebogen/CodeSystem.fsh",
+    "startLine": 284,
+    "endLine": 292
+  },
+  {
     "outputFile": "CodeSystem-anlage-8-laenderkennzeichen.json",
     "fshName": "DeuevAnlage8Laenderkennzeichen",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Elternfragebogen/CodeSystem.fsh",
-    "startLine": 258,
-    "endLine": 587
+    "startLine": 295,
+    "endLine": 624
+  },
+  {
+    "outputFile": "CodeSystem-atopische-erkrankungen-cs.json",
+    "fshName": "AtopischeErkrankungenCS",
+    "fshType": "CodeSystem",
+    "fshFile": "Questionnaire/Elternfragebogen/CodeSystem.fsh",
+    "startLine": 271,
+    "endLine": 282
   },
   {
     "outputFile": "CodeSystem-berufsbildung-cs.json",
@@ -470,6 +486,14 @@
     "fshFile": "Questionnaire/Elternfragebogen/CodeSystem.fsh",
     "startLine": 244,
     "endLine": 254
+  },
+  {
+    "outputFile": "CodeSystem-entwicklung-cs.json",
+    "fshName": "EntwicklungCS",
+    "fshType": "CodeSystem",
+    "fshFile": "Questionnaire/Elternfragebogen/CodeSystem.fsh",
+    "startLine": 264,
+    "endLine": 269
   },
   {
     "outputFile": "CodeSystem-erwerbsstatus-cs.json",
@@ -502,6 +526,14 @@
     "fshFile": "Questionnaire/Elternfragebogen/CodeSystem.fsh",
     "startLine": 191,
     "endLine": 197
+  },
+  {
+    "outputFile": "CodeSystem-ueberwiegend-gesprochene-sprache-cs.json",
+    "fshName": "UeberwiegendGesprocheneSpracheCS",
+    "fshType": "CodeSystem",
+    "fshFile": "Questionnaire/Elternfragebogen/CodeSystem.fsh",
+    "startLine": 256,
+    "endLine": 262
   },
   {
     "outputFile": "CodeSystem-versorgungsart-cs.json",
@@ -693,7 +725,7 @@
     "fshType": "Instance",
     "fshFile": "Questionnaire/Elternfragebogen/ElternfragebogenQU.fsh",
     "startLine": 1,
-    "endLine": 836
+    "endLine": 894
   },
   {
     "outputFile": "Questionnaire-SEU-Untersuchungsbogen.json",
@@ -1020,8 +1052,8 @@
     "fshName": "DeuevAnlage8LaenderkennzeichenVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Elternfragebogen/ValueSet.fsh",
-    "startLine": 592,
-    "endLine": 1661
+    "startLine": 675,
+    "endLine": 1744
   },
   {
     "outputFile": "ValueSet-ErkrankungVS.json",
@@ -1504,6 +1536,22 @@
     "endLine": 45
   },
   {
+    "outputFile": "ValueSet-allgemeine-beschwerden-vs.json",
+    "fshName": "AllgemeineBeschwerdenVS",
+    "fshType": "ValueSet",
+    "fshFile": "Questionnaire/Elternfragebogen/ValueSet.fsh",
+    "startLine": 652,
+    "endLine": 672
+  },
+  {
+    "outputFile": "ValueSet-atopische-erkrankungen-vs.json",
+    "fshName": "AtopischeErkrankungenVS",
+    "fshType": "ValueSet",
+    "fshFile": "Questionnaire/Elternfragebogen/ValueSet.fsh",
+    "startLine": 621,
+    "endLine": 650
+  },
+  {
     "outputFile": "ValueSet-berufsbildung-vs.json",
     "fshName": "BerufsbildungVS",
     "fshType": "ValueSet",
@@ -1524,8 +1572,16 @@
     "fshName": "ChronischeKrankheitenVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Elternfragebogen/ValueSet.fsh",
-    "startLine": 563,
-    "endLine": 589
+    "startLine": 564,
+    "endLine": 590
+  },
+  {
+    "outputFile": "ValueSet-entwicklung-vs.json",
+    "fshName": "EntwicklungVS",
+    "fshType": "ValueSet",
+    "fshFile": "Questionnaire/Elternfragebogen/ValueSet.fsh",
+    "startLine": 608,
+    "endLine": 619
   },
   {
     "outputFile": "ValueSet-erwerbsstatus-vs.json",
@@ -1558,6 +1614,14 @@
     "fshFile": "Questionnaire/Elternfragebogen/ValueSet.fsh",
     "startLine": 99,
     "endLine": 113
+  },
+  {
+    "outputFile": "ValueSet-ueberwiegend-gesprochene-sprache-vs.json",
+    "fshName": "UeberwiegendGesprocheneSpracheVS",
+    "fshType": "ValueSet",
+    "fshFile": "Questionnaire/Elternfragebogen/ValueSet.fsh",
+    "startLine": 592,
+    "endLine": 606
   },
   {
     "outputFile": "ValueSet-versorgungsart-vs.json",

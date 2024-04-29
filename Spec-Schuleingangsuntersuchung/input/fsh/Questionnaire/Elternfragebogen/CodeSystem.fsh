@@ -253,6 +253,43 @@ Description: "Dieses CodeSystem beinhaltet Codes für häufige chronische Krankh
 * #adhs "Aufmerksamkeitsdefizit-/Hyperaktivitätsstörung (ADHS)"
 * #sonstiges "Sonstige chronische Krankheiten"
 
+CodeSystem: UeberwiegendGesprocheneSpracheCS
+Id: ueberwiegend-gesprochene-sprache-cs
+Title: "CodeSystem für überwiegend gesprochene Sprachen"
+Description: "Dieses CodeSystem klassifiziert Sprachkenntnisse in Deutsch, andere Sprachen und eine Kombination aus beiden."
+* #deutsch "Deutsch"
+* #andere "andere Sprache"
+* #deutsch_andere "Deutsch + andere Sprache"
+
+CodeSystem: EntwicklungCS
+Id: entwicklung-cs
+Title: "CodeSystem für Entwicklung"
+Description: "Dieses CodeSystem klassifiziert den Zeitpunkt der Entwicklung: 'bis zum 4. Lebensjahr' und 'später'."
+* #bis_zum_4 "bis zum 4. Lebensjahr"
+* #spaeter "später"
+
+CodeSystem: AtopischeErkrankungenCS
+Id: atopische-erkrankungen-cs
+Title: "CodeSystem für atopische/allergische Erkrankungen"
+Description: "Dieses CodeSystem klassifiziert die Kategorie der atopischen/allergischen Erkrankungen sowie spezifische Allergieauslöser: Nahrungsmittel, Pollen, Hausstaubmilben, Schimmelpilze, Tierhaare, Medikamente und Sonstiges."
+* #atopische_allergische "Atopische/Allergische Erkrankungen"
+* #nahrungsmittel "Nahrungsmittelallergien"
+* #pollen "Pollenallergien"
+* #hausstaubmilben "Hausstaubmilbenallergien"
+* #schimmelpilze "Schimmelpilzallergien"
+* #tierhaare "Tierhaarallergien"
+* #medikamente "Medikamentenallergien"
+* #sonstiges "Sonstige atopische/allergische Erkrankungen"
+
+CodeSystem: AllgemeineBeschwerdenCS
+Id: allgemeine-beschwerden-cs
+Title: "CodeSystem für allgemeine Beschwerden"
+Description: "Dieses CodeSystem klassifiziert verschiedene Arten von allgemeinen Beschwerden: Kopfschmerzen, Bauchschmerzen, Muskel-, Gelenk- oder Rückenschmerzen, Schlafstörungen und Sonstige."
+* #kopfschmerzen "Kopfschmerzen"
+* #bauchschmerzen "Bauchschmerzen"
+* #muskel_gelenk_ruecken "Muskel-, Gelenk- oder Rückenschmerzen"
+* #schlafstoerungen "Schlafstörungen"
+* #sonstige "Sonstige Beschwerden"
 
 
 CodeSystem: DeuevAnlage8Laenderkennzeichen

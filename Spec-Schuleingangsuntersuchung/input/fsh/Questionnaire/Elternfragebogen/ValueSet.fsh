@@ -560,6 +560,7 @@ Description: "FamilienrolleVS"
 * ^expansion.contains[=].code = #andere_person
 * ^expansion.contains[=].display = "Andere Person"
 
+
 ValueSet: ChronischeKrankheitenVS
 Id: chronische-krankheiten-vs
 Title: "ValueSet für chronische Krankheiten"
@@ -587,6 +588,88 @@ Description: "Dieses ValueSet beinhaltet eine Auswahl von Codes für häufige ch
 * ^expansion.contains[6].system = Canonical(ChronischeKrankheiten)
 * ^expansion.contains[6].code = #sonstiges
 * ^expansion.contains[6].display = "Sonstige chronische Krankheiten"
+
+ValueSet: UeberwiegendGesprocheneSpracheVS
+Id: ueberwiegend-gesprochene-sprache-vs
+Title: "ValueSet für überwiegend gesprochene Sprachen"
+Description: "Dieses ValueSet beinhaltet eine Auswahl von Codes für die Klassifikation von Sprachkenntnissen, definiert im zugehörigen CodeSystem."
+* include codes from system UeberwiegendGesprocheneSpracheCS
+* ^expansion.timestamp = "2024-04-12T15:47:43+00:00"
+* ^expansion.contains[0].system = Canonical(UeberwiegendGesprocheneSpracheCS)
+* ^expansion.contains[0].code = #deutsch
+* ^expansion.contains[0].display = "Deutsch"
+* ^expansion.contains[1].system = Canonical(UeberwiegendGesprocheneSpracheCS)
+* ^expansion.contains[1].code = #andere
+* ^expansion.contains[1].display = "andere Sprache"
+* ^expansion.contains[2].system = Canonical(UeberwiegendGesprocheneSpracheCS)
+* ^expansion.contains[2].code = #deutsch_andere
+* ^expansion.contains[2].display = "Deutsch + andere Sprache"
+
+ValueSet: EntwicklungVS
+Id: entwicklung-vs
+Title: "ValueSet für Entwicklung"
+Description: "Dieses ValueSet beinhaltet Codes für die Klassifikation des Zeitpunkts der Entwicklung, definiert im zugehörigen CodeSystem."
+* include codes from system EntwicklungCS
+* ^expansion.timestamp = "2024-04-12T15:47:43+00:00"
+* ^expansion.contains[0].system = Canonical(EntwicklungCS)
+* ^expansion.contains[0].code = #bis_zum_4
+* ^expansion.contains[0].display = "bis zum 4. Lebensjahr"
+* ^expansion.contains[1].system = Canonical(EntwicklungCS)
+* ^expansion.contains[1].code = #spaeter
+* ^expansion.contains[1].display = "später"
+
+ValueSet: AtopischeErkrankungenVS
+Id: atopische-erkrankungen-vs
+Title: "ValueSet für atopische/allergische Erkrankungen"
+Description: "Dieses ValueSet beinhaltet eine Auswahl von Codes für die Klassifikation von atopischen/allergischen Erkrankungen, definiert im zugehörigen CodeSystem."
+* include codes from system AtopischeErkrankungenCS
+* ^expansion.timestamp = "2024-04-12T15:47:43+00:00"
+* ^expansion.contains[0].system = Canonical(AtopischeErkrankungenCS)
+* ^expansion.contains[0].code = #atopische_allergische
+* ^expansion.contains[0].display = "Atopische/Allergische Erkrankungen"
+* ^expansion.contains[1].system = Canonical(AtopischeErkrankungenCS)
+* ^expansion.contains[1].code = #nahrungsmittel
+* ^expansion.contains[1].display = "Nahrungsmittelallergien"
+* ^expansion.contains[2].system = Canonical(AtopischeErkrankungenCS)
+* ^expansion.contains[2].code = #pollen
+* ^expansion.contains[2].display = "Pollenallergien"
+* ^expansion.contains[3].system = Canonical(AtopischeErkrankungenCS)
+* ^expansion.contains[3].code = #hausstaubmilben
+* ^expansion.contains[3].display = "Hausstaubmilbenallergien"
+* ^expansion.contains[4].system = Canonical(AtopischeErkrankungenCS)
+* ^expansion.contains[4].code = #schimmelpilze
+* ^expansion.contains[4].display = "Schimmelpilzallergien"
+* ^expansion.contains[5].system = Canonical(AtopischeErkrankungenCS)
+* ^expansion.contains[5].code = #tierhaare
+* ^expansion.contains[5].display = "Tierhaarallergien"
+* ^expansion.contains[6].system = Canonical(AtopischeErkrankungenCS)
+* ^expansion.contains[6].code = #medikamente
+* ^expansion.contains[6].display = "Medikamentenallergien"
+* ^expansion.contains[7].system = Canonical(AtopischeErkrankungenCS)
+* ^expansion.contains[7].code = #sonstiges
+* ^expansion.contains[7].display = "Sonstige atopische/allergische Erkrankungen"
+
+ValueSet: AllgemeineBeschwerdenVS
+Id: allgemeine-beschwerden-vs
+Title: "ValueSet für allgemeine Beschwerden"
+Description: "Dieses ValueSet beinhaltet eine Auswahl von Codes für die Klassifikation von allgemeinen Beschwerden, definiert im zugehörigen CodeSystem."
+* include codes from system AllgemeineBeschwerdenCS
+* ^expansion.timestamp = "2024-04-12T15:47:43+00:00"
+* ^expansion.contains[0].system = Canonical(AllgemeineBeschwerdenCS)
+* ^expansion.contains[0].code = #kopfschmerzen
+* ^expansion.contains[0].display = "Kopfschmerzen"
+* ^expansion.contains[1].system = Canonical(AllgemeineBeschwerdenCS)
+* ^expansion.contains[1].code = #bauchschmerzen
+* ^expansion.contains[1].display = "Bauchschmerzen"
+* ^expansion.contains[2].system = Canonical(AllgemeineBeschwerdenCS)
+* ^expansion.contains[2].code = #muskel_gelenk_ruecken
+* ^expansion.contains[2].display = "Muskel-, Gelenk- oder Rückenschmerzen"
+* ^expansion.contains[3].system = Canonical(AllgemeineBeschwerdenCS)
+* ^expansion.contains[3].code = #schlafstoerungen
+* ^expansion.contains[3].display = "Schlafstörungen"
+* ^expansion.contains[4].system = Canonical(AllgemeineBeschwerdenCS)
+* ^expansion.contains[4].code = #sonstige
+* ^expansion.contains[4].display = "Sonstige Beschwerden"
 
 
 ValueSet: DeuevAnlage8LaenderkennzeichenVS

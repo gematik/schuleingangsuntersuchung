@@ -1,0 +1,21 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "EntwicklungCS",
+  "id": "entwicklung-cs",
+  "title": "CodeSystem für Entwicklung",
+  "description": "Dieses CodeSystem klassifiziert den Zeitpunkt der Entwicklung: 'bis zum 4. Lebensjahr' und 'später'.",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/entwicklung-cs",
+  "concept": [
+    {
+      "code": "bis_zum_4",
+      "display": "bis zum 4. Lebensjahr"
+    },
+    {
+      "code": "spaeter",
+      "display": "später"
+    }
+  ],
+  "count": 2
+}

@@ -3073,6 +3073,180 @@
           }
         ]
       }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "ueberwiegend-gesprochene-sprache-vs",
+      "status": "draft",
+      "name": "UeberwiegendGesprocheneSpracheVS",
+      "title": "ValueSet für überwiegend gesprochene Sprachen",
+      "description": "Dieses ValueSet beinhaltet eine Auswahl von Codes für die Klassifikation von Sprachkenntnissen, definiert im zugehörigen CodeSystem.",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/ueberwiegend-gesprochene-sprache-vs",
+      "expansion": {
+        "timestamp": "2024-04-12T15:47:43+00:00",
+        "contains": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ueberwiegend-gesprochene-sprache-cs",
+            "code": "deutsch",
+            "display": "Deutsch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ueberwiegend-gesprochene-sprache-cs",
+            "code": "andere",
+            "display": "andere Sprache"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ueberwiegend-gesprochene-sprache-cs",
+            "code": "deutsch_andere",
+            "display": "Deutsch + andere Sprache"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ueberwiegend-gesprochene-sprache-cs"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "entwicklung-vs",
+      "status": "draft",
+      "name": "EntwicklungVS",
+      "title": "ValueSet für Entwicklung",
+      "description": "Dieses ValueSet beinhaltet Codes für die Klassifikation des Zeitpunkts der Entwicklung, definiert im zugehörigen CodeSystem.",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/entwicklung-vs",
+      "expansion": {
+        "timestamp": "2024-04-12T15:47:43+00:00",
+        "contains": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/entwicklung-cs",
+            "code": "bis_zum_4",
+            "display": "bis zum 4. Lebensjahr"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/entwicklung-cs",
+            "code": "spaeter",
+            "display": "später"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/entwicklung-cs"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "atopische-erkrankungen-vs",
+      "status": "draft",
+      "name": "AtopischeErkrankungenVS",
+      "title": "ValueSet für atopische/allergische Erkrankungen",
+      "description": "Dieses ValueSet beinhaltet eine Auswahl von Codes für die Klassifikation von atopischen/allergischen Erkrankungen, definiert im zugehörigen CodeSystem.",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/atopische-erkrankungen-vs",
+      "expansion": {
+        "timestamp": "2024-04-12T15:47:43+00:00",
+        "contains": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs",
+            "code": "atopische_allergische",
+            "display": "Atopische/Allergische Erkrankungen"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs",
+            "code": "nahrungsmittel",
+            "display": "Nahrungsmittelallergien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs",
+            "code": "pollen",
+            "display": "Pollenallergien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs",
+            "code": "hausstaubmilben",
+            "display": "Hausstaubmilbenallergien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs",
+            "code": "schimmelpilze",
+            "display": "Schimmelpilzallergien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs",
+            "code": "tierhaare",
+            "display": "Tierhaarallergien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs",
+            "code": "medikamente",
+            "display": "Medikamentenallergien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs",
+            "code": "sonstiges",
+            "display": "Sonstige atopische/allergische Erkrankungen"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "allgemeine-beschwerden-vs",
+      "status": "draft",
+      "name": "AllgemeineBeschwerdenVS",
+      "title": "ValueSet für allgemeine Beschwerden",
+      "description": "Dieses ValueSet beinhaltet eine Auswahl von Codes für die Klassifikation von allgemeinen Beschwerden, definiert im zugehörigen CodeSystem.",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/allgemeine-beschwerden-vs",
+      "expansion": {
+        "timestamp": "2024-04-12T15:47:43+00:00",
+        "contains": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/allgemeine-beschwerden-cs",
+            "code": "kopfschmerzen",
+            "display": "Kopfschmerzen"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/allgemeine-beschwerden-cs",
+            "code": "bauchschmerzen",
+            "display": "Bauchschmerzen"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/allgemeine-beschwerden-cs",
+            "code": "muskel_gelenk_ruecken",
+            "display": "Muskel-, Gelenk- oder Rückenschmerzen"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/allgemeine-beschwerden-cs",
+            "code": "schlafstoerungen",
+            "display": "Schlafstörungen"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/allgemeine-beschwerden-cs",
+            "code": "sonstige",
+            "display": "Sonstige Beschwerden"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/allgemeine-beschwerden-cs"
+          }
+        ]
+      }
     }
   ],
   "url": "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung",
@@ -3098,6 +3272,35 @@
   ],
   "status": "draft",
   "item": [
+    {
+      "linkId": "0",
+      "type": "group",
+      "text": "(0) Schule & Vorgangsnummer",
+      "item": [
+        {
+          "linkId": "0.1",
+          "type": "string",
+          "text": "(0.1) Name der Schule",
+          "code": [
+            {
+              "code": "0.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "0.2",
+          "type": "string",
+          "text": "(0.2) Vorgangsnummer",
+          "code": [
+            {
+              "code": "0.2",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        }
+      ]
+    },
     {
       "type": "group",
       "linkId": "1",
@@ -3311,6 +3514,7 @@
       "type": "group",
       "linkId": "2",
       "text": "(2) Personenbezogene Daten Personenberechtigter",
+      "repeats": true,
       "item": [
         {
           "answerValueSet": "#GenderDEVS",
@@ -3528,6 +3732,28 @@
       "text": "(4) Kinderbetreuung",
       "item": [
         {
+          "linkId": "4.0a",
+          "type": "boolean",
+          "text": "(4.0a) Besucht Ihr Kind weniger als 5 Stunden täglich den Kindergarten?",
+          "code": [
+            {
+              "code": "4.0a",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "4.0b",
+          "type": "boolean",
+          "text": "(4.0b) Ist das Kind in einem Kindergarten/einer Kindertageseinrichtung",
+          "code": [
+            {
+              "code": "4.0b",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
           "type": "integer",
           "linkId": "4.1",
           "text": "(4.1) Besuch Kita/Krippe (Dauer in Jahren)"
@@ -3600,8 +3826,18 @@
         },
         {
           "type": "integer",
-          "linkId": "5.3",
+          "linkId": "5.3a",
           "text": "(5.3) Geburtslänge (in cm)"
+        },
+        {
+          "type": "integer",
+          "linkId": "5.3b",
+          "text": "(5.3b) Kopfumfang (in cm)"
+        },
+        {
+          "type": "integer",
+          "linkId": "5.3c",
+          "text": "(5.3c) In welcher SS-Woche wurde ihr Kind geboren?"
         },
         {
           "type": "boolean",
@@ -3630,7 +3866,7 @@
         {
           "type": "boolean",
           "linkId": "5.6",
-          "text": "(5.6) Auffälligkeit in der Schwangerschaft",
+          "text": "(5.6) Auffälligkeit/Krankheit in der Schwangerschaft",
           "item": [
             {
               "enableWhen": [
@@ -3663,6 +3899,13 @@
           "type": "choice",
           "linkId": "6.1",
           "text": "(6.1) Welche Sprachen werden Zuhause gesprochen?",
+          "repeats": true
+        },
+        {
+          "answerValueSet": "#ueberwiegend-gesprochene-sprache-vs",
+          "type": "choice",
+          "linkId": "6.1a",
+          "text": "(6.1a) Welche Sprachen wurden mit dem Kind in den ersten 4 Lebensjahren überwiegend gesprochen?",
           "repeats": true
         },
         {
@@ -3749,6 +3992,12 @@
           "type": "integer",
           "linkId": "7.5",
           "text": "(7.5) Erste Sätze ab? (Monate)"
+        },
+        {
+          "answerValueSet": "#entwicklung-vs",
+          "type": "choice",
+          "linkId": "7.6a",
+          "text": "(7.6a) Tags und nachts sauber"
         },
         {
           "type": "integer",
@@ -4017,14 +4266,68 @@
           ]
         },
         {
+          "linkId": "8.14a",
+          "type": "boolean",
+          "text": "(8.14a) Muss Ihr Kind krankheitsbedingt eine spezielle Diät einhalten?",
+          "code": [
+            {
+              "code": "8.14a",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
           "type": "boolean",
           "linkId": "8.15",
-          "text": "(8.15) Krankenhausaufenthalt"
+          "text": "(8.15) Krankenhausaufenthalt",
+          "item": [
+            {
+              "linkId": "8.15.1",
+              "type": "string",
+              "text": "(8.15.1) Detaillierte Angaben zum Krankenhausaufenthalt?",
+              "code": [
+                {
+                  "code": "8.15.1",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "enableWhen": [
+                {
+                  "question": "8.15",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ]
+            }
+          ]
         },
         {
           "type": "boolean",
           "linkId": "8.16",
           "text": "(8.16) Allergietest"
+        },
+        {
+          "answerValueSet": "#atopische-erkrankungen-vs",
+          "type": "choice",
+          "linkId": "8.16a",
+          "text": "(8.16a) Besitzt Ihr Kind Allergien?",
+          "item": [
+            {
+              "enableWhen": [
+                {
+                  "question": "8.16a",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "sonstiges",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs"
+                  }
+                }
+              ],
+              "type": "string",
+              "linkId": "8.16a.1",
+              "text": "(8.16a.1) Welche sonstigen Allergien?"
+            }
+          ]
         },
         {
           "type": "boolean",
@@ -4180,6 +4483,42 @@
               "text": "(8.28.g.2) Art des Unfalls"
             }
           ]
+        },
+        {
+          "linkId": "8.29",
+          "type": "choice",
+          "text": "(8.29) Hat Ihr Kind häufiger Befindlichkeitsstörungen?",
+          "code": [
+            {
+              "code": "8.29",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "repeats": true,
+          "answerValueSet": "#allgemeine-beschwerden-vs",
+          "item": [
+            {
+              "linkId": "8.29.1",
+              "type": "string",
+              "text": "(8.29.1) Welche sonstige Befindlichkeitstörung?",
+              "code": [
+                {
+                  "code": "8.29.1",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "enableWhen": [
+                {
+                  "question": "8.29",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "sonstige",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/allgemeine-beschwerden-cs"
+                  }
+                }
+              ]
+            }
+          ]
         }
       ]
     },
@@ -4192,6 +4531,17 @@
           "type": "boolean",
           "linkId": "9.1",
           "text": "(9.1) Teilnahme am Vorkurs Deutsch"
+        },
+        {
+          "linkId": "9.1a",
+          "type": "boolean",
+          "text": "(9.1a) Ist Ihr Kind zurzeit in Therapie (z.B. Logopädie-, Ergotherapie, Psychotherapie, Krankengymnastik)?",
+          "code": [
+            {
+              "code": "9.1a",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
         },
         {
           "type": "choice",
