@@ -4,6 +4,7 @@ Usage: #example
 Title: "Sozialpädagogisches Entwicklungsscreening Fragebogen"
 Description: "Sozialpädagogisches Entwicklungsscreening Fragebogen"
 * insert launchContext("patient", #Patient, "Patientenkontext")
+* title = "SEU Sozialpädagogisches Entwicklungsscreening Fragebogen"
 * status = #draft
 * item[+]
   * type = #integer
