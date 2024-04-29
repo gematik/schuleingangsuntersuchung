@@ -752,8 +752,8 @@
     "endLine": 57
   },
   {
-    "outputFile": "Questionnaire-SOPESS.json",
-    "fshName": "SOPESS",
+    "outputFile": "Questionnaire-SozialpaedagogischesEntwicklungsscreening.json",
+    "fshName": "SozialpaedagogischesEntwicklungsscreening",
     "fshType": "Instance",
     "fshFile": "Questionnaire/SozPaedEntwicklungsscreening/SozPaedEntwicklungsscreeningQU.fsh",
     "startLine": 1,
