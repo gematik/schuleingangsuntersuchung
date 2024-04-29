@@ -8,6 +8,14 @@
     "endLine": 73
   },
   {
+    "outputFile": "CodeSystem-BefundBewertungBielefelderModellCS.json",
+    "fshName": "BefundBewertungBielefelderModellCS",
+    "fshType": "CodeSystem",
+    "fshFile": "Questionnaire/SozPaedEntwicklungsscreening/Terminology.fsh",
+    "startLine": 1,
+    "endLine": 10
+  },
+  {
     "outputFile": "CodeSystem-BehinderungsTypCS.json",
     "fshName": "BehinderungsTypCS",
     "fshType": "CodeSystem",
@@ -22,6 +30,14 @@
     "fshFile": "Questionnaire/Elternfragebogen/CodeSystem.fsh",
     "startLine": 18,
     "endLine": 28
+  },
+  {
+    "outputFile": "CodeSystem-DeutschkenntnisseCS.json",
+    "fshName": "DeutschkenntnisseCS",
+    "fshType": "CodeSystem",
+    "fshFile": "Questionnaire/SozPaedEntwicklungsscreening/Terminology.fsh",
+    "startLine": 25,
+    "endLine": 33
   },
   {
     "outputFile": "CodeSystem-ErkrankungCS.json",
@@ -736,6 +752,14 @@
     "endLine": 57
   },
   {
+    "outputFile": "Questionnaire-SOPESS.json",
+    "fshName": "SOPESS",
+    "fshType": "Instance",
+    "fshFile": "Questionnaire/SozPaedEntwicklungsscreening/SozPaedEntwicklungsscreeningQU.fsh",
+    "startLine": 1,
+    "endLine": 92
+  },
+  {
     "outputFile": "RelatedPerson-VerwandtePersonBeispiel.json",
     "fshName": "VerwandtePersonBeispiel",
     "fshType": "Instance",
@@ -1032,6 +1056,14 @@
     "endLine": 222
   },
   {
+    "outputFile": "ValueSet-BefundBewertungBielefelderModellVS.json",
+    "fshName": "BefundBewertungBielefelderModellVS",
+    "fshType": "ValueSet",
+    "fshFile": "Questionnaire/SozPaedEntwicklungsscreening/Terminology.fsh",
+    "startLine": 12,
+    "endLine": 16
+  },
+  {
     "outputFile": "ValueSet-BehinderungsTypVS.json",
     "fshName": "BehinderungsTypVS",
     "fshType": "ValueSet",
@@ -1054,6 +1086,22 @@
     "fshFile": "Questionnaire/Elternfragebogen/ValueSet.fsh",
     "startLine": 675,
     "endLine": 1744
+  },
+  {
+    "outputFile": "ValueSet-DeutschUndAndereSpracheVS.json",
+    "fshName": "DeutschUndAndereSpracheVS",
+    "fshType": "ValueSet",
+    "fshFile": "Questionnaire/SozPaedEntwicklungsscreening/Terminology.fsh",
+    "startLine": 18,
+    "endLine": 23
+  },
+  {
+    "outputFile": "ValueSet-DeutschkenntnisseVS.json",
+    "fshName": "DeutschkenntnisseVS",
+    "fshType": "ValueSet",
+    "fshFile": "Questionnaire/SozPaedEntwicklungsscreening/Terminology.fsh",
+    "startLine": 35,
+    "endLine": 39
   },
   {
     "outputFile": "ValueSet-ErkrankungVS.json",
