@@ -5,6 +5,7 @@
   "id": "SEU-AF-StaatsangehoerigkeitVS",
   "title": "SEU Staatsangehörigkeit",
   "description": "Diese Codes enthalten Angaben zur Staatsangehörigkeit",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-StaatsangehoerigkeitVS",
   "expansion": {
     "contains": [

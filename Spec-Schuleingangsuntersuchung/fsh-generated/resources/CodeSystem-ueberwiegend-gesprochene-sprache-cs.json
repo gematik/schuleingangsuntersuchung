@@ -6,6 +6,7 @@
   "id": "ueberwiegend-gesprochene-sprache-cs",
   "title": "CodeSystem für überwiegend gesprochene Sprachen",
   "description": "Dieses CodeSystem klassifiziert Sprachkenntnisse in Deutsch, andere Sprachen und eine Kombination aus beiden.",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/ueberwiegend-gesprochene-sprache-cs",
   "concept": [
     {

@@ -5,6 +5,7 @@
   "name": "SEU-AF-AntwortAugenarztCS",
   "id": "SEU-AF-AntwortAugenarztCS",
   "title": "SEU Antwort Augenarzt",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-AntwortAugenarztCS",
   "concept": [
     {

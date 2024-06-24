@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "TestPlur",
   "url": "https://www.oegd.de/fhir/seu/StructureDefinition/TestPlur",
+  "version": "0.1.0",
   "name": "TestPlur",
   "status": "draft",
   "fhirVersion": "4.0.1",

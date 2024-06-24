@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "Behinderung",
   "url": "https://www.oegd.de/fhir/seu/StructureDefinition/Behinderung",
+  "version": "0.1.0",
   "name": "Behinderung",
   "status": "draft",
   "fhirVersion": "4.0.1",

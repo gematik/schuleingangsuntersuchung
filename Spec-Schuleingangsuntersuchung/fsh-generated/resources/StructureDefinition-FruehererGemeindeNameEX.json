@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "FruehererGemeindeNameEX",
   "url": "https://www.oegd.de/fhir/seu/StructureDefinition/FruehererGemeindeNameEX",
+  "version": "0.1.0",
   "name": "FruehererGemeindeNameEX",
   "title": "Früherer Gemeindename Extension",
   "status": "draft",

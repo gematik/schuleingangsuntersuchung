@@ -5,6 +5,7 @@
   "id": "SEU-AF-GeburtslandVS",
   "title": "SEU Geburtsland",
   "description": "Diese Codes enthalten Angaben zum Geburtsland",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-GeburtslandVS",
   "expansion": {
     "contains": [

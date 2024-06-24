@@ -5,6 +5,7 @@
   "id": "SEU-AF-SpracheStudieVS",
   "title": "SEU Sprache Studie",
   "description": "Dieses ValueSet enthält die auswählbaren Sprachen zu einer Studie. Als CodeSystem wird 'urn:ietf:bcp:47' als Basis genommen.",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-SpracheStudieVS",
   "expansion": {
     "timestamp": "2024-03-30T13:28:00+00:00",

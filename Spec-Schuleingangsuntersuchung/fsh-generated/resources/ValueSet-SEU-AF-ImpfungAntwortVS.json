@@ -5,6 +5,7 @@
   "id": "SEU-AF-ImpfungAntwortVS",
   "title": "SEU Impfung Antwort",
   "description": "Diese Codes enthalten allgemeine Angaben über den Status einer Impfung",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-ImpfungAntwortVS",
   "expansion": {
     "timestamp": "2024-03-30T13:28:00+00:00",

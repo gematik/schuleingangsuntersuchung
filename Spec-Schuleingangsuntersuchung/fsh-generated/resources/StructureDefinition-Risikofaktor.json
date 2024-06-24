@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "Risikofaktor",
   "url": "https://www.oegd.de/fhir/seu/StructureDefinition/Risikofaktor",
+  "version": "0.1.0",
   "name": "Risikofaktor",
   "status": "draft",
   "fhirVersion": "4.0.1",

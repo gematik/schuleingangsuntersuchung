@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "TestDys",
   "url": "https://www.oegd.de/fhir/seu/StructureDefinition/TestDys",
+  "version": "0.1.0",
   "name": "TestDys",
   "status": "draft",
   "fhirVersion": "4.0.1",

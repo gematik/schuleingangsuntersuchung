@@ -5,6 +5,7 @@
   "name": "SEU-AF-MasernimpfungNichtErforderlichGrundCS",
   "id": "SEU-AF-MasernimpfungNichtErforderlichGrundCS",
   "title": "SEU Masernimpfung nicht erforderlich Grund",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-MasernimpfungNichtErforderlichGrundCS",
   "concept": [
     {

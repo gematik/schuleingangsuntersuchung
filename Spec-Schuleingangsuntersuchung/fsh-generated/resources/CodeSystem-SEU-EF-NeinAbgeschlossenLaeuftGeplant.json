@@ -5,6 +5,7 @@
   "name": "SEU-EF-NeinAbgeschlossenLaeuftGeplant",
   "id": "SEU-EF-NeinAbgeschlossenLaeuftGeplant",
   "title": "SEU-EF-NeinAbgeschlossenLaeuftGeplant",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-EF-NeinAbgeschlossenLaeuftGeplant",
   "concept": [
     {

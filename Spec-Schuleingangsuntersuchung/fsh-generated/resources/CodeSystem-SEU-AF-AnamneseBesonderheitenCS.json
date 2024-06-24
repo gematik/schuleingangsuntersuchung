@@ -5,6 +5,7 @@
   "name": "SEU-AF-AnamneseBesonderheitenCS",
   "id": "SEU-AF-AnamneseBesonderheitenCS",
   "title": "SEU Anamnese Besonderheiten",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-AnamneseBesonderheitenCS",
   "concept": [
     {

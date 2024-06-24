@@ -5,6 +5,7 @@
   "id": "SEU-AF-MeldungJugendamtVS",
   "title": "SEU-AF Meldung Jugendamt",
   "description": "Diese Codes enthalten möglichge Gründe für eine Meldung beim Jugendamt",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-MeldungJugendamtVS",
   "expansion": {
     "timestamp": "2024-03-30T13:28:00+00:00",

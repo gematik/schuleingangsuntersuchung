@@ -5,6 +5,7 @@
   "name": "SEU-AF-MeldungJugendamtCS",
   "id": "SEU-AF-MeldungJugendamtCS",
   "title": "SEU-AF Meldung Jugendamt",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-MeldungJugendamtCS",
   "concept": [
     {

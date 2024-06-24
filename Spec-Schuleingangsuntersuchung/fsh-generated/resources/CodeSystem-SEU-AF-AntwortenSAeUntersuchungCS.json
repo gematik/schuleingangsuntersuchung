@@ -5,6 +5,7 @@
   "name": "SEU-AF-AntwortenSAeUntersuchungCS",
   "id": "SEU-AF-AntwortenSAeUntersuchungCS",
   "title": "SEU Antworten schulärztliche Untersuchung",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-AntwortenSAeUntersuchungCS",
   "concept": [
     {

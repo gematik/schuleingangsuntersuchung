@@ -5,6 +5,7 @@
   "name": "SEU-AF-BesonderheitenCS",
   "id": "SEU-AF-BesonderheitenCS",
   "title": "SEU Besonderheiten",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-BesonderheitenCS",
   "concept": [
     {

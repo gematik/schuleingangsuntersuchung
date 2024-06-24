@@ -5,6 +5,7 @@
   "name": "DeutschkenntnisseCS",
   "id": "DeutschkenntnisseCS",
   "title": "DeutschkenntnisseCS",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/DeutschkenntnisseCS",
   "concept": [
     {

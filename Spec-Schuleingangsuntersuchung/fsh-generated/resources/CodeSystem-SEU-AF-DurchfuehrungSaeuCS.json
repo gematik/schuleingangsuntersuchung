@@ -5,6 +5,7 @@
   "name": "SEU-AF-DurchfuehrungSaeuCS",
   "id": "SEU-AF-DurchfuehrungSaeuCS",
   "title": "SEU Durchführung SÄU",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-DurchfuehrungSaeuCS",
   "concept": [
     {

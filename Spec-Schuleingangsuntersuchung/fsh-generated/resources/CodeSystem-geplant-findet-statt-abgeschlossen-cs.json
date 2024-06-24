@@ -6,6 +6,7 @@
   "id": "geplant-findet-statt-abgeschlossen-cs",
   "title": "Geplant, Findet Statt, Abgeschlossen",
   "description": "GeplantFindetStattAbgeschlossenCS",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/geplant-findet-statt-abgeschlossen-cs",
   "concept": [
     {

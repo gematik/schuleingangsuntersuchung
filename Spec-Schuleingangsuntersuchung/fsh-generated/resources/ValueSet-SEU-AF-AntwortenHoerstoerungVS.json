@@ -5,6 +5,7 @@
   "id": "SEU-AF-AntwortenHoerstoerungVS",
   "title": "SEU Antworten Hörstörung",
   "description": "Diese Codes enthalten die Antworten auf die Frage zu einer Hörstöhrung",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-AntwortenHoerstoerungVS",
   "expansion": {
     "contains": [

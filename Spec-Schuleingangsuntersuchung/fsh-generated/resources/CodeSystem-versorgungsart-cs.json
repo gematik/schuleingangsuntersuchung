@@ -6,6 +6,7 @@
   "id": "versorgungsart-cs",
   "title": "Versorgungsart CodeSystem",
   "description": "VersorgungsartCS",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/versorgungsart-cs",
   "concept": [
     {

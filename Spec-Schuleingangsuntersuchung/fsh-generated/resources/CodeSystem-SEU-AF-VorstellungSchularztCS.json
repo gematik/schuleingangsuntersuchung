@@ -5,6 +5,7 @@
   "name": "SEU-AF-VorstellungSchularztCS",
   "id": "SEU-AF-VorstellungSchularztCS",
   "title": "SEU Vorstellung Schularzt",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-VorstellungSchularztCS",
   "concept": [
     {

@@ -5,6 +5,7 @@
   "id": "GenderDEVS",
   "title": "SEU-AF Geschlecht DE",
   "description": "Diese Codes enthalten die Angabe des Geschlechts",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/GenderDEVS",
   "expansion": {
     "timestamp": "2024-03-30T13:28:00+00:00",

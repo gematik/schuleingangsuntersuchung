@@ -5,6 +5,7 @@
   "id": "SEU-AF-AnamneseBesonderheitenVS",
   "title": "SEU Anamnese Besonderheiten",
   "description": "Diese Codes enthalten Besonderheiten bei der Anamnese einer SEU",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-AnamneseBesonderheitenVS",
   "expansion": {
     "contains": [

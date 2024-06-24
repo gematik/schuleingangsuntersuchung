@@ -5,6 +5,7 @@
   "id": "SEU-AF-ErwerbstaetigkeitVS",
   "title": "SEU Erwerbstätigkeit",
   "description": "Diese Codes enthalten Angaben zur Erwerbstätigkeit",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-ErwerbstaetigkeitVS",
   "expansion": {
     "contains": [

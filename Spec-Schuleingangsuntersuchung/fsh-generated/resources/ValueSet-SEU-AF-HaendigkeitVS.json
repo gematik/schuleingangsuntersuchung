@@ -5,6 +5,7 @@
   "id": "SEU-AF-HaendigkeitVS",
   "title": "SEU Händigkeit",
   "description": "Diese Codes enthalten Angaben zur Händigkeit",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-HaendigkeitVS",
   "expansion": {
     "contains": [

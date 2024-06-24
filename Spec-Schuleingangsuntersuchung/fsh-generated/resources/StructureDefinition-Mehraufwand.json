@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "Mehraufwand",
   "url": "https://www.oegd.de/fhir/seu/StructureDefinition/Mehraufwand",
+  "version": "0.1.0",
   "name": "Mehraufwand",
   "status": "draft",
   "fhirVersion": "4.0.1",

@@ -5,6 +5,7 @@
   "id": "SEU-AF-AntwortTeilnahmeVS",
   "title": "SEU Antwort auf Fragen zur Teilnahme",
   "description": "Diese Codes enthalten Antworten zur Teilnahme an etwas",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-AntwortTeilnahmeVS",
   "expansion": {
     "contains": [

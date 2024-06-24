@@ -5,6 +5,7 @@
   "id": "SEU-AF-SprachtherapieVS",
   "title": "SEU Sprachtherapie",
   "description": "Diese Codes enthalten Angaben zu einer Sprachtherapie",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-SprachtherapieVS",
   "expansion": {
     "contains": [

@@ -5,6 +5,7 @@
   "id": "berufsbildung-vs",
   "title": "Berufsbildung ValueSet",
   "description": "BerufsbildungVS",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/berufsbildung-vs",
   "expansion": {
     "timestamp": "2024-04-06T12:00:00+00:00",

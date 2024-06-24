@@ -5,6 +5,7 @@
   "id": "SEU-AF-UntersuchungsergebnisseSAeUVS",
   "title": "SEU Untersuchungsergebnisse SÄU",
   "description": "Diese Codes enthalten Untersuchungsergebnisse der SÄU",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-UntersuchungsergebnisseSAeUVS",
   "expansion": {
     "contains": [

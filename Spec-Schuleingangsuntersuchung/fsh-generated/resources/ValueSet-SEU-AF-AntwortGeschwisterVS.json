@@ -5,6 +5,7 @@
   "id": "SEU-AF-AntwortGeschwisterVS",
   "title": "SEU Antwort Geschwister",
   "description": "Diese Codes enthalten Informationen über die Anzahl der Geschwister",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-AntwortGeschwisterVS",
   "expansion": {
     "contains": [

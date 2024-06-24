@@ -5,6 +5,7 @@
   "name": "SEU-AF-VergleichSAeUntersuchungCS",
   "id": "SEU-AF-VergleichSAeUntersuchungCS",
   "title": "SEU Vergleich schulärztliche Untersuchungen",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-VergleichSAeUntersuchungCS",
   "concept": [
     {

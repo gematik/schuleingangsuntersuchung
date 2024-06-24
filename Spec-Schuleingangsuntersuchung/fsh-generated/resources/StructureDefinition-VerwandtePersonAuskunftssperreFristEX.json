@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "VerwandtePersonAuskunftssperreFristEX",
   "url": "https://www.oegd.de/fhir/seu/StructureDefinition/VerwandtePersonAuskunftssperreFristEX",
+  "version": "0.1.0",
   "name": "VerwandtePersonAuskunftssperreFristEX",
   "title": "Verwandte Person Auskunftssperre Frist Extension",
   "status": "draft",

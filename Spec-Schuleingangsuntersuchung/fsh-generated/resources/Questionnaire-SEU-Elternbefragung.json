@@ -9,6 +9,7 @@
       "name": "SEU-EF-NeinAbgeschlossenLaeuftGeplantVS",
       "title": "SEU-EF-NeinAbgeschlossenLaeuftGeplantVS",
       "description": "SEU-EF-NeinAbgeschlossenLaeuftGeplantVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-EF-NeinAbgeschlossenLaeuftGeplantVS",
       "expansion": {
         "timestamp": "2024-03-27T12:20:50+00:00",
@@ -50,6 +51,7 @@
       "name": "DeuevAnlage8LaenderkennzeichenVS",
       "title": "DeuevAnlage8LaenderkennzeichenVS",
       "description": "DeuevAnlage8LaenderkennzeichenVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/DeuevAnlage8LaenderkennzeichenVS",
       "expansion": {
         "timestamp": "2024-04-04T09:11:28+00:00",
@@ -1737,6 +1739,7 @@
       "name": "LebtBeiVS",
       "title": "LebtBeiVS",
       "description": "LebtBeiVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/LebtBeiVS",
       "expansion": {
         "timestamp": "2024-04-04T09:24:55+00:00",
@@ -1778,6 +1781,7 @@
       "name": "GenderDEVS",
       "title": "SEU-AF Geschlecht DE",
       "description": "Diese Codes enthalten die Angabe des Geschlechts",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/GenderDEVS",
       "expansion": {
         "timestamp": "2024-03-30T13:28:00+00:00",
@@ -1819,6 +1823,7 @@
       "name": "SEU-AF-AuswaehlbareElternspracheVS",
       "title": "SEU Auswählbare Elternsprache",
       "description": "Dieses ValueSet enthält die auswählbaren Elternsprachen. Als CodeSystem wird 'urn:ietf:bcp:47' als Basis genommen.",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-AuswaehlbareElternspracheVS",
       "expansion": {
         "contains": [
@@ -1976,6 +1981,7 @@
       "name": "ChronischeErkrankungenVS",
       "title": "ChronischeErkrankungenVS",
       "description": "ChronischeErkrankungenVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/ChronischeErkrankungenVS",
       "expansion": {
         "timestamp": "2024-04-04T10:10:32+00:00",
@@ -2032,6 +2038,7 @@
       "name": "JaNeinAngemeldetVS",
       "title": "JaNeinAngemeldetVS",
       "description": "JaNeinAngemeldetVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/JaNeinAngemeldetVS",
       "expansion": {
         "timestamp": "2024-04-04T10:25:43+00:00",
@@ -2068,6 +2075,7 @@
       "name": "RechtsLinksHaenderVS",
       "title": "RechtsLinksHaenderVS",
       "description": "RechtsLinksHaenderVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/RechtsLinksHaenderVS",
       "expansion": {
         "timestamp": "2024-04-04T10:35:15+00:00",
@@ -2104,6 +2112,7 @@
       "name": "AuffaelligkeitVerhaltenVS",
       "title": "AuffaelligkeitVerhaltenVS",
       "description": "AuffaelligkeitVerhaltenVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/AuffaelligkeitVerhaltenVS",
       "expansion": {
         "timestamp": "2024-04-04T10:40:04+00:00",
@@ -2245,6 +2254,7 @@
       "name": "LinksRechtsBeidseitsKeineAngabeVS",
       "title": "LinksRechtsBeidseitsKeineAngabeVS",
       "description": "LinksRechtsBeidseitsKeineAngabeCS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/LinksRechtsBeidseitsKeineAngabeVS",
       "expansion": {
         "timestamp": "2024-04-04T10:44:31+00:00",
@@ -2286,6 +2296,7 @@
       "name": "StoffwechselstoerungVS",
       "title": "StoffwechselstoerungVS",
       "description": "StoffwechselstoerungVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/StoffwechselstoerungVS",
       "expansion": {
         "timestamp": "2024-04-04T10:51:23+00:00",
@@ -2342,6 +2353,7 @@
       "name": "ErkrankungVS",
       "title": "ErkrankungVS",
       "description": "ErkrankungVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/ErkrankungVS",
       "expansion": {
         "timestamp": "2024-04-04T10:55:53+00:00",
@@ -2458,6 +2470,7 @@
       "name": "InfektionsKrankheitVS",
       "title": "InfektionsKrankheitVS",
       "description": "InfektionsKrankheitVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/InfektionsKrankheitVS",
       "expansion": {
         "timestamp": "2024-04-04T11:02:42+00:00",
@@ -2544,6 +2557,7 @@
       "name": "ErkrankungenLetztesJahrVS",
       "title": "ErkrankungenLetztesJahrVS",
       "description": "ErkrankungenLetztesJahrVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/ErkrankungenLetztesJahrVS",
       "expansion": {
         "timestamp": "2024-04-04T11:07:53+00:00",
@@ -2610,6 +2624,7 @@
       "name": "PflegegradVS",
       "title": "PflegegradVS",
       "description": "PflegegradVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/PflegegradVS",
       "expansion": {
         "timestamp": "2024-04-04T11:16:49+00:00",
@@ -2656,6 +2671,7 @@
       "name": "UnfallOrtVS",
       "title": "UnfallOrtVS",
       "description": "UnfallOrtVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/UnfallOrtVS",
       "expansion": {
         "timestamp": "2024-04-04T11:34:46+00:00",
@@ -2702,6 +2718,7 @@
       "name": "UnfallArtVS",
       "title": "UnfallArtVS",
       "description": "UnfallArtVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/UnfallArtVS",
       "expansion": {
         "timestamp": "2024-04-04T11:38:03+00:00",
@@ -2753,6 +2770,7 @@
       "name": "GeplantFindetStattAbgeschlossenVS",
       "title": "Geplant, Findet Statt, Abgeschlossen Value Set",
       "description": "GeplantFindetStattAbgeschlossenVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/geplant-findet-statt-abgeschlossen-vs",
       "expansion": {
         "timestamp": "2024-04-06T12:00:00+00:00",
@@ -2789,6 +2807,7 @@
       "name": "HaeufigkeitAuswahlVS",
       "title": "Häufigkeit Auswahl ValueSet",
       "description": "HaeufigkeitAuswahlVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/haeufigkeit-auswahl-vs",
       "expansion": {
         "timestamp": "2024-04-06T12:00:00+00:00",
@@ -2825,6 +2844,7 @@
       "name": "BildungsabschlussVS",
       "title": "Bildungsabschluss ValueSet",
       "description": "BildungsabschlussVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/bildungsabschluss-vs",
       "expansion": {
         "timestamp": "2024-04-06T12:00:00+00:00",
@@ -2866,6 +2886,7 @@
       "name": "BerufsbildungVS",
       "title": "Berufsbildung ValueSet",
       "description": "BerufsbildungVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/berufsbildung-vs",
       "expansion": {
         "timestamp": "2024-04-06T12:00:00+00:00",
@@ -2907,6 +2928,7 @@
       "name": "ErwerbsstatusVS",
       "title": "Erwerbsstatus ValueSet",
       "description": "ErwerbsstatusVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/erwerbsstatus-vs",
       "expansion": {
         "timestamp": "2024-04-06T12:00:00+00:00",
@@ -2943,6 +2965,7 @@
       "name": "FamilienrolleVS",
       "title": "Familienrolle ValueSet",
       "description": "FamilienrolleVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/familienrolle-vs",
       "expansion": {
         "timestamp": "2024-04-06T12:00:00+00:00",
@@ -2994,6 +3017,7 @@
       "name": "VersorgungsartVS",
       "title": "Versorgungsart ValueSet",
       "description": "VersorgungsartVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/versorgungsart-vs",
       "expansion": {
         "timestamp": "2024-04-06T12:00:00+00:00",
@@ -3025,6 +3049,7 @@
       "name": "ChronischeKrankheitenVS",
       "title": "ValueSet für chronische Krankheiten",
       "description": "Dieses ValueSet beinhaltet eine Auswahl von Codes für häufige chronische Krankheiten, definiert im zugehörigen CodeSystem.",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/chronische-krankheiten-vs",
       "expansion": {
         "timestamp": "2024-04-12T15:47:43+00:00",
@@ -3081,6 +3106,7 @@
       "name": "UeberwiegendGesprocheneSpracheVS",
       "title": "ValueSet für überwiegend gesprochene Sprachen",
       "description": "Dieses ValueSet beinhaltet eine Auswahl von Codes für die Klassifikation von Sprachkenntnissen, definiert im zugehörigen CodeSystem.",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/ueberwiegend-gesprochene-sprache-vs",
       "expansion": {
         "timestamp": "2024-04-12T15:47:43+00:00",
@@ -3117,6 +3143,7 @@
       "name": "EntwicklungVS",
       "title": "ValueSet für Entwicklung",
       "description": "Dieses ValueSet beinhaltet Codes für die Klassifikation des Zeitpunkts der Entwicklung, definiert im zugehörigen CodeSystem.",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/entwicklung-vs",
       "expansion": {
         "timestamp": "2024-04-12T15:47:43+00:00",
@@ -3148,6 +3175,7 @@
       "name": "AtopischeErkrankungenVS",
       "title": "ValueSet für atopische/allergische Erkrankungen",
       "description": "Dieses ValueSet beinhaltet eine Auswahl von Codes für die Klassifikation von atopischen/allergischen Erkrankungen, definiert im zugehörigen CodeSystem.",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/atopische-erkrankungen-vs",
       "expansion": {
         "timestamp": "2024-04-12T15:47:43+00:00",
@@ -3209,6 +3237,7 @@
       "name": "AllgemeineBeschwerdenVS",
       "title": "ValueSet für allgemeine Beschwerden",
       "description": "Dieses ValueSet beinhaltet eine Auswahl von Codes für die Klassifikation von allgemeinen Beschwerden, definiert im zugehörigen CodeSystem.",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/allgemeine-beschwerden-vs",
       "expansion": {
         "timestamp": "2024-04-12T15:47:43+00:00",

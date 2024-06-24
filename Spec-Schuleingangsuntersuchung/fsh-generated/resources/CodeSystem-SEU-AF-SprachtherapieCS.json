@@ -5,6 +5,7 @@
   "name": "SEU-AF-SprachtherapieCS",
   "id": "SEU-AF-SprachtherapieCS",
   "title": "SEU Sprachtherapie",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-SprachtherapieCS",
   "concept": [
     {

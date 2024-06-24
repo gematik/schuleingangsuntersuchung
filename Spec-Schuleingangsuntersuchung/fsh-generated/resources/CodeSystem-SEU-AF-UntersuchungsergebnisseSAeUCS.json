@@ -5,6 +5,7 @@
   "name": "SEU-AF-UntersuchungsergebnisseSAeUCS",
   "id": "SEU-AF-UntersuchungsergebnisseSAeUCS",
   "title": "SEU Untersuchungsergebnisse SÄU",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsergebnisseSAeUCS",
   "concept": [
     {

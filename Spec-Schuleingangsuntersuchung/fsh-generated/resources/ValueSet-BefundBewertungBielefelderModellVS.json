@@ -4,6 +4,7 @@
   "name": "BefundBewertungBielefelderModellVS",
   "id": "BefundBewertungBielefelderModellVS",
   "title": "BefundBewertungBielefelderModellVS",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/BefundBewertungBielefelderModellVS",
   "compose": {
     "include": [

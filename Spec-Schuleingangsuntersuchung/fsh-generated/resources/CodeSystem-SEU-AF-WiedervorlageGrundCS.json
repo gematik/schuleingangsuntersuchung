@@ -5,6 +5,7 @@
   "name": "SEU-AF-WiedervorlageGrundCS",
   "id": "SEU-AF-WiedervorlageGrundCS",
   "title": "SEU Wiedervorlage Grund",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-WiedervorlageGrundCS",
   "concept": [
     {

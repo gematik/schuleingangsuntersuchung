@@ -5,6 +5,7 @@
   "name": "StatusKindCS",
   "id": "StatusKindCS",
   "title": "SEU Status Kind",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/StatusKindCS",
   "concept": [
     {

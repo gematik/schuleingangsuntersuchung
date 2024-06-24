@@ -5,6 +5,7 @@
   "name": "SEU-AF-StaatsangehoerigkeitCS",
   "id": "SEU-AF-StaatsangehoerigkeitCS",
   "title": "SEU Staatsangehörigkeit",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-StaatsangehoerigkeitCS",
   "concept": [
     {

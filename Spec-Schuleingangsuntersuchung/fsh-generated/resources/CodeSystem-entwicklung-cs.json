@@ -6,6 +6,7 @@
   "id": "entwicklung-cs",
   "title": "CodeSystem für Entwicklung",
   "description": "Dieses CodeSystem klassifiziert den Zeitpunkt der Entwicklung: 'bis zum 4. Lebensjahr' und 'später'.",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/entwicklung-cs",
   "concept": [
     {

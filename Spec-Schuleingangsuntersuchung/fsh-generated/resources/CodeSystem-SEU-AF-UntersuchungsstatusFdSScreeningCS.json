@@ -5,6 +5,7 @@
   "name": "SEU-AF-UntersuchungsstatusFdSScreeningCS",
   "id": "SEU-AF-UntersuchungsstatusFdSScreeningCS",
   "title": "SEU Untersuchungsstatus FdS-Screening",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-UntersuchungsstatusFdSScreeningCS",
   "concept": [
     {

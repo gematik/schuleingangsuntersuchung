@@ -6,6 +6,7 @@
   "id": "chronische-krankheiten",
   "title": "CodeSystem für chronische Krankheiten",
   "description": "Dieses CodeSystem beinhaltet Codes für häufige chronische Krankheiten.",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/chronische-krankheiten",
   "concept": [
     {

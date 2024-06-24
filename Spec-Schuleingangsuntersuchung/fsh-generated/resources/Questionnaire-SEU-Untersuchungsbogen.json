@@ -9,6 +9,7 @@
       "name": "SEU-AF-RegionArtVS",
       "title": "SEU-AF Art der Region",
       "description": "Diese Codes enthalten die Art einer Region",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-RegionArtVS",
       "expansion": {
         "timestamp": "2024-03-30T13:28:00+00:00",
@@ -45,6 +46,7 @@
       "name": "SEU-AF-SpracheStudieVS",
       "title": "SEU Sprache Studie",
       "description": "Dieses ValueSet enthält die auswählbaren Sprachen zu einer Studie. Als CodeSystem wird 'urn:ietf:bcp:47' als Basis genommen.",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-SpracheStudieVS",
       "expansion": {
         "timestamp": "2024-03-30T13:28:00+00:00",
@@ -131,6 +133,7 @@
       "name": "SEU-AF-MeldungJugendamtVS",
       "title": "SEU-AF Meldung Jugendamt",
       "description": "Diese Codes enthalten möglichge Gründe für eine Meldung beim Jugendamt",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-MeldungJugendamtVS",
       "expansion": {
         "timestamp": "2024-03-30T13:28:00+00:00",
@@ -182,6 +185,7 @@
       "name": "SEU-AF-DurchfuehrungSaeuVS",
       "title": "SEU Durchführung SÄU",
       "description": "Diese Codes enthalten Angaben über die Durchführung einer SEU",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-DurchfuehrungSaeuVS",
       "expansion": {
         "timestamp": "2024-03-30T13:28:00+00:00",
@@ -223,6 +227,7 @@
       "name": "SEU-AF-VorstellungSchularztVS",
       "title": "SEU Vorstellung Schularzt",
       "description": "Diese Codes Angaben über die Vorstellung beim Schularzt",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-VorstellungSchularztVS",
       "expansion": {
         "timestamp": "2024-03-30T13:28:00+00:00",
@@ -259,6 +264,7 @@
       "name": "SEU-AF-WiedervorlageGrundVS",
       "title": "SEU Wiedervorlage Grund",
       "description": "Diese Codes enthalten Gründe für die Wiedervorlage der SEU",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-WiedervorlageGrundVS",
       "expansion": {
         "timestamp": "2024-03-30T13:28:00+00:00",
@@ -320,6 +326,7 @@
       "name": "SEU-AF-BesonderheitenVS",
       "title": "SEU Besonderheiten",
       "description": "Diese Codes enthalten Besonderheiten bei der SEU",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-BesonderheitenVS",
       "expansion": {
         "timestamp": "2024-03-30T13:28:00+00:00",
@@ -356,6 +363,7 @@
       "name": "SEU-AF-UntersuchungsstatusVS",
       "title": "SEU Untersuchungsstatus",
       "description": "Diese Codes enthalten Untersuchungsstatus der SEU",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-UntersuchungsstatusVS",
       "expansion": {
         "timestamp": "2024-03-30T13:28:00+00:00",
@@ -447,6 +455,7 @@
       "name": "SEU-AF-MasernimpfungNichtErforderlichGrundVS",
       "title": "SEU Masernimpfung nicht erforderlich Grund",
       "description": "Diese Codes enthalten Angaben zum Grund, warum die Masernimpfung nicht erforderlich ist",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-MasernimpfungNichtErforderlichGrundVS",
       "expansion": {
         "contains": [
@@ -487,6 +496,7 @@
       "name": "SEU-AF-ImpfungAntwortVS",
       "title": "SEU Impfung Antwort",
       "description": "Diese Codes enthalten allgemeine Angaben über den Status einer Impfung",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-ImpfungAntwortVS",
       "expansion": {
         "timestamp": "2024-03-30T13:28:00+00:00",
@@ -528,6 +538,7 @@
       "name": "SEU-AF-ImpfungAntwortOhneAuffrischungVS",
       "title": "SEU Impfung Antwort ohne Auffrischung",
       "description": "Diese Codes enthalten allgemeine Angaben über den Status einer Impfung ohne die Möglichkeit zur Angave der 1+ Auffrischung",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-ImpfungAntwortOhneAuffrischungVS",
       "expansion": {
         "timestamp": "2024-03-30T13:28:00+00:00",
@@ -574,6 +585,7 @@
       "name": "GenderDEVS",
       "title": "SEU-AF Geschlecht DE",
       "description": "Diese Codes enthalten die Angabe des Geschlechts",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/GenderDEVS",
       "expansion": {
         "timestamp": "2024-03-30T13:28:00+00:00",
@@ -615,6 +627,7 @@
       "name": "SEU-AF-AnamneseBesonderheitenVS",
       "title": "SEU Anamnese Besonderheiten",
       "description": "Diese Codes enthalten Besonderheiten bei der Anamnese einer SEU",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-AnamneseBesonderheitenVS",
       "expansion": {
         "contains": [
@@ -645,6 +658,7 @@
       "name": "SEU-AF-AntwortGeschwisterVS",
       "title": "SEU Antwort Geschwister",
       "description": "Diese Codes enthalten Informationen über die Anzahl der Geschwister",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-AntwortGeschwisterVS",
       "expansion": {
         "contains": [
@@ -695,6 +709,7 @@
       "name": "SEU-AF-AntwortKindergartenBesuchVS",
       "title": "SEU Antwort Kindergartenbesuch",
       "description": "Diese Codes enthalten Antwortmöglichkeiten zur Länge des Kindergartenbesuch",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-AntwortKindergartenBesuchVS",
       "expansion": {
         "contains": [
@@ -750,6 +765,7 @@
       "name": "SEU-AF-KindergartenArtVS",
       "title": "SEU Art des Kindergarten",
       "description": "Diese Codes enthalten Abgaben über die Art des Kindergarten",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-KindergartenArtVS",
       "expansion": {
         "contains": [
@@ -790,6 +806,7 @@
       "name": "SEU-AF-KontaktDeutscheSpracheVS",
       "title": "SEU Kontakt mit der deutschen Sprache",
       "description": "Diese Codes enthalten Angaben über den Kontakt zur deutschen Sprache",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-KontaktDeutscheSpracheVS",
       "expansion": {
         "contains": [
@@ -825,6 +842,7 @@
       "name": "SEU-AF-GesprocheneSpracheVS",
       "title": "SEU Gesprochene Sprache",
       "description": "Diese Codes enthalten Angaben zur gesprochenen Sprache",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-GesprocheneSpracheVS",
       "expansion": {
         "contains": [
@@ -865,6 +883,7 @@
       "name": "SEU-AF-HaendigkeitVS",
       "title": "SEU Händigkeit",
       "description": "Diese Codes enthalten Angaben zur Händigkeit",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-HaendigkeitVS",
       "expansion": {
         "contains": [
@@ -905,6 +924,7 @@
       "name": "SEU-AF-SprachtherapieVS",
       "title": "SEU Sprachtherapie",
       "description": "Diese Codes enthalten Angaben zu einer Sprachtherapie",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-SprachtherapieVS",
       "expansion": {
         "contains": [
@@ -950,6 +970,7 @@
       "name": "SEU-AF-TeilnahmeVorkursDeutschVS",
       "title": "SEU Teilnahme Vorkurs Deutsch",
       "description": "Diese Codes enthalten die Angabe über eine Teilnahme am Vorkurs Deutsch",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-TeilnahmeVorkursDeutschVS",
       "expansion": {
         "contains": [
@@ -990,6 +1011,7 @@
       "name": "SEU-AF-JaNeinKeineAngabeVS",
       "title": "SEU Ja-Nein-KeineAngabe",
       "description": "Diese Codes können Boolean erweitern um 'Keine Angabe'",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-JaNeinKeineAngabeVS",
       "expansion": {
         "contains": [
@@ -1039,6 +1061,7 @@
       "name": "SEU-AF-AntwortAugenarztVS",
       "title": "SEU Antwort Augenarzt",
       "description": "Diese Codes enthalten die Antworten auf Fragen zu einer Augenarztuntersuchung",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-AntwortAugenarztVS",
       "expansion": {
         "contains": [
@@ -1104,6 +1127,7 @@
       "name": "SEU-AF-AntwortenHoerstoerungVS",
       "title": "SEU Antworten Hörstörung",
       "description": "Diese Codes enthalten die Antworten auf die Frage zu einer Hörstöhrung",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-AntwortenHoerstoerungVS",
       "expansion": {
         "contains": [
@@ -1144,6 +1168,7 @@
       "name": "SEU-AF-AntwortErwachseneVS",
       "title": "SEU Antwort Erwachsene",
       "description": "Diese Codes enthalten Informationen über die Anzahl der Erwachsenen",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-AntwortErwachseneVS",
       "expansion": {
         "contains": [
@@ -1211,6 +1236,7 @@
       "name": "SEU-AF-GeburtslandVS",
       "title": "SEU Geburtsland",
       "description": "Diese Codes enthalten Angaben zum Geburtsland",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-GeburtslandVS",
       "expansion": {
         "contains": [
@@ -1246,6 +1272,7 @@
       "name": "SEU-AF-StaatsangehoerigkeitVS",
       "title": "SEU Staatsangehörigkeit",
       "description": "Diese Codes enthalten Angaben zur Staatsangehörigkeit",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-StaatsangehoerigkeitVS",
       "expansion": {
         "contains": [
@@ -1286,6 +1313,7 @@
       "name": "SEU-AF-SchulabschlussVS",
       "title": "SEU Schulabschluss",
       "description": "Diese Codes enthalten Angaben zum Schulabschluss",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-SchulabschlussVS",
       "expansion": {
         "contains": [
@@ -1336,6 +1364,7 @@
       "name": "SEU-AF-ErwerbstaetigkeitVS",
       "title": "SEU Erwerbstätigkeit",
       "description": "Diese Codes enthalten Angaben zur Erwerbstätigkeit",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-ErwerbstaetigkeitVS",
       "expansion": {
         "contains": [
@@ -1396,6 +1425,7 @@
       "name": "SEU-AF-AuswaehlbareElternspracheVS",
       "title": "SEU Auswählbare Elternsprache",
       "description": "Dieses ValueSet enthält die auswählbaren Elternsprachen. Als CodeSystem wird 'urn:ietf:bcp:47' als Basis genommen.",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-AuswaehlbareElternspracheVS",
       "expansion": {
         "contains": [
@@ -1553,6 +1583,7 @@
       "name": "SEU-AF-UntersuchungsstatusFdSScreeningvS",
       "title": "SEU Untersuchungsstatus FdS-Screening",
       "description": "Diese Codes enthalten Statusangaben über ein FdS-Screening",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-UntersuchungsstatusFdSScreeningVS",
       "expansion": {
         "contains": [
@@ -1608,6 +1639,7 @@
       "name": "SEU-AF-AntwortAuffaelligkeitVS",
       "title": "SEU Antwort Auffälligkeit",
       "description": "Diese Codes enthalten Antwortmöglichkeiten zu Auffälligkeiten",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-AntwortAuffaelligkeitVS",
       "expansion": {
         "contains": [
@@ -1653,6 +1685,7 @@
       "name": "SEU-AF-AntwortAuffaelligkeitBeurteilbarVS",
       "title": "SEU Antwort Auffälligkeit aber beurteilbar",
       "description": "Diese Codes enthalten Antwortmöglichkeiten zu Auffälligkeiten ohne Code 3 'nicht beurteilbar'",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-AntwortAuffaelligkeitBeurteilbarVS",
       "expansion": {
         "contains": [
@@ -1711,6 +1744,7 @@
       "name": "SEU-AF-AntwortenSAeUntersuchungVS",
       "title": "SEU Antworten schulärztliche Untersuchung",
       "description": "Diese Codes enthalten die Antworten Fragen der schulärztlichen Untersuchung",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-AntwortenSAeUntersuchungVS",
       "expansion": {
         "contains": [
@@ -1751,6 +1785,7 @@
       "name": "SEU-AF-UntersuchungsergebnisseSAeUVS",
       "title": "SEU Untersuchungsergebnisse SÄU",
       "description": "Diese Codes enthalten Untersuchungsergebnisse der SÄU",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-UntersuchungsergebnisseSAeUVS",
       "expansion": {
         "contains": [
@@ -1821,6 +1856,7 @@
       "name": "SEU-AF-VergleichSAeUntersuchungVS",
       "title": "SEU Vergleich schulärztliche Untersuchungen",
       "description": "Diese Codes enthalten Vergleichswerte von schulärztlichen Untersuchungen",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-VergleichSAeUntersuchungVS",
       "expansion": {
         "contains": [
@@ -1856,6 +1892,7 @@
       "name": "SEU-AF-AntwortTeilnahmeVS",
       "title": "SEU Antwort auf Fragen zur Teilnahme",
       "description": "Diese Codes enthalten Antworten zur Teilnahme an etwas",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-AntwortTeilnahmeVS",
       "expansion": {
         "contains": [

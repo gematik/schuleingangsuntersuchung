@@ -5,6 +5,7 @@
   "name": "SEU-AF-ImpfungAntwortCS",
   "id": "SEU-AF-ImpfungAntwortCS",
   "title": "SEU Impfung Antwort",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-ImpfungAntwortCS",
   "concept": [
     {

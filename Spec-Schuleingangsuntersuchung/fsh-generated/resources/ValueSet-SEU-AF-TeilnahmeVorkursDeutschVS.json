@@ -5,6 +5,7 @@
   "id": "SEU-AF-TeilnahmeVorkursDeutschVS",
   "title": "SEU Teilnahme Vorkurs Deutsch",
   "description": "Diese Codes enthalten die Angabe über eine Teilnahme am Vorkurs Deutsch",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-TeilnahmeVorkursDeutschVS",
   "expansion": {
     "contains": [

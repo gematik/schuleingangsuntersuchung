@@ -5,6 +5,7 @@
   "id": "SEU-AF-AntwortErwachseneVS",
   "title": "SEU Antwort Erwachsene",
   "description": "Diese Codes enthalten Informationen über die Anzahl der Erwachsenen",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-AntwortErwachseneVS",
   "expansion": {
     "contains": [

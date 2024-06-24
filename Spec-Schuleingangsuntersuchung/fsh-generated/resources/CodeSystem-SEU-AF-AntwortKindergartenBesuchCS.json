@@ -5,6 +5,7 @@
   "name": "SEU-AF-AntwortKindergartenBesuchCS",
   "id": "SEU-AF-AntwortKindergartenBesuchCS",
   "title": "SEU Antwort Kindergartenbesuch",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-AntwortKindergartenBesuchCS",
   "concept": [
     {

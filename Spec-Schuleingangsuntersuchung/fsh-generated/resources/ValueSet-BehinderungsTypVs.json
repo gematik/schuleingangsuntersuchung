@@ -5,6 +5,7 @@
   "id": "BehinderungsTypVS",
   "title": "SEU Behinderungsart",
   "description": "Diese Codes enthalten alle Behinderungsarten",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/BehinderungsTypVS",
   "compose": {
     "include": [

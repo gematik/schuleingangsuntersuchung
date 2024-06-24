@@ -5,6 +5,7 @@
   "id": "SEU-AF-MasernimpfungNichtErforderlichGrundVS",
   "title": "SEU Masernimpfung nicht erforderlich Grund",
   "description": "Diese Codes enthalten Angaben zum Grund, warum die Masernimpfung nicht erforderlich ist",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-MasernimpfungNichtErforderlichGrundVS",
   "expansion": {
     "contains": [

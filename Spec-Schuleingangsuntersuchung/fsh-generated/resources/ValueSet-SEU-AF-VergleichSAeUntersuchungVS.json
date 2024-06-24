@@ -5,6 +5,7 @@
   "id": "SEU-AF-VergleichSAeUntersuchungVS",
   "title": "SEU Vergleich schulärztliche Untersuchungen",
   "description": "Diese Codes enthalten Vergleichswerte von schulärztlichen Untersuchungen",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-VergleichSAeUntersuchungVS",
   "expansion": {
     "contains": [

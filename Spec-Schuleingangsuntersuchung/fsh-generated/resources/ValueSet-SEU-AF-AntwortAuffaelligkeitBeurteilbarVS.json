@@ -5,6 +5,7 @@
   "id": "SEU-AF-AntwortAuffaelligkeitBeurteilbarVS",
   "title": "SEU Antwort Auffälligkeit aber beurteilbar",
   "description": "Diese Codes enthalten Antwortmöglichkeiten zu Auffälligkeiten ohne Code 3 'nicht beurteilbar'",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-AntwortAuffaelligkeitBeurteilbarVS",
   "expansion": {
     "contains": [

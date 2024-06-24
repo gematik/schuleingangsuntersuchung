@@ -5,6 +5,7 @@
   "id": "SEU-AF-ImpfungAntwortOhneAuffrischungVS",
   "title": "SEU Impfung Antwort ohne Auffrischung",
   "description": "Diese Codes enthalten allgemeine Angaben über den Status einer Impfung ohne die Möglichkeit zur Angave der 1+ Auffrischung",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-ImpfungAntwortOhneAuffrischungVS",
   "expansion": {
     "timestamp": "2024-03-30T13:28:00+00:00",

@@ -1,0 +1,36 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "JaNeinKeineAngabeVS",
+  "id": "JaNeinKeineAngabeVS",
+  "title": "Ja-Nein-Keine Angabe ValueSet",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/JaNeinKeineAngabeVS",
+  "expansion": {
+    "timestamp": "2024-06-24T12:00:00+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/JaNeinKeineAngabeCS",
+        "code": "yes",
+        "display": "Ja"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/JaNeinKeineAngabeCS",
+        "code": "no",
+        "display": "Nein"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/JaNeinKeineAngabeCS",
+        "code": "x",
+        "display": "Keine Angabe"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/JaNeinKeineAngabeCS"
+      }
+    ]
+  }
+}

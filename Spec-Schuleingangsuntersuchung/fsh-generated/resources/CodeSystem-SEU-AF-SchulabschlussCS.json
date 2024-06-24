@@ -5,6 +5,7 @@
   "name": "SEU-AF-SchulabschlussCS",
   "id": "SEU-AF-SchulabschlussCS",
   "title": "SEU Schulabschluss",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-SchulabschlussCS",
   "concept": [
     {

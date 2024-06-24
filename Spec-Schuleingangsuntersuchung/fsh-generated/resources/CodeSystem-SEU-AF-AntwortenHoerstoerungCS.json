@@ -5,6 +5,7 @@
   "name": "SEU-AF-AntwortenHoerstoerungCS",
   "id": "SEU-AF-AntwortenHoerstoerungCS",
   "title": "SEU Antworten Hörstörung",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-AF-AntwortenHoerstoerungCS",
   "concept": [
     {

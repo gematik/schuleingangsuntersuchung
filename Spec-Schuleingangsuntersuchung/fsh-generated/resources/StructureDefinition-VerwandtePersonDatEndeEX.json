@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "VerwandtePersonDatEndeEX",
   "url": "https://www.oegd.de/fhir/seu/StructureDefinition/VerwandtePersonDatEndeEX",
+  "version": "0.1.0",
   "name": "VerwandtePersonDatEndeEX",
   "title": "Verwandte Person DatEnde EX",
   "status": "draft",

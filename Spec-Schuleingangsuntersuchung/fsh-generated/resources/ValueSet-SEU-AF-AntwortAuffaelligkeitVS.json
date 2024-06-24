@@ -5,6 +5,7 @@
   "id": "SEU-AF-AntwortAuffaelligkeitVS",
   "title": "SEU Antwort Auffälligkeit",
   "description": "Diese Codes enthalten Antwortmöglichkeiten zu Auffälligkeiten",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-AF-AntwortAuffaelligkeitVS",
   "expansion": {
     "contains": [
