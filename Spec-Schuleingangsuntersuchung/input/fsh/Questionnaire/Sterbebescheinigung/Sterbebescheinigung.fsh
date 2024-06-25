@@ -13,3 +13,8 @@ Description: "Sterbebescheinigung"
 * insert 1-esb-ausstellender_arzt_einrichtung
 * insert 2-esb-autopsie_bestattung_melder_metadaten_obduktionsschein
 * insert 3-esb-risiken
+
+
+/*
+https://docs.google.com/spreadsheets/d/14yOzSMeB67-pLd8NI0PkNDpGCnV1qSjtUWhrI78Lo84/edit?gid=1606836559#gid=1606836559
+*/
