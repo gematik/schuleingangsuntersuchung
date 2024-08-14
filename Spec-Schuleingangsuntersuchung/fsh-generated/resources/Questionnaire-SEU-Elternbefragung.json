@@ -2084,34 +2084,76 @@
               }
             }
           ],
-          "linkId": "9.2a.2",
-          "type": "date",
-          "text": "(9.2a.2) Beendet",
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "code": "DE-BW"
+                  }
+                }
+              ],
+              "linkId": "9.2a.1",
+              "type": "date",
+              "text": "(9.2a.1) Begonnen",
+              "code": [
+                {
+                  "code": "9.2a.1",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "enableWhen": [
+                {
+                  "question": "9.2a",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "Y",
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0532"
+                  }
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "code": "DE-BW"
+                  }
+                }
+              ],
+              "linkId": "9.2a.2",
+              "type": "date",
+              "text": "(9.2a.2) Beendet",
+              "code": [
+                {
+                  "code": "9.2a.2",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "enableWhen": [
+                {
+                  "question": "9.2a",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "Y",
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0532"
+                  }
+                }
+              ]
+            }
+          ],
+          "linkId": "9.2a",
+          "type": "choice",
+          "text": "(9.2a) Sprachförderung",
           "code": [
             {
-              "code": "9.2a.2",
+              "code": "9.2a",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
           ],
-          "answerValueSet": "#ja-nein-warteliste",
-          "enableWhen": [
-            {
-              "question": "9.2a",
-              "operator": "=",
-              "answerCoding": {
-                "code": "Y",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0532"
-              }
-            },
-            {
-              "question": "9.2a",
-              "operator": "=",
-              "answerCoding": {
-                "code": "Y",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0532"
-              }
-            }
-          ]
+          "answerValueSet": "#ja-nein-warteliste"
         },
         {
           "extension": [
@@ -2122,34 +2164,76 @@
               }
             }
           ],
-          "linkId": "9.2b.2",
-          "type": "date",
-          "text": "(9.2b.2) Beendet",
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "code": "DE-BW"
+                  }
+                }
+              ],
+              "linkId": "9.2b.1",
+              "type": "date",
+              "text": "(9.2b.1) Begonnen",
+              "code": [
+                {
+                  "code": "9.2b.1",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "enableWhen": [
+                {
+                  "question": "9.2b",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "Y",
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0532"
+                  }
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "code": "DE-BW"
+                  }
+                }
+              ],
+              "linkId": "9.2b.2",
+              "type": "date",
+              "text": "(9.2b.2) Beendet",
+              "code": [
+                {
+                  "code": "9.2b.2",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "enableWhen": [
+                {
+                  "question": "9.2b",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "Y",
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0532"
+                  }
+                }
+              ]
+            }
+          ],
+          "linkId": "9.2b",
+          "type": "choice",
+          "text": "(9.2b) Logopädie",
           "code": [
             {
-              "code": "9.2b.2",
+              "code": "9.2b",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
           ],
-          "answerValueSet": "#ja-nein-warteliste",
-          "enableWhen": [
-            {
-              "question": "9.2b",
-              "operator": "=",
-              "answerCoding": {
-                "code": "Y",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0532"
-              }
-            },
-            {
-              "question": "9.2b",
-              "operator": "=",
-              "answerCoding": {
-                "code": "Y",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0532"
-              }
-            }
-          ]
+          "answerValueSet": "#ja-nein-warteliste"
         },
         {
           "extension": [
@@ -2160,34 +2244,76 @@
               }
             }
           ],
-          "linkId": "9.2c.2",
-          "type": "date",
-          "text": "(9.2c.2) Beendet",
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "code": "DE-BW"
+                  }
+                }
+              ],
+              "linkId": "9.2c.1",
+              "type": "date",
+              "text": "(9.2c.1) Begonnen",
+              "code": [
+                {
+                  "code": "9.2c.1",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "enableWhen": [
+                {
+                  "question": "9.2c",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "Y",
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0532"
+                  }
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "code": "DE-BW"
+                  }
+                }
+              ],
+              "linkId": "9.2c.2",
+              "type": "date",
+              "text": "(9.2c.2) Beendet",
+              "code": [
+                {
+                  "code": "9.2c.2",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "enableWhen": [
+                {
+                  "question": "9.2c",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "Y",
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0532"
+                  }
+                }
+              ]
+            }
+          ],
+          "linkId": "9.2c",
+          "type": "choice",
+          "text": "(9.2c) Ergotherapie",
           "code": [
             {
-              "code": "9.2c.2",
+              "code": "9.2c",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
           ],
-          "answerValueSet": "#ja-nein-warteliste",
-          "enableWhen": [
-            {
-              "question": "9.2c",
-              "operator": "=",
-              "answerCoding": {
-                "code": "Y",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0532"
-              }
-            },
-            {
-              "question": "9.2c",
-              "operator": "=",
-              "answerCoding": {
-                "code": "Y",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0532"
-              }
-            }
-          ]
+          "answerValueSet": "#ja-nein-warteliste"
         },
         {
           "extension": [
@@ -2198,34 +2324,76 @@
               }
             }
           ],
-          "linkId": "9.2d.2",
-          "type": "date",
-          "text": "(9.2d.2) Beendet",
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "code": "DE-BW"
+                  }
+                }
+              ],
+              "linkId": "9.2d.1",
+              "type": "date",
+              "text": "(9.2d.1) Begonnen",
+              "code": [
+                {
+                  "code": "9.2d.1",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "enableWhen": [
+                {
+                  "question": "9.2d",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "Y",
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0532"
+                  }
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "code": "DE-BW"
+                  }
+                }
+              ],
+              "linkId": "9.2d.2",
+              "type": "date",
+              "text": "(9.2d.2) Beendet",
+              "code": [
+                {
+                  "code": "9.2d.2",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "enableWhen": [
+                {
+                  "question": "9.2d",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "Y",
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0532"
+                  }
+                }
+              ]
+            }
+          ],
+          "linkId": "9.2d",
+          "type": "choice",
+          "text": "(9.2d) Psychotherapie",
           "code": [
             {
-              "code": "9.2d.2",
+              "code": "9.2d",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
           ],
-          "answerValueSet": "#ja-nein-warteliste",
-          "enableWhen": [
-            {
-              "question": "9.2d",
-              "operator": "=",
-              "answerCoding": {
-                "code": "Y",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0532"
-              }
-            },
-            {
-              "question": "9.2d",
-              "operator": "=",
-              "answerCoding": {
-                "code": "Y",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0532"
-              }
-            }
-          ]
+          "answerValueSet": "#ja-nein-warteliste"
         },
         {
           "extension": [
@@ -2236,34 +2404,76 @@
               }
             }
           ],
-          "linkId": "9.2e.2",
-          "type": "date",
-          "text": "(9.2e.2) Beendet",
+          "item": [
+            {
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "code": "DE-BW"
+                  }
+                }
+              ],
+              "linkId": "9.2e.1",
+              "type": "date",
+              "text": "(9.2e.1) Begonnen",
+              "code": [
+                {
+                  "code": "9.2e.1",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "enableWhen": [
+                {
+                  "question": "9.2e",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "Y",
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0532"
+                  }
+                }
+              ]
+            },
+            {
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "code": "DE-BW"
+                  }
+                }
+              ],
+              "linkId": "9.2e.2",
+              "type": "date",
+              "text": "(9.2e.2) Beendet",
+              "code": [
+                {
+                  "code": "9.2e.2",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "enableWhen": [
+                {
+                  "question": "9.2e",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "Y",
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0532"
+                  }
+                }
+              ]
+            }
+          ],
+          "linkId": "9.2e",
+          "type": "choice",
+          "text": "(9.2e) Andere",
           "code": [
             {
-              "code": "9.2e.2",
+              "code": "9.2e",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
           ],
-          "answerValueSet": "#ja-nein-warteliste",
-          "enableWhen": [
-            {
-              "question": "9.2e",
-              "operator": "=",
-              "answerCoding": {
-                "code": "Y",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0532"
-              }
-            },
-            {
-              "question": "9.2e",
-              "operator": "=",
-              "answerCoding": {
-                "code": "Y",
-                "system": "http://terminology.hl7.org/CodeSystem/v2-0532"
-              }
-            }
-          ]
+          "answerValueSet": "#ja-nein-warteliste"
         },
         {
           "linkId": "9.3",

@@ -483,47 +483,47 @@ Description: "Elternbefragung"
     * insert addItemWithSource(9.2a, #choice, [[Sprachförderung]], #DE-BW)
     * answerValueSet = Canonical(JaNeinWartelisteVS)
     * item[+]
-    * insert addItemWithSource(9.2a.1, #date, [[Begonnen]], #DE-BW)
-    * insert EnableWhenCode(9.2a, =, ExpandedYesNoIndicator, Y)
+      * insert addItemWithSource(9.2a.1, #date, [[Begonnen]], #DE-BW)
+      * insert EnableWhenCode(9.2a, =, ExpandedYesNoIndicator, Y)
     * item[+]
-    * insert addItemWithSource(9.2a.2, #date, [[Beendet]], #DE-BW)
-    * insert EnableWhenCode(9.2a, =, ExpandedYesNoIndicator, Y)
+      * insert addItemWithSource(9.2a.2, #date, [[Beendet]], #DE-BW)
+      * insert EnableWhenCode(9.2a, =, ExpandedYesNoIndicator, Y)
   * item[+]
     * insert addItemWithSource(9.2b, #choice, [[Logopädie]], #DE-BW)
     * answerValueSet = Canonical(JaNeinWartelisteVS)
     * item[+]
-    * insert addItemWithSource(9.2b.1, #date, [[Begonnen]], #DE-BW)
-    * insert EnableWhenCode(9.2b, =, ExpandedYesNoIndicator, Y)
+      * insert addItemWithSource(9.2b.1, #date, [[Begonnen]], #DE-BW)
+      * insert EnableWhenCode(9.2b, =, ExpandedYesNoIndicator, Y)
     * item[+]
-    * insert addItemWithSource(9.2b.2, #date, [[Beendet]], #DE-BW)
-    * insert EnableWhenCode(9.2b, =, ExpandedYesNoIndicator, Y)
+      * insert addItemWithSource(9.2b.2, #date, [[Beendet]], #DE-BW)
+      * insert EnableWhenCode(9.2b, =, ExpandedYesNoIndicator, Y)
   * item[+]
     * insert addItemWithSource(9.2c, #choice, [[Ergotherapie]], #DE-BW)
     * answerValueSet = Canonical(JaNeinWartelisteVS)
     * item[+]
-    * insert addItemWithSource(9.2c.1, #date, [[Begonnen]], #DE-BW)
-    * insert EnableWhenCode(9.2c, =, ExpandedYesNoIndicator, Y)
+      * insert addItemWithSource(9.2c.1, #date, [[Begonnen]], #DE-BW)
+      * insert EnableWhenCode(9.2c, =, ExpandedYesNoIndicator, Y)
     * item[+]
-    * insert addItemWithSource(9.2c.2, #date, [[Beendet]], #DE-BW)
-    * insert EnableWhenCode(9.2c, =, ExpandedYesNoIndicator, Y) 
+      * insert addItemWithSource(9.2c.2, #date, [[Beendet]], #DE-BW)
+      * insert EnableWhenCode(9.2c, =, ExpandedYesNoIndicator, Y) 
   * item[+]
     * insert addItemWithSource(9.2d, #choice, [[Psychotherapie]], #DE-BW)
     * answerValueSet = Canonical(JaNeinWartelisteVS)
     * item[+]
-    * insert addItemWithSource(9.2d.1, #date, [[Begonnen]], #DE-BW)
-    * insert EnableWhenCode(9.2d, =, ExpandedYesNoIndicator, Y)
+      * insert addItemWithSource(9.2d.1, #date, [[Begonnen]], #DE-BW)
+      * insert EnableWhenCode(9.2d, =, ExpandedYesNoIndicator, Y)
     * item[+]
-    * insert addItemWithSource(9.2d.2, #date, [[Beendet]], #DE-BW)
-    * insert EnableWhenCode(9.2d, =, ExpandedYesNoIndicator, Y)
+      * insert addItemWithSource(9.2d.2, #date, [[Beendet]], #DE-BW)
+      * insert EnableWhenCode(9.2d, =, ExpandedYesNoIndicator, Y)
   * item[+]
     * insert addItemWithSource(9.2e, #choice, [[Andere]], #DE-BW)
     * answerValueSet = Canonical(JaNeinWartelisteVS)
     * item[+]
-    * insert addItemWithSource(9.2e.1, #date, [[Begonnen]], #DE-BW)
-    * insert EnableWhenCode(9.2e, =, ExpandedYesNoIndicator, Y)
+      * insert addItemWithSource(9.2e.1, #date, [[Begonnen]], #DE-BW)
+      * insert EnableWhenCode(9.2e, =, ExpandedYesNoIndicator, Y)
     * item[+]
-    * insert addItemWithSource(9.2e.2, #date, [[Beendet]], #DE-BW)
-    * insert EnableWhenCode(9.2e, =, ExpandedYesNoIndicator, Y)
+      * insert addItemWithSource(9.2e.2, #date, [[Beendet]], #DE-BW)
+      * insert EnableWhenCode(9.2e, =, ExpandedYesNoIndicator, Y)
   * item[+]
     * insert addItem(9.3, #choice, [[Frühförderung]])
     * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
