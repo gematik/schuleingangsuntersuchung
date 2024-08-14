@@ -221,7 +221,6 @@ Description: "VersorgungsartCS"
 * #ambulant "Ambulant"
 * #krankenhaus "Krankenhaus"
 
-
 CodeSystem: ErwerbsstatusCS
 Id: erwerbsstatus-cs
 Title: "Erwerbsstatus CodeSystem"
@@ -229,6 +228,7 @@ Description: "ErwerbsstatusCS"
 * #nicht_erwerbstaetig "Nicht erwerbstätig"
 * #teilzeit "Teilzeit"
 * #vollzeit "Vollzeit"
+* #sonstiges "Sonstiges"
 
 CodeSystem: FamilienrolleCS
 Id: familienrolle-cs

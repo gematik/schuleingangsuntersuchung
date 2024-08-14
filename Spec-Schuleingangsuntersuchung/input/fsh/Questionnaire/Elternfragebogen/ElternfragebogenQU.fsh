@@ -32,6 +32,8 @@ Description: "Elternbefragung"
 * contained[+] = EntwicklungVS
 * contained[+] = AtopischeErkrankungenVS
 * contained[+] = AllgemeineBeschwerdenVS
+* contained[+] = ErwerbsstatusInclSonstigesVS
+* contained[+] = JaNeinWartelisteVS
 * id = "SEU-Elternbefragung"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung"
 * title = "SEU Elternfragebogen Maximaldatensatz"
@@ -91,704 +93,467 @@ Description: "Elternbefragung"
 //********************************************
 // Personenbezogene Daten Personenberechtigter
 * item[+]
-  * type = #group
-  * linkId = "2"
-  * text = "(2) Personenbezogene Daten Personenberechtigter"
+  * insert addItem(2, #group, Personenbezogene Daten Personenberechtigter)
   * repeats = true
   * item[+]
     * answerValueSet = Canonical(GenderDEVS)
-    * type = #choice
-    * linkId = "2.1"
-    * text = "(2.1) Geschlecht"
+    * insert addItem(2.1, #choice, Geschlecht)
   * item[+]
-    * type = #string
-    * linkId = "2.2"
-    * text = "(2.2) Nachname"
+    * insert addItem(2.2, #string, Nachname)
     * insert initialExpression("%patient.name[0].family")
   * item[+]
-    * type = #string
-    * linkId = "2.3"
-    * text = "(2.3) Vorname"
+    * insert addItem(2.3, #string, Vorname)
     * insert initialExpression("%patient.name[0].given[0]")
   * item[+]
-    * type = #string
-    * linkId = "2.4"
-    * text = "(2.4) PLZ"
+    * insert addItem(2.4, #string, PLZ)
   * item[+]
-    * type = #string
-    * linkId = "2.5"
-    * text = "(2.5) Wohnort"
+    * insert addItem(2.5, #string, Wohnort)
   * item[+]
-    * type = #string
-    * linkId = "2.6"
-    * text = "(2.6) Straße"
+    * insert addItem(2.6, #string, Straße)
   * item[+]
-    * type = #string
-    * linkId = "2.7"
-    * text = "(2.7) Telefonnummer"
+    * insert addItem(2.7, #string, Telefonnummer)
   * item[+]
-    * type = #string
-    * linkId = "2.8"
-    * text = "(2.8) Email"
+    * insert addItem(2.8, #string, Email)
   * item[+]
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
-    * type = #choice
-    * linkId = "2.9"
-    * text = "(2.9) Staatsangehörigkeit"
+    * insert addItem(2.9, #choice, Staatsangehörigkeit)
   * item[+]
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
-    * type = #choice
-    * linkId = "2.10"
-    * text = "(2.10) Herkunftsland"
+    * insert addItem(2.10, #choice, Herkunftsland)
   * item[+]
     * answerValueSet = Canonical(SEU-AF-AuswaehlbareElternspracheVS)
-    * type = #choice
-    * linkId = "2.11"
-    * text = "(2.11) Muttersprache"
+    * insert addItem(2.11, #choice, Muttersprache)
   * item[+]
-    * type = #date
-    * linkId = "2.12"
-    * text = "(2.12) Geburtsdatum"
+    * insert addItem(2.12, #date, Geburtsdatum)
 //********************************************
 // Familiendaten
 * item[+]
-  * type = #group
-  * linkId = "3"
-  * text = "(3) Familiendaten"
+  * insert addItem(3, #group, Familiendaten)
   * item[+]
-    * type = #integer
-    * linkId = "3.1"
-    * text = "(3.1) Anzahl der Geschwister"
+    * insert addItem(3.1, #integer, Anzahl der Geschwister)
   * item[+]
-    * type = #group
-    * linkId = "3.1.1"
-    * text = "(3.1.1) Details Geschwister"
+    * insert addItem(3.1.1, #group, Details Geschwister)
     * repeats = true
     * enableWhen[+]
       * question = "3.1"
       * operator = #> 
       * answerInteger = 0
     * item[+]
-      * type = #date
-      * linkId = "3.1.1.1"
-      * text = "(3.1.1.1) Geburtsdatum des Geschwisters"
+      * insert addItem(3.1.1.1, #date, Geburtsdatum des Geschwisters)
     * item[+]
-      * type = #choice
-      * linkId = "3.1.1.2"
-      * text = "(3.1.1.2) Geschlecht des Geschwisters"
+      * insert addItem(3.1.1.2, #choice, Geschlecht des Geschwisters)
   * item[+]
-    * type = #group
-    * linkId = "3.2"
-    * text = "(3.2) Familiäre Vorgeschichte"
+    * insert addItem(3.2, #group, Familiäre Vorgeschichte)
     * item[+]
-      * type = #boolean
-      * linkId = "3.2.1"
-      * text = "(3.2.1) Brillenträger"
+      * insert addItem(3.2.1, #boolean, Brillenträger)
     * item[+]
-      * type = #boolean
-      * linkId = "3.2.2"
-      * text = "(3.2.2) Lese/Rechtschreibschwäche"
+      * insert addItem(3.2.2, #boolean, Lese/Rechtschreibschwäche)
     * item[+]
-      * type = #boolean
-      * linkId = "3.2.3"
-      * text = "(3.2.3) Rechenschwäche"
+      * insert addItem(3.2.3, #boolean, Rechenschwäche)
     * item[+]
       * answerValueSet = Canonical(ChronischeErkrankungenVS)
-      * type = #choice
-      * linkId = "3.2.4"
-      * text = "(3.2.4) Erkrankung"
+      * insert addItem(3.2.4, #choice, Erkrankung)
     * item[+]
       * answerValueSet = Canonical(ChronischeKrankheitenVS)
-      * type = #choice
-      * linkId = "3.2.5"
-      * text = "(3.2.5) Chronische Erkrankung"
+      * insert addItem(3.2.5, #choice, Chronische Erkrankung)
       * item[+]
         * insert EnableWhenCode(3.2.5, =, ChronischeKrankheiten, sonstiges)
-        * type = #string
-        * linkId = "3.2.5.1"
-        * text = "(3.2.5.1) Welche sonstige(n) chronischen Erkrankung(en)?"
+        * insert addItem(3.2.5.1, #string, [[Welche sonstige(n) chronischen Erkrankung(en)?]])
     * item[+]
-      * type = #boolean
-      * linkId = "3.2.6"
-      * text = "(3.2.6) Behinderung"
+      * insert addItem(3.2.6, #boolean, [[Hat Ihr Kind eine körperliche, geistige oder seelische Behinderung?]])
       * item[+]
         * insert EnableWhenBoolean(3.2.6, =, true)
-        * type = #string
-        * linkId = "3.2.6.1"
-        * text = "(3.2.6.1) Welche Behinderung?"
+        * insert addItem(3.2.6.1, #string, Welche Behinderung?)
     * item[+]
-      * type = #boolean
-      * linkId = "3.2.7"
-      * text = "(3.2.7) Schilddrüsenerkrankung"
+      * insert addItem(3.2.7, #boolean, Schilddrüsenerkrankung)
       * item[+]
         * insert EnableWhenBoolean(3.2.7, =, true)
-        * type = #string
-        * linkId = "3.2.6.1"
-        * text = "(3.2.6.1) Welche Schilddrüsenerkrankung?"        
+        * insert addItem(3.2.6.1, #string, Welche Schilddrüsenerkrankung?)        
 //********************************************
 // Kinderbetreuung
 * item[+]
-  * type = #group
-  * linkId = "4"
-  * text = "(4) Kinderbetreuung"
+  * insert addItem(4, #group, Kinderbetreuung)
   * item[+]
     * insert addItem(4.0a, #boolean, Besucht Ihr Kind weniger als 5 Stunden täglich den Kindergarten?)
   * item[+]
-    * insert addItem(4.0b, #boolean, [[Ist das Kind in einem Kindergarten/einer Kindertageseinrichtung]])
+    * insert addItem(4.0b, #boolean, Ist das Kind in einem Kindergarten/einer Kindertageseinrichtung?)
   * item[+]
-    * type = #integer
-    * linkId = "4.1"
-    * text = "(4.1) Besuch Kita/Krippe (Dauer in Jahren)"
+    * insert addItem(4.1, #integer, [[Besuch Kita/Krippe (Dauer in Jahren)]])
   * item[+]
-    * type = #integer
-    * linkId = "4.2"
-    * text = "(4.2) Dauer Kita/Krippe pro Woche in Stunden"
+    * insert addItem(4.2, #integer, Dauer Kita/Krippe pro Woche in Stunden)
   * item[+]
-    * type = #integer
-    * linkId = "4.3"
-    * text = "(4.3) Dauer Kita/Krippe pro Woche in Stunden"
+    * insert addItem(4.3, #integer, Dauer Kita/Krippe pro Woche in Stunden)
   * item[+]
-    * type = #date
-    * linkId = "4.4"
-    * text = "(4.4) Angabe des Datums, seit wann das Kind keine Kita mehr besucht."
+    * insert addItem(4.4, #date, [[Angabe des Datums, seit wann das Kind keine Kita mehr besucht.]])
   * item[+]
-    * type = #boolean
-    * linkId = "4.5"
-    * text = "(4.5) Besucht ihr Kind eine andere Form der Tagesbetreuung?"
+    * insert addItem(4.5, #boolean, Besucht ihr Kind eine andere Form der Tagesbetreuung?)
   * item[+]
-    * type = #string
-    * linkId = "4.6"
-    * text = "(4.6) Name des Kindergartens"
+    * insert addItem(4.6, #string, Name des Kindergartens)
     * enableWhen[+]
       * question = "4.5"
       * operator = #=
       * answerBoolean = true
   * item[+]
-    * type = #boolean
-    * linkId = "4.7"
-    * text = "(4.7) Erfolgte die Betreuung auch durch eine Tagesmutter?"
+    * insert addItem(4.7, #boolean, Erfolgte die Betreuung auch durch eine Tagesmutter?)
   * item[+]
-    * type = #date
-    * linkId = "4.8"
-    * text = "(4.8) Seit welchem Jahr ist die Tagesmutter im Einsatz?"
+    * insert addItem(4.8, #date, Seit welchem Jahr ist die Tagesmutter im Einsatz?)
     * enableWhen[+]
       * question = "4.7"
       * operator = #=
-      * answerBoolean = true      
+      * answerBoolean = true
 //********************************************
 // Schwangerschaft und Geburt
 * item[+]
-  * type = #group
-  * linkId = "5"
-  * text = "(5) Schwangerschaft und Geburt"
+  * insert addItem(5, #group, [[Schwangerschaft und Geburt]])
   * item[+]
-    * type = #integer
-    * linkId = "5.1"
-    * text = "(5.1) Dauer der Schwangerschaft (in Wochen)"
+    * insert addItem(5.1, #integer, [[Dauer der Schwangerschaft (in Wochen)]])
   * item[+]
-    * type = #integer
-    * linkId = "5.2"
-    * text = "(5.2) Geburtsgewicht (in Gramm)"
+    * insert addItem(5.2, #integer, [[Geburtsgewicht (in Gramm)]])
   * item[+]
-    * type = #integer
-    * linkId = "5.3a"
-    * text = "(5.3) Geburtslänge (in cm)"
+    * insert addItem(5.3a, #integer, [[Geburtslänge (in cm)]])
   * item[+]
-    * type = #integer
-    * linkId = "5.3b"
-    * text = "(5.3b) Kopfumfang (in cm)"
+    * insert addItem(5.3b, #integer, [[Kopfumfang (in cm)]])
   * item[+]
-    * type = #integer
-    * linkId = "5.3c"
-    * text = "(5.3c) In welcher SS-Woche wurde ihr Kind geboren?"
+    * insert addItem(5.3c, #integer, [[In welcher SS-Woche wurde ihr Kind geboren?]])
   * item[+]
-    * type = #boolean
-    * linkId = "5.4"
-    * text = "(5.4) Waren Geburtsgewicht und Geburtslänge normal?"
+    * insert addItem(5.4, #boolean, [[Waren Geburtsgewicht und Geburtslänge normal?]])
   * item[+]
-    * type = #boolean
-    * linkId = "5.5"
-    * text = "(5.5) Auffälligkeit bei der Geburt"
+    * insert addItem(5.5, #boolean, [[Auffälligkeit bei der Geburt]])
     * item[+]
       * insert EnableWhenBoolean(5.5, =, true)
-      * type = #string
-      * linkId = "5.5.1"
-      * text = "(5.5.1) Welche Auffälligkeit?"
+      * insert addItem(5.5.1, #string, [[Welche Auffälligkeit?]])
   * item[+]
-    * type = #boolean
-    * linkId = "5.6"
-    * text = "(5.6) Auffälligkeit/Krankheit in der Schwangerschaft"
+    * insert addItem(5.6, #boolean, [[Auffälligkeit/Krankheit in der Schwangerschaft]])
     * item[+]
       * insert EnableWhenBoolean(5.6, =, true)
-      * type = #string
-      * linkId = "5.6.1"
-      * text = "(5.6.1) Welche Auffälligkeit?"      
+      * insert addItem(5.6.1, #string, [[Welche Auffälligkeit?]])
   * item[+]
-    * type = #integer
-    * linkId = "5.7"
-    * text = "(5.7) Stillzeit in Monaten"
+    * insert addItem(5.7, #integer, [[Stillzeit in Monaten]])
 //********************************************
 // Sprache
 * item[+]
-  * type = #group
-  * linkId = "6"
-  * text = "(6) Sprache"
+  * insert addItem(6, #group, [[Sprache]])
   * item[+]
     * answerValueSet = Canonical(SEU-AF-AuswaehlbareElternspracheVS)
-    * type = #choice
-    * linkId = "6.1"
-    * text = "(6.1) Welche Sprachen werden Zuhause gesprochen?"
+    * insert addItem(6.1, #choice, [[Welche Sprachen werden Zuhause gesprochen?]])
     * repeats = true
   * item[+]
     * answerValueSet = Canonical(UeberwiegendGesprocheneSpracheVS)
-    * type = #choice
-    * linkId = "6.1a"
-    * text = "(6.1a) Welche Sprachen wurden mit dem Kind in den ersten 4 Lebensjahren überwiegend gesprochen?"
+    * insert addItem(6.1a, #choice, [[Welche Sprachen wurden mit dem Kind in den ersten 4 Lebensjahren überwiegend gesprochen?]])
     * repeats = true    
   * item[+]
     * answerValueSet = Canonical(SEU-AF-AuswaehlbareElternspracheVS)
-    * type = #choice
-    * linkId = "6.2"
-    * text = "(6.2) Muttersprache des Kindes"
+    * insert addItem(6.2, #choice, [[Muttersprache des Kindes]])
   * item[+]
     * answerValueSet = Canonical(JaNeinAngemeldetVS)
-    * type = #choice
-    * linkId = "6.3"
-    * text = "(6.3) Teilnahme des Kindes an einem Deutschkurs"
+    * insert addItem(6.3, #choice, [[Teilnahme des Kindes an einem Deutschkurs]])
   * item[+]
-    * type = #boolean
-    * linkId = "6.4"
-    * text = "(6.4) Sprachauffälligkeiten"
+    * insert addItem(6.4, #boolean, [[Sprachauffälligkeiten]])
   * item[+]
-    * type = #boolean
-    * linkId = "6.5"
-    * text = "(6.5) Kontakt zu Deutschsprechenden seit Geburt?"
+    * insert addItem(6.5, #boolean, [[Kontakt zu Deutschsprechenden seit Geburt?]])
   * item[+]
-    * type = #group
-    * linkId = "6.6"
-    * text = "(6.6) Kontakt zu Deutschprechenden seit Alter:"
+    * insert addItem(6.6, #group, [[Kontakt zu Deutschprechenden seit Alter:]])
     * enableWhen[+]
       * question = "6.5"
       * operator = #=
       * answerBoolean = false
     * item[+]
-      * type = #integer
-      * linkId = "6.6.1"
-      * text = "(6.6.1) Jahre"
+      * insert addItem(6.6.1, #integer, [[Jahre]])
     * item[+]
-      * type = #integer
-      * linkId = "6.6.2"
-      * text = "(6.6.2) Monate"
+      * insert addItem(6.6.2, #integer, [[Monate]])
 //********************************************
 // Entwicklung
 * item[+]
-  * type = #group
-  * linkId = "7"
-  * text = "(7) Entwicklung"
+  * insert addItem(7, #group, [[Entwicklung]])
   * item[+]
-    * type = #boolean
-    * linkId = "7.1"
-    * text = "(7.1) Sind Sie mit der Entwicklung ihres Kinds zufrieden?"
+    * insert addItem(7.1, #boolean, [[Sind Sie mit der Entwicklung ihres Kinds zufrieden?]])
   * item[+]
-    * type = #text
-    * linkId = "7.2"
-    * text = "(7.2) Mit was sind Sie Unzufrieden?"
+    * insert addItem(7.2, #text, [[Mit was sind Sie Unzufrieden?]])
     * enableWhen[+]
       * question = "7.1"
       * operator = #=
       * answerBoolean = false
   * item[+]
-    * type = #integer
-    * linkId = "7.3"
-    * text = "(7.3) Freies Laufen ab? (Monate)"
+    * insert addItem(7.3, #integer, [[Freies Laufen ab? (Monate)]])
   * item[+]
-    * type = #integer
-    * linkId = "7.4"
-    * text = "(7.4) Erste Worte ab? (Monate)"
+    * insert addItem(7.4, #integer, [[Erste Worte ab? (Monate)]])
   * item[+]
-    * type = #integer
-    * linkId = "7.5"
-    * text = "(7.5) Erste Sätze ab? (Monate)"
+    * insert addItem(7.5, #integer, [[Erste Sätze ab? (Monate)]])
   * item[+]
     * answerValueSet = Canonical(EntwicklungVS)
-    * type = #choice
-    * linkId = "7.6a"
-    * text = "(7.6a) Tags und nachts sauber"    
+    * insert addItem(7.6a, #choice, [[Tags und nachts sauber]])
   * item[+]
-    * type = #integer
-    * linkId = "7.6"
-    * text = "(7.6) Tagsüber ohne Windeln ab? (Jahre)"
+    * insert addItem(7.6, #integer, [[Tagsüber ohne Windeln ab? (Jahre)]])
   * item[+]
-    * type = #integer
-    * linkId = "7.7"
-    * text = "(7.7) Nachts ohne Windeln ab? (Jahre)"
+    * insert addItem(7.7, #integer, [[Nachts ohne Windeln ab? (Jahre)]])
   * item[+]
-    * type = #boolean
-    * linkId = "7.8"
-    * text = "(7.8) Besonderheiten in der Säuglings- u. Kleinkinderzeit?"
+    * insert addItem(7.8, #boolean, [[Besonderheiten in der Säuglings- u. Kleinkinderzeit?]])
   * item[+]
-    * type = #text
-    * linkId = "7.8.1"
-    * text = "(7.8.1) Welche Besonderheiten lagen vor?"
+    * insert addItem(7.8.1, #text, [[Welche Besonderheiten lagen vor?]])
     * enableWhen[+]
       * question = "7.8"
       * operator = #=
       * answerBoolean = true
   * item[+]
     * answerValueSet = Canonical(RechtsLinksHaenderVS)
-    * type = #choice
-    * linkId = "7.9"
-    * text = "(7.9) Links- oder Rechtshänder"
+    * insert addItem(7.9, #choice, [[Links- oder Rechtshänder]])
   * item[+]
-    * type = #text
-    * linkId = "7.10"
-    * text = "(7.10) Angabe zu Entwicklungsverzögerungen, bspw. beim Erlernen des Sitzens/Laufens"
+    * insert addItem(7.10, #text, [[Angabe zu Entwicklungsverzögerungen, bspw. beim Erlernen des Sitzens/Laufens]])
   * item[+]
-    * type = #open-choice
-    * linkId = "7.11"
-    * text = "(7.11) Auffälligkeit des Verhaltens"  
+    * insert addItem(7.11, #open-choice, [[Auffälligkeit des Verhaltens]])
   * item[+]
-    * type = #boolean
-    * linkId = "7.12"
-    * text = "(7.12) Sorgen Sie sich um die Entwicklung ihres Kindes?"
+    * insert addItem(7.12, #boolean, [[Sorgen Sie sich um die Entwicklung ihres Kindes?]])
 //********************************************
 // Erkrankungen und gesundheitliche Einschränkungen
 * item[+]
-  * type = #group
-  * linkId = "8"
-  * text = "(8) Erkrankungen und gesundheitliche Einschränkungen"
+  * insert addItem(8, #group, [[Erkrankungen und gesundheitliche Einschränkungen]])
   * item[+]
-    * type = #boolean
-    * linkId = "8.1"
-    * text = "(8.1) In regelmäßiger ärztlicher bzw. psychologischer Behandlung"
+    * insert addItem(8.1, #boolean, [[In regelmäßiger ärztlicher bzw. psychologischer Behandlung]])
   * item[+]
-    * type = #text
-    * linkId = "8.2"
-    * text = "(8.2) Freitext Angabe, abhängig zu 'Regelmäßig_Behandlung'. Angabe zu Grund und Fachrichtung"
+    * insert addItem(8.2, #text, [[Freitext Angabe, abhängig zu 'Regelmäßig_Behandlung'. Angabe zu Grund und Fachrichtung]])
     * enableWhen[+]
       * question = "8.1"
       * operator = #=
       * answerBoolean = true
   * item[+]
-    * type = #boolean
-    * linkId = "8.3"
-    * text = "(8.3) Sehstörung vorhanden?"
+    * insert addItem(8.3, #boolean, [[Sehstörung vorhanden?]])
   * item[+]
-    * type = #boolean
-    * linkId = "8.4"
-    * text = "(8.4) Sprachstörung vorhanden?"
+    * insert addItem(8.4, #boolean, [[Sprachstörung vorhanden?]])
   * item[+]
-    * type = #boolean
-    * linkId = "8.5"
-    * text = "(8.5) Schielbehandlung?"
+    * insert addItem(8.5, #boolean, [[Schielbehandlung?]])
   * item[+]
-    * type = #boolean
-    * linkId = "8.6"
-    * text = "(8.6) Brillenträger?"
+    * insert addItem(8.6, #boolean, [[Brillenträger?]])
   * item[+]
-    * type = #date
-    * linkId = "8.7"
-    * text = "(8.7) Letzte Untersuchung beim Augenarzt?"
+    * insert addItem(8.7, #date, [[Letzte Untersuchung beim Augenarzt?]])
   * item[+]
-    * type = #date
-    * linkId = "8.8"
-    * text = "(8.8) Letzte Untersuchung beim Zahnarzt?"
+    * insert addItem(8.8, #date, [[Letzte Untersuchung beim Zahnarzt?]])
   * item[+]
-    * type = #boolean
-    * linkId = "8.9"
-    * text = "(8.9) Schwere Hörstörung vorhanden?"
+    * insert addItem(8.9, #boolean, [[Schwere Hörstörung vorhanden?]])
   * item[+]
-    * type = #group
-    * linkId = "8.9.G"
-    * text = "(8.9.G) Details: Angeborene schwere Hörstörung"
+    * insert addItem(8.9.G, #group, [[Details: Angeborene schwere Hörstörung]])
     * enableWhen[+]
       * question = "8.9"
       * operator = #=
       * answerBoolean = true
     * item[+]
-      * type = #group
-      * linkId = "8.9.G.hoergeraete.G"
-      * text = "(8.9.G.hoergeraete.G) Hörgeräte"
+      * insert addItem(8.9.G.hoergeraete.G, #group, [[Hörgeräte]])
       * repeats = true
       * item[+]
         * answerValueSet = Canonical(LinksRechtsBeidseitsKeineAngabeVS)
-        * type = #choice
-        * linkId = "8.9.G.hoergeraete.G.1"
-        * text = "(8.9.G.hoergeraete.G.1) Höregerätseite"
+        * insert addItem(8.9.G.hoergeraete.G.1, #choice, [[Höregerätseite]])
       * item[+]
-        * type = #date
-        * linkId = "8.9.G.hoergeraete.G.2"
-        * text = "(8.9.G.hoergeraete.G.2) Beginn des Tragens"
+        * insert addItem(8.9.G.hoergeraete.G.2, #date, [[Beginn des Tragens]])
     * item[+]
-      * type = #group
-      * linkId = "8.9.G.cochlea.G"
-      * text = "(8.9.G.cochlea.G) Cochleaimplantate"
+      * insert addItem(8.9.G.cochlea.G, #group, [[Cochleaimplantate]])
       * repeats = true
       * item[+]
         * answerValueSet = Canonical(LinksRechtsBeidseitsKeineAngabeVS)
-        * type = #choice
-        * linkId = "8.9.G.cochlea.G.1"
-        * text = "(8.9.G.cochlea.G.1) Cochleaimplantat-Seite"
+        * insert addItem(8.9.G.cochlea.G.1, #choice, [[Cochleaimplantat-Seite]])
       * item[+]
-        * type = #date
-        * linkId = "8.9.G.cochlea.G.2"
-        * text = "(8.9.G.cochlea.G.2) Beginn des Tragens"
+        * insert addItem(8.9.G.cochlea.G.2, #date, [[Beginn des Tragens]])
   * item[+]
-    * type = #group
-    * linkId = "8.10g"
-    * text = "(8.10g) Stoffwechsel & Hormonstörungen"
+    * insert addItem(8.10g, #group, [[Stoffwechsel & Hormonstörungen]])
     * repeats = true
     * item[+]
       * answerValueSet = Canonical(StoffwechselstoerungVS)
-      * type = #choice
-      * linkId = "8.10g.1"
-      * text = "(8.10g.1) Art der Störung oder Erkrankung"
+      * insert addItem(8.10g.1, #choice, [[Art der Störung oder Erkrankung]])
     * item[+]
-      * type = #date
-      * linkId = "8.10g.2"
-      * text = "(8.10g.2) Beginn der Erkrankung"
+      * insert addItem(8.10g.2, #date, [[Beginn der Erkrankung]])
   * item[+]
-    * type = #group
-    * linkId = "8.11.g"
-    * text = "(8.11.g) Erkrankungen"
+    * insert addItem(8.11.g, #group, [[Erkrankungen]])
     * repeats = true
     * item[+]
       * answerValueSet = Canonical(ErkrankungVS)
-      * type = #open-choice
-      * linkId = "8.11.g.1"
-      * text = "(8.11.g.1) Erkrankung"
+      * insert addItem(8.11.g.1, #open-choice, [[Erkrankung]])
     * item[+]  
-      * type = #date
-      * linkId = "8.11.g.2"
-      * text = "(8.11.g.2) Erkrankungsbeginn"
+      * insert addItem(8.11.g.2, #date, [[Erkrankungsbeginn]])
     * item[+]        
-      * type = #boolean
-      * linkId = "8.11.g.3"
-      * text = "(8.11.g.3) Durch Ärzt:in festgestellt"
+      * insert addItem(8.11.g.3, #boolean, [[Durch Ärzt:in festgestellt]])
   * item[+]
-    * type = #group
-    * linkId = "8.12.g"
-    * text = "(8.12.g) Infektionskrankheiten"
+    * insert addItem(8.12.g, #group, [[Infektionskrankheiten]])
     * repeats = true
     * item[+]
       * answerValueSet = Canonical(InfektionsKrankheitVS)
-      * type = #open-choice
-      * linkId = "8.12.g.1"
-      * text = "(8.12.g.1) Infektionskrankheit"
+      * insert addItem(8.12.g.1, #open-choice, [[Infektionskrankheit]])
     * item[+]  
-      * type = #date
-      * linkId = "8.12.g.2"
-      * text = "(8.12.g.2) Erkrankungsbeginn"
+      * insert addItem(8.12.g.2, #date, [[Erkrankungsbeginn]])
   * item[+]
-    * type = #group
-    * linkId = "8.13.g"
-    * text = "(8.13.g) Erkrankungen im letzten Jahr"
+    * insert addItem(8.13.g, #group, [[Erkrankungen im letzten Jahr]])
     * repeats = true
     * item[+]
       * answerValueSet = Canonical(ErkrankungenLetztesJahrVS)
-      * type = #open-choice
-      * linkId = "8.13.g.1"
-      * text = "(8.13.g.1) Erkrankung"
+      * insert addItem(8.13.g.1, #open-choice, [[Erkrankung]])
     * item[+]        
-      * type = #date
-      * linkId = "8.13.g.2"
-      * text = "(8.13.g.2) Erkrankungsbeginn"
+      * insert addItem(8.13.g.2, #date, [[Erkrankungsbeginn]])
   * item[+]
-    * type = #boolean
-    * linkId = "8.14"
-    * text = "(8.14) Chronische Erkrankung vorhanden"
+    * insert addItem(8.14, #boolean, [[Chronische Erkrankung vorhanden]])
     * item[+]
-      * insert addItem(8.14.1, #string, Welche Erkrankung?)
+      * insert addItem(8.14.1, #string, [[Welche Erkrankung?]])
       * insert EnableWhenBoolean(8.14, =, true)
       * repeats = true 
   * item[+]
-    * insert addItem(8.14a, #boolean, Muss Ihr Kind krankheitsbedingt eine spezielle Diät einhalten?)      
+    * insert addItemWithSource(8.14b, #text, [[Bisher durchgemachte Erkrankungen, bspw. Windpocken oder Masern. Zeitlich nicht bestimmt]], #DE-BW)    
   * item[+]
-    * type = #boolean
-    * linkId = "8.15"
-    * text = "(8.15) Krankenhausaufenthalt"
+    * insert addItem(8.14a, #boolean, [[Muss Ihr Kind krankheitsbedingt eine spezielle Diät einhalten?]])      
+  * item[+]
+    * insert addItem(8.15, #boolean, [[Krankenhausaufenthalt]])
     * item[+]
-      * insert addItem(8.15.1, #string, Detaillierte Angaben zum Krankenhausaufenthalt?)
+      * insert addItem(8.15.1, #string, [[Detaillierte Angaben zum Krankenhausaufenthalt?]])
       * insert EnableWhenBoolean(8.15, =, true)
   * item[+]
-    * type = #boolean
-    * linkId = "8.16"
-    * text = "(8.16) Allergietest"
+    * insert addItem(8.16, #boolean, [[Allergietest]])
   * item[+]
     * answerValueSet = Canonical(AtopischeErkrankungenVS)  
-    * type = #choice
-    * linkId = "8.16a"
-    * text = "(8.16a) Besitzt Ihr Kind Allergien?"
+    * insert addItem(8.16a, #choice, [[Besitzt Ihr Kind Allergien?]])
     * item[+]
       * insert EnableWhenCode(8.16a, =, AtopischeErkrankungenCS, sonstiges)
-      * type = #string
-      * linkId = "8.16a.1"
-      * text = "(8.16a.1) Welche sonstigen Allergien?"  
+      * insert addItem(8.16a.1, #string, [[Welche sonstigen Allergien?]])  
   * item[+]
-    * type = #boolean
-    * linkId = "8.17"
-    * text = "(8.17) Entwicklungsdiagnostik"
+    * insert addItem(8.17, #boolean, [[Entwicklungsdiagnostik]])
   * item[+]
-    * type = #boolean
-    * linkId = "8.18"
-    * text = "(8.18) Behindertenausweis vorhanden"
+    * insert addItem(8.18, #boolean, [[Behindertenausweis vorhanden]])
   * item[+]
-    * type = #integer
-    * linkId = "8.19"
-    * text = "(8.19) Grad der Behinderung"
+    * insert addItem(8.19, #integer, [[Grad der Behinderung]])
   * item[+]
     * answerValueSet = Canonical(PflegegradVS)
-    * type = #choice
-    * linkId = "8.20"
-    * text = "(8.20) Pflegegrad"
+    * insert addItem(8.20, #choice, [[Pflegegrad]])
   * item[+]
-    * type = #boolean
-    * linkId = "8.21"
-    * text = "(8.21) Schwere Behinderung vorhanden?"
+    * insert addItem(8.21, #boolean, [[Schwere Behinderung vorhanden?]])
   * item[+]
-    * insert addGroup(8.21.g, Details Behinderung)
+    * insert addGroup(8.21.g, [[Details Behinderung]])
     * insert EnableWhenBoolean(8.21, =, true)
     * item[+]
-      * type = #text
-      * linkId = "8.21.g.1"
-      * text = "(8.21) Welche Behinderung"
+      * insert addItem(8.21.g.1, #text, [[Welche Behinderung]])
     * item[+]
-      * type = #text
-      * linkId = "8.21.g.2"
-      * text = "(8.22) Behinderung Merkzeichen"
+      * insert addItem(8.21.g.2, #text, [[Behinderung Merkzeichen]])
   * item[+]
-    * type = #boolean
-    * linkId = "8.23"
-    * text = "(8.23) Regelmäßige Medikamenteneinnahme"
+    * insert addItem(8.23, #boolean, [[Regelmäßige Medikamenteneinnahme]])
   * item[+]
     * insert EnableWhenBoolean(8.23, =, true)
-    * type = #string
-    * linkId = "8.23.1"
-    * text = "(8.23.1) Welches Medikament"   
+    * insert addItem(8.23.1, #string, [[Welches Medikament]])   
     * repeats = true
   * item[+]
-    * type = #boolean
-    * linkId = "8.24"
-    * text = "(8.24) Medikamenteneinnahme in der Schulzeit?"
+    * insert addItem(8.24, #boolean, [[Medikamenteneinnahme in der Schulzeit?]])
   * item[+]
     * insert EnableWhenBoolean(8.24, =, true)
-    * type = #text
-    * linkId = "8.24.1"
-    * text = "(8.24.1) Welches Medikament"
+    * insert addItem(8.24.1, #text, [[Welches Medikament]])
     * repeats = true
   * item[+]
-    * type = #boolean
-    * linkId = "8.25"
-    * text = "(8.25) Eine Erkrankung, die in einer Notfallsituation beachtet werden muss"
+    * insert addItem(8.25, #boolean, [[Eine Erkrankung, die in einer Notfallsituation beachtet werden muss]])
   * item[+]
     * insert EnableWhenBoolean(8.25, =, true)
-    * type = #text
-    * linkId = "8.25.1"
-    * text = "(8.25.1) Welche Erkrankung"
+    * insert addItem(8.25.1, #text, [[Welche Erkrankung]])
     * repeats = true
   * item[+]
-    * type = #text
-    * linkId = "8.26"
-    * text = "(8.26) Sonstige Probleme"
+    * insert addItem(8.26, #text, [[Sonstige Probleme]])
   * item[+]
-    * type = #boolean
-    * linkId = "8.27"
-    * text = "(8.27) Wurde ihr Kind operiert"
+    * insert addItem(8.27, #boolean, [[Wurde ihr Kind operiert]])
     * item[+]
-      * insert addItem(8.27.1, #choice, Wie fand die Operation statt?)
+      * insert addItem(8.27.1, #choice, [[Wie fand die Operation statt?]])
       * insert EnableWhenBoolean(8.27, =, true)
       * answerValueSet = Canonical(VersorgungsartVS)
   * item[+]
-    * type = #group
-    * linkId = "8.28.g"
-    * text = "(8.28.g) Hatte ihr Kinde einen Unfall"
+    * insert addItem(8.28.g, #group, [[Hatte ihr Kinde einen Unfall]])
     * repeats = true
     * item[+]
       * answerValueSet = Canonical(UnfallOrtVS)
-      * type = #choice
-      * linkId = "8.28.g.1"
-      * text = "(8.28.g.1) Ort des Unfall"
+      * insert addItem(8.28.g.1, #choice, [[Ort des Unfall]])
     * item[+]
       * answerValueSet = Canonical(UnfallArtVS)
-      * type = #choice
-      * linkId = "8.28.g.2"
-      * text = "(8.28.g.2) Art des Unfalls"
+      * insert addItem(8.28.g.2, #choice, [[Art des Unfalls]])
   * item[+]
-    * insert addItem(8.29, #choice, Hat Ihr Kind häufiger Befindlichkeitsstörungen?)
+    * insert addItem(8.29, #choice, [[Hat Ihr Kind häufiger Befindlichkeitsstörungen?]])
     * repeats = true 
     * answerValueSet = Canonical(AllgemeineBeschwerdenVS)
     * item[+]
-      * insert addItem(8.29.1, #string, Welche sonstige Befindlichkeitstörung?)
+      * insert addItem(8.29.1, #string, [[Welche sonstige Befindlichkeitstörung?]])
       * insert EnableWhenCode(8.29, =, AllgemeineBeschwerdenCS, sonstige)
 //********************************************
 // Förderungen
 * item[+]
-  * type = #group
-  * linkId = "9"
-  * text = "(9) Förderungen"
+  * insert addItem(9, #group, [[Förderungen]])
   * item[+]
-    * type = #boolean
-    * linkId = "9.1"
-    * text = "(9.1) Teilnahme am Vorkurs Deutsch"
+    * insert addItem(9.1, #boolean, [[Teilnahme am Vorkurs Deutsch]])
   * item[+]
     * insert addItem(9.1a, #boolean, [[Ist Ihr Kind zurzeit in Therapie (z.B. Logopädie-, Ergotherapie, Psychotherapie, Krankengymnastik)?]])    
   * item[+]
-    * type = #choice
-    * linkId = "9.2"
-    * text = "(9.2) Sprachtherapie"
+    * insert addItem(9.2, #choice, [[Sprachtherapie]])
     * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
   * item[+]
-    * type = #choice
-    * linkId = "9.3"
-    * text = "(9.3) Frühförderung"
+    * insert addItemWithSource(9.2a, #choice, [[Sprachförderung]], #DE-BW)
+    * answerValueSet = Canonical(JaNeinWartelisteVS)
+    * item[+]
+    * insert addItemWithSource(9.2a.1, #date, [[Begonnen]], #DE-BW)
+    * insert EnableWhenCode(9.2a, =, ExpandedYesNoIndicator, Y)
+    * item[+]
+    * insert addItemWithSource(9.2a.2, #date, [[Beendet]], #DE-BW)
+    * insert EnableWhenCode(9.2a, =, ExpandedYesNoIndicator, Y)
+  * item[+]
+    * insert addItemWithSource(9.2b, #choice, [[Logopädie]], #DE-BW)
+    * answerValueSet = Canonical(JaNeinWartelisteVS)
+    * item[+]
+    * insert addItemWithSource(9.2b.1, #date, [[Begonnen]], #DE-BW)
+    * insert EnableWhenCode(9.2b, =, ExpandedYesNoIndicator, Y)
+    * item[+]
+    * insert addItemWithSource(9.2b.2, #date, [[Beendet]], #DE-BW)
+    * insert EnableWhenCode(9.2b, =, ExpandedYesNoIndicator, Y)
+  * item[+]
+    * insert addItemWithSource(9.2c, #choice, [[Ergotherapie]], #DE-BW)
+    * answerValueSet = Canonical(JaNeinWartelisteVS)
+    * item[+]
+    * insert addItemWithSource(9.2c.1, #date, [[Begonnen]], #DE-BW)
+    * insert EnableWhenCode(9.2c, =, ExpandedYesNoIndicator, Y)
+    * item[+]
+    * insert addItemWithSource(9.2c.2, #date, [[Beendet]], #DE-BW)
+    * insert EnableWhenCode(9.2c, =, ExpandedYesNoIndicator, Y) 
+  * item[+]
+    * insert addItemWithSource(9.2d, #choice, [[Psychotherapie]], #DE-BW)
+    * answerValueSet = Canonical(JaNeinWartelisteVS)
+    * item[+]
+    * insert addItemWithSource(9.2d.1, #date, [[Begonnen]], #DE-BW)
+    * insert EnableWhenCode(9.2d, =, ExpandedYesNoIndicator, Y)
+    * item[+]
+    * insert addItemWithSource(9.2d.2, #date, [[Beendet]], #DE-BW)
+    * insert EnableWhenCode(9.2d, =, ExpandedYesNoIndicator, Y)
+  * item[+]
+    * insert addItemWithSource(9.2e, #choice, [[Andere]], #DE-BW)
+    * answerValueSet = Canonical(JaNeinWartelisteVS)
+    * item[+]
+    * insert addItemWithSource(9.2e.1, #date, [[Begonnen]], #DE-BW)
+    * insert EnableWhenCode(9.2e, =, ExpandedYesNoIndicator, Y)
+    * item[+]
+    * insert addItemWithSource(9.2e.2, #date, [[Beendet]], #DE-BW)
+    * insert EnableWhenCode(9.2e, =, ExpandedYesNoIndicator, Y)
+  * item[+]
+    * insert addItem(9.3, #choice, [[Frühförderung]])
     * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
   * item[+]
-    * type = #choice
-    * linkId = "9.4"
-    * text = "(9.4) Ergotherapie"
+    * insert addItem(9.4, #choice, [[Ergotherapie]])
     * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
   * item[+]
-    * type = #choice
-    * linkId = "9.5"
-    * text = "(9.5) Psychomotorik"
+    * insert addItem(9.5, #choice, [[Psychomotorik]])
     * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
   * item[+]
-    * type = #choice
-    * linkId = "9.6"
-    * text = "(9.6) Physiotherapie"
+    * insert addItem(9.6, #choice, [[Physiotherapie]])
     * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
   * item[+]
-    * type = #choice
-    * linkId = "9.7"
-    * text = "(9.7) Psychologische Erziehungsberatung"
+    * insert addItem(9.7, #choice, [[Psychologische Erziehungsberatung]])
     * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
   * item[+]
-    * type = #choice
-    * linkId = "9.8"
-    * text = "(9.8) Krankengymnastik"
+    * insert addItem(9.8, #choice, [[Krankengymnastik]])
     * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
   * item[+]
-    * type = #choice
-    * linkId = "9.9"
-    * text = "(9.9) Integrative Betreuung"
+    * insert addItem(9.9, #choice, [[Integrative Betreuung]])
     * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
   * item[+]
-    * type = #text
-    * linkId = "9.10"
-    * text = "(9.10) Sonstige Förderung"
+    * insert addItem(9.10, #text, [[Sonstige Förderung]])
   * item[+]
-    * type = #group
-    * linkId = "9.11.g"
-    * text = "(9.11.g) Kuren"
+    * insert addItem(9.11.g, #group, [[Kuren]])
     * repeats = true
     * item[+]
-      * type = #date
-      * linkId = "9.11.g.1"
-      * text = "(9.11.g.1) Wann"
+      * insert addItem(9.11.g.1, #date, [[Wann]])
     * item[+]
-      * type = #text
-      * linkId = "9.11.g.2"
-      * text = "(9.11.g.2) Behandlungsschwerpunkt"
+      * insert addItem(9.11.g.2, #text, [[Behandlungsschwerpunkt]])
 //********************************************
 // Medienkonsum
 * item[+]
@@ -861,10 +626,13 @@ Description: "Elternbefragung"
     * answerValueSet = Canonical(BerufsbildungVS)  
   * item[+]
     * insert addItem(13.5, #choice, Berufstätigkeit 1. Elternteil)
-    * answerValueSet = Canonical(ErwerbsstatusVS)  
+    * answerValueSet = Canonical(ErwerbsstatusVS)
   * item[+]
     * insert addItem(13.5.1, #text, Grund der Erwerbslosigkeit)
     * insert EnableWhenCode(13.5, =, ErwerbsstatusCS, nicht_erwerbstaetig)
+  * item[+]
+    * insert addItemWithSource(13.5a, #choice, Berufstätigkeit 1. Elternteil, #DE-BW)
+    * answerValueSet = Canonical(ErwerbsstatusInclSonstigesVS)  
   * item[+]
     * insert addItem(13.6, #choice, Berufstätigkeit 2. Elternteil)
     * answerValueSet = Canonical(ErwerbsstatusVS)
@@ -872,9 +640,14 @@ Description: "Elternbefragung"
     * insert addItem(13.6.1, #text, Grund der Erwerbslosigkeit)
     * insert EnableWhenCode(13.6, =, ErwerbsstatusCS, nicht_erwerbstaetig)
   * item[+]
+    * insert addItemWithSource(13.6a, #choice, Berufstätigkeit 1. Elternteil, #DE-BW)
+    * answerValueSet = Canonical(ErwerbsstatusInclSonstigesVS) 
+  * item[+]
     * insert addItem(13.7, #integer, [[Anzahl der Kinder im Haushalt. Kinder unter 18 Jahren, einzuschulendes Kind mitgerechnet]])
   * item[+]
     * insert addItem(13.8, #integer, Anzahl der Erwachsene im Haushalt)
+  * item[+]
+    * insert addItem(13.8a, #integer, Anzahl der Kinder und Erwachsenen im Haushalt)
   * item[+]
     * insert addItem(13.9, #date, Datum seit dem der 1. Elternteil in Deutschland lebt.)
   * item[+]

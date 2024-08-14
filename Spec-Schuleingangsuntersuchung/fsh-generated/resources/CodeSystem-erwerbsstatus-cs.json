@@ -20,7 +20,11 @@
     {
       "code": "vollzeit",
       "display": "Vollzeit"
+    },
+    {
+      "code": "sonstiges",
+      "display": "Sonstiges"
     }
   ],
-  "count": 3
+  "count": 4
 }

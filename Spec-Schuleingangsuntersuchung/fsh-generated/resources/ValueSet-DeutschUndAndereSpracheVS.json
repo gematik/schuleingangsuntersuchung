@@ -6,6 +6,21 @@
   "title": "DeutschUndAndereSpracheVS",
   "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/DeutschUndAndereSpracheVS",
+  "expansion": {
+    "timestamp": "2024-06-26T15:47:43+00:00",
+    "contains": [
+      {
+        "system": "urn:ietf:bcp:47",
+        "code": "de",
+        "display": "Deutsch"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "74964007",
+        "display": "Andere Sprache"
+      }
+    ]
+  },
   "compose": {
     "include": [
       {

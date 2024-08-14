@@ -1,0 +1,24 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "AngabeTotgeborenCS",
+  "id": "AngabeTotgeborenCS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/AngabeTotgeborenCS",
+  "concept": [
+    {
+      "code": "0",
+      "display": "Als tote Leibesfrucht geboren"
+    },
+    {
+      "code": "1",
+      "display": "In der Geburt verstorben"
+    },
+    {
+      "code": "2",
+      "display": "Keine Angabe"
+    }
+  ],
+  "count": 3
+}

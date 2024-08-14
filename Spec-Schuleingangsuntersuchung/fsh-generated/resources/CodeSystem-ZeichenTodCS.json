@@ -1,0 +1,36 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "ZeichenTodCS",
+  "id": "ZeichenTodCS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/ZeichenTodCS",
+  "concept": [
+    {
+      "code": "0",
+      "display": "erfolglose Reanimation"
+    },
+    {
+      "code": "1",
+      "display": "Fäulnis"
+    },
+    {
+      "code": "2",
+      "display": "Hirntod"
+    },
+    {
+      "code": "3",
+      "display": "Totenflecke"
+    },
+    {
+      "code": "4",
+      "display": "Totenstarre"
+    },
+    {
+      "code": "5",
+      "display": "Verletzungen, die nicht mit dem Leben vereinbar sind"
+    }
+  ],
+  "count": 6
+}

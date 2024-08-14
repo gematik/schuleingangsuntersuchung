@@ -4,7 +4,11 @@ Usage: #example
 Title: "Sozialpädagogisches Entwicklungsscreening Fragebogen"
 Description: "Sozialpädagogisches Entwicklungsscreening Fragebogen"
 * insert launchContext("patient", #Patient, "Patientenkontext")
+* contained[+] = BefundBewertungBielefelderModellVS
+* contained[+] = DeutschUndAndereSpracheVS
+* contained[+] = DeutschkenntnisseVS
 * title = "SEU Sozialpädagogisches Entwicklungsscreening Fragebogen"
+* url = "https://www.oegd.de/fhir/seu/Questionnaire/SozialpaedagogischesEntwicklungsscreening"
 * status = #draft
 * item[+]
   * type = #integer

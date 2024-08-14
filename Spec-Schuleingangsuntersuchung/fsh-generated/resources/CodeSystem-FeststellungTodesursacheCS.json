@@ -1,0 +1,28 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "FeststellungTodesursacheCS",
+  "id": "FeststellungTodesursacheCS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/FeststellungTodesursacheCS",
+  "concept": [
+    {
+      "code": "0",
+      "display": "Behandelnder Arzt"
+    },
+    {
+      "code": "1",
+      "display": "nicht behandelnder Arzt nach Angaben des behandelnden Arztes"
+    },
+    {
+      "code": "2",
+      "display": "nicht behandelnder Arzt ohne Angaben des behandelnden Arztes"
+    },
+    {
+      "code": "3",
+      "display": "Ärztl. Leichenschauer nach Angaben des behandelnden Arztes"
+    }
+  ],
+  "count": 4
+}

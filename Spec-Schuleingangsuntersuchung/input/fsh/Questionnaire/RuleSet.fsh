@@ -43,6 +43,10 @@ RuleSet: addItem(linkId, type, text)
 * text = "({linkId}) {text}"
 * code = $elternfragebogenKodierungen#{linkId}
 
+RuleSet: addItemWithSource(linkId, type, text, source)
+* insert addItem({linkId}, {type}, [[{text}]])
+* extension[ItemSource].valueCoding.code = {source}
+
 RuleSet: addItemMl(linkId, type, text, maxLen)
 * insert addItem({linkId}, {type}, {text})
 * maxLength = {maxLen}
