@@ -47,6 +47,9 @@ RuleSet: addItemWithSource(linkId, type, text, source)
 * insert addItem({linkId}, {type}, [[{text}]])
 * extension[ItemSource].valueCoding.code = {source}
 
+RuleSet: addSource(source)
+* extension[ItemSource].valueCoding.code = {source}
+
 RuleSet: addItemMl(linkId, type, text, maxLen)
 * insert addItem({linkId}, {type}, {text})
 * maxLength = {maxLen}
@@ -55,14 +58,6 @@ RuleSet: addGroup(linkId, text)
 * linkId = "{linkId}"
 * type = #group
 * text = "({linkId}) {text}"
-
-RuleSet: addRItem(linkId, type, text)
-* insert addItem({linkId}, {type}, {text})
-* required = true
-
-RuleSet: addRItemMl(linkId, type, text, maxLen)
-* insert addItemMl({linkId}, {type}, {text}, {maxLen})
-* required = true
 
 RuleSet: uunit(code, display)
 * extension[+]
