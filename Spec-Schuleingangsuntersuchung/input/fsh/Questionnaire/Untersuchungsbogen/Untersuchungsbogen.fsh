@@ -44,6 +44,7 @@ Description: "Untersuchungsbogen"
 * contained[+] = SEU_UB_GewichtsklassenVS
 * contained[+] = SEU_UB_BewertungsvorschlagVS
 * contained[+] = JaNeinKeineAngabeVS
+* contained[+] = SEU_UB_BewertungErgebnisVS
 * id = "SEU-Untersuchungsbogen"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Untersuchungsbogen"
 * title = "SEU Untersuchungsbogen Maximaldatensatz"

@@ -388,8 +388,8 @@
     "fshName": "SEU_UB_ImpfungAntwortCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Untersuchungsbogen/3-af-impfungen.fsh",
-    "startLine": 176,
-    "endLine": 182
+    "startLine": 175,
+    "endLine": 181
   },
   {
     "outputFile": "CodeSystem-SEU-UB-JaNeinGeplantKeineAngabeCS.json",
@@ -420,8 +420,8 @@
     "fshName": "SEU_UB_MasernimpfungNichtErforderlichGrundCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Untersuchungsbogen/3-af-impfungen.fsh",
-    "startLine": 149,
-    "endLine": 155
+    "startLine": 148,
+    "endLine": 154
   },
   {
     "outputFile": "CodeSystem-SEU-UB-MeldungJugendamtCS.json",
@@ -732,8 +732,8 @@
     "fshName": "ImpfstatusCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Untersuchungsbogen/3-af-impfungen.fsh",
-    "startLine": 221,
-    "endLine": 230
+    "startLine": 220,
+    "endLine": 229
   },
   {
     "outputFile": "CodeSystem-iso6392-language-cs.json",
@@ -965,7 +965,7 @@
     "fshType": "Instance",
     "fshFile": "Questionnaire/Untersuchungsbogen/Untersuchungsbogen.fsh",
     "startLine": 1,
-    "endLine": 61
+    "endLine": 62
   },
   {
     "outputFile": "Questionnaire-SozialpaedagogischesEntwicklungsscreening.json",
@@ -1732,16 +1732,16 @@
     "fshName": "SEU_UB_ImpfungAntwortOhneAuffrischungVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/3-af-impfungen.fsh",
-    "startLine": 203,
-    "endLine": 219
+    "startLine": 202,
+    "endLine": 218
   },
   {
     "outputFile": "ValueSet-SEU-UB-ImpfungAntwortVS.json",
     "fshName": "SEU_UB_ImpfungAntwortVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/3-af-impfungen.fsh",
-    "startLine": 184,
-    "endLine": 201
+    "startLine": 183,
+    "endLine": 200
   },
   {
     "outputFile": "ValueSet-SEU-UB-JaNeinKeineAngabeVS.json",
@@ -1772,8 +1772,8 @@
     "fshName": "SEU_UB_MasernimpfungNichtErforderlichGrundVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/3-af-impfungen.fsh",
-    "startLine": 157,
-    "endLine": 173
+    "startLine": 156,
+    "endLine": 172
   },
   {
     "outputFile": "ValueSet-SEU-UB-MeldungJugendamtVS.json",
@@ -2108,8 +2108,8 @@
     "fshName": "SEU_UB_ImpfstatusVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/3-af-impfungen.fsh",
-    "startLine": 232,
-    "endLine": 255
+    "startLine": 231,
+    "endLine": 254
   },
   {
     "outputFile": "ValueSet-ja-nein-warteliste.json",

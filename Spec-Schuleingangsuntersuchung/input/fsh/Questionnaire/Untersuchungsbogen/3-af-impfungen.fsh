@@ -134,8 +134,7 @@ RuleSet: 3-af-impfungen
       * answerValueSet = Canonical(SEU_UB_MasernimpfungNichtErforderlichGrundVS)
   * item[+]
     * insert addItemWithSource(3.19, #choice, [[Impfstatus]], #DE-BW)
-    * answerValueSet = Canonical(SEU_UB_ImpfungAntwortOhneAuffrischungVS)
-
+    * answerValueSet = Canonical(SEU_UB_ImpfstatusVS)
   * item[+]
     * insert addItemWithSource(3.20, #boolean, [[Andere Impfungen erhalten]], #DE-BW)
     * item[+]

@@ -45,10 +45,12 @@ RuleSet: addItem(linkId, type, text)
 
 RuleSet: addItemWithSource(linkId, type, text, source)
 * insert addItem({linkId}, {type}, [[{text}]])
-* extension[ItemSource].valueCoding.code = {source}
+* insert addSource({source})
 
 RuleSet: addSource(source)
-* extension[ItemSource].valueCoding.code = {source}
+* extension[+]
+  * url = Canonical(ItemSource)
+  * valueCoding.code = {source}
 
 RuleSet: addItemMl(linkId, type, text, maxLen)
 * insert addItem({linkId}, {type}, {text})

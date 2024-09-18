@@ -57,5 +57,5 @@ RuleSet: 4-af-gesfrueherkennung
     * insert uunit(kg, "kg")
   * item[+] insert addItemWithSource(4.22, #string, [[U-Untersuchungen Bemerkung]], #DE-BW)
     * item[+]
-    * insert addItemWithSource(4.22.1, #boolean, [[Übernahme U-Untersuchungen Bemerkung in Befundbogen für Sorgeberechtigte]], #DE-BW)
-    * insert enableWhenExists(4.22)
+      * insert addItemWithSource(4.22.1, #boolean, [[Übernahme U-Untersuchungen Bemerkung in Befundbogen für Sorgeberechtigte]], #DE-BW)
+      * insert enableWhenExists(4.22)
