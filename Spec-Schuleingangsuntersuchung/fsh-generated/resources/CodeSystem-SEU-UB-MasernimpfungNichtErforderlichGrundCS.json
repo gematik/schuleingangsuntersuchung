@@ -1,0 +1,29 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU_UB_MasernimpfungNichtErforderlichGrundCS",
+  "id": "SEU-UB-MasernimpfungNichtErforderlichGrundCS",
+  "title": "SEU Masernimpfung nicht erforderlich Grund",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-MasernimpfungNichtErforderlichGrundCS",
+  "concept": [
+    {
+      "code": "1",
+      "display": "Antikörpertiter gegen Masern ausreichend"
+    },
+    {
+      "code": "2",
+      "display": "Masernerkrankung durchgemacht wurde"
+    },
+    {
+      "code": "3",
+      "display": "med. Kontraindikation dauerhaft besteht"
+    },
+    {
+      "code": "4",
+      "display": "Bescheinigung von anderer Behörde vorliegt"
+    }
+  ],
+  "count": 4
+}

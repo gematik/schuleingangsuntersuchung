@@ -1,0 +1,29 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU_UB_AntwortenHoerstoerungCS",
+  "id": "SEU-UB-AntwortenHoerstoerungCS",
+  "title": "SEU Antworten Hörstörung",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-AntwortenHoerstoerungCS",
+  "concept": [
+    {
+      "code": "1",
+      "display": "links"
+    },
+    {
+      "code": "2",
+      "display": "rechts"
+    },
+    {
+      "code": "3",
+      "display": "beidseitig"
+    },
+    {
+      "code": "9",
+      "display": "keine Angaben"
+    }
+  ],
+  "count": 4
+}

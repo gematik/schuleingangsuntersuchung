@@ -1,0 +1,52 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SEU_UB_ImpfstatusVS",
+  "id": "impfstatus-vs",
+  "title": "Impfstatus ValueSet",
+  "description": "ValueSet, das alle Codes aus dem Impfstatus CodeSystem enthält.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/impfstatus-vs",
+  "expansion": {
+    "timestamp": "2024-09-10T12:00:00+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/impfstatus-cs",
+        "code": "keine_Angabe",
+        "display": "Keine Angabe"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/impfstatus-cs",
+        "code": "besitzt_kein_Impfbuch",
+        "display": "Besitzt kein Impfbuch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/impfstatus-cs",
+        "code": "besitzt_kein_Impfbuch_nicht_geimpft",
+        "display": "Besitzt kein Impfbuch (lt schr. Erkl. nicht geimpft)"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/impfstatus-cs",
+        "code": "Impfbuch_in_Kopie_vorgelegt",
+        "display": "Impfbuch in Kopie vorgelegt"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/impfstatus-cs",
+        "code": "Impfberatung_durchgeführt",
+        "display": "Impfberatung durchgeführt"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/impfstatus-cs",
+        "code": "Impfberatung_nicht_durchgeführt_keine_Angabe",
+        "display": "Impfberatung nicht durchgeführt/Keine Angabe"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/impfstatus-cs"
+      }
+    ]
+  }
+}

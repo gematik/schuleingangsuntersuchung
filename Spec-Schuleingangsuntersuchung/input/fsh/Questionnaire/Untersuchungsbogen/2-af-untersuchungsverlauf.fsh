@@ -8,23 +8,23 @@ RuleSet: 2-af-untersuchungsverlauf
   * item[+] insert addGroup (2_1, Untersuchungsstatus)
     * item[+] insert addItem(2.1, #choice, Untersuchungsstatus)
       * insert addSource(#DE-BY)
-      * answerValueSet = Canonical(SEU-AF-UntersuchungsstatusVS)
+      * answerValueSet = Canonical(SEU_UB_UntersuchungsstatusVS)
     * item[+] insert addItem(2.2, #date, Datum der Datenerfassung)
       * insert addSource(#DE-BY)
-      * insert EnableWhenCode(2.1, =, SEU-AF-UntersuchungsstatusCS, 07)
-      * insert EnableWhenCode(2.1, =, SEU-AF-UntersuchungsstatusCS, 08)
-      * insert EnableWhenCode(2.1, =, SEU-AF-UntersuchungsstatusCS, 09)
-      * insert EnableWhenCode(2.1, =, SEU-AF-UntersuchungsstatusCS, 10)
-      * insert EnableWhenCode(2.1, =, SEU-AF-UntersuchungsstatusCS, 11)
-      * insert EnableWhenCode(2.1, =, SEU-AF-UntersuchungsstatusCS, 12)
-      * insert EnableWhenCode(2.1, =, SEU-AF-UntersuchungsstatusCS, 13)
-      * insert EnableWhenCode(2.1, =, SEU-AF-UntersuchungsstatusCS, 15)
-      * insert EnableWhenCode(2.1, =, SEU-AF-UntersuchungsstatusCS, 19)
-      * insert EnableWhenCode(2.1, =, SEU-AF-UntersuchungsstatusCS, 20)
+      * insert enableWhenCode(2.1, =, SEU_UB_UntersuchungsstatusCS, 07)
+      * insert enableWhenCode(2.1, =, SEU_UB_UntersuchungsstatusCS, 08)
+      * insert enableWhenCode(2.1, =, SEU_UB_UntersuchungsstatusCS, 09)
+      * insert enableWhenCode(2.1, =, SEU_UB_UntersuchungsstatusCS, 10)
+      * insert enableWhenCode(2.1, =, SEU_UB_UntersuchungsstatusCS, 11)
+      * insert enableWhenCode(2.1, =, SEU_UB_UntersuchungsstatusCS, 12)
+      * insert enableWhenCode(2.1, =, SEU_UB_UntersuchungsstatusCS, 13)
+      * insert enableWhenCode(2.1, =, SEU_UB_UntersuchungsstatusCS, 15)
+      * insert enableWhenCode(2.1, =, SEU_UB_UntersuchungsstatusCS, 19)
+      * insert enableWhenCode(2.1, =, SEU_UB_UntersuchungsstatusCS, 20)
       * enableBehavior = #any
     * item[+] insert addItem(2.3, #choice, Besonderheiten)
       * insert addSource(#DE-BY)
-      * answerValueSet = Canonical(SEU-AF-BesonderheitenVS)
+      * answerValueSet = Canonical(SEU_UB_BesonderheitenVS)
     * item[+] insert addItem(2.4, #boolean, [[Altersentspr. U-Nachweis erbracht (inkl. Teilnahme an SÄU)]]) //TODO Vorbefüllung u.a. basierend auf berechnetem Alter, Feature-Set noch nicht ausreichend
       * insert addSource(#DE-BY)
   * item[+] insert addGroup (2_2, Verschickte Anschreiben)
@@ -53,7 +53,7 @@ RuleSet: 2-af-untersuchungsverlauf
       * insert addSource(#DE-BY)
     * item[+] insert addItem(2.16, #choice, [[Wiedervorlage Grund]])
       * insert addSource(#DE-BY)
-      * answerValueSet = Canonical(SEU-AF-WiedervorlageGrundVS)
+      * answerValueSet = Canonical(SEU_UB_WiedervorlageGrundVS)
   * item[+] insert addGroup (2_4, Ergebnis nach dem Screening und/oder Elternfragebogen)
     * item[+] insert addItem(2.17, #boolean, [[Weitere Abklärung beim Augenarzt]])
       * insert addSource(#DE-BY)
@@ -65,21 +65,21 @@ RuleSet: 2-af-untersuchungsverlauf
       * insert addSource(#DE-BY)
     * item[+] insert addItem(2.21, #choice, [[Vorstellung beim Schularzt indiziert (1.SÄU)]])
       * insert addSource(#DE-BY)
-      * answerValueSet = Canonical(SEU-AF-VorstellungSchularztVS)
+      * answerValueSet = Canonical(SEU_UB_VorstellungSchularztVS)
     * item[+] insert addItem(2.22, #choice, [[Durchführung 1. SÄU]])
       * insert addSource(#DE-BY)
-      * answerValueSet = Canonical(SEU-AF-DurchfuehrungSaeuVS)
+      * answerValueSet = Canonical(SEU_UB_DurchfuehrungSaeuVS)
   * item[+] insert addGroup (2_5, Ergebnis nach der 1. schulärztlichen Untersuchung)
     * item[+] insert addItem(2.23, #choice, [[Vorstellung beim Schularzt indiziert (2.SÄU)]])
       * insert addSource(#DE-BY)
-      * answerValueSet = Canonical(SEU-AF-VorstellungSchularztVS)
+      * answerValueSet = Canonical(SEU_UB_VorstellungSchularztVS)
     * item[+] insert addItem(2.24, #choice, [[Durchführung 2. SÄU]])
       * insert addSource(#DE-BY)
-      * answerValueSet = Canonical(SEU-AF-DurchfuehrungSaeuVS)
+      * answerValueSet = Canonical(SEU_UB_DurchfuehrungSaeuVS)
   * item[+] insert addGroup (2_6, Gesamtergebnis zu rSEU/SEU)
     * item[+] insert addItem(2.25, #choice, [[Ans Jugendamt gemeldet]])
       * insert addSource(#DE-BY)
-      * answerValueSet = Canonical(SEU-AF-MeldungJugendamtVS)
+      * answerValueSet = Canonical(SEU_UB_MeldungJugendamtVS)
     * item[+] insert addItem(2.26, #boolean, [[Mitteilungsbogen für Schule mitgegeben/verschickt]])
       * insert addSource(#DE-BY)
     * item[+] insert addItem(2.27, #string, [[Kind abgeschlossen]]) //TODO Klappt nur, wenn es String ist...
@@ -93,10 +93,10 @@ RuleSet: 2-af-untersuchungsverlauf
       * insert addSource(#DE-BY)
     * item[+] insert addItem(2.30, #choice, [[Gewünschte Sprache Studie]])
       * insert addSource(#DE-BY)
-      * answerValueSet = Canonical(SEU-AF-SpracheStudieVS)
+      * answerValueSet = Canonical(SEU_UB_SpracheStudieVS)
 
-ValueSet: SEU-AF-SpracheStudieVS
-Id: SEU-AF-SpracheStudieVS
+ValueSet: SEU_UB_SpracheStudieVS
+Id: SEU-UB-SpracheStudieVS
 Title: "SEU Sprache Studie"
 Description: "Dieses ValueSet enthält die auswählbaren Sprachen zu einer Studie. Als CodeSystem wird 'urn:ietf:bcp:47' als Basis genommen."
 * $ietf-47#sq "Albanisch"
@@ -129,8 +129,8 @@ Description: "Dieses ValueSet enthält die auswählbaren Sprachen zu einer Studi
 * ^expansion.contains[=].code = #uk
 * ^expansion.contains[=].display = "Ukraninisch"
 
-CodeSystem: SEU-AF-MeldungJugendamtCS
-Id: SEU-AF-MeldungJugendamtCS
+CodeSystem: SEU_UB_MeldungJugendamtCS
+Id: SEU-UB-MeldungJugendamtCS
 Title: "SEU-AF Meldung Jugendamt"
 * #1  "aus Gründen des Kinderschutzes"
 * #2  "Verweigerung Teilnahme rSEU"
@@ -139,83 +139,83 @@ Title: "SEU-AF Meldung Jugendamt"
 * #5  "keine rSEU Teilnahme, Adresse unbekannt"
 * #6  "sonstige Gründe"
 
-ValueSet: SEU-AF-MeldungJugendamtVS
-Id: SEU-AF-MeldungJugendamtVS
+ValueSet: SEU_UB_MeldungJugendamtVS
+Id: SEU-UB-MeldungJugendamtVS
 Title: "SEU-AF Meldung Jugendamt"
 Description: "Diese Codes enthalten möglichge Gründe für eine Meldung beim Jugendamt"
-* include codes from system SEU-AF-MeldungJugendamtCS
+* include codes from system SEU_UB_MeldungJugendamtCS
 * ^expansion.timestamp = "2024-03-30T13:28:00+00:00"
-* ^expansion.contains[+].system = Canonical(SEU-AF-MeldungJugendamtCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_MeldungJugendamtCS)
 * ^expansion.contains[=].code = #1
 * ^expansion.contains[=].display = "aus Gründen des Kinderschutzes"
-* ^expansion.contains[+].system = Canonical(SEU-AF-MeldungJugendamtCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_MeldungJugendamtCS)
 * ^expansion.contains[=].code = #2
 * ^expansion.contains[=].display = "Verweigerung Teilnahme rSEU"
-* ^expansion.contains[+].system = Canonical(SEU-AF-MeldungJugendamtCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_MeldungJugendamtCS)
 * ^expansion.contains[=].code = #3
 * ^expansion.contains[=].display = "Verweigerung 1. SÄU"
-* ^expansion.contains[+].system = Canonical(SEU-AF-MeldungJugendamtCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_MeldungJugendamtCS)
 * ^expansion.contains[=].code = #4
 * ^expansion.contains[=].display = "Verweigerung 2. SÄU"
-* ^expansion.contains[+].system = Canonical(SEU-AF-MeldungJugendamtCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_MeldungJugendamtCS)
 * ^expansion.contains[=].code = #5
 * ^expansion.contains[=].display = "keine rSEU Teilnahme, Adresse unbekannt"
-* ^expansion.contains[+].system = Canonical(SEU-AF-MeldungJugendamtCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_MeldungJugendamtCS)
 * ^expansion.contains[=].code = #6
 * ^expansion.contains[=].display = "sonstige Gründe"
 
-CodeSystem: SEU-AF-DurchfuehrungSaeuCS
-Id: SEU-AF-DurchfuehrungSaeuCS
+CodeSystem: SEU_UB_DurchfuehrungSaeuCS
+Id: SEU-UB-DurchfuehrungSaeuCS
 Title: "SEU Durchführung SÄU"
 * #1  "Ja"
 * #2  "Nein"
 * #3  "nicht mehr erforderlich"
 * #4  "verweigert"
 
-ValueSet: SEU-AF-DurchfuehrungSaeuVS
-Id: SEU-AF-DurchfuehrungSaeuVS
+ValueSet: SEU_UB_DurchfuehrungSaeuVS
+Id: SEU-UB-DurchfuehrungSaeuVS
 Title: "SEU Durchführung SÄU"
 Description: "Diese Codes enthalten Angaben über die Durchführung einer SEU"
-* include codes from system SEU-AF-DurchfuehrungSaeuCS
+* include codes from system SEU_UB_DurchfuehrungSaeuCS
 * ^expansion.timestamp = "2024-03-30T13:28:00+00:00"
-* ^expansion.contains[+].system = Canonical(SEU-AF-DurchfuehrungSaeuCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_DurchfuehrungSaeuCS)
 * ^expansion.contains[=].code = #1
 * ^expansion.contains[=].display = "Ja"
-* ^expansion.contains[+].system = Canonical(SEU-AF-DurchfuehrungSaeuCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_DurchfuehrungSaeuCS)
 * ^expansion.contains[=].code = #2
 * ^expansion.contains[=].display = "Nein"
-* ^expansion.contains[+].system = Canonical(SEU-AF-DurchfuehrungSaeuCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_DurchfuehrungSaeuCS)
 * ^expansion.contains[=].code = #3
 * ^expansion.contains[=].display = "nicht mehr erforderlich"
-* ^expansion.contains[+].system = Canonical(SEU-AF-DurchfuehrungSaeuCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_DurchfuehrungSaeuCS)
 * ^expansion.contains[=].code = #4
 * ^expansion.contains[=].display = "verweigert"
 
-CodeSystem:  SEU-AF-VorstellungSchularztCS
-Id: SEU-AF-VorstellungSchularztCS
+CodeSystem:  SEU_UB_VorstellungSchularztCS
+Id: SEU-UB-VorstellungSchularztCS
 Title: "SEU Vorstellung Schularzt"
 * #1  "Ja"
 * #2  "Nein"
 * #3  "Teilnahme empfohlen (freiwillig)"
 
-ValueSet: SEU-AF-VorstellungSchularztVS
-Id: SEU-AF-VorstellungSchularztVS
+ValueSet: SEU_UB_VorstellungSchularztVS
+Id: SEU-UB-VorstellungSchularztVS
 Title: "SEU Vorstellung Schularzt"
 Description: "Diese Codes Angaben über die Vorstellung beim Schularzt"
-* include codes from system SEU-AF-VorstellungSchularztCS
+* include codes from system SEU_UB_VorstellungSchularztCS
 * ^expansion.timestamp = "2024-03-30T13:28:00+00:00"
-* ^expansion.contains[+].system = Canonical(SEU-AF-VorstellungSchularztCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_VorstellungSchularztCS)
 * ^expansion.contains[=].code = #1
 * ^expansion.contains[=].display = "Ja"
-* ^expansion.contains[+].system = Canonical(SEU-AF-VorstellungSchularztCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_VorstellungSchularztCS)
 * ^expansion.contains[=].code = #2
 * ^expansion.contains[=].display = "Nein"
-* ^expansion.contains[+].system = Canonical(SEU-AF-VorstellungSchularztCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_VorstellungSchularztCS)
 * ^expansion.contains[=].code = #3
 * ^expansion.contains[=].display = "Teilnahme empfohlen (freiwillig)"
 
-CodeSystem:  SEU-AF-WiedervorlageGrundCS
-Id: SEU-AF-WiedervorlageGrundCS
+CodeSystem:  SEU_UB_WiedervorlageGrundCS
+Id: SEU-UB-WiedervorlageGrundCS
 Title: "SEU Wiedervorlage Grund"
 * #1  "1. Mahnung"
 * #2  "2. Mahnung "
@@ -226,62 +226,62 @@ Title: "SEU Wiedervorlage Grund"
 * #7  "Mitteilungsbogen verschicken"
 * #8  "sonstiges"
 
-ValueSet: SEU-AF-WiedervorlageGrundVS
-Id: SEU-AF-WiedervorlageGrundVS
+ValueSet: SEU_UB_WiedervorlageGrundVS
+Id: SEU-UB-WiedervorlageGrundVS
 Title: "SEU Wiedervorlage Grund"
 Description: "Diese Codes enthalten Gründe für die Wiedervorlage der SEU"
-* include codes from system SEU-AF-WiedervorlageGrundCS
+* include codes from system SEU_UB_WiedervorlageGrundCS
 * ^expansion.timestamp = "2024-03-30T13:28:00+00:00"
-* ^expansion.contains[+].system = Canonical(SEU-AF-WiedervorlageGrundCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_WiedervorlageGrundCS)
 * ^expansion.contains[=].code = #1
 * ^expansion.contains[=].display = "1. Mahnung"
-* ^expansion.contains[+].system = Canonical(SEU-AF-WiedervorlageGrundCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_WiedervorlageGrundCS)
 * ^expansion.contains[=].code = #2
-* ^expansion.contains[=].display = "2. Mahnung "
-* ^expansion.contains[+].system = Canonical(SEU-AF-WiedervorlageGrundCS)
+* ^expansion.contains[=].display = "2. Mahnung"
+* ^expansion.contains[+].system = Canonical(SEU_UB_WiedervorlageGrundCS)
 * ^expansion.contains[=].code = #3
 * ^expansion.contains[=].display = "U8/U9 nachgereicht"
-* ^expansion.contains[+].system = Canonical(SEU-AF-WiedervorlageGrundCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_WiedervorlageGrundCS)
 * ^expansion.contains[=].code = #4
 * ^expansion.contains[=].display = "Einladung 1. SÄU"
-* ^expansion.contains[+].system = Canonical(SEU-AF-WiedervorlageGrundCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_WiedervorlageGrundCS)
 * ^expansion.contains[=].code = #5
 * ^expansion.contains[=].display = "Einladung 2. SÄU"
-* ^expansion.contains[+].system = Canonical(SEU-AF-WiedervorlageGrundCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_WiedervorlageGrundCS)
 * ^expansion.contains[=].code = #6
 * ^expansion.contains[=].display = "Meldung Jugendamt"
-* ^expansion.contains[+].system = Canonical(SEU-AF-WiedervorlageGrundCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_WiedervorlageGrundCS)
 * ^expansion.contains[=].code = #7
 * ^expansion.contains[=].display = "Mitteilungsbogen verschicken"
-* ^expansion.contains[+].system = Canonical(SEU-AF-WiedervorlageGrundCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_WiedervorlageGrundCS)
 * ^expansion.contains[=].code = #8
 * ^expansion.contains[=].display = "sonstiges"
 
-CodeSystem:  SEU-AF-BesonderheitenCS
-Id: SEU-AF-BesonderheitenCS
+CodeSystem:  SEU_UB_BesonderheitenCS
+Id: SEU-UB-BesonderheitenCS
 Title: "SEU Besonderheiten"
 * #1  "Kind vor Abschluss von rSEU/SEU in anderen LK/BL/Ausland verzogen"
 * #2  "Kind nach 1. Untersuchungsjahr zugezogen"
 * #3  "rSEU/SEU aus sonstigen Gründen nicht beendet"
 
-ValueSet: SEU-AF-BesonderheitenVS
-Id: SEU-AF-BesonderheitenVS
+ValueSet: SEU_UB_BesonderheitenVS
+Id: SEU-UB-BesonderheitenVS
 Title: "SEU Besonderheiten"
 Description: "Diese Codes enthalten Besonderheiten bei der SEU"
-* include codes from system SEU-AF-BesonderheitenCS
+* include codes from system SEU_UB_BesonderheitenCS
 * ^expansion.timestamp = "2024-03-30T13:28:00+00:00"
-* ^expansion.contains[+].system = Canonical(SEU-AF-BesonderheitenCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_BesonderheitenCS)
 * ^expansion.contains[=].code = #1
 * ^expansion.contains[=].display = "Kind vor Abschluss von rSEU/SEU in anderen LK/BL/Ausland verzogen"
-* ^expansion.contains[+].system = Canonical(SEU-AF-BesonderheitenCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_BesonderheitenCS)
 * ^expansion.contains[=].code = #2
 * ^expansion.contains[=].display = "Kind nach 1. Untersuchungsjahr zugezogen"
-* ^expansion.contains[+].system = Canonical(SEU-AF-BesonderheitenCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_BesonderheitenCS)
 * ^expansion.contains[=].code = #3
 * ^expansion.contains[=].display = "rSEU/SEU aus sonstigen Gründen nicht beendet"
 
-CodeSystem:  SEU-AF-UntersuchungsstatusCS
-Id: SEU-AF-UntersuchungsstatusCS
+CodeSystem:  SEU_UB_UntersuchungsstatusCS
+Id: SEU-UB-UntersuchungsstatusCS
 Title: "SEU Untersuchungsstatus"
 * #01 "untersucht"
 * #02 "untersucht für anderen LK"
@@ -298,51 +298,51 @@ Title: "SEU Untersuchungsstatus"
 * #19 "Verstorben"
 * #20 "nicht erschienen, nur nach Aktenlage"
 
-ValueSet: SEU-AF-UntersuchungsstatusVS
-Id: SEU-AF-UntersuchungsstatusVS
+ValueSet: SEU_UB_UntersuchungsstatusVS
+Id: SEU-UB-UntersuchungsstatusVS
 Title: "SEU Untersuchungsstatus"
 Description: "Diese Codes enthalten Untersuchungsstatus der SEU"
-* include codes from system SEU-AF-UntersuchungsstatusCS
+* include codes from system SEU_UB_UntersuchungsstatusCS
 * ^expansion.timestamp = "2024-03-30T13:28:00+00:00"
-* ^expansion.contains[+].system = Canonical(SEU-AF-UntersuchungsstatusCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_UntersuchungsstatusCS)
 * ^expansion.contains[=].code = #01
 * ^expansion.contains[=].display = "untersucht"
-* ^expansion.contains[+].system = Canonical(SEU-AF-UntersuchungsstatusCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_UntersuchungsstatusCS)
 * ^expansion.contains[=].code = #02
 * ^expansion.contains[=].display = "untersucht für anderen LK"
-* ^expansion.contains[+].system = Canonical(SEU-AF-UntersuchungsstatusCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_UntersuchungsstatusCS)
 * ^expansion.contains[=].code = #03
 * ^expansion.contains[=].display = "untersucht für anderes BL"
-* ^expansion.contains[+].system = Canonical(SEU-AF-UntersuchungsstatusCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_UntersuchungsstatusCS)
 * ^expansion.contains[=].code = #04
 * ^expansion.contains[=].display = "untersucht, Kind im Vorjahr zurückgestellt"
-* ^expansion.contains[+].system = Canonical(SEU-AF-UntersuchungsstatusCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_UntersuchungsstatusCS)
 * ^expansion.contains[=].code = #07
 * ^expansion.contains[=].display = "nicht erschienen, da verzogen"
-* ^expansion.contains[+].system = Canonical(SEU-AF-UntersuchungsstatusCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_UntersuchungsstatusCS)
 * ^expansion.contains[=].code = #08
 * ^expansion.contains[=].display = "nicht erschienen, weil Untersuchung in anderem LK"
-* ^expansion.contains[+].system = Canonical(SEU-AF-UntersuchungsstatusCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_UntersuchungsstatusCS)
 * ^expansion.contains[=].code = #09
 * ^expansion.contains[=].display = "nicht erschienen, weil Untersuchung in anderem BL"
-* ^expansion.contains[+].system = Canonical(SEU-AF-UntersuchungsstatusCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_UntersuchungsstatusCS)
 * ^expansion.contains[=].code = #10
 * ^expansion.contains[=].display = "nicht erschienen, amerikanische Basis/Nato/Europ. Patentamt"
-* ^expansion.contains[+].system = Canonical(SEU-AF-UntersuchungsstatusCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_UntersuchungsstatusCS)
 * ^expansion.contains[=].code = #11
 * ^expansion.contains[=].display = "nicht erschienen, lebt im Ausland"
-* ^expansion.contains[+].system = Canonical(SEU-AF-UntersuchungsstatusCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_UntersuchungsstatusCS)
 * ^expansion.contains[=].code = #12
 * ^expansion.contains[=].display = "nicht erschienen, da Adresse nicht ermittelbar"
-* ^expansion.contains[+].system = Canonical(SEU-AF-UntersuchungsstatusCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_UntersuchungsstatusCS)
 * ^expansion.contains[=].code = #13
 * ^expansion.contains[=].display = "nicht erschienen, bereits vor Screening zurückgestellt"
-* ^expansion.contains[+].system = Canonical(SEU-AF-UntersuchungsstatusCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_UntersuchungsstatusCS)
 * ^expansion.contains[=].code = #15
 * ^expansion.contains[=].display = "nicht erschienen, sonstige Gründe"
-* ^expansion.contains[+].system = Canonical(SEU-AF-UntersuchungsstatusCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_UntersuchungsstatusCS)
 * ^expansion.contains[=].code = #19
 * ^expansion.contains[=].display = "Verstorben"
-* ^expansion.contains[+].system = Canonical(SEU-AF-UntersuchungsstatusCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_UntersuchungsstatusCS)
 * ^expansion.contains[=].code = #20
 * ^expansion.contains[=].display = "nicht erschienen, nur nach Aktenlage"

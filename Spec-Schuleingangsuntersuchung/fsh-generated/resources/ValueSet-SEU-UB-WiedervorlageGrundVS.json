@@ -1,0 +1,62 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SEU_UB_WiedervorlageGrundVS",
+  "id": "SEU-UB-WiedervorlageGrundVS",
+  "title": "SEU Wiedervorlage Grund",
+  "description": "Diese Codes enthalten Gründe für die Wiedervorlage der SEU",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-WiedervorlageGrundVS",
+  "expansion": {
+    "timestamp": "2024-03-30T13:28:00+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-WiedervorlageGrundCS",
+        "code": "1",
+        "display": "1. Mahnung"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-WiedervorlageGrundCS",
+        "code": "2",
+        "display": "2. Mahnung "
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-WiedervorlageGrundCS",
+        "code": "3",
+        "display": "U8/U9 nachgereicht"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-WiedervorlageGrundCS",
+        "code": "4",
+        "display": "Einladung 1. SÄU"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-WiedervorlageGrundCS",
+        "code": "5",
+        "display": "Einladung 2. SÄU"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-WiedervorlageGrundCS",
+        "code": "6",
+        "display": "Meldung Jugendamt"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-WiedervorlageGrundCS",
+        "code": "7",
+        "display": "Mitteilungsbogen verschicken"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-WiedervorlageGrundCS",
+        "code": "8",
+        "display": "sonstiges"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-WiedervorlageGrundCS"
+      }
+    ]
+  }
+}

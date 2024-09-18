@@ -53,27 +53,27 @@ RuleSet: 8-af-schulaerztlicheuntersuchung
       * insert addSource(#DE-BY)
     * item[+] insert addItem(8.23, #string, [[Körperliche Befunde]])
       * insert addSource(#DE-BY)
-      * insert EnableWhenBoolean(8.22, =, true)
+      * insert enableWhenBoolean(8.22, =, true)
     * item[+] insert addItem(8.24, #choice, [[Verhaltensauffälligkeiten beim Kind]])
       * insert addSource(#DE-BY)
-      * answerValueSet = Canonical(SEU-AF-AntwortenSAeUntersuchungVS)
+      * answerValueSet = Canonical(SEU_UB_AntwortenSAeUntersuchungVS)
     * item[+] insert addItem(8.25, #boolean, [[Umgangs-/Erziehungsprobleme Mutter/Vater - Kind]])
       * insert addSource(#DE-BY)
-      * answerValueSet = Canonical(SEU-AF-AntwortenSAeUntersuchungVS)
+      * answerValueSet = Canonical(SEU_UB_AntwortenSAeUntersuchungVS)
     * item[+] insert addItem(8.26, #boolean, [[Verdacht auf Vernachlässigung (Kleidung, Pflegezustand, Verhalten)]])
       * insert addSource(#DE-BY)
-      * answerValueSet = Canonical(SEU-AF-AntwortenSAeUntersuchungVS)
+      * answerValueSet = Canonical(SEU_UB_AntwortenSAeUntersuchungVS)
     * item[+] insert addItem(8.27, #boolean, [[Schlechte Mundgesundheit (Massive Karies, Zahnverlust, etc.)]])
       * insert addSource(#DE-BY)
-      * answerValueSet = Canonical(SEU-AF-AntwortenSAeUntersuchungVS)
+      * answerValueSet = Canonical(SEU_UB_AntwortenSAeUntersuchungVS)
     * item[+] insert addItem(8.28, #boolean, [[Hämatome, Narben, Verletzungen an untypischen Stellen]])
       * insert addSource(#DE-BY)
-      * answerValueSet = Canonical(SEU-AF-AntwortenSAeUntersuchungVS)
+      * answerValueSet = Canonical(SEU_UB_AntwortenSAeUntersuchungVS)
     * item[+] insert addItem(8.29, #boolean, [[Impfungen wurden im Rahmen der 1. SÄU nachgeholt]])
       * insert addSource(#DE-BY)
     * item[+] insert addItem(8.30, #string, [[Nachgeholte Impfungen im Rahmen der 1. SÄU]])
       * insert addSource(#DE-BY)
-      * insert EnableWhenBoolean(8.29, =, true)
+      * insert enableWhenBoolean(8.29, =, true)
     * item[+] insert addItem(8.31, #boolean, [[weitere Abklärung körperl. Befunde durch Kinder-/Jugendarzt]])
       * insert addSource(#DE-BY)
     * item[+] insert addItem(8.32, #boolean, [[weitere Abklärung körperl. Befunde durch Augenarzt]])
@@ -124,22 +124,22 @@ RuleSet: 8-af-schulaerztlicheuntersuchung
       * insert addSource(#DE-BY)
       * item[+] insert addItem(8.50, #choice, [[Nonverbale Intelligenz (1. SÄU)]])
         * insert addSource(#DE-BY)
-        * answerValueSet = Canonical(SEU-AF-UntersuchungsergebnisseSAeUVS)
+        * answerValueSet = Canonical(SEU_UB_UntersuchungsergebnisseSAeUVS)
       * item[+] insert addItem(8.51, #choice, [[Visuomotorik (1. SÄU)]])
         * insert addSource(#DE-BY)
-        * answerValueSet = Canonical(SEU-AF-UntersuchungsergebnisseSAeUVS)
+        * answerValueSet = Canonical(SEU_UB_UntersuchungsergebnisseSAeUVS)
       * item[+] insert addItem(8.52, #choice, [[Mengen- und Zahlenvorwissen (1. SÄU)]])
         * insert addSource(#DE-BY)
-        * answerValueSet = Canonical(SEU-AF-UntersuchungsergebnisseSAeUVS)
+        * answerValueSet = Canonical(SEU_UB_UntersuchungsergebnisseSAeUVS)
       * item[+] insert addItem(8.53, #choice, [[Sprache (Grammatik, Verständnis, Wortschatz) (1. SÄU)]])
         * insert addSource(#DE-BY)
-        * answerValueSet = Canonical(SEU-AF-UntersuchungsergebnisseSAeUVS)
+        * answerValueSet = Canonical(SEU_UB_UntersuchungsergebnisseSAeUVS)
       * item[+] insert addItem(8.54, #choice, [[Sprechen (Lautbildung, Stottern, Stimme) (1. SÄU)]])
         * insert addSource(#DE-BY)
-        * answerValueSet = Canonical(SEU-AF-UntersuchungsergebnisseSAeUVS)
+        * answerValueSet = Canonical(SEU_UB_UntersuchungsergebnisseSAeUVS)
       * item[+] insert addItem(8.55, #choice, [[Körperkoordination (1. SÄU)]])
         * insert addSource(#DE-BY)
-        * answerValueSet = Canonical(SEU-AF-UntersuchungsergebnisseSAeUVS)
+        * answerValueSet = Canonical(SEU_UB_UntersuchungsergebnisseSAeUVS)
     * item[+] insert addGroup(8_3_4, Folgende Therapien/Fördermaßnahmen laufen bereits)
       * insert addSource(#DE-BY)
       * item[+] insert addItem(8.56, #boolean, [[Frühförderung]])
@@ -156,7 +156,7 @@ RuleSet: 8-af-schulaerztlicheuntersuchung
         * insert addSource(#DE-BY)
       * item[+] insert addItem(8.62, #string, [[Welche sonstige(s)]])
         * insert addSource(#DE-BY)
-        * insert EnableWhenBoolean(8.61, =, true)
+        * insert enableWhenBoolean(8.61, =, true)
       * item[+] insert addItem(8.63, #string, [[Anmerkungen intern (1. SÄU)]])
         * insert addSource(#DE-BY)
     * item[+] insert addGroup(8_3_5, Weitere Empfehlungen aus 1. Schulärztlicher Untersuchung zur Entwicklung)
@@ -167,8 +167,12 @@ RuleSet: 8-af-schulaerztlicheuntersuchung
         * insert addSource(#DE-BY)
       * item[+] insert addItem(8.66, #boolean, [[Rückstellung empfohlen]])
         * insert addSource(#DE-BY)
+        * item[+] insert addItemWithSource(8.66.1, #string, [[Begründung Rückstellung]], #DE-SN)
+          * insert enableWhenBoolean(8.66, =, true)
       * item[+] insert addItem(8.67, #boolean, [[Besuch Förderzentrum empfohlen]])
         * insert addSource(#DE-BY)
+        * item[+] insert addItemWithSource(8.67.1, #string, [[Begründung Besuch Förderzentrum]], #DE-SN)
+          * insert enableWhenBoolean(8.67, =, true)
       * item[+] insert addItem(8.68, #boolean, [[Sonstiges]])
         * insert addSource(#DE-BY)
       * item[+] insert addItem(8.69, #boolean, [[Befunde, die eine Relevanz für den Schulalltag haben]])
@@ -182,34 +186,34 @@ RuleSet: 8-af-schulaerztlicheuntersuchung
       * item[+] insert addItem(8.72, #boolean, [[med. Maßnahme ggf. erforderlich]])
         * insert addSource(#DE-BY)
 
-CodeSystem: SEU-AF-AntwortenSAeUntersuchungCS
-Id: SEU-AF-AntwortenSAeUntersuchungCS
+CodeSystem: SEU_UB_AntwortenSAeUntersuchungCS
+Id: SEU-UB-AntwortenSAeUntersuchungCS
 Title: "SEU Antworten schulärztliche Untersuchung"
 * #1 "ja"
 * #2 "nein"
 * #3 "nicht beurteilbar"
 * #4 "nicht überprüft"
 
-ValueSet: SEU-AF-AntwortenSAeUntersuchungVS
-Id: SEU-AF-AntwortenSAeUntersuchungVS
+ValueSet: SEU_UB_AntwortenSAeUntersuchungVS
+Id: SEU-UB-AntwortenSAeUntersuchungVS
 Title: "SEU Antworten schulärztliche Untersuchung"
 Description: "Diese Codes enthalten die Antworten Fragen der schulärztlichen Untersuchung"
-* include codes from system SEU-AF-AntwortenSAeUntersuchungCS
-* ^expansion.contains[+].system = Canonical(SEU-AF-AntwortenSAeUntersuchungCS)
+* include codes from system SEU_UB_AntwortenSAeUntersuchungCS
+* ^expansion.contains[+].system = Canonical(SEU_UB_AntwortenSAeUntersuchungCS)
 * ^expansion.contains[=].code = #1
 * ^expansion.contains[=].display = "ja"
-* ^expansion.contains[+].system = Canonical(SEU-AF-AntwortenSAeUntersuchungCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_AntwortenSAeUntersuchungCS)
 * ^expansion.contains[=].code = #2
 * ^expansion.contains[=].display = "nein"
-* ^expansion.contains[+].system = Canonical(SEU-AF-AntwortenSAeUntersuchungCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_AntwortenSAeUntersuchungCS)
 * ^expansion.contains[=].code = #3
 * ^expansion.contains[=].display = "nicht beurteilbar"
-* ^expansion.contains[+].system = Canonical(SEU-AF-AntwortenSAeUntersuchungCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_AntwortenSAeUntersuchungCS)
 * ^expansion.contains[=].code = #4
 * ^expansion.contains[=].display = "nicht überprüft"
 
-CodeSystem: SEU-AF-UntersuchungsergebnisseSAeUCS
-Id: SEU-AF-UntersuchungsergebnisseSAeUCS
+CodeSystem: SEU_UB_UntersuchungsergebnisseSAeUCS
+Id: SEU-UB-UntersuchungsergebnisseSAeUCS
 Title: "SEU Untersuchungsergebnisse SÄU"
 * #01 "unauffälliger Befund"
 * #02 "Abklärung beim Kinder-/Jugendarzt"
@@ -222,38 +226,38 @@ Title: "SEU Untersuchungsergebnisse SÄU"
 * #09 "Testbereich nicht beurteilbar"
 * #10 "Testbereich nicht überprüft"
 
-ValueSet: SEU-AF-UntersuchungsergebnisseSAeUVS
-Id: SEU-AF-UntersuchungsergebnisseSAeUVS
+ValueSet: SEU_UB_UntersuchungsergebnisseSAeUVS
+Id: SEU-UB-UntersuchungsergebnisseSAeUVS
 Title: "SEU Untersuchungsergebnisse SÄU"
 Description: "Diese Codes enthalten Untersuchungsergebnisse der SÄU"
-* include codes from system SEU-AF-UntersuchungsergebnisseSAeUCS
-* ^expansion.contains[+].system = Canonical(SEU-AF-UntersuchungsergebnisseSAeUCS)
+* include codes from system SEU_UB_UntersuchungsergebnisseSAeUCS
+* ^expansion.contains[+].system = Canonical(SEU_UB_UntersuchungsergebnisseSAeUCS)
 * ^expansion.contains[=].code = #01
 * ^expansion.contains[=].display = "unauffälliger Befund"
-* ^expansion.contains[+].system = Canonical(SEU-AF-UntersuchungsergebnisseSAeUCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_UntersuchungsergebnisseSAeUCS)
 * ^expansion.contains[=].code = #02
 * ^expansion.contains[=].display = "Abklärung beim Kinder-/Jugendarzt"
-* ^expansion.contains[+].system = Canonical(SEU-AF-UntersuchungsergebnisseSAeUCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_UntersuchungsergebnisseSAeUCS)
 * ^expansion.contains[=].code = #03
 * ^expansion.contains[=].display = "Abklärung durch sonstigen Facharzt"
-* ^expansion.contains[+].system = Canonical(SEU-AF-UntersuchungsergebnisseSAeUCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_UntersuchungsergebnisseSAeUCS)
 * ^expansion.contains[=].code = #04
 * ^expansion.contains[=].display = "Abklärung Frühförderstelle"
-* ^expansion.contains[+].system = Canonical(SEU-AF-UntersuchungsergebnisseSAeUCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_UntersuchungsergebnisseSAeUCS)
 * ^expansion.contains[=].code = #05
 * ^expansion.contains[=].display = "häusliche Förderung ausreichend"
-* ^expansion.contains[+].system = Canonical(SEU-AF-UntersuchungsergebnisseSAeUCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_UntersuchungsergebnisseSAeUCS)
 * ^expansion.contains[=].code = #06
 * ^expansion.contains[=].display = "Teilnahme Vorkurs Deutsch empfohlen"
-* ^expansion.contains[+].system = Canonical(SEU-AF-UntersuchungsergebnisseSAeUCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_UntersuchungsergebnisseSAeUCS)
 * ^expansion.contains[=].code = #07
 * ^expansion.contains[=].display = "Kind ist wegen des Befundes bereits in Behandlung"
-* ^expansion.contains[+].system = Canonical(SEU-AF-UntersuchungsergebnisseSAeUCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_UntersuchungsergebnisseSAeUCS)
 * ^expansion.contains[=].code = #08
 * ^expansion.contains[=].display = "Behinderung bzw. dauerhafte Schädigung des Kindes"
-* ^expansion.contains[+].system = Canonical(SEU-AF-UntersuchungsergebnisseSAeUCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_UntersuchungsergebnisseSAeUCS)
 * ^expansion.contains[=].code = #09
 * ^expansion.contains[=].display = "Testbereich nicht beurteilbar"
-* ^expansion.contains[+].system = Canonical(SEU-AF-UntersuchungsergebnisseSAeUCS)
+* ^expansion.contains[+].system = Canonical(SEU_UB_UntersuchungsergebnisseSAeUCS)
 * ^expansion.contains[=].code = #10
 * ^expansion.contains[=].display = "Testbereich nicht überprüft"

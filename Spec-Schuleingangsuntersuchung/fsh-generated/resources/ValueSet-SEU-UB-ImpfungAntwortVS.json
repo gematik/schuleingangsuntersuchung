@@ -1,0 +1,42 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SEU_UB_ImpfungAntwortVS",
+  "id": "SEU-UB-ImpfungAntwortVS",
+  "title": "SEU Impfung Antwort",
+  "description": "Diese Codes enthalten allgemeine Angaben über den Status einer Impfung",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-ImpfungAntwortVS",
+  "expansion": {
+    "timestamp": "2024-03-30T13:28:00+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-ImpfungAntwortCS",
+        "code": "0",
+        "display": "keine Impfung"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-ImpfungAntwortCS",
+        "code": "1",
+        "display": "Grundimmunisierung unvollständig"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-ImpfungAntwortCS",
+        "code": "2",
+        "display": "Grundimmunisierung abgeschlossen (ohne Auffrischung)"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-ImpfungAntwortCS",
+        "code": "3",
+        "display": "Grundimmunisierung abgeschlossen und 1+ Auffrischung"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-ImpfungAntwortCS"
+      }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SEU_UB_BesonderheitenVS",
+  "id": "SEU-UB-BesonderheitenVS",
+  "title": "SEU Besonderheiten",
+  "description": "Diese Codes enthalten Besonderheiten bei der SEU",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-BesonderheitenVS",
+  "expansion": {
+    "timestamp": "2024-03-30T13:28:00+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-BesonderheitenCS",
+        "code": "1",
+        "display": "Kind vor Abschluss von rSEU/SEU in anderen LK/BL/Ausland verzogen"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-BesonderheitenCS",
+        "code": "2",
+        "display": "Kind nach 1. Untersuchungsjahr zugezogen"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-BesonderheitenCS",
+        "code": "3",
+        "display": "rSEU/SEU aus sonstigen Gründen nicht beendet"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-BesonderheitenCS"
+      }
+    ]
+  }
+}

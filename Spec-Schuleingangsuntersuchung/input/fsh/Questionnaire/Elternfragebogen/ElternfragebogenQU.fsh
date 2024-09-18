@@ -7,7 +7,7 @@ Description: "Elternbefragung"
 * contained[+] = DeuevAnlage8LaenderkennzeichenVS
 * contained[+] = LebtBeiVS
 * contained[+] = GenderDEVS
-* contained[+] = SEU-AF-AuswaehlbareElternspracheVS
+* contained[+] = SEU_UB_AuswaehlbareElternspracheVS
 * contained[+] = ChronischeErkrankungenVS
 * contained[+] = JaNeinAngemeldetVS
 * contained[+] = RechtsLinksHaenderVS
@@ -85,11 +85,13 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItem(1.11, #string, Straße)
   * item[+]
+    * insert addItem(1.11a, #string, Hausnummer)
+  * item[+]
     * insert addItem(1.12, #choice, Kind lebt hauptsächlich bei)
     * answerValueSet = Canonical(LebtBeiVS)
   * item[+]
     * insert addItem(1.12.1, #string, Kind lebt hauptsächlich bei)
-    * insert EnableWhenCode(1.12, =, LebtBeiCS, andere)
+    * insert enableWhenCode(1.12, =, LebtBeiCS, andere)
 //********************************************
 // Personenbezogene Daten Personenberechtigter
 * item[+]
@@ -121,7 +123,7 @@ Description: "Elternbefragung"
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
     * insert addItem(2.10, #choice, Herkunftsland)
   * item[+]
-    * answerValueSet = Canonical(SEU-AF-AuswaehlbareElternspracheVS)
+    * answerValueSet = Canonical(SEU_UB_AuswaehlbareElternspracheVS)
     * insert addItem(2.11, #choice, Muttersprache)
   * item[+]
     * insert addItem(2.12, #date, Geburtsdatum)
@@ -157,17 +159,17 @@ Description: "Elternbefragung"
       * answerValueSet = Canonical(ChronischeKrankheitenVS)
       * insert addItem(3.2.5, #choice, Chronische Erkrankung)
       * item[+]
-        * insert EnableWhenCode(3.2.5, =, ChronischeKrankheiten, sonstiges)
+        * insert enableWhenCode(3.2.5, =, ChronischeKrankheiten, sonstiges)
         * insert addItem(3.2.5.1, #string, [[Welche sonstige(n) chronischen Erkrankung(en)?]])
     * item[+]
       * insert addItem(3.2.6, #boolean, [[Hat Ihr Kind eine körperliche, geistige oder seelische Behinderung?]])
       * item[+]
-        * insert EnableWhenBoolean(3.2.6, =, true)
+        * insert enableWhenBoolean(3.2.6, =, true)
         * insert addItem(3.2.6.1, #string, Welche Behinderung?)
     * item[+]
       * insert addItem(3.2.7, #boolean, Schilddrüsenerkrankung)
       * item[+]
-        * insert EnableWhenBoolean(3.2.7, =, true)
+        * insert enableWhenBoolean(3.2.7, =, true)
         * insert addItem(3.2.6.1, #string, Welche Schilddrüsenerkrankung?)        
 //********************************************
 // Kinderbetreuung
@@ -190,7 +192,13 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItem(4.6, #string, Name des Kindergartens)
     * enableWhen[+]
-      * question = "4.5"
+      * question = "4.0b"
+      * operator = #=
+      * answerBoolean = true
+  * item[+]
+    * insert addItemWithSource(4.6a, #string, Anschrift des Kindergartens, #DE-SN)
+    * enableWhen[+]
+      * question = "4.0b"
       * operator = #=
       * answerBoolean = true
   * item[+]
@@ -201,6 +209,8 @@ Description: "Elternbefragung"
       * question = "4.7"
       * operator = #=
       * answerBoolean = true
+  * item[+]
+    * insert addItemWithSource(4.9, #date, [[Seit wann besucht das Kind eine KITA?]], #DE-SN)
 //********************************************
 // Schwangerschaft und Geburt
 * item[+]
@@ -220,12 +230,12 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItem(5.5, #boolean, [[Auffälligkeit bei der Geburt]])
     * item[+]
-      * insert EnableWhenBoolean(5.5, =, true)
+      * insert enableWhenBoolean(5.5, =, true)
       * insert addItem(5.5.1, #string, [[Welche Auffälligkeit?]])
   * item[+]
     * insert addItem(5.6, #boolean, [[Auffälligkeit/Krankheit in der Schwangerschaft]])
     * item[+]
-      * insert EnableWhenBoolean(5.6, =, true)
+      * insert enableWhenBoolean(5.6, =, true)
       * insert addItem(5.6.1, #string, [[Welche Auffälligkeit?]])
   * item[+]
     * insert addItem(5.7, #integer, [[Stillzeit in Monaten]])
@@ -234,7 +244,7 @@ Description: "Elternbefragung"
 * item[+]
   * insert addItem(6, #group, [[Sprache]])
   * item[+]
-    * answerValueSet = Canonical(SEU-AF-AuswaehlbareElternspracheVS)
+    * answerValueSet = Canonical(SEU_UB_AuswaehlbareElternspracheVS)
     * insert addItem(6.1, #choice, [[Welche Sprachen werden Zuhause gesprochen?]])
     * repeats = true
   * item[+]
@@ -242,13 +252,16 @@ Description: "Elternbefragung"
     * insert addItem(6.1a, #choice, [[Welche Sprachen wurden mit dem Kind in den ersten 4 Lebensjahren überwiegend gesprochen?]])
     * repeats = true    
   * item[+]
-    * answerValueSet = Canonical(SEU-AF-AuswaehlbareElternspracheVS)
+    * answerValueSet = Canonical(SEU_UB_AuswaehlbareElternspracheVS)
     * insert addItem(6.2, #choice, [[Muttersprache des Kindes]])
   * item[+]
     * answerValueSet = Canonical(JaNeinAngemeldetVS)
     * insert addItem(6.3, #choice, [[Teilnahme des Kindes an einem Deutschkurs]])
   * item[+]
     * insert addItem(6.4, #boolean, [[Sprachauffälligkeiten]])
+    * item[+]
+      * insert addItem(6.4.1, #string, [[Welche Sprachauffälligkeiten]])
+      * insert enableWhenBoolean(6.4, =, true)
   * item[+]
     * insert addItem(6.5, #boolean, [[Kontakt zu Deutschsprechenden seit Geburt?]])
   * item[+]
@@ -303,6 +316,9 @@ Description: "Elternbefragung"
     * insert addItem(7.11, #open-choice, [[Auffälligkeit des Verhaltens]])
   * item[+]
     * insert addItem(7.12, #boolean, [[Sorgen Sie sich um die Entwicklung ihres Kindes?]])
+    * item[+]
+      * insert addItem(7.12.1, #string, [[Welche Sorgen]])
+      * insert enableWhenBoolean(7.12, =, true)
 //********************************************
 // Erkrankungen und gesundheitliche Einschränkungen
 * item[+]
@@ -317,8 +333,14 @@ Description: "Elternbefragung"
       * answerBoolean = true
   * item[+]
     * insert addItem(8.3, #boolean, [[Sehstörung vorhanden?]])
+    * item[+]
+      * insert addItem(8.3.1, #string, [[Welche Sehstörung]])
+      * insert enableWhenBoolean(8.3, =, true)
   * item[+]
     * insert addItem(8.4, #boolean, [[Sprachstörung vorhanden?]])
+    * item[+]
+      * insert addItem(8.4.1, #string, [[Welche Sprachstörung]])
+      * insert enableWhenBoolean(8.4, =, true)
   * item[+]
     * insert addItem(8.5, #boolean, [[Schielbehandlung?]])
   * item[+]
@@ -329,6 +351,9 @@ Description: "Elternbefragung"
     * insert addItem(8.8, #date, [[Letzte Untersuchung beim Zahnarzt?]])
   * item[+]
     * insert addItem(8.9, #boolean, [[Schwere Hörstörung vorhanden?]])
+    * item[+]
+      * insert addItem(8.9.1, #string, [[Welche Hörstörung]])
+      * insert enableWhenBoolean(8.9, =, true)
   * item[+]
     * insert addItem(8.9.G, #group, [[Details: Angeborene schwere Hörstörung]])
     * enableWhen[+]
@@ -389,7 +414,7 @@ Description: "Elternbefragung"
     * insert addItem(8.14, #boolean, [[Chronische Erkrankung vorhanden]])
     * item[+]
       * insert addItem(8.14.1, #string, [[Welche Erkrankung?]])
-      * insert EnableWhenBoolean(8.14, =, true)
+      * insert enableWhenBoolean(8.14, =, true)
       * repeats = true 
   * item[+]
     * insert addItemWithSource(8.14b, #text, [[Bisher durchgemachte Erkrankungen, bspw. Windpocken oder Masern. Zeitlich nicht bestimmt]], #DE-BW)    
@@ -399,14 +424,14 @@ Description: "Elternbefragung"
     * insert addItem(8.15, #boolean, [[Krankenhausaufenthalt]])
     * item[+]
       * insert addItem(8.15.1, #string, [[Detaillierte Angaben zum Krankenhausaufenthalt?]])
-      * insert EnableWhenBoolean(8.15, =, true)
+      * insert enableWhenBoolean(8.15, =, true)
   * item[+]
     * insert addItem(8.16, #boolean, [[Allergietest]])
   * item[+]
     * answerValueSet = Canonical(AtopischeErkrankungenVS)  
     * insert addItem(8.16a, #choice, [[Besitzt Ihr Kind Allergien?]])
     * item[+]
-      * insert EnableWhenCode(8.16a, =, AtopischeErkrankungenCS, sonstiges)
+      * insert enableWhenCode(8.16a, =, AtopischeErkrankungenCS, sonstiges)
       * insert addItem(8.16a.1, #string, [[Welche sonstigen Allergien?]])  
   * item[+]
     * insert addItem(8.17, #boolean, [[Entwicklungsdiagnostik]])
@@ -421,7 +446,7 @@ Description: "Elternbefragung"
     * insert addItem(8.21, #boolean, [[Schwere Behinderung vorhanden?]])
   * item[+]
     * insert addGroup(8.21.g, [[Details Behinderung]])
-    * insert EnableWhenBoolean(8.21, =, true)
+    * insert enableWhenBoolean(8.21, =, true)
     * item[+]
       * insert addItem(8.21.g.1, #text, [[Welche Behinderung]])
     * item[+]
@@ -429,19 +454,19 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItem(8.23, #boolean, [[Regelmäßige Medikamenteneinnahme]])
   * item[+]
-    * insert EnableWhenBoolean(8.23, =, true)
+    * insert enableWhenBoolean(8.23, =, true)
     * insert addItem(8.23.1, #string, [[Welches Medikament]])   
     * repeats = true
   * item[+]
     * insert addItem(8.24, #boolean, [[Medikamenteneinnahme in der Schulzeit?]])
   * item[+]
-    * insert EnableWhenBoolean(8.24, =, true)
+    * insert enableWhenBoolean(8.24, =, true)
     * insert addItem(8.24.1, #text, [[Welches Medikament]])
     * repeats = true
   * item[+]
     * insert addItem(8.25, #boolean, [[Eine Erkrankung, die in einer Notfallsituation beachtet werden muss]])
   * item[+]
-    * insert EnableWhenBoolean(8.25, =, true)
+    * insert enableWhenBoolean(8.25, =, true)
     * insert addItem(8.25.1, #text, [[Welche Erkrankung]])
     * repeats = true
   * item[+]
@@ -450,7 +475,7 @@ Description: "Elternbefragung"
     * insert addItem(8.27, #boolean, [[Wurde ihr Kind operiert]])
     * item[+]
       * insert addItem(8.27.1, #choice, [[Wie fand die Operation statt?]])
-      * insert EnableWhenBoolean(8.27, =, true)
+      * insert enableWhenBoolean(8.27, =, true)
       * answerValueSet = Canonical(VersorgungsartVS)
   * item[+]
     * insert addItem(8.28.g, #group, [[Hatte ihr Kinde einen Unfall]])
@@ -467,7 +492,7 @@ Description: "Elternbefragung"
     * answerValueSet = Canonical(AllgemeineBeschwerdenVS)
     * item[+]
       * insert addItem(8.29.1, #string, [[Welche sonstige Befindlichkeitstörung?]])
-      * insert EnableWhenCode(8.29, =, AllgemeineBeschwerdenCS, sonstige)
+      * insert enableWhenCode(8.29, =, AllgemeineBeschwerdenCS, sonstige)
 //********************************************
 // Förderungen
 * item[+]
@@ -477,71 +502,75 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItem(9.1a, #boolean, [[Ist Ihr Kind zurzeit in Therapie (z.B. Logopädie-, Ergotherapie, Psychotherapie, Krankengymnastik)?]])    
   * item[+]
-    * insert addItem(9.2, #choice, [[Sprachtherapie]])
-    * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
-  * item[+]
-    * insert addItemWithSource(9.2a, #choice, [[Sprachförderung]], #DE-BW)
-    * answerValueSet = Canonical(JaNeinWartelisteVS)
+    * insert addGroup(9.1a.g, Therapien)
+    * insert enableWhenBoolean(9.1a, =, true)
+    * insert addSource(#DE-SN)
     * item[+]
-      * insert addItemWithSource(9.2a.1, #date, [[Begonnen]], #DE-BW)
-      * insert EnableWhenCode(9.2a, =, ExpandedYesNoIndicator, Y)
+      * insert addItem(9.2, #choice, [[Sprachtherapie]])
+      * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
     * item[+]
-      * insert addItemWithSource(9.2a.2, #date, [[Beendet]], #DE-BW)
-      * insert EnableWhenCode(9.2a, =, ExpandedYesNoIndicator, Y)
-  * item[+]
-    * insert addItemWithSource(9.2b, #choice, [[Logopädie]], #DE-BW)
-    * answerValueSet = Canonical(JaNeinWartelisteVS)
+      * insert addItemWithSource(9.2a, #choice, [[Sprachförderung]], #DE-BW)
+      * answerValueSet = Canonical(JaNeinWartelisteVS)
+      * item[+]
+        * insert addItemWithSource(9.2a.1, #date, [[Begonnen]], #DE-BW)
+        * insert enableWhenCode(9.2a, =, ExpandedYesNoIndicator, Y)
+      * item[+]
+        * insert addItemWithSource(9.2a.2, #date, [[Beendet]], #DE-BW)
+        * insert enableWhenCode(9.2a, =, ExpandedYesNoIndicator, Y)
     * item[+]
-      * insert addItemWithSource(9.2b.1, #date, [[Begonnen]], #DE-BW)
-      * insert EnableWhenCode(9.2b, =, ExpandedYesNoIndicator, Y)
+      * insert addItemWithSource(9.2b, #choice, [[Logopädie]], #DE-BW)
+      * answerValueSet = Canonical(JaNeinWartelisteVS)
+      * item[+]
+        * insert addItemWithSource(9.2b.1, #date, [[Begonnen]], #DE-BW)
+        * insert enableWhenCode(9.2b, =, ExpandedYesNoIndicator, Y)
+      * item[+]
+        * insert addItemWithSource(9.2b.2, #date, [[Beendet]], #DE-BW)
+        * insert enableWhenCode(9.2b, =, ExpandedYesNoIndicator, Y)
     * item[+]
-      * insert addItemWithSource(9.2b.2, #date, [[Beendet]], #DE-BW)
-      * insert EnableWhenCode(9.2b, =, ExpandedYesNoIndicator, Y)
-  * item[+]
-    * insert addItemWithSource(9.2c, #choice, [[Ergotherapie]], #DE-BW)
-    * answerValueSet = Canonical(JaNeinWartelisteVS)
+      * insert addItemWithSource(9.2c, #choice, [[Ergotherapie]], #DE-BW)
+      * answerValueSet = Canonical(JaNeinWartelisteVS)
+      * item[+]
+        * insert addItemWithSource(9.2c.1, #date, [[Begonnen]], #DE-BW)
+        * insert enableWhenCode(9.2c, =, ExpandedYesNoIndicator, Y)
+      * item[+]
+        * insert addItemWithSource(9.2c.2, #date, [[Beendet]], #DE-BW)
+        * insert enableWhenCode(9.2c, =, ExpandedYesNoIndicator, Y) 
     * item[+]
-      * insert addItemWithSource(9.2c.1, #date, [[Begonnen]], #DE-BW)
-      * insert EnableWhenCode(9.2c, =, ExpandedYesNoIndicator, Y)
+      * insert addItemWithSource(9.2d, #choice, [[Psychotherapie]], #DE-BW)
+      * answerValueSet = Canonical(JaNeinWartelisteVS)
+      * item[+]
+        * insert addItemWithSource(9.2d.1, #date, [[Begonnen]], #DE-BW)
+        * insert enableWhenCode(9.2d, =, ExpandedYesNoIndicator, Y)
+      * item[+]
+        * insert addItemWithSource(9.2d.2, #date, [[Beendet]], #DE-BW)
+        * insert enableWhenCode(9.2d, =, ExpandedYesNoIndicator, Y)
     * item[+]
-      * insert addItemWithSource(9.2c.2, #date, [[Beendet]], #DE-BW)
-      * insert EnableWhenCode(9.2c, =, ExpandedYesNoIndicator, Y) 
-  * item[+]
-    * insert addItemWithSource(9.2d, #choice, [[Psychotherapie]], #DE-BW)
-    * answerValueSet = Canonical(JaNeinWartelisteVS)
+      * insert addItemWithSource(9.2e, #choice, [[Andere]], #DE-BW)
+      * answerValueSet = Canonical(JaNeinWartelisteVS)
+      * item[+]
+        * insert addItemWithSource(9.2e.1, #date, [[Begonnen]], #DE-BW)
+        * insert enableWhenCode(9.2e, =, ExpandedYesNoIndicator, Y)
+      * item[+]
+        * insert addItemWithSource(9.2e.2, #date, [[Beendet]], #DE-BW)
+        * insert enableWhenCode(9.2e, =, ExpandedYesNoIndicator, Y)
     * item[+]
-      * insert addItemWithSource(9.2d.1, #date, [[Begonnen]], #DE-BW)
-      * insert EnableWhenCode(9.2d, =, ExpandedYesNoIndicator, Y)
+      * insert addItem(9.3, #choice, [[Frühförderung]])
+      * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
     * item[+]
-      * insert addItemWithSource(9.2d.2, #date, [[Beendet]], #DE-BW)
-      * insert EnableWhenCode(9.2d, =, ExpandedYesNoIndicator, Y)
-  * item[+]
-    * insert addItemWithSource(9.2e, #choice, [[Andere]], #DE-BW)
-    * answerValueSet = Canonical(JaNeinWartelisteVS)
+      * insert addItem(9.4, #choice, [[Ergotherapie]])
+      * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
     * item[+]
-      * insert addItemWithSource(9.2e.1, #date, [[Begonnen]], #DE-BW)
-      * insert EnableWhenCode(9.2e, =, ExpandedYesNoIndicator, Y)
+      * insert addItem(9.5, #choice, [[Psychomotorik]])
+      * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
     * item[+]
-      * insert addItemWithSource(9.2e.2, #date, [[Beendet]], #DE-BW)
-      * insert EnableWhenCode(9.2e, =, ExpandedYesNoIndicator, Y)
-  * item[+]
-    * insert addItem(9.3, #choice, [[Frühförderung]])
-    * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
-  * item[+]
-    * insert addItem(9.4, #choice, [[Ergotherapie]])
-    * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
-  * item[+]
-    * insert addItem(9.5, #choice, [[Psychomotorik]])
-    * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
-  * item[+]
-    * insert addItem(9.6, #choice, [[Physiotherapie]])
-    * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
-  * item[+]
-    * insert addItem(9.7, #choice, [[Psychologische Erziehungsberatung]])
-    * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
-  * item[+]
-    * insert addItem(9.8, #choice, [[Krankengymnastik]])
-    * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
+      * insert addItem(9.6, #choice, [[Physiotherapie]])
+      * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
+    * item[+]
+      * insert addItem(9.7, #choice, [[Psychologische Erziehungsberatung]])
+      * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
+    * item[+]
+      * insert addItem(9.8, #choice, [[Krankengymnastik]])
+      * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
   * item[+]
     * insert addItem(9.9, #choice, [[Integrative Betreuung]])
     * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
@@ -603,7 +632,7 @@ Description: "Elternbefragung"
     * insert addItem(12.7, #boolean, Regelmäßig Sport)
   * item[+]
     * insert addItem(12.8, #text, Sportart und Verein)
-    * insert EnableWhenBoolean(12.7, =, true)
+    * insert enableWhenBoolean(12.7, =, true)
   * item[+]
     * insert addItem(12.9, #boolean, Schwimmfähig)
   * item[+]
@@ -629,7 +658,7 @@ Description: "Elternbefragung"
     * answerValueSet = Canonical(ErwerbsstatusVS)
   * item[+]
     * insert addItem(13.5.1, #text, Grund der Erwerbslosigkeit)
-    * insert EnableWhenCode(13.5, =, ErwerbsstatusCS, nicht_erwerbstaetig)
+    * insert enableWhenCode(13.5, =, ErwerbsstatusCS, nicht_erwerbstaetig)
   * item[+]
     * insert addItemWithSource(13.5a, #choice, Berufstätigkeit 1. Elternteil, #DE-BW)
     * answerValueSet = Canonical(ErwerbsstatusInclSonstigesVS)  
@@ -638,7 +667,7 @@ Description: "Elternbefragung"
     * answerValueSet = Canonical(ErwerbsstatusVS)
   * item[+]
     * insert addItem(13.6.1, #text, Grund der Erwerbslosigkeit)
-    * insert EnableWhenCode(13.6, =, ErwerbsstatusCS, nicht_erwerbstaetig)
+    * insert enableWhenCode(13.6, =, ErwerbsstatusCS, nicht_erwerbstaetig)
   * item[+]
     * insert addItemWithSource(13.6a, #choice, Berufstätigkeit 1. Elternteil, #DE-BW)
     * answerValueSet = Canonical(ErwerbsstatusInclSonstigesVS) 

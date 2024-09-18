@@ -1,0 +1,66 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SEU_UB_AntwortAugenarztVS",
+  "id": "SEU-UB-AntwortAugenarztVS",
+  "title": "SEU Antwort Augenarzt",
+  "description": "Diese Codes enthalten die Antworten auf Fragen zu einer Augenarztuntersuchung",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-AntwortAugenarztVS",
+  "expansion": {
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-AntwortAugenarztCS",
+        "code": "1",
+        "display": "unauffälliger Befund"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-AntwortAugenarztCS",
+        "code": "2",
+        "display": "Kurzsichtigkeit (Myopie)"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-AntwortAugenarztCS",
+        "code": "3",
+        "display": "Weitsichtigkeit (Hyperopie)"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-AntwortAugenarztCS",
+        "code": "4",
+        "display": "Schielen"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-AntwortAugenarztCS",
+        "code": "5",
+        "display": "Verordnung Brille"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-AntwortAugenarztCS",
+        "code": "6",
+        "display": "Verordnung Brille bei Myopie"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-AntwortAugenarztCS",
+        "code": "7",
+        "display": "Verodnung Brille bei Hyperopie"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-AntwortAugenarztCS",
+        "code": "8",
+        "display": "Verordnung Brille bei Schielen"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-AntwortAugenarztCS",
+        "code": "9",
+        "display": "keine Angaben"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-AntwortAugenarztCS"
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU_UB_AntwortenSAeUntersuchungCS",
+  "id": "SEU-UB-AntwortenSAeUntersuchungCS",
+  "title": "SEU Antworten schulärztliche Untersuchung",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-AntwortenSAeUntersuchungCS",
+  "concept": [
+    {
+      "code": "1",
+      "display": "ja"
+    },
+    {
+      "code": "2",
+      "display": "nein"
+    },
+    {
+      "code": "3",
+      "display": "nicht beurteilbar"
+    },
+    {
+      "code": "4",
+      "display": "nicht überprüft"
+    }
+  ],
+  "count": 4
+}

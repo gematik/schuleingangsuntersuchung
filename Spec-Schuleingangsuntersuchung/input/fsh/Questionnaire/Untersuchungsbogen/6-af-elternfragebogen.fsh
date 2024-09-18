@@ -4,7 +4,7 @@ RuleSet: 6-af-elternfragebogen
     * insert addSource(#DE-BY)
   * item[+] insert addGroup(6_1, Elternfragebogen)
     * insert addSource(#DE-BY)
-    * insert EnableWhenBoolean(6.1, !=, true)
+    * insert enableWhenBoolean(6.1, !=, true)
     * item[+] insert addItem(6.2, #date, [[Ausfülldatum E-FB]])
       * insert addSource(#DE-BY)
     * item[+] insert addItem(6.3, #boolean, [[Gesamtergebnis EFB (gemäß Gesamtpunktzahl) auffällig]])

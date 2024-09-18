@@ -1,0 +1,51 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SEU_UB_SchulabschlussVS",
+  "id": "SEU-UB-SchulabschlussVS",
+  "title": "SEU Schulabschluss",
+  "description": "Diese Codes enthalten Angaben zum Schulabschluss",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-SchulabschlussVS",
+  "expansion": {
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-SchulabschlussCS",
+        "code": "1",
+        "display": "(noch) kein Schulabschluss"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-SchulabschlussCS",
+        "code": "2",
+        "display": "Haupt-/Volks-/Mittelschulabschluss/Quali"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-SchulabschlussCS",
+        "code": "3",
+        "display": "Realschulabschluss (Mittlere Reife)"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-SchulabschlussCS",
+        "code": "4",
+        "display": "allgemeine/fachgebundene Hochschulreife"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-SchulabschlussCS",
+        "code": "5",
+        "display": "Hochschul-/Universitätsabschluss"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-SchulabschlussCS",
+        "code": "9",
+        "display": "keine Angaben"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-SchulabschlussCS"
+      }
+    ]
+  }
+}

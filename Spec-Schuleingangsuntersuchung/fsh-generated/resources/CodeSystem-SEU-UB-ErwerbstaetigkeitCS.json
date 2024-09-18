@@ -1,0 +1,45 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU_UB_ErwerbstaetigkeitCS",
+  "id": "SEU-UB-ErwerbstaetigkeitCS",
+  "title": "SEU Erwerbstätigkeit",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-ErwerbstaetigkeitCS",
+  "concept": [
+    {
+      "code": "1",
+      "display": "vollzeit, mind. 35 Stunden"
+    },
+    {
+      "code": "2",
+      "display": "teilzeit, 15-34 Stunden"
+    },
+    {
+      "code": "3",
+      "display": "stundenweise, weniger als 15 Stunden"
+    },
+    {
+      "code": "4",
+      "display": "vorübergehende Freistellung"
+    },
+    {
+      "code": "5",
+      "display": "Ausbildung, Lehre, Umschulung"
+    },
+    {
+      "code": "6",
+      "display": "nicht erwerbstätig, nicht arbeitssuchend"
+    },
+    {
+      "code": "7",
+      "display": "nicht erwerbstätig, arbeitssuchend"
+    },
+    {
+      "code": "9",
+      "display": "keine Angaben"
+    }
+  ],
+  "count": 8
+}

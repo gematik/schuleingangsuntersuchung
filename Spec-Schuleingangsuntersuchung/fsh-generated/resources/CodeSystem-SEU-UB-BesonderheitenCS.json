@@ -1,0 +1,25 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU_UB_BesonderheitenCS",
+  "id": "SEU-UB-BesonderheitenCS",
+  "title": "SEU Besonderheiten",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-BesonderheitenCS",
+  "concept": [
+    {
+      "code": "1",
+      "display": "Kind vor Abschluss von rSEU/SEU in anderen LK/BL/Ausland verzogen"
+    },
+    {
+      "code": "2",
+      "display": "Kind nach 1. Untersuchungsjahr zugezogen"
+    },
+    {
+      "code": "3",
+      "display": "rSEU/SEU aus sonstigen Gründen nicht beendet"
+    }
+  ],
+  "count": 3
+}

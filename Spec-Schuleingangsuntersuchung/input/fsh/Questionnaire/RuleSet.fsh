@@ -7,7 +7,7 @@ Alias: $currency = urn:iso:std:iso:4217
 
 
 RuleSet: launchContext(name, type, description)
-* extension
+* extension[+]
   * url = $sdc-questionnaire-launchContext
   * extension[+]
     * url = "name"
@@ -20,7 +20,7 @@ RuleSet: launchContext(name, type, description)
     * valueString = {description}
 
 RuleSet: initialExpression(expression)
-* extension
+* extension[+]
   * url = $sdc-questionnaire-initialExpression
   * valueExpression
     //* description = {description}
@@ -72,17 +72,23 @@ RuleSet: calculatedExpression(name, expression)
     * language = #text/fhirpath
     * expression = {expression}
 
-RuleSet: EnableWhenCode(question, operator, system, code)
+RuleSet: enableWhenCode(question, operator, system, code)
 * enableWhen[+]
   * question = "{question}"
   * operator = #{operator}
   * answerCoding = {system}#{code}
 
-RuleSet: EnableWhenBoolean(question, operator, boolean)
+RuleSet: enableWhenBoolean(question, operator, boolean)
 * enableWhen[+]
   * question = "{question}"
   * operator = #{operator}
   * answerBoolean = {boolean}
+
+RuleSet: enableWhenExists(question)
+* enableWhen[+]
+  * question = "{question}"
+  * operator = #exists
+  * answerBoolean = true
 
 RuleSet: variable(name, expression)
 * extension[+]

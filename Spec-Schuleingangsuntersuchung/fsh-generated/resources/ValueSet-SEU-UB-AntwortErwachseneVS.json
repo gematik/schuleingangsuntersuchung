@@ -1,0 +1,68 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SEU_UB_AntwortErwachseneVS",
+  "id": "SEU-UB-AntwortErwachseneVS",
+  "title": "SEU Antwort Erwachsene",
+  "description": "Diese Codes enthalten Informationen über die Anzahl der Erwachsenen",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-AntwortErwachseneVS",
+  "expansion": {
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-AntwortNummerierungPersonenCS",
+        "code": "0",
+        "display": "keine"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-AntwortNummerierungPersonenCS",
+        "code": "1",
+        "display": "eins"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-AntwortNummerierungPersonenCS",
+        "code": "2",
+        "display": "zwei"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-AntwortNummerierungPersonenCS",
+        "code": "3",
+        "display": "drei"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-AntwortNummerierungPersonenCS",
+        "code": "4",
+        "display": "vier und mehr"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-AntwortNummerierungPersonenCS",
+        "code": "9",
+        "display": "keine Angaben"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-AntwortNummerierungPersonenCS",
+        "concept": [
+          {
+            "code": "1"
+          },
+          {
+            "code": "2"
+          },
+          {
+            "code": "3"
+          },
+          {
+            "code": "4"
+          },
+          {
+            "code": "9"
+          }
+        ]
+      }
+    ]
+  }
+}

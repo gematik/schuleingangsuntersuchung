@@ -1,0 +1,50 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SEU_UB_JaNeinKeineAngabeVS",
+  "id": "SEU-UB-JaNeinKeineAngabeVS",
+  "title": "SEU Ja-Nein-KeineAngabe",
+  "description": "Diese Codes können Boolean erweitern um 'Keine Angabe'",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-JaNeinKeineAngabeVS",
+  "expansion": {
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-JaNeinGeplantKeineAngabeCS",
+        "code": "1",
+        "display": "ja"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-JaNeinGeplantKeineAngabeCS",
+        "code": "2",
+        "display": "nein"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-JaNeinGeplantKeineAngabeCS",
+        "code": "9",
+        "display": "keine Angaben"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-JaNeinGeplantKeineAngabeCS",
+        "concept": [
+          {
+            "code": "1",
+            "display": "ja"
+          },
+          {
+            "code": "2",
+            "display": "nein"
+          },
+          {
+            "code": "9",
+            "display": "keine Angaben"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU_UB_DurchfuehrungSaeuCS",
+  "id": "SEU-UB-DurchfuehrungSaeuCS",
+  "title": "SEU Durchführung SÄU",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-DurchfuehrungSaeuCS",
+  "concept": [
+    {
+      "code": "1",
+      "display": "Ja"
+    },
+    {
+      "code": "2",
+      "display": "Nein"
+    },
+    {
+      "code": "3",
+      "display": "nicht mehr erforderlich"
+    },
+    {
+      "code": "4",
+      "display": "verweigert"
+    }
+  ],
+  "count": 4
+}

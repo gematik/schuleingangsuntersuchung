@@ -1,0 +1,56 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SEU_UB_AntwortKindergartenBesuchVS",
+  "id": "SEU-UB-AntwortKindergartenBesuchVS",
+  "title": "SEU Antwort Kindergartenbesuch",
+  "description": "Diese Codes enthalten Antwortmöglichkeiten zur Länge des Kindergartenbesuch",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-AntwortKindergartenBesuchVS",
+  "expansion": {
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-AntwortKindergartenBesuchCS",
+        "code": "0",
+        "display": "0 Jahre"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-AntwortKindergartenBesuchCS",
+        "code": "1",
+        "display": "1 Jahr"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-AntwortKindergartenBesuchCS",
+        "code": "2",
+        "display": "2 Jahre"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-AntwortKindergartenBesuchCS",
+        "code": "3",
+        "display": "3 Jahre"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-AntwortKindergartenBesuchCS",
+        "code": "4",
+        "display": "4 Jahre"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-AntwortKindergartenBesuchCS",
+        "code": "5",
+        "display": "5 und mehr Jahre"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-AntwortKindergartenBesuchCS",
+        "code": "9",
+        "display": "keine Angaben"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-AntwortKindergartenBesuchCS"
+      }
+    ]
+  }
+}

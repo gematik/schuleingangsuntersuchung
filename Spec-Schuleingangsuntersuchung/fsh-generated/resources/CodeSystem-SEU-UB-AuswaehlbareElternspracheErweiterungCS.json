@@ -1,0 +1,25 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU_UB_AuswaehlbareElternspracheErweiterungCS",
+  "id": "SEU-UB-AuswaehlbareElternspracheErweiterungCS",
+  "title": "SEU Erwerbstätigkeit",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-AuswaehlbareElternspracheErweiterungCS",
+  "concept": [
+    {
+      "code": "12",
+      "display": "Gebärdensprache"
+    },
+    {
+      "code": "98",
+      "display": "andere"
+    },
+    {
+      "code": "99",
+      "display": "keine Angabe"
+    }
+  ],
+  "count": 3
+}

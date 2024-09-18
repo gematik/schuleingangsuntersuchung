@@ -1,0 +1,61 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SEU_UB_ErwerbstaetigkeitVS",
+  "id": "SEU-UB-ErwerbstaetigkeitVS",
+  "title": "SEU Erwerbstätigkeit",
+  "description": "Diese Codes enthalten Angaben zur Erwerbstätigkeit",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-ErwerbstaetigkeitVS",
+  "expansion": {
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-ErwerbstaetigkeitCS",
+        "code": "1",
+        "display": "vollzeit, mind. 35 Stunden"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-ErwerbstaetigkeitCS",
+        "code": "2",
+        "display": "teilzeit, 15-34 Stunden"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-ErwerbstaetigkeitCS",
+        "code": "3",
+        "display": "stundenweise, weniger als 15 Stunden"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-ErwerbstaetigkeitCS",
+        "code": "4",
+        "display": "vorübergehende Freistellung"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-ErwerbstaetigkeitCS",
+        "code": "5",
+        "display": "Ausbildung, Lehre, Umschulung"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-ErwerbstaetigkeitCS",
+        "code": "6",
+        "display": "nicht erwerbstätig, nicht arbeitssuchend"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-ErwerbstaetigkeitCS",
+        "code": "7",
+        "display": "nicht erwerbstätig, arbeitssuchend"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-ErwerbstaetigkeitCS",
+        "code": "9",
+        "display": "keine Angaben"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-ErwerbstaetigkeitCS"
+      }
+    ]
+  }
+}

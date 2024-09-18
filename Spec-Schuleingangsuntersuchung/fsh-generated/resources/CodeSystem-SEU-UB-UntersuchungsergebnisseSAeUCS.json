@@ -1,0 +1,53 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU_UB_UntersuchungsergebnisseSAeUCS",
+  "id": "SEU-UB-UntersuchungsergebnisseSAeUCS",
+  "title": "SEU Untersuchungsergebnisse SÄU",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-UntersuchungsergebnisseSAeUCS",
+  "concept": [
+    {
+      "code": "01",
+      "display": "unauffälliger Befund"
+    },
+    {
+      "code": "02",
+      "display": "Abklärung beim Kinder-/Jugendarzt"
+    },
+    {
+      "code": "03",
+      "display": "Abklärung durch sonstigen Facharzt"
+    },
+    {
+      "code": "04",
+      "display": "Abklärung Frühförderstelle"
+    },
+    {
+      "code": "05",
+      "display": "häusliche Förderung ausreichend"
+    },
+    {
+      "code": "06",
+      "display": "Teilnahme Vorkurs Deutsch empfohlen"
+    },
+    {
+      "code": "07",
+      "display": "Kind ist wegen des Befundes bereits in Behandlung"
+    },
+    {
+      "code": "08",
+      "display": "Behinderung bzw. dauerhafte Schädigung des Kindes"
+    },
+    {
+      "code": "09",
+      "display": "Testbereich nicht beurteilbar"
+    },
+    {
+      "code": "10",
+      "display": "Testbereich nicht überprüft"
+    }
+  ],
+  "count": 10
+}
