@@ -11235,7 +11235,7 @@
           {
             "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-WiedervorlageGrundCS",
             "code": "2",
-            "display": "2. Mahnung "
+            "display": "2. Mahnung"
           },
           {
             "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-WiedervorlageGrundCS",
