@@ -23,16 +23,28 @@
     },
     {
       "code": "verbrennung",
-      "display": "Verbrennung"
+      "display": "Verbrühung/Verbrennung/Verätzung"
     },
     {
       "code": "knochenbruch",
       "display": "Knochenbruch"
     },
     {
+      "code": "prellung",
+      "display": "Prellung"
+    },
+    {
+      "code": "verstauchung",
+      "display": "Verstauchung/Verrenkung/Ausrenkung"
+    },
+    {
+      "code": "offene_wunde",
+      "display": "Offene Wunde"
+    },
+    {
       "code": "andere",
       "display": "Andere"
     }
   ],
-  "count": 6
+  "count": 9
 }

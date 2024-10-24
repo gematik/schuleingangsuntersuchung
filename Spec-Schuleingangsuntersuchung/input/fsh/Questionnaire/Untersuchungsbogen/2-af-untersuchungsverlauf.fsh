@@ -98,36 +98,37 @@ RuleSet: 2-af-untersuchungsverlauf
 ValueSet: SEU_UB_SpracheStudieVS
 Id: SEU-UB-SpracheStudieVS
 Title: "SEU Sprache Studie"
-Description: "Dieses ValueSet enthält die auswählbaren Sprachen zu einer Studie. Als CodeSystem wird 'urn:ietf:bcp:47' als Basis genommen."
-* $ietf-47#sq "Albanisch"
-* $ietf-47#ar "Arabisch"
-* $ietf-47#en "Englisch"
-* $ietf-47#ro "Rumänisch"
-* $ietf-47#ru "Russisch"
-* $ietf-47#tr "Türkisch"
-* $ietf-47#uk "Ukraninisch"
+Description: "Dieses ValueSet enthält die auswählbaren Sprachen zu einer Studie. Als CodeSystem wird 'urn:iso:std:iso:639-2' als Basis genommen."
+* ISO6392_LanguageCS#alb "Albanisch"
+* ISO6392_LanguageCS#ara "Arabisch"
+* ISO6392_LanguageCS#eng "Englisch"
+* ISO6392_LanguageCS#rum "Rumänisch"
+* ISO6392_LanguageCS#rus "Russisch"
+* ISO6392_LanguageCS#tur "Türkisch"
+* ISO6392_LanguageCS#ukr "Ukrainisch"
 * ^expansion.timestamp = "2024-03-30T13:28:00+00:00"
-* ^expansion.contains[+].system = $ietf-47
-* ^expansion.contains[=].code = #sq
+* ^expansion.contains[+].system = Canonical(ISO6392_LanguageCS)
+* ^expansion.contains[=].code = #alb
 * ^expansion.contains[=].display = "Albanisch"
-* ^expansion.contains[+].system = $ietf-47
-* ^expansion.contains[=].code = #ar
+* ^expansion.contains[+].system = Canonical(ISO6392_LanguageCS)
+* ^expansion.contains[=].code = #ara
 * ^expansion.contains[=].display = "Arabisch"
-* ^expansion.contains[+].system = $ietf-47
-* ^expansion.contains[=].code = #en
+* ^expansion.contains[+].system = Canonical(ISO6392_LanguageCS)
+* ^expansion.contains[=].code = #eng
 * ^expansion.contains[=].display = "Englisch"
-* ^expansion.contains[+].system = $ietf-47
-* ^expansion.contains[=].code = #ro
+* ^expansion.contains[+].system = Canonical(ISO6392_LanguageCS)
+* ^expansion.contains[=].code = #rum
 * ^expansion.contains[=].display = "Rumänisch"
-* ^expansion.contains[+].system = $ietf-47
-* ^expansion.contains[=].code = #ru
+* ^expansion.contains[+].system = Canonical(ISO6392_LanguageCS)
+* ^expansion.contains[=].code = #rus
 * ^expansion.contains[=].display = "Russisch"
-* ^expansion.contains[+].system = $ietf-47
-* ^expansion.contains[=].code = #tr
+* ^expansion.contains[+].system = Canonical(ISO6392_LanguageCS)
+* ^expansion.contains[=].code = #tur
 * ^expansion.contains[=].display = "Türkisch"
-* ^expansion.contains[+].system = $ietf-47
-* ^expansion.contains[=].code = #uk
-* ^expansion.contains[=].display = "Ukraninisch"
+* ^expansion.contains[+].system = Canonical(ISO6392_LanguageCS)
+* ^expansion.contains[=].code = #ukr
+* ^expansion.contains[=].display = "Ukrainisch"
+
 
 CodeSystem: SEU_UB_MeldungJugendamtCS
 Id: SEU-UB-MeldungJugendamtCS

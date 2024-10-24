@@ -9,7 +9,6 @@ RuleSet: 7-af-fdsscreening
       * insert enableWhenBoolean(7.3, exists, false)
       * insert enableWhenBoolean(7.3, exists, false)
       * insert enableWhenBoolean(7.4, exists, false)
-      * insert enableWhenBoolean(7.5, exists, false)
       * insert enableWhenBoolean(7.6, exists, false)
       * insert enableWhenBoolean(7.7, exists, false)
       * insert enableWhenBoolean(7.8, exists, false)
@@ -43,12 +42,11 @@ RuleSet: 7-af-fdsscreening
         * insert addSource(#DE-BY)
         * readOnly = true
         * answerValueSet = Canonical(SEU_UB_UntersuchungsstatusFdSScreeningvS)
-    * item[+] insert addGroup(7_1_1, Verpflichtend)
+    * item[+] insert addGroup(7_1_1v, Verpflichtend)
       * insert addSource(#DE-BY)
       * insert enableWhenBoolean(7.3, exists, true)
       * insert enableWhenBoolean(7.3, exists, true)
       * insert enableWhenBoolean(7.4, exists, true)
-      * insert enableWhenBoolean(7.5, exists, true)
       * insert enableWhenBoolean(7.6, exists, true)
       * insert enableWhenBoolean(7.7, exists, true)
       * insert enableWhenBoolean(7.8, exists, true)
@@ -75,9 +73,9 @@ RuleSet: 7-af-fdsscreening
       * insert enableWhenBoolean(7.29, exists, true)
       * insert enableWhenBoolean(7.30, exists, true)
       * enableBehavior = #any
-      * item[+] insert addItem(7.1, #date, [[Untersuchungsdatum]]) //TODO Validierung >2022
+      * item[+] insert addItem(7.1v, #date, [[Untersuchungsdatum]]) //TODO Validierung >2022
         * insert addSource(#DE-BY)
-      * item[+] insert addItem(7.2, #choice, [[Heutige Untersuchung]]) 
+      * item[+] insert addItem(7.2v, #choice, [[Heutige Untersuchung]]) 
         * insert addSource(#DE-BY)
         * answerValueSet = Canonical(SEU_UB_UntersuchungsstatusFdSScreeningvS)
     * item[+] insert addItem(7.3, #integer, [[gemessene Körpergröße (in cm)]])
@@ -88,6 +86,10 @@ RuleSet: 7-af-fdsscreening
       * insert uunit(kg, "kg")
     * item[+]
       * insert addItemWithSource(7.4.1, #boolean, [[Messung Körpergewicht durchgeführt]], #DE-BW)
+    * item[+] insert addItemWithSource(7.sehtest.rechts, #choice, [[Sehtest rechts]], #DE-BW) 
+      * answerValueSet = Canonical(SEU_UB_SehtestVisusVS)
+    * item[+] insert addItemWithSource(7.sehtest.links, #choice, [[Sehtest links]], #DE-BW) 
+      * answerValueSet = Canonical(SEU_UB_SehtestVisusVS)
     * item[+] insert addItemWithSource(7.sehtest.1, #boolean, [[Sehtest Hyperopieprüfung auffällig?]], #DE-BW)   
     * item[+] insert addItemWithSource(7.sehtest.2, #choice, [[Sehtest: Vorschaltlinse rechts]], #DE-BW)  
       * answerValueSet = Canonical(SEU_UB_BewertungErgebnisVS)
@@ -116,8 +118,6 @@ RuleSet: 7-af-fdsscreening
       * item[+]
         * insert addItemWithSource(7.sehtest.15.2, #boolean, [[Übernahme Hörtest-Bemerkungen in Befundbogen für Kita]], #DE-BW)
         * insert enableWhenExists(7.sehtest.15)
-    * item[+] insert addItem(7.5, #boolean, [[Sehtest mit Brille]])
-      * insert addSource(#DE-BY)
     * item[+] insert addItem(7.6, #choice, [[Lang-Test auffällig]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_AntwortAuffaelligkeitBeurteilbarVS)
@@ -141,11 +141,41 @@ RuleSet: 7-af-fdsscreening
     * item[+] insert addItem(7.13, #choice, [[Hörtest auffällig (Rechts)]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_AntwortAuffaelligkeitBeurteilbarVS)
+      * item[+] insert addItemWithSource(7.13.1, #choice, [[Hörtest rechts 0,5 kHz]], #DE-BW)
+        * insert enableWhenCode(7.13, !=, SEU_UB_AntwortAuffaelligkeitCS, 2)
+        * answerValueSet = Canonical(SEU_UB_HoertestDezibelVS)
+      * item[+] insert addItemWithSource(7.13.2, #choice, [[Hörtest rechts 1 kHz]], #DE-BW)
+        * insert enableWhenCode(7.13, !=, SEU_UB_AntwortAuffaelligkeitCS, 2)
+        * answerValueSet = Canonical(SEU_UB_HoertestDezibelVS)
+      * item[+] insert addItemWithSource(7.13.3, #choice, [[Hörtest rechts 2 kHz]], #DE-BW)
+        * insert enableWhenCode(7.13, !=, SEU_UB_AntwortAuffaelligkeitCS, 2)
+        * answerValueSet = Canonical(SEU_UB_HoertestDezibelVS)
+      * item[+] insert addItemWithSource(7.13.4, #choice, [[Hörtest rechts 4 kHz]], #DE-BW)
+        * insert enableWhenCode(7.13, !=, SEU_UB_AntwortAuffaelligkeitCS, 2)
+        * answerValueSet = Canonical(SEU_UB_HoertestDezibelVS)
+      * item[+] insert addItemWithSource(7.13.5, #choice, [[Hörtest rechts 6 kHz]], #DE-BW)
+        * insert enableWhenCode(7.13, !=, SEU_UB_AntwortAuffaelligkeitCS, 2)
+        * answerValueSet = Canonical(SEU_UB_HoertestDezibelVS)
     * item[+] insert addItemWithSource(7.13.bewertung, #choice, [[Hörest rechts Bewertungsvorschlag]], #DE-BW)
       * answerValueSet = Canonical(SEU_UB_BewertungsvorschlagVS)
     * item[+] insert addItem(7.14, #choice, [[Hörtest auffällig (Links)]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_AntwortAuffaelligkeitBeurteilbarVS)
+      * item[+] insert addItemWithSource(7.14.1, #choice, [[Hörtest links 0,5 kHz]], #DE-BW)
+        * insert enableWhenCode(7.14, !=, SEU_UB_AntwortAuffaelligkeitCS, 2)
+        * answerValueSet = Canonical(SEU_UB_HoertestDezibelVS)
+      * item[+] insert addItemWithSource(7.14.2, #choice, [[Hörtest links 1 kHz]], #DE-BW)
+        * insert enableWhenCode(7.14, !=, SEU_UB_AntwortAuffaelligkeitCS, 2)
+        * answerValueSet = Canonical(SEU_UB_HoertestDezibelVS)
+      * item[+] insert addItemWithSource(7.14.3, #choice, [[Hörtest links 2 kHz]], #DE-BW)
+        * insert enableWhenCode(7.14, !=, SEU_UB_AntwortAuffaelligkeitCS, 2)
+        * answerValueSet = Canonical(SEU_UB_HoertestDezibelVS)
+      * item[+] insert addItemWithSource(7.14.4, #choice, [[Hörtest links 4 kHz]], #DE-BW)
+        * insert enableWhenCode(7.14, !=, SEU_UB_AntwortAuffaelligkeitCS, 2)
+        * answerValueSet = Canonical(SEU_UB_HoertestDezibelVS)
+      * item[+] insert addItemWithSource(7.14.5, #choice, [[Hörtest links 6 kHz]], #DE-BW)
+        * insert enableWhenCode(7.14, !=, SEU_UB_AntwortAuffaelligkeitCS, 2)
+        * answerValueSet = Canonical(SEU_UB_HoertestDezibelVS)
     * item[+] insert addItemWithSource(7.14.bewertung, #choice, [[Hörest links Bewertungsvorschlag]], #DE-BW)
       * answerValueSet = Canonical(SEU_UB_BewertungsvorschlagVS)
     * item[+] insert addItemWithSource(7.h.1, #boolean, [[Hörest gesamt altersentsprechend]], #DE-BW)
@@ -219,10 +249,16 @@ RuleSet: 7-af-fdsscreening
       * item[+] insert addItem(7.33, #integer, [[gemessene Körpergröße (in cm)]])
         * insert addSource(#DE-BY)
         * insert uunit(cm, "cm")
+      * item[+] insert addItemWithSource(7.33a, #integer, [[Perzentile Körpergröße]], #DE-BW)
+        * insert uunit(%, "Perzentile")
       * item[+] insert addItem(7.34, #decimal, [[gemessenes Körpergewicht (in kg)]])
         * insert addSource(#DE-BY)
         * insert uunit(kg, "kg")
+      * item[+] insert addItemWithSource(7.34a, #integer, [[Perzentile Körpergewicht]], #DE-BW)
+        * insert uunit(%, "Perzentile")
       * item[+] insert addItem(7.35, #boolean, [[Sehtest mit Brille]])
+        * insert addSource(#DE-BY)
+      * item[+] insert addItem(7.35a, #boolean, [[Brillenträger ohne Brille untersucht]])
         * insert addSource(#DE-BY)
       * item[+] insert addItem(7.36, #choice, [[Lang-Test auffällig]])
         * insert addSource(#DE-BY)
@@ -343,6 +379,176 @@ RuleSet: 7-af-fdsscreening
   * item[+] insert addItemWithSource(7.92, #boolean, [[Untersuchung Sprache: Spontansprache Nicht Bewertbar]], #DE-BW)
   * item[+] insert addItemWithSource(7.93, #boolean, [[Untersuchung Sprachscreening: Weitere Abklärung erforderlich]], #DE-BW)
   * item[+] insert addItemWithSource(7.94, #boolean, [[Untersuchung Sprachscreening: Altersentsprechend]], #DE-BW)
+  * item[+] insert addItemWithSource(7.95, #boolean, [[Untersuchung_Sprache_Sprachscreening_HASE_Nachsprechen_von_Sätzen_Nicht_durchgeführt]], #DE-BW)
+  * item[+] insert addItemWithSource(7.96, #boolean, [[Untersuchung_Sprache_Sprachscreening_HASE_Nachsprechen_von_Sätzen_Fehlende_Mitarbeit]], #DE-BW)
+  * item[+] insert addItemWithSource(7.97, #boolean, [[Untersuchung_Sprache_Sprachscreening_HASE_Nachsprechen_von_Sätzen_Altersentsprechend]], #DE-BW)
+  * item[+] insert addItemWithSource(7.98, #boolean, [[Untersuchung_Sprache_Sprachscreening_HASE_Nachsprechen_von_Sätzen_1a]], #DE-BW)
+  * item[+] insert addItemWithSource(7.99, #boolean, [[Untersuchung_Sprache_Sprachscreening_HASE_Nachsprechen_von_Sätzen_1b]], #DE-BW)
+  * item[+] insert addItemWithSource(7.100, #boolean, [[Untersuchung_Sprache_Sprachscreening_HASE_Nachsprechen_von_Sätzen_2a]], #DE-BW)
+  * item[+] insert addItemWithSource(7.101, #boolean, [[Untersuchung_Sprache_Sprachscreening_HASE_Nachsprechen_von_Sätzen_2b]], #DE-BW)
+  * item[+] insert addItemWithSource(7.102, #boolean, [[Untersuchung_Sprache_Sprachscreening_HASE_Nachsprechen_von_Sätzen_3a]], #DE-BW)
+  * item[+] insert addItemWithSource(7.103, #boolean, [[Untersuchung_Sprache_Sprachscreening_HASE_Nachsprechen_von_Sätzen_3b]], #DE-BW)
+  * item[+] insert addItemWithSource(7.104, #boolean, [[Untersuchung_Sprache_Sprachscreening_HASE_Nachsprechen_von_Sätzen_4a]], #DE-BW)
+  * item[+] insert addItemWithSource(7.105, #boolean, [[Untersuchung_Sprache_Sprachscreening_HASE_Nachsprechen_von_Sätzen_4b]], #DE-BW)
+  * item[+] insert addItemWithSource(7.106, #boolean, [[Untersuchung_Sprache_Sprachscreening_HASE_Nachsprechen_von_Sätzen_5a]], #DE-BW)
+  * item[+] insert addItemWithSource(7.107, #boolean, [[Untersuchung_Sprache_Sprachscreening_HASE_Nachsprechen_von_Sätzen_5b]], #DE-BW)
+  * item[+] insert addItemWithSource(7.108, #integer, [[Untersuchung_Sprache_Sprachscreening_HASE_Nachsprechen_von_Sätzen_Punktwert]], #DE-BW)
+  * item[+] insert addItemWithSource(7.109, #boolean, [[Untersuchung_Sprache_Sprachscreening_HASE_Wiedergabe_Zahlenfolgen_1a]], #DE-BW)
+  * item[+] insert addItemWithSource(7.110, #boolean, [[Untersuchung_Sprache_Sprachscreening_HASE_Wiedergabe_Zahlenfolgen_1b]], #DE-BW)
+  * item[+] insert addItemWithSource(7.111, #boolean, [[Untersuchung_Sprache_Sprachscreening_HASE_Wiedergabe_Zahlenfolgen_2a]], #DE-BW)
+  * item[+] insert addItemWithSource(7.112, #boolean, [[Untersuchung_Sprache_Sprachscreening_HASE_Wiedergabe_Zahlenfolgen_2b]], #DE-BW)
+  * item[+] insert addItemWithSource(7.113, #boolean, [[Untersuchung_Sprache_Sprachscreening_HASE_Wiedergabe_Zahlenfolgen_3a]], #DE-BW)
+  * item[+] insert addItemWithSource(7.114, #boolean, [[Untersuchung_Sprache_Sprachscreening_HASE_Wiedergabe_Zahlenfolgen_3b]], #DE-BW)
+  * item[+] insert addItemWithSource(7.115, #boolean, [[Untersuchung_Sprache_Sprachscreening_HASE_Wiedergabe_Zahlenfolgen_4a]], #DE-BW)
+  * item[+] insert addItemWithSource(7.116, #boolean, [[Untersuchung_Sprache_Sprachscreening_HASE_Wiedergabe_Zahlenfolgen_4b]], #DE-BW)
+  * item[+] insert addItemWithSource(7.117, #boolean, [[Untersuchung_Sprache_Sprachscreening_HASE_Wiedergabe_Zahlenfolgen_5a]], #DE-BW)
+  * item[+] insert addItemWithSource(7.118, #boolean, [[Untersuchung_Sprache_Sprachscreening_HASE_Wiedergabe_Zahlenfolgen_5b]], #DE-BW)
+  * item[+] insert addItemWithSource(7.119, #integer, [[Untersuchung_Sprache_Sprachscreening_HASE_Wiedergabe_Zahlenfolgen_Punktwert]], #DE-BW)
+  * item[+] insert addItemWithSource(7.120, #boolean, [[Untersuchung_Sprache_Sprachscreening_HASE_Wiedergabe_Zahlenfolgen_Nicht_Durchgeführt]], #DE-BW)
+  * item[+] insert addItemWithSource(7.121, #boolean, [[Untersuchung_Sprache_Sprachscreening_HASE_Wiedergabe_Zahlenfolge_Fehlende_Mitarbeit]], #DE-BW)
+  * item[+] insert addItemWithSource(7.122, #boolean, [[Untersuchung_Sprache_Sprachscreening_HASE_Wiedergabe_Zahlenfolge_Altersentsprechend]], #DE-BW)
+  * item[+] insert addItemWithSource(7.123, #boolean, [[Untersuchung_Sprache_Sprachscreening_HASE_Nachsprechen_Kunstwörter_0]], #DE-BW)
+  * item[+] insert addItemWithSource(7.124, #boolean, [[Untersuchung_Sprache_Sprachscreening_HASE_Nachsprechen_Kunstwörter_1]], #DE-BW)
+  * item[+] insert addItemWithSource(7.125, #boolean, [[Untersuchung_Sprache_Sprachscreening_HASE_Nachsprechen_Kunstwörter_2]], #DE-BW)
+  * item[+] insert addItemWithSource(7.126, #boolean, [[Untersuchung_Sprache_Sprachscreening_HASE_Nachsprechen_Kunstwörter_3]], #DE-BW)
+  * item[+] insert addItemWithSource(7.127, #boolean, [[Untersuchung_Sprache_Sprachscreening_HASE_Nachsprechen_Kunstwörter_4]], #DE-BW)
+  * item[+] insert addItemWithSource(7.128, #boolean, [[Untersuchung_Sprache_Sprachscreening_HASE_Nachsprechen_Kunstwörter_5]], #DE-BW)
+  * item[+] insert addItemWithSource(7.129, #boolean, [[Untersuchung_Sprache_Sprachscreening_HASE_Nachsprechen_Kunstwörter_6]], #DE-BW)
+  * item[+] insert addItemWithSource(7.130, #boolean, [[Untersuchung_Sprache_Sprachscreening_HASE_Nachsprechen_Kunstwörter_7]], #DE-BW)
+  * item[+] insert addItemWithSource(7.131, #boolean, [[Untersuchung_Sprache_Sprachscreening_HASE_Nachsprechen_Kunstwörter_8]], #DE-BW)
+  * item[+] insert addItemWithSource(7.132, #boolean, [[Untersuchung_Sprache_Sprachscreening_HASE_Nachsprechen_Kunstwörter_9]], #DE-BW)
+  * item[+] insert addItemWithSource(7.133, #boolean, [[Untersuchung_Sprache_Sprachscreening_HASE_Nachsprechen_Kunstwörter_10]], #DE-BW)
+  * item[+] insert addItemWithSource(7.134, #integer, [[Untersuchung_Sprache_Sprachscreening_HASE_Nachsprechen_Kunstwörter_Punktwert]], #DE-BW)
+  * item[+] insert addItemWithSource(7.135, #boolean, [[Untersuchung_Sprache_Sprachscreening_HASE_Nachsprechen_kunstwörter_Nicht_Durchgeführt]], #DE-BW)
+  * item[+] insert addItemWithSource(7.136, #boolean, [[Untersuchung_Sprache_Sprachscreening_HASE_Nachsprechen_Kunstwörter_Fehlende_Mitarbeit]], #DE-BW)
+  * item[+] insert addItemWithSource(7.137, #boolean, [[Untersuchung_Sprache_Sprachscreening_HASE_Nachsprechen_Kunstwörter_Altersentsprechend]], #DE-BW)
+  * item[+] insert addItemWithSource(7.138, #string, [[Untersuchung_Sprache_Sprachscreening_HASE_Bemerkungen]], #DE-BW)
+  * item[+] insert addItemWithSource(7.139, #boolean, [[Untersuchung_Sprache_Sprachscreening_HASE_Bemerkungen_Übernahme in Befundbogen für Sorgeberechtigte]], #DE-BW)
+  * item[+] insert addItemWithSource(7.140, #boolean, [[Untersuchung_Sprache_Sprachscreening_HASE_Bemerkungen_Übernahme in Befundbogen für Kita]], #DE-BW)
+  * item[+] insert addItemWithSource(7.141, #boolean, [[Untersuchung_Sprache_Sprachverständnis_KVS_bei_NS_im_Grenzbereich_0]], #DE-BW)
+  * item[+] insert addItemWithSource(7.142, #boolean, [[Untersuchung_Sprache_Sprachverständnis_KVS_bei_NS_im_Grenzbereich_1]], #DE-BW)
+  * item[+] insert addItemWithSource(7.143, #boolean, [[Untersuchung_Sprache_Sprachverständnis_KVS_bei_NS_im_Grenzbereich_2]], #DE-BW)
+  * item[+] insert addItemWithSource(7.144, #boolean, [[Untersuchung_Sprache_Sprachverständnis_KVS_bei_NS_im_Grenzbereich_3]], #DE-BW)
+  * item[+] insert addItemWithSource(7.145, #boolean, [[Untersuchung_Sprache_Sprachverständnis_KVS_Nicht_Durchgeführt]], #DE-BW)
+  * item[+] insert addItemWithSource(7.146, #boolean, [[Untersuchung_Sprache_Sprachverständnis_KVS_Fehlende_Mitarbeit]], #DE-BW)
+  * item[+] insert addItemWithSource(7.147, #boolean, [[Untersuchung_Artikulation_nicht_durchgeführt]], #DE-BW)
+  * item[+] insert addItemWithSource(7.148, #boolean, [[Untersuchung_Artikulation_Fehlende_Mitarbeit]], #DE-BW)
+  * item[+] insert addItemWithSource(7.149, #boolean, [[Untersuchung_Artikulation_in_Behandlung]], #DE-BW)
+  * item[+] insert addItemWithSource(7.150, #boolean, [[Untersuchung_Artikulation_Kinder-/Hausarzt]], #DE-BW)
+  * item[+] insert addItemWithSource(7.151, #boolean, [[Untersuchung_Artikulation_Förderung_häuslich/Kindergarten]], #DE-BW)
+  * item[+] insert addItemWithSource(7.152, #boolean, [[Untersuchung_Artikulation_Altersentsprechend]], #DE-BW)
+  * item[+] insert addItemWithSource(7.153, #boolean, [[Untersuchung_Artikulation_B]], #DE-BW)
+  * item[+] insert addItemWithSource(7.154, #boolean, [[Untersuchung_Artikulation_L/N]], #DE-BW)
+  * item[+] insert addItemWithSource(7.155, #boolean, [[Untersuchung_Artikulation_ch1]], #DE-BW)
+  * item[+] insert addItemWithSource(7.156, #boolean, [[Untersuchung_Artikulation_ch2]], #DE-BW)
+  * item[+] insert addItemWithSource(7.157, #boolean, [[Untersuchung_Artikulation_G/K]], #DE-BW)
+  * item[+] insert addItemWithSource(7.158, #boolean, [[Untersuchung_Artikulation_S/Z]], #DE-BW)
+  * item[+] insert addItemWithSource(7.159, #boolean, [[Untersuchung_Artikulation_SCH]], #DE-BW)
+  * item[+] insert addItemWithSource(7.160, #boolean, [[Untersuchung_Artikulation_R]], #DE-BW)
+  * item[+] insert addItemWithSource(7.161, #boolean, [[Untersuchung_Artikulation_F/W/PF]], #DE-BW)
+  * item[+] insert addItemWithSource(7.162, #boolean, [[Untersuchung_Artikulation_T/D]], #DE-BW)
+  * item[+] insert addItemWithSource(7.163, #boolean, [[Untersuchung_Artikulation_Kons.-verb]], #DE-BW)
+  * item[+] insert addItemWithSource(7.164, #boolean, [[Untersuchung_Artikulation_Andere]], #DE-BW)
+  * item[+] insert addItemWithSource(7.165, #boolean, [[Untersuchung_Artikulation_Ausspracheverständlichkeit]], #DE-BW)
+  * item[+] insert addItemWithSource(7.166, #boolean, [[Untersuchung_Artikulation_Abgeschlossen]], #DE-BW)
+  * item[+] insert addItemWithSource(7.167, #string, [[Untersuchung_Artikulation_Bemerkungen]], #DE-BW)
+  * item[+] insert addItemWithSource(7.168, #boolean, [[Untersuchung_Artikulation_Bemerkungen_Übernahme in Befundbogen für Sorgeberechtigte]], #DE-BW)
+  * item[+] insert addItemWithSource(7.169, #boolean, [[Untersuchung_Artikulation_Bemerkungen_Übernahme in Befundbogen für Kita]], #DE-BW)
+  * item[+] insert addItemWithSource(7.170, #boolean, [[Untersuchung_Graphomotorik_Händigkeit_rechts]], #DE-BW)
+  * item[+] insert addItemWithSource(7.171, #boolean, [[Untersuchung_Graphomotorik_Händigkeit_links]], #DE-BW)
+  * item[+] insert addItemWithSource(7.172, #boolean, [[Untersuchung_Graphomotorik_Händigkeit_unklar]], #DE-BW)
+  * item[+] insert addItemWithSource(7.173, #boolean, [[Untersuchung_Graphomotorik_Druck_unauffällig]], #DE-BW)
+  * item[+] insert addItemWithSource(7.174, #boolean, [[Untersuchung_Graphomotorik_Druck_auffällig]], #DE-BW)
+  * item[+] insert addItemWithSource(7.175, #boolean, [[Untersuchung_Graphomotorik_Druck_auffällig_zu_stark]], #DE-BW)
+  * item[+] insert addItemWithSource(7.176, #boolean, [[Untersuchung_Graphomotorik_Druck_auffällig_zu_schwach]], #DE-BW)
+  * item[+] insert addItemWithSource(7.177, #boolean, [[Untersuchung_Graphomotorik_Haltung_unauffällig]], #DE-BW)
+  * item[+] insert addItemWithSource(7.178, #boolean, [[Untersuchung_Graphomotorik_Haltung_auffällig]], #DE-BW)
+  * item[+] insert addItemWithSource(7.179, #boolean, [[Untersuchung_Graphomotorik_Haltung_auffällig_Handgelenk_liegt_nicht_auf]], #DE-BW)
+  * item[+] insert addItemWithSource(7.180, #boolean, [[Untersuchung_Graphomotorik_Haltung_auffällig_Palmargriff]], #DE-BW)
+  * item[+] insert addItemWithSource(7.181, #boolean, [[Untersuchung_Graphomotorik_Haltung_auffällig_kein_Dreipunktgriff]], #DE-BW)
+  * item[+] insert addItemWithSource(7.182, #boolean, [[Untersuchung_Graphomotorik_Führung_unauffällig]], #DE-BW)
+  * item[+] insert addItemWithSource(7.183, #boolean, [[Untersuchung_Graphomotorik_Führung_auffällig]], #DE-BW)
+  * item[+] insert addItemWithSource(7.184, #boolean, [[Untersuchung_Graphomotorik_Führung_auffällig_verzittert]], #DE-BW)
+  * item[+] insert addItemWithSource(7.185, #boolean, [[Untersuchung_Graphomotorik_Führung_auffällig_unangemessene_Bewegung]], #DE-BW)
+  * item[+] insert addItemWithSource(7.186, #boolean, [[Untersuchung_Graphomotorik_Führung_auffällig_ausfahrende_Bewegungsimpulse]], #DE-BW)
+  * item[+] insert addItemWithSource(7.187, #boolean, [[Untersuchung_Graphomotorik_Nicht_Durchgeführt]], #DE-BW)
+  * item[+] insert addItemWithSource(7.188, #boolean, [[Untersuchung_Graphomotorik_Fehlende_Mitarbeit]], #DE-BW)
+  * item[+] insert addItemWithSource(7.189, #boolean, [[Untersuchung_Graphomotorik_Intensiver_Förderbedarf]], #DE-BW)
+  * item[+] insert addItemWithSource(7.190, #boolean, [[Untersuchung_Graphomotorik_Förderung_häuslich/Kindergarten]], #DE-BW)
+  * item[+] insert addItemWithSource(7.191, #boolean, [[Untersuchung_Graphomotorik_In_Behandlung]], #DE-BW)
+  * item[+] insert addItemWithSource(7.192, #boolean, [[Untersuchung_Graphomotorik_Kinder-/Hausarzt]], #DE-BW)
+  * item[+] insert addItemWithSource(7.193, #boolean, [[Untersuchung_Graphomotorik_Altersentsprechend]], #DE-BW)
+  * item[+] insert addItemWithSource(7.194, #boolean, [[Untersuchung_Graphmotorik_Abgeschlossen]], #DE-BW)
+  * item[+] insert addItemWithSource(7.195, #string, [[Untersuchung_Graphomotorik_Bemerkungen]], #DE-BW)
+  * item[+] insert addItemWithSource(7.196, #boolean, [[Untersuchung_Graphomotorik_Bemerkungen_Übernahme_in_Befundbogen_für_Sorgeberechtigte]], #DE-BW)
+  * item[+] insert addItemWithSource(7.197, #boolean, [[Untersuchung_Graphomotorik_Bemerkungen_Übernahme_in_Befundbogen_für_Kita]], #DE-BW)
+  * item[+] insert addItemWithSource(7.198, #boolean, [[Untersuchung_Visuomotorik_DP0_0]], #DE-BW)
+  * item[+] insert addItemWithSource(7.199, #boolean, [[Untersuchung_Visuomotorik_DP0_1]], #DE-BW)
+  * item[+] insert addItemWithSource(7.200, #boolean, [[Untersuchung_Visuomotorik_DP0_2]], #DE-BW)
+  * item[+] insert addItemWithSource(7.201, #boolean, [[Untersuchung_Visuomotorik_DP0_3]], #DE-BW)
+  * item[+] insert addItemWithSource(7.202, #boolean, [[Untersuchung_Visuomotorik_DP0_4]], #DE-BW)
+  * item[+] insert addItemWithSource(7.203, #choice, [[Untersuchung_Visuomotorik_DP0_Bewertung]], #DE-BW)
+    * answerValueSet = Canonical(SEU_UB_EntwicklungsbewertungVS)
+  * item[+] insert addItemWithSource(7.204, #boolean, [[Untersuchung_Visuomotorik_DP1_0]], #DE-BW)
+  * item[+] insert addItemWithSource(7.205, #boolean, [[Untersuchung_Visuomotorik_DP1_1]], #DE-BW)
+  * item[+] insert addItemWithSource(7.206, #boolean, [[Untersuchung_Visuomotorik_DP1_2]], #DE-BW)
+  * item[+] insert addItemWithSource(7.207, #boolean, [[Untersuchung_Visuomotorik_DP1_3]], #DE-BW)
+  * item[+] insert addItemWithSource(7.208, #boolean, [[Untersuchung_Visuomotorik_DP1_4]], #DE-BW)
+  * item[+] insert addItemWithSource(7.209, #boolean, [[Untersuchung_Visuomotorik_DP1_5]], #DE-BW)
+  * item[+] insert addItemWithSource(7.210, #boolean, [[Untersuchung_Visuomotorik_DP1_Bewertung]], #DE-BW)
+    * answerValueSet = Canonical(SEU_UB_EntwicklungsbewertungVS)
+  * item[+] insert addItemWithSource(7.211, #boolean, [[Untersuchung_Visuomotorik_Nicht_Durchgeführt]], #DE-BW)
+  * item[+] insert addItemWithSource(7.212, #boolean, [[Untersuchung_Visuomotorik_Fehlende_Mitarbeit]], #DE-BW)
+  * item[+] insert addItemWithSource(7.213, #boolean, [[Untersuchung_Visuomotorik_Intensiver_Förderbedarf]], #DE-BW)
+  * item[+] insert addItemWithSource(7.214, #boolean, [[Untersuchung_Visuomotorik_Förderung_häuslich/Kindergarten]], #DE-BW)
+  * item[+] insert addItemWithSource(7.215, #boolean, [[Untersuchung_Visuomotorik_In_Behandlung]], #DE-BW)
+  * item[+] insert addItemWithSource(7.216, #boolean, [[Untersuchung_Visuomotorik_Kinder-/Hausarzt]], #DE-BW)
+  * item[+] insert addItemWithSource(7.217, #boolean, [[Untersuchung_Visuomotorik_Altersentsprechend]], #DE-BW)
+  * item[+] insert addItemWithSource(7.218, #boolean, [[Untersuchung_Visuomotorik_Abgeschlossen]], #DE-BW)
+  * item[+] insert addItemWithSource(7.219, #string, [[Untersuchung_Visuomotorik_Bemerkungen]], #DE-BW)
+  * item[+] insert addItemWithSource(7.220, #boolean, [[Untersuchung_Visuomotorik_Bemerkungen_Übernahme_in_Befundbogen_für_Sorgeberechtigte]], #DE-BW)
+  * item[+] insert addItemWithSource(7.221, #boolean, [[Untersuchung_Visuomotorik_Bemerkungen_Übernahme_in_Befundbogen_für_Kita]], #DE-BW)
+  * item[+] insert addItemWithSource(7.222, #boolean, [[Untersuchung_Menschzeichnung_Kopffüßler]], #DE-BW)
+  * item[+] insert addItemWithSource(7.223, #boolean, [[Untersuchung_Menschzeichnung_unstrukturiert]], #DE-BW)
+  * item[+] insert addItemWithSource(7.224, #boolean, [[Untersuchung_Menschzeichnung_Nicht_Durchgeführt]], #DE-BW)
+  * item[+] insert addItemWithSource(7.225, #boolean, [[Untersuchung_Menschzeichnung_Fehlende_Mitarbeit]], #DE-BW)
+  * item[+] insert addItemWithSource(7.226, #boolean, [[Untersuchung_Menschzeichnung_Intensiver_Förderbedarf]], #DE-BW)
+  * item[+] insert addItemWithSource(7.227, #boolean, [[Untersuchung_Menschzeichnung_Förderung_häuslich/Kindergarten]], #DE-BW)
+  * item[+] insert addItemWithSource(7.228, #boolean, [[Untersuchung_Menschzeichnung_In_Behandlung]], #DE-BW)
+  * item[+] insert addItemWithSource(7.229, #boolean, [[Untersuchung_Menschzeichnung_Kinder-/Hausarzt]], #DE-BW)
+  * item[+] insert addItemWithSource(7.230, #boolean, [[Untersuchung_Menschzeichnung_Altersentsprechend]], #DE-BW)
+  * item[+] insert addItemWithSource(7.231, #boolean, [[Untersuchung_Menschzeichnung_Abgeschlossen]], #DE-BW)
+  * item[+] insert addItemWithSource(7.232, #string, [[Untersuchung_Menschzeichnung_Bemerkungen]], #DE-BW)
+  * item[+] insert addItemWithSource(7.233, #boolean, [[Untersuchung_Menschzeichnung_Bemerkungen_Übernahme_in_Befundbogen_für_Sorgeberechtigte]], #DE-BW)
+  * item[+] insert addItemWithSource(7.234, #boolean, [[Untersuchung_Menschzeichnung_Bemerkungen_Übernahme_in_Befundbogen_für_Kita]], #DE-BW)
+  * item[+] insert addItemWithSource(7.235, #boolean, [[Untersuchung_Mathematische_Basiskompetenz_Intensiver_Förderbedarf]], #DE-BW)
+  * item[+] insert addItemWithSource(7.236, #boolean, [[Untersuchung_Mathematische_Basiskompetenz_Förderung_häuslich/Kindergarten]], #DE-BW)
+  * item[+] insert addItemWithSource(7.237, #boolean, [[Untersuchung_Verhalten_Auffälligkeiten_Konzentration]], #DE-BW)
+  * item[+] insert addItemWithSource(7.238, #boolean, [[Untersuchung_Verhalten_Auffälligkeiten_Ausdauer]], #DE-BW)
+  * item[+] insert addItemWithSource(7.239, #boolean, [[Untersuchung_Verhalten_Auffälligkeiten_Frustrationstoleranz]], #DE-BW)
+  * item[+] insert addItemWithSource(7.240, #boolean, [[Untersuchung_Verhalten_Auffälligkeiten_Mitarbeit]], #DE-BW)
+  * item[+] insert addItemWithSource(7.241, #boolean, [[Untersuchung_Verhalten_Auffälligkeiten_Impulskontrolle]], #DE-BW)
+  * item[+] insert addItemWithSource(7.242, #boolean, [[Untersuchung_Verhalten_Auffälligkeiten_Andere]], #DE-BW)
+  * item[+] insert addItemWithSource(7.243, #boolean, [[Untersuchung_Verhalten_Auffälligkeiten_Arbeitstempo]], #DE-BW)
+  * item[+] insert addItemWithSource(7.244, #boolean, [[Untersuchung_Verhalten_Auffälligkeiten_Selbstvertrauen]], #DE-BW)
+  * item[+] insert addItemWithSource(7.245, #boolean, [[Untersuchung_Verhalten_Intensiver_Förderbedarf]], #DE-BW)
+  * item[+] insert addItemWithSource(7.246, #boolean, [[Untersuchung_Verhalten_Förderung_häuslich/Kindergarten]], #DE-BW)
+  * item[+] insert addItemWithSource(7.247, #boolean, [[Untersuchung_Verhalten_In_Behandlung]], #DE-BW)
+  * item[+] insert addItemWithSource(7.248, #boolean, [[Untersuchung_Verhalten_Altersentsprechend]], #DE-BW)
+  * item[+] insert addItemWithSource(7.249, #boolean, [[Untersuchung_Verhalten_Kinder-/Hausarzt]], #DE-BW)
+  * item[+] insert addItemWithSource(7.250, #boolean, [[Untersuchung_Verhalten_Abgeschlossen]], #DE-BW)
+  * item[+] insert addItemWithSource(7.251, #string, [[Untersuchung_Verhalten_Bemerkungen]], #DE-BW)
+  * item[+] insert addItemWithSource(7.252, #boolean, [[Untersuchung_Verhalten_Bemerkungen_Übernahme_in_Befundbogen_für_Sorgeberechtigte]], #DE-BW)
+  * item[+] insert addItemWithSource(7.253, #boolean, [[Untersuchung_Verhalten_Bemerkungen_Übernahme_in_Befundbogen_für_Kita]], #DE-BW)
+  * item[+] insert addItemWithSource(7.254, #boolean, [[Untersuchung_Zusammenfassung_SBBZ_Empfehlung_geben]], #DE-BW)
+  * item[+] insert addItemWithSource(7.255, #boolean, [[Untersuchung_Zusammenfassung_Geplante_Untersuchung_Schritt_1b]], #DE-BW)
+  * item[+] insert addItemWithSource(7.256, #boolean, [[Untersuchung_Zusammenfassung_Geplante_Untersuchung_SETK_3-5_(Schritt_1)]], #DE-BW)
+  * item[+] insert addItemWithSource(7.257, #boolean, [[Untersuchung_Zusammenfassung_Geplante_Untersuchung_Schritt_2]], #DE-BW)
+  * item[+] insert addItemWithSource(7.258, #boolean, [[Untersuchung_Zusammenfassung_Geplante_Untersuchung_SETK_3-5_(Schritt_2)]], #DE-BW)
+  * item[+] insert addItemWithSource(7.259, #boolean, [[Untersuchung_Zusammenfassung_Geplante_Untersuchung_HASE_(Schritt_2)]], #DE-BW)
+  * item[+] insert addItemWithSource(7.260, #boolean, [[Untersuchung_Zusammenfassung_Geplante_Untersuchung_SOPESS_(Schritt_2)]], #DE-BW)
+  * item[+] insert addItemWithSource(7.261, #boolean, [[Untersuchung_Zusammenfassung_Bemerkungen_Befundbogen]], #DE-BW)
+
 
 
 CodeSystem: SEU_UB_UntersuchungsstatusFdSScreeningCS
@@ -922,8 +1128,16 @@ ValueSet: ISO6392_LanguageVS
 Id: language-valueset
 Title: "Language ValueSet"
 Description: "ValueSet containing all language codes from the ISO 639-2 CodeSystem."
+* NullFlavor#NAVU "keine Angabe"
+* NullFlavor#OTH "Andere"
 * include codes from system ISO6392_LanguageCS
 * ^expansion.timestamp = "2024-09-12T12:00:00+00:00"
+* ^expansion.contains[+].system = Canonical(NullFlavor)
+* ^expansion.contains[=].code = #NAVU
+* ^expansion.contains[=].display = "keine Angabe"
+* ^expansion.contains[+].system = Canonical(NullFlavor)
+* ^expansion.contains[=].code = #OTH
+* ^expansion.contains[=].display = "Andere"
 * ^expansion.contains[+].system = Canonical(ISO6392_LanguageCS)
 * ^expansion.contains[=].code = #aar
 * ^expansion.contains[=].display = "Afar"
@@ -2022,3 +2236,99 @@ Description: "ValueSet containing all language codes from the ISO 639-2 CodeSyst
 * ^expansion.contains[+].system = Canonical(ISO6392_LanguageCS)
 * ^expansion.contains[=].code = #zza
 * ^expansion.contains[=].display = "Zazaisch"
+
+CodeSystem: SEU_UB_HoertestDezibelCS
+Id: seu-ub-hoertest-dezibel-cs
+Title: "SEU_UB_Hörtest CodeSystem"
+Description: "CodeSystem für die Angabe der Dezibelstufen im Hörtest."
+* #20db "20db"
+* #30db "30db"
+* #40db "40db"
+* #50db "50db"
+
+ValueSet: SEU_UB_HoertestDezibelVS
+Id: seu-ub-hoertest-dezibel-vs
+Title: "SEU_UB_Hörtest ValueSet"
+Description: "ValueSet, das verschiedene Dezibelstufen im Hörtest enthält."
+* include codes from system SEU_UB_HoertestDezibelCS
+* ^expansion.timestamp = "2024-09-10T12:00:00+00:00"
+* ^expansion.contains[0].system = Canonical(SEU_UB_HoertestDezibelCS)
+* ^expansion.contains[=].code = #20db
+* ^expansion.contains[=].display = "20db"
+* ^expansion.contains[+].system = Canonical(SEU_UB_HoertestDezibelCS)
+* ^expansion.contains[=].code = #30db
+* ^expansion.contains[=].display = "30db"
+* ^expansion.contains[+].system = Canonical(SEU_UB_HoertestDezibelCS)
+* ^expansion.contains[=].code = #40db
+* ^expansion.contains[=].display = "40db"
+* ^expansion.contains[+].system = Canonical(SEU_UB_HoertestDezibelCS)
+* ^expansion.contains[=].code = #50db
+* ^expansion.contains[=].display = "50db"
+
+CodeSystem: SEU_UB_SehtestVisusCS
+Id: seu-ub-sehtest-visus-cs
+Title: "SEU_UB_Sehtest Visus CodeSystem"
+Description: "CodeSystem für die Angabe der Visuswerte im Sehtest."
+* #nicht_durchgefuehrt "Nicht durchgeführt"
+* #1_Visus "1"
+* #0_9_Visus "0,9"
+* #0_8_Visus "0,8"
+* #0_7_Visus "0,7"
+* #0_6_Visus "0,6"
+* #0_5_Visus "0,5"
+
+ValueSet: SEU_UB_SehtestVisusVS
+Id: seu-ub-sehtest-visus-vs
+Title: "SEU_UB_Sehtest Visus ValueSet"
+Description: "ValueSet, das verschiedene Visuswerte im Sehtest enthält."
+* include codes from system SEU_UB_SehtestVisusCS
+* ^expansion.timestamp = "2024-09-10T12:00:00+00:00"
+* ^expansion.contains[0].system = Canonical(SEU_UB_SehtestVisusCS)
+* ^expansion.contains[=].code = #nicht_durchgefuehrt
+* ^expansion.contains[=].display = "Nicht durchgeführt"
+* ^expansion.contains[+].system = Canonical(SEU_UB_SehtestVisusCS)
+* ^expansion.contains[=].code = #1_Visus
+* ^expansion.contains[=].display = "1"
+* ^expansion.contains[+].system = Canonical(SEU_UB_SehtestVisusCS)
+* ^expansion.contains[=].code = #0_9_Visus
+* ^expansion.contains[=].display = "0,9"
+* ^expansion.contains[+].system = Canonical(SEU_UB_SehtestVisusCS)
+* ^expansion.contains[=].code = #0_8_Visus
+* ^expansion.contains[=].display = "0,8"
+* ^expansion.contains[+].system = Canonical(SEU_UB_SehtestVisusCS)
+* ^expansion.contains[=].code = #0_7_Visus
+* ^expansion.contains[=].display = "0,7"
+* ^expansion.contains[+].system = Canonical(SEU_UB_SehtestVisusCS)
+* ^expansion.contains[=].code = #0_6_Visus
+* ^expansion.contains[=].display = "0,6"
+* ^expansion.contains[+].system = Canonical(SEU_UB_SehtestVisusCS)
+* ^expansion.contains[=].code = #0_5_Visus
+* ^expansion.contains[=].display = "0,5"
+
+CodeSystem: SEU_UB_EntwicklungsbewertungCS
+Id: seu-ub-entwicklungsbewertung-cs
+Title: "SEU_UB_Entwicklungsbewertung CodeSystem"
+Description: "CodeSystem für die Angabe der Entwicklungsbewertung."
+* #altersentsprechend "Altersentsprechend"
+* #foerderbedarf "ggf. Förderbedarf"
+* #arztempfehlung "ggf. Arztempfehlung"
+* #foerderbedarf_und_arztempfehlung "Förderbedarf und ggf. Arztempfehlung"
+
+ValueSet: SEU_UB_EntwicklungsbewertungVS
+Id: seu-ub-entwicklungsbewertung-vs
+Title: "SEU_UB_Entwicklungsbewertung ValueSet"
+Description: "ValueSet, das die Entwicklungsbewertung enthält."
+* include codes from system SEU_UB_EntwicklungsbewertungCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
+* ^expansion.contains[0].system = Canonical(SEU_UB_EntwicklungsbewertungCS)
+* ^expansion.contains[=].code = #altersentsprechend
+* ^expansion.contains[=].display = "Altersentsprechend"
+* ^expansion.contains[+].system = Canonical(SEU_UB_EntwicklungsbewertungCS)
+* ^expansion.contains[=].code = #foerderbedarf
+* ^expansion.contains[=].display = "ggf. Förderbedarf"
+* ^expansion.contains[+].system = Canonical(SEU_UB_EntwicklungsbewertungCS)
+* ^expansion.contains[=].code = #arztempfehlung
+* ^expansion.contains[=].display = "ggf. Arztempfehlung"
+* ^expansion.contains[+].system = Canonical(SEU_UB_EntwicklungsbewertungCS)
+* ^expansion.contains[=].code = #foerderbedarf_und_arztempfehlung
+* ^expansion.contains[=].display = "Förderbedarf und ggf. Arztempfehlung"

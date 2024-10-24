@@ -7,7 +7,7 @@ RuleSet: 3-esb-risiken
   * item[+] insert addItem(Berufskrankheit_vorhanden, #choice, Liegt eine Berufskrankheit vor)
     * answerValueSet = Canonical(JaNeinKeineAngabeVS)
   * item[+] insert addItem(Berufskrankheit, #string, Angabe der Berufskrankheit)
-    * insert enableWhenCode(Berufskrankheit, =, JaNeinKeineAngabeCS, yes)
+    * insert enableWhenCode(Berufskrankheit_vorhanden, =, JaNeinKeineAngabeCS, yes)
   * item[+] insert addItem(Krebserkrankung_vorhanden, #choice, Liegt eine Krebserkrankung vor)
     * answerValueSet = Canonical(JaNeinKeineAngabeVS)
   * item[+] insert addItem(Anzahl_Lebendgeboren, #integer, Anzahl der Lebendgeborenen)

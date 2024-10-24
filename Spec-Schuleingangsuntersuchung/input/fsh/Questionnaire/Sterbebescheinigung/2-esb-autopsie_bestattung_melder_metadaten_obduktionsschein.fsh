@@ -6,7 +6,7 @@ RuleSet: 2-esb-autopsie_bestattung_melder_metadaten_obduktionsschein
   * item[+] insert addItem(Path_Institut, #string, Name Pathologisches Institut)
   * item[+] insert addItem(Gerichtsmed_Institut, #string, Name Gerichtsmedizinisches Institut)
 * item[+] insert addGroup(Bestattung, Bestattung)
-  * item[+] insert addItem(Bestattung, #string, Bestattungsart) //TODO Choice
+  * item[+] insert addItem(Bestattungsart, #string, Bestattungsart) //TODO Choice
 * item[+] insert addGroup(Melder, Melder)
   * item[+] insert addItem(Melder_ID, #string, Melder ID der meldenden Stelle)
   * item[+] insert addItem(Melder_Prüfcode, #string, Prüfcode der meldenden Stelle)

@@ -1,0 +1,38 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU_EF_BildungsabschlussBBCS",
+  "id": "seu-ef-bildungsabschluss-bbcs",
+  "title": "SEU_EF_BildungsabschlussBBCS CodeSystem",
+  "description": "CodeSystem für die Angabe des Bildungsabschlusses.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-bildungsabschluss-bbcs",
+  "concept": [
+    {
+      "code": "kein_abschluss",
+      "display": "Kein Abschluss"
+    },
+    {
+      "code": "foerderschulabschluss",
+      "display": "Förderschulabschluss"
+    },
+    {
+      "code": "hauptschulabschluss_berufsbildungsreife",
+      "display": "Hauptschulabschluss, Berufsbildungsreife"
+    },
+    {
+      "code": "ebf_for",
+      "display": "Erweiterte Berufsbildungsreife (EBR), Fachoberschulreife (FOR)"
+    },
+    {
+      "code": "realschulabschluss_msa_mittlere_reife",
+      "display": "Realschulabschluss, MSA, 10. Klasse-Abschluss, mittlere Reife"
+    },
+    {
+      "code": "abitur_fachhochschulreife_fachabitur",
+      "display": "Abitur, Fachhochschulreife, Fachabitur"
+    }
+  ],
+  "count": 6
+}

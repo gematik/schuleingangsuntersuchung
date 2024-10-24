@@ -42,6 +42,7 @@ Description: "RechtsLinksHaenderCS"
 * #rechtshänder "Rechtshänder"
 * #linkshänder "Linkshänder"
 * #beidhändig "Beidhändig/Unentschieden"
+* #nicht_feststellbar "Nicht feststellbar"
 
 CodeSystem: AuffaelligkeitVerhaltenCS
 Id: AuffaelligkeitVerhaltenCS
@@ -53,7 +54,7 @@ Description: "AuffaelligkeitVerhaltenCS"
 * #ängstlichkeit "Ängstlichkeit"
 * #aggressivität "Aggressivität"
 * #schlafstörung "Schlafstörung"
-* #hyperaktivität "Hyperaktivität"
+* #hyperaktivität "Motorische Unruhe/Hyperaktivität"
 * #riskantes_handeln "Riskantes Handeln"
 * #schlechter_appetit "Schlechter Appetit"
 * #wenig_ausdauer_beim_spielen "Wenig Ausdauer beim Spielen"
@@ -71,6 +72,7 @@ Description: "AuffaelligkeitVerhaltenCS"
 * #häufiges_hinfallen "Häufiges Hinfallen"
 * #großer_bewegungsdrang "Großer Bewegungsdrang"
 * #kann_sich_schlecht_an_regeln_halten "Kann sich schlecht an Regeln halten"
+* #riskante_handlungen "unüberlegte/riskante Handlungen"
 
 CodeSystem: LinksRechtsBeidseitsKeineAngabeCS
 Id: LinksRechtsBeidseitsKeineAngabeCS
@@ -114,7 +116,7 @@ Description: "ErkrankungCS"
 * #wirbelsäulenleiden "Wirbelsäulenleiden"
 * #bewegungsstörung "Bewegungsstörung"
 * #diabetes "Diabetes"
-* #ass "ASS"
+* #ass "Autismus-Spektrum-Störung (ASS)"
 * #schilddrüsenfunktionsstörung "Schilddrüsenfunktionsstörung"
 
 CodeSystem: InfektionsKrankheitCS
@@ -176,8 +178,11 @@ Description: "UnfallArtCS"
 * #gehirnerschütterung "Gehirnerschütterung"
 * #schwere_schnittverletzung "Schwere Schnittverletzung"
 * #vergiftung "Vergiftung"
-* #verbrennung "Verbrennung"
+* #verbrennung "Verbrühung/Verbrennung/Verätzung"
 * #knochenbruch "Knochenbruch"
+* #prellung "Prellung"
+* #verstauchung "Verstauchung/Verrenkung/Ausrenkung"
+* #offene_wunde "Offene Wunde"
 * #andere "Andere"
 
 CodeSystem: GeplantFindetStattAbgeschlossenCS
@@ -196,23 +201,26 @@ Description: "HaeufigkeitAuswahlCS"
 * #häufig "Häufig"
 * #nie "Nie"
 
-CodeSystem: BildungsabschlussCS
-Id: bildungsabschluss-cs
-Title: "Bildungsabschluss CodeSystem"
-Description: "BildungsabschlussCS"
-* #kein_hauptschulabschluss "Kein Hauptschulabschluss"
+CodeSystem: SEU_EF_BildungsabschlussCS
+Id: seu-ef-bildungsabschluss-cs
+Title: "SEU_EF_Bildungsabschluss CodeSystem"
+Description: "CodeSystem für die Angabe des Bildungsabschlusses."
+* #kein_schulabschluss "Kein Schulabschluss"
 * #hauptschulabschluss "Hauptschulabschluss"
-* #mittlere_reife "Mittlere Reife"
-* #abitur "Abitur"
+* #mittlere_reife "Mittlere Reife oder vergleichbar"
+* #abitur_fachhochschulreife "Abitur/Fachhochschulreife oder vergleichbar"
+* #sonder_foerderschule "Sonder-/Förderschule"
+* #in_schulischer_ausbildung "Derzeit noch in schulischer Ausbildung (Schüler*in)"
 
-CodeSystem: BerufsbildungCS
-Id: berufsbildung-cs
-Title: "Berufsbildung CodeSystem"
-Description: "BerufsbildungCS"
-* #keine_berufsausbildung "Kein abgeschlossene Berufsausbildung"
-* #in_ausbildung_studium "In Ausbildung/Studium"
-* #berufsausbildung_fachschule "Abgeschlossene Berufsausbildung/Fachschulabschluss"
-* #abgeschlossenes_studium "Abgeschlossenes Studium"
+
+CodeSystem: SEU_EF_BerufsbildungCS
+Id: seu-ef-berufsbildung-cs
+Title: "SEU_EF_Berufsbildung CodeSystem"
+Description: "CodeSystem für die Angabe des Berufsbildungsstands."
+* #kein_berufsabschluss "Kein Berufsabschluss"
+* #in_ausbildung_studium "Derzeit noch in beruflicher Ausbildung"
+* #berufliche_ausbildung_lehre "Berufliche Ausbildung/Lehre oder vergleichbar"
+* #fachhochschulabschluss "Fach-/Hochschulabschluss oder vergleichbar"
 
 CodeSystem: VersorgungsartCS
 Id: versorgungsart-cs
@@ -622,3 +630,25 @@ Description: "Staatsangehörigkeit und Länderkennzeichen für Auslandsanschrift
 * #EH "Westsahara"
 * #RCA "Zentralafrikanische Republik"
 * #CY "Zypern"
+
+CodeSystem: SEU_EF_MedienkonsumCS
+Id: seu-ef-medienkonsum-cs
+Title: "SEU_EF_Medienkonsum CodeSystem"
+Description: "CodeSystem für die Angabe des Medienkonsums in Stunden."
+* #gar_nicht "Gar nicht"
+* #bis_0_5 "Bis 0,5 Stunden"
+* #von_0_5_bis_1 "0,5 bis 1 Stunde"
+* #von_1_bis_2 "1 bis 2 Stunden"
+* #von_2_bis_4 "2 bis 4 Stunden"
+* #mehr_als_4 "Mehr als 4 Stunden"
+
+CodeSystem: SEU_EF_WohnsituationKindCS
+Id: seu-ef-wohnsituation-kind-cs
+Title: "SEU_EF_Wohnsituation Kind CodeSystem"
+Description: "CodeSystem für die Angabe der Wohnsituation des Kindes."
+* #bei_beiden_leiblichen_eltern "Bei beiden leiblichen Eltern"
+* #bei_alleinerziehendem_elternteil "Bei alleinerziehendem Elternteil"
+* #bei_elternteil_mit_partner "Bei Elternteil mit Partner"
+* #bei_grosseltern_oder_anderen "Bei Großeltern, Pflegeeltern, Adoptiveltern oder anderen"
+* #keine_angaben "Keine Angaben"
+

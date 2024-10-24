@@ -45,6 +45,14 @@ Description: "Untersuchungsbogen"
 * contained[+] = SEU_UB_BewertungsvorschlagVS
 * contained[+] = JaNeinKeineAngabeVS
 * contained[+] = SEU_UB_BewertungErgebnisVS
+* contained[+] = SEU_UB_0_4ImpfungenVS
+* contained[+] = SEU_UB_0_3ImpfungenVS
+* contained[+] = SEU_UB_0_2ImpfungenVS
+* contained[+] = SEU_UB_GrippesaisonVS
+* contained[+] = SEU_UB_RotaimpfungVS
+* contained[+] = SEU_UB_HoertestDezibelVS
+* contained[+] = SEU_UB_SehtestVisusVS
+* contained[+] = SEU_UB_EntwicklungsbewertungVS
 * id = "SEU-Untersuchungsbogen"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Untersuchungsbogen"
 * title = "SEU Untersuchungsbogen Maximaldatensatz"

@@ -1,0 +1,54 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU_EF_FachaerzteCS",
+  "id": "seu-ef-fachaerzte-cs",
+  "title": "SEU_EF_Fachärzte CodeSystem",
+  "description": "CodeSystem für die Angabe von Fachärzten.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-fachaerzte-cs",
+  "concept": [
+    {
+      "code": "kinderarzt_hausarzt",
+      "display": "Kinderarzt / Hausarzt"
+    },
+    {
+      "code": "zahnarzt",
+      "display": "Zahnarzt"
+    },
+    {
+      "code": "kieferorthopaede",
+      "display": "Kieferorthopäde"
+    },
+    {
+      "code": "augenarzt",
+      "display": "Augenarzt"
+    },
+    {
+      "code": "hals_nasen_ohren_arzt",
+      "display": "Hals-Nasen-Ohren-Arzt"
+    },
+    {
+      "code": "hautarzt",
+      "display": "Hautarzt"
+    },
+    {
+      "code": "urologe",
+      "display": "Urologe"
+    },
+    {
+      "code": "chirurg_orthopaede",
+      "display": "Chirurg/Orthopäde"
+    },
+    {
+      "code": "kinder_jugendpsychiater",
+      "display": "Kinder- und Jugendpsychiater"
+    },
+    {
+      "code": "andere",
+      "display": "Andere"
+    }
+  ],
+  "count": 10
+}

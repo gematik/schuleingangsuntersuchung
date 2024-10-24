@@ -27,13 +27,28 @@
       },
       {
         "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallArtCS",
-        "code": "verbrennung",
-        "display": "Verbrennung"
+        "code": "knochenbruch",
+        "display": "Knochenbruch"
       },
       {
         "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallArtCS",
-        "code": "knochenbruch",
-        "display": "Knochenbruch"
+        "code": "prellung",
+        "display": "Prellung"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallArtCS",
+        "code": "verstauchung",
+        "display": "Verstauchung/Verrenkung/Ausrenkung"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallArtCS",
+        "code": "offene_wunde",
+        "display": "Offene Wunde"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallArtCS",
+        "code": "verbrennung",
+        "display": "Verbrühung/Verbrennung/Verätzung"
       },
       {
         "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallArtCS",

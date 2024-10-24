@@ -1,0 +1,47 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SEU_EF_DauerBWVS",
+  "id": "seu-ef-zeitraum-vs",
+  "title": "SEU_EF_Zeitraum ValueSet",
+  "description": "ValueSet, das verschiedene Zeiträume enthält.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-zeitraum-vs",
+  "expansion": {
+    "timestamp": "2024-10-20T11:50:47+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-zeitraum-cs",
+        "code": "nie",
+        "display": "Nie"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-zeitraum-cs",
+        "code": "2_3_jahre",
+        "display": "2-3 Jahre"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-zeitraum-cs",
+        "code": "bis_zu_1_jahr",
+        "display": "Bis zu 1 Jahr"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-zeitraum-cs",
+        "code": "3_jahre_und_laenger",
+        "display": "3 Jahre und länger"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-zeitraum-cs",
+        "code": "1_2_jahre",
+        "display": "1-2 Jahre"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-zeitraum-cs"
+      }
+    ]
+  }
+}

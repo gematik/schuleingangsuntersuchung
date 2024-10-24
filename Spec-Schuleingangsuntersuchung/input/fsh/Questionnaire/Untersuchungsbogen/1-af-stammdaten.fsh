@@ -42,7 +42,7 @@ RuleSet: 1-af-stammdaten
     * insert addItemWithSource(1.16, #integer, [[Alter des Kindes in Jahren]], #DE-BW)
     * insert uunit(a, "Jahre")
   * item[+]
-    * insert addItemWithSource(1.17, #integer, [[Einrichtung des Kindes]], #DE-BW)
+    * insert addItemWithSource(1.17, #integer, [[Ort der Untersuchung]], #DE-BW)
   * item[+]
     * insert addItemWithSource(1.18, #boolean, [[Kind bei Untersuchung anwesend?]], #DE-BW)
   * item[+]
@@ -59,7 +59,7 @@ RuleSet: 1-af-stammdaten
       * item[+]
         * insert addItemWithSource(1.21.g.2, #string, [[Andere Begleitperson Beziehungsstatus]], #DE-BW)
       * item[+]
-        * insert addItemWithSource(1.21.g.3, #boolean, [[Andere Begleitperson Einverständniserklärung vorliegend]], #DE-BW)
+        * insert addItemWithSource(1.21.g.3, #boolean, [[Andere Begleitperson Einverständniserklärung Sorgeberechtigte Person vorliegend]], #DE-BW)
   
 CodeSystem: SEU_UB_RegionArtCS
 Id: SEU-UB-RegionArtCS

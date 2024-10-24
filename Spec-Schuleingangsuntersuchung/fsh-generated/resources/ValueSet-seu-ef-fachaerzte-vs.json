@@ -1,0 +1,72 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SEU_EF_FachaerzteVS",
+  "id": "seu-ef-fachaerzte-vs",
+  "title": "SEU_EF_Fachärzte ValueSet",
+  "description": "ValueSet, das verschiedene Fachärzte enthält.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-fachaerzte-vs",
+  "expansion": {
+    "timestamp": "2024-10-20T11:50:47+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-fachaerzte-cs",
+        "code": "kinderarzt_hausarzt",
+        "display": "Kinderarzt / Hausarzt"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-fachaerzte-cs",
+        "code": "zahnarzt",
+        "display": "Zahnarzt"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-fachaerzte-cs",
+        "code": "kieferorthopaede",
+        "display": "Kieferorthopäde"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-fachaerzte-cs",
+        "code": "augenarzt",
+        "display": "Augenarzt"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-fachaerzte-cs",
+        "code": "hals_nasen_ohren_arzt",
+        "display": "Hals-Nasen-Ohren-Arzt"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-fachaerzte-cs",
+        "code": "hautarzt",
+        "display": "Hautarzt"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-fachaerzte-cs",
+        "code": "urologe",
+        "display": "Urologe"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-fachaerzte-cs",
+        "code": "chirurg_orthopaede",
+        "display": "Chirurg/Orthopäde"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-fachaerzte-cs",
+        "code": "kinder_jugendpsychiater",
+        "display": "Kinder- und Jugendpsychiater"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-fachaerzte-cs",
+        "code": "andere",
+        "display": "Andere"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-fachaerzte-cs"
+      }
+    ]
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SEU_EF_WohnsituationKindVS",
+  "id": "seu-ef-wohnsituation-kind-vs",
+  "title": "SEU_EF_Wohnsituation Kind ValueSet",
+  "description": "ValueSet, das verschiedene Wohnsituationen des Kindes enthält.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-wohnsituation-kind-vs",
+  "expansion": {
+    "timestamp": "2024-10-20T11:50:47+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-wohnsituation-kind-cs",
+        "code": "bei_beiden_leiblichen_eltern",
+        "display": "Bei beiden leiblichen Eltern"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-wohnsituation-kind-cs",
+        "code": "bei_alleinerziehendem_elternteil",
+        "display": "Bei alleinerziehendem Elternteil"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-wohnsituation-kind-cs",
+        "code": "bei_elternteil_mit_partner",
+        "display": "Bei Elternteil mit Partner"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-wohnsituation-kind-cs",
+        "code": "bei_grosseltern_oder_anderen",
+        "display": "Bei Großeltern, Pflegeeltern, Adoptiveltern oder anderen"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-wohnsituation-kind-cs",
+        "code": "keine_angaben",
+        "display": "Keine Angaben"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-wohnsituation-kind-cs"
+      }
+    ]
+  }
+}

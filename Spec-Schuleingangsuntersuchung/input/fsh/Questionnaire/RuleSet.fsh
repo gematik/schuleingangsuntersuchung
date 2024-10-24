@@ -66,6 +66,16 @@ RuleSet: uunit(code, display)
   * url = "http://hl7.org/fhir/StructureDefinition/questionnaire-unit"
   * valueCoding = $unitsofmeasure#{code} {display}
 
+RuleSet: minValueInt(value)
+* extension[+]
+  * url = "http://hl7.org/fhir/StructureDefinition/minValue"
+  * valueInteger = {value}
+
+RuleSet: maxValueInt(value)
+* extension[+]
+  * url = "http://hl7.org/fhir/StructureDefinition/maxValue"
+  * valueInteger = {value}
+
 RuleSet: calculatedExpression(name, expression)
 * extension[+]
   * url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-calculatedExpression"

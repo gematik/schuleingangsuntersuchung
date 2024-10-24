@@ -1,0 +1,30 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU_EF_BerufsbildungCS",
+  "id": "seu-ef-berufsbildung-cs",
+  "title": "SEU_EF_Berufsbildung CodeSystem",
+  "description": "CodeSystem für die Angabe des Berufsbildungsstands.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-berufsbildung-cs",
+  "concept": [
+    {
+      "code": "kein_berufsabschluss",
+      "display": "Kein Berufsabschluss"
+    },
+    {
+      "code": "in_ausbildung_studium",
+      "display": "Derzeit noch in beruflicher Ausbildung"
+    },
+    {
+      "code": "berufliche_ausbildung_lehre",
+      "display": "Berufliche Ausbildung/Lehre oder vergleichbar"
+    },
+    {
+      "code": "fachhochschulabschluss",
+      "display": "Fach-/Hochschulabschluss oder vergleichbar"
+    }
+  ],
+  "count": 4
+}

@@ -1,0 +1,47 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SEU_EF_HilfsmittelVS",
+  "id": "seu-ef-hilfsmittel-vs",
+  "title": "SEU_EF_Hilfsmittel ValueSet",
+  "description": "ValueSet, das verschiedene Hilfsmittel enthält.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-hilfsmittel-vs",
+  "expansion": {
+    "timestamp": "2024-10-20T11:50:47+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-hilfsmittel-cs",
+        "code": "sehhilfe",
+        "display": "Sehhilfe (z. B. Brille)"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-hilfsmittel-cs",
+        "code": "hoerhilfe",
+        "display": "Hörhilfe"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-hilfsmittel-cs",
+        "code": "orthese",
+        "display": "Orthese"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-hilfsmittel-cs",
+        "code": "zahnersatz",
+        "display": "Zahnersatz (Prothese, Platzhalter)"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-hilfsmittel-cs",
+        "code": "anderes",
+        "display": "Anderes"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-hilfsmittel-cs"
+      }
+    ]
+  }
+}

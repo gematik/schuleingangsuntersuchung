@@ -43,7 +43,7 @@
       {
         "system": "https://www.oegd.de/fhir/seu/CodeSystem/AuffaelligkeitVerhaltenCS",
         "code": "hyperaktivität",
-        "display": "Hyperaktivität"
+        "display": "Motorische Unruhe/Hyperaktivität"
       },
       {
         "system": "https://www.oegd.de/fhir/seu/CodeSystem/AuffaelligkeitVerhaltenCS",
@@ -129,6 +129,11 @@
         "system": "https://www.oegd.de/fhir/seu/CodeSystem/AuffaelligkeitVerhaltenCS",
         "code": "kann_sich_schlecht_an_regeln_halten",
         "display": "Kann sich schlecht an Regeln halten"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/AuffaelligkeitVerhaltenCS",
+        "code": "riskante_handlungen",
+        "display": "unüberlegte/riskante Handlungen"
       }
     ]
   },

@@ -1,0 +1,57 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SEU_EF_OperationenVS",
+  "id": "seu-ef-operationen-vs",
+  "title": "SEU_EF_Operationen ValueSet",
+  "description": "ValueSet, das verschiedene durchgeführte Operationen enthält.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-operationen-vs",
+  "expansion": {
+    "timestamp": "2024-09-10T12:00:00+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-operationen-cs",
+        "code": "entfernung_der_rachenpolypen",
+        "display": "Entfernung der Rachenpolypen"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-operationen-cs",
+        "code": "paukendrainage",
+        "display": "Paukendrainage"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-operationen-cs",
+        "code": "mandeloperation",
+        "display": "Mandeloperation"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-operationen-cs",
+        "code": "blinddarmoperation",
+        "display": "Blinddarmoperation"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-operationen-cs",
+        "code": "leisten_nabelbruchoperation",
+        "display": "Leisten-/Nabelbruchoperation"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-operationen-cs",
+        "code": "augenoperation",
+        "display": "Augenoperation"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-operationen-cs",
+        "code": "sonstige_operation",
+        "display": "Sonstige Operation"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-operationen-cs"
+      }
+    ]
+  }
+}

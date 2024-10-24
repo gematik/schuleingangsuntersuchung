@@ -1,0 +1,38 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU_EF_MedienkonsumCS",
+  "id": "seu-ef-medienkonsum-cs",
+  "title": "SEU_EF_Medienkonsum CodeSystem",
+  "description": "CodeSystem für die Angabe des Medienkonsums in Stunden.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-medienkonsum-cs",
+  "concept": [
+    {
+      "code": "gar_nicht",
+      "display": "Gar nicht"
+    },
+    {
+      "code": "bis_0_5",
+      "display": "Bis 0,5 Stunden"
+    },
+    {
+      "code": "von_0_5_bis_1",
+      "display": "0,5 bis 1 Stunde"
+    },
+    {
+      "code": "von_1_bis_2",
+      "display": "1 bis 2 Stunden"
+    },
+    {
+      "code": "von_2_bis_4",
+      "display": "2 bis 4 Stunden"
+    },
+    {
+      "code": "mehr_als_4",
+      "display": "Mehr als 4 Stunden"
+    }
+  ],
+  "count": 6
+}

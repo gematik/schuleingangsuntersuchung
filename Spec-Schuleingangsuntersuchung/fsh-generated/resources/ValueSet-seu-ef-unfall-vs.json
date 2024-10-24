@@ -1,0 +1,32 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SEU_EF_UnfallVS",
+  "id": "seu-ef-unfall-vs",
+  "title": "SEU_EF_Unfall ValueSet",
+  "description": "ValueSet, das verschiedene Unfallumstände enthält.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-unfall-vs",
+  "expansion": {
+    "timestamp": "2024-10-20T11:50:47+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-unfall-cs",
+        "code": "bei_freizeitaktivitaeten",
+        "display": "Bei Freizeitaktivitäten"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-unfall-cs",
+        "code": "beim_kindergartenbesuch",
+        "display": "Beim Kindergartenbesuch"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-unfall-cs"
+      }
+    ]
+  }
+}

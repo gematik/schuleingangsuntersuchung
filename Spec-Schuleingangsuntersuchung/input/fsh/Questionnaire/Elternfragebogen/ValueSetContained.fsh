@@ -141,6 +141,9 @@ Description: "RechtsLinksHaenderVS"
 * ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/RechtsLinksHaenderCS"
 * ^expansion.contains[=].code = #beidhändig
 * ^expansion.contains[=].display = "Beidhändig/Unentschieden"
+* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/RechtsLinksHaenderCS"
+* ^expansion.contains[=].code = #nicht_feststellbar
+* ^expansion.contains[=].display = "Nicht feststellbar"
 
 ValueSet: AuffaelligkeitVerhaltenVS
 Id: AuffaelligkeitVerhaltenVS
@@ -168,7 +171,7 @@ Description: "AuffaelligkeitVerhaltenVS"
 * ^expansion.contains[=].display = "Schlafstörung"
 * ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/AuffaelligkeitVerhaltenCS"
 * ^expansion.contains[=].code = #hyperaktivität
-* ^expansion.contains[=].display = "Hyperaktivität"
+* ^expansion.contains[=].display = "Motorische Unruhe/Hyperaktivität"
 * ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/AuffaelligkeitVerhaltenCS"
 * ^expansion.contains[=].code = #riskantes_handeln
 * ^expansion.contains[=].display = "Riskantes Handeln"
@@ -220,6 +223,9 @@ Description: "AuffaelligkeitVerhaltenVS"
 * ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/AuffaelligkeitVerhaltenCS"
 * ^expansion.contains[=].code = #kann_sich_schlecht_an_regeln_halten
 * ^expansion.contains[=].display = "Kann sich schlecht an Regeln halten"
+* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/AuffaelligkeitVerhaltenCS"
+* ^expansion.contains[=].code = #riskante_handlungen
+* ^expansion.contains[=].display = "unüberlegte/riskante Handlungen"
 
 ValueSet: LinksRechtsBeidseitsKeineAngabeVS
 Id: LinksRechtsBeidseitsKeineAngabeVS
@@ -327,7 +333,7 @@ Description: "ErkrankungVS"
 * ^expansion.contains[=].display = "Diabetes"
 * ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS"
 * ^expansion.contains[=].code = #ass
-* ^expansion.contains[=].display = "ASS"
+* ^expansion.contains[=].display = "Autismus-Spektrum-Störung (ASS)"
 * ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS"
 * ^expansion.contains[=].code = #schilddrüsenfunktionsstörung
 * ^expansion.contains[=].display = "Schilddrüsenfunktionsstörung"
@@ -472,52 +478,67 @@ Description: "UnfallArtVS"
 * ^expansion.contains[=].code = #vergiftung
 * ^expansion.contains[=].display = "Vergiftung"
 * ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/UnfallArtCS"
-* ^expansion.contains[=].code = #verbrennung
-* ^expansion.contains[=].display = "Verbrennung"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/UnfallArtCS"
 * ^expansion.contains[=].code = #knochenbruch
 * ^expansion.contains[=].display = "Knochenbruch"
+* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/UnfallArtCS"
+* ^expansion.contains[=].code = #prellung
+* ^expansion.contains[=].display = "Prellung"
+* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/UnfallArtCS"
+* ^expansion.contains[=].code = #verstauchung
+* ^expansion.contains[=].display = "Verstauchung/Verrenkung/Ausrenkung"
+* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/UnfallArtCS"
+* ^expansion.contains[=].code = #offene_wunde
+* ^expansion.contains[=].display = "Offene Wunde"
+* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/UnfallArtCS"
+* ^expansion.contains[=].code = #verbrennung
+* ^expansion.contains[=].display = "Verbrühung/Verbrennung/Verätzung"
 * ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/UnfallArtCS"
 * ^expansion.contains[=].code = #andere
 * ^expansion.contains[=].display = "Andere"
 
-ValueSet: BildungsabschlussVS
-Id: bildungsabschluss-vs
-Title: "Bildungsabschluss ValueSet"
-Description: "BildungsabschlussVS"
-* include codes from system BildungsabschlussCS
-* ^expansion.timestamp = "2024-04-06T12:00:00+00:00"
-* ^expansion.contains[0].system = Canonical(BildungsabschlussCS)
-* ^expansion.contains[=].code = #kein_hauptschulabschluss
-* ^expansion.contains[=].display = "Kein Hauptschulabschluss"
-* ^expansion.contains[+].system = Canonical(BildungsabschlussCS)
+ValueSet: SEU_EF_BildungsabschlussVS
+Id: seu-ef-bildungsabschluss-vs
+Title: "SEU_EF_Bildungsabschluss ValueSet"
+Description: "ValueSet, das verschiedene Bildungsabschlüsse enthält."
+* include codes from system SEU_EF_BildungsabschlussCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
+* ^expansion.contains[0].system = Canonical(SEU_EF_BildungsabschlussCS)
+* ^expansion.contains[=].code = #kein_schulabschluss
+* ^expansion.contains[=].display = "Kein Schulabschluss"
+* ^expansion.contains[+].system = Canonical(SEU_EF_BildungsabschlussCS)
 * ^expansion.contains[=].code = #hauptschulabschluss
 * ^expansion.contains[=].display = "Hauptschulabschluss"
-* ^expansion.contains[+].system = Canonical(BildungsabschlussCS)
+* ^expansion.contains[+].system = Canonical(SEU_EF_BildungsabschlussCS)
 * ^expansion.contains[=].code = #mittlere_reife
-* ^expansion.contains[=].display = "Mittlere Reife"
-* ^expansion.contains[+].system = Canonical(BildungsabschlussCS)
-* ^expansion.contains[=].code = #abitur
-* ^expansion.contains[=].display = "Abitur"
+* ^expansion.contains[=].display = "Mittlere Reife oder vergleichbar"
+* ^expansion.contains[+].system = Canonical(SEU_EF_BildungsabschlussCS)
+* ^expansion.contains[=].code = #abitur_fachhochschulreife
+* ^expansion.contains[=].display = "Abitur/Fachhochschulreife oder vergleichbar"
+* ^expansion.contains[+].system = Canonical(SEU_EF_BildungsabschlussCS)
+* ^expansion.contains[=].code = #sonder_foerderschule
+* ^expansion.contains[=].display = "Sonder-/Förderschule"
+* ^expansion.contains[+].system = Canonical(SEU_EF_BildungsabschlussCS)
+* ^expansion.contains[=].code = #in_schulischer_ausbildung
+* ^expansion.contains[=].display = "Derzeit noch in schulischer Ausbildung (Schüler*in)"
 
-ValueSet: BerufsbildungVS
-Id: berufsbildung-vs
-Title: "Berufsbildung ValueSet"
-Description: "BerufsbildungVS"
-* include codes from system BerufsbildungCS
-* ^expansion.timestamp = "2024-04-06T12:00:00+00:00"
-* ^expansion.contains[0].system = Canonical(BerufsbildungCS)
-* ^expansion.contains[=].code = #keine_berufsausbildung
-* ^expansion.contains[=].display = "Keine abgeschlossene Berufsausbildung"
-* ^expansion.contains[+].system = Canonical(BerufsbildungCS)
+ValueSet: SEU_EF_BerufsbildungVS
+Id: seu-ef-berufsbildung-vs
+Title: "SEU_EF_Berufsbildung ValueSet"
+Description: "ValueSet, das verschiedene Berufsbildungsabschlüsse enthält."
+* include codes from system SEU_EF_BerufsbildungCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
+* ^expansion.contains[0].system = Canonical(SEU_EF_BerufsbildungCS)
+* ^expansion.contains[=].code = #kein_berufsabschluss
+* ^expansion.contains[=].display = "Kein Berufsabschluss"
+* ^expansion.contains[+].system = Canonical(SEU_EF_BerufsbildungCS)
 * ^expansion.contains[=].code = #in_ausbildung_studium
-* ^expansion.contains[=].display = "In Ausbildung/Studium"
-* ^expansion.contains[+].system = Canonical(BerufsbildungCS)
-* ^expansion.contains[=].code = #berufsausbildung_fachschule
-* ^expansion.contains[=].display = "Abgeschlossene Berufsausbildung/Fachschulabschluss"
-* ^expansion.contains[+].system = Canonical(BerufsbildungCS)
-* ^expansion.contains[=].code = #abgeschlossenes_studium
-* ^expansion.contains[=].display = "Abgeschlossenes Studium"
+* ^expansion.contains[=].display = "Derzeit noch in beruflicher Ausbildung"
+* ^expansion.contains[+].system = Canonical(SEU_EF_BerufsbildungCS)
+* ^expansion.contains[=].code = #berufliche_ausbildung_lehre
+* ^expansion.contains[=].display = "Berufliche Ausbildung/Lehre oder vergleichbar"
+* ^expansion.contains[+].system = Canonical(SEU_EF_BerufsbildungCS)
+* ^expansion.contains[=].code = #fachhochschulabschluss
+* ^expansion.contains[=].display = "Fach-/Hochschulabschluss oder vergleichbar"
 
 ValueSet: ErwerbsstatusVS
 Id: erwerbsstatus-vs
@@ -1783,3 +1804,620 @@ Description: "JaNeinWartelisteVS"
 * ^expansion.contains[+].system = Canonical(ExpandedYesNoIndicator)
 * ^expansion.contains[=].code = #N
 * ^expansion.contains[=].display = "Nein"
+
+ValueSet: SEU_EF_MedienkonsumVS
+Id: seu-ef-medienkonsum-vs
+Title: "SEU_EF_Medienkonsum ValueSet"
+Description: "ValueSet, das die Kategorien des Medienkonsums in Stunden enthält."
+* include codes from system SEU_EF_MedienkonsumCS
+* ^expansion.timestamp = "2024-09-10T12:00:00+00:00"
+* ^expansion.contains[0].system = Canonical(SEU_EF_MedienkonsumCS)
+* ^expansion.contains[=].code = #gar_nicht
+* ^expansion.contains[=].display = "Gar nicht"
+* ^expansion.contains[+].system = Canonical(SEU_EF_MedienkonsumCS)
+* ^expansion.contains[=].code = #bis_0_5
+* ^expansion.contains[=].display = "Bis 0,5 Stunden"
+* ^expansion.contains[+].system = Canonical(SEU_EF_MedienkonsumCS)
+* ^expansion.contains[=].code = #von_0_5_bis_1
+* ^expansion.contains[=].display = "0,5 bis 1 Stunde"
+* ^expansion.contains[+].system = Canonical(SEU_EF_MedienkonsumCS)
+* ^expansion.contains[=].code = #von_1_bis_2
+* ^expansion.contains[=].display = "1 bis 2 Stunden"
+* ^expansion.contains[+].system = Canonical(SEU_EF_MedienkonsumCS)
+* ^expansion.contains[=].code = #von_2_bis_4
+* ^expansion.contains[=].display = "2 bis 4 Stunden"
+* ^expansion.contains[+].system = Canonical(SEU_EF_MedienkonsumCS)
+* ^expansion.contains[=].code = #mehr_als_4
+* ^expansion.contains[=].display = "Mehr als 4 Stunden"
+
+CodeSystem: SEU_UB_FamilienstandCS
+Id: seu-ub-familienstand-cs
+Title: "SEU_UB_Familienstand CodeSystem"
+Description: "CodeSystem für die Angabe der Familiensituation."
+* #bei_beiden_leiblichen_Eltern "Bei beiden leiblichen Eltern"
+* #bei_alleinerziehendem_Elternteil "Bei alleinerziehendem Elternteil"
+* #bei_Elternteil_mit_Partner "Bei Elternteil mit Partner"
+* #bei_Grosseltern_oder_anderen "Bei Großeltern, Pflegeeltern, Adoptiveltern oder anderen"
+* #keine_Angaben "Keine Angaben"
+
+CodeSystem: SEU_EF_OperationenCS
+Id: seu-ef-operationen-cs
+Title: "SEU_EF_Operationen CodeSystem"
+Description: "CodeSystem für die Angabe von durchgeführten Operationen."
+* #entfernung_der_rachenpolypen "Entfernung der Rachenpolypen"
+* #paukendrainage "Paukendrainage"
+* #mandeloperation "Mandeloperation"
+* #blinddarmoperation "Blinddarmoperation"
+* #leisten_nabelbruchoperation "Leisten-/Nabelbruchoperation"
+* #augenoperation "Augenoperation"
+* #sonstige_operation "Sonstige Operation"
+
+ValueSet: SEU_EF_OperationenVS
+Id: seu-ef-operationen-vs
+Title: "SEU_EF_Operationen ValueSet"
+Description: "ValueSet, das verschiedene durchgeführte Operationen enthält."
+* include codes from system SEU_EF_OperationenCS
+* ^expansion.timestamp = "2024-09-10T12:00:00+00:00"
+* ^expansion.contains[0].system = Canonical(SEU_EF_OperationenCS)
+* ^expansion.contains[=].code = #entfernung_der_rachenpolypen
+* ^expansion.contains[=].display = "Entfernung der Rachenpolypen"
+* ^expansion.contains[+].system = Canonical(SEU_EF_OperationenCS)
+* ^expansion.contains[=].code = #paukendrainage
+* ^expansion.contains[=].display = "Paukendrainage"
+* ^expansion.contains[+].system = Canonical(SEU_EF_OperationenCS)
+* ^expansion.contains[=].code = #mandeloperation
+* ^expansion.contains[=].display = "Mandeloperation"
+* ^expansion.contains[+].system = Canonical(SEU_EF_OperationenCS)
+* ^expansion.contains[=].code = #blinddarmoperation
+* ^expansion.contains[=].display = "Blinddarmoperation"
+* ^expansion.contains[+].system = Canonical(SEU_EF_OperationenCS)
+* ^expansion.contains[=].code = #leisten_nabelbruchoperation
+* ^expansion.contains[=].display = "Leisten-/Nabelbruchoperation"
+* ^expansion.contains[+].system = Canonical(SEU_EF_OperationenCS)
+* ^expansion.contains[=].code = #augenoperation
+* ^expansion.contains[=].display = "Augenoperation"
+* ^expansion.contains[+].system = Canonical(SEU_EF_OperationenCS)
+* ^expansion.contains[=].code = #sonstige_operation
+* ^expansion.contains[=].display = "Sonstige Operation"
+
+ValueSet: SEU_EF_WohnsituationKindVS
+Id: seu-ef-wohnsituation-kind-vs
+Title: "SEU_EF_Wohnsituation Kind ValueSet"
+Description: "ValueSet, das verschiedene Wohnsituationen des Kindes enthält."
+* include codes from system SEU_EF_WohnsituationKindCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
+* ^expansion.contains[0].system = Canonical(SEU_EF_WohnsituationKindCS)
+* ^expansion.contains[=].code = #bei_beiden_leiblichen_eltern
+* ^expansion.contains[=].display = "Bei beiden leiblichen Eltern"
+* ^expansion.contains[+].system = Canonical(SEU_EF_WohnsituationKindCS)
+* ^expansion.contains[=].code = #bei_alleinerziehendem_elternteil
+* ^expansion.contains[=].display = "Bei alleinerziehendem Elternteil"
+* ^expansion.contains[+].system = Canonical(SEU_EF_WohnsituationKindCS)
+* ^expansion.contains[=].code = #bei_elternteil_mit_partner
+* ^expansion.contains[=].display = "Bei Elternteil mit Partner"
+* ^expansion.contains[+].system = Canonical(SEU_EF_WohnsituationKindCS)
+* ^expansion.contains[=].code = #bei_grosseltern_oder_anderen
+* ^expansion.contains[=].display = "Bei Großeltern, Pflegeeltern, Adoptiveltern oder anderen"
+* ^expansion.contains[+].system = Canonical(SEU_EF_WohnsituationKindCS)
+* ^expansion.contains[=].code = #keine_angaben
+* ^expansion.contains[=].display = "Keine Angaben"
+
+CodeSystem: SEU_EF_UnfallCS
+Id: seu-ef-unfall-cs
+Title: "SEU_EF_Unfall CodeSystem"
+Description: "CodeSystem für die Angabe der Unfallumstände."
+* #bei_freizeitaktivitaeten "Bei Freizeitaktivitäten"
+* #beim_kindergartenbesuch "Beim Kindergartenbesuch"
+
+ValueSet: SEU_EF_UnfallVS
+Id: seu-ef-unfall-vs
+Title: "SEU_EF_Unfall ValueSet"
+Description: "ValueSet, das verschiedene Unfallumstände enthält."
+* include codes from system SEU_EF_UnfallCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
+* ^expansion.contains[0].system = Canonical(SEU_EF_UnfallCS)
+* ^expansion.contains[=].code = #bei_freizeitaktivitaeten
+* ^expansion.contains[=].display = "Bei Freizeitaktivitäten"
+* ^expansion.contains[+].system = Canonical(SEU_EF_UnfallCS)
+* ^expansion.contains[=].code = #beim_kindergartenbesuch
+* ^expansion.contains[=].display = "Beim Kindergartenbesuch"
+
+CodeSystem: SEU_EF_AlterKindCS
+Id: seu-ef-alter-kind-cs
+Title: "SEU_EF_Alter Kind CodeSystem"
+Description: "CodeSystem für die Angabe des Alters eines Kindes."
+* #hier_geboren "Hier geboren"
+* #unter_1_jahr "Unter 1 Jahr"
+* #1_bis_1_5_jahre ">= 1 Jahr bis 1 ½ Jahre"
+* #1_5_bis_2_jahre ">= 1 ½ Jahre bis 2 Jahre"
+* #2_bis_2_5_jahre ">= 2 Jahre bis 2 ½ Jahre"
+* #2_5_bis_3_jahre ">= 2 ½ Jahre bis 3 Jahre"
+* #3_bis_3_5_jahre ">= 3 Jahre bis 3 ½ Jahre"
+* #3_5_bis_4_jahre ">= 3 ½ Jahre bis 4 Jahre"
+* #4_bis_4_5_jahre ">= 4 Jahre bis 4 ½ Jahre"
+* #5_bis_5_5_jahre ">= 5 Jahre bis 5 ½ Jahre"
+* #5_5_bis_6_jahre ">= 5 ½ Jahre bis 6 Jahre"
+* #6_bis_6_5_jahre ">= 6 Jahre bis 6 ½ Jahre"
+* #keine_angaben "Keine Angaben"
+
+ValueSet: SEU_EF_AlterKindVS
+Id: seu-ef-alter-kind-vs
+Title: "SEU_EF_Alter Kind ValueSet"
+Description: "ValueSet, das das Alter eines Kindes enthält."
+* include codes from system SEU_EF_AlterKindCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
+* ^expansion.contains[0].system = Canonical(SEU_EF_AlterKindCS)
+* ^expansion.contains[=].code = #hier_geboren
+* ^expansion.contains[=].display = "Hier geboren"
+* ^expansion.contains[+].system = Canonical(SEU_EF_AlterKindCS)
+* ^expansion.contains[=].code = #unter_1_jahr
+* ^expansion.contains[=].display = "Unter 1 Jahr"
+* ^expansion.contains[+].system = Canonical(SEU_EF_AlterKindCS)
+* ^expansion.contains[=].code = #1_bis_1_5_jahre
+* ^expansion.contains[=].display = ">= 1 Jahr bis 1 ½ Jahre"
+* ^expansion.contains[+].system = Canonical(SEU_EF_AlterKindCS)
+* ^expansion.contains[=].code = #1_5_bis_2_jahre
+* ^expansion.contains[=].display = ">= 1 ½ Jahre bis 2 Jahre"
+* ^expansion.contains[+].system = Canonical(SEU_EF_AlterKindCS)
+* ^expansion.contains[=].code = #2_bis_2_5_jahre
+* ^expansion.contains[=].display = ">= 2 Jahre bis 2 ½ Jahre"
+* ^expansion.contains[+].system = Canonical(SEU_EF_AlterKindCS)
+* ^expansion.contains[=].code = #2_5_bis_3_jahre
+* ^expansion.contains[=].display = ">= 2 ½ Jahre bis 3 Jahre"
+* ^expansion.contains[+].system = Canonical(SEU_EF_AlterKindCS)
+* ^expansion.contains[=].code = #3_bis_3_5_jahre
+* ^expansion.contains[=].display = ">= 3 Jahre bis 3 ½ Jahre"
+* ^expansion.contains[+].system = Canonical(SEU_EF_AlterKindCS)
+* ^expansion.contains[=].code = #3_5_bis_4_jahre
+* ^expansion.contains[=].display = ">= 3 ½ Jahre bis 4 Jahre"
+* ^expansion.contains[+].system = Canonical(SEU_EF_AlterKindCS)
+* ^expansion.contains[=].code = #4_bis_4_5_jahre
+* ^expansion.contains[=].display = ">= 4 Jahre bis 4 ½ Jahre"
+* ^expansion.contains[+].system = Canonical(SEU_EF_AlterKindCS)
+* ^expansion.contains[=].code = #5_bis_5_5_jahre
+* ^expansion.contains[=].display = ">= 5 Jahre bis 5 ½ Jahre"
+* ^expansion.contains[+].system = Canonical(SEU_EF_AlterKindCS)
+* ^expansion.contains[=].code = #5_5_bis_6_jahre
+* ^expansion.contains[=].display = ">= 5 ½ Jahre bis 6 Jahre"
+* ^expansion.contains[+].system = Canonical(SEU_EF_AlterKindCS)
+* ^expansion.contains[=].code = #6_bis_6_5_jahre
+* ^expansion.contains[=].display = ">= 6 Jahre bis 6 ½ Jahre"
+* ^expansion.contains[+].system = Canonical(SEU_EF_AlterKindCS)
+* ^expansion.contains[=].code = #keine_angaben
+* ^expansion.contains[=].display = "Keine Angaben"
+
+CodeSystem: SEU_EF_SchwangerschaftCS
+Id: seu-ef-schwangerschaft-cs
+Title: "SEU_EF_Schwangerschaft CodeSystem"
+Description: "CodeSystem für die Angabe des Schwangerschaftsstatus."
+* #normal "Normal"
+* #komplikationen_risikoschwangerschaft "Komplikationen/Risikoschwangerschaft"
+* #keine_angabe "Keine Angabe"
+
+ValueSet: SEU_EF_SchwangerschaftVS
+Id: seu-ef-schwangerschaft-vs
+Title: "SEU_EF_Schwangerschaft ValueSet"
+Description: "ValueSet, das den Schwangerschaftsstatus enthält."
+* include codes from system SEU_EF_SchwangerschaftCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
+* ^expansion.contains[0].system = Canonical(SEU_EF_SchwangerschaftCS)
+* ^expansion.contains[=].code = #normal
+* ^expansion.contains[=].display = "Normal"
+* ^expansion.contains[+].system = Canonical(SEU_EF_SchwangerschaftCS)
+* ^expansion.contains[=].code = #komplikationen_risikoschwangerschaft
+* ^expansion.contains[=].display = "Komplikationen/Risikoschwangerschaft"
+* ^expansion.contains[+].system = Canonical(SEU_EF_SchwangerschaftCS)
+* ^expansion.contains[=].code = #keine_angabe
+* ^expansion.contains[=].display = "Keine Angabe"
+
+CodeSystem: SEU_EF_SpracheCS
+Id: seu-ef-sprache-cs
+Title: "SEU_EF_Sprache CodeSystem"
+Description: "CodeSystem für die Angabe von Sprachproblemen."
+* #aussprache "Aussprache"
+* #stottern "Stottern"
+* #aussprache_und_stottern "Aussprache und Stottern"
+
+ValueSet: SEU_EF_SpracheVS
+Id: seu-ef-sprache-vs
+Title: "SEU_EF_Sprache ValueSet"
+Description: "ValueSet, das verschiedene Sprachprobleme enthält."
+* include codes from system SEU_EF_SpracheCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
+* ^expansion.contains[0].system = Canonical(SEU_EF_SpracheCS)
+* ^expansion.contains[=].code = #aussprache
+* ^expansion.contains[=].display = "Aussprache"
+* ^expansion.contains[+].system = Canonical(SEU_EF_SpracheCS)
+* ^expansion.contains[=].code = #stottern
+* ^expansion.contains[=].display = "Stottern"
+* ^expansion.contains[+].system = Canonical(SEU_EF_SpracheCS)
+* ^expansion.contains[=].code = #aussprache_und_stottern
+* ^expansion.contains[=].display = "Aussprache und Stottern"
+
+CodeSystem: SEU_EF_UnfallortCS
+Id: seu-ef-unfallort-cs
+Title: "SEU_EF_Unfallort CodeSystem"
+Description: "CodeSystem für die Angabe des Unfallortes."
+* #nein "Nein"
+* #ja_zu_hause "Ja; zu Hause"
+* #freizeit_ausser_haus "Freizeit außer Haus"
+* #gemeinschaftseinrichtung "Gemeinschaftseinrichtung"
+* #wegeunfall "Wegeunfall"
+* #keine_angabe "Keine Angabe"
+
+ValueSet: SEU_EF_UnfallortVS
+Id: seu-ef-unfallort-vs
+Title: "SEU_EF_Unfallort ValueSet"
+Description: "ValueSet, das die verschiedenen Unfallorte enthält."
+* include codes from system SEU_EF_UnfallortCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
+* ^expansion.contains[0].system = Canonical(SEU_EF_UnfallortCS)
+* ^expansion.contains[=].code = #nein
+* ^expansion.contains[=].display = "Nein"
+* ^expansion.contains[+].system = Canonical(SEU_EF_UnfallortCS)
+* ^expansion.contains[=].code = #ja_zu_hause
+* ^expansion.contains[=].display = "Ja; zu Hause"
+* ^expansion.contains[+].system = Canonical(SEU_EF_UnfallortCS)
+* ^expansion.contains[=].code = #freizeit_ausser_haus
+* ^expansion.contains[=].display = "Freizeit außer Haus"
+* ^expansion.contains[+].system = Canonical(SEU_EF_UnfallortCS)
+* ^expansion.contains[=].code = #gemeinschaftseinrichtung
+* ^expansion.contains[=].display = "Gemeinschaftseinrichtung"
+* ^expansion.contains[+].system = Canonical(SEU_EF_UnfallortCS)
+* ^expansion.contains[=].code = #wegeunfall
+* ^expansion.contains[=].display = "Wegeunfall"
+* ^expansion.contains[+].system = Canonical(SEU_EF_UnfallortCS)
+* ^expansion.contains[=].code = #keine_angabe
+* ^expansion.contains[=].display = "Keine Angabe"
+
+CodeSystem: SEU_EF_BehandlungstypCS
+Id: seu-ef-behandlungstyp-cs
+Title: "SEU_EF_Behandlungstyp CodeSystem"
+Description: "CodeSystem für die Angabe des Behandlungstyps."
+* #aerztlich "Ärztlich"
+* #zahnaerztlich "Zahnärztlich"
+* #psychologisch_kinder_jugendpsychiatrisch "Psychologisch/Kinder- und Jugendpsychiatrisch"
+* #sonstige_behandlung "Sonstige Behandlung"
+* #keine_angabe "Keine Angabe"
+
+ValueSet: SEU_EF_BehandlungstypVS
+Id: seu-ef-behandlungstyp-vs
+Title: "SEU_EF_Behandlungstyp ValueSet"
+Description: "ValueSet, das verschiedene Behandlungstypen enthält."
+* include codes from system SEU_EF_BehandlungstypCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
+* ^expansion.contains[0].system = Canonical(SEU_EF_BehandlungstypCS)
+* ^expansion.contains[=].code = #aerztlich
+* ^expansion.contains[=].display = "Ärztlich"
+* ^expansion.contains[+].system = Canonical(SEU_EF_BehandlungstypCS)
+* ^expansion.contains[=].code = #zahnaerztlich
+* ^expansion.contains[=].display = "Zahnärztlich"
+* ^expansion.contains[+].system = Canonical(SEU_EF_BehandlungstypCS)
+* ^expansion.contains[=].code = #psychologisch_kinder_jugendpsychiatrisch
+* ^expansion.contains[=].display = "Psychologisch/Kinder- und Jugendpsychiatrisch"
+* ^expansion.contains[+].system = Canonical(SEU_EF_BehandlungstypCS)
+* ^expansion.contains[=].code = #sonstige_behandlung
+* ^expansion.contains[=].display = "Sonstige Behandlung"
+* ^expansion.contains[+].system = Canonical(SEU_EF_BehandlungstypCS)
+* ^expansion.contains[=].code = #keine_angabe
+* ^expansion.contains[=].display = "Keine Angabe"
+
+CodeSystem: SEU_EF_ZeitraumCS
+Id: seu-ef-zeitraum-cs
+Title: "SEU_EF_Zeitraum CodeSystem"
+Description: "CodeSystem für die Angabe eines Zeitraums."
+* #nie "Nie"
+* #2_3_jahre "2-3 Jahre"
+* #bis_zu_1_jahr "Bis zu 1 Jahr"
+* #3_jahre_und_laenger "3 Jahre und länger"
+* #1_2_jahre "1-2 Jahre"
+
+ValueSet: SEU_EF_DauerBWVS
+Id: seu-ef-zeitraum-vs
+Title: "SEU_EF_Zeitraum ValueSet"
+Description: "ValueSet, das verschiedene Zeiträume enthält."
+* include codes from system SEU_EF_ZeitraumCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
+* ^expansion.contains[0].system = Canonical(SEU_EF_ZeitraumCS)
+* ^expansion.contains[=].code = #nie
+* ^expansion.contains[=].display = "Nie"
+* ^expansion.contains[+].system = Canonical(SEU_EF_ZeitraumCS)
+* ^expansion.contains[=].code = #2_3_jahre
+* ^expansion.contains[=].display = "2-3 Jahre"
+* ^expansion.contains[+].system = Canonical(SEU_EF_ZeitraumCS)
+* ^expansion.contains[=].code = #bis_zu_1_jahr
+* ^expansion.contains[=].display = "Bis zu 1 Jahr"
+* ^expansion.contains[+].system = Canonical(SEU_EF_ZeitraumCS)
+* ^expansion.contains[=].code = #3_jahre_und_laenger
+* ^expansion.contains[=].display = "3 Jahre und länger"
+* ^expansion.contains[+].system = Canonical(SEU_EF_ZeitraumCS)
+* ^expansion.contains[=].code = #1_2_jahre
+* ^expansion.contains[=].display = "1-2 Jahre"
+
+CodeSystem: SEU_EF_FamiliensituationCS
+Id: seu-ef-familiensituation-cs
+Title: "SEU_EF_Familiensituation CodeSystem"
+Description: "CodeSystem für die Angabe der Familiensituation."
+* #leibliche_eltern "Leibliche Eltern"
+* #mutter_mit_partner_in "Mutter mit Partner/in"
+* #mutter_alleinerziehend "Mutter alleinerziehend"
+* #vater_mit_partner_in "Vater mit Partner/in"
+* #vater_alleinerziehend "Vater alleinerziehend"
+* #wechselmodell "Wechselmodell"
+* #heim "Heim"
+* #pflegeeltern "Pflegeeltern"
+* #andere_familienmitglieder_verwandte "Andere Familienmitglieder/Verwandte"
+* #andere_personen "Andere Personen"
+* #keine_angabe "Keine Angabe"
+
+ValueSet: SEU_EF_FamiliensituationVS
+Id: seu-ef-familiensituation-vs
+Title: "SEU_EF_Familiensituation ValueSet"
+Description: "ValueSet, das verschiedene Familiensituationen enthält."
+* include codes from system SEU_EF_FamiliensituationCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
+* ^expansion.contains[0].system = Canonical(SEU_EF_FamiliensituationCS)
+* ^expansion.contains[=].code = #leibliche_eltern
+* ^expansion.contains[=].display = "Leibliche Eltern"
+* ^expansion.contains[+].system = Canonical(SEU_EF_FamiliensituationCS)
+* ^expansion.contains[=].code = #mutter_mit_partner_in
+* ^expansion.contains[=].display = "Mutter mit Partner/in"
+* ^expansion.contains[+].system = Canonical(SEU_EF_FamiliensituationCS)
+* ^expansion.contains[=].code = #mutter_alleinerziehend
+* ^expansion.contains[=].display = "Mutter alleinerziehend"
+* ^expansion.contains[+].system = Canonical(SEU_EF_FamiliensituationCS)
+* ^expansion.contains[=].code = #vater_mit_partner_in
+* ^expansion.contains[=].display = "Vater mit Partner/in"
+* ^expansion.contains[+].system = Canonical(SEU_EF_FamiliensituationCS)
+* ^expansion.contains[=].code = #vater_alleinerziehend
+* ^expansion.contains[=].display = "Vater alleinerziehend"
+* ^expansion.contains[+].system = Canonical(SEU_EF_FamiliensituationCS)
+* ^expansion.contains[=].code = #wechselmodell
+* ^expansion.contains[=].display = "Wechselmodell"
+* ^expansion.contains[+].system = Canonical(SEU_EF_FamiliensituationCS)
+* ^expansion.contains[=].code = #heim
+* ^expansion.contains[=].display = "Heim"
+* ^expansion.contains[+].system = Canonical(SEU_EF_FamiliensituationCS)
+* ^expansion.contains[=].code = #pflegeeltern
+* ^expansion.contains[=].display = "Pflegeeltern"
+* ^expansion.contains[+].system = Canonical(SEU_EF_FamiliensituationCS)
+* ^expansion.contains[=].code = #andere_familienmitglieder_verwandte
+* ^expansion.contains[=].display = "Andere Familienmitglieder/Verwandte"
+* ^expansion.contains[+].system = Canonical(SEU_EF_FamiliensituationCS)
+* ^expansion.contains[=].code = #andere_personen
+* ^expansion.contains[=].display = "Andere Personen"
+* ^expansion.contains[+].system = Canonical(SEU_EF_FamiliensituationCS)
+* ^expansion.contains[=].code = #keine_angabe
+* ^expansion.contains[=].display = "Keine Angabe"
+
+CodeSystem: SEU_EF_DauerCS
+Id: seu-ef-dauer-cs
+Title: "SEU_EF_Dauer CodeSystem"
+Description: "CodeSystem für die Angabe der Dauer."
+* #gar_nicht "Gar nicht"
+* #unter_1_jahr "Unter 1 Jahr"
+* #ueber_1_jahr "Über 1 Jahr"
+* #ueber_2_jahre "Über 2 Jahre"
+* #ueber_3_jahre "Über 3 Jahre"
+* #ueber_4_jahre "Über 4 Jahre"
+* #keine_angabe "Keine Angabe"
+
+ValueSet: SEU_EF_DauerBBVS
+Id: seu-ef-dauer-vs
+Title: "SEU_EF_Dauer ValueSet"
+Description: "ValueSet, das verschiedene Dauern enthält."
+* include codes from system SEU_EF_DauerCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
+* ^expansion.contains[0].system = Canonical(SEU_EF_DauerCS)
+* ^expansion.contains[=].code = #gar_nicht
+* ^expansion.contains[=].display = "Gar nicht"
+* ^expansion.contains[+].system = Canonical(SEU_EF_DauerCS)
+* ^expansion.contains[=].code = #unter_1_jahr
+* ^expansion.contains[=].display = "Unter 1 Jahr"
+* ^expansion.contains[+].system = Canonical(SEU_EF_DauerCS)
+* ^expansion.contains[=].code = #ueber_1_jahr
+* ^expansion.contains[=].display = "Über 1 Jahr"
+* ^expansion.contains[+].system = Canonical(SEU_EF_DauerCS)
+* ^expansion.contains[=].code = #ueber_2_jahre
+* ^expansion.contains[=].display = "Über 2 Jahre"
+* ^expansion.contains[+].system = Canonical(SEU_EF_DauerCS)
+* ^expansion.contains[=].code = #ueber_3_jahre
+* ^expansion.contains[=].display = "Über 3 Jahre"
+* ^expansion.contains[+].system = Canonical(SEU_EF_DauerCS)
+* ^expansion.contains[=].code = #ueber_4_jahre
+* ^expansion.contains[=].display = "Über 4 Jahre"
+* ^expansion.contains[+].system = Canonical(SEU_EF_DauerCS)
+* ^expansion.contains[=].code = #keine_angabe
+* ^expansion.contains[=].display = "Keine Angabe"
+
+CodeSystem: SEU_EF_HilfsmittelCS
+Id: seu-ef-hilfsmittel-cs
+Title: "SEU_EF_Hilfsmittel CodeSystem"
+Description: "CodeSystem für die Angabe von Hilfsmitteln."
+* #sehhilfe "Sehhilfe (z. B. Brille)"
+* #hoerhilfe "Hörhilfe"
+* #orthese "Orthese"
+* #zahnersatz "Zahnersatz (Prothese, Platzhalter)"
+* #anderes "Anderes"
+
+ValueSet: SEU_EF_HilfsmittelVS
+Id: seu-ef-hilfsmittel-vs
+Title: "SEU_EF_Hilfsmittel ValueSet"
+Description: "ValueSet, das verschiedene Hilfsmittel enthält."
+* include codes from system SEU_EF_HilfsmittelCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
+* ^expansion.contains[0].system = Canonical(SEU_EF_HilfsmittelCS)
+* ^expansion.contains[=].code = #sehhilfe
+* ^expansion.contains[=].display = "Sehhilfe (z. B. Brille)"
+* ^expansion.contains[+].system = Canonical(SEU_EF_HilfsmittelCS)
+* ^expansion.contains[=].code = #hoerhilfe
+* ^expansion.contains[=].display = "Hörhilfe"
+* ^expansion.contains[+].system = Canonical(SEU_EF_HilfsmittelCS)
+* ^expansion.contains[=].code = #orthese
+* ^expansion.contains[=].display = "Orthese"
+* ^expansion.contains[+].system = Canonical(SEU_EF_HilfsmittelCS)
+* ^expansion.contains[=].code = #zahnersatz
+* ^expansion.contains[=].display = "Zahnersatz (Prothese, Platzhalter)"
+* ^expansion.contains[+].system = Canonical(SEU_EF_HilfsmittelCS)
+* ^expansion.contains[=].code = #anderes
+* ^expansion.contains[=].display = "Anderes"
+
+CodeSystem: SEU_EF_FachaerzteCS
+Id: seu-ef-fachaerzte-cs
+Title: "SEU_EF_Fachärzte CodeSystem"
+Description: "CodeSystem für die Angabe von Fachärzten."
+* #kinderarzt_hausarzt "Kinderarzt / Hausarzt"
+* #zahnarzt "Zahnarzt"
+* #kieferorthopaede "Kieferorthopäde"
+* #augenarzt "Augenarzt"
+* #hals_nasen_ohren_arzt "Hals-Nasen-Ohren-Arzt"
+* #hautarzt "Hautarzt"
+* #urologe "Urologe"
+* #chirurg_orthopaede "Chirurg/Orthopäde"
+* #kinder_jugendpsychiater "Kinder- und Jugendpsychiater"
+* #andere "Andere"
+
+ValueSet: SEU_EF_FachaerzteVS
+Id: seu-ef-fachaerzte-vs
+Title: "SEU_EF_Fachärzte ValueSet"
+Description: "ValueSet, das verschiedene Fachärzte enthält."
+* include codes from system SEU_EF_FachaerzteCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
+* ^expansion.contains[0].system = Canonical(SEU_EF_FachaerzteCS)
+* ^expansion.contains[=].code = #kinderarzt_hausarzt
+* ^expansion.contains[=].display = "Kinderarzt / Hausarzt"
+* ^expansion.contains[+].system = Canonical(SEU_EF_FachaerzteCS)
+* ^expansion.contains[=].code = #zahnarzt
+* ^expansion.contains[=].display = "Zahnarzt"
+* ^expansion.contains[+].system = Canonical(SEU_EF_FachaerzteCS)
+* ^expansion.contains[=].code = #kieferorthopaede
+* ^expansion.contains[=].display = "Kieferorthopäde"
+* ^expansion.contains[+].system = Canonical(SEU_EF_FachaerzteCS)
+* ^expansion.contains[=].code = #augenarzt
+* ^expansion.contains[=].display = "Augenarzt"
+* ^expansion.contains[+].system = Canonical(SEU_EF_FachaerzteCS)
+* ^expansion.contains[=].code = #hals_nasen_ohren_arzt
+* ^expansion.contains[=].display = "Hals-Nasen-Ohren-Arzt"
+* ^expansion.contains[+].system = Canonical(SEU_EF_FachaerzteCS)
+* ^expansion.contains[=].code = #hautarzt
+* ^expansion.contains[=].display = "Hautarzt"
+* ^expansion.contains[+].system = Canonical(SEU_EF_FachaerzteCS)
+* ^expansion.contains[=].code = #urologe
+* ^expansion.contains[=].display = "Urologe"
+* ^expansion.contains[+].system = Canonical(SEU_EF_FachaerzteCS)
+* ^expansion.contains[=].code = #chirurg_orthopaede
+* ^expansion.contains[=].display = "Chirurg/Orthopäde"
+* ^expansion.contains[+].system = Canonical(SEU_EF_FachaerzteCS)
+* ^expansion.contains[=].code = #kinder_jugendpsychiater
+* ^expansion.contains[=].display = "Kinder- und Jugendpsychiater"
+* ^expansion.contains[+].system = Canonical(SEU_EF_FachaerzteCS)
+* ^expansion.contains[=].code = #andere
+* ^expansion.contains[=].display = "Andere"
+
+CodeSystem: SEU_EF_ZeitdauerCS
+Id: seu-ef-zeitdauer-cs
+Title: "SEU_EF_Zeitdauer CodeSystem"
+Description: "CodeSystem für die Angabe von Zeitdauern."
+* #gar_nicht "Gar nicht"
+* #weniger_als_30_minuten "Weniger als 30 Minuten"
+* #30_minuten_bis_1_stunde "30 Minuten bis 1 Stunde"
+* #1_bis_2_stunden "1 bis 2 Stunden"
+* #2_bis_3_stunden "2 bis 3 Stunden"
+* #3_stunden_oder_mehr "3 Stunden oder mehr"
+
+ValueSet: SEU_EF_ZeitdauerVS
+Id: seu-ef-zeitdauer-vs
+Title: "SEU_EF_Zeitdauer ValueSet"
+Description: "ValueSet, das verschiedene Zeitdauern enthält."
+* include codes from system SEU_EF_ZeitdauerCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
+* ^expansion.contains[0].system = Canonical(SEU_EF_ZeitdauerCS)
+* ^expansion.contains[=].code = #gar_nicht
+* ^expansion.contains[=].display = "Gar nicht"
+* ^expansion.contains[+].system = Canonical(SEU_EF_ZeitdauerCS)
+* ^expansion.contains[=].code = #weniger_als_30_minuten
+* ^expansion.contains[=].display = "Weniger als 30 Minuten"
+* ^expansion.contains[+].system = Canonical(SEU_EF_ZeitdauerCS)
+* ^expansion.contains[=].code = #30_minuten_bis_1_stunde
+* ^expansion.contains[=].display = "30 Minuten bis 1 Stunde"
+* ^expansion.contains[+].system = Canonical(SEU_EF_ZeitdauerCS)
+* ^expansion.contains[=].code = #1_bis_2_stunden
+* ^expansion.contains[=].display = "1 bis 2 Stunden"
+* ^expansion.contains[+].system = Canonical(SEU_EF_ZeitdauerCS)
+* ^expansion.contains[=].code = #2_bis_3_stunden
+* ^expansion.contains[=].display = "2 bis 3 Stunden"
+* ^expansion.contains[+].system = Canonical(SEU_EF_ZeitdauerCS)
+* ^expansion.contains[=].code = #3_stunden_oder_mehr
+* ^expansion.contains[=].display = "3 Stunden oder mehr"
+
+CodeSystem: SEU_EF_BildungsabschlussBBCS
+Id: seu-ef-bildungsabschluss-bbcs
+Title: "SEU_EF_BildungsabschlussBBCS CodeSystem"
+Description: "CodeSystem für die Angabe des Bildungsabschlusses."
+* #kein_abschluss "Kein Abschluss"
+* #foerderschulabschluss "Förderschulabschluss"
+* #hauptschulabschluss_berufsbildungsreife "Hauptschulabschluss, Berufsbildungsreife"
+* #ebf_for "Erweiterte Berufsbildungsreife (EBR), Fachoberschulreife (FOR)"
+* #realschulabschluss_msa_mittlere_reife "Realschulabschluss, MSA, 10. Klasse-Abschluss, mittlere Reife"
+* #abitur_fachhochschulreife_fachabitur "Abitur, Fachhochschulreife, Fachabitur"
+
+ValueSet: SEU_EF_BildungsabschlussBBVS
+Id: seu-ef-bildungsabschluss-bbvs
+Title: "SEU_EF_BildungsabschlussBBVS ValueSet"
+Description: "ValueSet, das verschiedene Bildungsabschlüsse enthält."
+* include codes from system SEU_EF_BildungsabschlussBBCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
+* ^expansion.contains[0].system = Canonical(SEU_EF_BildungsabschlussBBCS)
+* ^expansion.contains[=].code = #kein_abschluss
+* ^expansion.contains[=].display = "Kein Abschluss"
+* ^expansion.contains[+].system = Canonical(SEU_EF_BildungsabschlussBBCS)
+* ^expansion.contains[=].code = #foerderschulabschluss
+* ^expansion.contains[=].display = "Förderschulabschluss"
+* ^expansion.contains[+].system = Canonical(SEU_EF_BildungsabschlussBBCS)
+* ^expansion.contains[=].code = #hauptschulabschluss_berufsbildungsreife
+* ^expansion.contains[=].display = "Hauptschulabschluss, Berufsbildungsreife"
+* ^expansion.contains[+].system = Canonical(SEU_EF_BildungsabschlussBBCS)
+* ^expansion.contains[=].code = #ebf_for
+* ^expansion.contains[=].display = "Erweiterte Berufsbildungsreife (EBR), Fachoberschulreife (FOR)"
+* ^expansion.contains[+].system = Canonical(SEU_EF_BildungsabschlussBBCS)
+* ^expansion.contains[=].code = #realschulabschluss_msa_mittlere_reife
+* ^expansion.contains[=].display = "Realschulabschluss, MSA, 10. Klasse-Abschluss, mittlere Reife"
+* ^expansion.contains[+].system = Canonical(SEU_EF_BildungsabschlussBBCS)
+* ^expansion.contains[=].code = #abitur_fachhochschulreife_fachabitur
+* ^expansion.contains[=].display = "Abitur, Fachhochschulreife, Fachabitur"
+
+CodeSystem: SEU_EF_FrequenzCS
+Id: seu-ef-frequenz-cs
+Title: "SEU_EF_Frequenz CodeSystem"
+Description: "CodeSystem für die Angabe der Häufigkeit einer Aktivität."
+* #jeden_tag "Etwa jeden Tag"
+* #3_bis_5_mal_pro_woche "3 bis 5 mal pro Woche"
+* #1_bis_2_mal_pro_woche "1 bis 2 mal pro Woche"
+* #1_bis_2_mal_im_monat "Etwa 1 bis 2 mal im Monat"
+* #nie "Nie"
+* #keine_angabe "Keine Angabe"
+
+ValueSet: SEU_EF_FrequenzVS
+Id: seu-ef-frequenz-vs
+Title: "SEU_EF_Frequenz ValueSet"
+Description: "ValueSet, das verschiedene Häufigkeiten einer Aktivität enthält."
+* include codes from system SEU_EF_FrequenzCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
+* ^expansion.contains[0].system = Canonical(SEU_EF_FrequenzCS)
+* ^expansion.contains[=].code = #jeden_tag
+* ^expansion.contains[=].display = "Etwa jeden Tag"
+* ^expansion.contains[+].system = Canonical(SEU_EF_FrequenzCS)
+* ^expansion.contains[=].code = #3_bis_5_mal_pro_woche
+* ^expansion.contains[=].display = "3 bis 5 mal pro Woche"
+* ^expansion.contains[+].system = Canonical(SEU_EF_FrequenzCS)
+* ^expansion.contains[=].code = #1_bis_2_mal_pro_woche
+* ^expansion.contains[=].display = "1 bis 2 mal pro Woche"
+* ^expansion.contains[+].system = Canonical(SEU_EF_FrequenzCS)
+* ^expansion.contains[=].code = #1_bis_2_mal_im_monat
+* ^expansion.contains[=].display = "Etwa 1 bis 2 mal im Monat"
+* ^expansion.contains[+].system = Canonical(SEU_EF_FrequenzCS)
+* ^expansion.contains[=].code = #nie
+* ^expansion.contains[=].display = "Nie"
+* ^expansion.contains[+].system = Canonical(SEU_EF_FrequenzCS)
+* ^expansion.contains[=].code = #keine_angabe
+* ^expansion.contains[=].display = "Keine Angabe"

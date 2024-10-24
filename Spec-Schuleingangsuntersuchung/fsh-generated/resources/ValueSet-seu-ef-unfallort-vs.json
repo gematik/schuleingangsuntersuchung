@@ -1,0 +1,52 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SEU_EF_UnfallortVS",
+  "id": "seu-ef-unfallort-vs",
+  "title": "SEU_EF_Unfallort ValueSet",
+  "description": "ValueSet, das die verschiedenen Unfallorte enthält.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-unfallort-vs",
+  "expansion": {
+    "timestamp": "2024-10-20T11:50:47+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-unfallort-cs",
+        "code": "nein",
+        "display": "Nein"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-unfallort-cs",
+        "code": "ja_zu_hause",
+        "display": "Ja; zu Hause"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-unfallort-cs",
+        "code": "freizeit_ausser_haus",
+        "display": "Freizeit außer Haus"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-unfallort-cs",
+        "code": "gemeinschaftseinrichtung",
+        "display": "Gemeinschaftseinrichtung"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-unfallort-cs",
+        "code": "wegeunfall",
+        "display": "Wegeunfall"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-unfallort-cs",
+        "code": "keine_angabe",
+        "display": "Keine Angabe"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-unfallort-cs"
+      }
+    ]
+  }
+}

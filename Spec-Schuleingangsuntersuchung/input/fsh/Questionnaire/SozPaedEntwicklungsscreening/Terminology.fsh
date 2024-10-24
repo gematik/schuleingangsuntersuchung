@@ -38,10 +38,10 @@ ValueSet: DeutschUndAndereSpracheVS
 Id: DeutschUndAndereSpracheVS
 Title: "DeutschUndAndereSpracheVS"
 Description: ""
-* $bcp47#de "Deutsch"
+* ISO6392_LanguageCS#ger "Deutsch"
 * $sct#74964007 "Andere Sprache"
-* ^expansion.timestamp = "2024-06-26T15:47:43+00:00"
-* ^expansion.contains[0].system = $bcp47
+* ^expansion.timestamp = "2024-09-30T15:47:43+00:00"
+* ^expansion.contains[0].system = Canonical(ISO6392_LanguageCS)
 * ^expansion.contains[=].code = #de
 * ^expansion.contains[=].display = "Deutsch"
 * ^expansion.contains[+].system = $sct

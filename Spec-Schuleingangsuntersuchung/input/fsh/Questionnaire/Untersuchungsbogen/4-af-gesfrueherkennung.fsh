@@ -6,7 +6,7 @@ RuleSet: 4-af-gesfrueherkennung
       * insert enableWhenBoolean(4.1, =, false)
     * item[+] insert addItemWithSource(4.1.2, #boolean, [[Alle relevanten U-Untersuchungen wurden durchgeführt]], #DE-BW)
       * insert enableWhenBoolean(4.1, =, true)
-  * item[+] insert addGroup(4, Nachweis über die Teilnahme lag für folgende U-Untersuchungen vor)
+  * item[+] insert addGroup(4g, Nachweis über die Teilnahme lag für folgende U-Untersuchungen vor)
     * insert addSource(#DE-BY)
     * insert enableWhenBoolean(4.1, =, true)
     * item[+] insert addItem(4.2, #boolean, [[U1-Nachweis lag vor]])

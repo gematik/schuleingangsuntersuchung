@@ -98,7 +98,7 @@
       {
         "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
         "code": "ass",
-        "display": "ASS"
+        "display": "Autismus-Spektrum-Störung (ASS)"
       },
       {
         "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",

@@ -1,0 +1,42 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU_EF_OperationenCS",
+  "id": "seu-ef-operationen-cs",
+  "title": "SEU_EF_Operationen CodeSystem",
+  "description": "CodeSystem für die Angabe von durchgeführten Operationen.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-operationen-cs",
+  "concept": [
+    {
+      "code": "entfernung_der_rachenpolypen",
+      "display": "Entfernung der Rachenpolypen"
+    },
+    {
+      "code": "paukendrainage",
+      "display": "Paukendrainage"
+    },
+    {
+      "code": "mandeloperation",
+      "display": "Mandeloperation"
+    },
+    {
+      "code": "blinddarmoperation",
+      "display": "Blinddarmoperation"
+    },
+    {
+      "code": "leisten_nabelbruchoperation",
+      "display": "Leisten-/Nabelbruchoperation"
+    },
+    {
+      "code": "augenoperation",
+      "display": "Augenoperation"
+    },
+    {
+      "code": "sonstige_operation",
+      "display": "Sonstige Operation"
+    }
+  ],
+  "count": 7
+}

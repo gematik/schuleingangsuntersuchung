@@ -459,12 +459,12 @@
       "text": "(Bestattung) Bestattung",
       "item": [
         {
-          "linkId": "Bestattung",
+          "linkId": "Bestattungsart",
           "type": "string",
-          "text": "(Bestattung) Bestattungsart",
+          "text": "(Bestattungsart) Bestattungsart",
           "code": [
             {
-              "code": "Bestattung",
+              "code": "Bestattungsart",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
           ]
@@ -673,7 +673,7 @@
           ],
           "enableWhen": [
             {
-              "question": "Berufskrankheit",
+              "question": "Berufskrankheit_vorhanden",
               "operator": "=",
               "answerCoding": {
                 "code": "yes",

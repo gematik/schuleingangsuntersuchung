@@ -51,76 +51,76 @@ RuleSet: 3-af-impfungen
     * item[+] insert addItem(3.16, #choice, [[Rotaviren]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_ImpfungAntwortOhneAuffrischungVS)
-  * item[+] insert addGroup(3_1, Abfrage Impfungen - abgelehnt)
+  * item[+] insert addGroup(3_1a, Abfrage Impfungen - abgelehnt)
     * insert addSource(#DE-BY)
     * insert enableWhenBoolean(3.2, =, true)
     * readOnly = true
-    * item[+] insert addItem(3.3, #choice, [[Tetanus]])
+    * item[+] insert addItem(3.3a, #choice, [[Tetanus]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_ImpfungAntwortVS)
       * initial.valueCoding = SEU_UB_ImpfungAntwortCS#0
       * readOnly = true
-    * item[+] insert addItem(3.4, #choice, [[Diphtherie]])
+    * item[+] insert addItem(3.4a, #choice, [[Diphtherie]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_ImpfungAntwortVS)
       * initial.valueCoding = SEU_UB_ImpfungAntwortCS#0
       * readOnly = true
-    * item[+] insert addItem(3.5, #choice, [[Pertussis]])
+    * item[+] insert addItem(3.5a, #choice, [[Pertussis]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_ImpfungAntwortVS)
       * initial.valueCoding = SEU_UB_ImpfungAntwortCS#0
       * readOnly = true
-    * item[+] insert addItem(3.6, #choice, [[IPV]])
+    * item[+] insert addItem(3.6a, #choice, [[IPV]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_ImpfungAntwortOhneAuffrischungVS)
       * initial.valueCoding = SEU_UB_ImpfungAntwortCS#0
       * readOnly = true
-    * item[+] insert addItem(3.7, #choice, [[HIB]])
+    * item[+] insert addItem(3.7a, #choice, [[HIB]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_ImpfungAntwortOhneAuffrischungVS)
       * initial.valueCoding = SEU_UB_ImpfungAntwortCS#0
       * readOnly = true
-    * item[+] insert addItem(3.8, #choice, [[Hepatitis B]])
+    * item[+] insert addItem(3.8a, #choice, [[Hepatitis B]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_ImpfungAntwortOhneAuffrischungVS)
       * initial.valueCoding = SEU_UB_ImpfungAntwortCS#0
       * readOnly = true
-    * item[+] insert addItem(3.9, #choice, [[Masern]])
+    * item[+] insert addItem(3.9a, #choice, [[Masern]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_ImpfungAntwortOhneAuffrischungVS)
       * initial.valueCoding = SEU_UB_ImpfungAntwortCS#0
       * readOnly = true
-    * item[+] insert addItem(3.10, #choice, [[Mumps]])
+    * item[+] insert addItem(3.10a, #choice, [[Mumps]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_ImpfungAntwortOhneAuffrischungVS)
       * initial.valueCoding = SEU_UB_ImpfungAntwortCS#0
       * readOnly = true
-    * item[+] insert addItem(3.11, #choice, [[Röteln]])
+    * item[+] insert addItem(3.11a, #choice, [[Röteln]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_ImpfungAntwortOhneAuffrischungVS)
       * initial.valueCoding = SEU_UB_ImpfungAntwortCS#0
       * readOnly = true
-    * item[+] insert addItem(3.12, #choice, [[Varizellen]])
+    * item[+] insert addItem(3.12a, #choice, [[Varizellen]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_ImpfungAntwortOhneAuffrischungVS)
       * initial.valueCoding = SEU_UB_ImpfungAntwortCS#0
       * readOnly = true
-    * item[+] insert addItem(3.13, #choice, [[Meningokokken]])
+    * item[+] insert addItem(3.13a, #choice, [[Meningokokken]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_ImpfungAntwortOhneAuffrischungVS)
       * initial.valueCoding = SEU_UB_ImpfungAntwortCS#0
       * readOnly = true
-    * item[+] insert addItem(3.14, #choice, [[Pneumokokken]])
+    * item[+] insert addItem(3.14a, #choice, [[Pneumokokken]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_ImpfungAntwortOhneAuffrischungVS)
       * initial.valueCoding = SEU_UB_ImpfungAntwortCS#0
       * readOnly = true
-    * item[+] insert addItem(3.15, #choice, [[FSME]])
+    * item[+] insert addItem(3.15a, #choice, [[FSME]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_ImpfungAntwortVS)
       * initial.valueCoding = SEU_UB_ImpfungAntwortCS#0
       * readOnly = true
-    * item[+] insert addItem(3.16, #choice, [[Rotaviren]])
+    * item[+] insert addItem(3.16a, #choice, [[Rotaviren]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_ImpfungAntwortOhneAuffrischungVS)
       * initial.valueCoding = SEU_UB_ImpfungAntwortCS#0
@@ -144,7 +144,75 @@ RuleSet: 3-af-impfungen
     * item[+]
       * insert addItemWithSource(3.21.1, #boolean, [[Übernahme Impf-Bemerkungen in Befundbogen für Sorgeberechtigte]], #DE-BW)
       * insert enableWhenExists(3.21)
-
+  * item[+]
+    * insert addItemWithSource(3.22, #choice, [[6-fach Impfung]], #DE-BW)
+    * answerValueSet = Canonical(SEU_UB_0_4ImpfungenVS)
+  * item[+]
+    * insert addItemWithSource(3.23, #boolean, [[Grundimmunisierung nach 2+1 Schema durchgeführt und abgeschossen]], #DE-BW)
+  * item[+]
+    * insert addItemWithSource(3.24, #choice, [[Tetanus Impfung]], #DE-BW)
+    * answerValueSet = Canonical(SEU_UB_0_4ImpfungenVS)
+  * item[+]
+    * insert addItemWithSource(3.25, #choice, [[Diphterie Impfung]], #DE-BW)
+    * answerValueSet = Canonical(SEU_UB_0_4ImpfungenVS)
+  * item[+]
+    * insert addItemWithSource(3.26, #choice, [[Pertussis Impfung]], #DE-BW)
+    * answerValueSet = Canonical(SEU_UB_0_4ImpfungenVS)
+  * item[+]
+    * insert addItemWithSource(3.27, #choice, [[HIB Impfung]], #DE-BW)
+    * answerValueSet = Canonical(SEU_UB_0_4ImpfungenVS)
+  * item[+]
+    * insert addItemWithSource(3.28, #choice, [[Hepatitis-B Impfung]], #DE-BW)
+    * answerValueSet = Canonical(SEU_UB_0_4ImpfungenVS)
+  * item[+]
+    * insert addItemWithSource(3.29, #choice, [[Poliomyelitis Impfung]], #DE-BW)
+    * answerValueSet = Canonical(SEU_UB_0_4ImpfungenVS)
+  * item[+]
+    * insert addItemWithSource(3.30, #choice, [[Pneumokokken Impfung]], #DE-BW)
+    * answerValueSet = Canonical(SEU_UB_0_4ImpfungenVS)
+  * item[+]
+    * insert addItemWithSource(3.31, #choice, [[MMR Impfung]], #DE-BW)
+    * answerValueSet = Canonical(SEU_UB_0_3ImpfungenVS)
+  * item[+]
+    * insert addItemWithSource(3.32, #choice, [[Masern Mono Impfung]], #DE-BW)
+    * answerValueSet = Canonical(SEU_UB_0_3ImpfungenVS)
+  * item[+]
+    * insert addItemWithSource(3.33, #choice, [[Röteln Mono Impfung]], #DE-BW)
+    * answerValueSet = Canonical(SEU_UB_0_3ImpfungenVS)
+  * item[+]
+    * insert addItemWithSource(3.34, #choice, [[Varizellen Impfung]], #DE-BW)
+    * answerValueSet = Canonical(SEU_UB_0_3ImpfungenVS)
+  * item[+]
+    * insert addItemWithSource(3.35, #choice, [[Meningokokken B Impfung]], #DE-BW)
+    * answerValueSet = Canonical(SEU_UB_0_3ImpfungenVS)
+  * item[+]
+    * insert addItemWithSource(3.36, #boolean, [[Meningokokken C Impfung durchgeführt]], #DE-BW)
+  * item[+]
+    * insert addItemWithSource(3.37, #choice, [[FSME Impfung]], #DE-BW)
+    * answerValueSet = Canonical(SEU_UB_0_3ImpfungenVS)
+  * item[+]
+    * insert addItemWithSource(3.37a, #choice, [[Hepatitis A Impfung]], #DE-BW)
+    * answerValueSet = Canonical(SEU_UB_0_3ImpfungenVS)
+  * item[+]
+    * insert addItemWithSource(3.38, #choice, [[Influenza Impfung]], #DE-BW)
+    * answerValueSet = Canonical(SEU_UB_0_2ImpfungenVS)
+    * item[+] 
+      * insert addItemWithSource(3.38.1, #choice, [[Grippesaison der Impfung]], #DE-BW)
+      * answerValueSet = Canonical(SEU_UB_GrippesaisonVS)
+      * insert enableWhenCode(3.38, !=, SEU_UB_0_4ImpfungenCS, 0_Impfungen)
+  * item[+]
+    * insert addItemWithSource(3.39, #choice, [[Rota Impfung durchgeführt mit:]], #DE-BW)
+    * answerValueSet = Canonical(SEU_UB_RotaimpfungVS)
+    * item[+] 
+      * insert addItemWithSource(3.39.1, #choice, [[Anzahl der Rotarix Impfungen]], #DE-BW)  
+      * insert enableWhenCode(3.39, =, SEU_UB_RotaimpfungCS, Rotarix)
+      * answerValueSet = Canonical(SEU_UB_0_2ImpfungenVS)
+    * item[+]
+      * insert addItemWithSource(3.39.2, #choice, [[Anzahl der RotaTeq Impfungen]], #DE-BW)
+      * insert enableWhenCode(3.39, =, SEU_UB_RotaimpfungCS, RotaTeq)
+      * answerValueSet = Canonical(SEU_UB_0_3ImpfungenVS)
+   
+    
 CodeSystem:  SEU_UB_MasernimpfungNichtErforderlichGrundCS
 Id: SEU-UB-MasernimpfungNichtErforderlichGrundCS
 Title: "SEU Masernimpfung nicht erforderlich Grund"
@@ -252,3 +320,122 @@ Description: "ValueSet, das alle Codes aus dem Impfstatus CodeSystem enthält."
 * ^expansion.contains[+].system = Canonical(ImpfstatusCS)
 * ^expansion.contains[=].code = #Impfberatung_nicht_durchgeführt_keine_Angabe
 * ^expansion.contains[=].display = "Impfberatung nicht durchgeführt/Keine Angabe"
+
+CodeSystem: SEU_UB_0_4ImpfungenCS
+Id: seu-ub-0-4impfungen-cs
+Title: "SEU_UB_0-4Impfungen CodeSystem"
+Description: "CodeSystem für die Anzahl der Impfungen (0 bis 4)."
+* #0_Impfungen "0 Impfungen"
+* #1_Impfung "1 Impfung"
+* #2_Impfungen "2 Impfungen"
+* #3_Impfungen "3 Impfungen"
+* #4_Impfungen "4 Impfungen"
+
+ValueSet: SEU_UB_0_4ImpfungenVS
+Id: seu-ub-0-4impfungen-vs
+Title: "SEU_UB_0-4Impfungen ValueSet"
+Description: "ValueSet, das die Anzahl der Impfungen (0 bis 4) enthält."
+* include codes from system SEU_UB_0_4ImpfungenCS
+* ^expansion.timestamp = "2024-09-10T12:00:00+00:00"
+* ^expansion.contains[0].system = Canonical(SEU_UB_0_4ImpfungenCS)
+* ^expansion.contains[=].code = #0_Impfungen
+* ^expansion.contains[=].display = "0 Impfungen"
+* ^expansion.contains[+].system = Canonical(SEU_UB_0_4ImpfungenCS)
+* ^expansion.contains[=].code = #1_Impfung
+* ^expansion.contains[=].display = "1 Impfung"
+* ^expansion.contains[+].system = Canonical(SEU_UB_0_4ImpfungenCS)
+* ^expansion.contains[=].code = #2_Impfungen
+* ^expansion.contains[=].display = "2 Impfungen"
+* ^expansion.contains[+].system = Canonical(SEU_UB_0_4ImpfungenCS)
+* ^expansion.contains[=].code = #3_Impfungen
+* ^expansion.contains[=].display = "3 Impfungen"
+* ^expansion.contains[+].system = Canonical(SEU_UB_0_4ImpfungenCS)
+* ^expansion.contains[=].code = #4_Impfungen
+* ^expansion.contains[=].display = "4 Impfungen"
+
+ValueSet: SEU_UB_0_3ImpfungenVS
+Id: seu-ub-0-3impfungen-vs
+Title: "SEU_UB_0-3Impfungen ValueSet"
+Description: "ValueSet, das die Anzahl der Impfungen (0 bis 3) enthält."
+* include codes from system SEU_UB_0_4ImpfungenCS
+* ^expansion.timestamp = "2024-09-10T12:00:00+00:00"
+* ^expansion.contains[0].system = Canonical(SEU_UB_0_4ImpfungenCS)
+* ^expansion.contains[=].code = #0_Impfungen
+* ^expansion.contains[=].display = "0 Impfungen"
+* ^expansion.contains[+].system = Canonical(SEU_UB_0_4ImpfungenCS)
+* ^expansion.contains[=].code = #1_Impfung
+* ^expansion.contains[=].display = "1 Impfung"
+* ^expansion.contains[+].system = Canonical(SEU_UB_0_4ImpfungenCS)
+* ^expansion.contains[=].code = #2_Impfungen
+* ^expansion.contains[=].display = "2 Impfungen"
+* ^expansion.contains[+].system = Canonical(SEU_UB_0_4ImpfungenCS)
+* ^expansion.contains[=].code = #3_Impfungen
+* ^expansion.contains[=].display = "3 Impfungen"
+
+ValueSet: SEU_UB_0_2ImpfungenVS
+Id: seu-ub-0-2impfungen-vs
+Title: "SEU_UB_0-2Impfungen ValueSet"
+Description: "ValueSet, das die Anzahl der Impfungen (0 bis 2) enthält."
+* include codes from system SEU_UB_0_4ImpfungenCS
+* ^expansion.timestamp = "2024-09-10T12:00:00+00:00"
+* ^expansion.contains[0].system = Canonical(SEU_UB_0_4ImpfungenCS)
+* ^expansion.contains[=].code = #0_Impfungen
+* ^expansion.contains[=].display = "0 Impfungen"
+* ^expansion.contains[+].system = Canonical(SEU_UB_0_4ImpfungenCS)
+* ^expansion.contains[=].code = #1_Impfung
+* ^expansion.contains[=].display = "1 Impfung"
+* ^expansion.contains[+].system = Canonical(SEU_UB_0_4ImpfungenCS)
+* ^expansion.contains[=].code = #2_Impfungen
+* ^expansion.contains[=].display = "2 Impfungen"
+
+CodeSystem: SEU_UB_GrippesaisonCS
+Id: seu-ub-grippesaison-cs
+Title: "SEU_UB_Grippesaison CodeSystem"
+Description: "CodeSystem für die Angabe der Grippesaisons."
+* #20_21 "20/21"
+* #21_22 "21/22"
+* #22_23 "22/23"
+* #23_24 "23/24"
+
+ValueSet: SEU_UB_GrippesaisonVS
+Id: seu-ub-grippesaison-vs
+Title: "SEU_UB_Grippesaison ValueSet"
+Description: "ValueSet, das die Grippesaisons von 20/21 bis 23/24 enthält."
+* include codes from system SEU_UB_GrippesaisonCS
+* ^expansion.timestamp = "2024-09-10T12:00:00+00:00"
+* ^expansion.contains[0].system = Canonical(SEU_UB_GrippesaisonCS)
+* ^expansion.contains[=].code = #20_21
+* ^expansion.contains[=].display = "20/21"
+* ^expansion.contains[+].system = Canonical(SEU_UB_GrippesaisonCS)
+* ^expansion.contains[=].code = #21_22
+* ^expansion.contains[=].display = "21/22"
+* ^expansion.contains[+].system = Canonical(SEU_UB_GrippesaisonCS)
+* ^expansion.contains[=].code = #22_23
+* ^expansion.contains[=].display = "22/23"
+* ^expansion.contains[+].system = Canonical(SEU_UB_GrippesaisonCS)
+* ^expansion.contains[=].code = #23_24
+* ^expansion.contains[=].display = "23/24"
+
+CodeSystem: SEU_UB_RotaimpfungCS
+Id: seu-ub-rotaimpfung-cs
+Title: "SEU_UB_Rotaimpfung CodeSystem"
+Description: "CodeSystem für die Angabe der Rotavirus-Impfstoffe."
+* #keine_Impfung "Keine Impfung"
+* #Rotarix "Rotarix"
+* #RotaTeq "RotaTeq"
+
+ValueSet: SEU_UB_RotaimpfungVS
+Id: seu-ub-rotaimpfung-vs
+Title: "SEU_UB_Rotaimpfung ValueSet"
+Description: "ValueSet, das verschiedene Rotavirus-Impfstoffe enthält."
+* include codes from system SEU_UB_RotaimpfungCS
+* ^expansion.timestamp = "2024-09-10T12:00:00+00:00"
+* ^expansion.contains[0].system = Canonical(SEU_UB_RotaimpfungCS)
+* ^expansion.contains[=].code = #keine_Impfung
+* ^expansion.contains[=].display = "Keine Impfung"
+* ^expansion.contains[+].system = Canonical(SEU_UB_RotaimpfungCS)
+* ^expansion.contains[=].code = #Rotarix
+* ^expansion.contains[=].display = "Rotarix"
+* ^expansion.contains[+].system = Canonical(SEU_UB_RotaimpfungCS)
+* ^expansion.contains[=].code = #RotaTeq
+* ^expansion.contains[=].display = "RotaTeq"

@@ -24,6 +24,11 @@
         "system": "https://www.oegd.de/fhir/seu/CodeSystem/RechtsLinksHaenderCS",
         "code": "beidhändig",
         "display": "Beidhändig/Unentschieden"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/RechtsLinksHaenderCS",
+        "code": "nicht_feststellbar",
+        "display": "Nicht feststellbar"
       }
     ]
   },

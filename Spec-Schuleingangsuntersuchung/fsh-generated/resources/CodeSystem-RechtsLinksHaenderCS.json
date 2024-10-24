@@ -20,7 +20,11 @@
     {
       "code": "beidhändig",
       "display": "Beidhändig/Unentschieden"
+    },
+    {
+      "code": "nicht_feststellbar",
+      "display": "Nicht feststellbar"
     }
   ],
-  "count": 3
+  "count": 4
 }

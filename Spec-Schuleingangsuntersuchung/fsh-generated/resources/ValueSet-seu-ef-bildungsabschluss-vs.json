@@ -1,0 +1,52 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SEU_EF_BildungsabschlussVS",
+  "id": "seu-ef-bildungsabschluss-vs",
+  "title": "SEU_EF_Bildungsabschluss ValueSet",
+  "description": "ValueSet, das verschiedene Bildungsabschlüsse enthält.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-bildungsabschluss-vs",
+  "expansion": {
+    "timestamp": "2024-10-20T11:50:47+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-bildungsabschluss-cs",
+        "code": "kein_schulabschluss",
+        "display": "Kein Schulabschluss"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-bildungsabschluss-cs",
+        "code": "hauptschulabschluss",
+        "display": "Hauptschulabschluss"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-bildungsabschluss-cs",
+        "code": "mittlere_reife",
+        "display": "Mittlere Reife oder vergleichbar"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-bildungsabschluss-cs",
+        "code": "abitur_fachhochschulreife",
+        "display": "Abitur/Fachhochschulreife oder vergleichbar"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-bildungsabschluss-cs",
+        "code": "sonder_foerderschule",
+        "display": "Sonder-/Förderschule"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-bildungsabschluss-cs",
+        "code": "in_schulischer_ausbildung",
+        "display": "Derzeit noch in schulischer Ausbildung (Schüler*in)"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-bildungsabschluss-cs"
+      }
+    ]
+  }
+}
