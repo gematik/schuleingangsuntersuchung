@@ -9830,6 +9830,96 @@
       ]
     },
     {
+      "linkId": "8.74",
+      "type": "boolean",
+      "text": "(8.74) Hauterkrankungen",
+      "code": [
+        {
+          "code": "8.74",
+          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+        }
+      ],
+      "extension": [
+        {
+          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+          "valueCoding": {
+            "code": "DE-SN"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "8.75",
+      "type": "string",
+      "text": "(8.75) Welche Hauterkrankungen",
+      "code": [
+        {
+          "code": "8.75",
+          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+        }
+      ],
+      "extension": [
+        {
+          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+          "valueCoding": {
+            "code": "DE-SN"
+          }
+        }
+      ],
+      "enableWhen": [
+        {
+          "question": "8.74",
+          "operator": "=",
+          "answerBoolean": true
+        }
+      ]
+    },
+    {
+      "linkId": "8.76",
+      "type": "boolean",
+      "text": "(8.76) Orthopädische Erkrankungen?",
+      "code": [
+        {
+          "code": "8.76",
+          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+        }
+      ],
+      "extension": [
+        {
+          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+          "valueCoding": {
+            "code": "DE-SN"
+          }
+        }
+      ]
+    },
+    {
+      "linkId": "8.77",
+      "type": "string",
+      "text": "(8.77) Welche orthopädischen Erkrankungen",
+      "code": [
+        {
+          "code": "8.77",
+          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+        }
+      ],
+      "extension": [
+        {
+          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+          "valueCoding": {
+            "code": "DE-SN"
+          }
+        }
+      ],
+      "enableWhen": [
+        {
+          "question": "8.76",
+          "operator": "=",
+          "answerBoolean": true
+        }
+      ]
+    },
+    {
       "linkId": "9",
       "type": "group",
       "text": "(9) Förderungen",

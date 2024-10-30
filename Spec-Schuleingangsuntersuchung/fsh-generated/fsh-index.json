@@ -1149,7 +1149,7 @@
     "fshType": "Instance",
     "fshFile": "Questionnaire/Elternfragebogen/ElternfragebogenQU.fsh",
     "startLine": 1,
-    "endLine": 968
+    "endLine": 976
   },
   {
     "outputFile": "Questionnaire-SEU-Untersuchungsbogen.json",

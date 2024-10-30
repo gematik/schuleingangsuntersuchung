@@ -448,7 +448,6 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItem(8.6a, #choice, [[Hilfsmittel?]])
     * answerValueSet = Canonical(SEU_EF_HilfsmittelVS)
-
   * item[+]
     * insert addItem(8.7, #date, [[Letzte Untersuchung beim Augenarzt?]])
   * item[+]
@@ -713,7 +712,16 @@ Description: "Elternbefragung"
   * insert addItemWithSource(8.72, #boolean, [[Andere Verletzung: Straßenverkehr]], #DE-BB)
 * item[+]
   * insert addItemWithSource(8.73, #boolean, [[Andere Verletzung: anderer Ort]], #DE-BB)
-
+* item[+]
+  * insert addItemWithSource(8.74, #boolean, [[Hauterkrankungen]], #DE-SN)
+* item[+]
+  * insert addItemWithSource(8.75, #string, [[Welche Hauterkrankungen]], #DE-SN)
+  * insert enableWhenBoolean(8.74, =, true)
+* item[+]
+  * insert addItemWithSource(8.76, #boolean, [[Orthopädische Erkrankungen?]], #DE-SN)
+* item[+]
+  * insert addItemWithSource(8.77, #string, [[Welche orthopädischen Erkrankungen]], #DE-SN)
+  * insert enableWhenBoolean(8.76, =, true)
 //********************************************
 // Förderungen
 * item[+]
