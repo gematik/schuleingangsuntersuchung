@@ -807,7 +807,7 @@
           "answerValueSet": "#JaNeinKeineAngabeVS",
           "enableWhen": [
             {
-              "question": "Schwangerschaft_Entbindung_kürzlich",
+              "question": "Schwangerschaft",
               "operator": "=",
               "answerCoding": {
                 "code": "yes",
@@ -829,7 +829,7 @@
           "answerValueSet": "#JaNeinKeineAngabeVS",
           "enableWhen": [
             {
-              "question": "Schwangerschaft_Abort_kürzlich",
+              "question": "Schwangerschaft",
               "operator": "=",
               "answerCoding": {
                 "code": "yes",
@@ -851,7 +851,7 @@
           "answerValueSet": "#JaNeinKeineAngabeVS",
           "enableWhen": [
             {
-              "question": "Schwangerschaft_Interuptio_kürzlich",
+              "question": "Schwangerschaft",
               "operator": "=",
               "answerCoding": {
                 "code": "yes",
