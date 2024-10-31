@@ -1,7 +1,7 @@
 Instance: Elternbefragung_SN
 InstanceOf: Questionnaire
 Usage: #example
-Title: "Elternbefragung"
+Title: "Elternbefragung Sachsen"
 Description: "Elternbefragung Sachsen"
 * contained[+] = SEU-EF-NeinAbgeschlossenLaeuftGeplantVS
 * contained[+] = RechtsLinksHaenderVS
@@ -15,7 +15,7 @@ Description: "Elternbefragung Sachsen"
 * contained[+] = ChronischeKrankheitenVS
 * contained[+] = AtopischeErkrankungenVS
 * contained[+] = JaNeinWartelisteVS
-* id = "SEU-Elternbefragung"
+* id = "SEU-Elternbefragung-Sachsen"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung"
 * title = "SEU Elternfragebogen Maximaldatensatz"
 * insert launchContext("patient", #Patient, "Patientenkontext")
