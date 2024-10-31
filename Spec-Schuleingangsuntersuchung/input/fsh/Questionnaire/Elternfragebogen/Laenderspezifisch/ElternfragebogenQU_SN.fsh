@@ -17,7 +17,7 @@ Description: "Elternbefragung Sachsen"
 * contained[+] = JaNeinWartelisteVS
 * id = "SEU-Elternbefragung-Sachsen"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung"
-* title = "SEU Elternfragebogen Maximaldatensatz"
+* title = "SEU Elternfragebogen Maximaldatensatz Sachsen"
 * insert launchContext("patient", #Patient, "Patientenkontext")
 * status = #draft
 * item[+]
