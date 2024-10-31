@@ -712,7 +712,7 @@
     }
   ],
   "url": "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung",
-  "title": "SEU Elternfragebogen Maximaldatensatz",
+  "title": "SEU Elternfragebogen Maximaldatensatz Sachsen",
   "extension": [
     {
       "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext",
