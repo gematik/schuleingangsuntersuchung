@@ -1144,12 +1144,20 @@
     "endLine": 196
   },
   {
+    "outputFile": "Questionnaire-SEU-Elternbefragung-Sachsen.json",
+    "fshName": "Elternbefragung_SN",
+    "fshType": "Instance",
+    "fshFile": "Questionnaire/Elternfragebogen/Laenderspezifisch/ElternfragebogenQU_SN.fsh",
+    "startLine": 1,
+    "endLine": 282
+  },
+  {
     "outputFile": "Questionnaire-SEU-Elternbefragung.json",
     "fshName": "Elternbefragung",
     "fshType": "Instance",
     "fshFile": "Questionnaire/Elternfragebogen/ElternfragebogenQU.fsh",
     "startLine": 1,
-    "endLine": 976
+    "endLine": 977
   },
   {
     "outputFile": "Questionnaire-SEU-Untersuchungsbogen.json",
