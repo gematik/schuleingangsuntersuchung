@@ -5950,14 +5950,17 @@
       "extension": [
         {
           "url": "name",
-          "valueId": "patient"
+          "valueCoding": {
+            "code": "patient",
+            "system": "http://hl7.org/fhir/uv/sdc/CodeSystem/launchContext"
+          }
         },
         {
           "url": "type",
           "valueCode": "Patient"
         },
         {
-          "url": "descripton",
+          "url": "description",
           "valueString": "Patientenkontext"
         }
       ]
@@ -6766,12 +6769,12 @@
       ]
     },
     {
-      "linkId": "4.5a",
-      "type": "string",
-      "text": "(4.5a) Art der Tagesbetreuung?",
+      "linkId": "4",
+      "type": "group",
+      "text": "(4) Kinderbetreuung",
       "code": [
         {
-          "code": "4.5a",
+          "code": "4",
           "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
         }
       ],
@@ -6903,6 +6906,32 @@
           ]
         },
         {
+          "linkId": "4.5a",
+          "type": "string",
+          "text": "(4.5a) Art der Tagesbetreuung?",
+          "code": [
+            {
+              "code": "4.5a",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "code": "DE-BB"
+              }
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "4.5",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ]
+        },
+        {
           "linkId": "4.6",
           "type": "boolean",
           "text": "(4.6) Besucht Ihr Kind eine Kita in einem anderen Bundesland?",
@@ -6914,12 +6943,12 @@
           ]
         },
         {
-          "linkId": "4.6",
+          "linkId": "4.6b",
           "type": "string",
-          "text": "(4.6) Name des Kindergartens",
+          "text": "(4.6b) Name des Kindergartens",
           "code": [
             {
-              "code": "4.6",
+              "code": "4.6b",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
           ],
@@ -7004,21 +7033,6 @@
               }
             }
           ]
-        }
-      ],
-      "extension": [
-        {
-          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-          "valueCoding": {
-            "code": "DE-BB"
-          }
-        }
-      ],
-      "enableWhen": [
-        {
-          "question": "4.5",
-          "operator": "=",
-          "answerBoolean": true
         }
       ]
     },
@@ -10583,12 +10597,12 @@
           ]
         },
         {
-          "linkId": "9.12",
+          "linkId": "9.14",
           "type": "boolean",
-          "text": "(9.12) Psychiatrische Institutionsambulanz (PIA)",
+          "text": "(9.14) Psychiatrische Institutionsambulanz (PIA)",
           "code": [
             {
-              "code": "9.12",
+              "code": "9.14",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
           ],

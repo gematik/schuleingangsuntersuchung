@@ -719,14 +719,17 @@
       "extension": [
         {
           "url": "name",
-          "valueId": "patient"
+          "valueCoding": {
+            "code": "patient",
+            "system": "http://hl7.org/fhir/uv/sdc/CodeSystem/launchContext"
+          }
         },
         {
           "url": "type",
           "valueCode": "Patient"
         },
         {
-          "url": "descripton",
+          "url": "description",
           "valueString": "Patientenkontext"
         }
       ]
@@ -1035,12 +1038,12 @@
           ]
         },
         {
-          "linkId": "4.6",
+          "linkId": "4.6b",
           "type": "string",
-          "text": "(4.6) Name des Kindergartens",
+          "text": "(4.6b) Name des Kindergartens",
           "code": [
             {
-              "code": "4.6",
+              "code": "4.6b",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
           ],

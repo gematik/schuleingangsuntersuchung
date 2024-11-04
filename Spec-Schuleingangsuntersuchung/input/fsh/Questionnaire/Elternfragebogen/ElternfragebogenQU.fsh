@@ -232,12 +232,13 @@ Description: "Elternbefragung"
     * insert addItem(4.4, #date, [[Angabe des Datums, seit wann das Kind keine Kita mehr besucht.]])
   * item[+]
     * insert addItem(4.5, #boolean, Besucht ihr Kind eine andere Form der Tagesbetreuung?)
-  * insert addItemWithSource(4.5a, #string, [[Art der Tagesbetreuung?]], #DE-BB)
+  * item[+]  
+    * insert addItemWithSource(4.5a, #string, [[Art der Tagesbetreuung?]], #DE-BB)
     * insert enableWhenBoolean(4.5, =, true)
   * item[+]
     * insert addItem(4.6, #boolean, Besucht Ihr Kind eine Kita in einem anderen Bundesland?)
   * item[+]
-    * insert addItem(4.6, #string, Name des Kindergartens)
+    * insert addItem(4.6b, #string, Name des Kindergartens)
     * enableWhen[+]
       * question = "4.0b"
       * operator = #=
@@ -819,7 +820,7 @@ Description: "Elternbefragung"
     * item[+]
       * insert addItem(9.11.g.2, #string, [[Behandlungsschwerpunkt]])
   * item[+]
-    * insert addItemWithSource(9.12, #boolean, [[Psychiatrische Institutionsambulanz (PIA)]], #DE-BB)
+    * insert addItemWithSource(9.14, #boolean, [[Psychiatrische Institutionsambulanz (PIA)]], #DE-BB)
 //********************************************
 // Medienkonsum
 * item[+]

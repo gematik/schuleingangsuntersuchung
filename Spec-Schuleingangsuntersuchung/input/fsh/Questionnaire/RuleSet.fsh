@@ -1,4 +1,5 @@
 Alias: $sdc-questionnaire-launchContext = http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext
+Alias: $sdc-questionnaire-launchContextCS = http://hl7.org/fhir/uv/sdc/CodeSystem/launchContext
 Alias: $sdc-questionnaire-initialExpression = http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression
 Alias: $sdc-questionnaire-observationLinkPeriod = http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationLinkPeriod
 Alias: $sdc-questionnaire-observationExtract = http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-observationExtract
@@ -11,12 +12,12 @@ RuleSet: launchContext(name, type, description)
   * url = $sdc-questionnaire-launchContext
   * extension[+]
     * url = "name"
-    * valueId = {name}
+    * valueCoding = $sdc-questionnaire-launchContextCS#{name}
   * extension[+]
     * url = "type"
     * valueCode = {type}
   * extension[+]
-    * url = "descripton"
+    * url = "description"
     * valueString = {description}
 
 RuleSet: initialExpression(expression)

@@ -82,7 +82,7 @@ Description: "Elternbefragung Sachsen"
   * item[+]
     * insert addItem(4.6, #boolean, Besucht Ihr Kind eine Kita in einem anderen Bundesland?)
   * item[+]
-    * insert addItem(4.6, #string, Name des Kindergartens)
+    * insert addItem(4.6b, #string, Name des Kindergartens)
     * enableWhen[+]
       * question = "4.0b"
       * operator = #=
