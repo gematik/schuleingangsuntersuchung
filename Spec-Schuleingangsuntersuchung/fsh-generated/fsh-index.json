@@ -268,224 +268,224 @@
     "fshName": "SEU_UB_AnamneseBesonderheitenCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Untersuchungsbogen/5-af-anamnese.fsh",
-    "startLine": 571,
-    "endLine": 575
+    "startLine": 604,
+    "endLine": 608
   },
   {
     "outputFile": "CodeSystem-SEU-UB-AntwortAuffaelligkeitCS.json",
     "fshName": "SEU_UB_AntwortAuffaelligkeitCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Untersuchungsbogen/7-af-fdsscreening.fsh",
-    "startLine": 592,
-    "endLine": 599
+    "startLine": 568,
+    "endLine": 575
   },
   {
     "outputFile": "CodeSystem-SEU-UB-AntwortAugenarztCS.json",
     "fshName": "SEU_UB_AntwortAugenarztCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Untersuchungsbogen/5-af-anamnese.fsh",
-    "startLine": 252,
-    "endLine": 263
+    "startLine": 274,
+    "endLine": 285
   },
   {
     "outputFile": "CodeSystem-SEU-UB-AntwortKindergartenBesuchCS.json",
     "fshName": "SEU_UB_AntwortKindergartenBesuchCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Untersuchungsbogen/5-af-anamnese.fsh",
-    "startLine": 471,
-    "endLine": 480
+    "startLine": 501,
+    "endLine": 510
   },
   {
     "outputFile": "CodeSystem-SEU-UB-AntwortNummerierungPersonenCS.json",
     "fshName": "SEU_UB_AntwortNummerierungPersonenCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Untersuchungsbogen/5-af-anamnese.fsh",
-    "startLine": 509,
-    "endLine": 517
+    "startLine": 540,
+    "endLine": 548
   },
   {
     "outputFile": "CodeSystem-SEU-UB-AntwortTeilnahmeCS.json",
     "fshName": "SEU_UB_AntwortTeilnahmeCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Untersuchungsbogen/9-af-schulaerztlicheuntersuchung2.fsh",
-    "startLine": 247,
-    "endLine": 253
+    "startLine": 248,
+    "endLine": 254
   },
   {
     "outputFile": "CodeSystem-SEU-UB-AntwortenHoerstoerungCS.json",
     "fshName": "SEU_UB_AntwortenHoerstoerungCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Untersuchungsbogen/5-af-anamnese.fsh",
-    "startLine": 226,
-    "endLine": 232
+    "startLine": 247,
+    "endLine": 253
   },
   {
     "outputFile": "CodeSystem-SEU-UB-AntwortenSAeUntersuchungCS.json",
     "fshName": "SEU_UB_AntwortenSAeUntersuchungCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Untersuchungsbogen/8-af-schulaerztlicheuntersuchung.fsh",
-    "startLine": 189,
-    "endLine": 195
+    "startLine": 214,
+    "endLine": 220
   },
   {
     "outputFile": "CodeSystem-SEU-UB-AuswaehlbareElternspracheErweiterungCS.json",
     "fshName": "SEU_UB_AuswaehlbareElternspracheErweiterungCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Untersuchungsbogen/5-af-anamnese.fsh",
-    "startLine": 713,
-    "endLine": 718
+    "startLine": 751,
+    "endLine": 756
   },
   {
     "outputFile": "CodeSystem-SEU-UB-BesonderheitenCS.json",
     "fshName": "SEU_UB_BesonderheitenCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Untersuchungsbogen/2-af-untersuchungsverlauf.fsh",
-    "startLine": 261,
-    "endLine": 266
+    "startLine": 263,
+    "endLine": 268
   },
   {
     "outputFile": "CodeSystem-SEU-UB-DurchfuehrungSaeuCS.json",
     "fshName": "SEU_UB_DurchfuehrungSaeuCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Untersuchungsbogen/2-af-untersuchungsverlauf.fsh",
-    "startLine": 168,
-    "endLine": 174
+    "startLine": 170,
+    "endLine": 176
   },
   {
     "outputFile": "CodeSystem-SEU-UB-ErwerbstaetigkeitCS.json",
     "fshName": "SEU_UB_ErwerbstaetigkeitCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Untersuchungsbogen/5-af-anamnese.fsh",
-    "startLine": 671,
-    "endLine": 681
+    "startLine": 708,
+    "endLine": 718
   },
   {
     "outputFile": "CodeSystem-SEU-UB-GeburtslandCS.json",
     "fshName": "SEU_UB_GeburtslandCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Untersuchungsbogen/5-af-anamnese.fsh",
-    "startLine": 615,
-    "endLine": 620
+    "startLine": 650,
+    "endLine": 655
   },
   {
     "outputFile": "CodeSystem-SEU-UB-GesprocheneSpracheCS.json",
     "fshName": "SEU_UB_GesprocheneSpracheCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Untersuchungsbogen/5-af-anamnese.fsh",
-    "startLine": 397,
-    "endLine": 403
+    "startLine": 424,
+    "endLine": 430
   },
   {
     "outputFile": "CodeSystem-SEU-UB-HaendigkeitCS.json",
     "fshName": "SEU_UB_HaendigkeitCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Untersuchungsbogen/5-af-anamnese.fsh",
-    "startLine": 371,
-    "endLine": 377
+    "startLine": 397,
+    "endLine": 403
   },
   {
     "outputFile": "CodeSystem-SEU-UB-ImpfungAntwortCS.json",
     "fshName": "SEU_UB_ImpfungAntwortCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Untersuchungsbogen/3-af-impfungen.fsh",
-    "startLine": 243,
-    "endLine": 249
+    "startLine": 266,
+    "endLine": 272
   },
   {
     "outputFile": "CodeSystem-SEU-UB-JaNeinGeplantKeineAngabeCS.json",
     "fshName": "SEU_UB_JaNeinGeplantKeineAngabeCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Untersuchungsbogen/5-af-anamnese.fsh",
-    "startLine": 298,
-    "endLine": 304
+    "startLine": 321,
+    "endLine": 327
   },
   {
     "outputFile": "CodeSystem-SEU-UB-KindergartenArtCS.json",
     "fshName": "SEU_UB_KindergartenArtCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Untersuchungsbogen/5-af-anamnese.fsh",
-    "startLine": 445,
-    "endLine": 451
+    "startLine": 474,
+    "endLine": 480
   },
   {
     "outputFile": "CodeSystem-SEU-UB-KontaktDeutscheSpracheCS.json",
     "fshName": "SEU_UB_KontaktDeutscheSpracheCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Untersuchungsbogen/5-af-anamnese.fsh",
-    "startLine": 423,
-    "endLine": 428
+    "startLine": 451,
+    "endLine": 456
   },
   {
     "outputFile": "CodeSystem-SEU-UB-MasernimpfungNichtErforderlichGrundCS.json",
     "fshName": "SEU_UB_MasernimpfungNichtErforderlichGrundCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Untersuchungsbogen/3-af-impfungen.fsh",
-    "startLine": 216,
-    "endLine": 222
+    "startLine": 238,
+    "endLine": 244
   },
   {
     "outputFile": "CodeSystem-SEU-UB-MeldungJugendamtCS.json",
     "fshName": "SEU_UB_MeldungJugendamtCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Untersuchungsbogen/2-af-untersuchungsverlauf.fsh",
-    "startLine": 133,
-    "endLine": 141
+    "startLine": 135,
+    "endLine": 143
   },
   {
     "outputFile": "CodeSystem-SEU-UB-RegionArtCS.json",
     "fshName": "SEU_UB_RegionArtCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Untersuchungsbogen/1-af-stammdaten.fsh",
-    "startLine": 64,
-    "endLine": 69
+    "startLine": 70,
+    "endLine": 75
   },
   {
     "outputFile": "CodeSystem-SEU-UB-SchulabschlussCS.json",
     "fshName": "SEU_UB_SchulabschlussCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Untersuchungsbogen/5-af-anamnese.fsh",
-    "startLine": 637,
-    "endLine": 645
+    "startLine": 673,
+    "endLine": 681
   },
   {
     "outputFile": "CodeSystem-SEU-UB-SprachtherapieCS.json",
     "fshName": "SEU_UB_SprachtherapieCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Untersuchungsbogen/5-af-anamnese.fsh",
-    "startLine": 341,
-    "endLine": 348
+    "startLine": 366,
+    "endLine": 373
   },
   {
     "outputFile": "CodeSystem-SEU-UB-StaatsangehoerigkeitCS.json",
     "fshName": "SEU_UB_StaatsangehoerigkeitCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Untersuchungsbogen/5-af-anamnese.fsh",
-    "startLine": 589,
-    "endLine": 595
+    "startLine": 623,
+    "endLine": 629
   },
   {
     "outputFile": "CodeSystem-SEU-UB-UntersuchungsergebnisseSAeUCS.json",
     "fshName": "SEU_UB_UntersuchungsergebnisseSAeUCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Untersuchungsbogen/8-af-schulaerztlicheuntersuchung.fsh",
-    "startLine": 215,
-    "endLine": 227
+    "startLine": 241,
+    "endLine": 253
   },
   {
     "outputFile": "CodeSystem-SEU-UB-UntersuchungsstatusCS.json",
     "fshName": "SEU_UB_UntersuchungsstatusCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Untersuchungsbogen/2-af-untersuchungsverlauf.fsh",
-    "startLine": 284,
-    "endLine": 300
+    "startLine": 286,
+    "endLine": 302
   },
   {
     "outputFile": "CodeSystem-SEU-UB-UntersuchungsstatusFdSScreeningCS.json",
     "fshName": "SEU_UB_UntersuchungsstatusFdSScreeningCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Untersuchungsbogen/7-af-fdsscreening.fsh",
-    "startLine": 554,
-    "endLine": 563
+    "startLine": 529,
+    "endLine": 538
   },
   {
     "outputFile": "CodeSystem-SEU-UB-VergleichSAeUntersuchungCS.json",
@@ -500,16 +500,16 @@
     "fshName": "SEU_UB_VorstellungSchularztCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Untersuchungsbogen/2-af-untersuchungsverlauf.fsh",
-    "startLine": 195,
-    "endLine": 200
+    "startLine": 197,
+    "endLine": 202
   },
   {
     "outputFile": "CodeSystem-SEU-UB-WiedervorlageGrundCS.json",
     "fshName": "SEU_UB_WiedervorlageGrundCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Untersuchungsbogen/2-af-untersuchungsverlauf.fsh",
-    "startLine": 218,
-    "endLine": 228
+    "startLine": 220,
+    "endLine": 230
   },
   {
     "outputFile": "CodeSystem-SchulempfehlungCS.json",
@@ -652,8 +652,8 @@
     "fshName": "SEU_UB_BewertungsvorschlagCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Untersuchungsbogen/7-af-fdsscreening.fsh",
-    "startLine": 692,
-    "endLine": 697
+    "startLine": 671,
+    "endLine": 676
   },
   {
     "outputFile": "CodeSystem-chronische-krankheiten.json",
@@ -700,8 +700,8 @@
     "fshName": "GewichtsklassenCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Untersuchungsbogen/7-af-fdsscreening.fsh",
-    "startLine": 660,
-    "endLine": 668
+    "startLine": 639,
+    "endLine": 647
   },
   {
     "outputFile": "CodeSystem-haeufigkeit-auswahl-cs.json",
@@ -716,16 +716,16 @@
     "fshName": "ImpfstatusCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Untersuchungsbogen/3-af-impfungen.fsh",
-    "startLine": 288,
-    "endLine": 297
+    "startLine": 311,
+    "endLine": 320
   },
   {
     "outputFile": "CodeSystem-iso6392-language-cs.json",
     "fshName": "ISO6392_LanguageCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Untersuchungsbogen/7-af-fdsscreening.fsh",
-    "startLine": 756,
-    "endLine": 1125
+    "startLine": 735,
+    "endLine": 1104
   },
   {
     "outputFile": "CodeSystem-seu-ef-alter-kind-cs.json",
@@ -774,6 +774,14 @@
     "fshFile": "Questionnaire/Elternfragebogen/ValueSetContained.fsh",
     "startLine": 2193,
     "endLine": 2203
+  },
+  {
+    "outputFile": "CodeSystem-seu-ef-dauer-he-cs.json",
+    "fshName": "SEU_EF_DauerHECS",
+    "fshType": "CodeSystem",
+    "fshFile": "Questionnaire/Elternfragebogen/ValueSetContained.fsh",
+    "startLine": 2425,
+    "endLine": 2431
   },
   {
     "outputFile": "CodeSystem-seu-ef-fachaerzte-cs.json",
@@ -884,24 +892,56 @@
     "fshName": "SEU_UB_0_4ImpfungenCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Untersuchungsbogen/3-af-impfungen.fsh",
-    "startLine": 324,
-    "endLine": 332
+    "startLine": 347,
+    "endLine": 355
+  },
+  {
+    "outputFile": "CodeSystem-seu-ub-anzahl-cs.json",
+    "fshName": "SEU_UB_AnzahlCS",
+    "fshType": "CodeSystem",
+    "fshFile": "Questionnaire/Untersuchungsbogen/3-af-impfungen.fsh",
+    "startLine": 530,
+    "endLine": 543
+  },
+  {
+    "outputFile": "CodeSystem-seu-ub-beeintraechtigungsart-cs.json",
+    "fshName": "SEU_UB_BeeintraechtigungsartCS",
+    "fshType": "CodeSystem",
+    "fshFile": "Questionnaire/Untersuchungsbogen/5-af-anamnese.fsh",
+    "startLine": 1905,
+    "endLine": 1912
   },
   {
     "outputFile": "CodeSystem-seu-ub-bewertung-ergebnis-cs.json",
     "fshName": "SEU_UB_BewertungErgebnisCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Untersuchungsbogen/7-af-fdsscreening.fsh",
-    "startLine": 732,
-    "endLine": 738
+    "startLine": 711,
+    "endLine": 717
+  },
+  {
+    "outputFile": "CodeSystem-seu-ub-deutschkenntnisse-cs.json",
+    "fshName": "SEU_UB_DeutschkenntnisseCS",
+    "fshType": "CodeSystem",
+    "fshFile": "Questionnaire/Untersuchungsbogen/7-af-fdsscreening.fsh",
+    "startLine": 2343,
+    "endLine": 2352
+  },
+  {
+    "outputFile": "CodeSystem-seu-ub-einschulung-cs.json",
+    "fshName": "SEU_UB_EinschulungCS",
+    "fshType": "CodeSystem",
+    "fshFile": "Questionnaire/Untersuchungsbogen/8-af-schulaerztlicheuntersuchung.fsh",
+    "startLine": 320,
+    "endLine": 326
   },
   {
     "outputFile": "CodeSystem-seu-ub-entwicklungsbewertung-cs.json",
     "fshName": "SEU_UB_EntwicklungsbewertungCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Untersuchungsbogen/7-af-fdsscreening.fsh",
-    "startLine": 2308,
-    "endLine": 2315
+    "startLine": 2287,
+    "endLine": 2294
   },
   {
     "outputFile": "CodeSystem-seu-ub-familienstand-cs.json",
@@ -916,40 +956,96 @@
     "fshName": "SEU_UB_GrippesaisonCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Untersuchungsbogen/3-af-impfungen.fsh",
-    "startLine": 391,
-    "endLine": 398
+    "startLine": 414,
+    "endLine": 421
   },
   {
     "outputFile": "CodeSystem-seu-ub-hoertest-dezibel-cs.json",
     "fshName": "SEU_UB_HoertestDezibelCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Untersuchungsbogen/7-af-fdsscreening.fsh",
-    "startLine": 2240,
-    "endLine": 2247
+    "startLine": 2219,
+    "endLine": 2226
+  },
+  {
+    "outputFile": "CodeSystem-seu-ub-impfschema-cs.json",
+    "fshName": "SEU_UB_ImpfschemaCS",
+    "fshType": "CodeSystem",
+    "fshFile": "Questionnaire/Untersuchungsbogen/3-af-impfungen.fsh",
+    "startLine": 582,
+    "endLine": 587
+  },
+  {
+    "outputFile": "CodeSystem-seu-ub-impfungen-cs.json",
+    "fshName": "SEU_UB_ImpfungenCS",
+    "fshType": "CodeSystem",
+    "fshFile": "Questionnaire/Untersuchungsbogen/3-af-impfungen.fsh",
+    "startLine": 466,
+    "endLine": 482
   },
   {
     "outputFile": "CodeSystem-seu-ub-rotaimpfung-cs.json",
     "fshName": "SEU_UB_RotaimpfungCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Untersuchungsbogen/3-af-impfungen.fsh",
-    "startLine": 419,
-    "endLine": 425
+    "startLine": 442,
+    "endLine": 448
+  },
+  {
+    "outputFile": "CodeSystem-seu-ub-schulempfehlung-cs.json",
+    "fshName": "SEU_UB_SchulempfehlungCS",
+    "fshType": "CodeSystem",
+    "fshFile": "Questionnaire/Untersuchungsbogen/8-af-schulaerztlicheuntersuchung.fsh",
+    "startLine": 292,
+    "endLine": 299
   },
   {
     "outputFile": "CodeSystem-seu-ub-sehtest-visus-cs.json",
     "fshName": "SEU_UB_SehtestVisusCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Untersuchungsbogen/7-af-fdsscreening.fsh",
-    "startLine": 2268,
-    "endLine": 2278
+    "startLine": 2247,
+    "endLine": 2257
   },
   {
     "outputFile": "CodeSystem-seu-ub-untersuchung-hoertest-stoerquellen-cs.json",
     "fshName": "SEU_UB_UntersuchungHoertestStoerquellenCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire/Untersuchungsbogen/7-af-fdsscreening.fsh",
-    "startLine": 712,
-    "endLine": 717
+    "startLine": 691,
+    "endLine": 696
+  },
+  {
+    "outputFile": "CodeSystem-seu-ub-untersuchungsergebnis-cs.json",
+    "fshName": "SEU_UB_UntersuchungsergebnisCS",
+    "fshType": "CodeSystem",
+    "fshFile": "Questionnaire/Untersuchungsbogen/5-af-anamnese.fsh",
+    "startLine": 1873,
+    "endLine": 1881
+  },
+  {
+    "outputFile": "CodeSystem-seu-ub-untersuchungsergebnisse-ibau-cs.json",
+    "fshName": "SEU_UB_UntersuchungsergebnisseIBAUCS",
+    "fshType": "CodeSystem",
+    "fshFile": "Questionnaire/Untersuchungsbogen/7-af-fdsscreening.fsh",
+    "startLine": 2315,
+    "endLine": 2322
+  },
+  {
+    "outputFile": "CodeSystem-seu-ub-verwandtepersondeutschkenntnis-cs.json",
+    "fshName": "SEU_UB_VerwandtePersonDeutschkenntnisCS",
+    "fshType": "CodeSystem",
+    "fshFile": "Questionnaire/Untersuchungsbogen/1-af-stammdaten.fsh",
+    "startLine": 115,
+    "endLine": 122
+  },
+  {
+    "outputFile": "CodeSystem-seu-ub-vorgangsstatus-cs.json",
+    "fshName": "SEU_UB_VorgangsstatusCS",
+    "fshType": "CodeSystem",
+    "fshFile": "Questionnaire/Untersuchungsbogen/2-af-untersuchungsverlauf.fsh",
+    "startLine": 353,
+    "endLine": 361
   },
   {
     "outputFile": "CodeSystem-ueberwiegend-gesprochene-sprache-cs.json",
@@ -1157,7 +1253,7 @@
     "fshType": "Instance",
     "fshFile": "Questionnaire/Elternfragebogen/ElternfragebogenQU.fsh",
     "startLine": 1,
-    "endLine": 977
+    "endLine": 988
   },
   {
     "outputFile": "Questionnaire-SEU-Untersuchungsbogen.json",
@@ -1165,7 +1261,7 @@
     "fshType": "Instance",
     "fshFile": "Questionnaire/Untersuchungsbogen/Untersuchungsbogen.fsh",
     "startLine": 1,
-    "endLine": 70
+    "endLine": 81
   },
   {
     "outputFile": "Questionnaire-SozialpaedagogischesEntwicklungsscreening.json",
@@ -1628,8 +1724,8 @@
     "fshName": "GenderDEVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/1-af-stammdaten.fsh",
-    "startLine": 90,
-    "endLine": 107
+    "startLine": 96,
+    "endLine": 113
   },
   {
     "outputFile": "ValueSet-IdentifikationsartVS.json",
@@ -1788,272 +1884,272 @@
     "fshName": "SEU_UB_AnamneseBesonderheitenVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/5-af-anamnese.fsh",
-    "startLine": 577,
-    "endLine": 587
+    "startLine": 610,
+    "endLine": 621
   },
   {
     "outputFile": "ValueSet-SEU-UB-AntwortAuffaelligkeitBeurteilbarMoeglichVS.json",
     "fshName": "SEU_UB_AntwortAuffaelligkeitBeurteilbarMoeglichVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/7-af-fdsscreening.fsh",
-    "startLine": 643,
-    "endLine": 658
+    "startLine": 621,
+    "endLine": 637
   },
   {
     "outputFile": "ValueSet-SEU-UB-AntwortAuffaelligkeitBeurteilbarVS.json",
     "fshName": "SEU_UB_AntwortAuffaelligkeitBeurteilbarVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/7-af-fdsscreening.fsh",
-    "startLine": 622,
-    "endLine": 641
+    "startLine": 599,
+    "endLine": 619
   },
   {
     "outputFile": "ValueSet-SEU-UB-AntwortAuffaelligkeitVS.json",
     "fshName": "SEU_UB_AntwortAuffaelligkeitVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/7-af-fdsscreening.fsh",
-    "startLine": 601,
-    "endLine": 620
+    "startLine": 577,
+    "endLine": 597
   },
   {
     "outputFile": "ValueSet-SEU-UB-AntwortAugenarztVS.json",
     "fshName": "SEU_UB_AntwortAugenarztVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/5-af-anamnese.fsh",
-    "startLine": 265,
-    "endLine": 296
+    "startLine": 287,
+    "endLine": 319
   },
   {
     "outputFile": "ValueSet-SEU-UB-AntwortErwachseneVS.json",
     "fshName": "SEU_UB_AntwortErwachseneVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/5-af-anamnese.fsh",
-    "startLine": 543,
-    "endLine": 569
+    "startLine": 575,
+    "endLine": 602
   },
   {
     "outputFile": "ValueSet-SEU-UB-AntwortGeschwisterVS.json",
     "fshName": "SEU_UB_AntwortGeschwisterVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/5-af-anamnese.fsh",
-    "startLine": 519,
-    "endLine": 541
+    "startLine": 550,
+    "endLine": 573
   },
   {
     "outputFile": "ValueSet-SEU-UB-AntwortKindergartenBesuchVS.json",
     "fshName": "SEU_UB_AntwortKindergartenBesuchVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/5-af-anamnese.fsh",
-    "startLine": 482,
-    "endLine": 507
+    "startLine": 512,
+    "endLine": 538
   },
   {
     "outputFile": "ValueSet-SEU-UB-AntwortTeilnahmeVS.json",
     "fshName": "SEU_UB_AntwortTeilnahmeVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/9-af-schulaerztlicheuntersuchung2.fsh",
-    "startLine": 255,
-    "endLine": 271
+    "startLine": 256,
+    "endLine": 273
   },
   {
     "outputFile": "ValueSet-SEU-UB-AntwortenHoerstoerungVS.json",
     "fshName": "SEU_UB_AntwortenHoerstoerungVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/5-af-anamnese.fsh",
-    "startLine": 234,
-    "endLine": 250
+    "startLine": 255,
+    "endLine": 272
   },
   {
     "outputFile": "ValueSet-SEU-UB-AntwortenSAeUntersuchungVS.json",
     "fshName": "SEU_UB_AntwortenSAeUntersuchungVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/8-af-schulaerztlicheuntersuchung.fsh",
-    "startLine": 197,
-    "endLine": 213
+    "startLine": 222,
+    "endLine": 239
   },
   {
     "outputFile": "ValueSet-SEU-UB-AuswaehlbareElternspracheVS.json",
     "fshName": "SEU_UB_AuswaehlbareElternspracheVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/5-af-anamnese.fsh",
-    "startLine": 720,
-    "endLine": 1833
+    "startLine": 758,
+    "endLine": 1871
   },
   {
     "outputFile": "ValueSet-SEU-UB-BesonderheitenVS.json",
     "fshName": "SEU_UB_BesonderheitenVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/2-af-untersuchungsverlauf.fsh",
-    "startLine": 268,
-    "endLine": 282
+    "startLine": 270,
+    "endLine": 284
   },
   {
     "outputFile": "ValueSet-SEU-UB-DurchfuehrungSaeuVS.json",
     "fshName": "SEU_UB_DurchfuehrungSaeuVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/2-af-untersuchungsverlauf.fsh",
-    "startLine": 176,
-    "endLine": 193
+    "startLine": 178,
+    "endLine": 195
   },
   {
     "outputFile": "ValueSet-SEU-UB-ErwerbstaetigkeitVS.json",
     "fshName": "SEU_UB_ErwerbstaetigkeitVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/5-af-anamnese.fsh",
-    "startLine": 683,
-    "endLine": 711
+    "startLine": 720,
+    "endLine": 749
   },
   {
     "outputFile": "ValueSet-SEU-UB-GeburtslandVS.json",
     "fshName": "SEU_UB_GeburtslandVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/5-af-anamnese.fsh",
-    "startLine": 622,
-    "endLine": 635
+    "startLine": 657,
+    "endLine": 671
   },
   {
     "outputFile": "ValueSet-SEU-UB-GesprocheneSpracheVS.json",
     "fshName": "SEU_UB_GesprocheneSpracheVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/5-af-anamnese.fsh",
-    "startLine": 405,
-    "endLine": 421
+    "startLine": 432,
+    "endLine": 449
   },
   {
     "outputFile": "ValueSet-SEU-UB-HaendigkeitVS.json",
     "fshName": "SEU_UB_HaendigkeitVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/5-af-anamnese.fsh",
-    "startLine": 379,
-    "endLine": 395
+    "startLine": 405,
+    "endLine": 422
   },
   {
     "outputFile": "ValueSet-SEU-UB-ImpfungAntwortOhneAuffrischungVS.json",
     "fshName": "SEU_UB_ImpfungAntwortOhneAuffrischungVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/3-af-impfungen.fsh",
-    "startLine": 270,
-    "endLine": 286
+    "startLine": 293,
+    "endLine": 309
   },
   {
     "outputFile": "ValueSet-SEU-UB-ImpfungAntwortVS.json",
     "fshName": "SEU_UB_ImpfungAntwortVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/3-af-impfungen.fsh",
-    "startLine": 251,
-    "endLine": 268
+    "startLine": 274,
+    "endLine": 291
   },
   {
     "outputFile": "ValueSet-SEU-UB-JaNeinKeineAngabeVS.json",
     "fshName": "SEU_UB_JaNeinKeineAngabeVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/5-af-anamnese.fsh",
-    "startLine": 306,
-    "endLine": 321
+    "startLine": 329,
+    "endLine": 345
   },
   {
     "outputFile": "ValueSet-SEU-UB-KindergartenArtVS.json",
     "fshName": "SEU_UB_KindergartenArtVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/5-af-anamnese.fsh",
-    "startLine": 453,
-    "endLine": 469
+    "startLine": 482,
+    "endLine": 499
   },
   {
     "outputFile": "ValueSet-SEU-UB-KontaktDeutscheSpracheVS.json",
     "fshName": "SEU_UB_KontaktDeutscheSpracheVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/5-af-anamnese.fsh",
-    "startLine": 430,
-    "endLine": 443
+    "startLine": 458,
+    "endLine": 472
   },
   {
     "outputFile": "ValueSet-SEU-UB-MasernimpfungNichtErforderlichGrundVS.json",
     "fshName": "SEU_UB_MasernimpfungNichtErforderlichGrundVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/3-af-impfungen.fsh",
-    "startLine": 224,
-    "endLine": 240
+    "startLine": 246,
+    "endLine": 263
   },
   {
     "outputFile": "ValueSet-SEU-UB-MeldungJugendamtVS.json",
     "fshName": "SEU_UB_MeldungJugendamtVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/2-af-untersuchungsverlauf.fsh",
-    "startLine": 143,
-    "endLine": 166
+    "startLine": 145,
+    "endLine": 168
   },
   {
     "outputFile": "ValueSet-SEU-UB-RegionArtVS.json",
     "fshName": "SEU_UB_RegionArtVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/1-af-stammdaten.fsh",
-    "startLine": 71,
-    "endLine": 85
+    "startLine": 77,
+    "endLine": 91
   },
   {
     "outputFile": "ValueSet-SEU-UB-SchulabschlussVS.json",
     "fshName": "SEU_UB_SchulabschlussVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/5-af-anamnese.fsh",
-    "startLine": 647,
-    "endLine": 669
+    "startLine": 683,
+    "endLine": 706
   },
   {
     "outputFile": "ValueSet-SEU-UB-SpracheStudieVS.json",
     "fshName": "SEU_UB_SpracheStudieVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/2-af-untersuchungsverlauf.fsh",
-    "startLine": 98,
-    "endLine": 130
+    "startLine": 100,
+    "endLine": 132
   },
   {
     "outputFile": "ValueSet-SEU-UB-SprachtherapieVS.json",
     "fshName": "SEU_UB_SprachtherapieVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/5-af-anamnese.fsh",
-    "startLine": 350,
-    "endLine": 369
+    "startLine": 375,
+    "endLine": 395
   },
   {
     "outputFile": "ValueSet-SEU-UB-StaatsangehoerigkeitVS.json",
     "fshName": "SEU_UB_StaatsangehoerigkeitVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/5-af-anamnese.fsh",
-    "startLine": 597,
-    "endLine": 613
+    "startLine": 631,
+    "endLine": 648
   },
   {
     "outputFile": "ValueSet-SEU-UB-TeilnahmeVorkursDeutschVS.json",
     "fshName": "SEU_UB_TeilnahmeVorkursDeutschVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/5-af-anamnese.fsh",
-    "startLine": 323,
-    "endLine": 339
+    "startLine": 347,
+    "endLine": 364
   },
   {
     "outputFile": "ValueSet-SEU-UB-UntersuchungsergebnisseSAeUVS.json",
     "fshName": "SEU_UB_UntersuchungsergebnisseSAeUVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/8-af-schulaerztlicheuntersuchung.fsh",
-    "startLine": 229,
-    "endLine": 263
+    "startLine": 255,
+    "endLine": 290
   },
   {
     "outputFile": "ValueSet-SEU-UB-UntersuchungsstatusFdSScreeningVS.json",
     "fshName": "SEU_UB_UntersuchungsstatusFdSScreeningvS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/7-af-fdsscreening.fsh",
-    "startLine": 565,
-    "endLine": 590
+    "startLine": 540,
+    "endLine": 566
   },
   {
     "outputFile": "ValueSet-SEU-UB-UntersuchungsstatusVS.json",
     "fshName": "SEU_UB_UntersuchungsstatusVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/2-af-untersuchungsverlauf.fsh",
-    "startLine": 302,
-    "endLine": 349
+    "startLine": 304,
+    "endLine": 351
   },
   {
     "outputFile": "ValueSet-SEU-UB-VergleichSAeUntersuchungVS.json",
@@ -2061,23 +2157,23 @@
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/9-af-schulaerztlicheuntersuchung2.fsh",
     "startLine": 231,
-    "endLine": 244
+    "endLine": 245
   },
   {
     "outputFile": "ValueSet-SEU-UB-VorstellungSchularztVS.json",
     "fshName": "SEU_UB_VorstellungSchularztVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/2-af-untersuchungsverlauf.fsh",
-    "startLine": 202,
-    "endLine": 216
+    "startLine": 204,
+    "endLine": 218
   },
   {
     "outputFile": "ValueSet-SEU-UB-WiedervorlageGrundVS.json",
     "fshName": "SEU_UB_WiedervorlageGrundVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/2-af-untersuchungsverlauf.fsh",
-    "startLine": 230,
-    "endLine": 259
+    "startLine": 232,
+    "endLine": 261
   },
   {
     "outputFile": "ValueSet-SchulempfehlungVS.json",
@@ -2220,8 +2316,8 @@
     "fshName": "SEU_UB_BewertungsvorschlagVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/7-af-fdsscreening.fsh",
-    "startLine": 699,
-    "endLine": 710
+    "startLine": 678,
+    "endLine": 689
   },
   {
     "outputFile": "ValueSet-chronische-krankheiten-vs.json",
@@ -2276,8 +2372,8 @@
     "fshName": "SEU_UB_GewichtsklassenVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/7-af-fdsscreening.fsh",
-    "startLine": 670,
-    "endLine": 690
+    "startLine": 649,
+    "endLine": 669
   },
   {
     "outputFile": "ValueSet-haeufigkeit-auswahl-vs.json",
@@ -2292,8 +2388,8 @@
     "fshName": "SEU_UB_ImpfstatusVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/3-af-impfungen.fsh",
-    "startLine": 299,
-    "endLine": 322
+    "startLine": 322,
+    "endLine": 345
   },
   {
     "outputFile": "ValueSet-ja-nein-warteliste.json",
@@ -2308,8 +2404,8 @@
     "fshName": "ISO6392_LanguageVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/7-af-fdsscreening.fsh",
-    "startLine": 1127,
-    "endLine": 2238
+    "startLine": 1106,
+    "endLine": 2217
   },
   {
     "outputFile": "ValueSet-seu-ef-alter-kind-vs.json",
@@ -2350,6 +2446,14 @@
     "fshFile": "Questionnaire/Elternfragebogen/ValueSetContained.fsh",
     "startLine": 499,
     "endLine": 522
+  },
+  {
+    "outputFile": "ValueSet-seu-ef-dauer-he-vs.json",
+    "fshName": "SEU_EF_DauerHEVS",
+    "fshType": "ValueSet",
+    "fshFile": "Questionnaire/Elternfragebogen/ValueSetContained.fsh",
+    "startLine": 2433,
+    "endLine": 2447
   },
   {
     "outputFile": "ValueSet-seu-ef-dauer-vs.json",
@@ -2468,80 +2572,168 @@
     "fshName": "SEU_UB_0_2ImpfungenVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/3-af-impfungen.fsh",
-    "startLine": 375,
-    "endLine": 389
+    "startLine": 398,
+    "endLine": 412
   },
   {
     "outputFile": "ValueSet-seu-ub-0-3impfungen-vs.json",
     "fshName": "SEU_UB_0_3ImpfungenVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/3-af-impfungen.fsh",
-    "startLine": 356,
-    "endLine": 373
+    "startLine": 379,
+    "endLine": 396
   },
   {
     "outputFile": "ValueSet-seu-ub-0-4impfungen-vs.json",
     "fshName": "SEU_UB_0_4ImpfungenVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/3-af-impfungen.fsh",
-    "startLine": 334,
-    "endLine": 354
+    "startLine": 357,
+    "endLine": 377
+  },
+  {
+    "outputFile": "ValueSet-seu-ub-anzahl-vs.json",
+    "fshName": "SEU_UB_AnzahlVS",
+    "fshType": "ValueSet",
+    "fshFile": "Questionnaire/Untersuchungsbogen/3-af-impfungen.fsh",
+    "startLine": 545,
+    "endLine": 580
+  },
+  {
+    "outputFile": "ValueSet-seu-ub-beeintraechtigungsart-vs.json",
+    "fshName": "SEU_UB_BeeintraechtigungsartVS",
+    "fshType": "ValueSet",
+    "fshFile": "Questionnaire/Untersuchungsbogen/5-af-anamnese.fsh",
+    "startLine": 1914,
+    "endLine": 1931
   },
   {
     "outputFile": "ValueSet-seu-ub-bewertung-ergebnis-vs.json",
     "fshName": "SEU_UB_BewertungErgebnisVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/7-af-fdsscreening.fsh",
-    "startLine": 740,
-    "endLine": 754
+    "startLine": 719,
+    "endLine": 733
+  },
+  {
+    "outputFile": "ValueSet-seu-ub-deutschkenntnisse-vs.json",
+    "fshName": "SEU_UB_DeutschkenntnisseVS",
+    "fshType": "ValueSet",
+    "fshFile": "Questionnaire/Untersuchungsbogen/7-af-fdsscreening.fsh",
+    "startLine": 2354,
+    "endLine": 2377
+  },
+  {
+    "outputFile": "ValueSet-seu-ub-einschulung-vs.json",
+    "fshName": "SEU_UB_EinschulungVS",
+    "fshType": "ValueSet",
+    "fshFile": "Questionnaire/Untersuchungsbogen/8-af-schulaerztlicheuntersuchung.fsh",
+    "startLine": 328,
+    "endLine": 342
   },
   {
     "outputFile": "ValueSet-seu-ub-entwicklungsbewertung-vs.json",
     "fshName": "SEU_UB_EntwicklungsbewertungVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/7-af-fdsscreening.fsh",
-    "startLine": 2317,
-    "endLine": 2334
+    "startLine": 2296,
+    "endLine": 2313
   },
   {
     "outputFile": "ValueSet-seu-ub-grippesaison-vs.json",
     "fshName": "SEU_UB_GrippesaisonVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/3-af-impfungen.fsh",
-    "startLine": 400,
-    "endLine": 417
+    "startLine": 423,
+    "endLine": 440
   },
   {
     "outputFile": "ValueSet-seu-ub-hoertest-dezibel-vs.json",
     "fshName": "SEU_UB_HoertestDezibelVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/7-af-fdsscreening.fsh",
-    "startLine": 2249,
-    "endLine": 2266
+    "startLine": 2228,
+    "endLine": 2245
+  },
+  {
+    "outputFile": "ValueSet-seu-ub-impfschema-vs.json",
+    "fshName": "SEU_UB_ImpfschemaVS",
+    "fshType": "ValueSet",
+    "fshFile": "Questionnaire/Untersuchungsbogen/3-af-impfungen.fsh",
+    "startLine": 589,
+    "endLine": 600
+  },
+  {
+    "outputFile": "ValueSet-seu-ub-impfungen-vs.json",
+    "fshName": "SEU_UB_ImpfungenVS",
+    "fshType": "ValueSet",
+    "fshFile": "Questionnaire/Untersuchungsbogen/3-af-impfungen.fsh",
+    "startLine": 484,
+    "endLine": 528
   },
   {
     "outputFile": "ValueSet-seu-ub-rotaimpfung-vs.json",
     "fshName": "SEU_UB_RotaimpfungVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/3-af-impfungen.fsh",
-    "startLine": 427,
-    "endLine": 441
+    "startLine": 450,
+    "endLine": 464
+  },
+  {
+    "outputFile": "ValueSet-seu-ub-schulempfehlung-vs.json",
+    "fshName": "SEU_UB_SchulempfehlungVS",
+    "fshType": "ValueSet",
+    "fshFile": "Questionnaire/Untersuchungsbogen/8-af-schulaerztlicheuntersuchung.fsh",
+    "startLine": 301,
+    "endLine": 318
   },
   {
     "outputFile": "ValueSet-seu-ub-sehtest-visus-vs.json",
     "fshName": "SEU_UB_SehtestVisusVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/7-af-fdsscreening.fsh",
-    "startLine": 2280,
-    "endLine": 2306
+    "startLine": 2259,
+    "endLine": 2285
   },
   {
     "outputFile": "ValueSet-seu-ub-untersuchung-hoertest-stoerquellen-vs.json",
     "fshName": "SEU_UB_UntersuchungHoertestStoerquellenVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire/Untersuchungsbogen/7-af-fdsscreening.fsh",
-    "startLine": 719,
-    "endLine": 730
+    "startLine": 698,
+    "endLine": 709
+  },
+  {
+    "outputFile": "ValueSet-seu-ub-untersuchungsergebnis-vs.json",
+    "fshName": "SEU_UB_UntersuchungsergebnisVS",
+    "fshType": "ValueSet",
+    "fshFile": "Questionnaire/Untersuchungsbogen/5-af-anamnese.fsh",
+    "startLine": 1883,
+    "endLine": 1903
+  },
+  {
+    "outputFile": "ValueSet-seu-ub-untersuchungsergebnisse-ibau-vs.json",
+    "fshName": "SEU_UB_UntersuchungsergebnisseIBAUVS",
+    "fshType": "ValueSet",
+    "fshFile": "Questionnaire/Untersuchungsbogen/7-af-fdsscreening.fsh",
+    "startLine": 2324,
+    "endLine": 2341
+  },
+  {
+    "outputFile": "ValueSet-seu-ub-verwandtepersondeutschkenntnis-vs.json",
+    "fshName": "SEU_UB_VerwandtePersonDeutschkenntnisVS",
+    "fshType": "ValueSet",
+    "fshFile": "Questionnaire/Untersuchungsbogen/1-af-stammdaten.fsh",
+    "startLine": 124,
+    "endLine": 141
+  },
+  {
+    "outputFile": "ValueSet-seu-ub-vorgangsstatus-vs.json",
+    "fshName": "SEU_UB_VorgangsstatusVS",
+    "fshType": "ValueSet",
+    "fshFile": "Questionnaire/Untersuchungsbogen/2-af-untersuchungsverlauf.fsh",
+    "startLine": 363,
+    "endLine": 383
   },
   {
     "outputFile": "ValueSet-ueberwiegend-gesprochene-sprache-vs.json",

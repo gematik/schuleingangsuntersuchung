@@ -2421,3 +2421,27 @@ Description: "ValueSet, das verschiedene Häufigkeiten einer Aktivität enthält
 * ^expansion.contains[+].system = Canonical(SEU_EF_FrequenzCS)
 * ^expansion.contains[=].code = #keine_angabe
 * ^expansion.contains[=].display = "Keine Angabe"
+
+CodeSystem: SEU_EF_DauerHECS
+Id: seu-ef-dauer-he-cs
+Title: "SEU_EF_Dauer CodeSystem"
+Description: "CodeSystem für die Angabe der Dauer."
+* #unter_18_monate "<18 Monate"
+* #18_monate_bis_3_jahre "18 Mon. - 3 J."
+* #ueber_3_jahre ">3 Jahre"
+
+ValueSet: SEU_EF_DauerHEVS
+Id: seu-ef-dauer-he-vs
+Title: "SEU_EF_Dauer ValueSet"
+Description: "ValueSet, das verschiedene Dauern enthält."
+* include codes from system SEU_EF_DauerHECS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
+* ^expansion.contains[0].system = Canonical(SEU_EF_DauerHECS)
+* ^expansion.contains[=].code = #unter_18_monate
+* ^expansion.contains[=].display = "<18 Monate"
+* ^expansion.contains[+].system = Canonical(SEU_EF_DauerHECS)
+* ^expansion.contains[=].code = #18_monate_bis_3_jahre
+* ^expansion.contains[=].display = "18 Mon. - 3 J."
+* ^expansion.contains[+].system = Canonical(SEU_EF_DauerHECS)
+* ^expansion.contains[=].code = #ueber_3_jahre
+* ^expansion.contains[=].display = ">3 Jahre"

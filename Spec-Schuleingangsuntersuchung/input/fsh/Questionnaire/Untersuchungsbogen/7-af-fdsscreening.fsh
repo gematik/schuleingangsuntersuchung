@@ -5,82 +5,16 @@ RuleSet: 7-af-fdsscreening
     * insert addSource(#DE-BY)
     * item[+] insert addGroup(7_1_1, Für Eingabe in der Untersuchung etwas erfassen) //Bildet das in der Excel beschriebe ab, aber finde ich grenzwertig... deshalb habe ich die optionalen ReadOnly gesetzt
       * insert addSource(#DE-BY)
-      * insert helpItem(7_1_1H, [[Geben Sie ab 7.3 etwas ein, um das Datum und die Angabe zur heutigen Untersuchung freizuschalten]])
-      * insert enableWhenBoolean(7.3, exists, false)
-      * insert enableWhenBoolean(7.3, exists, false)
-      * insert enableWhenBoolean(7.4, exists, false)
-      * insert enableWhenBoolean(7.6, exists, false)
-      * insert enableWhenBoolean(7.7, exists, false)
-      * insert enableWhenBoolean(7.8, exists, false)
-      * insert enableWhenBoolean(7.9, exists, false)
-      * insert enableWhenBoolean(7.10, exists, false)
-      * insert enableWhenBoolean(7.11, exists, false)
-      * insert enableWhenBoolean(7.12, exists, false)
-      * insert enableWhenBoolean(7.13, exists, false)
-      * insert enableWhenBoolean(7.14, exists, false)
-      * insert enableWhenBoolean(7.15, exists, false)
-      * insert enableWhenBoolean(7.16, exists, false)
-      * insert enableWhenBoolean(7.17, exists, false)
-      * insert enableWhenBoolean(7.18, exists, false)
-      * insert enableWhenBoolean(7.19, exists, false)
-      * insert enableWhenBoolean(7.20, exists, false)
-      * insert enableWhenBoolean(7.21, exists, false)
-      * insert enableWhenBoolean(7.22, exists, false)
-      * insert enableWhenBoolean(7.23, exists, false)
-      * insert enableWhenBoolean(7.24, exists, false)
-      * insert enableWhenBoolean(7.25, exists, false)
-      * insert enableWhenBoolean(7.26, exists, false)
-      * insert enableWhenBoolean(7.27, exists, false)
-      * insert enableWhenBoolean(7.28, exists, false)
-      * insert enableWhenBoolean(7.29, exists, false)
-      * insert enableWhenBoolean(7.30, exists, false)
-      * enableBehavior = #all
       * item[+] insert addItem(7.1, #date, [[Untersuchungsdatum]])
         * insert addSource(#DE-BY)
-        * readOnly = true
       * item[+] insert addItem(7.2, #choice, [[Heutige Untersuchung]])
-        * insert addSource(#DE-BY)
-        * readOnly = true
-        * answerValueSet = Canonical(SEU_UB_UntersuchungsstatusFdSScreeningvS)
-    * item[+] insert addGroup(7_1_1v, Verpflichtend)
-      * insert addSource(#DE-BY)
-      * insert enableWhenBoolean(7.3, exists, true)
-      * insert enableWhenBoolean(7.3, exists, true)
-      * insert enableWhenBoolean(7.4, exists, true)
-      * insert enableWhenBoolean(7.6, exists, true)
-      * insert enableWhenBoolean(7.7, exists, true)
-      * insert enableWhenBoolean(7.8, exists, true)
-      * insert enableWhenBoolean(7.9, exists, true)
-      * insert enableWhenBoolean(7.10, exists, true)
-      * insert enableWhenBoolean(7.11, exists, true)
-      * insert enableWhenBoolean(7.12, exists, true)
-      * insert enableWhenBoolean(7.13, exists, true)
-      * insert enableWhenBoolean(7.14, exists, true)
-      * insert enableWhenBoolean(7.15, exists, true)
-      * insert enableWhenBoolean(7.16, exists, true)
-      * insert enableWhenBoolean(7.17, exists, true)
-      * insert enableWhenBoolean(7.18, exists, true)
-      * insert enableWhenBoolean(7.19, exists, true)
-      * insert enableWhenBoolean(7.20, exists, true)
-      * insert enableWhenBoolean(7.21, exists, true)
-      * insert enableWhenBoolean(7.22, exists, true)
-      * insert enableWhenBoolean(7.23, exists, true)
-      * insert enableWhenBoolean(7.24, exists, true)
-      * insert enableWhenBoolean(7.25, exists, true)
-      * insert enableWhenBoolean(7.26, exists, true)
-      * insert enableWhenBoolean(7.27, exists, true)
-      * insert enableWhenBoolean(7.28, exists, true)
-      * insert enableWhenBoolean(7.29, exists, true)
-      * insert enableWhenBoolean(7.30, exists, true)
-      * enableBehavior = #any
-      * item[+] insert addItem(7.1v, #date, [[Untersuchungsdatum]]) //TODO Validierung >2022
-        * insert addSource(#DE-BY)
-      * item[+] insert addItem(7.2v, #choice, [[Heutige Untersuchung]]) 
         * insert addSource(#DE-BY)
         * answerValueSet = Canonical(SEU_UB_UntersuchungsstatusFdSScreeningvS)
     * item[+] insert addItem(7.3, #integer, [[gemessene Körpergröße (in cm)]])
       * insert addSource(#DE-BY)
       * insert uunit(cm, "cm")
+    * item[+] insert addItemWithSource(7.3a, #decimal, [[gemessene Körpergröße (in m)]], #DE-HE)
+      * insert uunit(m, "m")
     * item[+] insert addItem(7.4, #decimal, [[gemessenes Körpergewicht (in kg)]])
       * insert addSource(#DE-BY)
       * insert uunit(kg, "kg")
@@ -90,7 +24,7 @@ RuleSet: 7-af-fdsscreening
       * answerValueSet = Canonical(SEU_UB_SehtestVisusVS)
     * item[+] insert addItemWithSource(7.sehtest.links, #choice, [[Sehtest links]], #DE-BW) 
       * answerValueSet = Canonical(SEU_UB_SehtestVisusVS)
-    * item[+] insert addItemWithSource(7.sehtest.1, #boolean, [[Sehtest Hyperopieprüfung auffällig?]], #DE-BW)   
+    * item[+] insert addItemWithSource(7.sehtest.1, #boolean, [[Sehtest Hyperopieprüfung auffällig?]], #DE-BW)  
     * item[+] insert addItemWithSource(7.sehtest.2, #choice, [[Sehtest: Vorschaltlinse rechts]], #DE-BW)  
       * answerValueSet = Canonical(SEU_UB_BewertungErgebnisVS)
     * item[+] insert addItemWithSource(7.sehtest.3, #choice, [[Sehtest: Vorschaltlinse links]], #DE-BW)  
@@ -118,9 +52,21 @@ RuleSet: 7-af-fdsscreening
       * item[+]
         * insert addItemWithSource(7.sehtest.15.2, #boolean, [[Übernahme Hörtest-Bemerkungen in Befundbogen für Kita]], #DE-BW)
         * insert enableWhenExists(7.sehtest.15)
+    * item[+] insert addItemWithSource(7.sehtest.16, #boolean, [[Sehtest: Amblyopieprüfung auffällig]], #DE-HE)
+    * item[+] insert addItemWithSource(7.sehtest.17, #boolean, [[Sehtest: Myopieprüfung auffällig]], #DE-HE)    
+    * item[+] insert addItemWithSource(7.sehtest.18, #boolean, [[Sehtest: Strabismusprüfung auffällig]], #DE-HE) 
+    * item[+] insert addItemWithSource(7.sehtest.19, #boolean, [[Sehtest: Farbsinnstörungprüfung auffällig]], #DE-HE) 
+    * item[+] insert addItemWithSource(7.sehtest.20, #boolean, [[Sehtest: Astigmatismusprüfung auffällig]], #DE-HE)
+    * item[+] insert addItemWithSource(7.sehtest.21, #boolean, [[Sehtest: andere Diagnose]], #DE-HE)
+    * item[+] insert addItemWithSource(7.sehtest.22, #choice, [[Sehtest: Stereosehen]], #DE-HE)
+      * answerValueSet = Canonical(SEU_UB_UntersuchungsergebnisseIBAUVS)    
+    * item[+] insert addItemWithSource(7.sehtest.23, #choice, [[Sehtest: Farbsinn]], #DE-HE)
+      * answerValueSet = Canonical(SEU_UB_UntersuchungsergebnisseIBAUVS)            
     * item[+] insert addItem(7.6, #choice, [[Lang-Test auffällig]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_AntwortAuffaelligkeitBeurteilbarVS)
+    * item[+] insert addItemWithSource(7.6a, #choice, [[Lang-Test auffällig]], #DE-HE)
+      * answerValueSet = Canonical(SEU_UB_UntersuchungsergebnisseIBAUVS)
     * item[+] insert addItem(7.7, #choice, [[Sehschärfendifferenz auffällig]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_AntwortAuffaelligkeitBeurteilbarVS)
@@ -138,6 +84,8 @@ RuleSet: 7-af-fdsscreening
       * answerValueSet = Canonical(SEU_UB_AntwortAuffaelligkeitBeurteilbarVS)
     * item[+] insert addItem(7.12, #boolean, [[akuter Infekt obere Atemwege liegt vor]])
       * insert addSource(#DE-BY)
+    * item[+] insert addItemWithSource(7.12a, #choice, [[akuter Infekt obere Atemwege liegt vor]], #DE-HE)
+      * answerValueSet = Canonical(SEU_UB_UntersuchungsergebnisseIBAUVS)
     * item[+] insert addItem(7.13, #choice, [[Hörtest auffällig (Rechts)]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_AntwortAuffaelligkeitBeurteilbarVS)
@@ -195,17 +143,27 @@ RuleSet: 7-af-fdsscreening
     * item[+] insert addItem(7.15, #choice, [[Visuomotorik auffällig]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_AntwortAuffaelligkeitBeurteilbarVS)
+    * item[+] insert addItemWithSource(7.15a, #choice, [[Visuomotorik auffällig]], #DE-HE)
+      * answerValueSet = Canonical(SEU_UB_UntersuchungsergebnisVS)
     * item[+] insert addItem(7.16, #choice, [[Mengenvorwissen auffällig]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_AntwortAuffaelligkeitBeurteilbarVS)
+    * item[+] insert addItemWithSource(7.16a, #choice, [[Mengenvorwissen auffällig]], #DE-HE)
+      * answerValueSet = Canonical(SEU_UB_UntersuchungsergebnisVS)
     * item[+] insert addItem(7.17, #choice, [[Zählen auffällig]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_AntwortAuffaelligkeitBeurteilbarVS)
+    * item[+] insert addItemWithSource(7.17a, #choice, [[Zählen auffällig]], #DE-HE)
+      * answerValueSet = Canonical(SEU_UB_UntersuchungsergebnisVS)
     * item[+] insert addItem(7.18, #boolean, [[Keine ausreichenden Deutschkenntnisse vorhanden]])
       * insert addSource(#DE-BY)
+    * item[+] insert addItemWithSource(7.18a, #choice, [[Keine ausreichenden Deutschkenntnisse vorhanden]], #DE-HE)
+      * answerValueSet = Canonical(SEU_UB_DeutschkenntnisseVS)    
     * item[+] insert addItem(7.19, #choice, [[Sprachverständnis auffällig]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_AntwortAuffaelligkeitVS)
+    * item[+] insert addItemWithSource(7.19a, #choice, [[Sprachverständnis auffällig]], #DE-HE)
+      * answerValueSet = Canonical(SEU_UB_UntersuchungsergebnisVS)
     * item[+] insert addItem(7.20, #choice, [[Lautbildung auffällig]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_AntwortAuffaelligkeitVS)
@@ -219,9 +177,13 @@ RuleSet: 7-af-fdsscreening
     * item[+] insert addItem(7.24, #choice, [[Visuelle Wahrnehmung (Züge)]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_AntwortAuffaelligkeitBeurteilbarVS)
+    * item[+] insert addItemWithSource(7.24a, #choice, [[Visuelle Wahrnehmung (Züge)]], #DE-HE)
+      * answerValueSet = Canonical(SEU_UB_UntersuchungsergebnisVS)
     * item[+] insert addItem(7.25, #choice, [[Grobmotorik auffällig]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_AntwortAuffaelligkeitBeurteilbarVS)
+    * item[+] insert addItemWithSource(7.25a, #choice, [[Grobmotorik auffällig]], #DE-HE)
+      * answerValueSet = Canonical(SEU_UB_UntersuchungsergebnisVS)
     * item[+] insert addItem(7.26, #choice, [[Formen zeichnen auffällig - Kreis]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_AntwortAuffaelligkeitBeurteilbarVS)
@@ -495,7 +457,7 @@ RuleSet: 7-af-fdsscreening
   * item[+] insert addItemWithSource(7.207, #boolean, [[Untersuchung_Visuomotorik_DP1_3]], #DE-BW)
   * item[+] insert addItemWithSource(7.208, #boolean, [[Untersuchung_Visuomotorik_DP1_4]], #DE-BW)
   * item[+] insert addItemWithSource(7.209, #boolean, [[Untersuchung_Visuomotorik_DP1_5]], #DE-BW)
-  * item[+] insert addItemWithSource(7.210, #boolean, [[Untersuchung_Visuomotorik_DP1_Bewertung]], #DE-BW)
+  * item[+] insert addItemWithSource(7.210, #choice, [[Untersuchung_Visuomotorik_DP1_Bewertung]], #DE-BW)
     * answerValueSet = Canonical(SEU_UB_EntwicklungsbewertungVS)
   * item[+] insert addItemWithSource(7.211, #boolean, [[Untersuchung_Visuomotorik_Nicht_Durchgeführt]], #DE-BW)
   * item[+] insert addItemWithSource(7.212, #boolean, [[Untersuchung_Visuomotorik_Fehlende_Mitarbeit]], #DE-BW)
@@ -548,6 +510,19 @@ RuleSet: 7-af-fdsscreening
   * item[+] insert addItemWithSource(7.259, #boolean, [[Untersuchung_Zusammenfassung_Geplante_Untersuchung_HASE_(Schritt_2)]], #DE-BW)
   * item[+] insert addItemWithSource(7.260, #boolean, [[Untersuchung_Zusammenfassung_Geplante_Untersuchung_SOPESS_(Schritt_2)]], #DE-BW)
   * item[+] insert addItemWithSource(7.261, #boolean, [[Untersuchung_Zusammenfassung_Bemerkungen_Befundbogen]], #DE-BW)
+  * item[+] insert addItemWithSource(7.262, #integer, [[Anzahl der Sprünge]], #DE-HE)
+  * item[+] insert addItemWithSource(7.263, #integer, [[Punktzahl der Visuomotrikübung]], #DE-HE)
+  * item[+] insert addItemWithSource(7.264, #integer, [[Punkte des Artikulation-Test]], #DE-HE)
+  * item[+] insert addItemWithSource(7.265, #integer, [[Punkte des Pseudowörter-Test]], #DE-HE)
+  * item[+] insert addItemWithSource(7.266, #integer, [[Punkte des Präpositionen-Test]], #DE-HE)
+  * item[+] insert addItemWithSource(7.267, #integer, [[Punkte des Pluralbildung-Test]], #DE-HE)
+  * item[+] insert addItemWithSource(7.268, #choice, [[Auditive Infoverarbeitung]], #DE-HE)
+    * answerValueSet = Canonical(SEU_UB_UntersuchungsergebnisVS)
+  * item[+] insert addItemWithSource(7.269, #integer, [[Punkte zum Visuelle-Wahrnehmung-Test]], #DE-HE)
+  * item[+] insert addItemWithSource(7.270, #integer, [[Punkte zum Zählen-Test]], #DE-HE)
+  * item[+] insert addItemWithSource(7.271, #integer, [[Punkte zum Mengen-Test]], #DE-HE)
+  * item[+] insert addItemWithSource(7.272, #choice, [[Wissen/Denken]], #DE-HE)
+    * answerValueSet = Canonical(SEU_UB_UntersuchungsergebnisVS)
 
 
 
@@ -567,6 +542,7 @@ Id: SEU-UB-UntersuchungsstatusFdSScreeningVS
 Title: "SEU Untersuchungsstatus FdS-Screening"
 Description: "Diese Codes enthalten Statusangaben über ein FdS-Screening"
 * include codes from system SEU_UB_UntersuchungsstatusFdSScreeningCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
 * ^expansion.contains[+].system = Canonical(SEU_UB_UntersuchungsstatusFdSScreeningCS)
 * ^expansion.contains[=].code = #1
 * ^expansion.contains[=].display = "Erstuntersuchung"
@@ -603,6 +579,7 @@ Id: SEU-UB-AntwortAuffaelligkeitVS
 Title: "SEU Antwort Auffälligkeit"
 Description: "Diese Codes enthalten Antwortmöglichkeiten zu Auffälligkeiten"
 * include codes from system SEU_UB_AntwortAuffaelligkeitCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
 * ^expansion.contains[+].system = Canonical(SEU_UB_AntwortAuffaelligkeitCS)
 * ^expansion.contains[=].code = #1
 * ^expansion.contains[=].display = "ja"
@@ -627,6 +604,7 @@ Description: "Diese Codes enthalten Antwortmöglichkeiten zu Auffälligkeiten oh
 * SEU_UB_AntwortAuffaelligkeitCS#2 "nein"
 * SEU_UB_AntwortAuffaelligkeitCS#8 "Untersuchung nicht möglich"
 * SEU_UB_AntwortAuffaelligkeitCS#9 "Untersuchung nicht durchgeführt"
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
 * ^expansion.contains[+].system = Canonical(SEU_UB_AntwortAuffaelligkeitVS)
 * ^expansion.contains[=].code = #1
 * ^expansion.contains[=].display = "ja"
@@ -647,6 +625,7 @@ Description: "Diese Codes enthalten Antwortmöglichkeiten zu Auffälligkeiten oh
 * SEU_UB_AntwortAuffaelligkeitCS#1 "ja"
 * SEU_UB_AntwortAuffaelligkeitCS#2 "nein"
 * SEU_UB_AntwortAuffaelligkeitCS#9 "Untersuchung nicht durchgeführt"
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
 * ^expansion.contains[+].system = Canonical(SEU_UB_AntwortAuffaelligkeitVS)
 * ^expansion.contains[=].code = #1
 * ^expansion.contains[=].display = "ja"
@@ -2332,3 +2311,67 @@ Description: "ValueSet, das die Entwicklungsbewertung enthält."
 * ^expansion.contains[+].system = Canonical(SEU_UB_EntwicklungsbewertungCS)
 * ^expansion.contains[=].code = #foerderbedarf_und_arztempfehlung
 * ^expansion.contains[=].display = "Förderbedarf und ggf. Arztempfehlung"
+
+CodeSystem: SEU_UB_UntersuchungsergebnisseIBAUCS
+Id: seu-ub-untersuchungsergebnisse-ibau-cs
+Title: "SEU_UB_Untersuchungsergebnisse IBAU CodeSystem"
+Description: "CodeSystem für die Untersuchungsergebnisse IBAU."
+* #I "In Ordnung"
+* #B "Bekannt/Behandelt"
+* #U "Unbekannt"
+* #A "Arztbrief (die Untersuchung war auffällig)"
+
+ValueSet: SEU_UB_UntersuchungsergebnisseIBAUVS
+Id: seu-ub-untersuchungsergebnisse-ibau-vs
+Title: "SEU_UB_Untersuchungsergebnisse IBAU ValueSet"
+Description: "ValueSet, das die Untersuchungsergebnisse IBAU enthält."
+* include codes from system SEU_UB_UntersuchungsergebnisseIBAUCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
+* ^expansion.contains[0].system = Canonical(SEU_UB_UntersuchungsergebnisseIBAUCS)
+* ^expansion.contains[=].code = #I
+* ^expansion.contains[=].display = "In Ordnung"
+* ^expansion.contains[+].system = Canonical(SEU_UB_UntersuchungsergebnisseIBAUCS)
+* ^expansion.contains[=].code = #B
+* ^expansion.contains[=].display = "Bekannt/Behandelt"
+* ^expansion.contains[+].system = Canonical(SEU_UB_UntersuchungsergebnisseIBAUCS)
+* ^expansion.contains[=].code = #U
+* ^expansion.contains[=].display = "Unbekannt"
+* ^expansion.contains[+].system = Canonical(SEU_UB_UntersuchungsergebnisseIBAUCS)
+* ^expansion.contains[=].code = #A
+* ^expansion.contains[=].display = "Arztbrief (die Untersuchung war auffällig)"
+
+CodeSystem: SEU_UB_DeutschkenntnisseCS
+Id: seu-ub-deutschkenntnisse-cs
+Title: "SEU_UB_Deutschkenntnisse CodeSystem"
+Description: "CodeSystem für die Angabe der Deutschkenntnisse."
+* #kein_deutsch "Kein Deutsch"
+* #schlecht "Schlecht"
+* #fluessig_mit_erheblichen_fehlern "Flüssig mit erheblichen Fehlern"
+* #fluessig_mit_leichten_fehlern "Flüssig mit leichten Fehlern"
+* #fehlerfrei "Fehlerfrei"
+* #unbekannt "Unbekannt"
+
+ValueSet: SEU_UB_DeutschkenntnisseVS
+Id: seu-ub-deutschkenntnisse-vs
+Title: "SEU_UB_Deutschkenntnisse ValueSet"
+Description: "ValueSet, das verschiedene Deutschkenntnisse enthält."
+* include codes from system SEU_UB_DeutschkenntnisseCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
+* ^expansion.contains[0].system = Canonical(SEU_UB_DeutschkenntnisseCS)
+* ^expansion.contains[=].code = #kein_deutsch
+* ^expansion.contains[=].display = "Kein Deutsch"
+* ^expansion.contains[+].system = Canonical(SEU_UB_DeutschkenntnisseCS)
+* ^expansion.contains[=].code = #schlecht
+* ^expansion.contains[=].display = "Schlecht"
+* ^expansion.contains[+].system = Canonical(SEU_UB_DeutschkenntnisseCS)
+* ^expansion.contains[=].code = #fluessig_mit_erheblichen_fehlern
+* ^expansion.contains[=].display = "Flüssig mit erheblichen Fehlern"
+* ^expansion.contains[+].system = Canonical(SEU_UB_DeutschkenntnisseCS)
+* ^expansion.contains[=].code = #fluessig_mit_leichten_fehlern
+* ^expansion.contains[=].display = "Flüssig mit leichten Fehlern"
+* ^expansion.contains[+].system = Canonical(SEU_UB_DeutschkenntnisseCS)
+* ^expansion.contains[=].code = #fehlerfrei
+* ^expansion.contains[=].display = "Fehlerfrei"
+* ^expansion.contains[+].system = Canonical(SEU_UB_DeutschkenntnisseCS)
+* ^expansion.contains[=].code = #unbekannt
+* ^expansion.contains[=].display = "Unbekannt"

@@ -1,0 +1,52 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SEU_UB_DeutschkenntnisseVS",
+  "id": "seu-ub-deutschkenntnisse-vs",
+  "title": "SEU_UB_Deutschkenntnisse ValueSet",
+  "description": "ValueSet, das verschiedene Deutschkenntnisse enthält.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ub-deutschkenntnisse-vs",
+  "expansion": {
+    "timestamp": "2024-10-20T11:50:47+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ub-deutschkenntnisse-cs",
+        "code": "kein_deutsch",
+        "display": "Kein Deutsch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ub-deutschkenntnisse-cs",
+        "code": "schlecht",
+        "display": "Schlecht"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ub-deutschkenntnisse-cs",
+        "code": "fluessig_mit_erheblichen_fehlern",
+        "display": "Flüssig mit erheblichen Fehlern"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ub-deutschkenntnisse-cs",
+        "code": "fluessig_mit_leichten_fehlern",
+        "display": "Flüssig mit leichten Fehlern"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ub-deutschkenntnisse-cs",
+        "code": "fehlerfrei",
+        "display": "Fehlerfrei"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ub-deutschkenntnisse-cs",
+        "code": "unbekannt",
+        "display": "Unbekannt"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ub-deutschkenntnisse-cs"
+      }
+    ]
+  }
+}

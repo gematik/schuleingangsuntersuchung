@@ -18,7 +18,7 @@ RuleSet: 5-af-anamnese
       * answerValueSet = Canonical(SEU_UB_AntwortKindergartenBesuchVS)
     * item[+] insert addItem(5.6, #boolean, [[Derzeitiger Besuch eines Kindergartens]])
       * insert addSource(#DE-BY)
-    * item[+] insert addItem(5.7, #boolean, [[Art des Kindergartens]])
+    * item[+] insert addItem(5.7, #choice, [[Art des Kindergartens]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_KindergartenArtVS)
     * item[+] insert addItem(5.8, #integer, [[Geburtsgewicht (in g)]])
@@ -48,13 +48,13 @@ RuleSet: 5-af-anamnese
     * item[+] insert addItem(5.16, #choice, [[Elternsprache  1]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_AuswaehlbareElternspracheVS)
-    * item[+] insert addItem(5.17, #boolean, [[Elternsprache 1 andere]])
+    * item[+] insert addItem(5.17, #string, [[Elternsprache 1 andere]])
       * insert addSource(#DE-BY)
       * insert enableWhenCode(5.16, =, SEU_UB_AuswaehlbareElternspracheErweiterungCS, 98)
     * item[+] insert addItem(5.18, #choice, [[Elternsprache  2]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_AuswaehlbareElternspracheVS)
-    * item[+] insert addItem(5.19, #boolean, [[Elternsprache 2 andere]])
+    * item[+] insert addItem(5.19, #string, [[Elternsprache 2 andere]])
       * insert addSource(#DE-BY)
       * insert enableWhenCode(5.16, =, SEU_UB_AuswaehlbareElternspracheErweiterungCS, 98)
     * item[+] insert addItem(5.20, #choice, [[Zu Hause gesprochene Sprache(n)]])
@@ -70,6 +70,8 @@ RuleSet: 5-af-anamnese
       * answerValueSet = Canonical(SEU_UB_HaendigkeitVS)
     * item[+] insert addItem(5.23, #boolean, [[Auffälligkeiten im sozialen Verhalten (Stimmung, Konzentration, Verhalten, Umgang mit Anderen)]])
       * insert addSource(#DE-BY)
+    * item[+] insert addItemWithSource(5.23a, #choice, [[Auffälligkeiten im sozialen Verhalten (Stimmung, Konzentration, Verhalten, Umgang mit Anderen)]], #DE-HE)
+      * answerValueSet = Canonical(SEU_UB_UntersuchungsergebnisVS)
   * item[+] insert addGroup(5_2, Fördermaßnahmen oder Behandlungen)
     * insert addSource(#DE-BY)
     * item[+] insert addItem(5.24, #choice, [[Teilnahme Vorkurs Deutsch]])
@@ -89,12 +91,12 @@ RuleSet: 5-af-anamnese
     * item[+] insert addItem(5.28, #choice, [[Besuch beim Zahnarzt in letzten 12 Monaten]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_JaNeinKeineAngabeVS)
-    * item[+] insert addItem(5.29, #boolean, [[Angeborene schwere Hörstörung]])
+    * item[+] insert addItem(5.29, #choice, [[Angeborene schwere Hörstörung]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_JaNeinKeineAngabeVS)
   * item[+] insert addGroup(5_4, Zusatzangaben zur Hörstörung)
     * insert addSource(#DE-BY)
-    * insert enableWhenBoolean(2.29, =, true)
+    * insert enableWhenCode(5.29, =, SEU_UB_JaNeinGeplantKeineAngabeCS, 1)
     * item[+] insert addItem(5.30, #choice, [[Angeborene Hörstörung]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_AntwortenHoerstoerungVS)
@@ -167,6 +169,9 @@ RuleSet: 5-af-anamnese
     * item[+] insert addItem(5.48, #string, [[Art der chronischen Erkrankung]])
       * insert addSource(#DE-BY)
       * insert enableWhenBoolean(5.47, =, true)
+    * item[+] insert addItemWithSource(5.48a, #choice, [[Art der chronischen Erkrankung]], #DE-HE)
+      * insert enableWhenBoolean(5.47, =, true)
+      * answerValueSet = Canonical(icd10gm-2024)
   * item[+] insert addGroup(5_8, Schwere Behinderung)
     * insert addSource(#DE-BY)
     * item[+] insert addItem(5.49, #boolean, [[Schwere Behinderung]])
@@ -174,6 +179,18 @@ RuleSet: 5-af-anamnese
     * item[+] insert addItem(5.50, #string, [[Art der Behinderung]])
       * insert addSource(#DE-BY)
       * insert enableWhenBoolean(5.49, =, true)
+      * repeats = true
+    * item[+] insert addItemWithSource(5.50.1, #string, [[erforderliche Maßnahmen]], #DE-BY)
+      * insert enableWhenBoolean(5.49, =, true)
+      * repeats = true
+    * item[+] insert addItemWithSource(5.50a, #choice, [[Art der Behinderung]] , #DE-HE)
+      * repeats = true
+      * insert enableWhenBoolean(5.49, =, true)
+      * answerValueSet = Canonical(SEU_UB_BeeintraechtigungsartVS)
+    * item[+] insert addItemWithSource(5.50b, #choice, [[Welche der Behinderung]] , #DE-HE)
+      * repeats = true
+      * insert enableWhenBoolean(5.49, =, true)
+      * answerValueSet = Canonical(icd10gm-2024)
   * item[+] insert addGroup(5_9, Medikamente)
     * insert addSource(#DE-BY)
     * item[+] insert addItem(5.51, #boolean, [[regelmäßige Medikamenteneinnahme]])
@@ -188,6 +205,10 @@ RuleSet: 5-af-anamnese
     * item[+] insert addItem(5.54, #string, [[Erkrankung]])
       * insert addSource(#DE-BY)
       * insert enableWhenBoolean(5.53, =, true)
+      * repeats = true
+    * item[+] insert addItemWithSource(5.54.1, #string, [[erforderliche Maßnahmen]], #DE-BY)
+      * insert enableWhenBoolean(5.53, =, true)
+      * repeats = true
   * item[+] insert addGroup(5_11, Sonstige Angaben)
     * insert addSource(#DE-BY)
     * item[+] insert addItem(5.55, #boolean, [[familiäre Leserechtschreibschwäche]])
@@ -236,6 +257,7 @@ Id: SEU-UB-AntwortenHoerstoerungVS
 Title: "SEU Antworten Hörstörung"
 Description: "Diese Codes enthalten die Antworten auf die Frage zu einer Hörstöhrung"
 * include codes from system SEU_UB_AntwortenHoerstoerungCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
 * ^expansion.contains[+].system = Canonical(SEU_UB_AntwortenHoerstoerungCS)
 * ^expansion.contains[=].code = #1
 * ^expansion.contains[=].display = "links"
@@ -267,6 +289,7 @@ Id: SEU-UB-AntwortAugenarztVS
 Title: "SEU Antwort Augenarzt"
 Description: "Diese Codes enthalten die Antworten auf Fragen zu einer Augenarztuntersuchung"
 * include codes from system SEU_UB_AntwortAugenarztCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
 * ^expansion.contains[+].system = Canonical(SEU_UB_AntwortAugenarztCS)
 * ^expansion.contains[=].code = #1
 * ^expansion.contains[=].display = "unauffälliger Befund"
@@ -310,6 +333,7 @@ Description: "Diese Codes können Boolean erweitern um 'Keine Angabe'"
 * SEU_UB_JaNeinGeplantKeineAngabeCS#1 "ja"
 * SEU_UB_JaNeinGeplantKeineAngabeCS#2 "nein"
 * SEU_UB_JaNeinGeplantKeineAngabeCS#9 "keine Angaben"
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
 * ^expansion.contains[+].system = Canonical(SEU_UB_JaNeinGeplantKeineAngabeCS)
 * ^expansion.contains[=].code = #1
 * ^expansion.contains[=].display = "ja"
@@ -325,6 +349,7 @@ Id: SEU-UB-TeilnahmeVorkursDeutschVS
 Title: "SEU Teilnahme Vorkurs Deutsch"
 Description: "Diese Codes enthalten die Angabe über eine Teilnahme am Vorkurs Deutsch"
 * include codes from system SEU_UB_JaNeinGeplantKeineAngabeCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
 * ^expansion.contains[+].system = Canonical(SEU_UB_JaNeinGeplantKeineAngabeCS)
 * ^expansion.contains[=].code = #1
 * ^expansion.contains[=].display = "ja"
@@ -352,6 +377,7 @@ Id: SEU-UB-SprachtherapieVS
 Title: "SEU Sprachtherapie"
 Description: "Diese Codes enthalten Angaben zu einer Sprachtherapie"
 * include codes from system SEU_UB_SprachtherapieCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
 * ^expansion.contains[+].system = Canonical(SEU_UB_SprachtherapieCS)
 * ^expansion.contains[=].code = #2
 * ^expansion.contains[=].display = "nein"
@@ -381,6 +407,7 @@ Id: SEU-UB-HaendigkeitVS
 Title: "SEU Händigkeit"
 Description: "Diese Codes enthalten Angaben zur Händigkeit"
 * include codes from system SEU_UB_HaendigkeitCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
 * ^expansion.contains[+].system = Canonical(SEU_UB_HaendigkeitCS)
 * ^expansion.contains[=].code = #1
 * ^expansion.contains[=].display = "Rechtshänder"
@@ -407,6 +434,7 @@ Id: SEU-UB-GesprocheneSpracheVS
 Title: "SEU Gesprochene Sprache"
 Description: "Diese Codes enthalten Angaben zur gesprochenen Sprache"
 * include codes from system SEU_UB_GesprocheneSpracheCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
 * ^expansion.contains[+].system = Canonical(SEU_UB_GesprocheneSpracheCS)
 * ^expansion.contains[=].code = #1
 * ^expansion.contains[=].display = "Deutsch"
@@ -432,6 +460,7 @@ Id: SEU-UB-KontaktDeutscheSpracheVS
 Title: "SEU Kontakt mit der deutschen Sprache"
 Description: "Diese Codes enthalten Angaben über den Kontakt zur deutschen Sprache"
 * include codes from system SEU_UB_KontaktDeutscheSpracheCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
 * ^expansion.contains[+].system = Canonical(SEU_UB_KontaktDeutscheSpracheCS)
 * ^expansion.contains[=].code = #1
 * ^expansion.contains[=].display = "seit Geburt"
@@ -455,6 +484,7 @@ Id: SEU-UB-KindergartenArtVS
 Title: "SEU Art des Kindergarten"
 Description: "Diese Codes enthalten Abgaben über die Art des Kindergarten"
 * include codes from system SEU_UB_KindergartenArtCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
 * ^expansion.contains[+].system = Canonical(SEU_UB_KindergartenArtCS)
 * ^expansion.contains[=].code = #1
 * ^expansion.contains[=].display = "Regel KiGa"
@@ -484,6 +514,7 @@ Id: SEU-UB-AntwortKindergartenBesuchVS
 Title: "SEU Antwort Kindergartenbesuch"
 Description: "Diese Codes enthalten Antwortmöglichkeiten zur Länge des Kindergartenbesuch"
 * include codes from system SEU_UB_AntwortKindergartenBesuchCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
 * ^expansion.contains[+].system = Canonical(SEU_UB_AntwortKindergartenBesuchCS)
 * ^expansion.contains[=].code = #0
 * ^expansion.contains[=].display = "0 Jahre"
@@ -521,6 +552,7 @@ Id: SEU-UB-AntwortGeschwisterVS
 Title: "SEU Antwort Geschwister"
 Description: "Diese Codes enthalten Informationen über die Anzahl der Geschwister"
 * include codes from system SEU_UB_AntwortNummerierungPersonenCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
 * ^expansion.contains[+].system = Canonical(SEU_UB_AntwortNummerierungPersonenCS)
 * ^expansion.contains[=].code = #0
 * ^expansion.contains[=].display = "keine"
@@ -549,6 +581,7 @@ Description: "Diese Codes enthalten Informationen über die Anzahl der Erwachsen
 * SEU_UB_AntwortNummerierungPersonenCS#3
 * SEU_UB_AntwortNummerierungPersonenCS#4
 * SEU_UB_AntwortNummerierungPersonenCS#9
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
 * ^expansion.contains[+].system = Canonical(SEU_UB_AntwortNummerierungPersonenCS)
 * ^expansion.contains[=].code = #0
 * ^expansion.contains[=].display = "keine"
@@ -579,6 +612,7 @@ Id: SEU-UB-AnamneseBesonderheitenVS
 Title: "SEU Anamnese Besonderheiten"
 Description: "Diese Codes enthalten Besonderheiten bei der Anamnese einer SEU"
 * include codes from system SEU_UB_AnamneseBesonderheitenCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
 * ^expansion.contains[+].system = Canonical(SEU_UB_AnamneseBesonderheitenCS)
 * ^expansion.contains[=].code = #0
 * ^expansion.contains[=].display = "Es liegen keinerlei Angaben zur Anamnese vor"
@@ -599,6 +633,7 @@ Id: SEU-UB-StaatsangehoerigkeitVS
 Title: "SEU Staatsangehörigkeit"
 Description: "Diese Codes enthalten Angaben zur Staatsangehörigkeit"
 * include codes from system SEU_UB_StaatsangehoerigkeitCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
 * ^expansion.contains[+].system = Canonical(SEU_UB_GesprocheneSpracheCS)
 * ^expansion.contains[=].code = #1
 * ^expansion.contains[=].display = "Deutsch"
@@ -624,6 +659,7 @@ Id: SEU-UB-GeburtslandVS
 Title: "SEU Geburtsland"
 Description: "Diese Codes enthalten Angaben zum Geburtsland"
 * include codes from system SEU_UB_StaatsangehoerigkeitCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
 * ^expansion.contains[+].system = Canonical(SEU_UB_GeburtslandCS)
 * ^expansion.contains[=].code = #1
 * ^expansion.contains[=].display = "Deutschland"
@@ -649,6 +685,7 @@ Id: SEU-UB-SchulabschlussVS
 Title: "SEU Schulabschluss"
 Description: "Diese Codes enthalten Angaben zum Schulabschluss"
 * include codes from system SEU_UB_SchulabschlussCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
 * ^expansion.contains[+].system = Canonical(SEU_UB_SchulabschlussCS)
 * ^expansion.contains[=].code = #1
 * ^expansion.contains[=].display = "(noch) kein Schulabschluss"
@@ -685,6 +722,7 @@ Id: SEU-UB-ErwerbstaetigkeitVS
 Title: "SEU Erwerbstätigkeit"
 Description: "Diese Codes enthalten Angaben zur Erwerbstätigkeit"
 * include codes from system SEU_UB_ErwerbstaetigkeitCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
 * ^expansion.contains[+].system = Canonical(SEU_UB_ErwerbstaetigkeitCS)
 * ^expansion.contains[=].code = #1
 * ^expansion.contains[=].display = "vollzeit, mind. 35 Stunden"
@@ -1831,3 +1869,63 @@ Description: "Dieses ValueSet enthält die auswählbaren Elternsprachen. Als Cod
 * ^expansion.contains[+].system = Canonical(SEU_UB_AuswaehlbareElternspracheErweiterungCS)
 * ^expansion.contains[=].code = #99
 * ^expansion.contains[=].display = "keine Angabe"
+
+CodeSystem: SEU_UB_UntersuchungsergebnisCS
+Id: seu-ub-untersuchungsergebnis-cs
+Title: "SEU_UB_Untersuchungsergebnis CodeSystem"
+Description: "CodeSystem für die Angabe des Untersuchungsergebnisses."
+* #in_ordnung "In Ordnung"
+* #auffaellig "Auffällig"
+* #grenzwertig "Grenzwertig"
+* #unauffaellig "Unauffällig"
+* #unbekannt "Unbekannt"
+
+ValueSet: SEU_UB_UntersuchungsergebnisVS
+Id: seu-ub-untersuchungsergebnis-vs
+Title: "SEU_UB_Untersuchungsergebnis ValueSet"
+Description: "ValueSet, das verschiedene Untersuchungsergebnisse enthält."
+* include codes from system SEU_UB_UntersuchungsergebnisCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
+* ^expansion.contains[0].system = Canonical(SEU_UB_UntersuchungsergebnisCS)
+* ^expansion.contains[=].code = #in_ordnung
+* ^expansion.contains[=].display = "In Ordnung"
+* ^expansion.contains[+].system = Canonical(SEU_UB_UntersuchungsergebnisCS)
+* ^expansion.contains[=].code = #auffaellig
+* ^expansion.contains[=].display = "Auffällig"
+* ^expansion.contains[+].system = Canonical(SEU_UB_UntersuchungsergebnisCS)
+* ^expansion.contains[=].code = #grenzwertig
+* ^expansion.contains[=].display = "Grenzwertig"
+* ^expansion.contains[+].system = Canonical(SEU_UB_UntersuchungsergebnisCS)
+* ^expansion.contains[=].code = #unauffaellig
+* ^expansion.contains[=].display = "Unauffällig"
+* ^expansion.contains[+].system = Canonical(SEU_UB_UntersuchungsergebnisCS)
+* ^expansion.contains[=].code = #unbekannt
+* ^expansion.contains[=].display = "Unbekannt"
+
+CodeSystem: SEU_UB_BeeintraechtigungsartCS
+Id: seu-ub-beeintraechtigungsart-cs
+Title: "SEU_UB_Beeinträchtigungsart CodeSystem"
+Description: "CodeSystem für die Angabe der Art der Beeinträchtigung."
+* #K "Körperlich"
+* #G "Geistig"
+* #S "Seelisch"
+* #M "Mehrfach"
+
+ValueSet: SEU_UB_BeeintraechtigungsartVS
+Id: seu-ub-beeintraechtigungsart-vs
+Title: "SEU_UB_Beeinträchtigungsart ValueSet"
+Description: "ValueSet, das verschiedene Beeinträchtigungsarten enthält."
+* include codes from system SEU_UB_BeeintraechtigungsartCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
+* ^expansion.contains[0].system = Canonical(SEU_UB_BeeintraechtigungsartCS)
+* ^expansion.contains[=].code = #K
+* ^expansion.contains[=].display = "Körperlich"
+* ^expansion.contains[+].system = Canonical(SEU_UB_BeeintraechtigungsartCS)
+* ^expansion.contains[=].code = #G
+* ^expansion.contains[=].display = "Geistig"
+* ^expansion.contains[+].system = Canonical(SEU_UB_BeeintraechtigungsartCS)
+* ^expansion.contains[=].code = #S
+* ^expansion.contains[=].display = "Seelisch"
+* ^expansion.contains[+].system = Canonical(SEU_UB_BeeintraechtigungsartCS)
+* ^expansion.contains[=].code = #M
+* ^expansion.contains[=].display = "Mehrfach"

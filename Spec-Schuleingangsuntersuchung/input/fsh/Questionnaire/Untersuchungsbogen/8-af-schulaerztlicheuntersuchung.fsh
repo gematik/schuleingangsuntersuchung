@@ -54,19 +54,35 @@ RuleSet: 8-af-schulaerztlicheuntersuchung
     * item[+] insert addItem(8.23, #string, [[Körperliche Befunde]])
       * insert addSource(#DE-BY)
       * insert enableWhenBoolean(8.22, =, true)
+    * item[+] insert addItemWithSource(8.22k.1, #choice, [[Ernährungszustand]], #DE-HE)
+      * answerValueSet = Canonical(SEU_UB_UntersuchungsergebnisseIBAUVS)
+    * item[+] insert addItemWithSource(8.22k.2, #choice, [[Haut/Haare/Nägel]], #DE-HE)
+      * answerValueSet = Canonical(SEU_UB_UntersuchungsergebnisseIBAUVS)
+    * item[+] insert addItemWithSource(8.22k.3, #choice, [[Muskulatur/Skelett]], #DE-HE)
+      * answerValueSet = Canonical(SEU_UB_UntersuchungsergebnisseIBAUVS)
+    * item[+] insert addItemWithSource(8.22k.4, #choice, [[Nase/Mund/Ohren]], #DE-HE)
+      * answerValueSet = Canonical(SEU_UB_UntersuchungsergebnisseIBAUVS)
+    * item[+] insert addItemWithSource(8.22k.5, #choice, [[Atmung/Herz/Kreislauf]], #DE-HE)
+      * answerValueSet = Canonical(SEU_UB_UntersuchungsergebnisseIBAUVS)
+    * item[+] insert addItemWithSource(8.22k.6, #choice, [[Abdomen]], #DE-HE)
+      * answerValueSet = Canonical(SEU_UB_UntersuchungsergebnisseIBAUVS)
+    * item[+] insert addItemWithSource(8.22k.7, #choice, [[Neurologie]], #DE-HE)
+      * answerValueSet = Canonical(SEU_UB_UntersuchungsergebnisseIBAUVS)
+    * item[+] insert addItemWithSource(8.22k.8, #choice, [[Endokrinum]], #DE-HE)
+      * answerValueSet = Canonical(SEU_UB_UntersuchungsergebnisseIBAUVS)
     * item[+] insert addItem(8.24, #choice, [[Verhaltensauffälligkeiten beim Kind]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_AntwortenSAeUntersuchungVS)
-    * item[+] insert addItem(8.25, #boolean, [[Umgangs-/Erziehungsprobleme Mutter/Vater - Kind]])
+    * item[+] insert addItem(8.25, #choice, [[Umgangs-/Erziehungsprobleme Mutter/Vater - Kind]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_AntwortenSAeUntersuchungVS)
-    * item[+] insert addItem(8.26, #boolean, [[Verdacht auf Vernachlässigung (Kleidung, Pflegezustand, Verhalten)]])
+    * item[+] insert addItem(8.26, #choice, [[Verdacht auf Vernachlässigung (Kleidung, Pflegezustand, Verhalten)]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_AntwortenSAeUntersuchungVS)
-    * item[+] insert addItem(8.27, #boolean, [[Schlechte Mundgesundheit (Massive Karies, Zahnverlust, etc.)]])
+    * item[+] insert addItem(8.27, #choice, [[Schlechte Mundgesundheit (Massive Karies, Zahnverlust, etc.)]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_AntwortenSAeUntersuchungVS)
-    * item[+] insert addItem(8.28, #boolean, [[Hämatome, Narben, Verletzungen an untypischen Stellen]])
+    * item[+] insert addItem(8.28, #choice, [[Hämatome, Narben, Verletzungen an untypischen Stellen]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_AntwortenSAeUntersuchungVS)
     * item[+] insert addItem(8.29, #boolean, [[Impfungen wurden im Rahmen der 1. SÄU nachgeholt]])
@@ -100,6 +116,8 @@ RuleSet: 8-af-schulaerztlicheuntersuchung
         * insert addSource(#DE-BY)
       * item[+] insert addItem(8.41, #boolean, [[Sprache (Grammatik, Verständnis, Wortschatz) (1. SÄU)]])
         * insert addSource(#DE-BY)
+      * item[+] insert addItemWithSource(8.41a, #choice, [[Sprache (Grammatik, Verständnis, Wortschatz) (1. SÄU)]], #DE-HE)
+        * answerValueSet = Canonical(SEU_UB_UntersuchungsergebnisVS)
       * item[+] insert addItem(8.42, #boolean, [[Sprechen (Lautbildung, Stottern, Stimme) (1. SÄU)]])
         * insert addSource(#DE-BY)
       * item[+] insert addItem(8.43, #boolean, [[Körperkoordination (1. SÄU)]])
@@ -167,8 +185,10 @@ RuleSet: 8-af-schulaerztlicheuntersuchung
         * insert addSource(#DE-BY)
       * item[+] insert addItem(8.66, #boolean, [[Rückstellung empfohlen]])
         * insert addSource(#DE-BY)
-        * item[+] insert addItemWithSource(8.66.1, #string, [[Begründung Rückstellung]], #DE-SN)
-          * insert enableWhenBoolean(8.66, =, true)
+      * item[+] insert addItemWithSource(8.66a, #choice, [[Rückstellung empfohlen]], #DE-HE)
+        * answerValueSet = Canonical(SEU_UB_SchulempfehlungVS)
+      * item[+] insert addItemWithSource(8.66.1, #string, [[Begründung Rückstellung]], #DE-SN)
+        * insert enableWhenBoolean(8.66, =, true)
       * item[+] insert addItem(8.67, #boolean, [[Besuch Förderzentrum empfohlen]])
         * insert addSource(#DE-BY)
         * item[+] insert addItemWithSource(8.67.1, #string, [[Begründung Besuch Förderzentrum]], #DE-SN)
@@ -185,6 +205,11 @@ RuleSet: 8-af-schulaerztlicheuntersuchung
         * insert addSource(#DE-BY)
       * item[+] insert addItem(8.72, #boolean, [[med. Maßnahme ggf. erforderlich]])
         * insert addSource(#DE-BY)
+    * item[+] insert addItemWithSource(8.73, #integer, [[Blutdruck systolisch]], #DE-HE)
+    * item[+] insert addItemWithSource(8.74, #integer, [[Blutdruck diastolisch]], #DE-HE)
+    * item[+] insert addItemWithSource(8.75, #boolean, [[Gab es bei der Untersuchung einen Mehraufwand]], #DE-HE)
+    * item[+] insert addItemWithSource(8.76, #choice, [[Art der Untersuchung]], #DE-HE)
+      * answerValueSet = Canonical(SEU_UB_EinschulungVS)
 
 CodeSystem: SEU_UB_AntwortenSAeUntersuchungCS
 Id: SEU-UB-AntwortenSAeUntersuchungCS
@@ -199,6 +224,7 @@ Id: SEU-UB-AntwortenSAeUntersuchungVS
 Title: "SEU Antworten schulärztliche Untersuchung"
 Description: "Diese Codes enthalten die Antworten Fragen der schulärztlichen Untersuchung"
 * include codes from system SEU_UB_AntwortenSAeUntersuchungCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
 * ^expansion.contains[+].system = Canonical(SEU_UB_AntwortenSAeUntersuchungCS)
 * ^expansion.contains[=].code = #1
 * ^expansion.contains[=].display = "ja"
@@ -231,6 +257,7 @@ Id: SEU-UB-UntersuchungsergebnisseSAeUVS
 Title: "SEU Untersuchungsergebnisse SÄU"
 Description: "Diese Codes enthalten Untersuchungsergebnisse der SÄU"
 * include codes from system SEU_UB_UntersuchungsergebnisseSAeUCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
 * ^expansion.contains[+].system = Canonical(SEU_UB_UntersuchungsergebnisseSAeUCS)
 * ^expansion.contains[=].code = #01
 * ^expansion.contains[=].display = "unauffälliger Befund"
@@ -261,3 +288,55 @@ Description: "Diese Codes enthalten Untersuchungsergebnisse der SÄU"
 * ^expansion.contains[+].system = Canonical(SEU_UB_UntersuchungsergebnisseSAeUCS)
 * ^expansion.contains[=].code = #10
 * ^expansion.contains[=].display = "Testbereich nicht überprüft"
+
+CodeSystem: SEU_UB_SchulempfehlungCS
+Id: seu-ub-schulempfehlung-cs
+Title: "SEU_UB_Schulempfehlung CodeSystem"
+Description: "CodeSystem für die Angabe von Schulempfehlungen."
+* #zurueckstellung_regelkind "Zurückstellung Regelkind"
+* #zurueckstellung_eingangsstufenkind "Zurückstellung Eingangsstufenkind"
+* #bedenken_gegen_vorzeitige_einschulung "Bedenken gegen vorzeitige Einschulung"
+* #beratungs_und_foerderzentrum "Beratungs- und Förderzentrum"
+
+ValueSet: SEU_UB_SchulempfehlungVS
+Id: seu-ub-schulempfehlung-vs
+Title: "SEU_UB_Schulempfehlung ValueSet"
+Description: "ValueSet, das verschiedene Schulempfehlungen enthält."
+* include codes from system SEU_UB_SchulempfehlungCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
+* ^expansion.contains[0].system = Canonical(SEU_UB_SchulempfehlungCS)
+* ^expansion.contains[=].code = #zurueckstellung_regelkind
+* ^expansion.contains[=].display = "Zurückstellung Regelkind"
+* ^expansion.contains[+].system = Canonical(SEU_UB_SchulempfehlungCS)
+* ^expansion.contains[=].code = #zurueckstellung_eingangsstufenkind
+* ^expansion.contains[=].display = "Zurückstellung Eingangsstufenkind"
+* ^expansion.contains[+].system = Canonical(SEU_UB_SchulempfehlungCS)
+* ^expansion.contains[=].code = #bedenken_gegen_vorzeitige_einschulung
+* ^expansion.contains[=].display = "Bedenken gegen vorzeitige Einschulung"
+* ^expansion.contains[+].system = Canonical(SEU_UB_SchulempfehlungCS)
+* ^expansion.contains[=].code = #beratungs_und_foerderzentrum
+* ^expansion.contains[=].display = "Beratungs- und Förderzentrum"
+
+CodeSystem: SEU_UB_EinschulungCS
+Id: seu-ub-einschulung-cs
+Title: "SEU_UB_Einschulung CodeSystem"
+Description: "CodeSystem für die Angabe der Einschulungstypen."
+* #regelkind "Regelkind"
+* #kannkind "Kannkind"
+* #eingangsstufe "Eingangsstufe"
+
+ValueSet: SEU_UB_EinschulungVS
+Id: seu-ub-einschulung-vs
+Title: "SEU_UB_Einschulung ValueSet"
+Description: "ValueSet, das verschiedene Einschulungstypen enthält."
+* include codes from system SEU_UB_EinschulungCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
+* ^expansion.contains[0].system = Canonical(SEU_UB_EinschulungCS)
+* ^expansion.contains[=].code = #regelkind
+* ^expansion.contains[=].display = "Regelkind"
+* ^expansion.contains[+].system = Canonical(SEU_UB_EinschulungCS)
+* ^expansion.contains[=].code = #kannkind
+* ^expansion.contains[=].display = "Kannkind"
+* ^expansion.contains[+].system = Canonical(SEU_UB_EinschulungCS)
+* ^expansion.contains[=].code = #eingangsstufe
+* ^expansion.contains[=].display = "Eingangsstufe"

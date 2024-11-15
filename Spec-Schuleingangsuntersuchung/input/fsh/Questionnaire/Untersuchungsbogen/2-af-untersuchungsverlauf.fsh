@@ -9,6 +9,8 @@ RuleSet: 2-af-untersuchungsverlauf
     * item[+] insert addItem(2.1, #choice, Untersuchungsstatus)
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_UntersuchungsstatusVS)
+    * item[+] insert addItemWithSource(2.1a, #choice, Untersuchungsstatus, #DE-HE)
+      * answerValueSet = Canonical(SEU_UB_VorgangsstatusVS)
     * item[+] insert addItem(2.2, #date, Datum der Datenerfassung)
       * insert addSource(#DE-BY)
       * insert enableWhenCode(2.1, =, SEU_UB_UntersuchungsstatusCS, 07)
@@ -347,3 +349,35 @@ Description: "Diese Codes enthalten Untersuchungsstatus der SEU"
 * ^expansion.contains[+].system = Canonical(SEU_UB_UntersuchungsstatusCS)
 * ^expansion.contains[=].code = #20
 * ^expansion.contains[=].display = "nicht erschienen, nur nach Aktenlage"
+
+CodeSystem: SEU_UB_VorgangsstatusCS
+Id: seu-ub-vorgangsstatus-cs
+Title: "SEU_UB_Vorgangsstatus CodeSystem"
+Description: "CodeSystem für die Angabe des Status eines Vorgangs."
+* #offen "OFFEN: Der Vorgang wurde erzeugt und das Kind wurde noch nicht eingeladen"
+* #in_planung "IN PLANUNG: Das Kind wurde eingeladen. Es wird erwartet, dass das Kind zu vergebenen Untersuchungstermin erscheint, oder dass die Eltern des Kindes den Termin umbuchen. Des weiteren wird erwartet, dass die Eltern des Kindes eine Selbstanamnese durchführen."
+* #untersuchung "UNTERSUCHUNG: Das Kind wird untersucht."
+* #geschlossen "GESCHLOSSEN: Das Kind wurde untersucht oder der Vorgang wurde geschlossen weil z.B. verstorben, verzogen etc."
+* #wiedereroeffnet "WIEDERÖFFNET: Es werden Ergebnisse im Vorgang nachgetragen."
+
+ValueSet: SEU_UB_VorgangsstatusVS
+Id: seu-ub-vorgangsstatus-vs
+Title: "SEU_UB_Vorgangsstatus ValueSet"
+Description: "ValueSet, das verschiedene Status eines Vorgangs enthält."
+* include codes from system SEU_UB_VorgangsstatusCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
+* ^expansion.contains[0].system = Canonical(SEU_UB_VorgangsstatusCS)
+* ^expansion.contains[=].code = #offen
+* ^expansion.contains[=].display = "OFFEN: Der Vorgang wurde erzeugt und das Kind wurde noch nicht eingeladen"
+* ^expansion.contains[+].system = Canonical(SEU_UB_VorgangsstatusCS)
+* ^expansion.contains[=].code = #in_planung
+* ^expansion.contains[=].display = "IN PLANUNG: Das Kind wurde eingeladen. Es wird erwartet, dass das Kind zu vergebenen Untersuchungstermin erscheint, oder dass die Eltern des Kindes den Termin umbuchen. Des weiteren wird erwartet, dass die Eltern des Kindes eine Selbstanamnese durchführen."
+* ^expansion.contains[+].system = Canonical(SEU_UB_VorgangsstatusCS)
+* ^expansion.contains[=].code = #untersuchung
+* ^expansion.contains[=].display = "UNTERSUCHUNG: Das Kind wird untersucht."
+* ^expansion.contains[+].system = Canonical(SEU_UB_VorgangsstatusCS)
+* ^expansion.contains[=].code = #geschlossen
+* ^expansion.contains[=].display = "GESCHLOSSEN: Das Kind wurde untersucht oder der Vorgang wurde geschlossen weil z.B. verstorben, verzogen etc."
+* ^expansion.contains[+].system = Canonical(SEU_UB_VorgangsstatusCS)
+* ^expansion.contains[=].code = #wiedereroeffnet
+* ^expansion.contains[=].display = "WIEDERÖFFNET: Es werden Ergebnisse im Vorgang nachgetragen."

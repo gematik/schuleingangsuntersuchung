@@ -5,6 +5,8 @@ RuleSet: 1-af-stammdaten
     * insert addSource(#DE-BY)
   * item[+] insert addItemMl(1.2, #integer, Untersucherin/Untersucher, 2)
     * insert addSource(#DE-BY)
+  * item[+] insert addItemWithSource(1.2a, #string, Untersucherin/Untersucher, #DE-HE)
+    * repeats = true
   * item[+] insert addItemMl(1.3, #integer, Laufende Nummer, 12)
     * insert addSource(#DE-BY)
   * item[+] insert addItemMl(1.4, #string, Postleitzahl Wohnort, 4)
@@ -18,6 +20,7 @@ RuleSet: 1-af-stammdaten
     * answerValueSet = Canonical(SEU_UB_RegionArtVS)
   * item[+] insert addItem(1.7, #date, Geburtsdatum) //TODO-JS: Datumsformat TT.MM.JJJJ
     * insert addSource(#DE-BY)
+  * item[+] insert addItemWithSource(1.7a, #date, Geburtsdatum, #DE-HE) //TODO: Datumsformat MM.JJJJ: https://chat.fhir.org/#narrow/channel/179255-questionnaire/topic/Specifying.20a.20partial.20date
   * item[+] insert addItem(1.8, #choice, Geschlecht)
     * insert addSource(#DE-BY)
     * answerValueSet = Canonical(GenderDEVS)
@@ -60,7 +63,10 @@ RuleSet: 1-af-stammdaten
         * insert addItemWithSource(1.21.g.2, #string, [[Andere Begleitperson Beziehungsstatus]], #DE-BW)
       * item[+]
         * insert addItemWithSource(1.21.g.3, #boolean, [[Andere Begleitperson Einverständniserklärung Sorgeberechtigte Person vorliegend]], #DE-BW)
-  
+  * item[+]
+    * insert addItemWithSource(1.22, #choice, [[Deutschkenntnisse der Hauptbezugsperson?]], #DE-HE)
+    * answerValueSet = Canonical(SEU_UB_VerwandtePersonDeutschkenntnisVS)
+
 CodeSystem: SEU_UB_RegionArtCS
 Id: SEU-UB-RegionArtCS
 Title: "SEU-AF Art der Region"
@@ -101,7 +107,35 @@ Description: "Diese Codes enthalten die Angabe des Geschlechts"
 * ^expansion.contains[=].display = "weiblich"
 * ^expansion.contains[+].system = $deGenderVS
 * ^expansion.contains[=].code = #X
-* ^expansion.contains[=].display = "unbestimmt"
+* ^expansion.contains[=].display = "unbekannt"
 * ^expansion.contains[+].system = $deGenderVS
 * ^expansion.contains[=].code = #D
 * ^expansion.contains[=].display = "divers"
+
+CodeSystem: SEU_UB_VerwandtePersonDeutschkenntnisCS
+Id: seu-ub-verwandtepersondeutschkenntnis-cs
+Title: "SEU_UB_Deutschkenntnis"
+Description: "CodeSystem für die Deutschkenntnisse einer verwandten Person."
+* #1 "rudimentär"
+* #2 "fehlerhaft"
+* #3 "fehlerfrei"
+* #9 "unbekannt"
+
+ValueSet: SEU_UB_VerwandtePersonDeutschkenntnisVS
+Id: seu-ub-verwandtepersondeutschkenntnis-vs
+Title: "SEU_UB_Deutschkenntnis ValueSet"
+Description: "ValueSet, das die Deutschkenntnisse einer verwandten Person enthält."
+* include codes from system SEU_UB_VerwandtePersonDeutschkenntnisCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
+* ^expansion.contains[0].system = Canonical(SEU_UB_VerwandtePersonDeutschkenntnisCS)
+* ^expansion.contains[=].code = #1
+* ^expansion.contains[=].display = "rudimentär"
+* ^expansion.contains[+].system = Canonical(SEU_UB_VerwandtePersonDeutschkenntnisCS)
+* ^expansion.contains[=].code = #2
+* ^expansion.contains[=].display = "fehlerhaft"
+* ^expansion.contains[+].system = Canonical(SEU_UB_VerwandtePersonDeutschkenntnisCS)
+* ^expansion.contains[=].code = #3
+* ^expansion.contains[=].display = "fehlerfrei"
+* ^expansion.contains[+].system = Canonical(SEU_UB_VerwandtePersonDeutschkenntnisCS)
+* ^expansion.contains[=].code = #9
+* ^expansion.contains[=].display = "unbekannt"

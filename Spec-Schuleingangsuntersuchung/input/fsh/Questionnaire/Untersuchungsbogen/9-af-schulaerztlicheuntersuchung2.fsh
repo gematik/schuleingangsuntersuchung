@@ -233,6 +233,7 @@ Id: SEU-UB-VergleichSAeUntersuchungVS
 Title: "SEU Vergleich schulärztliche Untersuchungen"
 Description: "Diese Codes enthalten Vergleichswerte von schulärztlichen Untersuchungen"
 * include codes from system SEU_UB_VergleichSAeUntersuchungCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
 * ^expansion.contains[+].system = Canonical(SEU_UB_VergleichSAeUntersuchungCS)
 * ^expansion.contains[=].code = #1
 * ^expansion.contains[=].display = "ohne Veränderung"
@@ -257,6 +258,7 @@ Id: SEU-UB-AntwortTeilnahmeVS
 Title: "SEU Antwort auf Fragen zur Teilnahme"
 Description: "Diese Codes enthalten Antworten zur Teilnahme an etwas"
 * include codes from system SEU_UB_AntwortTeilnahmeCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
 * ^expansion.contains[+].system = Canonical(SEU_UB_AntwortTeilnahmeCS)
 * ^expansion.contains[=].code = #1
 * ^expansion.contains[=].display = "ja"

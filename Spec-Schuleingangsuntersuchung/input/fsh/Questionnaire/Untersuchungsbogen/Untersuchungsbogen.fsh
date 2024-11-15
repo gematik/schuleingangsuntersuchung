@@ -53,6 +53,17 @@ Description: "Untersuchungsbogen"
 * contained[+] = SEU_UB_HoertestDezibelVS
 * contained[+] = SEU_UB_SehtestVisusVS
 * contained[+] = SEU_UB_EntwicklungsbewertungVS
+* contained[+] = SEU_UB_VorgangsstatusVS
+* contained[+] = SEU_UB_UntersuchungsergebnisVS
+* contained[+] = icd10gm-2024
+* contained[+] = SEU_UB_UntersuchungsergebnisseIBAUVS
+* contained[+] = SEU_UB_DeutschkenntnisseVS
+* contained[+] = SEU_UB_SchulempfehlungVS
+* contained[+] = SEU_UB_ImpfungenVS
+* contained[+] = SEU_UB_AnzahlVS
+* contained[+] = SEU_UB_BeeintraechtigungsartVS
+* contained[+] = SEU_UB_EinschulungVS
+* contained[+] = SEU_UB_ImpfschemaVS
 * id = "SEU-Untersuchungsbogen"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Untersuchungsbogen"
 * title = "SEU Untersuchungsbogen Maximaldatensatz"

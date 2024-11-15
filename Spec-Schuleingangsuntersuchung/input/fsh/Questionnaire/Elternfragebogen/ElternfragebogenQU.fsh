@@ -49,6 +49,8 @@ Description: "Elternbefragung"
 * contained[+] = SEU_EF_DauerBBVS
 * contained[+] = SEU_EF_SpracheVS
 * contained[+] = SEU_EF_FrequenzVS
+* contained[+] = SEU_EF_DauerHEVS
+* contained[+] = icd10gm-2024
 * id = "SEU-Elternbefragung"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung"
 * title = "SEU Elternfragebogen Maximaldatensatz"
@@ -187,6 +189,12 @@ Description: "Elternbefragung"
       * answerValueSet = Canonical(ChronischeErkrankungenVS)
       * repeats = true
     * item[+]
+      * insert addItemWithSource(3.2.4a, #choice, Erkrankung, #DE-BB)
+      * answerValueSet = Canonical(icd10gm-2024)
+      * repeats = true
+    * item[+]
+      * insert addItemWithSource(3.2.4b, #boolean, [[Ist ihr Kind an Windpocken erkrankt]], #DE-HE)
+    * item[+]
       * insert addItem(3.2.5, #choice, Chronische Erkrankung)
       * answerValueSet = Canonical(ChronischeKrankheitenVS)
       * repeats = true
@@ -226,6 +234,9 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItemWithSource(4.1c, #choice, [[Dauer Kindertagebetreuung in Jahren]], #DE-BB)
     * answerValueSet = Canonical(SEU_EF_DauerBBVS)
+  * item[+]
+    * insert addItemWithSource(4.1d, #choice, [[Dauer Besuch Kita/Krippe]], #DE-HE)
+    * answerValueSet = Canonical(SEU_EF_DauerHEVS)
   * item[+]
     * insert addItem(4.2, #integer, Dauer Kita/Krippe pro Woche in Stunden)
   * item[+]
@@ -298,7 +309,7 @@ Description: "Elternbefragung"
       * insert enableWhenBoolean(5.6, =, true)
       * insert addItem(5.6.1, #string, [[Welche Auffälligkeit?]])
   * item[+]
-    * insert addItemWithSource(5.6a, #boolean, [[Schwangerschaftsverlauf]], #DE-SL)
+    * insert addItemWithSource(5.6a, #choice, [[Schwangerschaftsverlauf]], #DE-SL)
     * answerValueSet = Canonical(SEU_EF_SchwangerschaftVS)
   * item[+]
     * insert addItem(5.7, #integer, [[Ausschließliches Stillen in Monaten]])
@@ -447,7 +458,7 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItem(8.6, #boolean, [[Brillenträger?]])
   * item[+]
-    * insert addItem(8.6a, #choice, [[Hilfsmittel?]])
+    * insert addItemWithSource(8.6a, #choice, [[Hilfsmittel?]], #DE-BB)
     * answerValueSet = Canonical(SEU_EF_HilfsmittelVS)
   * item[+]
     * insert addItem(8.7, #date, [[Letzte Untersuchung beim Augenarzt?]])

@@ -1,0 +1,38 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU_UB_DeutschkenntnisseCS",
+  "id": "seu-ub-deutschkenntnisse-cs",
+  "title": "SEU_UB_Deutschkenntnisse CodeSystem",
+  "description": "CodeSystem für die Angabe der Deutschkenntnisse.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ub-deutschkenntnisse-cs",
+  "concept": [
+    {
+      "code": "kein_deutsch",
+      "display": "Kein Deutsch"
+    },
+    {
+      "code": "schlecht",
+      "display": "Schlecht"
+    },
+    {
+      "code": "fluessig_mit_erheblichen_fehlern",
+      "display": "Flüssig mit erheblichen Fehlern"
+    },
+    {
+      "code": "fluessig_mit_leichten_fehlern",
+      "display": "Flüssig mit leichten Fehlern"
+    },
+    {
+      "code": "fehlerfrei",
+      "display": "Fehlerfrei"
+    },
+    {
+      "code": "unbekannt",
+      "display": "Unbekannt"
+    }
+  ],
+  "count": 6
+}

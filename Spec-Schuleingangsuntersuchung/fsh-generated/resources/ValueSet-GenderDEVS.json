@@ -23,7 +23,7 @@
       {
         "system": "http://fhir.de/CodeSystem/gender-amtlich-de",
         "code": "X",
-        "display": "unbestimmt"
+        "display": "unbekannt"
       },
       {
         "system": "http://fhir.de/CodeSystem/gender-amtlich-de",
