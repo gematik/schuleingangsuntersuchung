@@ -32,9 +32,9 @@ RuleSet: 2-af-untersuchungsverlauf
   * item[+] insert addGroup (2_2, Verschickte Anschreiben)
     * item[+] insert addItem(2.5, #boolean, [[Einladung]])
       * insert addSource(#DE-BY)
-    * item[+] insert addItem(2.6, #boolean, [[1. Mahnung ]])
+    * item[+] insert addItem(2.6, #boolean, [[1. Mahnung]])
       * insert addSource(#DE-BY)
-    * item[+] insert addItem(2.7, #boolean, [[2. Mahnung ]])
+    * item[+] insert addItem(2.7, #boolean, [[2. Mahnung]])
       * insert addSource(#DE-BY)
     * item[+] insert addItem(2.8, #boolean, [[Mahnung altersentspr. U-Nachweis]])
       * insert addSource(#DE-BY)
@@ -221,7 +221,7 @@ CodeSystem:  SEU_UB_WiedervorlageGrundCS
 Id: SEU-UB-WiedervorlageGrundCS
 Title: "SEU Wiedervorlage Grund"
 * #1  "1. Mahnung"
-* #2  "2. Mahnung "
+* #2  "2. Mahnung"
 * #3  "U8/U9 nachgereicht"
 * #4  "Einladung 1. SÄU"
 * #5  "Einladung 2. SÄU"

@@ -27,7 +27,7 @@ RuleSet: 4-af-gesfrueherkennung
       * insert addSource(#DE-BY)
     * item[+] insert addItem(4.10, #boolean, [[U8-Nachweis lag vor]])
       * insert addSource(#DE-BY)
-  * item[+] insert addItem(4.11, #boolean, [[U8 nachgereicht ]])
+  * item[+] insert addItem(4.11, #boolean, [[U8 nachgereicht]])
     * insert addSource(#DE-BY)
     * insert enableWhenBoolean(4.10, !=, true)
   * item[+] insert addItem(4.12, #date, [[Datum Eingang Vorlage U8]])
@@ -37,7 +37,7 @@ RuleSet: 4-af-gesfrueherkennung
     * insert uunit(mo, "Monate")
   * item[+] insert addItem(4.14, #boolean, [[U9-Nachweis lag vor]])
     * insert addSource(#DE-BY)
-  * item[+] insert addItem(4.15, #boolean, [[U9 nachgereicht ]])
+  * item[+] insert addItem(4.15, #boolean, [[U9 nachgereicht]])
     * insert addSource(#DE-BY)
   * item[+] insert addItem(4.16, #date, [[Datum der U8-Untersuchung]]) //TODO Validierung >=2015
     * insert addSource(#DE-BY)
