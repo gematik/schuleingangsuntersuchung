@@ -51,7 +51,9 @@ RuleSet: addItemWithSource(linkId, type, text, source)
 RuleSet: addSource(source)
 * extension[+]
   * url = Canonical(ItemSource)
-  * valueCoding.code = {source}
+  * valueCoding
+    * system = $ISO31662
+    * code = {source}
 
 RuleSet: addItemMl(linkId, type, text, maxLen)
 * insert addItem({linkId}, {type}, {text})

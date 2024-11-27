@@ -1069,6 +1069,7 @@
             {
               "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
               "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
                 "code": "DE-SN"
               }
             }
@@ -1095,6 +1096,7 @@
             {
               "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
               "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
                 "code": "DE-SN"
               }
             }
@@ -1515,6 +1517,7 @@
             {
               "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
               "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
                 "code": "DE-BW"
               }
             }
@@ -1673,6 +1676,7 @@
             {
               "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
               "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
                 "code": "DE-BB"
               }
             }
@@ -1737,6 +1741,7 @@
             {
               "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
               "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
                 "code": "DE-SN"
               }
             }
@@ -1756,6 +1761,7 @@
             {
               "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
               "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
                 "code": "DE-SN"
               }
             }
@@ -1782,6 +1788,7 @@
             {
               "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
               "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
                 "code": "DE-SN"
               }
             }
@@ -1801,6 +1808,7 @@
             {
               "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
               "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
                 "code": "DE-SN"
               }
             }
@@ -1840,6 +1848,7 @@
             {
               "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
               "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
                 "code": "DE-SL"
               }
             }
@@ -1860,6 +1869,7 @@
             {
               "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
               "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
                 "code": "DE-SN"
               }
             }
@@ -1891,6 +1901,7 @@
                 {
                   "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
                   "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
                     "code": "DE-BW"
                   }
                 }
@@ -1911,6 +1922,7 @@
                 {
                   "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
                   "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
                     "code": "DE-BW"
                   }
                 }
@@ -1931,6 +1943,7 @@
                 {
                   "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
                   "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
                     "code": "DE-BW"
                   }
                 }

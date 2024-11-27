@@ -1261,7 +1261,7 @@
     "fshType": "Instance",
     "fshFile": "Questionnaire/Untersuchungsbogen/Untersuchungsbogen.fsh",
     "startLine": 1,
-    "endLine": 81
+    "endLine": 83
   },
   {
     "outputFile": "Questionnaire-SozialpaedagogischesEntwicklungsscreening.json",

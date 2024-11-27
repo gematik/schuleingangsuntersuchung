@@ -64,6 +64,8 @@ Description: "Untersuchungsbogen"
 * contained[+] = SEU_UB_BeeintraechtigungsartVS
 * contained[+] = SEU_UB_EinschulungVS
 * contained[+] = SEU_UB_ImpfschemaVS
+* contained[+] = SEU_UB_VerwandtePersonDeutschkenntnisVS
+
 * id = "SEU-Untersuchungsbogen"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Untersuchungsbogen"
 * title = "SEU Untersuchungsbogen Maximaldatensatz"
