@@ -1,5 +1,7 @@
 RuleSet: 1-af-stammdaten
 
+//test
+
 * item[+] insert addGroup(1, Stammdaten)
   * item[+] insert addItemMl(1.1, #integer, Schlüsselnummer GA, 3)
     * insert addSource(#DE-BY)
@@ -13,6 +15,9 @@ RuleSet: 1-af-stammdaten
     * insert addSource(#DE-BY)
     * item[+] insert helpItem(1.4h, Die ersten 4 Ziffern der Postleitzahl)
       * insert addSource(#DE-BY)
+ * item[+] insert addItem(1.4a, #integer, [[Wohnort des Kindes (LOR)]], 8)
+    * insert addSource(#DE-BE)
+
   * item[+] insert addItemMl(1.5, #integer, Sprengel/Kiganr., 4)
     * insert addSource(#DE-BY)
   * item[+] insert addItem(1.6, #choice, Region)
@@ -66,6 +71,46 @@ RuleSet: 1-af-stammdaten
   * item[+]
     * insert addItemWithSource(1.22, #choice, [[Deutschkenntnisse der Hauptbezugsperson?]], #DE-HE)
     * answerValueSet = Canonical(SEU_UB_VerwandtePersonDeutschkenntnisVS)
+
+  * item[+] insert addItem(1.23, #date, [[Untersuchungsmonat und -jahr]]) 
+    * insert addSource(#DE-BE)
+
+ * item[+] insert addItem(1.24, #integer, Nummer der Schule [[(Schulnr. von SenBJF)]])  
+    * insert addSource(#DE-BE)
+
+     * item[+] insert addItem(1.25, #choice, [[Anmeldung zur Untersuchung]])
+      * insert addSource(#DE-BE)
+      * answerValueSet = Canonical(AnmeldungZurUntersuchungVS) 	
+
+* item[+] insert addItemWithSource(1.26, #boolean, [[Kind ist in Deutschland geboren?]], #DE-BE)   
+    * insert enableWhenBoolean(1.26, =, false)
+    * insert addItemWithSource(1.26a, #date, [[dann bitte letzte Zuwanderung nach Deutschland Zeitpunkt (Monat/Jahr)]], #DE-BE)	
+
+* item[+] insert addGroup(1.27, Staatsangehörigkeit der Mutter)
+    * insert addSource(#DE-BE)
+      * item[+] insert addItem(1.27.a, #choice, [[erste]])
+        * insert addSource(#DE-BE)
+        * answerValueSet = Canonical(alleStaatsangehoerigkeitenVS) // TO DO alleStaatsangehoerigkeitenVS muss mit nachfolgenden Auswahlmöglichkeiten erstellt werden
+      * item[+] insert addItem(1.27b, #choice, [[weitere]])
+        * insert addSource(#DE-BE)
+        * answerValueSet = Canonical(alleStaatsangehoerigkeitenVS) // TO DO alleStaatsangehoerigkeitenVS muss mit nachfolgenden Auswahlmöglichkeiten erstellt werden  
+
+* item[+] insert addItem(1.28, #choice, [[Geburtsland des Vaters]])
+    * insert addSource(#DE-BE)
+    * answerValueSet = Canonical(alle LaenderVS) // TO DO: Canonical(alle LaenderVS) bitte bestehndes VS einpflegen
+
+* item[+] insert addGroup(1.29, Staatsangehörigkeit des Vaters)
+    * insert addSource(#DE-BE)
+      * item[+] insert addItem(1.29.a, #choice, [[erste]])
+      * insert addSource(#DE-BE)
+      * answerValueSet = Canonical(alleStaatsangehörigkeitenVS) // TO DO alleStaatsangehörigkeitenVS muss mit nachfolgenden Auswahlmöglichkeiten erstellt werden
+	* item[+] insert addItem(1.29.b, #choice, [[weitere]])
+      * insert addSource(#DE-BE)
+      * answerValueSet = Canonical(alleStaatsangehörigkeitenVS) // TO DO alleStaatsangehörigkeitenVS muss mit nachfolgenden Auswahlmöglichkeiten erstellt werden
+
+  * item[+] insert addItem(1.30, #choice, [[Migrationshintergrund des Kindes]])
+      * insert addSource(#DE-BE)
+      * answerValueSet = Canonical(MigrationshintergrundVS)
 
 CodeSystem: SEU_UB_RegionArtCS
 Id: SEU-UB-RegionArtCS
@@ -139,3 +184,57 @@ Description: "ValueSet, das die Deutschkenntnisse einer verwandten Person enthä
 * ^expansion.contains[+].system = Canonical(SEU_UB_VerwandtePersonDeutschkenntnisCS)
 * ^expansion.contains[=].code = #9
 * ^expansion.contains[=].display = "unbekannt"
+
+
+CodeSystem: AnmeldungZurUntersuchungCS
+Id: AnmeldungZurUntersuchungCS
+Title: "AnmeldungZurUntersuchungCS"
+Description: "AnmeldungZurUntersuchungCS"
+* #schulpflichtig "schulpflichtig (bis 30.09.2017)"
+* #antragsweise "antragsweise (1.10.2017 bis 31.03.2018)"
+* #nach_Zurueckstellung_im_Vorjahr "nach Zurückstellung im Vorjahr"
+
+ValueSet: AnmeldungZurUntersuchungVS
+Id: AnmeldungZurUntersuchungVS
+Title: "AnmeldungZurUntersuchungVS"
+Description: "AnmeldungZurUntersuchungVS"
+* include codes from system AnmeldungZurUntersuchungCS
+* ^expansion.timestamp = "2024-03-27T12:20:50+00:00"
+* ^expansion.contains[0].system = Canonical(AnmeldungZurUntersuchungCS)
+* ^expansion.contains[=].code = #schulpflichtig
+* ^expansion.contains[=].display = "schulpflichtig (bis 30.09.2017)"
+* ^expansion.contains[0].system = Canonical(AnmeldungZurUntersuchungCS)
+* ^expansion.contains[=].code = #antragsweise
+* ^expansion.contains[=].display = "antragsweise (1.10.2017 bis 31.03.2018)"
+* ^expansion.contains[0].system = Canonical(AnmeldungZurUntersuchungCS)
+* ^expansion.contains[=].code = #nach_Zurueckstellung_im_Vorjahr
+* ^expansion.contains[=].display = "nach Zurückstellung im Vorjahr"
+
+CodeSystem: MigrationshintergrundCS
+Id: MigrationshintergrundCS
+Title: "MigrationshintergrundCS"
+Description: "MigrationshintergrundCS"
+* #kein_MH "kein MH"
+* #einseitiger_MH "einseitiger MH"
+* #beidseitiger_MH "beidseitiger MH"
+* #keine_ Angabe "keine Angabe"
+
+ValueSet: MigrationshintergrundVS
+Id: MigrationshintergrundVS
+Title: "MigrationshintergrundVS"
+Description: "MigrationshintergrundVS"
+* include codes from system MigrationshintergrundCS
+* ^expansion.timestamp = "2024-03-27T12:20:50+00:00"
+* ^expansion.contains[0].system = Canonical(MigrationshintergrundCS)
+* ^expansion.contains[=].code = #kein_MH
+* ^expansion.contains[=].display = "kein MH"
+* ^expansion.contains[0].system = Canonical(MigrationshintergrundCS)
+* ^expansion.contains[=].code = #einseitiger_MH
+* ^expansion.contains[=].display = "einseitiger MH"
+* ^expansion.contains[0].system = Canonical(MigrationshintergrundCS)
+* ^expansion.contains[=].code = #beidseitiger_MH
+* ^expansion.contains[=].display = "beidseitiger MH"
+* ^expansion.contains[0].system = Canonical(MigrationshintergrundCS)
+* ^expansion.contains[=].code = #keine_Angabe
+* ^expansion.contains[=].display = "keine Angabe"
+

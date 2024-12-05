@@ -57,6 +57,12 @@ RuleSet: 5-af-anamnese
     * item[+] insert addItem(5.19, #string, [[Elternsprache 2 andere]])
       * insert addSource(#DE-BY)
       * insert enableWhenCode(5.16, =, SEU_UB_AuswaehlbareElternspracheErweiterungCS, 98)
+    * item[+] insert addItem(5.19.b, #choice, [[Elternsprache 3]])
+      * insert addSource(#DE-BY)
+      * answerValueSet = Canonical(SEU_UB_AuswaehlbareElternspracheVS)
+    
+    
+    
     * item[+] insert addItem(5.20, #choice, [[Zu Hause gesprochene Sprache(n)]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_GesprocheneSpracheVS)
@@ -72,6 +78,29 @@ RuleSet: 5-af-anamnese
       * insert addSource(#DE-BY)
     * item[+] insert addItemWithSource(5.23a, #choice, [[Auffälligkeiten im sozialen Verhalten (Stimmung, Konzentration, Verhalten, Umgang mit Anderen)]], #DE-HE)
       * answerValueSet = Canonical(SEU_UB_UntersuchungsergebnisVS)
+
+  * item[+] insert addItem(5.23.b, #choice, [[Kind lebt überwiegend bei]])
+      * insert addSource(#DE-BE)
+      * answerValueSet = Canonical(Kind_lebt_beiVS) 
+
+  * item[+] insert addItem(5.23.c, #integer, [[Anzahl aller im Haushalt lebenden Kinder (bis 18 J.)]])
+		* insert addSource(#DE-BE)
+
+  * item[+] insert addItem(5.23.d, #integer, [[Anzahl der Raucher/Dampfer im HH]])
+    * insert addSource(#DE-BE)
+
+      * item[+] insert addItem(5.23.e, #choice, [[durchschnittlich täglicher Konsum elektronischer Medien]])
+      * insert addSource(#DE-BE)
+      * answerValueSet = Canonical(TaeglicherKonsumElektronischerMedienVS) 
+	  
+  * item[+] insert addItem(5.23.f, #choice, [[eigenes elektronisches Gerät des Kindes]])
+      * insert addSource(#DE-BE)
+      * answerValueSet = Canonical(ElektronischesGeraetKindVS) 
+
+* item[+] insert addItem(5.23.g, #choice, [[Zaehneputzen in der Kita]])
+      * insert addSource(#DE-BE)
+      * answerValueSet = Canonical(Zaehneputzen_in_der_KitaVS) 
+
   * item[+] insert addGroup(5_2, Fördermaßnahmen oder Behandlungen)
     * insert addSource(#DE-BY)
     * item[+] insert addItem(5.24, #choice, [[Teilnahme Vorkurs Deutsch]])
@@ -237,12 +266,23 @@ RuleSet: 5-af-anamnese
       * answerValueSet = Canonical(SEU_UB_SchulabschlussVS)
     * item[+] insert addItem(5.63, #choice, [[Höchster Schulabschluss Elternteil 2]])
       * insert addSource(#DE-BY)
-      * answerValueSet = Canonical(SEU_UB_SchulabschlussVS)
+        * answerValueSet = Canonical(SEU_UB_SchulabschlussVS)
+
+  * item[+] insert addItem(5.63.a, #choice, [[berufliche Ausbildung (ggf. die höchste angeben) - Mutter]])
+      * insert addSource(#DE-BE)
+      * answerValueSet = Canonical(BeruflicheAusbildungElternVS) 
+	  
+	  * item[+] insert addItem(63.b, #choice, [[berufliche Ausbildung (ggf. die höchste angeben) - Vater]])
+      * insert addSource(#DE-BE)
+      * answerValueSet = Canonical(BeruflicheAusbildungElternVS) 
+
+    
     * item[+] insert addItem(5.64, #choice, [[Erwerbstätigkeit Elternteil 1]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_ErwerbstaetigkeitVS)
     * item[+] insert addItem(5.65, #choice, [[Erwerbstätigkeit Elternteil 2]])
       * insert addSource(#DE-BY) 
+      * answerValueSet = Canonical(SEU_UB_ErwerbstaetigkeitVS)
 
 CodeSystem: SEU_UB_AntwortenHoerstoerungCS
 Id: SEU-UB-AntwortenHoerstoerungCS
@@ -1929,3 +1969,155 @@ Description: "ValueSet, das verschiedene Beeinträchtigungsarten enthält."
 * ^expansion.contains[+].system = Canonical(SEU_UB_BeeintraechtigungsartCS)
 * ^expansion.contains[=].code = #M
 * ^expansion.contains[=].display = "Mehrfach"
+
+CodeSystem: Kind_lebt_beiCS
+Id: Kind_lebtCS
+Title: "Kind_lebt_beiCS"
+Description: "Kind_lebt_beiCS"
+* #den_Eltern "den Eltern"
+* #allein_erziehendem_Elternteil "allein erziehendem Elternteil"
+* #anderswo "anderswo"
+* #keine_ Angabe "keine Angabe"
+
+ValueSet: Kind_lebt_beiVS
+Id: Kind_lebt_beiVS
+Title: "Kind_lebt_beiVS"
+Description: "Kind_lebt_beiVS"
+* include codes from system Kind_lebt_beiCS
+* ^expansion.timestamp = "2024-03-27T12:20:50+00:00"
+* ^expansion.contains[0].system = Canonical(Kind_lebt_beiCS)
+* ^expansion.contains[=].code = #kein_MH
+* ^expansion.contains[=].display = "kein MH"
+* ^expansion.contains[0].system = Canonical(Kind_lebt_beiCS)
+* ^expansion.contains[=].code = #einseitiger_MH
+* ^expansion.contains[=].display = "einseitiger MH"
+* ^expansion.contains[0].system = Canonical(Kind_lebt_beiCS)
+* ^expansion.contains[=].code = #beidseitiger_MH
+* ^expansion.contains[=].display = "beidseitiger MH"
+* ^expansion.contains[0].system = Canonical(Kind_lebt_beiCS)
+* ^expansion.contains[=].code = #keine_Angabe
+* ^expansion.contains[=].display = "keine Angabe"
+
+CodeSystem: BeruflicheAusbildungElternCS
+Id: BeruflicheAusbildungElternCS
+Title: "BeruflicheAusbildungElternCS"
+Description: "BeruflicheAusbildungElternCS"
+* #ohne_bzw._ohne_abgeschl._Berufsausbildung  "ohne bzw. ohne abgeschl. Berufsausbildung"
+* #in_Ausbildung_Studium "in Ausbildung / Studium"
+* #abgeschl._Berufsausbildung/Fachschulabschluss  "abgeschl. Berufsausbildung/Fachschulabschluss"
+* #abgeschl.Studium "abgeschl. Studium (Uni, (Fach)Hochschule)"
+* #keine_Angabe "keine Angabe"
+
+ValueSet: BeruflicheAusbildungElternVS
+Id: BeruflicheAusbildungElternVS
+Title: "BeruflicheAusbildungElternVS"
+Description: "BeruflicheAusbildungElternVS"
+* include codes from system BeruflicheAusbildungElternCS
+* ^expansion.timestamp = "2024-03-27T12:20:50+00:00"
+* ^expansion.contains[0].system = Canonical(BeruflicheAusbildungElternCS)
+* ^expansion.contains[=].code = #ohne_bzw._ohne_abgeschl._Berufsausbildung
+* ^expansion.contains[=].display = "ohne bzw. ohne abgeschl. Berufsausbildung"
+* ^expansion.contains[0].system = Canonical(BeruflicheAusbildungElternCS)
+* ^expansion.contains[=].code = #in_Ausbildung_Studium
+* ^expansion.contains[=].display = "in Ausbildung / Studium"
+* ^expansion.contains[0].system = Canonical(BeruflicheAusbildungElternCS)
+* ^expansion.contains[=].code = #abgeschl._Berufsausbildung/Fachschulabschluss
+* ^expansion.contains[=].display = "abgeschl. Berufsausbildung/Fachschulabschluss"
+* ^expansion.contains[0].system = Canonical(BeruflicheAusbildungElternCS)
+* ^expansion.contains[=].code = #abgeschl.Studium 
+* ^expansion.contains[=].display = "abgeschl. Studium (Uni, (Fach)Hochschule)"
+* ^expansion.contains[0].system = Canonical(BeruflicheAusbildungElternCS)
+* ^expansion.contains[=].code = #keine_Angabe
+* ^expansion.contains[=].display = "keine Angabe"
+
+CodeSystem: TaeglicherKonsumElektronischerMedienCS
+Id: TaeglicherKonsumElektronischerMedienCS
+Title: "TaeglicherKonsumElektronischerMedienCS"
+Description: "TaeglicherKonsumElektronischerMedienCS"
+* #gar_nicht  "gar nicht"
+* #max._1_Stunde "max. 1 Stunde"
+* #max._2_Stunden "max. 2 Stunden"
+* #max._3_Stunden "max. 3 Stunden"
+* #ueber_3_Stunden  "über 3 Stunden"
+* #keine_ Angabe "keine Angabe"
+
+ValueSet: TaeglicherKonsumElektronischerMedienVS
+Id: TaeglicherKonsumElektronischerMedienVS
+Title: "TaeglicherKonsumElektronischerMedienVS"
+Description: "TaeglicherKonsumElektronischerMedienVS"
+* include codes from system TaeglicherKonsumElektronischerMedienCS
+* ^expansion.timestamp = "2024-03-27T12:20:50+00:00"
+* ^expansion.contains[0].system = Canonical(TaeglicherKonsumElektronischerMedienCS)
+* ^expansion.contains[=].code = #gar_nicht  
+* ^expansion.contains[=].display = "gar nicht"
+* ^expansion.contains[0].system = Canonical(TaeglicherKonsumElektronischerMedienCS)
+* ^expansion.contains[=].code = #max._1_Stunde 
+* ^expansion.contains[=].display = "max. 1 Stunde"
+* ^expansion.contains[0].system = Canonical(TaeglicherKonsumElektronischerMedienCS) 
+* ^expansion.contains[=].code = #max._2_Stunden 
+* ^expansion.contains[=].display = "max. 2 Stunden"
+* ^expansion.contains[0].system = Canonical(TaeglicherKonsumElektronischerMedienCS)
+* ^expansion.contains[=].code = #max._3_Stunden 
+* ^expansion.contains[=].display = "max. 3 Stunden"
+* ^expansion.contains[0].system = Canonical(TaeglicherKonsumElektronischerMedienCS)
+* ^expansion.contains[=].code = #ueber_3_Stunden  
+* ^expansion.contains[=].display = "über 3 Stunden"
+* ^expansion.contains[0].system = Canonical(TaeglicherKonsumElektronischerMedienCS)
+* ^expansion.contains[=].code = #keine_Angabe
+* ^expansion.contains[=].display = "keine Angabe"
+
+CodeSystem: ElektronischesGeraetKindCS
+Id: ElektronischesGeraetKindCS
+Title: "ElektronischesGeraetKindCS"
+Description: "ElektronischesGeraetKindCS"
+* #TV  "TV"
+* #andere "andere"
+* #kein_Geraet "kein Gerät"
+* #keine_ Angabe "keine Angabe"
+
+ValueSet: ElektronischesGeraetKindVS
+Id: ElektronischesGeraetKindVS
+Title: "ElektronischesGeraetKindVS"
+Description: "ElektronischesGeraetKindVS"
+* include codes from system ElektronischesGeraetKindCS
+* ^expansion.timestamp = "2024-03-27T12:20:50+00:00"
+* ^expansion.contains[0].system = Canonical(ElektronischesGeraetKindCS)
+* ^expansion.contains[=].code = #TV  
+* ^expansion.contains[=].display = "TV"
+* ^expansion.contains[0].system = Canonical(ElektronischesGeraetKindCS)
+* ^expansion.contains[=].code = #andere 
+* ^expansion.contains[=].display = "andere"
+* ^expansion.contains[0].system = Canonical(ElektronischesGeraetKindCS)
+* ^expansion.contains[=].code = kein_Geraet "kein Geraet"
+* ^expansion.contains[=].display = "kein Gerät"
+* ^expansion.contains[0].system = Canonical(ElektronischesGeraetKindCS)
+* ^expansion.contains[=].code = #keine_Angabe 
+* ^expansion.contains[=].display = "keine Angabe"
+
+CodeSystem: Zaehneputzen_in_der_KitaCS
+Id: Zaehneputzen_in_der_KitaCS
+Title: "Zähneputzen_in_der_KitaCS"
+Description: "Zähneputzen_in_der_KitaCS"
+* #ja  "ja"
+* #nein "nein"
+* #nicht_sicher "nicht sicher"
+* #keine_Angabe "keine Angabe"
+
+ValueSet: Zaehneputzen_in_der_KitaVS
+Id: Zaehneputzen_in_der_KitaVS
+Title: "Zähneputzen_in_der_KitaVS"
+Description: "Zähneputzen_in_der_KitaVS"
+* include codes from system Zaehneputzen_in_der_KitaCS
+* ^expansion.timestamp = "2024-03-27T12:20:50+00:00"
+* ^expansion.contains[0].system = Canonical(Zähneputzen_in_der_KitaCS)
+* ^expansion.contains[=].code = #ja  
+* ^expansion.contains[=].display = "ja" 
+* ^expansion.contains[0].system = Canonical(Zähneputzen_in_der_KitaCS)
+* ^expansion.contains[=].code = #nein
+* ^expansion.contains[=].display = "nein"
+* ^expansion.contains[0].system = Canonical(Zähneputzen_in_der_KitaCS)
+* ^expansion.contains[=].code = #nicht_sicher 
+* ^expansion.contains[=].display = "nicht sicher" 
+* ^expansion.contains[0].system = Canonical(Zähneputzen_in_der_KitaCS)
+* ^expansion.contains[=].code = #keine_Angabe 
+* ^expansion.contains[=].display = "keine Angabe"

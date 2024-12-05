@@ -158,21 +158,50 @@ RuleSet: 3-af-impfungen
   * item[+]
     * insert addItemWithSource(3.24, #choice, [[Tetanus Impfung]], #DE-BW)
     * answerValueSet = Canonical(SEU_UB_0_4ImpfungenVS)
+
+  * item[+] 
+    * insert addItemWithSource(3.24.1, #boolean, [[>= 6 Monate zwischen 2. und 3. Impfungen]], #DE-BW)
+			
+
   * item[+]
     * insert addItemWithSource(3.25, #choice, [[Diphterie Impfung]], #DE-BW)
     * answerValueSet = Canonical(SEU_UB_0_4ImpfungenVS)
+
+  * item[+] 
+    * insert addItemWithSource(3.25.1, #boolean, [[>= 6 Monate zwischen 2. und 3. Impfungen]], #DE-BW) //Frage was bedeutet die 1 bei addGroup(1, [[Dipherie]])
+			
   * item[+]
     * insert addItemWithSource(3.26, #choice, [[Pertussis Impfung]], #DE-BW)
     * answerValueSet = Canonical(SEU_UB_0_4ImpfungenVS)
+
+  * item[+] 
+    * insert addItemWithSource(3.26.1, #date, [[4. Pertussisimpfung (M/J)]], #DE-BW) // to do display when 3.26 = 4
+  
+  
   * item[+]
     * insert addItemWithSource(3.27, #choice, [[HIB Impfung]], #DE-BW)
     * answerValueSet = Canonical(SEU_UB_0_4ImpfungenVS)
+  * item[+] 
+    * insert addItemWithSource(3.27.1 #boolean, [[>= 6 Monate zwischen 2. und 3. Impfungen]], #DE-BW)
+			
+
   * item[+]
     * insert addItemWithSource(3.28, #choice, [[Hepatitis-B Impfung]], #DE-BW)
     * answerValueSet = Canonical(SEU_UB_0_4ImpfungenVS)
+  item[+] 
+    * insert addItemWithSource(3.28.1, #boolean, [[>= 6 Monate zwischen 2. und 3. Impfungen]], #DE-BW)
+			
+
+
   * item[+]
     * insert addItemWithSource(3.29, #choice, [[Poliomyelitis Impfung]], #DE-BW)
     * answerValueSet = Canonical(SEU_UB_0_4ImpfungenVS)
+
+  * item[+] insert addItemWithSource(3.29.1, #boolean, [[>= 6 Monate zwischen 2. und 3. Impfungen]], #DE-BW)
+	* item[+] insert addItemWithSource(3.29.2, #boolean, [[2 Dosen Virelon (R) erhalten]], #DE-BW)
+			
+  
+
   * item[+]
     * insert addItemWithSource(3.30, #choice, [[Pneumokokken Impfung]], #DE-BW)
     * answerValueSet = Canonical(SEU_UB_0_4ImpfungenVS)
@@ -185,6 +214,12 @@ RuleSet: 3-af-impfungen
   * item[+]
     * insert addItemWithSource(3.32, #choice, [[Masern Mono Impfung]], #DE-BW)
     * answerValueSet = Canonical(SEU_UB_0_3ImpfungenVS)
+
+  * item[+] 
+    * insert addItemWithSource(3.32.1, #date, [[2. Masern (M/J)]], #DE-BW)
+
+
+
   * item[+]
     * insert addItemWithSource(3.32.1, #choice, [[Anzahl der Impfungen nach dem 2. Geburtstag]], #DE-BW)
     * answerValueSet = Canonical(SEU_UB_0_3ImpfungenVS)  
@@ -232,8 +267,13 @@ RuleSet: 3-af-impfungen
       * insert addItemWithSource(3.39.2, #choice, [[Anzahl der RotaTeq Impfungen]], #DE-BW)
       * insert enableWhenCode(3.39, =, SEU_UB_RotaimpfungCS, RotaTeq)
       * answerValueSet = Canonical(SEU_UB_0_3ImpfungenVS)
+    
+  
+
   * item[+] insert addItemWithSource(3.40, #choice, [[Impfschema]], #DE-HE)
     * answerValueSet = Canonical(SEU_UB_ImpfschemaVS)
+
+    * item[+] insert addItemWithSource(3.41, #integer, [[Mumps]], #DE-BW)
     
 CodeSystem:  SEU_UB_MasernimpfungNichtErforderlichGrundCS
 Id: SEU-UB-MasernimpfungNichtErforderlichGrundCS
