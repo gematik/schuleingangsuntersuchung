@@ -1,59 +1,20 @@
-Instance: Elternbefragung
+Instance: Elternbefragung_HE
 InstanceOf: Questionnaire
 Usage: #example
-Title: "Elternbefragung"
-Description: "Elternbefragung"
+Title: "Elternbefragung Hessen"
+Description: "Elternbefragung Hessen"
 * contained[+] = SEU-EF-NeinAbgeschlossenLaeuftGeplantVS
 * contained[+] = DeuevAnlage8LaenderkennzeichenVS
-* contained[+] = LebtBeiVS
 * contained[+] = GenderDEVS
 * contained[+] = ISO6392_LanguageVS
-* contained[+] = ChronischeErkrankungenVS
-* contained[+] = JaNeinAngemeldetVS
-* contained[+] = RechtsLinksHaenderVS
 * contained[+] = AuffaelligkeitVerhaltenVS
-* contained[+] = LinksRechtsBeidseitsKeineAngabeVS
-* contained[+] = StoffwechselstoerungVS
-* contained[+] = ErkrankungVS
 * contained[+] = InfektionsKrankheitVS
-* contained[+] = ErkrankungenLetztesJahrVS
-* contained[+] = PflegegradVS
-* contained[+] = UnfallOrtVS
-* contained[+] = UnfallArtVS
-* contained[+] = GeplantFindetStattAbgeschlossenVS
-* contained[+] = HaeufigkeitAuswahlVS
-* contained[+] = SEU_EF_BildungsabschlussVS
-* contained[+] = SEU_EF_BerufsbildungVS
-* contained[+] = ErwerbsstatusVS
-* contained[+] = FamilienrolleVS
-* contained[+] = VersorgungsartVS
 * contained[+] = ChronischeKrankheitenVS
-* contained[+] = UeberwiegendGesprocheneSpracheVS
-* contained[+] = EntwicklungVS
 * contained[+] = AtopischeErkrankungenVS
-* contained[+] = AllgemeineBeschwerdenVS
-* contained[+] = ErwerbsstatusInclSonstigesVS
-* contained[+] = JaNeinWartelisteVS
-* contained[+] = SEU_EF_MedienkonsumVS
-* contained[+] = SEU_EF_OperationenVS
-* contained[+] = SEU_EF_WohnsituationKindVS
-* contained[+] = SEU_EF_UnfallVS
-* contained[+] = SEU_EF_AlterKindVS
-* contained[+] = SEU_EF_SchwangerschaftVS
-* contained[+] = SEU_EF_UnfallortVS
-* contained[+] = SEU_EF_BehandlungstypVS
-* contained[+] = SEU_EF_DauerBWVS
-* contained[+] = SEU_EF_FamiliensituationVS
-* contained[+] = SEU_EF_HilfsmittelVS
-* contained[+] = SEU_EF_FachaerzteVS
-* contained[+] = SEU_EF_DauerBBVS
-* contained[+] = SEU_EF_SpracheVS
-* contained[+] = SEU_EF_FrequenzVS
 * contained[+] = SEU_EF_DauerHEVS
-* contained[+] = icd10gm-2024
-* id = "SEU-Elternbefragung"
+* id = "SEU-Elternbefragung-Hessen"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung"
-* title = "SEU Elternfragebogen Maximaldatensatz"
+* title = "SEU Elternfragebogen Maximaldatensatz Hessen"
 * insert launchContext("patient", #Patient, "Patientenkontext")
 * status = #draft
 * item[+]
