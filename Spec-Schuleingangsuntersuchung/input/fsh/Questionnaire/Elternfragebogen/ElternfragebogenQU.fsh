@@ -412,6 +412,8 @@ Description: "Elternbefragung"
     * repeats = true
     * answerValueSet = Canonical(AuffaelligkeitVerhaltenVS)
   * item[+]
+    * insert addItemWithSource(7.11a, #boolean, [[Auffälligkeit des Verhaltens]], #DE-HE)
+  * item[+]
     * insert addItem(7.12, #boolean, [[Sorgen Sie sich um die Entwicklung ihres Kindes?]])
     * item[+]
       * insert addItem(7.12.1, #string, [[Welche Sorgen]])
