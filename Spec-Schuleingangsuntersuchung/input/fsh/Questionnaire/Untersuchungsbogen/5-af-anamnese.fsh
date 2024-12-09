@@ -58,7 +58,7 @@ RuleSet: 5-af-anamnese
       * insert addSource(#DE-BY)
       * insert enableWhenCode(5.16, =, SEU_UB_AuswaehlbareElternspracheErweiterungCS, 98)
     * item[+] insert addItem(5.19.b, #choice, [[Elternsprache 3]])
-      * insert addSource(#DE-BY)
+      * insert addSource(#DE-BE)
       * answerValueSet = Canonical(SEU_UB_AuswaehlbareElternspracheVS)
     
     

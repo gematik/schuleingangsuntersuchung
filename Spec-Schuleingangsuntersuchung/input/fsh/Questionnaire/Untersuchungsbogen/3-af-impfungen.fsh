@@ -160,7 +160,7 @@ RuleSet: 3-af-impfungen
     * answerValueSet = Canonical(SEU_UB_0_4ImpfungenVS)
 
   * item[+] 
-    * insert addItemWithSource(3.24.1, #boolean, [[>= 6 Monate zwischen 2. und 3. Impfungen]], #DE-BW)
+    * insert addItemWithSource(3.24.1, #boolean, [[>= 6 Monate zwischen 2. und 3. Impfungen]], #DE-BE)
 			
 
   * item[+]
@@ -168,28 +168,28 @@ RuleSet: 3-af-impfungen
     * answerValueSet = Canonical(SEU_UB_0_4ImpfungenVS)
 
   * item[+] 
-    * insert addItemWithSource(3.25.1, #boolean, [[>= 6 Monate zwischen 2. und 3. Impfungen]], #DE-BW) //Frage was bedeutet die 1 bei addGroup(1, [[Dipherie]])
+    * insert addItemWithSource(3.25.1, #boolean, [[>= 6 Monate zwischen 2. und 3. Impfungen]], #DE-BE) 
 			
   * item[+]
     * insert addItemWithSource(3.26, #choice, [[Pertussis Impfung]], #DE-BW)
     * answerValueSet = Canonical(SEU_UB_0_4ImpfungenVS)
 
   * item[+] 
-    * insert addItemWithSource(3.26.1, #date, [[4. Pertussisimpfung (M/J)]], #DE-BW) // to do display when 3.26 = 4
+    * insert addItemWithSource(3.26.1, #date, [[4. Pertussisimpfung (M/J)]], #DE-BE) // to do display when 3.26 = 4
   
   
   * item[+]
     * insert addItemWithSource(3.27, #choice, [[HIB Impfung]], #DE-BW)
     * answerValueSet = Canonical(SEU_UB_0_4ImpfungenVS)
   * item[+] 
-    * insert addItemWithSource(3.27.1 #boolean, [[>= 6 Monate zwischen 2. und 3. Impfungen]], #DE-BW)
+    * insert addItemWithSource(3.27.1 #boolean, [[>= 6 Monate zwischen 2. und 3. Impfungen]], #DE-BE)
 			
 
   * item[+]
     * insert addItemWithSource(3.28, #choice, [[Hepatitis-B Impfung]], #DE-BW)
     * answerValueSet = Canonical(SEU_UB_0_4ImpfungenVS)
   item[+] 
-    * insert addItemWithSource(3.28.1, #boolean, [[>= 6 Monate zwischen 2. und 3. Impfungen]], #DE-BW)
+    * insert addItemWithSource(3.28.1, #boolean, [[>= 6 Monate zwischen 2. und 3. Impfungen]], #DE-BE)
 			
 
 
@@ -197,8 +197,8 @@ RuleSet: 3-af-impfungen
     * insert addItemWithSource(3.29, #choice, [[Poliomyelitis Impfung]], #DE-BW)
     * answerValueSet = Canonical(SEU_UB_0_4ImpfungenVS)
 
-  * item[+] insert addItemWithSource(3.29.1, #boolean, [[>= 6 Monate zwischen 2. und 3. Impfungen]], #DE-BW)
-	* item[+] insert addItemWithSource(3.29.2, #boolean, [[2 Dosen Virelon (R) erhalten]], #DE-BW)
+  * item[+] insert addItemWithSource(3.29.1, #boolean, [[>= 6 Monate zwischen 2. und 3. Impfungen]], #DE-BE)
+	* item[+] insert addItemWithSource(3.29.2, #boolean, [[2 Dosen Virelon (R) erhalten]], #DE-BE)
 			
   
 
@@ -216,7 +216,7 @@ RuleSet: 3-af-impfungen
     * answerValueSet = Canonical(SEU_UB_0_3ImpfungenVS)
 
   * item[+] 
-    * insert addItemWithSource(3.32.1, #date, [[2. Masern (M/J)]], #DE-BW)
+    * insert addItemWithSource(3.32.1, #date, [[2. Masernimpfungen (M/J)]], #DE-BE)
 
 
 
@@ -243,6 +243,10 @@ RuleSet: 3-af-impfungen
     * answerValueSet = Canonical(SEU_UB_0_3ImpfungenVS) 
   * item[+]
     * insert addItemWithSource(3.36, #boolean, [[Meningokokken C Impfung durchgeführt]], #DE-BW)
+  * item[+]
+    * insert addItemWithSource(3.36.c, #choice, [[Meningokokken C Impfung]], #DE-BE)
+    * answerValueSet = Canonical(SEU_UB_0_4ImpfungenVS)
+
   * item[+]
     * insert addItemWithSource(3.37, #choice, [[FSME Impfung]], #DE-BW)
     * answerValueSet = Canonical(SEU_UB_0_3ImpfungenVS)
@@ -273,7 +277,9 @@ RuleSet: 3-af-impfungen
   * item[+] insert addItemWithSource(3.40, #choice, [[Impfschema]], #DE-HE)
     * answerValueSet = Canonical(SEU_UB_ImpfschemaVS)
 
-    * item[+] insert addItemWithSource(3.41, #integer, [[Mumps]], #DE-BW)
+  * item[+]
+    * insert addItemWithSource(3.41, #choice, [[Mumps]], #DE-BE)
+    * answerValueSet = Canonical(SEU_UB_0_4ImpfungenVS)
     
 CodeSystem:  SEU_UB_MasernimpfungNichtErforderlichGrundCS
 Id: SEU-UB-MasernimpfungNichtErforderlichGrundCS

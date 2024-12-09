@@ -20,7 +20,7 @@ RuleSet: 7-af-fdsscreening
       * insert uunit(kg, "kg")
     * item[+]
       * insert addItemWithSource(7.4.1, #boolean, [[Messung Körpergewicht durchgeführt]], #DE-BW)
-    * item[+] insert addItemWithSource(7.4.a, #boolean, [[Brille]], #DE-BW)
+    * item[+] insert addItemWithSource(7.4.a, #boolean, [[Brille]], #DE-BE)
     
     
     * item[+] insert addItemWithSource(7.sehtest.rechts, #choice, [[Sehtest rechts]], #DE-BW) 
