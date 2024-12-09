@@ -6,8 +6,6 @@ Description: "Elternbefragung Hessen"
 * contained[+] = SEU-EF-NeinAbgeschlossenLaeuftGeplantVS
 * contained[+] = DeuevAnlage8LaenderkennzeichenVS
 * contained[+] = GenderDEVS
-* contained[+] = ISO6392_LanguageVS
-* contained[+] = AuffaelligkeitVerhaltenVS
 * contained[+] = InfektionsKrankheitVS
 * contained[+] = ChronischeKrankheitenVS
 * contained[+] = AtopischeErkrankungenVS
@@ -212,31 +210,27 @@ Description: "Elternbefragung Hessen"
 * item[+]
   * insert addItem(9, #group, [[Förderungen]])
   * item[+]
-    * insert addGroup(9.1a.g, Therapien)
-    * insert enableWhenBoolean(9.1a, =, true)
-    * insert addSource(#DE-SN)
-    * item[+]
-      * insert addItem(9.2, #choice, [[Sprachtherapie]])
-      * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
-      * required = true
-    * item[+]
-      * insert addItem(9.3, #choice, [[Frühförderung]])
-      * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
-      * required = true
-    * item[+]
-      * insert addItem(9.4, #choice, [[Ergotherapie]])
-      * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
-      * required = true
-    * item[+]
-      * insert addItem(9.6, #choice, [[Physiotherapie]])
-      * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
-      * required = true
-    * item[+]
-      * insert addItem(9.9, #choice, [[Integrative Betreuung]])
-      * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
-      * required = true
-    * item[+]
-      * insert addItem(9.10, #string, [[Sonstige Förderung]])
+    * insert addItem(9.2, #choice, [[Sprachtherapie]])
+    * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
+    * required = true
+  * item[+]
+    * insert addItem(9.3, #choice, [[Frühförderung]])
+    * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
+    * required = true
+  * item[+]
+    * insert addItem(9.4, #choice, [[Ergotherapie]])
+    * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
+    * required = true
+  * item[+]
+    * insert addItem(9.6, #choice, [[Physiotherapie]])
+    * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
+    * required = true
+  * item[+]
+    * insert addItem(9.9, #choice, [[Integrative Betreuung]])
+    * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
+    * required = true
+  * item[+]
+    * insert addItem(9.10, #string, [[Sonstige Förderung]])
 //********************************************
 // Arzt
 * item[+]
@@ -254,7 +248,6 @@ Description: "Elternbefragung Hessen"
     * required = true
   * item[+]
     * insert addItem(12.8, #text, Sportart und Verein)
-    * insert enableWhenBoolean(12.7, =, true)
   * item[+]
     * insert addItem(12.9, #boolean, Schwimmfähig)
   * item[+]
