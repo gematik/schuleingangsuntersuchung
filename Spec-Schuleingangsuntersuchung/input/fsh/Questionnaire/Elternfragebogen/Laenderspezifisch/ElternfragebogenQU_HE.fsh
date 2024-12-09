@@ -21,8 +21,10 @@ Description: "Elternbefragung Hessen"
   * insert addGroup(0, Schule & Vorgangsnummer)
   * item[+]
     * insert addItem(0.1, #string, Name der Schule)
+    * required = true
   * item[+]
     * insert addItem(0.2, #string, Vorgangsnummer)
+    * required = true
 * item[+]
   * type = #group
   * linkId = "1"
@@ -30,35 +32,47 @@ Description: "Elternbefragung Hessen"
   * item[+]
     * insert addItem(1.1, #string, Nachname des Kindes)
     * insert initialExpression("%patient.name[0].family")
+    * required = true
   * item[+]
     * insert addItem(1.2, #string, Vorname des Kindes)
     * insert initialExpression("%patient.name[0].given[0]")
+    * required = true
   * item[+]
     * insert addItem(1.3, #date, Geburtsdatum)
     * insert initialExpression("%patient.birthdate")
+    * required = true
   * item[+]
     * insert addItem(1.4, #choice, Staatsangehörigkeit)
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
+    * required = true
     //TODO: initial expression
   * item[+]
     * insert addItem(1.5, #choice, Geburtsland)
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
+    * required = true
   * item[+]
     * insert addItem(1.6, #boolean, In Deutschland geboren)
+    * required = true
   * item[+]
     * insert addItem(1.6.1, #date, Seit wann wohnt das Kind in Deutschland?)
     * insert enableWhenBoolean(1.6, =, false)
+    * required = true
   * item[+]
     * insert addItem(1.8, #choice, Geschlecht)
     * answerValueSet = Canonical(GenderDEVS)
+    * required = true
   * item[+]
     * insert addItem(1.9, #string, PLZ)
+    * required = true
   * item[+]
     * insert addItem(1.10, #string, Wohnort)
+    * required = true
   * item[+]
     * insert addItem(1.11, #string, Straße)
+    * required = true
   * item[+]
     * insert addItem(1.11a, #string, Hausnummer)
+    * required = true
 //********************************************
 // Personenbezogene Daten Personenberechtigter
 * item[+]
@@ -67,12 +81,15 @@ Description: "Elternbefragung Hessen"
   * item[+]
     * answerValueSet = Canonical(GenderDEVS)
     * insert addItem(2.1, #choice, Geschlecht)
+    * required = true
   * item[+]
     * insert addItem(2.2, #string, Nachname)
     * insert initialExpression("%patient.name[0].family")
+    * required = true
   * item[+]
     * insert addItem(2.3, #string, Vorname)
     * insert initialExpression("%patient.name[0].given[0]")
+    * required = true
   * item[+]
     * insert addItem(2.4, #string, PLZ)
   * item[+]
@@ -86,20 +103,21 @@ Description: "Elternbefragung Hessen"
   * item[+]
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
     * insert addItem(2.9, #choice, Staatsangehörigkeit)
+    * required = true
   * item[+]
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
     * insert addItem(2.10, #choice, Herkunftsland)
-  * item[+]
-    * answerValueSet = Canonical(ISO6392_LanguageVS)
-    * insert addItem(2.11, #choice, Muttersprache)
+    * required = true
   * item[+]
     * insert addItem(2.12, #date, Geburtsdatum)
+    * required = true
 //********************************************
 // Familiendaten
 * item[+]
   * insert addItem(3, #group, Familiendaten)
   * item[+]
     * insert addItem(3.1, #integer, Anzahl der Geschwister)
+    * required = true
   * item[+]
     * insert addItem(3.1.1, #group, Details Geschwister)
     * repeats = true
@@ -125,9 +143,11 @@ Description: "Elternbefragung Hessen"
   * insert addItem(4, #group, Kinderbetreuung)
   * item[+]
     * insert addItem(4.0b, #boolean, Ist das Kind in einem Kindergarten/einer Kindertageseinrichtung?)
+    * required = true
   * item[+]
     * insert addItemWithSource(4.1d, #choice, [[Dauer Besuch Kita/Krippe]], #DE-HE)
     * answerValueSet = Canonical(SEU_EF_DauerHEVS)
+    * required = true
   * item[+]
     * insert addItem(4.6b, #string, Name des Kindergartens)
     * enableWhen[+]
@@ -141,6 +161,7 @@ Description: "Elternbefragung Hessen"
   * item[+]
     * insert addItem(5.2, #integer, [[Geburtsgewicht (in Gramm)]])
     * insert uunit(g, "Gramm")
+    * required = true
   * item[+]
     * insert addItem(5.6, #boolean, [[Auffälligkeit/Krankheit in der Schwangerschaft]])
 //********************************************
@@ -148,9 +169,7 @@ Description: "Elternbefragung Hessen"
 * item[+]
   * insert addItem(7, #group, [[Entwicklung]])
   * item[+]
-    * insert addItem(7.11, #open-choice, [[Auffälligkeit des Verhaltens]])
-    * repeats = true
-    * answerValueSet = Canonical(AuffaelligkeitVerhaltenVS)
+    * insert addItemWithSource(7.11a, #boolean, [[Auffälligkeit des Verhaltens]], #DE-HE)
 //********************************************
 // Erkrankungen und gesundheitliche Einschränkungen
 * item[+]
@@ -199,18 +218,23 @@ Description: "Elternbefragung Hessen"
     * item[+]
       * insert addItem(9.2, #choice, [[Sprachtherapie]])
       * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
+      * required = true
     * item[+]
       * insert addItem(9.3, #choice, [[Frühförderung]])
       * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
+      * required = true
     * item[+]
       * insert addItem(9.4, #choice, [[Ergotherapie]])
       * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
+      * required = true
     * item[+]
       * insert addItem(9.6, #choice, [[Physiotherapie]])
       * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
+      * required = true
     * item[+]
       * insert addItem(9.9, #choice, [[Integrative Betreuung]])
       * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
+      * required = true
     * item[+]
       * insert addItem(9.10, #string, [[Sonstige Förderung]])
 //********************************************
@@ -227,6 +251,7 @@ Description: "Elternbefragung Hessen"
   * insert addGroup(12, Sonstiges)
   * item[+]
     * insert addItem(12.4, #boolean, KISS Sprachscreening)
+    * required = true
   * item[+]
     * insert addItem(12.8, #text, Sportart und Verein)
     * insert enableWhenBoolean(12.7, =, true)
