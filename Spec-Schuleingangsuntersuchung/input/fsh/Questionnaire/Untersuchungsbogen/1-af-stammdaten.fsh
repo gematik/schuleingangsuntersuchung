@@ -1,7 +1,5 @@
 RuleSet: 1-af-stammdaten
 
-//test
-
 * item[+] insert addGroup(1, Stammdaten)
   * item[+] insert addItemMl(1.1, #integer, Schlüsselnummer GA, 3)
     * insert addSource(#DE-BY)
@@ -15,9 +13,8 @@ RuleSet: 1-af-stammdaten
     * insert addSource(#DE-BY)
     * item[+] insert helpItem(1.4h, Die ersten 4 Ziffern der Postleitzahl)
       * insert addSource(#DE-BY)
- * item[+] insert addItem(1.4a, #integer, [[Wohnort des Kindes (LOR)]], 8)
+  * item[+] insert addItem(1.4a, #integer, [[Wohnort des Kindes (LOR)]], 8)
     * insert addSource(#DE-BE)
-
   * item[+] insert addItemMl(1.5, #integer, Sprengel/Kiganr., 4)
     * insert addSource(#DE-BY)
   * item[+] insert addItem(1.6, #choice, Region)
@@ -71,43 +68,35 @@ RuleSet: 1-af-stammdaten
   * item[+]
     * insert addItemWithSource(1.22, #choice, [[Deutschkenntnisse der Hauptbezugsperson?]], #DE-HE)
     * answerValueSet = Canonical(SEU_UB_VerwandtePersonDeutschkenntnisVS)
-
   * item[+] insert addItem(1.23, #date, [[Untersuchungsmonat und -jahr]]) 
     * insert addSource(#DE-BE)
-
- * item[+] insert addItem(1.24, #integer, Nummer der Schule [[(Schulnr. von SenBJF)]])  
+  * item[+] insert addItem(1.24, #integer, Nummer der Schule [[(Schulnr. von SenBJF)]])  
     * insert addSource(#DE-BE)
-
-     * item[+] insert addItem(1.25, #choice, [[Anmeldung zur Untersuchung]])
-      * insert addSource(#DE-BE)
-      * answerValueSet = Canonical(AnmeldungZurUntersuchungVS) 	
-
-* item[+] insert addItemWithSource(1.26, #boolean, [[Kind ist in Deutschland geboren?]], #DE-BE)   
+  * item[+] insert addItem(1.25, #choice, [[Anmeldung zur Untersuchung]])
+     * insert addSource(#DE-BE)
+     * answerValueSet = Canonical(AnmeldungZurUntersuchungVS) 	
+  * item[+] insert addItemWithSource(1.26, #boolean, [[Kind ist in Deutschland geboren?]], #DE-BE)   
     * insert enableWhenBoolean(1.26, =, false)
     * insert addItemWithSource(1.26a, #date, [[dann bitte letzte Zuwanderung nach Deutschland Zeitpunkt (Monat/Jahr)]], #DE-BE)	
-
-* item[+] insert addGroup(1.27, Staatsangehörigkeit der Mutter)
+  * item[+] insert addGroup(1.27, Staatsangehörigkeit der Mutter)
     * insert addSource(#DE-BE)
-      * item[+] insert addItem(1.27.a, #choice, [[erste]])
+      * item[+] insert addItem(1.27.a, #choice, [[Erste]])
         * insert addSource(#DE-BE)
         * answerValueSet = Canonical(alleStaatsangehoerigkeitenVS) // TO DO alleStaatsangehoerigkeitenVS muss mit nachfolgenden Auswahlmöglichkeiten erstellt werden
       * item[+] insert addItem(1.27b, #choice, [[weitere]])
         * insert addSource(#DE-BE)
         * answerValueSet = Canonical(alleStaatsangehoerigkeitenVS) // TO DO alleStaatsangehoerigkeitenVS muss mit nachfolgenden Auswahlmöglichkeiten erstellt werden  
-
-* item[+] insert addItem(1.28, #choice, [[Geburtsland des Vaters]])
+  * item[+] insert addItem(1.28, #choice, [[Geburtsland des Vaters]])
     * insert addSource(#DE-BE)
     * answerValueSet = Canonical(alle LaenderVS) // TO DO: Canonical(alle LaenderVS) bitte bestehndes VS einpflegen
-
-* item[+] insert addGroup(1.29, Staatsangehörigkeit des Vaters)
+  * item[+] insert addGroup(1.29, Staatsangehörigkeit des Vaters)
     * insert addSource(#DE-BE)
       * item[+] insert addItem(1.29.a, #choice, [[erste]])
       * insert addSource(#DE-BE)
       * answerValueSet = Canonical(alleStaatsangehörigkeitenVS) // TO DO alleStaatsangehörigkeitenVS muss mit nachfolgenden Auswahlmöglichkeiten erstellt werden
-	* item[+] insert addItem(1.29.b, #choice, [[weitere]])
+	* item[+] insert addItem(1.29.b, #choice, [[Weitere]])
       * insert addSource(#DE-BE)
       * answerValueSet = Canonical(alleStaatsangehörigkeitenVS) // TO DO alleStaatsangehörigkeitenVS muss mit nachfolgenden Auswahlmöglichkeiten erstellt werden
-
   * item[+] insert addItem(1.30, #choice, [[Migrationshintergrund des Kindes]])
       * insert addSource(#DE-BE)
       * answerValueSet = Canonical(MigrationshintergrundVS)
@@ -237,4 +226,3 @@ Description: "MigrationshintergrundVS"
 * ^expansion.contains[0].system = Canonical(MigrationshintergrundCS)
 * ^expansion.contains[=].code = #keine_Angabe
 * ^expansion.contains[=].display = "keine Angabe"
-

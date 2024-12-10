@@ -209,22 +209,15 @@ RuleSet: 7-af-fdsscreening
       * insert addSource(#DE-BY)
     * item[+] insert addItemWithSource(7.18a, #choice, [[Keine ausreichenden Deutschkenntnisse vorhanden]], #DE-HE)
       * answerValueSet = Canonical(SEU_UB_DeutschkenntnisseVS)
-
-    * item[+] insert addItem(X.X, #choice, [[Deutschkenntnisse Kind]])
+    * item[+] insert addItem(7.18.b, #choice, [[Deutschkenntnisse Kind]])
       * insert addSource(#DE-BE)
       * answerValueSet = Canonical(Deutschkenntnisse_KindVS) 
-	  
-    * item[+] insert addItem(X.X, #choice, [[Deutschkenntnisse Mutter]])
+	  * item[+] insert addItem(7.18.c, #choice, [[Deutschkenntnisse Mutter]])
       * insert addSource(#DE-BE)
-      * answerValueSet = Canonical(Deutschkenntnisse_MutterVS) 
-	  
-    * item[+] insert addItem(X.X, #choice, [[Deutschkenntnisse Vater]])
+      * answerValueSet = Canonical(Deutschkenntnisse_MutterVS)
+    * item[+] insert addItem(7.18.d, #choice, [[Deutschkenntnisse Vater]])
       * insert addSource(#DE-BE)
-      * answerValueSet = Canonical(Deutschkenntnisse_VaterVS)      
-
-
-
-
+      * answerValueSet = Canonical(Deutschkenntnisse_VaterVS)
     * item[+] insert addItem(7.19, #choice, [[Sprachverständnis auffällig]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_AntwortAuffaelligkeitVS)
@@ -265,7 +258,7 @@ RuleSet: 7-af-fdsscreening
     * item[+] insert addItem(7.30, #string, [[Anmerkungen, intern]])
       * insert addSource(#DE-BY)
     * item[+]
-      * insert addItemWithSource(7.30.a, #integer, [[Stereosehen: Anzahl erkannter Stereobilder]], #DE-BW)
+      * insert addItemWithSource(7.30.a, #integer, [[Stereosehen: Anzahl erkannter Stereobilder]], #DE-BE)
 	  * item[+] insert addItem(7.30.b, #choice, [[Farbsehen]])
       * insert addSource(#DE-BE)
       * answerValueSet = Canonical(FarbsehenVS)
