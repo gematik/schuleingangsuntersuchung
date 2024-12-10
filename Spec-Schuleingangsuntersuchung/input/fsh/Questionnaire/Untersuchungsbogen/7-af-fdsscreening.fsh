@@ -21,8 +21,6 @@ RuleSet: 7-af-fdsscreening
     * item[+]
       * insert addItemWithSource(7.4.1, #boolean, [[Messung Körpergewicht durchgeführt]], #DE-BW)
     * item[+] insert addItemWithSource(7.4.a, #boolean, [[Brille]], #DE-BE)
-    
-    
     * item[+] insert addItemWithSource(7.sehtest.rechts, #choice, [[Sehtest rechts]], #DE-BW) 
       * answerValueSet = Canonical(SEU_UB_SehtestVisusVS)
     * item[+] insert addItemWithSource(7.sehtest.links, #choice, [[Sehtest links]], #DE-BW) 
@@ -73,65 +71,39 @@ RuleSet: 7-af-fdsscreening
     * item[+] insert addItem(7.7, #choice, [[Sehschärfendifferenz auffällig]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_AntwortAuffaelligkeitBeurteilbarVS)
-
-  * item[+] insert addItem(7.7.a, #choice, [[Visus]])
+    * item[+] insert addItem(7.7.a, #choice, [[Visus]])
       * insert addSource(#DE-BE)
       * answerValueSet = Canonical(VisusVS) 
-
-
     * item[+] insert addItem(7.8, #choice, [[Visus Ferne auffällig (Gerät, Rechts)]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_AntwortAuffaelligkeitBeurteilbarVS)
-
-
-  * item[+] insert addItem(7.8.1, #choice, [[Visus Sehtestgeraet rechts]])
+    * item[+] insert addItem(7.8.1, #choice, [[Visus Sehtestgeraet rechts]])
       * insert addSource(#DE-BE)
-      * answerValueSet = Canonical(VisusSehtestgeraetRechtsVS) 
-
-	 
-
-      
+      * answerValueSet = Canonical(VisusSehtestgeraetRechtsVS)  
     * item[+] insert addItem(7.9, #choice, [[Visus Ferne auffällig (Gerät, Links)]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_AntwortAuffaelligkeitBeurteilbarVS)
-
- * item[+] insert addItem(7.9.1, #choice, [[Visus Sehtestgeraet links]])
+    * item[+] insert addItem(7.9.1, #choice, [[Visus Sehtestgeraet links]])
       * insert addSource(#DE-BE)
       * answerValueSet = Canonical(VisusSehtestgeraetLinksVS)
-
-
-
-
     * item[+] insert addItem(7.10, #choice, [[Visus Ferne auffällig (LEA-Tafeln, Rechts)]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_AntwortAuffaelligkeitBeurteilbarVS)
-
- * item[+] insert addItem(7.10.a, #choice, [[Visus Sehtafel rechts]])
+    * item[+] insert addItem(7.10.a, #choice, [[Visus Sehtafel rechts]])
       * insert addSource(#DE-BE)
       * answerValueSet = Canonical(VisusSehtafelRechtsVS) 
-
-
-
     * item[+] insert addItem(7.11, #choice, [[Visus Ferne auffällig (LEA-Tafeln, Links)]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_AntwortAuffaelligkeitBeurteilbarVS)
-
-      
 	  * item[+] insert addItem(7.11.a, #choice, [[Visus Sehtafel links]])
       * insert addSource(#DE-BE)
       * answerValueSet = Canonical(VisusSehtafelLinksVS) 
-
-* item[+] insert addItem(7.11.c, #choice, [[Vorschaltlinse rechts]])
+    * item[+] insert addItem(7.11.c, #choice, [[Vorschaltlinse rechts]])
       * insert addSource(#DE-BE)
       * answerValueSet = Canonical(VorschaltlinseVS) 
-
-  * item[+] insert addItem(7.11.d, #choice, [[Vorschaltlinse links]])
+    * item[+] insert addItem(7.11.d, #choice, [[Vorschaltlinse links]])
       * insert addSource(#DE-BE)
       * answerValueSet = Canonical(VorschaltlinseVS) 
-
-
-
-
     * item[+] insert addItem(7.12, #boolean, [[akuter Infekt obere Atemwege liegt vor]])
       * insert addSource(#DE-BY)
     * item[+] insert addItemWithSource(7.12a, #choice, [[akuter Infekt obere Atemwege liegt vor]], #DE-HE)
@@ -262,8 +234,6 @@ RuleSet: 7-af-fdsscreening
 	  * item[+] insert addItem(7.30.b, #choice, [[Farbsehen]])
       * insert addSource(#DE-BE)
       * answerValueSet = Canonical(FarbsehenVS)
-
-
   * item[+] insert addGroup(7_2, 2. Screening)
     * insert addSource(#DE-BY)
     * item[+] insert addItem(7.31, #date, [[Untersuchungsdatum]])

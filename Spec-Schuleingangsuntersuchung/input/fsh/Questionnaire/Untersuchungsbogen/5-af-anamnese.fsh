@@ -60,9 +60,6 @@ RuleSet: 5-af-anamnese
     * item[+] insert addItem(5.19.b, #choice, [[Elternsprache 3]])
       * insert addSource(#DE-BE)
       * answerValueSet = Canonical(SEU_UB_AuswaehlbareElternspracheVS)
-    
-    
-    
     * item[+] insert addItem(5.20, #choice, [[Zu Hause gesprochene Sprache(n)]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_GesprocheneSpracheVS)
@@ -78,29 +75,22 @@ RuleSet: 5-af-anamnese
       * insert addSource(#DE-BY)
     * item[+] insert addItemWithSource(5.23a, #choice, [[Auffälligkeiten im sozialen Verhalten (Stimmung, Konzentration, Verhalten, Umgang mit Anderen)]], #DE-HE)
       * answerValueSet = Canonical(SEU_UB_UntersuchungsergebnisVS)
-
-  * item[+] insert addItem(5.23.b, #choice, [[Kind lebt überwiegend bei]])
+    * item[+] insert addItem(5.23.b, #choice, [[Kind lebt überwiegend bei]])
       * insert addSource(#DE-BE)
       * answerValueSet = Canonical(Kind_lebt_beiVS) 
-
-  * item[+] insert addItem(5.23.c, #integer, [[Anzahl aller im Haushalt lebenden Kinder (bis 18 J.)]])
-		* insert addSource(#DE-BE)
-
-  * item[+] insert addItem(5.23.d, #integer, [[Anzahl der Raucher/Dampfer im HH]])
-    * insert addSource(#DE-BE)
-
-      * item[+] insert addItem(5.23.e, #choice, [[durchschnittlich täglicher Konsum elektronischer Medien]])
+    * item[+] insert addItem(5.23.c, #integer, [[Anzahl aller im Haushalt lebenden Kinder (bis 18 J.)]])
       * insert addSource(#DE-BE)
-      * answerValueSet = Canonical(TaeglicherKonsumElektronischerMedienVS) 
-	  
-  * item[+] insert addItem(5.23.f, #choice, [[eigenes elektronisches Gerät des Kindes]])
+    * item[+] insert addItem(5.23.d, #integer, [[Anzahl der Raucher/Dampfer im HH]])
       * insert addSource(#DE-BE)
-      * answerValueSet = Canonical(ElektronischesGeraetKindVS) 
-
-* item[+] insert addItem(5.23.g, #choice, [[Zaehneputzen in der Kita]])
+        * item[+] insert addItem(5.23.e, #choice, [[durchschnittlich täglicher Konsum elektronischer Medien]])
+        * insert addSource(#DE-BE)
+        * answerValueSet = Canonical(TaeglicherKonsumElektronischerMedienVS) 
+    * item[+] insert addItem(5.23.f, #choice, [[eigenes elektronisches Gerät des Kindes]])
+        * insert addSource(#DE-BE)
+        * answerValueSet = Canonical(ElektronischesGeraetKindVS) 
+    * item[+] insert addItem(5.23.g, #choice, [[Zaehneputzen in der Kita]])
       * insert addSource(#DE-BE)
       * answerValueSet = Canonical(Zaehneputzen_in_der_KitaVS) 
-
   * item[+] insert addGroup(5_2, Fördermaßnahmen oder Behandlungen)
     * insert addSource(#DE-BY)
     * item[+] insert addItem(5.24, #choice, [[Teilnahme Vorkurs Deutsch]])
@@ -267,16 +257,12 @@ RuleSet: 5-af-anamnese
     * item[+] insert addItem(5.63, #choice, [[Höchster Schulabschluss Elternteil 2]])
       * insert addSource(#DE-BY)
         * answerValueSet = Canonical(SEU_UB_SchulabschlussVS)
-
-  * item[+] insert addItem(5.63.a, #choice, [[berufliche Ausbildung (ggf. die höchste angeben) - Mutter]])
+    * item[+] insert addItem(5.63.a, #choice, [[berufliche Ausbildung (ggf. die höchste angeben) - Mutter]])
       * insert addSource(#DE-BE)
       * answerValueSet = Canonical(BeruflicheAusbildungElternVS) 
-	  
 	  * item[+] insert addItem(63.b, #choice, [[berufliche Ausbildung (ggf. die höchste angeben) - Vater]])
       * insert addSource(#DE-BE)
       * answerValueSet = Canonical(BeruflicheAusbildungElternVS) 
-
-    
     * item[+] insert addItem(5.64, #choice, [[Erwerbstätigkeit Elternteil 1]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_ErwerbstaetigkeitVS)

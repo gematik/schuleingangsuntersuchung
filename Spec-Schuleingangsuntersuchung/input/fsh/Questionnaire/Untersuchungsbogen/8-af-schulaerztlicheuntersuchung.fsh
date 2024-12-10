@@ -122,9 +122,7 @@ RuleSet: 8-af-schulaerztlicheuntersuchung
         * insert addSource(#DE-BY)
       * item[+] insert addItem(8.43, #boolean, [[Körperkoordination (1. SÄU)]])
         * insert addSource(#DE-BY)
-    * item[+] insert addGroup(
-
-8_3_2, Auffälligkeiten aus Entwicklungsscreening sind ärztlich abgeklärt)
+    * item[+] insert addGroup(8_3_2, Auffälligkeiten aus Entwicklungsscreening sind ärztlich abgeklärt)
       * insert addSource(#DE-BY)
       * item[+] insert addItem(8.44, #boolean, [[Nonverbale Intelligenz (1. SÄU)]])
         * insert addSource(#DE-BY)
@@ -170,7 +168,6 @@ RuleSet: 8-af-schulaerztlicheuntersuchung
         * insert addSource(#DE-BY)
       * item[+] insert addItem(8.59.a, #boolean, [[Psychotheraphie]])
         * insert addSource(#DE-BE)
-
       * item[+] insert addItem(8.60, #boolean, [[Vorkurs Deutsch]])
         * insert addSource(#DE-BY)
       * item[+] insert addItem(8.61, #boolean, [[Sonstige(s)]])
@@ -213,7 +210,6 @@ RuleSet: 8-af-schulaerztlicheuntersuchung
     * item[+] insert addItemWithSource(8.75, #boolean, [[Gab es bei der Untersuchung einen Mehraufwand]], #DE-HE)
     * item[+] insert addItemWithSource(8.76, #choice, [[Art der Untersuchung]], #DE-HE)
       * answerValueSet = Canonical(SEU_UB_EinschulungVS)
-
     * item[+] insert addGroup(8_3_7, [[psychische Auffälligkeiten (SDQ)]])
       * item[+]
         * insert addItemWithSource(8.77, #string, [[emotionale Probleme]], #DE-BE)
@@ -515,4 +511,3 @@ Description: "Antrag_auf_ZurückstellungVS"
 * ^expansion.contains[0].system = Canonical(Antrag_auf_ZurueckstellungCS)
 * ^expansion.contains[=].code = #keine_Angabe 
 * ^expansion.contains[=].display = "keine Angabe"
-
