@@ -96,6 +96,9 @@ RuleSet: 2-af-untersuchungsverlauf
     * item[+] insert addItem(2.30, #choice, [[Gewünschte Sprache Studie]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_SpracheStudieVS)
+  * item[+] insert addItem(2.31, #choice, [[Vorsorgestatus]])
+   * insert addSource(#DE-BE)
+   * answerValueSet = Canonical(VorsorgestatusVS) 
 
 ValueSet: SEU_UB_SpracheStudieVS
 Id: SEU-UB-SpracheStudieVS
@@ -381,3 +384,23 @@ Description: "ValueSet, das verschiedene Status eines Vorgangs enthält."
 * ^expansion.contains[+].system = Canonical(SEU_UB_VorgangsstatusCS)
 * ^expansion.contains[=].code = #wiedereroeffnet
 * ^expansion.contains[=].display = "WIEDERÖFFNET: Es werden Ergebnisse im Vorgang nachgetragen."
+
+CodeSystem: VorsorgestatusCS
+Id: VorsorgestatusCS
+Title: "VorsorgestatusCS"
+Description: "VorsorgestatusCS"
+* #Heft_fehlt  "Heft fehlt"
+* #Heft_vorhanden "Heft vorhanden"
+
+ValueSet: VorsorgestatusVS
+Id: VorsorgestatusVS
+Title: "VorsorgestatusVS"
+Description: "VorsorgestatusVS"
+* include codes from system VorsorgestatusCS
+* ^expansion.timestamp = "2024-03-27T12:20:50+00:00"
+* ^expansion.contains[0].system = Canonical(VorsorgestatusCS)
+* ^expansion.contains[=].code = #Heft_fehlt  
+* ^expansion.contains[=].display = "Heft fehlt"
+* ^expansion.contains[0].system = Canonical(VorsorgestatusCS)
+* ^expansion.contains[=].code = #Heft_vorhanden  
+* ^expansion.contains[=].display = "Heft vorhanden"
