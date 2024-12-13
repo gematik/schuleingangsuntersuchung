@@ -174,7 +174,7 @@ RuleSet: 3-af-impfungen
     * insert addItemWithSource(3.27, #choice, [[HIB Impfung]], #DE-BW)
     * answerValueSet = Canonical(SEU_UB_0_4ImpfungenVS)
   * item[+] 
-    * insert addItemWithSource(3.27.1 #boolean, [[>= 6 Monate zwischen 2. und 3. Impfungen]], #DE-BE)
+    * insert addItemWithSource(3.27.1, #boolean, [[>= 6 Monate zwischen 2. und 3. Impfungen]], #DE-BE)
   * item[+]
     * insert addItemWithSource(3.28, #choice, [[Hepatitis-B Impfung]], #DE-BW)
     * answerValueSet = Canonical(SEU_UB_0_4ImpfungenVS)
@@ -183,8 +183,10 @@ RuleSet: 3-af-impfungen
   * item[+]
     * insert addItemWithSource(3.29, #choice, [[Poliomyelitis Impfung]], #DE-BW)
     * answerValueSet = Canonical(SEU_UB_0_4ImpfungenVS)
-  * item[+] insert addItemWithSource(3.29.1, #boolean, [[>= 6 Monate zwischen 2. und 3. Impfungen]], #DE-BE)
-	* item[+] insert addItemWithSource(3.29.2, #boolean, [[2 Dosen Virelon (R) erhalten]], #DE-BE)
+  * item[+] 
+    * insert addItemWithSource(3.29.1, #boolean, [[>= 6 Monate zwischen 2. und 3. Impfungen]], #DE-BE)
+	* item[+] 
+    * insert addItemWithSource(3.29.2, #boolean, [[2 Dosen Virelon (R) erhalten]], #DE-BE)
   * item[+]
     * insert addItemWithSource(3.30, #choice, [[Pneumokokken Impfung]], #DE-BW)
     * answerValueSet = Canonical(SEU_UB_0_4ImpfungenVS)

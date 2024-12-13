@@ -97,8 +97,8 @@ RuleSet: 2-af-untersuchungsverlauf
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_SpracheStudieVS)
   * item[+] insert addItem(2.31, #choice, [[Vorsorgestatus]])
-   * insert addSource(#DE-BE)
-   * answerValueSet = Canonical(VorsorgestatusVS) 
+    * insert addSource(#DE-BE)
+    * answerValueSet = Canonical(VorsorgestatusVS) 
 
 ValueSet: SEU_UB_SpracheStudieVS
 Id: SEU-UB-SpracheStudieVS

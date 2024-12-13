@@ -220,43 +220,43 @@ RuleSet: 8-af-schulaerztlicheuntersuchung
       * item[+]
         * insert addItemWithSource(8.80, #string, [[prosoz. Verhalten]], #DE-BE)
       * item[+]
-        * insert addItemWithSource(8.81 #string, [[Hyperaktivität]], #DE-BE)
-	  * item[+]
-        * insert addItemWithSource(8.82, #boolean, [[psychische Auffälligkeiten]], #DE-BE)
-    * item[+]
-        * insert addItemWithSource(8.83, #boolean, [[in Behandlung oder Diagnostik]], #DE-BE)
-    * item[+]
-        * insert addItemWithSource(8.84, #boolean, [[zur Diagnostik / Behandlung überwiesen]], #DE-BE)
-    * item[+] insert addGroup(8_3_8, [[Entwicklungsdiagnostik / S-ENS + SOPESS]])
+        * insert addItemWithSource(8.81, #string, [[Hyperaktivität]], #DE-BE)
       * item[+]
-        * insert addItemWithSource(8.85, #integer, [[Körperkoordination]], #DE-BE)
+          * insert addItemWithSource(8.82, #boolean, [[psychische Auffälligkeiten]], #DE-BE)
       * item[+]
-        * insert addItemWithSource(8.86, #integer, [[Visuomotorik]], #DE-BE)
+          * insert addItemWithSource(8.83, #boolean, [[in Behandlung oder Diagnostik]], #DE-BE)
       * item[+]
-        * insert addItemWithSource(8.87, #integer, [[visuelle Wahrnehmung]], #DE-BE)
-      * item[+]
-        * insert addItemWithSource(8.88, #integer, [[Pseudowörter]], #DE-BE)
-      * item[+]
-        * insert addItemWithSource(8.89, #integer, [[Wörter ergänzen]], #DE-BE)
-      * item[+]
-        * insert addItemWithSource(8.90, #integer, [[Sätze nachsprechen]], #DE-BE)
-      * item[+]
-        * insert addItemWithSource(8.91, #integer, [[Pluralbildung]], #DE-BE)
-      * item[+]
-        * insert addItemWithSource(8.92, #integer, [[Artikulation]], #DE-BE)
-      * item[+]
-        * insert addItemWithSource(8.93, #integer, [[Zählen]], #DE-BE)
-      * item[+]
-        * insert addItemWithSource(8.94, #integer, [[Mengenvorwissen]], #DE-BE)
+          * insert addItemWithSource(8.84, #boolean, [[zur Diagnostik / Behandlung überwiesen]], #DE-BE)
+      * item[+] insert addGroup(8_3_8, [[Entwicklungsdiagnostik / S-ENS + SOPESS]])
+        * item[+]
+          * insert addItemWithSource(8.85, #integer, [[Körperkoordination]], #DE-BE)
+        * item[+]
+          * insert addItemWithSource(8.86, #integer, [[Visuomotorik]], #DE-BE)
+        * item[+]
+          * insert addItemWithSource(8.87, #integer, [[visuelle Wahrnehmung]], #DE-BE)
+        * item[+]
+          * insert addItemWithSource(8.88, #integer, [[Pseudowörter]], #DE-BE)
+        * item[+]
+          * insert addItemWithSource(8.89, #integer, [[Wörter ergänzen]], #DE-BE)
+        * item[+]
+          * insert addItemWithSource(8.90, #integer, [[Sätze nachsprechen]], #DE-BE)
+        * item[+]
+          * insert addItemWithSource(8.91, #integer, [[Pluralbildung]], #DE-BE)
+        * item[+]
+          * insert addItemWithSource(8.92, #integer, [[Artikulation]], #DE-BE)
+        * item[+]
+          * insert addItemWithSource(8.93, #integer, [[Zählen]], #DE-BE)
+        * item[+]
+          * insert addItemWithSource(8.94, #integer, [[Mengenvorwissen]], #DE-BE)
     * item[+] insert addItemWithSource(8.95, #choice, [[schulische Foerderung empfohlen]], #DE-BE)
-      * answerValueSet = Canonical(schulische_Foerderung_empfohlenVS)
+      * answerValueSet = Canonical(SchulischeFoerderungEmpfohlenVS)
       * repeats = true
     * item[+] insert addItemWithSource(8.96, #choice, [[sonderpaedagogischer Foerderbedarf]], #DE-BE)
-      * answerValueSet = Canonical(sonderpaedagogischer_FoerderbedarfVS)
+      * answerValueSet = Canonical(SonderpaedagogischerFoerderbedarfVS)
       * repeats = true
     * item[+] insert addItem(8.97, #choice, [[Antrag auf Zurueckstellung]])
       * insert addSource(#DE-BE)
-      * answerValueSet = Canonical(Antrag_auf_ZurueckstellungVS)
+      * answerValueSet = Canonical(AntragAufZurueckstellungVS)
     * item[+] 
       * insert addItemWithSource(8.98, #boolean, [[Einschulung von KJGD befürwortet]], #DE-BE)
 	  * item[+] 
@@ -396,10 +396,10 @@ Description: "ValueSet, das verschiedene Einschulungstypen enthält."
 * ^expansion.contains[=].code = #eingangsstufe
 * ^expansion.contains[=].display = "Eingangsstufe"
 
-CodeSystem: schulische_Foerderung_empfohlenCS
-Id: schulische_Foerderung_empfohlenCS
-Title: "schulische_Foerderung_empfohlenCS"
-Description: "schulische_Foerderung_empfohlenCS"
+CodeSystem: SchulischeFoerderungEmpfohlenCS
+Id: SchulischeFoerderungEmpfohlenCS
+Title: "SchulischeFoerderungEmpfohlenCS"
+Description: "SchulischeFoerderungEmpfohlenCS"
 * #keine_Foerderung_notwendig  "keine Förderung notwendig"
 * #Sprache "Sprache"
 * #Visuomotorik "Visuomotorik"
@@ -408,38 +408,38 @@ Description: "schulische_Foerderung_empfohlenCS"
 * #emotionale_soziale_Entwicklung "emotionale_soziale_Entwicklung"
 * #Lernen "Lernen"
 
-ValueSet: schulische_Foerderung_empfohlenVS
-Id: schulische_Foerderung_empfohlenVS
-Title: "schulische_Foerderung_empfohlenVS"
-Description: "schulische_Foerderung_empfohlenVS"
-* include codes from system schulische_Foerderung_empfohlenCS
+ValueSet: SchulischeFoerderungEmpfohlenVS
+Id: SchulischeFoerderungEmpfohlenVS
+Title: "SchulischeFoerderungEmpfohlenVS"
+Description: "SchulischeFoerderungEmpfohlenVS"
+* include codes from system SchulischeFoerderungEmpfohlenCS
 * ^expansion.timestamp = "2024-03-27T12:20:50+00:00"
-* ^expansion.contains[0].system = Canonical(schulische_Foerderung_empfohlenCS)
+* ^expansion.contains[0].system = Canonical(SchulischeFoerderungEmpfohlenCS)
 * ^expansion.contains[=].code = #keine_Foerderung_notwendig
 * ^expansion.contains[=].display = "keine Förderung notwendig"
-* ^expansion.contains[0].system = Canonical(schulische_Foerderung_empfohlenCS)
+* ^expansion.contains[0].system = Canonical(SchulischeFoerderungEmpfohlenCS)
 * ^expansion.contains[=].code = #Sprache 
 * ^expansion.contains[=].display = "Sprache"
-* ^expansion.contains[0].system = Canonical(schulische_Foerderung_empfohlenCS)
+* ^expansion.contains[0].system = Canonical(SchulischeFoerderungEmpfohlenCS)
 * ^expansion.contains[=].code = #Visuomotorik 
 * ^expansion.contains[=].display = "Visuomotorik"
-* ^expansion.contains[0].system = Canonical(schulische_Foerderung_empfohlenCS)
+* ^expansion.contains[0].system = Canonical(SchulischeFoerderungEmpfohlenCS)
 * ^expansion.contains[=].code = #visuelle_Wahrnehmung 
 * ^expansion.contains[=].display = "visuelle_Wahrnehmung"
-* ^expansion.contains[0].system = Canonical(schulische_Foerderung_empfohlenCS)
+* ^expansion.contains[0].system = Canonical(SchulischeFoerderungEmpfohlenCS)
 * ^expansion.contains[=].code = #koerperliche_und_motorische_Entwicklung 
 * ^expansion.contains[=].display = "körperliche und motorische Entwicklung"
-* ^expansion.contains[0].system = Canonical(schulische_Foerderung_empfohlenCS)
+* ^expansion.contains[0].system = Canonical(SchulischeFoerderungEmpfohlenCS)
 * ^expansion.contains[=].code = #emotionale_soziale_Entwicklung
 * ^expansion.contains[=].display = "emotionale_soziale_Entwicklung"
-* ^expansion.contains[0].system = Canonical(schulische_Foerderung_empfohlenCS)
+* ^expansion.contains[0].system = Canonical(SchulischeFoerderungEmpfohlenCS)
 * ^expansion.contains[=].code = #Lernen 
 * ^expansion.contains[=].display = "Lernen"
 
-CodeSystem: sonderpaedagogischer_FoerderbedarfCS
-Id: sonderpaedagogischer_FoerderbedarfCS
-Title: "sonderpaedagogischer_FoerderbedarfnCS"
-Description: "sonderpaedagogischer_FoerderbedarfCS"
+CodeSystem: SonderpaedagogischerFoerderbedarfCS
+Id: SonderpaedagogischerFoerderbedarfCS
+Title: "SonderpaedagogischerFoerderbedarfnCS"
+Description: "SonderpaedagogischerFoerderbedarfCS"
 * #kein_Antrag_empfohlen  "kein Antrag empfohlen"
 * #Sehen "Sehen"
 * #Hoeren "Hören"
@@ -450,64 +450,64 @@ Description: "sonderpaedagogischer_FoerderbedarfCS"
 * #emotional_soziale_Entwicklung "emotional_soziale_Entwicklung"
 * #Lernen "Lernen"
 
-ValueSet: sonderpaedagogischer_FoerderbedarfVS
-Id: sonderpaedagogischer_FoerderbedarfVS
-Title: "sonderpaedagogischer_FoerderbedarfVS"
-Description: "sonderpaedagogischer_FoerderbedarfVS"
-* include codes from system sonderpaedagogischer_FoerderbedarfCS
+ValueSet: SonderpaedagogischerFoerderbedarfVS
+Id: SonderpaedagogischerFoerderbedarfVS
+Title: "SonderpaedagogischerFoerderbedarfVS"
+Description: "SonderpaedagogischerFoerderbedarfVS"
+* include codes from system SonderpaedagogischerFoerderbedarfCS
 * ^expansion.timestamp = "2024-03-27T12:20:50+00:00"
-* ^expansion.contains[0].system = Canonical(sonderpaedagogischer_FoerderbedarfCS)
+* ^expansion.contains[0].system = Canonical(SonderpaedagogischerFoerderbedarfCS)
 * ^expansion.contains[=].code = #kein_Antrag_empfohlen 
 * ^expansion.contains[=].display = "kein Antrag empfohlen"
-* ^expansion.contains[0].system = Canonical(sonderpaedagogischer_FoerderbedarfCS)
+* ^expansion.contains[0].system = Canonical(SonderpaedagogischerFoerderbedarfCS)
 * ^expansion.contains[=].code = #Sehen 
 * ^expansion.contains[=].display = "Sehen"
-* ^expansion.contains[0].system = Canonical(sonderpaedagogischer_FoerderbedarfCS)
+* ^expansion.contains[0].system = Canonical(SonderpaedagogischerFoerderbedarfCS)
 * ^expansion.contains[=].code = #Hoeren 
 * ^expansion.contains[=].display = "Hören"
-* ^expansion.contains[0].system = Canonical(sonderpaedagogischer_FoerderbedarfCS)
+* ^expansion.contains[0].system = Canonical(SonderpaedagogischerFoerderbedarfCS)
 * ^expansion.contains[=].code = #Sprache
 * ^expansion.contains[=].display =  "Sprache"
-* ^expansion.contains[0].system = Canonical(sonderpaedagogischer_FoerderbedarfCS)
+* ^expansion.contains[0].system = Canonical(SonderpaedagogischerFoerderbedarfCS)
 * ^expansion.contains[=].code = #koerperliche_und_motorische_Entwicklung 
 * ^expansion.contains[=].display = "körperliche und motorische Entwicklung"
-* ^expansion.contains[0].system = Canonical(sonderpaedagogischer_FoerderbedarfCS)
+* ^expansion.contains[0].system = Canonical(SonderpaedagogischerFoerderbedarfCS)
 * ^expansion.contains[=].code = #geistige_Entwicklung 
 * ^expansion.contains[=].display = "geistige Entwicklung"
-* ^expansion.contains[0].system = Canonical(sonderpaedagogischer_FoerderbedarfCS)
+* ^expansion.contains[0].system = Canonical(SonderpaedagogischerFoerderbedarfCS)
 * ^expansion.contains[=].code = #autistische_Behinderung 
 * ^expansion.contains[=].display = "autistische Behinderung"
-* ^expansion.contains[0].system = Canonical(sonderpaedagogischer_FoerderbedarfCS)
+* ^expansion.contains[0].system = Canonical(SonderpaedagogischerFoerderbedarfCS)
 * ^expansion.contains[=].code = #emotional_soziale_Entwicklung 
 * ^expansion.contains[=].display = "emotional_soziale_Entwicklung"
-* ^expansion.contains[0].system = Canonical(sonderpaedagogischer_FoerderbedarfCS)
+* ^expansion.contains[0].system = Canonical(SonderpaedagogischerFoerderbedarfCS)
 * ^expansion.contains[=].code = #Lernen 
 * ^expansion.contains[=].display = "Lernen"
 
-CodeSystem: Antrag_auf_ZurueckstellungCS
-Id: Antrag_auf_ZurueckstellungCS
-Title: "Antrag_auf_ZurückstellungCS"
-Description: "Antrag_auf_ZurückstellungCS"
+CodeSystem: AntragAufZurueckstellungCS
+Id: AntragAufZurueckstellungCS
+Title: "AntragAufZurueckstellungCS"
+Description: "AntragAufZurueckstellungCS"
 * #nein  "nein"
 * #ja "ja"
 * #wird_erwogen "wird erwogen"
 * #keine_Angabe "keine Angabe"
 
-ValueSet: Antrag_auf_ZurueckstellungVS
-Id: Antrag_auf_ZurueckstellungVS
-Title: "Antrag_auf_ZurueckstellungVS"
-Description: "Antrag_auf_ZurückstellungVS"
-* include codes from system Antrag_auf_ZurueckstellungCS
+ValueSet: AntragAufZurueckstellungVS
+Id: AntragAufZurueckstellungVS
+Title: "AntragAufZurueckstellungVS"
+Description: "AntragAufZurueckstellungVS"
+* include codes from system AntragAufZurueckstellungCS
 * ^expansion.timestamp = "2024-03-27T12:20:50+00:00"
-* ^expansion.contains[0].system = Canonical(Antrag_auf_ZurueckstellungCS)
+* ^expansion.contains[0].system = Canonical(AntragAufZurueckstellungCS)
 * ^expansion.contains[=].code = #nein  
 * ^expansion.contains[=].display = "nein"
-* ^expansion.contains[0].system = Canonical(Antrag_auf_ZurueckstellungCS)
+* ^expansion.contains[0].system = Canonical(AntragAufZurueckstellungCS)
 * ^expansion.contains[=].code = #ja 
 * ^expansion.contains[=].display = "ja"
-* ^expansion.contains[0].system = Canonical(Antrag_auf_ZurueckstellungCS)
+* ^expansion.contains[0].system = Canonical(AntragAufZurueckstellungCS)
 * ^expansion.contains[=].code = #wird_erwogen 
 * ^expansion.contains[=].display = "wird erwogen" 
-* ^expansion.contains[0].system = Canonical(Antrag_auf_ZurueckstellungCS)
+* ^expansion.contains[0].system = Canonical(AntragAufZurueckstellungCS)
 * ^expansion.contains[=].code = #keine_Angabe 
 * ^expansion.contains[=].display = "keine Angabe"

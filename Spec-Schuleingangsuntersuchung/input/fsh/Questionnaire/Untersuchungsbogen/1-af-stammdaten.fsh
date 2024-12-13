@@ -13,7 +13,7 @@ RuleSet: 1-af-stammdaten
     * insert addSource(#DE-BY)
     * item[+] insert helpItem(1.4h, Die ersten 4 Ziffern der Postleitzahl)
       * insert addSource(#DE-BY)
-  * item[+] insert addItem(1.4a, #integer, [[Wohnort des Kindes (LOR)]], 8)
+  * item[+] insert addItem(1.4a, #integer, [[Wohnort des Kindes (LOR)]])
     * insert addSource(#DE-BE)
   * item[+] insert addItemMl(1.5, #integer, Sprengel/Kiganr., 4)
     * insert addSource(#DE-BY)
@@ -70,11 +70,11 @@ RuleSet: 1-af-stammdaten
     * answerValueSet = Canonical(SEU_UB_VerwandtePersonDeutschkenntnisVS)
   * item[+] insert addItem(1.23, #date, [[Untersuchungsmonat und -jahr]]) 
     * insert addSource(#DE-BE)
-  * item[+] insert addItem(1.24, #integer, Nummer der Schule [[(Schulnr. von SenBJF)]])  
+  * item[+] insert addItem(1.24, #integer, [[Nummer der Schule (Schulnr. von SenBJF)]])  
     * insert addSource(#DE-BE)
   * item[+] insert addItem(1.25, #choice, [[Anmeldung zur Untersuchung]])
-     * insert addSource(#DE-BE)
-     * answerValueSet = Canonical(AnmeldungZurUntersuchungVS) 	
+    * insert addSource(#DE-BE)
+    * answerValueSet = Canonical(AnmeldungZurUntersuchungVS) 	
   * item[+] insert addItemWithSource(1.26, #boolean, [[Kind ist in Deutschland geboren?]], #DE-BE)   
     * insert enableWhenBoolean(1.26, =, false)
     * insert addItemWithSource(1.26a, #date, [[dann bitte letzte Zuwanderung nach Deutschland Zeitpunkt (Monat/Jahr)]], #DE-BE)	
@@ -206,7 +206,7 @@ Description: "MigrationshintergrundCS"
 * #kein_MH "kein MH"
 * #einseitiger_MH "einseitiger MH"
 * #beidseitiger_MH "beidseitiger MH"
-* #keine_ Angabe "keine Angabe"
+* #keine_Angabe "keine Angabe"
 
 ValueSet: MigrationshintergrundVS
 Id: MigrationshintergrundVS

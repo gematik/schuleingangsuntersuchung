@@ -97,7 +97,7 @@ RuleSet: 7-af-fdsscreening
       * answerValueSet = Canonical(SEU_UB_AntwortAuffaelligkeitBeurteilbarVS)
 	  * item[+] insert addItem(7.11.a, #choice, [[Visus Sehtafel links]])
       * insert addSource(#DE-BE)
-      * answerValueSet = Canonical(VisusSehtafelLinksVS) 
+      * answerValueSet = Canonical(VisusSehtafelLinksVS)
     * item[+] insert addItem(7.11.c, #choice, [[Vorschaltlinse rechts]])
       * insert addSource(#DE-BE)
       * answerValueSet = Canonical(VorschaltlinseVS) 
@@ -2438,7 +2438,7 @@ Description: "VisusVS"
 * ^expansion.contains[=].display = "k.A./nicht möglich"
 
 
-odeSystem: VisusSehtestgeraetRechtsCS
+CodeSystem: VisusSehtestgeraetRechtsCS
 Id: VisusSehtestgeraetRechtsCS
 Title: "VisusSehtestgeraetRechtsCS"
 Description: "VisusSehtestgeraetRechtsCS"
@@ -2505,7 +2505,7 @@ Title: "VisusSehtestgeraetLinksVS"
 Description: "VisusSehtestgeraetLinksVS"
 * include codes from system VisusSehtestgeraetLinksCS
 * ^expansion.timestamp = "2024-03-27T12:20:50+00:00"
-* ^expansion.contains[0].system = Canonical()
+* ^expansion.contains[0].system = Canonical(VisusSehtestgeraetLinksCS)
 * ^expansion.contains[=].code = #blind    
 * ^expansion.contains[=].display = "blind Visus = 0"
 * ^expansion.contains[0].system = Canonical(VisusSehtestgeraetLinksCS)
@@ -2681,7 +2681,7 @@ Id: Deutschkenntnisse_KindCS
 Title: "Deutschkenntnisse_KindCS"
 Description: "Deutschkenntnisse_KindCS"
 * #nicht  "nicht"
-* #einzelne Worte "einzelne Worte"
+* #einzelne_Worte "einzelne Worte"
 * #fluessig_mit_erheblichen_Fehlern "flüssig mit erheblichen Fehlern"
 * #sehr_gut "sehr gut"
 * #keine_Angabe "keine Angabe"
@@ -2697,7 +2697,7 @@ Description: "Deutschkenntnisse_KindVS"
 * ^expansion.contains[=].code = #nicht  
 * ^expansion.contains[=].display = "nicht" 
 * ^expansion.contains[0].system = Canonical(Deutschkenntnisse_KindCS)
-* ^expansion.contains[=].code = #einzelne Worte 
+* ^expansion.contains[=].code = #einzelne_Worte 
 * ^expansion.contains[=].display = "einzelne Worte"
 * ^expansion.contains[0].system = Canonical(Deutschkenntnisse_KindCS)
 * ^expansion.contains[=].code = #fluessig_mit_erheblichen_Fehlern 
@@ -2714,8 +2714,8 @@ CodeSystem: Deutschkenntnisse_MutterCS
 Id: Deutschkenntnisse_MutterCS
 Title: "Deutschkenntnisse_MutterCS"
 Description: "Deutschkenntnisse_MutterCS"
-* #nicht  "nicht"
-* #einzelne Worte "einzelne Worte"
+* #nicht "nicht"
+* #einzelne_Worte "einzelne Worte"
 * #fluessig_mit_erheblichen_Fehlern "flüssig mit erheblichen Fehlern"
 * #sehr_gut "sehr gut"
 * #hat_nicht_begleitet "hat nicht begleitet"
@@ -2732,7 +2732,7 @@ Description: "Deutschkenntnisse_MutterVS"
 * ^expansion.contains[=].code = #nicht  
 * ^expansion.contains[=].display = "nicht" 
 * ^expansion.contains[0].system = Canonical(Deutschkenntnisse_MutterCS)
-* ^expansion.contains[=].code = #einzelne Worte 
+* ^expansion.contains[=].code = #einzelne_Worte 
 * ^expansion.contains[=].display = "einzelne Worte"
 * ^expansion.contains[0].system = Canonical(Deutschkenntnisse_MutterCS)
 * ^expansion.contains[=].code = #fluessig_mit_erheblichen_Fehlern 
@@ -2752,7 +2752,7 @@ Id: Deutschkenntnisse_VaterCS
 Title: "Deutschkenntnisse_VaterCS"
 Description: "Deutschkenntnisse_VaterCS"
 * #nicht  "nicht"
-* #einzelne Worte "einzelne Worte"
+* #einzelne_Worte "einzelne Worte"
 * #fluessig_mit_erheblichen_Fehlern "flüssig mit erheblichen Fehlern"
 * #sehr_gut "sehr gut"
 * #hat_nicht_begleitet "hat nicht begleitet"
@@ -2768,7 +2768,7 @@ Description: "Deutschkenntnisse_VaterVS"
 * ^expansion.contains[=].code = #nicht  
 * ^expansion.contains[=].display = "nicht" 
 * ^expansion.contains[0].system = Canonical(Deutschkenntnisse_VaterCS)
-* ^expansion.contains[=].code = #einzelne Worte 
+* ^expansion.contains[=].code = #einzelne_Worte 
 * ^expansion.contains[=].display = "einzelne Worte"
 * ^expansion.contains[0].system = Canonical(Deutschkenntnisse_VaterCS)
 * ^expansion.contains[=].code = #fluessig_mit_erheblichen_Fehlern 

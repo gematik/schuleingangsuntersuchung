@@ -86,8 +86,8 @@ RuleSet: 5-af-anamnese
         * insert addSource(#DE-BE)
         * answerValueSet = Canonical(TaeglicherKonsumElektronischerMedienVS) 
     * item[+] insert addItem(5.23.f, #choice, [[eigenes elektronisches Gerät des Kindes]])
-        * insert addSource(#DE-BE)
-        * answerValueSet = Canonical(ElektronischesGeraetKindVS) 
+      * insert addSource(#DE-BE)
+      * answerValueSet = Canonical(ElektronischesGeraetKindVS) 
     * item[+] insert addItem(5.23.g, #choice, [[Zaehneputzen in der Kita]])
       * insert addSource(#DE-BE)
       * answerValueSet = Canonical(Zaehneputzen_in_der_KitaVS) 
@@ -260,7 +260,7 @@ RuleSet: 5-af-anamnese
     * item[+] insert addItem(5.63.a, #choice, [[berufliche Ausbildung (ggf. die höchste angeben) - Mutter]])
       * insert addSource(#DE-BE)
       * answerValueSet = Canonical(BeruflicheAusbildungElternVS) 
-	  * item[+] insert addItem(63.b, #choice, [[berufliche Ausbildung (ggf. die höchste angeben) - Vater]])
+	  * item[+] insert addItem(5.63.b, #choice, [[berufliche Ausbildung (ggf. die höchste angeben) - Vater]])
       * insert addSource(#DE-BE)
       * answerValueSet = Canonical(BeruflicheAusbildungElternVS) 
     * item[+] insert addItem(5.64, #choice, [[Erwerbstätigkeit Elternteil 1]])
@@ -1963,7 +1963,7 @@ Description: "Kind_lebt_beiCS"
 * #den_Eltern "den Eltern"
 * #allein_erziehendem_Elternteil "allein erziehendem Elternteil"
 * #anderswo "anderswo"
-* #keine_ Angabe "keine Angabe"
+* #keine_Angabe "keine Angabe"
 
 ValueSet: Kind_lebt_beiVS
 Id: Kind_lebt_beiVS
@@ -2025,7 +2025,7 @@ Description: "TaeglicherKonsumElektronischerMedienCS"
 * #max._2_Stunden "max. 2 Stunden"
 * #max._3_Stunden "max. 3 Stunden"
 * #ueber_3_Stunden  "über 3 Stunden"
-* #keine_ Angabe "keine Angabe"
+* #keine_Angabe "keine Angabe"
 
 ValueSet: TaeglicherKonsumElektronischerMedienVS
 Id: TaeglicherKonsumElektronischerMedienVS
@@ -2059,7 +2059,7 @@ Description: "ElektronischesGeraetKindCS"
 * #TV  "TV"
 * #andere "andere"
 * #kein_Geraet "kein Gerät"
-* #keine_ Angabe "keine Angabe"
+* #keine_Angabe "keine Angabe"
 
 ValueSet: ElektronischesGeraetKindVS
 Id: ElektronischesGeraetKindVS
@@ -2074,7 +2074,7 @@ Description: "ElektronischesGeraetKindVS"
 * ^expansion.contains[=].code = #andere 
 * ^expansion.contains[=].display = "andere"
 * ^expansion.contains[0].system = Canonical(ElektronischesGeraetKindCS)
-* ^expansion.contains[=].code = kein_Geraet "kein Geraet"
+* ^expansion.contains[=].code = #kein_Geraet
 * ^expansion.contains[=].display = "kein Gerät"
 * ^expansion.contains[0].system = Canonical(ElektronischesGeraetKindCS)
 * ^expansion.contains[=].code = #keine_Angabe 
@@ -2095,15 +2095,15 @@ Title: "Zähneputzen_in_der_KitaVS"
 Description: "Zähneputzen_in_der_KitaVS"
 * include codes from system Zaehneputzen_in_der_KitaCS
 * ^expansion.timestamp = "2024-03-27T12:20:50+00:00"
-* ^expansion.contains[0].system = Canonical(Zähneputzen_in_der_KitaCS)
+* ^expansion.contains[0].system = Canonical(Zaehneputzen_in_der_KitaCS)
 * ^expansion.contains[=].code = #ja  
 * ^expansion.contains[=].display = "ja" 
-* ^expansion.contains[0].system = Canonical(Zähneputzen_in_der_KitaCS)
+* ^expansion.contains[0].system = Canonical(Zaehneputzen_in_der_KitaCS)
 * ^expansion.contains[=].code = #nein
 * ^expansion.contains[=].display = "nein"
-* ^expansion.contains[0].system = Canonical(Zähneputzen_in_der_KitaCS)
+* ^expansion.contains[0].system = Canonical(Zaehneputzen_in_der_KitaCS)
 * ^expansion.contains[=].code = #nicht_sicher 
 * ^expansion.contains[=].display = "nicht sicher" 
-* ^expansion.contains[0].system = Canonical(Zähneputzen_in_der_KitaCS)
+* ^expansion.contains[0].system = Canonical(Zaehneputzen_in_der_KitaCS)
 * ^expansion.contains[=].code = #keine_Angabe 
 * ^expansion.contains[=].display = "keine Angabe"
