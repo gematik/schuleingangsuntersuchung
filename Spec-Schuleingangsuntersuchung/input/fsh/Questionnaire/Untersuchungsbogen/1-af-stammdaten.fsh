@@ -78,28 +78,31 @@ RuleSet: 1-af-stammdaten
   * item[+] insert addItemWithSource(1.26, #boolean, [[Kind ist in Deutschland geboren?]], #DE-BE)   
     * insert enableWhenBoolean(1.26, =, false)
     * insert addItemWithSource(1.26a, #date, [[dann bitte letzte Zuwanderung nach Deutschland Zeitpunkt (Monat/Jahr)]], #DE-BE)	
-  * item[+] insert addGroup(1.27, Staatsangehörigkeit der Mutter)
+  * item[+] insert addItem(1.27, #choice, [[Geburtsland der Mutter]])
     * insert addSource(#DE-BE)
-      * item[+] insert addItem(1.27.a, #choice, [[Erste]])
+    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
+  * item[+] insert addGroup(1.28, Staatsangehörigkeit der Mutter)
+    * insert addSource(#DE-BE)
+      * item[+] insert addItem(1.28.a, #choice, [[Erste]])
         * insert addSource(#DE-BE)
         * answerValueSet = Canonical(alleStaatsangehoerigkeitenVS) // TO DO alleStaatsangehoerigkeitenVS muss mit nachfolgenden Auswahlmöglichkeiten erstellt werden
-      * item[+] insert addItem(1.27b, #choice, [[weitere]])
+      * item[+] insert addItem(1.28b, #choice, [[weitere]])
         * insert addSource(#DE-BE)
         * answerValueSet = Canonical(alleStaatsangehoerigkeitenVS) // TO DO alleStaatsangehoerigkeitenVS muss mit nachfolgenden Auswahlmöglichkeiten erstellt werden  
-  * item[+] insert addItem(1.28, #choice, [[Geburtsland des Vaters]])
+  * item[+] insert addItem(1.29, #choice, [[Geburtsland des Vaters]])
     * insert addSource(#DE-BE)
-    * answerValueSet = Canonical(alle LaenderVS) // TO DO: Canonical(alle LaenderVS) bitte bestehndes VS einpflegen
-  * item[+] insert addGroup(1.29, Staatsangehörigkeit des Vaters)
+    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
+  * item[+] insert addGroup(1.30, Staatsangehörigkeit des Vaters)
     * insert addSource(#DE-BE)
-      * item[+] insert addItem(1.29.a, #choice, [[erste]])
-      * insert addSource(#DE-BE)
-      * answerValueSet = Canonical(alleStaatsangehörigkeitenVS) // TO DO alleStaatsangehörigkeitenVS muss mit nachfolgenden Auswahlmöglichkeiten erstellt werden
-	* item[+] insert addItem(1.29.b, #choice, [[Weitere]])
-      * insert addSource(#DE-BE)
-      * answerValueSet = Canonical(alleStaatsangehörigkeitenVS) // TO DO alleStaatsangehörigkeitenVS muss mit nachfolgenden Auswahlmöglichkeiten erstellt werden
-  * item[+] insert addItem(1.30, #choice, [[Migrationshintergrund des Kindes]])
-      * insert addSource(#DE-BE)
-      * answerValueSet = Canonical(MigrationshintergrundVS)
+      * item[+] insert addItem(1.30.a, #choice, [[Erste]])
+        * insert addSource(#DE-BE)
+        * answerValueSet = Canonical(alleStaatsangehörigkeitenVS) // TO DO alleStaatsangehörigkeitenVS muss mit nachfolgenden Auswahlmöglichkeiten erstellt werden
+  * item[+] insert addItem(1.30.b, #choice, [[Weitere]])
+    * insert addSource(#DE-BE)
+    * answerValueSet = Canonical(alleStaatsangehörigkeitenVS) // TO DO alleStaatsangehörigkeitenVS muss mit nachfolgenden Auswahlmöglichkeiten erstellt werden
+  * item[+] insert addItem(1.31, #choice, [[Migrationshintergrund des Kindes]])
+    * insert addSource(#DE-BE)
+    * answerValueSet = Canonical(MigrationshintergrundVS)
 
 CodeSystem: SEU_UB_RegionArtCS
 Id: SEU-UB-RegionArtCS

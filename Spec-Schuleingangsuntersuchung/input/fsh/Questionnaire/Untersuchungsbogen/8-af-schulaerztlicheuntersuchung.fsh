@@ -222,11 +222,11 @@ RuleSet: 8-af-schulaerztlicheuntersuchung
       * item[+]
         * insert addItemWithSource(8.81, #string, [[Hyperaktivität]], #DE-BE)
       * item[+]
-          * insert addItemWithSource(8.82, #boolean, [[psychische Auffälligkeiten]], #DE-BE)
+        * insert addItemWithSource(8.82, #boolean, [[psychische Auffälligkeiten]], #DE-BE)
       * item[+]
-          * insert addItemWithSource(8.83, #boolean, [[in Behandlung oder Diagnostik]], #DE-BE)
+        * insert addItemWithSource(8.83, #boolean, [[in Behandlung oder Diagnostik]], #DE-BE)
       * item[+]
-          * insert addItemWithSource(8.84, #boolean, [[zur Diagnostik / Behandlung überwiesen]], #DE-BE)
+        * insert addItemWithSource(8.84, #boolean, [[zur Diagnostik / Behandlung überwiesen]], #DE-BE)
       * item[+] insert addGroup(8_3_8, [[Entwicklungsdiagnostik / S-ENS + SOPESS]])
         * item[+]
           * insert addItemWithSource(8.85, #integer, [[Körperkoordination]], #DE-BE)
@@ -257,14 +257,14 @@ RuleSet: 8-af-schulaerztlicheuntersuchung
     * item[+] insert addItem(8.97, #choice, [[Antrag auf Zurueckstellung]])
       * insert addSource(#DE-BE)
       * answerValueSet = Canonical(AntragAufZurueckstellungVS)
-    * item[+] 
-      * insert addItemWithSource(8.98, #boolean, [[Einschulung von KJGD befürwortet]], #DE-BE)
-	  * item[+] 
-      * insert addItemWithSource(8.99, #boolean, [[ggf. 2. ESU erforderlich]], #DE-BE)
-	  * item[+]
-      * insert addItemWithSource(9.100, #boolean, [[Zurückstellung v. Schulaufsicht erfolgt]], #DE-BE)
-		* item[+]
-      * insert addItemWithSource(9.101, #boolean, [[Kind hat einen I-Status]], #DE-BE)
+* item[+] 
+  * insert addItemWithSource(8.98, #boolean, [[Einschulung von KJGD befürwortet]], #DE-BE)
+* item[+] 
+  * insert addItemWithSource(8.99, #boolean, [[ggf. 2. ESU erforderlich]], #DE-BE)
+* item[+]
+  * insert addItemWithSource(9.100, #boolean, [[Zurückstellung v. Schulaufsicht erfolgt]], #DE-BE)
+* item[+]
+  * insert addItemWithSource(9.101, #boolean, [[Kind hat einen I-Status]], #DE-BE)
 
 CodeSystem: SEU_UB_AntwortenSAeUntersuchungCS
 Id: SEU-UB-AntwortenSAeUntersuchungCS

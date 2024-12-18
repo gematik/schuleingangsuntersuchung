@@ -118,8 +118,8 @@ RuleSet: 3-af-impfungen
     * answerValueSet = Canonical(SEU_UB_0_4ImpfungenVS)
   * item[+] 
     * insert addItemWithSource(3.29.1, #boolean, [[>= 6 Monate zwischen 2. und 3. Impfungen]], #DE-BE)
-	* item[+] 
-    * insert addItemWithSource(3.29.2, #boolean, [[2 Dosen Virelon (R) erhalten]], #DE-BE)
+* item[+] 
+  * insert addItemWithSource(3.29.2, #boolean, [[2 Dosen Virelon (R) erhalten]], #DE-BE)
   * item[+]
     * insert addItemWithSource(3.30, #choice, [[Pneumokokken Impfung]], #DE-BW)
     * answerValueSet = Canonical(SEU_UB_0_4ImpfungenVS)
