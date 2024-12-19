@@ -1,0 +1,30 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "MigrationshintergrundCS",
+  "id": "MigrationshintergrundCS",
+  "title": "MigrationshintergrundCS",
+  "description": "MigrationshintergrundCS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/MigrationshintergrundCS",
+  "concept": [
+    {
+      "code": "kein_MH",
+      "display": "kein MH"
+    },
+    {
+      "code": "einseitiger_MH",
+      "display": "einseitiger MH"
+    },
+    {
+      "code": "beidseitiger_MH",
+      "display": "beidseitiger MH"
+    },
+    {
+      "code": "keine_Angabe",
+      "display": "keine Angabe"
+    }
+  ],
+  "count": 4
+}

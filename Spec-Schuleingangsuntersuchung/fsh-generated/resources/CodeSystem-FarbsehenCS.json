@@ -1,0 +1,26 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "FarbsehenCS",
+  "id": "FarbsehenCS",
+  "title": "FarbsehenCS",
+  "description": "FarbsehenCS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/FarbsehenCS",
+  "concept": [
+    {
+      "code": "unauffaellig",
+      "display": "unauffaellig"
+    },
+    {
+      "code": "auffaellig",
+      "display": "auffaellig"
+    },
+    {
+      "code": "keine_Angabe",
+      "display": "keine Angabe/verweigert"
+    }
+  ],
+  "count": 3
+}

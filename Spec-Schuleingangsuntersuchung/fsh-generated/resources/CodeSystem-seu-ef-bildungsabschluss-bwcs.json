@@ -1,0 +1,26 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU_EF_BildungsabschlussBWCS",
+  "id": "seu-ef-bildungsabschluss-bwcs",
+  "title": "SEU_EF_BildungsabschlussBWCS CodeSystem",
+  "description": "CodeSystem für die Angabe des Bildungsabschlusses.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-bildungsabschluss-bwcs",
+  "concept": [
+    {
+      "code": "weniger10Klasse",
+      "display": "Weniger als 10. Klasse"
+    },
+    {
+      "code": "10Klasse",
+      "display": "10. Klasse"
+    },
+    {
+      "code": "AbiturFH",
+      "display": "Abitur / FH-Reife"
+    }
+  ],
+  "count": 3
+}
