@@ -1,0 +1,1870 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SEU_UB_AuswaehlbareElternspracheVS",
+  "id": "SEU-UB-AuswaehlbareElternspracheVS",
+  "title": "SEU Auswählbare Elternsprache",
+  "description": "Dieses ValueSet enthält die auswählbaren Elternsprachen. Als CodeSystem wird 'urn:ietf:bcp:47' als Basis genommen.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-AuswaehlbareElternspracheVS",
+  "expansion": {
+    "timestamp": "2024-09-12T12:00:00+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "aar",
+        "display": "Afar"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "abk",
+        "display": "Abchasisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "ace",
+        "display": "Achinesisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "ach",
+        "display": "Acholi"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "ada",
+        "display": "Dangme"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "ady",
+        "display": "Adygeisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "afr",
+        "display": "Afrikaans"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "ain",
+        "display": "Ainu"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "aka",
+        "display": "Akan"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "alb",
+        "display": "Albanisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "ale",
+        "display": "Aleutisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "alt",
+        "display": "Südaltaisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "amh",
+        "display": "Amharisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "anp",
+        "display": "Angika"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "ara",
+        "display": "Arabisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "arg",
+        "display": "Aragonesisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "arm",
+        "display": "Armenisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "arn",
+        "display": "Mapudungun"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "arp",
+        "display": "Arapaho"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "arw",
+        "display": "Arawak"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "asm",
+        "display": "Assamesisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "ast",
+        "display": "Asturisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "ava",
+        "display": "Awarisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "awa",
+        "display": "Awadhi"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "aym",
+        "display": "Aymara"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "aze",
+        "display": "Aserbaidschanisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "bak",
+        "display": "Baschkirisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "bal",
+        "display": "Belutschisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "bam",
+        "display": "Bambara"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "ban",
+        "display": "Balinesisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "baq",
+        "display": "Baskisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "bas",
+        "display": "Bassa"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "bej",
+        "display": "Bedscha"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "bel",
+        "display": "Belarussisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "bem",
+        "display": "Bemba"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "ben",
+        "display": "Bengalisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "bho",
+        "display": "Bhojpuri"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "bik",
+        "display": "Bikolano"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "bin",
+        "display": "Edo"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "bis",
+        "display": "Bislama"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "bla",
+        "display": "Blackfoot"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "bos",
+        "display": "Bosnisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "bra",
+        "display": "Braj-Bhakha"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "bre",
+        "display": "Bretonisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "bua",
+        "display": "Burjatisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "bug",
+        "display": "Buginesisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "bul",
+        "display": "Bulgarisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "bur",
+        "display": "Birmanisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "byn",
+        "display": "Blin"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "cad",
+        "display": "Caddo"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "car",
+        "display": "Karib"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "cat",
+        "display": "Katalanisch, Valencianisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "ceb",
+        "display": "Cebuano"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "cha",
+        "display": "Chamorro"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "che",
+        "display": "Tschetschenisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "chi",
+        "display": "Chinesisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "chk",
+        "display": "Chuukesisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "chm",
+        "display": "Mari"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "chn",
+        "display": "Chinook Wawa"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "cho",
+        "display": "Choctaw"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "chp",
+        "display": "Chipewyan"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "chr",
+        "display": "Cherokee"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "chv",
+        "display": "Tschuwaschisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "chy",
+        "display": "Cheyenne"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "cnr",
+        "display": "Montenegrinisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "cor",
+        "display": "Kornisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "cos",
+        "display": "Korsisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "cre",
+        "display": "Cree"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "crh",
+        "display": "Krimtatarisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "csb",
+        "display": "Kaschubisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "cze",
+        "display": "Tschechisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "dak",
+        "display": "Dakota"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "dan",
+        "display": "Dänisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "dar",
+        "display": "Darginisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "del",
+        "display": "Delawarisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "den",
+        "display": "Slavey"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "dgr",
+        "display": "Dogrib"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "din",
+        "display": "Dinka"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "div",
+        "display": "Dhivehi"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "doi",
+        "display": "Dogri"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "dsb",
+        "display": "Niedersorbisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "dua",
+        "display": "Duala"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "dut",
+        "display": "Niederländisch, Belgisches Niederländisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "dyu",
+        "display": "Dioula"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "dzo",
+        "display": "Dzongkha"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "efi",
+        "display": "Efik"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "eka",
+        "display": "Ekajuk"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "eng",
+        "display": "Englisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "est",
+        "display": "Estnisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "ewe",
+        "display": "Ewe"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "ewo",
+        "display": "Ewondo"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "fan",
+        "display": "Fang"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "fao",
+        "display": "Färöisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "fat",
+        "display": "Fante"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "fij",
+        "display": "Fidschi"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "fil",
+        "display": "Filipino"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "fin",
+        "display": "Finnisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "fon",
+        "display": "Fon"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "fre",
+        "display": "Französisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "frr",
+        "display": "Nordfriesisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "frs",
+        "display": "Ostfriesisches Platt"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "fry",
+        "display": "Westfriesisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "ful",
+        "display": "Fulfulde"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "fur",
+        "display": "Furlanisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "gaa",
+        "display": "Ga"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "gay",
+        "display": "Gayo"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "gba",
+        "display": "Gbaya-Sprachen"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "geo",
+        "display": "Georgisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "ger",
+        "display": "Deutsch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "gil",
+        "display": "Kiribatisch, Gilbertesisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "gla",
+        "display": "Schottisch-gälisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "gle",
+        "display": "Irisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "glg",
+        "display": "Galicisch, Galegisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "glv",
+        "display": "Manx,"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "gon",
+        "display": "Gondi"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "gor",
+        "display": "Gorontalo"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "grb",
+        "display": "Grebo"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "gre",
+        "display": "Griechisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "grn",
+        "display": "Guaraní"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "gsw",
+        "display": "Schweizerdeutsch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "guj",
+        "display": "Gujarati"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "gwi",
+        "display": "Gwich'in (Sprache)"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "hai",
+        "display": "Haida"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "hat",
+        "display": "Haitianisch-Kreolisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "hau",
+        "display": "Hausa"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "haw",
+        "display": "Hawaiisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "heb",
+        "display": "Hebräisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "her",
+        "display": "Otjiherero"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "hil",
+        "display": "Hiligaynon"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "hin",
+        "display": "Hindi"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "hmn",
+        "display": "Hmong-Sprache"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "hmo",
+        "display": "Hiri Motu"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "hrv",
+        "display": "Kroatisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "hsb",
+        "display": "Obersorbisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "hun",
+        "display": "Ungarisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "hup",
+        "display": "Hoopa"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "iba",
+        "display": "Iban"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "ibo",
+        "display": "Igbo"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "ice",
+        "display": "Isländisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "iii",
+        "display": "Yi"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "iku",
+        "display": "Inuktitut"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "ilo",
+        "display": "Ilokano"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "ind",
+        "display": "Indonesisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "inh",
+        "display": "Inguschisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "ipk",
+        "display": "Inupiaq"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "ita",
+        "display": "Italienisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "jav",
+        "display": "Javanisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "jpn",
+        "display": "Japanisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "jpr",
+        "display": "Judäo-Persisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "jrb",
+        "display": "Judäo-Arabisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "kaa",
+        "display": "Karakalpakisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "kab",
+        "display": "Kabylisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "kac",
+        "display": "Jingpo"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "kal",
+        "display": "Grönländisch, Kalaallisut"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "kam",
+        "display": "Kikamba"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "kan",
+        "display": "Kannada"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "kas",
+        "display": "Kashmiri"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "kau",
+        "display": "Kanuri"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "kaz",
+        "display": "Kasachisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "kbd",
+        "display": "Kabardinisch, Ost-Tscherkessisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "kha",
+        "display": "Khasi"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "khm",
+        "display": "Khmer"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "kik",
+        "display": "Kikuyu"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "kin",
+        "display": "Kinyarwanda, Ruandisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "kir",
+        "display": "Kirgisisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "kmb",
+        "display": "Kimbundu"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "kok",
+        "display": "Konkani"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "kom",
+        "display": "Komi"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "kon",
+        "display": "Kikongo"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "kor",
+        "display": "Koreanisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "kos",
+        "display": "Kosraeanisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "kpe",
+        "display": "Kpelle"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "krc",
+        "display": "Karatschai-balkarisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "krl",
+        "display": "Karelisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "kru",
+        "display": "Kurukh"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "kua",
+        "display": "oshiKwanyama"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "kum",
+        "display": "Kumykisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "kur",
+        "display": "Kurdisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "kut",
+        "display": "Kutanaha"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "lad",
+        "display": "Judenspanisch, Ladino, Sephardisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "lah",
+        "display": "Lahnda, Westpanjabi"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "lam",
+        "display": "Lamba"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "lao",
+        "display": "Laotisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "lav",
+        "display": "Lettisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "lez",
+        "display": "Lesgisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "lim",
+        "display": "Limburgisch, Südniederfränkisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "lin",
+        "display": "Lingála"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "lit",
+        "display": "Litauisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "lol",
+        "display": "Lomongo"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "loz",
+        "display": "Lozi"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "ltz",
+        "display": "Luxemburgisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "lua",
+        "display": "Tschiluba"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "lub",
+        "display": "Kiluba"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "lug",
+        "display": "Luganda"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "lun",
+        "display": "Chilunda"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "luo",
+        "display": "Luo"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "lus",
+        "display": "Mizo, Lushai"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "mac",
+        "display": "Mazedonisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "mad",
+        "display": "Maduresisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "mag",
+        "display": "Magadhi"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "mah",
+        "display": "Marshallesisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "mai",
+        "display": "Maithili"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "mak",
+        "display": "Makassar"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "mal",
+        "display": "Malayalam"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "man",
+        "display": "Manding"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "mao",
+        "display": "Maori"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "mar",
+        "display": "Marathi"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "mas",
+        "display": "Maa, Kimaasai"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "may",
+        "display": "Malaiisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "mdf",
+        "display": "Mokschanisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "mdr",
+        "display": "Mandar"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "men",
+        "display": "Mende"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "mic",
+        "display": "Míkmawísimk"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "min",
+        "display": "Minangkabauisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "mlg",
+        "display": "Malagasy, Malagassi"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "mlt",
+        "display": "Maltesisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "mnc",
+        "display": "Mandschurisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "mni",
+        "display": "Meitei"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "moh",
+        "display": "Mohawk"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "mon",
+        "display": "Mongolisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "mos",
+        "display": "Mòoré"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "mwl",
+        "display": "Mirandés"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "mwr",
+        "display": "Marwari"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "myv",
+        "display": "Ersjanisch, Ersja-Mordwinisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "nap",
+        "display": "Neapolitanisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "nau",
+        "display": "Nauruisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "nav",
+        "display": "Navajo"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "nbl",
+        "display": "Süd-Ndebele"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "nde",
+        "display": "Nord-Ndebele"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "ndo",
+        "display": "Ndonga"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "nds",
+        "display": "Niederdeutsch, Plattdeutsch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "nep",
+        "display": "Nepali"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "new",
+        "display": "Newari"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "nia",
+        "display": "Nias"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "niu",
+        "display": "Niueanisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "nno",
+        "display": "Nynorsk"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "nob",
+        "display": "Bokmål"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "nog",
+        "display": "Nogaisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "nor",
+        "display": "Norwegisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "nqo",
+        "display": "N’Ko"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "nso",
+        "display": "Nord-Sotho"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "nya",
+        "display": "Chichewa"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "nym",
+        "display": "Nyamwesi"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "nyn",
+        "display": "Runyankole, Runyankore"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "nyo",
+        "display": "Runyoro"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "nzi",
+        "display": "Nzema"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "oci",
+        "display": "Okzitanisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "oji",
+        "display": "Ojibwe"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "ori",
+        "display": "Oriya"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "orm",
+        "display": "Oromo"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "osa",
+        "display": "Osage"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "oss",
+        "display": "Ossetisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "pag",
+        "display": "Pangasinensisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "pam",
+        "display": "Kapampangan"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "pan",
+        "display": "Panjabi, Pandschabi"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "pap",
+        "display": "Papiamentu"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "pau",
+        "display": "Palauisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "per",
+        "display": "Persisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "pol",
+        "display": "Polnisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "pon",
+        "display": "Pohnpeanisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "por",
+        "display": "Portugiesisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "pus",
+        "display": "Paschtunisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "que",
+        "display": "Quechua"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "raj",
+        "display": "Rajasthani"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "rap",
+        "display": "Rapanui"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "rar",
+        "display": "Rarotonganisch, Māori der Cookinseln"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "roh",
+        "display": "Bündnerromanisch, Romanisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "rom",
+        "display": "Romani, Romanes"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "rum",
+        "display": "Rumänisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "run",
+        "display": "Kirundi"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "rup",
+        "display": "Aromunisch, Makedoromanisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "rus",
+        "display": "Russisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "sad",
+        "display": "Sandawe"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "sag",
+        "display": "Sango"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "sah",
+        "display": "Jakutisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "sas",
+        "display": "Sasak"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "sat",
+        "display": "Santali"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "scn",
+        "display": "Sizilianisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "sco",
+        "display": "Scots"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "sel",
+        "display": "Selkupisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "shn",
+        "display": "Shan"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "sid",
+        "display": "Sidama"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "sin",
+        "display": "Singhalesisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "slo",
+        "display": "Slowakisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "slv",
+        "display": "Slowenisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "sma",
+        "display": "Südsamisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "sme",
+        "display": "Nordsamisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "smj",
+        "display": "Lulesamisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "smn",
+        "display": "Inarisamisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "smo",
+        "display": "Samoanisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "sms",
+        "display": "Skoltsamisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "sna",
+        "display": "Shona"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "snd",
+        "display": "Sindhi"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "snk",
+        "display": "Soninke"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "som",
+        "display": "Somali"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "sot",
+        "display": "Sesotho, Süd-Sotho"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "spa",
+        "display": "Spanisch, Kastilisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "srd",
+        "display": "Sardisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "srn",
+        "display": "Sranantongo"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "srp",
+        "display": "Serbisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "srr",
+        "display": "Serer"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "ssw",
+        "display": "Siswati"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "suk",
+        "display": "Sukuma"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "sun",
+        "display": "Sundanesisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "sus",
+        "display": "Susu"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "swa",
+        "display": "Swahili"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "swe",
+        "display": "Schwedisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "syr",
+        "display": "Nordost-Neuaramäisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "tah",
+        "display": "Tahitianisch, Tahitisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "tam",
+        "display": "Tamil"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "tat",
+        "display": "Tatarisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "tel",
+        "display": "Telugu"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "tem",
+        "display": "Temne"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "ter",
+        "display": "Terena"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "tet",
+        "display": "Tetum"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "tgk",
+        "display": "Tadschikisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "tgl",
+        "display": "Tagalog"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "tha",
+        "display": "Thai"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "tib",
+        "display": "Tibetisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "tig",
+        "display": "Tigre"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "tir",
+        "display": "Tigrinya"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "tiv",
+        "display": "Tiv"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "tkl",
+        "display": "Tokelauisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "tli",
+        "display": "Tlingit"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "tmh",
+        "display": "Tuareg"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "tog",
+        "display": "ChiTonga"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "ton",
+        "display": "Tongaisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "tpi",
+        "display": "Tok Pisin, Neuguinea-Pidgin"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "tsi",
+        "display": "Tsimshian"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "tsn",
+        "display": "Setswana"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "tso",
+        "display": "Xitsonga"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "tuk",
+        "display": "Turkmenisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "tum",
+        "display": "Tumbuka"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "tur",
+        "display": "Türkisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "tvl",
+        "display": "Tuvaluisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "twi",
+        "display": "Twi"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "tyv",
+        "display": "Tuwinisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "udm",
+        "display": "Udmurtisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "uig",
+        "display": "Uigurisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "ukr",
+        "display": "Ukrainisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "umb",
+        "display": "Umbundu"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "urd",
+        "display": "Urdu"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "uzb",
+        "display": "Usbekisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "vai",
+        "display": "Vai"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "ven",
+        "display": "Tshivenda"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "vie",
+        "display": "Vietnamesisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "vot",
+        "display": "Wotisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "wal",
+        "display": "Wolaytta"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "war",
+        "display": "Wáray-Wáray"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "was",
+        "display": "Washoe"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "wel",
+        "display": "Walisisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "wln",
+        "display": "Wallonisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "wol",
+        "display": "Wolof"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "xal",
+        "display": "Kalmückisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "xho",
+        "display": "isiXhosa"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "yao",
+        "display": "Yao"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "yap",
+        "display": "Yapesisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "yid",
+        "display": "Jiddisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "yor",
+        "display": "Yoruba"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "zap",
+        "display": "Zapotekisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "zen",
+        "display": "Zenaga"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "zgh",
+        "display": "Marokkanisches Tamazight"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "zha",
+        "display": "Zhuang"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "zul",
+        "display": "isiZulu"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "zun",
+        "display": "Zuñi"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "zza",
+        "display": "Zazaisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-AuswaehlbareElternspracheErweiterungCS",
+        "code": "12",
+        "display": "Gebärdensprache"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-AuswaehlbareElternspracheErweiterungCS",
+        "code": "98",
+        "display": "andere"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-AuswaehlbareElternspracheErweiterungCS",
+        "code": "99",
+        "display": "keine Angabe"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-AuswaehlbareElternspracheErweiterungCS"
+      }
+    ]
+  }
+}

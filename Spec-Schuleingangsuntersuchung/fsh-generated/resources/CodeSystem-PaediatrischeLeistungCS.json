@@ -1,0 +1,21 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "PaediatrischeLeistungCS",
+  "id": "PaediatrischeLeistungCS",
+  "title": "Sozialpädiatrische Leistungen",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/PaediatrischeLeistungCS",
+  "concept": [
+    {
+      "code": "sonstige",
+      "display": "Sonstige Hilfen"
+    },
+    {
+      "code": "info",
+      "display": "Infobrief Schule"
+    }
+  ],
+  "count": 2
+}

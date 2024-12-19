@@ -1,0 +1,34 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "UnfallOrtCS",
+  "id": "UnfallOrtCS",
+  "title": "UnfallOrtCS",
+  "description": "UnfallOrtCS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallOrtCS",
+  "concept": [
+    {
+      "code": "zu_hause",
+      "display": "Zu Hause"
+    },
+    {
+      "code": "kita",
+      "display": "Kita"
+    },
+    {
+      "code": "freizeit",
+      "display": "Freizeit"
+    },
+    {
+      "code": "straßenverkehr",
+      "display": "Straßenverkehr"
+    },
+    {
+      "code": "anderer_ort",
+      "display": "Anderer Ort"
+    }
+  ],
+  "count": 5
+}

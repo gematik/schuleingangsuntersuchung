@@ -1,0 +1,29 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU_UB_StaatsangehoerigkeitCS",
+  "id": "SEU-UB-StaatsangehoerigkeitCS",
+  "title": "SEU Staatsangehörigkeit",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-StaatsangehoerigkeitCS",
+  "concept": [
+    {
+      "code": "1",
+      "display": "Deutsch"
+    },
+    {
+      "code": "2",
+      "display": "Deutsch UND andere"
+    },
+    {
+      "code": "3",
+      "display": "Andere"
+    },
+    {
+      "code": "9",
+      "display": "keine Angaben"
+    }
+  ],
+  "count": 4
+}

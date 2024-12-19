@@ -1,0 +1,32 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "IdentifikationsartCS",
+  "id": "IdentifikationsartCS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/IdentifikationsartCS",
+  "concept": [
+    {
+      "code": "0",
+      "display": "Aufgrund eigener Kenntnis"
+    },
+    {
+      "code": "1",
+      "display": "Nach Einsicht n Personalausweis/Reisepass"
+    },
+    {
+      "code": "2",
+      "display": "Nach Angaben von Angehörigen/Dritten"
+    },
+    {
+      "code": "3",
+      "display": "sonstigem Nacheis"
+    },
+    {
+      "code": "9",
+      "display": "Nicht möglich"
+    }
+  ],
+  "count": 5
+}

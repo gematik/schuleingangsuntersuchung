@@ -1,0 +1,42 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU_UB_SehtestVisusCS",
+  "id": "seu-ub-sehtest-visus-cs",
+  "title": "SEU_UB_Sehtest Visus CodeSystem",
+  "description": "CodeSystem für die Angabe der Visuswerte im Sehtest.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ub-sehtest-visus-cs",
+  "concept": [
+    {
+      "code": "nicht_durchgefuehrt",
+      "display": "Nicht durchgeführt"
+    },
+    {
+      "code": "1_Visus",
+      "display": "1"
+    },
+    {
+      "code": "0_9_Visus",
+      "display": "0,9"
+    },
+    {
+      "code": "0_8_Visus",
+      "display": "0,8"
+    },
+    {
+      "code": "0_7_Visus",
+      "display": "0,7"
+    },
+    {
+      "code": "0_6_Visus",
+      "display": "0,6"
+    },
+    {
+      "code": "0_5_Visus",
+      "display": "0,5"
+    }
+  ],
+  "count": 7
+}

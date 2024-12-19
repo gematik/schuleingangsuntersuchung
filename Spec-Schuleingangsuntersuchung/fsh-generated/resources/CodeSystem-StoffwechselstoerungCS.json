@@ -1,0 +1,42 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "StoffwechselstoerungCS",
+  "id": "StoffwechselstoerungCS",
+  "title": "StoffwechselstoerungCS",
+  "description": "StoffwechselstoerungCS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/StoffwechselstoerungCS",
+  "concept": [
+    {
+      "code": "mcad_mangel",
+      "display": "MCAD-Mangel"
+    },
+    {
+      "code": "hypothyreose",
+      "display": "Hypothyreose"
+    },
+    {
+      "code": "pku",
+      "display": "PKU"
+    },
+    {
+      "code": "ags",
+      "display": "AGS"
+    },
+    {
+      "code": "mukoviszidose",
+      "display": "Mukoviszidose"
+    },
+    {
+      "code": "diab_mell_typ_i",
+      "display": "Diab. mell. Typ I"
+    },
+    {
+      "code": "diab_mell_typ_ii",
+      "display": "Diab. mell. Typ II"
+    }
+  ],
+  "count": 7
+}

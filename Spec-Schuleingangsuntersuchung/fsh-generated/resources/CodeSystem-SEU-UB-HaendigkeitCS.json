@@ -1,0 +1,29 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU_UB_HaendigkeitCS",
+  "id": "SEU-UB-HaendigkeitCS",
+  "title": "SEU Händigkeit",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-HaendigkeitCS",
+  "concept": [
+    {
+      "code": "1",
+      "display": "Rechtshänder"
+    },
+    {
+      "code": "2",
+      "display": "Linkshänder"
+    },
+    {
+      "code": "3",
+      "display": "noch unentschieden"
+    },
+    {
+      "code": "9",
+      "display": "keine Angabe"
+    }
+  ],
+  "count": 4
+}

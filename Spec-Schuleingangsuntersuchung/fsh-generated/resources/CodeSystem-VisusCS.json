@@ -1,0 +1,26 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "VisusCS",
+  "id": "VisusCS",
+  "title": "VisusCS",
+  "description": "VisusCS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/VisusCS",
+  "concept": [
+    {
+      "code": "ohne_Brille",
+      "display": "ohne Brille"
+    },
+    {
+      "code": "mit_Brille",
+      "display": "mit Brille"
+    },
+    {
+      "code": "keine_Angabe",
+      "display": "k.A./nicht möglich"
+    }
+  ],
+  "count": 3
+}

@@ -1,0 +1,24 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "NichtnatuerlicherTodArtCS",
+  "id": "NichtnatuerlicherTodArtCS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/NichtnatuerlicherTodArtCS",
+  "concept": [
+    {
+      "code": "0",
+      "display": "Selbsttötung"
+    },
+    {
+      "code": "1",
+      "display": "Tötung"
+    },
+    {
+      "code": "2",
+      "display": "Unfalltod"
+    }
+  ],
+  "count": 3
+}

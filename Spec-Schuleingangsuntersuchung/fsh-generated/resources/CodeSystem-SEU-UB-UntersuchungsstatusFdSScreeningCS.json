@@ -1,0 +1,41 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU_UB_UntersuchungsstatusFdSScreeningCS",
+  "id": "SEU-UB-UntersuchungsstatusFdSScreeningCS",
+  "title": "SEU Untersuchungsstatus FdS-Screening",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-UntersuchungsstatusFdSScreeningCS",
+  "concept": [
+    {
+      "code": "1",
+      "display": "Erstuntersuchung"
+    },
+    {
+      "code": "2",
+      "display": "Wiederholung"
+    },
+    {
+      "code": "3",
+      "display": "nicht bekannt"
+    },
+    {
+      "code": "4",
+      "display": "Screening fand nicht statt"
+    },
+    {
+      "code": "5",
+      "display": "Screening nicht möglich, Kind verweigert"
+    },
+    {
+      "code": "6",
+      "display": "Screening nicht möglich, keine Dt-Kenntnisse"
+    },
+    {
+      "code": "7",
+      "display": "Screening entfällt, gem. §8 SchulgespflV"
+    }
+  ],
+  "count": 7
+}

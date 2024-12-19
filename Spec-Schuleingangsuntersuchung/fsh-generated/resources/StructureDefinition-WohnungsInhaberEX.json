@@ -1,0 +1,51 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "WohnungsInhaberEX",
+  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/WohnungsInhaberEX",
+  "version": "0.1.0",
+  "name": "WohnungsInhaberEX",
+  "title": "Wohnungsinhaber Extension",
+  "status": "draft",
+  "description": "Diese Extension enthält nähere Informationen zur Angabe des Wohnungsinhabers",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Wohnungsinhaber Extension",
+        "definition": "Diese Extension enthält nähere Informationen zur Angabe des Wohnungsinhabers"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://www.oegd.de/fhir/seu/StructureDefinition/WohnungsInhaberEX"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "string"
+          }
+        ]
+      }
+    ]
+  }
+}

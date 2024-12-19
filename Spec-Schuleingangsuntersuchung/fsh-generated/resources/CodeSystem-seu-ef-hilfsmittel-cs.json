@@ -1,0 +1,34 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU_EF_HilfsmittelCS",
+  "id": "seu-ef-hilfsmittel-cs",
+  "title": "SEU_EF_Hilfsmittel CodeSystem",
+  "description": "CodeSystem für die Angabe von Hilfsmitteln.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-hilfsmittel-cs",
+  "concept": [
+    {
+      "code": "sehhilfe",
+      "display": "Sehhilfe (z. B. Brille)"
+    },
+    {
+      "code": "hoerhilfe",
+      "display": "Hörhilfe"
+    },
+    {
+      "code": "orthese",
+      "display": "Orthese"
+    },
+    {
+      "code": "zahnersatz",
+      "display": "Zahnersatz (Prothese, Platzhalter)"
+    },
+    {
+      "code": "anderes",
+      "display": "Anderes"
+    }
+  ],
+  "count": 5
+}

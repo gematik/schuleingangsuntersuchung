@@ -1,0 +1,90 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "ErkrankungCS",
+  "id": "ErkrankungCS",
+  "title": "ErkrankungCS",
+  "description": "ErkrankungCS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+  "concept": [
+    {
+      "code": "epilepsie",
+      "display": "Epilepsie"
+    },
+    {
+      "code": "ads_adhs",
+      "display": "ADS/ADHS"
+    },
+    {
+      "code": "sprachauffälligkeit",
+      "display": "Sprachauffälligkeit"
+    },
+    {
+      "code": "sehstörung",
+      "display": "Sehstörung"
+    },
+    {
+      "code": "hörstörung",
+      "display": "Hörstörung"
+    },
+    {
+      "code": "herzfehler",
+      "display": "Herzfehler"
+    },
+    {
+      "code": "nieren_harnwegerkrankung",
+      "display": "Nieren/Harnwegerkrankung"
+    },
+    {
+      "code": "allergischer_schnupfen",
+      "display": "Allergischer Schnupfen"
+    },
+    {
+      "code": "asthma",
+      "display": "Asthma"
+    },
+    {
+      "code": "allergische_hauterkrankung",
+      "display": "Allergische Hauterkrankung"
+    },
+    {
+      "code": "neurodermitis",
+      "display": "Neurodermitis"
+    },
+    {
+      "code": "nahrungsmittelallergie",
+      "display": "Nahrungsmittelallergie"
+    },
+    {
+      "code": "krebserkrankung",
+      "display": "Krebserkrankung"
+    },
+    {
+      "code": "hüfterkrankung",
+      "display": "Hüfterkrankung"
+    },
+    {
+      "code": "wirbelsäulenleiden",
+      "display": "Wirbelsäulenleiden"
+    },
+    {
+      "code": "bewegungsstörung",
+      "display": "Bewegungsstörung"
+    },
+    {
+      "code": "diabetes",
+      "display": "Diabetes"
+    },
+    {
+      "code": "ass",
+      "display": "Autismus-Spektrum-Störung (ASS)"
+    },
+    {
+      "code": "schilddrüsenfunktionsstörung",
+      "display": "Schilddrüsenfunktionsstörung"
+    }
+  ],
+  "count": 19
+}

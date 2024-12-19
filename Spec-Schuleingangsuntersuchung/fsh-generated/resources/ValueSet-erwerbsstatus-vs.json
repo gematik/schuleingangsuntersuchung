@@ -1,0 +1,51 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "ErwerbsstatusVS",
+  "id": "erwerbsstatus-vs",
+  "title": "Erwerbsstatus ValueSet",
+  "description": "ErwerbsstatusVS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/erwerbsstatus-vs",
+  "expansion": {
+    "timestamp": "2024-04-06T12:00:00+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/erwerbsstatus-cs",
+        "code": "nicht_erwerbstaetig",
+        "display": "Nicht erwerbstätig"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/erwerbsstatus-cs",
+        "code": "teilzeit",
+        "display": "Teilzeit"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/erwerbsstatus-cs",
+        "code": "vollzeit",
+        "display": "Vollzeit"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/erwerbsstatus-cs",
+        "concept": [
+          {
+            "code": "nicht_erwerbstaetig",
+            "display": "Nicht erwerbstätig"
+          },
+          {
+            "code": "teilzeit",
+            "display": "Teilzeit"
+          },
+          {
+            "code": "vollzeit",
+            "display": "Vollzeit"
+          }
+        ]
+      }
+    ]
+  }
+}

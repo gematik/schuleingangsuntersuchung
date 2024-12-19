@@ -1,0 +1,64 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "VerkehrsunfallkategorieCS",
+  "id": "VerkehrsunfallkategorieCS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/VerkehrsunfallkategorieCS",
+  "concept": [
+    {
+      "code": "0",
+      "display": "PKW-Fahrer/-in"
+    },
+    {
+      "code": "1",
+      "display": "LKW-Fahrer/-in"
+    },
+    {
+      "code": "2",
+      "display": "Motorradfahrer/-in"
+    },
+    {
+      "code": "3",
+      "display": "Fahrer/-in eines sonstigen KFZ"
+    },
+    {
+      "code": "4",
+      "display": "PKW-Beifahrer/-in"
+    },
+    {
+      "code": "5",
+      "display": "LKW-Beifahrer/-in"
+    },
+    {
+      "code": "6",
+      "display": "Motorradmitfahrer/-in"
+    },
+    {
+      "code": "7",
+      "display": "Fahrradfahrer/-in"
+    },
+    {
+      "code": "8",
+      "display": "Fahrradmitfahrer/-in"
+    },
+    {
+      "code": "9",
+      "display": "Fußgänger/-in"
+    },
+    {
+      "code": "10",
+      "display": "E-Scooter/-in"
+    },
+    {
+      "code": "11",
+      "display": "Sonstiges (bitte in Beschreibung der äußeren Ursache aufführen)"
+    },
+    {
+      "code": "99",
+      "display": "nicht bekannt"
+    }
+  ],
+  "count": 13
+}

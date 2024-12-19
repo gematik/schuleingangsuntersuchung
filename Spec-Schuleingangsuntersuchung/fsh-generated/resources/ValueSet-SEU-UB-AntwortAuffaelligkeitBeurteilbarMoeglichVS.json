@@ -1,0 +1,51 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SEU_UB_AntwortAuffaelligkeitBeurteilbarMoeglichVS",
+  "id": "SEU-UB-AntwortAuffaelligkeitBeurteilbarMoeglichVS",
+  "title": "SEU Antwort Auffälligkeit aber beurteilbar",
+  "description": "Diese Codes enthalten Antwortmöglichkeiten zu Auffälligkeiten ohne Code 3 & 8",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-AntwortAuffaelligkeitBeurteilbarMoeglichVS",
+  "expansion": {
+    "timestamp": "2024-10-20T11:50:47+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-AntwortAuffaelligkeitVS",
+        "code": "1",
+        "display": "ja"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-AntwortAuffaelligkeitVS",
+        "code": "2",
+        "display": "nein"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-AntwortAuffaelligkeitVS",
+        "code": "9",
+        "display": "Untersuchung nicht durchgeführt"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-AntwortAuffaelligkeitCS",
+        "concept": [
+          {
+            "code": "1",
+            "display": "ja"
+          },
+          {
+            "code": "2",
+            "display": "nein"
+          },
+          {
+            "code": "9",
+            "display": "Untersuchung nicht durchgeführt"
+          }
+        ]
+      }
+    ]
+  }
+}

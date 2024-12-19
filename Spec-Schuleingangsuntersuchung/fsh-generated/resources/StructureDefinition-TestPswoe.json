@@ -1,0 +1,106 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "TestPswoe",
+  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/TestPswoe",
+  "version": "0.1.0",
+  "name": "TestPswoe",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "https://www.oegd.de/fhir/seu/StructureDefinition/Test",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "pswoe",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/TestTypesCS",
+              "display": "Sprachkompetenz und audit. Invormationsverarbeitung"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.referenceRange:abnormal",
+        "path": "Observation.referenceRange",
+        "sliceName": "abnormal"
+      },
+      {
+        "id": "Observation.referenceRange:abnormal.low",
+        "path": "Observation.referenceRange.low",
+        "patternQuantity": {
+          "value": 0,
+          "code": "1",
+          "system": "http://unitsofmeasure.org",
+          "unit": "Punktwert"
+        }
+      },
+      {
+        "id": "Observation.referenceRange:abnormal.high",
+        "path": "Observation.referenceRange.high",
+        "patternQuantity": {
+          "value": 3,
+          "code": "1",
+          "system": "http://unitsofmeasure.org",
+          "unit": "Punktwert"
+        }
+      },
+      {
+        "id": "Observation.referenceRange:borderline",
+        "path": "Observation.referenceRange",
+        "sliceName": "borderline"
+      },
+      {
+        "id": "Observation.referenceRange:borderline.low",
+        "path": "Observation.referenceRange.low",
+        "patternQuantity": {
+          "value": 4,
+          "code": "1",
+          "system": "http://unitsofmeasure.org",
+          "unit": "Punktwert"
+        }
+      },
+      {
+        "id": "Observation.referenceRange:borderline.high",
+        "path": "Observation.referenceRange.high",
+        "patternQuantity": {
+          "value": 4,
+          "code": "1",
+          "system": "http://unitsofmeasure.org",
+          "unit": "Punktwert"
+        }
+      },
+      {
+        "id": "Observation.referenceRange:normal",
+        "path": "Observation.referenceRange",
+        "sliceName": "normal"
+      },
+      {
+        "id": "Observation.referenceRange:normal.low",
+        "path": "Observation.referenceRange.low",
+        "patternQuantity": {
+          "value": 5,
+          "code": "1",
+          "system": "http://unitsofmeasure.org",
+          "unit": "Punktwert"
+        }
+      },
+      {
+        "id": "Observation.referenceRange:normal.high",
+        "path": "Observation.referenceRange.high",
+        "patternQuantity": {
+          "value": 6,
+          "code": "1",
+          "system": "http://unitsofmeasure.org",
+          "unit": "Punktwert"
+        }
+      }
+    ]
+  }
+}

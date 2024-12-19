@@ -1,0 +1,24 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "BestattungsartCS",
+  "id": "BestattungsartCS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/BestattungsartCS",
+  "concept": [
+    {
+      "code": "0",
+      "display": "Erdbestattung"
+    },
+    {
+      "code": "1",
+      "display": "Feuerbestattung"
+    },
+    {
+      "code": "2",
+      "display": "keine Angabe"
+    }
+  ],
+  "count": 3
+}

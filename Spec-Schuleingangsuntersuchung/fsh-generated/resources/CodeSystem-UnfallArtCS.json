@@ -1,0 +1,50 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "UnfallArtCS",
+  "id": "UnfallArtCS",
+  "title": "UnfallArtCS",
+  "description": "UnfallArtCS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallArtCS",
+  "concept": [
+    {
+      "code": "gehirnerschütterung",
+      "display": "Gehirnerschütterung"
+    },
+    {
+      "code": "schwere_schnittverletzung",
+      "display": "Schwere Schnittverletzung"
+    },
+    {
+      "code": "vergiftung",
+      "display": "Vergiftung"
+    },
+    {
+      "code": "verbrennung",
+      "display": "Verbrühung/Verbrennung/Verätzung"
+    },
+    {
+      "code": "knochenbruch",
+      "display": "Knochenbruch"
+    },
+    {
+      "code": "prellung",
+      "display": "Prellung"
+    },
+    {
+      "code": "verstauchung",
+      "display": "Verstauchung/Verrenkung/Ausrenkung"
+    },
+    {
+      "code": "offene_wunde",
+      "display": "Offene Wunde"
+    },
+    {
+      "code": "andere",
+      "display": "Andere"
+    }
+  ],
+  "count": 9
+}

@@ -1,0 +1,44 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "UnfallkategorieCS",
+  "id": "UnfallkategorieCS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallkategorieCS",
+  "concept": [
+    {
+      "code": "0",
+      "display": "Arbeits-oder Dienstunfall (ohne Wegeunfall)"
+    },
+    {
+      "code": "1",
+      "display": "häuslicher Unfall"
+    },
+    {
+      "code": "2",
+      "display": "Schulunfall (ohne Wegeunfall)"
+    },
+    {
+      "code": "3",
+      "display": "Sonstiger Unfall"
+    },
+    {
+      "code": "4",
+      "display": "Sport-oder Spielunfall (nicht in Haus oder Schule)"
+    },
+    {
+      "code": "5",
+      "display": "Verkehrsunfall"
+    },
+    {
+      "code": "6",
+      "display": "Verkehrsunfall (auf nicht öffentl. Verkehrsweg)"
+    },
+    {
+      "code": "7",
+      "display": "Verkehrsunfall (einschk. Wegeunfall)"
+    }
+  ],
+  "count": 8
+}

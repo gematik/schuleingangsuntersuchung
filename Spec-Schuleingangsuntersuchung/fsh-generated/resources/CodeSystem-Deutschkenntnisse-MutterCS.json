@@ -1,0 +1,38 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "Deutschkenntnisse_MutterCS",
+  "id": "Deutschkenntnisse-MutterCS",
+  "title": "Deutschkenntnisse_MutterCS",
+  "description": "Deutschkenntnisse_MutterCS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/Deutschkenntnisse-MutterCS",
+  "concept": [
+    {
+      "code": "nicht",
+      "display": "nicht"
+    },
+    {
+      "code": "einzelne_Worte",
+      "display": "einzelne Worte"
+    },
+    {
+      "code": "fluessig_mit_erheblichen_Fehlern",
+      "display": "flüssig mit erheblichen Fehlern"
+    },
+    {
+      "code": "sehr_gut",
+      "display": "sehr gut"
+    },
+    {
+      "code": "hat_nicht_begleitet",
+      "display": "hat nicht begleitet"
+    },
+    {
+      "code": "keine_Angabe",
+      "display": "keine Angabe"
+    }
+  ],
+  "count": 6
+}

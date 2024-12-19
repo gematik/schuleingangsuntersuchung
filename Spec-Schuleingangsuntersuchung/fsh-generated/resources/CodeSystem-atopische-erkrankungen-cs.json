@@ -1,0 +1,46 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "AtopischeErkrankungenCS",
+  "id": "atopische-erkrankungen-cs",
+  "title": "CodeSystem für atopische/allergische Erkrankungen",
+  "description": "Dieses CodeSystem klassifiziert die Kategorie der atopischen/allergischen Erkrankungen sowie spezifische Allergieauslöser: Nahrungsmittel, Pollen, Hausstaubmilben, Schimmelpilze, Tierhaare, Medikamente und Sonstiges.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs",
+  "concept": [
+    {
+      "code": "atopische_allergische",
+      "display": "Atopische/Allergische Erkrankungen"
+    },
+    {
+      "code": "nahrungsmittel",
+      "display": "Nahrungsmittelallergien"
+    },
+    {
+      "code": "pollen",
+      "display": "Pollenallergien"
+    },
+    {
+      "code": "hausstaubmilben",
+      "display": "Hausstaubmilbenallergien"
+    },
+    {
+      "code": "schimmelpilze",
+      "display": "Schimmelpilzallergien"
+    },
+    {
+      "code": "tierhaare",
+      "display": "Tierhaarallergien"
+    },
+    {
+      "code": "medikamente",
+      "display": "Medikamentenallergien"
+    },
+    {
+      "code": "sonstiges",
+      "display": "Sonstige atopische/allergische Erkrankungen"
+    }
+  ],
+  "count": 8
+}

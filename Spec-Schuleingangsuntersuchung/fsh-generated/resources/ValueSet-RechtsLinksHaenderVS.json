@@ -1,0 +1,42 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "RechtsLinksHaenderVS",
+  "id": "RechtsLinksHaenderVS",
+  "title": "RechtsLinksHaenderVS",
+  "description": "RechtsLinksHaenderVS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/RechtsLinksHaenderVS",
+  "expansion": {
+    "timestamp": "2024-04-04T10:35:15+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/RechtsLinksHaenderCS",
+        "code": "rechtshänder",
+        "display": "Rechtshänder"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/RechtsLinksHaenderCS",
+        "code": "linkshänder",
+        "display": "Linkshänder"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/RechtsLinksHaenderCS",
+        "code": "beidhändig",
+        "display": "Beidhändig/Unentschieden"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/RechtsLinksHaenderCS",
+        "code": "nicht_feststellbar",
+        "display": "Nicht feststellbar"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/RechtsLinksHaenderCS"
+      }
+    ]
+  }
+}

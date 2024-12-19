@@ -1,0 +1,49 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU_UB_AntwortAugenarztCS",
+  "id": "SEU-UB-AntwortAugenarztCS",
+  "title": "SEU Antwort Augenarzt",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-AntwortAugenarztCS",
+  "concept": [
+    {
+      "code": "1",
+      "display": "unauffälliger Befund"
+    },
+    {
+      "code": "2",
+      "display": "Kurzsichtigkeit (Myopie)"
+    },
+    {
+      "code": "3",
+      "display": "Weitsichtigkeit (Hyperopie)"
+    },
+    {
+      "code": "4",
+      "display": "Schielen"
+    },
+    {
+      "code": "5",
+      "display": "Verordnung Brille"
+    },
+    {
+      "code": "6",
+      "display": "Verordnung Brille bei Myopie"
+    },
+    {
+      "code": "7",
+      "display": "Verodnung Brille bei Hyperopie"
+    },
+    {
+      "code": "8",
+      "display": "Verordnung Brille bei Schielen"
+    },
+    {
+      "code": "9",
+      "display": "keine Angaben"
+    }
+  ],
+  "count": 9
+}

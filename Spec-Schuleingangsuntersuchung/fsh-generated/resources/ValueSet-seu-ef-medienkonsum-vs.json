@@ -1,0 +1,52 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SEU_EF_MedienkonsumVS",
+  "id": "seu-ef-medienkonsum-vs",
+  "title": "SEU_EF_Medienkonsum ValueSet",
+  "description": "ValueSet, das die Kategorien des Medienkonsums in Stunden enthält.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-medienkonsum-vs",
+  "expansion": {
+    "timestamp": "2024-09-10T12:00:00+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-medienkonsum-cs",
+        "code": "gar_nicht",
+        "display": "Gar nicht"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-medienkonsum-cs",
+        "code": "bis_0_5",
+        "display": "Bis 0,5 Stunden"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-medienkonsum-cs",
+        "code": "von_0_5_bis_1",
+        "display": "0,5 bis 1 Stunde"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-medienkonsum-cs",
+        "code": "von_1_bis_2",
+        "display": "1 bis 2 Stunden"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-medienkonsum-cs",
+        "code": "von_2_bis_4",
+        "display": "2 bis 4 Stunden"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-medienkonsum-cs",
+        "code": "mehr_als_4",
+        "display": "Mehr als 4 Stunden"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-medienkonsum-cs"
+      }
+    ]
+  }
+}

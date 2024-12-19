@@ -85,10 +85,10 @@ RuleSet: 1-af-stammdaten
     * insert addSource(#DE-BE)
       * item[+] insert addItem(1.28.a, #choice, [[Erste]])
         * insert addSource(#DE-BE)
-        * answerValueSet = Canonical(alleStaatsangehoerigkeitenVS) // TO DO alleStaatsangehoerigkeitenVS muss mit nachfolgenden Auswahlmöglichkeiten erstellt werden
+        * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS) 
       * item[+] insert addItem(1.28b, #choice, [[weitere]])
         * insert addSource(#DE-BE)
-        * answerValueSet = Canonical(alleStaatsangehoerigkeitenVS) // TO DO alleStaatsangehoerigkeitenVS muss mit nachfolgenden Auswahlmöglichkeiten erstellt werden  
+        * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS) 
   * item[+] insert addItem(1.29, #choice, [[Geburtsland des Vaters]])
     * insert addSource(#DE-BE)
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
@@ -96,10 +96,10 @@ RuleSet: 1-af-stammdaten
     * insert addSource(#DE-BE)
       * item[+] insert addItem(1.30.a, #choice, [[Erste]])
         * insert addSource(#DE-BE)
-        * answerValueSet = Canonical(alleStaatsangehörigkeitenVS) // TO DO alleStaatsangehörigkeitenVS muss mit nachfolgenden Auswahlmöglichkeiten erstellt werden
+        * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS) 
   * item[+] insert addItem(1.30.b, #choice, [[Weitere]])
     * insert addSource(#DE-BE)
-    * answerValueSet = Canonical(alleStaatsangehörigkeitenVS) // TO DO alleStaatsangehörigkeitenVS muss mit nachfolgenden Auswahlmöglichkeiten erstellt werden
+    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
   * item[+] insert addItem(1.31, #choice, [[Migrationshintergrund des Kindes]])
     * insert addSource(#DE-BE)
     * answerValueSet = Canonical(MigrationshintergrundVS)

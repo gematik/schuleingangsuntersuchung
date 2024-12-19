@@ -1,0 +1,54 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU_UB_AnzahlCS",
+  "id": "seu-ub-anzahl-cs",
+  "title": "SEU_UB_Anzahl CodeSystem",
+  "description": "CodeSystem für die Angabe einer Anzahl von 0 bis 9.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ub-anzahl-cs",
+  "concept": [
+    {
+      "code": "0",
+      "display": "0"
+    },
+    {
+      "code": "1",
+      "display": "1"
+    },
+    {
+      "code": "2",
+      "display": "2"
+    },
+    {
+      "code": "3",
+      "display": "3"
+    },
+    {
+      "code": "4",
+      "display": "4"
+    },
+    {
+      "code": "5",
+      "display": "5"
+    },
+    {
+      "code": "6",
+      "display": "6"
+    },
+    {
+      "code": "7",
+      "display": "7"
+    },
+    {
+      "code": "8",
+      "display": "8"
+    },
+    {
+      "code": "9",
+      "display": "9"
+    }
+  ],
+  "count": 10
+}

@@ -1,0 +1,20 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "QuelleTodesursachenCS",
+  "id": "QuelleTodesursachenCS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/QuelleTodesursachenCS",
+  "concept": [
+    {
+      "code": "O",
+      "display": "Obduktionsschein"
+    },
+    {
+      "code": "T",
+      "display": "Leichenschauschein"
+    }
+  ],
+  "count": 2
+}

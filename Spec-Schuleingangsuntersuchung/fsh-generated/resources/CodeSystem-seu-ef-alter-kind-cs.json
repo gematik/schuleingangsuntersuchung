@@ -1,0 +1,66 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU_EF_AlterKindCS",
+  "id": "seu-ef-alter-kind-cs",
+  "title": "SEU_EF_Alter Kind CodeSystem",
+  "description": "CodeSystem für die Angabe des Alters eines Kindes.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-alter-kind-cs",
+  "concept": [
+    {
+      "code": "hier_geboren",
+      "display": "Hier geboren"
+    },
+    {
+      "code": "unter_1_jahr",
+      "display": "Unter 1 Jahr"
+    },
+    {
+      "code": "1_bis_1_5_jahre",
+      "display": ">= 1 Jahr bis 1 ½ Jahre"
+    },
+    {
+      "code": "1_5_bis_2_jahre",
+      "display": ">= 1 ½ Jahre bis 2 Jahre"
+    },
+    {
+      "code": "2_bis_2_5_jahre",
+      "display": ">= 2 Jahre bis 2 ½ Jahre"
+    },
+    {
+      "code": "2_5_bis_3_jahre",
+      "display": ">= 2 ½ Jahre bis 3 Jahre"
+    },
+    {
+      "code": "3_bis_3_5_jahre",
+      "display": ">= 3 Jahre bis 3 ½ Jahre"
+    },
+    {
+      "code": "3_5_bis_4_jahre",
+      "display": ">= 3 ½ Jahre bis 4 Jahre"
+    },
+    {
+      "code": "4_bis_4_5_jahre",
+      "display": ">= 4 Jahre bis 4 ½ Jahre"
+    },
+    {
+      "code": "5_bis_5_5_jahre",
+      "display": ">= 5 Jahre bis 5 ½ Jahre"
+    },
+    {
+      "code": "5_5_bis_6_jahre",
+      "display": ">= 5 ½ Jahre bis 6 Jahre"
+    },
+    {
+      "code": "6_bis_6_5_jahre",
+      "display": ">= 6 Jahre bis 6 ½ Jahre"
+    },
+    {
+      "code": "keine_angaben",
+      "display": "Keine Angaben"
+    }
+  ],
+  "count": 13
+}

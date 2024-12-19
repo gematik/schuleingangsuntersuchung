@@ -1,0 +1,47 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "UnfallOrtVS",
+  "id": "UnfallOrtVS",
+  "title": "UnfallOrtVS",
+  "description": "UnfallOrtVS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/UnfallOrtVS",
+  "expansion": {
+    "timestamp": "2024-04-04T11:34:46+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallOrtCS",
+        "code": "zu_hause",
+        "display": "Zu Hause"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallOrtCS",
+        "code": "kita",
+        "display": "Kita"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallOrtCS",
+        "code": "freizeit",
+        "display": "Freizeit"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallOrtCS",
+        "code": "straßenverkehr",
+        "display": "Straßenverkehr"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallOrtCS",
+        "code": "anderer_ort",
+        "display": "Anderer Ort"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallOrtCS"
+      }
+    ]
+  }
+}

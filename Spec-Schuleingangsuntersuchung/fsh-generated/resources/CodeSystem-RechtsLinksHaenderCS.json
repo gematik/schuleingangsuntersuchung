@@ -1,0 +1,30 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "RechtsLinksHaenderCS",
+  "id": "RechtsLinksHaenderCS",
+  "title": "RechtsLinksHaenderCS",
+  "description": "RechtsLinksHaenderCS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/RechtsLinksHaenderCS",
+  "concept": [
+    {
+      "code": "rechtshänder",
+      "display": "Rechtshänder"
+    },
+    {
+      "code": "linkshänder",
+      "display": "Linkshänder"
+    },
+    {
+      "code": "beidhändig",
+      "display": "Beidhändig/Unentschieden"
+    },
+    {
+      "code": "nicht_feststellbar",
+      "display": "Nicht feststellbar"
+    }
+  ],
+  "count": 4
+}

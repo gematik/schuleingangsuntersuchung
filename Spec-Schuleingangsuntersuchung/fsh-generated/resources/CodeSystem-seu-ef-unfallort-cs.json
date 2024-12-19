@@ -1,0 +1,38 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU_EF_UnfallortCS",
+  "id": "seu-ef-unfallort-cs",
+  "title": "SEU_EF_Unfallort CodeSystem",
+  "description": "CodeSystem für die Angabe des Unfallortes.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-unfallort-cs",
+  "concept": [
+    {
+      "code": "nein",
+      "display": "Nein"
+    },
+    {
+      "code": "ja_zu_hause",
+      "display": "Ja; zu Hause"
+    },
+    {
+      "code": "freizeit_ausser_haus",
+      "display": "Freizeit außer Haus"
+    },
+    {
+      "code": "gemeinschaftseinrichtung",
+      "display": "Gemeinschaftseinrichtung"
+    },
+    {
+      "code": "wegeunfall",
+      "display": "Wegeunfall"
+    },
+    {
+      "code": "keine_angabe",
+      "display": "Keine Angabe"
+    }
+  ],
+  "count": 6
+}

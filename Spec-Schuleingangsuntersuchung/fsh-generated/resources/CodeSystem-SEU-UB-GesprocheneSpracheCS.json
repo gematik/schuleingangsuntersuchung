@@ -1,0 +1,29 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU_UB_GesprocheneSpracheCS",
+  "id": "SEU-UB-GesprocheneSpracheCS",
+  "title": "SEU Gesprochene Sprache",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-GesprocheneSpracheCS",
+  "concept": [
+    {
+      "code": "1",
+      "display": "Deutsch"
+    },
+    {
+      "code": "2",
+      "display": "Deutsch UND andere"
+    },
+    {
+      "code": "8",
+      "display": "Andere"
+    },
+    {
+      "code": "9",
+      "display": "keine Angaben"
+    }
+  ],
+  "count": 4
+}

@@ -1,0 +1,38 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU_EF_FrequenzCS",
+  "id": "seu-ef-frequenz-cs",
+  "title": "SEU_EF_Frequenz CodeSystem",
+  "description": "CodeSystem für die Angabe der Häufigkeit einer Aktivität.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-frequenz-cs",
+  "concept": [
+    {
+      "code": "jeden_tag",
+      "display": "Etwa jeden Tag"
+    },
+    {
+      "code": "3_bis_5_mal_pro_woche",
+      "display": "3 bis 5 mal pro Woche"
+    },
+    {
+      "code": "1_bis_2_mal_pro_woche",
+      "display": "1 bis 2 mal pro Woche"
+    },
+    {
+      "code": "1_bis_2_mal_im_monat",
+      "display": "Etwa 1 bis 2 mal im Monat"
+    },
+    {
+      "code": "nie",
+      "display": "Nie"
+    },
+    {
+      "code": "keine_angabe",
+      "display": "Keine Angabe"
+    }
+  ],
+  "count": 6
+}

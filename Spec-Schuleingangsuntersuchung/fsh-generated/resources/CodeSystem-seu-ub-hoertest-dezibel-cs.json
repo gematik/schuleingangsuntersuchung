@@ -1,0 +1,30 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU_UB_HoertestDezibelCS",
+  "id": "seu-ub-hoertest-dezibel-cs",
+  "title": "SEU_UB_Hörtest CodeSystem",
+  "description": "CodeSystem für die Angabe der Dezibelstufen im Hörtest.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ub-hoertest-dezibel-cs",
+  "concept": [
+    {
+      "code": "20db",
+      "display": "20db"
+    },
+    {
+      "code": "30db",
+      "display": "30db"
+    },
+    {
+      "code": "40db",
+      "display": "40db"
+    },
+    {
+      "code": "50db",
+      "display": "50db"
+    }
+  ],
+  "count": 4
+}

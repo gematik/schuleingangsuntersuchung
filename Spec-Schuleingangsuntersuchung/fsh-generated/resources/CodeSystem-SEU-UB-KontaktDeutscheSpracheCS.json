@@ -1,0 +1,25 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU_UB_KontaktDeutscheSpracheCS",
+  "id": "SEU-UB-KontaktDeutscheSpracheCS",
+  "title": "SEU Kontakt mit der deutschen Sprache",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-KontaktDeutscheSpracheCS",
+  "concept": [
+    {
+      "code": "1",
+      "display": "seit Geburt"
+    },
+    {
+      "code": "2",
+      "display": "NICHT seit Geburt"
+    },
+    {
+      "code": "9",
+      "display": "keine Angabe"
+    }
+  ],
+  "count": 3
+}

@@ -1,0 +1,26 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU_UB_RotaimpfungCS",
+  "id": "seu-ub-rotaimpfung-cs",
+  "title": "SEU_UB_Rotaimpfung CodeSystem",
+  "description": "CodeSystem für die Angabe der Rotavirus-Impfstoffe.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ub-rotaimpfung-cs",
+  "concept": [
+    {
+      "code": "keine_Impfung",
+      "display": "Keine Impfung"
+    },
+    {
+      "code": "Rotarix",
+      "display": "Rotarix"
+    },
+    {
+      "code": "RotaTeq",
+      "display": "RotaTeq"
+    }
+  ],
+  "count": 3
+}

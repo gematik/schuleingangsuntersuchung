@@ -1,0 +1,58 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU_EF_FamiliensituationCS",
+  "id": "seu-ef-familiensituation-cs",
+  "title": "SEU_EF_Familiensituation CodeSystem",
+  "description": "CodeSystem für die Angabe der Familiensituation.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-familiensituation-cs",
+  "concept": [
+    {
+      "code": "leibliche_eltern",
+      "display": "Leibliche Eltern"
+    },
+    {
+      "code": "mutter_mit_partner_in",
+      "display": "Mutter mit Partner/in"
+    },
+    {
+      "code": "mutter_alleinerziehend",
+      "display": "Mutter alleinerziehend"
+    },
+    {
+      "code": "vater_mit_partner_in",
+      "display": "Vater mit Partner/in"
+    },
+    {
+      "code": "vater_alleinerziehend",
+      "display": "Vater alleinerziehend"
+    },
+    {
+      "code": "wechselmodell",
+      "display": "Wechselmodell"
+    },
+    {
+      "code": "heim",
+      "display": "Heim"
+    },
+    {
+      "code": "pflegeeltern",
+      "display": "Pflegeeltern"
+    },
+    {
+      "code": "andere_familienmitglieder_verwandte",
+      "display": "Andere Familienmitglieder/Verwandte"
+    },
+    {
+      "code": "andere_personen",
+      "display": "Andere Personen"
+    },
+    {
+      "code": "keine_angabe",
+      "display": "Keine Angabe"
+    }
+  ],
+  "count": 11
+}

@@ -1,0 +1,57 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "StoffwechselstoerungVS",
+  "id": "StoffwechselstoerungVS",
+  "title": "StoffwechselstoerungVS",
+  "description": "StoffwechselstoerungVS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/StoffwechselstoerungVS",
+  "expansion": {
+    "timestamp": "2024-04-04T10:51:23+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/StoffwechselstoerungCS",
+        "code": "mcad_mangel",
+        "display": "MCAD-Mangel"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/StoffwechselstoerungCS",
+        "code": "hypothyreose",
+        "display": "Hypothyreose"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/StoffwechselstoerungCS",
+        "code": "pku",
+        "display": "PKU"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/StoffwechselstoerungCS",
+        "code": "ags",
+        "display": "AGS"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/StoffwechselstoerungCS",
+        "code": "mukoviszidose",
+        "display": "Mukoviszidose"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/StoffwechselstoerungCS",
+        "code": "diab_mell_typ_i",
+        "display": "Diab. mell. Typ I"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/StoffwechselstoerungCS",
+        "code": "diab_mell_typ_ii",
+        "display": "Diab. mell. Typ II"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/StoffwechselstoerungCS"
+      }
+    ]
+  }
+}

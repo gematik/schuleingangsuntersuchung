@@ -1,0 +1,87 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SEU_UB_SpracheStudieVS",
+  "id": "SEU-UB-SpracheStudieVS",
+  "title": "SEU Sprache Studie",
+  "description": "Dieses ValueSet enthält die auswählbaren Sprachen zu einer Studie. Als CodeSystem wird 'urn:iso:std:iso:639-2' als Basis genommen.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-SpracheStudieVS",
+  "expansion": {
+    "timestamp": "2024-03-30T13:28:00+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "alb",
+        "display": "Albanisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "ara",
+        "display": "Arabisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "eng",
+        "display": "Englisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "rum",
+        "display": "Rumänisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "rus",
+        "display": "Russisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "tur",
+        "display": "Türkisch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "code": "ukr",
+        "display": "Ukrainisch"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+        "concept": [
+          {
+            "code": "alb",
+            "display": "Albanisch"
+          },
+          {
+            "code": "ara",
+            "display": "Arabisch"
+          },
+          {
+            "code": "eng",
+            "display": "Englisch"
+          },
+          {
+            "code": "rum",
+            "display": "Rumänisch"
+          },
+          {
+            "code": "rus",
+            "display": "Russisch"
+          },
+          {
+            "code": "tur",
+            "display": "Türkisch"
+          },
+          {
+            "code": "ukr",
+            "display": "Ukrainisch"
+          }
+        ]
+      }
+    ]
+  }
+}

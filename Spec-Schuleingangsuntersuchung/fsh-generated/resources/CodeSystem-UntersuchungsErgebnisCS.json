@@ -1,0 +1,33 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "UntersuchungsErgebnisCS",
+  "id": "UntersuchungsErgebnisCS",
+  "title": "SEU Untersuchungsergebnis",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/UntersuchungsErgebnisCS",
+  "concept": [
+    {
+      "code": "I",
+      "display": "In Ordnung"
+    },
+    {
+      "code": "B",
+      "display": "Behandelt"
+    },
+    {
+      "code": "A",
+      "display": "Arztbrief"
+    },
+    {
+      "code": "G",
+      "display": "Grenzwertig"
+    },
+    {
+      "code": "U",
+      "display": "Unbekannt"
+    }
+  ],
+  "count": 5
+}

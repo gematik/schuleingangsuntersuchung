@@ -1,0 +1,25 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "StatusKindCS",
+  "id": "StatusKindCS",
+  "title": "SEU Status Kind",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/StatusKindCS",
+  "concept": [
+    {
+      "code": "regel",
+      "display": "Regelstufe"
+    },
+    {
+      "code": "kann",
+      "display": "Kannstufe"
+    },
+    {
+      "code": "eingangsstufe",
+      "display": "Eingangsstufe"
+    }
+  ],
+  "count": 3
+}

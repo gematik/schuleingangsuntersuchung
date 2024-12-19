@@ -1,0 +1,36 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "FacharztgruppeCS",
+  "id": "FacharztgruppeCS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/FacharztgruppeCS",
+  "concept": [
+    {
+      "code": "0",
+      "display": "Hausarzt/-ärztin"
+    },
+    {
+      "code": "1",
+      "display": "Notarzt/-ärztin"
+    },
+    {
+      "code": "2",
+      "display": "Arzt/Ärztin des kassenärztlichen Not-dienstes"
+    },
+    {
+      "code": "3",
+      "display": "diensthabender Arzt/Ärztin im Kran-kenhaus"
+    },
+    {
+      "code": "4",
+      "display": "Rechtsmedizinger/-in"
+    },
+    {
+      "code": "5",
+      "display": "Sonstiges"
+    }
+  ],
+  "count": 6
+}

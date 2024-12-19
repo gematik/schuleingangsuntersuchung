@@ -1,0 +1,37 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "UeberwiegendGesprocheneSpracheVS",
+  "id": "ueberwiegend-gesprochene-sprache-vs",
+  "title": "ValueSet für überwiegend gesprochene Sprachen",
+  "description": "Dieses ValueSet beinhaltet eine Auswahl von Codes für die Klassifikation von Sprachkenntnissen, definiert im zugehörigen CodeSystem.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/ueberwiegend-gesprochene-sprache-vs",
+  "expansion": {
+    "timestamp": "2024-04-12T15:47:43+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ueberwiegend-gesprochene-sprache-cs",
+        "code": "deutsch",
+        "display": "Deutsch"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ueberwiegend-gesprochene-sprache-cs",
+        "code": "andere",
+        "display": "andere Sprache"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ueberwiegend-gesprochene-sprache-cs",
+        "code": "deutsch_andere",
+        "display": "Deutsch + andere Sprache"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ueberwiegend-gesprochene-sprache-cs"
+      }
+    ]
+  }
+}

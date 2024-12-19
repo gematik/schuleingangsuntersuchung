@@ -1,0 +1,30 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU_UB_SchulempfehlungCS",
+  "id": "seu-ub-schulempfehlung-cs",
+  "title": "SEU_UB_Schulempfehlung CodeSystem",
+  "description": "CodeSystem für die Angabe von Schulempfehlungen.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ub-schulempfehlung-cs",
+  "concept": [
+    {
+      "code": "zurueckstellung_regelkind",
+      "display": "Zurückstellung Regelkind"
+    },
+    {
+      "code": "zurueckstellung_eingangsstufenkind",
+      "display": "Zurückstellung Eingangsstufenkind"
+    },
+    {
+      "code": "bedenken_gegen_vorzeitige_einschulung",
+      "display": "Bedenken gegen vorzeitige Einschulung"
+    },
+    {
+      "code": "beratungs_und_foerderzentrum",
+      "display": "Beratungs- und Förderzentrum"
+    }
+  ],
+  "count": 4
+}

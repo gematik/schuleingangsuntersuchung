@@ -1,0 +1,51 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "PersonUebermittlungsssperreBundeswehrEX",
+  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/PersonUebermittlungsssperreBundeswehrEX",
+  "version": "0.1.0",
+  "name": "PersonUebermittlungsssperreBundeswehrEX",
+  "title": "Übermittlungssperre Bundeswehr",
+  "status": "draft",
+  "description": "Diese Extension enthält Angaben zur Übermittlungssperre bezüglich Datenübermittlungen an das Bundesamt für Personalmanagement der Bundeswehr",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Übermittlungssperre Bundeswehr",
+        "definition": "Diese Extension enthält Angaben zur Übermittlungssperre bezüglich Datenübermittlungen an das Bundesamt für Personalmanagement der Bundeswehr"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://www.oegd.de/fhir/seu/StructureDefinition/PersonUebermittlungsssperreBundeswehrEX"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "LinksRechtsBeidseitsKeineAngabeCS",
+  "id": "LinksRechtsBeidseitsKeineAngabeCS",
+  "title": "LinksRechtsBeidseitsKeineAngabeCS",
+  "description": "LinksRechtsBeidseitsKeineAngabeCS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/LinksRechtsBeidseitsKeineAngabeCS",
+  "concept": [
+    {
+      "code": "links",
+      "display": "Links"
+    },
+    {
+      "code": "rechts",
+      "display": "Rechts"
+    },
+    {
+      "code": "beidseits",
+      "display": "Beidseits"
+    },
+    {
+      "code": "keine_angabe",
+      "display": "Keine Angabe"
+    }
+  ],
+  "count": 4
+}

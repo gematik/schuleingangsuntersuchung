@@ -1,0 +1,30 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "ElektronischesGeraetKindCS",
+  "id": "ElektronischesGeraetKindCS",
+  "title": "ElektronischesGeraetKindCS",
+  "description": "ElektronischesGeraetKindCS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/ElektronischesGeraetKindCS",
+  "concept": [
+    {
+      "code": "TV",
+      "display": "TV"
+    },
+    {
+      "code": "andere",
+      "display": "andere"
+    },
+    {
+      "code": "kein_Geraet",
+      "display": "kein Gerät"
+    },
+    {
+      "code": "keine_Angabe",
+      "display": "keine Angabe"
+    }
+  ],
+  "count": 4
+}

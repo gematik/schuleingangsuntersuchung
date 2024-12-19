@@ -269,6 +269,40 @@ RuleSet: 5-af-anamnese
     * item[+] insert addItem(5.65, #choice, [[Erwerbstätigkeit Elternteil 2]])
       * insert addSource(#DE-BY) 
       * answerValueSet = Canonical(SEU_UB_ErwerbstaetigkeitVS)
+    * item[+] insert addGroup(1, [[Sinnesorgane/Zaehne]])
+      * item[+] insert addGroup(1, [[Sehen]])
+        * item[+] insert addItemWithSource(5.25, #choice, [[Sehen]], #DE-BE)
+          * answerValueSet = Canonical(Sinnesorgane_ZaehneVS)
+            * item[+]
+              * insert addItemWithSource(5.25.1, #boolean, [[N]], #DE-BE)
+            * item[+]
+              * insert addItemWithSource(5.25.2, #boolean, [[B]], #DE-BE)
+            * item[+]
+              * insert addItemWithSource(5.25.3, #boolean, [[Ü]], #DE-BE)
+            * item[+]
+              * insert addItemWithSource(5.25.4, #boolean, [[kK]], #DE-BE)
+      * item[+] insert addGroup(1, [[Hören]])
+        * item[+] insert addItemWithSource(5.26, #choice, [[Hören]], #DE-BE)
+          * answerValueSet = Canonical(Sinnesorgane_ZaehneVS)  
+            * item[+]
+              * insert addItemWithSource(5.26.1, #boolean, [[N]], #DE-BE)
+            * item[+]
+              * insert addItemWithSource(5.26.2, #boolean, [[B]], #DE-BE)
+            * item[+]
+              * insert addItemWithSource(5.26.3, #boolean, [[Ü]], #DE-BE)
+            * item[+] 
+              * insert addItemWithSource(5.26.4, #boolean, [[kK]], #DE-BE)
+      * item[+] insert addGroup(1, [[Zähne]])
+        * item[+] insert addItemWithSource(5.27, #choice, [[Zähne]], #DE-BE)
+          * answerValueSet = Canonical(Sinnesorgane_ZaehneVS)
+            * item[+]
+              * insert addItemWithSource(5.27.1, #boolean, [[N]], #DE-BE)
+            * item[+]
+              * insert addItemWithSource(5.27.2, #boolean, [[B]], #DE-BE)
+            * item[+]
+              * insert addItemWithSource(5.27.3, #boolean, [[Ü]], #DE-BE)
+            * item[+]
+              * insert addItemWithSource(5.27.4, #boolean, [[kK]], #DE-BE)  
 
 CodeSystem: SEU_UB_AntwortenHoerstoerungCS
 Id: SEU-UB-AntwortenHoerstoerungCS
@@ -2106,4 +2140,28 @@ Description: "Zähneputzen_in_der_KitaVS"
 * ^expansion.contains[=].display = "nicht sicher" 
 * ^expansion.contains[0].system = Canonical(Zaehneputzen_in_der_KitaCS)
 * ^expansion.contains[=].code = #keine_Angabe 
+* ^expansion.contains[=].display = "keine Angabe"
+
+CodeSystem: Sinnesorgane_ZaehneCS
+Id: Sinnesorgane_ZaehneCS
+Title: "Sinnesorgane_ZaehneCS"
+Description: "Sinnesorgane_ZaehneCS"
+* #o_B "o.B."
+* #auffaellig "auffällig"
+* #keine_Angabe "keine Angabe"
+
+ValueSet: Sinnesorgane_ZaehneVS
+Id: Sinnesorgane_ZaehneVS
+Title: "Sinnesorgane_ZaehneVS"
+Description: "Sinnesorgane_ZaehneVS"
+* include codes from system Sinnesorgane_ZaehneCS
+* ^expansion.timestamp = "2024-03-27T12:20:50+00:00"
+* ^expansion.contains[0].system = Canonical(Sinnesorgane_ZaehneCS)
+* ^expansion.contains[=].code = #o_B
+* ^expansion.contains[=].display = "o.B."
+* ^expansion.contains[0].system = Canonical(Sinnesorgane_ZaehneCS)
+* ^expansion.contains[=].code = #auffaellig
+* ^expansion.contains[=].display = "auffällig"
+* ^expansion.contains[0].system = Canonical(Sinnesorgane_ZaehneCS)
+* ^expansion.contains[=].code = #keine_Angabe
 * ^expansion.contains[=].display = "keine Angabe"

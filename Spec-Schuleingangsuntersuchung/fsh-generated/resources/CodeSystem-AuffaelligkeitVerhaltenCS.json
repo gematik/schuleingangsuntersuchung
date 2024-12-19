@@ -1,0 +1,114 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "AuffaelligkeitVerhaltenCS",
+  "id": "AuffaelligkeitVerhaltenCS",
+  "title": "AuffaelligkeitVerhaltenCS",
+  "description": "AuffaelligkeitVerhaltenCS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/AuffaelligkeitVerhaltenCS",
+  "concept": [
+    {
+      "code": "konzentrationsstörung",
+      "display": "Konzentrationsstörung"
+    },
+    {
+      "code": "bettnässen",
+      "display": "Bettnässen"
+    },
+    {
+      "code": "einkoten",
+      "display": "Einkoten"
+    },
+    {
+      "code": "ängstlichkeit",
+      "display": "Ängstlichkeit"
+    },
+    {
+      "code": "aggressivität",
+      "display": "Aggressivität"
+    },
+    {
+      "code": "schlafstörung",
+      "display": "Schlafstörung"
+    },
+    {
+      "code": "hyperaktivität",
+      "display": "Motorische Unruhe/Hyperaktivität"
+    },
+    {
+      "code": "riskantes_handeln",
+      "display": "Riskantes Handeln"
+    },
+    {
+      "code": "schlechter_appetit",
+      "display": "Schlechter Appetit"
+    },
+    {
+      "code": "wenig_ausdauer_beim_spielen",
+      "display": "Wenig Ausdauer beim Spielen"
+    },
+    {
+      "code": "spät_gesprochen",
+      "display": "Spät gesprochen"
+    },
+    {
+      "code": "neigung_zum_erbrechen",
+      "display": "Neigung zum Erbrechen"
+    },
+    {
+      "code": "kann_nicht_zuhören",
+      "display": "Kann nicht zuhören"
+    },
+    {
+      "code": "noch_sprachschwierigkeiten",
+      "display": "Noch Sprachschwierigkeiten"
+    },
+    {
+      "code": "häufig_bauchschmerzen",
+      "display": "Häufig Bauchschmerzen"
+    },
+    {
+      "code": "regt_sich_schnell_auf",
+      "display": "Regt sich schnell auf"
+    },
+    {
+      "code": "ungeschicklichkeit_beim_malen",
+      "display": "Ungeschicklichkeit beim Malen"
+    },
+    {
+      "code": "zerstört_viel_spielzeug",
+      "display": "Zerstört viel Spielzeug"
+    },
+    {
+      "code": "benutzen_der_linken_hand",
+      "display": "Benutzen der linken Hand"
+    },
+    {
+      "code": "nägel_knabbern",
+      "display": "Nägel knabbern"
+    },
+    {
+      "code": "ist_schnell_entmutigt",
+      "display": "Ist schnell entmutigt"
+    },
+    {
+      "code": "häufiges_hinfallen",
+      "display": "Häufiges Hinfallen"
+    },
+    {
+      "code": "großer_bewegungsdrang",
+      "display": "Großer Bewegungsdrang"
+    },
+    {
+      "code": "kann_sich_schlecht_an_regeln_halten",
+      "display": "Kann sich schlecht an Regeln halten"
+    },
+    {
+      "code": "riskante_handlungen",
+      "display": "unüberlegte/riskante Handlungen"
+    }
+  ],
+  "count": 25
+}

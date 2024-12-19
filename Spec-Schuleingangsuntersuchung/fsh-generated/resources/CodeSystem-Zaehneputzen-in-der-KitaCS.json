@@ -1,0 +1,30 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "Zaehneputzen_in_der_KitaCS",
+  "id": "Zaehneputzen-in-der-KitaCS",
+  "title": "Zähneputzen_in_der_KitaCS",
+  "description": "Zähneputzen_in_der_KitaCS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/Zaehneputzen-in-der-KitaCS",
+  "concept": [
+    {
+      "code": "ja",
+      "display": "ja"
+    },
+    {
+      "code": "nein",
+      "display": "nein"
+    },
+    {
+      "code": "nicht_sicher",
+      "display": "nicht sicher"
+    },
+    {
+      "code": "keine_Angabe",
+      "display": "keine Angabe"
+    }
+  ],
+  "count": 4
+}

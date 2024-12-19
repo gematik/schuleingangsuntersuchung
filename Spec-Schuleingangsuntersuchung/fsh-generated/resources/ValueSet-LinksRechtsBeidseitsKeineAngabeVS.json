@@ -1,0 +1,42 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "LinksRechtsBeidseitsKeineAngabeVS",
+  "id": "LinksRechtsBeidseitsKeineAngabeVS",
+  "title": "LinksRechtsBeidseitsKeineAngabeVS",
+  "description": "LinksRechtsBeidseitsKeineAngabeCS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/LinksRechtsBeidseitsKeineAngabeVS",
+  "expansion": {
+    "timestamp": "2024-04-04T10:44:31+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/LinksRechtsBeidseitsKeineAngabeCS",
+        "code": "links",
+        "display": "Links"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/LinksRechtsBeidseitsKeineAngabeCS",
+        "code": "rechts",
+        "display": "Rechts"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/LinksRechtsBeidseitsKeineAngabeCS",
+        "code": "beidseits",
+        "display": "Beidseits"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/LinksRechtsBeidseitsKeineAngabeCS",
+        "code": "keine_angabe",
+        "display": "Keine Angabe"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/LinksRechtsBeidseitsKeineAngabeCS"
+      }
+    ]
+  }
+}

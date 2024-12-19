@@ -1,0 +1,34 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU_EF_WohnsituationKindCS",
+  "id": "seu-ef-wohnsituation-kind-cs",
+  "title": "SEU_EF_Wohnsituation Kind CodeSystem",
+  "description": "CodeSystem für die Angabe der Wohnsituation des Kindes.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-wohnsituation-kind-cs",
+  "concept": [
+    {
+      "code": "bei_beiden_leiblichen_eltern",
+      "display": "Bei beiden leiblichen Eltern"
+    },
+    {
+      "code": "bei_alleinerziehendem_elternteil",
+      "display": "Bei alleinerziehendem Elternteil"
+    },
+    {
+      "code": "bei_elternteil_mit_partner",
+      "display": "Bei Elternteil mit Partner"
+    },
+    {
+      "code": "bei_grosseltern_oder_anderen",
+      "display": "Bei Großeltern, Pflegeeltern, Adoptiveltern oder anderen"
+    },
+    {
+      "code": "keine_angaben",
+      "display": "Keine Angaben"
+    }
+  ],
+  "count": 5
+}

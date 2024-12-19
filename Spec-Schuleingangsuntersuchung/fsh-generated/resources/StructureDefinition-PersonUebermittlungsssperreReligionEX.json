@@ -1,0 +1,51 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "PersonUebermittlungsssperreReligionEX",
+  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/PersonUebermittlungsssperreReligionEX",
+  "version": "0.1.0",
+  "name": "PersonUebermittlungsssperreReligionEX",
+  "title": "Übermittlungssperre Religion",
+  "status": "draft",
+  "description": "Diese Extension enthält Angaben zur Übermittlungssperre bezüglich Datenübermittlungen an öffentlich-rechtliche Religionsgemeinschaften",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Übermittlungssperre Religion",
+        "definition": "Diese Extension enthält Angaben zur Übermittlungssperre bezüglich Datenübermittlungen an öffentlich-rechtliche Religionsgemeinschaften"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://www.oegd.de/fhir/seu/StructureDefinition/PersonUebermittlungsssperreReligionEX"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "boolean"
+          }
+        ]
+      }
+    ]
+  }
+}

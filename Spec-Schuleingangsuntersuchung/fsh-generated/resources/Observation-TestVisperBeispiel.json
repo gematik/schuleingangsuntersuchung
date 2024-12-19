@@ -1,0 +1,100 @@
+{
+  "resourceType": "Observation",
+  "id": "TestVisperBeispiel",
+  "meta": {
+    "profile": [
+      "https://www.oegd.de/fhir/seu/StructureDefinition/TestVisper"
+    ]
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "311886005",
+        "system": "http://snomed.info/sct",
+        "display": "Visual perception, function"
+      }
+    ]
+  },
+  "referenceRange": [
+    {
+      "low": {
+        "value": 0,
+        "code": "1",
+        "system": "http://unitsofmeasure.org",
+        "unit": "Punktwert"
+      },
+      "high": {
+        "value": 8,
+        "code": "1",
+        "system": "http://unitsofmeasure.org",
+        "unit": "Punktwert"
+      },
+      "type": {
+        "coding": [
+          {
+            "code": "263654008",
+            "system": "http://snomed.info/sct",
+            "display": "Abnormal (qualifier value)"
+          }
+        ]
+      }
+    },
+    {
+      "low": {
+        "value": 9,
+        "code": "1",
+        "system": "http://unitsofmeasure.org",
+        "unit": "Punktwert"
+      },
+      "high": {
+        "value": 10,
+        "code": "1",
+        "system": "http://unitsofmeasure.org",
+        "unit": "Punktwert"
+      },
+      "type": {
+        "coding": [
+          {
+            "code": "17621005",
+            "system": "http://snomed.info/sct",
+            "display": "Borderline (qualifier value)"
+          }
+        ]
+      }
+    },
+    {
+      "low": {
+        "value": 11,
+        "code": "1",
+        "system": "http://unitsofmeasure.org",
+        "unit": "Punktwert"
+      },
+      "high": {
+        "value": 15,
+        "code": "1",
+        "system": "http://unitsofmeasure.org",
+        "unit": "Punktwert"
+      },
+      "type": {
+        "coding": [
+          {
+            "code": "263654008",
+            "system": "http://snomed.info/sct",
+            "display": "Normal (qualifier value)"
+          }
+        ]
+      }
+    }
+  ],
+  "subject": {
+    "reference": "Patient/PersonBeispiel"
+  },
+  "effectiveDateTime": "2023-01-01",
+  "valueQuantity": {
+    "value": 14,
+    "code": "1",
+    "system": "http://unitsofmeasure.org",
+    "unit": "Punktwert"
+  }
+}

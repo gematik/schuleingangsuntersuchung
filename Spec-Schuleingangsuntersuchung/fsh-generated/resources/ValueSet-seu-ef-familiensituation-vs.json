@@ -1,0 +1,77 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SEU_EF_FamiliensituationVS",
+  "id": "seu-ef-familiensituation-vs",
+  "title": "SEU_EF_Familiensituation ValueSet",
+  "description": "ValueSet, das verschiedene Familiensituationen enthält.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-familiensituation-vs",
+  "expansion": {
+    "timestamp": "2024-10-20T11:50:47+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-familiensituation-cs",
+        "code": "leibliche_eltern",
+        "display": "Leibliche Eltern"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-familiensituation-cs",
+        "code": "mutter_mit_partner_in",
+        "display": "Mutter mit Partner/in"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-familiensituation-cs",
+        "code": "mutter_alleinerziehend",
+        "display": "Mutter alleinerziehend"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-familiensituation-cs",
+        "code": "vater_mit_partner_in",
+        "display": "Vater mit Partner/in"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-familiensituation-cs",
+        "code": "vater_alleinerziehend",
+        "display": "Vater alleinerziehend"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-familiensituation-cs",
+        "code": "wechselmodell",
+        "display": "Wechselmodell"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-familiensituation-cs",
+        "code": "heim",
+        "display": "Heim"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-familiensituation-cs",
+        "code": "pflegeeltern",
+        "display": "Pflegeeltern"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-familiensituation-cs",
+        "code": "andere_familienmitglieder_verwandte",
+        "display": "Andere Familienmitglieder/Verwandte"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-familiensituation-cs",
+        "code": "andere_personen",
+        "display": "Andere Personen"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-familiensituation-cs",
+        "code": "keine_angabe",
+        "display": "Keine Angabe"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-familiensituation-cs"
+      }
+    ]
+  }
+}

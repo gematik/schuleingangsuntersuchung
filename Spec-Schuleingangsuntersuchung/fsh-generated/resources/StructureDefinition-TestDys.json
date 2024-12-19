@@ -1,0 +1,55 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "TestDys",
+  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/TestDys",
+  "version": "0.1.0",
+  "name": "TestDys",
+  "status": "draft",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "https://www.oegd.de/fhir/seu/StructureDefinition/Test",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "dys",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/TestTypesCS",
+              "display": "Anzahl auffälliger Laut/Stammfehler"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.referenceRange",
+        "path": "Observation.referenceRange"
+      },
+      {
+        "id": "Observation.referenceRange.low",
+        "path": "Observation.referenceRange.low",
+        "patternQuantity": {
+          "value": 0,
+          "code": "1",
+          "system": "http://unitsofmeasure.org",
+          "unit": "Punktwert"
+        }
+      },
+      {
+        "id": "Observation.referenceRange.high",
+        "path": "Observation.referenceRange.high",
+        "patternQuantity": {
+          "value": 10,
+          "code": "1",
+          "system": "http://unitsofmeasure.org",
+          "unit": "Punktwert"
+        }
+      }
+    ]
+  }
+}

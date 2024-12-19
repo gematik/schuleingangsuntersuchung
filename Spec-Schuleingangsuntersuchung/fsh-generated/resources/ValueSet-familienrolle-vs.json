@@ -1,0 +1,52 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "FamilienrolleVS",
+  "id": "familienrolle-vs",
+  "title": "Familienrolle ValueSet",
+  "description": "FamilienrolleVS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/familienrolle-vs",
+  "expansion": {
+    "timestamp": "2024-04-06T12:00:00+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/familienrolle-cs",
+        "code": "mutter",
+        "display": "Mutter"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/familienrolle-cs",
+        "code": "vater",
+        "display": "Vater"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/familienrolle-cs",
+        "code": "pflegemutter",
+        "display": "Pflegemutter"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/familienrolle-cs",
+        "code": "pflegevater",
+        "display": "Pflegevater"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/familienrolle-cs",
+        "code": "geschwister",
+        "display": "Geschwister"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/familienrolle-cs",
+        "code": "andere_person",
+        "display": "Andere Person"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/familienrolle-cs"
+      }
+    ]
+  }
+}

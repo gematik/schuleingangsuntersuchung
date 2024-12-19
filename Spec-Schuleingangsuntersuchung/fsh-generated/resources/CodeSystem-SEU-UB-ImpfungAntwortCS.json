@@ -1,0 +1,29 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU_UB_ImpfungAntwortCS",
+  "id": "SEU-UB-ImpfungAntwortCS",
+  "title": "SEU Impfung Antwort",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-ImpfungAntwortCS",
+  "concept": [
+    {
+      "code": "0",
+      "display": "keine Impfung"
+    },
+    {
+      "code": "1",
+      "display": "Grundimmunisierung unvollständig"
+    },
+    {
+      "code": "2",
+      "display": "Grundimmunisierung abgeschlossen (ohne Auffrischung)"
+    },
+    {
+      "code": "3",
+      "display": "Grundimmunisierung abgeschlossen und 1+ Auffrischung"
+    }
+  ],
+  "count": 4
+}

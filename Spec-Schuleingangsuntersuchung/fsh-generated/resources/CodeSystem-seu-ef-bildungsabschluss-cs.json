@@ -1,0 +1,38 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU_EF_BildungsabschlussCS",
+  "id": "seu-ef-bildungsabschluss-cs",
+  "title": "SEU_EF_Bildungsabschluss CodeSystem",
+  "description": "CodeSystem für die Angabe des Bildungsabschlusses.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-bildungsabschluss-cs",
+  "concept": [
+    {
+      "code": "kein_schulabschluss",
+      "display": "Kein Schulabschluss"
+    },
+    {
+      "code": "hauptschulabschluss",
+      "display": "Hauptschulabschluss"
+    },
+    {
+      "code": "mittlere_reife",
+      "display": "Mittlere Reife oder vergleichbar"
+    },
+    {
+      "code": "abitur_fachhochschulreife",
+      "display": "Abitur/Fachhochschulreife oder vergleichbar"
+    },
+    {
+      "code": "sonder_foerderschule",
+      "display": "Sonder-/Förderschule"
+    },
+    {
+      "code": "in_schulischer_ausbildung",
+      "display": "Derzeit noch in schulischer Ausbildung (Schüler*in)"
+    }
+  ],
+  "count": 6
+}

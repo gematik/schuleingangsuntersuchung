@@ -1,0 +1,55 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "PersonMigrationshintergrundEX",
+  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/PersonMigrationshintergrundEX",
+  "version": "0.1.0",
+  "name": "PersonMigrationshintergrundEX",
+  "title": "Migrationshintergrund",
+  "status": "draft",
+  "description": "Diese Extension enthält Angaben zum Migrationshintergrund der betreffenden Person in codierter Form",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Migrationshintergrund",
+        "definition": "Diese Extension enthält Angaben zum Migrationshintergrund der betreffenden Person in codierter Form"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://www.oegd.de/fhir/seu/StructureDefinition/PersonMigrationshintergrundEX"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.oegd.de/fhir/seu/ValueSet/PersonEthnieVS"
+        }
+      }
+    ]
+  }
+}

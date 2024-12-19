@@ -1,0 +1,38 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "Deutschkenntnisse_VaterCS",
+  "id": "Deutschkenntnisse-VaterCS",
+  "title": "Deutschkenntnisse_VaterCS",
+  "description": "Deutschkenntnisse_VaterCS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/Deutschkenntnisse-VaterCS",
+  "concept": [
+    {
+      "code": "nicht",
+      "display": "nicht"
+    },
+    {
+      "code": "einzelne_Worte",
+      "display": "einzelne Worte"
+    },
+    {
+      "code": "fluessig_mit_erheblichen_Fehlern",
+      "display": "flüssig mit erheblichen Fehlern"
+    },
+    {
+      "code": "sehr_gut",
+      "display": "sehr gut"
+    },
+    {
+      "code": "hat_nicht_begleitet",
+      "display": "hat nicht begleitet"
+    },
+    {
+      "code": "keine_Angabe",
+      "display": "keine Angabe"
+    }
+  ],
+  "count": 6
+}

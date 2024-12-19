@@ -1,0 +1,33 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU_UB_SprachtherapieCS",
+  "id": "SEU-UB-SprachtherapieCS",
+  "title": "SEU Sprachtherapie",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-SprachtherapieCS",
+  "concept": [
+    {
+      "code": "2",
+      "display": "nein"
+    },
+    {
+      "code": "3",
+      "display": "abgeschlossen"
+    },
+    {
+      "code": "4",
+      "display": "läuft noch"
+    },
+    {
+      "code": "5",
+      "display": "geplant"
+    },
+    {
+      "code": "9",
+      "display": "keine Angaben"
+    }
+  ],
+  "count": 5
+}
