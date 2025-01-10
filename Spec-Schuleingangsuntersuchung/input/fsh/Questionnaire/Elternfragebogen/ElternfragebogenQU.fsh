@@ -147,6 +147,9 @@ Description: "Elternbefragung"
     * insert addItem(2.9, #choice, Staatsangehörigkeit)
   * item[+]
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
+    * insert addItemWithSource(2.9.1, #choice, [[andere/weitere]], #DE-BE)
+  * item[+]
+    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
     * insert addItem(2.10, #choice, Herkunftsland)
   * item[+]
     * answerValueSet = Canonical(ISO6392_LanguageVS)
@@ -178,6 +181,8 @@ Description: "Elternbefragung"
       * insert addItem(3.1.1.1, #date, Geburtsdatum des Geschwisters)
     * item[+]
       * insert addItem(3.1.1.2, #choice, Geschlecht des Geschwisters)
+    * item[+]
+      * insert addItemWithSource(3.1.1.3, #string, [[Vorname des Geschwisters]], #DE-BE)
   * item[+]
     * insert addItem(3.2, #group, Familiäre Vorgeschichte)
     * item[+]
@@ -241,6 +246,8 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItemWithSource(4.1d, #choice, [[Dauer Besuch Kita/Krippe]], #DE-HE)
     * answerValueSet = Canonical(SEU_EF_DauerHEVS)
+  * item[+]
+    * insert addItemWithSource(4.1e, #date, [[Seit wann (Monat/Jahr) geht ihr Kind in eine Kindertagesstätte (auch Elterninitiativ-Kita/Großtagespflegestelle)?]], #DE-BE)
   * item[+]
     * insert addItem(4.2, #integer, Dauer Kita/Krippe pro Woche in Stunden)
   * item[+]
@@ -424,6 +431,11 @@ Description: "Elternbefragung"
     * item[+]
       * insert addItem(7.12.1, #string, [[Welche Sorgen]])
       * insert enableWhenBoolean(7.12, =, true)
+  * item[+]
+    * answerValueSet = Canonical(Sorgen_KindVS)
+    * insert addItemWithSource(7.13, #choice, [[Machen Sie sich Sorgen um Ihr Kind wegen]], #DE-BE)
+
+
 //********************************************
 // Erkrankungen und gesundheitliche Einschränkungen
 * item[+]
@@ -549,6 +561,7 @@ Description: "Elternbefragung"
     * insert addItem(8.15, #boolean, [[Krankenhausaufenthalt]])
     * item[+]
       * insert addItem(8.15.1, #string, [[Detaillierte Angaben zum Krankenhausaufenthalt?]])
+      * insert addItemWithSource(8.15.1.a, #integer, [[Anzahl der Krankenhausaufenthalte/Operationen]], #DE-BE)
       * insert enableWhenBoolean(8.15, =, true)
   * item[+]
     * insert addItem(8.16, #boolean, [[Allergietest]])
@@ -595,6 +608,11 @@ Description: "Elternbefragung"
     * insert addItem(8.25.1, #text, [[Welche Erkrankung]])
     * repeats = true
   * item[+]
+    * insert addItemWithSource(8.25.2, #boolean, [[andere wichtige Erkrankungen/Allergien/Unfälle]], #DE-BE)
+  * item[+]
+    * insert enableWhenBoolean(8.25.2, =, true)
+    * insert addItemWithSource(8.25.3, #text, [[wenn ja, welche]], #DE-BE)
+  * item[+]
     * insert addItem(8.26, #text, [[Sonstige Probleme]])
   * item[+]
     * insert addItem(8.27, #boolean, [[Wurde ihr Kind operiert]])
@@ -636,6 +654,8 @@ Description: "Elternbefragung"
       * insert enableWhenCode(8.29, =, AllgemeineBeschwerdenCS, sonstige)
   * item[+]
     * insert addItemWithSource(8.30, #boolean, [[Wurde Ihr Kind jemals aufgrund von Unfallverletzungen von einem Arzt behandelt??]], #DE-SL)
+  * item[+]
+    * insert addItemWithSource(8.30.1, #boolean, [[Nässt ihr Kind ein?]], #DE-BE)
   * item[+]
     * insert addItemWithSource(8.31, #boolean, [[Einnässen tags]], #DE-SL)
   * item[+]
@@ -892,6 +912,8 @@ Description: "Elternbefragung"
         * answerBoolean = true
   * item[+]
     * insert addItem(12.4, #boolean, KISS Sprachscreening)
+  * item[+]
+    * insert addItemWithSource(12.4.1, #integer, [[Wieviele Personen sind Raucher/Dampfer]], #DE-BE)
   * item[+]
     * insert addItem(12.5, #choice, Raucherhaushalt)
     * answerValueSet = Canonical(HaeufigkeitAuswahlVS)    

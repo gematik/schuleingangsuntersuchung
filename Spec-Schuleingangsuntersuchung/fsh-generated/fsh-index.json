@@ -640,6 +640,14 @@
     "endLine": 451
   },
   {
+    "outputFile": "CodeSystem-Sorgen-KindCS.json",
+    "fshName": "Sorgen_KindCS",
+    "fshType": "CodeSystem",
+    "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
+    "startLine": 2473,
+    "endLine": 2480
+  },
+  {
     "outputFile": "CodeSystem-StaatDnxCS.json",
     "fshName": "StaatDnxCS",
     "fshType": "CodeSystem",
@@ -1469,7 +1477,7 @@
     "fshType": "Instance",
     "fshFile": "Questionnaire\\Elternfragebogen\\ElternfragebogenQU.fsh",
     "startLine": 1,
-    "endLine": 1016
+    "endLine": 1038
   },
   {
     "outputFile": "Questionnaire-SEU-Untersuchungsbogen.json",
@@ -2526,6 +2534,14 @@
     "fshFile": "Questionnaire\\Untersuchungsbogen\\8-af-schulaerztlicheuntersuchung.fsh",
     "startLine": 453,
     "endLine": 485
+  },
+  {
+    "outputFile": "ValueSet-Sorgen-KindVS.json",
+    "fshName": "Sorgen_KindVS",
+    "fshType": "ValueSet",
+    "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
+    "startLine": 2482,
+    "endLine": 2499
   },
   {
     "outputFile": "ValueSet-StaatDnxVS.json",

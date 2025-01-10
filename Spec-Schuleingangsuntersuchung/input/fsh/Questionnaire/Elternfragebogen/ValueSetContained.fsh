@@ -2469,3 +2469,31 @@ Description: "ValueSet, das verschiedene Dauern enthält."
 * ^expansion.contains[+].system = Canonical(SEU_EF_DauerHECS)
 * ^expansion.contains[=].code = #ueber_3_jahre
 * ^expansion.contains[=].display = ">3 Jahre"
+
+CodeSystem: Sorgen_KindCS
+Id: Sorgen_KindCS
+Title: "Sorgen_KindCS"
+Description: "Sorgen_KindCS"
+* #seines_Verhaltens "seines Verhaltens?"
+* #seiner_Sprachentwicklung "seiner Sprachentwicklung"
+* #seine_Konzentrationsfähigkeit "seine Konzentrationsfähigkeit"
+* #seines_Seh-oder_Hoervermoegens "seines Seh- oder Hörvermögens"
+
+ValueSet: Sorgen_KindVS
+Id: Sorgen_KindVS
+Title: "Sorgen_KindVS"
+Description: "Sorgen_KindVS"
+* include codes from system Sorgen_KindCS
+* ^expansion.timestamp = "2024-03-27T12:20:50+00:00"
+* ^expansion.contains[0].system = Canonical(Sorgen_KindCS)
+* ^expansion.contains[=].code = #seines_Verhaltens
+* ^expansion.contains[=].display = "seines Verhaltens?"
+* ^expansion.contains[0].system = Canonical(Sorgen_KindCS)
+* ^expansion.contains[=].code = #seiner_Sprachentwicklung
+* ^expansion.contains[=].display = "seiner Sprachentwicklung"
+* ^expansion.contains[0].system = Canonical(Sorgen_KindCS)
+* ^expansion.contains[=].code = #seine_Konzentrationsfähigkeit
+* ^expansion.contains[=].display = "seine Konzentrationsfähigkeit"
+* ^expansion.contains[0].system = Canonical(Sorgen_KindCS)
+* ^expansion.contains[=].code = #seines_Seh-oder_Hoervermoegens
+* ^expansion.contains[=].display = "seines Seh- oder Hörvermögens"
