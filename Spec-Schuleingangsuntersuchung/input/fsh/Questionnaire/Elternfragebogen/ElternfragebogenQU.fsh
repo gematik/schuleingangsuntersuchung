@@ -644,104 +644,104 @@ Description: "Elternbefragung"
     * insert addItemWithSource(8.33, #boolean, [[Einkoten tags]], #DE-SL)
   * item[+]
     * insert addItemWithSource(8.34, #boolean, [[Einkoten nachts]], #DE-SL)
-* item[+]
-  * insert addItemWithSource(8.35, #boolean, [[Erkrankungen Tuberkuloseerkrankung]], #DE-SL)
-* item[+]
-  * insert addItemWithSource(8.36, #boolean, [[Erkrankungen Meningitis/Enceph.]], #DE-SL)
-* item[+]
-  * insert addItemWithSource(8.37, #boolean, [[Erkrankungen Pneumonien]], #DE-SL)
-* item[+]
-  * insert addItemWithSource(8.38, #boolean, [[Erkrankungen Pseudocroup]], #DE-SL)
-* item[+]
-  * insert addItemWithSource(8.39, #boolean, [[Erkrankungen Fieberkrampf/Krampsanfall]], #DE-SL)
-* item[+]
-  * insert addItemWithSource(8.40, #boolean, [[Erkrankungen Harnwegserkrankungen]], #DE-SL)
-* item[+]
-  * insert addItemWithSource(8.41, #boolean, [[Erkrankungen rez Otitis media]], #DE-SL)
-* item[+]
-  * insert addItemWithSource(8.42, #boolean, [[Erkrankungen Allergie]], #DE-SL)
-* item[+]
-  * insert addItemWithSource(8.42a, #boolean, [[Erkrankungen Neurodermitis]], #DE-SL)
-* item[+]
-  * insert addItemWithSource(8.43, #boolean, [[Erkrankungen Sonstige]], #DE-SL)
-* item[+]
-  * insert addItemWithSource(8.44, #boolean, [[Operationen Adenotomie]], #DE-SL)
-* item[+]
-  * insert addItemWithSource(8.45, #boolean, [[Operationen Tonsillen-OP]], #DE-SL)
-* item[+]
-  * insert addItemWithSource(8.46, #boolean, [[Operationen Herniotomie]], #DE-SL)
-* item[+]
-  * insert addItemWithSource(8.47, #boolean, [[Operationen Appendektomie]], #DE-SL)
-* item[+]
-  * insert addItemWithSource(8.48, #boolean, [[Operationen Circumcision]], #DE-SL)
-* item[+]
-  * insert addItemWithSource(8.49, #boolean, [[Operationen Orchidopexie]], #DE-SL)
-* item[+]
-  * insert addItemWithSource(8.50, #boolean, [[Operationen Augenoperation]], #DE-SL)
-* item[+]
-  * insert addItemWithSource(8.51, #boolean, [[Operationen Sonstige OP]], #DE-SL)
-* item[+]
-  * insert addItemWithSource(8.52, #choice, [[Unfälle Verbrennung/Verbrühung]], #DE-SL)
-  * answerValueSet = Canonical(SEU_EF_UnfallortVS)
-* item[+]
-  * insert addItemWithSource(8.53, #choice, [[Unfälle Intoxikation]], #DE-SL)
-  * answerValueSet = Canonical(SEU_EF_UnfallortVS)
-* item[+]
-  * insert addItemWithSource(8.54, #choice, [[Unfälle Knochenbrücke/Weichteilverletzungen]], #DE-SL)
-  * answerValueSet = Canonical(SEU_EF_UnfallortVS)
-* item[+]
-  * insert addItemWithSource(8.55, #choice, [[Unfälle Schwere Kopfverletzungen]], #DE-SL)
-  * answerValueSet = Canonical(SEU_EF_UnfallortVS)
-* item[+]
-  * insert addItemWithSource(8.56, #choice, [[Unfälle Sonstige]], #DE-SL)
-  * answerValueSet = Canonical(SEU_EF_UnfallortVS)
-* item[+]
-  * insert addItemWithSource(8.57, #boolean, [[Reg. Med. Antikonvulsiva]], #DE-SL)
   * item[+]
-    * insert addItem(8.57.1, #string, [[Wegen welcher Erkrankungen ist Ihr Kind zurzeit in Behandlung??]])
-    * insert enableWhenBoolean(8.57, =, true)
-* item[+]
-  * insert addItemWithSource(8.58, #boolean, [[Reg. Med. Antiasthmatika/Antiallergika]], #DE-SL)
-* item[+]
-  * insert addItemWithSource(8.59, #boolean, [[Reg. Med. Psychopharmaka]], #DE-SL)
-* item[+]
-  * insert addItemWithSource(8.60, #boolean, [[Reg. Med. Cardiaca/Kreislaufpräparate]], #DE-SL)
-* item[+]
-  * insert addItemWithSource(8.61, #boolean, [[Reg. Med. Jodid oder Thyroxin]], #DE-SL)
-* item[+]
-  * insert addItemWithSource(8.62, #boolean, [[Reg. Med. Dermatologische Präparate]], #DE-SL)
-* item[+]
-  * insert addItemWithSource(8.63, #boolean, [[Reg. Med. Homöopathische Präparate]], #DE-SL)
-* item[+]
-  * insert addItemWithSource(8.64, #boolean, [[Reg. Med. Sonstige]], #DE-SL)
-* item[+]
-  * insert addItemWithSource(8.65, #boolean, [[Orthese]], #DE-BB)
-* item[+]
-  * insert addItemWithSource(8.66, #boolean, [[Zahnersatz (Prothese, Platzhalter)]], #DE-BB)
-* item[+]
-  * insert addItemWithSource(8.67, #boolean, [[Hörgerät]], #DE-BB)
-* item[+]
-  * insert addItemWithSource(8.68, #string, [[Andere Verletzung]], #DE-BB)
-* item[+]
-  * insert addItemWithSource(8.69, #boolean, [[Andere Verletzung: zu Hause]], #DE-BB)
-* item[+]
-  * insert addItemWithSource(8.70, #boolean, [[Andere Verletzung: Kita]], #DE-BB)
-* item[+]
-  * insert addItemWithSource(8.71, #boolean, [[Andere Verletzung: Freizeit]], #DE-BB)
-* item[+]
-  * insert addItemWithSource(8.72, #boolean, [[Andere Verletzung: Straßenverkehr]], #DE-BB)
-* item[+]
-  * insert addItemWithSource(8.73, #boolean, [[Andere Verletzung: anderer Ort]], #DE-BB)
-* item[+]
-  * insert addItemWithSource(8.74, #boolean, [[Hauterkrankungen]], #DE-SN)
-* item[+]
-  * insert addItemWithSource(8.75, #string, [[Welche Hauterkrankungen]], #DE-SN)
-  * insert enableWhenBoolean(8.74, =, true)
-* item[+]
-  * insert addItemWithSource(8.76, #boolean, [[Orthopädische Erkrankungen?]], #DE-SN)
-* item[+]
-  * insert addItemWithSource(8.77, #string, [[Welche orthopädischen Erkrankungen]], #DE-SN)
-  * insert enableWhenBoolean(8.76, =, true)
+    * insert addItemWithSource(8.35, #boolean, [[Erkrankungen Tuberkuloseerkrankung]], #DE-SL)
+  * item[+]
+    * insert addItemWithSource(8.36, #boolean, [[Erkrankungen Meningitis/Enceph.]], #DE-SL)
+  * item[+]
+    * insert addItemWithSource(8.37, #boolean, [[Erkrankungen Pneumonien]], #DE-SL)
+  * item[+]
+    * insert addItemWithSource(8.38, #boolean, [[Erkrankungen Pseudocroup]], #DE-SL)
+  * item[+]
+    * insert addItemWithSource(8.39, #boolean, [[Erkrankungen Fieberkrampf/Krampsanfall]], #DE-SL)
+  * item[+]
+    * insert addItemWithSource(8.40, #boolean, [[Erkrankungen Harnwegserkrankungen]], #DE-SL)
+  * item[+]
+    * insert addItemWithSource(8.41, #boolean, [[Erkrankungen rez Otitis media]], #DE-SL)
+  * item[+]
+    * insert addItemWithSource(8.42, #boolean, [[Erkrankungen Allergie]], #DE-SL)
+  * item[+]
+    * insert addItemWithSource(8.42a, #boolean, [[Erkrankungen Neurodermitis]], #DE-SL)
+  * item[+]
+    * insert addItemWithSource(8.43, #boolean, [[Erkrankungen Sonstige]], #DE-SL)
+  * item[+]
+    * insert addItemWithSource(8.44, #boolean, [[Operationen Adenotomie]], #DE-SL)
+  * item[+]
+    * insert addItemWithSource(8.45, #boolean, [[Operationen Tonsillen-OP]], #DE-SL)
+  * item[+]
+    * insert addItemWithSource(8.46, #boolean, [[Operationen Herniotomie]], #DE-SL)
+  * item[+]
+    * insert addItemWithSource(8.47, #boolean, [[Operationen Appendektomie]], #DE-SL)
+  * item[+]
+    * insert addItemWithSource(8.48, #boolean, [[Operationen Circumcision]], #DE-SL)
+  * item[+]
+    * insert addItemWithSource(8.49, #boolean, [[Operationen Orchidopexie]], #DE-SL)
+  * item[+]
+    * insert addItemWithSource(8.50, #boolean, [[Operationen Augenoperation]], #DE-SL)
+  * item[+]
+    * insert addItemWithSource(8.51, #boolean, [[Operationen Sonstige OP]], #DE-SL)
+  * item[+]
+    * insert addItemWithSource(8.52, #choice, [[Unfälle Verbrennung/Verbrühung]], #DE-SL)
+    * answerValueSet = Canonical(SEU_EF_UnfallortVS)
+  * item[+]
+    * insert addItemWithSource(8.53, #choice, [[Unfälle Intoxikation]], #DE-SL)
+    * answerValueSet = Canonical(SEU_EF_UnfallortVS)
+  * item[+]
+    * insert addItemWithSource(8.54, #choice, [[Unfälle Knochenbrücke/Weichteilverletzungen]], #DE-SL)
+    * answerValueSet = Canonical(SEU_EF_UnfallortVS)
+  * item[+]
+    * insert addItemWithSource(8.55, #choice, [[Unfälle Schwere Kopfverletzungen]], #DE-SL)
+    * answerValueSet = Canonical(SEU_EF_UnfallortVS)
+  * item[+]
+    * insert addItemWithSource(8.56, #choice, [[Unfälle Sonstige]], #DE-SL)
+    * answerValueSet = Canonical(SEU_EF_UnfallortVS)
+  * item[+]
+    * insert addItemWithSource(8.57, #boolean, [[Reg. Med. Antikonvulsiva]], #DE-SL)
+    * item[+]
+      * insert addItem(8.57.1, #string, [[Wegen welcher Erkrankungen ist Ihr Kind zurzeit in Behandlung??]])
+      * insert enableWhenBoolean(8.57, =, true)
+  * item[+]
+    * insert addItemWithSource(8.58, #boolean, [[Reg. Med. Antiasthmatika/Antiallergika]], #DE-SL)
+  * item[+]
+    * insert addItemWithSource(8.59, #boolean, [[Reg. Med. Psychopharmaka]], #DE-SL)
+  * item[+]
+    * insert addItemWithSource(8.60, #boolean, [[Reg. Med. Cardiaca/Kreislaufpräparate]], #DE-SL)
+  * item[+]
+    * insert addItemWithSource(8.61, #boolean, [[Reg. Med. Jodid oder Thyroxin]], #DE-SL)
+  * item[+]
+    * insert addItemWithSource(8.62, #boolean, [[Reg. Med. Dermatologische Präparate]], #DE-SL)
+  * item[+]
+    * insert addItemWithSource(8.63, #boolean, [[Reg. Med. Homöopathische Präparate]], #DE-SL)
+  * item[+]
+    * insert addItemWithSource(8.64, #boolean, [[Reg. Med. Sonstige]], #DE-SL)
+  * item[+]
+    * insert addItemWithSource(8.65, #boolean, [[Orthese]], #DE-BB)
+  * item[+]
+    * insert addItemWithSource(8.66, #boolean, [[Zahnersatz (Prothese, Platzhalter)]], #DE-BB)
+  * item[+]
+    * insert addItemWithSource(8.67, #boolean, [[Hörgerät]], #DE-BB)
+  * item[+]
+    * insert addItemWithSource(8.68, #string, [[Andere Verletzung]], #DE-BB)
+  * item[+]
+    * insert addItemWithSource(8.69, #boolean, [[Andere Verletzung: zu Hause]], #DE-BB)
+  * item[+]
+    * insert addItemWithSource(8.70, #boolean, [[Andere Verletzung: Kita]], #DE-BB)
+  * item[+]
+    * insert addItemWithSource(8.71, #boolean, [[Andere Verletzung: Freizeit]], #DE-BB)
+  * item[+]
+    * insert addItemWithSource(8.72, #boolean, [[Andere Verletzung: Straßenverkehr]], #DE-BB)
+  * item[+]
+    * insert addItemWithSource(8.73, #boolean, [[Andere Verletzung: anderer Ort]], #DE-BB)
+  * item[+]
+    * insert addItemWithSource(8.74, #boolean, [[Hauterkrankungen]], #DE-SN)
+  * item[+]
+    * insert addItemWithSource(8.75, #string, [[Welche Hauterkrankungen]], #DE-SN)
+    * insert enableWhenBoolean(8.74, =, true)
+  * item[+]
+    * insert addItemWithSource(8.76, #boolean, [[Orthopädische Erkrankungen?]], #DE-SN)
+  * item[+]
+    * insert addItemWithSource(8.77, #string, [[Welche orthopädischen Erkrankungen]], #DE-SN)
+    * insert enableWhenBoolean(8.76, =, true)
 //********************************************
 // Förderungen
 * item[+]
