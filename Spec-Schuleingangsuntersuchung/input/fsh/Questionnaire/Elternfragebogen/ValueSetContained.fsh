@@ -1830,6 +1830,28 @@ Description: "ValueSet, das die Kategorien des Medienkonsums in Stunden enthält
 * ^expansion.contains[=].code = #mehr_als_4
 * ^expansion.contains[=].display = "Mehr als 4 Stunden"
 
+ValueSet: SEU_EF_Medienkonsum_BerlinVS
+Id: SEU_EF_Medienkonsum_BerlinVS
+Title: "SEU_EF_Medienkonsum Berlin ValueSet"
+Description: "ValueSet, das die Kategorien des Medienkonsums in Stunden enthält."
+* include codes from system SEU_EF_Medienkonsum_BerlinCS
+* ^expansion.timestamp = "2024-09-10T12:00:00+00:00"
+* ^expansion.contains[0].system = Canonical(SEU_EF_Medienkonsum_BerlinCS)
+* ^expansion.contains[=].code = #gar_nicht
+* ^expansion.contains[=].display = "Gar nicht"
+* ^expansion.contains[+].system = Canonical(SEU_EF_Medienkonsum_BerlinCS)
+* ^expansion.contains[=].code = #max_bis_1
+* ^expansion.contains[=].display = "max. 1 Stunde"
+* ^expansion.contains[+].system = Canonical(SEU_EF_Medienkonsum_BerlinCS)
+* ^expansion.contains[=].code = #max_bis_2
+* ^expansion.contains[=].display = "max. 2 Stunden"
+* ^expansion.contains[+].system = Canonical(SEU_EF_Medienkonsum_BerlinCS)
+* ^expansion.contains[=].code = #max_bis_3
+* ^expansion.contains[=].display = "max. 3 Stunden"
+* ^expansion.contains[+].system = Canonical(SEU_EF_Medienkonsum_BerlinCS)
+* ^expansion.contains[=].code = #ueber_3
+* ^expansion.contains[=].display = "über 3 Stunden"
+
 CodeSystem: SEU_UB_FamilienstandCS
 Id: seu-ub-familienstand-cs
 Title: "SEU_UB_Familienstand CodeSystem"

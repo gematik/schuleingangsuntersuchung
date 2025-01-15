@@ -652,3 +652,12 @@ Description: "CodeSystem für die Angabe der Wohnsituation des Kindes."
 * #bei_grosseltern_oder_anderen "Bei Großeltern, Pflegeeltern, Adoptiveltern oder anderen"
 * #keine_angaben "Keine Angaben"
 
+CodeSystem: SEU_EF_Medienkonsum_BerlinCS
+Id: seu-ef-medienkonsum-verlin-cs
+Title: "SEU_EF_Medienkonsum Berlin CodeSystem"
+Description: "CodeSystem für die Angabe des Medienkonsums in Stunden."
+* #gar_nicht "Gar nicht"
+* #max_bis_1 "max. 1 Stunde"
+* #max-bis_2 "max. 2 Stunden"
+* #max_bis_3 "max. 3 Stunden"
+* #ueber_3 "über 3 Stunden"

@@ -247,8 +247,6 @@ Description: "Elternbefragung"
     * insert addItemWithSource(4.1d, #choice, [[Dauer Besuch Kita/Krippe]], #DE-HE)
     * answerValueSet = Canonical(SEU_EF_DauerHEVS)
   * item[+]
-    * insert addItemWithSource(4.1e, #date, [[Seit wann (Monat/Jahr) geht ihr Kind in eine Kindertagesstätte (auch Elterninitiativ-Kita/Großtagespflegestelle)?]], #DE-BE)
-  * item[+]
     * insert addItem(4.2, #integer, Dauer Kita/Krippe pro Woche in Stunden)
   * item[+]
     * insert addItem(4.4, #date, [[Angabe des Datums, seit wann das Kind keine Kita mehr besucht.]])
@@ -267,6 +265,12 @@ Description: "Elternbefragung"
       * answerBoolean = true
   * item[+]
     * insert addItemWithSource(4.6a, #string, Anschrift des Kindergartens, #DE-SN)
+    * enableWhen[+]
+      * question = "4.0b"
+      * operator = #=
+      * answerBoolean = true
+  * item[+]
+    * insert addItemWithSource(4.6b, #date, [[Seit wann (Monat/Jahr) geht Ihr Kind in eine Kindertagesstätte (auch Elterninitiativ-Kita/ Großtagespflegestelle)?]], #DE-BE)
     * enableWhen[+]
       * question = "4.0b"
       * operator = #=
@@ -870,6 +874,13 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItem(10.2, #boolean, Fernsehgerät/Computer/Spielkonsole im Zimmer?)
   * item[+]
+    * insert addItemWithSource(10.2.1, #boolean, [[Mein Kind hat einen eigenen Fernseher?]], #DE-BE)
+  * item[+]
+    * insert addItemWithSource(10.2.2, #boolean, [[andere eigene elektronische Geräte]], #DE-BE)
+  * item[+]
+    * insert enableWhenBoolean(10.2.2, =, true)
+    * insert addItemWithSource(10.2.3, #text, [[wenn ja, welche]], #DE-BE)
+  * item[+]
     * insert addItemWithSource(10.3a, #choice, [[Wie lange sieht Ihr Kind durchschnittlich pro Tag Fernsehsendungen und Filme an und/oder spielt mit dem Smartphone/Tablet/Computer/ an der Spielkonsole? An einem Wochentag:]], #DE-BW)
     * answerValueSet = Canonical(SEU_EF_MedienkonsumVS)
   * item[+]
@@ -880,7 +891,10 @@ Description: "Elternbefragung"
     * answerValueSet = Canonical(SEU_EF_MedienkonsumVS)
   * item[+]
     * insert addItemWithSource(10.4b, #choice, [[Wie lange sieht nutzt Kind Fernseher, Smartphone oder Spielkonsole am Wochenende]], #DE-BW)
-    * answerValueSet = Canonical(SEU_EF_ZeitdauerVS)   
+    * answerValueSet = Canonical(SEU_EF_ZeitdauerVS)
+  * item[+]
+    * insert addItemWithSource(10.4c, #choice, [[Wie viele Stunden am Tag beschäftigt sich Ihr Kind im Durchschnitt mit elektronischen Geräten? (elektronische Geräte sind Fernsehen, DVD, Computer, Tablet, Smartphone, Playstation und andere) ]], #DE-BE)
+    * answerValueSet = Canonical(SEU_EF_Medienkonsum_BerlinVS)
 //********************************************
 // Arzt
 * item[+]
@@ -992,6 +1006,12 @@ Description: "Elternbefragung"
     * answerValueSet = Canonical(ErwerbsstatusVS)
   * item[+]
     * insert addItem(13.5.1, #text, Grund der Erwerbslosigkeit)
+    * insert enableWhenCode(13.5, =, ErwerbsstatusCS, nicht_erwerbstaetig)
+  * item[+]
+    * insert addItemWithSource(13.5.2, #boolean, [[weil finde keine Arbeit]], #DE-BE)
+    * insert enableWhenCode(13.5, =, ErwerbsstatusCS, nicht_erwerbstaetig)
+  * item[+]
+    * insert addItemWithSource(13.5.3, #boolean, [[alle anderen Gründe]], #DE-BE)
     * insert enableWhenCode(13.5, =, ErwerbsstatusCS, nicht_erwerbstaetig)
   * item[+]
     * insert addItemWithSource(13.5a, #choice, Berufstätigkeit 1. Elternteil, #DE-BW)
