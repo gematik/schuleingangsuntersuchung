@@ -271,10 +271,7 @@ Description: "Elternbefragung"
       * answerBoolean = true
   * item[+]
     * insert addItemWithSource(4.6b, #date, [[Seit wann (Monat/Jahr) geht Ihr Kind in eine Kindertagesstätte (auch Elterninitiativ-Kita/ Großtagespflegestelle)?]], #DE-BE)
-    * enableWhen[+]
-      * question = "4.0b"
-      * operator = #=
-      * answerBoolean = true
+    * insert enableWhenBoolean(4.0b, =, true)
   * item[+]
     * insert addItem(4.7, #boolean, Erfolgte die Betreuung auch durch eine Tagesmutter?)
   * item[+]
