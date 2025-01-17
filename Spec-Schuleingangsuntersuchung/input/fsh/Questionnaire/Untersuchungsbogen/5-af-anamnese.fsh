@@ -82,9 +82,9 @@ RuleSet: 5-af-anamnese
       * insert addSource(#DE-BE)
     * item[+] insert addItem(5.23.d, #integer, [[Anzahl der Raucher/Dampfer im HH]])
       * insert addSource(#DE-BE)
-        * item[+] insert addItem(5.23.e, #choice, [[durchschnittlich täglicher Konsum elektronischer Medien]])
-        * insert addSource(#DE-BE)
-        * answerValueSet = Canonical(TaeglicherKonsumElektronischerMedienVS) 
+    * item[+] insert addItem(5.23.e, #choice, [[durchschnittlich täglicher Konsum elektronischer Medien]])
+      * insert addSource(#DE-BE)
+      * answerValueSet = Canonical(TaeglicherKonsumElektronischerMedienVS) 
     * item[+] insert addItem(5.23.f, #choice, [[eigenes elektronisches Gerät des Kindes]])
       * insert addSource(#DE-BE)
       * answerValueSet = Canonical(ElektronischesGeraetKindVS) 
@@ -260,9 +260,9 @@ RuleSet: 5-af-anamnese
     * item[+] insert addItem(5.63.a, #choice, [[berufliche Ausbildung (ggf. die höchste angeben) - Mutter]])
       * insert addSource(#DE-BE)
       * answerValueSet = Canonical(BeruflicheAusbildungElternVS) 
-  * item[+] insert addItem(5.63.b, #choice, [[berufliche Ausbildung (ggf. die höchste angeben) - Vater]])
-    * insert addSource(#DE-BE)
-    * answerValueSet = Canonical(BeruflicheAusbildungElternVS) 
+    * item[+] insert addItem(5.63.b, #choice, [[berufliche Ausbildung (ggf. die höchste angeben) - Vater]])
+      * insert addSource(#DE-BE)
+      * answerValueSet = Canonical(BeruflicheAusbildungElternVS) 
     * item[+] insert addItem(5.64, #choice, [[Erwerbstätigkeit Elternteil 1]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_ErwerbstaetigkeitVS)
@@ -273,36 +273,36 @@ RuleSet: 5-af-anamnese
       * item[+] insert addGroup(1, [[Sehen]])
         * item[+] insert addItemWithSource(5.25, #choice, [[Sehen]], #DE-BE)
           * answerValueSet = Canonical(Sinnesorgane_ZaehneVS)
-            * item[+]
-              * insert addItemWithSource(5.25.1, #boolean, [[N]], #DE-BE)
-            * item[+]
-              * insert addItemWithSource(5.25.2, #boolean, [[B]], #DE-BE)
-            * item[+]
-              * insert addItemWithSource(5.25.3, #boolean, [[Ü]], #DE-BE)
-            * item[+]
-              * insert addItemWithSource(5.25.4, #boolean, [[kK]], #DE-BE)
+        * item[+]
+          * insert addItemWithSource(5.25.1, #boolean, [[N]], #DE-BE)
+        * item[+]
+          * insert addItemWithSource(5.25.2, #boolean, [[B]], #DE-BE)
+        * item[+]
+          * insert addItemWithSource(5.25.3, #boolean, [[Ü]], #DE-BE)
+        * item[+]
+          * insert addItemWithSource(5.25.4, #boolean, [[kK]], #DE-BE)
       * item[+] insert addGroup(1, [[Hören]])
         * item[+] insert addItemWithSource(5.26, #choice, [[Hören]], #DE-BE)
           * answerValueSet = Canonical(Sinnesorgane_ZaehneVS)  
-            * item[+]
-              * insert addItemWithSource(5.26.1, #boolean, [[N]], #DE-BE)
-            * item[+]
-              * insert addItemWithSource(5.26.2, #boolean, [[B]], #DE-BE)
-            * item[+]
-              * insert addItemWithSource(5.26.3, #boolean, [[Ü]], #DE-BE)
-            * item[+] 
-              * insert addItemWithSource(5.26.4, #boolean, [[kK]], #DE-BE)
+        * item[+]
+          * insert addItemWithSource(5.26.1, #boolean, [[N]], #DE-BE)
+        * item[+]
+          * insert addItemWithSource(5.26.2, #boolean, [[B]], #DE-BE)
+        * item[+]
+          * insert addItemWithSource(5.26.3, #boolean, [[Ü]], #DE-BE)
+        * item[+] 
+          * insert addItemWithSource(5.26.4, #boolean, [[kK]], #DE-BE)
       * item[+] insert addGroup(1, [[Zähne]])
         * item[+] insert addItemWithSource(5.27, #choice, [[Zähne]], #DE-BE)
           * answerValueSet = Canonical(Sinnesorgane_ZaehneVS)
-            * item[+]
-              * insert addItemWithSource(5.27.1, #boolean, [[N]], #DE-BE)
-            * item[+]
-              * insert addItemWithSource(5.27.2, #boolean, [[B]], #DE-BE)
-            * item[+]
-              * insert addItemWithSource(5.27.3, #boolean, [[Ü]], #DE-BE)
-            * item[+]
-              * insert addItemWithSource(5.27.4, #boolean, [[kK]], #DE-BE)  
+        * item[+]
+          * insert addItemWithSource(5.27.1, #boolean, [[N]], #DE-BE)
+        * item[+]
+          * insert addItemWithSource(5.27.2, #boolean, [[B]], #DE-BE)
+        * item[+]
+          * insert addItemWithSource(5.27.3, #boolean, [[Ü]], #DE-BE)
+        * item[+]
+          * insert addItemWithSource(5.27.4, #boolean, [[kK]], #DE-BE)  
 
 CodeSystem: SEU_UB_AntwortenHoerstoerungCS
 Id: SEU-UB-AntwortenHoerstoerungCS

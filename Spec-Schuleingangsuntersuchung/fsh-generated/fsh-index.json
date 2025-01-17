@@ -92,24 +92,24 @@
     "fshName": "Deutschkenntnisse_KindCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 2679,
-    "endLine": 2687
+    "startLine": 2677,
+    "endLine": 2685
   },
   {
     "outputFile": "CodeSystem-Deutschkenntnisse-MutterCS.json",
     "fshName": "Deutschkenntnisse_MutterCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 2713,
-    "endLine": 2722
+    "startLine": 2711,
+    "endLine": 2720
   },
   {
     "outputFile": "CodeSystem-Deutschkenntnisse-VaterCS.json",
     "fshName": "Deutschkenntnisse_VaterCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 2750,
-    "endLine": 2759
+    "startLine": 2748,
+    "endLine": 2757
   },
   {
     "outputFile": "CodeSystem-DeutschkenntnisseCS.json",
@@ -164,8 +164,8 @@
     "fshName": "FarbsehenCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 2627,
-    "endLine": 2633
+    "startLine": 2625,
+    "endLine": 2631
   },
   {
     "outputFile": "CodeSystem-FeststellungSterbezeitCS.json",
@@ -356,8 +356,8 @@
     "fshName": "SEU_UB_AntwortAuffaelligkeitCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 604,
-    "endLine": 611
+    "startLine": 602,
+    "endLine": 609
   },
   {
     "outputFile": "CodeSystem-SEU-UB-AntwortAugenarztCS.json",
@@ -564,8 +564,8 @@
     "fshName": "SEU_UB_UntersuchungsstatusFdSScreeningCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 565,
-    "endLine": 574
+    "startLine": 563,
+    "endLine": 572
   },
   {
     "outputFile": "CodeSystem-SEU-UB-VergleichSAeUntersuchungCS.json",
@@ -756,48 +756,48 @@
     "fshName": "VisusCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 2415,
-    "endLine": 2421
+    "startLine": 2413,
+    "endLine": 2419
   },
   {
     "outputFile": "CodeSystem-VisusSehtafelLinksCS.json",
     "fshName": "VisusSehtafelLinksCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 2582,
-    "endLine": 2593
+    "startLine": 2580,
+    "endLine": 2591
   },
   {
     "outputFile": "CodeSystem-VisusSehtafelRechtsCS.json",
     "fshName": "VisusSehtafelRechtsCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 2535,
-    "endLine": 2546
+    "startLine": 2533,
+    "endLine": 2544
   },
   {
     "outputFile": "CodeSystem-VisusSehtestgeraetLinksCS.json",
     "fshName": "VisusSehtestgeraetLinksCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 2488,
-    "endLine": 2499
+    "startLine": 2486,
+    "endLine": 2497
   },
   {
     "outputFile": "CodeSystem-VisusSehtestgeraetRechtsCS.json",
     "fshName": "VisusSehtestgeraetRechtsCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 2441,
-    "endLine": 2452
+    "startLine": 2439,
+    "endLine": 2450
   },
   {
     "outputFile": "CodeSystem-VorschaltlinseCS.json",
     "fshName": "VorschaltlinseCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 2651,
-    "endLine": 2658
+    "startLine": 2649,
+    "endLine": 2656
   },
   {
     "outputFile": "CodeSystem-VorsorgestatusCS.json",
@@ -852,8 +852,8 @@
     "fshName": "SEU_UB_BewertungsvorschlagCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 707,
-    "endLine": 712
+    "startLine": 705,
+    "endLine": 710
   },
   {
     "outputFile": "CodeSystem-chronische-krankheiten.json",
@@ -900,8 +900,8 @@
     "fshName": "GewichtsklassenCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 675,
-    "endLine": 683
+    "startLine": 673,
+    "endLine": 681
   },
   {
     "outputFile": "CodeSystem-haeufigkeit-auswahl-cs.json",
@@ -924,8 +924,8 @@
     "fshName": "ISO6392_LanguageCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 771,
-    "endLine": 1140
+    "startLine": 769,
+    "endLine": 1138
   },
   {
     "outputFile": "CodeSystem-seu-ef-alter-kind-cs.json",
@@ -1132,16 +1132,16 @@
     "fshName": "SEU_UB_BewertungErgebnisCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 747,
-    "endLine": 753
+    "startLine": 745,
+    "endLine": 751
   },
   {
     "outputFile": "CodeSystem-seu-ub-deutschkenntnisse-cs.json",
     "fshName": "SEU_UB_DeutschkenntnisseCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 2379,
-    "endLine": 2388
+    "startLine": 2377,
+    "endLine": 2386
   },
   {
     "outputFile": "CodeSystem-seu-ub-einschulung-cs.json",
@@ -1156,8 +1156,8 @@
     "fshName": "SEU_UB_EntwicklungsbewertungCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 2323,
-    "endLine": 2330
+    "startLine": 2321,
+    "endLine": 2328
   },
   {
     "outputFile": "CodeSystem-seu-ub-familienstand-cs.json",
@@ -1180,8 +1180,8 @@
     "fshName": "SEU_UB_HoertestDezibelCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 2255,
-    "endLine": 2262
+    "startLine": 2253,
+    "endLine": 2260
   },
   {
     "outputFile": "CodeSystem-seu-ub-impfschema-cs.json",
@@ -1220,16 +1220,16 @@
     "fshName": "SEU_UB_SehtestVisusCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 2283,
-    "endLine": 2293
+    "startLine": 2281,
+    "endLine": 2291
   },
   {
     "outputFile": "CodeSystem-seu-ub-untersuchung-hoertest-stoerquellen-cs.json",
     "fshName": "SEU_UB_UntersuchungHoertestStoerquellenCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 727,
-    "endLine": 732
+    "startLine": 725,
+    "endLine": 730
   },
   {
     "outputFile": "CodeSystem-seu-ub-untersuchungsergebnis-cs.json",
@@ -1244,8 +1244,8 @@
     "fshName": "SEU_UB_UntersuchungsergebnisseIBAUCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 2351,
-    "endLine": 2358
+    "startLine": 2349,
+    "endLine": 2356
   },
   {
     "outputFile": "CodeSystem-seu-ub-verwandtepersondeutschkenntnis-cs.json",
@@ -1916,24 +1916,24 @@
     "fshName": "Deutschkenntnisse_KindVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 2690,
-    "endLine": 2710
+    "startLine": 2688,
+    "endLine": 2708
   },
   {
     "outputFile": "ValueSet-Deutschkenntnisse-MutterVS.json",
     "fshName": "Deutschkenntnisse_MutterVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 2725,
-    "endLine": 2748
+    "startLine": 2723,
+    "endLine": 2746
   },
   {
     "outputFile": "ValueSet-Deutschkenntnisse-VaterVS.json",
     "fshName": "Deutschkenntnisse_VaterVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 2761,
-    "endLine": 2784
+    "startLine": 2759,
+    "endLine": 2782
   },
   {
     "outputFile": "ValueSet-DeutschkenntnisseVS.json",
@@ -1988,8 +1988,8 @@
     "fshName": "FarbsehenVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 2635,
-    "endLine": 2649
+    "startLine": 2633,
+    "endLine": 2647
   },
   {
     "outputFile": "ValueSet-FeststellungSterbezeitVS.json",
@@ -2228,24 +2228,24 @@
     "fshName": "SEU_UB_AntwortAuffaelligkeitBeurteilbarMoeglichVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 657,
-    "endLine": 673
+    "startLine": 655,
+    "endLine": 671
   },
   {
     "outputFile": "ValueSet-SEU-UB-AntwortAuffaelligkeitBeurteilbarVS.json",
     "fshName": "SEU_UB_AntwortAuffaelligkeitBeurteilbarVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 635,
-    "endLine": 655
+    "startLine": 633,
+    "endLine": 653
   },
   {
     "outputFile": "ValueSet-SEU-UB-AntwortAuffaelligkeitVS.json",
     "fshName": "SEU_UB_AntwortAuffaelligkeitVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 613,
-    "endLine": 633
+    "startLine": 611,
+    "endLine": 631
   },
   {
     "outputFile": "ValueSet-SEU-UB-AntwortAugenarztVS.json",
@@ -2476,8 +2476,8 @@
     "fshName": "SEU_UB_UntersuchungsstatusFdSScreeningvS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 576,
-    "endLine": 602
+    "startLine": 574,
+    "endLine": 600
   },
   {
     "outputFile": "ValueSet-SEU-UB-UntersuchungsstatusVS.json",
@@ -2676,48 +2676,48 @@
     "fshName": "VisusSehtafelLinksVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 2596,
-    "endLine": 2625
+    "startLine": 2594,
+    "endLine": 2623
   },
   {
     "outputFile": "ValueSet-VisusSehtafelRechtsVS.json",
     "fshName": "VisusSehtafelRechtsVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 2549,
-    "endLine": 2578
+    "startLine": 2547,
+    "endLine": 2576
   },
   {
     "outputFile": "ValueSet-VisusSehtestgeraetLinksVS.json",
     "fshName": "VisusSehtestgeraetLinksVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 2502,
-    "endLine": 2531
+    "startLine": 2500,
+    "endLine": 2529
   },
   {
     "outputFile": "ValueSet-VisusSehtestgeraetRechtsVS.json",
     "fshName": "VisusSehtestgeraetRechtsVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 2455,
-    "endLine": 2484
+    "startLine": 2453,
+    "endLine": 2482
   },
   {
     "outputFile": "ValueSet-VisusVS.json",
     "fshName": "VisusVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 2424,
-    "endLine": 2438
+    "startLine": 2422,
+    "endLine": 2436
   },
   {
     "outputFile": "ValueSet-VorschaltlinseVS.json",
     "fshName": "VorschaltlinseVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 2660,
-    "endLine": 2677
+    "startLine": 2658,
+    "endLine": 2675
   },
   {
     "outputFile": "ValueSet-VorsorgestatusVS.json",
@@ -2764,8 +2764,8 @@
     "fshName": "SEU_UB_BewertungsvorschlagVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 714,
-    "endLine": 725
+    "startLine": 712,
+    "endLine": 723
   },
   {
     "outputFile": "ValueSet-chronische-krankheiten-vs.json",
@@ -2820,8 +2820,8 @@
     "fshName": "SEU_UB_GewichtsklassenVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 685,
-    "endLine": 705
+    "startLine": 683,
+    "endLine": 703
   },
   {
     "outputFile": "ValueSet-haeufigkeit-auswahl-vs.json",
@@ -2852,8 +2852,8 @@
     "fshName": "ISO6392_LanguageVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 1142,
-    "endLine": 2253
+    "startLine": 1140,
+    "endLine": 2251
   },
   {
     "outputFile": "ValueSet-seu-ef-alter-kind-vs.json",
@@ -3068,16 +3068,16 @@
     "fshName": "SEU_UB_BewertungErgebnisVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 755,
-    "endLine": 769
+    "startLine": 753,
+    "endLine": 767
   },
   {
     "outputFile": "ValueSet-seu-ub-deutschkenntnisse-vs.json",
     "fshName": "SEU_UB_DeutschkenntnisseVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 2390,
-    "endLine": 2413
+    "startLine": 2388,
+    "endLine": 2411
   },
   {
     "outputFile": "ValueSet-seu-ub-einschulung-vs.json",
@@ -3092,8 +3092,8 @@
     "fshName": "SEU_UB_EntwicklungsbewertungVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 2332,
-    "endLine": 2349
+    "startLine": 2330,
+    "endLine": 2347
   },
   {
     "outputFile": "ValueSet-seu-ub-grippesaison-vs.json",
@@ -3108,8 +3108,8 @@
     "fshName": "SEU_UB_HoertestDezibelVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 2264,
-    "endLine": 2281
+    "startLine": 2262,
+    "endLine": 2279
   },
   {
     "outputFile": "ValueSet-seu-ub-impfschema-vs.json",
@@ -3148,16 +3148,16 @@
     "fshName": "SEU_UB_SehtestVisusVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 2295,
-    "endLine": 2321
+    "startLine": 2293,
+    "endLine": 2319
   },
   {
     "outputFile": "ValueSet-seu-ub-untersuchung-hoertest-stoerquellen-vs.json",
     "fshName": "SEU_UB_UntersuchungHoertestStoerquellenVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 734,
-    "endLine": 745
+    "startLine": 732,
+    "endLine": 743
   },
   {
     "outputFile": "ValueSet-seu-ub-untersuchungsergebnis-vs.json",
@@ -3172,8 +3172,8 @@
     "fshName": "SEU_UB_UntersuchungsergebnisseIBAUVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
-    "startLine": 2360,
-    "endLine": 2377
+    "startLine": 2358,
+    "endLine": 2375
   },
   {
     "outputFile": "ValueSet-seu-ub-verwandtepersondeutschkenntnis-vs.json",
