@@ -14,6 +14,15 @@
           "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
         }
       ],
+      "extension": [
+        {
+          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+          "valueCoding": {
+            "system": "urn:iso:std:iso:3166-2:de",
+            "code": "DE-BE"
+          }
+        }
+      ],
       "item": [
         {
           "linkId": "1.1",
@@ -23,6 +32,15 @@
             {
               "code": "1.1",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BE"
+              }
             }
           ]
         },
@@ -35,6 +53,15 @@
               "code": "1.2",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BE"
+              }
+            }
           ]
         },
         {
@@ -46,6 +73,15 @@
               "code": "1.3",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BE"
+              }
+            }
           ]
         },
         {
@@ -56,6 +92,15 @@
             {
               "code": "1.4",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BE"
+              }
             }
           ]
         },
@@ -69,7 +114,16 @@
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
           ],
-          "answerValueSet": "https://www.oegd.de/fhir/seu/ValueSet/GenderDEVS"
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BE"
+              }
+            }
+          ],
+          "answerValueSet": "https://www.oegd.de/fhir/seu/ValueSet/Gender-BE-VS"
         },
         {
           "linkId": "1.6",
@@ -82,6 +136,13 @@
             }
           ],
           "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BE"
+              }
+            },
             {
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
               "valueExpression": {
@@ -100,6 +161,15 @@
               "code": "1.7",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BE"
+              }
+            }
           ]
         },
         {
@@ -110,6 +180,15 @@
             {
               "code": "1.7.a",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BE"
+              }
             }
           ]
         }
@@ -125,6 +204,15 @@
           "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
         }
       ],
+      "extension": [
+        {
+          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+          "valueCoding": {
+            "system": "urn:iso:std:iso:3166-2:de",
+            "code": "DE-BE"
+          }
+        }
+      ],
       "item": [
         {
           "linkId": "1.8.2",
@@ -134,6 +222,15 @@
             {
               "code": "1.8.2",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BE"
+              }
             }
           ]
         },
@@ -145,6 +242,15 @@
             {
               "code": "1.8.3",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BE"
+              }
             }
           ]
         }
@@ -160,6 +266,15 @@
           "code": "1.9",
           "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
         }
+      ],
+      "extension": [
+        {
+          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+          "valueCoding": {
+            "system": "urn:iso:std:iso:3166-2:de",
+            "code": "DE-BE"
+          }
+        }
       ]
     },
     {
@@ -170,6 +285,15 @@
         {
           "code": "1.9.1",
           "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+        }
+      ],
+      "extension": [
+        {
+          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+          "valueCoding": {
+            "system": "urn:iso:std:iso:3166-2:de",
+            "code": "DE-BE"
+          }
         }
       ]
     },
@@ -182,6 +306,15 @@
           "code": "1.9.2",
           "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
         }
+      ],
+      "extension": [
+        {
+          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+          "valueCoding": {
+            "system": "urn:iso:std:iso:3166-2:de",
+            "code": "DE-BE"
+          }
+        }
       ]
     },
     {
@@ -192,6 +325,15 @@
         {
           "code": "1.9.3",
           "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+        }
+      ],
+      "extension": [
+        {
+          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+          "valueCoding": {
+            "system": "urn:iso:std:iso:3166-2:de",
+            "code": "DE-BE"
+          }
         }
       ]
     },
@@ -204,6 +346,15 @@
           "code": "1.9.4",
           "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
         }
+      ],
+      "extension": [
+        {
+          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+          "valueCoding": {
+            "system": "urn:iso:std:iso:3166-2:de",
+            "code": "DE-BE"
+          }
+        }
       ]
     },
     {
@@ -214,6 +365,15 @@
         {
           "code": "1.10",
           "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+        }
+      ],
+      "extension": [
+        {
+          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+          "valueCoding": {
+            "system": "urn:iso:std:iso:3166-2:de",
+            "code": "DE-BE"
+          }
         }
       ]
     },
@@ -226,6 +386,15 @@
           "code": "1.10.1",
           "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
         }
+      ],
+      "extension": [
+        {
+          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+          "valueCoding": {
+            "system": "urn:iso:std:iso:3166-2:de",
+            "code": "DE-BE"
+          }
+        }
       ]
     },
     {
@@ -236,6 +405,15 @@
         {
           "code": "1.10.2",
           "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+        }
+      ],
+      "extension": [
+        {
+          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+          "valueCoding": {
+            "system": "urn:iso:std:iso:3166-2:de",
+            "code": "DE-BE"
+          }
         }
       ]
     },
@@ -248,6 +426,15 @@
           "code": "1.10.3",
           "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
         }
+      ],
+      "extension": [
+        {
+          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+          "valueCoding": {
+            "system": "urn:iso:std:iso:3166-2:de",
+            "code": "DE-BE"
+          }
+        }
       ]
     },
     {
@@ -258,6 +445,15 @@
         {
           "code": "1.10.4",
           "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+        }
+      ],
+      "extension": [
+        {
+          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+          "valueCoding": {
+            "system": "urn:iso:std:iso:3166-2:de",
+            "code": "DE-BE"
+          }
         }
       ]
     },
@@ -271,6 +467,15 @@
           "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
         }
       ],
+      "extension": [
+        {
+          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+          "valueCoding": {
+            "system": "urn:iso:std:iso:3166-2:de",
+            "code": "DE-BE"
+          }
+        }
+      ],
       "repeats": true
     },
     {
@@ -281,6 +486,15 @@
         {
           "code": "1.12",
           "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+        }
+      ],
+      "extension": [
+        {
+          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+          "valueCoding": {
+            "system": "urn:iso:std:iso:3166-2:de",
+            "code": "DE-BE"
+          }
         }
       ]
     },
@@ -294,6 +508,15 @@
           "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
         }
       ],
+      "extension": [
+        {
+          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+          "valueCoding": {
+            "system": "urn:iso:std:iso:3166-2:de",
+            "code": "DE-BE"
+          }
+        }
+      ],
       "item": [
         {
           "linkId": "2.1",
@@ -303,6 +526,15 @@
             {
               "code": "2.1",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BE"
+              }
             }
           ]
         },
@@ -315,6 +547,15 @@
               "code": "2.2",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BE"
+              }
+            }
           ]
         },
         {
@@ -325,6 +566,15 @@
             {
               "code": "2.3",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BE"
+              }
             }
           ]
         },
@@ -338,6 +588,15 @@
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
           ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BE"
+              }
+            }
+          ],
           "item": [
             {
               "linkId": "2.4.1",
@@ -347,6 +606,15 @@
                 {
                   "code": "2.4.1",
                   "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-BE"
+                  }
                 }
               ],
               "enableWhen": [
@@ -367,6 +635,15 @@
                   "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
                 }
               ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-BE"
+                  }
+                }
+              ],
               "item": [
                 {
                   "linkId": "2.5.1",
@@ -376,6 +653,15 @@
                     {
                       "code": "2.5.1",
                       "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                    }
+                  ],
+                  "extension": [
+                    {
+                      "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                      "valueCoding": {
+                        "system": "urn:iso:std:iso:3166-2:de",
+                        "code": "DE-BE"
+                      }
                     }
                   ],
                   "enableWhen": [
@@ -422,6 +708,15 @@
           "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
         }
       ],
+      "extension": [
+        {
+          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+          "valueCoding": {
+            "system": "urn:iso:std:iso:3166-2:de",
+            "code": "DE-BE"
+          }
+        }
+      ],
       "item": [
         {
           "linkId": "3.1",
@@ -431,6 +726,15 @@
             {
               "code": "3.1",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BE"
+              }
             }
           ],
           "item": [
@@ -443,6 +747,15 @@
                   "code": "3.1.1",
                   "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
                 }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-BE"
+                  }
+                }
               ]
             },
             {
@@ -453,6 +766,15 @@
                 {
                   "code": "3.1.2",
                   "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-BE"
+                  }
                 }
               ]
             },
@@ -465,6 +787,15 @@
                   "code": "3.1.3",
                   "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
                 }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-BE"
+                  }
+                }
               ]
             },
             {
@@ -475,6 +806,15 @@
                 {
                   "code": "3.1.4",
                   "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-BE"
+                  }
                 }
               ]
             },
@@ -488,6 +828,15 @@
                   "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
                 }
               ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-BE"
+                  }
+                }
+              ],
               "item": [
                 {
                   "linkId": "3.2.1",
@@ -497,6 +846,15 @@
                     {
                       "code": "3.2.1",
                       "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                    }
+                  ],
+                  "extension": [
+                    {
+                      "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                      "valueCoding": {
+                        "system": "urn:iso:std:iso:3166-2:de",
+                        "code": "DE-BE"
+                      }
                     }
                   ]
                 },
@@ -509,6 +867,15 @@
                       "code": "3.2.2",
                       "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
                     }
+                  ],
+                  "extension": [
+                    {
+                      "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                      "valueCoding": {
+                        "system": "urn:iso:std:iso:3166-2:de",
+                        "code": "DE-BE"
+                      }
+                    }
                   ]
                 },
                 {
@@ -519,6 +886,15 @@
                     {
                       "code": "3.2.3",
                       "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                    }
+                  ],
+                  "extension": [
+                    {
+                      "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                      "valueCoding": {
+                        "system": "urn:iso:std:iso:3166-2:de",
+                        "code": "DE-BE"
+                      }
                     }
                   ]
                 },
@@ -531,6 +907,15 @@
                       "code": "3.2.4",
                       "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
                     }
+                  ],
+                  "extension": [
+                    {
+                      "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                      "valueCoding": {
+                        "system": "urn:iso:std:iso:3166-2:de",
+                        "code": "DE-BE"
+                      }
+                    }
                   ]
                 },
                 {
@@ -541,6 +926,15 @@
                     {
                       "code": "3.2.3",
                       "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                    }
+                  ],
+                  "extension": [
+                    {
+                      "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                      "valueCoding": {
+                        "system": "urn:iso:std:iso:3166-2:de",
+                        "code": "DE-BE"
+                      }
                     }
                   ]
                 }
@@ -556,6 +950,15 @@
             {
               "code": "4",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BE"
+              }
             }
           ],
           "item": [
@@ -649,6 +1052,15 @@
             {
               "code": "5",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BE"
+              }
             }
           ],
           "item": [
@@ -867,6 +1279,15 @@
                       "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
                     }
                   ],
+                  "extension": [
+                    {
+                      "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                      "valueCoding": {
+                        "system": "urn:iso:std:iso:3166-2:de",
+                        "code": "DE-BE"
+                      }
+                    }
+                  ],
                   "enableWhen": [
                     {
                       "question": "5.7.2",
@@ -874,26 +1295,6 @@
                       "answerBoolean": true
                     }
                   ]
-                }
-              ]
-            },
-            {
-              "linkId": "5.7.1",
-              "type": "boolean",
-              "text": "(5.7.1) kein eigenes Gerät",
-              "code": [
-                {
-                  "code": "5.7.1",
-                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-                }
-              ],
-              "extension": [
-                {
-                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-                  "valueCoding": {
-                    "system": "urn:iso:std:iso:3166-2:de",
-                    "code": "DE-BE"
-                  }
                 }
               ]
             }

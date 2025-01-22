@@ -10,76 +10,76 @@ Description: "Elternbefragung Berlin"
 // 1. Angabe zur Person
 
 * item[+]
-  * insert addItem(1.8.1, #group, [[Angaben zur Person]])
+  * insert addItemWithSource(1.8.1, #group, [[Angaben zur Person]], #DE-BE)
   * item[+]
-    * insert addItem(1.1, #string, [[Name des Kindes]])
+    * insert addItemWithSource(1.1, #string, [[Name des Kindes]], #DE-BE)
   * item[+]
-    * insert addItem(1.2, #string, [[Vorname]])
+    * insert addItemWithSource(1.2, #string, [[Vorname]], #DE-BE)
   * item[+]
-    * insert addItem(1.3, #text, [[Adresse]])
+    * insert addItemWithSource(1.3, #text, [[Adresse]], #DE-BE)
   * item[+]
-    * insert addItem(1.4, #number, [[Telefon]])
+    * insert addItemWithSource(1.4, #number, [[Telefon]], #DE-BE)
   * item[+]
-    * insert addItem(1.5, #choice, [[Geschlecht]])
-    * answerValueSet = Canonical(GenderDEVS)  // to do
+    * insert addItemWithSource(1.5, #choice, [[Geschlecht]], #DE-BE)
+    * answerValueSet = Canonical(Gender-BE-VS)  // to do
   * item[+]
-    * insert addItem(1.6, #date, [[Geburtsdatum]])
+    * insert addItemWithSource(1.6, #date, [[Geburtsdatum]], #DE-BE)
     * insert initialExpression("%patient.birthdate")
   * item[+]
-    * insert addItem(1.7, #boolean, [[In Deutschland geboren]])
+    * insert addItemWithSource(1.7, #boolean, [[In Deutschland geboren]], #DE-BE)
   * item[+]
-    * insert addItem(1.7.a, #date, [[Seit wann lebt Ihr Kind in Deutschland (Monat/ Jahr)?]]) //TODO: Datumsformat MM.JJJJ
+    * insert addItemWithSource(1.7.a, #date, [[Seit wann lebt Ihr Kind in Deutschland (Monat/ Jahr)?]], #DE-BE) //TODO: Datumsformat MM.JJJJ
 * item[+]
-  * insert addItem(1.8.1, #group, [[Geschwister unter 18 Jahre]])
+  * insert addItemWithSource(1.8.1, #group, [[Geschwister unter 18 Jahre]], #DE-BE)
     * item[+]
-      * insert addItem(1.8.2, #string, [[Vorname]])
+      * insert addItemWithSource(1.8.2, #string, [[Vorname]], #DE-BE)
     * item[+]
-      * insert addItem(1.8.3, #date, [[Geburtsjahr]])
+      * insert addItemWithSource(1.8.3, #date, [[Geburtsjahr]], #DE-BE)
     * repeats = true
 * item[+]
-  * insert addItem(1.9, #string, [[Name des Elternteils A]])
+  * insert addItemWithSource(1.9, #string, [[Name des Elternteils A]], #DE-BE)
 * item[+]
-  * insert addItem(1.9.1, #string, [[Vorname des Elternteils A]])
+  * insert addItemWithSource(1.9.1, #string, [[Vorname des Elternteils A]], #DE-BE)
 * item[+]
-  * insert addItem(1.9.2, #choice, [[Geburtsland des Elternteils A]])
+  * insert addItemWithSource(1.9.2, #choice, [[Geburtsland des Elternteils A]], #DE-BE)
 * item[+]
-  * insert addItem(1.9.3, #boolean, [[deutsche Staatsangehörigkeit Elternteil A?]])
+  * insert addItemWithSource(1.9.3, #boolean, [[deutsche Staatsangehörigkeit Elternteil A?]], #DE-BE)
 * item[+]
-  * insert addItem(1.9.4, #text, [[andere/weitere]])
+  * insert addItemWithSource(1.9.4, #text, [[andere/weitere]], #DE-BE)
 * item[+]
-  * insert addItem(1.10, #string, [[Name des Elternteils B]])
+  * insert addItemWithSource(1.10, #string, [[Name des Elternteils B]], #DE-BE)
 * item[+]
-  * insert addItem(1.10.1, #string, [[Vorname Elternteils B]])
+  * insert addItemWithSource(1.10.1, #string, [[Vorname Elternteils B]], #DE-BE)
 * item[+]
-  * insert addItem(1.10.2, #choice, [[Geburtsland des Elternteils B]])
+  * insert addItemWithSource(1.10.2, #choice, [[Geburtsland des Elternteils B]], #DE-BE)
 * item[+]
-  * insert addItem(1.10.3, #boolean, [[deutsche Staatsangehörigkeit des Elternteil B?]])
+  * insert addItemWithSource(1.10.3, #boolean, [[deutsche Staatsangehörigkeit des Elternteil B?]], #DE-BE)
 * item[+]
-  * insert addItem(1.10.4, #text, [[andere/weitere]])
+  * insert addItemWithSource(1.10.4, #text, [[andere/weitere]], #DE-BE)
 * item[+]
-  * insert addItem(1.11, #string, [[Welche Sprachen werden in Ihrer Familie mit dem Kind gesprochen?]])
+  * insert addItemWithSource(1.11, #string, [[Welche Sprachen werden in Ihrer Familie mit dem Kind gesprochen?]], #DE-BE)
   * repeats = true     // to do max 3 mal
 * item[+]
-  * insert addItem(1.12, #string, [[Name des Kinderarztes/Hausarztes:]])
+  * insert addItemWithSource(1.12, #string, [[Name des Kinderarztes/Hausarztes:]], #DE-BE)
 
 //2. Erkrankungen  des Kindes (auch frühere)
 * item[+]
-  * insert addItem(2, #group, [[Erkrankungen des Kindes auch frühere]])
+  * insert addItemWithSource(2, #group, [[Erkrankungen des Kindes auch frühere]], #DE-BE)
     * item[+]
-      * insert addItem(2.1, #string, [[obstruktive Bronchitis/Asthma]])
+      * insert addItemWithSource(2.1, #string, [[obstruktive Bronchitis/Asthma]], #DE-BE)
     * item[+]
-      * insert addItem(2.2, #string, [[angeborene Herzfehler/Herzerkrankungen]])
+      * insert addItemWithSource(2.2, #string, [[angeborene Herzfehler/Herzerkrankungen]], #DE-BE)
     * item[+]
-      * insert addItem(2.3, #string, [[Krampfleiden (epileptische Anfälle)]])
+      * insert addItemWithSource(2.3, #string, [[Krampfleiden (epileptische Anfälle)]], #DE-BE)
     * item[+]
-      * insert addItem(2.4, #string, [[andere wichtige Erkrankungen/Allergien/Unfälle)]])
+      * insert addItemWithSource(2.4, #string, [[andere wichtige Erkrankungen/Allergien/Unfälle)]], #DE-BE)
         * item[+]
-          * insert addItem(2.4.1, #text, [[wenn ja, welche:]])
+          * insert addItemWithSource(2.4.1, #text, [[wenn ja, welche:]], #DE-BE)
           * insert enableWhenBoolean(2.4, =, true)
         * item[+]
-          * insert addItem(2.5, #boolean, [[Nimmt Ihr Kind regelmäßig Medikamente ein?]])
+          * insert addItemWithSource(2.5, #boolean, [[Nimmt Ihr Kind regelmäßig Medikamente ein?]], #DE-BE)
           * item[+]
-            * insert addItem(2.5.1, #text, [[wenn ja, welche:]])
+            * insert addItemWithSource(2.5.1, #text, [[wenn ja, welche:]], #DE-BE)
             * insert enableWhenBoolean(2.5, =, true)
           * item[+]
             * insert addItemWithSource(2.6.2, #integer, [[Anzahl der Krankenhausaufenthalte/Operationen]], #DE-BE)
@@ -87,33 +87,33 @@ Description: "Elternbefragung Berlin"
    //3. Entwicklung des Kindes
 
 * item[+]
-  * insert addItem(3, #group, [[Entwicklung des Kindes]])
+  * insert addItemWithSource(3, #group, [[Entwicklung des Kindes]], #DE-BE)
     * item[+]
-      * insert addItem(3.1, #group, [[Wurde/wird Ihr Kind behandelt/betreut]])
+      * insert addItemWithSource(3.1, #group, [[Wurde/wird Ihr Kind behandelt/betreut]], #DE-BE)
         * item[+]
-          * insert addItem(3.1.1, #boolean, [[durch eine(n) Krankengymnasten/Krankengymnastin?]])
+          * insert addItemWithSource(3.1.1, #boolean, [[durch eine(n) Krankengymnasten/Krankengymnastin?]], #DE-BE)
         * item[+]
-          * insert addItem(3.1.2, #boolean, [[Wurde/wird Ihr Kind behandelt/betreut durch durch eine(n) Ergotherapeuten(in)?]])
+          * insert addItemWithSource(3.1.2, #boolean, [[Wurde/wird Ihr Kind behandelt/betreut durch durch eine(n) Ergotherapeuten(in)?]], #DE-BE)
         * item[+]
-          * insert addItem(3.1.3, #boolean, [[Wurde/wird Ihr Kind behandelt/betreut durch eine(n) Logopäden(in)?]])
+          * insert addItemWithSource(3.1.3, #boolean, [[Wurde/wird Ihr Kind behandelt/betreut durch eine(n) Logopäden(in)?]], #DE-BE)
         * item[+]
-          * insert addItem(3.1.4, #boolean, [[Wurde/wird Ihr Kind behandelt/betreut durch eine(n) Psychologen(in)/Psychiater(in)/Erziehungsberatung?]])
+          * insert addItemWithSource(3.1.4, #boolean, [[Wurde/wird Ihr Kind behandelt/betreut durch eine(n) Psychologen(in)/Psychiater(in)/Erziehungsberatung?]], #DE-BE)
       * item[+]
-        * insert addItem(3.2, #group, [[Machen Sie sich Sorgen um Ihr Kind wegen]])
+        * insert addItemWithSource(3.2, #group, [[Machen Sie sich Sorgen um Ihr Kind wegen]], #DE-BE)
           * item[+]
-            * insert addItem(3.2.1, #boolean, [[seines Verhaltens?]])
+            * insert addItemWithSource(3.2.1, #boolean, [[seines Verhaltens?]], #DE-BE)
           * item[+]
-            * insert addItem(3.2.2, #boolean, [[seiner Sprachentwicklung?]])
+            * insert addItemWithSource(3.2.2, #boolean, [[seiner Sprachentwicklung?]], #DE-BE)
           * item[+]
-            * insert addItem(3.2.3, #boolean, [[seiner Konzentrationsfähigkeit?]])
+            * insert addItemWithSource(3.2.3, #boolean, [[seiner Konzentrationsfähigkeit?]], #DE-BE)
           * item[+]
-            * insert addItem(3.2.4, #boolean, [[seines Seh- oder Hörvermögens?]])
+            * insert addItemWithSource(3.2.4, #boolean, [[seines Seh- oder Hörvermögens?]], #DE-BE)
           * item[+]
-            * insert addItem(3.2.3, #boolean, [[Nässt ihr Kind ein?]])
+            * insert addItemWithSource(3.2.3, #boolean, [[Nässt ihr Kind ein?]], #DE-BE)
 
     // 4. Betzeueung des kindes
   * item[+]
-    * insert addItem(4, #group, [[Entwicklung des Kindes]])
+    * insert addItemWithSource(4, #group, [[Entwicklung des Kindes]], #DE-BE)
       * item[+]
         * insert addItemWithSource(4.1, #date, [[Seit wann (Monat/Jahr) geht Ihr Kind in eine Kindertagesstätte (auch Elterninitiativ-Kita/ Großtagespflegestelle)?]], #DE-BE)
       * item[+]
@@ -124,7 +124,7 @@ Description: "Elternbefragung Berlin"
         * insert addItemWithSource(4.2, #boolean, [[Geht oder ging Ihr Kind in eine andere Tagesbetreuung?]], #DE-BE)
 // 5. Lebensumfeld
   * item[+]
-    * insert addItem(5, #group, [[Lebensumfeld]])
+    * insert addItemWithSource(5, #group, [[Lebensumfeld]], #DE-BE)
       * item[+]
         * insert addItemWithSource(5.1, #choice, [[WDas Kind lebt überwiegend bei]], #DE-BE)
         * answerValueSet = Canonical(LebensumfeldVS)
@@ -151,10 +151,9 @@ Description: "Elternbefragung Berlin"
       * item[+]
         * insert addItemWithSource(5.7.2, #boolean, [[andere eigene elektronische Geräte]], #DE-BE)
         * item[+]
-          * insert addItem(5.7.3, #text, [[wenn ja, welche:]])
+          * insert addItemWithSource(5.7.3, #text, [[wenn ja, welche:]], #DE-BE)
           * insert enableWhenBoolean(5.7.2, =, true)
-      * item[+]
-        * insert addItemWithSource(5.7.1, #boolean, [[kein eigenes Gerät]], #DE-BE)
+  
 
 CodeSystem: LebensumfeldCS
 Id: lebensumfeld-cs
@@ -281,9 +280,9 @@ Id: TaeglicherKonsumElektronischerMedien-BE-CS
 Title: "TaeglicherKonsumElektronischerMedien-BE-CS"
 Description: "TaeglicherKonsumElektronischerMedien-BE-CS"
 * #gar_nicht  "gar nicht"
-* #max._1_Stunde "max. 1 Stunde"
-* #max._2_Stunden "max. 2 Stunden"
-* #max._3_Stunden "max. 3 Stunden"
+* #max_1_Stunde "max. 1 Stunde"
+* #max_2_Stunden "max. 2 Stunden"
+* #max_3_Stunden "max. 3 Stunden"
 * #ueber_3_Stunden  "über 3 Stunden"
  
 ValueSet: TaeglicherKonsumElektronischerMedien-BE-VS
@@ -296,14 +295,38 @@ Description: "TaeglicherKonsumElektronischerMedien-BE-VS"
 * ^expansion.contains[=].code = #gar_nicht 
 * ^expansion.contains[=].display = "gar nicht"
 * ^expansion.contains[0].system = Canonical(TaeglicherKonsumElektronischerMedien-BE-CS)
-* ^expansion.contains[=].code = #max._1_Stunde
+* ^expansion.contains[=].code = #max_1_Stunde
 * ^expansion.contains[=].display = "max. 1 Stunde"
 * ^expansion.contains[0].system = Canonical(TaeglicherKonsumElektronischerMedien-BE-CS)
-* ^expansion.contains[=].code = #max._2_Stunden
+* ^expansion.contains[=].code = #max_2_Stunden
 * ^expansion.contains[=].display = "max. 2 Stunden"
 * ^expansion.contains[0].system = Canonical(TaeglicherKonsumElektronischerMedien-BE-CS)
-* ^expansion.contains[=].code = #max._3_Stunden
+* ^expansion.contains[=].code = #max_3_Stunden
 * ^expansion.contains[=].display = "max. 3 Stunden"
 * ^expansion.contains[0].system = Canonical(TaeglicherKonsumElektronischerMedien-BE-CS)
 * ^expansion.contains[=].code = #ueber_3_Stunden 
 * ^expansion.contains[=].display = "über 3 Stunden"
+
+CodeSystem: Gender-BE-CS
+Id: Gender-BE-CS
+Title: "Gender-BE-CS"
+Description: "Gender-BE-CS"
+* #maennlich  "männlich"
+* #weiblich "weiblich"
+* #divers "divers"
+ 
+ValueSet: Gender-BE-VS
+Id: Gender-BE-VS
+Title: "Gender-BE-VS"
+Description: "Gender-BE-VS"
+* include codes from system Gender-BE-CS
+* ^expansion.timestamp = "2024-03-27T12:20:50+00:00"
+* ^expansion.contains[0].system = Canonical(Gender-BE-CS)
+* ^expansion.contains[=].code = #maennlich 
+* ^expansion.contains[=].display = "männlich"
+* ^expansion.contains[0].system = Canonical(Gender-BE-CS)
+* ^expansion.contains[=].code = #weiblich
+* ^expansion.contains[=].display = "weiblich"
+* ^expansion.contains[0].system = Canonical(Gender-BE-CS)
+* ^expansion.contains[=].code = #divers
+* ^expansion.contains[=].display = "divers"
