@@ -48,6 +48,14 @@
     "endLine": 25
   },
   {
+    "outputFile": "CodeSystem-BeruflicheAusbildungElternBE-CS.json",
+    "fshName": "BeruflicheAusbildungElternBE-CS",
+    "fshType": "CodeSystem",
+    "fshFile": "Questionnaire\\Elternfragebogen\\Laenderspezifisch\\ElternfragebogenQU-BE.fsh",
+    "startLine": 223,
+    "endLine": 230
+  },
+  {
     "outputFile": "CodeSystem-BeruflicheAusbildungElternCS.json",
     "fshName": "BeruflicheAusbildungElternCS",
     "fshType": "CodeSystem",
@@ -62,6 +70,14 @@
     "fshFile": "Questionnaire\\Sterbebescheinigung\\ValueSets.fsh",
     "startLine": 43,
     "endLine": 49
+  },
+  {
+    "outputFile": "CodeSystem-Berufstaetigkeit-Eltern-Berlin-cs.json",
+    "fshName": "Berufstaetigkeit-Eltern-Berlin-CS",
+    "fshType": "CodeSystem",
+    "fshFile": "Questionnaire\\Elternfragebogen\\Laenderspezifisch\\ElternfragebogenQU-BE.fsh",
+    "startLine": 251,
+    "endLine": 258
   },
   {
     "outputFile": "CodeSystem-BestattungsartCS.json",
@@ -608,6 +624,14 @@
     "endLine": 61
   },
   {
+    "outputFile": "CodeSystem-Schulabschluss-Eltern-Berlin-cs.json",
+    "fshName": "Schulabschluss-Eltern-BerlinCS",
+    "fshType": "CodeSystem",
+    "fshFile": "Questionnaire\\Elternfragebogen\\Laenderspezifisch\\ElternfragebogenQU-BE.fsh",
+    "startLine": 195,
+    "endLine": 202
+  },
+  {
     "outputFile": "CodeSystem-SchulempfehlungCS.json",
     "fshName": "SchulempfehlungCS",
     "fshType": "CodeSystem",
@@ -686,6 +710,14 @@
     "fshFile": "Questionnaire\\Elternfragebogen\\CodeSystem.fsh",
     "startLine": 86,
     "endLine": 96
+  },
+  {
+    "outputFile": "CodeSystem-TaeglicherKonsumElektronischerMedien-BE-CS.json",
+    "fshName": "TaeglicherKonsumElektronischerMedien-BE-CS",
+    "fshType": "CodeSystem",
+    "fshFile": "Questionnaire\\Elternfragebogen\\Laenderspezifisch\\ElternfragebogenQU-BE.fsh",
+    "startLine": 279,
+    "endLine": 287
   },
   {
     "outputFile": "CodeSystem-TaeglicherKonsumElektronischerMedienCS.json",
@@ -926,6 +958,14 @@
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
     "startLine": 769,
     "endLine": 1138
+  },
+  {
+    "outputFile": "CodeSystem-lebensumfeld-cs.json",
+    "fshName": "LebensumfeldCS",
+    "fshType": "CodeSystem",
+    "fshFile": "Questionnaire\\Elternfragebogen\\Laenderspezifisch\\ElternfragebogenQU-BE.fsh",
+    "startLine": 159,
+    "endLine": 168
   },
   {
     "outputFile": "CodeSystem-seu-ef-alter-kind-cs.json",
@@ -1456,6 +1496,14 @@
     "endLine": 196
   },
   {
+    "outputFile": "Questionnaire-SEU-Elternbefragung-BE.json",
+    "fshName": "ElternbefragungBE",
+    "fshType": "Instance",
+    "fshFile": "Questionnaire\\Elternfragebogen\\Laenderspezifisch\\ElternfragebogenQU-BE.fsh",
+    "startLine": 1,
+    "endLine": 157
+  },
+  {
     "outputFile": "Questionnaire-SEU-Elternbefragung-BW.json",
     "fshName": "ElternbefragungBW",
     "fshType": "Instance",
@@ -1856,6 +1904,14 @@
     "endLine": 31
   },
   {
+    "outputFile": "ValueSet-BeruflicheAusbildungElternBE-VS.json",
+    "fshName": "BeruflicheAusbildungElternBE-VS",
+    "fshType": "ValueSet",
+    "fshFile": "Questionnaire\\Elternfragebogen\\Laenderspezifisch\\ElternfragebogenQU-BE.fsh",
+    "startLine": 232,
+    "endLine": 249
+  },
+  {
     "outputFile": "ValueSet-BeruflicheAusbildungElternVS.json",
     "fshName": "BeruflicheAusbildungElternVS",
     "fshType": "ValueSet",
@@ -1870,6 +1926,14 @@
     "fshFile": "Questionnaire\\Sterbebescheinigung\\ValueSets.fsh",
     "startLine": 51,
     "endLine": 53
+  },
+  {
+    "outputFile": "ValueSet-Berufstaetigkeit-Eltern-Berlin-VS.json",
+    "fshName": "Berufstaetigkeit-Eltern-Berlin-VS",
+    "fshType": "ValueSet",
+    "fshFile": "Questionnaire\\Elternfragebogen\\Laenderspezifisch\\ElternfragebogenQU-BE.fsh",
+    "startLine": 260,
+    "endLine": 277
   },
   {
     "outputFile": "ValueSet-BestattungsartVS.json",
@@ -2520,6 +2584,14 @@
     "endLine": 85
   },
   {
+    "outputFile": "ValueSet-Schulabschluss-Eltern-Berlin-VS.json",
+    "fshName": "Schulabschluss-Eltern-BerlinVS",
+    "fshType": "ValueSet",
+    "fshFile": "Questionnaire\\Elternfragebogen\\Laenderspezifisch\\ElternfragebogenQU-BE.fsh",
+    "startLine": 204,
+    "endLine": 221
+  },
+  {
     "outputFile": "ValueSet-SchulempfehlungVS.json",
     "fshName": "SchulempfehlungVS",
     "fshType": "ValueSet",
@@ -2598,6 +2670,14 @@
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
     "startLine": 249,
     "endLine": 275
+  },
+  {
+    "outputFile": "ValueSet-TaeglicherKonsumElektronischerMedien-BE-VS.json",
+    "fshName": "TaeglicherKonsumElektronischerMedien-BE-VS",
+    "fshType": "ValueSet",
+    "fshFile": "Questionnaire\\Elternfragebogen\\Laenderspezifisch\\ElternfragebogenQU-BE.fsh",
+    "startLine": 289,
+    "endLine": 309
   },
   {
     "outputFile": "ValueSet-TaeglicherKonsumElektronischerMedienVS.json",
@@ -2854,6 +2934,14 @@
     "fshFile": "Questionnaire\\Untersuchungsbogen\\7-af-fdsscreening.fsh",
     "startLine": 1140,
     "endLine": 2251
+  },
+  {
+    "outputFile": "ValueSet-lebensumfeld-vs.json",
+    "fshName": "LebensumfeldVS",
+    "fshType": "ValueSet",
+    "fshFile": "Questionnaire\\Elternfragebogen\\Laenderspezifisch\\ElternfragebogenQU-BE.fsh",
+    "startLine": 170,
+    "endLine": 193
   },
   {
     "outputFile": "ValueSet-seu-ef-alter-kind-vs.json",

@@ -1,0 +1,38 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "LebensumfeldCS",
+  "id": "lebensumfeld-cs",
+  "title": "Lebensumfeld CodeSystem",
+  "description": "LebensumfeldCS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/lebensumfeld-cs",
+  "concept": [
+    {
+      "code": "Eltern",
+      "display": "Eltern"
+    },
+    {
+      "code": "allein_erziehendem_Elternteil_A",
+      "display": "allein erziehendem Elternteil A"
+    },
+    {
+      "code": "allein_erziehendem_Elternteil_B",
+      "display": "allein erziehendem Elternteil B"
+    },
+    {
+      "code": "Pflegefamilie",
+      "display": "Pflegefamilie"
+    },
+    {
+      "code": "Verwandten",
+      "display": "Verwandten"
+    },
+    {
+      "code": "im_Heim",
+      "display": "Im Heim"
+    }
+  ],
+  "count": 6
+}

@@ -1,0 +1,52 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "LebensumfeldVS",
+  "id": "lebensumfeld-vs",
+  "title": "Lebensumfeld VS",
+  "description": "LebensumfeldVS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/lebensumfeld-vs",
+  "expansion": {
+    "timestamp": "2024-06-26T15:47:43+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/lebensumfeld-cs",
+        "code": "Eltern",
+        "display": "Eltern"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/lebensumfeld-cs",
+        "code": "allein_erziehendem_Elternteil_A",
+        "display": "allein erziehendem Elternteil A"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/lebensumfeld-cs",
+        "code": "allein_erziehendem_Elternteil_B",
+        "display": "allein erziehendem Elternteil B"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/lebensumfeld-cs",
+        "code": "Pflegefamilie",
+        "display": "Pflegefamilie"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/lebensumfeld-cs",
+        "code": "Verwandten",
+        "display": "Verwandten"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/lebensumfeld-cs",
+        "code": "im_Heim",
+        "display": "Im Heim"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/lebensumfeld-cs"
+      }
+    ]
+  }
+}

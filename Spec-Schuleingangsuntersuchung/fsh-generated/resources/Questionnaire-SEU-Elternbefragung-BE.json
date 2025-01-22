@@ -1,0 +1,905 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "SEU-Elternbefragung-BE",
+  "url": "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung",
+  "title": "SEU Elternfragebogen BE",
+  "item": [
+    {
+      "linkId": "1.8.1",
+      "type": "group",
+      "text": "(1.8.1) Angaben zur Person",
+      "code": [
+        {
+          "code": "1.8.1",
+          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+        }
+      ],
+      "item": [
+        {
+          "linkId": "1.1",
+          "type": "string",
+          "text": "(1.1) Name des Kindes",
+          "code": [
+            {
+              "code": "1.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "1.2",
+          "type": "string",
+          "text": "(1.2) Vorname",
+          "code": [
+            {
+              "code": "1.2",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "1.3",
+          "type": "text",
+          "text": "(1.3) Adresse",
+          "code": [
+            {
+              "code": "1.3",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "1.4",
+          "type": "number",
+          "text": "(1.4) Telefon",
+          "code": [
+            {
+              "code": "1.4",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "1.5",
+          "type": "choice",
+          "text": "(1.5) Geschlecht",
+          "code": [
+            {
+              "code": "1.5",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "answerValueSet": "https://www.oegd.de/fhir/seu/ValueSet/GenderDEVS"
+        },
+        {
+          "linkId": "1.6",
+          "type": "date",
+          "text": "(1.6) Geburtsdatum",
+          "code": [
+            {
+              "code": "1.6",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%patient.birthdate"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "1.7",
+          "type": "boolean",
+          "text": "(1.7) In Deutschland geboren",
+          "code": [
+            {
+              "code": "1.7",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "1.7.a",
+          "type": "date",
+          "text": "(1.7.a) Seit wann lebt Ihr Kind in Deutschland (Monat/ Jahr)?",
+          "code": [
+            {
+              "code": "1.7.a",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "1.8.1",
+      "type": "group",
+      "text": "(1.8.1) Geschwister unter 18 Jahre",
+      "code": [
+        {
+          "code": "1.8.1",
+          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+        }
+      ],
+      "item": [
+        {
+          "linkId": "1.8.2",
+          "type": "string",
+          "text": "(1.8.2) Vorname",
+          "code": [
+            {
+              "code": "1.8.2",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "1.8.3",
+          "type": "date",
+          "text": "(1.8.3) Geburtsjahr",
+          "code": [
+            {
+              "code": "1.8.3",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        }
+      ],
+      "repeats": true
+    },
+    {
+      "linkId": "1.9",
+      "type": "string",
+      "text": "(1.9) Name des Elternteils A",
+      "code": [
+        {
+          "code": "1.9",
+          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+        }
+      ]
+    },
+    {
+      "linkId": "1.9.1",
+      "type": "string",
+      "text": "(1.9.1) Vorname des Elternteils A",
+      "code": [
+        {
+          "code": "1.9.1",
+          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+        }
+      ]
+    },
+    {
+      "linkId": "1.9.2",
+      "type": "choice",
+      "text": "(1.9.2) Geburtsland des Elternteils A",
+      "code": [
+        {
+          "code": "1.9.2",
+          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+        }
+      ]
+    },
+    {
+      "linkId": "1.9.3",
+      "type": "boolean",
+      "text": "(1.9.3) deutsche Staatsangehörigkeit Elternteil A?",
+      "code": [
+        {
+          "code": "1.9.3",
+          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+        }
+      ]
+    },
+    {
+      "linkId": "1.9.4",
+      "type": "text",
+      "text": "(1.9.4) andere/weitere",
+      "code": [
+        {
+          "code": "1.9.4",
+          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+        }
+      ]
+    },
+    {
+      "linkId": "1.10",
+      "type": "string",
+      "text": "(1.10) Name des Elternteils B",
+      "code": [
+        {
+          "code": "1.10",
+          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+        }
+      ]
+    },
+    {
+      "linkId": "1.10.1",
+      "type": "string",
+      "text": "(1.10.1) Vorname Elternteils B",
+      "code": [
+        {
+          "code": "1.10.1",
+          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+        }
+      ]
+    },
+    {
+      "linkId": "1.10.2",
+      "type": "choice",
+      "text": "(1.10.2) Geburtsland des Elternteils B",
+      "code": [
+        {
+          "code": "1.10.2",
+          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+        }
+      ]
+    },
+    {
+      "linkId": "1.10.3",
+      "type": "boolean",
+      "text": "(1.10.3) deutsche Staatsangehörigkeit des Elternteil B?",
+      "code": [
+        {
+          "code": "1.10.3",
+          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+        }
+      ]
+    },
+    {
+      "linkId": "1.10.4",
+      "type": "text",
+      "text": "(1.10.4) andere/weitere",
+      "code": [
+        {
+          "code": "1.10.4",
+          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+        }
+      ]
+    },
+    {
+      "linkId": "1.11",
+      "type": "string",
+      "text": "(1.11) Welche Sprachen werden in Ihrer Familie mit dem Kind gesprochen?",
+      "code": [
+        {
+          "code": "1.11",
+          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+        }
+      ],
+      "repeats": true
+    },
+    {
+      "linkId": "1.12",
+      "type": "string",
+      "text": "(1.12) Name des Kinderarztes/Hausarztes:",
+      "code": [
+        {
+          "code": "1.12",
+          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+        }
+      ]
+    },
+    {
+      "linkId": "2",
+      "type": "group",
+      "text": "(2) Erkrankungen des Kindes auch frühere",
+      "code": [
+        {
+          "code": "2",
+          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+        }
+      ],
+      "item": [
+        {
+          "linkId": "2.1",
+          "type": "string",
+          "text": "(2.1) obstruktive Bronchitis/Asthma",
+          "code": [
+            {
+              "code": "2.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "2.2",
+          "type": "string",
+          "text": "(2.2) angeborene Herzfehler/Herzerkrankungen",
+          "code": [
+            {
+              "code": "2.2",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "2.3",
+          "type": "string",
+          "text": "(2.3) Krampfleiden (epileptische Anfälle)",
+          "code": [
+            {
+              "code": "2.3",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "2.4",
+          "type": "string",
+          "text": "(2.4) andere wichtige Erkrankungen/Allergien/Unfälle)",
+          "code": [
+            {
+              "code": "2.4",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "item": [
+            {
+              "linkId": "2.4.1",
+              "type": "text",
+              "text": "(2.4.1) wenn ja, welche:",
+              "code": [
+                {
+                  "code": "2.4.1",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "enableWhen": [
+                {
+                  "question": "2.4",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ]
+            },
+            {
+              "linkId": "2.5",
+              "type": "boolean",
+              "text": "(2.5) Nimmt Ihr Kind regelmäßig Medikamente ein?",
+              "code": [
+                {
+                  "code": "2.5",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "item": [
+                {
+                  "linkId": "2.5.1",
+                  "type": "text",
+                  "text": "(2.5.1) wenn ja, welche:",
+                  "code": [
+                    {
+                      "code": "2.5.1",
+                      "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                    }
+                  ],
+                  "enableWhen": [
+                    {
+                      "question": "2.5",
+                      "operator": "=",
+                      "answerBoolean": true
+                    }
+                  ]
+                },
+                {
+                  "linkId": "2.6.2",
+                  "type": "integer",
+                  "text": "(2.6.2) Anzahl der Krankenhausaufenthalte/Operationen",
+                  "code": [
+                    {
+                      "code": "2.6.2",
+                      "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                    }
+                  ],
+                  "extension": [
+                    {
+                      "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                      "valueCoding": {
+                        "system": "urn:iso:std:iso:3166-2:de",
+                        "code": "DE-BE"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "3",
+      "type": "group",
+      "text": "(3) Entwicklung des Kindes",
+      "code": [
+        {
+          "code": "3",
+          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+        }
+      ],
+      "item": [
+        {
+          "linkId": "3.1",
+          "type": "group",
+          "text": "(3.1) Wurde/wird Ihr Kind behandelt/betreut",
+          "code": [
+            {
+              "code": "3.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "item": [
+            {
+              "linkId": "3.1.1",
+              "type": "boolean",
+              "text": "(3.1.1) durch eine(n) Krankengymnasten/Krankengymnastin?",
+              "code": [
+                {
+                  "code": "3.1.1",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            },
+            {
+              "linkId": "3.1.2",
+              "type": "boolean",
+              "text": "(3.1.2) Wurde/wird Ihr Kind behandelt/betreut durch durch eine(n) Ergotherapeuten(in)?",
+              "code": [
+                {
+                  "code": "3.1.2",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            },
+            {
+              "linkId": "3.1.3",
+              "type": "boolean",
+              "text": "(3.1.3) Wurde/wird Ihr Kind behandelt/betreut durch eine(n) Logopäden(in)?",
+              "code": [
+                {
+                  "code": "3.1.3",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            },
+            {
+              "linkId": "3.1.4",
+              "type": "boolean",
+              "text": "(3.1.4) Wurde/wird Ihr Kind behandelt/betreut durch eine(n) Psychologen(in)/Psychiater(in)/Erziehungsberatung?",
+              "code": [
+                {
+                  "code": "3.1.4",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            },
+            {
+              "linkId": "3.2",
+              "type": "group",
+              "text": "(3.2) Machen Sie sich Sorgen um Ihr Kind wegen",
+              "code": [
+                {
+                  "code": "3.2",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "item": [
+                {
+                  "linkId": "3.2.1",
+                  "type": "boolean",
+                  "text": "(3.2.1) seines Verhaltens?",
+                  "code": [
+                    {
+                      "code": "3.2.1",
+                      "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                    }
+                  ]
+                },
+                {
+                  "linkId": "3.2.2",
+                  "type": "boolean",
+                  "text": "(3.2.2) seiner Sprachentwicklung?",
+                  "code": [
+                    {
+                      "code": "3.2.2",
+                      "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                    }
+                  ]
+                },
+                {
+                  "linkId": "3.2.3",
+                  "type": "boolean",
+                  "text": "(3.2.3) seiner Konzentrationsfähigkeit?",
+                  "code": [
+                    {
+                      "code": "3.2.3",
+                      "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                    }
+                  ]
+                },
+                {
+                  "linkId": "3.2.4",
+                  "type": "boolean",
+                  "text": "(3.2.4) seines Seh- oder Hörvermögens?",
+                  "code": [
+                    {
+                      "code": "3.2.4",
+                      "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                    }
+                  ]
+                },
+                {
+                  "linkId": "3.2.3",
+                  "type": "boolean",
+                  "text": "(3.2.3) Nässt ihr Kind ein?",
+                  "code": [
+                    {
+                      "code": "3.2.3",
+                      "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "4",
+          "type": "group",
+          "text": "(4) Entwicklung des Kindes",
+          "code": [
+            {
+              "code": "4",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "item": [
+            {
+              "linkId": "4.1",
+              "type": "date",
+              "text": "(4.1) Seit wann (Monat/Jahr) geht Ihr Kind in eine Kindertagesstätte (auch Elterninitiativ-Kita/ Großtagespflegestelle)?",
+              "code": [
+                {
+                  "code": "4.1",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-BE"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "4.1.a",
+              "type": "text",
+              "text": "(4.1.a) wenn ja, in welche zuletzt:",
+              "code": [
+                {
+                  "code": "4.1.a",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-BE"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "4.1.b",
+              "type": "date",
+              "text": "(4.1.b) wenn Ihr Kind aktuell keine Kita besucht, seit wann nicht mehr?",
+              "code": [
+                {
+                  "code": "4.1.b",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-BE"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "4.2",
+              "type": "boolean",
+              "text": "(4.2) Geht oder ging Ihr Kind in eine andere Tagesbetreuung?",
+              "code": [
+                {
+                  "code": "4.2",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-BE"
+                  }
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "5",
+          "type": "group",
+          "text": "(5) Lebensumfeld",
+          "code": [
+            {
+              "code": "5",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "item": [
+            {
+              "linkId": "5.1",
+              "type": "choice",
+              "text": "(5.1) WDas Kind lebt überwiegend bei",
+              "code": [
+                {
+                  "code": "5.1",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-BE"
+                  }
+                }
+              ],
+              "answerValueSet": "https://www.oegd.de/fhir/seu/ValueSet/lebensumfeld-vs"
+            },
+            {
+              "linkId": "5.2",
+              "type": "choice",
+              "text": "(5.2) Schulabschluss der Eltern (den höchsten ankreuzen und bitte bei beiden Eltern angeben!)",
+              "code": [
+                {
+                  "code": "5.2",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-BE"
+                  }
+                }
+              ],
+              "answerValueSet": "https://www.oegd.de/fhir/seu/ValueSet/Schulabschluss-Eltern-Berlin-VS"
+            },
+            {
+              "linkId": "5.3",
+              "type": "choice",
+              "text": "(5.3) Berufsausbildung der Eltern (die höchste ankreuzen und bitte bei beiden Eltern angeben!)",
+              "code": [
+                {
+                  "code": "5.3",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-BE"
+                  }
+                }
+              ],
+              "answerValueSet": "https://www.oegd.de/fhir/seu/ValueSet/BeruflicheAusbildungElternBE-VS"
+            },
+            {
+              "linkId": "5.4",
+              "type": "choice",
+              "text": "(5.4) Berufstätigkeit der Eltern (bitte bei beiden Eltern angeben!)",
+              "code": [
+                {
+                  "code": "5.4",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-BE"
+                  }
+                }
+              ],
+              "answerValueSet": "https://www.oegd.de/fhir/seu/ValueSet/BeruflicheAusbildungElternBE-VS"
+            },
+            {
+              "linkId": "5.5.1",
+              "type": "number",
+              "text": "(5.5.1) Wie viele Personen leben insgesamt in Ihrem Haushalt (Ihr einzuschulendes Kind mitgerechnet)? Erwachsene:",
+              "code": [
+                {
+                  "code": "5.5.1",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-BE"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "5.5.2",
+              "type": "number",
+              "text": "(5.5.2) Wie viele Personen leben insgesamt in Ihrem Haushalt (Ihr einzuschulendes Kind mitgerechnet)? Kinder unter 18 Jahren:",
+              "code": [
+                {
+                  "code": "5.5.2",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-BE"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "5.6",
+              "type": "number",
+              "text": "(5.6) Wie viele Personen in Ihrem Haushalt sind Raucher/Dampfer?",
+              "code": [
+                {
+                  "code": "5.6",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-BE"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "5.7",
+              "type": "choice",
+              "text": "(5.7) Wie viele Stunden am Tag beschäftigt sich Ihr Kind im Durchschnitt mit elektronischen Geräten? (elektronische Geräte sind Fernsehen, DVD, Computer, Tablet, Smartphone, Playstation und andere)",
+              "code": [
+                {
+                  "code": "5.7",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-BE"
+                  }
+                }
+              ],
+              "answerValueSet": "https://www.oegd.de/fhir/seu/ValueSet/TaeglicherKonsumElektronischerMedien-BE-VS"
+            },
+            {
+              "linkId": "5.7.1",
+              "type": "boolean",
+              "text": "(5.7.1) mein Kind hat einen eigenen Fernseher",
+              "code": [
+                {
+                  "code": "5.7.1",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-BE"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "5.7.2",
+              "type": "boolean",
+              "text": "(5.7.2) andere eigene elektronische Geräte",
+              "code": [
+                {
+                  "code": "5.7.2",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-BE"
+                  }
+                }
+              ],
+              "item": [
+                {
+                  "linkId": "5.7.3",
+                  "type": "text",
+                  "text": "(5.7.3) wenn ja, welche:",
+                  "code": [
+                    {
+                      "code": "5.7.3",
+                      "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                    }
+                  ],
+                  "enableWhen": [
+                    {
+                      "question": "5.7.2",
+                      "operator": "=",
+                      "answerBoolean": true
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "linkId": "5.7.1",
+              "type": "boolean",
+              "text": "(5.7.1) kein eigenes Gerät",
+              "code": [
+                {
+                  "code": "5.7.1",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-BE"
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
