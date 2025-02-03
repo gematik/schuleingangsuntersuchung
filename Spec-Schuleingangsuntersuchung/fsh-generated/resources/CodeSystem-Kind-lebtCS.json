@@ -1,0 +1,30 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "Kind_lebt_beiCS",
+  "id": "Kind-lebtCS",
+  "title": "Kind_lebt_beiCS",
+  "description": "Kind_lebt_beiCS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/Kind-lebtCS",
+  "concept": [
+    {
+      "code": "den_Eltern",
+      "display": "den Eltern"
+    },
+    {
+      "code": "allein_erziehendem_Elternteil",
+      "display": "allein erziehendem Elternteil"
+    },
+    {
+      "code": "anderswo",
+      "display": "anderswo"
+    },
+    {
+      "code": "keine_Angabe",
+      "display": "keine Angabe"
+    }
+  ],
+  "count": 4
+}

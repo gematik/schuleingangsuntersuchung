@@ -1,0 +1,30 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "BeruflicheAusbildungElternBE-CS",
+  "id": "BeruflicheAusbildungElternBE-CS",
+  "title": "BeruflicheAusbildungElternBE-CS",
+  "description": "BeruflicheAusbildungElternBE-CS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/BeruflicheAusbildungElternBE-CS",
+  "concept": [
+    {
+      "code": "keine_oder_keine_abgeschlosseneBerufsausbildung",
+      "display": "keine/keine abgeschlossen Berufsausbildung"
+    },
+    {
+      "code": "in_Ausbildung_Studium",
+      "display": "in Ausbildung / Studium"
+    },
+    {
+      "code": "abgeschl_Berufsausbildung_Fachschulabschluss",
+      "display": "abgeschlossene Berufsausbildung/Fachschulabschluss"
+    },
+    {
+      "code": "abgeschl_Studium",
+      "display": "abgeschlossene Studium (Uni, FachHochschule)"
+    }
+  ],
+  "count": 4
+}

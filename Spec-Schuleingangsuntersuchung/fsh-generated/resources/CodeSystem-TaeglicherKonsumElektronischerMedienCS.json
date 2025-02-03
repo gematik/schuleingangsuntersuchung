@@ -1,0 +1,38 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "TaeglicherKonsumElektronischerMedienCS",
+  "id": "TaeglicherKonsumElektronischerMedienCS",
+  "title": "TaeglicherKonsumElektronischerMedienCS",
+  "description": "TaeglicherKonsumElektronischerMedienCS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/TaeglicherKonsumElektronischerMedienCS",
+  "concept": [
+    {
+      "code": "gar_nicht",
+      "display": "gar nicht"
+    },
+    {
+      "code": "max._1_Stunde",
+      "display": "max. 1 Stunde"
+    },
+    {
+      "code": "max._2_Stunden",
+      "display": "max. 2 Stunden"
+    },
+    {
+      "code": "max._3_Stunden",
+      "display": "max. 3 Stunden"
+    },
+    {
+      "code": "ueber_3_Stunden",
+      "display": "über 3 Stunden"
+    },
+    {
+      "code": "keine_Angabe",
+      "display": "keine Angabe"
+    }
+  ],
+  "count": 6
+}

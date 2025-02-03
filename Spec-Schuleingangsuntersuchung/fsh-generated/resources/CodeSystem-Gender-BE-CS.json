@@ -1,0 +1,26 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "Gender-BE-CS",
+  "id": "Gender-BE-CS",
+  "title": "Gender-BE-CS",
+  "description": "Gender-BE-CS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/Gender-BE-CS",
+  "concept": [
+    {
+      "code": "maennlich",
+      "display": "männlich"
+    },
+    {
+      "code": "weiblich",
+      "display": "weiblich"
+    },
+    {
+      "code": "divers",
+      "display": "divers"
+    }
+  ],
+  "count": 3
+}

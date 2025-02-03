@@ -1,0 +1,27 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "TaeglicherKonsumElektronischerMedien-BE-VS",
+  "id": "TaeglicherKonsumElektronischerMedien-BE-VS",
+  "title": "TaeglicherKonsumElektronischerMedien-BE-VS",
+  "description": "TaeglicherKonsumElektronischerMedien-BE-VS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/TaeglicherKonsumElektronischerMedien-BE-VS",
+  "expansion": {
+    "timestamp": "2024-03-27T12:20:50+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/TaeglicherKonsumElektronischerMedien-BE-CS",
+        "code": "ueber_3_Stunden",
+        "display": "über 3 Stunden"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/TaeglicherKonsumElektronischerMedien-BE-CS"
+      }
+    ]
+  }
+}

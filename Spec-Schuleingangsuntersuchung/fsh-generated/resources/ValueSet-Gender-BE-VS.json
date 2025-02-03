@@ -1,0 +1,27 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "Gender-BE-VS",
+  "id": "Gender-BE-VS",
+  "title": "Gender-BE-VS",
+  "description": "Gender-BE-VS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/Gender-BE-VS",
+  "expansion": {
+    "timestamp": "2024-03-27T12:20:50+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/Gender-BE-CS",
+        "code": "divers",
+        "display": "divers"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/Gender-BE-CS"
+      }
+    ]
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "Deutschkenntnisse_KindVS",
+  "id": "Deutschkenntnisse-KindVS",
+  "title": "Deutschkenntnisse_KindVS",
+  "description": "Deutschkenntnisse_KindVS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/Deutschkenntnisse-KindVS",
+  "expansion": {
+    "timestamp": "2024-03-27T12:20:50+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/Deutschkenntnisse-KindCS",
+        "code": "keine_Angabe",
+        "display": "keine Angabe"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/Deutschkenntnisse-KindCS"
+      }
+    ]
+  }
+}

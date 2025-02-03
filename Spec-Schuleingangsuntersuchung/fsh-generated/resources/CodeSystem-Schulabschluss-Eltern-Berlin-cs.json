@@ -1,0 +1,30 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "Schulabschluss-Eltern-BerlinCS",
+  "id": "Schulabschluss-Eltern-Berlin-cs",
+  "title": "Schulabschluss-Eltern-Berlin",
+  "description": "Schulabschluss-Eltern-Berlin",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/Schulabschluss-Eltern-Berlin-cs",
+  "concept": [
+    {
+      "code": "kein_Schulabschluss",
+      "display": "kein Schulabschluss"
+    },
+    {
+      "code": "Hauptschulabschluss_oder_weniger_als_10_Klasse",
+      "display": "Hauptschulabschluss oder weniger als 10. Klasse"
+    },
+    {
+      "code": "mittlere_Reife_mittlerer_Schulabschluss_MSA_10_Klasse",
+      "display": "mittlere Reife/mittlerer Schulabschluss (MSA)/10. Klasse"
+    },
+    {
+      "code": "Abitur_Fachabitur",
+      "display": "Abitur/Fachabitur"
+    }
+  ],
+  "count": 4
+}

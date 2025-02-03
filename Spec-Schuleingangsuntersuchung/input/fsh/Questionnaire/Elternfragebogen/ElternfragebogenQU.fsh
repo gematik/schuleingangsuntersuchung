@@ -147,6 +147,9 @@ Description: "Elternbefragung"
     * insert addItem(2.9, #choice, Staatsangehörigkeit)
   * item[+]
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
+    * insert addItemWithSource(2.9.1, #choice, [[andere/weitere]], #DE-BE)
+  * item[+]
+    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
     * insert addItem(2.10, #choice, Herkunftsland)
   * item[+]
     * answerValueSet = Canonical(ISO6392_LanguageVS)
@@ -178,6 +181,8 @@ Description: "Elternbefragung"
       * insert addItem(3.1.1.1, #date, Geburtsdatum des Geschwisters)
     * item[+]
       * insert addItem(3.1.1.2, #choice, Geschlecht des Geschwisters)
+    * item[+]
+      * insert addItemWithSource(3.1.1.3, #string, [[Vorname des Geschwisters]], #DE-BE)
   * item[+]
     * insert addItem(3.2, #group, Familiäre Vorgeschichte)
     * item[+]
@@ -264,6 +269,9 @@ Description: "Elternbefragung"
       * question = "4.0b"
       * operator = #=
       * answerBoolean = true
+  * item[+]
+    * insert addItemWithSource(4.6b, #date, [[Seit wann (Monat/Jahr) geht Ihr Kind in eine Kindertagesstätte (auch Elterninitiativ-Kita/ Großtagespflegestelle)?]], #DE-BE)
+    * insert enableWhenBoolean(4.0b, =, true)
   * item[+]
     * insert addItem(4.7, #boolean, Erfolgte die Betreuung auch durch eine Tagesmutter?)
   * item[+]
@@ -424,6 +432,11 @@ Description: "Elternbefragung"
     * item[+]
       * insert addItem(7.12.1, #string, [[Welche Sorgen]])
       * insert enableWhenBoolean(7.12, =, true)
+  * item[+]
+    * answerValueSet = Canonical(Sorgen_KindVS)
+    * insert addItemWithSource(7.13, #choice, [[Machen Sie sich Sorgen um Ihr Kind wegen]], #DE-BE)
+
+
 //********************************************
 // Erkrankungen und gesundheitliche Einschränkungen
 * item[+]
@@ -549,6 +562,7 @@ Description: "Elternbefragung"
     * insert addItem(8.15, #boolean, [[Krankenhausaufenthalt]])
     * item[+]
       * insert addItem(8.15.1, #string, [[Detaillierte Angaben zum Krankenhausaufenthalt?]])
+      * insert addItemWithSource(8.15.1.a, #integer, [[Anzahl der Krankenhausaufenthalte/Operationen]], #DE-BE)
       * insert enableWhenBoolean(8.15, =, true)
   * item[+]
     * insert addItem(8.16, #boolean, [[Allergietest]])
@@ -595,6 +609,11 @@ Description: "Elternbefragung"
     * insert addItem(8.25.1, #text, [[Welche Erkrankung]])
     * repeats = true
   * item[+]
+    * insert addItemWithSource(8.25.2, #boolean, [[andere wichtige Erkrankungen/Allergien/Unfälle]], #DE-BE)
+  * item[+]
+    * insert enableWhenBoolean(8.25.2, =, true)
+    * insert addItemWithSource(8.25.3, #text, [[wenn ja, welche]], #DE-BE)
+  * item[+]
     * insert addItem(8.26, #text, [[Sonstige Probleme]])
   * item[+]
     * insert addItem(8.27, #boolean, [[Wurde ihr Kind operiert]])
@@ -636,6 +655,8 @@ Description: "Elternbefragung"
       * insert enableWhenCode(8.29, =, AllgemeineBeschwerdenCS, sonstige)
   * item[+]
     * insert addItemWithSource(8.30, #boolean, [[Wurde Ihr Kind jemals aufgrund von Unfallverletzungen von einem Arzt behandelt??]], #DE-SL)
+  * item[+]
+    * insert addItemWithSource(8.30.1, #boolean, [[Nässt ihr Kind ein?]], #DE-BE)
   * item[+]
     * insert addItemWithSource(8.31, #boolean, [[Einnässen tags]], #DE-SL)
   * item[+]
@@ -850,6 +871,13 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItem(10.2, #boolean, Fernsehgerät/Computer/Spielkonsole im Zimmer?)
   * item[+]
+    * insert addItemWithSource(10.2.1, #boolean, [[Mein Kind hat einen eigenen Fernseher?]], #DE-BE)
+  * item[+]
+    * insert addItemWithSource(10.2.2, #boolean, [[andere eigene elektronische Geräte]], #DE-BE)
+  * item[+]
+    * insert enableWhenBoolean(10.2.2, =, true)
+    * insert addItemWithSource(10.2.3, #text, [[wenn ja, welche]], #DE-BE)
+  * item[+]
     * insert addItemWithSource(10.3a, #choice, [[Wie lange sieht Ihr Kind durchschnittlich pro Tag Fernsehsendungen und Filme an und/oder spielt mit dem Smartphone/Tablet/Computer/ an der Spielkonsole? An einem Wochentag:]], #DE-BW)
     * answerValueSet = Canonical(SEU_EF_MedienkonsumVS)
   * item[+]
@@ -860,7 +888,10 @@ Description: "Elternbefragung"
     * answerValueSet = Canonical(SEU_EF_MedienkonsumVS)
   * item[+]
     * insert addItemWithSource(10.4b, #choice, [[Wie lange sieht nutzt Kind Fernseher, Smartphone oder Spielkonsole am Wochenende]], #DE-BW)
-    * answerValueSet = Canonical(SEU_EF_ZeitdauerVS)   
+    * answerValueSet = Canonical(SEU_EF_ZeitdauerVS)
+  * item[+]
+    * insert addItemWithSource(10.4c, #choice, [[Wie viele Stunden am Tag beschäftigt sich Ihr Kind im Durchschnitt mit elektronischen Geräten? (elektronische Geräte sind Fernsehen, DVD, Computer, Tablet, Smartphone, Playstation und andere) ]], #DE-BE)
+    * answerValueSet = Canonical(SEU_EF_Medienkonsum_BerlinVS)
 //********************************************
 // Arzt
 * item[+]
@@ -892,6 +923,8 @@ Description: "Elternbefragung"
         * answerBoolean = true
   * item[+]
     * insert addItem(12.4, #boolean, KISS Sprachscreening)
+  * item[+]
+    * insert addItemWithSource(12.4.1, #integer, [[Wieviele Personen sind Raucher/Dampfer]], #DE-BE)
   * item[+]
     * insert addItem(12.5, #choice, Raucherhaushalt)
     * answerValueSet = Canonical(HaeufigkeitAuswahlVS)    
@@ -970,6 +1003,12 @@ Description: "Elternbefragung"
     * answerValueSet = Canonical(ErwerbsstatusVS)
   * item[+]
     * insert addItem(13.5.1, #text, Grund der Erwerbslosigkeit)
+    * insert enableWhenCode(13.5, =, ErwerbsstatusCS, nicht_erwerbstaetig)
+  * item[+]
+    * insert addItemWithSource(13.5.2, #boolean, [[weil finde keine Arbeit]], #DE-BE)
+    * insert enableWhenCode(13.5, =, ErwerbsstatusCS, nicht_erwerbstaetig)
+  * item[+]
+    * insert addItemWithSource(13.5.3, #boolean, [[alle anderen Gründe]], #DE-BE)
     * insert enableWhenCode(13.5, =, ErwerbsstatusCS, nicht_erwerbstaetig)
   * item[+]
     * insert addItemWithSource(13.5a, #choice, Berufstätigkeit 1. Elternteil, #DE-BW)
