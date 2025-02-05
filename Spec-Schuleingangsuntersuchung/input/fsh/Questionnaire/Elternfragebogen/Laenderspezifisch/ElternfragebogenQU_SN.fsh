@@ -50,7 +50,7 @@ Description: "Elternbefragung Sachsen"
 //********************************************
 // Personenbezogene Daten Personenberechtigter
 * item[+]
-  * insert addItem(2, #group, Personenbezogene Daten Personenberechtigter)
+  * insert addItem(2, #group, Personenbezogene Daten Personensorgeberechtigter)
   * repeats = true
   * item[+]
     * insert addItem(2.2, #string, Nachname)
