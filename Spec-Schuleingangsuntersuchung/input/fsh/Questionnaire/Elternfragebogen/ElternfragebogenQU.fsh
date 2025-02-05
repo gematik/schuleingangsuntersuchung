@@ -178,6 +178,7 @@ Description: "Elternbefragung"
       * insert addItem(3.1.1.1, #date, Geburtsdatum des Geschwisters)
     * item[+]
       * insert addItem(3.1.1.2, #choice, Geschlecht des Geschwisters)
+      * answerValueSet = Canonical(GenderDEVS)
   * item[+]
     * insert addItem(3.2, #group, Familiäre Vorgeschichte)
     * item[+]
