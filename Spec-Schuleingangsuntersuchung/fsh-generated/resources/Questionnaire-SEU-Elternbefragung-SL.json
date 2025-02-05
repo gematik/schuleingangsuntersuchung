@@ -7373,22 +7373,13 @@
           ]
         },
         {
-          "linkId": "8.28b",
+          "linkId": "8.28a",
           "type": "boolean",
-          "text": "(8.28b) Hatte  Ihr Kind jemals einen Unfall, der ärztlich behandelt wurde?",
+          "text": "(8.28a) Hatte ihr Kind einen Unfall",
           "code": [
             {
-              "code": "8.28b",
+              "code": "8.28a",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BB"
-              }
             }
           ],
           "required": true

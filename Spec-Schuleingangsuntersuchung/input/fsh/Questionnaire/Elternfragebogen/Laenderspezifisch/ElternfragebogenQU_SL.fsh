@@ -353,7 +353,7 @@ Description: "ElternbefragungSL"
         * insert addItemWithSource(8.27.2.1, #string, [[Sonstige Operationen?]], #DE-SL)
         * insert enableWhenCode(8.27.2, =, SEU_EF_OperationenCS, sonstige_operation)
   * item[+]
-    * insert addItemWithSource(8.28b, #boolean, [[Hatte  Ihr Kind jemals einen Unfall, der ärztlich behandelt wurde?]], #DE-BB)
+    * insert addItem(8.28a, #boolean, [[Hatte ihr Kind einen Unfall]])
     * required = true
   * item[+]
     * insert addItem(8.28.g, #group, [[Hatte ihr Kind einen Unfall]])
