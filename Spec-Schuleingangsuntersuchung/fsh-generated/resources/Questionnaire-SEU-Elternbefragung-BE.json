@@ -1,33 +1,2262 @@
 {
   "resourceType": "Questionnaire",
   "id": "SEU-Elternbefragung-BE",
-  "url": "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung",
-  "title": "SEU Elternfragebogen BE",
-  "item": [
+  "contained": [
     {
-      "linkId": "1.8.1",
-      "type": "group",
-      "text": "(1.8.1) Angaben zur Person",
-      "code": [
-        {
-          "code": "1.8.1",
-          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-        }
-      ],
+      "resourceType": "ValueSet",
+      "id": "SEU-EF-NeinAbgeschlossenLaeuftGeplantVS",
+      "status": "draft",
+      "name": "SEU-EF-NeinAbgeschlossenLaeuftGeplantVS",
+      "title": "SEU-EF-NeinAbgeschlossenLaeuftGeplantVS",
+      "description": "SEU-EF-NeinAbgeschlossenLaeuftGeplantVS",
+      "version": "0.1.0",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-EF-NeinAbgeschlossenLaeuftGeplantVS",
+      "expansion": {
+        "timestamp": "2024-03-27T12:20:50+00:00",
+        "contains": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-EF-NeinAbgeschlossenLaeuftGeplant",
+            "code": "nein",
+            "display": "nein"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-EF-NeinAbgeschlossenLaeuftGeplant",
+            "code": "abgeschlossen",
+            "display": "abgeschlossen"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-EF-NeinAbgeschlossenLaeuftGeplant",
+            "code": "läuft",
+            "display": "läuft z.Zt. Noch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-EF-NeinAbgeschlossenLaeuftGeplant",
+            "code": "geplant",
+            "display": "geplant"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-EF-NeinAbgeschlossenLaeuftGeplant"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "language-valueset",
+      "status": "draft",
+      "name": "ISO6392_LanguageVS",
+      "title": "Language ValueSet",
+      "description": "ValueSet containing all language codes from the ISO 639-2 CodeSystem.",
+      "version": "0.1.0",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/language-valueset",
+      "expansion": {
+        "timestamp": "2024-09-12T12:00:00+00:00",
+        "contains": [
+          {
+            "system": "http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor",
+            "code": "NAVU",
+            "display": "keine Angabe"
+          },
+          {
+            "system": "http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor",
+            "code": "OTH",
+            "display": "Andere"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "aar",
+            "display": "Afar"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "abk",
+            "display": "Abchasisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "ace",
+            "display": "Achinesisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "ach",
+            "display": "Acholi"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "ada",
+            "display": "Dangme"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "ady",
+            "display": "Adygeisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "afr",
+            "display": "Afrikaans"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "ain",
+            "display": "Ainu"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "aka",
+            "display": "Akan"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "alb",
+            "display": "Albanisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "ale",
+            "display": "Aleutisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "alt",
+            "display": "Südaltaisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "amh",
+            "display": "Amharisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "anp",
+            "display": "Angika"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "ara",
+            "display": "Arabisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "arg",
+            "display": "Aragonesisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "arm",
+            "display": "Armenisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "arn",
+            "display": "Mapudungun"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "arp",
+            "display": "Arapaho"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "arw",
+            "display": "Arawak"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "asm",
+            "display": "Assamesisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "ast",
+            "display": "Asturisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "ava",
+            "display": "Awarisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "awa",
+            "display": "Awadhi"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "aym",
+            "display": "Aymara"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "aze",
+            "display": "Aserbaidschanisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "bak",
+            "display": "Baschkirisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "bal",
+            "display": "Belutschisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "bam",
+            "display": "Bambara"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "ban",
+            "display": "Balinesisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "baq",
+            "display": "Baskisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "bas",
+            "display": "Bassa"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "bej",
+            "display": "Bedscha"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "bel",
+            "display": "Belarussisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "bem",
+            "display": "Bemba"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "ben",
+            "display": "Bengalisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "bho",
+            "display": "Bhojpuri"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "bik",
+            "display": "Bikolano"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "bin",
+            "display": "Edo"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "bis",
+            "display": "Bislama"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "bla",
+            "display": "Blackfoot"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "bos",
+            "display": "Bosnisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "bra",
+            "display": "Braj-Bhakha"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "bre",
+            "display": "Bretonisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "bua",
+            "display": "Burjatisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "bug",
+            "display": "Buginesisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "bul",
+            "display": "Bulgarisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "bur",
+            "display": "Birmanisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "byn",
+            "display": "Blin"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "cad",
+            "display": "Caddo"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "car",
+            "display": "Karib"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "cat",
+            "display": "Katalanisch, Valencianisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "ceb",
+            "display": "Cebuano"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "cha",
+            "display": "Chamorro"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "che",
+            "display": "Tschetschenisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "chi",
+            "display": "Chinesisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "chk",
+            "display": "Chuukesisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "chm",
+            "display": "Mari"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "chn",
+            "display": "Chinook Wawa"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "cho",
+            "display": "Choctaw"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "chp",
+            "display": "Chipewyan"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "chr",
+            "display": "Cherokee"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "chv",
+            "display": "Tschuwaschisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "chy",
+            "display": "Cheyenne"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "cnr",
+            "display": "Montenegrinisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "cor",
+            "display": "Kornisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "cos",
+            "display": "Korsisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "cre",
+            "display": "Cree"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "crh",
+            "display": "Krimtatarisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "csb",
+            "display": "Kaschubisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "cze",
+            "display": "Tschechisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "dak",
+            "display": "Dakota"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "dan",
+            "display": "Dänisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "dar",
+            "display": "Darginisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "del",
+            "display": "Delawarisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "den",
+            "display": "Slavey"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "dgr",
+            "display": "Dogrib"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "din",
+            "display": "Dinka"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "div",
+            "display": "Dhivehi"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "doi",
+            "display": "Dogri"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "dsb",
+            "display": "Niedersorbisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "dua",
+            "display": "Duala"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "dut",
+            "display": "Niederländisch, Belgisches Niederländisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "dyu",
+            "display": "Dioula"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "dzo",
+            "display": "Dzongkha"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "efi",
+            "display": "Efik"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "eka",
+            "display": "Ekajuk"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "eng",
+            "display": "Englisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "est",
+            "display": "Estnisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "ewe",
+            "display": "Ewe"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "ewo",
+            "display": "Ewondo"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "fan",
+            "display": "Fang"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "fao",
+            "display": "Färöisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "fat",
+            "display": "Fante"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "fij",
+            "display": "Fidschi"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "fil",
+            "display": "Filipino"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "fin",
+            "display": "Finnisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "fon",
+            "display": "Fon"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "fre",
+            "display": "Französisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "frr",
+            "display": "Nordfriesisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "frs",
+            "display": "Ostfriesisches Platt"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "fry",
+            "display": "Westfriesisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "ful",
+            "display": "Fulfulde"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "fur",
+            "display": "Furlanisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "gaa",
+            "display": "Ga"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "gay",
+            "display": "Gayo"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "gba",
+            "display": "Gbaya-Sprachen"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "geo",
+            "display": "Georgisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "ger",
+            "display": "Deutsch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "gil",
+            "display": "Kiribatisch, Gilbertesisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "gla",
+            "display": "Schottisch-gälisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "gle",
+            "display": "Irisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "glg",
+            "display": "Galicisch, Galegisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "glv",
+            "display": "Manx,"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "gon",
+            "display": "Gondi"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "gor",
+            "display": "Gorontalo"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "grb",
+            "display": "Grebo"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "gre",
+            "display": "Griechisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "grn",
+            "display": "Guaraní"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "gsw",
+            "display": "Schweizerdeutsch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "guj",
+            "display": "Gujarati"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "gwi",
+            "display": "Gwich'in (Sprache)"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "hai",
+            "display": "Haida"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "hat",
+            "display": "Haitianisch-Kreolisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "hau",
+            "display": "Hausa"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "haw",
+            "display": "Hawaiisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "heb",
+            "display": "Hebräisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "her",
+            "display": "Otjiherero"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "hil",
+            "display": "Hiligaynon"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "hin",
+            "display": "Hindi"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "hmn",
+            "display": "Hmong-Sprache"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "hmo",
+            "display": "Hiri Motu"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "hrv",
+            "display": "Kroatisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "hsb",
+            "display": "Obersorbisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "hun",
+            "display": "Ungarisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "hup",
+            "display": "Hoopa"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "iba",
+            "display": "Iban"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "ibo",
+            "display": "Igbo"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "ice",
+            "display": "Isländisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "iii",
+            "display": "Yi"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "iku",
+            "display": "Inuktitut"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "ilo",
+            "display": "Ilokano"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "ind",
+            "display": "Indonesisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "inh",
+            "display": "Inguschisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "ipk",
+            "display": "Inupiaq"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "ita",
+            "display": "Italienisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "jav",
+            "display": "Javanisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "jpn",
+            "display": "Japanisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "jpr",
+            "display": "Judäo-Persisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "jrb",
+            "display": "Judäo-Arabisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "kaa",
+            "display": "Karakalpakisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "kab",
+            "display": "Kabylisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "kac",
+            "display": "Jingpo"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "kal",
+            "display": "Grönländisch, Kalaallisut"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "kam",
+            "display": "Kikamba"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "kan",
+            "display": "Kannada"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "kas",
+            "display": "Kashmiri"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "kau",
+            "display": "Kanuri"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "kaz",
+            "display": "Kasachisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "kbd",
+            "display": "Kabardinisch, Ost-Tscherkessisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "kha",
+            "display": "Khasi"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "khm",
+            "display": "Khmer"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "kik",
+            "display": "Kikuyu"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "kin",
+            "display": "Kinyarwanda, Ruandisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "kir",
+            "display": "Kirgisisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "kmb",
+            "display": "Kimbundu"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "kok",
+            "display": "Konkani"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "kom",
+            "display": "Komi"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "kon",
+            "display": "Kikongo"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "kor",
+            "display": "Koreanisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "kos",
+            "display": "Kosraeanisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "kpe",
+            "display": "Kpelle"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "krc",
+            "display": "Karatschai-balkarisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "krl",
+            "display": "Karelisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "kru",
+            "display": "Kurukh"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "kua",
+            "display": "oshiKwanyama"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "kum",
+            "display": "Kumykisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "kur",
+            "display": "Kurdisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "kut",
+            "display": "Kutanaha"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "lad",
+            "display": "Judenspanisch, Ladino, Sephardisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "lah",
+            "display": "Lahnda, Westpanjabi"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "lam",
+            "display": "Lamba"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "lao",
+            "display": "Laotisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "lav",
+            "display": "Lettisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "lez",
+            "display": "Lesgisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "lim",
+            "display": "Limburgisch, Südniederfränkisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "lin",
+            "display": "Lingála"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "lit",
+            "display": "Litauisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "lol",
+            "display": "Lomongo"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "loz",
+            "display": "Lozi"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "ltz",
+            "display": "Luxemburgisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "lua",
+            "display": "Tschiluba"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "lub",
+            "display": "Kiluba"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "lug",
+            "display": "Luganda"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "lun",
+            "display": "Chilunda"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "luo",
+            "display": "Luo"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "lus",
+            "display": "Mizo, Lushai"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "mac",
+            "display": "Mazedonisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "mad",
+            "display": "Maduresisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "mag",
+            "display": "Magadhi"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "mah",
+            "display": "Marshallesisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "mai",
+            "display": "Maithili"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "mak",
+            "display": "Makassar"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "mal",
+            "display": "Malayalam"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "man",
+            "display": "Manding"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "mao",
+            "display": "Maori"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "mar",
+            "display": "Marathi"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "mas",
+            "display": "Maa, Kimaasai"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "may",
+            "display": "Malaiisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "mdf",
+            "display": "Mokschanisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "mdr",
+            "display": "Mandar"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "men",
+            "display": "Mende"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "mic",
+            "display": "Míkmawísimk"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "min",
+            "display": "Minangkabauisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "mlg",
+            "display": "Malagasy, Malagassi"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "mlt",
+            "display": "Maltesisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "mnc",
+            "display": "Mandschurisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "mni",
+            "display": "Meitei"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "moh",
+            "display": "Mohawk"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "mon",
+            "display": "Mongolisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "mos",
+            "display": "Mòoré"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "mwl",
+            "display": "Mirandés"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "mwr",
+            "display": "Marwari"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "myv",
+            "display": "Ersjanisch, Ersja-Mordwinisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "nap",
+            "display": "Neapolitanisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "nau",
+            "display": "Nauruisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "nav",
+            "display": "Navajo"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "nbl",
+            "display": "Süd-Ndebele"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "nde",
+            "display": "Nord-Ndebele"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "ndo",
+            "display": "Ndonga"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "nds",
+            "display": "Niederdeutsch, Plattdeutsch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "nep",
+            "display": "Nepali"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "new",
+            "display": "Newari"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "nia",
+            "display": "Nias"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "niu",
+            "display": "Niueanisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "nno",
+            "display": "Nynorsk"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "nob",
+            "display": "Bokmål"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "nog",
+            "display": "Nogaisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "nor",
+            "display": "Norwegisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "nqo",
+            "display": "N’Ko"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "nso",
+            "display": "Nord-Sotho"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "nya",
+            "display": "Chichewa"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "nym",
+            "display": "Nyamwesi"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "nyn",
+            "display": "Runyankole, Runyankore"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "nyo",
+            "display": "Runyoro"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "nzi",
+            "display": "Nzema"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "oci",
+            "display": "Okzitanisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "oji",
+            "display": "Ojibwe"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "ori",
+            "display": "Oriya"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "orm",
+            "display": "Oromo"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "osa",
+            "display": "Osage"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "oss",
+            "display": "Ossetisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "pag",
+            "display": "Pangasinensisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "pam",
+            "display": "Kapampangan"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "pan",
+            "display": "Panjabi, Pandschabi"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "pap",
+            "display": "Papiamentu"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "pau",
+            "display": "Palauisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "per",
+            "display": "Persisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "pol",
+            "display": "Polnisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "pon",
+            "display": "Pohnpeanisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "por",
+            "display": "Portugiesisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "pus",
+            "display": "Paschtunisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "que",
+            "display": "Quechua"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "raj",
+            "display": "Rajasthani"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "rap",
+            "display": "Rapanui"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "rar",
+            "display": "Rarotonganisch, Māori der Cookinseln"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "roh",
+            "display": "Bündnerromanisch, Romanisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "rom",
+            "display": "Romani, Romanes"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "rum",
+            "display": "Rumänisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "run",
+            "display": "Kirundi"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "rup",
+            "display": "Aromunisch, Makedoromanisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "rus",
+            "display": "Russisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "sad",
+            "display": "Sandawe"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "sag",
+            "display": "Sango"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "sah",
+            "display": "Jakutisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "sas",
+            "display": "Sasak"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "sat",
+            "display": "Santali"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "scn",
+            "display": "Sizilianisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "sco",
+            "display": "Scots"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "sel",
+            "display": "Selkupisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "shn",
+            "display": "Shan"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "sid",
+            "display": "Sidama"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "sin",
+            "display": "Singhalesisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "slo",
+            "display": "Slowakisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "slv",
+            "display": "Slowenisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "sma",
+            "display": "Südsamisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "sme",
+            "display": "Nordsamisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "smj",
+            "display": "Lulesamisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "smn",
+            "display": "Inarisamisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "smo",
+            "display": "Samoanisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "sms",
+            "display": "Skoltsamisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "sna",
+            "display": "Shona"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "snd",
+            "display": "Sindhi"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "snk",
+            "display": "Soninke"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "som",
+            "display": "Somali"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "sot",
+            "display": "Sesotho, Süd-Sotho"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "spa",
+            "display": "Spanisch, Kastilisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "srd",
+            "display": "Sardisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "srn",
+            "display": "Sranantongo"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "srp",
+            "display": "Serbisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "srr",
+            "display": "Serer"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "ssw",
+            "display": "Siswati"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "suk",
+            "display": "Sukuma"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "sun",
+            "display": "Sundanesisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "sus",
+            "display": "Susu"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "swa",
+            "display": "Swahili"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "swe",
+            "display": "Schwedisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "syr",
+            "display": "Nordost-Neuaramäisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "tah",
+            "display": "Tahitianisch, Tahitisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "tam",
+            "display": "Tamil"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "tat",
+            "display": "Tatarisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "tel",
+            "display": "Telugu"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "tem",
+            "display": "Temne"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "ter",
+            "display": "Terena"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "tet",
+            "display": "Tetum"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "tgk",
+            "display": "Tadschikisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "tgl",
+            "display": "Tagalog"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "tha",
+            "display": "Thai"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "tib",
+            "display": "Tibetisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "tig",
+            "display": "Tigre"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "tir",
+            "display": "Tigrinya"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "tiv",
+            "display": "Tiv"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "tkl",
+            "display": "Tokelauisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "tli",
+            "display": "Tlingit"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "tmh",
+            "display": "Tuareg"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "tog",
+            "display": "ChiTonga"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "ton",
+            "display": "Tongaisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "tpi",
+            "display": "Tok Pisin, Neuguinea-Pidgin"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "tsi",
+            "display": "Tsimshian"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "tsn",
+            "display": "Setswana"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "tso",
+            "display": "Xitsonga"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "tuk",
+            "display": "Turkmenisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "tum",
+            "display": "Tumbuka"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "tur",
+            "display": "Türkisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "tvl",
+            "display": "Tuvaluisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "twi",
+            "display": "Twi"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "tyv",
+            "display": "Tuwinisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "udm",
+            "display": "Udmurtisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "uig",
+            "display": "Uigurisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "ukr",
+            "display": "Ukrainisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "umb",
+            "display": "Umbundu"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "urd",
+            "display": "Urdu"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "uzb",
+            "display": "Usbekisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "vai",
+            "display": "Vai"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "ven",
+            "display": "Tshivenda"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "vie",
+            "display": "Vietnamesisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "vot",
+            "display": "Wotisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "wal",
+            "display": "Wolaytta"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "war",
+            "display": "Wáray-Wáray"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "was",
+            "display": "Washoe"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "wel",
+            "display": "Walisisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "wln",
+            "display": "Wallonisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "wol",
+            "display": "Wolof"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "xal",
+            "display": "Kalmückisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "xho",
+            "display": "isiXhosa"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "yao",
+            "display": "Yao"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "yap",
+            "display": "Yapesisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "yid",
+            "display": "Jiddisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "yor",
+            "display": "Yoruba"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "zap",
+            "display": "Zapotekisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "zen",
+            "display": "Zenaga"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "zgh",
+            "display": "Marokkanisches Tamazight"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "zha",
+            "display": "Zhuang"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "zul",
+            "display": "isiZulu"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "zun",
+            "display": "Zuñi"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
+            "code": "zza",
+            "display": "Zazaisch"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+            "concept": [
+              {
+                "code": "NAVU",
+                "display": "keine Angabe"
+              },
+              {
+                "code": "OTH",
+                "display": "Andere"
+              }
+            ]
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "ChronischeErkrankungenVS",
+      "status": "draft",
+      "name": "ChronischeErkrankungenVS",
+      "title": "ChronischeErkrankungenVS",
+      "description": "ChronischeErkrankungenVS",
+      "version": "0.1.0",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/ChronischeErkrankungenVS",
+      "expansion": {
+        "timestamp": "2024-04-04T10:10:32+00:00",
+        "contains": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ChronischeErkrankungenCS",
+            "code": "allergie",
+            "display": "Allergie"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ChronischeErkrankungenCS",
+            "code": "fettstoffwechselstörung",
+            "display": "Fettstoffwechselstörung"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ChronischeErkrankungenCS",
+            "code": "bluthochdruck",
+            "display": "Bluthochdruck"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ChronischeErkrankungenCS",
+            "code": "schlaganfall",
+            "display": "Schlaganfall"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ChronischeErkrankungenCS",
+            "code": "herzinfarkt",
+            "display": "Herzinfarkt"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ChronischeErkrankungenCS",
+            "code": "zuckerkrankheit",
+            "display": "Zuckerkrankheit"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ChronischeErkrankungenCS",
+            "code": "übergewicht",
+            "display": "Übergewicht"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ChronischeErkrankungenCS"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "seu-ef-bildungsabschluss-vs",
+      "status": "draft",
+      "name": "SEU_EF_BildungsabschlussVS",
+      "title": "SEU_EF_Bildungsabschluss ValueSet",
+      "description": "ValueSet, das verschiedene Bildungsabschlüsse enthält.",
+      "version": "0.1.0",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-bildungsabschluss-vs",
+      "expansion": {
+        "timestamp": "2024-10-20T11:50:47+00:00",
+        "contains": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-bildungsabschluss-cs",
+            "code": "kein_schulabschluss",
+            "display": "Kein Schulabschluss"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-bildungsabschluss-cs",
+            "code": "hauptschulabschluss",
+            "display": "Hauptschulabschluss"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-bildungsabschluss-cs",
+            "code": "mittlere_reife",
+            "display": "Mittlere Reife oder vergleichbar"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-bildungsabschluss-cs",
+            "code": "abitur_fachhochschulreife",
+            "display": "Abitur/Fachhochschulreife oder vergleichbar"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-bildungsabschluss-cs",
+            "code": "sonder_foerderschule",
+            "display": "Sonder-/Förderschule"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-bildungsabschluss-cs",
+            "code": "in_schulischer_ausbildung",
+            "display": "Derzeit noch in schulischer Ausbildung (Schüler*in)"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-bildungsabschluss-cs"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "seu-ef-berufsbildung-vs",
+      "status": "draft",
+      "name": "SEU_EF_BerufsbildungVS",
+      "title": "SEU_EF_Berufsbildung ValueSet",
+      "description": "ValueSet, das verschiedene Berufsbildungsabschlüsse enthält.",
+      "version": "0.1.0",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-berufsbildung-vs",
+      "expansion": {
+        "timestamp": "2024-10-20T11:50:47+00:00",
+        "contains": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-berufsbildung-cs",
+            "code": "kein_berufsabschluss",
+            "display": "Kein Berufsabschluss"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-berufsbildung-cs",
+            "code": "in_ausbildung_studium",
+            "display": "Derzeit noch in beruflicher Ausbildung"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-berufsbildung-cs",
+            "code": "berufliche_ausbildung_lehre",
+            "display": "Berufliche Ausbildung/Lehre oder vergleichbar"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-berufsbildung-cs",
+            "code": "fachhochschulabschluss",
+            "display": "Fach-/Hochschulabschluss oder vergleichbar"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-berufsbildung-cs"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "erwerbsstatus-incl-sonstiges-vs",
+      "status": "draft",
+      "name": "ErwerbsstatusInclSonstigesVS",
+      "title": "Erwerbsstatus ValueSet incl. Sonstiges",
+      "description": "ErwerbsstatusInclSonstigesVS",
+      "version": "0.1.0",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/erwerbsstatus-incl-sonstiges-vs",
+      "expansion": {
+        "timestamp": "2024-06-26T15:47:43+00:00",
+        "contains": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/erwerbsstatus-cs",
+            "code": "nicht_erwerbstaetig",
+            "display": "Nicht erwerbstätig"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/erwerbsstatus-cs",
+            "code": "teilzeit",
+            "display": "Teilzeit"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/erwerbsstatus-cs",
+            "code": "vollzeit",
+            "display": "Vollzeit"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/erwerbsstatus-cs",
+            "code": "sonstiges",
+            "display": "Sonstiges"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/erwerbsstatus-cs"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "ja-nein-warteliste",
+      "status": "draft",
+      "name": "JaNeinWartelisteVS",
+      "title": "JaNeinWartelisteVS",
+      "description": "JaNeinWartelisteVS",
+      "version": "0.1.0",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/ja-nein-warteliste",
+      "expansion": {
+        "timestamp": "2024-06-26T15:47:43+00:00",
+        "contains": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "270459005",
+            "display": "Warteliste"
+          },
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+            "code": "Y",
+            "display": "Ja"
+          },
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+            "code": "N",
+            "display": "Nein"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "http://snomed.info/sct",
+            "concept": [
+              {
+                "code": "270459005",
+                "display": "Warteliste"
+              }
+            ]
+          },
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0532",
+            "concept": [
+              {
+                "code": "Y",
+                "display": "Ja"
+              },
+              {
+                "code": "N",
+                "display": "Nein"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "SEU-EF-Medienkonsum-BerlinVS",
+      "status": "draft",
+      "name": "SEU_EF_Medienkonsum_BerlinVS",
+      "title": "SEU_EF_Medienkonsum Berlin ValueSet",
+      "description": "ValueSet, das die Kategorien des Medienkonsums in Stunden enthält.",
+      "version": "0.1.0",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-EF-Medienkonsum-BerlinVS",
+      "expansion": {
+        "timestamp": "2024-09-10T12:00:00+00:00",
+        "contains": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-medienkonsum-verlin-cs",
+            "code": "gar_nicht",
+            "display": "Gar nicht"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-medienkonsum-verlin-cs",
+            "code": "max_bis_1",
+            "display": "max. 1 Stunde"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-medienkonsum-verlin-cs",
+            "code": "max_bis_2",
+            "display": "max. 2 Stunden"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-medienkonsum-verlin-cs",
+            "code": "max_bis_3",
+            "display": "max. 3 Stunden"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-medienkonsum-verlin-cs",
+            "code": "ueber_3",
+            "display": "über 3 Stunden"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-medienkonsum-verlin-cs"
+          }
+        ]
+      }
+    }
+  ],
+  "url": "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung",
+  "title": "SEU Elternfragebogen Berlin",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext",
       "extension": [
         {
-          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+          "url": "name",
           "valueCoding": {
-            "system": "urn:iso:std:iso:3166-2:de",
-            "code": "DE-BE"
+            "code": "patient",
+            "system": "http://hl7.org/fhir/uv/sdc/CodeSystem/launchContext"
           }
+        },
+        {
+          "url": "type",
+          "valueCode": "Patient"
+        },
+        {
+          "url": "description",
+          "valueString": "Patientenkontext"
+        }
+      ]
+    }
+  ],
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "1",
+      "type": "group",
+      "text": "(1) Angaben zur Person",
+      "code": [
+        {
+          "code": "1",
+          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
         }
       ],
       "item": [
         {
           "linkId": "1.1",
           "type": "string",
-          "text": "(1.1) Name des Kindes",
+          "text": "(1.1) Nachname des Kindes",
           "code": [
             {
               "code": "1.1",
@@ -36,10 +2265,10 @@
           ],
           "extension": [
             {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BE"
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%patient.name[0].family"
               }
             }
           ]
@@ -47,7 +2276,7 @@
         {
           "linkId": "1.2",
           "type": "string",
-          "text": "(1.2) Vorname",
+          "text": "(1.2) Vorname des Kindes",
           "code": [
             {
               "code": "1.2",
@@ -56,93 +2285,92 @@
           ],
           "extension": [
             {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BE"
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%patient.name[0].given[0]"
               }
             }
           ]
         },
         {
           "linkId": "1.3",
-          "type": "text",
-          "text": "(1.3) Adresse",
+          "type": "string",
+          "text": "(1.3) PLZ",
           "code": [
             {
               "code": "1.3",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BE"
-              }
-            }
           ]
         },
         {
           "linkId": "1.4",
-          "type": "number",
-          "text": "(1.4) Telefon",
+          "type": "string",
+          "text": "(1.4) Wohnort",
           "code": [
             {
               "code": "1.4",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BE"
-              }
-            }
           ]
         },
         {
           "linkId": "1.5",
-          "type": "choice",
-          "text": "(1.5) Geschlecht",
+          "type": "string",
+          "text": "(1.5) Straße",
           "code": [
             {
               "code": "1.5",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BE"
-              }
-            }
-          ],
-          "answerValueSet": "https://www.oegd.de/fhir/seu/ValueSet/Gender-BE-VS"
+          ]
         },
         {
           "linkId": "1.6",
-          "type": "date",
-          "text": "(1.6) Geburtsdatum",
+          "type": "string",
+          "text": "(1.6) Hausnummer",
           "code": [
             {
               "code": "1.6",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
+          ]
+        },
+        {
+          "linkId": "1.7",
+          "type": "string",
+          "text": "(1.7) Telefonnummer",
+          "code": [
+            {
+              "code": "1.7",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "1.8",
+          "type": "choice",
+          "text": "(1.8) Geschlecht",
+          "code": [
+            {
+              "code": "1.8",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "answerValueSet": "https://www.oegd.de/fhir/seu/ValueSet/GenderDEVS"
+        },
+        {
+          "linkId": "1.3.3",
+          "type": "date",
+          "text": "(1.3.3) Geburtsdatum",
+          "code": [
+            {
+              "code": "1.3.3",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
           ],
           "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BE"
-              }
-            },
             {
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
               "valueExpression": {
@@ -153,438 +2381,64 @@
           ]
         },
         {
-          "linkId": "1.7",
+          "linkId": "1.10",
           "type": "boolean",
-          "text": "(1.7) In Deutschland geboren",
+          "text": "(1.10) In Deutschland geboren",
           "code": [
             {
-              "code": "1.7",
+              "code": "1.10",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BE"
-              }
             }
           ]
         },
         {
-          "linkId": "1.7.a",
+          "linkId": "1.10.1",
           "type": "date",
-          "text": "(1.7.a) Seit wann lebt Ihr Kind in Deutschland (Monat/ Jahr)?",
+          "text": "(1.10.1) Seit wann wohnt das Kind in Deutschland?",
           "code": [
             {
-              "code": "1.7.a",
+              "code": "1.10.1",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
           ],
-          "extension": [
+          "enableWhen": [
             {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BE"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "linkId": "1.8.1",
-      "type": "group",
-      "text": "(1.8.1) Geschwister unter 18 Jahre",
-      "code": [
-        {
-          "code": "1.8.1",
-          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-        }
-      ],
-      "extension": [
-        {
-          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-          "valueCoding": {
-            "system": "urn:iso:std:iso:3166-2:de",
-            "code": "DE-BE"
-          }
-        }
-      ],
-      "item": [
-        {
-          "linkId": "1.8.2",
-          "type": "string",
-          "text": "(1.8.2) Vorname",
-          "code": [
-            {
-              "code": "1.8.2",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BE"
-              }
+              "question": "1.10",
+              "operator": "=",
+              "answerBoolean": false
             }
           ]
         },
         {
-          "linkId": "1.8.3",
+          "linkId": "1.11",
+          "type": "group",
+          "text": "(1.11) Details Geschwister",
+          "code": [
+            {
+              "code": "1.11",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "repeats": true
+        },
+        {
+          "linkId": "1.12",
           "type": "date",
-          "text": "(1.8.3) Geburtsjahr",
+          "text": "(1.12) Geburtsdatum des Geschwisters",
           "code": [
             {
-              "code": "1.8.3",
+              "code": "1.12",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BE"
-              }
-            }
-          ]
-        }
-      ],
-      "repeats": true
-    },
-    {
-      "linkId": "1.9",
-      "type": "string",
-      "text": "(1.9) Name des Elternteils A",
-      "code": [
-        {
-          "code": "1.9",
-          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-        }
-      ],
-      "extension": [
-        {
-          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-          "valueCoding": {
-            "system": "urn:iso:std:iso:3166-2:de",
-            "code": "DE-BE"
-          }
-        }
-      ]
-    },
-    {
-      "linkId": "1.9.1",
-      "type": "string",
-      "text": "(1.9.1) Vorname des Elternteils A",
-      "code": [
-        {
-          "code": "1.9.1",
-          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-        }
-      ],
-      "extension": [
-        {
-          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-          "valueCoding": {
-            "system": "urn:iso:std:iso:3166-2:de",
-            "code": "DE-BE"
-          }
-        }
-      ]
-    },
-    {
-      "linkId": "1.9.2",
-      "type": "choice",
-      "text": "(1.9.2) Geburtsland des Elternteils A",
-      "code": [
-        {
-          "code": "1.9.2",
-          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-        }
-      ],
-      "extension": [
-        {
-          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-          "valueCoding": {
-            "system": "urn:iso:std:iso:3166-2:de",
-            "code": "DE-BE"
-          }
-        }
-      ]
-    },
-    {
-      "linkId": "1.9.3",
-      "type": "boolean",
-      "text": "(1.9.3) deutsche Staatsangehörigkeit Elternteil A?",
-      "code": [
-        {
-          "code": "1.9.3",
-          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-        }
-      ],
-      "extension": [
-        {
-          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-          "valueCoding": {
-            "system": "urn:iso:std:iso:3166-2:de",
-            "code": "DE-BE"
-          }
-        }
-      ]
-    },
-    {
-      "linkId": "1.9.4",
-      "type": "text",
-      "text": "(1.9.4) andere/weitere",
-      "code": [
-        {
-          "code": "1.9.4",
-          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-        }
-      ],
-      "extension": [
-        {
-          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-          "valueCoding": {
-            "system": "urn:iso:std:iso:3166-2:de",
-            "code": "DE-BE"
-          }
-        }
-      ]
-    },
-    {
-      "linkId": "1.10",
-      "type": "string",
-      "text": "(1.10) Name des Elternteils B",
-      "code": [
-        {
-          "code": "1.10",
-          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-        }
-      ],
-      "extension": [
-        {
-          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-          "valueCoding": {
-            "system": "urn:iso:std:iso:3166-2:de",
-            "code": "DE-BE"
-          }
-        }
-      ]
-    },
-    {
-      "linkId": "1.10.1",
-      "type": "string",
-      "text": "(1.10.1) Vorname Elternteils B",
-      "code": [
-        {
-          "code": "1.10.1",
-          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-        }
-      ],
-      "extension": [
-        {
-          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-          "valueCoding": {
-            "system": "urn:iso:std:iso:3166-2:de",
-            "code": "DE-BE"
-          }
-        }
-      ]
-    },
-    {
-      "linkId": "1.10.2",
-      "type": "choice",
-      "text": "(1.10.2) Geburtsland des Elternteils B",
-      "code": [
-        {
-          "code": "1.10.2",
-          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-        }
-      ],
-      "extension": [
-        {
-          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-          "valueCoding": {
-            "system": "urn:iso:std:iso:3166-2:de",
-            "code": "DE-BE"
-          }
-        }
-      ]
-    },
-    {
-      "linkId": "1.10.3",
-      "type": "boolean",
-      "text": "(1.10.3) deutsche Staatsangehörigkeit des Elternteil B?",
-      "code": [
-        {
-          "code": "1.10.3",
-          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-        }
-      ],
-      "extension": [
-        {
-          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-          "valueCoding": {
-            "system": "urn:iso:std:iso:3166-2:de",
-            "code": "DE-BE"
-          }
-        }
-      ]
-    },
-    {
-      "linkId": "1.10.4",
-      "type": "text",
-      "text": "(1.10.4) andere/weitere",
-      "code": [
-        {
-          "code": "1.10.4",
-          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-        }
-      ],
-      "extension": [
-        {
-          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-          "valueCoding": {
-            "system": "urn:iso:std:iso:3166-2:de",
-            "code": "DE-BE"
-          }
-        }
-      ]
-    },
-    {
-      "linkId": "1.11",
-      "type": "string",
-      "text": "(1.11) Welche Sprachen werden in Ihrer Familie mit dem Kind gesprochen?",
-      "code": [
-        {
-          "code": "1.11",
-          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-        }
-      ],
-      "extension": [
-        {
-          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-          "valueCoding": {
-            "system": "urn:iso:std:iso:3166-2:de",
-            "code": "DE-BE"
-          }
-        }
-      ],
-      "repeats": true
-    },
-    {
-      "linkId": "1.12",
-      "type": "string",
-      "text": "(1.12) Name des Kinderarztes/Hausarztes:",
-      "code": [
-        {
-          "code": "1.12",
-          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-        }
-      ],
-      "extension": [
-        {
-          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-          "valueCoding": {
-            "system": "urn:iso:std:iso:3166-2:de",
-            "code": "DE-BE"
-          }
-        }
-      ]
-    },
-    {
-      "linkId": "2",
-      "type": "group",
-      "text": "(2) Erkrankungen des Kindes auch frühere",
-      "code": [
-        {
-          "code": "2",
-          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-        }
-      ],
-      "extension": [
-        {
-          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-          "valueCoding": {
-            "system": "urn:iso:std:iso:3166-2:de",
-            "code": "DE-BE"
-          }
-        }
-      ],
-      "item": [
-        {
-          "linkId": "2.1",
-          "type": "string",
-          "text": "(2.1) obstruktive Bronchitis/Asthma",
-          "code": [
-            {
-              "code": "2.1",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BE"
-              }
             }
           ]
         },
         {
-          "linkId": "2.2",
+          "linkId": "1.13",
           "type": "string",
-          "text": "(2.2) angeborene Herzfehler/Herzerkrankungen",
+          "text": "(1.13) Vorname des Geschwisters",
           "code": [
             {
-              "code": "2.2",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BE"
-              }
-            }
-          ]
-        },
-        {
-          "linkId": "2.3",
-          "type": "string",
-          "text": "(2.3) Krampfleiden (epileptische Anfälle)",
-          "code": [
-            {
-              "code": "2.3",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BE"
-              }
-            }
-          ]
-        },
-        {
-          "linkId": "2.4",
-          "type": "string",
-          "text": "(2.4) andere wichtige Erkrankungen/Allergien/Unfälle)",
-          "code": [
-            {
-              "code": "2.4",
+              "code": "1.13",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
           ],
@@ -599,86 +2453,88 @@
           ],
           "item": [
             {
-              "linkId": "2.4.1",
-              "type": "text",
-              "text": "(2.4.1) wenn ja, welche:",
+              "linkId": "1.14",
+              "type": "group",
+              "text": "(1.14) Personenbezogene Daten Personenberechtigter",
               "code": [
                 {
-                  "code": "2.4.1",
+                  "code": "1.14",
                   "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-                }
-              ],
-              "extension": [
-                {
-                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-                  "valueCoding": {
-                    "system": "urn:iso:std:iso:3166-2:de",
-                    "code": "DE-BE"
-                  }
-                }
-              ],
-              "enableWhen": [
-                {
-                  "question": "2.4",
-                  "operator": "=",
-                  "answerBoolean": true
-                }
-              ]
-            },
-            {
-              "linkId": "2.5",
-              "type": "boolean",
-              "text": "(2.5) Nimmt Ihr Kind regelmäßig Medikamente ein?",
-              "code": [
-                {
-                  "code": "2.5",
-                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-                }
-              ],
-              "extension": [
-                {
-                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-                  "valueCoding": {
-                    "system": "urn:iso:std:iso:3166-2:de",
-                    "code": "DE-BE"
-                  }
                 }
               ],
               "item": [
                 {
-                  "linkId": "2.5.1",
-                  "type": "text",
-                  "text": "(2.5.1) wenn ja, welche:",
+                  "linkId": "1.15",
+                  "type": "string",
+                  "text": "(1.15) Nachname",
                   "code": [
                     {
-                      "code": "2.5.1",
+                      "code": "1.15",
                       "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
                     }
                   ],
                   "extension": [
                     {
-                      "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-                      "valueCoding": {
-                        "system": "urn:iso:std:iso:3166-2:de",
-                        "code": "DE-BE"
+                      "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                      "valueExpression": {
+                        "language": "text/fhirpath",
+                        "expression": "%patient.name[0].family"
                       }
-                    }
-                  ],
-                  "enableWhen": [
-                    {
-                      "question": "2.5",
-                      "operator": "=",
-                      "answerBoolean": true
                     }
                   ]
                 },
                 {
-                  "linkId": "2.6.2",
-                  "type": "integer",
-                  "text": "(2.6.2) Anzahl der Krankenhausaufenthalte/Operationen",
+                  "linkId": "1.16",
+                  "type": "string",
+                  "text": "(1.16) Vorname",
                   "code": [
                     {
-                      "code": "2.6.2",
+                      "code": "1.16",
+                      "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                    }
+                  ],
+                  "extension": [
+                    {
+                      "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+                      "valueExpression": {
+                        "language": "text/fhirpath",
+                        "expression": "%patient.name[0].given[0]"
+                      }
+                    }
+                  ]
+                },
+                {
+                  "answerValueSet": "https://www.oegd.de/fhir/seu/ValueSet/DeuevAnlage8LaenderkennzeichenVS",
+                  "linkId": "1.17",
+                  "type": "choice",
+                  "text": "(1.17) Herkunftsland",
+                  "code": [
+                    {
+                      "code": "1.17",
+                      "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                    }
+                  ]
+                },
+                {
+                  "answerValueSet": "https://www.oegd.de/fhir/seu/ValueSet/DeuevAnlage8LaenderkennzeichenVS",
+                  "linkId": "1.18",
+                  "type": "choice",
+                  "text": "(1.18) Staatsangehörigkeit",
+                  "code": [
+                    {
+                      "code": "1.18",
+                      "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                    }
+                  ]
+                },
+                {
+                  "answerValueSet": "https://www.oegd.de/fhir/seu/ValueSet/DeuevAnlage8LaenderkennzeichenVS",
+                  "linkId": "1.19",
+                  "type": "choice",
+                  "text": "(1.19) andere/weitere",
+                  "code": [
+                    {
+                      "code": "1.19",
                       "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
                     }
                   ],
@@ -691,8 +2547,155 @@
                       }
                     }
                   ]
+                },
+                {
+                  "answerValueSet": "#language-valueset",
+                  "linkId": "1.20",
+                  "type": "choice",
+                  "text": "(1.20) Welche Sprachen werden Zuhause gesprochen?",
+                  "code": [
+                    {
+                      "code": "1.20",
+                      "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                    }
+                  ],
+                  "repeats": true
+                },
+                {
+                  "linkId": "1.21",
+                  "type": "string",
+                  "text": "(1.21) Name Kinderarzt",
+                  "code": [
+                    {
+                      "code": "1.21",
+                      "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                    }
+                  ]
                 }
               ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "2",
+      "type": "group",
+      "text": "(2) Erkrankungen des Kindes (auch frühere)",
+      "code": [
+        {
+          "code": "2",
+          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+        }
+      ],
+      "item": [
+        {
+          "linkId": "2.1",
+          "type": "choice",
+          "text": "(2.1) Erkrankung",
+          "code": [
+            {
+              "code": "2.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "answerValueSet": "#ChronischeErkrankungenVS",
+          "repeats": true
+        },
+        {
+          "linkId": "2.4",
+          "type": "boolean",
+          "text": "(2.4) andere wichtige Erkrankungen/Allergien/Unfälle",
+          "code": [
+            {
+              "code": "2.4",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BE"
+              }
+            }
+          ]
+        },
+        {
+          "enableWhen": [
+            {
+              "question": "2.4.2",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "linkId": "2.4.3",
+          "type": "text",
+          "text": "(2.4.3) wenn ja, welche",
+          "code": [
+            {
+              "code": "2.4.3",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BE"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "2.5",
+          "type": "boolean",
+          "text": "(2.5) Regelmäßige Medikamenteneinnahme",
+          "code": [
+            {
+              "code": "2.5",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "2.5.1",
+          "type": "string",
+          "text": "(2.5.1) Welches Medikament",
+          "code": [
+            {
+              "code": "2.5.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "2.5",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "repeats": true
+        },
+        {
+          "linkId": "2.6",
+          "type": "integer",
+          "text": "(2.6) Anzahl der Krankenhausaufenthalte/Operationen",
+          "code": [
+            {
+              "code": "2.6",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BE"
+              }
             }
           ]
         }
@@ -708,20 +2711,11 @@
           "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
         }
       ],
-      "extension": [
-        {
-          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-          "valueCoding": {
-            "system": "urn:iso:std:iso:3166-2:de",
-            "code": "DE-BE"
-          }
-        }
-      ],
       "item": [
         {
           "linkId": "3.1",
-          "type": "group",
-          "text": "(3.1) Wurde/wird Ihr Kind behandelt/betreut",
+          "type": "choice",
+          "text": "(3.1) Logopädie",
           "code": [
             {
               "code": "3.1",
@@ -733,15 +2727,16 @@
               "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
               "valueCoding": {
                 "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BE"
+                "code": "DE-BW"
               }
             }
           ],
+          "answerValueSet": "#ja-nein-warteliste",
           "item": [
             {
               "linkId": "3.1.1",
-              "type": "boolean",
-              "text": "(3.1.1) durch eine(n) Krankengymnasten/Krankengymnastin?",
+              "type": "date",
+              "text": "(3.1.1) Begonnen",
               "code": [
                 {
                   "code": "3.1.1",
@@ -753,15 +2748,25 @@
                   "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
                   "valueCoding": {
                     "system": "urn:iso:std:iso:3166-2:de",
-                    "code": "DE-BE"
+                    "code": "DE-BW"
+                  }
+                }
+              ],
+              "enableWhen": [
+                {
+                  "question": "3.1",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "Y",
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0532"
                   }
                 }
               ]
             },
             {
               "linkId": "3.1.2",
-              "type": "boolean",
-              "text": "(3.1.2) Wurde/wird Ihr Kind behandelt/betreut durch durch eine(n) Ergotherapeuten(in)?",
+              "type": "date",
+              "text": "(3.1.2) Beendet",
               "code": [
                 {
                   "code": "3.1.2",
@@ -773,18 +2778,51 @@
                   "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
                   "valueCoding": {
                     "system": "urn:iso:std:iso:3166-2:de",
-                    "code": "DE-BE"
+                    "code": "DE-BW"
+                  }
+                }
+              ],
+              "enableWhen": [
+                {
+                  "question": "3.1",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "Y",
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0532"
                   }
                 }
               ]
-            },
+            }
+          ]
+        },
+        {
+          "linkId": "3.2",
+          "type": "choice",
+          "text": "(3.2) Ergotherapie",
+          "code": [
             {
-              "linkId": "3.1.3",
-              "type": "boolean",
-              "text": "(3.1.3) Wurde/wird Ihr Kind behandelt/betreut durch eine(n) Logopäden(in)?",
+              "code": "3.2",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BW"
+              }
+            }
+          ],
+          "answerValueSet": "#ja-nein-warteliste",
+          "item": [
+            {
+              "linkId": "3.2.1",
+              "type": "date",
+              "text": "(3.2.1) Begonnen",
               "code": [
                 {
-                  "code": "3.1.3",
+                  "code": "3.2.1",
                   "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
                 }
               ],
@@ -793,75 +2831,25 @@
                   "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
                   "valueCoding": {
                     "system": "urn:iso:std:iso:3166-2:de",
-                    "code": "DE-BE"
+                    "code": "DE-BW"
                   }
                 }
-              ]
-            },
-            {
-              "linkId": "3.1.4",
-              "type": "boolean",
-              "text": "(3.1.4) Wurde/wird Ihr Kind behandelt/betreut durch eine(n) Psychologen(in)/Psychiater(in)/Erziehungsberatung?",
-              "code": [
-                {
-                  "code": "3.1.4",
-                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-                }
               ],
-              "extension": [
+              "enableWhen": [
                 {
-                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-                  "valueCoding": {
-                    "system": "urn:iso:std:iso:3166-2:de",
-                    "code": "DE-BE"
-                  }
-                }
-              ]
-            },
-            {
-              "linkId": "3.2",
-              "type": "group",
-              "text": "(3.2) Machen Sie sich Sorgen um Ihr Kind wegen",
-              "code": [
-                {
-                  "code": "3.2",
-                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-                }
-              ],
-              "extension": [
-                {
-                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-                  "valueCoding": {
-                    "system": "urn:iso:std:iso:3166-2:de",
-                    "code": "DE-BE"
+                  "question": "3.2",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "Y",
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0532"
                   }
                 }
               ],
               "item": [
                 {
-                  "linkId": "3.2.1",
-                  "type": "boolean",
-                  "text": "(3.2.1) seines Verhaltens?",
-                  "code": [
-                    {
-                      "code": "3.2.1",
-                      "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-                    }
-                  ],
-                  "extension": [
-                    {
-                      "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-                      "valueCoding": {
-                        "system": "urn:iso:std:iso:3166-2:de",
-                        "code": "DE-BE"
-                      }
-                    }
-                  ]
-                },
-                {
                   "linkId": "3.2.2",
-                  "type": "boolean",
-                  "text": "(3.2.2) seiner Sprachentwicklung?",
+                  "type": "date",
+                  "text": "(3.2.2) Beendet",
                   "code": [
                     {
                       "code": "3.2.2",
@@ -873,430 +2861,507 @@
                       "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
                       "valueCoding": {
                         "system": "urn:iso:std:iso:3166-2:de",
-                        "code": "DE-BE"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "linkId": "3.2.3",
-                  "type": "boolean",
-                  "text": "(3.2.3) seiner Konzentrationsfähigkeit?",
-                  "code": [
-                    {
-                      "code": "3.2.3",
-                      "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-                    }
-                  ],
-                  "extension": [
-                    {
-                      "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-                      "valueCoding": {
-                        "system": "urn:iso:std:iso:3166-2:de",
-                        "code": "DE-BE"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "linkId": "3.2.4",
-                  "type": "boolean",
-                  "text": "(3.2.4) seines Seh- oder Hörvermögens?",
-                  "code": [
-                    {
-                      "code": "3.2.4",
-                      "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-                    }
-                  ],
-                  "extension": [
-                    {
-                      "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-                      "valueCoding": {
-                        "system": "urn:iso:std:iso:3166-2:de",
-                        "code": "DE-BE"
-                      }
-                    }
-                  ]
-                },
-                {
-                  "linkId": "3.2.3",
-                  "type": "boolean",
-                  "text": "(3.2.3) Nässt ihr Kind ein?",
-                  "code": [
-                    {
-                      "code": "3.2.3",
-                      "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-                    }
-                  ],
-                  "extension": [
-                    {
-                      "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-                      "valueCoding": {
-                        "system": "urn:iso:std:iso:3166-2:de",
-                        "code": "DE-BE"
-                      }
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "linkId": "4",
-          "type": "group",
-          "text": "(4) Entwicklung des Kindes",
-          "code": [
-            {
-              "code": "4",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BE"
-              }
-            }
-          ],
-          "item": [
-            {
-              "linkId": "4.1",
-              "type": "date",
-              "text": "(4.1) Seit wann (Monat/Jahr) geht Ihr Kind in eine Kindertagesstätte (auch Elterninitiativ-Kita/ Großtagespflegestelle)?",
-              "code": [
-                {
-                  "code": "4.1",
-                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-                }
-              ],
-              "extension": [
-                {
-                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-                  "valueCoding": {
-                    "system": "urn:iso:std:iso:3166-2:de",
-                    "code": "DE-BE"
-                  }
-                }
-              ]
-            },
-            {
-              "linkId": "4.1.a",
-              "type": "text",
-              "text": "(4.1.a) wenn ja, in welche zuletzt:",
-              "code": [
-                {
-                  "code": "4.1.a",
-                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-                }
-              ],
-              "extension": [
-                {
-                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-                  "valueCoding": {
-                    "system": "urn:iso:std:iso:3166-2:de",
-                    "code": "DE-BE"
-                  }
-                }
-              ]
-            },
-            {
-              "linkId": "4.1.b",
-              "type": "date",
-              "text": "(4.1.b) wenn Ihr Kind aktuell keine Kita besucht, seit wann nicht mehr?",
-              "code": [
-                {
-                  "code": "4.1.b",
-                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-                }
-              ],
-              "extension": [
-                {
-                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-                  "valueCoding": {
-                    "system": "urn:iso:std:iso:3166-2:de",
-                    "code": "DE-BE"
-                  }
-                }
-              ]
-            },
-            {
-              "linkId": "4.2",
-              "type": "boolean",
-              "text": "(4.2) Geht oder ging Ihr Kind in eine andere Tagesbetreuung?",
-              "code": [
-                {
-                  "code": "4.2",
-                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-                }
-              ],
-              "extension": [
-                {
-                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-                  "valueCoding": {
-                    "system": "urn:iso:std:iso:3166-2:de",
-                    "code": "DE-BE"
-                  }
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "linkId": "5",
-          "type": "group",
-          "text": "(5) Lebensumfeld",
-          "code": [
-            {
-              "code": "5",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BE"
-              }
-            }
-          ],
-          "item": [
-            {
-              "linkId": "5.1",
-              "type": "choice",
-              "text": "(5.1) WDas Kind lebt überwiegend bei",
-              "code": [
-                {
-                  "code": "5.1",
-                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-                }
-              ],
-              "extension": [
-                {
-                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-                  "valueCoding": {
-                    "system": "urn:iso:std:iso:3166-2:de",
-                    "code": "DE-BE"
-                  }
-                }
-              ],
-              "answerValueSet": "https://www.oegd.de/fhir/seu/ValueSet/lebensumfeld-vs"
-            },
-            {
-              "linkId": "5.2",
-              "type": "choice",
-              "text": "(5.2) Schulabschluss der Eltern (den höchsten ankreuzen und bitte bei beiden Eltern angeben!)",
-              "code": [
-                {
-                  "code": "5.2",
-                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-                }
-              ],
-              "extension": [
-                {
-                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-                  "valueCoding": {
-                    "system": "urn:iso:std:iso:3166-2:de",
-                    "code": "DE-BE"
-                  }
-                }
-              ],
-              "answerValueSet": "https://www.oegd.de/fhir/seu/ValueSet/Schulabschluss-Eltern-Berlin-VS"
-            },
-            {
-              "linkId": "5.3",
-              "type": "choice",
-              "text": "(5.3) Berufsausbildung der Eltern (die höchste ankreuzen und bitte bei beiden Eltern angeben!)",
-              "code": [
-                {
-                  "code": "5.3",
-                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-                }
-              ],
-              "extension": [
-                {
-                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-                  "valueCoding": {
-                    "system": "urn:iso:std:iso:3166-2:de",
-                    "code": "DE-BE"
-                  }
-                }
-              ],
-              "answerValueSet": "https://www.oegd.de/fhir/seu/ValueSet/BeruflicheAusbildungElternBE-VS"
-            },
-            {
-              "linkId": "5.4",
-              "type": "choice",
-              "text": "(5.4) Berufstätigkeit der Eltern (bitte bei beiden Eltern angeben!)",
-              "code": [
-                {
-                  "code": "5.4",
-                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-                }
-              ],
-              "extension": [
-                {
-                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-                  "valueCoding": {
-                    "system": "urn:iso:std:iso:3166-2:de",
-                    "code": "DE-BE"
-                  }
-                }
-              ],
-              "answerValueSet": "https://www.oegd.de/fhir/seu/ValueSet/BeruflicheAusbildungElternBE-VS"
-            },
-            {
-              "linkId": "5.5.1",
-              "type": "number",
-              "text": "(5.5.1) Wie viele Personen leben insgesamt in Ihrem Haushalt (Ihr einzuschulendes Kind mitgerechnet)? Erwachsene:",
-              "code": [
-                {
-                  "code": "5.5.1",
-                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-                }
-              ],
-              "extension": [
-                {
-                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-                  "valueCoding": {
-                    "system": "urn:iso:std:iso:3166-2:de",
-                    "code": "DE-BE"
-                  }
-                }
-              ]
-            },
-            {
-              "linkId": "5.5.2",
-              "type": "number",
-              "text": "(5.5.2) Wie viele Personen leben insgesamt in Ihrem Haushalt (Ihr einzuschulendes Kind mitgerechnet)? Kinder unter 18 Jahren:",
-              "code": [
-                {
-                  "code": "5.5.2",
-                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-                }
-              ],
-              "extension": [
-                {
-                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-                  "valueCoding": {
-                    "system": "urn:iso:std:iso:3166-2:de",
-                    "code": "DE-BE"
-                  }
-                }
-              ]
-            },
-            {
-              "linkId": "5.6",
-              "type": "number",
-              "text": "(5.6) Wie viele Personen in Ihrem Haushalt sind Raucher/Dampfer?",
-              "code": [
-                {
-                  "code": "5.6",
-                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-                }
-              ],
-              "extension": [
-                {
-                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-                  "valueCoding": {
-                    "system": "urn:iso:std:iso:3166-2:de",
-                    "code": "DE-BE"
-                  }
-                }
-              ]
-            },
-            {
-              "linkId": "5.7",
-              "type": "choice",
-              "text": "(5.7) Wie viele Stunden am Tag beschäftigt sich Ihr Kind im Durchschnitt mit elektronischen Geräten? (elektronische Geräte sind Fernsehen, DVD, Computer, Tablet, Smartphone, Playstation und andere)",
-              "code": [
-                {
-                  "code": "5.7",
-                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-                }
-              ],
-              "extension": [
-                {
-                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-                  "valueCoding": {
-                    "system": "urn:iso:std:iso:3166-2:de",
-                    "code": "DE-BE"
-                  }
-                }
-              ],
-              "answerValueSet": "https://www.oegd.de/fhir/seu/ValueSet/TaeglicherKonsumElektronischerMedien-BE-VS"
-            },
-            {
-              "linkId": "5.7.1",
-              "type": "boolean",
-              "text": "(5.7.1) mein Kind hat einen eigenen Fernseher",
-              "code": [
-                {
-                  "code": "5.7.1",
-                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-                }
-              ],
-              "extension": [
-                {
-                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-                  "valueCoding": {
-                    "system": "urn:iso:std:iso:3166-2:de",
-                    "code": "DE-BE"
-                  }
-                }
-              ]
-            },
-            {
-              "linkId": "5.7.2",
-              "type": "boolean",
-              "text": "(5.7.2) andere eigene elektronische Geräte",
-              "code": [
-                {
-                  "code": "5.7.2",
-                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-                }
-              ],
-              "extension": [
-                {
-                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-                  "valueCoding": {
-                    "system": "urn:iso:std:iso:3166-2:de",
-                    "code": "DE-BE"
-                  }
-                }
-              ],
-              "item": [
-                {
-                  "linkId": "5.7.3",
-                  "type": "text",
-                  "text": "(5.7.3) wenn ja, welche:",
-                  "code": [
-                    {
-                      "code": "5.7.3",
-                      "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-                    }
-                  ],
-                  "extension": [
-                    {
-                      "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-                      "valueCoding": {
-                        "system": "urn:iso:std:iso:3166-2:de",
-                        "code": "DE-BE"
+                        "code": "DE-BW"
                       }
                     }
                   ],
                   "enableWhen": [
                     {
-                      "question": "5.7.2",
+                      "question": "3.2",
                       "operator": "=",
-                      "answerBoolean": true
+                      "answerCoding": {
+                        "code": "Y",
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0532"
+                      }
                     }
                   ]
                 }
               ]
+            }
+          ]
+        },
+        {
+          "linkId": "3.3",
+          "type": "choice",
+          "text": "(3.3) Psychotherapie",
+          "code": [
+            {
+              "code": "3.3",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BW"
+              }
+            }
+          ],
+          "answerValueSet": "#ja-nein-warteliste",
+          "item": [
+            {
+              "linkId": "3.3.1",
+              "type": "date",
+              "text": "(3.3.1) Begonnen",
+              "code": [
+                {
+                  "code": "3.3.1",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-BW"
+                  }
+                }
+              ],
+              "enableWhen": [
+                {
+                  "question": "3.3",
+                  "operator": "=",
+                  "answerCoding": {
+                    "code": "Y",
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0532"
+                  }
+                }
+              ],
+              "item": [
+                {
+                  "linkId": "3.3.2",
+                  "type": "date",
+                  "text": "(3.3.2) Beendet",
+                  "code": [
+                    {
+                      "code": "3.3.2",
+                      "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                    }
+                  ],
+                  "extension": [
+                    {
+                      "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                      "valueCoding": {
+                        "system": "urn:iso:std:iso:3166-2:de",
+                        "code": "DE-BW"
+                      }
+                    }
+                  ],
+                  "enableWhen": [
+                    {
+                      "question": "3.3",
+                      "operator": "=",
+                      "answerCoding": {
+                        "code": "Y",
+                        "system": "http://terminology.hl7.org/CodeSystem/v2-0532"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "3.3",
+          "type": "choice",
+          "text": "(3.3) Krankengymnastik",
+          "code": [
+            {
+              "code": "3.3",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "answerValueSet": "#SEU-EF-NeinAbgeschlossenLaeuftGeplantVS"
+        },
+        {
+          "answerValueSet": "https://www.oegd.de/fhir/seu/ValueSet/Sorgen-KindVS",
+          "linkId": "3.4",
+          "type": "choice",
+          "text": "(3.4) Machen Sie sich Sorgen um Ihr Kind wegen",
+          "code": [
+            {
+              "code": "3.4",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BE"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "3.5",
+          "type": "boolean",
+          "text": "(3.5) Nässt ihr Kind ein?",
+          "code": [
+            {
+              "code": "3.5",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BE"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "4",
+      "type": "group",
+      "text": "(4) Entwicklung des Kindes",
+      "code": [
+        {
+          "code": "4",
+          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+        }
+      ],
+      "item": [
+        {
+          "linkId": "4.1",
+          "type": "date",
+          "text": "(4.1) Seit wann besucht das Kind eine Kita?",
+          "code": [
+            {
+              "code": "4.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-SN"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "4.2",
+          "type": "string",
+          "text": "(4.2) Name des Kindergartens",
+          "code": [
+            {
+              "code": "4.2",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "4.3",
+          "type": "date",
+          "text": "(4.3) Angabe des Datums, seit wann das Kind keine Kita mehr besucht.",
+          "code": [
+            {
+              "code": "4.3",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "4.4",
+          "type": "boolean",
+          "text": "(4.4) Besucht ihr Kind eine andere Form der Tagesbetreuung?",
+          "code": [
+            {
+              "code": "4.4",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "4.4a",
+          "type": "string",
+          "text": "(4.4a) Art der Tagesbetreuung?",
+          "code": [
+            {
+              "code": "4.4a",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BB"
+              }
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "4.4",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "5",
+      "type": "group",
+      "text": "(5) Entwicklung des Kindes",
+      "code": [
+        {
+          "code": "5",
+          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+        }
+      ],
+      "item": [
+        {
+          "linkId": "5.1",
+          "type": "choice",
+          "text": "(5.1) Kind lebt hauptsächlich bei",
+          "code": [
+            {
+              "code": "5.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "answerValueSet": "https://www.oegd.de/fhir/seu/ValueSet/LebtBeiVS"
+        },
+        {
+          "linkId": "5.2",
+          "type": "choice",
+          "text": "(5.2) Schulabschluss 1. Elternteil",
+          "code": [
+            {
+              "code": "5.2",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "answerValueSet": "#seu-ef-bildungsabschluss-vs"
+        },
+        {
+          "linkId": "5.2.1",
+          "type": "choice",
+          "text": "(5.2.1) Schulabschluss 2. Elternteil",
+          "code": [
+            {
+              "code": "5.2.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "answerValueSet": "#seu-ef-bildungsabschluss-vs"
+        },
+        {
+          "linkId": "5.3",
+          "type": "choice",
+          "text": "(5.3) Berufsabschluss 1. Elternteil",
+          "code": [
+            {
+              "code": "5.3",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "answerValueSet": "#seu-ef-berufsbildung-vs"
+        },
+        {
+          "linkId": "5.3.1",
+          "type": "choice",
+          "text": "(5.3.1) Berufsabschluss 2. Elternteil",
+          "code": [
+            {
+              "code": "5.3.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "answerValueSet": "#seu-ef-berufsbildung-vs"
+        },
+        {
+          "linkId": "5.4",
+          "type": "choice",
+          "text": "(5.4) Berufstätigkeit 1. Elternteil",
+          "code": [
+            {
+              "code": "5.4",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BW"
+              }
+            }
+          ],
+          "answerValueSet": "#erwerbsstatus-incl-sonstiges-vs"
+        },
+        {
+          "linkId": "5.4.1",
+          "type": "choice",
+          "text": "(5.4.1) Berufstätigkeit 2. Elternteil",
+          "code": [
+            {
+              "code": "5.4.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BW"
+              }
+            }
+          ],
+          "answerValueSet": "#erwerbsstatus-incl-sonstiges-vs"
+        },
+        {
+          "linkId": "5.5",
+          "type": "integer",
+          "text": "(5.5) Aktuell im Haushalt lebende Erwachsene",
+          "code": [
+            {
+              "code": "5.5",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BB"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "5.6",
+          "type": "integer",
+          "text": "(5.6) Wieviele Personen sind Raucher/Dampfer",
+          "code": [
+            {
+              "code": "5.6",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BE"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "5.7",
+          "type": "choice",
+          "text": "(5.7) Wie viele Stunden am Tag beschäftigt sich Ihr Kind im Durchschnitt mit elektronischen Geräten? (elektronische Geräte sind Fernsehen, DVD, Computer, Tablet, Smartphone, Playstation und andere) ",
+          "code": [
+            {
+              "code": "5.7",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BE"
+              }
+            }
+          ],
+          "answerValueSet": "#SEU-EF-Medienkonsum-BerlinVS"
+        },
+        {
+          "linkId": "5.7.1",
+          "type": "boolean",
+          "text": "(5.7.1) Fernsehgerät/Computer/Spielkonsole im Zimmer?",
+          "code": [
+            {
+              "code": "5.7.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "5.7.2",
+          "type": "boolean",
+          "text": "(5.7.2) Mein Kind hat einen eigenen Fernseher?",
+          "code": [
+            {
+              "code": "5.7.2",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BE"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "5.7.3",
+          "type": "boolean",
+          "text": "(5.7.3) andere eigene elektronische Geräte",
+          "code": [
+            {
+              "code": "5.7.3",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BE"
+              }
+            }
+          ]
+        },
+        {
+          "enableWhen": [
+            {
+              "question": "5.7.3",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "linkId": "5.7.3.1",
+          "type": "text",
+          "text": "(5.7.3.1) wenn ja, welche",
+          "code": [
+            {
+              "code": "5.7.3.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BE"
+              }
             }
           ]
         }

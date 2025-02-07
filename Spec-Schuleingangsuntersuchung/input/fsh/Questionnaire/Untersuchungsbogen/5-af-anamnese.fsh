@@ -47,19 +47,19 @@ RuleSet: 5-af-anamnese
         * insert uunit(mo, "Monate")
     * item[+] insert addItem(5.16, #choice, [[Elternsprache  1]])
       * insert addSource(#DE-BY)
-      * answerValueSet = Canonical(SEU_UB_AuswaehlbareElternspracheVS)
+      * answerValueSet = Canonical(SEU-UB-AuswaehlbareElternspracheVS)
     * item[+] insert addItem(5.17, #string, [[Elternsprache 1 andere]])
       * insert addSource(#DE-BY)
       * insert enableWhenCode(5.16, =, SEU_UB_AuswaehlbareElternspracheErweiterungCS, 98)
     * item[+] insert addItem(5.18, #choice, [[Elternsprache  2]])
       * insert addSource(#DE-BY)
-      * answerValueSet = Canonical(SEU_UB_AuswaehlbareElternspracheVS)
+      * answerValueSet = Canonical(SEU-UB-AuswaehlbareElternspracheVS)
     * item[+] insert addItem(5.19, #string, [[Elternsprache 2 andere]])
       * insert addSource(#DE-BY)
       * insert enableWhenCode(5.16, =, SEU_UB_AuswaehlbareElternspracheErweiterungCS, 98)
     * item[+] insert addItem(5.19.b, #choice, [[Elternsprache 3]])
       * insert addSource(#DE-BE)
-      * answerValueSet = Canonical(SEU_UB_AuswaehlbareElternspracheVS)
+      * answerValueSet = Canonical(SEU-UB-AuswaehlbareElternspracheVS)
     * item[+] insert addItem(5.20, #choice, [[Zu Hause gesprochene Sprache(n)]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_GesprocheneSpracheVS)
@@ -77,7 +77,7 @@ RuleSet: 5-af-anamnese
       * answerValueSet = Canonical(SEU_UB_UntersuchungsergebnisVS)
     * item[+] insert addItem(5.23.b, #choice, [[Kind lebt überwiegend bei]])
       * insert addSource(#DE-BE)
-      * answerValueSet = Canonical(Kind_lebt_beiVS) 
+      * answerValueSet = Canonical(Kind-lebt-beiVS) 
     * item[+] insert addItem(5.23.c, #integer, [[Anzahl aller im Haushalt lebenden Kinder (bis 18 J.)]])
       * insert addSource(#DE-BE)
     * item[+] insert addItem(5.23.d, #integer, [[Anzahl der Raucher/Dampfer im HH]])
@@ -90,7 +90,7 @@ RuleSet: 5-af-anamnese
       * answerValueSet = Canonical(ElektronischesGeraetKindVS) 
     * item[+] insert addItem(5.23.g, #choice, [[Zaehneputzen in der Kita]])
       * insert addSource(#DE-BE)
-      * answerValueSet = Canonical(Zaehneputzen_in_der_KitaVS) 
+      * answerValueSet = Canonical(Zaehneputzen-in-der-KitaVS) 
   * item[+] insert addGroup(5_2, Fördermaßnahmen oder Behandlungen)
     * insert addSource(#DE-BY)
     * item[+] insert addItem(5.24, #choice, [[Teilnahme Vorkurs Deutsch]])
@@ -272,7 +272,7 @@ RuleSet: 5-af-anamnese
     * item[+] insert addGroup(1, [[Sinnesorgane/Zaehne]])
       * item[+] insert addGroup(1, [[Sehen]])
         * item[+] insert addItemWithSource(5.25, #choice, [[Sehen]], #DE-BE)
-          * answerValueSet = Canonical(Sinnesorgane_ZaehneVS)
+          * answerValueSet = Canonical(Sinnesorgane-ZaehneVS)
         * item[+]
           * insert addItemWithSource(5.25.1, #boolean, [[N]], #DE-BE)
         * item[+]
@@ -283,7 +283,7 @@ RuleSet: 5-af-anamnese
           * insert addItemWithSource(5.25.4, #boolean, [[kK]], #DE-BE)
       * item[+] insert addGroup(1, [[Hören]])
         * item[+] insert addItemWithSource(5.26, #choice, [[Hören]], #DE-BE)
-          * answerValueSet = Canonical(Sinnesorgane_ZaehneVS)  
+          * answerValueSet = Canonical(Sinnesorgane-ZaehneVS)  
         * item[+]
           * insert addItemWithSource(5.26.1, #boolean, [[N]], #DE-BE)
         * item[+]
@@ -294,7 +294,7 @@ RuleSet: 5-af-anamnese
           * insert addItemWithSource(5.26.4, #boolean, [[kK]], #DE-BE)
       * item[+] insert addGroup(1, [[Zähne]])
         * item[+] insert addItemWithSource(5.27, #choice, [[Zähne]], #DE-BE)
-          * answerValueSet = Canonical(Sinnesorgane_ZaehneVS)
+          * answerValueSet = Canonical(Sinnesorgane-ZaehneVS)
         * item[+]
           * insert addItemWithSource(5.27.1, #boolean, [[N]], #DE-BE)
         * item[+]
@@ -1999,10 +1999,10 @@ Description: "Kind_lebt_beiCS"
 * #anderswo "anderswo"
 * #keine_Angabe "keine Angabe"
 
-ValueSet: Kind_lebt_beiVS
-Id: Kind_lebt_beiVS
-Title: "Kind_lebt_beiVS"
-Description: "Kind_lebt_beiVS"
+ValueSet: Kind-lebt-beiVS
+Id: Kind-lebt-beiVS
+Title: "Kind-lebt-beiVS"
+Description: "Kind-lebt-beiVS"
 * include codes from system Kind_lebt_beiCS
 * ^expansion.timestamp = "2024-03-27T12:20:50+00:00"
 * ^expansion.contains[0].system = Canonical(Kind_lebt_beiCS)
@@ -2123,8 +2123,8 @@ Description: "Zähneputzen_in_der_KitaCS"
 * #nicht_sicher "nicht sicher"
 * #keine_Angabe "keine Angabe"
 
-ValueSet: Zaehneputzen_in_der_KitaVS
-Id: Zaehneputzen_in_der_KitaVS
+ValueSet: Zaehneputzen-in-der-KitaVS
+Id: Zaehneputzen-in-der-KitaVS
 Title: "Zähneputzen_in_der_KitaVS"
 Description: "Zähneputzen_in_der_KitaVS"
 * include codes from system Zaehneputzen_in_der_KitaCS
@@ -2150,10 +2150,10 @@ Description: "Sinnesorgane_ZaehneCS"
 * #auffaellig "auffällig"
 * #keine_Angabe "keine Angabe"
 
-ValueSet: Sinnesorgane_ZaehneVS
-Id: Sinnesorgane_ZaehneVS
-Title: "Sinnesorgane_ZaehneVS"
-Description: "Sinnesorgane_ZaehneVS"
+ValueSet: Sinnesorgane-ZaehneVS
+Id: Sinnesorgane-ZaehneVS
+Title: "Sinnesorgane-ZaehneVS"
+Description: "Sinnesorgane-ZaehneVS"
 * include codes from system Sinnesorgane_ZaehneCS
 * ^expansion.timestamp = "2024-03-27T12:20:50+00:00"
 * ^expansion.contains[0].system = Canonical(Sinnesorgane_ZaehneCS)
