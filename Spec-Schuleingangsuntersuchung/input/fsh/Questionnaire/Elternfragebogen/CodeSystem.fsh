@@ -652,3 +652,11 @@ Description: "CodeSystem für die Angabe der Wohnsituation des Kindes."
 * #bei_grosseltern_oder_anderen "Bei Großeltern, Pflegeeltern, Adoptiveltern oder anderen"
 * #keine_angaben "Keine Angaben"
 
+CodeSystem: DauerStillenCS
+Id: DauerStillenCS
+Title: "DauerStillenCS"
+Description: "CodeSystem für die Angabe der Dauer des Stillens."
+* #nie_gestillt "Nie gestillt"
+* #weniger_als_6_monate "Weniger als 6 Monate"
+* #mehr_als_6_monate "Mehr als 6 Monate"
+* #keine_angabe "Keine Angabe"

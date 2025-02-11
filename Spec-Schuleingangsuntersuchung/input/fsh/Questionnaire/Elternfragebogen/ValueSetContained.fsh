@@ -2469,3 +2469,22 @@ Description: "ValueSet, das verschiedene Dauern enthält."
 * ^expansion.contains[+].system = Canonical(SEU_EF_DauerHECS)
 * ^expansion.contains[=].code = #ueber_3_jahre
 * ^expansion.contains[=].display = ">3 Jahre"
+
+ValueSet: DauerStillenVS
+Id: DauerStillenVS
+Title: "Dauer des Stillens ValueSet"
+Description: "ValueSet, das verschiedene Dauern des Stillens enthält."
+* include codes from system DauerStillenCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
+* ^expansion.contains[0].system = Canonical(DauerStillenCS)
+* ^expansion.contains[=].code = #nie_gestillt
+* ^expansion.contains[=].display = "Nie gestillt"
+* ^expansion.contains[+].system = Canonical(DauerStillenCS)
+* ^expansion.contains[=].code = #weniger_als_6_monate
+* ^expansion.contains[=].display = "Weniger als 6 Monate"
+* ^expansion.contains[+].system = Canonical(DauerStillenCS)
+* ^expansion.contains[=].code = #mehr_als_6_monate
+* ^expansion.contains[=].display = "Mehr als 6 Monate"
+* ^expansion.contains[+].system = Canonical(DauerStillenCS)
+* ^expansion.contains[=].code = #keine_angabe
+* ^expansion.contains[=].display = "Keine Angabe"
