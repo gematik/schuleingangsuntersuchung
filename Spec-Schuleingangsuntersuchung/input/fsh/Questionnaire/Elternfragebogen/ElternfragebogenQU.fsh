@@ -50,6 +50,7 @@ Description: "Elternbefragung"
 * contained[+] = SEU_EF_SpracheVS
 * contained[+] = SEU_EF_FrequenzVS
 * contained[+] = SEU_EF_DauerHEVS
+* contained[+] = SEU_EF_ZeitdauerVS
 * contained[+] = icd10gm-2024
 * contained[+] = SEU_EF_BildungsabschlussBBVS
 * contained[+] = SEU_EF_BildungsabschlussBWVS
