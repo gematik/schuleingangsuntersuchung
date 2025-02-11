@@ -183,11 +183,11 @@ RuleSet: 7-af-fdsscreening
       * answerValueSet = Canonical(SEU_UB_DeutschkenntnisseVS)
     * item[+] insert addItem(7.18.b, #choice, [[Deutschkenntnisse Kind]])
       * insert addSource(#DE-BE)
-      * answerValueSet = Canonical(Deutschkenntnisse_KindVS) 
+      * answerValueSet = Canonical(DeutschkenntnisseKindVS) 
     * item[+] insert addItemWithSource(7.18.c, #choice, [[Deutschkenntnisse Mutter]], #DE-BE)
-      * answerValueSet = Canonical(Deutschkenntnisse_MutterVS)
+      * answerValueSet = Canonical(DeutschkenntnisseMutterVS)
     * item[+] insert addItemWithSource(7.18.d, #choice, [[Deutschkenntnisse Vater]], #DE-BE)
-      * answerValueSet = Canonical(Deutschkenntnisse_VaterVS)
+      * answerValueSet = Canonical(DeutschkenntnisseVaterVS)
     * item[+] insert addItem(7.19, #choice, [[Sprachverständnis auffällig]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_AntwortAuffaelligkeitVS)
@@ -2674,10 +2674,10 @@ Description: "VorschaltlinseVS"
 * ^expansion.contains[=].code = #keine_Angabe 
 * ^expansion.contains[=].display = "keine Angabe/verweigert" 
 
-CodeSystem: Deutschkenntnisse_KindCS
-Id: Deutschkenntnisse_KindCS
-Title: "Deutschkenntnisse_KindCS"
-Description: "Deutschkenntnisse_KindCS"
+CodeSystem: DeutschkenntnisseKindCS
+Id: DeutschkenntnisseKindCS
+Title: "DeutschkenntnisseKindCS"
+Description: "DeutschkenntnisseKindCS"
 * #nicht  "nicht"
 * #einzelne_Worte "einzelne Worte"
 * #fluessig_mit_erheblichen_Fehlern "flüssig mit erheblichen Fehlern"
@@ -2685,33 +2685,33 @@ Description: "Deutschkenntnisse_KindCS"
 * #keine_Angabe "keine Angabe"
 
 
-ValueSet: Deutschkenntnisse_KindVS
-Id: Deutschkenntnisse_KindVS
-Title: "Deutschkenntnisse_KindVS"
-Description: "Deutschkenntnisse_KindVS"
-* include codes from system Deutschkenntnisse_KindCS
+ValueSet: DeutschkenntnisseKindVS
+Id: DeutschkenntnisseKindVS
+Title: "DeutschkenntnisseKindVS"
+Description: "DeutschkenntnisseKindVS"
+* include codes from system DeutschkenntnisseKindCS
 * ^expansion.timestamp = "2024-03-27T12:20:50+00:00"
-* ^expansion.contains[0].system = Canonical(Deutschkenntnisse_KindCS)
+* ^expansion.contains[0].system = Canonical(DeutschkenntnisseKindCS)
 * ^expansion.contains[=].code = #nicht  
 * ^expansion.contains[=].display = "nicht" 
-* ^expansion.contains[0].system = Canonical(Deutschkenntnisse_KindCS)
+* ^expansion.contains[0].system = Canonical(DeutschkenntnisseKindCS)
 * ^expansion.contains[=].code = #einzelne_Worte 
 * ^expansion.contains[=].display = "einzelne Worte"
-* ^expansion.contains[0].system = Canonical(Deutschkenntnisse_KindCS)
+* ^expansion.contains[0].system = Canonical(DeutschkenntnisseKindCS)
 * ^expansion.contains[=].code = #fluessig_mit_erheblichen_Fehlern 
 * ^expansion.contains[=].display = "flüssig mit erheblichen Fehlern"
-* ^expansion.contains[0].system = Canonical(Deutschkenntnisse_KindCS)
+* ^expansion.contains[0].system = Canonical(DeutschkenntnisseKindCS)
 * ^expansion.contains[=].code = #sehr_gut
 * ^expansion.contains[=].display = "sehr gut"
-* ^expansion.contains[0].system = Canonical(Deutschkenntnisse_KindCS)
+* ^expansion.contains[0].system = Canonical(DeutschkenntnisseKindCS)
 * ^expansion.contains[=].code = #keine_Angabe 
 * ^expansion.contains[=].display = "keine Angabe"
 
 
-CodeSystem: Deutschkenntnisse_MutterCS
-Id: Deutschkenntnisse_MutterCS
-Title: "Deutschkenntnisse_MutterCS"
-Description: "Deutschkenntnisse_MutterCS"
+CodeSystem: DeutschkenntnisseMutterCS
+Id: DeutschkenntnisseMutterCS
+Title: "DeutschkenntnisseMutterCS"
+Description: "DeutschkenntnisseMutterCS"
 * #nicht "nicht"
 * #einzelne_Worte "einzelne Worte"
 * #fluessig_mit_erheblichen_Fehlern "flüssig mit erheblichen Fehlern"
@@ -2720,35 +2720,35 @@ Description: "Deutschkenntnisse_MutterCS"
 * #keine_Angabe "keine Angabe"
 
 
-ValueSet: Deutschkenntnisse_MutterVS
-Id: Deutschkenntnisse_MutterVS
-Title: "Deutschkenntnisse_MutterVS"
-Description: "Deutschkenntnisse_MutterVS"
-* include codes from system Deutschkenntnisse_MutterCS
+ValueSet: DeutschkenntnisseMutterVS
+Id: DeutschkenntnisseMutterVS
+Title: "DeutschkenntnisseMutterVS"
+Description: "DeutschkenntnisseMutterVS"
+* include codes from system DeutschkenntnisseMutterCS
 * ^expansion.timestamp = "2024-03-27T12:20:50+00:00"
-* ^expansion.contains[0].system = Canonical(Deutschkenntnisse_MutterCS)
+* ^expansion.contains[0].system = Canonical(DeutschkenntnisseMutterCS)
 * ^expansion.contains[=].code = #nicht  
 * ^expansion.contains[=].display = "nicht" 
-* ^expansion.contains[0].system = Canonical(Deutschkenntnisse_MutterCS)
+* ^expansion.contains[0].system = Canonical(DeutschkenntnisseMutterCS)
 * ^expansion.contains[=].code = #einzelne_Worte 
 * ^expansion.contains[=].display = "einzelne Worte"
-* ^expansion.contains[0].system = Canonical(Deutschkenntnisse_MutterCS)
+* ^expansion.contains[0].system = Canonical(DeutschkenntnisseMutterCS)
 * ^expansion.contains[=].code = #fluessig_mit_erheblichen_Fehlern 
 * ^expansion.contains[=].display = "flüssig mit erheblichen Fehlern"
-* ^expansion.contains[0].system = Canonical(Deutschkenntnisse_MutterCS)
+* ^expansion.contains[0].system = Canonical(DeutschkenntnisseMutterCS)
 * ^expansion.contains[=].code = #sehr_gut
 * ^expansion.contains[=].display = "sehr gut"
-* ^expansion.contains[0].system = Canonical(Deutschkenntnisse_MutterCS)
+* ^expansion.contains[0].system = Canonical(DeutschkenntnisseMutterCS)
 * ^expansion.contains[=].code = #hat_nicht_begleitet "hat_nicht_begleitet"
 * ^expansion.contains[=].display = "hat nicht begleitet"
-* ^expansion.contains[0].system = Canonical(Deutschkenntnisse_MutterCS)
+* ^expansion.contains[0].system = Canonical(DeutschkenntnisseMutterCS)
 * ^expansion.contains[=].code = #keine_Angabe 
 * ^expansion.contains[=].display = "keine Angabe"
 
-CodeSystem: Deutschkenntnisse_VaterCS
-Id: Deutschkenntnisse_VaterCS
-Title: "Deutschkenntnisse_VaterCS"
-Description: "Deutschkenntnisse_VaterCS"
+CodeSystem: DeutschkenntnisseVaterCS
+Id: DeutschkenntnisseVaterCS
+Title: "DeutschkenntnisseVaterCS"
+Description: "DeutschkenntnisseVaterCS"
 * #nicht  "nicht"
 * #einzelne_Worte "einzelne Worte"
 * #fluessig_mit_erheblichen_Fehlern "flüssig mit erheblichen Fehlern"
@@ -2756,27 +2756,27 @@ Description: "Deutschkenntnisse_VaterCS"
 * #hat_nicht_begleitet "hat nicht begleitet"
 * #keine_Angabe "keine Angabe"
 
-ValueSet: Deutschkenntnisse_VaterVS
-Id: Deutschkenntnisse_VaterVS
-Title: "Deutschkenntnisse_VaterVS"
-Description: "Deutschkenntnisse_VaterVS"
-* include codes from system Deutschkenntnisse_VaterCS
+ValueSet: DeutschkenntnisseVaterVS
+Id: DeutschkenntnisseVaterVS
+Title: "DeutschkenntnisseVaterVS"
+Description: "DeutschkenntnisseVaterVS"
+* include codes from system DeutschkenntnisseVaterCS
 * ^expansion.timestamp = "2024-03-27T12:20:50+00:00"
-* ^expansion.contains[0].system = Canonical(Deutschkenntnisse_VaterCS)
+* ^expansion.contains[0].system = Canonical(DeutschkenntnisseVaterCS)
 * ^expansion.contains[=].code = #nicht  
 * ^expansion.contains[=].display = "nicht" 
-* ^expansion.contains[0].system = Canonical(Deutschkenntnisse_VaterCS)
+* ^expansion.contains[0].system = Canonical(DeutschkenntnisseVaterCS)
 * ^expansion.contains[=].code = #einzelne_Worte 
 * ^expansion.contains[=].display = "einzelne Worte"
-* ^expansion.contains[0].system = Canonical(Deutschkenntnisse_VaterCS)
+* ^expansion.contains[0].system = Canonical(DeutschkenntnisseVaterCS)
 * ^expansion.contains[=].code = #fluessig_mit_erheblichen_Fehlern 
 * ^expansion.contains[=].display = "flüssig mit erheblichen Fehlern"
-* ^expansion.contains[0].system = Canonical(Deutschkenntnisse_VaterCS)
+* ^expansion.contains[0].system = Canonical(DeutschkenntnisseVaterCS)
 * ^expansion.contains[=].code = #sehr_gut
 * ^expansion.contains[=].display = "sehr gut"
-* ^expansion.contains[0].system = Canonical(Deutschkenntnisse_VaterCS)
+* ^expansion.contains[0].system = Canonical(DeutschkenntnisseVaterCS)
 * ^expansion.contains[=].code = #hat_nicht_begleitet "hat_nicht_begleitet"
 * ^expansion.contains[=].display = "hat nicht begleitet"
-* ^expansion.contains[0].system = Canonical(Deutschkenntnisse_VaterCS)
+* ^expansion.contains[0].system = Canonical(DeutschkenntnisseVaterCS)
 * ^expansion.contains[=].code = #keine_Angabe 
 * ^expansion.contains[=].display = "keine Angabe"

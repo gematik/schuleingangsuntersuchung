@@ -1,0 +1,29 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEU-EF-NeinAbgeschlossenLaeuftGeplantCS",
+  "id": "SEU-EF-NeinAbgeschlossenLaeuftGeplantCS",
+  "title": "SEU-EF-NeinAbgeschlossenLaeuftGeplant",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-EF-NeinAbgeschlossenLaeuftGeplantCS",
+  "concept": [
+    {
+      "code": "nein",
+      "display": "nein"
+    },
+    {
+      "code": "abgeschlossen",
+      "display": "abgeschlossen"
+    },
+    {
+      "code": "läuft",
+      "display": "läuft z.Zt. Noch"
+    },
+    {
+      "code": "geplant",
+      "display": "geplant"
+    }
+  ],
+  "count": 4
+}

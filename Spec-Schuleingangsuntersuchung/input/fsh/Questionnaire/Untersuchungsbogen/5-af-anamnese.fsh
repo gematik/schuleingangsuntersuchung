@@ -77,7 +77,7 @@ RuleSet: 5-af-anamnese
       * answerValueSet = Canonical(SEU_UB_UntersuchungsergebnisVS)
     * item[+] insert addItem(5.23.b, #choice, [[Kind lebt überwiegend bei]])
       * insert addSource(#DE-BE)
-      * answerValueSet = Canonical(Kind-lebt-beiVS) 
+      * answerValueSet = Canonical(KindLebtBeiVS) 
     * item[+] insert addItem(5.23.c, #integer, [[Anzahl aller im Haushalt lebenden Kinder (bis 18 J.)]])
       * insert addSource(#DE-BE)
     * item[+] insert addItem(5.23.d, #integer, [[Anzahl der Raucher/Dampfer im HH]])
@@ -88,9 +88,9 @@ RuleSet: 5-af-anamnese
     * item[+] insert addItem(5.23.f, #choice, [[eigenes elektronisches Gerät des Kindes]])
       * insert addSource(#DE-BE)
       * answerValueSet = Canonical(ElektronischesGeraetKindVS) 
-    * item[+] insert addItem(5.23.g, #choice, [[Zaehneputzen in der Kita]])
+    * item[+] insert addItem(5.23.g, #choice, [[ZaehneputzeninderKita]])
       * insert addSource(#DE-BE)
-      * answerValueSet = Canonical(Zaehneputzen-in-der-KitaVS) 
+      * answerValueSet = Canonical(ZaehneputzeninderKitaVS) 
   * item[+] insert addGroup(5_2, Fördermaßnahmen oder Behandlungen)
     * insert addSource(#DE-BY)
     * item[+] insert addItem(5.24, #choice, [[Teilnahme Vorkurs Deutsch]])
@@ -272,7 +272,7 @@ RuleSet: 5-af-anamnese
     * item[+] insert addGroup(1, [[Sinnesorgane/Zaehne]])
       * item[+] insert addGroup(1, [[Sehen]])
         * item[+] insert addItemWithSource(5.25, #choice, [[Sehen]], #DE-BE)
-          * answerValueSet = Canonical(Sinnesorgane-ZaehneVS)
+          * answerValueSet = Canonical(SinnesorganeZaehneVS)
         * item[+]
           * insert addItemWithSource(5.25.1, #boolean, [[N]], #DE-BE)
         * item[+]
@@ -283,7 +283,7 @@ RuleSet: 5-af-anamnese
           * insert addItemWithSource(5.25.4, #boolean, [[kK]], #DE-BE)
       * item[+] insert addGroup(1, [[Hören]])
         * item[+] insert addItemWithSource(5.26, #choice, [[Hören]], #DE-BE)
-          * answerValueSet = Canonical(Sinnesorgane-ZaehneVS)  
+          * answerValueSet = Canonical(SinnesorganeZaehneVS)  
         * item[+]
           * insert addItemWithSource(5.26.1, #boolean, [[N]], #DE-BE)
         * item[+]
@@ -294,7 +294,7 @@ RuleSet: 5-af-anamnese
           * insert addItemWithSource(5.26.4, #boolean, [[kK]], #DE-BE)
       * item[+] insert addGroup(1, [[Zähne]])
         * item[+] insert addItemWithSource(5.27, #choice, [[Zähne]], #DE-BE)
-          * answerValueSet = Canonical(Sinnesorgane-ZaehneVS)
+          * answerValueSet = Canonical(SinnesorganeZaehneVS)
         * item[+]
           * insert addItemWithSource(5.27.1, #boolean, [[N]], #DE-BE)
         * item[+]
@@ -1990,31 +1990,31 @@ Description: "ValueSet, das verschiedene Beeinträchtigungsarten enthält."
 * ^expansion.contains[=].code = #M
 * ^expansion.contains[=].display = "Mehrfach"
 
-CodeSystem: Kind_lebt_beiCS
-Id: Kind_lebtCS
-Title: "Kind_lebt_beiCS"
-Description: "Kind_lebt_beiCS"
+CodeSystem: KindLebtBeiCS
+Id: KindLebtBeiCS
+Title: "KindLebtBeiCS"
+Description: "KindLebtBeiCS"
 * #den_Eltern "den Eltern"
 * #allein_erziehendem_Elternteil "allein erziehendem Elternteil"
 * #anderswo "anderswo"
 * #keine_Angabe "keine Angabe"
 
-ValueSet: Kind-lebt-beiVS
-Id: Kind-lebt-beiVS
-Title: "Kind-lebt-beiVS"
-Description: "Kind-lebt-beiVS"
-* include codes from system Kind_lebt_beiCS
+ValueSet: KindLebtBeiVS
+Id: KindLebtBeiVS
+Title: "KindLebtBeiVS"
+Description: "KindLebtBeiVS"
+* include codes from system KindLebtBeiCS
 * ^expansion.timestamp = "2024-03-27T12:20:50+00:00"
-* ^expansion.contains[0].system = Canonical(Kind_lebt_beiCS)
+* ^expansion.contains[0].system = Canonical(KindLebtBeiCS)
 * ^expansion.contains[=].code = #kein_MH
 * ^expansion.contains[=].display = "kein MH"
-* ^expansion.contains[0].system = Canonical(Kind_lebt_beiCS)
+* ^expansion.contains[0].system = Canonical(KindLebtBeiCS)
 * ^expansion.contains[=].code = #einseitiger_MH
 * ^expansion.contains[=].display = "einseitiger MH"
-* ^expansion.contains[0].system = Canonical(Kind_lebt_beiCS)
+* ^expansion.contains[0].system = Canonical(KindLebtBeiCS)
 * ^expansion.contains[=].code = #beidseitiger_MH
 * ^expansion.contains[=].display = "beidseitiger MH"
-* ^expansion.contains[0].system = Canonical(Kind_lebt_beiCS)
+* ^expansion.contains[0].system = Canonical(KindLebtBeiCS)
 * ^expansion.contains[=].code = #keine_Angabe
 * ^expansion.contains[=].display = "keine Angabe"
 
@@ -2114,8 +2114,8 @@ Description: "ElektronischesGeraetKindVS"
 * ^expansion.contains[=].code = #keine_Angabe 
 * ^expansion.contains[=].display = "keine Angabe"
 
-CodeSystem: Zaehneputzen_in_der_KitaCS
-Id: Zaehneputzen_in_der_KitaCS
+CodeSystem: ZaehneputzeninderKitaCS
+Id: ZaehneputzeninderKitaCS
 Title: "Zähneputzen_in_der_KitaCS"
 Description: "Zähneputzen_in_der_KitaCS"
 * #ja  "ja"
@@ -2123,45 +2123,45 @@ Description: "Zähneputzen_in_der_KitaCS"
 * #nicht_sicher "nicht sicher"
 * #keine_Angabe "keine Angabe"
 
-ValueSet: Zaehneputzen-in-der-KitaVS
-Id: Zaehneputzen-in-der-KitaVS
+ValueSet: ZaehneputzeninderKitaVS
+Id: ZaehneputzeninderKitaVS
 Title: "Zähneputzen_in_der_KitaVS"
 Description: "Zähneputzen_in_der_KitaVS"
-* include codes from system Zaehneputzen_in_der_KitaCS
+* include codes from system ZaehneputzeninderKitaCS
 * ^expansion.timestamp = "2024-03-27T12:20:50+00:00"
-* ^expansion.contains[0].system = Canonical(Zaehneputzen_in_der_KitaCS)
+* ^expansion.contains[0].system = Canonical(ZaehneputzeninderKitaCS)
 * ^expansion.contains[=].code = #ja  
 * ^expansion.contains[=].display = "ja" 
-* ^expansion.contains[0].system = Canonical(Zaehneputzen_in_der_KitaCS)
+* ^expansion.contains[0].system = Canonical(ZaehneputzeninderKitaCS)
 * ^expansion.contains[=].code = #nein
 * ^expansion.contains[=].display = "nein"
-* ^expansion.contains[0].system = Canonical(Zaehneputzen_in_der_KitaCS)
+* ^expansion.contains[0].system = Canonical(ZaehneputzeninderKitaCS)
 * ^expansion.contains[=].code = #nicht_sicher 
 * ^expansion.contains[=].display = "nicht sicher" 
-* ^expansion.contains[0].system = Canonical(Zaehneputzen_in_der_KitaCS)
+* ^expansion.contains[0].system = Canonical(ZaehneputzeninderKitaCS)
 * ^expansion.contains[=].code = #keine_Angabe 
 * ^expansion.contains[=].display = "keine Angabe"
 
-CodeSystem: Sinnesorgane_ZaehneCS
-Id: Sinnesorgane_ZaehneCS
-Title: "Sinnesorgane_ZaehneCS"
-Description: "Sinnesorgane_ZaehneCS"
+CodeSystem: SinnesorganeZaehneCS
+Id: SinnesorganeZaehneCS
+Title: "SinnesorganeZaehneCS"
+Description: "SinnesorganeZaehneCS"
 * #o_B "o.B."
 * #auffaellig "auffällig"
 * #keine_Angabe "keine Angabe"
 
-ValueSet: Sinnesorgane-ZaehneVS
-Id: Sinnesorgane-ZaehneVS
-Title: "Sinnesorgane-ZaehneVS"
-Description: "Sinnesorgane-ZaehneVS"
-* include codes from system Sinnesorgane_ZaehneCS
+ValueSet: SinnesorganeZaehneVS
+Id: SinnesorganeZaehneVS
+Title: "SinnesorganeZaehneVS"
+Description: "SinnesorganeZaehneVS"
+* include codes from system SinnesorganeZaehneCS
 * ^expansion.timestamp = "2024-03-27T12:20:50+00:00"
-* ^expansion.contains[0].system = Canonical(Sinnesorgane_ZaehneCS)
+* ^expansion.contains[0].system = Canonical(SinnesorganeZaehneCS)
 * ^expansion.contains[=].code = #o_B
 * ^expansion.contains[=].display = "o.B."
-* ^expansion.contains[0].system = Canonical(Sinnesorgane_ZaehneCS)
+* ^expansion.contains[0].system = Canonical(SinnesorganeZaehneCS)
 * ^expansion.contains[=].code = #auffaellig
 * ^expansion.contains[=].display = "auffällig"
-* ^expansion.contains[0].system = Canonical(Sinnesorgane_ZaehneCS)
+* ^expansion.contains[0].system = Canonical(SinnesorganeZaehneCS)
 * ^expansion.contains[=].code = #keine_Angabe
 * ^expansion.contains[=].display = "keine Angabe"

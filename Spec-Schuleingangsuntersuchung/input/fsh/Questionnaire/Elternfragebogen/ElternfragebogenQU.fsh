@@ -433,7 +433,7 @@ Description: "Elternbefragung"
       * insert addItem(7.12.1, #string, [[Welche Sorgen]])
       * insert enableWhenBoolean(7.12, =, true)
   * item[+]
-    * answerValueSet = Canonical(Sorgen_KindVS)
+    * answerValueSet = Canonical(SorgenKindVS)
     * insert addItemWithSource(7.13, #choice, [[Machen Sie sich Sorgen um Ihr Kind wegen]], #DE-BE)
 
 
@@ -891,7 +891,7 @@ Description: "Elternbefragung"
     * answerValueSet = Canonical(SEU_EF_ZeitdauerVS)
   * item[+]
     * insert addItemWithSource(10.4c, #choice, [[Wie viele Stunden am Tag beschäftigt sich Ihr Kind im Durchschnitt mit elektronischen Geräten? (elektronische Geräte sind Fernsehen, DVD, Computer, Tablet, Smartphone, Playstation und andere) ]], #DE-BE)
-    * answerValueSet = Canonical(SEU_EF_Medienkonsum_BerlinVS)
+    * answerValueSet = Canonical(SEUEFMedienkonsumBerlinVS)
 //********************************************
 // Arzt
 * item[+]

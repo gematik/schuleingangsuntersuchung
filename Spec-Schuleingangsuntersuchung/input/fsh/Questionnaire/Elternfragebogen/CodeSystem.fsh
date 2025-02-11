@@ -1,5 +1,5 @@
-CodeSystem: SEU-EF-NeinAbgeschlossenLaeuftGeplant
-Id: SEU-EF-NeinAbgeschlossenLaeuftGeplant
+CodeSystem: SEU-EF-NeinAbgeschlossenLaeuftGeplantCS
+Id: SEU-EF-NeinAbgeschlossenLaeuftGeplantCS
 Title: "SEU-EF-NeinAbgeschlossenLaeuftGeplant"
 * #nein "nein"
 * #abgeschlossen "abgeschlossen"
@@ -652,8 +652,8 @@ Description: "CodeSystem für die Angabe der Wohnsituation des Kindes."
 * #bei_grosseltern_oder_anderen "Bei Großeltern, Pflegeeltern, Adoptiveltern oder anderen"
 * #keine_angaben "Keine Angaben"
 
-CodeSystem: SEU_EF_Medienkonsum_BerlinCS
-Id: seu-ef-medienkonsum-verlin-cs
+CodeSystem: SEUEFMedienkonsumBerlinCS
+Id: SEUEFMedienkonsumBerlinCS
 Title: "SEU_EF_Medienkonsum Berlin CodeSystem"
 Description: "CodeSystem für die Angabe des Medienkonsums in Stunden."
 * #gar_nicht "Gar nicht"

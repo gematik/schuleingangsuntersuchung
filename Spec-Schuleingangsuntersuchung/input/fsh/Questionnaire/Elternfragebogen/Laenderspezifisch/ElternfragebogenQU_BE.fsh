@@ -10,7 +10,7 @@ Description: "Elternbefragung BE"
 * contained[+] = SEU_EF_BerufsbildungVS
 * contained[+] = ErwerbsstatusInclSonstigesVS
 * contained[+] = JaNeinWartelisteVS
-* contained[+] = SEU_EF_Medienkonsum_BerlinVS
+* contained[+] = SEUEFMedienkonsumBerlinVS
 * id = "SEU-Elternbefragung-BE"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung"
 * title = "SEU Elternfragebogen Berlin"
@@ -129,7 +129,7 @@ Description: "Elternbefragung BE"
     * insert addItem(3.3, #choice, [[Krankengymnastik]])
     * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
   * item[+]
-    * answerValueSet = Canonical(Sorgen_KindVS)
+    * answerValueSet = Canonical(SorgenKindVS)
     * insert addItemWithSource(3.4, #choice, [[Machen Sie sich Sorgen um Ihr Kind wegen]], #DE-BE)
   * item[+]
     * insert addItemWithSource(3.5, #boolean, [[Nässt ihr Kind ein?]], #DE-BE)
@@ -175,7 +175,7 @@ Description: "Elternbefragung BE"
       * insert addItemWithSource(5.6, #integer, [[Wieviele Personen sind Raucher/Dampfer]], #DE-BE)
     * item[+]
       * insert addItemWithSource(5.7, #choice, [[Wie viele Stunden am Tag beschäftigt sich Ihr Kind im Durchschnitt mit elektronischen Geräten? (elektronische Geräte sind Fernsehen, DVD, Computer, Tablet, Smartphone, Playstation und andere) ]], #DE-BE)
-      * answerValueSet = Canonical(SEU_EF_Medienkonsum_BerlinVS)
+      * answerValueSet = Canonical(SEUEFMedienkonsumBerlinVS)
     * item[+]
       * insert addItem(5.7.1, #boolean, Fernsehgerät/Computer/Spielkonsole im Zimmer?)
     * item[+]

@@ -15,22 +15,22 @@
         "timestamp": "2024-03-27T12:20:50+00:00",
         "contains": [
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-EF-NeinAbgeschlossenLaeuftGeplant",
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-EF-NeinAbgeschlossenLaeuftGeplantCS",
             "code": "nein",
             "display": "nein"
           },
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-EF-NeinAbgeschlossenLaeuftGeplant",
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-EF-NeinAbgeschlossenLaeuftGeplantCS",
             "code": "abgeschlossen",
             "display": "abgeschlossen"
           },
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-EF-NeinAbgeschlossenLaeuftGeplant",
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-EF-NeinAbgeschlossenLaeuftGeplantCS",
             "code": "läuft",
             "display": "läuft z.Zt. Noch"
           },
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-EF-NeinAbgeschlossenLaeuftGeplant",
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-EF-NeinAbgeschlossenLaeuftGeplantCS",
             "code": "geplant",
             "display": "geplant"
           }
@@ -39,7 +39,7 @@
       "compose": {
         "include": [
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-EF-NeinAbgeschlossenLaeuftGeplant"
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-EF-NeinAbgeschlossenLaeuftGeplantCS"
           }
         ]
       }
@@ -2170,38 +2170,38 @@
     },
     {
       "resourceType": "ValueSet",
-      "id": "SEU-EF-Medienkonsum-BerlinVS",
+      "id": "SEUEFMedienkonsumBerlinVS",
       "status": "draft",
-      "name": "SEU_EF_Medienkonsum_BerlinVS",
+      "name": "SEUEFMedienkonsumBerlinVS",
       "title": "SEU_EF_Medienkonsum Berlin ValueSet",
       "description": "ValueSet, das die Kategorien des Medienkonsums in Stunden enthält.",
       "version": "0.1.0",
-      "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-EF-Medienkonsum-BerlinVS",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/SEUEFMedienkonsumBerlinVS",
       "expansion": {
         "timestamp": "2024-09-10T12:00:00+00:00",
         "contains": [
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-medienkonsum-verlin-cs",
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEUEFMedienkonsumBerlinCS",
             "code": "gar_nicht",
             "display": "Gar nicht"
           },
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-medienkonsum-verlin-cs",
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEUEFMedienkonsumBerlinCS",
             "code": "max_bis_1",
             "display": "max. 1 Stunde"
           },
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-medienkonsum-verlin-cs",
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEUEFMedienkonsumBerlinCS",
             "code": "max_bis_2",
             "display": "max. 2 Stunden"
           },
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-medienkonsum-verlin-cs",
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEUEFMedienkonsumBerlinCS",
             "code": "max_bis_3",
             "display": "max. 3 Stunden"
           },
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-medienkonsum-verlin-cs",
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEUEFMedienkonsumBerlinCS",
             "code": "ueber_3",
             "display": "über 3 Stunden"
           }
@@ -2210,7 +2210,7 @@
       "compose": {
         "include": [
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-medienkonsum-verlin-cs"
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEUEFMedienkonsumBerlinCS"
           }
         ]
       }
@@ -2978,7 +2978,7 @@
           "answerValueSet": "#SEU-EF-NeinAbgeschlossenLaeuftGeplantVS"
         },
         {
-          "answerValueSet": "https://www.oegd.de/fhir/seu/ValueSet/Sorgen-KindVS",
+          "answerValueSet": "https://www.oegd.de/fhir/seu/ValueSet/SorgenKindVS",
           "linkId": "3.4",
           "type": "choice",
           "text": "(3.4) Machen Sie sich Sorgen um Ihr Kind wegen",
@@ -3285,7 +3285,7 @@
               }
             }
           ],
-          "answerValueSet": "#SEU-EF-Medienkonsum-BerlinVS"
+          "answerValueSet": "#SEUEFMedienkonsumBerlinVS"
         },
         {
           "linkId": "5.7.1",
