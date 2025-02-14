@@ -823,12 +823,28 @@
         "id": "Patient.contact:Personensorgeberechtigte.name",
         "path": "Patient.contact.name",
         "min": 1,
+        "type": [
+          {
+            "code": "HumanName",
+            "profile": [
+              "http://fhir.de/StructureDefinition/humanname-de-basis"
+            ]
+          }
+        ],
         "mustSupport": true
       },
       {
         "id": "Patient.contact:Personensorgeberechtigte.address",
         "path": "Patient.contact.address",
         "min": 1,
+        "type": [
+          {
+            "code": "Address",
+            "profile": [
+              "http://fhir.de/StructureDefinition/address-de-basis"
+            ]
+          }
+        ],
         "mustSupport": true
       },
       {

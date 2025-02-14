@@ -1,0 +1,37 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SaarlandAntwortenUntersuchungenCS",
+  "id": "SaarlandAntwortenUntersuchungenCS",
+  "title": "SaarlandAntwortenUntersuchungenCS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/SaarlandAntwortenUntersuchungenCS",
+  "concept": [
+    {
+      "code": "A",
+      "display": "Test auffällig, Arztkonsultation empfohlen"
+    },
+    {
+      "code": "X",
+      "display": "Grenzwertiges Testergebnis bzw. in Kontrolle / Beratungsbedarf / Beratung erfolgt"
+    },
+    {
+      "code": "0",
+      "display": "Test konnte nicht standardisiert durchgeführt werden"
+    },
+    {
+      "code": "K",
+      "display": "Keine Besonderheiten bei der Testdurchführung / kein auffälliger Test"
+    },
+    {
+      "code": "V",
+      "display": "Test verweigert"
+    },
+    {
+      "code": "N",
+      "display": "Nicht erhoben / nicht gesehen"
+    }
+  ],
+  "count": 6
+}

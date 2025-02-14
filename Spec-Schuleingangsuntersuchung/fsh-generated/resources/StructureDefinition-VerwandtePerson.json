@@ -16,6 +16,16 @@
       {
         "id": "RelatedPerson.extension",
         "path": "RelatedPerson.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "mustSupport": true
       },
       {
@@ -310,6 +320,20 @@
         "mustSupport": true
       },
       {
+        "id": "RelatedPerson.address:Strassenanschrift.city.extension",
+        "path": "RelatedPerson.address.city.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
         "id": "RelatedPerson.address:Strassenanschrift.city.extension:gemeindeschluessel",
         "path": "RelatedPerson.address.city.extension",
         "sliceName": "gemeindeschluessel",
@@ -475,6 +499,16 @@
       {
         "id": "RelatedPerson.communication:deutsch.extension",
         "path": "RelatedPerson.communication.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
         "min": 1,
         "mustSupport": true
       },

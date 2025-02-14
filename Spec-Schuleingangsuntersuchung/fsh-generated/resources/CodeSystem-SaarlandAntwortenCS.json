@@ -1,0 +1,37 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SaarlandAntwortenCS",
+  "id": "SaarlandAntwortenCS",
+  "title": "SaarlandAntwortenCS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/SaarlandAntwortenCS",
+  "concept": [
+    {
+      "code": "0",
+      "display": "nein"
+    },
+    {
+      "code": "1",
+      "display": "ja"
+    },
+    {
+      "code": "2",
+      "display": "bei früherer Untersuchung vorgelegt"
+    },
+    {
+      "code": "5",
+      "display": "Alter nicht erreicht"
+    },
+    {
+      "code": "6",
+      "display": "Ausland"
+    },
+    {
+      "code": "9",
+      "display": "keine Angabe"
+    }
+  ],
+  "count": 6
+}
