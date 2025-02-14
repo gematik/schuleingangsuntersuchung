@@ -57,6 +57,7 @@ Description: "Elternbefragung"
 * contained[+] = SEU-UB-StaatsangehoerigkeitVS
 * contained[+] = DauerStillenVS
 * contained[+] = SEU_EF_ZeitdauerVS
+* contained[+] = SEU_UB_TeilnahmeVorkursDeutschVS
 * id = "SEU-Elternbefragung"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung"
 * title = "SEU Elternfragebogen Maximaldatensatz"
@@ -375,6 +376,8 @@ Description: "Elternbefragung"
     * insert uunit(mo, "Monate")
     * insert minValueInt(0)
     * insert maxValueInt(24)
+  * item[+]
+    * insert addItemWithSource(5.9, #boolean, [[Mehrlingsgeburt]], #DE-BY)
 //********************************************
 // Sprache
 * item[+]
@@ -800,6 +803,9 @@ Description: "Elternbefragung"
     * insert addItem(9.1, #boolean, [[Teilnahme am Vorkurs Deutsch]])
   * item[+]
     * insert addItemWithSource(9.1a, #boolean, [[Werden oder wurden bei Ihrem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)?]], #DE-SL)    
+  * item[+]
+    * insert addItemWithSource(9.1b, #choice, [[Teilnahme am Vorkurs Deutsch]], #DE-BY)
+    * answerValueSet = Canonical(SEU_UB_TeilnahmeVorkursDeutschVS)
   * item[+]
     * insert addGroup(9.1a.g, Therapien)
     * insert enableWhenBoolean(9.1a, =, true)
