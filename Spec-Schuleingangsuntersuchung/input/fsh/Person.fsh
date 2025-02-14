@@ -114,8 +114,10 @@ Id: Person
   * relationship 1.. MS
     * coding
       * ^patternCoding.code = #N
-  * name 1.. MS
+  * name 1.. MS 
+  * name only HumannameDeBasis
   * address 1.. MS
+  * address only AddressDeBasis
 * communication MS
   * language MS
   * preferred MS
