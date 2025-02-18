@@ -379,7 +379,7 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItemWithSource(5.9, #boolean, [[Mehrlingsgeburt]], #DE-BY)
   * item[+]
-    * insert addItemWithSource(5.10, #choice, [[Art der Geburt]], #DE-NS)
+    * insert addItemWithSource(5.10, #choice, [[Art der Geburt]], #DE-NI)
     * answerValueSet = Canonical(GeburtArtVS)
 //********************************************
 // Sprache
@@ -478,7 +478,7 @@ Description: "Elternbefragung"
       * insert addItem(7.12.1, #string, [[Welche Sorgen]])
       * insert enableWhenBoolean(7.12, =, true)
   * item[+]
-    * insert addItemWithSource(7.13, #choice, [[Zeigte Ihr Kind mit 5 Jahren Sprachauffälligkeiten?]], #DE-NS)
+    * insert addItemWithSource(7.13, #choice, [[Zeigte Ihr Kind mit 5 Jahren Sprachauffälligkeiten?]], #DE-NI)
     * answerValueSet = Canonical(JaNeinWeissNichtVS)
 //********************************************
 // Erkrankungen und gesundheitliche Einschränkungen
