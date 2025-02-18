@@ -56,8 +56,8 @@ Description: "Elternbefragung"
 * contained[+] = SEU_EF_BildungsabschlussBWVS
 * contained[+] = SEU-UB-StaatsangehoerigkeitVS
 * contained[+] = DauerStillenVS
-* contained[+] = SEU_EF_ZeitdauerVS
 * contained[+] = SEU_UB_TeilnahmeVorkursDeutschVS
+* contained[+] = GeburtArtVS
 * id = "SEU-Elternbefragung"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung"
 * title = "SEU Elternfragebogen Maximaldatensatz"
@@ -378,6 +378,9 @@ Description: "Elternbefragung"
     * insert maxValueInt(24)
   * item[+]
     * insert addItemWithSource(5.9, #boolean, [[Mehrlingsgeburt]], #DE-BY)
+  * item[+]
+    * insert addItemWithSource(5.10, #choice, [[Art der Geburt]], #DE-NS)
+    * answerValueSet = Canonical(GeburtArtVS)
 //********************************************
 // Sprache
 * item[+]
@@ -474,6 +477,9 @@ Description: "Elternbefragung"
     * item[+]
       * insert addItem(7.12.1, #string, [[Welche Sorgen]])
       * insert enableWhenBoolean(7.12, =, true)
+  * item[+]
+    * insert addItemWithSource(7.13, #choice, [[Zeigte Ihr Kind mit 5 Jahren Sprachauffälligkeiten?]], #DE-NS)
+    * answerValueSet = Canonical(JaNeinWeissNichtVS)
 //********************************************
 // Erkrankungen und gesundheitliche Einschränkungen
 * item[+]

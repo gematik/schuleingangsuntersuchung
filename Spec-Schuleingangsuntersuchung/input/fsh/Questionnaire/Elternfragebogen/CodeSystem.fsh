@@ -660,3 +660,20 @@ Description: "CodeSystem für die Angabe der Dauer des Stillens."
 * #weniger_als_6_monate "Weniger als 6 Monate"
 * #mehr_als_6_monate "Mehr als 6 Monate"
 * #keine_angabe "Keine Angabe"
+
+CodeSystem: GeburtArtCS
+Id: GeburtArtCS
+Title: "GeburtArtCS"
+Description: "CodeSystem, das die Arten der Geburt enthält."
+* #spontangeburt "Spontangeburt" 
+* #kaiserschnitt "Kaiserschnitt"
+* #mehrlingsgeburt "Mehrlingsgeburt"
+* #mit_Saugglocke_oder_zangen "Geburt mit Saugglocke oder Zangen"
+
+CodeSystem: JaNeinWeissNichtCS
+Id: JaNeinWeissNichtCS
+Title: "JaNeinWeissNichtCS"
+Description: "JaNeinWeissNichtCS"
+* #ja "Ja"
+* #nein "Nein"
+* #weiss_nicht "Weiß nicht"
