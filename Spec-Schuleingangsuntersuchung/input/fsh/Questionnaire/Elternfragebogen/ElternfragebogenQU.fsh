@@ -84,6 +84,8 @@ Description: "Elternbefragung"
     * insert addItem(0.1, #string, Name der Schule)
   * item[+]
     * insert addItem(0.2, #string, Vorgangsnummer)
+//********************************************
+// Personenbezogene Daten Kind
 * item[+]
   * type = #group
   * linkId = "1"
@@ -184,6 +186,8 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItemWithSource(1.12.a, #choice, [[Kind lebt hauptsächlich bei]], #DE-SL)
     * answerValueSet = Canonical(SEU_EF_WohnsituationKindVS)
+  * item[+]
+    * insert addItemWithSource(1.13, #string, [[Unterscheidung zwischen Arzt und Koordinator und Hör- und Sehkraft (MFA)]], #DE-NI)
 //********************************************
 // Personenbezogene Daten Personenberechtigter
 * item[+]
