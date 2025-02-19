@@ -69,6 +69,7 @@ Description: "Elternbefragung"
 * contained[+] = SEU_UB_SchulabschlussVS
 * contained[+] = SEU_UB_StaatsangehoerigkeitVS
 * contained[+] = SEU_UB_GeburtslandVS
+* contained[+] = WerErziehtDasKindVS
 * id = "SEU-Elternbefragung"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung"
 * title = "SEU Elternfragebogen Maximaldatensatz"
@@ -876,13 +877,15 @@ Description: "Elternbefragung"
     * insert enableWhenBoolean(8.76, =, true)
   * item[+]
     * insert addGroup(8.79, [[Juckender Hautausschlag]])
+    * insert addSource(#DE-NI)
     * item[+]
       * insert addItemWithSource(8.79.1, #boolean, [[Hatte Ihr Kind irgendwann einmal einen juckenden Hautausschlag, der stärker oder schwächer über mind. 6 Montae auftrat?]], #DE-NI)
     * item[+]
       * insert addItemWithSource(8.79.2, #boolean, [[Trat dieser juckende Hautausschlag bei Ihrem Kind irgendwann einmal an einer der folgenden Körperstellen auf: In der Ellenbeuge, Kniekehle, an den Hand oder Fußgelenken, im Gesicht oder am Hals?]], #DE-NI)
       * insert enableWhenBoolean(8.79.1, =, true)
   * item[+]
-    * insert addGroup(8.80, [[Geräusche beim Atmen]], #DE-NI)
+    * insert addGroup(8.80, [[Geräusche beim Atmen]])
+    * insert addSource(#DE-NI)
     * item[+]
       * insert addItemWithSource(8.80.1, #boolean, [[Hatte Ihr Kind in den letzten 12 Monaten jemals beim Atmen pfeiffende oder keuchende Geräusche im Brustkorb?]], #DE-NI)
     * item[+]
@@ -890,7 +893,8 @@ Description: "Elternbefragung"
     * item[+]
       * insert addItemWithSource(8.80.3, #boolean, [[Hatte Ihr Kind in den letzten 12 Monaten nachts einen trockenen Reizhusten, obwohl es keine Erkältung oder Bronchitis hatte?]], #DE-NI)
   * item[+]
-    * insert addGroup(8.81, [[Niesen, verstopfte Nase]], #DE-NI)
+    * insert addGroup(8.81, [[Niesen, verstopfte Nase]])
+    * insert addSource(#DE-NI)
     * item[+]
       * insert addItemWithSource(8.81.1, #boolean, [[Hatte Ihr Kind in den letzten 12 Monaten Niesanfälle oder eine laufende, verstopfte oder juckende Nase, obwohl es nicht erkältet war?]], #DE-NI)
     * item[+]
@@ -1316,3 +1320,6 @@ Description: "Elternbefragung"
     * answerValueSet = Canonical(SEU_UB_ErwerbstaetigkeitVS)
   * item[+] insert addItemWithSource(13.29, #choice, [[Erwerbstätigkeit Elternteil 2]], #DE-BY)
     * answerValueSet = Canonical(SEU_UB_ErwerbstaetigkeitVS)
+  * item[+]
+    * insert addItemWithSource(13.30, #choice, [[Wer erzieht das Kind?]], #DE-NI)
+    * answerValueSet = Canonical(WerErziehtDasKindVS)

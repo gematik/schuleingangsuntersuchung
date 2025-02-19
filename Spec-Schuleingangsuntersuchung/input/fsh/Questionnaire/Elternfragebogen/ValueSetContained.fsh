@@ -2568,3 +2568,31 @@ Description: "JaNeinWeissNichtVS"
 * ^expansion.contains[+].system = Canonical(JaNeinWeissNichtCS)
 * ^expansion.contains[=].code = #weiss_nicht
 * ^expansion.contains[=].display = "Weiß nicht"
+
+ValueSet: WerErziehtDasKindVS
+Id: WerErziehtDasKindVS
+Title: "WerErziehtDasKindVS"
+Description: "WerErziehtDasKindVS"
+* include codes from system WerErziehtDasKindCS
+* ^expansion.timestamp = "2024-04-06T12:00:00+00:00"
+* ^expansion.contains[0].system = Canonical(WerErziehtDasKindCS)
+* ^expansion.contains[=].code = #beide_eltern_zusammen
+* ^expansion.contains[=].display = "Beide Eltern (zusammen wohnend)"
+* ^expansion.contains[+].system = Canonical(WerErziehtDasKindCS)
+* ^expansion.contains[=].code = #beide_eltern_getrennt
+* ^expansion.contains[=].display = "Beide Eltern (getrennt wohnend)"
+* ^expansion.contains[+].system = Canonical(WerErziehtDasKindCS)
+* ^expansion.contains[=].code = #alleinerziehend
+* ^expansion.contains[=].display = "Alleinerziehende/er"
+* ^expansion.contains[+].system = Canonical(WerErziehtDasKindCS)
+* ^expansion.contains[=].code = #elterntail_mit_partner
+* ^expansion.contains[=].display = "Elternteil mit Partner"
+* ^expansion.contains[+].system = Canonical(WerErziehtDasKindCS)
+* ^expansion.contains[=].code = #pflegeeltern
+* ^expansion.contains[=].display = "Pflegeeltern"
+* ^expansion.contains[+].system = Canonical(WerErziehtDasKindCS)
+* ^expansion.contains[=].code = #großeltern
+* ^expansion.contains[=].display = "Großeltern"
+* ^expansion.contains[+].system = Canonical(WerErziehtDasKindCS)
+* ^expansion.contains[=].code = #andere
+* ^expansion.contains[=].display = "andere"

@@ -678,3 +678,15 @@ Description: "JaNeinWeissNichtCS"
 * #ja "Ja"
 * #nein "Nein"
 * #weiss_nicht "Weiß nicht"
+
+CodeSystem: WerErziehtDasKindCS
+Id: WerErziehtDasKindCS
+Title: "WerErziehtDasKindCS"
+Description: "WerErziehtDasKindCS"
+* #beide_eltern_zusammen "Beide Eltern (zusammen wohnend)"
+* #beide_eltern_getrennt "Beide Eltern (getrennt wohnend)"
+* #alleinerziehend "Alleinerziehende/er"
+* #elterntail_mit_partner "Elternteil mit Partner"
+* #pflegeeltern "Pflegeeltern"
+* #großeltern "Großeltern"
+* #andere "andere"
