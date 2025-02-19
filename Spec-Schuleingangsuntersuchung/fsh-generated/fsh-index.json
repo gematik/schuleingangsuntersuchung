@@ -656,6 +656,14 @@
     "endLine": 40
   },
   {
+    "outputFile": "CodeSystem-WerErziehtDasKindCS.json",
+    "fshName": "WerErziehtDasKindCS",
+    "fshType": "CodeSystem",
+    "fshFile": "Questionnaire/Elternfragebogen/CodeSystem.fsh",
+    "startLine": 682,
+    "endLine": 692
+  },
+  {
     "outputFile": "CodeSystem-ZeichenTodCS.json",
     "fshName": "ZeichenTodCS",
     "fshType": "CodeSystem",
@@ -1341,7 +1349,7 @@
     "fshType": "Instance",
     "fshFile": "Questionnaire/Elternfragebogen/ElternfragebogenQU.fsh",
     "startLine": 1,
-    "endLine": 1297
+    "endLine": 1325
   },
   {
     "outputFile": "Questionnaire-SEU-Untersuchungsbogen.json",
@@ -2430,6 +2438,14 @@
     "fshFile": "terminologies.fsh",
     "startLine": 42,
     "endLine": 45
+  },
+  {
+    "outputFile": "ValueSet-WerErziehtDasKindVS.json",
+    "fshName": "WerErziehtDasKindVS",
+    "fshType": "ValueSet",
+    "fshFile": "Questionnaire/Elternfragebogen/ValueSetContained.fsh",
+    "startLine": 2572,
+    "endLine": 2598
   },
   {
     "outputFile": "ValueSet-ZeichenTodVS.json",
