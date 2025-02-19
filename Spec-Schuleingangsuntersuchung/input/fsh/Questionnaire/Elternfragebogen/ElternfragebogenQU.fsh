@@ -70,6 +70,9 @@ Description: "Elternbefragung"
 * contained[+] = SEU_UB_StaatsangehoerigkeitVS
 * contained[+] = SEU_UB_GeburtslandVS
 * contained[+] = WerErziehtDasKindVS
+* contained[+] = WieVieleStundenFreizeitVS
+* contained[+] = WieOftImSportVereinVS
+* contained[+] = WieOftTrainingVS
 * id = "SEU-Elternbefragung"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung"
 * title = "SEU Elternfragebogen Maximaldatensatz"
@@ -1220,7 +1223,18 @@ Description: "Elternbefragung"
     * insert addItemWithSource(12.17, #boolean, [[Fortbewegung: Laufrad, Roller, Fahrrad]], #DE-BB)
   * item[+]
     * insert addItemWithSource(12.18, #boolean, [[Fortbewegung: zu Fuß]], #DE-BB)
-
+  * item[+]
+    * insert addItemWithSource(12.19, #choice, [[Wie viele Stunden pro Tag ist Ihr Kind im Freizeitbereich (z.B. Wald oder Garten) körperlich aktiv?]], #DE-NI)
+    * answerValueSet = Canonical(WieVieleStundenFreizeitVS)
+  * item[+]
+    * insert addItemWithSource(12.20, #boolean, [[Ist Ihr Kind Mitglied in einem Sportverein?]], #DE-NI)
+  * item[+]
+    * insert addItemWithSource(12.21, #choice, [[Wie oft geht ihr Kind in den Sportverein?]], #DE-NI)
+    * insert enableWhenBoolean(12.20, =, true)
+    * answerValueSet = Canonical(WieOftImSportVereinVS)
+  * item[+]
+    * insert addItemWithSource(12.22, #choice, [[Wie oft trainiert Ihr Kind pro Woche außerhalb der Kita angeleitet?]], #DE-NI)
+    * answerValueSet = Canonical(WieOftTrainingVS)
 //********************************************
 // Informationen Eltern
 * item[+]

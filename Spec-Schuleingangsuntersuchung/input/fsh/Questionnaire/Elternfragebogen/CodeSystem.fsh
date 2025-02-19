@@ -690,3 +690,27 @@ Description: "WerErziehtDasKindCS"
 * #pflegeeltern "Pflegeeltern"
 * #großeltern "Großeltern"
 * #andere "andere"
+
+CodeSystem: WieVieleStundenFreizeitCS
+Id: WieVieleStundenFreizeitCS
+Title: "WieVieleStundenFreizeitCS"
+Description: "WieVieleStundenFreizeitCS"
+* #unter_1_stunde "unter 1 Stunde"
+* #1_bis_2_stunden "1 bis 2 Stunden" 
+* #mehr_als_2_stunden "mehr als 2 Stunden"
+
+CodeSystem: WieOftImSportVereinCS
+Id: WieOftImSportVereinCS
+Title: "WieOftImSportVereinCS"
+Description: "WieOftImSportVereinCS"
+* #1x_wöchentlich "1x wöchentlich"
+* #mehr_als_1x_wöchentlich "mehr als 1x wöchentlich"
+
+CodeSystem: WieOftTrainingCS
+Id: WieOftTrainingCS
+Title: "WieOftTrainingCS"
+Description: "WieOftTrainingCS"
+* #1_mal "1 mal"
+* #2_mal "2 mal"
+* #3_mal "3 mal"
+* #oefter "öfter"

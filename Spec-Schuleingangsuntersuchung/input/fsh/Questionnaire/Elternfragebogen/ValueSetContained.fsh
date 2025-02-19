@@ -2596,3 +2596,48 @@ Description: "WerErziehtDasKindVS"
 * ^expansion.contains[+].system = Canonical(WerErziehtDasKindCS)
 * ^expansion.contains[=].code = #andere
 * ^expansion.contains[=].display = "andere"
+
+ValueSet: WieVieleStundenFreizeitVS
+Id: WieVieleStundenFreizeitVS
+Title: "WieVieleStundenFreizeitVS"
+Description: "WieVieleStundenFreizeitVS"
+* include codes from system WieVieleStundenFreizeitCS
+* ^expansion.contains[+].system = Canonical(WieVieleStundenFreizeitCS)
+* ^expansion.contains[=].code = #unter_1_stunde
+* ^expansion.contains[=].display = "unter 1 Stunde"
+* ^expansion.contains[+].system = Canonical(WieVieleStundenFreizeitCS)
+* ^expansion.contains[=].code = #1_bis_2_stunden
+* ^expansion.contains[=].display = "1 bis 2 Stunden"
+* ^expansion.contains[+].system = Canonical(WieVieleStundenFreizeitCS)
+* ^expansion.contains[=].code = #mehr_als_2_stunden
+* ^expansion.contains[=].display = "mehr als 2 Stunden"
+
+ValueSet: WieOftImSportVereinVS
+Id: WieOftImSportVereinVS
+Title: "WieOftImSportVereinVS"
+Description: "WieOftImSportVereinVS"
+* include codes from system WieOftImSportVereinCS
+* ^expansion.contains[+].system = Canonical(WieOftImSportVereinCS)
+* ^expansion.contains[=].code = #1x_wöchentlich
+* ^expansion.contains[=].display = "1x wöchentlich"
+* ^expansion.contains[+].system = Canonical(WieOftImSportVereinCS)
+* ^expansion.contains[=].code = #mehr_als_1x_wöchentlich
+* ^expansion.contains[=].display = "mehr als 1x wöchentlich"
+
+ValueSet: WieOftTrainingVS
+Id: WieOftTrainingVS
+Title: "WieOftTrainingVS"
+Description: "WieOftTrainingVS"
+* include codes from system WieOftTrainingCS
+* ^expansion.contains[+].system = Canonical(WieOftTrainingCS)
+* ^expansion.contains[=].code = #1_mal
+* ^expansion.contains[=].display = "1 mal"
+* ^expansion.contains[+].system = Canonical(WieOftTrainingCS)
+* ^expansion.contains[=].code = #2_mal
+* ^expansion.contains[=].display = "2 mal"
+* ^expansion.contains[+].system = Canonical(WieOftTrainingCS)
+* ^expansion.contains[=].code = #3_mal
+* ^expansion.contains[=].display = "3 mal"
+* ^expansion.contains[+].system = Canonical(WieOftTrainingCS)
+* ^expansion.contains[=].code = #oefter
+* ^expansion.contains[=].display = "öfter"
