@@ -64,6 +64,7 @@ Description: "Elternbefragung"
 * contained[+] = SEU_UB_AntwortAugenarztVS
 * contained[+] = SEU_UB_JaNeinKeineAngabeVS
 * contained[+] = ErkrankungenLetztesJahrPlusVerbrennungenVS
+* contained[+] = JaNeinWeissNichtVS
 * id = "SEU-Elternbefragung"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung"
 * title = "SEU Elternfragebogen Maximaldatensatz"
