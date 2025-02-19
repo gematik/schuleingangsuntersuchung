@@ -664,6 +664,30 @@
     "endLine": 692
   },
   {
+    "outputFile": "CodeSystem-WieOftImSportVereinCS.json",
+    "fshName": "WieOftImSportVereinCS",
+    "fshType": "CodeSystem",
+    "fshFile": "Questionnaire/Elternfragebogen/CodeSystem.fsh",
+    "startLine": 702,
+    "endLine": 707
+  },
+  {
+    "outputFile": "CodeSystem-WieOftTrainingCS.json",
+    "fshName": "WieOftTrainingCS",
+    "fshType": "CodeSystem",
+    "fshFile": "Questionnaire/Elternfragebogen/CodeSystem.fsh",
+    "startLine": 709,
+    "endLine": 716
+  },
+  {
+    "outputFile": "CodeSystem-WieVieleStundenFreizeitCS.json",
+    "fshName": "WieVieleStundenFreizeitCS",
+    "fshType": "CodeSystem",
+    "fshFile": "Questionnaire/Elternfragebogen/CodeSystem.fsh",
+    "startLine": 694,
+    "endLine": 700
+  },
+  {
     "outputFile": "CodeSystem-ZeichenTodCS.json",
     "fshName": "ZeichenTodCS",
     "fshType": "CodeSystem",
@@ -1349,7 +1373,7 @@
     "fshType": "Instance",
     "fshFile": "Questionnaire/Elternfragebogen/ElternfragebogenQU.fsh",
     "startLine": 1,
-    "endLine": 1325
+    "endLine": 1343
   },
   {
     "outputFile": "Questionnaire-SEU-Untersuchungsbogen.json",
@@ -2446,6 +2470,30 @@
     "fshFile": "Questionnaire/Elternfragebogen/ValueSetContained.fsh",
     "startLine": 2572,
     "endLine": 2598
+  },
+  {
+    "outputFile": "ValueSet-WieOftImSportVereinVS.json",
+    "fshName": "WieOftImSportVereinVS",
+    "fshType": "ValueSet",
+    "fshFile": "Questionnaire/Elternfragebogen/ValueSetContained.fsh",
+    "startLine": 2615,
+    "endLine": 2625
+  },
+  {
+    "outputFile": "ValueSet-WieOftTrainingVS.json",
+    "fshName": "WieOftTrainingVS",
+    "fshType": "ValueSet",
+    "fshFile": "Questionnaire/Elternfragebogen/ValueSetContained.fsh",
+    "startLine": 2627,
+    "endLine": 2643
+  },
+  {
+    "outputFile": "ValueSet-WieVieleStundenFreizeitVS.json",
+    "fshName": "WieVieleStundenFreizeitVS",
+    "fshType": "ValueSet",
+    "fshFile": "Questionnaire/Elternfragebogen/ValueSetContained.fsh",
+    "startLine": 2600,
+    "endLine": 2613
   },
   {
     "outputFile": "ValueSet-ZeichenTodVS.json",

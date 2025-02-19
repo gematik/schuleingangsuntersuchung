@@ -1,0 +1,26 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "WieVieleStundenFreizeitCS",
+  "id": "WieVieleStundenFreizeitCS",
+  "title": "WieVieleStundenFreizeitCS",
+  "description": "WieVieleStundenFreizeitCS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/WieVieleStundenFreizeitCS",
+  "concept": [
+    {
+      "code": "unter_1_stunde",
+      "display": "unter 1 Stunde"
+    },
+    {
+      "code": "1_bis_2_stunden",
+      "display": "1 bis 2 Stunden"
+    },
+    {
+      "code": "mehr_als_2_stunden",
+      "display": "mehr als 2 Stunden"
+    }
+  ],
+  "count": 3
+}
