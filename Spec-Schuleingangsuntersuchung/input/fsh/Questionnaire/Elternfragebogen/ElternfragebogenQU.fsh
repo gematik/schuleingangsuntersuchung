@@ -61,6 +61,8 @@ Description: "Elternbefragung"
 * contained[+] = SEU_UB_AuswaehlbareElternspracheVS
 * contained[+] = SEU_UB_KindergartenArtVS
 * contained[+] = SEU_UB_GesprocheneSpracheVS
+* contained[+] = SEU_UB_AntwortAugenarztVS
+* contained[+] = SEU_UB_JaNeinKeineAngabeVS
 * id = "SEU-Elternbefragung"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung"
 * title = "SEU Elternfragebogen Maximaldatensatz"
@@ -546,6 +548,12 @@ Description: "Elternbefragung"
     * repeats = true
   * item[+]
     * insert addItem(8.7, #date, [[Letzte Untersuchung beim Augenarzt?]])
+  * item[+] insert addItemWithSource(8.7a, #boolean, [[Augenarztbesuch]], #DE-BY)
+  * item[+] insert addItemWithSource(8.7b, #choice, [[Feststellung / Veranlassung Augenarzt]], #DE-BY)
+    * answerValueSet = Canonical(SEU_UB_AntwortAugenarztVS)
+    * insert enableWhenBoolean(8.7a, =, true)
+  * item[+] insert addItemWithSource(8.7c, #choice, [[Besuch beim Zahnarzt in letzten 12 Monaten]], #DE-BY)
+    * answerValueSet = Canonical(SEU_UB_JaNeinKeineAngabeVS)
   * item[+]
     * insert addItem(8.8, #date, [[Letzte Untersuchung beim Zahnarzt?]])
   * item[+]
