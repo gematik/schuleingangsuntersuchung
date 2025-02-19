@@ -388,7 +388,15 @@ ValueSet: ErkrankungenLetztesJahrVS
 Id: ErkrankungenLetztesJahrVS
 Title: "ErkrankungenLetztesJahrVS"
 Description: "ErkrankungenLetztesJahrVS"
-* include codes from system ErkrankungenLetztesJahrCS
+* ErkrankungenLetztesJahrCS#mittelohrentzündung "Mittelohrentzündung"
+* ErkrankungenLetztesJahrCS#hals_mandelentzündung "Hals-/Mandelentzündung"
+* ErkrankungenLetztesJahrCS#pseudokrupp_anfall "Pseudokrupp-Anfall"
+* ErkrankungenLetztesJahrCS#bronchitis "Bronchitis"
+* ErkrankungenLetztesJahrCS#lungenentzündung "Lungenentzündung"
+* ErkrankungenLetztesJahrCS#magen_darm_infektion "Magen-Darm-Infektion"
+* ErkrankungenLetztesJahrCS#fieberkrämpfe "Fieberkrämpfe"
+* ErkrankungenLetztesJahrCS#cerebraler_krampfanfall "Cerebraler Krampfanfall"
+* ErkrankungenLetztesJahrCS#blasen_harnwegsentzündung "Blasen/Harnwegsentzündung"
 * ^expansion.timestamp = "2024-04-04T11:07:53+00:00"
 * ^expansion.contains[0].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungenLetztesJahrCS"
 * ^expansion.contains[=].code = #mittelohrentzündung
@@ -417,6 +425,43 @@ Description: "ErkrankungenLetztesJahrVS"
 * ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungenLetztesJahrCS"
 * ^expansion.contains[=].code = #blasen_harnwegsentzündung
 * ^expansion.contains[=].display = "Blasen/Harnwegsentzündung"
+
+ValueSet: ErkrankungenLetztesJahrPlusVerbrennungenVS
+Id: ErkrankungenLetztesJahrPlusVerbrennungenVS
+Title: "ErkrankungenLetztesJahrPlusVerbrennungenVS"
+Description: "ErkrankungenLetztesJahrPlusVerbrennungenVS"
+* include codes from system ErkrankungenLetztesJahrCS
+* ^expansion.timestamp = "2024-04-04T11:07:53+00:00"
+* ^expansion.contains[0].system = Canonical(ErkrankungenLetztesJahrCS)
+* ^expansion.contains[=].code = #mittelohrentzündung
+* ^expansion.contains[=].display = "Mittelohrentzündung"
+* ^expansion.contains[+].system = Canonical(ErkrankungenLetztesJahrCS)
+* ^expansion.contains[=].code = #hals_mandelentzündung
+* ^expansion.contains[=].display = "Hals-/Mandelentzündung"
+* ^expansion.contains[+].system = Canonical(ErkrankungenLetztesJahrCS)
+* ^expansion.contains[=].code = #pseudokrupp_anfall
+* ^expansion.contains[=].display = "Pseudokrupp-Anfall"
+* ^expansion.contains[+].system = Canonical(ErkrankungenLetztesJahrCS)
+* ^expansion.contains[=].code = #bronchitis
+* ^expansion.contains[=].display = "Bronchitis"
+* ^expansion.contains[+].system = Canonical(ErkrankungenLetztesJahrCS)
+* ^expansion.contains[=].code = #lungenentzündung
+* ^expansion.contains[=].display = "Lungenentzündung"
+* ^expansion.contains[+].system = Canonical(ErkrankungenLetztesJahrCS)
+* ^expansion.contains[=].code = #magen_darm_infektion
+* ^expansion.contains[=].display = "Magen-Darm-Infektion"
+* ^expansion.contains[+].system = Canonical(ErkrankungenLetztesJahrCS)
+* ^expansion.contains[=].code = #fieberkrämpfe
+* ^expansion.contains[=].display = "Fieberkrämpfe"
+* ^expansion.contains[+].system = Canonical(ErkrankungenLetztesJahrCS)
+* ^expansion.contains[=].code = #cerebraler_krampfanfall
+* ^expansion.contains[=].display = "Cerebraler Krampfanfall"
+* ^expansion.contains[+].system = Canonical(ErkrankungenLetztesJahrCS)
+* ^expansion.contains[=].code = #blasen_harnwegsentzündung
+* ^expansion.contains[=].display = "Blasen/Harnwegsentzündung"
+* ^expansion.contains[+].system = Canonical(ErkrankungenLetztesJahrCS)
+* ^expansion.contains[=].code = #verbrennungen
+* ^expansion.contains[=].display = "Verbrennungen"
 
 ValueSet: PflegegradVS
 Id: PflegegradVS

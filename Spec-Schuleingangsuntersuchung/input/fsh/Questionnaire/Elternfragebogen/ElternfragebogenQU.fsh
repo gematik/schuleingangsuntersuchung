@@ -63,6 +63,7 @@ Description: "Elternbefragung"
 * contained[+] = SEU_UB_GesprocheneSpracheVS
 * contained[+] = SEU_UB_AntwortAugenarztVS
 * contained[+] = SEU_UB_JaNeinKeineAngabeVS
+* contained[+] = ErkrankungenLetztesJahrPlusVerbrennungenVS
 * id = "SEU-Elternbefragung"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung"
 * title = "SEU Elternfragebogen Maximaldatensatz"
@@ -615,8 +616,11 @@ Description: "Elternbefragung"
     * insert addItem(8.13.g, #group, [[Erkrankungen im letzten Jahr]])
     * repeats = true
     * item[+]
-      * answerValueSet = Canonical(ErkrankungenLetztesJahrVS)
       * insert addItem(8.13.g.1, #open-choice, [[Erkrankung]])
+      * answerValueSet = Canonical(ErkrankungenLetztesJahrVS)
+    * item[+]
+      * insert addItemWithSource(8.13.g.1.1, #open-choice, [[Erkrankung]], #DE-NI)
+      * answerValueSet = Canonical(ErkrankungenLetztesJahrPlusVerbrennungenVS)
     * item[+]        
       * insert addItem(8.13.g.2, #date, [[Erkrankungsbeginn]])
   * item[+]

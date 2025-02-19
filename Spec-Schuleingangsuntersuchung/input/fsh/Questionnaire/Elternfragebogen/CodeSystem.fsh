@@ -150,6 +150,7 @@ Description: "ErkrankungenLetztesJahrCS"
 * #fieberkrämpfe "Fieberkrämpfe"
 * #cerebraler_krampfanfall "Cerebraler Krampfanfall"
 * #blasen_harnwegsentzündung "Blasen/Harnwegsentzündung"
+* #verbrennungen "Verbrennungen"
 
 CodeSystem: PflegegradCS
 Id: PflegegradCS
