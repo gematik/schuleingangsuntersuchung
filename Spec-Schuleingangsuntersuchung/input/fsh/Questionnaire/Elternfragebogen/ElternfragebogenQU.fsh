@@ -59,6 +59,7 @@ Description: "Elternbefragung"
 * contained[+] = SEU_UB_TeilnahmeVorkursDeutschVS
 * contained[+] = GeburtArtVS
 * contained[+] = SEU_UB_AuswaehlbareElternspracheVS
+* contained[+] = SEU_UB_KindergartenArtVS
 * id = "SEU-Elternbefragung"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung"
 * title = "SEU Elternfragebogen Maximaldatensatz"
@@ -303,6 +304,8 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItemWithSource(4.5a, #string, [[Art der Tagesbetreuung?]], #DE-BB)
     * insert enableWhenBoolean(4.5, =, true)
+  * item[+] insert addItemWithSource(4.5b, #choice, [[Art des Kindergartens]], #DE-BY)
+    * answerValueSet = Canonical(SEU_UB_KindergartenArtVS)
   * item[+]
     * insert addItem(4.6, #boolean, Besucht Ihr Kind eine Kita in einem anderen Bundesland?)
   * item[+]
