@@ -122,7 +122,12 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItemWithSource(1.5b, #choice, [[Geburtsland Vater]], #DE-BB)
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
-
+  * item[+]
+    * insert addItemWithSource(1.5c, #choice, [[Elternsprache 1]], #DE-BY)
+    * answerValueSet = Canonical(ISO6392_LanguageVS)
+  * item[+]
+    * insert addItemWithSource(1.5d, #choice, [[Elternsprache 2]], #DE-BY)
+    * answerValueSet = Canonical(ISO6392_LanguageVS)
   * item[+]
     * insert addItem(1.6, #boolean, In Deutschland geboren)
   * item[+]
@@ -808,10 +813,10 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItem(9.1, #boolean, [[Teilnahme am Vorkurs Deutsch]])
   * item[+]
-    * insert addItemWithSource(9.1a, #boolean, [[Werden oder wurden bei Ihrem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)?]], #DE-SL)    
-  * item[+]
     * insert addItemWithSource(9.1b, #choice, [[Teilnahme am Vorkurs Deutsch]], #DE-BY)
     * answerValueSet = Canonical(SEU_UB_TeilnahmeVorkursDeutschVS)
+  * item[+]
+    * insert addItemWithSource(9.1a, #boolean, [[Werden oder wurden bei Ihrem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)?]], #DE-SL)    
   * item[+]
     * insert addGroup(9.1a.g, Therapien)
     * insert enableWhenBoolean(9.1a, =, true)
@@ -1178,7 +1183,7 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItem(13.7, #integer, [[Anzahl der Kinder im Haushalt. Kinder unter 18 Jahren, einzuschulendes Kind mitgerechnet]])
   * item[+]
-    * insert addItem(13.8, #integer, Anzahl der Erwachsene im Haushalt)
+    * insert addItem(13.8, #integer, Anzahl der Erwachsenen im Haushalt)
   * item[+]
     * insert addItem(13.8a, #integer, Anzahl der Kinder und Erwachsenen im Haushalt)
   * item[+]
