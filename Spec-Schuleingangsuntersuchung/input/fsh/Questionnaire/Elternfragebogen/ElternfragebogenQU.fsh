@@ -60,6 +60,7 @@ Description: "Elternbefragung"
 * contained[+] = GeburtArtVS
 * contained[+] = SEU_UB_AuswaehlbareElternspracheVS
 * contained[+] = SEU_UB_KindergartenArtVS
+* contained[+] = SEU_UB_GesprocheneSpracheVS
 * id = "SEU-Elternbefragung"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung"
 * title = "SEU Elternfragebogen Maximaldatensatz"
@@ -410,6 +411,13 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItemWithSource(6.1c, #choice, [[2. vorrangig in der Familie gesprochene Sprache]], #DE-SL)
     * answerValueSet = Canonical(ISO6392_LanguageVS)
+  * item[+] insert addItemWithSource(6.1d, #boolean, [[Kind wächst mehrsprachig auf]], #DE-BY)
+  * item[+] insert addItemWithSource(6.1e, #choice, [[Zu Hause gesprochene Sprache(n)]], #DE-BY)
+    * answerValueSet = Canonical(SEU_UB_GesprocheneSpracheVS)
+  * item[+] insert addItemWithSource(6.1f, #string, [[Zu Hause gesprochene Sprache(n) andere]], #DE-BY)
+    * insert enableWhenCode(6.1e, =, SEU_UB_GesprocheneSpracheCS, 2)
+    * insert enableWhenCode(6.1e, =, SEU_UB_GesprocheneSpracheCS, 8)
+    * enableBehavior = #any
   * item[+]
     * answerValueSet = Canonical(ISO6392_LanguageVS)
     * insert addItem(6.2, #choice, [[Muttersprache des Kindes]])
