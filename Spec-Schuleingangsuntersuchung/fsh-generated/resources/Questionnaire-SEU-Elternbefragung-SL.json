@@ -4339,7 +4339,45 @@
       "compose": {
         "include": [
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungenLetztesJahrCS"
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungenLetztesJahrCS",
+            "concept": [
+              {
+                "code": "mittelohrentzündung",
+                "display": "Mittelohrentzündung"
+              },
+              {
+                "code": "hals_mandelentzündung",
+                "display": "Hals-/Mandelentzündung"
+              },
+              {
+                "code": "pseudokrupp_anfall",
+                "display": "Pseudokrupp-Anfall"
+              },
+              {
+                "code": "bronchitis",
+                "display": "Bronchitis"
+              },
+              {
+                "code": "lungenentzündung",
+                "display": "Lungenentzündung"
+              },
+              {
+                "code": "magen_darm_infektion",
+                "display": "Magen-Darm-Infektion"
+              },
+              {
+                "code": "fieberkrämpfe",
+                "display": "Fieberkrämpfe"
+              },
+              {
+                "code": "cerebraler_krampfanfall",
+                "display": "Cerebraler Krampfanfall"
+              },
+              {
+                "code": "blasen_harnwegsentzündung",
+                "display": "Blasen/Harnwegsentzündung"
+              }
+            ]
           }
         ]
       }

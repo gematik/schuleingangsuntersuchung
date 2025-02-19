@@ -65,6 +65,10 @@ Description: "Elternbefragung"
 * contained[+] = SEU_UB_JaNeinKeineAngabeVS
 * contained[+] = ErkrankungenLetztesJahrPlusVerbrennungenVS
 * contained[+] = JaNeinWeissNichtVS
+* contained[+] = SEU_UB_ErwerbstaetigkeitVS
+* contained[+] = SEU_UB_SchulabschlussVS
+* contained[+] = SEU_UB_StaatsangehoerigkeitVS
+* contained[+] = SEU_UB_GeburtslandVS
 * id = "SEU-Elternbefragung"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung"
 * title = "SEU Elternfragebogen Maximaldatensatz"
@@ -1275,3 +1279,19 @@ Description: "Elternbefragung"
     * insert addItemWithSource(13.19, #boolean, [[in Deutschland geboren? Elternteil 1]], #DE-BW)
   * item[+]
     * insert addItemWithSource(13.20, #boolean, [[in Deutschland geboren? Elternteil 2]], #DE-BW)
+  * item[+] insert addItemWithSource(13.21, #choice, [[Geburtsland Elternteil 1]], #DE-BY)
+    * answerValueSet = Canonical(SEU_UB_GeburtslandVS)
+  * item[+] insert addItemWithSource(13.22, #choice, [[Geburtsland Elternteil 2]], #DE-BY)
+    * answerValueSet = Canonical(SEU_UB_GeburtslandVS)
+  * item[+] insert addItemWithSource(13.23, #choice, [[Staatsangehörigkeit Elternteil 1]], #DE-BY)
+    * answerValueSet = Canonical(SEU_UB_StaatsangehoerigkeitVS)
+  * item[+] insert addItemWithSource(13.24, #choice, [[Staatsangehörigkeit Elternteil 2]], #DE-BY)
+    * answerValueSet = Canonical(SEU_UB_StaatsangehoerigkeitVS)
+  * item[+] insert addItemWithSource(13.25, #choice, [[Höchster Schulabschluss Elternteil 1]], #DE-BY)
+    * answerValueSet = Canonical(SEU_UB_SchulabschlussVS)
+  * item[+] insert addItemWithSource(13.27, #choice, [[Höchster Schulabschluss Elternteil 2]], #DE-BY)
+    * answerValueSet = Canonical(SEU_UB_SchulabschlussVS)
+  * item[+] insert addItemWithSource(13.28, #choice, [[Erwerbstätigkeit Elternteil 1]], #DE-BY)
+    * answerValueSet = Canonical(SEU_UB_ErwerbstaetigkeitVS)
+  * item[+] insert addItemWithSource(13.29, #choice, [[Erwerbstätigkeit Elternteil 2]], #DE-BY)
+    * answerValueSet = Canonical(SEU_UB_ErwerbstaetigkeitVS)
