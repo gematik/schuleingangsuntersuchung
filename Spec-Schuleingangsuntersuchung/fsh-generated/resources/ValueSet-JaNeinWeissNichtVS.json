@@ -1,0 +1,37 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "JaNeinWeissNichtVS",
+  "id": "JaNeinWeissNichtVS",
+  "title": "JaNeinWeissNichtVS",
+  "description": "JaNeinWeissNichtVS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/JaNeinWeissNichtVS",
+  "expansion": {
+    "timestamp": "2024-04-06T12:00:00+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/JaNeinWeissNichtCS",
+        "code": "ja",
+        "display": "Ja"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/JaNeinWeissNichtCS",
+        "code": "nein",
+        "display": "Nein"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/JaNeinWeissNichtCS",
+        "code": "weiss_nicht",
+        "display": "Weiß nicht"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/JaNeinWeissNichtCS"
+      }
+    ]
+  }
+}

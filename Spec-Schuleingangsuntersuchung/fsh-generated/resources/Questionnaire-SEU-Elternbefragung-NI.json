@@ -1,0 +1,29 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "SEU-Elternbefragung-NI",
+  "url": "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung",
+  "title": "SEU Elternfragebogen NI",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext",
+      "extension": [
+        {
+          "url": "name",
+          "valueCoding": {
+            "code": "patient",
+            "system": "http://hl7.org/fhir/uv/sdc/CodeSystem/launchContext"
+          }
+        },
+        {
+          "url": "type",
+          "valueCode": "Patient"
+        },
+        {
+          "url": "description",
+          "valueString": "Patientenkontext"
+        }
+      ]
+    }
+  ],
+  "status": "draft"
+}

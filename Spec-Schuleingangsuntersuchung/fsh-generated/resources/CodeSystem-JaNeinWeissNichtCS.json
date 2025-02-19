@@ -1,0 +1,26 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "JaNeinWeissNichtCS",
+  "id": "JaNeinWeissNichtCS",
+  "title": "JaNeinWeissNichtCS",
+  "description": "JaNeinWeissNichtCS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/JaNeinWeissNichtCS",
+  "concept": [
+    {
+      "code": "ja",
+      "display": "Ja"
+    },
+    {
+      "code": "nein",
+      "display": "Nein"
+    },
+    {
+      "code": "weiss_nicht",
+      "display": "Weiß nicht"
+    }
+  ],
+  "count": 3
+}

@@ -1,0 +1,30 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "GeburtArtCS",
+  "id": "GeburtArtCS",
+  "title": "GeburtArtCS",
+  "description": "CodeSystem, das die Arten der Geburt enthält.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/GeburtArtCS",
+  "concept": [
+    {
+      "code": "spontangeburt",
+      "display": "Spontangeburt"
+    },
+    {
+      "code": "kaiserschnitt",
+      "display": "Kaiserschnitt"
+    },
+    {
+      "code": "mehrlingsgeburt",
+      "display": "Mehrlingsgeburt"
+    },
+    {
+      "code": "mit_Saugglocke_oder_zangen",
+      "display": "Geburt mit Saugglocke oder Zangen"
+    }
+  ],
+  "count": 4
+}

@@ -58,6 +58,7 @@ Description: "Elternbefragung"
 * contained[+] = DauerStillenVS
 * contained[+] = SEU_UB_TeilnahmeVorkursDeutschVS
 * contained[+] = GeburtArtVS
+* contained[+] = SEU_UB_AuswaehlbareElternspracheVS
 * id = "SEU-Elternbefragung"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung"
 * title = "SEU Elternfragebogen Maximaldatensatz"
@@ -122,12 +123,14 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItemWithSource(1.5b, #choice, [[Geburtsland Vater]], #DE-BB)
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
-  * item[+]
-    * insert addItemWithSource(1.5c, #choice, [[Elternsprache 1]], #DE-BY)
-    * answerValueSet = Canonical(ISO6392_LanguageVS)
-  * item[+]
-    * insert addItemWithSource(1.5d, #choice, [[Elternsprache 2]], #DE-BY)
-    * answerValueSet = Canonical(ISO6392_LanguageVS)
+  * item[+] insert addItemWithSource(1.5c, #choice, [[Elternsprache  1]], #DE-BY)
+    * answerValueSet = Canonical(SEU_UB_AuswaehlbareElternspracheVS)
+  * item[+] insert addItemWithSource(1.5c.1, #string, [[Elternsprache 1 andere]], #DE-BY)
+    * insert enableWhenCode(1.5c, =, SEU_UB_AuswaehlbareElternspracheErweiterungCS, 98)
+  * item[+] insert addItemWithSource(1.5d, #choice, [[Elternsprache  2]], #DE-BY)
+    * answerValueSet = Canonical(SEU_UB_AuswaehlbareElternspracheVS)
+  * item[+] insert addItemWithSource(1.5d.1, #string, [[Elternsprache 2 andere]], #DE-BY)
+    * insert enableWhenCode(1.5d, =, SEU_UB_AuswaehlbareElternspracheErweiterungCS, 98)
   * item[+]
     * insert addItem(1.6, #boolean, In Deutschland geboren)
   * item[+]
