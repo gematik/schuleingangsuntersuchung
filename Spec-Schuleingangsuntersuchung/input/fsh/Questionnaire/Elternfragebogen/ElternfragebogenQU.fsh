@@ -95,8 +95,7 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItemWithSource(0.5, #string, [[Organisierende Schule]], #DE-HH)
   * item[+]
-    * insert addItemWithSource(0.6, #choice, [[Schulbezirk]], #DE-HH)
-    * answerValueSet = Canonical(BezirkeHHVS)
+    * insert addItemWithSource(0.6, #string, [[Schulbezirk]], #DE-HH)
   * item[+]
     * insert addItemWithSource(0.7, #integer, [[Einschulungsjahr]], #DE-HH)
     * insert uunit(a, "Jahr")
