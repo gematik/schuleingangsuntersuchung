@@ -109,13 +109,22 @@ Id: Person
   * ^slicing.discriminator.type = #pattern
   * ^slicing.discriminator.path = "$this"
   * ^slicing.rules = #open
-* contact contains Personensorgeberechtigte 1.. MS
+* contact contains
+  Personensorgeberechtigte 1.. MS and
+  Kindertagesstaette 0..
 * contact[Personensorgeberechtigte]
   * relationship 1.. MS
     * coding
       * ^patternCoding.code = #N
   * name 1.. MS 
   * name only HumannameDeBasis
+  * address 1.. MS
+  * address only AddressDeBasis
+* contact[Kindertagesstaette]
+  * relationship 1.. MS
+    * coding
+      * ^patternCoding.code = #S
+  * extension contains KiTaName named KiTaName 1..*
   * address 1.. MS
   * address only AddressDeBasis
 * communication MS
@@ -249,7 +258,20 @@ Usage: #example
   * address
     * type = #both
     * city = "Fulda"
+* contact[Kindertagesstaette]
+  * relationship.coding.code = #S
+  * extension.url = "KiTaName"
+  * extension.valueString = "Kita Nummer 1"
+  * address
+    * type = #both
+    * city = "Fulda"
 * communication[erstsprache].language = urn:ietf:bcp:47#nl "Dutch"
 * communication[deutsch].extension[deutschkenntnis].valueCodeableConcept = PersonDeutschkenntnisCS#4 "flüssig mit leichten Fehlern"
 
 // TODO: Postfach weglassen?
+
+Extension: KiTaName
+Id: kitname
+Title: "KiTa Name as String"
+Description: "Allows representing a KiTa name as a simple string."
+* valueString 1..1

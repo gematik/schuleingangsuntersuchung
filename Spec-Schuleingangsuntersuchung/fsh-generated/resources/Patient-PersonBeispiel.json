@@ -133,6 +133,27 @@
         "type": "both",
         "city": "Fulda"
       }
+    },
+    {
+      "relationship": [
+        {
+          "coding": [
+            {
+              "code": "S"
+            }
+          ]
+        }
+      ],
+      "extension": [
+        {
+          "url": "KiTaName",
+          "valueString": "Kita Nummer 1"
+        }
+      ],
+      "address": {
+        "type": "both",
+        "city": "Fulda"
+      }
     }
   ],
   "extension": [

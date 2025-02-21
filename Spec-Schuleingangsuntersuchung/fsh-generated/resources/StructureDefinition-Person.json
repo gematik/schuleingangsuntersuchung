@@ -848,6 +848,70 @@
         "mustSupport": true
       },
       {
+        "id": "Patient.contact:Kindertagesstaette",
+        "path": "Patient.contact",
+        "sliceName": "Kindertagesstaette",
+        "min": 0,
+        "max": "*"
+      },
+      {
+        "id": "Patient.contact:Kindertagesstaette.extension",
+        "path": "Patient.contact.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Patient.contact:Kindertagesstaette.extension:KiTaName",
+        "path": "Patient.contact.extension",
+        "sliceName": "KiTaName",
+        "min": 1,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.oegd.de/fhir/seu/StructureDefinition/humanname-as-string"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.contact:Kindertagesstaette.relationship",
+        "path": "Patient.contact.relationship",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Patient.contact:Kindertagesstaette.relationship.coding",
+        "path": "Patient.contact.relationship.coding",
+        "patternCoding": {
+          "code": "S"
+        }
+      },
+      {
+        "id": "Patient.contact:Kindertagesstaette.address",
+        "path": "Patient.contact.address",
+        "min": 1,
+        "type": [
+          {
+            "code": "Address",
+            "profile": [
+              "http://fhir.de/StructureDefinition/address-de-basis"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
         "id": "Patient.communication",
         "path": "Patient.communication",
         "slicing": {
