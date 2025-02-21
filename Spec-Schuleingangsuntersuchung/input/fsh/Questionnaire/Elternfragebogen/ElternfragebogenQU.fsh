@@ -73,6 +73,9 @@ Description: "Elternbefragung"
 * contained[+] = WieVieleStundenFreizeitVS
 * contained[+] = WieOftImSportVereinVS
 * contained[+] = WieOftTrainingVS
+* contained[+] = BezirkeHHVS
+* contained[+] = PersonensorgeberechtigterBeziehungVS
+* contained[+] = PersonensorgeberechtigterZusammenlebendVS
 * id = "SEU-Elternbefragung"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung"
 * title = "SEU Elternfragebogen Maximaldatensatz"
@@ -84,6 +87,21 @@ Description: "Elternbefragung"
     * insert addItem(0.1, #string, Name der Schule)
   * item[+]
     * insert addItem(0.2, #string, Vorgangsnummer)
+  * item[+]
+    * insert addItemWithSource(0.3, #choice, [[Mandant (Bezirk)]], #DE-HH)
+    * answerValueSet = Canonical(BezirkeHHVS)
+  * item[+]
+    * insert addItemWithSource(0.4, #string, [[SOM Schulordnungsmerkmal]], #DE-HH)
+  * item[+]
+    * insert addItemWithSource(0.5, #string, [[Organisierende Schule]], #DE-HH)
+  * item[+]
+    * insert addItemWithSource(0.6, #choice, [[Schulbezirk]], #DE-HH)
+    * answerValueSet = Canonical(BezirkeHHVS)
+  * item[+]
+    * insert addItemWithSource(0.7, #integer, [[Einschulungsjahr]], #DE-HH)
+    * insert uunit(a, "Jahr")
+  * item[+]
+    * insert addItemWithSource(0.8, #string, [[Einrichtungsart]], #DE-HH)
 //********************************************
 // Personenbezogene Daten Kind
 * item[+]
@@ -194,6 +212,9 @@ Description: "Elternbefragung"
   * insert addItem(2, #group, Personenbezogene Daten Personensorgeberechtigter)
   * repeats = true
   * item[+]
+    * insert addItemWithSource(2.0, #choice, [[Beziehung]], #DE-HH)
+    * answerValueSet = Canonical(PersonensorgeberechtigterBeziehungVS)
+  * item[+]
     * answerValueSet = Canonical(GenderDEVS)
     * insert addItem(2.1, #choice, Geschlecht)
   * item[+]
@@ -211,6 +232,8 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItem(2.7, #string, Telefonnummer)
   * item[+]
+    * insert addItemWithSource(2.7a, #string, [[Handynummer]], #DE-HH)
+  * item[+]
     * insert addItem(2.8, #string, Email)
   * item[+]
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
@@ -223,12 +246,17 @@ Description: "Elternbefragung"
     * insert addItem(2.11, #choice, Muttersprache)
   * item[+]
     * insert addItem(2.12, #date, Geburtsdatum)
+  * item[+]
+    * insert addItemWithSource(2.13, #choice, [[Zusammenlebend]], #DE-HH)
+    * answerValueSet = Canonical(PersonensorgeberechtigterZusammenlebendVS)
 //********************************************
 // Familiendaten
 * item[+]
   * insert addItem(3, #group, Familiendaten)
   * item[+]
     * insert addItem(3.1, #integer, Anzahl der Geschwister)
+  * item[+]
+    * insert addItemWithSource(3.1a, #integer, [[Kinder im Haushalt]], #DE-HH)
   * item[+]
     * insert addItemWithSource(3.1a, #integer, Anzahl der im Familienverbund lebenden Kinder, #DE-SL)
     * insert minValueInt(0)

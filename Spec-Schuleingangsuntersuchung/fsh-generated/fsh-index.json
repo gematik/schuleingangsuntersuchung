@@ -48,6 +48,14 @@
     "endLine": 59
   },
   {
+    "outputFile": "CodeSystem-BezirkeHHCS.json",
+    "fshName": "BezirkeHHCS",
+    "fshType": "CodeSystem",
+    "fshFile": "Questionnaire/Elternfragebogen/ValueSetContained.fsh",
+    "startLine": 2645,
+    "endLine": 2655
+  },
+  {
     "outputFile": "CodeSystem-BundeslandCS.json",
     "fshName": "BundeslandCS",
     "fshType": "CodeSystem",
@@ -246,6 +254,22 @@
     "fshFile": "terminologies.fsh",
     "startLine": 1,
     "endLine": 13
+  },
+  {
+    "outputFile": "CodeSystem-PersonensorgeberechtigterBeziehungCS.json",
+    "fshName": "PersonensorgeberechtigterBeziehungCS",
+    "fshType": "CodeSystem",
+    "fshFile": "Questionnaire/Elternfragebogen/ValueSetContained.fsh",
+    "startLine": 2685,
+    "endLine": 2700
+  },
+  {
+    "outputFile": "CodeSystem-PersonensorgeberechtigterZusammenlebendCS.json",
+    "fshName": "PersonensorgeberechtigterZusammenlebendCS",
+    "fshType": "CodeSystem",
+    "fshFile": "Questionnaire/Elternfragebogen/ValueSetContained.fsh",
+    "startLine": 2745,
+    "endLine": 2751
   },
   {
     "outputFile": "CodeSystem-PflegegradCS.json",
@@ -1373,7 +1397,7 @@
     "fshType": "Instance",
     "fshFile": "Questionnaire/Elternfragebogen/ElternfragebogenQU.fsh",
     "startLine": 1,
-    "endLine": 1343
+    "endLine": 1371
   },
   {
     "outputFile": "Questionnaire-SEU-Untersuchungsbogen.json",
@@ -1744,6 +1768,14 @@
     "endLine": 63
   },
   {
+    "outputFile": "ValueSet-BezirkeHHVS.json",
+    "fshName": "BezirkeHHVS",
+    "fshType": "ValueSet",
+    "fshFile": "Questionnaire/Elternfragebogen/ValueSetContained.fsh",
+    "startLine": 2657,
+    "endLine": 2683
+  },
+  {
     "outputFile": "ValueSet-BundeslandVS.json",
     "fshName": "BundeslandVS",
     "fshType": "ValueSet",
@@ -1998,6 +2030,22 @@
     "fshFile": "terminologies.fsh",
     "startLine": 15,
     "endLine": 18
+  },
+  {
+    "outputFile": "ValueSet-PersonensorgeberechtigterBeziehungVS.json",
+    "fshName": "PersonensorgeberechtigterBeziehungVS",
+    "fshType": "ValueSet",
+    "fshFile": "Questionnaire/Elternfragebogen/ValueSetContained.fsh",
+    "startLine": 2702,
+    "endLine": 2743
+  },
+  {
+    "outputFile": "ValueSet-PersonensorgeberechtigterZusammenlebendVS.json",
+    "fshName": "PersonensorgeberechtigterZusammenlebendVS",
+    "fshType": "ValueSet",
+    "fshFile": "Questionnaire/Elternfragebogen/ValueSetContained.fsh",
+    "startLine": 2753,
+    "endLine": 2767
   },
   {
     "outputFile": "ValueSet-PflegegradVS.json",

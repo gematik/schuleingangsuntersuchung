@@ -1,0 +1,26 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "PersonensorgeberechtigterZusammenlebendCS",
+  "id": "PersonensorgeberechtigterZusammenlebendCS",
+  "title": "PersonensorgeberechtigterZusammenlebendCS",
+  "description": "PersonensorgeberechtigterZusammenlebendCS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/PersonensorgeberechtigterZusammenlebendCS",
+  "concept": [
+    {
+      "code": "ja",
+      "display": "Ja"
+    },
+    {
+      "code": "nein",
+      "display": "Nein"
+    },
+    {
+      "code": "zeitweise",
+      "display": "Zeitweise"
+    }
+  ],
+  "count": 3
+}

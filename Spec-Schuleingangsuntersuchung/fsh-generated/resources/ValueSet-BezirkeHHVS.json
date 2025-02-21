@@ -1,0 +1,27 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "BezirkeHHVS",
+  "id": "BezirkeHHVS",
+  "title": "BezirkeHHVS",
+  "description": "BezirkeHHVS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/BezirkeHHVS",
+  "expansion": {
+    "timestamp": "2025-02-21T11:50:47+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/BezirkeHHCS",
+        "code": "wandsbek",
+        "display": "Wandsbek"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/BezirkeHHCS"
+      }
+    ]
+  }
+}

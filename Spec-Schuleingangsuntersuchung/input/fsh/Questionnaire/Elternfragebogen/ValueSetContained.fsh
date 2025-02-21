@@ -2641,3 +2641,127 @@ Description: "WieOftTrainingVS"
 * ^expansion.contains[+].system = Canonical(WieOftTrainingCS)
 * ^expansion.contains[=].code = #oefter
 * ^expansion.contains[=].display = "öfter"
+
+CodeSystem: BezirkeHHCS
+Id: BezirkeHHCS
+Title: "BezirkeHHCS"
+Description: "BezirkeHHCS"
+* #altona "Altona"
+* #bergedorf "Bergedorf"
+* #eimsbüttel "Eimsbüttel"
+* #mitte "Hamburg Mitte"
+* #nord "Hamburg Nord"
+* #harburg "Harburg"
+* #wandsbek "Wandsbek"
+
+ValueSet: BezirkeHHVS
+Id: BezirkeHHVS 
+Title: "BezirkeHHVS"
+Description: "BezirkeHHVS"
+* include codes from system BezirkeHHCS
+* ^expansion.timestamp = "2025-02-21T11:50:47+00:00"
+* ^expansion.contains[0].system = Canonical(BezirkeHHCS)
+* ^expansion.contains[=].code = #altona
+* ^expansion.contains[=].display = "Altona"
+* ^expansion.contains[0].system = Canonical(BezirkeHHCS)
+* ^expansion.contains[=].code = #bergedorf
+* ^expansion.contains[=].display = "Bergedorf"
+* ^expansion.contains[0].system = Canonical(BezirkeHHCS)
+* ^expansion.contains[=].code = #eimsbüttel
+* ^expansion.contains[=].display = "Eimsbüttel"
+* ^expansion.contains[0].system = Canonical(BezirkeHHCS)
+* ^expansion.contains[=].code = #mitte
+* ^expansion.contains[=].display = "Hamburg Mitte"
+* ^expansion.contains[0].system = Canonical(BezirkeHHCS)
+* ^expansion.contains[=].code = #nord
+* ^expansion.contains[=].display = "Hamburg Nord"
+* ^expansion.contains[0].system = Canonical(BezirkeHHCS)
+* ^expansion.contains[=].code = #harburg
+* ^expansion.contains[=].display = "Harburg"
+* ^expansion.contains[0].system = Canonical(BezirkeHHCS)
+* ^expansion.contains[=].code = #wandsbek
+* ^expansion.contains[=].display = "Wandsbek"
+
+CodeSystem: PersonensorgeberechtigterBeziehungCS 
+Id: PersonensorgeberechtigterBeziehungCS
+Title: "PersonensorgeberechtigterBeziehungCS"
+Description: "PersonensorgeberechtigterBeziehungCS"
+* #mutter "Mutter"
+* #vater "Vater"
+* #leiblichemutter "Leibliche Mutter"
+* #leiblichervater "Leiblicher Vater"
+* #adoptivmutter "Adoptiv-/Pflegemutter"
+* #adoptivvater "Adoptiv-/Pflegevater"
+* #natperson "Natürliche Person (nicht spezifiziert)"
+* #jugendamt "Jugendamt"
+* #jurperson "Juristische Person"
+* #betreuer "Betreuer m. Einwill.vorbeh.Aufenthaltsb."
+* #pflegemutter "Pflegemutter"
+* #pflegevater "Pflegevater"
+
+ValueSet: PersonensorgeberechtigterBeziehungVS
+Id: PersonensorgeberechtigterBeziehungVS 
+Title: "PersonensorgeberechtigterBeziehungVS"
+Description: "PersonensorgeberechtigterBeziehungVS"
+* include codes from system PersonensorgeberechtigterBeziehungCS
+* ^expansion.timestamp = "2025-02-21T11:50:47+00:00"
+* ^expansion.contains[0].system = Canonical(PersonensorgeberechtigterBeziehungCS)
+* ^expansion.contains[=].code = #mutter
+* ^expansion.contains[=].display = "Mutter"
+* ^expansion.contains[0].system = Canonical(PersonensorgeberechtigterBeziehungCS)
+* ^expansion.contains[=].code = #vater
+* ^expansion.contains[=].display = "Vater"
+* ^expansion.contains[0].system = Canonical(PersonensorgeberechtigterBeziehungCS)
+* ^expansion.contains[=].code = #leiblichemutter
+* ^expansion.contains[=].display = "Leibliche Mutter"
+* ^expansion.contains[0].system = Canonical(PersonensorgeberechtigterBeziehungCS)
+* ^expansion.contains[=].code = #leiblichervater
+* ^expansion.contains[=].display = "Leiblicher Vater"
+* ^expansion.contains[0].system = Canonical(PersonensorgeberechtigterBeziehungCS)
+* ^expansion.contains[=].code = #adoptivmutter
+* ^expansion.contains[=].display = "Adoptiv-/Pflegemutter"
+* ^expansion.contains[0].system = Canonical(PersonensorgeberechtigterBeziehungCS)
+* ^expansion.contains[=].code = #adoptivvater
+* ^expansion.contains[=].display = "Adoptiv-/Pflegevater"
+* ^expansion.contains[0].system = Canonical(PersonensorgeberechtigterBeziehungCS)
+* ^expansion.contains[=].code = #natperson
+* ^expansion.contains[=].display = "Natürliche Person (nicht spezifiziert)"
+* ^expansion.contains[0].system = Canonical(PersonensorgeberechtigterBeziehungCS)
+* ^expansion.contains[=].code = #jugendamt
+* ^expansion.contains[=].display = "Jugendamt"
+* ^expansion.contains[0].system = Canonical(PersonensorgeberechtigterBeziehungCS)
+* ^expansion.contains[=].code = #jurperson
+* ^expansion.contains[=].display = "Juristische Person"
+* ^expansion.contains[0].system = Canonical(PersonensorgeberechtigterBeziehungCS)
+* ^expansion.contains[=].code = #betreuer
+* ^expansion.contains[=].display = "Betreuer m. Einwill.vorbeh.Aufenthaltsb."
+* ^expansion.contains[0].system = Canonical(PersonensorgeberechtigterBeziehungCS)
+* ^expansion.contains[=].code = #pflegemutter
+* ^expansion.contains[=].display = "Pflegemutter"
+* ^expansion.contains[0].system = Canonical(PersonensorgeberechtigterBeziehungCS)
+* ^expansion.contains[=].code = #pflegecater
+* ^expansion.contains[=].display = "Pflegevater"
+
+CodeSystem: PersonensorgeberechtigterZusammenlebendCS 
+Id: PersonensorgeberechtigterZusammenlebendCS
+Title: "PersonensorgeberechtigterZusammenlebendCS"
+Description: "PersonensorgeberechtigterZusammenlebendCS"
+* #ja "Ja"
+* #nein "Nein"
+* #zeitweise "Zeitweise"
+
+ValueSet: PersonensorgeberechtigterZusammenlebendVS
+Id: PersonensorgeberechtigterZusammenlebendVS 
+Title: "PersonensorgeberechtigterZusammenlebendVS"
+Description: "PersonensorgeberechtigterZusammenlebendVS"
+* include codes from system PersonensorgeberechtigterZusammenlebendCS
+* ^expansion.timestamp = "2025-02-21T11:50:47+00:00"
+* ^expansion.contains[0].system = Canonical(PersonensorgeberechtigterZusammenlebendCS)
+* ^expansion.contains[=].code = #ja
+* ^expansion.contains[=].display = "Ja"
+* ^expansion.contains[0].system = Canonical(PersonensorgeberechtigterZusammenlebendCS)
+* ^expansion.contains[=].code = #nein
+* ^expansion.contains[=].display = "Nein"
+* ^expansion.contains[0].system = Canonical(PersonensorgeberechtigterZusammenlebendCS)
+* ^expansion.contains[=].code = #zeitweise
+* ^expansion.contains[=].display = "Zeitweise"

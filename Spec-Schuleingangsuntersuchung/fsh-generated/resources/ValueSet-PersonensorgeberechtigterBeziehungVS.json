@@ -1,0 +1,27 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "PersonensorgeberechtigterBeziehungVS",
+  "id": "PersonensorgeberechtigterBeziehungVS",
+  "title": "PersonensorgeberechtigterBeziehungVS",
+  "description": "PersonensorgeberechtigterBeziehungVS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/PersonensorgeberechtigterBeziehungVS",
+  "expansion": {
+    "timestamp": "2025-02-21T11:50:47+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/PersonensorgeberechtigterBeziehungCS",
+        "code": "pflegecater",
+        "display": "Pflegevater"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/PersonensorgeberechtigterBeziehungCS"
+      }
+    ]
+  }
+}
