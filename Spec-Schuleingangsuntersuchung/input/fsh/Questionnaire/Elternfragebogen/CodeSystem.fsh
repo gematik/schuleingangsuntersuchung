@@ -690,6 +690,8 @@ Description: "WerErziehtDasKindCS"
 * #pflegeeltern "Pflegeeltern"
 * #großeltern "Großeltern"
 * #andere "andere"
+* #fehlende_angaben "fehlende Angabe"
+* #pflege_verschiedene "Pflege (Großeltern, Heim, Institution)"
 
 CodeSystem: WieVieleStundenFreizeitCS
 Id: WieVieleStundenFreizeitCS

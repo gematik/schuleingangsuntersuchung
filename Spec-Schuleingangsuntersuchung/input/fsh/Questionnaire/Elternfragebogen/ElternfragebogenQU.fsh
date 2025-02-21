@@ -70,6 +70,7 @@ Description: "Elternbefragung"
 * contained[+] = SEU_UB_StaatsangehoerigkeitVS
 * contained[+] = SEU_UB_GeburtslandVS
 * contained[+] = WerErziehtDasKindVS
+* contained[+] = WerErziehtDasKindAlternativVS
 * contained[+] = WieVieleStundenFreizeitVS
 * contained[+] = WieOftImSportVereinVS
 * contained[+] = WieOftTrainingVS
@@ -101,6 +102,14 @@ Description: "Elternbefragung"
     * insert uunit(a, "Jahr")
   * item[+]
     * insert addItemWithSource(0.8, #string, [[Einrichtungsart]], #DE-HH)
+  * item[+]
+    * insert addItemWithSource(0.9, #integer, [[Schulnummer der Anmeldeschule]], #DE-HB)
+  * item[+]
+    * insert addItemWithSource(0.10, #date, [[Datum der Untersuchung]], #DE-HB)
+  * item[+]
+    * insert addItemWithSource(0.11, #string, [[Aufnahmeschule (bezeichnet die Schule zu der das  Kind wirklich geht)]], #DE-HB)
+  * item[+]
+    * insert addItemWithSource(0.12, #string, [[Ortsteilnummer (bezogen auf den Wohnort des Kindes)]], #DE-HB)
 //********************************************
 // Personenbezogene Daten Kind
 * item[+]
@@ -248,6 +257,9 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItemWithSource(2.13, #choice, [[Zusammenlebend]], #DE-HH)
     * answerValueSet = Canonical(PersonensorgeberechtigterZusammenlebendVS)
+  * item[+]
+    * insert addItemWithSource(2.14, #choice, [[Wer erzieht?]], #DE-NI)
+    * answerValueSet = Canonical(WerErziehtDasKindAlternativVS)
 //********************************************
 // Familiendaten
 * item[+]

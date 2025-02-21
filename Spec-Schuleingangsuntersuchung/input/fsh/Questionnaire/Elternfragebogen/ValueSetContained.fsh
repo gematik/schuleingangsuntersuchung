@@ -2573,7 +2573,13 @@ ValueSet: WerErziehtDasKindVS
 Id: WerErziehtDasKindVS
 Title: "WerErziehtDasKindVS"
 Description: "WerErziehtDasKindVS"
-* include codes from system WerErziehtDasKindCS
+* WerErziehtDasKindCS#beide_eltern_zusammen "Beide Eltern (zusammen wohnend)"
+* WerErziehtDasKindCS#beide_eltern_getrennt "Beide Eltern (getrennt wohnend)"
+* WerErziehtDasKindCS#alleinerziehend "Alleinerziehende/er"
+* WerErziehtDasKindCS#elterntail_mit_partner "Elternteil mit Partner"
+* WerErziehtDasKindCS#pflegeeltern "Pflegeeltern"
+* WerErziehtDasKindCS#großeltern "Großeltern"
+* WerErziehtDasKindCS#andere "andere"
 * ^expansion.timestamp = "2024-04-06T12:00:00+00:00"
 * ^expansion.contains[0].system = Canonical(WerErziehtDasKindCS)
 * ^expansion.contains[=].code = #beide_eltern_zusammen
@@ -2596,6 +2602,28 @@ Description: "WerErziehtDasKindVS"
 * ^expansion.contains[+].system = Canonical(WerErziehtDasKindCS)
 * ^expansion.contains[=].code = #andere
 * ^expansion.contains[=].display = "andere"
+
+ValueSet: WerErziehtDasKindAlternativVS
+Id: WerErziehtDasKindAlternativVS
+Title: "WerErziehtDasKindAlternativVS"
+Description: "WerErziehtDasKindAlternativVS"
+* WerErziehtDasKindCS#beide_eltern_zusammen "Beide Eltern"
+* WerErziehtDasKindCS#alleinerziehend "Alleinerziehend"
+* WerErziehtDasKindCS#pflege_verschiedene "Pflege (Großeltern, Heim, Institution)"
+* WerErziehtDasKindCS#fehlende_angaben "fehlende Angabe"
+* ^expansion.timestamp = "2024-04-06T12:00:00+00:00"
+* ^expansion.contains[0].system = Canonical(WerErziehtDasKindCS)
+* ^expansion.contains[=].code = #beide_eltern_zusammen
+* ^expansion.contains[=].display = "Beide Eltern"
+* ^expansion.contains[+].system = Canonical(WerErziehtDasKindCS)
+* ^expansion.contains[=].code = #alleinerziehend
+* ^expansion.contains[=].display = "Alleinerziehend"
+* ^expansion.contains[+].system = Canonical(WerErziehtDasKindCS)
+* ^expansion.contains[=].code = #pflege_verschiedene
+* ^expansion.contains[=].display = "Pflege (Großeltern, Heim, Institution)"
+* ^expansion.contains[+].system = Canonical(WerErziehtDasKindCS)
+* ^expansion.contains[=].code = #fehlende_angaben
+* ^expansion.contains[=].display = "fehlende Angabe"
 
 ValueSet: WieVieleStundenFreizeitVS
 Id: WieVieleStundenFreizeitVS
