@@ -13,7 +13,7 @@ Description: "LebtBeiCS"
 * #eltern "Eltern"
 * #mutter "Mutter"
 * #vater "Vater"
-* #andere "Andere" 
+* #andere "Andere"
 
 CodeSystem: ChronischeErkrankungenCS
 Id: ChronischeErkrankungenCS
@@ -229,15 +229,6 @@ Title: "Versorgungsart CodeSystem"
 Description: "VersorgungsartCS"
 * #ambulant "Ambulant"
 * #krankenhaus "Krankenhaus"
-
-CodeSystem: ErwerbsstatusCS
-Id: erwerbsstatus-cs
-Title: "Erwerbsstatus CodeSystem"
-Description: "ErwerbsstatusCS"
-* #nicht_erwerbstaetig "Nicht erwerbstätig"
-* #teilzeit "Teilzeit"
-* #vollzeit "Vollzeit"
-* #sonstiges "Sonstiges"
 
 CodeSystem: FamilienrolleCS
 Id: familienrolle-cs
@@ -666,7 +657,7 @@ CodeSystem: GeburtArtCS
 Id: GeburtArtCS
 Title: "GeburtArtCS"
 Description: "CodeSystem, das die Arten der Geburt enthält."
-* #spontangeburt "Spontangeburt" 
+* #spontangeburt "Spontangeburt"
 * #kaiserschnitt "Kaiserschnitt"
 * #mehrlingsgeburt "Mehrlingsgeburt"
 * #mit_Saugglocke_oder_zangen "Geburt mit Saugglocke oder Zangen"
@@ -698,7 +689,7 @@ Id: WieVieleStundenFreizeitCS
 Title: "WieVieleStundenFreizeitCS"
 Description: "WieVieleStundenFreizeitCS"
 * #unter_1_stunde "unter 1 Stunde"
-* #1_bis_2_stunden "1 bis 2 Stunden" 
+* #1_bis_2_stunden "1 bis 2 Stunden"
 * #mehr_als_2_stunden "mehr als 2 Stunden"
 
 CodeSystem: WieOftImSportVereinCS
