@@ -25,6 +25,8 @@ Description: "Elternbefragung"
 * contained[+] = SEU_EF_BildungsabschlussVS
 * contained[+] = SEU_EF_BerufsbildungVS
 * contained[+] = ErwerbsstatusVS
+* contained[+] = ErwerbsstatusDerMutterVS
+* contained[+] = ErwerbsstatusDesVatersVS
 * contained[+] = FamilienrolleVS
 * contained[+] = VersorgungsartVS
 * contained[+] = ChronischeKrankheitenVS
@@ -257,9 +259,6 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItemWithSource(2.13, #choice, [[Zusammenlebend]], #DE-HH)
     * answerValueSet = Canonical(PersonensorgeberechtigterZusammenlebendVS)
-  * item[+]
-    * insert addItemWithSource(2.14, #choice, [[Wer erzieht?]], #DE-NI)
-    * answerValueSet = Canonical(WerErziehtDasKindAlternativVS)
 //********************************************
 // Familiendaten
 * item[+]
@@ -448,6 +447,15 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItemWithSource(5.10, #choice, [[Art der Geburt]], #DE-NI)
     * answerValueSet = Canonical(GeburtArtVS)
+    // "APGAR" steht im Deutschen für folgende Kennzeichen: Atmung, Puls, Grundtonus (Muskelspannung und Bewegung), Aussehen (Hautfarbe) und Reflexe
+  * item[+]
+    * insert addItemWithSource(5.11, #string, [[APGAR]], #DE-HB)
+    * insert regEx("^\\d{2}\\/\\d{2}\\/\\d{2}$")
+    // "pH-Wert" ist eine Messung des Säurebasengrades im Blut oder einer Flüssigkeit. Ein typischer pH-Wert für ein neugeborenes Kind liegt zwischen 7,15 und 7,45.
+  * item[+]
+    * insert addItemWithSource(5.12, #string, [[pH- Wert]], #DE-HB)
+    * insert regEx([["^\\d,\\d{2}$"]])
+
 //********************************************
 // Sprache
 * item[+]
@@ -1380,3 +1388,28 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItemWithSource(13.30, #choice, [[Wer erzieht das Kind?]], #DE-NI)
     * answerValueSet = Canonical(WerErziehtDasKindVS)
+  * item[+]
+    * insert addItemWithSource(13.31, #choice, [[Wer erzieht?]], #DE-HB)
+    * answerValueSet = Canonical(WerErziehtDasKindAlternativVS)
+  * item[+]
+    * insert addItemWithSource(13.32, #choice, [[Erwerbsstatus der Mutter]], #DE-HB)
+    * answerValueSet = Canonical(ErwerbsstatusDerMutterVS)
+  * item[+]
+    * insert addItemWithSource(13.33, #choice, [[Erwerbsstatus des Vaters]], #DE-HB)
+    * answerValueSet = Canonical(ErwerbsstatusDesVatersVS)
+  * item[+]
+    * insert addItemWithSource(13.34, #boolean, [[Mutter in Deutschland geboren]], #DE-HB)
+  * item[+]
+    * insert addItemWithSource(13.35, #boolean, [[Vater in Deutschland geboren]], #DE-HB)
+  * item[+]
+    * insert addItemWithSource(13.36, #boolean, [[Mutter hat weitere Staatsangehörigkeit]], #DE-HB)
+  * item[+]
+    * insert addItemWithSource(13.36.1, #choice, [[Weitere Staatsangehörigkeit der Mutter]], #DE-HB)
+    * insert enableWhenBoolean(13.36, =, true)
+    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
+  * item[+]
+    * insert addItemWithSource(13.37, #boolean, [[Vater hat weitere Staatsangehörigkeit]], #DE-HB)
+  * item[+]
+    * insert addItemWithSource(13.37.1, #choice, [[Weitere Staatsangehörigkeit des Vaters]], #DE-HB)
+    * insert enableWhenBoolean(13.37, =, true)
+    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)

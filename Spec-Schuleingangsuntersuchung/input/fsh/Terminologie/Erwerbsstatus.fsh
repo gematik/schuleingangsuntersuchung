@@ -6,6 +6,10 @@ Description: "ErwerbsstatusCS"
 * #teilzeit "Teilzeit"
 * #vollzeit "Vollzeit"
 * #sonstiges "Sonstiges"
+* #stundenweise "Stundenweise"
+* #nein "Nein"
+* #fehlende_angabe "Fehlende Angabe"
+* #elternzeit "Elternzeit"
 
 ValueSet: ErwerbsstatusVS
 Id: erwerbsstatus-vs
@@ -29,8 +33,11 @@ ValueSet: ErwerbsstatusInclSonstigesVS
 Id: erwerbsstatus-incl-sonstiges-vs
 Title: "Erwerbsstatus ValueSet incl. Sonstiges"
 Description: "ErwerbsstatusInclSonstigesVS"
-* include codes from system ErwerbsstatusCS
-* ^expansion.timestamp = "2024-06-26T15:47:43+00:00"
+* ErwerbsstatusCS#nicht_erwerbstaetig "Nicht erwerbstätig"
+* ErwerbsstatusCS#teilzeit "Teilzeit"
+* ErwerbsstatusCS#vollzeit "Vollzeit"
+* ErwerbsstatusCS#sonstiges "Sonstiges"
+* ^expansion.timestamp = "2025-03-04T12:00:00+00:00"
 * ^expansion.contains[0].system = Canonical(ErwerbsstatusCS)
 * ^expansion.contains[=].code = #nicht_erwerbstaetig
 * ^expansion.contains[=].display = "Nicht erwerbstätig"
@@ -43,3 +50,59 @@ Description: "ErwerbsstatusInclSonstigesVS"
 * ^expansion.contains[+].system = Canonical(ErwerbsstatusCS)
 * ^expansion.contains[=].code = #sonstiges
 * ^expansion.contains[=].display = "Sonstiges"
+
+ValueSet: ErwerbsstatusDerMutterVS
+Id: erwerbsstatus-der-mutter-vs
+Title: "Erwerbsstatus der Mutter ValueSet"
+Description: "ErwerbsstatusDerMutterVS"
+* ErwerbsstatusCS#vollzeit "Vollzeit"
+* ErwerbsstatusCS#teilzeit "Teilzeit"
+* ErwerbsstatusCS#stundenweise "Stundenweise"
+* ErwerbsstatusCS#nicht_erwerbstaetig "Nein"
+* ErwerbsstatusCS#fehlende_angabe "Fehlende Angabe"
+* ErwerbsstatusCS#elternzeit "Elternzeit"
+* ^expansion.timestamp = "2025-03-04T12:00:00+00:00"
+* ^expansion.contains[0].system = Canonical(ErwerbsstatusCS)
+* ^expansion.contains[=].code = #vollzeit
+* ^expansion.contains[=].display = "Vollzeit"
+* ^expansion.contains[+].system = Canonical(ErwerbsstatusCS)
+* ^expansion.contains[=].code = #teilzeit
+* ^expansion.contains[=].display = "Teilzeit"
+* ^expansion.contains[+].system = Canonical(ErwerbsstatusCS)
+* ^expansion.contains[=].code = #stundenweise
+* ^expansion.contains[=].display = "Stundenweise"
+* ^expansion.contains[+].system = Canonical(ErwerbsstatusCS)
+* ^expansion.contains[=].code = #nicht_erwerbstaetig
+* ^expansion.contains[=].display = "Nein"
+* ^expansion.contains[+].system = Canonical(ErwerbsstatusCS)
+* ^expansion.contains[=].code = #fehlende_angabe
+* ^expansion.contains[=].display = "Fehlende Angabe"
+* ^expansion.contains[+].system = Canonical(ErwerbsstatusCS)
+* ^expansion.contains[=].code = #elternzeit
+* ^expansion.contains[=].display = "Elternzeit"
+
+ValueSet: ErwerbsstatusDesVatersVS
+Id: erwerbsstatus-des-vaters-vs
+Title: "Erwerbsstatus des Vaters ValueSet"
+Description: "ErwerbsstatusDesVatersVS"
+* ErwerbsstatusCS#vollzeit "Vollzeit"
+* ErwerbsstatusCS#teilzeit "Teilzeit"
+* ErwerbsstatusCS#stundenweise "Stundenweise"
+* ErwerbsstatusCS#nicht_erwerbstaetig "Nein"
+* ErwerbsstatusCS#fehlende_angabe "Fehlende Angabe"
+* ^expansion.timestamp = "2025-03-04T12:00:00+00:00"
+* ^expansion.contains[0].system = Canonical(ErwerbsstatusCS)
+* ^expansion.contains[=].code = #vollzeit
+* ^expansion.contains[=].display = "Vollzeit"
+* ^expansion.contains[+].system = Canonical(ErwerbsstatusCS)
+* ^expansion.contains[=].code = #teilzeit
+* ^expansion.contains[=].display = "Teilzeit"
+* ^expansion.contains[+].system = Canonical(ErwerbsstatusCS)
+* ^expansion.contains[=].code = #stundenweise
+* ^expansion.contains[=].display = "Stundenweise"
+* ^expansion.contains[+].system = Canonical(ErwerbsstatusCS)
+* ^expansion.contains[=].code = #nicht_erwerbstaetig
+* ^expansion.contains[=].display = "Nein"
+* ^expansion.contains[+].system = Canonical(ErwerbsstatusCS)
+* ^expansion.contains[=].code = #fehlende_angabe
+* ^expansion.contains[=].display = "Fehlende Angabe"

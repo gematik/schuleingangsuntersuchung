@@ -126,6 +126,21 @@ RuleSet: regEx(expression)
   * url = "http://hl7.org/fhir/StructureDefinition/regex"
   * valueString = {expression}
 
+// Because the RegEx Extensio is depricated, we use this one
+RuleSet: regEx2(entryFormat, validationMessage, targetConstraint)
+* extension[+]
+  * url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
+  * valueCodeableConcept = http://hl7.org/fhir/questionnaire-item-control#regex
+* extension[+]
+  * url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-targetConstraint"
+  * valueString = "matches({targetConstraint})"
+* extension[+]
+  * url = "http://hl7.org/fhir/StructureDefinition/entryFormat"
+  * valueString = "{entryFormat}"
+* extension[+]
+  * url = "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-validationMessage"
+  * valueString = "{validationMessage}"
+
 RuleSet: helpItem (id, text)
 * linkId = "{id}"
 * type = #display
