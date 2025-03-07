@@ -112,6 +112,9 @@ Description: "Elternbefragung"
     * insert addItemWithSource(0.11, #string, [[Aufnahmeschule (bezeichnet die Schule zu der das  Kind wirklich geht)]], #DE-HB)
   * item[+]
     * insert addItemWithSource(0.12, #string, [[Ortsteilnummer (bezogen auf den Wohnort des Kindes)]], #DE-HB)
+  * item[+]
+    * insert addItemWithSource(0.13, #string, [[Ort der Untersuchung]], #DE-TH)
+    * maxLength = 30
 //********************************************
 // Personenbezogene Daten Kind
 * item[+]
@@ -746,6 +749,9 @@ Description: "Elternbefragung"
       * insert addItem(8.16a.1, #string, [[Welche sonstigen Allergien?]])  
       * insert enableWhenCode(8.16a, =, AtopischeErkrankungenCS, sonstiges)
   * item[+]
+    * answerValueSet = Canonical(AtopischeErkrankungenVS)
+    * insert addItemWithSource(8.16b, #string, [[Gesundheitsstörungen in der Familie des Kindes  (z.B. Allergien, Asthma b.,Epilepsie)]],  #DE-TH)
+  * item[+]
     * insert addItem(8.17, #boolean, [[Entwicklungsdiagnostik]])
   * item[+]
     * insert addItem(8.18, #boolean, [[Behindertenausweis vorhanden]])
@@ -783,6 +789,8 @@ Description: "Elternbefragung"
     * repeats = true
   * item[+]
     * insert addItem(8.26, #text, [[Sonstige Probleme]])
+  * item[+]
+    * insert addItemWithSource(8.26a, #text, [[Gesundheitsstörungen und Besonderheiten beim Kind, die nach Meinung der Eltern zu berücksichtigen sind]], #DE-TH)
   * item[+]
     * insert addItem(8.27, #boolean, [[Wurde ihr Kind operiert]])
     * item[+]
@@ -955,6 +963,8 @@ Description: "Elternbefragung"
       * insert addItemWithSource(8.81.1, #boolean, [[Hatte Ihr Kind in den letzten 12 Monaten Niesanfälle oder eine laufende, verstopfte oder juckende Nase, obwohl es nicht erkältet war?]], #DE-NI)
     * item[+]
       * insert addItemWithSource(8.81.2, #boolean, [[Hatte Ihr Kind in den letzten 12 Monaten gleichzeitig mit diesen Nasenbeschwerden auch juckende oder tränende Augen?]], #DE-NI)
+  * item[+]
+    * insert addItemWithSource(8.82, #string, [[Kur mit welchem Behandlungsschwerpunkt?]], #DE-TH)
 //********************************************
 // Förderungen
 * item[+]
@@ -1366,6 +1376,8 @@ Description: "Elternbefragung"
     * insert addItem(13.12, #boolean, [[Einwilligung zur Datenerhebung früherer Untersuchungen, welche beim Gesundheitsamt vorliegen]])
   * item[+]
     * insert addItem(13.13, #boolean, [[Einwilligung zur Einsicht von Unterlagen zur Frühförderung, falls diese vorliegen]])
+  * item[+]
+    * insert addItemWithSource(13.13a, #boolean, [[Datenschutzrechtliche Einwilligungerklärung im Rahmen der SEU über Betreuung des Kindes, Angaben zu Gesundheitsstörungen in d. Fam. des Kindes sowie Angaben zur Schwangerschaft und Geburtsverlauf sowie Angaben des betreuenden Kinderarztes.]], #DE-TH)
   * item[+]
     * insert addItem(13.14, #boolean, Ob das Kind an einer Nachmittagsbetreuung teilnehmen soll)
   * item[+]
