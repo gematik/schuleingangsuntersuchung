@@ -1014,6 +1014,9 @@ Description: "Elternbefragung"
         * insert addItemWithSource(9.2d.2, #date, [[Beendet]], #DE-BW)
         * insert enableWhenCode(9.2d, =, ExpandedYesNoIndicator, Y)
     * item[+]
+      * insert addItemWithSource(9.2da, #choice, [[Psychotherapie]], #DE-HB)
+      * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
+    * item[+]
       * insert addItemWithSource(9.2e, #choice, [[Andere Beratungs-, Förder- oder Heilmaßnahmen]], #DE-BW)
       * answerValueSet = Canonical(JaNeinWartelisteVS)
       * item[+]
@@ -1063,9 +1066,6 @@ Description: "Elternbefragung"
       * insert addItemWithSource(9.12, #boolean, [[Fördermaßn. FörderKiTa/Integrative KiTa]], #DE-SL)
     * item[+]
       * insert addItemWithSource(9.13, #boolean, [[Fördermaßn. Vorschul. Päd. Sprachförderung]], #DE-SL)
-    * item[+]
-      * insert addItemWithSource(9.2d, #choice, [[Psychotherapie]], #DE-HB)
-      * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
   * item[+]
     * insert addItem(9.11.g, #group, [[Kuren]])
     * repeats = true
