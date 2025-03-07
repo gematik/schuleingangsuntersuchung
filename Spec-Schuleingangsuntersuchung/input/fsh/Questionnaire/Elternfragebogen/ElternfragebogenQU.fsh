@@ -450,11 +450,13 @@ Description: "Elternbefragung"
     // "APGAR" steht im Deutschen für folgende Kennzeichen: Atmung, Puls, Grundtonus (Muskelspannung und Bewegung), Aussehen (Hautfarbe) und Reflexe
   * item[+]
     * insert addItemWithSource(5.11, #string, [[APGAR]], #DE-HB)
-    * insert regEx("^\\d{2}\\/\\d{2}\\/\\d{2}$")
+    * insert regEx([["^\\d{2}\\/\\d{2}\\/\\d{2}$"]])
+    * insert entryFormat([[XX/XX/XX]])
     // "pH-Wert" ist eine Messung des Säurebasengrades im Blut oder einer Flüssigkeit. Ein typischer pH-Wert für ein neugeborenes Kind liegt zwischen 7,15 und 7,45.
   * item[+]
     * insert addItemWithSource(5.12, #string, [[pH- Wert]], #DE-HB)
     * insert regEx([["^\\d,\\d{2}$"]])
+    * insert entryFormat([[X,XX]])
 
 //********************************************
 // Sprache
@@ -1061,6 +1063,9 @@ Description: "Elternbefragung"
       * insert addItemWithSource(9.12, #boolean, [[Fördermaßn. FörderKiTa/Integrative KiTa]], #DE-SL)
     * item[+]
       * insert addItemWithSource(9.13, #boolean, [[Fördermaßn. Vorschul. Päd. Sprachförderung]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(9.2d, #choice, [[Psychotherapie]], #DE-HB)
+      * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
   * item[+]
     * insert addItem(9.11.g, #group, [[Kuren]])
     * repeats = true
@@ -1070,6 +1075,10 @@ Description: "Elternbefragung"
       * insert addItem(9.11.g.2, #string, [[Behandlungsschwerpunkt]])
   * item[+]
     * insert addItemWithSource(9.14, #boolean, [[Psychiatrische Institutionsambulanz (PIA)]], #DE-BB)
+  * item[+]
+    * insert addItemWithSource(9.15, #boolean, [[Komplexleistung]], #DE-HB)
+  * item[+]
+    * insert addItemWithSource(9.16, #boolean, [[Persönliche Hilfe/Eingliederungshilfe in KiTa]], #DE-HB)
 // Förderungen in den vergangenen 12 Monaten
 // Alle Unteritems der Gruppe 9a sind exakte Kopien der Gruppe 9. Bei Änderungen der Gruppe 9, müssen alle Unterpunkte der Gruppe 9 erneut in die Gruppe 9a kopiert werden. Ebenfalls müssen alle 9. durch 9a. ersetzt werden.
 * item[+]
@@ -1286,6 +1295,8 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItemWithSource(12.22, #choice, [[Wie oft trainiert Ihr Kind pro Woche außerhalb der Kita angeleitet?]], #DE-NI)
     * answerValueSet = Canonical(WieOftTrainingVS)
+  * item[+]
+    * insert addItemWithSource(12.23, #boolean, [[Fährt ihr Kind frei Fahrrad]], #DE-HB)
 //********************************************
 // Informationen Eltern
 * item[+]
