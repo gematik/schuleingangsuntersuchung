@@ -403,6 +403,12 @@ Description: "Elternbefragung"
     * insert minValueInt(22)
     * insert maxValueInt(43)
   * item[+]
+    * insert addItemWithSource(5.1.b, #integer, [[Dauer der Schwangerschaft (ergänzende Tage)]], #DE-HB)
+    * insert uunit(d, "Tage")
+    * insert minValueInt(0)
+    * insert maxValueInt(6)
+
+  * item[+]
     * insert addItem(5.2, #integer, [[Geburtsgewicht (in Gramm)]])
     * insert uunit(g, "Gramm")
   * item[+]
