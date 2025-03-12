@@ -255,6 +255,8 @@ Description: "Elternbefragung"
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
     * insert addItem(2.10, #choice, Herkunftsland)
   * item[+]
+    * insert addItemWithSource(2.10a, #boolean, [[Herkunftsland Deutsch?]], #DE-RP)
+  * item[+]
     * answerValueSet = Canonical(ISO6392_LanguageVS)
     * insert addItem(2.11, #choice, Muttersprache)
   * item[+]
@@ -278,6 +280,8 @@ Description: "Elternbefragung"
     * insert addItemWithSource(3.1b, #integer, Aktuell im Haushalt lebende Kinder, #DE-SL)
     * insert minValueInt(0)
     * insert maxValueInt(10)
+  * item[+]
+    * insert addItemWithSource(3.1d, #integer, [[Aktuell im Haushalt lebende Kinder, inklusive des Schuhlpflichtigen]], #DE-RP)
   * item[+]
     * insert addItem(3.1.1, #group, Details Geschwister)
     * repeats = true
@@ -390,6 +394,18 @@ Description: "Elternbefragung"
     * insert addItemWithSource(4.9, #date, [[Seit wann besucht das Kind eine Kita?]], #DE-SN)
   * item[+]
     * insert addItemWithSource(4.10, #boolean, [[Bekommt oder wartet Ihr Kind auf eine spezielle Förderung oder Therapie?]], #DE-SN)
+  * item[+]
+    * insert addItemWithSource(4.11, #group, [[Das Kind wurde bis zum Alter von Jahren und Monaten ausschließlich innerhalb der Familie betreut.]], #DE-RP)
+    * item[+]
+      * insert addItemWithSource(4.11.1, #integer, [[Jahre]], #DE-RP)
+      * insert uunit(a, "Jahre")
+      * insert minValueInt(0)
+      * insert maxValueInt(7)
+    * item[+]
+      * insert addItemWithSource(4.11.2, #integer, [[Monate]], #DE-RP)
+      * insert uunit(mo, "Monate")
+      * insert minValueInt(0)
+      * insert maxValueInt(12)
 //********************************************
 // Schwangerschaft und Geburt
 * item[+]
@@ -407,7 +423,6 @@ Description: "Elternbefragung"
     * insert uunit(d, "Tage")
     * insert minValueInt(0)
     * insert maxValueInt(6)
-
   * item[+]
     * insert addItem(5.2, #integer, [[Geburtsgewicht (in Gramm)]])
     * insert uunit(g, "Gramm")
