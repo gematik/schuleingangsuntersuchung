@@ -271,7 +271,7 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItem(3.1, #integer, Anzahl der Geschwister)
   * item[+]
-    * insert addItemWithSource(3.1a, #integer, [[Kinder im Haushalt]], #DE-HH)
+    * insert addItemWithSource(3.1c, #integer, [[Kinder im Haushalt]], #DE-HH)
   * item[+]
     * insert addItemWithSource(3.1a, #integer, Anzahl der im Familienverbund lebenden Kinder, #DE-SL)
     * insert minValueInt(0)
