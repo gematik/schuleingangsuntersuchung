@@ -6051,7 +6051,7 @@
     }
   ],
   "url": "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung",
-  "title": "SEU Elternfragebogen Maximaldatensatz SL",
+  "title": "SEU Elternfragebogen SL",
   "extension": [
     {
       "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext",

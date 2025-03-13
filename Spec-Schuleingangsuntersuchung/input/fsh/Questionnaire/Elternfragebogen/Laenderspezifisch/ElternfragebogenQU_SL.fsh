@@ -1,8 +1,8 @@
 Instance: ElternbefragungSL
 InstanceOf: Questionnaire
 Usage: #example
-Title: "ElternbefragungSL"
-Description: "ElternbefragungSL"
+Title: "Elternbefragung SL"
+Description: "Elternbefragung SL"
 * contained[+] = SEU-EF-NeinAbgeschlossenLaeuftGeplantVS
 * contained[+] = DeuevAnlage8LaenderkennzeichenVS
 * contained[+] = LebtBeiVS
@@ -52,7 +52,7 @@ Description: "ElternbefragungSL"
 * contained[+] = SEU_EF_BildungsabschlussBBVS
 * id = "SEU-Elternbefragung-SL"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung"
-* title = "SEU Elternfragebogen Maximaldatensatz SL"
+* title = "SEU Elternfragebogen SL"
 * insert launchContext("patient", #Patient, "Patientenkontext")
 * status = #draft
 * item[+]

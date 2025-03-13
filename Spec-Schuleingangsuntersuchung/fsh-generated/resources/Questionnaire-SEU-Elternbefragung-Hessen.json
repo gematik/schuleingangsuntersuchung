@@ -2019,7 +2019,7 @@
     }
   ],
   "url": "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung",
-  "title": "SEU Elternfragebogen Maximaldatensatz Hessen",
+  "title": "SEU Elternfragebogen HE",
   "extension": [
     {
       "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext",
