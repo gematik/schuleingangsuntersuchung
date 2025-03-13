@@ -4964,7 +4964,7 @@
         {
           "linkId": "4.4a",
           "type": "string",
-          "text": "(4.4a) Art der Tagesbetreuung?",
+          "text": "(4.4a) Art der Tagesbetreuung? ",
           "code": [
             {
               "code": "4.4a",
