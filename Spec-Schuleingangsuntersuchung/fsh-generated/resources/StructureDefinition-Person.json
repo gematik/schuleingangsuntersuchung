@@ -879,7 +879,7 @@
           {
             "code": "Extension",
             "profile": [
-              "https://www.oegd.de/fhir/seu/StructureDefinition/humanname-as-string"
+              "https://www.oegd.de/fhir/seu/StructureDefinition/kitname"
             ]
           }
         ]

@@ -36,7 +36,15 @@
     {
       "code": "andere",
       "display": "andere"
+    },
+    {
+      "code": "fehlende_angaben",
+      "display": "fehlende Angabe"
+    },
+    {
+      "code": "pflege_verschiedene",
+      "display": "Pflege (Großeltern, Heim, Institution)"
     }
   ],
-  "count": 7
+  "count": 9
 }

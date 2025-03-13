@@ -12,6 +12,36 @@
     "contains": [
       {
         "system": "https://www.oegd.de/fhir/seu/CodeSystem/BezirkeHHCS",
+        "code": "altona",
+        "display": "Altona"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/BezirkeHHCS",
+        "code": "bergedorf",
+        "display": "Bergedorf"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/BezirkeHHCS",
+        "code": "eimsbüttel",
+        "display": "Eimsbüttel"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/BezirkeHHCS",
+        "code": "mitte",
+        "display": "Hamburg Mitte"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/BezirkeHHCS",
+        "code": "nord",
+        "display": "Hamburg Nord"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/BezirkeHHCS",
+        "code": "harburg",
+        "display": "Harburg"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/BezirkeHHCS",
         "code": "wandsbek",
         "display": "Wandsbek"
       }

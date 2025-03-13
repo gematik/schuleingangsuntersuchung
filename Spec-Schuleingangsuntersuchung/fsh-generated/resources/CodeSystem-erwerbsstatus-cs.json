@@ -24,7 +24,23 @@
     {
       "code": "sonstiges",
       "display": "Sonstiges"
+    },
+    {
+      "code": "stundenweise",
+      "display": "Stundenweise"
+    },
+    {
+      "code": "nein",
+      "display": "Nein"
+    },
+    {
+      "code": "fehlende_angabe",
+      "display": "Fehlende Angabe"
+    },
+    {
+      "code": "elternzeit",
+      "display": "Elternzeit"
     }
   ],
-  "count": 4
+  "count": 8
 }

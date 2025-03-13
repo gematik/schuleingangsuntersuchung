@@ -12,6 +12,16 @@
     "contains": [
       {
         "system": "https://www.oegd.de/fhir/seu/CodeSystem/PersonensorgeberechtigterZusammenlebendCS",
+        "code": "ja",
+        "display": "Ja"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/PersonensorgeberechtigterZusammenlebendCS",
+        "code": "nein",
+        "display": "Nein"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/PersonensorgeberechtigterZusammenlebendCS",
         "code": "zeitweise",
         "display": "Zeitweise"
       }

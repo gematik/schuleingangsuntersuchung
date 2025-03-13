@@ -12,6 +12,21 @@
     "contains": [
       {
         "system": "https://www.oegd.de/fhir/seu/CodeSystem/GeburtArtCS",
+        "code": "spontangeburt",
+        "display": "Spontangeburt"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/GeburtArtCS",
+        "code": "kaiserschnitt",
+        "display": "Kaiserschnitt"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/GeburtArtCS",
+        "code": "mehrlingsgeburt",
+        "display": "Mehrlingsgeburt"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/GeburtArtCS",
         "code": "mit_Saugglocke_oder_zangen",
         "display": "Geburt mit Saugglocke oder Zangen"
       }

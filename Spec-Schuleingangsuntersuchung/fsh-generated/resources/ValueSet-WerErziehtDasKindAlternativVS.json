@@ -1,0 +1,60 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "WerErziehtDasKindAlternativVS",
+  "id": "WerErziehtDasKindAlternativVS",
+  "title": "WerErziehtDasKindAlternativVS",
+  "description": "WerErziehtDasKindAlternativVS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/WerErziehtDasKindAlternativVS",
+  "expansion": {
+    "timestamp": "2024-04-06T12:00:00+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WerErziehtDasKindCS",
+        "code": "beide_eltern_zusammen",
+        "display": "Beide Eltern"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WerErziehtDasKindCS",
+        "code": "alleinerziehend",
+        "display": "Alleinerziehend"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WerErziehtDasKindCS",
+        "code": "pflege_verschiedene",
+        "display": "Pflege (Großeltern, Heim, Institution)"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WerErziehtDasKindCS",
+        "code": "fehlende_angaben",
+        "display": "fehlende Angabe"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WerErziehtDasKindCS",
+        "concept": [
+          {
+            "code": "beide_eltern_zusammen",
+            "display": "Beide Eltern"
+          },
+          {
+            "code": "alleinerziehend",
+            "display": "Alleinerziehend"
+          },
+          {
+            "code": "pflege_verschiedene",
+            "display": "Pflege (Großeltern, Heim, Institution)"
+          },
+          {
+            "code": "fehlende_angaben",
+            "display": "fehlende Angabe"
+          }
+        ]
+      }
+    ]
+  }
+}
