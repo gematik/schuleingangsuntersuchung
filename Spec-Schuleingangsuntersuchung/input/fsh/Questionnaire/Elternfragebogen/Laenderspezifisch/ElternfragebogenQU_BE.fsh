@@ -150,7 +150,7 @@ Description: "Elternbefragung BE"
     * item[+]
       * insert addItem(4.4, #boolean, Besucht ihr Kind eine andere Form der Tagesbetreuung?)
     * item[+]  
-      * insert addItemWithSource(4.4a, #string, [[Art der Tagesbetreuung? ]], #DE-BB)
+      * insert addItemWithSource(4.4a, #string, [[Art der Tagesbetreuung?]], #DE-BB)
       * insert enableWhenBoolean(4.4, =, true)
 * item[+]
   * insert addItem(5, #group, [[Lebensumfeld]])
