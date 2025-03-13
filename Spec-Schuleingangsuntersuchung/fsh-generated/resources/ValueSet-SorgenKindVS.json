@@ -12,6 +12,21 @@
     "contains": [
       {
         "system": "https://www.oegd.de/fhir/seu/CodeSystem/SorgenKindCS",
+        "code": "seines_Verhaltens",
+        "display": "seines Verhaltens?"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SorgenKindCS",
+        "code": "seiner_Sprachentwicklung",
+        "display": "seiner Sprachentwicklung"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SorgenKindCS",
+        "code": "seine_Konzentrationsfähigkeit",
+        "display": "seine Konzentrationsfähigkeit"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SorgenKindCS",
         "code": "seines_Seh-oder_Hoervermoegens",
         "display": "seines Seh- oder Hörvermögens"
       }

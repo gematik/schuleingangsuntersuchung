@@ -212,6 +212,14 @@ Description: "CodeSystem für die Angabe des Bildungsabschlusses."
 * #sonder_foerderschule "Sonder-/Förderschule"
 * #in_schulischer_ausbildung "Derzeit noch in schulischer Ausbildung (Schüler*in)"
 
+CodeSystem: SEU_EF_SchulabschlussBerlinCS
+Id: seu-ef-schulabschlussberlin-cs
+Title: "SEU_EF_Bildungsabschluss Berlin CodeSystem"
+Description: "CodeSystem für die Angabe des Bildungsabschlusses."
+* #kein_hauptschulabschluss "Kein Schulabschluss"
+* #hauptschulabschluss_oder_weniger_als_10_klasse "Hauptschluss oder weniger 10. Klasse"
+* #mittlere_reife_mittlerer_berufsabschluss_msa_10_klasse "mittlere Reife/mittlere Berufsabschluss (MSA/10. Klasse)"
+* #abitur_fachabitur "Abitur/Fachabitur"
 
 CodeSystem: SEU_EF_BerufsbildungCS
 Id: seu-ef-berufsbildung-cs

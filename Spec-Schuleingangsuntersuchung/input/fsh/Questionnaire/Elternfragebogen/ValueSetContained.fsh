@@ -540,6 +540,25 @@ Description: "ValueSet, das verschiedene Berufsbildungsabschlüsse enthält."
 * ^expansion.contains[=].code = #fachhochschulabschluss
 * ^expansion.contains[=].display = "Fach-/Hochschulabschluss oder vergleichbar"
 
+ValueSet: SEU_EF_SchulabschlussBerlinVS
+Id: SEU_EF_SchulabschlussBerlinVS
+Title: "SEU_EF_Berufsbildung Berlin ValueSet"
+Description: "ValueSet, das verschiedene Schulabschlüsse enthält."
+* include codes from system SEU_EF_SchulabschlussBerlinCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
+* ^expansion.contains[0].system = Canonical(SEU_EF_SchulabschlussBerlinCS)
+* ^expansion.contains[=].code = #kein_hauptschulabschluss
+* ^expansion.contains[=].display = "Kein Hauptschulabschluss"
+* ^expansion.contains[+].system = Canonical(SEU_EF_SchulabschlussBerlinCS)
+* ^expansion.contains[=].code = #hauptschulabschluss_oder_weniger_als_10_klasse
+* ^expansion.contains[=].display = "Hauptschluss oder weniger 10. Klasse"
+* ^expansion.contains[+].system = Canonical(SEU_EF_SchulabschlussBerlinCS)
+* ^expansion.contains[=].code = #mittlere_reife_mittlerer_berufsabschluss_MSA_10_Klasse
+* ^expansion.contains[=].display = "mittlere Reife/mittlere Berufsabschluss (MSA/10. Klasse)"
+* ^expansion.contains[+].system = Canonical(SEU_EF_SchulabschlussBerlinCS)
+* ^expansion.contains[=].code = #abitur_fachabitur
+* ^expansion.contains[=].display = "Abitur/Fachabitur"
+
 ValueSet: ErwerbsstatusVS
 Id: erwerbsstatus-vs
 Title: "Erwerbsstatus ValueSet"
@@ -2510,12 +2529,12 @@ Description: "SorgenKindVS"
 * ^expansion.contains[0].system = Canonical(SorgenKindCS)
 * ^expansion.contains[=].code = #seines_Verhaltens
 * ^expansion.contains[=].display = "seines Verhaltens?"
-* ^expansion.contains[0].system = Canonical(SorgenKindCS)
+* ^expansion.contains[+].system = Canonical(SorgenKindCS)
 * ^expansion.contains[=].code = #seiner_Sprachentwicklung
 * ^expansion.contains[=].display = "seiner Sprachentwicklung"
-* ^expansion.contains[0].system = Canonical(SorgenKindCS)
+* ^expansion.contains[+].system = Canonical(SorgenKindCS)
 * ^expansion.contains[=].code = #seine_Konzentrationsfähigkeit
 * ^expansion.contains[=].display = "seine Konzentrationsfähigkeit"
-* ^expansion.contains[0].system = Canonical(SorgenKindCS)
+* ^expansion.contains[+].system = Canonical(SorgenKindCS)
 * ^expansion.contains[=].code = #seines_Seh-oder_Hoervermoegens
 * ^expansion.contains[=].display = "seines Seh- oder Hörvermögens"
