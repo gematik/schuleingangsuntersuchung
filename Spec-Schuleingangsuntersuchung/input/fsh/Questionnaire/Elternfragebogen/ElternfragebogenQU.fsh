@@ -115,6 +115,8 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItemWithSource(0.13, #string, [[Ort der Untersuchung]], #DE-TH)
     * maxLength = 30
+  * item[+]
+    * insert addItemWithSource(0.14, #boolean, [[Hat das Kind einen i-Helfer?]], #DE-MV)
 //********************************************
 // Personenbezogene Daten Kind
 * item[+]
