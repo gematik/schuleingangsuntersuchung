@@ -117,6 +117,8 @@ Description: "Elternbefragung"
     * maxLength = 30
   * item[+]
     * insert addItemWithSource(0.14, #boolean, [[Hat das Kind einen i-Helfer?]], #DE-MV)
+  * item[+]
+    * insert addItemWithSource(0.15, #string, [[Bemerkung]], #DE-HH)
 //********************************************
 // Personenbezogene Daten Kind
 * item[+]
@@ -126,6 +128,8 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItem(1.1, #string, Nachname des Kindes)
     * insert initialExpression("%patient.name[0].family")
+  * item[+]
+    * insert addItemWithSource(1.1a, #string, [[Geburtsname des Kindes]], #DE-HH)
   * item[+]
     * insert addItem(1.2, #string, Vorname des Kindes)
     * insert initialExpression("%patient.name[0].given[0]")
@@ -221,6 +225,20 @@ Description: "Elternbefragung"
     * answerValueSet = Canonical(SEU_EF_WohnsituationKindVS)
   * item[+]
     * insert addItemWithSource(1.13, #string, [[Unterscheidung zwischen Arzt und Koordinator und Hör- und Sehkraft (MFA)]], #DE-NI)
+  * item[+]
+    * insert addItemWithSource(1.14, #string, [[Kinderarzt]], #DE-HH)
+  * item[+]
+    * insert addItemWithSource(1.15, #string, [[Zahnarzt]], #DE-HH)
+  * item[+]
+    * insert addItemWithSource(1.16, #string, [[Kiefernorthopäde]], #DE-HH)
+  * item[+]
+    * insert addItemWithSource(1.17, #group, [[Auskunftssperren]], #DE-HH)
+    * item[+]
+      * insert addItemWithSource(1.17.1, #boolean, [[nicht näher spezifizierte Sperre]], #DE-HH)
+    * item[+]
+      * insert addItemWithSource(1.17.2, #boolean, [[Gefahr für Leben (BMG §51 (1))]], #DE-HH)
+    * item[+]
+      * insert addItemWithSource(1.17.3, #boolean, [[Adpotionspflegeverhältnis (BMG § 51 (5) 2.)]], #DE-HH)
 //********************************************
 // Personenbezogene Daten Personenberechtigter
 * item[+]
