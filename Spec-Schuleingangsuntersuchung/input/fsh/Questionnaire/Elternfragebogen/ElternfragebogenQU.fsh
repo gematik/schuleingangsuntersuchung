@@ -234,7 +234,7 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItemWithSource(1.17, #group, [[Auskunftssperren]], #DE-HH)
     * item[+]
-      * insert addItemWithSource(1.17.1, #boolean, [[nicht näher spezifizierte Sperre]], #DE-HH)
+      * insert addItemWithSource(1.17.1, #boolean, [[Nicht näher spezifizierte Sperre]], #DE-HH)
     * item[+]
       * insert addItemWithSource(1.17.2, #boolean, [[Gefahr für Leben (BMG §51 (1))]], #DE-HH)
     * item[+]
