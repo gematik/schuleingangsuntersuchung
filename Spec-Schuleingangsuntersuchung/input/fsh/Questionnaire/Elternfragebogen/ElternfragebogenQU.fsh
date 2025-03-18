@@ -88,6 +88,8 @@ Description: "Elternbefragung"
 * contained[+] = SEU_UB_HaendigkeitVS
 * contained[+] = FreiesLaufenGelerntVS
 * contained[+] = SprechenGelerntVS
+* contained[+] = KinderbetreuungVS
+* contained[+] = KitaEintrittsalterVS
 * id = "SEU-Elternbefragung"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung"
 * title = "SEU Elternfragebogen Maximaldatensatz"
@@ -458,6 +460,17 @@ Description: "Elternbefragung"
       * insert uunit(mo, "Monate")
       * insert minValueInt(0)
       * insert maxValueInt(12)
+  * item[+]
+    * insert addItemWithSource(4.12, #choice, [[Betreuung des Kindes]], #DE-ST)
+    * answerValueSet = Canonical(KinderbetreuungVS)
+  * item[+]
+    * insert addItemWithSource(4.13, #choice, [[Alter des Kindes bei Eintritt in Kita]], #DE-ST)
+    * insert enableWhenCode(4.12, =, KinderbetreuungCS, kita_halbtags)
+    * insert enableWhenCode(4.12, =, KinderbetreuungCS, kita_ganztags)
+    * insert enableWhenCode(4.12, =, KinderbetreuungCS, kita_und_tagespflege)
+    * enableBehavior = #any
+    * answerValueSet = Canonical(KitaEintrittsalterVS)
+
 //********************************************
 // Schwangerschaft und Geburt
 * item[+]
