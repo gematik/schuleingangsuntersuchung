@@ -61,6 +61,7 @@ Description: "Elternbefragung"
 * contained[+] = DauerStillenVS
 * contained[+] = SEU_UB_TeilnahmeVorkursDeutschVS
 * contained[+] = GeburtArtVS
+* contained[+] = GeburtsmodusVS
 * contained[+] = SEU_UB_AuswaehlbareElternspracheVS
 * contained[+] = SEU_UB_KindergartenArtVS
 * contained[+] = SEU_UB_GesprocheneSpracheVS
@@ -519,6 +520,9 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItemWithSource(5.10, #choice, [[Art der Geburt]], #DE-NI)
     * answerValueSet = Canonical(GeburtArtVS)
+  * item[+]
+    * insert addItemWithSource(5.10a, #choice, [[Geburtsmodus]], #DE-ST)
+    * answerValueSet = Canonical(GeburtsmodusVS)
     // "APGAR" steht im Deutschen für folgende Kennzeichen: Atmung, Puls, Grundtonus (Muskelspannung und Bewegung), Aussehen (Hautfarbe) und Reflexe
   * item[+]
     * insert addItemWithSource(5.11, #string, [[APGAR]], #DE-HB)
