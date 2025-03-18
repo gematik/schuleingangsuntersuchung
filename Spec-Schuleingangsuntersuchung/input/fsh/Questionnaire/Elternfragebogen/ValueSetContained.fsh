@@ -17,25 +17,6 @@ Description: "SEU-EF-NeinAbgeschlossenLaeuftGeplantVS"
 * ^expansion.contains[=].code = #geplant
 * ^expansion.contains[=].display = "geplant"
 
-ValueSet: LebtBeiVS
-Id: LebtBeiVS
-Title: "LebtBeiVS"
-Description: "LebtBeiVS"
-* include codes from system LebtBeiCS
-* ^expansion.timestamp = "2024-04-04T09:24:55+00:00"
-* ^expansion.contains[0].system = "https://www.oegd.de/fhir/seu/CodeSystem/LebtBeiCS"
-* ^expansion.contains[=].code = #vater
-* ^expansion.contains[=].display = "Vater"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/LebtBeiCS"
-* ^expansion.contains[=].code = #eltern
-* ^expansion.contains[=].display = "Eltern"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/LebtBeiCS"
-* ^expansion.contains[=].code = #andere
-* ^expansion.contains[=].display = "Andere"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/LebtBeiCS"
-* ^expansion.contains[=].code = #mutter
-* ^expansion.contains[=].display = "Mutter"
-
 ValueSet: ChronischeErkrankungenVS
 Id: ChronischeErkrankungenVS
 Title: "ChronischeErkrankungenVS"
@@ -1886,28 +1867,6 @@ Description: "ValueSet, das verschiedene durchgeführte Operationen enthält."
 * ^expansion.contains[=].code = #sonstige_operation
 * ^expansion.contains[=].display = "Sonstige Operation"
 
-ValueSet: SEU_EF_WohnsituationKindVS
-Id: seu-ef-wohnsituation-kind-vs
-Title: "SEU_EF_Wohnsituation Kind ValueSet"
-Description: "ValueSet, das verschiedene Wohnsituationen des Kindes enthält."
-* include codes from system SEU_EF_WohnsituationKindCS
-* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
-* ^expansion.contains[0].system = Canonical(SEU_EF_WohnsituationKindCS)
-* ^expansion.contains[=].code = #bei_beiden_leiblichen_eltern
-* ^expansion.contains[=].display = "Bei beiden leiblichen Eltern"
-* ^expansion.contains[+].system = Canonical(SEU_EF_WohnsituationKindCS)
-* ^expansion.contains[=].code = #bei_alleinerziehendem_elternteil
-* ^expansion.contains[=].display = "Bei alleinerziehendem Elternteil"
-* ^expansion.contains[+].system = Canonical(SEU_EF_WohnsituationKindCS)
-* ^expansion.contains[=].code = #bei_elternteil_mit_partner
-* ^expansion.contains[=].display = "Bei Elternteil mit Partner"
-* ^expansion.contains[+].system = Canonical(SEU_EF_WohnsituationKindCS)
-* ^expansion.contains[=].code = #bei_grosseltern_oder_anderen
-* ^expansion.contains[=].display = "Bei Großeltern, Pflegeeltern, Adoptiveltern oder anderen"
-* ^expansion.contains[+].system = Canonical(SEU_EF_WohnsituationKindCS)
-* ^expansion.contains[=].code = #keine_angaben
-* ^expansion.contains[=].display = "Keine Angaben"
-
 CodeSystem: SEU_EF_UnfallCS
 Id: seu-ef-unfall-cs
 Title: "SEU_EF_Unfall CodeSystem"
@@ -2139,62 +2098,6 @@ Description: "ValueSet, das verschiedene Zeiträume enthält."
 * ^expansion.contains[+].system = Canonical(SEU_EF_ZeitraumCS)
 * ^expansion.contains[=].code = #1_2_jahre
 * ^expansion.contains[=].display = "1-2 Jahre"
-
-CodeSystem: SEU_EF_FamiliensituationCS
-Id: seu-ef-familiensituation-cs
-Title: "SEU_EF_Familiensituation CodeSystem"
-Description: "CodeSystem für die Angabe der Familiensituation."
-* #leibliche_eltern "Leibliche Eltern"
-* #mutter_mit_partner_in "Mutter mit Partner/in"
-* #mutter_alleinerziehend "Mutter alleinerziehend"
-* #vater_mit_partner_in "Vater mit Partner/in"
-* #vater_alleinerziehend "Vater alleinerziehend"
-* #wechselmodell "Wechselmodell"
-* #heim "Heim"
-* #pflegeeltern "Pflegeeltern"
-* #andere_familienmitglieder_verwandte "Andere Familienmitglieder/Verwandte"
-* #andere_personen "Andere Personen"
-* #keine_angabe "Keine Angabe"
-
-ValueSet: SEU_EF_FamiliensituationVS
-Id: seu-ef-familiensituation-vs
-Title: "SEU_EF_Familiensituation ValueSet"
-Description: "ValueSet, das verschiedene Familiensituationen enthält."
-* include codes from system SEU_EF_FamiliensituationCS
-* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
-* ^expansion.contains[0].system = Canonical(SEU_EF_FamiliensituationCS)
-* ^expansion.contains[=].code = #leibliche_eltern
-* ^expansion.contains[=].display = "Leibliche Eltern"
-* ^expansion.contains[+].system = Canonical(SEU_EF_FamiliensituationCS)
-* ^expansion.contains[=].code = #mutter_mit_partner_in
-* ^expansion.contains[=].display = "Mutter mit Partner/in"
-* ^expansion.contains[+].system = Canonical(SEU_EF_FamiliensituationCS)
-* ^expansion.contains[=].code = #mutter_alleinerziehend
-* ^expansion.contains[=].display = "Mutter alleinerziehend"
-* ^expansion.contains[+].system = Canonical(SEU_EF_FamiliensituationCS)
-* ^expansion.contains[=].code = #vater_mit_partner_in
-* ^expansion.contains[=].display = "Vater mit Partner/in"
-* ^expansion.contains[+].system = Canonical(SEU_EF_FamiliensituationCS)
-* ^expansion.contains[=].code = #vater_alleinerziehend
-* ^expansion.contains[=].display = "Vater alleinerziehend"
-* ^expansion.contains[+].system = Canonical(SEU_EF_FamiliensituationCS)
-* ^expansion.contains[=].code = #wechselmodell
-* ^expansion.contains[=].display = "Wechselmodell"
-* ^expansion.contains[+].system = Canonical(SEU_EF_FamiliensituationCS)
-* ^expansion.contains[=].code = #heim
-* ^expansion.contains[=].display = "Heim"
-* ^expansion.contains[+].system = Canonical(SEU_EF_FamiliensituationCS)
-* ^expansion.contains[=].code = #pflegeeltern
-* ^expansion.contains[=].display = "Pflegeeltern"
-* ^expansion.contains[+].system = Canonical(SEU_EF_FamiliensituationCS)
-* ^expansion.contains[=].code = #andere_familienmitglieder_verwandte
-* ^expansion.contains[=].display = "Andere Familienmitglieder/Verwandte"
-* ^expansion.contains[+].system = Canonical(SEU_EF_FamiliensituationCS)
-* ^expansion.contains[=].code = #andere_personen
-* ^expansion.contains[=].display = "Andere Personen"
-* ^expansion.contains[+].system = Canonical(SEU_EF_FamiliensituationCS)
-* ^expansion.contains[=].code = #keine_angabe
-* ^expansion.contains[=].display = "Keine Angabe"
 
 CodeSystem: SEU_EF_DauerCS
 Id: seu-ef-dauer-cs
@@ -2754,3 +2657,24 @@ Description: "PersonensorgeberechtigterZusammenlebendVS"
 * ^expansion.contains[+].system = Canonical(PersonensorgeberechtigterZusammenlebendCS)
 * ^expansion.contains[=].code = #zeitweise
 * ^expansion.contains[=].display = "Zeitweise"
+
+ValueSet: KrankenhausaufenthaltGrundVS
+Id: KrankenhausaufenthaltGrundVS
+Title: "KrankenhausaufenthaltGrundVS"
+Description: "ValueSet, das den Grund des Krankenhausaufenthaltes beschreibt. Es enthält die Kategorien: akute Erkrankung, chronische Krankheit, Unfall, stationäre Operation(en), und sonstiges. Dieses CodeSystem kann verwendet werden, um den Grund eines Krankenhausaufenthaltes zu kategorisieren."
+* include codes from system KrankenhausaufenthaltGrundCS
+* ^expansion.contains[+].system = Canonical(KrankenhausaufenthaltGrundCS)
+* ^expansion.contains[=].code = #akute_erkrankung
+* ^expansion.contains[=].display = "akute Erkrankung"
+* ^expansion.contains[+].system = Canonical(KrankenhausaufenthaltGrundCS)
+* ^expansion.contains[=].code = #chronische_krankheit
+* ^expansion.contains[=].display = "chronische Krankheit"
+* ^expansion.contains[+].system = Canonical(KrankenhausaufenthaltGrundCS)
+* ^expansion.contains[=].code = #unfall
+* ^expansion.contains[=].display = "Unfall"
+* ^expansion.contains[+].system = Canonical(KrankenhausaufenthaltGrundCS)
+* ^expansion.contains[=].code = #stationaere_operation
+* ^expansion.contains[=].display = "stationäre Operation(en)"
+* ^expansion.contains[+].system = Canonical(KrankenhausaufenthaltGrundCS)
+* ^expansion.contains[=].code = #sonstiges
+* ^expansion.contains[=].display = "sonstiges"

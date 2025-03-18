@@ -6,15 +6,6 @@ Title: "SEU-EF-NeinAbgeschlossenLaeuftGeplant"
 * #läuft "läuft z.Zt. Noch"
 * #geplant "geplant"
 
-CodeSystem: LebtBeiCS
-Id: LebtBeiCS
-Title: "LebtBeiCS"
-Description: "LebtBeiCS"
-* #eltern "Eltern"
-* #mutter "Mutter"
-* #vater "Vater"
-* #andere "Andere"
-
 CodeSystem: ChronischeErkrankungenCS
 Id: ChronischeErkrankungenCS
 Title: "ChronischeErkrankungenCS"
@@ -634,16 +625,6 @@ Description: "CodeSystem für die Angabe des Medienkonsums in Stunden."
 * #von_2_bis_4 "2 bis 4 Stunden"
 * #mehr_als_4 "Mehr als 4 Stunden"
 
-CodeSystem: SEU_EF_WohnsituationKindCS
-Id: seu-ef-wohnsituation-kind-cs
-Title: "SEU_EF_Wohnsituation Kind CodeSystem"
-Description: "CodeSystem für die Angabe der Wohnsituation des Kindes."
-* #bei_beiden_leiblichen_eltern "Bei beiden leiblichen Eltern"
-* #bei_alleinerziehendem_elternteil "Bei alleinerziehendem Elternteil"
-* #bei_elternteil_mit_partner "Bei Elternteil mit Partner"
-* #bei_grosseltern_oder_anderen "Bei Großeltern, Pflegeeltern, Adoptiveltern oder anderen"
-* #keine_angaben "Keine Angaben"
-
 CodeSystem: DauerStillenCS
 Id: DauerStillenCS
 Title: "DauerStillenCS"
@@ -707,3 +688,13 @@ Description: "WieOftTrainingCS"
 * #2_mal "2 mal"
 * #3_mal "3 mal"
 * #oefter "öfter"
+
+CodeSystem: KrankenhausaufenthaltGrundCS
+Id: KrankenhausaufenthaltGrundCS
+Title: "KrankenhausaufenthaltGrundCS"
+Description: "CodeSystem, das den Grund des Krankenhausaufenthaltes beschreibt. Es enthält die Kategorien: akute Erkrankung, chronische Krankheit, Unfall, stationäre Operation(en), und sonstiges. Dieses CodeSystem kann verwendet werden, um den Grund eines Krankenhausaufenthaltes zu kategorisieren."
+* #akute_erkrankung "akute Erkrankung"
+* #chronische_krankheit "chronische Krankheit"
+* #unfall "Unfall"
+* #stationaere_operation "stationäre Operation(en)"
+* #sonstiges "sonstiges"

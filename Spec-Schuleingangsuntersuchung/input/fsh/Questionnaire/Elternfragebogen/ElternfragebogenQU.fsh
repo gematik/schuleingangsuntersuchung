@@ -190,6 +190,11 @@ Description: "Elternbefragung"
     * insert enableWhenCode(1.5d, =, SEU_UB_AuswaehlbareElternspracheErweiterungCS, 98)
   * item[+]
     * insert addItem(1.6, #boolean, In Deutschland geboren)
+  // The same like 1.5, but with a dependency from 1.6
+  * item[+]
+    * insert addItemWithSource(1.6.2, #boolean, [[Geburtsland]], #DE-ST)
+    * insert enableWhenBoolean(1.6, =, false)
+    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
   * item[+]
     * insert addItem(1.6.1, #date, Seit wann wohnt das Kind in Deutschland?)
     * insert enableWhenBoolean(1.6, =, false)
@@ -210,6 +215,8 @@ Description: "Elternbefragung"
     * insert addItem(1.11, #string, Straße)
   * item[+]
     * insert addItem(1.11a, #string, Hausnummer)
+  * item[+]
+    * insert addItemWithSource(1.11b, #string, [[Straße und Hausnummer]], #DE-ST)
   * item[+]
     * insert addItem(1.12, #choice, [[Kind lebt hauptsächlich bei]])
     * answerValueSet = Canonical(LebtBeiVS)
@@ -820,6 +827,17 @@ Description: "Elternbefragung"
     * item[+]
       * insert addItem(8.15.1, #string, [[Detaillierte Angaben zum Krankenhausaufenthalt?]])
       * insert enableWhenBoolean(8.15, =, true)
+    * item[+]
+      * insert addItemWithSource(8.15.2, #integer, [[Wie oft wurde das Kind im Krankenhaus aufgenommen?]], #DE-ST)
+      * insert enableWhenBoolean(8.15, =, true)
+    * item[+]
+      * insert addItem(8.15.3, #string, [[Grund für den Krankenhausaufenthalt?]])
+      * insert enableWhenBoolean(8.15, =, true)
+    * item[+]
+      * insert addItem(8.15.3a, #choice, [[Grund des/der Krankenhausaufenthalt/e?]])
+      * insert enableWhenBoolean(8.15, =, true)
+      * answerValueSet = Canonical(KrankenhausaufenthaltGrundVS)
+      * repeats = true
   * item[+]
     * insert addItem(8.16, #boolean, [[Allergietest]])
   * item[+]
@@ -1123,6 +1141,9 @@ Description: "Elternbefragung"
     * item[+]
       * insert addItemWithSource(9.3a, #boolean, [[Frühförderung]], #DE-BB)
     * item[+]
+      * insert addItemWithSource(9.3b, #choice, [[Ambulante Frühförderung]], #DE-ST)
+      * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
+    * item[+]
       * insert addItem(9.4, #choice, [[Ergotherapie]])
       * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
     * item[+]
@@ -1240,6 +1261,9 @@ Description: "Elternbefragung"
       * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
     * item[+]
       * insert addItemWithSource(9a.3a, #boolean, [[Frühförderung]], #DE-BB)
+    * item[+]
+      * insert addItemWithSource(9a.3b, #choice, [[Ambulante Frühförderung]], #DE-ST)
+      * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
     * item[+]
       * insert addItem(9a.4, #choice, [[Ergotherapie]])
       * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
