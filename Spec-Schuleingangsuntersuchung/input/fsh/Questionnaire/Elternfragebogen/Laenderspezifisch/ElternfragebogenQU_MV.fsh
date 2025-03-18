@@ -30,25 +30,34 @@ Description: "Elternbefragung MV"
   * item[+]
     * insert addItem(1.1, #string, Nachname des Kindes)
     * insert initialExpression("%patient.name[0].family")
+    * required = true
   * item[+]
     * insert addItem(1.2, #string, Vorname des Kindes)
     * insert initialExpression("%patient.name[0].given[0]")
+    * required = true
   * item[+]
     * insert addItem(1.3, #date, Geburtsdatum)
     * insert initialExpression("%patient.birthdate")
+    * required = true
   * item[+]
     * insert addItem(1.4, #choice, Staatsangehörigkeit)
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
+    * required = true
   * item[+]
     * insert addItem(1.7, #string, Geburtsort)
+    * required = true
   * item[+]
     * insert addItem(1.9, #string, PLZ)
+    * required = true
   * item[+]
     * insert addItem(1.10, #string, Wohnort)
+    * required = true
   * item[+]
     * insert addItem(1.11, #string, Straße)
+    * required = true
   * item[+]
     * insert addItem(1.11a, #string, Hausnummer)
+    * required = true
 //********************************************
 // Personenbezogene Daten Personenberechtigter
 * item[+]
