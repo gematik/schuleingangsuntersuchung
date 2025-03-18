@@ -318,6 +318,8 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItemWithSource(3.1d, #integer, [[Aktuell im Haushalt lebende Kinder, inklusive des Schuhlpflichtigen]], #DE-RP)
   * item[+]
+    * insert addItemWithSource(3.1e, #integer, [[Anzahl der Geschwister (ohne einzuschulendes Kind)]], #DE-ST)
+  * item[+]
     * insert addItem(3.1.1, #group, Details Geschwister)
     * repeats = true
     * enableWhen[+]
