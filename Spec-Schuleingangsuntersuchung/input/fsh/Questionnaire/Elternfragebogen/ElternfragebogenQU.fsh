@@ -35,6 +35,7 @@ Description: "Elternbefragung"
 * contained[+] = ChronischeKrankheitenVS
 * contained[+] = UeberwiegendGesprocheneSpracheVS
 * contained[+] = EntwicklungVS
+* contained[+] = TagsNachtsSauberVS
 * contained[+] = AtopischeErkrankungenVS
 * contained[+] = AllgemeineBeschwerdenVS
 * contained[+] = ErwerbsstatusInclSonstigesVS
@@ -85,6 +86,8 @@ Description: "Elternbefragung"
 * contained[+] = SEU_UB_AntwortKindergartenBesuchVS
 * contained[+] = SEU_UB_KontaktDeutscheSpracheVS
 * contained[+] = SEU_UB_HaendigkeitVS
+* contained[+] = FreiesLaufenGelerntVS
+* contained[+] = SprechenGelerntVS
 * id = "SEU-Elternbefragung"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung"
 * title = "SEU Elternfragebogen Maximaldatensatz"
@@ -607,6 +610,9 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItemWithSource(7.3a, #boolean, [[Freies Laufen (bis 15 Monate)]], #DE-SL)
   * item[+]
+    * insert addItemWithSource(7.3b, #choice, [[Allein laufen gelernt]], #DE-ST)
+    * answerValueSet = Canonical(FreiesLaufenGelerntVS)
+  * item[+]
     * insert addItem(7.4, #integer, [[Erste Worte ab? (Monate)]])
   * item[+]
     * insert addItemWithSource(7.4a, #boolean, [[Erste Worte bis 1 Jahr]], #DE-SL)
@@ -615,8 +621,14 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItemWithSource(7.5a, #boolean, [[Kleine Sätze bis 2 Jahre]], #DE-SL)
   * item[+]
-    * answerValueSet = Canonical(EntwicklungVS)
+    * insert addItemWithSource(7.5b, #choice, [[Sprechen gelernt (mind. 2-Wort-Sätze, ca. 50 Wörter)]], #DE-ST)
+    * answerValueSet = Canonical(SprechenGelerntVS)
+  * item[+]
     * insert addItem(7.6a, #choice, [[Tags und nachts sauber]])
+    * answerValueSet = Canonical(EntwicklungVS)
+  * item[+]
+    * insert addItemWithSource(7.6b, #choice, [[Tags und nachts sauber]], #DE-ST)
+    * answerValueSet = Canonical(TagsNachtsSauberVS)
   * item[+]
     * insert addItem(7.6, #integer, [[Tagsüber ohne Windeln ab? (Jahre)]])
   * item[+]
@@ -913,6 +925,8 @@ Description: "Elternbefragung"
       * item[+]
         * insert addItemWithSource(8.27.2.1, #string, [[Sonstige Operationen?]], #DE-SL)
         * insert enableWhenCode(8.27.2, =, SEU_EF_OperationenCS, sonstige_operation)
+  * item[+]
+    * insert addItemWithSource(8.27a, #boolean, [[Ambulante Operation(en)]], #DE-ST)
   * item[+]
     * insert addItem(8.28a, #boolean, [[Hatte ihr Kind einen Unfall]])
   * item[+]

@@ -252,13 +252,6 @@ Description: "Dieses CodeSystem klassifiziert Sprachkenntnisse in Deutsch, ander
 * #andere "andere Sprache"
 * #deutsch_andere "Deutsch + andere Sprache"
 
-CodeSystem: EntwicklungCS
-Id: entwicklung-cs
-Title: "CodeSystem für Entwicklung"
-Description: "Dieses CodeSystem klassifiziert den Zeitpunkt der Entwicklung: 'bis zum 4. Lebensjahr' und 'später'."
-* #bis_zum_4 "bis zum 4. Lebensjahr"
-* #spaeter "später"
-
 CodeSystem: AtopischeErkrankungenCS
 Id: atopische-erkrankungen-cs
 Title: "CodeSystem für atopische/allergische Erkrankungen"

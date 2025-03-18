@@ -636,19 +636,6 @@ Description: "Dieses ValueSet beinhaltet eine Auswahl von Codes für die Klassif
 * ^expansion.contains[2].code = #deutsch_andere
 * ^expansion.contains[2].display = "Deutsch + andere Sprache"
 
-ValueSet: EntwicklungVS
-Id: entwicklung-vs
-Title: "ValueSet für Entwicklung"
-Description: "Dieses ValueSet beinhaltet Codes für die Klassifikation des Zeitpunkts der Entwicklung, definiert im zugehörigen CodeSystem."
-* include codes from system EntwicklungCS
-* ^expansion.timestamp = "2024-04-12T15:47:43+00:00"
-* ^expansion.contains[0].system = Canonical(EntwicklungCS)
-* ^expansion.contains[0].code = #bis_zum_4
-* ^expansion.contains[0].display = "bis zum 4. Lebensjahr"
-* ^expansion.contains[1].system = Canonical(EntwicklungCS)
-* ^expansion.contains[1].code = #spaeter
-* ^expansion.contains[1].display = "später"
-
 ValueSet: AtopischeErkrankungenVS
 Id: atopische-erkrankungen-vs
 Title: "ValueSet für atopische/allergische Erkrankungen"
