@@ -1,6 +1,6 @@
 {
   "resourceType": "Questionnaire",
-  "id": "SEU-Elternbefragung-Sachsen",
+  "id": "SEU-Elternbefragung-SN",
   "contained": [
     {
       "resourceType": "ValueSet",
@@ -711,7 +711,7 @@
       }
     }
   ],
-  "url": "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung",
+  "url": "https://www.oegd.de/fhir/seu/Questionnaire/ElternbefragungSN",
   "title": "SEU Elternfragebogen SN",
   "extension": [
     {

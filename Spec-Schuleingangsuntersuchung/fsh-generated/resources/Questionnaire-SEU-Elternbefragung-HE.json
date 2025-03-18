@@ -1,6 +1,6 @@
 {
   "resourceType": "Questionnaire",
-  "id": "SEU-Elternbefragung-Hessen",
+  "id": "SEU-Elternbefragung-HE",
   "contained": [
     {
       "resourceType": "ValueSet",
@@ -2018,7 +2018,7 @@
       }
     }
   ],
-  "url": "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung",
+  "url": "https://www.oegd.de/fhir/seu/Questionnaire/ElternbefragungHE",
   "title": "SEU Elternfragebogen HE",
   "extension": [
     {

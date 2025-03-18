@@ -51,7 +51,7 @@ Description: "Elternbefragung SL"
 * contained[+] = SEU_EF_FrequenzVS
 * contained[+] = SEU_EF_BildungsabschlussBBVS
 * id = "SEU-Elternbefragung-SL"
-* url = "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung"
+* url = "https://www.oegd.de/fhir/seu/Questionnaire/ElternbefragungSL"
 * title = "SEU Elternfragebogen SL"
 * insert launchContext("patient", #Patient, "Patientenkontext")
 * status = #draft

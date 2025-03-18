@@ -1,7 +1,7 @@
 {
   "resourceType": "Questionnaire",
   "id": "SEU-Elternbefragung-NI",
-  "url": "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung",
+  "url": "https://www.oegd.de/fhir/seu/Questionnaire/ElternbefragungNI",
   "title": "SEU Elternfragebogen NI",
   "extension": [
     {

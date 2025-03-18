@@ -15,8 +15,8 @@ Description: "Elternbefragung SN"
 * contained[+] = ChronischeKrankheitenVS
 * contained[+] = AtopischeErkrankungenVS
 * contained[+] = JaNeinWartelisteVS
-* id = "SEU-Elternbefragung-Sachsen"
-* url = "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung"
+* id = "SEU-Elternbefragung-SN"
+* url = "https://www.oegd.de/fhir/seu/Questionnaire/ElternbefragungSN"
 * title = "SEU Elternfragebogen SN"
 * insert launchContext("patient", #Patient, "Patientenkontext")
 * status = #draft

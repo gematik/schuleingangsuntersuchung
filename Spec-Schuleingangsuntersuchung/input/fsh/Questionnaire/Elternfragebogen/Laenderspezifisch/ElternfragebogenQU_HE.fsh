@@ -10,8 +10,8 @@ Description: "Elternbefragung HE"
 * contained[+] = ChronischeKrankheitenVS
 * contained[+] = AtopischeErkrankungenVS
 * contained[+] = SEU_EF_DauerHEVS
-* id = "SEU-Elternbefragung-Hessen"
-* url = "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung"
+* id = "SEU-Elternbefragung-HE"
+* url = "https://www.oegd.de/fhir/seu/Questionnaire/ElternbefragungHE"
 * title = "SEU Elternfragebogen HE"
 * insert launchContext("patient", #Patient, "Patientenkontext")
 * status = #draft

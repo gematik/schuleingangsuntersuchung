@@ -297,7 +297,7 @@
       }
     }
   ],
-  "url": "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung",
+  "url": "https://www.oegd.de/fhir/seu/Questionnaire/ElternbefragungBW",
   "title": "SEU Elternfragebogen BW",
   "extension": [
     {

@@ -6050,7 +6050,7 @@
       }
     }
   ],
-  "url": "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung",
+  "url": "https://www.oegd.de/fhir/seu/Questionnaire/ElternbefragungSL",
   "title": "SEU Elternfragebogen SL",
   "extension": [
     {

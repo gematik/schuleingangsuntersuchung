@@ -57,7 +57,7 @@ Description: "Elternbefragung BB"
 * contained[+] = DauerStillenVS
 * contained[+] = SEU_EF_ZeitdauerVS
 * id = "SEU-Elternbefragung-BB"
-* url = "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung"
+* url = "https://www.oegd.de/fhir/seu/Questionnaire/ElternbefragungBB"
 * title = "SEU Elternfragebogen BB"
 * insert launchContext("patient", #Patient, "Patientenkontext")
 * status = #draft

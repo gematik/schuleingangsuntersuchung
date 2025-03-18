@@ -1360,12 +1360,20 @@
     "endLine": 126
   },
   {
-    "outputFile": "Questionnaire-SEU-Elternbefragung-Hessen.json",
+    "outputFile": "Questionnaire-SEU-Elternbefragung-HE.json",
     "fshName": "Elternbefragung_HE",
     "fshType": "Instance",
     "fshFile": "Questionnaire/Elternfragebogen/Laenderspezifisch/ElternfragebogenQU_HE.fsh",
     "startLine": 1,
     "endLine": 254
+  },
+  {
+    "outputFile": "Questionnaire-SEU-Elternbefragung-MV.json",
+    "fshName": "ElternbefragungMV",
+    "fshType": "Instance",
+    "fshFile": "Questionnaire/Elternfragebogen/Laenderspezifisch/ElternfragebogenQU_MV.fsh",
+    "startLine": 1,
+    "endLine": 300
   },
   {
     "outputFile": "Questionnaire-SEU-Elternbefragung-NI.json",
@@ -1384,7 +1392,7 @@
     "endLine": 532
   },
   {
-    "outputFile": "Questionnaire-SEU-Elternbefragung-Sachsen.json",
+    "outputFile": "Questionnaire-SEU-Elternbefragung-SN.json",
     "fshName": "Elternbefragung_SN",
     "fshType": "Instance",
     "fshFile": "Questionnaire/Elternfragebogen/Laenderspezifisch/ElternfragebogenQU_SN.fsh",
