@@ -79,6 +79,10 @@ Description: "Elternbefragung"
 * contained[+] = BezirkeHHVS
 * contained[+] = PersonensorgeberechtigterBeziehungVS
 * contained[+] = PersonensorgeberechtigterZusammenlebendVS
+* contained[+] = SEU_UB_AntwortErwachseneVS
+* contained[+] = SEU_UB_AntwortKindergartenBesuchVS
+* contained[+] = SEU_UB_KontaktDeutscheSpracheVS
+* contained[+] = SEU_UB_HaendigkeitVS
 * id = "SEU-Elternbefragung"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung"
 * title = "SEU Elternfragebogen Maximaldatensatz"
@@ -352,6 +356,12 @@ Description: "Elternbefragung"
         * insert enableWhenBoolean(3.2.7, =, true)
         * insert addItem(3.2.7.1, #string, Welche Schilddrüsenerkrankung?)      
   * item[+]
+    * insert addItemWithSource(3.2a, #group, [[Gibt es in der Familie (Eltern, Geschwister)]], #DE-BY)
+    * item[+]
+      * insert addItemWithSource(3.2a.2, #boolean, [[► eine Lese-Rechtschreib-Schwäche (Legasthenie)]], #DE-BY)
+    * item[+]
+      * insert addItemWithSource(3.2a.3, #boolean, [[► eine Rechenschwäche (Dyskalkulie)]], #DE-BY)
+  * item[+]
     * insert addItemWithSource(3.3, #integer, Aktuell im Haushalt lebende Erwachsene, #DE-BB) 
 //********************************************
 // Kinderbetreuung
@@ -362,9 +372,14 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItem(4.0b, #boolean, Ist das Kind in einem Kindergarten/einer Kindertageseinrichtung?)
   * item[+]
+    * insert addItemWithSource(4.0b.b, #boolean, [[Besucht Ihr Kind derzeit einen Kindergarten?]], #DE-BY)
+  * item[+]
     * insert addItemWithSource(4.0c, #integer, [[Wie viele Stunden ist das Kind pro Woche in einer Kindertageseinrichtung?]], #DE-BW)
   * item[+]
     * insert addItem(4.1, #integer, [[Besuch Kita/Krippe (Dauer in Jahren)]])
+  * item[+]
+    * insert addItemWithSource(4.1z, #choice, [[Dauer Krippen-/ KITA-/ Kindergartenbesuch (in Jahren)]], #DE-BY)
+    * answerValueSet = Canonical(SEU_UB_AntwortKindergartenBesuchVS)
   * item[+]
     * insert addItemWithSource(4.1a, #choice, Wie alt war das Kind bei der Aufnahme in die KiTa?, #DE-SL)
     * answerValueSet = Canonical(SEU_EF_AlterKindVS)
@@ -540,6 +555,14 @@ Description: "Elternbefragung"
       * insert enableWhenBoolean(6.4, =, true)
   * item[+]
     * insert addItem(6.5, #boolean, [[Kontakt zu Deutschsprechenden seit Geburt?]])
+  * item[+] insert addItemWithSource(6.5a, #choice, [[Kontakt mit der deutschen Sprache]], #DE-BY)
+    * answerValueSet = Canonical(SEU_UB_KontaktDeutscheSpracheVS)
+  * item[+] insert addItemWithSource(6.5a.g, #group, [[Kontakt mit der deutschen Sprache]], #DE-BY)
+    * insert enableWhenCode(6.5a, =, SEU_UB_KontaktDeutscheSpracheCS, 2)
+    * item[+] insert addItemWithSource(6.5a.g.1, #integer, [[Kontakt mit der deutschen Sprache ab welchem Alter (in Jahren)]], #DE-BY)
+      * insert uunit(a, "Jahre")
+    * item[+] insert addItemWithSource(6.5a.g.2, #integer, [[Kontakt mit der deutschen Sprache ab welchem Alter (in Monaten)]], #DE-BY)
+      * insert uunit(mo, "Monate")
   * item[+]
     * insert addItem(6.6, #group, [[Kontakt zu Deutschprechenden seit Alter:]])
     * enableWhen[+]
@@ -592,6 +615,8 @@ Description: "Elternbefragung"
   * item[+]
     * answerValueSet = Canonical(RechtsLinksHaenderVS)
     * insert addItem(7.9, #choice, [[Links- oder Rechtshänder]])
+  * item[+] insert addItemWithSource(7.9a, #choice, [[Händigkeit]], #DE-BY)
+    * answerValueSet = Canonical(SEU_UB_HaendigkeitVS)
   * item[+]
     * insert addItem(7.10, #text, [[Angabe zu Entwicklungsverzögerungen, bspw. beim Erlernen des Sitzens/Laufens]])
   * item[+]
@@ -600,6 +625,8 @@ Description: "Elternbefragung"
     * answerValueSet = Canonical(AuffaelligkeitVerhaltenVS)
   * item[+]
     * insert addItemWithSource(7.11a, #boolean, [[Auffälligkeit des Verhaltens]], #DE-HE)
+  * item[+]
+    * insert addItemWithSource(7.11b, #boolean, [[Würden Sie sagen, dass Ihr Kind insgesamt gesehen in einem oder mehreren der folgenden Bereiche Schwierigkeiten hat: Stimmung (bedrückt, ängstlich, schwankend, aufbrausend), Konzentration (kann nicht lange stillsitzen, hört beim Vorlesen nicht ausdauernd zu), Verhalten, Umgang mit Anderen?]], #DE-BY)
   * item[+]
     * insert addItem(7.12, #boolean, [[Sorgen Sie sich um die Entwicklung ihres Kindes?]])
     * item[+]
@@ -692,6 +719,18 @@ Description: "Elternbefragung"
         * insert addItem(8.9.G.cochlea.G.1, #choice, [[Cochleaimplantat-Seite]])
       * item[+]
         * insert addItem(8.9.G.cochlea.G.2, #date, [[Beginn des Tragens]])
+  * item[+]
+    * insert addItemWithSource(8.9a, #choice, [[Angeborene schwere Hörstörung]], #DE-BY)
+    * answerValueSet = Canonical(SEU_UB_JaNeinKeineAngabeVS)
+  * item[+] insert addItemWithSource(8.9a.g, #group, [[Zusatzangaben zur Hörstörung]], #DE-BY)
+    * insert enableWhenCode(8.9a, =, SEU_UB_JaNeinGeplantKeineAngabeCS, 1)
+    * item[+] insert addItemWithSource(8.9a.g.1, #choice, [[Angeborene Hörstörung]], #DE-BY)
+      * answerValueSet = Canonical(SEU_UB_AntwortenHoerstoerungVS)
+    * item[+] insert addItemWithSource(8.9a.g.2, #choice, [[mit Hörgerät versorgt]], #DE-BY)
+      * answerValueSet = Canonical(SEU_UB_AntwortenHoerstoerungVS)
+    * item[+] insert addItemWithSource(8.9a.g.3, #choice, [[mit Cochlea-Implant versorgt]], #DE-BY)
+      * answerValueSet = Canonical(SEU_UB_AntwortenHoerstoerungVS)
+    * item[+] insert addItemWithSource(8.9a.g.4, #boolean, [[Elterneinwilligung mitgegeben (Hören)]], #DE-BY)
   * item[+]
     * insert addItem(8.10g, #group, [[Stoffwechsel & Hormonstörungen]])
     * repeats = true
@@ -1406,6 +1445,9 @@ Description: "Elternbefragung"
     * insert addItem(13.8, #integer, Anzahl der Erwachsenen im Haushalt)
   * item[+]
     * insert addItem(13.8a, #integer, Anzahl der Kinder und Erwachsenen im Haushalt)
+  * item[+]
+    * insert addItemWithSource(13.8b, #choice, [[Anzahl Erwachsene im Haushalt]], #DE-BY)
+    * answerValueSet = Canonical(SEU_UB_AntwortErwachseneVS)
   * item[+]
     * insert addItem(13.9, #date, Datum seit dem der 1. Elternteil in Deutschland lebt.)
   * item[+]
