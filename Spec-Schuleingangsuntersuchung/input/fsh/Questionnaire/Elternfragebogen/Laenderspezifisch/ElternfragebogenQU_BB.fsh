@@ -119,8 +119,8 @@ Description: "Elternbefragung BB"
     * answerValueSet = Canonical(SEU_EF_FamiliensituationVS)
   * item[+]
     * insert addItemWithSource(1.12a.1, #string, [[Kind lebt hauptsächlich bei anderen]], #DE-BB)
-    * insert enableWhenCode(1.12a, =, SEU_EF_FamiliensituationCS, andere_familienmitglieder_verwandte)
-    * insert enableWhenCode(1.12a, =, SEU_EF_FamiliensituationCS, andere_personen)
+    * insert enableWhenCode(1.12a, =, WohnsituationKindCS, andere_familienmitglieder)
+    * insert enableWhenCode(1.12a, =, WohnsituationKindCS, andere)
     * enableBehavior = #any
 //********************************************
 // Kinderbetreuung
