@@ -6,18 +6,6 @@ Title: "SEU-EF-NeinAbgeschlossenLaeuftGeplant"
 * #läuft "läuft z.Zt. Noch"
 * #geplant "geplant"
 
-CodeSystem: ChronischeErkrankungenCS
-Id: ChronischeErkrankungenCS
-Title: "ChronischeErkrankungenCS"
-Description: "ChronischeErkrankungenCS"
-* #allergie "Allergie"
-* #fettstoffwechselstörung "Fettstoffwechselstörung"
-* #bluthochdruck "Bluthochdruck"
-* #schlaganfall "Schlaganfall"
-* #herzinfarkt "Herzinfarkt"
-* #zuckerkrankheit "Zuckerkrankheit"
-* #übergewicht "Übergewicht"
-
 CodeSystem: JaNeinAngemeldetCS
 Id: JaNeinAngemeldetCS
 Title: "JaNeinAngemeldetCS"
@@ -85,63 +73,6 @@ Description: "StoffwechselstoerungCS"
 * #mukoviszidose "Mukoviszidose"
 * #diab_mell_typ_i "Diab. mell. Typ I"
 * #diab_mell_typ_ii "Diab. mell. Typ II"
-
-CodeSystem: ErkrankungCS
-Id: ErkrankungCS
-Title: "ErkrankungCS"
-Description: "ErkrankungCS"
-* #epilepsie "Epilepsie"
-* #ads_adhs "ADS/ADHS"
-* #sprachauffälligkeit "Sprachauffälligkeit"
-* #sehstörung "Sehstörung"
-* #hörstörung "Hörstörung"
-* #herzfehler "Herzfehler"
-* #nieren_harnwegerkrankung "Nieren/Harnwegerkrankung"
-* #allergischer_schnupfen "Allergischer Schnupfen"
-* #asthma "Asthma"
-* #allergische_hauterkrankung "Allergische Hauterkrankung"
-* #neurodermitis "Neurodermitis"
-* #nahrungsmittelallergie "Nahrungsmittelallergie"
-* #krebserkrankung "Krebserkrankung"
-* #hüfterkrankung "Hüfterkrankung"
-* #wirbelsäulenleiden "Wirbelsäulenleiden"
-* #bewegungsstörung "Bewegungsstörung"
-* #diabetes "Diabetes"
-* #ass "Autismus-Spektrum-Störung (ASS)"
-* #schilddrüsenfunktionsstörung "Schilddrüsenfunktionsstörung"
-
-CodeSystem: InfektionsKrankheitCS
-Id: InfektionsKrankheitCS
-Title: "InfektionsKrankheitCS"
-Description: "InfektionsKrankheitCS"
-* #covid_19 "COVID-19"
-* #hand_fuß_mund_krankheit "Hand-Fuß-Mund-Krankheit"
-* #borreliose "Borreliose"
-* #hepatitis_b "Hepatitis B"
-* #hirnhautentzündung "Hirnhautentzündung"
-* #keuchhusten "Keuchhusten"
-* #masern "Masern"
-* #mumps "Mumps"
-* #ringelröten "Ringelröten"
-* #röteln "Röteln"
-* #rotavirus_infektion "Rotavirus-Infektion"
-* #scharlach "Scharlach"
-* #windpocken "Windpocken"
-
-CodeSystem: ErkrankungenLetztesJahrCS
-Id: ErkrankungenLetztesJahrCS
-Title: "ErkrankungenLetztesJahrCS"
-Description: "ErkrankungenLetztesJahrCS"
-* #mittelohrentzündung "Mittelohrentzündung"
-* #hals_mandelentzündung "Hals-/Mandelentzündung"
-* #pseudokrupp_anfall "Pseudokrupp-Anfall"
-* #bronchitis "Bronchitis"
-* #lungenentzündung "Lungenentzündung"
-* #magen_darm_infektion "Magen-Darm-Infektion"
-* #fieberkrämpfe "Fieberkrämpfe"
-* #cerebraler_krampfanfall "Cerebraler Krampfanfall"
-* #blasen_harnwegsentzündung "Blasen/Harnwegsentzündung"
-* #verbrennungen "Verbrennungen"
 
 CodeSystem: PflegegradCS
 Id: PflegegradCS
@@ -232,18 +163,6 @@ Description: "FamilienrolleCS"
 * #geschwister "Geschwister"
 * #andere_person "Andere Person"
 
-CodeSystem: ChronischeKrankheiten
-Id: chronische-krankheiten
-Title: "CodeSystem für chronische Krankheiten"
-Description: "Dieses CodeSystem beinhaltet Codes für häufige chronische Krankheiten."
-* #asthma "Asthma bronchiale"
-* #rheuma "Rheuma"
-* #diabetes "Diabetes"
-* #epilepsie "Epilepsie"
-* #neurodermitis "Neurodermitis"
-* #adhs "Aufmerksamkeitsdefizit-/Hyperaktivitätsstörung (ADHS)"
-* #sonstiges "Sonstige chronische Krankheiten"
-
 CodeSystem: UeberwiegendGesprocheneSpracheCS
 Id: ueberwiegend-gesprochene-sprache-cs
 Title: "CodeSystem für überwiegend gesprochene Sprachen"
@@ -251,19 +170,6 @@ Description: "Dieses CodeSystem klassifiziert Sprachkenntnisse in Deutsch, ander
 * #deutsch "Deutsch"
 * #andere "andere Sprache"
 * #deutsch_andere "Deutsch + andere Sprache"
-
-CodeSystem: AtopischeErkrankungenCS
-Id: atopische-erkrankungen-cs
-Title: "CodeSystem für atopische/allergische Erkrankungen"
-Description: "Dieses CodeSystem klassifiziert die Kategorie der atopischen/allergischen Erkrankungen sowie spezifische Allergieauslöser: Nahrungsmittel, Pollen, Hausstaubmilben, Schimmelpilze, Tierhaare, Medikamente und Sonstiges."
-* #atopische_allergische "Atopische/Allergische Erkrankungen"
-* #nahrungsmittel "Nahrungsmittelallergien"
-* #pollen "Pollenallergien"
-* #hausstaubmilben "Hausstaubmilbenallergien"
-* #schimmelpilze "Schimmelpilzallergien"
-* #tierhaare "Tierhaarallergien"
-* #medikamente "Medikamentenallergien"
-* #sonstiges "Sonstige atopische/allergische Erkrankungen"
 
 CodeSystem: AllgemeineBeschwerdenCS
 Id: allgemeine-beschwerden-cs

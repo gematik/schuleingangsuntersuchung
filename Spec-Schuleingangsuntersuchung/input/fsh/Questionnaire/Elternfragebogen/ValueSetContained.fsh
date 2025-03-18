@@ -17,34 +17,6 @@ Description: "SEU-EF-NeinAbgeschlossenLaeuftGeplantVS"
 * ^expansion.contains[=].code = #geplant
 * ^expansion.contains[=].display = "geplant"
 
-ValueSet: ChronischeErkrankungenVS
-Id: ChronischeErkrankungenVS
-Title: "ChronischeErkrankungenVS"
-Description: "ChronischeErkrankungenVS"
-* include codes from system ChronischeErkrankungenCS
-* ^expansion.timestamp = "2024-04-04T10:10:32+00:00"
-* ^expansion.contains[0].system = "https://www.oegd.de/fhir/seu/CodeSystem/ChronischeErkrankungenCS"
-* ^expansion.contains[=].code = #allergie
-* ^expansion.contains[=].display = "Allergie"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ChronischeErkrankungenCS"
-* ^expansion.contains[=].code = #fettstoffwechselstörung
-* ^expansion.contains[=].display = "Fettstoffwechselstörung"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ChronischeErkrankungenCS"
-* ^expansion.contains[=].code = #bluthochdruck
-* ^expansion.contains[=].display = "Bluthochdruck"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ChronischeErkrankungenCS"
-* ^expansion.contains[=].code = #schlaganfall
-* ^expansion.contains[=].display = "Schlaganfall"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ChronischeErkrankungenCS"
-* ^expansion.contains[=].code = #herzinfarkt
-* ^expansion.contains[=].display = "Herzinfarkt"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ChronischeErkrankungenCS"
-* ^expansion.contains[=].code = #zuckerkrankheit
-* ^expansion.contains[=].display = "Zuckerkrankheit"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ChronischeErkrankungenCS"
-* ^expansion.contains[=].code = #übergewicht
-* ^expansion.contains[=].display = "Übergewicht"
-
 ValueSet: JaNeinAngemeldetVS
 Id: JaNeinAngemeldetVS
 Title: "JaNeinAngemeldetVS"
@@ -255,195 +227,6 @@ Description: "StoffwechselstoerungVS"
 * ^expansion.contains[=].code = #diab_mell_typ_ii
 * ^expansion.contains[=].display = "Diab. mell. Typ II"
 
-ValueSet: ErkrankungVS
-Id: ErkrankungVS
-Title: "ErkrankungVS"
-Description: "ErkrankungVS"
-* include codes from system ErkrankungCS
-* ^expansion.timestamp = "2024-04-04T10:55:53+00:00"
-* ^expansion.contains[0].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS"
-* ^expansion.contains[=].code = #epilepsie
-* ^expansion.contains[=].display = "Epilepsie"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS"
-* ^expansion.contains[=].code = #ads_adhs
-* ^expansion.contains[=].display = "ADS/ADHS"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS"
-* ^expansion.contains[=].code = #sprachauffälligkeit
-* ^expansion.contains[=].display = "Sprachauffälligkeit"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS"
-* ^expansion.contains[=].code = #sehstörung
-* ^expansion.contains[=].display = "Sehstörung"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS"
-* ^expansion.contains[=].code = #hörstörung
-* ^expansion.contains[=].display = "Hörstörung"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS"
-* ^expansion.contains[=].code = #herzfehler
-* ^expansion.contains[=].display = "Herzfehler"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS"
-* ^expansion.contains[=].code = #nieren_harnwegerkrankung
-* ^expansion.contains[=].display = "Nieren/Harnwegerkrankung"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS"
-* ^expansion.contains[=].code = #allergischer_schnupfen
-* ^expansion.contains[=].display = "Allergischer Schnupfen"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS"
-* ^expansion.contains[=].code = #asthma
-* ^expansion.contains[=].display = "Asthma"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS"
-* ^expansion.contains[=].code = #allergische_hauterkrankung
-* ^expansion.contains[=].display = "Allergische Hauterkrankung"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS"
-* ^expansion.contains[=].code = #neurodermitis
-* ^expansion.contains[=].display = "Neurodermitis"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS"
-* ^expansion.contains[=].code = #nahrungsmittelallergie
-* ^expansion.contains[=].display = "Nahrungsmittelallergie"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS"
-* ^expansion.contains[=].code = #krebserkrankung
-* ^expansion.contains[=].display = "Krebserkrankung"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS"
-* ^expansion.contains[=].code = #hüfterkrankung
-* ^expansion.contains[=].display = "Hüfterkrankung"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS"
-* ^expansion.contains[=].code = #wirbelsäulenleiden
-* ^expansion.contains[=].display = "Wirbelsäulenleiden"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS"
-* ^expansion.contains[=].code = #bewegungsstörung
-* ^expansion.contains[=].display = "Bewegungsstörung"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS"
-* ^expansion.contains[=].code = #diabetes
-* ^expansion.contains[=].display = "Diabetes"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS"
-* ^expansion.contains[=].code = #ass
-* ^expansion.contains[=].display = "Autismus-Spektrum-Störung (ASS)"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS"
-* ^expansion.contains[=].code = #schilddrüsenfunktionsstörung
-* ^expansion.contains[=].display = "Schilddrüsenfunktionsstörung"
-
-ValueSet: InfektionsKrankheitVS
-Id: InfektionsKrankheitVS
-Title: "InfektionsKrankheitVS"
-Description: "InfektionsKrankheitVS"
-* include codes from system InfektionsKrankheitCS
-* ^expansion.timestamp = "2024-04-04T11:02:42+00:00"
-* ^expansion.contains[0].system = "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS"
-* ^expansion.contains[=].code = #covid_19
-* ^expansion.contains[=].display = "COVID-19"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS"
-* ^expansion.contains[=].code = #hand_fuß_mund_krankheit
-* ^expansion.contains[=].display = "Hand-Fuß-Mund-Krankheit"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS"
-* ^expansion.contains[=].code = #borreliose
-* ^expansion.contains[=].display = "Borreliose"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS"
-* ^expansion.contains[=].code = #hepatitis_b
-* ^expansion.contains[=].display = "Hepatitis B"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS"
-* ^expansion.contains[=].code = #hirnhautentzündung
-* ^expansion.contains[=].display = "Hirnhautentzündung"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS"
-* ^expansion.contains[=].code = #keuchhusten
-* ^expansion.contains[=].display = "Keuchhusten"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS"
-* ^expansion.contains[=].code = #masern
-* ^expansion.contains[=].display = "Masern"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS"
-* ^expansion.contains[=].code = #mumps
-* ^expansion.contains[=].display = "Mumps"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS"
-* ^expansion.contains[=].code = #ringelröten
-* ^expansion.contains[=].display = "Ringelröten"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS"
-* ^expansion.contains[=].code = #röteln
-* ^expansion.contains[=].display = "Röteln"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS"
-* ^expansion.contains[=].code = #rotavirus_infektion
-* ^expansion.contains[=].display = "Rotavirus-Infektion"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS"
-* ^expansion.contains[=].code = #scharlach
-* ^expansion.contains[=].display = "Scharlach"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS"
-* ^expansion.contains[=].code = #windpocken
-* ^expansion.contains[=].display = "Windpocken"
-
-ValueSet: ErkrankungenLetztesJahrVS
-Id: ErkrankungenLetztesJahrVS
-Title: "ErkrankungenLetztesJahrVS"
-Description: "ErkrankungenLetztesJahrVS"
-* ErkrankungenLetztesJahrCS#mittelohrentzündung "Mittelohrentzündung"
-* ErkrankungenLetztesJahrCS#hals_mandelentzündung "Hals-/Mandelentzündung"
-* ErkrankungenLetztesJahrCS#pseudokrupp_anfall "Pseudokrupp-Anfall"
-* ErkrankungenLetztesJahrCS#bronchitis "Bronchitis"
-* ErkrankungenLetztesJahrCS#lungenentzündung "Lungenentzündung"
-* ErkrankungenLetztesJahrCS#magen_darm_infektion "Magen-Darm-Infektion"
-* ErkrankungenLetztesJahrCS#fieberkrämpfe "Fieberkrämpfe"
-* ErkrankungenLetztesJahrCS#cerebraler_krampfanfall "Cerebraler Krampfanfall"
-* ErkrankungenLetztesJahrCS#blasen_harnwegsentzündung "Blasen/Harnwegsentzündung"
-* ^expansion.timestamp = "2024-04-04T11:07:53+00:00"
-* ^expansion.contains[0].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungenLetztesJahrCS"
-* ^expansion.contains[=].code = #mittelohrentzündung
-* ^expansion.contains[=].display = "Mittelohrentzündung"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungenLetztesJahrCS"
-* ^expansion.contains[=].code = #hals_mandelentzündung
-* ^expansion.contains[=].display = "Hals-/Mandelentzündung"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungenLetztesJahrCS"
-* ^expansion.contains[=].code = #pseudokrupp_anfall
-* ^expansion.contains[=].display = "Pseudokrupp-Anfall"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungenLetztesJahrCS"
-* ^expansion.contains[=].code = #bronchitis
-* ^expansion.contains[=].display = "Bronchitis"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungenLetztesJahrCS"
-* ^expansion.contains[=].code = #lungenentzündung
-* ^expansion.contains[=].display = "Lungenentzündung"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungenLetztesJahrCS"
-* ^expansion.contains[=].code = #magen_darm_infektion
-* ^expansion.contains[=].display = "Magen-Darm-Infektion"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungenLetztesJahrCS"
-* ^expansion.contains[=].code = #fieberkrämpfe
-* ^expansion.contains[=].display = "Fieberkrämpfe"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungenLetztesJahrCS"
-* ^expansion.contains[=].code = #cerebraler_krampfanfall
-* ^expansion.contains[=].display = "Cerebraler Krampfanfall"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungenLetztesJahrCS"
-* ^expansion.contains[=].code = #blasen_harnwegsentzündung
-* ^expansion.contains[=].display = "Blasen/Harnwegsentzündung"
-
-ValueSet: ErkrankungenLetztesJahrPlusVerbrennungenVS
-Id: ErkrankungenLetztesJahrPlusVerbrennungenVS
-Title: "ErkrankungenLetztesJahrPlusVerbrennungenVS"
-Description: "ErkrankungenLetztesJahrPlusVerbrennungenVS"
-* include codes from system ErkrankungenLetztesJahrCS
-* ^expansion.timestamp = "2024-04-04T11:07:53+00:00"
-* ^expansion.contains[0].system = Canonical(ErkrankungenLetztesJahrCS)
-* ^expansion.contains[=].code = #mittelohrentzündung
-* ^expansion.contains[=].display = "Mittelohrentzündung"
-* ^expansion.contains[+].system = Canonical(ErkrankungenLetztesJahrCS)
-* ^expansion.contains[=].code = #hals_mandelentzündung
-* ^expansion.contains[=].display = "Hals-/Mandelentzündung"
-* ^expansion.contains[+].system = Canonical(ErkrankungenLetztesJahrCS)
-* ^expansion.contains[=].code = #pseudokrupp_anfall
-* ^expansion.contains[=].display = "Pseudokrupp-Anfall"
-* ^expansion.contains[+].system = Canonical(ErkrankungenLetztesJahrCS)
-* ^expansion.contains[=].code = #bronchitis
-* ^expansion.contains[=].display = "Bronchitis"
-* ^expansion.contains[+].system = Canonical(ErkrankungenLetztesJahrCS)
-* ^expansion.contains[=].code = #lungenentzündung
-* ^expansion.contains[=].display = "Lungenentzündung"
-* ^expansion.contains[+].system = Canonical(ErkrankungenLetztesJahrCS)
-* ^expansion.contains[=].code = #magen_darm_infektion
-* ^expansion.contains[=].display = "Magen-Darm-Infektion"
-* ^expansion.contains[+].system = Canonical(ErkrankungenLetztesJahrCS)
-* ^expansion.contains[=].code = #fieberkrämpfe
-* ^expansion.contains[=].display = "Fieberkrämpfe"
-* ^expansion.contains[+].system = Canonical(ErkrankungenLetztesJahrCS)
-* ^expansion.contains[=].code = #cerebraler_krampfanfall
-* ^expansion.contains[=].display = "Cerebraler Krampfanfall"
-* ^expansion.contains[+].system = Canonical(ErkrankungenLetztesJahrCS)
-* ^expansion.contains[=].code = #blasen_harnwegsentzündung
-* ^expansion.contains[=].display = "Blasen/Harnwegsentzündung"
-* ^expansion.contains[+].system = Canonical(ErkrankungenLetztesJahrCS)
-* ^expansion.contains[=].code = #verbrennungen
-* ^expansion.contains[=].display = "Verbrennungen"
-
 ValueSet: PflegegradVS
 Id: PflegegradVS
 Title: "PflegegradVS"
@@ -591,35 +374,6 @@ Description: "FamilienrolleVS"
 * ^expansion.contains[=].code = #andere_person
 * ^expansion.contains[=].display = "Andere Person"
 
-
-ValueSet: ChronischeKrankheitenVS
-Id: chronische-krankheiten-vs
-Title: "ValueSet für chronische Krankheiten"
-Description: "Dieses ValueSet beinhaltet eine Auswahl von Codes für häufige chronische Krankheiten, definiert im zugehörigen CodeSystem."
-* include codes from system ChronischeKrankheiten
-* ^expansion.timestamp = "2024-04-12T15:47:43+00:00"
-* ^expansion.contains[0].system = Canonical(ChronischeKrankheiten)
-* ^expansion.contains[0].code = #asthma
-* ^expansion.contains[0].display = "Asthma bronchiale"
-* ^expansion.contains[1].system = Canonical(ChronischeKrankheiten)
-* ^expansion.contains[1].code = #rheuma
-* ^expansion.contains[1].display = "Rheuma"
-* ^expansion.contains[2].system = Canonical(ChronischeKrankheiten)
-* ^expansion.contains[2].code = #diabetes
-* ^expansion.contains[2].display = "Diabetes"
-* ^expansion.contains[3].system = Canonical(ChronischeKrankheiten)
-* ^expansion.contains[3].code = #epilepsie
-* ^expansion.contains[3].display = "Epilepsie"
-* ^expansion.contains[4].system = Canonical(ChronischeKrankheiten)
-* ^expansion.contains[4].code = #neurodermitis
-* ^expansion.contains[4].display = "Neurodermitis"
-* ^expansion.contains[5].system = Canonical(ChronischeKrankheiten)
-* ^expansion.contains[5].code = #adhs
-* ^expansion.contains[5].display = "Aufmerksamkeitsdefizit-/Hyperaktivitätsstörung (ADHS)"
-* ^expansion.contains[6].system = Canonical(ChronischeKrankheiten)
-* ^expansion.contains[6].code = #sonstiges
-* ^expansion.contains[6].display = "Sonstige chronische Krankheiten"
-
 ValueSet: UeberwiegendGesprocheneSpracheVS
 Id: ueberwiegend-gesprochene-sprache-vs
 Title: "ValueSet für überwiegend gesprochene Sprachen"
@@ -635,37 +389,6 @@ Description: "Dieses ValueSet beinhaltet eine Auswahl von Codes für die Klassif
 * ^expansion.contains[2].system = Canonical(UeberwiegendGesprocheneSpracheCS)
 * ^expansion.contains[2].code = #deutsch_andere
 * ^expansion.contains[2].display = "Deutsch + andere Sprache"
-
-ValueSet: AtopischeErkrankungenVS
-Id: atopische-erkrankungen-vs
-Title: "ValueSet für atopische/allergische Erkrankungen"
-Description: "Dieses ValueSet beinhaltet eine Auswahl von Codes für die Klassifikation von atopischen/allergischen Erkrankungen, definiert im zugehörigen CodeSystem."
-* include codes from system AtopischeErkrankungenCS
-* ^expansion.timestamp = "2024-04-12T15:47:43+00:00"
-* ^expansion.contains[0].system = Canonical(AtopischeErkrankungenCS)
-* ^expansion.contains[0].code = #atopische_allergische
-* ^expansion.contains[0].display = "Atopische/Allergische Erkrankungen"
-* ^expansion.contains[1].system = Canonical(AtopischeErkrankungenCS)
-* ^expansion.contains[1].code = #nahrungsmittel
-* ^expansion.contains[1].display = "Nahrungsmittelallergien"
-* ^expansion.contains[2].system = Canonical(AtopischeErkrankungenCS)
-* ^expansion.contains[2].code = #pollen
-* ^expansion.contains[2].display = "Pollenallergien"
-* ^expansion.contains[3].system = Canonical(AtopischeErkrankungenCS)
-* ^expansion.contains[3].code = #hausstaubmilben
-* ^expansion.contains[3].display = "Hausstaubmilbenallergien"
-* ^expansion.contains[4].system = Canonical(AtopischeErkrankungenCS)
-* ^expansion.contains[4].code = #schimmelpilze
-* ^expansion.contains[4].display = "Schimmelpilzallergien"
-* ^expansion.contains[5].system = Canonical(AtopischeErkrankungenCS)
-* ^expansion.contains[5].code = #tierhaare
-* ^expansion.contains[5].display = "Tierhaarallergien"
-* ^expansion.contains[6].system = Canonical(AtopischeErkrankungenCS)
-* ^expansion.contains[6].code = #medikamente
-* ^expansion.contains[6].display = "Medikamentenallergien"
-* ^expansion.contains[7].system = Canonical(AtopischeErkrankungenCS)
-* ^expansion.contains[7].code = #sonstiges
-* ^expansion.contains[7].display = "Sonstige atopische/allergische Erkrankungen"
 
 ValueSet: AllgemeineBeschwerdenVS
 Id: allgemeine-beschwerden-vs
@@ -688,7 +411,6 @@ Description: "Dieses ValueSet beinhaltet eine Auswahl von Codes für die Klassif
 * ^expansion.contains[4].system = Canonical(AllgemeineBeschwerdenCS)
 * ^expansion.contains[4].code = #sonstige
 * ^expansion.contains[4].display = "Sonstige Beschwerden"
-
 
 ValueSet: DeuevAnlage8LaenderkennzeichenVS
 Id: DeuevAnlage8LaenderkennzeichenVS

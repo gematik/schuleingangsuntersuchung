@@ -92,6 +92,9 @@ Description: "Elternbefragung"
 * contained[+] = KinderbetreuungVS
 * contained[+] = KitaEintrittsalterVS
 * contained[+] = RauchortVS
+* contained[+] = AErztlichFestgestellteKrankheitenVS
+* contained[+] = FruehereErkrankungenVS
+* contained[+] = DerzeitigeErkrankungenVS
 * id = "SEU-Elternbefragung"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung"
 * title = "SEU Elternfragebogen Maximaldatensatz"
@@ -328,6 +331,14 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItemWithSource(3.1e, #integer, [[Anzahl der Geschwister (ohne einzuschulendes Kind)]], #DE-ST)
   * item[+]
+    * insert addItemWithSource(3.1f, #integer, [[Im Haushalt lebende Kinder insgesamt (inklusive des einzuschulenden Kindes)]], #DE-ST)
+  * item[+]
+    * insert addItemWithSource(3.1g, #integer, [[…davon jünger als das einzuschulende Kind]], #DE-ST)
+    * enableWhen[+]
+      * question = "3.1f"
+      * operator = #> 
+      * answerInteger = 1
+  * item[+]
     * insert addItem(3.1.1, #group, Details Geschwister)
     * repeats = true
     * enableWhen[+]
@@ -364,6 +375,7 @@ Description: "Elternbefragung"
       * item[+]
         * insert enableWhenCode(3.2.5, =, ChronischeKrankheiten, sonstiges)
         * insert addItem(3.2.5.1, #string, [[Welche sonstige(n) chronischen Erkrankung(en)?]])
+
     * item[+]
       * insert addItem(3.2.6, #boolean, [[Hat Ihr Kind eine körperliche, geistige oder seelische Behinderung?]])
       * item[+]
@@ -886,6 +898,26 @@ Description: "Elternbefragung"
   * item[+]
     * answerValueSet = Canonical(AtopischeErkrankungenVS)
     * insert addItemWithSource(8.16b, #string, [[Gesundheitsstörungen in der Familie des Kindes  (z.B. Allergien, Asthma b.,Epilepsie)]],  #DE-TH)
+  
+  * item[+]
+    * insert addItemWithSource(8.16c, #choice, [[Ärztlich festgestellte Krankheiten]], #DE-ST)
+    * answerValueSet = Canonical(AErztlichFestgestellteKrankheitenVS)
+    * repeats = true
+  * item[+]
+    * insert addItemWithSource(8.16d, #choice, [[Frühere Erkrankungen]], #DE-ST)
+    * answerValueSet = Canonical(FruehereErkrankungenVS)
+    * repeats = true
+    * item[+]
+      * insert addItemWithSource(8.16d.1, #string, [[Welche sonstige früheren Erkrankungen?]], #DE-ST)
+      * insert enableWhenCode(8.16d, =, FruehereErkrankungenCS, sonstige_welche)
+  * item[+]
+    * insert addItemWithSource(8.16e, #choice, [[Derzeitige Erkrankungen]], #DE-ST)
+    * answerValueSet = Canonical(DerzeitigeErkrankungenVS)
+    * repeats = true
+    * item[+]
+      * insert addItemWithSource(8.16e.1, #string, [[Welche sonstigen derzeitigen Erkrankungen?]], #DE-ST)
+      * insert enableWhenCode(8.16e, =, DerzeitigeErkrankungenCS, sonstige_welche)
+
   * item[+]
     * insert addItem(8.17, #boolean, [[Entwicklungsdiagnostik]])
   * item[+]
@@ -926,6 +958,8 @@ Description: "Elternbefragung"
     * insert addItem(8.26, #text, [[Sonstige Probleme]])
   * item[+]
     * insert addItemWithSource(8.26a, #text, [[Gesundheitsstörungen und Besonderheiten beim Kind, die nach Meinung der Eltern zu berücksichtigen sind]], #DE-TH)
+  * item[+]
+    * insert addItemWithSource(8.26b, #text, [[Sonstige gesundheitliche Probleme, die hinsichtlich der Einschulung besprochen werden sollen]], #DE-ST)
   * item[+]
     * insert addItem(8.27, #boolean, [[Wurde ihr Kind operiert]])
     * item[+]
