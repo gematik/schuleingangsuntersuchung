@@ -2646,3 +2646,24 @@ Description: "ValueSet, das den Grund des Krankenhausaufenthaltes beschreibt. Es
 * ^expansion.contains[+].system = Canonical(KrankenhausaufenthaltGrundCS)
 * ^expansion.contains[=].code = #sonstiges
 * ^expansion.contains[=].display = "sonstiges"
+
+CodeSystem: RauchortCS
+Id: RauchortCS
+Title: "RauchortCS"
+Description: "CodeSystem, das den Ort des Rauchens beschreibt."
+* #nur_ausserhalb "nur außerhalb der Wohnung"
+* #innen_und_aussen "innerhalb und außerhalb der Wohnung"
+
+ValueSet: RauchortVS
+Id: RauchortVS
+Title: "Ort des Rauchens Value Set"
+Description: "ValueSet, das den Ort des Rauchens beschreibt."
+* RauchortCS#nur_ausserhalb "nur außerhalb der Wohnung"
+* RauchortCS#innen_und_aussen "innerhalb und außerhalb der Wohnung"
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
+* ^expansion.contains[+].system = Canonical(RauchortCS)
+* ^expansion.contains[=].code = #nur_ausserhalb
+* ^expansion.contains[=].display = "nur außerhalb der Wohnung"
+* ^expansion.contains[+].system = Canonical(RauchortCS)
+* ^expansion.contains[=].code = #innen_und_aussen
+* ^expansion.contains[=].display = "innerhalb und außerhalb der Wohnung"

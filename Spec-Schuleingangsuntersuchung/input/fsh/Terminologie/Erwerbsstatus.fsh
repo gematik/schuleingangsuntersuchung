@@ -2,14 +2,15 @@ CodeSystem: ErwerbsstatusCS
 Id: erwerbsstatus-cs
 Title: "Erwerbsstatus CodeSystem"
 Description: "ErwerbsstatusCS"
+* #erwerbstaetig "Erwerbstätig"
 * #nicht_erwerbstaetig "Nicht erwerbstätig"
 * #teilzeit "Teilzeit"
 * #vollzeit "Vollzeit"
 * #sonstiges "Sonstiges"
 * #stundenweise "Stundenweise"
-* #nein "Nein"
 * #fehlende_angabe "Fehlende Angabe"
 * #elternzeit "Elternzeit"
+* #ausbildung_oder_studium "zur Zeit Ausbildung/ Studium"
 
 ValueSet: ErwerbsstatusVS
 Id: erwerbsstatus-vs
@@ -106,3 +107,20 @@ Description: "ErwerbsstatusDesVatersVS"
 * ^expansion.contains[+].system = Canonical(ErwerbsstatusCS)
 * ^expansion.contains[=].code = #fehlende_angabe
 * ^expansion.contains[=].display = "Fehlende Angabe"
+
+ValueSet: ErwerbsstatusAlternativ1VS
+Id: ErwerbsstatusAlternativ1VS
+Title: "ErwerbsstatusAlternativ1VS"
+Description: "Erwerbsstatus des Elternteils"
+* ErwerbsstatusCS#erwerbstaetig "Ja"
+* ErwerbsstatusCS#nicht_erwerbstaetig "Nein"
+* ErwerbsstatusCS#ausbildung_oder_studium "zur Zeit Ausbildung/ Studium"
+* ^expansion.contains[0].system = Canonical(ErwerbsstatusCS)
+* ^expansion.contains[=].code = #erwerbstaetig
+* ^expansion.contains[=].display = "Ja"
+* ^expansion.contains[+].system = Canonical(ErwerbsstatusCS)
+* ^expansion.contains[=].code = #nicht_erwerbstaetig
+* ^expansion.contains[=].display = "Nein"
+* ^expansion.contains[+].system = Canonical(ErwerbsstatusCS)
+* ^expansion.contains[=].code = #ausbildung_oder_studium
+* ^expansion.contains[=].display = "zur Zeit Ausbildung/ Studium"

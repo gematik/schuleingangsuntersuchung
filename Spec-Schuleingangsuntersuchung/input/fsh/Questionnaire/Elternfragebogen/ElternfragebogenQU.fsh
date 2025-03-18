@@ -30,6 +30,7 @@ Description: "Elternbefragung"
 * contained[+] = ErwerbsstatusVS
 * contained[+] = ErwerbsstatusDerMutterVS
 * contained[+] = ErwerbsstatusDesVatersVS
+* contained[+] = ErwerbsstatusAlternativ1VS
 * contained[+] = FamilienrolleVS
 * contained[+] = VersorgungsartVS
 * contained[+] = ChronischeKrankheitenVS
@@ -90,6 +91,7 @@ Description: "Elternbefragung"
 * contained[+] = SprechenGelerntVS
 * contained[+] = KinderbetreuungVS
 * contained[+] = KitaEintrittsalterVS
+* contained[+] = RauchortVS
 * id = "SEU-Elternbefragung"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung"
 * title = "SEU Elternfragebogen Maximaldatensatz"
@@ -1562,8 +1564,14 @@ Description: "Elternbefragung"
     * insert addItemWithSource(13.32, #choice, [[Erwerbsstatus der Mutter]], #DE-HB)
     * answerValueSet = Canonical(ErwerbsstatusDerMutterVS)
   * item[+]
+    * insert addItemWithSource(13.32a, #choice, [[Erwerbstätigkeit Mutter/ Partner]], #DE-ST)
+    * answerValueSet = Canonical(ErwerbsstatusAlternativ1VS)
+  * item[+]
     * insert addItemWithSource(13.33, #choice, [[Erwerbsstatus des Vaters]], #DE-HB)
     * answerValueSet = Canonical(ErwerbsstatusDesVatersVS)
+  * item[+]
+    * insert addItemWithSource(13.33a, #choice, [[Erwerbstätigkeit Vater/ Partner]], #DE-ST)
+    * answerValueSet = Canonical(ErwerbsstatusAlternativ1VS)
   * item[+]
     * insert addItemWithSource(13.34, #boolean, [[Mutter in Deutschland geboren]], #DE-HB)
   * item[+]
@@ -1580,3 +1588,9 @@ Description: "Elternbefragung"
     * insert addItemWithSource(13.37.1, #choice, [[Weitere Staatsangehörigkeit des Vaters]], #DE-HB)
     * insert enableWhenBoolean(13.37, =, true)
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
+  * item[+]
+    * insert addItemWithSource(13.38, #boolean, [[Rauchen im Haushalt]], #DE-ST)
+  * item[+]
+    * insert addItemWithSource(13.39, #choice, [[Ort des Rauchens]], #DE-ST)
+    * insert enableWhenBoolean(13.38, =, true)
+    * answerValueSet = Canonical(RauchortVS)
