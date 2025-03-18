@@ -5,7 +5,9 @@ Title: "Elternbefragung"
 Description: "Elternbefragung"
 * contained[+] = SEU-EF-NeinAbgeschlossenLaeuftGeplantVS
 * contained[+] = DeuevAnlage8LaenderkennzeichenVS
-* contained[+] = LebtBeiVS
+* contained[+] = WohnsituationKindVS
+* contained[+] = WohnsituationKindAlternativ1VS
+* contained[+] = WohnsituationKindAlternativ2VS
 * contained[+] = WohnsituationKindAlternativ3VS
 * contained[+] = GenderDEVS
 * contained[+] = ISO6392_LanguageVS
@@ -39,14 +41,12 @@ Description: "Elternbefragung"
 * contained[+] = JaNeinWartelisteVS
 * contained[+] = SEU_EF_MedienkonsumVS
 * contained[+] = SEU_EF_OperationenVS
-* contained[+] = SEU_EF_WohnsituationKindVS
 * contained[+] = SEU_EF_UnfallVS
 * contained[+] = SEU_EF_AlterKindVS
 * contained[+] = SEU_EF_SchwangerschaftVS
 * contained[+] = SEU_EF_UnfallortVS
 * contained[+] = SEU_EF_BehandlungstypVS
 * contained[+] = SEU_EF_DauerBWVS
-* contained[+] = SEU_EF_FamiliensituationVS
 * contained[+] = SEU_EF_HilfsmittelVS
 * contained[+] = SEU_EF_FachaerzteVS
 * contained[+] = SEU_EF_DauerBBVS
@@ -220,13 +220,13 @@ Description: "Elternbefragung"
     * insert addItemWithSource(1.11b, #string, [[Straße und Hausnummer]], #DE-ST)
   * item[+]
     * insert addItem(1.12, #choice, [[Kind lebt hauptsächlich bei]])
-    * answerValueSet = Canonical(LebtBeiVS)
+    * answerValueSet = Canonical(WohnsituationKindVS)
   * item[+]
     * insert addItem(1.12.1, #string, [[Kind lebt hauptsächlich bei anderen]])
     * insert enableWhenCode(1.12, =, WohnsituationKindCS, andere)
   * item[+]
     * insert addItemWithSource(1.12a, #choice, [[Kind lebt hauptsächlich bei]], #DE-BB)
-    * answerValueSet = Canonical(SEU_EF_FamiliensituationVS)
+    * answerValueSet = Canonical(WohnsituationKindAlternativ2VS)
   * item[+]
     * insert addItemWithSource(1.12a.1, #string, [[Kind lebt hauptsächlich bei anderen]], #DE-BB)
     * insert enableWhenCode(1.12a, =, WohnsituationKindCS, andere_familienmitglieder)
@@ -234,7 +234,7 @@ Description: "Elternbefragung"
     * enableBehavior = #any
   * item[+]
     * insert addItemWithSource(1.12b, #choice, [[Kind lebt hauptsächlich bei]], #DE-SL)
-    * answerValueSet = Canonical(SEU_EF_WohnsituationKindVS)
+    * answerValueSet = Canonical(WohnsituationKindAlternativ1VS)
   * item[+]
     * insert addItemWithSource(1.12c, #choice, [[Kind lebt hauptsächlich bei]], #DE-ST)
     * answerValueSet = Canonical(WohnsituationKindAlternativ3VS)

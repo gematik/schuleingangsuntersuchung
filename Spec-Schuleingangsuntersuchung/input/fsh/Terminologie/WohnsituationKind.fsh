@@ -18,10 +18,10 @@ Description: "CodeSystem für die Angabe der Wohnsituation des Kindes bzw. der F
 * #andere "Andere Personen"
 * #keine_angabe "Keine Angabe"
 
-ValueSet: LebtBeiVS
-Id: LebtBeiVS
-Title: "LebtBeiVS"
-Description: "LebtBeiVS"
+ValueSet: WohnsituationKindVS
+Id: WohnsituationKindVS
+Title: "WohnsituationKindVS"
+Description: "WohnsituationKindVS"
 * WohnsituationKindCS#eltern "Eltern"
 * WohnsituationKindCS#mutter "Mutter"
 * WohnsituationKindCS#vater "Vater"
@@ -74,8 +74,9 @@ Description: "ValueSet, das verschiedene Wohnsituationen des Kindes enthält."
 * ^expansion.contains[=].code = #andere
 * ^expansion.contains[=].display = "Andere"
 
-ValueSet: SEU_EF_WohnsituationKindVS
-Title: "SEU_EF_Wohnsituation Kind ValueSet"
+ValueSet: WohnsituationKindAlternativ1VS
+Id: WohnsituationKindAlternativ1VS
+Title: "WohnsituationKindAlternativ1VS"
 Description: "ValueSet, das verschiedene Wohnsituationen des Kindes enthält."
 * WohnsituationKindCS#eltern "Bei beiden leiblichen Eltern"
 * WohnsituationKindCS#alleinerziehender_elternteil "Bei alleinerziehendem Elternteil"
@@ -99,10 +100,10 @@ Description: "ValueSet, das verschiedene Wohnsituationen des Kindes enthält."
 * ^expansion.contains[=].code = #keine_angabe
 * ^expansion.contains[=].display = "Keine Angaben"
 
-ValueSet: SEU_EF_FamiliensituationVS
-Id: seu-ef-familiensituation-vs
-Title: "SEU_EF_Familiensituation ValueSet"
-Description: "ValueSet, das verschiedene Familiensituationen enthält."
+ValueSet: WohnsituationKindAlternativ2VS
+Id: WohnsituationKindAlternativ2VS
+Title: "WohnsituationKindAlternativ2VS"
+Description: "ValueSet, das verschiedene Wohnsituationen des Kindes enthält."
 * WohnsituationKindCS#eltern "Leibliche Eltern"
 * WohnsituationKindCS#mutter_mit_partner "Mutter mit Partner/in"
 * WohnsituationKindCS#mutter_alleinerziehend "Mutter alleinerziehend"

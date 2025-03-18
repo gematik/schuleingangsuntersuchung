@@ -5,7 +5,9 @@ Title: "Elternbefragung BB"
 Description: "Elternbefragung BB"
 * contained[+] = SEU-EF-NeinAbgeschlossenLaeuftGeplantVS
 * contained[+] = DeuevAnlage8LaenderkennzeichenVS
-* contained[+] = LebtBeiVS
+* contained[+] = WohnsituationKindVS  // TODO: Unused?
+* contained[+] = WohnsituationKindAlternativ1VS  // TODO: Unused?
+* contained[+] = WohnsituationKindAlternativ2VS
 * contained[+] = GenderDEVS
 * contained[+] = ISO6392_LanguageVS
 * contained[+] = ChronischeErkrankungenVS
@@ -36,14 +38,12 @@ Description: "Elternbefragung BB"
 * contained[+] = JaNeinWartelisteVS
 * contained[+] = SEU_EF_MedienkonsumVS
 * contained[+] = SEU_EF_OperationenVS
-* contained[+] = SEU_EF_WohnsituationKindVS
 * contained[+] = SEU_EF_UnfallVS
 * contained[+] = SEU_EF_AlterKindVS
 * contained[+] = SEU_EF_SchwangerschaftVS
 * contained[+] = SEU_EF_UnfallortVS
 * contained[+] = SEU_EF_BehandlungstypVS
 * contained[+] = SEU_EF_DauerBWVS
-* contained[+] = SEU_EF_FamiliensituationVS
 * contained[+] = SEU_EF_HilfsmittelVS
 * contained[+] = SEU_EF_FachaerzteVS
 * contained[+] = SEU_EF_DauerBBVS
@@ -116,7 +116,7 @@ Description: "Elternbefragung BB"
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
   * item[+]
     * insert addItemWithSource(1.12a, #choice, [[Kind lebt hauptsächlich bei]], #DE-BB)
-    * answerValueSet = Canonical(SEU_EF_FamiliensituationVS)
+    * answerValueSet = Canonical(WohnsituationKindAlternativ2VS)
   * item[+]
     * insert addItemWithSource(1.12a.1, #string, [[Kind lebt hauptsächlich bei anderen]], #DE-BB)
     * insert enableWhenCode(1.12a, =, WohnsituationKindCS, andere_familienmitglieder)
