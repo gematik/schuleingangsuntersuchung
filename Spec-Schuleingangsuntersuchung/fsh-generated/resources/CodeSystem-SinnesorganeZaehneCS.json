@@ -1,0 +1,26 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SinnesorganeZaehneCS",
+  "id": "SinnesorganeZaehneCS",
+  "title": "SinnesorganeZaehneCS",
+  "description": "SinnesorganeZaehneCS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/SinnesorganeZaehneCS",
+  "concept": [
+    {
+      "code": "o_B",
+      "display": "o.B."
+    },
+    {
+      "code": "auffaellig",
+      "display": "auffällig"
+    },
+    {
+      "code": "keine_Angabe",
+      "display": "keine Angabe"
+    }
+  ],
+  "count": 3
+}

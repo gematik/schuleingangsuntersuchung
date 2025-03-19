@@ -1,0 +1,30 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SorgenKindCS",
+  "id": "SorgenKindCS",
+  "title": "SorgenKindCS",
+  "description": "SorgenKindCS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/SorgenKindCS",
+  "concept": [
+    {
+      "code": "seines_Verhaltens",
+      "display": "seines Verhaltens?"
+    },
+    {
+      "code": "seiner_Sprachentwicklung",
+      "display": "seiner Sprachentwicklung"
+    },
+    {
+      "code": "seine_Konzentrationsfähigkeit",
+      "display": "seine Konzentrationsfähigkeit"
+    },
+    {
+      "code": "seines_Seh-oder_Hoervermoegens",
+      "display": "seines Seh- oder Hörvermögens"
+    }
+  ],
+  "count": 4
+}

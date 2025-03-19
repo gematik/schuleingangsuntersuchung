@@ -11,22 +11,22 @@
     "timestamp": "2024-03-27T12:20:50+00:00",
     "contains": [
       {
-        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-EF-NeinAbgeschlossenLaeuftGeplant",
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-EF-NeinAbgeschlossenLaeuftGeplantCS",
         "code": "nein",
         "display": "nein"
       },
       {
-        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-EF-NeinAbgeschlossenLaeuftGeplant",
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-EF-NeinAbgeschlossenLaeuftGeplantCS",
         "code": "abgeschlossen",
         "display": "abgeschlossen"
       },
       {
-        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-EF-NeinAbgeschlossenLaeuftGeplant",
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-EF-NeinAbgeschlossenLaeuftGeplantCS",
         "code": "läuft",
         "display": "läuft z.Zt. Noch"
       },
       {
-        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-EF-NeinAbgeschlossenLaeuftGeplant",
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-EF-NeinAbgeschlossenLaeuftGeplantCS",
         "code": "geplant",
         "display": "geplant"
       }
@@ -35,7 +35,7 @@
   "compose": {
     "include": [
       {
-        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-EF-NeinAbgeschlossenLaeuftGeplant"
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-EF-NeinAbgeschlossenLaeuftGeplantCS"
       }
     ]
   }

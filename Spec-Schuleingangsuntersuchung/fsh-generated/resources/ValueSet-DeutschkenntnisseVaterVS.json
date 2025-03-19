@@ -1,0 +1,27 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "DeutschkenntnisseVaterVS",
+  "id": "DeutschkenntnisseVaterVS",
+  "title": "DeutschkenntnisseVaterVS",
+  "description": "DeutschkenntnisseVaterVS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/DeutschkenntnisseVaterVS",
+  "expansion": {
+    "timestamp": "2024-03-27T12:20:50+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/DeutschkenntnisseVaterCS",
+        "code": "keine_Angabe",
+        "display": "keine Angabe"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/DeutschkenntnisseVaterCS"
+      }
+    ]
+  }
+}

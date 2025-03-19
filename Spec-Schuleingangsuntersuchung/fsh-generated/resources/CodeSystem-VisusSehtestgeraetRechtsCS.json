@@ -1,0 +1,46 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "VisusSehtestgeraetRechtsCS",
+  "id": "VisusSehtestgeraetRechtsCS",
+  "title": "VisusSehtestgeraetRechtsCS",
+  "description": "VisusSehtestgeraetRechtsCS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/VisusSehtestgeraetRechtsCS",
+  "concept": [
+    {
+      "code": "blind",
+      "display": "blind Visus = 0"
+    },
+    {
+      "code": "kleiner_0_16",
+      "display": "Visus < 0,16"
+    },
+    {
+      "code": "0_16",
+      "display": "Visus = 0,16"
+    },
+    {
+      "code": "0_3",
+      "display": "Visus = 0,3"
+    },
+    {
+      "code": "0_5",
+      "display": "Visus = 0,5"
+    },
+    {
+      "code": "0_7",
+      "display": "Visus = 0,7"
+    },
+    {
+      "code": "1_0",
+      "display": "Visus = 1,0"
+    },
+    {
+      "code": "keine_Angabe",
+      "display": "keine Angabe"
+    }
+  ],
+  "count": 8
+}

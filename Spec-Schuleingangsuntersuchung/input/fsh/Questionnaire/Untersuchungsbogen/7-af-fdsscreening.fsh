@@ -20,6 +20,7 @@ RuleSet: 7-af-fdsscreening
       * insert uunit(kg, "kg")
     * item[+]
       * insert addItemWithSource(7.4.1, #boolean, [[Messung Körpergewicht durchgeführt]], #DE-BW)
+    * item[+] insert addItemWithSource(7.4.a, #boolean, [[Brille]], #DE-BE)
     * item[+] insert addItemWithSource(7.sehtest.rechts, #choice, [[Sehtest rechts]], #DE-BW) 
       * answerValueSet = Canonical(SEU_UB_SehtestVisusVS)
     * item[+] insert addItemWithSource(7.sehtest.links, #choice, [[Sehtest links]], #DE-BW) 
@@ -70,18 +71,39 @@ RuleSet: 7-af-fdsscreening
     * item[+] insert addItem(7.7, #choice, [[Sehschärfendifferenz auffällig]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_AntwortAuffaelligkeitBeurteilbarVS)
+    * item[+] insert addItem(7.7.a, #choice, [[Visus]])
+      * insert addSource(#DE-BE)
+      * answerValueSet = Canonical(VisusVS) 
     * item[+] insert addItem(7.8, #choice, [[Visus Ferne auffällig (Gerät, Rechts)]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_AntwortAuffaelligkeitBeurteilbarVS)
+    * item[+] insert addItem(7.8.1, #choice, [[Visus Sehtestgeraet rechts]])
+      * insert addSource(#DE-BE)
+      * answerValueSet = Canonical(VisusSehtestgeraetRechtsVS)  
     * item[+] insert addItem(7.9, #choice, [[Visus Ferne auffällig (Gerät, Links)]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_AntwortAuffaelligkeitBeurteilbarVS)
+    * item[+] insert addItem(7.9.1, #choice, [[Visus Sehtestgeraet links]])
+      * insert addSource(#DE-BE)
+      * answerValueSet = Canonical(VisusSehtestgeraetLinksVS)
     * item[+] insert addItem(7.10, #choice, [[Visus Ferne auffällig (LEA-Tafeln, Rechts)]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_AntwortAuffaelligkeitBeurteilbarVS)
+    * item[+] insert addItem(7.10.a, #choice, [[Visus Sehtafel rechts]])
+      * insert addSource(#DE-BE)
+      * answerValueSet = Canonical(VisusSehtafelRechtsVS) 
     * item[+] insert addItem(7.11, #choice, [[Visus Ferne auffällig (LEA-Tafeln, Links)]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_AntwortAuffaelligkeitBeurteilbarVS)
+	 * item[+] insert addItem(7.11.a, #choice, [[Visus Sehtafel links]])
+    * insert addSource(#DE-BE)
+    * answerValueSet = Canonical(VisusSehtafelLinksVS)
+    * item[+] insert addItem(7.11.c, #choice, [[Vorschaltlinse rechts]])
+      * insert addSource(#DE-BE)
+      * answerValueSet = Canonical(VorschaltlinseVS) 
+    * item[+] insert addItem(7.11.d, #choice, [[Vorschaltlinse links]])
+      * insert addSource(#DE-BE)
+      * answerValueSet = Canonical(VorschaltlinseVS) 
     * item[+] insert addItem(7.12, #boolean, [[akuter Infekt obere Atemwege liegt vor]])
       * insert addSource(#DE-BY)
     * item[+] insert addItemWithSource(7.12a, #choice, [[akuter Infekt obere Atemwege liegt vor]], #DE-HE)
@@ -158,7 +180,14 @@ RuleSet: 7-af-fdsscreening
     * item[+] insert addItem(7.18, #boolean, [[Keine ausreichenden Deutschkenntnisse vorhanden]])
       * insert addSource(#DE-BY)
     * item[+] insert addItemWithSource(7.18a, #choice, [[Keine ausreichenden Deutschkenntnisse vorhanden]], #DE-HE)
-      * answerValueSet = Canonical(SEU_UB_DeutschkenntnisseVS)    
+      * answerValueSet = Canonical(SEU_UB_DeutschkenntnisseVS)
+    * item[+] insert addItem(7.18.b, #choice, [[Deutschkenntnisse Kind]])
+      * insert addSource(#DE-BE)
+      * answerValueSet = Canonical(DeutschkenntnisseKindVS) 
+    * item[+] insert addItemWithSource(7.18.c, #choice, [[Deutschkenntnisse Mutter]], #DE-BE)
+      * answerValueSet = Canonical(DeutschkenntnisseMutterVS)
+    * item[+] insert addItemWithSource(7.18.d, #choice, [[Deutschkenntnisse Vater]], #DE-BE)
+      * answerValueSet = Canonical(DeutschkenntnisseVaterVS)
     * item[+] insert addItem(7.19, #choice, [[Sprachverständnis auffällig]])
       * insert addSource(#DE-BY)
       * answerValueSet = Canonical(SEU_UB_AntwortAuffaelligkeitVS)
@@ -198,6 +227,11 @@ RuleSet: 7-af-fdsscreening
       * answerValueSet = Canonical(SEU_UB_AntwortAuffaelligkeitBeurteilbarVS)
     * item[+] insert addItem(7.30, #string, [[Anmerkungen, intern]])
       * insert addSource(#DE-BY)
+    * item[+]
+      * insert addItemWithSource(7.30.a, #integer, [[Stereosehen: Anzahl erkannter Stereobilder]], #DE-BE)
+* item[+] insert addItem(7.30.b, #choice, [[Farbsehen]])
+  * insert addSource(#DE-BE)
+  * answerValueSet = Canonical(FarbsehenVS)
   * item[+] insert addGroup(7_2, 2. Screening)
     * insert addSource(#DE-BY)
     * item[+] insert addItem(7.31, #date, [[Untersuchungsdatum]])
@@ -2375,3 +2409,374 @@ Description: "ValueSet, das verschiedene Deutschkenntnisse enthält."
 * ^expansion.contains[+].system = Canonical(SEU_UB_DeutschkenntnisseCS)
 * ^expansion.contains[=].code = #unbekannt
 * ^expansion.contains[=].display = "Unbekannt"
+
+CodeSystem: VisusCS
+Id: VisusCS
+Title: "VisusCS"
+Description: "VisusCS"
+* #ohne_Brille  "ohne Brille"
+* #mit_Brille "mit Brille"
+* #keine_Angabe "k.A./nicht möglich"
+
+
+ValueSet: VisusVS
+Id: VisusVS
+Title: "VisusVS"
+Description: "VisusVS"
+* include codes from system VisusCS
+* ^expansion.timestamp = "2024-03-27T12:20:50+00:00"
+* ^expansion.contains[0].system = Canonical(VisusCS) 
+* ^expansion.contains[=].code = #ohne_Brille   
+* ^expansion.contains[=].display = "ohne Brille"
+* ^expansion.contains[0].system = Canonical(VisusCS)
+* ^expansion.contains[=].code = #mit_Brille 
+* ^expansion.contains[=].display = "mit Brille"
+* ^expansion.contains[0].system = Canonical(VisusCS)
+* ^expansion.contains[=].code = #keine_Angabe 
+* ^expansion.contains[=].display = "k.A./nicht möglich"
+
+
+CodeSystem: VisusSehtestgeraetRechtsCS
+Id: VisusSehtestgeraetRechtsCS
+Title: "VisusSehtestgeraetRechtsCS"
+Description: "VisusSehtestgeraetRechtsCS"
+* #blind  "blind Visus = 0"
+* #kleiner_0_16 "Visus < 0,16"
+* #0_16 "Visus = 0,16"
+* #0_3 "Visus = 0,3"
+* #0_5 "Visus = 0,5"
+* #0_7 "Visus = 0,7" 
+* #1_0 "Visus = 1,0"
+* #keine_Angabe "keine Angabe"
+
+
+ValueSet: VisusSehtestgeraetRechtsVS
+Id: VisusSehtestgeraetRechtsVS
+Title: "VisusSehtestgeraetRechtsVS"
+Description: "VisusSehtestgeraetRechtsVS"
+* include codes from system VisusSehtestgeraetRechtsCS
+* ^expansion.timestamp = "2024-03-27T12:20:50+00:00"
+* ^expansion.contains[0].system = Canonical(VisusSehtestgeraetRechtsCS)
+* ^expansion.contains[=].code = #blind    
+* ^expansion.contains[=].display = "blind Visus = 0"
+* ^expansion.contains[0].system = Canonical(VisusSehtestgeraetRechtsCS)
+* ^expansion.contains[=].code = #kleiner_0_16
+* ^expansion.contains[=].display = "Visus < 0,16"
+* ^expansion.contains[0].system = Canonical(VisusSehtestgeraetRechtsCS)
+* ^expansion.contains[=].code =  #0_16 "Visus = 0,16"
+* ^expansion.contains[=].display = "Visus = 0,16"
+* ^expansion.contains[0].system = Canonical(VisusSehtestgeraetRechtsCS)
+* ^expansion.contains[=].code = #0_3 
+* ^expansion.contains[=].display = "Visus = 0,3"
+* ^expansion.contains[0].system = Canonical(VisusSehtestgeraetRechtsCS)
+* ^expansion.contains[=].code =  #0_5 
+* ^expansion.contains[=].display = "Visus = 0,5"
+* ^expansion.contains[0].system = Canonical(VisusSehtestgeraetRechtsCS)
+* ^expansion.contains[=].code = #0_7 
+* ^expansion.contains[=].display =  "Visus = 0,7"
+* ^expansion.contains[0].system = Canonical(VisusSehtestgeraetRechtsCS)
+* ^expansion.contains[=].code = #1_0 
+* ^expansion.contains[=].display = "Visus = 1,0"
+* ^expansion.contains[0].system = Canonical(VisusSehtestgeraetRechtsCS)
+* ^expansion.contains[=].code = #keine_Angabe 
+* ^expansion.contains[=].display = "keine Angabe"
+
+
+
+CodeSystem: VisusSehtestgeraetLinksCS
+Id: VisusSehtestgeraetLinksCS
+Title: "VisusSehtestgeraetLinksCS"
+Description: "VisusSehtestgeraetLinksCS"
+* #blind  "blind Visus = 0"
+* #kleiner_0_16 "Visus < 0,16"
+* #0_16 "Visus = 0,16"
+* #0_3 "Visus = 0,3"
+* #0_5 "Visus = 0,5"
+* #0_7 "Visus = 0,7" 
+* #1_0 "Visus = 1,0"
+* #keine_Angabe "keine Angabe"
+
+
+ValueSet: VisusSehtestgeraetLinksVS
+Id: VisusSehtestgeraetLinksVS
+Title: "VisusSehtestgeraetLinksVS"
+Description: "VisusSehtestgeraetLinksVS"
+* include codes from system VisusSehtestgeraetLinksCS
+* ^expansion.timestamp = "2024-03-27T12:20:50+00:00"
+* ^expansion.contains[0].system = Canonical(VisusSehtestgeraetLinksCS)
+* ^expansion.contains[=].code = #blind    
+* ^expansion.contains[=].display = "blind Visus = 0"
+* ^expansion.contains[0].system = Canonical(VisusSehtestgeraetLinksCS)
+* ^expansion.contains[=].code = #kleiner_0_16
+* ^expansion.contains[=].display = "Visus < 0,16"
+* ^expansion.contains[0].system = Canonical(VisusSehtestgeraetLinksCS)
+* ^expansion.contains[=].code = #0_16 "Visus = 0,16"
+* ^expansion.contains[=].display = "Visus = 0,16"
+* ^expansion.contains[0].system = Canonical(VisusSehtestgeraetLinksCS)
+* ^expansion.contains[=].code = #0_3 
+* ^expansion.contains[=].display = "Visus = 0,3"
+* ^expansion.contains[0].system = Canonical(VisusSehtestgeraetLinksCS)
+* ^expansion.contains[=].code =  #0_5 
+* ^expansion.contains[=].display = "Visus = 0,5"
+* ^expansion.contains[0].system = Canonical(VisusSehtestgeraetLinksCS)
+* ^expansion.contains[=].code = #0_7 
+* ^expansion.contains[=].display = "Visus = 0,7"
+* ^expansion.contains[0].system = Canonical(VisusSehtestgeraetLinksCS)
+* ^expansion.contains[=].code = #1_0 
+* ^expansion.contains[=].display = "Visus = 1,0"
+* ^expansion.contains[0].system = Canonical(VisusSehtestgeraetLinksCS)
+* ^expansion.contains[=].code = #keine_Angabe 
+* ^expansion.contains[=].display = "keine Angabe"
+
+
+
+CodeSystem: VisusSehtafelRechtsCS
+Id: VisusSehtafelRechtsCS
+Title: "VisusSehtafelRechtsCS"
+Description: "VisusSehtafelRechtsCS"
+* #blind  "blind Visus = 0"
+* #kleiner_0_16 "Visus < 0,16"
+* #0_16 "Visus = 0,16"
+* #0_3 "Visus = 0,3"
+* #0_5 "Visus = 0,5"
+* #0_7 "Visus = 0,7" 
+* #1_0 "Visus = 1,0"
+* #keine_Angabe "keine Angabe"
+
+
+ValueSet: VisusSehtafelRechtsVS
+Id: VisusSehtafelRechtsVS
+Title: "VisusSehtafelRechtsVS"
+Description: "VisusSehtafelRechtsVS"
+* include codes from system VisusSehtafelRechtsCS
+* ^expansion.timestamp = "2024-03-27T12:20:50+00:00"
+* ^expansion.contains[0].system = Canonical(VisusSehtafelRechtsCS)
+* ^expansion.contains[=].code = #blind    
+* ^expansion.contains[=].display = "blind Visus = 0"
+* ^expansion.contains[0].system = Canonical(VisusSehtafelRechtsCS)
+* ^expansion.contains[=].code = #kleiner_0_16
+* ^expansion.contains[=].display = "Visus < 0,16"
+* ^expansion.contains[0].system = Canonical(VisusSehtafelRechtsCS)
+* ^expansion.contains[=].code =  #0_16 "Visus = 0,16"
+* ^expansion.contains[=].display = "Visus = 0,16"
+* ^expansion.contains[0].system = Canonical(VisusSehtafelRechtsCS)
+* ^expansion.contains[=].code =  #0_3 
+* ^expansion.contains[=].display = "Visus = 0,3"
+* ^expansion.contains[0].system = Canonical(VisusSehtafelRechtsCS)
+* ^expansion.contains[=].code =  #0_5 
+* ^expansion.contains[=].display = "Visus = 0,5"
+* ^expansion.contains[0].system = Canonical(VisusSehtafelRechtsCS)
+* ^expansion.contains[=].code = #0_7 
+* ^expansion.contains[=].display = "Visus = 0,7"
+* ^expansion.contains[0].system = Canonical(VisusSehtafelRechtsCS)
+* ^expansion.contains[=].code = #1_0 
+* ^expansion.contains[=].display = "Visus = 1,0"
+* ^expansion.contains[0].system = Canonical(VisusSehtafelRechtsCS)
+* ^expansion.contains[=].code = #keine_Angabe 
+* ^expansion.contains[=].display = "keine Angabe"
+
+
+
+CodeSystem: VisusSehtafelLinksCS
+Id: VisusSehtafelLinksCS
+Title: "VisusSehtafelLinksCS"
+Description: "VisusSehtafelLinksCS"
+* #blind  "blind Visus = 0"
+* #kleiner_0_16 "Visus < 0,16"
+* #0_16 "Visus = 0,16"
+* #0_3 "Visus = 0,3"
+* #0_5 "Visus = 0,5"
+* #0_7 "Visus = 0,7" 
+* #1_0 "Visus = 1,0"
+* #keine_Angabe "keine Angabe"
+
+
+ValueSet: VisusSehtafelLinksVS
+Id: VisusSehtafelLinksVS
+Title: "VisusSehtafelLinksVS"
+Description: "VisusSehtafelLinksVS"
+* include codes from system VisusSehtafelLinksCS
+* ^expansion.timestamp = "2024-03-27T12:20:50+00:00"
+* ^expansion.contains[0].system = Canonical(VisusSehtafelLinksCS)
+* ^expansion.contains[=].code = #blind    
+* ^expansion.contains[=].display = "blind Visus = 0"
+* ^expansion.contains[0].system = Canonical(VisusSehtafelLinksCS)
+* ^expansion.contains[=].code = #kleiner_0_16
+* ^expansion.contains[=].display = "Visus < 0,16"
+* ^expansion.contains[0].system = Canonical(VisusSehtafelLinksCS)
+* ^expansion.contains[=].code = #0_16 "Visus = 0,16"
+* ^expansion.contains[=].display = "Visus = 0,16"
+* ^expansion.contains[0].system = Canonical(VisusSehtafelLinksCS)
+* ^expansion.contains[=].code = #0_3 
+* ^expansion.contains[=].display = "Visus = 0,3"
+* ^expansion.contains[0].system = Canonical(VisusSehtafelLinksCS)
+* ^expansion.contains[=].code = #0_5 
+* ^expansion.contains[=].display = "Visus = 0,5"
+* ^expansion.contains[0].system = Canonical(VisusSehtafelLinksCS)
+* ^expansion.contains[=].code = #0_7 
+* ^expansion.contains[=].display = "Visus = 0,7"
+* ^expansion.contains[0].system = Canonical(VisusSehtafelLinksCS)
+* ^expansion.contains[=].code = #1_0 
+* ^expansion.contains[=].display = "Visus = 1,0"
+* ^expansion.contains[0].system = Canonical(VisusSehtafelLinksCS)
+* ^expansion.contains[=].code = #keine_Angabe 
+* ^expansion.contains[=].display = "keine Angabe"
+
+CodeSystem: FarbsehenCS
+Id: FarbsehenCS
+Title: "FarbsehenCS"
+Description: "FarbsehenCS"
+* #unauffaellig  "unauffaellig"
+* #auffaellig "auffaellig"
+* #keine_Angabe "keine Angabe/verweigert"
+
+ValueSet: FarbsehenVS
+Id: FarbsehenVS
+Title: "FarbsehenVS"
+Description: "FarbsehenVS"
+* include codes from system FarbsehenCS
+* ^expansion.timestamp = "2024-03-27T12:20:50+00:00"
+* ^expansion.contains[0].system = Canonical(FarbsehenCS)
+* ^expansion.contains[=].code = #unauffaellig   
+* ^expansion.contains[=].display = "unauffällig" 
+* ^expansion.contains[0].system = Canonical(FarbsehenCS)
+* ^expansion.contains[=].code = #auffaellig 
+* ^expansion.contains[=].display = "auffällig"
+* ^expansion.contains[0].system = Canonical(FarbsehenCS)
+* ^expansion.contains[=].code = #keine_Angabe 
+* ^expansion.contains[=].display = "keine Angabe/verweigert" 
+
+CodeSystem: VorschaltlinseCS
+Id: VorschaltlinseCS
+Title: "VorschaltlinseCS"
+Description: "VorschaltlinseCS"
+* #besser  "besser"
+* #gleich "gleich"
+* #schlechter "schlechter"
+* #keine_Angabe "keine Angabe"
+
+ValueSet: VorschaltlinseVS
+Id: VorschaltlinseVS
+Title: "VorschaltlinseVS"
+Description: "VorschaltlinseVS"
+* include codes from system VorschaltlinseCS
+* ^expansion.timestamp = "2024-03-27T12:20:50+00:00"
+* ^expansion.contains[0].system = Canonical(VorschaltlinseCS)
+* ^expansion.contains[=].code = #besser   
+* ^expansion.contains[=].display = "besser" 
+* ^expansion.contains[0].system = Canonical(VorschaltlinseCS)
+* ^expansion.contains[=].code = #gleich 
+* ^expansion.contains[=].display = "gleich"
+* ^expansion.contains[0].system = Canonical(VorschaltlinseCS)
+* ^expansion.contains[=].code = #schlechter 
+* ^expansion.contains[=].display = "schlechter"
+* ^expansion.contains[0].system = Canonical(VorschaltlinseCS)
+* ^expansion.contains[=].code = #keine_Angabe 
+* ^expansion.contains[=].display = "keine Angabe/verweigert" 
+
+CodeSystem: DeutschkenntnisseKindCS
+Id: DeutschkenntnisseKindCS
+Title: "DeutschkenntnisseKindCS"
+Description: "DeutschkenntnisseKindCS"
+* #nicht  "nicht"
+* #einzelne_Worte "einzelne Worte"
+* #fluessig_mit_erheblichen_Fehlern "flüssig mit erheblichen Fehlern"
+* #sehr_gut "sehr gut"
+* #keine_Angabe "keine Angabe"
+
+
+ValueSet: DeutschkenntnisseKindVS
+Id: DeutschkenntnisseKindVS
+Title: "DeutschkenntnisseKindVS"
+Description: "DeutschkenntnisseKindVS"
+* include codes from system DeutschkenntnisseKindCS
+* ^expansion.timestamp = "2024-03-27T12:20:50+00:00"
+* ^expansion.contains[0].system = Canonical(DeutschkenntnisseKindCS)
+* ^expansion.contains[=].code = #nicht  
+* ^expansion.contains[=].display = "nicht" 
+* ^expansion.contains[0].system = Canonical(DeutschkenntnisseKindCS)
+* ^expansion.contains[=].code = #einzelne_Worte 
+* ^expansion.contains[=].display = "einzelne Worte"
+* ^expansion.contains[0].system = Canonical(DeutschkenntnisseKindCS)
+* ^expansion.contains[=].code = #fluessig_mit_erheblichen_Fehlern 
+* ^expansion.contains[=].display = "flüssig mit erheblichen Fehlern"
+* ^expansion.contains[0].system = Canonical(DeutschkenntnisseKindCS)
+* ^expansion.contains[=].code = #sehr_gut
+* ^expansion.contains[=].display = "sehr gut"
+* ^expansion.contains[0].system = Canonical(DeutschkenntnisseKindCS)
+* ^expansion.contains[=].code = #keine_Angabe 
+* ^expansion.contains[=].display = "keine Angabe"
+
+
+CodeSystem: DeutschkenntnisseMutterCS
+Id: DeutschkenntnisseMutterCS
+Title: "DeutschkenntnisseMutterCS"
+Description: "DeutschkenntnisseMutterCS"
+* #nicht "nicht"
+* #einzelne_Worte "einzelne Worte"
+* #fluessig_mit_erheblichen_Fehlern "flüssig mit erheblichen Fehlern"
+* #sehr_gut "sehr gut"
+* #hat_nicht_begleitet "hat nicht begleitet"
+* #keine_Angabe "keine Angabe"
+
+
+ValueSet: DeutschkenntnisseMutterVS
+Id: DeutschkenntnisseMutterVS
+Title: "DeutschkenntnisseMutterVS"
+Description: "DeutschkenntnisseMutterVS"
+* include codes from system DeutschkenntnisseMutterCS
+* ^expansion.timestamp = "2024-03-27T12:20:50+00:00"
+* ^expansion.contains[0].system = Canonical(DeutschkenntnisseMutterCS)
+* ^expansion.contains[=].code = #nicht  
+* ^expansion.contains[=].display = "nicht" 
+* ^expansion.contains[0].system = Canonical(DeutschkenntnisseMutterCS)
+* ^expansion.contains[=].code = #einzelne_Worte 
+* ^expansion.contains[=].display = "einzelne Worte"
+* ^expansion.contains[0].system = Canonical(DeutschkenntnisseMutterCS)
+* ^expansion.contains[=].code = #fluessig_mit_erheblichen_Fehlern 
+* ^expansion.contains[=].display = "flüssig mit erheblichen Fehlern"
+* ^expansion.contains[0].system = Canonical(DeutschkenntnisseMutterCS)
+* ^expansion.contains[=].code = #sehr_gut
+* ^expansion.contains[=].display = "sehr gut"
+* ^expansion.contains[0].system = Canonical(DeutschkenntnisseMutterCS)
+* ^expansion.contains[=].code = #hat_nicht_begleitet "hat_nicht_begleitet"
+* ^expansion.contains[=].display = "hat nicht begleitet"
+* ^expansion.contains[0].system = Canonical(DeutschkenntnisseMutterCS)
+* ^expansion.contains[=].code = #keine_Angabe 
+* ^expansion.contains[=].display = "keine Angabe"
+
+CodeSystem: DeutschkenntnisseVaterCS
+Id: DeutschkenntnisseVaterCS
+Title: "DeutschkenntnisseVaterCS"
+Description: "DeutschkenntnisseVaterCS"
+* #nicht  "nicht"
+* #einzelne_Worte "einzelne Worte"
+* #fluessig_mit_erheblichen_Fehlern "flüssig mit erheblichen Fehlern"
+* #sehr_gut "sehr gut"
+* #hat_nicht_begleitet "hat nicht begleitet"
+* #keine_Angabe "keine Angabe"
+
+ValueSet: DeutschkenntnisseVaterVS
+Id: DeutschkenntnisseVaterVS
+Title: "DeutschkenntnisseVaterVS"
+Description: "DeutschkenntnisseVaterVS"
+* include codes from system DeutschkenntnisseVaterCS
+* ^expansion.timestamp = "2024-03-27T12:20:50+00:00"
+* ^expansion.contains[0].system = Canonical(DeutschkenntnisseVaterCS)
+* ^expansion.contains[=].code = #nicht  
+* ^expansion.contains[=].display = "nicht" 
+* ^expansion.contains[0].system = Canonical(DeutschkenntnisseVaterCS)
+* ^expansion.contains[=].code = #einzelne_Worte 
+* ^expansion.contains[=].display = "einzelne Worte"
+* ^expansion.contains[0].system = Canonical(DeutschkenntnisseVaterCS)
+* ^expansion.contains[=].code = #fluessig_mit_erheblichen_Fehlern 
+* ^expansion.contains[=].display = "flüssig mit erheblichen Fehlern"
+* ^expansion.contains[0].system = Canonical(DeutschkenntnisseVaterCS)
+* ^expansion.contains[=].code = #sehr_gut
+* ^expansion.contains[=].display = "sehr gut"
+* ^expansion.contains[0].system = Canonical(DeutschkenntnisseVaterCS)
+* ^expansion.contains[=].code = #hat_nicht_begleitet "hat_nicht_begleitet"
+* ^expansion.contains[=].display = "hat nicht begleitet"
+* ^expansion.contains[0].system = Canonical(DeutschkenntnisseVaterCS)
+* ^expansion.contains[=].code = #keine_Angabe 
+* ^expansion.contains[=].display = "keine Angabe"

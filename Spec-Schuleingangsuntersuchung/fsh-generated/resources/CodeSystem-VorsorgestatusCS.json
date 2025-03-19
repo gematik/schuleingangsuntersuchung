@@ -1,0 +1,22 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "VorsorgestatusCS",
+  "id": "VorsorgestatusCS",
+  "title": "VorsorgestatusCS",
+  "description": "VorsorgestatusCS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/VorsorgestatusCS",
+  "concept": [
+    {
+      "code": "Heft_fehlt",
+      "display": "Heft fehlt"
+    },
+    {
+      "code": "Heft_vorhanden",
+      "display": "Heft vorhanden"
+    }
+  ],
+  "count": 2
+}

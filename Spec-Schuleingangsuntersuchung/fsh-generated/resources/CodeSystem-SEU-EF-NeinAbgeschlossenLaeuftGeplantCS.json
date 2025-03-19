@@ -2,11 +2,11 @@
   "resourceType": "CodeSystem",
   "status": "draft",
   "content": "complete",
-  "name": "SEU-EF-NeinAbgeschlossenLaeuftGeplant",
-  "id": "SEU-EF-NeinAbgeschlossenLaeuftGeplant",
+  "name": "SEU-EF-NeinAbgeschlossenLaeuftGeplantCS",
+  "id": "SEU-EF-NeinAbgeschlossenLaeuftGeplantCS",
   "title": "SEU-EF-NeinAbgeschlossenLaeuftGeplant",
   "version": "0.1.0",
-  "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-EF-NeinAbgeschlossenLaeuftGeplant",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-EF-NeinAbgeschlossenLaeuftGeplantCS",
   "concept": [
     {
       "code": "nein",
