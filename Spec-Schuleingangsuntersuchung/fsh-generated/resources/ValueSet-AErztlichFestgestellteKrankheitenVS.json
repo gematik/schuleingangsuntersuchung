@@ -1,0 +1,50 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "AErztlichFestgestellteKrankheitenVS",
+  "id": "AErztlichFestgestellteKrankheitenVS",
+  "title": "Ärztlich festgestellte Krankheiten ",
+  "description": "Dieses ValueSet beinhaltet eine Auswahl von Codes für die Klassifikation von Ärztlich festgestellten Krankheiten.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/AErztlichFestgestellteKrankheitenVS",
+  "expansion": {
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/chronische-krankheiten",
+        "code": "asthma",
+        "display": "Asthma"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/chronische-krankheiten",
+        "code": "chronische_bronchitis",
+        "display": "chronische Bronchitis"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/chronische-krankheiten",
+        "code": "neurodermitis",
+        "display": "Neurodermitis"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/chronische-krankheiten",
+        "concept": [
+          {
+            "code": "asthma",
+            "display": "Asthma"
+          },
+          {
+            "code": "chronische_bronchitis",
+            "display": "chronische Bronchitis"
+          },
+          {
+            "code": "neurodermitis",
+            "display": "Neurodermitis"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SprechenGelerntCS",
+  "id": "SprechenGelerntCS",
+  "title": "SprechenGelerntCS",
+  "description": "CodeSystem, das beschreibt, wann das Kind sprechen gelernt hat (mind. 2-Wort-Sätze, ca. 50 Wörter).",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/SprechenGelerntCS",
+  "concept": [
+    {
+      "code": "bis_2_geburtstag",
+      "display": "bis zum 2. Geburtstag"
+    },
+    {
+      "code": "spaeter",
+      "display": "später als 2. Geburtstag"
+    }
+  ],
+  "count": 2
+}

@@ -1,0 +1,74 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "WohnsituationKindCS",
+  "id": "WohnsituationKindCS",
+  "title": "Wohnsituation des Kindes",
+  "description": "CodeSystem für die Angabe der Wohnsituation des Kindes bzw. der Familiensituation.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
+  "concept": [
+    {
+      "code": "eltern",
+      "display": "Eltern"
+    },
+    {
+      "code": "mutter",
+      "display": "Mutter"
+    },
+    {
+      "code": "vater",
+      "display": "Vater"
+    },
+    {
+      "code": "alleinerziehender_elternteil",
+      "display": "Alleinerziehender Elternteil"
+    },
+    {
+      "code": "mutter_alleinerziehend",
+      "display": "Mutter alleinerziehend"
+    },
+    {
+      "code": "vater_alleinerziehend",
+      "display": "Vater alleinerziehend"
+    },
+    {
+      "code": "elternteil_mit_partner",
+      "display": "Elternteil mit Partner"
+    },
+    {
+      "code": "mutter_mit_partner",
+      "display": "Mutter mit Partner/in"
+    },
+    {
+      "code": "vater_mit_partner",
+      "display": "Vater mit Partner/in"
+    },
+    {
+      "code": "wechselmodell",
+      "display": "Wechselmodell"
+    },
+    {
+      "code": "heim",
+      "display": "Heim"
+    },
+    {
+      "code": "pflegeeltern",
+      "display": "Pflegeeltern"
+    },
+    {
+      "code": "andere_familienmitglieder",
+      "display": "Andere Familienmitglieder/Verwandte"
+    },
+    {
+      "code": "andere",
+      "display": "Andere Personen"
+    },
+    {
+      "code": "keine_angabe",
+      "display": "Keine Angabe"
+    }
+  ],
+  "count": 15
+}

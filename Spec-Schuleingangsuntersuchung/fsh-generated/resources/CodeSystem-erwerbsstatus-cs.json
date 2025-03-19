@@ -10,6 +10,10 @@
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/erwerbsstatus-cs",
   "concept": [
     {
+      "code": "erwerbstaetig",
+      "display": "Erwerbstätig"
+    },
+    {
       "code": "nicht_erwerbstaetig",
       "display": "Nicht erwerbstätig"
     },
@@ -30,17 +34,17 @@
       "display": "Stundenweise"
     },
     {
-      "code": "nein",
-      "display": "Nein"
-    },
-    {
       "code": "fehlende_angabe",
       "display": "Fehlende Angabe"
     },
     {
       "code": "elternzeit",
       "display": "Elternzeit"
+    },
+    {
+      "code": "ausbildung_oder_studium",
+      "display": "zur Zeit Ausbildung/ Studium"
     }
   ],
-  "count": 8
+  "count": 9
 }

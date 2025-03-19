@@ -1,0 +1,22 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "RauchortCS",
+  "id": "RauchortCS",
+  "title": "RauchortCS",
+  "description": "CodeSystem, das den Ort des Rauchens beschreibt.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/RauchortCS",
+  "concept": [
+    {
+      "code": "nur_ausserhalb",
+      "display": "nur außerhalb der Wohnung"
+    },
+    {
+      "code": "innen_und_aussen",
+      "display": "innerhalb und außerhalb der Wohnung"
+    }
+  ],
+  "count": 2
+}

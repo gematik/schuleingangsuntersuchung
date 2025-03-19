@@ -1,0 +1,34 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "KrankenhausaufenthaltGrundCS",
+  "id": "KrankenhausaufenthaltGrundCS",
+  "title": "KrankenhausaufenthaltGrundCS",
+  "description": "CodeSystem, das den Grund des Krankenhausaufenthaltes beschreibt. Es enthält die Kategorien: akute Erkrankung, chronische Krankheit, Unfall, stationäre Operation(en), und sonstiges. Dieses CodeSystem kann verwendet werden, um den Grund eines Krankenhausaufenthaltes zu kategorisieren.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/KrankenhausaufenthaltGrundCS",
+  "concept": [
+    {
+      "code": "akute_erkrankung",
+      "display": "akute Erkrankung"
+    },
+    {
+      "code": "chronische_krankheit",
+      "display": "chronische Krankheit"
+    },
+    {
+      "code": "unfall",
+      "display": "Unfall"
+    },
+    {
+      "code": "stationaere_operation",
+      "display": "stationäre Operation(en)"
+    },
+    {
+      "code": "sonstiges",
+      "display": "sonstiges"
+    }
+  ],
+  "count": 5
+}

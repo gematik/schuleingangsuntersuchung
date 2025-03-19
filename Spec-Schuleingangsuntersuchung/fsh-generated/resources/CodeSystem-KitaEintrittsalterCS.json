@@ -1,0 +1,34 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "KitaEintrittsalterCS",
+  "id": "KitaEintrittsalterCS",
+  "title": "KitaEintrittsalterCS",
+  "description": "CodeSystem, das das Alter des Kindes beim Eintritt in die Kita beschreibt.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/KitaEintrittsalterCS",
+  "concept": [
+    {
+      "code": "unter_2_jahre",
+      "display": "< 2 Jahre"
+    },
+    {
+      "code": "2_jahre",
+      "display": "2 Jahre"
+    },
+    {
+      "code": "3_jahre",
+      "display": "3 Jahre"
+    },
+    {
+      "code": "4_jahre",
+      "display": "4 Jahre"
+    },
+    {
+      "code": "5_jahre",
+      "display": "5 Jahre"
+    }
+  ],
+  "count": 5
+}

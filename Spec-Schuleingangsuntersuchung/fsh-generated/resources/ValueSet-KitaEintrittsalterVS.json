@@ -1,0 +1,69 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "KitaEintrittsalterVS",
+  "id": "KitaEintrittsalterVS",
+  "title": "Alter bei Kita-Eintritt Value Set",
+  "description": "ValueSet, das das Alter des Kindes beim Eintritt in die Kita beschreibt.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/KitaEintrittsalterVS",
+  "expansion": {
+    "timestamp": "2024-10-20T11:50:47+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/KitaEintrittsalterCS",
+        "code": "unter_2_jahre",
+        "display": "< 2 Jahre"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/KitaEintrittsalterCS",
+        "code": "2_jahre",
+        "display": "2 Jahre"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/KitaEintrittsalterCS",
+        "code": "3_jahre",
+        "display": "3 Jahre"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/KitaEintrittsalterCS",
+        "code": "4_jahre",
+        "display": "4 Jahre"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/KitaEintrittsalterCS",
+        "code": "5_jahre",
+        "display": "5 Jahre"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/KitaEintrittsalterCS",
+        "concept": [
+          {
+            "code": "unter_2_jahre",
+            "display": "< 2 Jahre"
+          },
+          {
+            "code": "2_jahre",
+            "display": "2 Jahre"
+          },
+          {
+            "code": "3_jahre",
+            "display": "3 Jahre"
+          },
+          {
+            "code": "4_jahre",
+            "display": "4 Jahre"
+          },
+          {
+            "code": "5_jahre",
+            "display": "5 Jahre"
+          }
+        ]
+      }
+    ]
+  }
+}

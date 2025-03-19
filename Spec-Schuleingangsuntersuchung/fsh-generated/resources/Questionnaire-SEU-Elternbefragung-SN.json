@@ -587,7 +587,41 @@
       "compose": {
         "include": [
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/chronische-krankheiten"
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/chronische-krankheiten",
+            "concept": [
+              {
+                "code": "asthma",
+                "display": "Asthma bronchiale"
+              },
+              {
+                "code": "rheuma",
+                "display": "Rheuma"
+              },
+              {
+                "code": "diabetes",
+                "display": "Diabetes"
+              },
+              {
+                "code": "epilepsie",
+                "display": "Epilepsie"
+              },
+              {
+                "code": "neurodermitis",
+                "display": "Neurodermitis"
+              },
+              {
+                "code": "adhs",
+                "display": "Aufmerksamkeitsdefizit-/Hyperaktivitätsstörung (ADHS)"
+              },
+              {
+                "code": "chronische_bronchitis",
+                "display": "chronische Bronchitis"
+              },
+              {
+                "code": "sonstiges",
+                "display": "Sonstige chronische Krankheiten"
+              }
+            ]
           }
         ]
       }

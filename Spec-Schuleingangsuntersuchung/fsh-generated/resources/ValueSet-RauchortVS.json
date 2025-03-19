@@ -1,0 +1,42 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "RauchortVS",
+  "id": "RauchortVS",
+  "title": "Ort des Rauchens Value Set",
+  "description": "ValueSet, das den Ort des Rauchens beschreibt.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/RauchortVS",
+  "expansion": {
+    "timestamp": "2024-10-20T11:50:47+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/RauchortCS",
+        "code": "nur_ausserhalb",
+        "display": "nur außerhalb der Wohnung"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/RauchortCS",
+        "code": "innen_und_aussen",
+        "display": "innerhalb und außerhalb der Wohnung"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/RauchortCS",
+        "concept": [
+          {
+            "code": "nur_ausserhalb",
+            "display": "nur außerhalb der Wohnung"
+          },
+          {
+            "code": "innen_und_aussen",
+            "display": "innerhalb und außerhalb der Wohnung"
+          }
+        ]
+      }
+    ]
+  }
+}
