@@ -1,0 +1,62 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "FruehereErkrankungenCS",
+  "id": "FruehereErkrankungenCS",
+  "title": "Frühere Erkrankungen",
+  "description": "Dieses CodeSystem enthält Codes für frühere Erkrankungen.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/FruehereErkrankungenCS",
+  "concept": [
+    {
+      "code": "windpocken",
+      "display": "Windpocken"
+    },
+    {
+      "code": "hoerstoerung",
+      "display": "Hörstörung"
+    },
+    {
+      "code": "krampfanfaelle",
+      "display": "Krampfanfälle (Fieberkrampf, Epilepsie)"
+    },
+    {
+      "code": "wiederholte_mittelohrentzuendung",
+      "display": "wiederholte Mittelohrentzündung(en)/ -vereiterung(en)"
+    },
+    {
+      "code": "nieren_blasenerkrankungen",
+      "display": "Nieren- /Blasenerkrankung(en)"
+    },
+    {
+      "code": "herz_kreislauf_erkrankungen",
+      "display": "Herz-Kreislauf-Erkrankung(en)"
+    },
+    {
+      "code": "haeufige_atemwegserkrankungen",
+      "display": "häufige Atemwegserkrankungen (ARE)"
+    },
+    {
+      "code": "pseudokrupp",
+      "display": "Pseudokrupp"
+    },
+    {
+      "code": "spreiz_hosenbehandlung",
+      "display": "Spreiz(hosen)behandlung"
+    },
+    {
+      "code": "erkrankungen_der_fuesse",
+      "display": "Erkrankung(en) der Füße"
+    },
+    {
+      "code": "erkrankungen_der_wirbelsaeule",
+      "display": "Erkrankung(en) der Wirbelsäule"
+    },
+    {
+      "code": "sonstige_welche",
+      "display": "sonstige Erkrankung(en) / welche?"
+    }
+  ],
+  "count": 12
+}

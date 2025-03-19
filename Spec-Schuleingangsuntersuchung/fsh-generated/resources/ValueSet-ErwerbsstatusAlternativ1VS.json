@@ -1,0 +1,50 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "ErwerbsstatusAlternativ1VS",
+  "id": "ErwerbsstatusAlternativ1VS",
+  "title": "ErwerbsstatusAlternativ1VS",
+  "description": "Erwerbsstatus des Elternteils",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/ErwerbsstatusAlternativ1VS",
+  "expansion": {
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/erwerbsstatus-cs",
+        "code": "erwerbstaetig",
+        "display": "Ja"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/erwerbsstatus-cs",
+        "code": "nicht_erwerbstaetig",
+        "display": "Nein"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/erwerbsstatus-cs",
+        "code": "ausbildung_oder_studium",
+        "display": "zur Zeit Ausbildung/ Studium"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/erwerbsstatus-cs",
+        "concept": [
+          {
+            "code": "erwerbstaetig",
+            "display": "Ja"
+          },
+          {
+            "code": "nicht_erwerbstaetig",
+            "display": "Nein"
+          },
+          {
+            "code": "ausbildung_oder_studium",
+            "display": "zur Zeit Ausbildung/ Studium"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "WieOftImSportVereinCS",
+  "id": "WieOftImSportVereinCS",
+  "title": "WieOftImSportVereinCS",
+  "description": "WieOftImSportVereinCS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/WieOftImSportVereinCS",
+  "concept": [
+    {
+      "code": "1x_wöchentlich",
+      "display": "1x wöchentlich"
+    },
+    {
+      "code": "mehr_als_1x_wöchentlich",
+      "display": "mehr als 1x wöchentlich"
+    }
+  ],
+  "count": 2
+}

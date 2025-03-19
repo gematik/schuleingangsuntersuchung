@@ -1,0 +1,69 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "WohnsituationKindAlternativ1VS",
+  "id": "WohnsituationKindAlternativ1VS",
+  "title": "WohnsituationKindAlternativ1VS",
+  "description": "ValueSet, das verschiedene Wohnsituationen des Kindes enthält.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/WohnsituationKindAlternativ1VS",
+  "expansion": {
+    "timestamp": "2024-10-20T11:50:47+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
+        "code": "eltern",
+        "display": "Bei beiden leiblichen Eltern"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
+        "code": "alleinerziehender_elternteil",
+        "display": "Bei alleinerziehendem Elternteil"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
+        "code": "elternteil_mit_partner",
+        "display": "Bei Elternteil mit Partner"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
+        "code": "andere",
+        "display": "Bei Großeltern, Pflegeeltern, Adoptiveltern oder anderen"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
+        "code": "keine_angabe",
+        "display": "Keine Angaben"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
+        "concept": [
+          {
+            "code": "eltern",
+            "display": "Bei beiden leiblichen Eltern"
+          },
+          {
+            "code": "alleinerziehender_elternteil",
+            "display": "Bei alleinerziehendem Elternteil"
+          },
+          {
+            "code": "elternteil_mit_partner",
+            "display": "Bei Elternteil mit Partner"
+          },
+          {
+            "code": "andere",
+            "display": "Bei Großeltern, Pflegeeltern, Adoptiveltern oder anderen"
+          },
+          {
+            "code": "keine_angabe",
+            "display": "Keine Angaben"
+          }
+        ]
+      }
+    ]
+  }
+}

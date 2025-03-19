@@ -1,0 +1,123 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "WohnsituationKindAlternativ2VS",
+  "id": "WohnsituationKindAlternativ2VS",
+  "title": "WohnsituationKindAlternativ2VS",
+  "description": "ValueSet, das verschiedene Wohnsituationen des Kindes enthält.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/WohnsituationKindAlternativ2VS",
+  "expansion": {
+    "timestamp": "2024-10-20T11:50:47+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
+        "code": "eltern",
+        "display": "Leibliche Eltern"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
+        "code": "mutter_mit_partner",
+        "display": "Mutter mit Partner/in"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
+        "code": "mutter_alleinerziehend",
+        "display": "Mutter alleinerziehend"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
+        "code": "vater_mit_partner",
+        "display": "Vater mit Partner/in"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
+        "code": "vater_alleinerziehend",
+        "display": "Vater alleinerziehend"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
+        "code": "wechselmodell",
+        "display": "Wechselmodell"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
+        "code": "heim",
+        "display": "Heim"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
+        "code": "pflegeeltern",
+        "display": "Pflegeeltern"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
+        "code": "andere_familienmitglieder",
+        "display": "Andere Familienmitglieder/Verwandte"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
+        "code": "andere",
+        "display": "Andere Personen"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
+        "code": "keine_angabe",
+        "display": "Keine Angabe"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
+        "concept": [
+          {
+            "code": "eltern",
+            "display": "Leibliche Eltern"
+          },
+          {
+            "code": "mutter_mit_partner",
+            "display": "Mutter mit Partner/in"
+          },
+          {
+            "code": "mutter_alleinerziehend",
+            "display": "Mutter alleinerziehend"
+          },
+          {
+            "code": "vater_mit_partner",
+            "display": "Vater mit Partner/in"
+          },
+          {
+            "code": "vater_alleinerziehend",
+            "display": "Vater alleinerziehend"
+          },
+          {
+            "code": "wechselmodell",
+            "display": "Wechselmodell"
+          },
+          {
+            "code": "heim",
+            "display": "Heim"
+          },
+          {
+            "code": "pflegeeltern",
+            "display": "Pflegeeltern"
+          },
+          {
+            "code": "andere_familienmitglieder",
+            "display": "Andere Familienmitglieder/Verwandte"
+          },
+          {
+            "code": "andere",
+            "display": "Andere Personen"
+          },
+          {
+            "code": "keine_angabe",
+            "display": "Keine Angabe"
+          }
+        ]
+      }
+    ]
+  }
+}

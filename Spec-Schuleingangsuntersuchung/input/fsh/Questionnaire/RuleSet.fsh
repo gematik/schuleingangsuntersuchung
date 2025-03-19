@@ -136,3 +136,8 @@ RuleSet: itemControl(code)
 * extension[+]
   * url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
   * valueCodeableConcept = http://hl7.org/fhir/questionnaire-item-control{code}
+
+RuleSet: entryFormat(entryFormat)
+* extension[+]
+  * url = "http://hl7.org/fhir/StructureDefinition/entryFormat"
+  * valueString = "{entryFormat}"

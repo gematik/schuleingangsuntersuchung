@@ -44,7 +44,11 @@
     {
       "code": "blasen_harnwegsentzündung",
       "display": "Blasen/Harnwegsentzündung"
+    },
+    {
+      "code": "verbrennungen",
+      "display": "Verbrennungen"
     }
   ],
-  "count": 9
+  "count": 10
 }

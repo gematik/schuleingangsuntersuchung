@@ -1,0 +1,50 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "WerErziehtDasKindCS",
+  "id": "WerErziehtDasKindCS",
+  "title": "WerErziehtDasKindCS",
+  "description": "WerErziehtDasKindCS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/WerErziehtDasKindCS",
+  "concept": [
+    {
+      "code": "beide_eltern_zusammen",
+      "display": "Beide Eltern (zusammen wohnend)"
+    },
+    {
+      "code": "beide_eltern_getrennt",
+      "display": "Beide Eltern (getrennt wohnend)"
+    },
+    {
+      "code": "alleinerziehend",
+      "display": "Alleinerziehende/er"
+    },
+    {
+      "code": "elterntail_mit_partner",
+      "display": "Elternteil mit Partner"
+    },
+    {
+      "code": "pflegeeltern",
+      "display": "Pflegeeltern"
+    },
+    {
+      "code": "großeltern",
+      "display": "Großeltern"
+    },
+    {
+      "code": "andere",
+      "display": "andere"
+    },
+    {
+      "code": "fehlende_angaben",
+      "display": "fehlende Angabe"
+    },
+    {
+      "code": "pflege_verschiedene",
+      "display": "Pflege (Großeltern, Heim, Institution)"
+    }
+  ],
+  "count": 9
+}

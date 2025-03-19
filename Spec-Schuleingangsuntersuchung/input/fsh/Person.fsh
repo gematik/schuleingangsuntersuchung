@@ -6,7 +6,13 @@ Id: Person
   * ^slicing.discriminator.path = "$this"
   * ^slicing.rules = #open
 * identifier contains
+    FachverfahrenId 1..1 MS and
     SteuerId 0..1 MS
+* identifier[FachverfahrenId]
+  * ^patternIdentifier.use = #usual
+  * use 1.. MS
+  * system 1.. MS
+  * value 1.. MS
 * identifier[SteuerId]
   * ^patternIdentifier.type = https://www.oegd.de/fhir/seu/#tax-id
   * type 1.. MS
@@ -45,8 +51,22 @@ Id: Person
   * ^slicing.discriminator.path = "$this"
   * ^slicing.rules = #open
 * address contains
+    Hauptwohnsitz 0..* MS and
     Strassenanschrift 0..* MS and
     Postfach 0..* MS
+* address[Hauptwohnsitz] only AddressDeBasis
+  * ^patternAddress.type = #both
+  * type 1.. MS
+  * line 1.. MS
+    * extension[Strasse] 0..1 MS
+    * extension[Hausnummer] 0..1 MS
+    * extension[Adresszusatz] 0..1 MS
+    * extension[Postfach] 0..0
+  * city 1.. MS
+    * extension contains http://fhir.de/StructureDefinition/destatis/ags named gemeindeschluessel 0..1 MS and FruehererGemeindeNameEX named frueherergemeindename 0..1 MS
+  * postalCode 1.. MS
+  * country 1.. MS
+    * obeys address-cnt-2or3-char
 * address[Postfach] only AddressDeBasis
   * ^patternAddress.type = #postal
   * type 1.. MS
@@ -72,7 +92,6 @@ Id: Person
   * postalCode 1.. MS
   * country 1.. MS
     * obeys address-cnt-2or3-char
-  * extension contains WohnungsInhaberEX named wohnungsinhaber 0..1 MS
 * extension contains 
     http://hl7.org/fhir/StructureDefinition/patient-birthPlace named Geburtsort 0..1 MS and 
     http://hl7.org/fhir/StructureDefinition/patient-nationality named Staatsangehoerigkeit 0.. MS and 
@@ -86,6 +105,28 @@ Id: Person
   * extension contains GenderOtherDE named Geschlecht-Administrativ 0..1 MS
 * deceased[x] only dateTime
 * deceasedDateTime MS
+* contact 1.. MS
+  * ^slicing.discriminator.type = #pattern
+  * ^slicing.discriminator.path = "$this"
+  * ^slicing.rules = #open
+* contact contains
+  Personensorgeberechtigte 1.. MS and
+  Kindertagesstaette 0..
+* contact[Personensorgeberechtigte]
+  * relationship 1.. MS
+    * coding
+      * ^patternCoding.code = #N
+  * name 1.. MS 
+  * name only HumannameDeBasis
+  * address 1.. MS
+  * address only AddressDeBasis
+* contact[Kindertagesstaette]
+  * relationship 1.. MS
+    * coding
+      * ^patternCoding.code = #S
+  * extension contains KiTaName named KiTaName 1..*
+  * address 1.. MS
+  * address only AddressDeBasis
 * communication MS
   * language MS
   * preferred MS
@@ -147,6 +188,9 @@ InstanceOf: Person
 Usage: #example
 * extension[SperreBundeswehr].valueBoolean = true
 * extension[Migrationshintergrund].valueCodeableConcept = PersonEthnieCS#2 "GUS/Osteuropa"
+* identifier[FachverfahrenId].use = #usual
+* identifier[FachverfahrenId].system = "https://www.fachvefahrenshersteller.de/fhir/seu/"
+* identifier[FachverfahrenId].value = "2398423874"
 * identifier[SteuerId].type = https://www.oegd.de/fhir/seu/#tax-id
 * identifier[SteuerId].system = "https://www.oegd.de/fhir/seu/"
 * identifier[SteuerId].value = "2398423874"
@@ -168,6 +212,22 @@ Usage: #example
   * extension.valueString = "Gabler"
 * gender = #female
 * birthDate = "1964-08-12"
+* address[Hauptwohnsitz].type = #both
+* address[Hauptwohnsitz].line[0] = "Musterweg 2"
+* address[Hauptwohnsitz].line[+] = "3. Etage"
+* address[Hauptwohnsitz].line[0].extension[0].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"
+* address[Hauptwohnsitz].line[=].extension[=].valueString = "Musterweg"
+* address[Hauptwohnsitz].line[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"
+* address[Hauptwohnsitz].line[=].extension[=].valueString = "2"
+* address[Hauptwohnsitz].line[+].extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator"
+* address[Hauptwohnsitz].line[=].extension.valueString = "3. Etage"
+* address[Hauptwohnsitz].city = "Musterhausen"
+* address[Hauptwohnsitz].city.extension[+].url = "https://www.oegd.de/fhir/seu//StructureDefinition/FruehererGemeindeNameEX"
+* address[Hauptwohnsitz].city.extension[=].valueString = "Altes Musterhausen"
+* address[Hauptwohnsitz].city.extension[+].url = $ags
+* address[Hauptwohnsitz].city.extension[=].valueString = "03 2 54 021"
+* address[Hauptwohnsitz].postalCode = "98764"
+* address[Hauptwohnsitz].country = "DE"
 * address[Strassenanschrift].type = #both
 * address[Strassenanschrift].line[0] = "Musterweg 2"
 * address[Strassenanschrift].line[+] = "3. Etage"
@@ -184,7 +244,6 @@ Usage: #example
 * address[Strassenanschrift].city.extension[=].valueString = "03 2 54 021"
 * address[Strassenanschrift].postalCode = "98764"
 * address[Strassenanschrift].country = "DE"
-* address[Strassenanschrift].extension[wohnungsinhaber].valueString = "Erika Gabler"
 * address[Postfach].type = #postal
 * address[Postfach].line = "Postfach 8 15"
   * extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox"
@@ -192,7 +251,27 @@ Usage: #example
 * address[Postfach].city = "Musterhausen"
 * address[Postfach].postalCode = "98764"
 * address[Postfach].country = "DE"
+* contact[Personensorgeberechtigte]
+  * relationship.coding.code = #N
+  * name
+    * given = "peter"
+  * address
+    * type = #both
+    * city = "Fulda"
+* contact[Kindertagesstaette]
+  * relationship.coding.code = #S
+  * extension.url = "KiTaName"
+  * extension.valueString = "Kita Nummer 1"
+  * address
+    * type = #both
+    * city = "Fulda"
 * communication[erstsprache].language = urn:ietf:bcp:47#nl "Dutch"
 * communication[deutsch].extension[deutschkenntnis].valueCodeableConcept = PersonDeutschkenntnisCS#4 "flüssig mit leichten Fehlern"
 
 // TODO: Postfach weglassen?
+
+Extension: KiTaName
+Id: kitname
+Title: "KiTa Name as String"
+Description: "Allows representing a KiTa name as a simple string."
+* valueString 1..1

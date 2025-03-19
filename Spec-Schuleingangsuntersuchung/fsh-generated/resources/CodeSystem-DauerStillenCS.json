@@ -1,0 +1,30 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "DauerStillenCS",
+  "id": "DauerStillenCS",
+  "title": "DauerStillenCS",
+  "description": "CodeSystem für die Angabe der Dauer des Stillens.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/DauerStillenCS",
+  "concept": [
+    {
+      "code": "nie_gestillt",
+      "display": "Nie gestillt"
+    },
+    {
+      "code": "weniger_als_6_monate",
+      "display": "Weniger als 6 Monate"
+    },
+    {
+      "code": "mehr_als_6_monate",
+      "display": "Mehr als 6 Monate"
+    },
+    {
+      "code": "keine_angabe",
+      "display": "Keine Angabe"
+    }
+  ],
+  "count": 4
+}

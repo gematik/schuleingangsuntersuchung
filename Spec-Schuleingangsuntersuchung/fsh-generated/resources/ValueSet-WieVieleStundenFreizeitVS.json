@@ -1,0 +1,36 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "WieVieleStundenFreizeitVS",
+  "id": "WieVieleStundenFreizeitVS",
+  "title": "WieVieleStundenFreizeitVS",
+  "description": "WieVieleStundenFreizeitVS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/WieVieleStundenFreizeitVS",
+  "expansion": {
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WieVieleStundenFreizeitCS",
+        "code": "unter_1_stunde",
+        "display": "unter 1 Stunde"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WieVieleStundenFreizeitCS",
+        "code": "1_bis_2_stunden",
+        "display": "1 bis 2 Stunden"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WieVieleStundenFreizeitCS",
+        "code": "mehr_als_2_stunden",
+        "display": "mehr als 2 Stunden"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WieVieleStundenFreizeitCS"
+      }
+    ]
+  }
+}

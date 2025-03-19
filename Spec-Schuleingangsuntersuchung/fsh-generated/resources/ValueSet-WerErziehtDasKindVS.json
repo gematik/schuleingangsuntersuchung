@@ -1,0 +1,87 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "WerErziehtDasKindVS",
+  "id": "WerErziehtDasKindVS",
+  "title": "WerErziehtDasKindVS",
+  "description": "WerErziehtDasKindVS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/WerErziehtDasKindVS",
+  "expansion": {
+    "timestamp": "2024-04-06T12:00:00+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WerErziehtDasKindCS",
+        "code": "beide_eltern_zusammen",
+        "display": "Beide Eltern (zusammen wohnend)"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WerErziehtDasKindCS",
+        "code": "beide_eltern_getrennt",
+        "display": "Beide Eltern (getrennt wohnend)"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WerErziehtDasKindCS",
+        "code": "alleinerziehend",
+        "display": "Alleinerziehende/er"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WerErziehtDasKindCS",
+        "code": "elterntail_mit_partner",
+        "display": "Elternteil mit Partner"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WerErziehtDasKindCS",
+        "code": "pflegeeltern",
+        "display": "Pflegeeltern"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WerErziehtDasKindCS",
+        "code": "großeltern",
+        "display": "Großeltern"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WerErziehtDasKindCS",
+        "code": "andere",
+        "display": "andere"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WerErziehtDasKindCS",
+        "concept": [
+          {
+            "code": "beide_eltern_zusammen",
+            "display": "Beide Eltern (zusammen wohnend)"
+          },
+          {
+            "code": "beide_eltern_getrennt",
+            "display": "Beide Eltern (getrennt wohnend)"
+          },
+          {
+            "code": "alleinerziehend",
+            "display": "Alleinerziehende/er"
+          },
+          {
+            "code": "elterntail_mit_partner",
+            "display": "Elternteil mit Partner"
+          },
+          {
+            "code": "pflegeeltern",
+            "display": "Pflegeeltern"
+          },
+          {
+            "code": "großeltern",
+            "display": "Großeltern"
+          },
+          {
+            "code": "andere",
+            "display": "andere"
+          }
+        ]
+      }
+    ]
+  }
+}

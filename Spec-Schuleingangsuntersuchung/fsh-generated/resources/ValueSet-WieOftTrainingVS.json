@@ -1,0 +1,41 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "WieOftTrainingVS",
+  "id": "WieOftTrainingVS",
+  "title": "WieOftTrainingVS",
+  "description": "WieOftTrainingVS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/WieOftTrainingVS",
+  "expansion": {
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WieOftTrainingCS",
+        "code": "1_mal",
+        "display": "1 mal"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WieOftTrainingCS",
+        "code": "2_mal",
+        "display": "2 mal"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WieOftTrainingCS",
+        "code": "3_mal",
+        "display": "3 mal"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WieOftTrainingCS",
+        "code": "oefter",
+        "display": "öfter"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WieOftTrainingCS"
+      }
+    ]
+  }
+}

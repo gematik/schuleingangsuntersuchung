@@ -1,0 +1,72 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "ErkrankungenLetztesJahrPlusVerbrennungenVS",
+  "id": "ErkrankungenLetztesJahrPlusVerbrennungenVS",
+  "title": "ErkrankungenLetztesJahrPlusVerbrennungenVS",
+  "description": "ErkrankungenLetztesJahrPlusVerbrennungenVS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/ErkrankungenLetztesJahrPlusVerbrennungenVS",
+  "expansion": {
+    "timestamp": "2024-04-04T11:07:53+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungenLetztesJahrCS",
+        "code": "mittelohrentzündung",
+        "display": "Mittelohrentzündung"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungenLetztesJahrCS",
+        "code": "hals_mandelentzündung",
+        "display": "Hals-/Mandelentzündung"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungenLetztesJahrCS",
+        "code": "pseudokrupp_anfall",
+        "display": "Pseudokrupp-Anfall"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungenLetztesJahrCS",
+        "code": "bronchitis",
+        "display": "Bronchitis"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungenLetztesJahrCS",
+        "code": "lungenentzündung",
+        "display": "Lungenentzündung"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungenLetztesJahrCS",
+        "code": "magen_darm_infektion",
+        "display": "Magen-Darm-Infektion"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungenLetztesJahrCS",
+        "code": "fieberkrämpfe",
+        "display": "Fieberkrämpfe"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungenLetztesJahrCS",
+        "code": "cerebraler_krampfanfall",
+        "display": "Cerebraler Krampfanfall"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungenLetztesJahrCS",
+        "code": "blasen_harnwegsentzündung",
+        "display": "Blasen/Harnwegsentzündung"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungenLetztesJahrCS",
+        "code": "verbrennungen",
+        "display": "Verbrennungen"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungenLetztesJahrCS"
+      }
+    ]
+  }
+}

@@ -8,7 +8,7 @@
   "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/erwerbsstatus-incl-sonstiges-vs",
   "expansion": {
-    "timestamp": "2024-06-26T15:47:43+00:00",
+    "timestamp": "2025-03-04T12:00:00+00:00",
     "contains": [
       {
         "system": "https://www.oegd.de/fhir/seu/CodeSystem/erwerbsstatus-cs",
@@ -35,7 +35,25 @@
   "compose": {
     "include": [
       {
-        "system": "https://www.oegd.de/fhir/seu/CodeSystem/erwerbsstatus-cs"
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/erwerbsstatus-cs",
+        "concept": [
+          {
+            "code": "nicht_erwerbstaetig",
+            "display": "Nicht erwerbstätig"
+          },
+          {
+            "code": "teilzeit",
+            "display": "Teilzeit"
+          },
+          {
+            "code": "vollzeit",
+            "display": "Vollzeit"
+          },
+          {
+            "code": "sonstiges",
+            "display": "Sonstiges"
+          }
+        ]
       }
     ]
   }

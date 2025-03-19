@@ -10,7 +10,7 @@ Description: "Elternbefragung BW"
 * contained[+] = SEU_EF_DauerBWVS
 * contained[+] = SEU_EF_BildungsabschlussBWVS
 * id = "SEU-Elternbefragung-BW"
-* url = "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung"
+* url = "https://www.oegd.de/fhir/seu/Questionnaire/ElternbefragungBW"
 * title = "SEU Elternfragebogen BW"
 * insert launchContext("patient", #Patient, "Patientenkontext")
 * status = #draft

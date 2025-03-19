@@ -1,0 +1,60 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "GeburtArtVS",
+  "id": "GeburtArtVS",
+  "title": "Art der Geburt Value Set",
+  "description": "ValueSet, das die Arten der Geburt enthält.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/GeburtArtVS",
+  "expansion": {
+    "timestamp": "2024-10-20T11:50:47+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/GeburtArtCS",
+        "code": "spontangeburt",
+        "display": "Spontangeburt"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/GeburtArtCS",
+        "code": "kaiserschnitt",
+        "display": "Kaiserschnitt"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/GeburtArtCS",
+        "code": "mehrlingsgeburt",
+        "display": "Mehrlingsgeburt"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/GeburtArtCS",
+        "code": "mit_Saugglocke_oder_zangen",
+        "display": "Geburt mit Saugglocke oder Zangen"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/GeburtArtCS",
+        "concept": [
+          {
+            "code": "spontangeburt",
+            "display": "Spontangeburt"
+          },
+          {
+            "code": "kaiserschnitt",
+            "display": "Kaiserschnitt"
+          },
+          {
+            "code": "mehrlingsgeburt",
+            "display": "Mehrlingsgeburt"
+          },
+          {
+            "code": "mit_Saugglocke_oder_zangen",
+            "display": "Geburt mit Saugglocke oder Zangen"
+          }
+        ]
+      }
+    ]
+  }
+}

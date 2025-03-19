@@ -1,0 +1,82 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "PersonensorgeberechtigterBeziehungVS",
+  "id": "PersonensorgeberechtigterBeziehungVS",
+  "title": "PersonensorgeberechtigterBeziehungVS",
+  "description": "PersonensorgeberechtigterBeziehungVS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/PersonensorgeberechtigterBeziehungVS",
+  "expansion": {
+    "timestamp": "2025-02-21T11:50:47+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/PersonensorgeberechtigterBeziehungCS",
+        "code": "mutter",
+        "display": "Mutter"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/PersonensorgeberechtigterBeziehungCS",
+        "code": "vater",
+        "display": "Vater"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/PersonensorgeberechtigterBeziehungCS",
+        "code": "leiblichemutter",
+        "display": "Leibliche Mutter"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/PersonensorgeberechtigterBeziehungCS",
+        "code": "leiblichervater",
+        "display": "Leiblicher Vater"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/PersonensorgeberechtigterBeziehungCS",
+        "code": "adoptivmutter",
+        "display": "Adoptiv-/Pflegemutter"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/PersonensorgeberechtigterBeziehungCS",
+        "code": "adoptivvater",
+        "display": "Adoptiv-/Pflegevater"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/PersonensorgeberechtigterBeziehungCS",
+        "code": "natperson",
+        "display": "Natürliche Person (nicht spezifiziert)"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/PersonensorgeberechtigterBeziehungCS",
+        "code": "jugendamt",
+        "display": "Jugendamt"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/PersonensorgeberechtigterBeziehungCS",
+        "code": "jurperson",
+        "display": "Juristische Person"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/PersonensorgeberechtigterBeziehungCS",
+        "code": "betreuer",
+        "display": "Betreuer m. Einwill.vorbeh.Aufenthaltsb."
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/PersonensorgeberechtigterBeziehungCS",
+        "code": "pflegemutter",
+        "display": "Pflegemutter"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/PersonensorgeberechtigterBeziehungCS",
+        "code": "pflegecater",
+        "display": "Pflegevater"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/PersonensorgeberechtigterBeziehungCS"
+      }
+    ]
+  }
+}

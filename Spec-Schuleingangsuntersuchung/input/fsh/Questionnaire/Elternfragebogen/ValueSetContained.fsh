@@ -17,53 +17,6 @@ Description: "SEU-EF-NeinAbgeschlossenLaeuftGeplantVS"
 * ^expansion.contains[=].code = #geplant
 * ^expansion.contains[=].display = "geplant"
 
-ValueSet: LebtBeiVS
-Id: LebtBeiVS
-Title: "LebtBeiVS"
-Description: "LebtBeiVS"
-* include codes from system LebtBeiCS
-* ^expansion.timestamp = "2024-04-04T09:24:55+00:00"
-* ^expansion.contains[0].system = "https://www.oegd.de/fhir/seu/CodeSystem/LebtBeiCS"
-* ^expansion.contains[=].code = #vater
-* ^expansion.contains[=].display = "Vater"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/LebtBeiCS"
-* ^expansion.contains[=].code = #eltern
-* ^expansion.contains[=].display = "Eltern"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/LebtBeiCS"
-* ^expansion.contains[=].code = #andere
-* ^expansion.contains[=].display = "Andere"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/LebtBeiCS"
-* ^expansion.contains[=].code = #mutter
-* ^expansion.contains[=].display = "Mutter"
-
-ValueSet: ChronischeErkrankungenVS
-Id: ChronischeErkrankungenVS
-Title: "ChronischeErkrankungenVS"
-Description: "ChronischeErkrankungenVS"
-* include codes from system ChronischeErkrankungenCS
-* ^expansion.timestamp = "2024-04-04T10:10:32+00:00"
-* ^expansion.contains[0].system = "https://www.oegd.de/fhir/seu/CodeSystem/ChronischeErkrankungenCS"
-* ^expansion.contains[=].code = #allergie
-* ^expansion.contains[=].display = "Allergie"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ChronischeErkrankungenCS"
-* ^expansion.contains[=].code = #fettstoffwechselstörung
-* ^expansion.contains[=].display = "Fettstoffwechselstörung"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ChronischeErkrankungenCS"
-* ^expansion.contains[=].code = #bluthochdruck
-* ^expansion.contains[=].display = "Bluthochdruck"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ChronischeErkrankungenCS"
-* ^expansion.contains[=].code = #schlaganfall
-* ^expansion.contains[=].display = "Schlaganfall"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ChronischeErkrankungenCS"
-* ^expansion.contains[=].code = #herzinfarkt
-* ^expansion.contains[=].display = "Herzinfarkt"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ChronischeErkrankungenCS"
-* ^expansion.contains[=].code = #zuckerkrankheit
-* ^expansion.contains[=].display = "Zuckerkrankheit"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ChronischeErkrankungenCS"
-* ^expansion.contains[=].code = #übergewicht
-* ^expansion.contains[=].display = "Übergewicht"
-
 ValueSet: JaNeinAngemeldetVS
 Id: JaNeinAngemeldetVS
 Title: "JaNeinAngemeldetVS"
@@ -274,150 +227,6 @@ Description: "StoffwechselstoerungVS"
 * ^expansion.contains[=].code = #diab_mell_typ_ii
 * ^expansion.contains[=].display = "Diab. mell. Typ II"
 
-ValueSet: ErkrankungVS
-Id: ErkrankungVS
-Title: "ErkrankungVS"
-Description: "ErkrankungVS"
-* include codes from system ErkrankungCS
-* ^expansion.timestamp = "2024-04-04T10:55:53+00:00"
-* ^expansion.contains[0].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS"
-* ^expansion.contains[=].code = #epilepsie
-* ^expansion.contains[=].display = "Epilepsie"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS"
-* ^expansion.contains[=].code = #ads_adhs
-* ^expansion.contains[=].display = "ADS/ADHS"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS"
-* ^expansion.contains[=].code = #sprachauffälligkeit
-* ^expansion.contains[=].display = "Sprachauffälligkeit"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS"
-* ^expansion.contains[=].code = #sehstörung
-* ^expansion.contains[=].display = "Sehstörung"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS"
-* ^expansion.contains[=].code = #hörstörung
-* ^expansion.contains[=].display = "Hörstörung"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS"
-* ^expansion.contains[=].code = #herzfehler
-* ^expansion.contains[=].display = "Herzfehler"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS"
-* ^expansion.contains[=].code = #nieren_harnwegerkrankung
-* ^expansion.contains[=].display = "Nieren/Harnwegerkrankung"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS"
-* ^expansion.contains[=].code = #allergischer_schnupfen
-* ^expansion.contains[=].display = "Allergischer Schnupfen"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS"
-* ^expansion.contains[=].code = #asthma
-* ^expansion.contains[=].display = "Asthma"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS"
-* ^expansion.contains[=].code = #allergische_hauterkrankung
-* ^expansion.contains[=].display = "Allergische Hauterkrankung"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS"
-* ^expansion.contains[=].code = #neurodermitis
-* ^expansion.contains[=].display = "Neurodermitis"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS"
-* ^expansion.contains[=].code = #nahrungsmittelallergie
-* ^expansion.contains[=].display = "Nahrungsmittelallergie"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS"
-* ^expansion.contains[=].code = #krebserkrankung
-* ^expansion.contains[=].display = "Krebserkrankung"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS"
-* ^expansion.contains[=].code = #hüfterkrankung
-* ^expansion.contains[=].display = "Hüfterkrankung"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS"
-* ^expansion.contains[=].code = #wirbelsäulenleiden
-* ^expansion.contains[=].display = "Wirbelsäulenleiden"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS"
-* ^expansion.contains[=].code = #bewegungsstörung
-* ^expansion.contains[=].display = "Bewegungsstörung"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS"
-* ^expansion.contains[=].code = #diabetes
-* ^expansion.contains[=].display = "Diabetes"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS"
-* ^expansion.contains[=].code = #ass
-* ^expansion.contains[=].display = "Autismus-Spektrum-Störung (ASS)"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS"
-* ^expansion.contains[=].code = #schilddrüsenfunktionsstörung
-* ^expansion.contains[=].display = "Schilddrüsenfunktionsstörung"
-
-ValueSet: InfektionsKrankheitVS
-Id: InfektionsKrankheitVS
-Title: "InfektionsKrankheitVS"
-Description: "InfektionsKrankheitVS"
-* include codes from system InfektionsKrankheitCS
-* ^expansion.timestamp = "2024-04-04T11:02:42+00:00"
-* ^expansion.contains[0].system = "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS"
-* ^expansion.contains[=].code = #covid_19
-* ^expansion.contains[=].display = "COVID-19"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS"
-* ^expansion.contains[=].code = #hand_fuß_mund_krankheit
-* ^expansion.contains[=].display = "Hand-Fuß-Mund-Krankheit"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS"
-* ^expansion.contains[=].code = #borreliose
-* ^expansion.contains[=].display = "Borreliose"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS"
-* ^expansion.contains[=].code = #hepatitis_b
-* ^expansion.contains[=].display = "Hepatitis B"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS"
-* ^expansion.contains[=].code = #hirnhautentzündung
-* ^expansion.contains[=].display = "Hirnhautentzündung"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS"
-* ^expansion.contains[=].code = #keuchhusten
-* ^expansion.contains[=].display = "Keuchhusten"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS"
-* ^expansion.contains[=].code = #masern
-* ^expansion.contains[=].display = "Masern"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS"
-* ^expansion.contains[=].code = #mumps
-* ^expansion.contains[=].display = "Mumps"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS"
-* ^expansion.contains[=].code = #ringelröten
-* ^expansion.contains[=].display = "Ringelröten"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS"
-* ^expansion.contains[=].code = #röteln
-* ^expansion.contains[=].display = "Röteln"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS"
-* ^expansion.contains[=].code = #rotavirus_infektion
-* ^expansion.contains[=].display = "Rotavirus-Infektion"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS"
-* ^expansion.contains[=].code = #scharlach
-* ^expansion.contains[=].display = "Scharlach"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS"
-* ^expansion.contains[=].code = #windpocken
-* ^expansion.contains[=].display = "Windpocken"
-
-ValueSet: ErkrankungenLetztesJahrVS
-Id: ErkrankungenLetztesJahrVS
-Title: "ErkrankungenLetztesJahrVS"
-Description: "ErkrankungenLetztesJahrVS"
-* include codes from system ErkrankungenLetztesJahrCS
-* ^expansion.timestamp = "2024-04-04T11:07:53+00:00"
-* ^expansion.contains[0].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungenLetztesJahrCS"
-* ^expansion.contains[=].code = #mittelohrentzündung
-* ^expansion.contains[=].display = "Mittelohrentzündung"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungenLetztesJahrCS"
-* ^expansion.contains[=].code = #hals_mandelentzündung
-* ^expansion.contains[=].display = "Hals-/Mandelentzündung"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungenLetztesJahrCS"
-* ^expansion.contains[=].code = #pseudokrupp_anfall
-* ^expansion.contains[=].display = "Pseudokrupp-Anfall"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungenLetztesJahrCS"
-* ^expansion.contains[=].code = #bronchitis
-* ^expansion.contains[=].display = "Bronchitis"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungenLetztesJahrCS"
-* ^expansion.contains[=].code = #lungenentzündung
-* ^expansion.contains[=].display = "Lungenentzündung"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungenLetztesJahrCS"
-* ^expansion.contains[=].code = #magen_darm_infektion
-* ^expansion.contains[=].display = "Magen-Darm-Infektion"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungenLetztesJahrCS"
-* ^expansion.contains[=].code = #fieberkrämpfe
-* ^expansion.contains[=].display = "Fieberkrämpfe"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungenLetztesJahrCS"
-* ^expansion.contains[=].code = #cerebraler_krampfanfall
-* ^expansion.contains[=].display = "Cerebraler Krampfanfall"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungenLetztesJahrCS"
-* ^expansion.contains[=].code = #blasen_harnwegsentzündung
-* ^expansion.contains[=].display = "Blasen/Harnwegsentzündung"
-
 ValueSet: PflegegradVS
 Id: PflegegradVS
 Title: "PflegegradVS"
@@ -541,7 +350,7 @@ Description: "ValueSet, das verschiedene Berufsbildungsabschlüsse enthält."
 * ^expansion.contains[=].display = "Fach-/Hochschulabschluss oder vergleichbar"
 
 ValueSet: SEU_EF_SchulabschlussBerlinVS
-Id: SEU_EF_SchulabschlussBerlinVS
+Id: SEU-EF-SchulabschlussBerlinVS
 Title: "SEU_EF_Berufsbildung Berlin ValueSet"
 Description: "ValueSet, das verschiedene Schulabschlüsse enthält."
 * include codes from system SEU_EF_SchulabschlussBerlinCS
@@ -558,45 +367,6 @@ Description: "ValueSet, das verschiedene Schulabschlüsse enthält."
 * ^expansion.contains[+].system = Canonical(SEU_EF_SchulabschlussBerlinCS)
 * ^expansion.contains[=].code = #abitur_fachabitur
 * ^expansion.contains[=].display = "Abitur/Fachabitur"
-
-ValueSet: ErwerbsstatusVS
-Id: erwerbsstatus-vs
-Title: "Erwerbsstatus ValueSet"
-Description: "ErwerbsstatusVS"
-* ErwerbsstatusCS#nicht_erwerbstaetig "Nicht erwerbstätig"
-* ErwerbsstatusCS#teilzeit "Teilzeit"
-* ErwerbsstatusCS#vollzeit "Vollzeit"
-* ^expansion.timestamp = "2024-04-06T12:00:00+00:00"
-* ^expansion.contains[0].system = Canonical(ErwerbsstatusCS)
-* ^expansion.contains[=].code = #nicht_erwerbstaetig
-* ^expansion.contains[=].display = "Nicht erwerbstätig"
-* ^expansion.contains[+].system = Canonical(ErwerbsstatusCS)
-* ^expansion.contains[=].code = #teilzeit
-* ^expansion.contains[=].display = "Teilzeit"
-* ^expansion.contains[+].system = Canonical(ErwerbsstatusCS)
-* ^expansion.contains[=].code = #vollzeit
-* ^expansion.contains[=].display = "Vollzeit"
-
-ValueSet: ErwerbsstatusInclSonstigesVS
-Id: erwerbsstatus-incl-sonstiges-vs
-Title: "Erwerbsstatus ValueSet incl. Sonstiges"
-Description: "ErwerbsstatusInclSonstigesVS"
-* include codes from system ErwerbsstatusCS
-* ^expansion.timestamp = "2024-06-26T15:47:43+00:00"
-* ^expansion.contains[0].system = Canonical(ErwerbsstatusCS)
-* ^expansion.contains[=].code = #nicht_erwerbstaetig
-* ^expansion.contains[=].display = "Nicht erwerbstätig"
-* ^expansion.contains[+].system = Canonical(ErwerbsstatusCS)
-* ^expansion.contains[=].code = #teilzeit
-* ^expansion.contains[=].display = "Teilzeit"
-* ^expansion.contains[+].system = Canonical(ErwerbsstatusCS)
-* ^expansion.contains[=].code = #vollzeit
-* ^expansion.contains[=].display = "Vollzeit"
-* ^expansion.contains[+].system = Canonical(ErwerbsstatusCS)
-* ^expansion.contains[=].code = #sonstiges
-* ^expansion.contains[=].display = "Sonstiges"
-
-
 
 ValueSet: FamilienrolleVS
 Id: familienrolle-vs
@@ -623,35 +393,6 @@ Description: "FamilienrolleVS"
 * ^expansion.contains[=].code = #andere_person
 * ^expansion.contains[=].display = "Andere Person"
 
-
-ValueSet: ChronischeKrankheitenVS
-Id: chronische-krankheiten-vs
-Title: "ValueSet für chronische Krankheiten"
-Description: "Dieses ValueSet beinhaltet eine Auswahl von Codes für häufige chronische Krankheiten, definiert im zugehörigen CodeSystem."
-* include codes from system ChronischeKrankheiten
-* ^expansion.timestamp = "2024-04-12T15:47:43+00:00"
-* ^expansion.contains[0].system = Canonical(ChronischeKrankheiten)
-* ^expansion.contains[0].code = #asthma
-* ^expansion.contains[0].display = "Asthma bronchiale"
-* ^expansion.contains[1].system = Canonical(ChronischeKrankheiten)
-* ^expansion.contains[1].code = #rheuma
-* ^expansion.contains[1].display = "Rheuma"
-* ^expansion.contains[2].system = Canonical(ChronischeKrankheiten)
-* ^expansion.contains[2].code = #diabetes
-* ^expansion.contains[2].display = "Diabetes"
-* ^expansion.contains[3].system = Canonical(ChronischeKrankheiten)
-* ^expansion.contains[3].code = #epilepsie
-* ^expansion.contains[3].display = "Epilepsie"
-* ^expansion.contains[4].system = Canonical(ChronischeKrankheiten)
-* ^expansion.contains[4].code = #neurodermitis
-* ^expansion.contains[4].display = "Neurodermitis"
-* ^expansion.contains[5].system = Canonical(ChronischeKrankheiten)
-* ^expansion.contains[5].code = #adhs
-* ^expansion.contains[5].display = "Aufmerksamkeitsdefizit-/Hyperaktivitätsstörung (ADHS)"
-* ^expansion.contains[6].system = Canonical(ChronischeKrankheiten)
-* ^expansion.contains[6].code = #sonstiges
-* ^expansion.contains[6].display = "Sonstige chronische Krankheiten"
-
 ValueSet: UeberwiegendGesprocheneSpracheVS
 Id: ueberwiegend-gesprochene-sprache-vs
 Title: "ValueSet für überwiegend gesprochene Sprachen"
@@ -667,50 +408,6 @@ Description: "Dieses ValueSet beinhaltet eine Auswahl von Codes für die Klassif
 * ^expansion.contains[2].system = Canonical(UeberwiegendGesprocheneSpracheCS)
 * ^expansion.contains[2].code = #deutsch_andere
 * ^expansion.contains[2].display = "Deutsch + andere Sprache"
-
-ValueSet: EntwicklungVS
-Id: entwicklung-vs
-Title: "ValueSet für Entwicklung"
-Description: "Dieses ValueSet beinhaltet Codes für die Klassifikation des Zeitpunkts der Entwicklung, definiert im zugehörigen CodeSystem."
-* include codes from system EntwicklungCS
-* ^expansion.timestamp = "2024-04-12T15:47:43+00:00"
-* ^expansion.contains[0].system = Canonical(EntwicklungCS)
-* ^expansion.contains[0].code = #bis_zum_4
-* ^expansion.contains[0].display = "bis zum 4. Lebensjahr"
-* ^expansion.contains[1].system = Canonical(EntwicklungCS)
-* ^expansion.contains[1].code = #spaeter
-* ^expansion.contains[1].display = "später"
-
-ValueSet: AtopischeErkrankungenVS
-Id: atopische-erkrankungen-vs
-Title: "ValueSet für atopische/allergische Erkrankungen"
-Description: "Dieses ValueSet beinhaltet eine Auswahl von Codes für die Klassifikation von atopischen/allergischen Erkrankungen, definiert im zugehörigen CodeSystem."
-* include codes from system AtopischeErkrankungenCS
-* ^expansion.timestamp = "2024-04-12T15:47:43+00:00"
-* ^expansion.contains[0].system = Canonical(AtopischeErkrankungenCS)
-* ^expansion.contains[0].code = #atopische_allergische
-* ^expansion.contains[0].display = "Atopische/Allergische Erkrankungen"
-* ^expansion.contains[1].system = Canonical(AtopischeErkrankungenCS)
-* ^expansion.contains[1].code = #nahrungsmittel
-* ^expansion.contains[1].display = "Nahrungsmittelallergien"
-* ^expansion.contains[2].system = Canonical(AtopischeErkrankungenCS)
-* ^expansion.contains[2].code = #pollen
-* ^expansion.contains[2].display = "Pollenallergien"
-* ^expansion.contains[3].system = Canonical(AtopischeErkrankungenCS)
-* ^expansion.contains[3].code = #hausstaubmilben
-* ^expansion.contains[3].display = "Hausstaubmilbenallergien"
-* ^expansion.contains[4].system = Canonical(AtopischeErkrankungenCS)
-* ^expansion.contains[4].code = #schimmelpilze
-* ^expansion.contains[4].display = "Schimmelpilzallergien"
-* ^expansion.contains[5].system = Canonical(AtopischeErkrankungenCS)
-* ^expansion.contains[5].code = #tierhaare
-* ^expansion.contains[5].display = "Tierhaarallergien"
-* ^expansion.contains[6].system = Canonical(AtopischeErkrankungenCS)
-* ^expansion.contains[6].code = #medikamente
-* ^expansion.contains[6].display = "Medikamentenallergien"
-* ^expansion.contains[7].system = Canonical(AtopischeErkrankungenCS)
-* ^expansion.contains[7].code = #sonstiges
-* ^expansion.contains[7].display = "Sonstige atopische/allergische Erkrankungen"
 
 ValueSet: AllgemeineBeschwerdenVS
 Id: allgemeine-beschwerden-vs
@@ -733,7 +430,6 @@ Description: "Dieses ValueSet beinhaltet eine Auswahl von Codes für die Klassif
 * ^expansion.contains[4].system = Canonical(AllgemeineBeschwerdenCS)
 * ^expansion.contains[4].code = #sonstige
 * ^expansion.contains[4].display = "Sonstige Beschwerden"
-
 
 ValueSet: DeuevAnlage8LaenderkennzeichenVS
 Id: DeuevAnlage8LaenderkennzeichenVS
@@ -1921,28 +1617,6 @@ Description: "ValueSet, das verschiedene durchgeführte Operationen enthält."
 * ^expansion.contains[=].code = #sonstige_operation
 * ^expansion.contains[=].display = "Sonstige Operation"
 
-ValueSet: SEU_EF_WohnsituationKindVS
-Id: seu-ef-wohnsituation-kind-vs
-Title: "SEU_EF_Wohnsituation Kind ValueSet"
-Description: "ValueSet, das verschiedene Wohnsituationen des Kindes enthält."
-* include codes from system SEU_EF_WohnsituationKindCS
-* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
-* ^expansion.contains[0].system = Canonical(SEU_EF_WohnsituationKindCS)
-* ^expansion.contains[=].code = #bei_beiden_leiblichen_eltern
-* ^expansion.contains[=].display = "Bei beiden leiblichen Eltern"
-* ^expansion.contains[+].system = Canonical(SEU_EF_WohnsituationKindCS)
-* ^expansion.contains[=].code = #bei_alleinerziehendem_elternteil
-* ^expansion.contains[=].display = "Bei alleinerziehendem Elternteil"
-* ^expansion.contains[+].system = Canonical(SEU_EF_WohnsituationKindCS)
-* ^expansion.contains[=].code = #bei_elternteil_mit_partner
-* ^expansion.contains[=].display = "Bei Elternteil mit Partner"
-* ^expansion.contains[+].system = Canonical(SEU_EF_WohnsituationKindCS)
-* ^expansion.contains[=].code = #bei_grosseltern_oder_anderen
-* ^expansion.contains[=].display = "Bei Großeltern, Pflegeeltern, Adoptiveltern oder anderen"
-* ^expansion.contains[+].system = Canonical(SEU_EF_WohnsituationKindCS)
-* ^expansion.contains[=].code = #keine_angaben
-* ^expansion.contains[=].display = "Keine Angaben"
-
 CodeSystem: SEU_EF_UnfallCS
 Id: seu-ef-unfall-cs
 Title: "SEU_EF_Unfall CodeSystem"
@@ -2174,62 +1848,6 @@ Description: "ValueSet, das verschiedene Zeiträume enthält."
 * ^expansion.contains[+].system = Canonical(SEU_EF_ZeitraumCS)
 * ^expansion.contains[=].code = #1_2_jahre
 * ^expansion.contains[=].display = "1-2 Jahre"
-
-CodeSystem: SEU_EF_FamiliensituationCS
-Id: seu-ef-familiensituation-cs
-Title: "SEU_EF_Familiensituation CodeSystem"
-Description: "CodeSystem für die Angabe der Familiensituation."
-* #leibliche_eltern "Leibliche Eltern"
-* #mutter_mit_partner_in "Mutter mit Partner/in"
-* #mutter_alleinerziehend "Mutter alleinerziehend"
-* #vater_mit_partner_in "Vater mit Partner/in"
-* #vater_alleinerziehend "Vater alleinerziehend"
-* #wechselmodell "Wechselmodell"
-* #heim "Heim"
-* #pflegeeltern "Pflegeeltern"
-* #andere_familienmitglieder_verwandte "Andere Familienmitglieder/Verwandte"
-* #andere_personen "Andere Personen"
-* #keine_angabe "Keine Angabe"
-
-ValueSet: SEU_EF_FamiliensituationVS
-Id: seu-ef-familiensituation-vs
-Title: "SEU_EF_Familiensituation ValueSet"
-Description: "ValueSet, das verschiedene Familiensituationen enthält."
-* include codes from system SEU_EF_FamiliensituationCS
-* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
-* ^expansion.contains[0].system = Canonical(SEU_EF_FamiliensituationCS)
-* ^expansion.contains[=].code = #leibliche_eltern
-* ^expansion.contains[=].display = "Leibliche Eltern"
-* ^expansion.contains[+].system = Canonical(SEU_EF_FamiliensituationCS)
-* ^expansion.contains[=].code = #mutter_mit_partner_in
-* ^expansion.contains[=].display = "Mutter mit Partner/in"
-* ^expansion.contains[+].system = Canonical(SEU_EF_FamiliensituationCS)
-* ^expansion.contains[=].code = #mutter_alleinerziehend
-* ^expansion.contains[=].display = "Mutter alleinerziehend"
-* ^expansion.contains[+].system = Canonical(SEU_EF_FamiliensituationCS)
-* ^expansion.contains[=].code = #vater_mit_partner_in
-* ^expansion.contains[=].display = "Vater mit Partner/in"
-* ^expansion.contains[+].system = Canonical(SEU_EF_FamiliensituationCS)
-* ^expansion.contains[=].code = #vater_alleinerziehend
-* ^expansion.contains[=].display = "Vater alleinerziehend"
-* ^expansion.contains[+].system = Canonical(SEU_EF_FamiliensituationCS)
-* ^expansion.contains[=].code = #wechselmodell
-* ^expansion.contains[=].display = "Wechselmodell"
-* ^expansion.contains[+].system = Canonical(SEU_EF_FamiliensituationCS)
-* ^expansion.contains[=].code = #heim
-* ^expansion.contains[=].display = "Heim"
-* ^expansion.contains[+].system = Canonical(SEU_EF_FamiliensituationCS)
-* ^expansion.contains[=].code = #pflegeeltern
-* ^expansion.contains[=].display = "Pflegeeltern"
-* ^expansion.contains[+].system = Canonical(SEU_EF_FamiliensituationCS)
-* ^expansion.contains[=].code = #andere_familienmitglieder_verwandte
-* ^expansion.contains[=].display = "Andere Familienmitglieder/Verwandte"
-* ^expansion.contains[+].system = Canonical(SEU_EF_FamiliensituationCS)
-* ^expansion.contains[=].code = #andere_personen
-* ^expansion.contains[=].display = "Andere Personen"
-* ^expansion.contains[+].system = Canonical(SEU_EF_FamiliensituationCS)
-* ^expansion.contains[=].code = #keine_angabe
-* ^expansion.contains[=].display = "Keine Angabe"
 
 CodeSystem: SEU_EF_DauerCS
 Id: seu-ef-dauer-cs
@@ -2511,6 +2129,308 @@ Description: "ValueSet, das verschiedene Dauern enthält."
 * ^expansion.contains[=].code = #ueber_3_jahre
 * ^expansion.contains[=].display = ">3 Jahre"
 
+ValueSet: DauerStillenVS
+Id: DauerStillenVS
+Title: "Dauer des Stillens ValueSet"
+Description: "ValueSet, das verschiedene Dauern des Stillens enthält."
+* include codes from system DauerStillenCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
+* ^expansion.contains[0].system = Canonical(DauerStillenCS)
+* ^expansion.contains[=].code = #nie_gestillt
+* ^expansion.contains[=].display = "Nie gestillt"
+* ^expansion.contains[+].system = Canonical(DauerStillenCS)
+* ^expansion.contains[=].code = #weniger_als_6_monate
+* ^expansion.contains[=].display = "Weniger als 6 Monate"
+* ^expansion.contains[+].system = Canonical(DauerStillenCS)
+* ^expansion.contains[=].code = #mehr_als_6_monate
+* ^expansion.contains[=].display = "Mehr als 6 Monate"
+* ^expansion.contains[+].system = Canonical(DauerStillenCS)
+* ^expansion.contains[=].code = #keine_angabe
+* ^expansion.contains[=].display = "Keine Angabe"
+
+ValueSet: JaNeinWeissNichtVS
+Id: JaNeinWeissNichtVS
+Title: "JaNeinWeissNichtVS"
+Description: "JaNeinWeissNichtVS"
+* include codes from system JaNeinWeissNichtCS
+* ^expansion.timestamp = "2024-04-06T12:00:00+00:00"
+* ^expansion.contains[0].system = Canonical(JaNeinWeissNichtCS)
+* ^expansion.contains[=].code = #ja
+* ^expansion.contains[=].display = "Ja"
+* ^expansion.contains[+].system = Canonical(JaNeinWeissNichtCS)
+* ^expansion.contains[=].code = #nein
+* ^expansion.contains[=].display = "Nein"
+* ^expansion.contains[+].system = Canonical(JaNeinWeissNichtCS)
+* ^expansion.contains[=].code = #weiss_nicht
+* ^expansion.contains[=].display = "Weiß nicht"
+
+ValueSet: WerErziehtDasKindVS
+Id: WerErziehtDasKindVS
+Title: "WerErziehtDasKindVS"
+Description: "WerErziehtDasKindVS"
+* WerErziehtDasKindCS#beide_eltern_zusammen "Beide Eltern (zusammen wohnend)"
+* WerErziehtDasKindCS#beide_eltern_getrennt "Beide Eltern (getrennt wohnend)"
+* WerErziehtDasKindCS#alleinerziehend "Alleinerziehende/er"
+* WerErziehtDasKindCS#elterntail_mit_partner "Elternteil mit Partner"
+* WerErziehtDasKindCS#pflegeeltern "Pflegeeltern"
+* WerErziehtDasKindCS#großeltern "Großeltern"
+* WerErziehtDasKindCS#andere "andere"
+* ^expansion.timestamp = "2024-04-06T12:00:00+00:00"
+* ^expansion.contains[0].system = Canonical(WerErziehtDasKindCS)
+* ^expansion.contains[=].code = #beide_eltern_zusammen
+* ^expansion.contains[=].display = "Beide Eltern (zusammen wohnend)"
+* ^expansion.contains[+].system = Canonical(WerErziehtDasKindCS)
+* ^expansion.contains[=].code = #beide_eltern_getrennt
+* ^expansion.contains[=].display = "Beide Eltern (getrennt wohnend)"
+* ^expansion.contains[+].system = Canonical(WerErziehtDasKindCS)
+* ^expansion.contains[=].code = #alleinerziehend
+* ^expansion.contains[=].display = "Alleinerziehende/er"
+* ^expansion.contains[+].system = Canonical(WerErziehtDasKindCS)
+* ^expansion.contains[=].code = #elterntail_mit_partner
+* ^expansion.contains[=].display = "Elternteil mit Partner"
+* ^expansion.contains[+].system = Canonical(WerErziehtDasKindCS)
+* ^expansion.contains[=].code = #pflegeeltern
+* ^expansion.contains[=].display = "Pflegeeltern"
+* ^expansion.contains[+].system = Canonical(WerErziehtDasKindCS)
+* ^expansion.contains[=].code = #großeltern
+* ^expansion.contains[=].display = "Großeltern"
+* ^expansion.contains[+].system = Canonical(WerErziehtDasKindCS)
+* ^expansion.contains[=].code = #andere
+* ^expansion.contains[=].display = "andere"
+
+ValueSet: WerErziehtDasKindAlternativVS
+Id: WerErziehtDasKindAlternativVS
+Title: "WerErziehtDasKindAlternativVS"
+Description: "WerErziehtDasKindAlternativVS"
+* WerErziehtDasKindCS#beide_eltern_zusammen "Beide Eltern"
+* WerErziehtDasKindCS#alleinerziehend "Alleinerziehend"
+* WerErziehtDasKindCS#pflege_verschiedene "Pflege (Großeltern, Heim, Institution)"
+* WerErziehtDasKindCS#fehlende_angaben "fehlende Angabe"
+* ^expansion.timestamp = "2024-04-06T12:00:00+00:00"
+* ^expansion.contains[0].system = Canonical(WerErziehtDasKindCS)
+* ^expansion.contains[=].code = #beide_eltern_zusammen
+* ^expansion.contains[=].display = "Beide Eltern"
+* ^expansion.contains[+].system = Canonical(WerErziehtDasKindCS)
+* ^expansion.contains[=].code = #alleinerziehend
+* ^expansion.contains[=].display = "Alleinerziehend"
+* ^expansion.contains[+].system = Canonical(WerErziehtDasKindCS)
+* ^expansion.contains[=].code = #pflege_verschiedene
+* ^expansion.contains[=].display = "Pflege (Großeltern, Heim, Institution)"
+* ^expansion.contains[+].system = Canonical(WerErziehtDasKindCS)
+* ^expansion.contains[=].code = #fehlende_angaben
+* ^expansion.contains[=].display = "fehlende Angabe"
+
+ValueSet: WieVieleStundenFreizeitVS
+Id: WieVieleStundenFreizeitVS
+Title: "WieVieleStundenFreizeitVS"
+Description: "WieVieleStundenFreizeitVS"
+* include codes from system WieVieleStundenFreizeitCS
+* ^expansion.contains[+].system = Canonical(WieVieleStundenFreizeitCS)
+* ^expansion.contains[=].code = #unter_1_stunde
+* ^expansion.contains[=].display = "unter 1 Stunde"
+* ^expansion.contains[+].system = Canonical(WieVieleStundenFreizeitCS)
+* ^expansion.contains[=].code = #1_bis_2_stunden
+* ^expansion.contains[=].display = "1 bis 2 Stunden"
+* ^expansion.contains[+].system = Canonical(WieVieleStundenFreizeitCS)
+* ^expansion.contains[=].code = #mehr_als_2_stunden
+* ^expansion.contains[=].display = "mehr als 2 Stunden"
+
+ValueSet: WieOftImSportVereinVS
+Id: WieOftImSportVereinVS
+Title: "WieOftImSportVereinVS"
+Description: "WieOftImSportVereinVS"
+* include codes from system WieOftImSportVereinCS
+* ^expansion.contains[+].system = Canonical(WieOftImSportVereinCS)
+* ^expansion.contains[=].code = #1x_wöchentlich
+* ^expansion.contains[=].display = "1x wöchentlich"
+* ^expansion.contains[+].system = Canonical(WieOftImSportVereinCS)
+* ^expansion.contains[=].code = #mehr_als_1x_wöchentlich
+* ^expansion.contains[=].display = "mehr als 1x wöchentlich"
+
+ValueSet: WieOftTrainingVS
+Id: WieOftTrainingVS
+Title: "WieOftTrainingVS"
+Description: "WieOftTrainingVS"
+* include codes from system WieOftTrainingCS
+* ^expansion.contains[+].system = Canonical(WieOftTrainingCS)
+* ^expansion.contains[=].code = #1_mal
+* ^expansion.contains[=].display = "1 mal"
+* ^expansion.contains[+].system = Canonical(WieOftTrainingCS)
+* ^expansion.contains[=].code = #2_mal
+* ^expansion.contains[=].display = "2 mal"
+* ^expansion.contains[+].system = Canonical(WieOftTrainingCS)
+* ^expansion.contains[=].code = #3_mal
+* ^expansion.contains[=].display = "3 mal"
+* ^expansion.contains[+].system = Canonical(WieOftTrainingCS)
+* ^expansion.contains[=].code = #oefter
+* ^expansion.contains[=].display = "öfter"
+
+CodeSystem: BezirkeHHCS
+Id: BezirkeHHCS
+Title: "BezirkeHHCS"
+Description: "BezirkeHHCS"
+* #altona "Altona"
+* #bergedorf "Bergedorf"
+* #eimsbüttel "Eimsbüttel"
+* #mitte "Hamburg Mitte"
+* #nord "Hamburg Nord"
+* #harburg "Harburg"
+* #wandsbek "Wandsbek"
+
+ValueSet: BezirkeHHVS
+Id: BezirkeHHVS 
+Title: "BezirkeHHVS"
+Description: "BezirkeHHVS"
+* include codes from system BezirkeHHCS
+* ^expansion.timestamp = "2025-02-21T11:50:47+00:00"
+* ^expansion.contains[+].system = Canonical(BezirkeHHCS)
+* ^expansion.contains[=].code = #altona
+* ^expansion.contains[=].display = "Altona"
+* ^expansion.contains[+].system = Canonical(BezirkeHHCS)
+* ^expansion.contains[=].code = #bergedorf
+* ^expansion.contains[=].display = "Bergedorf"
+* ^expansion.contains[+].system = Canonical(BezirkeHHCS)
+* ^expansion.contains[=].code = #eimsbüttel
+* ^expansion.contains[=].display = "Eimsbüttel"
+* ^expansion.contains[+].system = Canonical(BezirkeHHCS)
+* ^expansion.contains[=].code = #mitte
+* ^expansion.contains[=].display = "Hamburg Mitte"
+* ^expansion.contains[+].system = Canonical(BezirkeHHCS)
+* ^expansion.contains[=].code = #nord
+* ^expansion.contains[=].display = "Hamburg Nord"
+* ^expansion.contains[+].system = Canonical(BezirkeHHCS)
+* ^expansion.contains[=].code = #harburg
+* ^expansion.contains[=].display = "Harburg"
+* ^expansion.contains[+].system = Canonical(BezirkeHHCS)
+* ^expansion.contains[=].code = #wandsbek
+* ^expansion.contains[=].display = "Wandsbek"
+
+CodeSystem: PersonensorgeberechtigterBeziehungCS 
+Id: PersonensorgeberechtigterBeziehungCS
+Title: "PersonensorgeberechtigterBeziehungCS"
+Description: "PersonensorgeberechtigterBeziehungCS"
+* #mutter "Mutter"
+* #vater "Vater"
+* #leiblichemutter "Leibliche Mutter"
+* #leiblichervater "Leiblicher Vater"
+* #adoptivmutter "Adoptiv-/Pflegemutter"
+* #adoptivvater "Adoptiv-/Pflegevater"
+* #natperson "Natürliche Person (nicht spezifiziert)"
+* #jugendamt "Jugendamt"
+* #jurperson "Juristische Person"
+* #betreuer "Betreuer m. Einwill.vorbeh.Aufenthaltsb."
+* #pflegemutter "Pflegemutter"
+* #pflegevater "Pflegevater"
+
+ValueSet: PersonensorgeberechtigterBeziehungVS
+Id: PersonensorgeberechtigterBeziehungVS 
+Title: "PersonensorgeberechtigterBeziehungVS"
+Description: "PersonensorgeberechtigterBeziehungVS"
+* include codes from system PersonensorgeberechtigterBeziehungCS
+* ^expansion.timestamp = "2025-02-21T11:50:47+00:00"
+* ^expansion.contains[+].system = Canonical(PersonensorgeberechtigterBeziehungCS)
+* ^expansion.contains[=].code = #mutter
+* ^expansion.contains[=].display = "Mutter"
+* ^expansion.contains[+].system = Canonical(PersonensorgeberechtigterBeziehungCS)
+* ^expansion.contains[=].code = #vater
+* ^expansion.contains[=].display = "Vater"
+* ^expansion.contains[+].system = Canonical(PersonensorgeberechtigterBeziehungCS)
+* ^expansion.contains[=].code = #leiblichemutter
+* ^expansion.contains[=].display = "Leibliche Mutter"
+* ^expansion.contains[+].system = Canonical(PersonensorgeberechtigterBeziehungCS)
+* ^expansion.contains[=].code = #leiblichervater
+* ^expansion.contains[=].display = "Leiblicher Vater"
+* ^expansion.contains[+].system = Canonical(PersonensorgeberechtigterBeziehungCS)
+* ^expansion.contains[=].code = #adoptivmutter
+* ^expansion.contains[=].display = "Adoptiv-/Pflegemutter"
+* ^expansion.contains[+].system = Canonical(PersonensorgeberechtigterBeziehungCS)
+* ^expansion.contains[=].code = #adoptivvater
+* ^expansion.contains[=].display = "Adoptiv-/Pflegevater"
+* ^expansion.contains[+].system = Canonical(PersonensorgeberechtigterBeziehungCS)
+* ^expansion.contains[=].code = #natperson
+* ^expansion.contains[=].display = "Natürliche Person (nicht spezifiziert)"
+* ^expansion.contains[+].system = Canonical(PersonensorgeberechtigterBeziehungCS)
+* ^expansion.contains[=].code = #jugendamt
+* ^expansion.contains[=].display = "Jugendamt"
+* ^expansion.contains[+].system = Canonical(PersonensorgeberechtigterBeziehungCS)
+* ^expansion.contains[=].code = #jurperson
+* ^expansion.contains[=].display = "Juristische Person"
+* ^expansion.contains[+].system = Canonical(PersonensorgeberechtigterBeziehungCS)
+* ^expansion.contains[=].code = #betreuer
+* ^expansion.contains[=].display = "Betreuer m. Einwill.vorbeh.Aufenthaltsb."
+* ^expansion.contains[+].system = Canonical(PersonensorgeberechtigterBeziehungCS)
+* ^expansion.contains[=].code = #pflegemutter
+* ^expansion.contains[=].display = "Pflegemutter"
+* ^expansion.contains[+].system = Canonical(PersonensorgeberechtigterBeziehungCS)
+* ^expansion.contains[=].code = #pflegecater
+* ^expansion.contains[=].display = "Pflegevater"
+
+CodeSystem: PersonensorgeberechtigterZusammenlebendCS 
+Id: PersonensorgeberechtigterZusammenlebendCS
+Title: "PersonensorgeberechtigterZusammenlebendCS"
+Description: "PersonensorgeberechtigterZusammenlebendCS"
+* #ja "Ja"
+* #nein "Nein"
+* #zeitweise "Zeitweise"
+
+ValueSet: PersonensorgeberechtigterZusammenlebendVS
+Id: PersonensorgeberechtigterZusammenlebendVS 
+Title: "PersonensorgeberechtigterZusammenlebendVS"
+Description: "PersonensorgeberechtigterZusammenlebendVS"
+* include codes from system PersonensorgeberechtigterZusammenlebendCS
+* ^expansion.timestamp = "2025-02-21T11:50:47+00:00"
+* ^expansion.contains[+].system = Canonical(PersonensorgeberechtigterZusammenlebendCS)
+* ^expansion.contains[=].code = #ja
+* ^expansion.contains[=].display = "Ja"
+* ^expansion.contains[+].system = Canonical(PersonensorgeberechtigterZusammenlebendCS)
+* ^expansion.contains[=].code = #nein
+* ^expansion.contains[=].display = "Nein"
+* ^expansion.contains[+].system = Canonical(PersonensorgeberechtigterZusammenlebendCS)
+* ^expansion.contains[=].code = #zeitweise
+* ^expansion.contains[=].display = "Zeitweise"
+
+ValueSet: KrankenhausaufenthaltGrundVS
+Id: KrankenhausaufenthaltGrundVS
+Title: "KrankenhausaufenthaltGrundVS"
+Description: "ValueSet, das den Grund des Krankenhausaufenthaltes beschreibt. Es enthält die Kategorien: akute Erkrankung, chronische Krankheit, Unfall, stationäre Operation(en), und sonstiges. Dieses CodeSystem kann verwendet werden, um den Grund eines Krankenhausaufenthaltes zu kategorisieren."
+* include codes from system KrankenhausaufenthaltGrundCS
+* ^expansion.contains[+].system = Canonical(KrankenhausaufenthaltGrundCS)
+* ^expansion.contains[=].code = #akute_erkrankung
+* ^expansion.contains[=].display = "akute Erkrankung"
+* ^expansion.contains[+].system = Canonical(KrankenhausaufenthaltGrundCS)
+* ^expansion.contains[=].code = #chronische_krankheit
+* ^expansion.contains[=].display = "chronische Krankheit"
+* ^expansion.contains[+].system = Canonical(KrankenhausaufenthaltGrundCS)
+* ^expansion.contains[=].code = #unfall
+* ^expansion.contains[=].display = "Unfall"
+* ^expansion.contains[+].system = Canonical(KrankenhausaufenthaltGrundCS)
+* ^expansion.contains[=].code = #stationaere_operation
+* ^expansion.contains[=].display = "stationäre Operation(en)"
+* ^expansion.contains[+].system = Canonical(KrankenhausaufenthaltGrundCS)
+* ^expansion.contains[=].code = #sonstiges
+* ^expansion.contains[=].display = "sonstiges"
+
+CodeSystem: RauchortCS
+Id: RauchortCS
+Title: "RauchortCS"
+Description: "CodeSystem, das den Ort des Rauchens beschreibt."
+* #nur_ausserhalb "nur außerhalb der Wohnung"
+* #innen_und_aussen "innerhalb und außerhalb der Wohnung"
+
+ValueSet: RauchortVS
+Id: RauchortVS
+Title: "Ort des Rauchens Value Set"
+Description: "ValueSet, das den Ort des Rauchens beschreibt."
+* RauchortCS#nur_ausserhalb "nur außerhalb der Wohnung"
+* RauchortCS#innen_und_aussen "innerhalb und außerhalb der Wohnung"
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
+* ^expansion.contains[+].system = Canonical(RauchortCS)
+* ^expansion.contains[=].code = #nur_ausserhalb
+* ^expansion.contains[=].display = "nur außerhalb der Wohnung"
+* ^expansion.contains[+].system = Canonical(RauchortCS)
+* ^expansion.contains[=].code = #innen_und_aussen
+* ^expansion.contains[=].display = "innerhalb und außerhalb der Wohnung"
+
 CodeSystem: SorgenKindCS
 Id: SorgenKindCS
 Title: "SorgenKindCS"
@@ -2538,3 +2458,22 @@ Description: "SorgenKindVS"
 * ^expansion.contains[+].system = Canonical(SorgenKindCS)
 * ^expansion.contains[=].code = #seines_Seh-oder_Hoervermoegens
 * ^expansion.contains[=].display = "seines Seh- oder Hörvermögens"
+
+ValueSet: LebtBeiVS
+Id: LebtBeiVS
+Title: "LebtBeiVS"
+Description: "LebtBeiVS"
+* include codes from system LebtBeiCS
+* ^expansion.timestamp = "2024-04-04T09:24:55+00:00"
+* ^expansion.contains[0].system = "https://www.oegd.de/fhir/seu/CodeSystem/LebtBeiCS"
+* ^expansion.contains[=].code = #vater
+* ^expansion.contains[=].display = "Vater"
+* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/LebtBeiCS"
+* ^expansion.contains[=].code = #eltern
+* ^expansion.contains[=].display = "Eltern"
+* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/LebtBeiCS"
+* ^expansion.contains[=].code = #andere
+* ^expansion.contains[=].display = "Andere"
+* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/LebtBeiCS"
+* ^expansion.contains[=].code = #mutter
+* ^expansion.contains[=].display = "Mutter"

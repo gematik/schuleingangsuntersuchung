@@ -1,0 +1,69 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "ErwerbsstatusDesVatersVS",
+  "id": "erwerbsstatus-des-vaters-vs",
+  "title": "Erwerbsstatus des Vaters ValueSet",
+  "description": "ErwerbsstatusDesVatersVS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/erwerbsstatus-des-vaters-vs",
+  "expansion": {
+    "timestamp": "2025-03-04T12:00:00+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/erwerbsstatus-cs",
+        "code": "vollzeit",
+        "display": "Vollzeit"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/erwerbsstatus-cs",
+        "code": "teilzeit",
+        "display": "Teilzeit"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/erwerbsstatus-cs",
+        "code": "stundenweise",
+        "display": "Stundenweise"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/erwerbsstatus-cs",
+        "code": "nicht_erwerbstaetig",
+        "display": "Nein"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/erwerbsstatus-cs",
+        "code": "fehlende_angabe",
+        "display": "Fehlende Angabe"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/erwerbsstatus-cs",
+        "concept": [
+          {
+            "code": "vollzeit",
+            "display": "Vollzeit"
+          },
+          {
+            "code": "teilzeit",
+            "display": "Teilzeit"
+          },
+          {
+            "code": "stundenweise",
+            "display": "Stundenweise"
+          },
+          {
+            "code": "nicht_erwerbstaetig",
+            "display": "Nein"
+          },
+          {
+            "code": "fehlende_angabe",
+            "display": "Fehlende Angabe"
+          }
+        ]
+      }
+    ]
+  }
+}

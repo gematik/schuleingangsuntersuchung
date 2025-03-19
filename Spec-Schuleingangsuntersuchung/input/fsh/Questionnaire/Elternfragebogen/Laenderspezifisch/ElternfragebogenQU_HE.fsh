@@ -1,8 +1,8 @@
 Instance: Elternbefragung_HE
 InstanceOf: Questionnaire
 Usage: #example
-Title: "Elternbefragung Hessen"
-Description: "Elternbefragung Hessen"
+Title: "Elternbefragung HE"
+Description: "Elternbefragung HE"
 * contained[+] = SEU-EF-NeinAbgeschlossenLaeuftGeplantVS
 * contained[+] = DeuevAnlage8LaenderkennzeichenVS
 * contained[+] = GenderDEVS
@@ -10,9 +10,9 @@ Description: "Elternbefragung Hessen"
 * contained[+] = ChronischeKrankheitenVS
 * contained[+] = AtopischeErkrankungenVS
 * contained[+] = SEU_EF_DauerHEVS
-* id = "SEU-Elternbefragung-Hessen"
-* url = "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung"
-* title = "SEU Elternfragebogen Maximaldatensatz Hessen"
+* id = "SEU-Elternbefragung-HE"
+* url = "https://www.oegd.de/fhir/seu/Questionnaire/ElternbefragungHE"
+* title = "SEU Elternfragebogen HE"
 * insert launchContext("patient", #Patient, "Patientenkontext")
 * status = #draft
 * item[+]
@@ -74,7 +74,7 @@ Description: "Elternbefragung Hessen"
 //********************************************
 // Personenbezogene Daten Personenberechtigter
 * item[+]
-  * insert addItem(2, #group, Personenbezogene Daten Personenberechtigter)
+  * insert addItem(2, #group, Personenbezogene Daten Personensorgeberechtigter)
   * repeats = true
   * item[+]
     * answerValueSet = Canonical(GenderDEVS)

@@ -1,0 +1,31 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "WieOftImSportVereinVS",
+  "id": "WieOftImSportVereinVS",
+  "title": "WieOftImSportVereinVS",
+  "description": "WieOftImSportVereinVS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/WieOftImSportVereinVS",
+  "expansion": {
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WieOftImSportVereinCS",
+        "code": "1x_wöchentlich",
+        "display": "1x wöchentlich"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WieOftImSportVereinCS",
+        "code": "mehr_als_1x_wöchentlich",
+        "display": "mehr als 1x wöchentlich"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WieOftImSportVereinCS"
+      }
+    ]
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "WohnsituationKindAlternativ3VS",
+  "id": "WohnsituationKindAlternativ3VS",
+  "title": "WohnsituationKindAlternativ3VS",
+  "description": "ValueSet, das verschiedene Wohnsituationen des Kindes enthält.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/WohnsituationKindAlternativ3VS",
+  "expansion": {
+    "timestamp": "2024-04-04T09:24:55+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
+        "code": "vater",
+        "display": "Vater"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
+        "code": "mutter_mit_partner",
+        "display": "bei der Mutter mit Ehe-/ Lebenspartner"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
+        "code": "vater_mit_partner",
+        "display": "beim Vater mit Ehe-/ Lebenspartner"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
+        "code": "wechselmodell",
+        "display": "wechselnd zu etwa gleichen Teilen bei Mutter bzw. Vater"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
+        "code": "andere",
+        "display": "Andere"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
+        "concept": [
+          {
+            "code": "eltern",
+            "display": "Eltern"
+          },
+          {
+            "code": "mutter",
+            "display": "Mutter"
+          },
+          {
+            "code": "vater",
+            "display": "Vater"
+          },
+          {
+            "code": "mutter_mit_partner",
+            "display": "bei der Mutter mit Ehe-/ Lebenspartner"
+          },
+          {
+            "code": "vater_mit_partner",
+            "display": "beim Vater mit Ehe-/ Lebenspartner"
+          },
+          {
+            "code": "wechselmodell",
+            "display": "wechselnd zu etwa gleichen Teilen bei Mutter bzw. Vater"
+          },
+          {
+            "code": "andere",
+            "display": "Andere"
+          }
+        ]
+      }
+    ]
+  }
+}

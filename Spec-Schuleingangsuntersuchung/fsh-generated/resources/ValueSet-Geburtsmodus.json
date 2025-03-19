@@ -1,0 +1,78 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "GeburtsmodusVS",
+  "id": "Geburtsmodus",
+  "title": "Geburtsmodus",
+  "description": "ValueSet, das den Modus der Geburt enthält.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/Geburtsmodus",
+  "expansion": {
+    "timestamp": "2024-10-20T11:50:47+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/GeburtArtCS",
+        "code": "spontangeburt",
+        "display": "Normalgeburt (Spontangeburt)"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/GeburtArtCS",
+        "code": "frühgeburt",
+        "display": "Frühgeburt"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/GeburtArtCS",
+        "code": "frühgeburt_und_kaiserschnitt",
+        "display": "Frühgeburt und Kaiserschnitt"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/GeburtArtCS",
+        "code": "frühgeburt_und_weitere_komplikationen",
+        "display": "Frühgeburt und weitere Geburtskomplikationen"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/GeburtArtCS",
+        "code": "kaiserschnitt",
+        "display": "Kaiserschnitt"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/GeburtArtCS",
+        "code": "weitere_komplikationen",
+        "display": "weitere Geburtskomplikationen (z.B. Saugglocke, Zangengeburt)"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/GeburtArtCS",
+        "concept": [
+          {
+            "code": "spontangeburt",
+            "display": "Normalgeburt (Spontangeburt)"
+          },
+          {
+            "code": "frühgeburt",
+            "display": "Frühgeburt"
+          },
+          {
+            "code": "frühgeburt_und_kaiserschnitt",
+            "display": "Frühgeburt und Kaiserschnitt"
+          },
+          {
+            "code": "frühgeburt_und_weitere_komplikationen",
+            "display": "Frühgeburt und weitere Geburtskomplikationen"
+          },
+          {
+            "code": "kaiserschnitt",
+            "display": "Kaiserschnitt"
+          },
+          {
+            "code": "weitere_komplikationen",
+            "display": "weitere Geburtskomplikationen (z.B. Saugglocke, Zangengeburt)"
+          }
+        ]
+      }
+    ]
+  }
+}

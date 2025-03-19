@@ -34,9 +34,13 @@
       "display": "Aufmerksamkeitsdefizit-/Hyperaktivitätsstörung (ADHS)"
     },
     {
+      "code": "chronische_bronchitis",
+      "display": "chronische Bronchitis"
+    },
+    {
       "code": "sonstiges",
       "display": "Sonstige chronische Krankheiten"
     }
   ],
-  "count": 7
+  "count": 8
 }

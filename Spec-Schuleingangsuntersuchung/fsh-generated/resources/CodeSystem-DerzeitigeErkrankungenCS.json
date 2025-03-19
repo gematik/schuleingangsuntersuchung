@@ -1,0 +1,42 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "DerzeitigeErkrankungenCS",
+  "id": "DerzeitigeErkrankungenCS",
+  "title": "CodeSystem für derzeitige Erkrankungen",
+  "description": "Dieses CodeSystem enthält Codes für derzeitige Erkrankungen.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/DerzeitigeErkrankungenCS",
+  "concept": [
+    {
+      "code": "sehstoerung",
+      "display": "Sehstörung (z.B. Brilenträger, Schielen)"
+    },
+    {
+      "code": "gehauuftes_atmen_mit_offenen_mund",
+      "display": "gehäuftes Atmen mit offenen Mund"
+    },
+    {
+      "code": "auffaelligkeiten_im_verhalten",
+      "display": "Auffälligkeit(en) im Verhalten"
+    },
+    {
+      "code": "diabetes",
+      "display": "Diabetes (Zuckerkrankheit)"
+    },
+    {
+      "code": "herz_kreislauf_erkrankungen",
+      "display": "Herz-Kreislauf-Erkrankung(en)"
+    },
+    {
+      "code": "nieren_blasenerkrankungen",
+      "display": "Nieren- /Blasenerkrankung(en)"
+    },
+    {
+      "code": "sonstige_welche",
+      "display": "sonstige Erkrankung(en) / welche?"
+    }
+  ],
+  "count": 7
+}

@@ -1,0 +1,132 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "FruehereErkrankungenVS",
+  "id": "FruehereErkrankungenVS",
+  "title": "Frühere Erkrankungen",
+  "description": "Dieses ValueSet beinhaltet eine Auswahl von Codes für die Klassifikation früherer Erkrankungen.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/FruehereErkrankungenVS",
+  "expansion": {
+    "timestamp": "2024-10-20T11:50:47+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/FruehereErkrankungenCS",
+        "code": "windpocken",
+        "display": "Windpocken"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/FruehereErkrankungenCS",
+        "code": "hoerstoerung",
+        "display": "Hörstörung"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/FruehereErkrankungenCS",
+        "code": "krampfanfaelle",
+        "display": "Krampfanfälle (Fieberkrampf, Epilepsie)"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/FruehereErkrankungenCS",
+        "code": "wiederholte_mittelohrentzuendung",
+        "display": "wiederholte Mittelohrentzündung(en)/ -vereiterung(en)"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/FruehereErkrankungenCS",
+        "code": "nieren_blasenerkrankungen",
+        "display": "Nieren- /Blasenerkrankung(en)"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/FruehereErkrankungenCS",
+        "code": "herz_kreislauf_erkrankungen",
+        "display": "Herz-Kreislauf-Erkrankung(en)"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/FruehereErkrankungenCS",
+        "code": "haeufige_atemwegserkrankungen",
+        "display": "häufige Atemwegserkrankungen (ARE)"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/FruehereErkrankungenCS",
+        "code": "pseudokrupp",
+        "display": "Pseudokrupp"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/FruehereErkrankungenCS",
+        "code": "spreiz_hosenbehandlung",
+        "display": "Spreiz(hosen)behandlung"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/FruehereErkrankungenCS",
+        "code": "erkrankungen_der_fuesse",
+        "display": "Erkrankung(en) der Füße"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/FruehereErkrankungenCS",
+        "code": "erkrankungen_der_wirbelsaeule",
+        "display": "Erkrankung(en) der Wirbelsäule"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/FruehereErkrankungenCS",
+        "code": "sonstige_welche",
+        "display": "sonstige Erkrankung(en) / welche?"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/FruehereErkrankungenCS",
+        "concept": [
+          {
+            "code": "windpocken",
+            "display": "Windpocken"
+          },
+          {
+            "code": "hoerstoerung",
+            "display": "Hörstörung"
+          },
+          {
+            "code": "krampfanfaelle",
+            "display": "Krampfanfälle (Fieberkrampf, Epilepsie)"
+          },
+          {
+            "code": "wiederholte_mittelohrentzuendung",
+            "display": "wiederholte Mittelohrentzündung(en)/ -vereiterung(en)"
+          },
+          {
+            "code": "nieren_blasenerkrankungen",
+            "display": "Nieren- /Blasenerkrankung(en)"
+          },
+          {
+            "code": "herz_kreislauf_erkrankungen",
+            "display": "Herz-Kreislauf-Erkrankung(en)"
+          },
+          {
+            "code": "haeufige_atemwegserkrankungen",
+            "display": "häufige Atemwegserkrankungen (ARE)"
+          },
+          {
+            "code": "pseudokrupp",
+            "display": "Pseudokrupp"
+          },
+          {
+            "code": "spreiz_hosenbehandlung",
+            "display": "Spreiz(hosen)behandlung"
+          },
+          {
+            "code": "erkrankungen_der_fuesse",
+            "display": "Erkrankung(en) der Füße"
+          },
+          {
+            "code": "erkrankungen_der_wirbelsaeule",
+            "display": "Erkrankung(en) der Wirbelsäule"
+          },
+          {
+            "code": "sonstige_welche",
+            "display": "sonstige Erkrankung(en) / welche?"
+          }
+        ]
+      }
+    ]
+  }
+}

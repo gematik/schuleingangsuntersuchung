@@ -1,0 +1,87 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "DerzeitigeErkrankungenVS",
+  "id": "DerzeitigeErkrankungenVS",
+  "title": "Derzeitige Erkrankungen ValueSet",
+  "description": "ValueSet für derzeitige Erkrankungen",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/DerzeitigeErkrankungenVS",
+  "expansion": {
+    "timestamp": "2024-10-20T11:50:47+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/DerzeitigeErkrankungenCS",
+        "code": "sehstoerung",
+        "display": "Sehstörung (z.B. Brilenträger, Schielen)"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/DerzeitigeErkrankungenCS",
+        "code": "gehauuftes_atmen_mit_offenen_mund",
+        "display": "gehäuftes Atmen mit offenen Mund"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/DerzeitigeErkrankungenCS",
+        "code": "auffaelligkeiten_im_verhalten",
+        "display": "Auffälligkeit(en) im Verhalten"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/DerzeitigeErkrankungenCS",
+        "code": "diabetes",
+        "display": "Diabetes (Zuckerkrankheit)"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/DerzeitigeErkrankungenCS",
+        "code": "herz_kreislauf_erkrankungen",
+        "display": "Herz-Kreislauf-Erkrankung(en)"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/DerzeitigeErkrankungenCS",
+        "code": "nieren_blasenerkrankungen",
+        "display": "Nieren- /Blasenerkrankung(en)"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/DerzeitigeErkrankungenCS",
+        "code": "sonstige_welche",
+        "display": "sonstige Erkrankung(en) / welche?"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/DerzeitigeErkrankungenCS",
+        "concept": [
+          {
+            "code": "sehstoerung",
+            "display": "Sehstörung (z.B. Brilenträger, Schielen)"
+          },
+          {
+            "code": "gehauuftes_atmen_mit_offenen_mund",
+            "display": "gehäuftes Atmen mit offenen Mund"
+          },
+          {
+            "code": "auffaelligkeiten_im_verhalten",
+            "display": "Auffälligkeit(en) im Verhalten"
+          },
+          {
+            "code": "diabetes",
+            "display": "Diabetes (Zuckerkrankheit)"
+          },
+          {
+            "code": "herz_kreislauf_erkrankungen",
+            "display": "Herz-Kreislauf-Erkrankung(en)"
+          },
+          {
+            "code": "nieren_blasenerkrankungen",
+            "display": "Nieren- /Blasenerkrankung(en)"
+          },
+          {
+            "code": "sonstige_welche",
+            "display": "sonstige Erkrankung(en) / welche?"
+          }
+        ]
+      }
+    ]
+  }
+}

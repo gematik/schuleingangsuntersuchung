@@ -6,27 +6,6 @@ Title: "SEU-EF-NeinAbgeschlossenLaeuftGeplant"
 * #läuft "läuft z.Zt. Noch"
 * #geplant "geplant"
 
-CodeSystem: LebtBeiCS
-Id: LebtBeiCS
-Title: "LebtBeiCS"
-Description: "LebtBeiCS"
-* #eltern "Eltern"
-* #mutter "Mutter"
-* #vater "Vater"
-* #andere "Andere" 
-
-CodeSystem: ChronischeErkrankungenCS
-Id: ChronischeErkrankungenCS
-Title: "ChronischeErkrankungenCS"
-Description: "ChronischeErkrankungenCS"
-* #allergie "Allergie"
-* #fettstoffwechselstörung "Fettstoffwechselstörung"
-* #bluthochdruck "Bluthochdruck"
-* #schlaganfall "Schlaganfall"
-* #herzinfarkt "Herzinfarkt"
-* #zuckerkrankheit "Zuckerkrankheit"
-* #übergewicht "Übergewicht"
-
 CodeSystem: JaNeinAngemeldetCS
 Id: JaNeinAngemeldetCS
 Title: "JaNeinAngemeldetCS"
@@ -94,62 +73,6 @@ Description: "StoffwechselstoerungCS"
 * #mukoviszidose "Mukoviszidose"
 * #diab_mell_typ_i "Diab. mell. Typ I"
 * #diab_mell_typ_ii "Diab. mell. Typ II"
-
-CodeSystem: ErkrankungCS
-Id: ErkrankungCS
-Title: "ErkrankungCS"
-Description: "ErkrankungCS"
-* #epilepsie "Epilepsie"
-* #ads_adhs "ADS/ADHS"
-* #sprachauffälligkeit "Sprachauffälligkeit"
-* #sehstörung "Sehstörung"
-* #hörstörung "Hörstörung"
-* #herzfehler "Herzfehler"
-* #nieren_harnwegerkrankung "Nieren/Harnwegerkrankung"
-* #allergischer_schnupfen "Allergischer Schnupfen"
-* #asthma "Asthma"
-* #allergische_hauterkrankung "Allergische Hauterkrankung"
-* #neurodermitis "Neurodermitis"
-* #nahrungsmittelallergie "Nahrungsmittelallergie"
-* #krebserkrankung "Krebserkrankung"
-* #hüfterkrankung "Hüfterkrankung"
-* #wirbelsäulenleiden "Wirbelsäulenleiden"
-* #bewegungsstörung "Bewegungsstörung"
-* #diabetes "Diabetes"
-* #ass "Autismus-Spektrum-Störung (ASS)"
-* #schilddrüsenfunktionsstörung "Schilddrüsenfunktionsstörung"
-
-CodeSystem: InfektionsKrankheitCS
-Id: InfektionsKrankheitCS
-Title: "InfektionsKrankheitCS"
-Description: "InfektionsKrankheitCS"
-* #covid_19 "COVID-19"
-* #hand_fuß_mund_krankheit "Hand-Fuß-Mund-Krankheit"
-* #borreliose "Borreliose"
-* #hepatitis_b "Hepatitis B"
-* #hirnhautentzündung "Hirnhautentzündung"
-* #keuchhusten "Keuchhusten"
-* #masern "Masern"
-* #mumps "Mumps"
-* #ringelröten "Ringelröten"
-* #röteln "Röteln"
-* #rotavirus_infektion "Rotavirus-Infektion"
-* #scharlach "Scharlach"
-* #windpocken "Windpocken"
-
-CodeSystem: ErkrankungenLetztesJahrCS
-Id: ErkrankungenLetztesJahrCS
-Title: "ErkrankungenLetztesJahrCS"
-Description: "ErkrankungenLetztesJahrCS"
-* #mittelohrentzündung "Mittelohrentzündung"
-* #hals_mandelentzündung "Hals-/Mandelentzündung"
-* #pseudokrupp_anfall "Pseudokrupp-Anfall"
-* #bronchitis "Bronchitis"
-* #lungenentzündung "Lungenentzündung"
-* #magen_darm_infektion "Magen-Darm-Infektion"
-* #fieberkrämpfe "Fieberkrämpfe"
-* #cerebraler_krampfanfall "Cerebraler Krampfanfall"
-* #blasen_harnwegsentzündung "Blasen/Harnwegsentzündung"
 
 CodeSystem: PflegegradCS
 Id: PflegegradCS
@@ -237,15 +160,6 @@ Description: "VersorgungsartCS"
 * #ambulant "Ambulant"
 * #krankenhaus "Krankenhaus"
 
-CodeSystem: ErwerbsstatusCS
-Id: erwerbsstatus-cs
-Title: "Erwerbsstatus CodeSystem"
-Description: "ErwerbsstatusCS"
-* #nicht_erwerbstaetig "Nicht erwerbstätig"
-* #teilzeit "Teilzeit"
-* #vollzeit "Vollzeit"
-* #sonstiges "Sonstiges"
-
 CodeSystem: FamilienrolleCS
 Id: familienrolle-cs
 Title: "Familienrolle CodeSystem"
@@ -257,18 +171,6 @@ Description: "FamilienrolleCS"
 * #geschwister "Geschwister"
 * #andere_person "Andere Person"
 
-CodeSystem: ChronischeKrankheiten
-Id: chronische-krankheiten
-Title: "CodeSystem für chronische Krankheiten"
-Description: "Dieses CodeSystem beinhaltet Codes für häufige chronische Krankheiten."
-* #asthma "Asthma bronchiale"
-* #rheuma "Rheuma"
-* #diabetes "Diabetes"
-* #epilepsie "Epilepsie"
-* #neurodermitis "Neurodermitis"
-* #adhs "Aufmerksamkeitsdefizit-/Hyperaktivitätsstörung (ADHS)"
-* #sonstiges "Sonstige chronische Krankheiten"
-
 CodeSystem: UeberwiegendGesprocheneSpracheCS
 Id: ueberwiegend-gesprochene-sprache-cs
 Title: "CodeSystem für überwiegend gesprochene Sprachen"
@@ -276,26 +178,6 @@ Description: "Dieses CodeSystem klassifiziert Sprachkenntnisse in Deutsch, ander
 * #deutsch "Deutsch"
 * #andere "andere Sprache"
 * #deutsch_andere "Deutsch + andere Sprache"
-
-CodeSystem: EntwicklungCS
-Id: entwicklung-cs
-Title: "CodeSystem für Entwicklung"
-Description: "Dieses CodeSystem klassifiziert den Zeitpunkt der Entwicklung: 'bis zum 4. Lebensjahr' und 'später'."
-* #bis_zum_4 "bis zum 4. Lebensjahr"
-* #spaeter "später"
-
-CodeSystem: AtopischeErkrankungenCS
-Id: atopische-erkrankungen-cs
-Title: "CodeSystem für atopische/allergische Erkrankungen"
-Description: "Dieses CodeSystem klassifiziert die Kategorie der atopischen/allergischen Erkrankungen sowie spezifische Allergieauslöser: Nahrungsmittel, Pollen, Hausstaubmilben, Schimmelpilze, Tierhaare, Medikamente und Sonstiges."
-* #atopische_allergische "Atopische/Allergische Erkrankungen"
-* #nahrungsmittel "Nahrungsmittelallergien"
-* #pollen "Pollenallergien"
-* #hausstaubmilben "Hausstaubmilbenallergien"
-* #schimmelpilze "Schimmelpilzallergien"
-* #tierhaare "Tierhaarallergien"
-* #medikamente "Medikamentenallergien"
-* #sonstiges "Sonstige atopische/allergische Erkrankungen"
 
 CodeSystem: AllgemeineBeschwerdenCS
 Id: allgemeine-beschwerden-cs
@@ -650,15 +532,14 @@ Description: "CodeSystem für die Angabe des Medienkonsums in Stunden."
 * #von_2_bis_4 "2 bis 4 Stunden"
 * #mehr_als_4 "Mehr als 4 Stunden"
 
-CodeSystem: SEU_EF_WohnsituationKindCS
-Id: seu-ef-wohnsituation-kind-cs
-Title: "SEU_EF_Wohnsituation Kind CodeSystem"
-Description: "CodeSystem für die Angabe der Wohnsituation des Kindes."
-* #bei_beiden_leiblichen_eltern "Bei beiden leiblichen Eltern"
-* #bei_alleinerziehendem_elternteil "Bei alleinerziehendem Elternteil"
-* #bei_elternteil_mit_partner "Bei Elternteil mit Partner"
-* #bei_grosseltern_oder_anderen "Bei Großeltern, Pflegeeltern, Adoptiveltern oder anderen"
-* #keine_angaben "Keine Angaben"
+CodeSystem: DauerStillenCS
+Id: DauerStillenCS
+Title: "DauerStillenCS"
+Description: "CodeSystem für die Angabe der Dauer des Stillens."
+* #nie_gestillt "Nie gestillt"
+* #weniger_als_6_monate "Weniger als 6 Monate"
+* #mehr_als_6_monate "Mehr als 6 Monate"
+* #keine_angabe "Keine Angabe"
 
 CodeSystem: SEUEFMedienkonsumBerlinCS
 Id: SEUEFMedienkonsumBerlinCS
@@ -669,3 +550,68 @@ Description: "CodeSystem für die Angabe des Medienkonsums in Stunden."
 * #max-bis_2 "max. 2 Stunden"
 * #max_bis_3 "max. 3 Stunden"
 * #ueber_3 "über 3 Stunden"
+
+CodeSystem: JaNeinWeissNichtCS
+Id: JaNeinWeissNichtCS
+Title: "JaNeinWeissNichtCS"
+Description: "JaNeinWeissNichtCS"
+* #ja "Ja"
+* #nein "Nein"
+* #weiss_nicht "Weiß nicht"
+
+CodeSystem: WerErziehtDasKindCS
+Id: WerErziehtDasKindCS
+Title: "WerErziehtDasKindCS"
+Description: "WerErziehtDasKindCS"
+* #beide_eltern_zusammen "Beide Eltern (zusammen wohnend)"
+* #beide_eltern_getrennt "Beide Eltern (getrennt wohnend)"
+* #alleinerziehend "Alleinerziehende/er"
+* #elterntail_mit_partner "Elternteil mit Partner"
+* #pflegeeltern "Pflegeeltern"
+* #großeltern "Großeltern"
+* #andere "andere"
+* #fehlende_angaben "fehlende Angabe"
+* #pflege_verschiedene "Pflege (Großeltern, Heim, Institution)"
+
+CodeSystem: WieVieleStundenFreizeitCS
+Id: WieVieleStundenFreizeitCS
+Title: "WieVieleStundenFreizeitCS"
+Description: "WieVieleStundenFreizeitCS"
+* #unter_1_stunde "unter 1 Stunde"
+* #1_bis_2_stunden "1 bis 2 Stunden"
+* #mehr_als_2_stunden "mehr als 2 Stunden"
+
+CodeSystem: WieOftImSportVereinCS
+Id: WieOftImSportVereinCS
+Title: "WieOftImSportVereinCS"
+Description: "WieOftImSportVereinCS"
+* #1x_wöchentlich "1x wöchentlich"
+* #mehr_als_1x_wöchentlich "mehr als 1x wöchentlich"
+
+CodeSystem: WieOftTrainingCS
+Id: WieOftTrainingCS
+Title: "WieOftTrainingCS"
+Description: "WieOftTrainingCS"
+* #1_mal "1 mal"
+* #2_mal "2 mal"
+* #3_mal "3 mal"
+* #oefter "öfter"
+
+CodeSystem: KrankenhausaufenthaltGrundCS
+Id: KrankenhausaufenthaltGrundCS
+Title: "KrankenhausaufenthaltGrundCS"
+Description: "CodeSystem, das den Grund des Krankenhausaufenthaltes beschreibt. Es enthält die Kategorien: akute Erkrankung, chronische Krankheit, Unfall, stationäre Operation(en), und sonstiges. Dieses CodeSystem kann verwendet werden, um den Grund eines Krankenhausaufenthaltes zu kategorisieren."
+* #akute_erkrankung "akute Erkrankung"
+* #chronische_krankheit "chronische Krankheit"
+* #unfall "Unfall"
+* #stationaere_operation "stationäre Operation(en)"
+* #sonstiges "sonstiges"
+
+CodeSystem: LebtBeiCS
+Id: LebtBeiCS
+Title: "LebtBeiCS"
+Description: "LebtBeiCS"
+* #eltern "Eltern"
+* #mutter "Mutter"
+* #vater "Vater"
+* #andere "Andere"

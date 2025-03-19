@@ -1,0 +1,30 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "WieOftTrainingCS",
+  "id": "WieOftTrainingCS",
+  "title": "WieOftTrainingCS",
+  "description": "WieOftTrainingCS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/WieOftTrainingCS",
+  "concept": [
+    {
+      "code": "1_mal",
+      "display": "1 mal"
+    },
+    {
+      "code": "2_mal",
+      "display": "2 mal"
+    },
+    {
+      "code": "3_mal",
+      "display": "3 mal"
+    },
+    {
+      "code": "oefter",
+      "display": "öfter"
+    }
+  ],
+  "count": 4
+}

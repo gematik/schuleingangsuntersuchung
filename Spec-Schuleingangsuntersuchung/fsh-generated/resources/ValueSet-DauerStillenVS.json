@@ -1,0 +1,42 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "DauerStillenVS",
+  "id": "DauerStillenVS",
+  "title": "Dauer des Stillens ValueSet",
+  "description": "ValueSet, das verschiedene Dauern des Stillens enthält.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/DauerStillenVS",
+  "expansion": {
+    "timestamp": "2024-10-20T11:50:47+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/DauerStillenCS",
+        "code": "nie_gestillt",
+        "display": "Nie gestillt"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/DauerStillenCS",
+        "code": "weniger_als_6_monate",
+        "display": "Weniger als 6 Monate"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/DauerStillenCS",
+        "code": "mehr_als_6_monate",
+        "display": "Mehr als 6 Monate"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/DauerStillenCS",
+        "code": "keine_angabe",
+        "display": "Keine Angabe"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/DauerStillenCS"
+      }
+    ]
+  }
+}

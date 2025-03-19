@@ -1,0 +1,42 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "BezirkeHHCS",
+  "id": "BezirkeHHCS",
+  "title": "BezirkeHHCS",
+  "description": "BezirkeHHCS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/BezirkeHHCS",
+  "concept": [
+    {
+      "code": "altona",
+      "display": "Altona"
+    },
+    {
+      "code": "bergedorf",
+      "display": "Bergedorf"
+    },
+    {
+      "code": "eimsbüttel",
+      "display": "Eimsbüttel"
+    },
+    {
+      "code": "mitte",
+      "display": "Hamburg Mitte"
+    },
+    {
+      "code": "nord",
+      "display": "Hamburg Nord"
+    },
+    {
+      "code": "harburg",
+      "display": "Harburg"
+    },
+    {
+      "code": "wandsbek",
+      "display": "Wandsbek"
+    }
+  ],
+  "count": 7
+}

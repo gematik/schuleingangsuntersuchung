@@ -1,0 +1,57 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "BezirkeHHVS",
+  "id": "BezirkeHHVS",
+  "title": "BezirkeHHVS",
+  "description": "BezirkeHHVS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/BezirkeHHVS",
+  "expansion": {
+    "timestamp": "2025-02-21T11:50:47+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/BezirkeHHCS",
+        "code": "altona",
+        "display": "Altona"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/BezirkeHHCS",
+        "code": "bergedorf",
+        "display": "Bergedorf"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/BezirkeHHCS",
+        "code": "eimsbüttel",
+        "display": "Eimsbüttel"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/BezirkeHHCS",
+        "code": "mitte",
+        "display": "Hamburg Mitte"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/BezirkeHHCS",
+        "code": "nord",
+        "display": "Hamburg Nord"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/BezirkeHHCS",
+        "code": "harburg",
+        "display": "Harburg"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/BezirkeHHCS",
+        "code": "wandsbek",
+        "display": "Wandsbek"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/BezirkeHHCS"
+      }
+    ]
+  }
+}

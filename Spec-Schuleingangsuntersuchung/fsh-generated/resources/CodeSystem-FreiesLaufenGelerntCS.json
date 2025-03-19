@@ -1,0 +1,22 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "FreiesLaufenGelerntCS",
+  "id": "FreiesLaufenGelerntCS",
+  "title": "FreiesLaufenGelerntCS",
+  "description": "CodeSystem, dass das Alter beschreibt, ab dem das Kind frei laufen kann.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/FreiesLaufenGelerntCS",
+  "concept": [
+    {
+      "code": "bis_15_monate",
+      "display": "bis zum 15. Monat"
+    },
+    {
+      "code": "spaeter",
+      "display": "später als 15. Monat"
+    }
+  ],
+  "count": 2
+}

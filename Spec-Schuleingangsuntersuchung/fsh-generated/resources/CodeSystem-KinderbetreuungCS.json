@@ -1,0 +1,38 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "KinderbetreuungCS",
+  "id": "KinderbetreuungCS",
+  "title": "KinderbetreuungCS",
+  "description": "CodeSystem, das die verschiedenen Betreuungsformen eines Kindes beschreibt.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/KinderbetreuungCS",
+  "concept": [
+    {
+      "code": "hauskind",
+      "display": "nur zuhause (Hauskind)"
+    },
+    {
+      "code": "kita_halbtags",
+      "display": "KITA halbtags (<5h), Rest des Tages zuhause"
+    },
+    {
+      "code": "kita_ganztags",
+      "display": "KITA ganztags (>6h)"
+    },
+    {
+      "code": "tagespflege_halbtags",
+      "display": "Tagespflege halbtags (<5h), Rest des Tages zuhause"
+    },
+    {
+      "code": "tagespflege_ganztags",
+      "display": "Tagespflege ganztags (>6h)"
+    },
+    {
+      "code": "kita_und_tagespflege",
+      "display": "KITA und Tagespflege (jeweils etwa halbtags)"
+    }
+  ],
+  "count": 6
+}

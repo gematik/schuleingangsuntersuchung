@@ -1,0 +1,78 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "KinderbetreuungVS",
+  "id": "KinderbetreuungVS",
+  "title": "KinderbetreuungVS",
+  "description": "ValueSet, das die verschiedenen Betreuungsformen eines Kindes beschreibt.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/KinderbetreuungVS",
+  "expansion": {
+    "timestamp": "2024-10-20T11:50:47+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/KinderbetreuungCS",
+        "code": "hauskind",
+        "display": "nur zuhause (Hauskind)"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/KinderbetreuungCS",
+        "code": "kita_halbtags",
+        "display": "KITA halbtags (<5h), Rest des Tages zuhause"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/KinderbetreuungCS",
+        "code": "kita_ganztags",
+        "display": "KITA ganztags (>6h)"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/KinderbetreuungCS",
+        "code": "tagespflege_halbtags",
+        "display": "Tagespflege halbtags (<5h), Rest des Tages zuhause"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/KinderbetreuungCS",
+        "code": "tagespflege_ganztags",
+        "display": "Tagespflege ganztags (>6h)"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/KinderbetreuungCS",
+        "code": "kita_und_tagespflege",
+        "display": "KITA und Tagespflege (jeweils etwa halbtags)"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/KinderbetreuungCS",
+        "concept": [
+          {
+            "code": "hauskind",
+            "display": "nur zuhause (Hauskind)"
+          },
+          {
+            "code": "kita_halbtags",
+            "display": "KITA halbtags (<5h), Rest des Tages zuhause"
+          },
+          {
+            "code": "kita_ganztags",
+            "display": "KITA ganztags (>6h)"
+          },
+          {
+            "code": "tagespflege_halbtags",
+            "display": "Tagespflege halbtags (<5h), Rest des Tages zuhause"
+          },
+          {
+            "code": "tagespflege_ganztags",
+            "display": "Tagespflege ganztags (>6h)"
+          },
+          {
+            "code": "kita_und_tagespflege",
+            "display": "KITA und Tagespflege (jeweils etwa halbtags)"
+          }
+        ]
+      }
+    ]
+  }
+}
