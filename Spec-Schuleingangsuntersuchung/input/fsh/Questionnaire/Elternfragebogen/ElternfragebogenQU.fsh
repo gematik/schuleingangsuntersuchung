@@ -1146,6 +1146,9 @@ Description: "Elternbefragung"
     * insert addItemWithSource(9.1b, #choice, [[Teilnahme am Vorkurs Deutsch]], #DE-BY)
     * answerValueSet = Canonical(SEU_UB_TeilnahmeVorkursDeutschVS)
   * item[+]
+    * insert addItemWithSource(9.1c, #choice, [[Sprachtherapie]], #DE-BY)
+    * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
+  * item[+]
     * insert addItemWithSource(9.1a, #boolean, [[Werden oder wurden bei Ihrem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)?]], #DE-SL)    
   * item[+]
     * insert addGroup(9.1a.g, Therapien)

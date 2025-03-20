@@ -1416,6 +1416,14 @@
     "endLine": 126
   },
   {
+    "outputFile": "Questionnaire-SEU-Elternbefragung-BY.json",
+    "fshName": "ElternbefragungBY",
+    "fshType": "Instance",
+    "fshFile": "Questionnaire/Elternfragebogen/Laenderspezifisch/ElternfragebogenQU_BY.fsh",
+    "startLine": 1,
+    "endLine": 256
+  },
+  {
     "outputFile": "Questionnaire-SEU-Elternbefragung-HE.json",
     "fshName": "Elternbefragung_HE",
     "fshType": "Instance",
@@ -1461,7 +1469,7 @@
     "fshType": "Instance",
     "fshFile": "Questionnaire/Elternfragebogen/ElternfragebogenQU.fsh",
     "startLine": 1,
-    "endLine": 1630
+    "endLine": 1633
   },
   {
     "outputFile": "Questionnaire-SEU-Untersuchungsbogen.json",
