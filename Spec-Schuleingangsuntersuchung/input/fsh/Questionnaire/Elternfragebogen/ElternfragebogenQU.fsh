@@ -299,9 +299,6 @@ Description: "Elternbefragung"
     * insert addItem(2.9, #choice, Staatsangehörigkeit)
   * item[+]
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
-    * insert addItemWithSource(2.9.1, #choice, [[andere/weitere]], #DE-BE)
-  * item[+]
-    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
     * insert addItem(2.10, #choice, Herkunftsland)
   * item[+]
     * insert addItemWithSource(2.10a, #boolean, [[Herkunftsland Deutsch?]], #DE-RP)
@@ -455,9 +452,6 @@ Description: "Elternbefragung"
       * question = "4.0b"
       * operator = #=
       * answerBoolean = true
-  * item[+]
-    * insert addItemWithSource(4.6b, #date, [[Seit wann (Monat/Jahr) geht Ihr Kind in eine Kindertagesstätte (auch Elterninitiativ-Kita/ Großtagespflegestelle)?]], #DE-BE)
-    * insert enableWhenBoolean(4.0b, =, true)
   * item[+]
     * insert addItem(4.7, #boolean, Erfolgte die Betreuung auch durch eine Tagesmutter?)
   * item[+]
