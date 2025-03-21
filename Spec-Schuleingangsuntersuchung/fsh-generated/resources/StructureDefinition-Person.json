@@ -866,20 +866,34 @@
           ],
           "ordered": false,
           "rules": "open"
-        },
-        "min": 1
+        }
       },
       {
         "id": "Patient.contact:Kindertagesstaette.extension:KiTaName",
         "path": "Patient.contact.extension",
         "sliceName": "KiTaName",
-        "min": 1,
+        "min": 0,
         "max": "*",
         "type": [
           {
             "code": "Extension",
             "profile": [
-              "https://www.oegd.de/fhir/seu/StructureDefinition/kitname"
+              "https://www.oegd.de/fhir/seu/StructureDefinition/kitaname"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Patient.contact:Kindertagesstaette.extension:KiTaID",
+        "path": "Patient.contact.extension",
+        "sliceName": "KiTaID",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.oegd.de/fhir/seu/StructureDefinition/kitaid"
             ]
           }
         ]

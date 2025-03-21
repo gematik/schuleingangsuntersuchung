@@ -1,12 +1,12 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "kitname",
-  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/kitname",
+  "id": "kitaid",
+  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/kitaid",
   "version": "0.1.0",
-  "name": "KiTaName",
-  "title": "KiTa Name as String",
+  "name": "KiTaID",
+  "title": "KiTa ID as String",
   "status": "draft",
-  "description": "Allows representing a KiTa name as a simple string.",
+  "description": "Allows representing a KiTa name as an ID",
   "fhirVersion": "4.0.1",
   "kind": "complex-type",
   "abstract": false,
@@ -24,8 +24,8 @@
       {
         "id": "Extension",
         "path": "Extension",
-        "short": "KiTa Name as String",
-        "definition": "Allows representing a KiTa name as a simple string."
+        "short": "KiTa ID as String",
+        "definition": "Allows representing a KiTa name as an ID"
       },
       {
         "id": "Extension.extension",
@@ -35,7 +35,7 @@
       {
         "id": "Extension.url",
         "path": "Extension.url",
-        "fixedUri": "https://www.oegd.de/fhir/seu/StructureDefinition/kitname"
+        "fixedUri": "https://www.oegd.de/fhir/seu/StructureDefinition/kitaid"
       },
       {
         "id": "Extension.value[x]",

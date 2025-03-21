@@ -124,7 +124,8 @@ Id: Person
   * relationship 1.. MS
     * coding
       * ^patternCoding.code = #S
-  * extension contains KiTaName named KiTaName 1..*
+  * extension contains KiTaName named KiTaName 0..*
+  * extension contains KiTaID named KiTaID 0..*
   * address 1.. MS
   * address only AddressDeBasis
 * communication MS
@@ -260,8 +261,10 @@ Usage: #example
     * city = "Fulda"
 * contact[Kindertagesstaette]
   * relationship.coding.code = #S
-  * extension.url = "KiTaName"
-  * extension.valueString = "Kita Nummer 1"
+  * extension[+].url = "KiTaName"
+  * extension[=].valueString = "Kita Nummer 1"
+  * extension[+].url = "KiTaID"
+  * extension[=].valueString = "kitak13h1k3h1kj2h"
   * address
     * type = #both
     * city = "Fulda"
@@ -271,7 +274,12 @@ Usage: #example
 // TODO: Postfach weglassen?
 
 Extension: KiTaName
-Id: kitname
+Id: kitaname
 Title: "KiTa Name as String"
 Description: "Allows representing a KiTa name as a simple string."
+* valueString 1..1
+Extension: KiTaID
+Id: kitaid
+Title: "KiTa ID as String"
+Description: "Allows representing a KiTa name as an ID"
 * valueString 1..1
