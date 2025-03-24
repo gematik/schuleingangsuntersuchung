@@ -105,6 +105,12 @@ RuleSet: enableWhenExists(question)
   * operator = #exists
   * answerBoolean = true
 
+RuleSet: enableWhenInteger(question, operator, value)
+* enableWhen[+]
+  * question = "{question}"
+  * operator = #{operator}
+  * answerInteger = {value}
+
 RuleSet: variable(name, expression)
 * extension[+]
   * url = "http://hl7.org/fhir/StructureDefinition/variable"
