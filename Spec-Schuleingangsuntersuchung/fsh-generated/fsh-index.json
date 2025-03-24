@@ -64,6 +64,14 @@
     "endLine": 49
   },
   {
+    "outputFile": "CodeSystem-Berufstaetigkeit-Eltern-Berlin-cs.json",
+    "fshName": "Berufstaetigkeit-Eltern-Berlin-CS",
+    "fshType": "CodeSystem",
+    "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
+    "startLine": 1658,
+    "endLine": 1665
+  },
+  {
     "outputFile": "CodeSystem-BestattungsartCS.json",
     "fshName": "BestattungsartCS",
     "fshType": "CodeSystem",
@@ -76,8 +84,8 @@
     "fshName": "BezirkeHHCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 2268,
-    "endLine": 2278
+    "startLine": 2277,
+    "endLine": 2287
   },
   {
     "outputFile": "CodeSystem-BundeslandCS.json",
@@ -388,16 +396,16 @@
     "fshName": "PersonensorgeberechtigterBeziehungCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 2308,
-    "endLine": 2323
+    "startLine": 2317,
+    "endLine": 2332
   },
   {
     "outputFile": "CodeSystem-PersonensorgeberechtigterZusammenlebendCS.json",
     "fshName": "PersonensorgeberechtigterZusammenlebendCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 2368,
-    "endLine": 2374
+    "startLine": 2377,
+    "endLine": 2383
   },
   {
     "outputFile": "CodeSystem-PflegegradCS.json",
@@ -420,8 +428,8 @@
     "fshName": "RauchortCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 2413,
-    "endLine": 2418
+    "startLine": 2422,
+    "endLine": 2427
   },
   {
     "outputFile": "CodeSystem-RechtsLinksHaenderCS.json",
@@ -756,8 +764,8 @@
     "fshName": "SorgenKindCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 2434,
-    "endLine": 2441
+    "startLine": 2443,
+    "endLine": 2450
   },
   {
     "outputFile": "CodeSystem-SprechenGelerntCS.json",
@@ -1108,8 +1116,8 @@
     "fshName": "SEU_EF_BehandlungstypCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 1788,
-    "endLine": 1796
+    "startLine": 1797,
+    "endLine": 1805
   },
   {
     "outputFile": "CodeSystem-seu-ef-berufsbildung-cs.json",
@@ -1124,16 +1132,16 @@
     "fshName": "SEU_EF_BildungsabschlussBBCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 2012,
-    "endLine": 2021
+    "startLine": 2021,
+    "endLine": 2030
   },
   {
     "outputFile": "CodeSystem-seu-ef-bildungsabschluss-bwcs.json",
     "fshName": "SEU_EF_BildungsabschlussBWCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 2048,
-    "endLine": 2054
+    "startLine": 2057,
+    "endLine": 2063
   },
   {
     "outputFile": "CodeSystem-seu-ef-bildungsabschluss-cs.json",
@@ -1148,40 +1156,40 @@
     "fshName": "SEU_EF_DauerCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 1852,
-    "endLine": 1862
+    "startLine": 1861,
+    "endLine": 1871
   },
   {
     "outputFile": "CodeSystem-seu-ef-dauer-he-cs.json",
     "fshName": "SEU_EF_DauerHECS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 2108,
-    "endLine": 2114
+    "startLine": 2117,
+    "endLine": 2123
   },
   {
     "outputFile": "CodeSystem-seu-ef-fachaerzte-cs.json",
     "fshName": "SEU_EF_FachaerzteCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 1924,
-    "endLine": 1937
+    "startLine": 1933,
+    "endLine": 1946
   },
   {
     "outputFile": "CodeSystem-seu-ef-frequenz-cs.json",
     "fshName": "SEU_EF_FrequenzCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 2072,
-    "endLine": 2081
+    "startLine": 2081,
+    "endLine": 2090
   },
   {
     "outputFile": "CodeSystem-seu-ef-hilfsmittel-cs.json",
     "fshName": "SEU_EF_HilfsmittelCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 1892,
-    "endLine": 1900
+    "startLine": 1901,
+    "endLine": 1909
   },
   {
     "outputFile": "CodeSystem-seu-ef-medienkonsum-cs.json",
@@ -1201,7 +1209,7 @@
   },
   {
     "outputFile": "CodeSystem-seu-ef-schulabschlussberlin-cs.json",
-    "fshName": "SEU_EF_SchulabschlussBerlinCS",
+    "fshName": "SEU-EF-SchulabschlussBerlinCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire\\Elternfragebogen\\CodeSystem.fsh",
     "startLine": 138,
@@ -1212,16 +1220,16 @@
     "fshName": "SEU_EF_SchwangerschaftCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 1704,
-    "endLine": 1710
+    "startLine": 1713,
+    "endLine": 1719
   },
   {
     "outputFile": "CodeSystem-seu-ef-sprache-cs.json",
     "fshName": "SEU_EF_SpracheCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 1728,
-    "endLine": 1734
+    "startLine": 1737,
+    "endLine": 1743
   },
   {
     "outputFile": "CodeSystem-seu-ef-unfall-cs.json",
@@ -1236,24 +1244,24 @@
     "fshName": "SEU_EF_UnfallortCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 1752,
-    "endLine": 1761
+    "startLine": 1761,
+    "endLine": 1770
   },
   {
     "outputFile": "CodeSystem-seu-ef-zeitdauer-cs.json",
     "fshName": "SEU_EF_ZeitdauerCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 1976,
-    "endLine": 1985
+    "startLine": 1985,
+    "endLine": 1994
   },
   {
     "outputFile": "CodeSystem-seu-ef-zeitraum-cs.json",
     "fshName": "SEU_EF_ZeitraumCS",
     "fshType": "CodeSystem",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 1820,
-    "endLine": 1828
+    "startLine": 1829,
+    "endLine": 1837
   },
   {
     "outputFile": "CodeSystem-seu-ub-0-4impfungen-cs.json",
@@ -1621,7 +1629,7 @@
     "fshType": "Instance",
     "fshFile": "Questionnaire\\Elternfragebogen\\Laenderspezifisch\\ElternfragebogenQU_BE_neu2.fsh",
     "startLine": 1,
-    "endLine": 149
+    "endLine": 164
   },
   {
     "outputFile": "Questionnaire-SEU-Elternbefragung-BW.json",
@@ -1677,7 +1685,7 @@
     "fshType": "Instance",
     "fshFile": "Questionnaire\\Elternfragebogen\\ElternfragebogenQU.fsh",
     "startLine": 1,
-    "endLine": 1660
+    "endLine": 1682
   },
   {
     "outputFile": "Questionnaire-SEU-Untersuchungsbogen.json",
@@ -2064,6 +2072,14 @@
     "endLine": 53
   },
   {
+    "outputFile": "ValueSet-Berufstaetigkeit-Eltern-Berlin-VS.json",
+    "fshName": "Berufstaetigkeit-Eltern-Berlin-VS",
+    "fshType": "ValueSet",
+    "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
+    "startLine": 2490,
+    "endLine": 2507
+  },
+  {
     "outputFile": "ValueSet-BestattungsartVS.json",
     "fshName": "BestattungsartVS",
     "fshType": "ValueSet",
@@ -2076,8 +2092,8 @@
     "fshName": "BezirkeHHVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 2280,
-    "endLine": 2306
+    "startLine": 2289,
+    "endLine": 2315
   },
   {
     "outputFile": "ValueSet-BundeslandVS.json",
@@ -2100,8 +2116,8 @@
     "fshName": "DauerStillenVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 2132,
-    "endLine": 2149
+    "startLine": 2141,
+    "endLine": 2158
   },
   {
     "outputFile": "ValueSet-DerzeitigeErkrankungenVS.json",
@@ -2174,6 +2190,14 @@
     "fshFile": "Terminologie\\Krankheiten.fsh",
     "startLine": 159,
     "endLine": 221
+  },
+  {
+    "outputFile": "ValueSet-ErkrankungenKindVS.json",
+    "fshName": "ErkrankungenKindVS",
+    "fshType": "ValueSet",
+    "fshFile": "Terminologie\\Krankheiten.fsh",
+    "startLine": 525,
+    "endLine": 539
   },
   {
     "outputFile": "ValueSet-ErkrankungenLetztesJahrPlusVerbrennungenVS.json",
@@ -2348,8 +2372,8 @@
     "fshName": "JaNeinWeissNichtVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 2151,
-    "endLine": 2165
+    "startLine": 2160,
+    "endLine": 2174
   },
   {
     "outputFile": "ValueSet-JnVS.json",
@@ -2396,16 +2420,16 @@
     "fshName": "KrankenhausaufenthaltGrundVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 2392,
-    "endLine": 2411
+    "startLine": 2401,
+    "endLine": 2420
   },
   {
     "outputFile": "ValueSet-LebtBeiVS.json",
     "fshName": "LebtBeiVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 2462,
-    "endLine": 2479
+    "startLine": 2471,
+    "endLine": 2488
   },
   {
     "outputFile": "ValueSet-LinksRechtsBeidseitsKeineAngabeVS.json",
@@ -2460,16 +2484,16 @@
     "fshName": "PersonensorgeberechtigterBeziehungVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 2325,
-    "endLine": 2366
+    "startLine": 2334,
+    "endLine": 2375
   },
   {
     "outputFile": "ValueSet-PersonensorgeberechtigterZusammenlebendVS.json",
     "fshName": "PersonensorgeberechtigterZusammenlebendVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 2376,
-    "endLine": 2390
+    "startLine": 2385,
+    "endLine": 2399
   },
   {
     "outputFile": "ValueSet-PflegegradVS.json",
@@ -2492,8 +2516,8 @@
     "fshName": "RauchortVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 2420,
-    "endLine": 2432
+    "startLine": 2429,
+    "endLine": 2441
   },
   {
     "outputFile": "ValueSet-RechtsLinksHaenderVS.json",
@@ -2529,7 +2553,7 @@
   },
   {
     "outputFile": "ValueSet-SEU-EF-SchulabschlussBerlinVS.json",
-    "fshName": "SEU_EF_SchulabschlussBerlinVS",
+    "fshName": "SEU-EF-SchulabschlussBerlinVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
     "startLine": 352,
@@ -2884,8 +2908,8 @@
     "fshName": "SorgenKindVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 2443,
-    "endLine": 2460
+    "startLine": 2452,
+    "endLine": 2469
   },
   {
     "outputFile": "ValueSet-SprechenGelerntVS.json",
@@ -3076,40 +3100,40 @@
     "fshName": "WerErziehtDasKindAlternativVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 2201,
-    "endLine": 2221
+    "startLine": 2210,
+    "endLine": 2230
   },
   {
     "outputFile": "ValueSet-WerErziehtDasKindVS.json",
     "fshName": "WerErziehtDasKindVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 2167,
-    "endLine": 2199
+    "startLine": 2176,
+    "endLine": 2208
   },
   {
     "outputFile": "ValueSet-WieOftImSportVereinVS.json",
     "fshName": "WieOftImSportVereinVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 2238,
-    "endLine": 2248
+    "startLine": 2247,
+    "endLine": 2257
   },
   {
     "outputFile": "ValueSet-WieOftTrainingVS.json",
     "fshName": "WieOftTrainingVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 2250,
-    "endLine": 2266
+    "startLine": 2259,
+    "endLine": 2275
   },
   {
     "outputFile": "ValueSet-WieVieleStundenFreizeitVS.json",
     "fshName": "WieVieleStundenFreizeitVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 2223,
-    "endLine": 2236
+    "startLine": 2232,
+    "endLine": 2245
   },
   {
     "outputFile": "ValueSet-WohnsituationKindAlternativ1VS.json",
@@ -3288,20 +3312,28 @@
     "endLine": 2251
   },
   {
+    "outputFile": "ValueSet-lebensumfeld-vs.json",
+    "fshName": "LebensumfeldVS",
+    "fshType": "ValueSet",
+    "fshFile": "Terminologie\\WohnsituationKind.fsh",
+    "startLine": 153,
+    "endLine": 176
+  },
+  {
     "outputFile": "ValueSet-seu-ef-alter-kind-vs.json",
     "fshName": "SEU_EF_AlterKindVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 1658,
-    "endLine": 1702
+    "startLine": 1667,
+    "endLine": 1711
   },
   {
     "outputFile": "ValueSet-seu-ef-behandlungstyp-vs.json",
     "fshName": "SEU_EF_BehandlungstypVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 1798,
-    "endLine": 1818
+    "startLine": 1807,
+    "endLine": 1827
   },
   {
     "outputFile": "ValueSet-seu-ef-berufsbildung-vs.json",
@@ -3316,16 +3348,16 @@
     "fshName": "SEU_EF_BildungsabschlussBBVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 2023,
-    "endLine": 2046
+    "startLine": 2032,
+    "endLine": 2055
   },
   {
     "outputFile": "ValueSet-seu-ef-bildungsabschluss-bwvs.json",
     "fshName": "SEU_EF_BildungsabschlussBWVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 2056,
-    "endLine": 2070
+    "startLine": 2065,
+    "endLine": 2079
   },
   {
     "outputFile": "ValueSet-seu-ef-bildungsabschluss-vs.json",
@@ -3340,40 +3372,40 @@
     "fshName": "SEU_EF_DauerHEVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 2116,
-    "endLine": 2130
+    "startLine": 2125,
+    "endLine": 2139
   },
   {
     "outputFile": "ValueSet-seu-ef-dauer-vs.json",
     "fshName": "SEU_EF_DauerBBVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 1864,
-    "endLine": 1890
+    "startLine": 1873,
+    "endLine": 1899
   },
   {
     "outputFile": "ValueSet-seu-ef-fachaerzte-vs.json",
     "fshName": "SEU_EF_FachaerzteVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 1939,
-    "endLine": 1974
+    "startLine": 1948,
+    "endLine": 1983
   },
   {
     "outputFile": "ValueSet-seu-ef-frequenz-vs.json",
     "fshName": "SEU_EF_FrequenzVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 2083,
-    "endLine": 2106
+    "startLine": 2092,
+    "endLine": 2115
   },
   {
     "outputFile": "ValueSet-seu-ef-hilfsmittel-vs.json",
     "fshName": "SEU_EF_HilfsmittelVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 1902,
-    "endLine": 1922
+    "startLine": 1911,
+    "endLine": 1931
   },
   {
     "outputFile": "ValueSet-seu-ef-medienkonsum-vs.json",
@@ -3396,16 +3428,16 @@
     "fshName": "SEU_EF_SchwangerschaftVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 1712,
-    "endLine": 1726
+    "startLine": 1721,
+    "endLine": 1735
   },
   {
     "outputFile": "ValueSet-seu-ef-sprache-vs.json",
     "fshName": "SEU_EF_SpracheVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 1736,
-    "endLine": 1750
+    "startLine": 1745,
+    "endLine": 1759
   },
   {
     "outputFile": "ValueSet-seu-ef-unfall-vs.json",
@@ -3420,24 +3452,24 @@
     "fshName": "SEU_EF_UnfallortVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 1763,
-    "endLine": 1786
+    "startLine": 1772,
+    "endLine": 1795
   },
   {
     "outputFile": "ValueSet-seu-ef-zeitdauer-vs.json",
     "fshName": "SEU_EF_ZeitdauerVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 1987,
-    "endLine": 2010
+    "startLine": 1996,
+    "endLine": 2019
   },
   {
     "outputFile": "ValueSet-seu-ef-zeitraum-vs.json",
     "fshName": "SEU_EF_DauerBWVS",
     "fshType": "ValueSet",
     "fshFile": "Questionnaire\\Elternfragebogen\\ValueSetContained.fsh",
-    "startLine": 1830,
-    "endLine": 1850
+    "startLine": 1839,
+    "endLine": 1859
   },
   {
     "outputFile": "ValueSet-seu-ub-0-2impfungen-vs.json",

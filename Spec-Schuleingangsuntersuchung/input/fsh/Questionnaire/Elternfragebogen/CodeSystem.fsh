@@ -135,9 +135,9 @@ Description: "CodeSystem für die Angabe des Bildungsabschlusses."
 * #sonder_foerderschule "Sonder-/Förderschule"
 * #in_schulischer_ausbildung "Derzeit noch in schulischer Ausbildung (Schüler*in)"
 
-CodeSystem: SEU_EF_SchulabschlussBerlinCS
+CodeSystem: SEU-EF-SchulabschlussBerlinCS
 Id: seu-ef-schulabschlussberlin-cs
-Title: "SEU_EF_Bildungsabschluss Berlin CodeSystem"
+Title: "SEU-EF-Bildungsabschluss Berlin CodeSystem"
 Description: "CodeSystem für die Angabe des Bildungsabschlusses."
 * #kein_hauptschulabschluss "Kein Schulabschluss"
 * #hauptschulabschluss_oder_weniger_als_10_klasse "Hauptschluss oder weniger 10. Klasse"

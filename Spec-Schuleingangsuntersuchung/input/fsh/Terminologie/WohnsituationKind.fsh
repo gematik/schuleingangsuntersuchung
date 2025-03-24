@@ -149,3 +149,28 @@ Description: "ValueSet, das verschiedene Wohnsituationen des Kindes enthält."
 * ^expansion.contains[+].system = Canonical(WohnsituationKindCS)
 * ^expansion.contains[=].code = #keine_angabe
 * ^expansion.contains[=].display = "Keine Angabe"
+
+ValueSet: LebensumfeldVS
+Id: lebensumfeld-vs
+Title: "Lebensumfeld VS"
+Description: "LebensumfeldVS"
+* include codes from system WohnsituationKindCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
+* ^expansion.contains[0].system = Canonical(WohnsituationKindCS)
+* ^expansion.contains[=].code = #eltern
+* ^expansion.contains[=].display = "Leibliche Eltern"
+* ^expansion.contains[+].system = Canonical(WohnsituationKindCS)
+* ^expansion.contains[=].code = #mutter_alleinerziehend
+* ^expansion.contains[=].display = "Mutter alleinerziehend"
+* ^expansion.contains[+].system = Canonical(WohnsituationKindCS)
+* ^expansion.contains[=].code = #vater_alleinerziehend
+* ^expansion.contains[=].display = "Vater alleinerziehend"
+* ^expansion.contains[+].system = Canonical(WohnsituationKindCS)
+* ^expansion.contains[=].code = #pflegeeltern
+* ^expansion.contains[=].display = "Pflegeeltern"
+* ^expansion.contains[+].system = Canonical(WohnsituationKindCS)
+* ^expansion.contains[=].code = #andere_familienmitglieder
+* ^expansion.contains[=].display = "Andere Familienmitglieder/Verwandte"
+* ^expansion.contains[+].system = Canonical(WohnsituationKindCS)
+* ^expansion.contains[=].code = #heim
+* ^expansion.contains[=].display = "Heim"

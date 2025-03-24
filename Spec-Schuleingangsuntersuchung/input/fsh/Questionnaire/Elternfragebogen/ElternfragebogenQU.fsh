@@ -184,6 +184,10 @@ Description: "Elternbefragung"
     * enableBehavior = #any
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
   * item[+]
+    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
+    * insert addItemWithSource(6.1, #choice, [[Staatsangehörigkeit: andere/weitere?]], #DE-BE)
+    * repeats = true  
+  * item[+]
     * insert addItem(1.5, #choice, [[Geburtsland]])
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
   * item[+]
@@ -210,6 +214,8 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItem(1.6.1, #date, Seit wann wohnt das Kind in Deutschland?)
     * insert enableWhenBoolean(1.6, =, false)
+  * item[+]
+    * insert addItemWithSource(1.6.3, #date,[[Seit wann lebt Ihr Kind in Deutschland (Monat/ Jahr)?]], #DE-BE)
   * item[+]
     * insert addItemWithSource(1.6.1a, #choice, Wie alt war das Kind bei Einreise nach Deutschland?, #DE-SL)
     * insert enableWhenBoolean(1.6, =, false)
@@ -881,7 +887,6 @@ Description: "Elternbefragung"
     * item[+]
       * insert addItem(8.15.1, #string, [[Detaillierte Angaben zum Krankenhausaufenthalt?]])
       * insert addItemWithSource(8.15.1.a, #integer, [[Anzahl der Krankenhausaufenthalte/Operationen]], #DE-BE)
-      * insert enableWhenBoolean(8.15, =, true)
     * item[+]
       * insert addItemWithSource(8.15.2, #integer, [[Wie oft wurde das Kind im Krankenhaus aufgenommen?]], #DE-ST)
       * insert enableWhenBoolean(8.15, =, true)
@@ -1149,6 +1154,10 @@ Description: "Elternbefragung"
       * insert addItemWithSource(8.81.2, #boolean, [[Hatte Ihr Kind in den letzten 12 Monaten gleichzeitig mit diesen Nasenbeschwerden auch juckende oder tränende Augen?]], #DE-NI)
   * item[+]
     * insert addItemWithSource(8.82, #string, [[Kur mit welchem Behandlungsschwerpunkt?]], #DE-TH)
+  * item[+]
+    * insert addItemWithSource(8.9, #choice, [[Erkrankungen des Kindes (auch frühere)]], #DE-BE)
+    * answerValueSet = Canonical(ErkrankungenKindVS)
+    * repeats = true
 //********************************************
 // Förderungen
 * item[+]
@@ -1529,6 +1538,9 @@ Description: "Elternbefragung"
     * insert addItemWithSource(13.1b, #choice, Schulabschluss 1. Elternteil, #DE-BW)
     * answerValueSet = Canonical(SEU_EF_BildungsabschlussBWVS)
   * item[+]
+    * insert addItemWithSource(13.1c, #choice, Schulabschluss Elternteil A, #DE-BE)
+    * answerValueSet = Canonical(SEU-EF-SchulabschlussBerlinVS)
+  * item[+]
     * insert addItem(13.2, #choice, Schulabschluss 2. Elternteil)
     * answerValueSet = Canonical(SEU_EF_BildungsabschlussVS)
   * item[+]
@@ -1537,6 +1549,9 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItemWithSource(13.2b, #choice, Schulabschluss 2. Elternteil, #DE-BW)
     * answerValueSet = Canonical(SEU_EF_BildungsabschlussBWVS)
+  * item[+]
+    * insert addItemWithSource(13.2c, #choice, Schulabschluss Elternteil B, #DE-BE)
+    * answerValueSet = Canonical(SEU-EF-SchulabschlussBerlinVS)
   * item[+]
     * insert addItem(13.3, #choice, Berufsabschluss 1. Elternteil)
     * answerValueSet = Canonical(SEU_EF_BerufsbildungVS)
@@ -1632,11 +1647,17 @@ Description: "Elternbefragung"
     * insert addItemWithSource(13.32a, #choice, [[Erwerbstätigkeit Mutter/ Partner]], #DE-ST)
     * answerValueSet = Canonical(ErwerbsstatusAlternativ1VS)
   * item[+]
+    * insert addItemWithSource(13.32c, #choice, [[Berufstätigkeit Mutter]], #DE-BE)
+    * answerValueSet = Canonical(Berufstaetigkeit-Eltern-Berlin-VS)
+  * item[+]
     * insert addItemWithSource(13.33, #choice, [[Erwerbsstatus des Vaters]], #DE-HB)
     * answerValueSet = Canonical(ErwerbsstatusDesVatersVS)
   * item[+]
     * insert addItemWithSource(13.33a, #choice, [[Erwerbstätigkeit Vater/ Partner]], #DE-ST)
     * answerValueSet = Canonical(ErwerbsstatusAlternativ1VS)
+  * item[+]
+    * insert addItemWithSource(13.32c, #choice, [[Berufstätigkeit Vater]], #DE-BE)
+    * answerValueSet = Canonical(Berufstaetigkeit-Eltern-Berlin-VS)
   * item[+]
     * insert addItemWithSource(13.34, #boolean, [[Mutter in Deutschland geboren]], #DE-HB)
   * item[+]

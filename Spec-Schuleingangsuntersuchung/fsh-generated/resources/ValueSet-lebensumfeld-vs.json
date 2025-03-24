@@ -1,0 +1,52 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "LebensumfeldVS",
+  "id": "lebensumfeld-vs",
+  "title": "Lebensumfeld VS",
+  "description": "LebensumfeldVS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/lebensumfeld-vs",
+  "expansion": {
+    "timestamp": "2024-10-20T11:50:47+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
+        "code": "eltern",
+        "display": "Leibliche Eltern"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
+        "code": "mutter_alleinerziehend",
+        "display": "Mutter alleinerziehend"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
+        "code": "vater_alleinerziehend",
+        "display": "Vater alleinerziehend"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
+        "code": "pflegeeltern",
+        "display": "Pflegeeltern"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
+        "code": "andere_familienmitglieder",
+        "display": "Andere Familienmitglieder/Verwandte"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
+        "code": "heim",
+        "display": "Heim"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS"
+      }
+    ]
+  }
+}
