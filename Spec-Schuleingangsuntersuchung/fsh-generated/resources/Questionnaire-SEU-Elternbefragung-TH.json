@@ -1,0 +1,1537 @@
+{
+  "resourceType": "Questionnaire",
+  "id": "SEU-Elternbefragung-TH",
+  "contained": [
+    {
+      "resourceType": "ValueSet",
+      "id": "LinksRechtsBeidseitsKeineAngabeVS",
+      "status": "draft",
+      "name": "LinksRechtsBeidseitsKeineAngabeVS",
+      "title": "LinksRechtsBeidseitsKeineAngabeVS",
+      "description": "LinksRechtsBeidseitsKeineAngabeCS",
+      "version": "0.1.0",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/LinksRechtsBeidseitsKeineAngabeVS",
+      "expansion": {
+        "timestamp": "2024-04-04T10:44:31+00:00",
+        "contains": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/LinksRechtsBeidseitsKeineAngabeCS",
+            "code": "links",
+            "display": "Links"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/LinksRechtsBeidseitsKeineAngabeCS",
+            "code": "rechts",
+            "display": "Rechts"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/LinksRechtsBeidseitsKeineAngabeCS",
+            "code": "beidseits",
+            "display": "Beidseits"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/LinksRechtsBeidseitsKeineAngabeCS",
+            "code": "keine_angabe",
+            "display": "Keine Angabe"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/LinksRechtsBeidseitsKeineAngabeCS"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "ErkrankungVS",
+      "status": "draft",
+      "name": "ErkrankungVS",
+      "title": "ErkrankungVS",
+      "description": "ErkrankungVS",
+      "version": "0.1.0",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/ErkrankungVS",
+      "expansion": {
+        "timestamp": "2024-04-04T10:55:53+00:00",
+        "contains": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "epilepsie",
+            "display": "Epilepsie"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "ads_adhs",
+            "display": "ADS/ADHS"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "sprachauffälligkeit",
+            "display": "Sprachauffälligkeit"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "sehstörung",
+            "display": "Sehstörung"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "hörstörung",
+            "display": "Hörstörung"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "herzfehler",
+            "display": "Herzfehler"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "nieren_harnwegerkrankung",
+            "display": "Nieren/Harnwegerkrankung"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "allergischer_schnupfen",
+            "display": "Allergischer Schnupfen"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "asthma",
+            "display": "Asthma"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "allergische_hauterkrankung",
+            "display": "Allergische Hauterkrankung"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "neurodermitis",
+            "display": "Neurodermitis"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "nahrungsmittelallergie",
+            "display": "Nahrungsmittelallergie"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "krebserkrankung",
+            "display": "Krebserkrankung"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "hüfterkrankung",
+            "display": "Hüfterkrankung"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "wirbelsäulenleiden",
+            "display": "Wirbelsäulenleiden"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "bewegungsstörung",
+            "display": "Bewegungsstörung"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "diabetes",
+            "display": "Diabetes"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "ass",
+            "display": "Autismus-Spektrum-Störung (ASS)"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "schilddrüsenfunktionsstörung",
+            "display": "Schilddrüsenfunktionsstörung"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "InfektionsKrankheitVS",
+      "status": "draft",
+      "name": "InfektionsKrankheitVS",
+      "title": "InfektionsKrankheitVS",
+      "description": "InfektionsKrankheitVS",
+      "version": "0.1.0",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/InfektionsKrankheitVS",
+      "expansion": {
+        "timestamp": "2024-04-04T11:02:42+00:00",
+        "contains": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS",
+            "code": "covid_19",
+            "display": "COVID-19"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS",
+            "code": "hand_fuß_mund_krankheit",
+            "display": "Hand-Fuß-Mund-Krankheit"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS",
+            "code": "borreliose",
+            "display": "Borreliose"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS",
+            "code": "hepatitis_b",
+            "display": "Hepatitis B"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS",
+            "code": "hirnhautentzündung",
+            "display": "Hirnhautentzündung"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS",
+            "code": "keuchhusten",
+            "display": "Keuchhusten"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS",
+            "code": "masern",
+            "display": "Masern"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS",
+            "code": "mumps",
+            "display": "Mumps"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS",
+            "code": "ringelröten",
+            "display": "Ringelröten"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS",
+            "code": "röteln",
+            "display": "Röteln"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS",
+            "code": "rotavirus_infektion",
+            "display": "Rotavirus-Infektion"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS",
+            "code": "scharlach",
+            "display": "Scharlach"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS",
+            "code": "windpocken",
+            "display": "Windpocken"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "PflegegradVS",
+      "status": "draft",
+      "name": "PflegegradVS",
+      "title": "PflegegradVS",
+      "description": "PflegegradVS",
+      "version": "0.1.0",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/PflegegradVS",
+      "expansion": {
+        "timestamp": "2024-04-04T11:16:49+00:00",
+        "contains": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PflegegradCS",
+            "code": "pflegegrad_1",
+            "display": "Pflegegrad 1"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PflegegradCS",
+            "code": "pflegegrad_2",
+            "display": "Pflegegrad 2"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PflegegradCS",
+            "code": "pflegegrad_3",
+            "display": "Pflegegrad 3"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PflegegradCS",
+            "code": "pflegegrad_4",
+            "display": "Pflegegrad 4"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PflegegradCS",
+            "code": "pflegegrad_5",
+            "display": "Pflegegrad 5"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PflegegradCS"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "UnfallOrtVS",
+      "status": "draft",
+      "name": "UnfallOrtVS",
+      "title": "UnfallOrtVS",
+      "description": "UnfallOrtVS",
+      "version": "0.1.0",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/UnfallOrtVS",
+      "expansion": {
+        "timestamp": "2024-04-04T11:34:46+00:00",
+        "contains": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallOrtCS",
+            "code": "zu_hause",
+            "display": "Zu Hause"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallOrtCS",
+            "code": "kita",
+            "display": "Kita"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallOrtCS",
+            "code": "freizeit",
+            "display": "Freizeit"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallOrtCS",
+            "code": "straßenverkehr",
+            "display": "Straßenverkehr"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallOrtCS",
+            "code": "anderer_ort",
+            "display": "Anderer Ort"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallOrtCS"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "atopische-erkrankungen-vs",
+      "status": "draft",
+      "name": "AtopischeErkrankungenVS",
+      "title": "ValueSet für atopische/allergische Erkrankungen",
+      "description": "Dieses ValueSet beinhaltet eine Auswahl von Codes für die Klassifikation von atopischen/allergischen Erkrankungen, definiert im zugehörigen CodeSystem.",
+      "version": "0.1.0",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/atopische-erkrankungen-vs",
+      "expansion": {
+        "timestamp": "2024-04-12T15:47:43+00:00",
+        "contains": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs",
+            "code": "atopische_allergische",
+            "display": "Atopische/Allergische Erkrankungen"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs",
+            "code": "nahrungsmittel",
+            "display": "Nahrungsmittelallergien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs",
+            "code": "pollen",
+            "display": "Pollenallergien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs",
+            "code": "hausstaubmilben",
+            "display": "Hausstaubmilbenallergien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs",
+            "code": "schimmelpilze",
+            "display": "Schimmelpilzallergien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs",
+            "code": "tierhaare",
+            "display": "Tierhaarallergien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs",
+            "code": "medikamente",
+            "display": "Medikamentenallergien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs",
+            "code": "sonstiges",
+            "display": "Sonstige atopische/allergische Erkrankungen"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "seu-ef-unfallort-vs",
+      "status": "draft",
+      "name": "SEU_EF_UnfallortVS",
+      "title": "SEU_EF_Unfallort ValueSet",
+      "description": "ValueSet, das die verschiedenen Unfallorte enthält.",
+      "version": "0.1.0",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-unfallort-vs",
+      "expansion": {
+        "timestamp": "2024-10-20T11:50:47+00:00",
+        "contains": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-unfallort-cs",
+            "code": "nein",
+            "display": "Nein"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-unfallort-cs",
+            "code": "ja_zu_hause",
+            "display": "Ja; zu Hause"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-unfallort-cs",
+            "code": "freizeit_ausser_haus",
+            "display": "Freizeit außer Haus"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-unfallort-cs",
+            "code": "gemeinschaftseinrichtung",
+            "display": "Gemeinschaftseinrichtung"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-unfallort-cs",
+            "code": "wegeunfall",
+            "display": "Wegeunfall"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-unfallort-cs",
+            "code": "keine_angabe",
+            "display": "Keine Angabe"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-unfallort-cs"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "seu-ef-hilfsmittel-vs",
+      "status": "draft",
+      "name": "SEU_EF_HilfsmittelVS",
+      "title": "SEU_EF_Hilfsmittel ValueSet",
+      "description": "ValueSet, das verschiedene Hilfsmittel enthält.",
+      "version": "0.1.0",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-hilfsmittel-vs",
+      "expansion": {
+        "timestamp": "2024-10-20T11:50:47+00:00",
+        "contains": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-hilfsmittel-cs",
+            "code": "sehhilfe",
+            "display": "Sehhilfe (z. B. Brille)"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-hilfsmittel-cs",
+            "code": "hoerhilfe",
+            "display": "Hörhilfe"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-hilfsmittel-cs",
+            "code": "orthese",
+            "display": "Orthese"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-hilfsmittel-cs",
+            "code": "zahnersatz",
+            "display": "Zahnersatz (Prothese, Platzhalter)"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-hilfsmittel-cs",
+            "code": "anderes",
+            "display": "Anderes"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-hilfsmittel-cs"
+          }
+        ]
+      }
+    }
+  ],
+  "url": "https://www.oegd.de/fhir/seu/Questionnaire/ElternbefragungTH",
+  "title": "SEU Elternfragebogen TH",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext",
+      "extension": [
+        {
+          "url": "name",
+          "valueCoding": {
+            "code": "patient",
+            "system": "http://hl7.org/fhir/uv/sdc/CodeSystem/launchContext"
+          }
+        },
+        {
+          "url": "type",
+          "valueCode": "Patient"
+        },
+        {
+          "url": "description",
+          "valueString": "Patientenkontext"
+        }
+      ]
+    }
+  ],
+  "status": "draft",
+  "item": [
+    {
+      "linkId": "0",
+      "type": "group",
+      "text": "(0) Schule & Vorgangsnummer",
+      "item": [
+        {
+          "linkId": "0.1",
+          "type": "string",
+          "text": "(0.1) Name der Schule",
+          "code": [
+            {
+              "code": "0.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "0.10",
+          "type": "date",
+          "text": "(0.10) Datum der Untersuchung",
+          "code": [
+            {
+              "code": "0.10",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-HB"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "0.13",
+          "type": "string",
+          "text": "(0.13) Ort der Untersuchung",
+          "code": [
+            {
+              "code": "0.13",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-TH"
+              }
+            }
+          ],
+          "maxLength": 30,
+          "required": true
+        }
+      ]
+    },
+    {
+      "type": "group",
+      "linkId": "1",
+      "text": "(1) Personenbezogene Daten Kind",
+      "item": [
+        {
+          "linkId": "1.1",
+          "type": "string",
+          "text": "(1.1) Nachname des Kindes",
+          "code": [
+            {
+              "code": "1.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%patient.name[0].family"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "1.2",
+          "type": "string",
+          "text": "(1.2) Vorname des Kindes",
+          "code": [
+            {
+              "code": "1.2",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%patient.name[0].given[0]"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "1.3",
+          "type": "date",
+          "text": "(1.3) Geburtsdatum",
+          "code": [
+            {
+              "code": "1.3",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%patient.birthdate"
+              }
+            }
+          ],
+          "required": true
+        }
+      ]
+    },
+    {
+      "linkId": "2",
+      "type": "group",
+      "text": "(2) Personenbezogene Daten Personensorgeberechtigter",
+      "code": [
+        {
+          "code": "2",
+          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+        }
+      ],
+      "repeats": true,
+      "item": [
+        {
+          "linkId": "2.2",
+          "type": "string",
+          "text": "(2.2) Nachname",
+          "code": [
+            {
+              "code": "2.2",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%patient.name[0].family"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "2.3",
+          "type": "string",
+          "text": "(2.3) Vorname",
+          "code": [
+            {
+              "code": "2.3",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
+              "valueExpression": {
+                "language": "text/fhirpath",
+                "expression": "%patient.name[0].given[0]"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "2.4",
+          "type": "string",
+          "text": "(2.4) PLZ",
+          "code": [
+            {
+              "code": "2.4",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "2.5",
+          "type": "string",
+          "text": "(2.5) Wohnort",
+          "code": [
+            {
+              "code": "2.5",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "2.6",
+          "type": "string",
+          "text": "(2.6) Straße",
+          "code": [
+            {
+              "code": "2.6",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "2.7",
+          "type": "string",
+          "text": "(2.7) Telefonnummer",
+          "code": [
+            {
+              "code": "2.7",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "2.7a",
+          "type": "string",
+          "text": "(2.7a) Handynummer",
+          "code": [
+            {
+              "code": "2.7a",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-HH"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "4",
+      "type": "group",
+      "text": "(4) Kinderbetreuung",
+      "code": [
+        {
+          "code": "4",
+          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+        }
+      ],
+      "item": [
+        {
+          "linkId": "4.11",
+          "type": "group",
+          "text": "(4.11) Das Kind wurde bis zum Alter von Jahren und Monaten ausschließlich innerhalb der Familie betreut.",
+          "code": [
+            {
+              "code": "4.11",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-RP"
+              }
+            }
+          ],
+          "item": [
+            {
+              "linkId": "4.11.1",
+              "type": "integer",
+              "text": "(4.11.1) Jahre",
+              "code": [
+                {
+                  "code": "4.11.1",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-RP"
+                  }
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                  "valueCoding": {
+                    "code": "a",
+                    "system": "http://unitsofmeasure.org",
+                    "display": "Jahre"
+                  }
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+                  "valueInteger": 7
+                }
+              ]
+            },
+            {
+              "linkId": "4.11.2",
+              "type": "integer",
+              "text": "(4.11.2) Monate",
+              "code": [
+                {
+                  "code": "4.11.2",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-RP"
+                  }
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                  "valueCoding": {
+                    "code": "mo",
+                    "system": "http://unitsofmeasure.org",
+                    "display": "Monate"
+                  }
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+                  "valueInteger": 0
+                },
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+                  "valueInteger": 12
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "5",
+      "type": "group",
+      "text": "(5) Schwangerschaft und Geburt",
+      "code": [
+        {
+          "code": "5",
+          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+        }
+      ],
+      "item": [
+        {
+          "linkId": "5.4",
+          "type": "boolean",
+          "text": "(5.4) Waren Geburtsgewicht und Geburtslänge normal?",
+          "code": [
+            {
+              "code": "5.4",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "5.5",
+          "type": "boolean",
+          "text": "(5.5) Auffälligkeit bei der Geburt",
+          "code": [
+            {
+              "code": "5.5",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "5.11",
+          "type": "string",
+          "text": "(5.11) APGAR",
+          "code": [
+            {
+              "code": "5.11",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-HB"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/regex",
+              "valueString": "^\\d{2}\\/\\d{2}\\/\\d{2}$"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/entryFormat",
+              "valueString": "XX/XX/XX"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "5.12",
+          "type": "string",
+          "text": "(5.12) pH- Wert",
+          "code": [
+            {
+              "code": "5.12",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-HB"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/regex",
+              "valueString": "^\\d,\\d{2}$"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/entryFormat",
+              "valueString": "X,XX"
+            }
+          ],
+          "required": true
+        }
+      ]
+    },
+    {
+      "linkId": "7",
+      "type": "group",
+      "text": "(7) Entwicklung",
+      "code": [
+        {
+          "code": "7",
+          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+        }
+      ],
+      "item": [
+        {
+          "linkId": "7.10",
+          "type": "text",
+          "text": "(7.10) Angabe zu Entwicklungsverzögerungen, bspw. beim Erlernen des Sitzens/Laufens",
+          "code": [
+            {
+              "code": "7.10",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "7.11a",
+          "type": "boolean",
+          "text": "(7.11a) Auffälligkeit des Verhaltens",
+          "code": [
+            {
+              "code": "7.11a",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-HE"
+              }
+            }
+          ],
+          "required": true
+        }
+      ]
+    },
+    {
+      "linkId": "8",
+      "type": "group",
+      "text": "(8) Erkrankungen und gesundheitliche Einschränkungen",
+      "code": [
+        {
+          "code": "8",
+          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+        }
+      ],
+      "item": [
+        {
+          "linkId": "8.6",
+          "type": "boolean",
+          "text": "(8.6) Brillenträger?",
+          "code": [
+            {
+              "code": "8.6",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "8.6a",
+          "type": "choice",
+          "text": "(8.6a) Hilfsmittel?",
+          "code": [
+            {
+              "code": "8.6a",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BB"
+              }
+            }
+          ],
+          "answerValueSet": "#seu-ef-hilfsmittel-vs",
+          "repeats": true,
+          "required": true
+        },
+        {
+          "linkId": "8.9.G",
+          "type": "group",
+          "text": "(8.9.G) Details: Angeborene schwere Hörstörung",
+          "code": [
+            {
+              "code": "8.9.G",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "8.9",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "item": [
+            {
+              "linkId": "8.9.G.hoergeraete.G",
+              "type": "group",
+              "text": "(8.9.G.hoergeraete.G) Hörgeräte",
+              "code": [
+                {
+                  "code": "8.9.G.hoergeraete.G",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "repeats": true,
+              "item": [
+                {
+                  "answerValueSet": "#LinksRechtsBeidseitsKeineAngabeVS",
+                  "linkId": "8.9.G.hoergeraete.G.1",
+                  "type": "choice",
+                  "text": "(8.9.G.hoergeraete.G.1) Höregerätseite",
+                  "code": [
+                    {
+                      "code": "8.9.G.hoergeraete.G.1",
+                      "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                    }
+                  ],
+                  "required": true
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "linkId": "8.11.g",
+          "type": "group",
+          "text": "(8.11.g) Erkrankungen",
+          "code": [
+            {
+              "code": "8.11.g",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "repeats": true,
+          "item": [
+            {
+              "answerValueSet": "#ErkrankungVS",
+              "linkId": "8.11.g.1",
+              "type": "open-choice",
+              "text": "(8.11.g.1) Erkrankung",
+              "code": [
+                {
+                  "code": "8.11.g.1",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "required": true
+            }
+          ]
+        },
+        {
+          "linkId": "8.12.g",
+          "type": "group",
+          "text": "(8.12.g) Infektionskrankheiten",
+          "code": [
+            {
+              "code": "8.12.g",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "repeats": true,
+          "item": [
+            {
+              "answerValueSet": "#InfektionsKrankheitVS",
+              "linkId": "8.12.g.1",
+              "type": "open-choice",
+              "text": "(8.12.g.1) Infektionskrankheit",
+              "code": [
+                {
+                  "code": "8.12.g.1",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "required": true
+            }
+          ]
+        },
+        {
+          "linkId": "8.14b",
+          "type": "text",
+          "text": "(8.14b) Bisher durchgemachte Erkrankungen, bspw. Windpocken oder Masern. Zeitlich nicht bestimmt",
+          "code": [
+            {
+              "code": "8.14b",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BW"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "8.15",
+          "type": "boolean",
+          "text": "(8.15) Krankenhausaufenthalt",
+          "code": [
+            {
+              "code": "8.15",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "required": true,
+          "item": [
+            {
+              "linkId": "8.15.1",
+              "type": "string",
+              "text": "(8.15.1) Detaillierte Angaben zum Krankenhausaufenthalt?",
+              "code": [
+                {
+                  "code": "8.15.1",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "enableWhen": [
+                {
+                  "question": "8.15",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ],
+              "required": true
+            }
+          ]
+        },
+        {
+          "answerValueSet": "#atopische-erkrankungen-vs",
+          "linkId": "8.16a",
+          "type": "choice",
+          "text": "(8.16a) Besitzt Ihr Kind Allergien?",
+          "code": [
+            {
+              "code": "8.16a",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "required": true
+        },
+        {
+          "answerValueSet": "#atopische-erkrankungen-vs",
+          "linkId": "8.16b",
+          "type": "string",
+          "text": "(8.16b) Gesundheitsstörungen in der Familie des Kindes  (z.B. Allergien, Asthma b.,Epilepsie)",
+          "code": [
+            {
+              "code": "8.16b",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-TH"
+              }
+            }
+          ]
+        },
+        {
+          "answerValueSet": "#PflegegradVS",
+          "linkId": "8.20",
+          "type": "choice",
+          "text": "(8.20) Pflegegrad",
+          "code": [
+            {
+              "code": "8.20",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "8.26a",
+          "type": "text",
+          "text": "(8.26a) Gesundheitsstörungen und Besonderheiten beim Kind, die nach Meinung der Eltern zu berücksichtigen sind",
+          "code": [
+            {
+              "code": "8.26a",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-TH"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "8.51",
+          "type": "boolean",
+          "text": "(8.51) Operationen Sonstige OP",
+          "code": [
+            {
+              "code": "8.51",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-SL"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
+          "linkId": "8.56",
+          "type": "choice",
+          "text": "(8.56) Unfälle Sonstige",
+          "code": [
+            {
+              "code": "8.56",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-SL"
+              }
+            }
+          ],
+          "answerValueSet": "#seu-ef-unfallort-vs",
+          "required": true
+        },
+        {
+          "linkId": "8.82",
+          "type": "string",
+          "text": "(8.82) Kur mit welchem Behandlungsschwerpunkt?",
+          "code": [
+            {
+              "code": "8.82",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-TH"
+              }
+            }
+          ],
+          "required": true
+        }
+      ]
+    },
+    {
+      "linkId": "9",
+      "type": "group",
+      "text": "(9) Förderungen",
+      "code": [
+        {
+          "code": "9",
+          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+        }
+      ],
+      "item": [
+        {
+          "linkId": "9.1a.g",
+          "type": "group",
+          "text": "(9.1a.g) Therapien",
+          "enableWhen": [
+            {
+              "question": "9.1a",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-SN"
+              }
+            }
+          ],
+          "item": [
+            {
+              "linkId": "9.3a",
+              "type": "boolean",
+              "text": "(9.3a) Frühförderung",
+              "code": [
+                {
+                  "code": "9.3a",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-BB"
+                  }
+                }
+              ],
+              "required": true
+            }
+          ]
+        },
+        {
+          "linkId": "9.11.g",
+          "type": "group",
+          "text": "(9.11.g) Kuren",
+          "code": [
+            {
+              "code": "9.11.g",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "repeats": true,
+          "item": [
+            {
+              "linkId": "9.11.g.1",
+              "type": "date",
+              "text": "(9.11.g.1) Wann",
+              "code": [
+                {
+                  "code": "9.11.g.1",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "required": true
+            },
+            {
+              "linkId": "9.11.g.2",
+              "type": "string",
+              "text": "(9.11.g.2) Behandlungsschwerpunkt",
+              "code": [
+                {
+                  "code": "9.11.g.2",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "required": true
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "11",
+      "type": "group",
+      "text": "(11) Arzt",
+      "item": [
+        {
+          "linkId": "11.2",
+          "type": "string",
+          "text": "(11.2) Name Kinderarzt",
+          "code": [
+            {
+              "code": "11.2",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "12",
+      "type": "group",
+      "text": "(12) Sonstiges",
+      "item": [
+        {
+          "linkId": "12.23",
+          "type": "boolean",
+          "text": "(12.23) Fährt ihr Kind frei Fahrrad",
+          "code": [
+            {
+              "code": "12.23",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-HB"
+              }
+            }
+          ],
+          "required": true
+        }
+      ]
+    },
+    {
+      "linkId": "13",
+      "type": "group",
+      "text": "(13) Informationen Eltern",
+      "item": [
+        {
+          "linkId": "13.13a",
+          "type": "boolean",
+          "text": "(13.13a) Datenschutzrechtliche Einwilligungerklärung im Rahmen der SEU über Betreuung des Kindes, Angaben zu Gesundheitsstörungen in d. Fam. des Kindes sowie Angaben zur Schwangerschaft und Geburtsverlauf sowie Angaben des betreuenden Kinderarztes.",
+          "code": [
+            {
+              "code": "13.13a",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-TH"
+              }
+            }
+          ],
+          "required": true
+        }
+      ]
+    }
+  ]
+}
