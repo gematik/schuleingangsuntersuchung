@@ -1,6 +1,6 @@
 {
   "resourceType": "Questionnaire",
-  "id": "SEU-Elternbefragung-BE-neu2",
+  "id": "SEU-Elternbefragung-BE",
   "contained": [
     {
       "resourceType": "ValueSet",
@@ -3913,7 +3913,7 @@
     }
   ],
   "url": "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung",
-  "title": "SEU Elternfragebogen Berlin neu",
+  "title": "SEU Elternfragebogen Berlin",
   "extension": [
     {
       "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext",
@@ -4090,7 +4090,7 @@
         {
           "linkId": "1.6.3",
           "type": "date",
-          "text": "(1.6.3) Seit wann lebt Ihr Kind in Deutschland (Monat/ Jahr)?",
+          "text": "(1.6.3) Seit wann lebt Ihr Kind in Deutschland (Monat/Jahr)?",
           "code": [
             {
               "code": "1.6.3",

@@ -1624,7 +1624,7 @@
     "endLine": 344
   },
   {
-    "outputFile": "Questionnaire-SEU-Elternbefragung-BE-neu2.json",
+    "outputFile": "Questionnaire-SEU-Elternbefragung-BE.json",
     "fshName": "ElternbefragungBEnew",
     "fshType": "Instance",
     "fshFile": "Questionnaire\\Elternfragebogen\\Laenderspezifisch\\ElternfragebogenQU_BE.fsh",
