@@ -3829,33 +3829,33 @@
     },
     {
       "resourceType": "ValueSet",
-      "id": "SEU-EF-SchulabschlussBerlinVS",
+      "id": "SchulabschlussBerlinVS",
       "status": "draft",
-      "name": "SEU-EF-SchulabschlussBerlinVS",
+      "name": "SchulabschlussBerlinVS",
       "title": "SEU_EF_Berufsbildung Berlin ValueSet",
       "description": "ValueSet, das verschiedene Schulabschlüsse enthält.",
       "version": "0.1.0",
-      "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-EF-SchulabschlussBerlinVS",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/SchulabschlussBerlinVS",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
         "contains": [
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-schulabschlussberlin-cs",
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/schulabschlussberlincs",
             "code": "kein_hauptschulabschluss",
             "display": "Kein Hauptschulabschluss"
           },
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-schulabschlussberlin-cs",
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/schulabschlussberlincs",
             "code": "hauptschulabschluss_oder_weniger_als_10_klasse",
             "display": "Hauptschluss oder weniger 10. Klasse"
           },
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-schulabschlussberlin-cs",
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/schulabschlussberlincs",
             "code": "mittlere_reife_mittlerer_berufsabschluss_MSA_10_Klasse",
             "display": "mittlere Reife/mittlere Berufsabschluss (MSA/10. Klasse)"
           },
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-schulabschlussberlin-cs",
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/schulabschlussberlincs",
             "code": "abitur_fachabitur",
             "display": "Abitur/Fachabitur"
           }
@@ -3864,40 +3864,40 @@
       "compose": {
         "include": [
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-schulabschlussberlin-cs"
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/schulabschlussberlincs"
           }
         ]
       }
     },
     {
       "resourceType": "ValueSet",
-      "id": "Berufstaetigkeit-Eltern-Berlin-VS",
+      "id": "BerufstaetigkeitElternBerlinVS",
       "status": "draft",
-      "name": "Berufstaetigkeit-Eltern-Berlin-VS",
-      "title": "Berufstaetigkeit-Eltern-Berlin-VS",
-      "description": "Berufstaetigkeit-Eltern-Berlin-VS",
+      "name": "BerufstaetigkeitElternBerlinVS",
+      "title": "BerufstaetigkeitElternBerlinVS",
+      "description": "BerufstaetigkeitElternBerlinVS",
       "version": "0.1.0",
-      "url": "https://www.oegd.de/fhir/seu/ValueSet/Berufstaetigkeit-Eltern-Berlin-VS",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/BerufstaetigkeitElternBerlinVS",
       "expansion": {
         "timestamp": "2024-06-26T15:47:43+00:00",
         "contains": [
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/Berufstaetigkeit-Eltern-Berlin-cs",
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/BerufstaetigkeitElternBerlincs",
             "code": "nicht_erwerbstaetig_weil_finde_keine_Arbeit",
             "display": "nicht erwerbstätig, weil finde keine Arbeit"
           },
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/Berufstaetigkeit-Eltern-Berlin-cs",
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/BerufstaetigkeitElternBerlincs",
             "code": "nicht_erwerbstaetig_alle_anderen_Gruende",
             "display": "nicht erwerbstätig, weil alle anderen Gründe"
           },
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/Berufstaetigkeit-Eltern-Berlin-cs",
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/BerufstaetigkeitElternBerlincs",
             "code": "teilzeitbeschaeftigt",
             "display": "teilzeitbeschäftigt"
           },
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/Berufstaetigkeit-Eltern-Berlin-cs",
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/BerufstaetigkeitElternBerlincs",
             "code": "vollzeitbeschaeftigt",
             "display": "vollzeitbeschäftigt"
           }
@@ -3906,7 +3906,7 @@
       "compose": {
         "include": [
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/Berufstaetigkeit-Eltern-Berlin-cs"
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/BerufstaetigkeitElternBerlincs"
           }
         ]
       }
@@ -4670,7 +4670,7 @@
               }
             }
           ],
-          "answerValueSet": "#SEU-EF-SchulabschlussBerlinVS"
+          "answerValueSet": "#SchulabschlussBerlinVS"
         },
         {
           "linkId": "13.2c",
@@ -4691,7 +4691,7 @@
               }
             }
           ],
-          "answerValueSet": "#SEU-EF-SchulabschlussBerlinVS"
+          "answerValueSet": "#SchulabschlussBerlinVS"
         },
         {
           "linkId": "13.3",
@@ -4736,7 +4736,7 @@
               }
             }
           ],
-          "answerValueSet": "#Berufstaetigkeit-Eltern-Berlin-VS"
+          "answerValueSet": "#BerufstaetigkeitElternBerlinVS"
         },
         {
           "linkId": "13.32c",
@@ -4757,7 +4757,7 @@
               }
             }
           ],
-          "answerValueSet": "#Berufstaetigkeit-Eltern-Berlin-VS"
+          "answerValueSet": "#BerufstaetigkeitElternBerlinVS"
         },
         {
           "linkId": "3.3",

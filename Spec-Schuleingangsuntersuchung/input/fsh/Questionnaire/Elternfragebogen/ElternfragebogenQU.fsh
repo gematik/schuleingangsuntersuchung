@@ -1539,7 +1539,7 @@ Description: "Elternbefragung"
     * answerValueSet = Canonical(SEU_EF_BildungsabschlussBWVS)
   * item[+]
     * insert addItemWithSource(13.1c, #choice, Schulabschluss Elternteil A, #DE-BE)
-    * answerValueSet = Canonical(SEU-EF-SchulabschlussBerlinVS)
+    * answerValueSet = Canonical(SchulabschlussBerlinVS)
   * item[+]
     * insert addItem(13.2, #choice, Schulabschluss 2. Elternteil)
     * answerValueSet = Canonical(SEU_EF_BildungsabschlussVS)
@@ -1551,7 +1551,7 @@ Description: "Elternbefragung"
     * answerValueSet = Canonical(SEU_EF_BildungsabschlussBWVS)
   * item[+]
     * insert addItemWithSource(13.2c, #choice, Schulabschluss Elternteil B, #DE-BE)
-    * answerValueSet = Canonical(SEU-EF-SchulabschlussBerlinVS)
+    * answerValueSet = Canonical(SchulabschlussBerlinVS)
   * item[+]
     * insert addItem(13.3, #choice, Berufsabschluss 1. Elternteil)
     * answerValueSet = Canonical(SEU_EF_BerufsbildungVS)
@@ -1648,7 +1648,7 @@ Description: "Elternbefragung"
     * answerValueSet = Canonical(ErwerbsstatusAlternativ1VS)
   * item[+]
     * insert addItemWithSource(13.32c, #choice, [[Berufstätigkeit Mutter]], #DE-BE)
-    * answerValueSet = Canonical(Berufstaetigkeit-Eltern-Berlin-VS)
+    * answerValueSet = Canonical(BerufstaetigkeitElternBerlinVS)
   * item[+]
     * insert addItemWithSource(13.33, #choice, [[Erwerbsstatus des Vaters]], #DE-HB)
     * answerValueSet = Canonical(ErwerbsstatusDesVatersVS)
@@ -1657,7 +1657,7 @@ Description: "Elternbefragung"
     * answerValueSet = Canonical(ErwerbsstatusAlternativ1VS)
   * item[+]
     * insert addItemWithSource(13.32c, #choice, [[Berufstätigkeit Vater]], #DE-BE)
-    * answerValueSet = Canonical(Berufstaetigkeit-Eltern-Berlin-VS)
+    * answerValueSet = Canonical(BerufstaetigkeitElternBerlinVS)
   * item[+]
     * insert addItemWithSource(13.34, #boolean, [[Mutter in Deutschland geboren]], #DE-HB)
   * item[+]

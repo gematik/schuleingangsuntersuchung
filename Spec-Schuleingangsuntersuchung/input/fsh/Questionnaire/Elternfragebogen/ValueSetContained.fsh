@@ -349,22 +349,22 @@ Description: "ValueSet, das verschiedene Berufsbildungsabschlüsse enthält."
 * ^expansion.contains[=].code = #fachhochschulabschluss
 * ^expansion.contains[=].display = "Fach-/Hochschulabschluss oder vergleichbar"
 
-ValueSet: SEU-EF-SchulabschlussBerlinVS
-Id: SEU-EF-SchulabschlussBerlinVS
+ValueSet: SchulabschlussBerlinVS
+Id: SchulabschlussBerlinVS
 Title: "SEU_EF_Berufsbildung Berlin ValueSet"
 Description: "ValueSet, das verschiedene Schulabschlüsse enthält."
-* include codes from system SEU-EF-SchulabschlussBerlinCS
+* include codes from system SchulabschlussBerlinCS
 * ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
-* ^expansion.contains[0].system = Canonical(SEU-EF-SchulabschlussBerlinCS)
+* ^expansion.contains[0].system = Canonical(SchulabschlussBerlinCS)
 * ^expansion.contains[=].code = #kein_hauptschulabschluss
 * ^expansion.contains[=].display = "Kein Hauptschulabschluss"
-* ^expansion.contains[+].system = Canonical(SEU-EF-SchulabschlussBerlinCS)
+* ^expansion.contains[+].system = Canonical(SchulabschlussBerlinCS)
 * ^expansion.contains[=].code = #hauptschulabschluss_oder_weniger_als_10_klasse
 * ^expansion.contains[=].display = "Hauptschluss oder weniger 10. Klasse"
-* ^expansion.contains[+].system = Canonical(SEU-EF-SchulabschlussBerlinCS)
+* ^expansion.contains[+].system = Canonical(SchulabschlussBerlinCS)
 * ^expansion.contains[=].code = #mittlere_reife_mittlerer_berufsabschluss_MSA_10_Klasse
 * ^expansion.contains[=].display = "mittlere Reife/mittlere Berufsabschluss (MSA/10. Klasse)"
-* ^expansion.contains[+].system = Canonical(SEU-EF-SchulabschlussBerlinCS)
+* ^expansion.contains[+].system = Canonical(SchulabschlussBerlinCS)
 * ^expansion.contains[=].code = #abitur_fachabitur
 * ^expansion.contains[=].display = "Abitur/Fachabitur"
 
@@ -1655,8 +1655,8 @@ Description: "CodeSystem für die Angabe des Alters eines Kindes."
 * #6_bis_6_5_jahre ">= 6 Jahre bis 6 ½ Jahre"
 * #keine_angaben "Keine Angaben"
 
-CodeSystem: Berufstaetigkeit-Eltern-Berlin-CS
-Id: Berufstaetigkeit-Eltern-Berlin-cs
+CodeSystem: BerufstaetigkeitElternBerlinCS
+Id: BerufstaetigkeitElternBerlincs
 Title: "Berufstätigkeit_Eltern_Berlin"
 Description: "Berufstätigkeit__Eltern_Berlin"
 * #nicht_erwerbstaetig_weil_finde_keine_Arbeit "nicht erwerbstätig, weil finde keine Arbeit"
@@ -2487,21 +2487,21 @@ Description: "LebtBeiVS"
 * ^expansion.contains[=].code = #mutter
 * ^expansion.contains[=].display = "Mutter"
 
-ValueSet: Berufstaetigkeit-Eltern-Berlin-VS
-Id: Berufstaetigkeit-Eltern-Berlin-VS
-Title: "Berufstaetigkeit-Eltern-Berlin-VS"
-Description: "Berufstaetigkeit-Eltern-Berlin-VS"
-* include codes from system Berufstaetigkeit-Eltern-Berlin-CS
+ValueSet: BerufstaetigkeitElternBerlinVS
+Id: BerufstaetigkeitElternBerlinVS
+Title: "BerufstaetigkeitElternBerlinVS"
+Description: "BerufstaetigkeitElternBerlinVS"
+* include codes from system BerufstaetigkeitElternBerlinCS
 * ^expansion.timestamp = "2024-06-26T15:47:43+00:00"
-* ^expansion.contains[0].system = Canonical(Berufstaetigkeit-Eltern-Berlin-CS)
+* ^expansion.contains[0].system = Canonical(BerufstaetigkeitElternBerlinCS)
 * ^expansion.contains[=].code = #nicht_erwerbstaetig_weil_finde_keine_Arbeit
 * ^expansion.contains[=].display = "nicht erwerbstätig, weil finde keine Arbeit"
-* ^expansion.contains[+].system = Canonical(Berufstaetigkeit-Eltern-Berlin-CS)
+* ^expansion.contains[+].system = Canonical(BerufstaetigkeitElternBerlinCS)
 * ^expansion.contains[=].code = #nicht_erwerbstaetig_alle_anderen_Gruende
 * ^expansion.contains[=].display = "nicht erwerbstätig, weil alle anderen Gründe"
-* ^expansion.contains[+].system = Canonical(Berufstaetigkeit-Eltern-Berlin-CS)
+* ^expansion.contains[+].system = Canonical(BerufstaetigkeitElternBerlinCS)
 * ^expansion.contains[=].code = #teilzeitbeschaeftigt
 * ^expansion.contains[=].display = "teilzeitbeschäftigt"
-* ^expansion.contains[+].system = Canonical(Berufstaetigkeit-Eltern-Berlin-CS)
+* ^expansion.contains[+].system = Canonical(BerufstaetigkeitElternBerlinCS)
 * ^expansion.contains[=].code = #vollzeitbeschaeftigt
 * ^expansion.contains[=].display = "vollzeitbeschäftigt"

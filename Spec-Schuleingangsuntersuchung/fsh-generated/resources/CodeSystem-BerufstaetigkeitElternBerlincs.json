@@ -1,0 +1,30 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "BerufstaetigkeitElternBerlinCS",
+  "id": "BerufstaetigkeitElternBerlincs",
+  "title": "Berufstätigkeit_Eltern_Berlin",
+  "description": "Berufstätigkeit__Eltern_Berlin",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/BerufstaetigkeitElternBerlincs",
+  "concept": [
+    {
+      "code": "nicht_erwerbstaetig_weil_finde_keine_Arbeit",
+      "display": "nicht erwerbstätig, weil finde keine Arbeit"
+    },
+    {
+      "code": "nicht_erwerbstaetig_alle_anderen_Gruende",
+      "display": "nicht erwerbstätig, weil alle anderen Gründe"
+    },
+    {
+      "code": "teilzeitbeschaeftigt",
+      "display": "teilzeitbeschäftigt"
+    },
+    {
+      "code": "vollzeitbeschaeftigt",
+      "display": "vollzeitbeschäftigt"
+    }
+  ],
+  "count": 4
+}
