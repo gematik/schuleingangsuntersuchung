@@ -38,7 +38,7 @@
       {
         "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
         "code": "heim",
-        "display": "Heim"
+        "display": "in einer Einrichtung"
       }
     ]
   },

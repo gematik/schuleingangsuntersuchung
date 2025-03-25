@@ -17,6 +17,11 @@
       },
       {
         "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEUEFMedienkonsumBerlinCS",
+        "code": "max_bis_halbe_stunde",
+        "display": "max. 1/2 Stunde"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEUEFMedienkonsumBerlinCS",
         "code": "max_bis_1",
         "display": "max. 1 Stunde"
       },

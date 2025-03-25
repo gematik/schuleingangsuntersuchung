@@ -14,6 +14,10 @@
       "display": "Gar nicht"
     },
     {
+      "code": "max_bis_halbe_stunde",
+      "display": "max. 1/2 Stunde"
+    },
+    {
       "code": "max_bis_1",
       "display": "max. 1 Stunde"
     },
@@ -30,5 +34,5 @@
       "display": "über 3 Stunden"
     }
   ],
-  "count": 5
+  "count": 6
 }

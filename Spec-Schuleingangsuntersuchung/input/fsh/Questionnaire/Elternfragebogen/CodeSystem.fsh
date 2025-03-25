@@ -546,6 +546,7 @@ Id: SEUEFMedienkonsumBerlinCS
 Title: "SEU_EF_Medienkonsum Berlin CodeSystem"
 Description: "CodeSystem für die Angabe des Medienkonsums in Stunden."
 * #gar_nicht "Gar nicht"
+* #max_bis_halbe_stunde "max. 1/2 Stunde"
 * #max_bis_1 "max. 1 Stunde"
 * #max-bis_2 "max. 2 Stunden"
 * #max_bis_3 "max. 3 Stunden"

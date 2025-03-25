@@ -256,7 +256,7 @@ RuleSet: 5-af-anamnese
       * answerValueSet = Canonical(SEU_UB_SchulabschlussVS)
     * item[+] insert addItem(5.63, #choice, [[Höchster Schulabschluss Elternteil 2]])
       * insert addSource(#DE-BY)
-        * answerValueSet = Canonical(SEU_UB_SchulabschlussVS)
+      * answerValueSet = Canonical(SEU_UB_SchulabschlussVS)
     * item[+] insert addItem(5.63.a, #choice, [[berufliche Ausbildung (ggf. die höchste angeben) - Mutter]])
       * insert addSource(#DE-BE)
       * answerValueSet = Canonical(BeruflicheAusbildungElternVS) 

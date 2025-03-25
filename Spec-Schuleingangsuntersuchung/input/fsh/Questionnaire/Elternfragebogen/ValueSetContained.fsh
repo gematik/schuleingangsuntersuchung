@@ -1555,6 +1555,9 @@ Description: "ValueSet, das die Kategorien des Medienkonsums in Stunden enthält
 * ^expansion.contains[=].code = #gar_nicht
 * ^expansion.contains[=].display = "Gar nicht"
 * ^expansion.contains[+].system = Canonical(SEUEFMedienkonsumBerlinCS)
+* ^expansion.contains[=].code = #max_bis_halbe_stunde
+* ^expansion.contains[=].display = "max. 1/2 Stunde"
+* ^expansion.contains[+].system = Canonical(SEUEFMedienkonsumBerlinCS)
 * ^expansion.contains[=].code = #max_bis_1
 * ^expansion.contains[=].display = "max. 1 Stunde"
 * ^expansion.contains[+].system = Canonical(SEUEFMedienkonsumBerlinCS)

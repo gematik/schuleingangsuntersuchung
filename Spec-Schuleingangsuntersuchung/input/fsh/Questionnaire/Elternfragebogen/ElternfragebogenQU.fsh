@@ -185,7 +185,7 @@ Description: "Elternbefragung"
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
   * item[+]
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
-    * insert addItemWithSource(6.1, #choice, [[Staatsangehörigkeit: andere/weitere?]], #DE-BE)
+    * insert addItemWithSource(1.4d, #choice, [[Staatsangehörigkeit: andere/weitere?]], #DE-BE)
     * repeats = true  
   * item[+]
     * insert addItem(1.5, #choice, [[Geburtsland]])
@@ -215,7 +215,7 @@ Description: "Elternbefragung"
     * insert addItem(1.6.1, #date, Seit wann wohnt das Kind in Deutschland?)
     * insert enableWhenBoolean(1.6, =, false)
   * item[+]
-    * insert addItemWithSource(1.6.3, #date,[[Seit wann lebt Ihr Kind in Deutschland (Monat/ Jahr)?]], #DE-BE)
+    * insert addItemWithSource(1.6.3, #date,[[Seit wann lebt Ihr Kind in Deutschland (Monat/Jahr)?]], #DE-BE)
   * item[+]
     * insert addItemWithSource(1.6.1a, #choice, Wie alt war das Kind bei Einreise nach Deutschland?, #DE-SL)
     * insert enableWhenBoolean(1.6, =, false)
@@ -255,6 +255,9 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItemWithSource(1.12c, #choice, [[Kind lebt hauptsächlich bei]], #DE-ST)
     * answerValueSet = Canonical(WohnsituationKindAlternativ3VS)
+  * item[+]
+    * insert addItemWithSource(1.12d, #choice, [[Kind lebt überwiegend bei]], #DE-BE)
+    * answerValueSet = Canonical(LebensumfeldVS)
   * item[+]
     * insert addItemWithSource(1.13, #string, [[Unterscheidung zwischen Arzt und Koordinator und Hör- und Sehkraft (MFA)]], #DE-NI)
   * item[+]
@@ -886,6 +889,8 @@ Description: "Elternbefragung"
     * insert addItem(8.15, #boolean, [[Krankenhausaufenthalt]])
     * item[+]
       * insert addItem(8.15.1, #string, [[Detaillierte Angaben zum Krankenhausaufenthalt?]])
+      * insert enableWhenBoolean(8.15, =, true)
+    * item[+]  
       * insert addItemWithSource(8.15.1.a, #integer, [[Anzahl der Krankenhausaufenthalte/Operationen]], #DE-BE)
     * item[+]
       * insert addItemWithSource(8.15.2, #integer, [[Wie oft wurde das Kind im Krankenhaus aufgenommen?]], #DE-ST)
@@ -1155,7 +1160,7 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItemWithSource(8.82, #string, [[Kur mit welchem Behandlungsschwerpunkt?]], #DE-TH)
   * item[+]
-    * insert addItemWithSource(8.9, #choice, [[Erkrankungen des Kindes (auch frühere)]], #DE-BE)
+    * insert addItemWithSource(8.83, #choice, [[Erkrankungen des Kindes (auch frühere)]], #DE-BE)
     * answerValueSet = Canonical(ErkrankungenKindVS)
     * repeats = true
 //********************************************
@@ -1538,7 +1543,7 @@ Description: "Elternbefragung"
     * insert addItemWithSource(13.1b, #choice, Schulabschluss 1. Elternteil, #DE-BW)
     * answerValueSet = Canonical(SEU_EF_BildungsabschlussBWVS)
   * item[+]
-    * insert addItemWithSource(13.1c, #choice, Schulabschluss Elternteil A, #DE-BE)
+    * insert addItemWithSource(13.1c, #choice, Schulabschluss Mutter/Elternteil A, #DE-BE)
     * answerValueSet = Canonical(SchulabschlussBerlinVS)
   * item[+]
     * insert addItem(13.2, #choice, Schulabschluss 2. Elternteil)
@@ -1550,7 +1555,7 @@ Description: "Elternbefragung"
     * insert addItemWithSource(13.2b, #choice, Schulabschluss 2. Elternteil, #DE-BW)
     * answerValueSet = Canonical(SEU_EF_BildungsabschlussBWVS)
   * item[+]
-    * insert addItemWithSource(13.2c, #choice, Schulabschluss Elternteil B, #DE-BE)
+    * insert addItemWithSource(13.2c, #choice, Schulabschluss Vater/Elternteil B, #DE-BE)
     * answerValueSet = Canonical(SchulabschlussBerlinVS)
   * item[+]
     * insert addItem(13.3, #choice, Berufsabschluss 1. Elternteil)
@@ -1563,12 +1568,6 @@ Description: "Elternbefragung"
     * answerValueSet = Canonical(ErwerbsstatusVS)
   * item[+]
     * insert addItem(13.5.1, #text, Grund der Erwerbslosigkeit)
-    * insert enableWhenCode(13.5, =, ErwerbsstatusCS, nicht_erwerbstaetig)
-  * item[+]
-    * insert addItemWithSource(13.5.2, #boolean, [[weil finde keine Arbeit]], #DE-BE)
-    * insert enableWhenCode(13.5, =, ErwerbsstatusCS, nicht_erwerbstaetig)
-  * item[+]
-    * insert addItemWithSource(13.5.3, #boolean, [[alle anderen Gründe]], #DE-BE)
     * insert enableWhenCode(13.5, =, ErwerbsstatusCS, nicht_erwerbstaetig)
   * item[+]
     * insert addItemWithSource(13.5a, #choice, Berufstätigkeit 1. Elternteil, #DE-BW)
@@ -1647,7 +1646,7 @@ Description: "Elternbefragung"
     * insert addItemWithSource(13.32a, #choice, [[Erwerbstätigkeit Mutter/ Partner]], #DE-ST)
     * answerValueSet = Canonical(ErwerbsstatusAlternativ1VS)
   * item[+]
-    * insert addItemWithSource(13.32c, #choice, [[Berufstätigkeit Mutter]], #DE-BE)
+    * insert addItemWithSource(13.32c, #choice, [[Berufstätigkeit Mutter/Elternteil A]], #DE-BE)
     * answerValueSet = Canonical(BerufstaetigkeitElternBerlinVS)
   * item[+]
     * insert addItemWithSource(13.33, #choice, [[Erwerbsstatus des Vaters]], #DE-HB)
@@ -1656,7 +1655,7 @@ Description: "Elternbefragung"
     * insert addItemWithSource(13.33a, #choice, [[Erwerbstätigkeit Vater/ Partner]], #DE-ST)
     * answerValueSet = Canonical(ErwerbsstatusAlternativ1VS)
   * item[+]
-    * insert addItemWithSource(13.32c, #choice, [[Berufstätigkeit Vater]], #DE-BE)
+    * insert addItemWithSource(13.33c, #choice, [[Berufstätigkeit Vater/Elternteil B]], #DE-BE)
     * answerValueSet = Canonical(BerufstaetigkeitElternBerlinVS)
   * item[+]
     * insert addItemWithSource(13.34, #boolean, [[Mutter in Deutschland geboren]], #DE-HB)

@@ -3747,6 +3747,11 @@
           },
           {
             "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEUEFMedienkonsumBerlinCS",
+            "code": "max_bis_halbe_stunde",
+            "display": "max. 1/2 Stunde"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEUEFMedienkonsumBerlinCS",
             "code": "max_bis_1",
             "display": "max. 1 Stunde"
           },
@@ -3815,7 +3820,7 @@
           {
             "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
             "code": "heim",
-            "display": "Heim"
+            "display": "in einer Einrichtung"
           }
         ]
       },
@@ -4228,12 +4233,12 @@
         },
         {
           "answerValueSet": "#DeuevAnlage8LaenderkennzeichenVS",
-          "linkId": "6.1",
+          "linkId": "1.4d",
           "type": "choice",
-          "text": "(6.1) Staatsangehörigkeit: andere/weitere?",
+          "text": "(1.4d) Staatsangehörigkeit: andere/weitere?",
           "code": [
             {
-              "code": "6.1",
+              "code": "1.4d",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
           ],
@@ -4286,12 +4291,12 @@
       ],
       "item": [
         {
-          "linkId": "8.9",
+          "linkId": "8.83",
           "type": "choice",
-          "text": "(8.9) Erkrankungen des Kindes (auch frühere)",
+          "text": "(8.83) Erkrankungen des Kindes (auch frühere)",
           "code": [
             {
-              "code": "8.9",
+              "code": "8.83",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
           ],
@@ -4631,12 +4636,12 @@
       ],
       "item": [
         {
-          "linkId": "5.1.1",
+          "linkId": "1.12d",
           "type": "choice",
-          "text": "(5.1.1) Kind lebt überwiegend bei",
+          "text": "(1.12d) Kind lebt überwiegend bei",
           "code": [
             {
-              "code": "5.1.1",
+              "code": "1.12d",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
           ],
@@ -4739,12 +4744,12 @@
           "answerValueSet": "#BerufstaetigkeitElternBerlinVS"
         },
         {
-          "linkId": "13.32c",
+          "linkId": "13.33c",
           "type": "choice",
-          "text": "(13.32c) Berufstätigkeit Vater",
+          "text": "(13.33c) Berufstätigkeit Vater",
           "code": [
             {
-              "code": "13.32c",
+              "code": "13.33c",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
           ],

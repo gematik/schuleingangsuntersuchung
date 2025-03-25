@@ -66,7 +66,7 @@ Description: "Elternbefragung BE"
     * insert addItemWithSource(2.10a, #boolean, [[Herkunftsland Deutsch?]], #DE-RP)
   * item[+]
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
-    * insert addItemWithSource(6.1, #choice, [[Staatsangehörigkeit: andere/weitere?]], #DE-BE)
+    * insert addItemWithSource(1.4d, #choice, [[Staatsangehörigkeit: andere/weitere?]], #DE-BE)
     * repeats = true  
 * item[+]
   * answerValueSet = Canonical(ISO6392_LanguageVS)
@@ -77,7 +77,7 @@ Description: "Elternbefragung BE"
 * item[+]
   * insert addItem(3, #group,2. Erkrankungen des Kindes)
   * item[+]
-    * insert addItemWithSource(8.9, #choice, [[Erkrankungen des Kindes (auch frühere)]], #DE-BE)
+    * insert addItemWithSource(8.83, #choice, [[Erkrankungen des Kindes (auch frühere)]], #DE-BE)
     * answerValueSet = Canonical(ErkrankungenKindVS)
     * repeats = true
   * item[+]
@@ -126,7 +126,7 @@ Description: "Elternbefragung BE"
 * item[+]
   * insert addItem(6, #group, Lebensumfeld)
     * item[+]
-      * insert addItemWithSource(5.1.1, #choice, [[Kind lebt überwiegend bei]], #DE-BE)
+      * insert addItemWithSource(1.12d, #choice, [[Kind lebt überwiegend bei]], #DE-BE)
       * answerValueSet = Canonical(LebensumfeldVS)
     * item[+]
       * insert addItemWithSource(13.1c, #choice, Schulabschluss Elternteil A, #DE-BE)
@@ -144,7 +144,7 @@ Description: "Elternbefragung BE"
     * insert addItemWithSource(13.32c, #choice, [[Berufstätigkeit Mutter]], #DE-BE)
     * answerValueSet = Canonical(BerufstaetigkeitElternBerlinVS)
   * item[+]
-    * insert addItemWithSource(13.32c, #choice, [[Berufstätigkeit Vater]], #DE-BE)
+    * insert addItemWithSource(13.33c, #choice, [[Berufstätigkeit Vater]], #DE-BE)
     * answerValueSet = Canonical(BerufstaetigkeitElternBerlinVS)
   * item[+]
     * insert addItemWithSource(3.3, #integer, Aktuell im Haushalt lebende Erwachsene, #DE-BB) 

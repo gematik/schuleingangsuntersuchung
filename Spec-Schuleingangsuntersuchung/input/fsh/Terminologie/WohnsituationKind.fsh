@@ -173,4 +173,4 @@ Description: "LebensumfeldVS"
 * ^expansion.contains[=].display = "Andere Familienmitglieder/Verwandte"
 * ^expansion.contains[+].system = Canonical(WohnsituationKindCS)
 * ^expansion.contains[=].code = #heim
-* ^expansion.contains[=].display = "Heim"
+* ^expansion.contains[=].display = "in einer Einrichtung"
