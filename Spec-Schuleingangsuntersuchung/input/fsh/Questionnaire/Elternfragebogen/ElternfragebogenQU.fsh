@@ -204,7 +204,7 @@ Description: "Elternbefragung"
     * insert addItem(1.6, #boolean, In Deutschland geboren)
   // The same like 1.5, but with a dependency from 1.6
   * item[+]
-    * insert addItemWithSource(1.6.2, #boolean, [[Geburtsland]], #DE-ST)
+    * insert addItemWithSource(1.6.2, #choice, [[Geburtsland]], #DE-ST)
     * insert enableWhenBoolean(1.6, =, false)
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
   * item[+]

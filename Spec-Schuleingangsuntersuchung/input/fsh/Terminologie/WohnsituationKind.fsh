@@ -33,7 +33,7 @@ Description: "WohnsituationKindVS"
 * ^expansion.contains[+].system = Canonical(WohnsituationKindCS)
 * ^expansion.contains[=].code = #mutter
 * ^expansion.contains[=].display = "Mutter"
-* ^expansion.contains[0].system = Canonical(WohnsituationKindCS)
+* ^expansion.contains[+].system = Canonical(WohnsituationKindCS)
 * ^expansion.contains[=].code = #vater
 * ^expansion.contains[=].display = "Vater"
 * ^expansion.contains[+].system = Canonical(WohnsituationKindCS)
@@ -58,7 +58,7 @@ Description: "ValueSet, das verschiedene Wohnsituationen des Kindes enthält."
 * ^expansion.contains[+].system = Canonical(WohnsituationKindCS)
 * ^expansion.contains[=].code = #mutter
 * ^expansion.contains[=].display = "Mutter"
-* ^expansion.contains[0].system = Canonical(WohnsituationKindCS)
+* ^expansion.contains[+].system = Canonical(WohnsituationKindCS)
 * ^expansion.contains[=].code = #vater
 * ^expansion.contains[=].display = "Vater"
 * ^expansion.contains[+].system = Canonical(WohnsituationKindCS)
@@ -84,7 +84,7 @@ Description: "ValueSet, das verschiedene Wohnsituationen des Kindes enthält."
 * WohnsituationKindCS#andere "Bei Großeltern, Pflegeeltern, Adoptiveltern oder anderen"
 * WohnsituationKindCS#keine_angabe "Keine Angaben"
 * ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
-* ^expansion.contains[0].system = Canonical(WohnsituationKindCS)
+* ^expansion.contains[+].system = Canonical(WohnsituationKindCS)
 * ^expansion.contains[=].code = #eltern
 * ^expansion.contains[=].display = "Bei beiden leiblichen Eltern"
 * ^expansion.contains[+].system = Canonical(WohnsituationKindCS)
@@ -116,7 +116,7 @@ Description: "ValueSet, das verschiedene Wohnsituationen des Kindes enthält."
 * WohnsituationKindCS#andere "Andere Personen"
 * WohnsituationKindCS#keine_angabe "Keine Angabe"
 * ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
-* ^expansion.contains[0].system = Canonical(WohnsituationKindCS)
+* ^expansion.contains[+].system = Canonical(WohnsituationKindCS)
 * ^expansion.contains[=].code = #eltern
 * ^expansion.contains[=].display = "Leibliche Eltern"
 * ^expansion.contains[+].system = Canonical(WohnsituationKindCS)
