@@ -7,42 +7,13 @@ Description: "Elternbefragung RP"
 * contained[+] = WohnsituationKindVS
 * contained[+] = GenderDEVS
 * contained[+] = ISO6392_LanguageVS
+* contained[+] = InfektionsKrankheitVS
 * contained[+] = ChronischeErkrankungenVS
 * contained[+] = JaNeinAngemeldetVS
-* contained[+] = RechtsLinksHaenderVS
-* contained[+] = AuffaelligkeitVerhaltenVS
-* contained[+] = UnfallOrtVS
-* contained[+] = SEU_EF_BildungsabschlussVS
-* contained[+] = SEU_EF_BerufsbildungVS
-* contained[+] = ErwerbsstatusVS
-* contained[+] = ErwerbsstatusDerMutterVS
-* contained[+] = ErwerbsstatusDesVatersVS
-* contained[+] = ErwerbsstatusAlternativ1VS
-* contained[+] = FamilienrolleVS
-* contained[+] = VersorgungsartVS
+* contained[+] = AtopischeErkrankungenVS
 * contained[+] = ChronischeKrankheitenVS
-* contained[+] = EntwicklungVS
-* contained[+] = TagsNachtsSauberVS
-* contained[+] = ErwerbsstatusInclSonstigesVS
-* contained[+] = SEU_EF_OperationenVS
-* contained[+] = SEU_EF_UnfallortVS
-* contained[+] = SEU_EF_BildungsabschlussBBVS
-* contained[+] = SEU_EF_BildungsabschlussBWVS
 * contained[+] = GeburtArtVS
-* contained[+] = ErkrankungenLetztesJahrPlusVerbrennungenVS
-* contained[+] = JaNeinWeissNichtVS
-* contained[+] = SEU_UB_ErwerbstaetigkeitVS
-* contained[+] = SEU_UB_SchulabschlussVS
-* contained[+] = SEU_UB_StaatsangehoerigkeitVS
-* contained[+] = SEU_UB_GeburtslandVS
-* contained[+] = WerErziehtDasKindVS
-* contained[+] = WerErziehtDasKindAlternativVS
 * contained[+] = PersonensorgeberechtigterBeziehungVS
-* contained[+] = SEU_UB_AntwortErwachseneVS
-* contained[+] = SEU_UB_HaendigkeitVS
-* contained[+] = FreiesLaufenGelerntVS
-* contained[+] = SprechenGelerntVS
-* contained[+] = RauchortVS
 * id = "SEU-Elternbefragung-RP"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/ElternbefragungRP"
 * title = "SEU Elternfragebogen RP"
@@ -275,77 +246,44 @@ Description: "Elternbefragung RP"
 * item[+]
   * insert addItem(8, #group, [[Erkrankungen und gesundheitliche Einschränkungen]])
   * item[+]
+    * insert addItem(8.3, #boolean, [[Sehstörung vorhanden?]])
+  * item[+]
+    * insert addItem(8.4, #boolean, [[Sprachstörung vorhanden?]])
+  * item[+]
+    * insert addItem(8.5, #boolean, [[Schielbehandlung?]])
+  * item[+]
     * insert addItem(8.6, #boolean, [[Brillenträger?]])
-    * required = true
   * item[+]
-    * insert addItemWithSource(8.6a, #choice, [[Hilfsmittel?]], #DE-BB)
-    * answerValueSet = Canonical(SEU_EF_HilfsmittelVS)
-    * repeats = true
-    * required = true
-  * item[+]
-    * insert addItem(8.9.G, #group, [[Details: Angeborene schwere Hörstörung]])
-    * enableWhen[+]
-      * question = "8.9"
-      * operator = #=
-      * answerBoolean = true
-    * item[+]
-      * insert addItem(8.9.G.hoergeraete.G, #group, [[Hörgeräte]])
-      * repeats = true
-      * item[+]
-        * answerValueSet = Canonical(LinksRechtsBeidseitsKeineAngabeVS)
-        * insert addItem(8.9.G.hoergeraete.G.1, #choice, [[Höregerätseite]])
-        * required = true
-  * item[+]
-    * insert addItem(8.11.g, #group, [[Erkrankungen]])
-    * repeats = true
-    * item[+]
-      * answerValueSet = Canonical(ErkrankungVS)
-      * insert addItem(8.11.g.1, #open-choice, [[Erkrankung]])
-      * required = true
+    * insert addItem(8.9, #boolean, [[Schwere Hörstörung vorhanden?]])
   * item[+]
     * insert addItem(8.12.g, #group, [[Infektionskrankheiten]])
     * repeats = true
     * item[+]
       * answerValueSet = Canonical(InfektionsKrankheitVS)
       * insert addItem(8.12.g.1, #open-choice, [[Infektionskrankheit]])
-      * required = true
-  * item[+]
-    * insert addItemWithSource(8.14b, #text, [[Bisher durchgemachte Erkrankungen, bspw. Windpocken oder Masern. Zeitlich nicht bestimmt]], #DE-BW)
-    * required = true   
   * item[+]
     * insert addItem(8.15, #boolean, [[Krankenhausaufenthalt]])
-    * required = true
     * item[+]
       * insert addItem(8.15.1, #string, [[Detaillierte Angaben zum Krankenhausaufenthalt?]])
       * insert enableWhenBoolean(8.15, =, true)
-      * required = true
   * item[+]
     * answerValueSet = Canonical(AtopischeErkrankungenVS)  
     * insert addItem(8.16a, #choice, [[Besitzt Ihr Kind Allergien?]])
-    * required = true
+    * item[+]
+      * insert addItem(8.16a.1, #string, [[Welche sonstigen Allergien?]])  
+      * insert enableWhenCode(8.16a, =, AtopischeErkrankungenCS, sonstiges)
   * item[+]
-    * answerValueSet = Canonical(AtopischeErkrankungenVS)
-    * insert addItemWithSource(8.16b, #string, [[Gesundheitsstörungen in der Familie des Kindes  (z.B. Allergien, Asthma b.,Epilepsie)]],  #DE-TH)
+    * insert addItem(8.23, #boolean, [[Regelmäßige Medikamenteneinnahme]])
   * item[+]
-    * answerValueSet = Canonical(PflegegradVS)
-    * insert addItem(8.20, #choice, [[Pflegegrad]])
-    * required = true
-  * item[+]
-    * insert addItemWithSource(8.26a, #text, [[Gesundheitsstörungen und Besonderheiten beim Kind, die nach Meinung der Eltern zu berücksichtigen sind]], #DE-TH)
+    * insert addItem(8.23.1, #string, [[Welches Medikament]])
+    * insert enableWhenBoolean(8.23, =, true)   
+    * repeats = true
   * item[+]
     * insert addItemWithSource(8.33, #boolean, [[Einkoten tags]], #DE-SL)
+    * required  = true
   * item[+]
     * insert addItemWithSource(8.34, #boolean, [[Einkoten nachts]], #DE-SL)
-  * item[+]
-    * insert addItemWithSource(8.51, #boolean, [[Operationen Sonstige OP]], #DE-SL)
-    * required = true
-  * item[+]
-    * insert addItemWithSource(8.56, #choice, [[Unfälle Sonstige]], #DE-SL)
-    * answerValueSet = Canonical(SEU_EF_UnfallortVS)
-    * required = true
-  * item[+]
-    * insert addItemWithSource(8.82, #string, [[Kur mit welchem Behandlungsschwerpunkt?]], #DE-TH)
-    * required = true
+    * required  = true
 //********************************************
 // Förderungen
 * item[+]
