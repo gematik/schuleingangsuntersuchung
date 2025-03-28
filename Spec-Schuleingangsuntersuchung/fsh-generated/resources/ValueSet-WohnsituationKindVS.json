@@ -12,6 +12,16 @@
     "contains": [
       {
         "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
+        "code": "eltern",
+        "display": "Eltern"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
+        "code": "mutter",
+        "display": "Mutter"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
         "code": "vater",
         "display": "Vater"
       },
