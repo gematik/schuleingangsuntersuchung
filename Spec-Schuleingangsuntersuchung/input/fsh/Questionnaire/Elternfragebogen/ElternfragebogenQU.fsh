@@ -208,7 +208,7 @@ Description: "Elternbefragung"
     * insert addItem(1.6, #boolean, In Deutschland geboren)
   // The same like 1.5, but with a dependency from 1.6
   * item[+]
-    * insert addItemWithSource(1.6.2, #boolean, [[Geburtsland]], #DE-ST)
+    * insert addItemWithSource(1.6.2, #choice, [[Geburtsland]], #DE-ST)
     * insert enableWhenBoolean(1.6, =, false)
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
   * item[+]
@@ -350,10 +350,9 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItem(3.1.1, #group, Details Geschwister)
     * repeats = true
-    * enableWhen[+]
-      * question = "3.1"
-      * operator = #> 
-      * answerInteger = 0
+    * insert enableWhenInteger(3.1, >, 0)
+    * insert enableWhenInteger(3.1c, >, 1)
+    * enableBehavior = #any
     * item[+]
       * insert addItem(3.1.1.1, #date, Geburtsdatum des Geschwisters)
     * item[+]
@@ -1172,6 +1171,9 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItemWithSource(9.1b, #choice, [[Teilnahme am Vorkurs Deutsch]], #DE-BY)
     * answerValueSet = Canonical(SEU_UB_TeilnahmeVorkursDeutschVS)
+  * item[+]
+    * insert addItemWithSource(9.1c, #choice, [[Sprachtherapie]], #DE-BY)
+    * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
   * item[+]
     * insert addItemWithSource(9.1a, #boolean, [[Werden oder wurden bei Ihrem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)?]], #DE-SL)    
   * item[+]
