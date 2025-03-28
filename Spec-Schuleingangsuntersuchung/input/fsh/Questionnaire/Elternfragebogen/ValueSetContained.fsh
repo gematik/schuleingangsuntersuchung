@@ -2,18 +2,18 @@ ValueSet: SEU-EF-NeinAbgeschlossenLaeuftGeplantVS
 Id: SEU-EF-NeinAbgeschlossenLaeuftGeplantVS
 Title: "SEU-EF-NeinAbgeschlossenLaeuftGeplantVS"
 Description: "SEU-EF-NeinAbgeschlossenLaeuftGeplantVS"
-* include codes from system SEU-EF-NeinAbgeschlossenLaeuftGeplant
+* include codes from system SEU-EF-NeinAbgeschlossenLaeuftGeplantCS
 * ^expansion.timestamp = "2024-03-27T12:20:50+00:00"
-* ^expansion.contains[0].system = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplant)
+* ^expansion.contains[0].system = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantCS)
 * ^expansion.contains[=].code = #nein
 * ^expansion.contains[=].display = "nein"
-* ^expansion.contains[+].system = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplant)
+* ^expansion.contains[+].system = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantCS)
 * ^expansion.contains[=].code = #abgeschlossen
 * ^expansion.contains[=].display = "abgeschlossen"
-* ^expansion.contains[+].system = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplant)
+* ^expansion.contains[+].system = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantCS)
 * ^expansion.contains[=].code = #läuft
 * ^expansion.contains[=].display = "läuft z.Zt. Noch"
-* ^expansion.contains[+].system = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplant)
+* ^expansion.contains[+].system = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantCS)
 * ^expansion.contains[=].code = #geplant
 * ^expansion.contains[=].display = "geplant"
 
@@ -348,6 +348,25 @@ Description: "ValueSet, das verschiedene Berufsbildungsabschlüsse enthält."
 * ^expansion.contains[+].system = Canonical(SEU_EF_BerufsbildungCS)
 * ^expansion.contains[=].code = #fachhochschulabschluss
 * ^expansion.contains[=].display = "Fach-/Hochschulabschluss oder vergleichbar"
+
+ValueSet: SchulabschlussBerlinVS
+Id: SchulabschlussBerlinVS
+Title: "SEU_EF_Berufsbildung Berlin ValueSet"
+Description: "ValueSet, das verschiedene Schulabschlüsse enthält."
+* include codes from system SchulabschlussBerlinCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
+* ^expansion.contains[0].system = Canonical(SchulabschlussBerlinCS)
+* ^expansion.contains[=].code = #kein_hauptschulabschluss
+* ^expansion.contains[=].display = "Kein Hauptschulabschluss"
+* ^expansion.contains[+].system = Canonical(SchulabschlussBerlinCS)
+* ^expansion.contains[=].code = #hauptschulabschluss_oder_weniger_als_10_klasse
+* ^expansion.contains[=].display = "Hauptschluss oder weniger 10. Klasse"
+* ^expansion.contains[+].system = Canonical(SchulabschlussBerlinCS)
+* ^expansion.contains[=].code = #mittlere_reife_mittlerer_berufsabschluss_MSA_10_Klasse
+* ^expansion.contains[=].display = "mittlere Reife/mittlere Berufsabschluss (MSA/10. Klasse)"
+* ^expansion.contains[+].system = Canonical(SchulabschlussBerlinCS)
+* ^expansion.contains[=].code = #abitur_fachabitur
+* ^expansion.contains[=].display = "Abitur/Fachabitur"
 
 ValueSet: FamilienrolleVS
 Id: familienrolle-vs
@@ -1526,6 +1545,31 @@ Description: "ValueSet, das die Kategorien des Medienkonsums in Stunden enthält
 * ^expansion.contains[=].code = #mehr_als_4
 * ^expansion.contains[=].display = "Mehr als 4 Stunden"
 
+ValueSet: SEUEFMedienkonsumBerlinVS
+Id: SEUEFMedienkonsumBerlinVS
+Title: "SEU_EF_Medienkonsum Berlin ValueSet"
+Description: "ValueSet, das die Kategorien des Medienkonsums in Stunden enthält."
+* include codes from system SEUEFMedienkonsumBerlinCS
+* ^expansion.timestamp = "2024-09-10T12:00:00+00:00"
+* ^expansion.contains[0].system = Canonical(SEUEFMedienkonsumBerlinCS)
+* ^expansion.contains[=].code = #gar_nicht
+* ^expansion.contains[=].display = "Gar nicht"
+* ^expansion.contains[+].system = Canonical(SEUEFMedienkonsumBerlinCS)
+* ^expansion.contains[=].code = #max_bis_halbe_stunde
+* ^expansion.contains[=].display = "max. 1/2 Stunde"
+* ^expansion.contains[+].system = Canonical(SEUEFMedienkonsumBerlinCS)
+* ^expansion.contains[=].code = #max_bis_1
+* ^expansion.contains[=].display = "max. 1 Stunde"
+* ^expansion.contains[+].system = Canonical(SEUEFMedienkonsumBerlinCS)
+* ^expansion.contains[=].code = #max_bis_2
+* ^expansion.contains[=].display = "max. 2 Stunden"
+* ^expansion.contains[+].system = Canonical(SEUEFMedienkonsumBerlinCS)
+* ^expansion.contains[=].code = #max_bis_3
+* ^expansion.contains[=].display = "max. 3 Stunden"
+* ^expansion.contains[+].system = Canonical(SEUEFMedienkonsumBerlinCS)
+* ^expansion.contains[=].code = #ueber_3
+* ^expansion.contains[=].display = "über 3 Stunden"
+
 CodeSystem: SEU_UB_FamilienstandCS
 Id: seu-ub-familienstand-cs
 Title: "SEU_UB_Familienstand CodeSystem"
@@ -1613,6 +1657,15 @@ Description: "CodeSystem für die Angabe des Alters eines Kindes."
 * #5_5_bis_6_jahre ">= 5 ½ Jahre bis 6 Jahre"
 * #6_bis_6_5_jahre ">= 6 Jahre bis 6 ½ Jahre"
 * #keine_angaben "Keine Angaben"
+
+CodeSystem: BerufstaetigkeitElternBerlinCS
+Id: BerufstaetigkeitElternBerlincs
+Title: "Berufstätigkeit_Eltern_Berlin"
+Description: "Berufstätigkeit__Eltern_Berlin"
+* #nicht_erwerbstaetig_weil_finde_keine_Arbeit "nicht erwerbstätig, weil finde keine Arbeit"
+* #nicht_erwerbstaetig_alle_anderen_Gruende "nicht erwerbstätig, weil alle anderen Gründe"
+* #teilzeitbeschaeftigt "teilzeitbeschäftigt"
+* #vollzeitbeschaeftigt "vollzeitbeschäftigt"
 
 ValueSet: SEU_EF_AlterKindVS
 Id: seu-ef-alter-kind-vs
@@ -2389,3 +2442,69 @@ Description: "ValueSet, das den Ort des Rauchens beschreibt."
 * ^expansion.contains[+].system = Canonical(RauchortCS)
 * ^expansion.contains[=].code = #innen_und_aussen
 * ^expansion.contains[=].display = "innerhalb und außerhalb der Wohnung"
+
+CodeSystem: SorgenKindCS
+Id: SorgenKindCS
+Title: "SorgenKindCS"
+Description: "SorgenKindCS"
+* #seines_Verhaltens "seines Verhaltens?"
+* #seiner_Sprachentwicklung "seiner Sprachentwicklung"
+* #seine_Konzentrationsfähigkeit "seine Konzentrationsfähigkeit"
+* #seines_Seh-oder_Hoervermoegens "seines Seh- oder Hörvermögens"
+
+ValueSet: SorgenKindVS
+Id: SorgenKindVS
+Title: "SorgenKindVS"
+Description: "SorgenKindVS"
+* include codes from system SorgenKindCS
+* ^expansion.timestamp = "2024-03-27T12:20:50+00:00"
+* ^expansion.contains[0].system = Canonical(SorgenKindCS)
+* ^expansion.contains[=].code = #seines_Verhaltens
+* ^expansion.contains[=].display = "seines Verhaltens?"
+* ^expansion.contains[+].system = Canonical(SorgenKindCS)
+* ^expansion.contains[=].code = #seiner_Sprachentwicklung
+* ^expansion.contains[=].display = "seiner Sprachentwicklung"
+* ^expansion.contains[+].system = Canonical(SorgenKindCS)
+* ^expansion.contains[=].code = #seine_Konzentrationsfähigkeit
+* ^expansion.contains[=].display = "seine Konzentrationsfähigkeit"
+* ^expansion.contains[+].system = Canonical(SorgenKindCS)
+* ^expansion.contains[=].code = #seines_Seh-oder_Hoervermoegens
+* ^expansion.contains[=].display = "seines Seh- oder Hörvermögens"
+
+ValueSet: LebtBeiVS
+Id: LebtBeiVS
+Title: "LebtBeiVS"
+Description: "LebtBeiVS"
+* include codes from system LebtBeiCS
+* ^expansion.timestamp = "2024-04-04T09:24:55+00:00"
+* ^expansion.contains[0].system = "https://www.oegd.de/fhir/seu/CodeSystem/LebtBeiCS"
+* ^expansion.contains[=].code = #vater
+* ^expansion.contains[=].display = "Vater"
+* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/LebtBeiCS"
+* ^expansion.contains[=].code = #eltern
+* ^expansion.contains[=].display = "Eltern"
+* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/LebtBeiCS"
+* ^expansion.contains[=].code = #andere
+* ^expansion.contains[=].display = "Andere"
+* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/LebtBeiCS"
+* ^expansion.contains[=].code = #mutter
+* ^expansion.contains[=].display = "Mutter"
+
+ValueSet: BerufstaetigkeitElternBerlinVS
+Id: BerufstaetigkeitElternBerlinVS
+Title: "BerufstaetigkeitElternBerlinVS"
+Description: "BerufstaetigkeitElternBerlinVS"
+* include codes from system BerufstaetigkeitElternBerlinCS
+* ^expansion.timestamp = "2024-06-26T15:47:43+00:00"
+* ^expansion.contains[0].system = Canonical(BerufstaetigkeitElternBerlinCS)
+* ^expansion.contains[=].code = #nicht_erwerbstaetig_weil_finde_keine_Arbeit
+* ^expansion.contains[=].display = "nicht erwerbstätig, weil finde keine Arbeit"
+* ^expansion.contains[+].system = Canonical(BerufstaetigkeitElternBerlinCS)
+* ^expansion.contains[=].code = #nicht_erwerbstaetig_alle_anderen_Gruende
+* ^expansion.contains[=].display = "nicht erwerbstätig, weil alle anderen Gründe"
+* ^expansion.contains[+].system = Canonical(BerufstaetigkeitElternBerlinCS)
+* ^expansion.contains[=].code = #teilzeitbeschaeftigt
+* ^expansion.contains[=].display = "teilzeitbeschäftigt"
+* ^expansion.contains[+].system = Canonical(BerufstaetigkeitElternBerlinCS)
+* ^expansion.contains[=].code = #vollzeitbeschaeftigt
+* ^expansion.contains[=].display = "vollzeitbeschäftigt"

@@ -1,0 +1,27 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SonderpaedagogischerFoerderbedarfVS",
+  "id": "SonderpaedagogischerFoerderbedarfVS",
+  "title": "SonderpaedagogischerFoerderbedarfVS",
+  "description": "SonderpaedagogischerFoerderbedarfVS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/SonderpaedagogischerFoerderbedarfVS",
+  "expansion": {
+    "timestamp": "2024-03-27T12:20:50+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SonderpaedagogischerFoerderbedarfCS",
+        "code": "Lernen",
+        "display": "Lernen"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SonderpaedagogischerFoerderbedarfCS"
+      }
+    ]
+  }
+}

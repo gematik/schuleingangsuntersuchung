@@ -184,6 +184,10 @@ Description: "Elternbefragung"
     * enableBehavior = #any
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
   * item[+]
+    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
+    * insert addItemWithSource(1.4d, #choice, [[Staatsangehörigkeit: andere/weitere?]], #DE-BE)
+    * repeats = true  
+  * item[+]
     * insert addItem(1.5, #choice, [[Geburtsland]])
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
   * item[+]
@@ -210,6 +214,8 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItem(1.6.1, #date, Seit wann wohnt das Kind in Deutschland?)
     * insert enableWhenBoolean(1.6, =, false)
+  * item[+]
+    * insert addItemWithSource(1.6.3, #date,[[Seit wann lebt Ihr Kind in Deutschland (Monat/Jahr)?]], #DE-BE)
   * item[+]
     * insert addItemWithSource(1.6.1a, #choice, Wie alt war das Kind bei Einreise nach Deutschland?, #DE-SL)
     * insert enableWhenBoolean(1.6, =, false)
@@ -249,6 +255,9 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItemWithSource(1.12c, #choice, [[Kind lebt hauptsächlich bei]], #DE-ST)
     * answerValueSet = Canonical(WohnsituationKindAlternativ3VS)
+  * item[+]
+    * insert addItemWithSource(1.12d, #choice, [[Kind lebt überwiegend bei]], #DE-BE)
+    * answerValueSet = Canonical(LebensumfeldVS)
   * item[+]
     * insert addItemWithSource(1.13, #string, [[Unterscheidung zwischen Arzt und Koordinator und Hör- und Sehkraft (MFA)]], #DE-NI)
   * item[+]
@@ -349,6 +358,8 @@ Description: "Elternbefragung"
     * item[+]
       * insert addItem(3.1.1.2, #choice, Geschlecht des Geschwisters)
       * answerValueSet = Canonical(GenderDEVS)
+    * item[+]
+      * insert addItemWithSource(3.1.1.3, #string, [[Vorname des Geschwisters]], #DE-BE)
   * item[+]
     * insert addItem(3.2, #group, Familiäre Vorgeschichte)
     * item[+]
@@ -690,6 +701,9 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItemWithSource(7.13, #choice, [[Zeigte Ihr Kind mit 5 Jahren Sprachauffälligkeiten?]], #DE-NI)
     * answerValueSet = Canonical(JaNeinWeissNichtVS)
+  * item[+]
+    * answerValueSet = Canonical(SorgenKindVS)
+    * insert addItemWithSource(7.14, #choice, [[Machen Sie sich Sorgen um Ihr Kind wegen]], #DE-BE)
 //********************************************
 // Erkrankungen und gesundheitliche Einschränkungen
 * item[+]
@@ -875,6 +889,8 @@ Description: "Elternbefragung"
     * item[+]
       * insert addItem(8.15.1, #string, [[Detaillierte Angaben zum Krankenhausaufenthalt?]])
       * insert enableWhenBoolean(8.15, =, true)
+    * item[+]  
+      * insert addItemWithSource(8.15.1.a, #integer, [[Anzahl der Krankenhausaufenthalte/Operationen]], #DE-BE)
     * item[+]
       * insert addItemWithSource(8.15.2, #integer, [[Wie oft wurde das Kind im Krankenhaus aufgenommen?]], #DE-ST)
       * insert enableWhenBoolean(8.15, =, true)
@@ -954,6 +970,11 @@ Description: "Elternbefragung"
     * insert addItem(8.25.1, #text, [[Welche Erkrankung]])
     * repeats = true
   * item[+]
+    * insert addItemWithSource(8.25.2, #boolean, [[andere wichtige Erkrankungen/Allergien/Unfälle]], #DE-BE)
+  * item[+]
+    * insert enableWhenBoolean(8.25.2, =, true)
+    * insert addItemWithSource(8.25.3, #text, [[wenn ja, welche]], #DE-BE)
+  * item[+]
     * insert addItem(8.26, #text, [[Sonstige Probleme]])
   * item[+]
     * insert addItemWithSource(8.26a, #text, [[Gesundheitsstörungen und Besonderheiten beim Kind, die nach Meinung der Eltern zu berücksichtigen sind]], #DE-TH)
@@ -1003,6 +1024,8 @@ Description: "Elternbefragung"
       * insert enableWhenCode(8.29, =, AllgemeineBeschwerdenCS, sonstige)
   * item[+]
     * insert addItemWithSource(8.30, #boolean, [[Wurde Ihr Kind jemals aufgrund von Unfallverletzungen von einem Arzt behandelt??]], #DE-SL)
+  * item[+]
+    * insert addItemWithSource(8.30.1, #boolean, [[Nässt ihr Kind ein?]], #DE-BE)
   * item[+]
     * insert addItemWithSource(8.31, #boolean, [[Einnässen tags]], #DE-SL)
   * item[+]
@@ -1135,6 +1158,10 @@ Description: "Elternbefragung"
       * insert addItemWithSource(8.81.2, #boolean, [[Hatte Ihr Kind in den letzten 12 Monaten gleichzeitig mit diesen Nasenbeschwerden auch juckende oder tränende Augen?]], #DE-NI)
   * item[+]
     * insert addItemWithSource(8.82, #string, [[Kur mit welchem Behandlungsschwerpunkt?]], #DE-TH)
+  * item[+]
+    * insert addItemWithSource(8.83, #choice, [[Erkrankungen des Kindes (auch frühere)]], #DE-BE)
+    * answerValueSet = Canonical(ErkrankungenKindVS)
+    * repeats = true
 //********************************************
 // Förderungen
 * item[+]
@@ -1392,6 +1419,13 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItem(10.2, #boolean, Fernsehgerät/Computer/Spielkonsole im Zimmer?)
   * item[+]
+    * insert addItemWithSource(10.2.1, #boolean, [[Mein Kind hat einen eigenen Fernseher?]], #DE-BE)
+  * item[+]
+    * insert addItemWithSource(10.2.2, #boolean, [[andere eigene elektronische Geräte]], #DE-BE)
+  * item[+]
+    * insert enableWhenBoolean(10.2.2, =, true)
+    * insert addItemWithSource(10.2.3, #text, [[wenn ja, welche]], #DE-BE)
+  * item[+]
     * insert addItemWithSource(10.3a, #choice, [[Wie lange sieht Ihr Kind durchschnittlich pro Tag Fernsehsendungen und Filme an und/oder spielt mit dem Smartphone/Tablet/Computer/ an der Spielkonsole? An einem Wochentag:]], #DE-BW)
     * answerValueSet = Canonical(SEU_EF_MedienkonsumVS)
   * item[+]
@@ -1402,7 +1436,10 @@ Description: "Elternbefragung"
     * answerValueSet = Canonical(SEU_EF_MedienkonsumVS)
   * item[+]
     * insert addItemWithSource(10.4b, #choice, [[Wie lange sieht nutzt Kind Fernseher, Smartphone oder Spielkonsole am Wochenende]], #DE-BW)
-    * answerValueSet = Canonical(SEU_EF_ZeitdauerVS)   
+    * answerValueSet = Canonical(SEU_EF_ZeitdauerVS)
+  * item[+]
+    * insert addItemWithSource(10.4c, #choice, [[Wie viele Stunden am Tag beschäftigt sich Ihr Kind im Durchschnitt mit elektronischen Geräten? (elektronische Geräte sind Fernsehen, DVD, Computer, Tablet, Smartphone, Playstation und andere) ]], #DE-BE)
+    * answerValueSet = Canonical(SEUEFMedienkonsumBerlinVS)
 //********************************************
 // Arzt
 * item[+]
@@ -1434,6 +1471,8 @@ Description: "Elternbefragung"
         * answerBoolean = true
   * item[+]
     * insert addItem(12.4, #boolean, KISS Sprachscreening)
+  * item[+]
+    * insert addItemWithSource(12.4.1, #integer, [[Wieviele Personen sind Raucher/Dampfer]], #DE-BE)
   * item[+]
     * insert addItem(12.5, #choice, Raucherhaushalt)
     * answerValueSet = Canonical(HaeufigkeitAuswahlVS)    
@@ -1506,6 +1545,9 @@ Description: "Elternbefragung"
     * insert addItemWithSource(13.1b, #choice, Schulabschluss 1. Elternteil, #DE-BW)
     * answerValueSet = Canonical(SEU_EF_BildungsabschlussBWVS)
   * item[+]
+    * insert addItemWithSource(13.1c, #choice, Schulabschluss Mutter/Elternteil A, #DE-BE)
+    * answerValueSet = Canonical(SchulabschlussBerlinVS)
+  * item[+]
     * insert addItem(13.2, #choice, Schulabschluss 2. Elternteil)
     * answerValueSet = Canonical(SEU_EF_BildungsabschlussVS)
   * item[+]
@@ -1514,6 +1556,9 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItemWithSource(13.2b, #choice, Schulabschluss 2. Elternteil, #DE-BW)
     * answerValueSet = Canonical(SEU_EF_BildungsabschlussBWVS)
+  * item[+]
+    * insert addItemWithSource(13.2c, #choice, Schulabschluss Vater/Elternteil B, #DE-BE)
+    * answerValueSet = Canonical(SchulabschlussBerlinVS)
   * item[+]
     * insert addItem(13.3, #choice, Berufsabschluss 1. Elternteil)
     * answerValueSet = Canonical(SEU_EF_BerufsbildungVS)
@@ -1603,11 +1648,17 @@ Description: "Elternbefragung"
     * insert addItemWithSource(13.32a, #choice, [[Erwerbstätigkeit Mutter/ Partner]], #DE-ST)
     * answerValueSet = Canonical(ErwerbsstatusAlternativ1VS)
   * item[+]
+    * insert addItemWithSource(13.32c, #choice, [[Berufstätigkeit Mutter/Elternteil A]], #DE-BE)
+    * answerValueSet = Canonical(BerufstaetigkeitElternBerlinVS)
+  * item[+]
     * insert addItemWithSource(13.33, #choice, [[Erwerbsstatus des Vaters]], #DE-HB)
     * answerValueSet = Canonical(ErwerbsstatusDesVatersVS)
   * item[+]
     * insert addItemWithSource(13.33a, #choice, [[Erwerbstätigkeit Vater/ Partner]], #DE-ST)
     * answerValueSet = Canonical(ErwerbsstatusAlternativ1VS)
+  * item[+]
+    * insert addItemWithSource(13.33c, #choice, [[Berufstätigkeit Vater/Elternteil B]], #DE-BE)
+    * answerValueSet = Canonical(BerufstaetigkeitElternBerlinVS)
   * item[+]
     * insert addItemWithSource(13.34, #boolean, [[Mutter in Deutschland geboren]], #DE-HB)
   * item[+]

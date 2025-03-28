@@ -1,0 +1,42 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SchulabschlussBerlinVS",
+  "id": "SchulabschlussBerlinVS",
+  "title": "SEU_EF_Berufsbildung Berlin ValueSet",
+  "description": "ValueSet, das verschiedene Schulabschlüsse enthält.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/SchulabschlussBerlinVS",
+  "expansion": {
+    "timestamp": "2024-10-20T11:50:47+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/schulabschlussberlincs",
+        "code": "kein_hauptschulabschluss",
+        "display": "Kein Hauptschulabschluss"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/schulabschlussberlincs",
+        "code": "hauptschulabschluss_oder_weniger_als_10_klasse",
+        "display": "Hauptschluss oder weniger 10. Klasse"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/schulabschlussberlincs",
+        "code": "mittlere_reife_mittlerer_berufsabschluss_MSA_10_Klasse",
+        "display": "mittlere Reife/mittlere Berufsabschluss (MSA/10. Klasse)"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/schulabschlussberlincs",
+        "code": "abitur_fachabitur",
+        "display": "Abitur/Fachabitur"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/schulabschlussberlincs"
+      }
+    ]
+  }
+}

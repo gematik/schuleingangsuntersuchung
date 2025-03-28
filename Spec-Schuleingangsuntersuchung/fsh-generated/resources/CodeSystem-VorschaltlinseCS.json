@@ -1,0 +1,30 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "VorschaltlinseCS",
+  "id": "VorschaltlinseCS",
+  "title": "VorschaltlinseCS",
+  "description": "VorschaltlinseCS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/VorschaltlinseCS",
+  "concept": [
+    {
+      "code": "besser",
+      "display": "besser"
+    },
+    {
+      "code": "gleich",
+      "display": "gleich"
+    },
+    {
+      "code": "schlechter",
+      "display": "schlechter"
+    },
+    {
+      "code": "keine_Angabe",
+      "display": "keine Angabe"
+    }
+  ],
+  "count": 4
+}

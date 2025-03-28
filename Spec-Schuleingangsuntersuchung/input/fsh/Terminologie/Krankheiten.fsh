@@ -520,3 +520,20 @@ Description: "ValueSet für derzeitige Erkrankungen"
 * ^expansion.contains[+].system = Canonical(DerzeitigeErkrankungenCS)
 * ^expansion.contains[=].code = #sonstige_welche
 * ^expansion.contains[=].display = "sonstige Erkrankung(en) / welche?"
+
+// Einmal im Elternfragebogen
+ValueSet: ErkrankungenKindVS
+Id: ErkrankungenKindVS
+Title: "ErkrankungenKindVS"
+Description: "ErkrankungenKindVS"
+* include codes from system ErkrankungCS
+* ^expansion.timestamp = "2024-04-04T10:55:53+00:00"
+* ^expansion.contains[0].system = Canonical(ErkrankungCS)
+* ^expansion.contains[=].code = #epilepsie
+* ^expansion.contains[=].display = "Epilepsie"
+* ^expansion.contains[+].system = Canonical(ErkrankungCS)
+* ^expansion.contains[=].code = #herzfehler
+* ^expansion.contains[=].display = "Herzfehler"
+* ^expansion.contains[+].system = Canonical(ErkrankungCS)
+* ^expansion.contains[=].code = #asthma
+* ^expansion.contains[=].display = "Asthma"

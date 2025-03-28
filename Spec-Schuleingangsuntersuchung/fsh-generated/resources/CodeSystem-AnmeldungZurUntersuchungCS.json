@@ -1,0 +1,26 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "AnmeldungZurUntersuchungCS",
+  "id": "AnmeldungZurUntersuchungCS",
+  "title": "AnmeldungZurUntersuchungCS",
+  "description": "AnmeldungZurUntersuchungCS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/AnmeldungZurUntersuchungCS",
+  "concept": [
+    {
+      "code": "schulpflichtig",
+      "display": "schulpflichtig (bis 30.09.2017)"
+    },
+    {
+      "code": "antragsweise",
+      "display": "antragsweise (1.10.2017 bis 31.03.2018)"
+    },
+    {
+      "code": "nach_Zurueckstellung_im_Vorjahr",
+      "display": "nach Zurückstellung im Vorjahr"
+    }
+  ],
+  "count": 3
+}

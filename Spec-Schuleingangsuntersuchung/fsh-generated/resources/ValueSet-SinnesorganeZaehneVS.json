@@ -1,0 +1,27 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SinnesorganeZaehneVS",
+  "id": "SinnesorganeZaehneVS",
+  "title": "SinnesorganeZaehneVS",
+  "description": "SinnesorganeZaehneVS",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/SinnesorganeZaehneVS",
+  "expansion": {
+    "timestamp": "2024-03-27T12:20:50+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SinnesorganeZaehneCS",
+        "code": "keine_Angabe",
+        "display": "keine Angabe"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SinnesorganeZaehneCS"
+      }
+    ]
+  }
+}

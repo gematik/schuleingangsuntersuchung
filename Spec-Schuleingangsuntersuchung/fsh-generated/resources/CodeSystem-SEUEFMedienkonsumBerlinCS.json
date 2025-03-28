@@ -1,0 +1,38 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SEUEFMedienkonsumBerlinCS",
+  "id": "SEUEFMedienkonsumBerlinCS",
+  "title": "SEU_EF_Medienkonsum Berlin CodeSystem",
+  "description": "CodeSystem für die Angabe des Medienkonsums in Stunden.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEUEFMedienkonsumBerlinCS",
+  "concept": [
+    {
+      "code": "gar_nicht",
+      "display": "Gar nicht"
+    },
+    {
+      "code": "max_bis_halbe_stunde",
+      "display": "max. 1/2 Stunde"
+    },
+    {
+      "code": "max_bis_1",
+      "display": "max. 1 Stunde"
+    },
+    {
+      "code": "max-bis_2",
+      "display": "max. 2 Stunden"
+    },
+    {
+      "code": "max_bis_3",
+      "display": "max. 3 Stunden"
+    },
+    {
+      "code": "ueber_3",
+      "display": "über 3 Stunden"
+    }
+  ],
+  "count": 6
+}

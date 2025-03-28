@@ -1,5 +1,5 @@
-CodeSystem: SEU-EF-NeinAbgeschlossenLaeuftGeplant
-Id: SEU-EF-NeinAbgeschlossenLaeuftGeplant
+CodeSystem: SEU-EF-NeinAbgeschlossenLaeuftGeplantCS
+Id: SEU-EF-NeinAbgeschlossenLaeuftGeplantCS
 Title: "SEU-EF-NeinAbgeschlossenLaeuftGeplant"
 * #nein "nein"
 * #abgeschlossen "abgeschlossen"
@@ -135,6 +135,14 @@ Description: "CodeSystem für die Angabe des Bildungsabschlusses."
 * #sonder_foerderschule "Sonder-/Förderschule"
 * #in_schulischer_ausbildung "Derzeit noch in schulischer Ausbildung (Schüler*in)"
 
+CodeSystem: SchulabschlussBerlinCS
+Id: schulabschlussberlincs
+Title: "Bildungsabschluss Berlin CodeSystem"
+Description: "CodeSystem für die Angabe des Bildungsabschlusses."
+* #kein_hauptschulabschluss "Kein Schulabschluss"
+* #hauptschulabschluss_oder_weniger_als_10_klasse "Hauptschluss oder weniger 10. Klasse"
+* #mittlere_reife_mittlerer_berufsabschluss_msa_10_klasse "mittlere Reife/mittlere Berufsabschluss (MSA/10. Klasse)"
+* #abitur_fachabitur "Abitur/Fachabitur"
 
 CodeSystem: SEU_EF_BerufsbildungCS
 Id: seu-ef-berufsbildung-cs
@@ -533,6 +541,17 @@ Description: "CodeSystem für die Angabe der Dauer des Stillens."
 * #mehr_als_6_monate "Mehr als 6 Monate"
 * #keine_angabe "Keine Angabe"
 
+CodeSystem: SEUEFMedienkonsumBerlinCS
+Id: SEUEFMedienkonsumBerlinCS
+Title: "SEU_EF_Medienkonsum Berlin CodeSystem"
+Description: "CodeSystem für die Angabe des Medienkonsums in Stunden."
+* #gar_nicht "Gar nicht"
+* #max_bis_halbe_stunde "max. 1/2 Stunde"
+* #max_bis_1 "max. 1 Stunde"
+* #max-bis_2 "max. 2 Stunden"
+* #max_bis_3 "max. 3 Stunden"
+* #ueber_3 "über 3 Stunden"
+
 CodeSystem: JaNeinWeissNichtCS
 Id: JaNeinWeissNichtCS
 Title: "JaNeinWeissNichtCS"
@@ -588,3 +607,12 @@ Description: "CodeSystem, das den Grund des Krankenhausaufenthaltes beschreibt. 
 * #unfall "Unfall"
 * #stationaere_operation "stationäre Operation(en)"
 * #sonstiges "sonstiges"
+
+CodeSystem: LebtBeiCS
+Id: LebtBeiCS
+Title: "LebtBeiCS"
+Description: "LebtBeiCS"
+* #eltern "Eltern"
+* #mutter "Mutter"
+* #vater "Vater"
+* #andere "Andere"

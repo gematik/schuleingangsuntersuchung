@@ -1,0 +1,30 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "SchulabschlussBerlinCS",
+  "id": "schulabschlussberlincs",
+  "title": "Bildungsabschluss Berlin CodeSystem",
+  "description": "CodeSystem für die Angabe des Bildungsabschlusses.",
+  "version": "0.1.0",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/schulabschlussberlincs",
+  "concept": [
+    {
+      "code": "kein_hauptschulabschluss",
+      "display": "Kein Schulabschluss"
+    },
+    {
+      "code": "hauptschulabschluss_oder_weniger_als_10_klasse",
+      "display": "Hauptschluss oder weniger 10. Klasse"
+    },
+    {
+      "code": "mittlere_reife_mittlerer_berufsabschluss_msa_10_klasse",
+      "display": "mittlere Reife/mittlere Berufsabschluss (MSA/10. Klasse)"
+    },
+    {
+      "code": "abitur_fachabitur",
+      "display": "Abitur/Fachabitur"
+    }
+  ],
+  "count": 4
+}
