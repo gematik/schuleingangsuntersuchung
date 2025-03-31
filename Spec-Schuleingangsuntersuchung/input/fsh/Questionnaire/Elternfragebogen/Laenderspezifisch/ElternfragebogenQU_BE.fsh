@@ -1,4 +1,4 @@
-Instance: ElternbefragungBEnew
+Instance: ElternbefragungBE
 InstanceOf: Questionnaire
 Usage: #example
 Title: "Elternbefragung BE"
@@ -14,7 +14,7 @@ Description: "Elternbefragung BE"
 * contained[+] = SchulabschlussBerlinVS
 * contained[+] = BerufstaetigkeitElternBerlinVS
 * id = "SEU-Elternbefragung-BE"
-* url = "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung"
+* url = "https://www.oegd.de/fhir/seu/Questionnaire/ElternbefragungBE"
 * title = "SEU Elternfragebogen Berlin"
 * insert launchContext("patient", #Patient, "Patientenkontext")
 * status = #draft
