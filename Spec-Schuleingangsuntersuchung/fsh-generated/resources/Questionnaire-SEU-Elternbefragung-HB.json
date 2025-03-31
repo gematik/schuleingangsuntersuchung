@@ -1,49 +1,7 @@
 {
   "resourceType": "Questionnaire",
-  "id": "SEU-Elternbefragung-BE",
+  "id": "SEU-Elternbefragung-HB",
   "contained": [
-    {
-      "resourceType": "ValueSet",
-      "id": "GenderDEVS",
-      "status": "draft",
-      "name": "GenderDEVS",
-      "title": "SEU-AF Geschlecht DE",
-      "description": "Diese Codes enthalten die Angabe des Geschlechts",
-      "version": "0.1.0",
-      "url": "https://www.oegd.de/fhir/seu/ValueSet/GenderDEVS",
-      "expansion": {
-        "timestamp": "2024-03-30T13:28:00+00:00",
-        "contains": [
-          {
-            "system": "http://fhir.de/CodeSystem/gender-amtlich-de",
-            "code": "M",
-            "display": "männlich"
-          },
-          {
-            "system": "http://fhir.de/CodeSystem/gender-amtlich-de",
-            "code": "W",
-            "display": "weiblich"
-          },
-          {
-            "system": "http://fhir.de/CodeSystem/gender-amtlich-de",
-            "code": "X",
-            "display": "unbekannt"
-          },
-          {
-            "system": "http://fhir.de/CodeSystem/gender-amtlich-de",
-            "code": "D",
-            "display": "divers"
-          }
-        ]
-      },
-      "compose": {
-        "include": [
-          {
-            "system": "http://fhir.de/CodeSystem/gender-amtlich-de"
-          }
-        ]
-      }
-    },
     {
       "resourceType": "ValueSet",
       "id": "DeuevAnlage8LaenderkennzeichenVS",
@@ -1728,6 +1686,48 @@
         "include": [
           {
             "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "GenderDEVS",
+      "status": "draft",
+      "name": "GenderDEVS",
+      "title": "SEU-AF Geschlecht DE",
+      "description": "Diese Codes enthalten die Angabe des Geschlechts",
+      "version": "0.1.0",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/GenderDEVS",
+      "expansion": {
+        "timestamp": "2024-03-30T13:28:00+00:00",
+        "contains": [
+          {
+            "system": "http://fhir.de/CodeSystem/gender-amtlich-de",
+            "code": "M",
+            "display": "männlich"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/gender-amtlich-de",
+            "code": "W",
+            "display": "weiblich"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/gender-amtlich-de",
+            "code": "X",
+            "display": "unbekannt"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/gender-amtlich-de",
+            "code": "D",
+            "display": "divers"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "http://fhir.de/CodeSystem/gender-amtlich-de"
           }
         ]
       }
@@ -3609,316 +3609,126 @@
     },
     {
       "resourceType": "ValueSet",
-      "id": "ErkrankungenKindVS",
+      "id": "PersonensorgeberechtigterBeziehungVS",
       "status": "draft",
-      "name": "ErkrankungenKindVS",
-      "title": "ErkrankungenKindVS",
-      "description": "ErkrankungenKindVS",
+      "name": "PersonensorgeberechtigterBeziehungVS",
+      "title": "PersonensorgeberechtigterBeziehungVS",
+      "description": "PersonensorgeberechtigterBeziehungVS",
       "version": "0.1.0",
-      "url": "https://www.oegd.de/fhir/seu/ValueSet/ErkrankungenKindVS",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/PersonensorgeberechtigterBeziehungVS",
       "expansion": {
-        "timestamp": "2024-04-04T10:55:53+00:00",
+        "timestamp": "2025-02-21T11:50:47+00:00",
         "contains": [
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
-            "code": "epilepsie",
-            "display": "Epilepsie"
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PersonensorgeberechtigterBeziehungCS",
+            "code": "mutter",
+            "display": "Mutter"
           },
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
-            "code": "herzfehler",
-            "display": "Herzfehler"
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PersonensorgeberechtigterBeziehungCS",
+            "code": "vater",
+            "display": "Vater"
           },
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
-            "code": "asthma",
-            "display": "Asthma"
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PersonensorgeberechtigterBeziehungCS",
+            "code": "leiblichemutter",
+            "display": "Leibliche Mutter"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PersonensorgeberechtigterBeziehungCS",
+            "code": "leiblichervater",
+            "display": "Leiblicher Vater"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PersonensorgeberechtigterBeziehungCS",
+            "code": "adoptivmutter",
+            "display": "Adoptiv-/Pflegemutter"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PersonensorgeberechtigterBeziehungCS",
+            "code": "adoptivvater",
+            "display": "Adoptiv-/Pflegevater"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PersonensorgeberechtigterBeziehungCS",
+            "code": "natperson",
+            "display": "Natürliche Person (nicht spezifiziert)"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PersonensorgeberechtigterBeziehungCS",
+            "code": "jugendamt",
+            "display": "Jugendamt"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PersonensorgeberechtigterBeziehungCS",
+            "code": "jurperson",
+            "display": "Juristische Person"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PersonensorgeberechtigterBeziehungCS",
+            "code": "betreuer",
+            "display": "Betreuer m. Einwill.vorbeh.Aufenthaltsb."
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PersonensorgeberechtigterBeziehungCS",
+            "code": "pflegemutter",
+            "display": "Pflegemutter"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PersonensorgeberechtigterBeziehungCS",
+            "code": "pflegecater",
+            "display": "Pflegevater"
           }
         ]
       },
       "compose": {
         "include": [
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS"
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PersonensorgeberechtigterBeziehungCS"
           }
         ]
       }
     },
     {
       "resourceType": "ValueSet",
-      "id": "SorgenKindVS",
+      "id": "PersonensorgeberechtigterZusammenlebendVS",
       "status": "draft",
-      "name": "SorgenKindVS",
-      "title": "SorgenKindVS",
-      "description": "SorgenKindVS",
+      "name": "PersonensorgeberechtigterZusammenlebendVS",
+      "title": "PersonensorgeberechtigterZusammenlebendVS",
+      "description": "PersonensorgeberechtigterZusammenlebendVS",
       "version": "0.1.0",
-      "url": "https://www.oegd.de/fhir/seu/ValueSet/SorgenKindVS",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/PersonensorgeberechtigterZusammenlebendVS",
       "expansion": {
-        "timestamp": "2024-03-27T12:20:50+00:00",
+        "timestamp": "2025-02-21T11:50:47+00:00",
         "contains": [
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SorgenKindCS",
-            "code": "seines_Verhaltens",
-            "display": "seines Verhaltens?"
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PersonensorgeberechtigterZusammenlebendCS",
+            "code": "ja",
+            "display": "Ja"
           },
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SorgenKindCS",
-            "code": "seiner_Sprachentwicklung",
-            "display": "seiner Sprachentwicklung"
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PersonensorgeberechtigterZusammenlebendCS",
+            "code": "nein",
+            "display": "Nein"
           },
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SorgenKindCS",
-            "code": "seine_Konzentrationsfähigkeit",
-            "display": "seine Konzentrationsfähigkeit"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SorgenKindCS",
-            "code": "seines_Seh-oder_Hoervermoegens",
-            "display": "seines Seh- oder Hörvermögens"
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PersonensorgeberechtigterZusammenlebendCS",
+            "code": "zeitweise",
+            "display": "Zeitweise"
           }
         ]
       },
       "compose": {
         "include": [
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SorgenKindCS"
-          }
-        ]
-      }
-    },
-    {
-      "resourceType": "ValueSet",
-      "id": "seu-ef-berufsbildung-vs",
-      "status": "draft",
-      "name": "SEU_EF_BerufsbildungVS",
-      "title": "SEU_EF_Berufsbildung ValueSet",
-      "description": "ValueSet, das verschiedene Berufsbildungsabschlüsse enthält.",
-      "version": "0.1.0",
-      "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-berufsbildung-vs",
-      "expansion": {
-        "timestamp": "2024-10-20T11:50:47+00:00",
-        "contains": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-berufsbildung-cs",
-            "code": "kein_berufsabschluss",
-            "display": "Kein Berufsabschluss"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-berufsbildung-cs",
-            "code": "in_ausbildung_studium",
-            "display": "Derzeit noch in beruflicher Ausbildung"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-berufsbildung-cs",
-            "code": "berufliche_ausbildung_lehre",
-            "display": "Berufliche Ausbildung/Lehre oder vergleichbar"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-berufsbildung-cs",
-            "code": "fachhochschulabschluss",
-            "display": "Fach-/Hochschulabschluss oder vergleichbar"
-          }
-        ]
-      },
-      "compose": {
-        "include": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-berufsbildung-cs"
-          }
-        ]
-      }
-    },
-    {
-      "resourceType": "ValueSet",
-      "id": "SEUEFMedienkonsumBerlinVS",
-      "status": "draft",
-      "name": "SEUEFMedienkonsumBerlinVS",
-      "title": "SEU_EF_Medienkonsum Berlin ValueSet",
-      "description": "ValueSet, das die Kategorien des Medienkonsums in Stunden enthält.",
-      "version": "0.1.0",
-      "url": "https://www.oegd.de/fhir/seu/ValueSet/SEUEFMedienkonsumBerlinVS",
-      "expansion": {
-        "timestamp": "2024-09-10T12:00:00+00:00",
-        "contains": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEUEFMedienkonsumBerlinCS",
-            "code": "gar_nicht",
-            "display": "Gar nicht"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEUEFMedienkonsumBerlinCS",
-            "code": "max_bis_halbe_stunde",
-            "display": "max. 1/2 Stunde"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEUEFMedienkonsumBerlinCS",
-            "code": "max_bis_1",
-            "display": "max. 1 Stunde"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEUEFMedienkonsumBerlinCS",
-            "code": "max_bis_2",
-            "display": "max. 2 Stunden"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEUEFMedienkonsumBerlinCS",
-            "code": "max_bis_3",
-            "display": "max. 3 Stunden"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEUEFMedienkonsumBerlinCS",
-            "code": "ueber_3",
-            "display": "über 3 Stunden"
-          }
-        ]
-      },
-      "compose": {
-        "include": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEUEFMedienkonsumBerlinCS"
-          }
-        ]
-      }
-    },
-    {
-      "resourceType": "ValueSet",
-      "id": "lebensumfeld-vs",
-      "status": "draft",
-      "name": "LebensumfeldVS",
-      "title": "Lebensumfeld VS",
-      "description": "LebensumfeldVS",
-      "version": "0.1.0",
-      "url": "https://www.oegd.de/fhir/seu/ValueSet/lebensumfeld-vs",
-      "expansion": {
-        "timestamp": "2024-10-20T11:50:47+00:00",
-        "contains": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
-            "code": "eltern",
-            "display": "Leibliche Eltern"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
-            "code": "mutter_alleinerziehend",
-            "display": "Mutter alleinerziehend"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
-            "code": "vater_alleinerziehend",
-            "display": "Vater alleinerziehend"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
-            "code": "pflegeeltern",
-            "display": "Pflegeeltern"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
-            "code": "andere_familienmitglieder",
-            "display": "Andere Familienmitglieder/Verwandte"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
-            "code": "heim",
-            "display": "in einer Einrichtung"
-          }
-        ]
-      },
-      "compose": {
-        "include": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS"
-          }
-        ]
-      }
-    },
-    {
-      "resourceType": "ValueSet",
-      "id": "SchulabschlussBerlinVS",
-      "status": "draft",
-      "name": "SchulabschlussBerlinVS",
-      "title": "SEU_EF_Berufsbildung Berlin ValueSet",
-      "description": "ValueSet, das verschiedene Schulabschlüsse enthält.",
-      "version": "0.1.0",
-      "url": "https://www.oegd.de/fhir/seu/ValueSet/SchulabschlussBerlinVS",
-      "expansion": {
-        "timestamp": "2024-10-20T11:50:47+00:00",
-        "contains": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/schulabschlussberlincs",
-            "code": "kein_hauptschulabschluss",
-            "display": "Kein Hauptschulabschluss"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/schulabschlussberlincs",
-            "code": "hauptschulabschluss_oder_weniger_als_10_klasse",
-            "display": "Hauptschluss oder weniger 10. Klasse"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/schulabschlussberlincs",
-            "code": "mittlere_reife_mittlerer_berufsabschluss_MSA_10_Klasse",
-            "display": "mittlere Reife/mittlere Berufsabschluss (MSA/10. Klasse)"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/schulabschlussberlincs",
-            "code": "abitur_fachabitur",
-            "display": "Abitur/Fachabitur"
-          }
-        ]
-      },
-      "compose": {
-        "include": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/schulabschlussberlincs"
-          }
-        ]
-      }
-    },
-    {
-      "resourceType": "ValueSet",
-      "id": "BerufstaetigkeitElternBerlinVS",
-      "status": "draft",
-      "name": "BerufstaetigkeitElternBerlinVS",
-      "title": "BerufstaetigkeitElternBerlinVS",
-      "description": "BerufstaetigkeitElternBerlinVS",
-      "version": "0.1.0",
-      "url": "https://www.oegd.de/fhir/seu/ValueSet/BerufstaetigkeitElternBerlinVS",
-      "expansion": {
-        "timestamp": "2024-06-26T15:47:43+00:00",
-        "contains": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/BerufstaetigkeitElternBerlincs",
-            "code": "nicht_erwerbstaetig_weil_finde_keine_Arbeit",
-            "display": "nicht erwerbstätig, weil finde keine Arbeit"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/BerufstaetigkeitElternBerlincs",
-            "code": "nicht_erwerbstaetig_alle_anderen_Gruende",
-            "display": "nicht erwerbstätig, weil alle anderen Gründe"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/BerufstaetigkeitElternBerlincs",
-            "code": "teilzeitbeschaeftigt",
-            "display": "teilzeitbeschäftigt"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/BerufstaetigkeitElternBerlincs",
-            "code": "vollzeitbeschaeftigt",
-            "display": "vollzeitbeschäftigt"
-          }
-        ]
-      },
-      "compose": {
-        "include": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/BerufstaetigkeitElternBerlincs"
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PersonensorgeberechtigterZusammenlebendCS"
           }
         ]
       }
     }
   ],
-  "url": "https://www.oegd.de/fhir/seu/Questionnaire/ElternbefragungBE",
-  "title": "SEU Elternfragebogen Berlin",
+  "url": "https://www.oegd.de/fhir/seu/Questionnaire/ElternbefragungHB",
+  "title": "SEU Elternfragebogen HB",
   "extension": [
     {
       "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext",
@@ -3944,15 +3754,118 @@
   "status": "draft",
   "item": [
     {
-      "linkId": "1",
+      "linkId": "0",
       "type": "group",
-      "text": "(1) Angaben zur Person",
-      "code": [
+      "text": "(0) Schule & Vorgangsnummer",
+      "item": [
         {
-          "code": "1",
-          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+          "linkId": "0.1",
+          "type": "string",
+          "text": "(0.1) Name der Schule",
+          "code": [
+            {
+              "code": "0.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "0.2",
+          "type": "string",
+          "text": "(0.2) Vorgangsnummer",
+          "code": [
+            {
+              "code": "0.2",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "0.9",
+          "type": "integer",
+          "text": "(0.9) Schulnummer der Anmeldeschule",
+          "code": [
+            {
+              "code": "0.9",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-HB"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "0.10",
+          "type": "date",
+          "text": "(0.10) Datum der Untersuchung",
+          "code": [
+            {
+              "code": "0.10",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-HB"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "0.11",
+          "type": "string",
+          "text": "(0.11) Aufnahmeschule (bezeichnet die Schule zu der das  Kind wirklich geht)",
+          "code": [
+            {
+              "code": "0.11",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-HB"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "0.12",
+          "type": "string",
+          "text": "(0.12) Ortsteilnummer (bezogen auf den Wohnort des Kindes)",
+          "code": [
+            {
+              "code": "0.12",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-HB"
+              }
+            }
+          ]
         }
-      ],
+      ]
+    },
+    {
+      "type": "group",
+      "linkId": "1",
+      "text": "(1) Personenbezogene Daten Kind",
       "item": [
         {
           "linkId": "1.1",
@@ -3995,73 +3908,6 @@
           ]
         },
         {
-          "linkId": "1.9",
-          "type": "string",
-          "text": "(1.9) PLZ",
-          "code": [
-            {
-              "code": "1.9",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ]
-        },
-        {
-          "linkId": "1.10",
-          "type": "string",
-          "text": "(1.10) Wohnort",
-          "code": [
-            {
-              "code": "1.10",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ]
-        },
-        {
-          "linkId": "1.11",
-          "type": "string",
-          "text": "(1.11) Straße",
-          "code": [
-            {
-              "code": "1.11",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ]
-        },
-        {
-          "linkId": "1.11a",
-          "type": "string",
-          "text": "(1.11a) Hausnummer",
-          "code": [
-            {
-              "code": "1.11a",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ]
-        },
-        {
-          "linkId": "2.7",
-          "type": "string",
-          "text": "(2.7) Telefonnummer",
-          "code": [
-            {
-              "code": "2.7",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ]
-        },
-        {
-          "linkId": "1.8",
-          "type": "choice",
-          "text": "(1.8) Geschlecht",
-          "code": [
-            {
-              "code": "1.8",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "answerValueSet": "#GenderDEVS"
-        },
-        {
           "linkId": "1.3",
           "type": "date",
           "text": "(1.3) Geburtsdatum",
@@ -4082,80 +3928,16 @@
           ]
         },
         {
-          "linkId": "1.6",
-          "type": "boolean",
-          "text": "(1.6) In Deutschland geboren",
+          "linkId": "1.4",
+          "type": "choice",
+          "text": "(1.4) Staatsangehörigkeit",
           "code": [
             {
-              "code": "1.6",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ]
-        },
-        {
-          "linkId": "1.6.3",
-          "type": "date",
-          "text": "(1.6.3) Seit wann lebt Ihr Kind in Deutschland (Monat/Jahr)?",
-          "code": [
-            {
-              "code": "1.6.3",
+              "code": "1.4",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
           ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BE"
-              }
-            }
-          ]
-        },
-        {
-          "linkId": "1.1.1",
-          "type": "group",
-          "text": "(1.1.1) Geschwister unter 18 Jahren",
-          "code": [
-            {
-              "code": "1.1.1",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "repeats": true,
-          "item": [
-            {
-              "linkId": "3.1.1.3",
-              "type": "string",
-              "text": "(3.1.1.3) Vorname des Geschwisters",
-              "code": [
-                {
-                  "code": "3.1.1.3",
-                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-                }
-              ],
-              "extension": [
-                {
-                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-                  "valueCoding": {
-                    "system": "urn:iso:std:iso:3166-2:de",
-                    "code": "DE-BE"
-                  }
-                }
-              ]
-            },
-            {
-              "linkId": "3.1.1.1",
-              "type": "date",
-              "text": "(3.1.1.1) Geburtsdatum des Geschwisters",
-              "code": [
-                {
-                  "code": "3.1.1.1",
-                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-                }
-              ]
-            }
-          ]
+          "answerValueSet": "#DeuevAnlage8LaenderkennzeichenVS"
         }
       ]
     },
@@ -4171,6 +3953,39 @@
       ],
       "repeats": true,
       "item": [
+        {
+          "linkId": "2.0",
+          "type": "choice",
+          "text": "(2.0) Beziehung",
+          "code": [
+            {
+              "code": "2.0",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-HH"
+              }
+            }
+          ],
+          "answerValueSet": "#PersonensorgeberechtigterBeziehungVS"
+        },
+        {
+          "answerValueSet": "#GenderDEVS",
+          "linkId": "2.1",
+          "type": "choice",
+          "text": "(2.1) Geschlecht",
+          "code": [
+            {
+              "code": "2.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
         {
           "linkId": "2.2",
           "type": "string",
@@ -4212,6 +4027,105 @@
           ]
         },
         {
+          "linkId": "2.4",
+          "type": "string",
+          "text": "(2.4) PLZ",
+          "code": [
+            {
+              "code": "2.4",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "2.5",
+          "type": "string",
+          "text": "(2.5) Wohnort",
+          "code": [
+            {
+              "code": "2.5",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "2.6",
+          "type": "string",
+          "text": "(2.6) Straße",
+          "code": [
+            {
+              "code": "2.6",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "2.7",
+          "type": "string",
+          "text": "(2.7) Telefonnummer",
+          "code": [
+            {
+              "code": "2.7",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "2.7a",
+          "type": "string",
+          "text": "(2.7a) Handynummer",
+          "code": [
+            {
+              "code": "2.7a",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-HH"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "2.8",
+          "type": "string",
+          "text": "(2.8) Email",
+          "code": [
+            {
+              "code": "2.8",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "answerValueSet": "#DeuevAnlage8LaenderkennzeichenVS",
+          "linkId": "2.9",
+          "type": "choice",
+          "text": "(2.9) Staatsangehörigkeit",
+          "code": [
+            {
+              "code": "2.9",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "answerValueSet": "#DeuevAnlage8LaenderkennzeichenVS",
+          "linkId": "2.10",
+          "type": "choice",
+          "text": "(2.10) Herkunftsland",
+          "code": [
+            {
+              "code": "2.10",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
           "linkId": "2.10a",
           "type": "boolean",
           "text": "(2.10a) Herkunftsland Deutsch?",
@@ -4232,565 +4146,35 @@
           ]
         },
         {
-          "answerValueSet": "#DeuevAnlage8LaenderkennzeichenVS",
-          "linkId": "1.4d",
+          "answerValueSet": "#language-valueset",
+          "linkId": "2.11",
           "type": "choice",
-          "text": "(1.4d) Staatsangehörigkeit: andere/weitere?",
+          "text": "(2.11) Muttersprache",
           "code": [
             {
-              "code": "1.4d",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BE"
-              }
-            }
-          ],
-          "repeats": true
-        }
-      ]
-    },
-    {
-      "answerValueSet": "#language-valueset",
-      "linkId": "6.1",
-      "type": "choice",
-      "text": "(6.1) Welche Sprachen werden Zuhause gesprochen?",
-      "code": [
-        {
-          "code": "6.1",
-          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-        }
-      ],
-      "repeats": true
-    },
-    {
-      "linkId": "11.2",
-      "type": "string",
-      "text": "(11.2) Name Kinderarzt",
-      "code": [
-        {
-          "code": "11.2",
-          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-        }
-      ]
-    },
-    {
-      "linkId": "3",
-      "type": "group",
-      "text": "(3) 2. Erkrankungen des Kindes",
-      "code": [
-        {
-          "code": "3",
-          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-        }
-      ],
-      "item": [
-        {
-          "linkId": "8.83",
-          "type": "choice",
-          "text": "(8.83) Erkrankungen des Kindes (auch frühere)",
-          "code": [
-            {
-              "code": "8.83",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BE"
-              }
-            }
-          ],
-          "answerValueSet": "#ErkrankungenKindVS",
-          "repeats": true
-        },
-        {
-          "linkId": "8.25.2",
-          "type": "boolean",
-          "text": "(8.25.2) andere wichtige Erkrankungen/Allergien/Unfälle",
-          "code": [
-            {
-              "code": "8.25.2",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BE"
-              }
-            }
-          ]
-        },
-        {
-          "enableWhen": [
-            {
-              "question": "8.25.2",
-              "operator": "=",
-              "answerBoolean": true
-            }
-          ],
-          "linkId": "8.25.3",
-          "type": "text",
-          "text": "(8.25.3) wenn ja, welche",
-          "code": [
-            {
-              "code": "8.25.3",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BE"
-              }
-            }
-          ]
-        },
-        {
-          "linkId": "8.23",
-          "type": "boolean",
-          "text": "(8.23) Regelmäßige Medikamenteneinnahme",
-          "code": [
-            {
-              "code": "8.23",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "item": [
-            {
-              "linkId": "8.23.1",
-              "type": "string",
-              "text": "(8.23.1) Welches Medikament",
-              "code": [
-                {
-                  "code": "8.23.1",
-                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-                }
-              ],
-              "enableWhen": [
-                {
-                  "question": "8.23",
-                  "operator": "=",
-                  "answerBoolean": true
-                }
-              ],
-              "repeats": true
-            }
-          ]
-        },
-        {
-          "linkId": "8.15",
-          "type": "boolean",
-          "text": "(8.15) Krankenhausaufenthalt",
-          "code": [
-            {
-              "code": "8.15",
+              "code": "2.11",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
           ]
         },
         {
-          "linkId": "8.15.1.a",
-          "type": "integer",
-          "text": "(8.15.1.a) Anzahl der Krankenhausaufenthalte/Operationen",
-          "code": [
-            {
-              "code": "8.15.1.a",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BE"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "linkId": "4",
-      "type": "group",
-      "text": "(4) 2. Erkrankungen des Kindes",
-      "code": [
-        {
-          "code": "4",
-          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-        }
-      ],
-      "item": [
-        {
-          "linkId": "9.6a",
-          "type": "boolean",
-          "text": "(9.6a) Physiotherapie / Krankengymnastik",
-          "code": [
-            {
-              "code": "9.6a",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BB"
-              }
-            }
-          ]
-        },
-        {
-          "linkId": "9.4a",
-          "type": "boolean",
-          "text": "(9.4a) Ergotherapie",
-          "code": [
-            {
-              "code": "9.4a",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BB"
-              }
-            }
-          ]
-        },
-        {
-          "linkId": "9.2ba",
-          "type": "boolean",
-          "text": "(9.2ba) Logopädie",
-          "code": [
-            {
-              "code": "9.2ba",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BB"
-              }
-            }
-          ]
-        },
-        {
-          "linkId": "9.7a",
-          "type": "boolean",
-          "text": "(9.7a) Psychologische Erziehungsberatung",
-          "code": [
-            {
-              "code": "9.7a",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BB"
-              }
-            }
-          ]
-        },
-        {
-          "answerValueSet": "#SorgenKindVS",
-          "linkId": "7.14",
-          "type": "choice",
-          "text": "(7.14) Machen Sie sich Sorgen um Ihr Kind wegen",
-          "code": [
-            {
-              "code": "7.14",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BE"
-              }
-            }
-          ]
-        },
-        {
-          "linkId": "8.30.1",
-          "type": "boolean",
-          "text": "(8.30.1) Nässt ihr Kind ein?",
-          "code": [
-            {
-              "code": "8.30.1",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BE"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "linkId": "5",
-      "type": "group",
-      "text": "(5) Betreuung des Kindes",
-      "code": [
-        {
-          "code": "5",
-          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-        }
-      ],
-      "item": [
-        {
-          "linkId": "4.9",
+          "linkId": "2.12",
           "type": "date",
-          "text": "(4.9) Seit wann besucht das Kind eine Kita?",
+          "text": "(2.12) Geburtsdatum",
           "code": [
             {
-              "code": "4.9",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-SN"
-              }
-            }
-          ]
-        },
-        {
-          "linkId": "4.6b",
-          "type": "string",
-          "text": "(4.6b) Name des Kindergartens",
-          "code": [
-            {
-              "code": "4.6b",
+              "code": "2.12",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
           ]
         },
         {
-          "linkId": "4.4",
-          "type": "date",
-          "text": "(4.4) Angabe des Datums, seit wann das Kind keine Kita mehr besucht.",
-          "code": [
-            {
-              "code": "4.4",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ]
-        },
-        {
-          "linkId": "4.5",
-          "type": "boolean",
-          "text": "(4.5) Besucht ihr Kind eine andere Form der Tagesbetreuung?",
-          "code": [
-            {
-              "code": "4.5",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "linkId": "6",
-      "type": "group",
-      "text": "(6) Lebensumfeld",
-      "code": [
-        {
-          "code": "6",
-          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-        }
-      ],
-      "item": [
-        {
-          "linkId": "1.12d",
+          "linkId": "2.13",
           "type": "choice",
-          "text": "(1.12d) Kind lebt überwiegend bei",
+          "text": "(2.13) Zusammenlebend",
           "code": [
             {
-              "code": "1.12d",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BE"
-              }
-            }
-          ],
-          "answerValueSet": "#lebensumfeld-vs"
-        },
-        {
-          "linkId": "13.1c",
-          "type": "choice",
-          "text": "(13.1c) Schulabschluss Elternteil A",
-          "code": [
-            {
-              "code": "13.1c",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BE"
-              }
-            }
-          ],
-          "answerValueSet": "#SchulabschlussBerlinVS"
-        },
-        {
-          "linkId": "13.2c",
-          "type": "choice",
-          "text": "(13.2c) Schulabschluss Elternteil B",
-          "code": [
-            {
-              "code": "13.2c",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BE"
-              }
-            }
-          ],
-          "answerValueSet": "#SchulabschlussBerlinVS"
-        },
-        {
-          "linkId": "13.3",
-          "type": "choice",
-          "text": "(13.3) Berufsabschluss 1. Elternteil",
-          "code": [
-            {
-              "code": "13.3",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "answerValueSet": "#seu-ef-berufsbildung-vs"
-        },
-        {
-          "linkId": "13.4",
-          "type": "choice",
-          "text": "(13.4) Berufsabschluss 2. Elternteil",
-          "code": [
-            {
-              "code": "13.4",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "answerValueSet": "#seu-ef-berufsbildung-vs"
-        },
-        {
-          "linkId": "13.32c",
-          "type": "choice",
-          "text": "(13.32c) Berufstätigkeit Mutter",
-          "code": [
-            {
-              "code": "13.32c",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BE"
-              }
-            }
-          ],
-          "answerValueSet": "#BerufstaetigkeitElternBerlinVS"
-        },
-        {
-          "linkId": "13.33c",
-          "type": "choice",
-          "text": "(13.33c) Berufstätigkeit Vater",
-          "code": [
-            {
-              "code": "13.33c",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BE"
-              }
-            }
-          ],
-          "answerValueSet": "#BerufstaetigkeitElternBerlinVS"
-        },
-        {
-          "linkId": "3.3",
-          "type": "integer",
-          "text": "(3.3) Aktuell im Haushalt lebende Erwachsene",
-          "code": [
-            {
-              "code": "3.3",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BB"
-              }
-            }
-          ]
-        },
-        {
-          "linkId": "3.1c",
-          "type": "integer",
-          "text": "(3.1c) Kinder im Haushalt",
-          "code": [
-            {
-              "code": "3.1c",
+              "code": "2.13",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
           ],
@@ -4802,35 +4186,50 @@
                 "code": "DE-HH"
               }
             }
-          ]
-        },
+          ],
+          "answerValueSet": "#PersonensorgeberechtigterZusammenlebendVS"
+        }
+      ]
+    },
+    {
+      "linkId": "5",
+      "type": "group",
+      "text": "(5) Schwangerschaft und Geburt",
+      "code": [
         {
-          "linkId": "12.4.1",
+          "code": "5",
+          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+        }
+      ],
+      "item": [
+        {
+          "linkId": "5.1",
           "type": "integer",
-          "text": "(12.4.1) Wieviele Personen sind Raucher/Dampfer",
+          "text": "(5.1) Dauer der Schwangerschaft (in Wochen)",
           "code": [
             {
-              "code": "12.4.1",
+              "code": "5.1",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
           ],
           "extension": [
             {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
               "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BE"
+                "code": "wk",
+                "system": "http://unitsofmeasure.org",
+                "display": "Wochen"
               }
             }
           ]
         },
         {
-          "linkId": "10.4c",
-          "type": "choice",
-          "text": "(10.4c) Wieviele Stunden am Tag beschäftigt sich Ihr Kind im Durchschnitt mit elektronischen Geräten? (elektronische Geräte sind Fernsehen, DVD, Computer, Tablet, Smartphone, Playstation und andere) ",
+          "linkId": "5.1.b",
+          "type": "integer",
+          "text": "(5.1.b) Dauer der Schwangerschaft (ergänzende Tage)",
           "code": [
             {
-              "code": "10.4c",
+              "code": "5.1.b",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
           ],
@@ -4839,39 +4238,55 @@
               "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
               "valueCoding": {
                 "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BE"
+                "code": "DE-HB"
               }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "code": "d",
+                "system": "http://unitsofmeasure.org",
+                "display": "Tage"
+              }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+              "valueInteger": 0
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+              "valueInteger": 6
             }
-          ],
-          "answerValueSet": "#SEUEFMedienkonsumBerlinVS"
+          ]
         },
         {
-          "linkId": "10.2.1",
-          "type": "boolean",
-          "text": "(10.2.1) Mein Kind hat einen eigenen Fernseher?",
+          "linkId": "5.2",
+          "type": "integer",
+          "text": "(5.2) Geburtsgewicht (in Gramm)",
           "code": [
             {
-              "code": "10.2.1",
+              "code": "5.2",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
           ],
           "extension": [
             {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
               "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BE"
+                "code": "g",
+                "system": "http://unitsofmeasure.org",
+                "display": "Gramm"
               }
             }
           ]
         },
         {
-          "linkId": "10.2.2",
-          "type": "boolean",
-          "text": "(10.2.2) andere eigene elektronische Geräte",
+          "linkId": "5.11",
+          "type": "string",
+          "text": "(5.11) APGAR",
           "code": [
             {
-              "code": "10.2.2",
+              "code": "5.11",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
           ],
@@ -4880,25 +4295,26 @@
               "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
               "valueCoding": {
                 "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BE"
+                "code": "DE-HB"
               }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/regex",
+              "valueString": "^\\d{2}\\/\\d{2}\\/\\d{2}$"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/entryFormat",
+              "valueString": "XX/XX/XX"
             }
           ]
         },
         {
-          "enableWhen": [
-            {
-              "question": "10.2.2",
-              "operator": "=",
-              "answerBoolean": true
-            }
-          ],
-          "linkId": "10.2.3",
-          "type": "text",
-          "text": "(10.2.3) wenn ja, welche",
+          "linkId": "5.12",
+          "type": "string",
+          "text": "(5.12) pH- Wert",
           "code": [
             {
-              "code": "10.2.3",
+              "code": "5.12",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
           ],
@@ -4907,8 +4323,16 @@
               "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
               "valueCoding": {
                 "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BE"
+                "code": "DE-HB"
               }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/regex",
+              "valueString": "^\\d,\\d{2}$"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/entryFormat",
+              "valueString": "X,XX"
             }
           ]
         }
