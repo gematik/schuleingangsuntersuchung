@@ -485,7 +485,7 @@ Description: "Dieses ValueSet beinhaltet eine Auswahl von Codes für die Klassif
 * ^expansion.contains[=].display = "Erkrankung(en) der Wirbelsäule"
 * ^expansion.contains[+].system = Canonical(FruehereErkrankungenCS)
 * ^expansion.contains[=].code = #sonstige_welche
-* ^expansion.contains[=].display = "sonstige Erkrankung(en) / welche?"
+* ^expansion.contains[=].display = "sonstige Erkrankung(en)?"
 
 ValueSet: DerzeitigeErkrankungenVS
 Id: DerzeitigeErkrankungenVS
@@ -497,7 +497,7 @@ Description: "ValueSet für derzeitige Erkrankungen"
 * DerzeitigeErkrankungenCS#diabetes "Diabetes (Zuckerkrankheit)"
 * DerzeitigeErkrankungenCS#herz_kreislauf_erkrankungen "Herz-Kreislauf-Erkrankung(en)"
 * DerzeitigeErkrankungenCS#nieren_blasenerkrankungen "Nieren- /Blasenerkrankung(en)"
-* DerzeitigeErkrankungenCS#sonstige_welche "sonstige Erkrankung(en) / welche?"
+* DerzeitigeErkrankungenCS#sonstige_welche "sonstige Erkrankung(en)"
 * ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
 * ^expansion.contains[+].system = Canonical(DerzeitigeErkrankungenCS)
 * ^expansion.contains[=].code = #sehstoerung
@@ -519,7 +519,7 @@ Description: "ValueSet für derzeitige Erkrankungen"
 * ^expansion.contains[=].display = "Nieren- /Blasenerkrankung(en)"
 * ^expansion.contains[+].system = Canonical(DerzeitigeErkrankungenCS)
 * ^expansion.contains[=].code = #sonstige_welche
-* ^expansion.contains[=].display = "sonstige Erkrankung(en) / welche?"
+* ^expansion.contains[=].display = "sonstige Erkrankung(en)"
 
 // Einmal im Elternfragebogen
 ValueSet: ErkrankungenKindVS

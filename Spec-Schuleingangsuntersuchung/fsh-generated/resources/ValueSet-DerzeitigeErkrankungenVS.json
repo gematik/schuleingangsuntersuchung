@@ -43,7 +43,7 @@
       {
         "system": "https://www.oegd.de/fhir/seu/CodeSystem/DerzeitigeErkrankungenCS",
         "code": "sonstige_welche",
-        "display": "sonstige Erkrankung(en) / welche?"
+        "display": "sonstige Erkrankung(en)"
       }
     ]
   },
@@ -78,7 +78,7 @@
           },
           {
             "code": "sonstige_welche",
-            "display": "sonstige Erkrankung(en) / welche?"
+            "display": "sonstige Erkrankung(en)"
           }
         ]
       }
