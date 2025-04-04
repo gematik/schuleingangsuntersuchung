@@ -816,7 +816,9 @@
         "id": "Patient.contact:Personensorgeberechtigte.relationship.coding",
         "path": "Patient.contact.relationship.coding",
         "patternCoding": {
-          "code": "N"
+          "code": "N",
+          "system": "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
+          "display": "Personensorgeberechtigter"
         }
       },
       {
@@ -908,7 +910,9 @@
         "id": "Patient.contact:Kindertagesstaette.relationship.coding",
         "path": "Patient.contact.relationship.coding",
         "patternCoding": {
-          "code": "S"
+          "code": "U",
+          "system": "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
+          "display": "Kindertagesstätte"
         }
       },
       {

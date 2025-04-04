@@ -116,6 +116,8 @@ Id: Person
   * relationship 1.. MS
     * coding
       * ^patternCoding.code = #N
+      * ^patternCoding.system = "http://hl7.org/fhir/ValueSet/patient-contactrelationship"
+      * ^patternCoding.display = "Personensorgeberechtigter"
   * name 1.. MS 
   * name only HumannameDeBasis
   * address 1.. MS
@@ -123,7 +125,9 @@ Id: Person
 * contact[Kindertagesstaette]
   * relationship 1.. MS
     * coding
-      * ^patternCoding.code = #S
+      * ^patternCoding.code = #U
+      * ^patternCoding.system = "http://hl7.org/fhir/ValueSet/patient-contactrelationship"
+      * ^patternCoding.display = "Kindertagesstätte"
   * extension contains KiTaName named KiTaName 0..*
   * extension contains KiTaID named KiTaID 0..*
   * address 1.. MS
@@ -254,16 +258,20 @@ Usage: #example
 * address[Postfach].country = "DE"
 * contact[Personensorgeberechtigte]
   * relationship.coding.code = #N
+  * relationship.coding.system = "http://hl7.org/fhir/ValueSet/patient-contactrelationship"
+  * relationship.coding.display = "Personensorgeberechtigter"
   * name
     * given = "peter"
   * address
     * type = #both
     * city = "Fulda"
 * contact[Kindertagesstaette]
-  * relationship.coding.code = #S
-  * extension[+].url = "KiTaName"
+  * relationship.coding.code = #U
+  * relationship.coding.system = "http://hl7.org/fhir/ValueSet/patient-contactrelationship"
+  * relationship.coding.display = "Kindertagesstätte"
+  * extension[+].url = Canonical(KiTaName)
   * extension[=].valueString = "Kita Nummer 1"
-  * extension[+].url = "KiTaID"
+  * extension[+].url = Canonical(KiTaID)
   * extension[=].valueString = "kitak13h1k3h1kj2h"
   * address
     * type = #both

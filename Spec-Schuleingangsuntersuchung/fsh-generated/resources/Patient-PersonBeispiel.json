@@ -119,7 +119,9 @@
         {
           "coding": [
             {
-              "code": "N"
+              "code": "N",
+              "system": "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
+              "display": "Personensorgeberechtigter"
             }
           ]
         }
@@ -139,18 +141,20 @@
         {
           "coding": [
             {
-              "code": "S"
+              "code": "U",
+              "system": "http://hl7.org/fhir/ValueSet/patient-contactrelationship",
+              "display": "Kindertagesstätte"
             }
           ]
         }
       ],
       "extension": [
         {
-          "url": "KiTaName",
+          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/kitaname",
           "valueString": "Kita Nummer 1"
         },
         {
-          "url": "KiTaID",
+          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/kitaid",
           "valueString": "kitak13h1k3h1kj2h"
         }
       ],
