@@ -122,6 +122,7 @@ Id: Person
   * name only HumannameDeBasis
   * address 1.. MS
   * address only AddressDeBasis
+  * extension contains ContactBirthDate named ContactBirthDate 0..*
 * contact[Kindertagesstaette]
   * relationship 1.. MS
     * coding
@@ -260,6 +261,8 @@ Usage: #example
   * relationship.coding.code = #N
   * relationship.coding.system = "http://hl7.org/fhir/ValueSet/patient-contactrelationship"
   * relationship.coding.display = "Personensorgeberechtigter"
+  * extension[+].url = Canonical(ContactBirthDate)
+  * extension[=].valueDate = "1934-03-19"
   * name
     * given = "peter"
   * address
@@ -291,3 +294,8 @@ Id: kitaid
 Title: "KiTa ID as String"
 Description: "Allows representing a KiTa name as an ID"
 * valueString 1..1
+Extension: ContactBirthDate
+Id: contactbirthdate
+Title: "Birth date of a contact as Date"
+Description: "Allows adding a birthdate to a contact"
+* valueDate 1..1

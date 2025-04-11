@@ -1612,8 +1612,8 @@
     "fshName": "PersonBeispiel",
     "fshType": "Instance",
     "fshFile": "Person.fsh",
-    "startLine": 191,
-    "endLine": 280
+    "startLine": 192,
+    "endLine": 283
   },
   {
     "outputFile": "Questionnaire-SEU-Elternbefragung-BB.json",
@@ -1813,63 +1813,63 @@
     "fshType": "Profile",
     "fshFile": "Person.fsh",
     "startLine": 1,
-    "endLine": 145
+    "endLine": 146
   },
   {
     "outputFile": "StructureDefinition-PersonDeutschkenntnisEX.json",
     "fshName": "PersonDeutschkenntnisEX",
     "fshType": "Extension",
     "fshFile": "Person.fsh",
-    "startLine": 184,
-    "endLine": 189
+    "startLine": 185,
+    "endLine": 190
   },
   {
     "outputFile": "StructureDefinition-PersonMigrationshintergrundEX.json",
     "fshName": "PersonMigrationshintergrundEX",
     "fshType": "Extension",
     "fshFile": "Person.fsh",
-    "startLine": 177,
-    "endLine": 182
+    "startLine": 178,
+    "endLine": 183
   },
   {
     "outputFile": "StructureDefinition-PersonUebermittlungsssperreAdressbuchEX.json",
     "fshName": "PersonUebermittlungsssperreAdressbuchEX",
     "fshType": "Extension",
     "fshFile": "Person.fsh",
-    "startLine": 165,
-    "endLine": 169
+    "startLine": 166,
+    "endLine": 170
   },
   {
     "outputFile": "StructureDefinition-PersonUebermittlungsssperreBundeswehrEX.json",
     "fshName": "PersonUebermittlungsssperreBundeswehrEX",
     "fshType": "Extension",
     "fshFile": "Person.fsh",
-    "startLine": 171,
-    "endLine": 175
+    "startLine": 172,
+    "endLine": 176
   },
   {
     "outputFile": "StructureDefinition-PersonUebermittlungsssperreJubilaenEX.json",
     "fshName": "PersonUebermittlungsssperreJubilaenEX",
     "fshType": "Extension",
     "fshFile": "Person.fsh",
-    "startLine": 159,
-    "endLine": 163
+    "startLine": 160,
+    "endLine": 164
   },
   {
     "outputFile": "StructureDefinition-PersonUebermittlungsssperrePolitikEX.json",
     "fshName": "PersonUebermittlungsssperrePolitikEX",
     "fshType": "Extension",
     "fshFile": "Person.fsh",
-    "startLine": 153,
-    "endLine": 157
+    "startLine": 154,
+    "endLine": 158
   },
   {
     "outputFile": "StructureDefinition-PersonUebermittlungsssperreReligionEX.json",
     "fshName": "PersonUebermittlungsssperreReligionEX",
     "fshType": "Extension",
     "fshFile": "Person.fsh",
-    "startLine": 147,
-    "endLine": 151
+    "startLine": 148,
+    "endLine": 152
   },
   {
     "outputFile": "StructureDefinition-Risikofaktor.json",
@@ -2040,20 +2040,28 @@
     "endLine": 5
   },
   {
+    "outputFile": "StructureDefinition-contactbirthdate.json",
+    "fshName": "ContactBirthDate",
+    "fshType": "Extension",
+    "fshFile": "Person.fsh",
+    "startLine": 297,
+    "endLine": 301
+  },
+  {
     "outputFile": "StructureDefinition-kitaid.json",
     "fshName": "KiTaID",
     "fshType": "Extension",
     "fshFile": "Person.fsh",
-    "startLine": 289,
-    "endLine": 293
+    "startLine": 292,
+    "endLine": 296
   },
   {
     "outputFile": "StructureDefinition-kitaname.json",
     "fshName": "KiTaName",
     "fshType": "Extension",
     "fshFile": "Person.fsh",
-    "startLine": 284,
-    "endLine": 288
+    "startLine": 287,
+    "endLine": 291
   },
   {
     "outputFile": "ValueSet-AErztlichFestgestellteKrankheitenVS.json",

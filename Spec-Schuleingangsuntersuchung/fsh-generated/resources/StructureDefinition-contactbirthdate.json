@@ -1,0 +1,69 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "contactbirthdate",
+  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/contactbirthdate",
+  "version": "0.1.0",
+  "name": "ContactBirthDate",
+  "title": "Birth date of a contact as Date",
+  "status": "draft",
+  "description": "Allows adding a birthdate to a contact",
+  "fhirVersion": "4.0.1",
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Birth date of a contact as Date",
+        "definition": "Allows adding a birthdate to a contact"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://www.oegd.de/fhir/seu/StructureDefinition/contactbirthdate"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Extension.value[x]:valueDate",
+        "path": "Extension.value[x]",
+        "sliceName": "valueDate",
+        "min": 1,
+        "max": "1",
+        "type": [
+          {
+            "code": "date"
+          }
+        ]
+      }
+    ]
+  }
+}

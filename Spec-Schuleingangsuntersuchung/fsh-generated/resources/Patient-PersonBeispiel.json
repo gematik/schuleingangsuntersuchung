@@ -126,6 +126,12 @@
           ]
         }
       ],
+      "extension": [
+        {
+          "url": "https://www.oegd.de/fhir/seu/StructureDefinition/contactbirthdate",
+          "valueDate": "1934-03-19"
+        }
+      ],
       "name": {
         "given": [
           "peter"

@@ -807,6 +807,35 @@
         "mustSupport": true
       },
       {
+        "id": "Patient.contact:Personensorgeberechtigte.extension",
+        "path": "Patient.contact.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Patient.contact:Personensorgeberechtigte.extension:ContactBirthDate",
+        "path": "Patient.contact.extension",
+        "sliceName": "ContactBirthDate",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.oegd.de/fhir/seu/StructureDefinition/contactbirthdate"
+            ]
+          }
+        ]
+      },
+      {
         "id": "Patient.contact:Personensorgeberechtigte.relationship",
         "path": "Patient.contact.relationship",
         "min": 1,
