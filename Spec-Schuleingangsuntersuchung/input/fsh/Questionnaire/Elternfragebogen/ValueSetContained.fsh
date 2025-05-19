@@ -1667,6 +1667,52 @@ Description: "Berufstätigkeit__Eltern_Berlin"
 * #teilzeitbeschaeftigt "teilzeitbeschäftigt"
 * #vollzeitbeschaeftigt "vollzeitbeschäftigt"
 
+ValueSet: SEU_EF_AlterKindEinreiseVS
+Id: seu-ef-alter-kind-einreise-vs
+Title: "SEU_EF_Alter Kind Einreise ValueSet"
+Description: "ValueSet, das das Alter eines Kindes bei Einreise enthält."
+* include codes from system SEU_EF_AlterKindCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
+* ^expansion.contains[0].system = Canonical(SEU_EF_AlterKindCS)
+* ^expansion.contains[=].code = #hier_geboren
+* ^expansion.contains[=].display = "Hier geboren"
+* ^expansion.contains[+].system = Canonical(SEU_EF_AlterKindCS)
+* ^expansion.contains[=].code = #unter_1_jahr
+* ^expansion.contains[=].display = "Unter 1 Jahr"
+* ^expansion.contains[+].system = Canonical(SEU_EF_AlterKindCS)
+* ^expansion.contains[=].code = #1_bis_1_5_jahre
+* ^expansion.contains[=].display = ">= 1 Jahr bis 1 ½ Jahre"
+* ^expansion.contains[+].system = Canonical(SEU_EF_AlterKindCS)
+* ^expansion.contains[=].code = #1_5_bis_2_jahre
+* ^expansion.contains[=].display = ">= 1 ½ Jahre bis 2 Jahre"
+* ^expansion.contains[+].system = Canonical(SEU_EF_AlterKindCS)
+* ^expansion.contains[=].code = #2_bis_2_5_jahre
+* ^expansion.contains[=].display = ">= 2 Jahre bis 2 ½ Jahre"
+* ^expansion.contains[+].system = Canonical(SEU_EF_AlterKindCS)
+* ^expansion.contains[=].code = #2_5_bis_3_jahre
+* ^expansion.contains[=].display = ">= 2 ½ Jahre bis 3 Jahre"
+* ^expansion.contains[+].system = Canonical(SEU_EF_AlterKindCS)
+* ^expansion.contains[=].code = #3_bis_3_5_jahre
+* ^expansion.contains[=].display = ">= 3 Jahre bis 3 ½ Jahre"
+* ^expansion.contains[+].system = Canonical(SEU_EF_AlterKindCS)
+* ^expansion.contains[=].code = #3_5_bis_4_jahre
+* ^expansion.contains[=].display = ">= 3 ½ Jahre bis 4 Jahre"
+* ^expansion.contains[+].system = Canonical(SEU_EF_AlterKindCS)
+* ^expansion.contains[=].code = #4_bis_4_5_jahre
+* ^expansion.contains[=].display = ">= 4 Jahre bis 4 ½ Jahre"
+* ^expansion.contains[+].system = Canonical(SEU_EF_AlterKindCS)
+* ^expansion.contains[=].code = #5_bis_5_5_jahre
+* ^expansion.contains[=].display = ">= 5 Jahre bis 5 ½ Jahre"
+* ^expansion.contains[+].system = Canonical(SEU_EF_AlterKindCS)
+* ^expansion.contains[=].code = #5_5_bis_6_jahre
+* ^expansion.contains[=].display = ">= 5 ½ Jahre bis 6 Jahre"
+* ^expansion.contains[+].system = Canonical(SEU_EF_AlterKindCS)
+* ^expansion.contains[=].code = #6_bis_6_5_jahre
+* ^expansion.contains[=].display = ">= 6 Jahre bis 6 ½ Jahre"
+* ^expansion.contains[+].system = Canonical(SEU_EF_AlterKindCS)
+* ^expansion.contains[=].code = #keine_angaben
+* ^expansion.contains[=].display = "Keine Angaben"
+
 ValueSet: SEU_EF_AlterKindVS
 Id: seu-ef-alter-kind-vs
 Title: "SEU_EF_Alter Kind ValueSet"
@@ -1674,9 +1720,6 @@ Description: "ValueSet, das das Alter eines Kindes enthält."
 * include codes from system SEU_EF_AlterKindCS
 * ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
 * ^expansion.contains[0].system = Canonical(SEU_EF_AlterKindCS)
-* ^expansion.contains[=].code = #hier_geboren
-* ^expansion.contains[=].display = "Hier geboren"
-* ^expansion.contains[+].system = Canonical(SEU_EF_AlterKindCS)
 * ^expansion.contains[=].code = #unter_1_jahr
 * ^expansion.contains[=].display = "Unter 1 Jahr"
 * ^expansion.contains[+].system = Canonical(SEU_EF_AlterKindCS)
@@ -1849,17 +1892,17 @@ Description: "ValueSet, das verschiedene Zeiträume enthält."
 * ^expansion.contains[=].code = #nie
 * ^expansion.contains[=].display = "Nie"
 * ^expansion.contains[+].system = Canonical(SEU_EF_ZeitraumCS)
-* ^expansion.contains[=].code = #2_3_jahre
-* ^expansion.contains[=].display = "2-3 Jahre"
-* ^expansion.contains[+].system = Canonical(SEU_EF_ZeitraumCS)
 * ^expansion.contains[=].code = #bis_zu_1_jahr
 * ^expansion.contains[=].display = "Bis zu 1 Jahr"
 * ^expansion.contains[+].system = Canonical(SEU_EF_ZeitraumCS)
-* ^expansion.contains[=].code = #3_jahre_und_laenger
-* ^expansion.contains[=].display = "3 Jahre und länger"
-* ^expansion.contains[+].system = Canonical(SEU_EF_ZeitraumCS)
 * ^expansion.contains[=].code = #1_2_jahre
 * ^expansion.contains[=].display = "1-2 Jahre"
+* ^expansion.contains[+].system = Canonical(SEU_EF_ZeitraumCS)
+* ^expansion.contains[=].code = #2_3_jahre
+* ^expansion.contains[=].display = "2-3 Jahre"
+* ^expansion.contains[+].system = Canonical(SEU_EF_ZeitraumCS)
+* ^expansion.contains[=].code = #3_jahre_und_laenger
+* ^expansion.contains[=].display = "3 Jahre und länger"
 
 CodeSystem: SEU_EF_DauerCS
 Id: seu-ef-dauer-cs

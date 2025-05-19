@@ -5596,6 +5596,88 @@
         "contains": [
           {
             "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-alter-kind-cs",
+            "code": "unter_1_jahr",
+            "display": "Unter 1 Jahr"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-alter-kind-cs",
+            "code": "1_bis_1_5_jahre",
+            "display": ">= 1 Jahr bis 1 ½ Jahre"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-alter-kind-cs",
+            "code": "1_5_bis_2_jahre",
+            "display": ">= 1 ½ Jahre bis 2 Jahre"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-alter-kind-cs",
+            "code": "2_bis_2_5_jahre",
+            "display": ">= 2 Jahre bis 2 ½ Jahre"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-alter-kind-cs",
+            "code": "2_5_bis_3_jahre",
+            "display": ">= 2 ½ Jahre bis 3 Jahre"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-alter-kind-cs",
+            "code": "3_bis_3_5_jahre",
+            "display": ">= 3 Jahre bis 3 ½ Jahre"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-alter-kind-cs",
+            "code": "3_5_bis_4_jahre",
+            "display": ">= 3 ½ Jahre bis 4 Jahre"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-alter-kind-cs",
+            "code": "4_bis_4_5_jahre",
+            "display": ">= 4 Jahre bis 4 ½ Jahre"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-alter-kind-cs",
+            "code": "5_bis_5_5_jahre",
+            "display": ">= 5 Jahre bis 5 ½ Jahre"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-alter-kind-cs",
+            "code": "5_5_bis_6_jahre",
+            "display": ">= 5 ½ Jahre bis 6 Jahre"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-alter-kind-cs",
+            "code": "6_bis_6_5_jahre",
+            "display": ">= 6 Jahre bis 6 ½ Jahre"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-alter-kind-cs",
+            "code": "keine_angaben",
+            "display": "Keine Angaben"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-alter-kind-cs"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "seu-ef-alter-kind-einreise-vs",
+      "status": "draft",
+      "name": "SEU_EF_AlterKindEinreiseVS",
+      "title": "SEU_EF_Alter Kind Einreise ValueSet",
+      "description": "ValueSet, das das Alter eines Kindes bei Einreise enthält.",
+      "version": "0.1.0",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-alter-kind-einreise-vs",
+      "expansion": {
+        "timestamp": "2024-10-20T11:50:47+00:00",
+        "contains": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-alter-kind-cs",
             "code": "hier_geboren",
             "display": "Hier geboren"
           },
@@ -5824,23 +5906,23 @@
           },
           {
             "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-zeitraum-cs",
-            "code": "2_3_jahre",
-            "display": "2-3 Jahre"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-zeitraum-cs",
             "code": "bis_zu_1_jahr",
             "display": "Bis zu 1 Jahr"
           },
           {
             "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-zeitraum-cs",
-            "code": "3_jahre_und_laenger",
-            "display": "3 Jahre und länger"
+            "code": "1_2_jahre",
+            "display": "1-2 Jahre"
           },
           {
             "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-zeitraum-cs",
-            "code": "1_2_jahre",
-            "display": "1-2 Jahre"
+            "code": "2_3_jahre",
+            "display": "2-3 Jahre"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-zeitraum-cs",
+            "code": "3_jahre_und_laenger",
+            "display": "3 Jahre und länger"
           }
         ]
       },
@@ -6378,7 +6460,7 @@
               "answerBoolean": false
             }
           ],
-          "answerValueSet": "#seu-ef-alter-kind-vs",
+          "answerValueSet": "#seu-ef-alter-kind-einreise-vs",
           "required": true
         },
         {
@@ -6413,6 +6495,12 @@
             {
               "code": "1.9",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/regex",
+              "valueString": "^[0-9]{5}$"
             }
           ],
           "required": true
@@ -6554,6 +6642,12 @@
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
           ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/regex",
+              "valueString": "^[0-9]{5}$"
+            }
+          ],
           "required": true
         },
         {
@@ -6589,6 +6683,12 @@
               "code": "2.7",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/regex",
+              "valueString": "^(\\+|0)(\\d|\\s)*\\d$"
+            }
           ]
         },
         {
@@ -6599,6 +6699,12 @@
             {
               "code": "2.8",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/regex",
+              "valueString": "^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$"
             }
           ]
         },
@@ -6874,7 +6980,7 @@
         {
           "linkId": "4.1a",
           "type": "choice",
-          "text": "(4.1a) Wie alt war das Kind bei der Aufnahme in die KiTa?",
+          "text": "(4.1a) Wie alt war das Kind bei der Aufnahme in die Kita?",
           "code": [
             {
               "code": "4.1a",
@@ -6918,7 +7024,7 @@
         {
           "linkId": "4.1c",
           "type": "choice",
-          "text": "(4.1c) Dauer Kindertagebetreuung in Jahren",
+          "text": "(4.1c) Dauer Kindertagesbetreuung in Jahren",
           "code": [
             {
               "code": "4.1c",
@@ -7485,7 +7591,7 @@
         {
           "linkId": "8.27",
           "type": "boolean",
-          "text": "(8.27) Wurde ihr Kind operiert",
+          "text": "(8.27) Wurde Ihr Kind operiert",
           "code": [
             {
               "code": "8.27",
@@ -7551,7 +7657,7 @@
         {
           "linkId": "8.28a",
           "type": "boolean",
-          "text": "(8.28a) Hatte ihr Kind einen Unfall",
+          "text": "(8.28a) Hatte Ihr Kind einen Unfall",
           "code": [
             {
               "code": "8.28a",
@@ -7563,7 +7669,7 @@
         {
           "linkId": "8.28.g",
           "type": "group",
-          "text": "(8.28.g) Hatte ihr Kind einen Unfall",
+          "text": "(8.28.g) Hatte Ihr Kind einen Unfall",
           "code": [
             {
               "code": "8.28.g",
@@ -7619,7 +7725,7 @@
         {
           "linkId": "8.30",
           "type": "boolean",
-          "text": "(8.30) Wurde Ihr Kind jemals aufgrund von Unfallverletzungen von einem Arzt behandelt??",
+          "text": "(8.30) Wurde Ihr Kind jemals aufgrund von Unfallverletzungen von einem Arzt behandelt?",
           "code": [
             {
               "code": "8.30",
@@ -7809,7 +7915,7 @@
           "required": true,
           "linkId": "8.39",
           "type": "boolean",
-          "text": "(8.39) Erkrankungen Fieberkrampf/Krampsanfall",
+          "text": "(8.39) Erkrankungen Fieberkrampf/Krampfanfall",
           "code": [
             {
               "code": "8.39",
@@ -8146,7 +8252,7 @@
         {
           "linkId": "8.54",
           "type": "choice",
-          "text": "(8.54) Unfälle Knochenbrücke/Weichteilverletzungen",
+          "text": "(8.54) Unfälle Knochenbrüche/Weichteilverletzungen",
           "code": [
             {
               "code": "8.54",
@@ -8393,7 +8499,7 @@
         {
           "linkId": "9.1a",
           "type": "boolean",
-          "text": "(9.1a) Werden oder wurden bei Ihrem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)?",
+          "text": "(9.1a) Werden oder wurden bei Ihrem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)",
           "code": [
             {
               "code": "9.1a",
@@ -8435,7 +8541,7 @@
             {
               "linkId": "9.11",
               "type": "boolean",
-              "text": "(9.11) Fördermaßn. Integration in Regel-KiTa",
+              "text": "(9.11) Fördermaßn. Integration in Regel-Kita",
               "code": [
                 {
                   "code": "9.11",
@@ -8456,7 +8562,7 @@
             {
               "linkId": "9.12",
               "type": "boolean",
-              "text": "(9.12) Fördermaßn. FörderKiTa/Integrative KiTa",
+              "text": "(9.12) Fördermaßn. FörderKita/Integrative Kita",
               "code": [
                 {
                   "code": "9.12",

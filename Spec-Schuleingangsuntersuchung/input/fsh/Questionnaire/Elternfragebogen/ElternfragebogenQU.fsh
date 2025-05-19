@@ -45,6 +45,7 @@ Description: "Elternbefragung"
 * contained[+] = SEU_EF_OperationenVS
 * contained[+] = SEU_EF_UnfallVS
 * contained[+] = SEU_EF_AlterKindVS
+* contained[+] = SEU_EF_AlterKindEinreiseVS
 * contained[+] = SEU_EF_SchwangerschaftVS
 * contained[+] = SEU_EF_UnfallortVS
 * contained[+] = SEU_EF_BehandlungstypVS
@@ -219,7 +220,7 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItemWithSource(1.6.1a, #choice, Wie alt war das Kind bei Einreise nach Deutschland?, #DE-SL)
     * insert enableWhenBoolean(1.6, =, false)
-    * answerValueSet = Canonical(SEU_EF_AlterKindVS)
+    * answerValueSet = Canonical(SEU_EF_AlterKindEinreiseVS)
   * item[+]
     * insert addItem(1.7, #string, Geburtsort)
   * item[+]
@@ -227,6 +228,7 @@ Description: "Elternbefragung"
     * answerValueSet = Canonical(GenderDEVS)
   * item[+]
     * insert addItem(1.9, #string, PLZ)
+    * insert regEx([["^[0-9]{5}$"]])
   * item[+]
     * insert addItem(1.10, #string, Wohnort)
   * item[+]
@@ -293,16 +295,19 @@ Description: "Elternbefragung"
     * insert initialExpression("%patient.name[0].given[0]")
   * item[+]
     * insert addItem(2.4, #string, PLZ)
+    * insert regEx([["^[0-9]{4,5}$"]])
   * item[+]
     * insert addItem(2.5, #string, Wohnort)
   * item[+]
     * insert addItem(2.6, #string, Straße)
   * item[+]
     * insert addItem(2.7, #string, Telefonnummer)
+    * insert regEx([["^(\\+|0)(\\d|\\s)*\\d$"]])
   * item[+]
     * insert addItemWithSource(2.7a, #string, [[Handynummer]], #DE-HH)
   * item[+]
     * insert addItem(2.8, #string, Email)
+    * insert regEx([["^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$"]])
   * item[+]
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
     * insert addItem(2.9, #choice, Staatsangehörigkeit)
@@ -377,7 +382,7 @@ Description: "Elternbefragung"
       * answerValueSet = Canonical(icd10gm-2024)
       * repeats = true
     * item[+]
-      * insert addItemWithSource(3.2.4b, #boolean, [[Ist ihr Kind an Windpocken erkrankt]], #DE-HE)
+      * insert addItemWithSource(3.2.4b, #boolean, [[Ist Ihr Kind an Windpocken erkrankt]], #DE-HE)
     * item[+]
       * insert addItem(3.2.5, #choice, Chronische Erkrankung)
       * answerValueSet = Canonical(ChronischeKrankheitenVS)
@@ -424,13 +429,13 @@ Description: "Elternbefragung"
     * insert addItemWithSource(4.1z, #choice, [[Dauer Krippen-/ KITA-/ Kindergartenbesuch (in Jahren)]], #DE-BY)
     * answerValueSet = Canonical(SEU_UB_AntwortKindergartenBesuchVS)
   * item[+]
-    * insert addItemWithSource(4.1a, #choice, Wie alt war das Kind bei der Aufnahme in die KiTa?, #DE-SL)
+    * insert addItemWithSource(4.1a, #choice, Wie alt war das Kind bei der Aufnahme in die Kita?, #DE-SL)
     * answerValueSet = Canonical(SEU_EF_AlterKindVS)
   * item[+]
     * insert addItemWithSource(4.1b, #choice, Wie lange besucht Ihr Kind bis jetzt eine Kindertageseinrichtung?, #DE-BW)
     * answerValueSet = Canonical(SEU_EF_DauerBWVS)
   * item[+]
-    * insert addItemWithSource(4.1c, #choice, [[Dauer Kindertagebetreuung in Jahren]], #DE-BB)
+    * insert addItemWithSource(4.1c, #choice, [[Dauer Kindertagesbetreuung in Jahren]], #DE-BB)
     * answerValueSet = Canonical(SEU_EF_DauerBBVS)
   * item[+]
     * insert addItemWithSource(4.1d, #choice, [[Dauer Besuch Kita/Krippe]], #DE-HE)
@@ -440,7 +445,7 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItem(4.4, #date, [[Angabe des Datums, seit wann das Kind keine Kita mehr besucht.]])
   * item[+]
-    * insert addItem(4.5, #boolean, Besucht ihr Kind eine andere Form der Tagesbetreuung?)
+    * insert addItem(4.5, #boolean, Besucht Ihr Kind eine andere Form der Tagesbetreuung?)
   * item[+]
     * insert addItemWithSource(4.5a, #string, [[Art der Tagesbetreuung?]], #DE-BB)
     * insert enableWhenBoolean(4.5, =, true)
@@ -525,7 +530,7 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItem(5.3b, #integer, [[Kopfumfang (in cm)]])
   * item[+]
-    * insert addItem(5.3c, #integer, [[In welcher SS-Woche wurde ihr Kind geboren?]])
+    * insert addItem(5.3c, #integer, [[In welcher SS-Woche wurde Ihr Kind geboren?]])
   * item[+]
     * insert addItem(5.4, #boolean, [[Waren Geburtsgewicht und Geburtslänge normal?]])
   * item[+]
@@ -981,7 +986,7 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItemWithSource(8.26b, #text, [[Sonstige gesundheitliche Probleme, die hinsichtlich der Einschulung besprochen werden sollen]], #DE-ST)
   * item[+]
-    * insert addItem(8.27, #boolean, [[Wurde ihr Kind operiert]])
+    * insert addItem(8.27, #boolean, [[Wurde Ihr Kind operiert]])
     * item[+]
       * insert addItem(8.27.1, #choice, [[Wie fand die Operation statt?]])
       * insert enableWhenBoolean(8.27, =, true)
@@ -997,11 +1002,11 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItemWithSource(8.27a, #boolean, [[Ambulante Operation(en)]], #DE-ST)
   * item[+]
-    * insert addItem(8.28a, #boolean, [[Hatte ihr Kind einen Unfall]])
+    * insert addItem(8.28a, #boolean, [[Hatte Ihr Kind einen Unfall]])
   * item[+]
     * insert addItemWithSource(8.28b, #boolean, [[Hatte  Ihr Kind jemals einen Unfall, der ärztlich behandelt wurde?]], #DE-BB)
   * item[+]
-    * insert addItem(8.28.g, #group, [[Hatte ihr Kind einen Unfall]])
+    * insert addItem(8.28.g, #group, [[Hatte Ihr Kind einen Unfall]])
     * insert enableWhenBoolean(8.28a, =, true)
     * insert enableWhenBoolean(8.28b, =, true)
     * enableBehavior = #any
@@ -1023,9 +1028,9 @@ Description: "Elternbefragung"
       * insert addItem(8.29.1, #string, [[Welche sonstige Befindlichkeitstörung?]])
       * insert enableWhenCode(8.29, =, AllgemeineBeschwerdenCS, sonstige)
   * item[+]
-    * insert addItemWithSource(8.30, #boolean, [[Wurde Ihr Kind jemals aufgrund von Unfallverletzungen von einem Arzt behandelt??]], #DE-SL)
+    * insert addItemWithSource(8.30, #boolean, [[Wurde Ihr Kind jemals aufgrund von Unfallverletzungen von einem Arzt behandelt?]], #DE-SL)
   * item[+]
-    * insert addItemWithSource(8.30.1, #boolean, [[Nässt ihr Kind ein?]], #DE-BE)
+    * insert addItemWithSource(8.30.1, #boolean, [[Nässt Ihr Kind ein?]], #DE-BE)
   * item[+]
     * insert addItemWithSource(8.31, #boolean, [[Einnässen tags]], #DE-SL)
   * item[+]
@@ -1043,7 +1048,7 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItemWithSource(8.38, #boolean, [[Erkrankungen Pseudocroup]], #DE-SL)
   * item[+]
-    * insert addItemWithSource(8.39, #boolean, [[Erkrankungen Fieberkrampf/Krampsanfall]], #DE-SL)
+    * insert addItemWithSource(8.39, #boolean, [[Erkrankungen Fieberkrampf/Krampfanfall]], #DE-SL)
   * item[+]
     * insert addItemWithSource(8.40, #boolean, [[Erkrankungen Harnwegserkrankungen]], #DE-SL)
   * item[+]
@@ -1077,7 +1082,7 @@ Description: "Elternbefragung"
     * insert addItemWithSource(8.53, #choice, [[Unfälle Intoxikation]], #DE-SL)
     * answerValueSet = Canonical(SEU_EF_UnfallortVS)
   * item[+]
-    * insert addItemWithSource(8.54, #choice, [[Unfälle Knochenbrücke/Weichteilverletzungen]], #DE-SL)
+    * insert addItemWithSource(8.54, #choice, [[Unfälle Knochenbrüche/Weichteilverletzungen]], #DE-SL)
     * answerValueSet = Canonical(SEU_EF_UnfallortVS)
   * item[+]
     * insert addItemWithSource(8.55, #choice, [[Unfälle Schwere Kopfverletzungen]], #DE-SL)
@@ -1175,7 +1180,7 @@ Description: "Elternbefragung"
     * insert addItemWithSource(9.1c, #choice, [[Sprachtherapie]], #DE-BY)
     * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
   * item[+]
-    * insert addItemWithSource(9.1a, #boolean, [[Werden oder wurden bei Ihrem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)?]], #DE-SL)    
+    * insert addItemWithSource(9.1a, #boolean, [[Werden oder wurden bei Ihrem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)]], #DE-SL)    
   * item[+]
     * insert addGroup(9.1a.g, Therapien)
     * insert enableWhenBoolean(9.1a, =, true)
@@ -1274,9 +1279,9 @@ Description: "Elternbefragung"
     * item[+]
       * insert addItem(9.10, #string, [[Sonstige Förderung]])
     * item[+]
-      * insert addItemWithSource(9.11, #boolean, [[Fördermaßn. Integration in Regel-KiTa]], #DE-SL)
+      * insert addItemWithSource(9.11, #boolean, [[Fördermaßn. Integration in Regel-Kita]], #DE-SL)
     * item[+]
-      * insert addItemWithSource(9.12, #boolean, [[Fördermaßn. FörderKiTa/Integrative KiTa]], #DE-SL)
+      * insert addItemWithSource(9.12, #boolean, [[Fördermaßn. FörderKita/Integrative Kita]], #DE-SL)
     * item[+]
       * insert addItemWithSource(9.13, #boolean, [[Fördermaßn. Vorschul. Päd. Sprachförderung]], #DE-SL)
   * item[+]
@@ -1291,7 +1296,7 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItemWithSource(9.15, #boolean, [[Komplexleistung]], #DE-HB)
   * item[+]
-    * insert addItemWithSource(9.16, #boolean, [[Persönliche Hilfe/Eingliederungshilfe in KiTa]], #DE-HB)
+    * insert addItemWithSource(9.16, #boolean, [[Persönliche Hilfe/Eingliederungshilfe in Kita]], #DE-HB)
 // Förderungen in den vergangenen 12 Monaten
 // Alle Unteritems der Gruppe 9a sind exakte Kopien der Gruppe 9. Bei Änderungen der Gruppe 9, müssen alle Unterpunkte der Gruppe 9 erneut in die Gruppe 9a kopiert werden. Ebenfalls müssen alle 9. durch 9a. ersetzt werden.
 * item[+]
@@ -1395,9 +1400,9 @@ Description: "Elternbefragung"
     * item[+]
       * insert addItem(9a.10, #string, [[Sonstige Förderung]])
     * item[+]
-      * insert addItemWithSource(9a.11, #boolean, [[Fördermaßn. Integration in Regel-KiTa]], #DE-SL)
+      * insert addItemWithSource(9a.11, #boolean, [[Fördermaßn. Integration in Regel-Kita]], #DE-SL)
     * item[+]
-      * insert addItemWithSource(9a.12, #boolean, [[Fördermaßn. FörderKiTa/Integrative KiTa]], #DE-SL)
+      * insert addItemWithSource(9a.12, #boolean, [[Fördermaßn. FörderKita/Integrative Kita]], #DE-SL)
     * item[+]
       * insert addItemWithSource(9a.13, #boolean, [[Fördermaßn. Vorschul. Päd. Sprachförderung]], #DE-SL)
   * item[+]
@@ -1517,14 +1522,14 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItemWithSource(12.20, #boolean, [[Ist Ihr Kind Mitglied in einem Sportverein?]], #DE-NI)
   * item[+]
-    * insert addItemWithSource(12.21, #choice, [[Wie oft geht ihr Kind in den Sportverein?]], #DE-NI)
+    * insert addItemWithSource(12.21, #choice, [[Wie oft geht Ihr Kind in den Sportverein?]], #DE-NI)
     * insert enableWhenBoolean(12.20, =, true)
     * answerValueSet = Canonical(WieOftImSportVereinVS)
   * item[+]
     * insert addItemWithSource(12.22, #choice, [[Wie oft trainiert Ihr Kind pro Woche außerhalb der Kita angeleitet?]], #DE-NI)
     * answerValueSet = Canonical(WieOftTrainingVS)
   * item[+]
-    * insert addItemWithSource(12.23, #boolean, [[Fährt ihr Kind frei Fahrrad]], #DE-HB)
+    * insert addItemWithSource(12.23, #boolean, [[Fährt Ihr Kind frei Fahrrad]], #DE-HB)
 //********************************************
 // Informationen Eltern
 * item[+]

@@ -68,6 +68,7 @@ Description: "Elternbefragung ST"
     * required = true
   * item[+]
     * insert addItem(1.9, #string, PLZ)
+    * insert regEx([["^[0-9]{5}$"]])
     * required = true
   * item[+]
     * insert addItem(1.10, #string, Wohnort)
@@ -93,6 +94,7 @@ Description: "Elternbefragung ST"
     * required = true
   * item[+]
     * insert addItem(2.7, #string, Telefonnummer)
+    * insert regEx([["^(\\+|0)(\\d|\\s)*\\d$"]])
     * required = true
   * item[+]
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
@@ -238,7 +240,7 @@ Description: "Elternbefragung ST"
 * item[+]
   * insert addItem(9, #group, [[Förderungen]])
   * item[+]
-    * insert addItemWithSource(9.1a, #boolean, [[Werden oder wurden bei Ihrem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)?]], #DE-SL)    
+    * insert addItemWithSource(9.1a, #boolean, [[Werden oder wurden bei Ihrem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)]], #DE-SL)    
     * required = true
   * item[+]
     * insert addGroup(9.1a.g, Therapien)

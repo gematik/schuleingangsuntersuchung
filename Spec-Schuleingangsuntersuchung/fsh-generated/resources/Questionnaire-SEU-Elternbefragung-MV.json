@@ -2603,6 +2603,12 @@
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
           ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/regex",
+              "valueString": "^[0-9]{5}$"
+            }
+          ],
           "required": true
         },
         {
@@ -2716,6 +2722,12 @@
               "code": "2.4",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/regex",
+              "valueString": "^[0-9]{5}$"
+            }
           ]
         },
         {
@@ -2749,6 +2761,12 @@
               "code": "2.7",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/regex",
+              "valueString": "^(\\+|0)(\\d|\\s)*\\d$"
+            }
           ]
         },
         {
@@ -2759,6 +2777,12 @@
             {
               "code": "2.8",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/regex",
+              "valueString": "^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$"
             }
           ]
         },
@@ -3413,7 +3437,7 @@
         {
           "linkId": "8.27",
           "type": "boolean",
-          "text": "(8.27) Wurde ihr Kind operiert",
+          "text": "(8.27) Wurde Ihr Kind operiert",
           "code": [
             {
               "code": "8.27",
@@ -3446,7 +3470,7 @@
         {
           "linkId": "8.28a",
           "type": "boolean",
-          "text": "(8.28a) Hatte ihr Kind einen Unfall",
+          "text": "(8.28a) Hatte Ihr Kind einen Unfall",
           "code": [
             {
               "code": "8.28a",
@@ -3457,7 +3481,7 @@
         {
           "linkId": "8.28.g",
           "type": "group",
-          "text": "(8.28.g) Hatte ihr Kind einen Unfall",
+          "text": "(8.28.g) Hatte Ihr Kind einen Unfall",
           "code": [
             {
               "code": "8.28.g",

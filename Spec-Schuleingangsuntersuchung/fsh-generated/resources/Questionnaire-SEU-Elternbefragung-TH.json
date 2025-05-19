@@ -726,6 +726,12 @@
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
           ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/regex",
+              "valueString": "^[0-9]{5}$"
+            }
+          ],
           "required": true
         },
         {
@@ -760,6 +766,12 @@
             {
               "code": "2.7",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/regex",
+              "valueString": "^(\\+|0)(\\d|\\s)*\\d$"
             }
           ]
         },
@@ -1485,7 +1497,7 @@
         {
           "linkId": "12.23",
           "type": "boolean",
-          "text": "(12.23) Fährt ihr Kind frei Fahrrad",
+          "text": "(12.23) Fährt Ihr Kind frei Fahrrad",
           "code": [
             {
               "code": "12.23",

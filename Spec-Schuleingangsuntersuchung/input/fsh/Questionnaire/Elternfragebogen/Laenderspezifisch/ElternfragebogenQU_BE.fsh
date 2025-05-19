@@ -28,6 +28,7 @@ Description: "Elternbefragung BE"
     * insert initialExpression("%patient.name[0].given[0]")
   * item[+]
     * insert addItem(1.9, #string, PLZ)
+    * insert regEx([["^[0-9]{5}$"]])
   * item[+]
     * insert addItem(1.10, #string, Wohnort)
   * item[+]
@@ -36,6 +37,7 @@ Description: "Elternbefragung BE"
     * insert addItem(1.11a, #string, Hausnummer)
   * item[+]
     * insert addItem(2.7, #string, Telefonnummer)
+    * insert regEx([["^(\\+|0)(\\d|\\s)*\\d$"]])
   * item[+]
     * insert addItem(1.8, #choice, Geschlecht)
     * answerValueSet = Canonical(GenderDEVS)
@@ -110,7 +112,7 @@ Description: "Elternbefragung BE"
     * answerValueSet = Canonical(SorgenKindVS)
     * insert addItemWithSource(7.14, #choice, [[Machen Sie sich Sorgen um Ihr Kind wegen]], #DE-BE)
   * item[+]
-    * insert addItemWithSource(8.30.1, #boolean, [[Nässt ihr Kind ein?]], #DE-BE)
+    * insert addItemWithSource(8.30.1, #boolean, [[Nässt Ihr Kind ein?]], #DE-BE)
 //Betreuung des kindes
 * item[+]
   * insert addItem(5, #group, Betreuung des Kindes)
@@ -121,7 +123,7 @@ Description: "Elternbefragung BE"
   * item[+]
     * insert addItem(4.4, #date, [[Angabe des Datums, seit wann das Kind keine Kita mehr besucht.]])
   * item[+]
-    * insert addItem(4.5, #boolean, Besucht ihr Kind eine andere Form der Tagesbetreuung?)
+    * insert addItem(4.5, #boolean, Besucht Ihr Kind eine andere Form der Tagesbetreuung?)
 //Lebensumfeld
 * item[+]
   * insert addItem(6, #group, Lebensumfeld)

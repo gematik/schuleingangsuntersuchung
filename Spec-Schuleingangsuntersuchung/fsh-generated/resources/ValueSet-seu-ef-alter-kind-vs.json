@@ -12,11 +12,6 @@
     "contains": [
       {
         "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-alter-kind-cs",
-        "code": "hier_geboren",
-        "display": "Hier geboren"
-      },
-      {
-        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-alter-kind-cs",
         "code": "unter_1_jahr",
         "display": "Unter 1 Jahr"
       },

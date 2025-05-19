@@ -127,7 +127,7 @@ Description: "Elternbefragung BB"
 * item[+]
   * insert addItem(4, #group, Kinderbetreuung)
   * item[+]
-    * insert addItemWithSource(4.1c, #choice, [[Dauer Kindertagebetreuung in Jahren]], #DE-BB)
+    * insert addItemWithSource(4.1c, #choice, [[Dauer Kindertagesbetreuung in Jahren]], #DE-BB)
     * answerValueSet = Canonical(SEU_EF_DauerBBVS)
 //********************************************
 // Schwangerschaft und Geburt
@@ -205,11 +205,11 @@ Description: "Elternbefragung BB"
   * item[+]
     * insert addItem(8.23, #boolean, [[Regelmäßige Medikamenteneinnahme]])
   * item[+]
-    * insert addItem(8.27, #boolean, [[Wurde ihr Kind operiert]])
+    * insert addItem(8.27, #boolean, [[Wurde Ihr Kind operiert]])
   * item[+]
-    * insert addItem(8.28a, #boolean, [[Hatte ihr Kind einen Unfall]])
+    * insert addItem(8.28a, #boolean, [[Hatte Ihr Kind einen Unfall]])
   * item[+]
-    * insert addItem(8.28.g, #group, [[Hatte ihr Kind einen Unfall]])
+    * insert addItem(8.28.g, #group, [[Hatte Ihr Kind einen Unfall]])
     * insert enableWhenBoolean(8.28a, =, true)
     * insert enableWhenBoolean(8.28b, =, true)
     * enableBehavior = #any
@@ -237,7 +237,7 @@ Description: "Elternbefragung BB"
 * item[+]
   * insert addItemWithSource(9a, #group, [[Förderungen in den vergangenen 12 Monaten]], #DE-BB)
   * item[+]
-    * insert addItemWithSource(9a.1a, #boolean, [[Werden oder wurden bei Ihrem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)?]], #DE-SL)    
+    * insert addItemWithSource(9a.1a, #boolean, [[Werden oder wurden bei Ihrem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)]], #DE-SL)    
   * item[+]
     * insert addGroup(9a.1a.g, Therapien)
     * insert enableWhenBoolean(9a.1a, =, true)
@@ -259,7 +259,7 @@ Description: "Elternbefragung BB"
     * item[+]
       * insert addItem(9a.10, #string, [[Sonstige Förderung]])
     * item[+]
-      * insert addItemWithSource(9a.11, #boolean, [[Fördermaßn. Integration in Regel-KiTa]], #DE-SL)
+      * insert addItemWithSource(9a.11, #boolean, [[Fördermaßn. Integration in Regel-Kita]], #DE-SL)
   * item[+]
     * insert addItemWithSource(9a.14, #boolean, [[Psychiatrische Institutionsambulanz (PIA)]], #DE-BB)
 //********************************************

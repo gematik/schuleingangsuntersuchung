@@ -40,6 +40,7 @@ Description: "Elternbefragung SL"
 * contained[+] = SEU_EF_OperationenVS
 * contained[+] = SEU_EF_UnfallVS
 * contained[+] = SEU_EF_AlterKindVS
+* contained[+] = SEU_EF_AlterKindEinreiseVS
 * contained[+] = SEU_EF_SchwangerschaftVS
 * contained[+] = SEU_EF_UnfallortVS
 * contained[+] = SEU_EF_BehandlungstypVS
@@ -98,7 +99,7 @@ Description: "Elternbefragung SL"
   * item[+]
     * insert addItemWithSource(1.6.1a, #choice, Wie alt war das Kind bei Einreise nach Deutschland?, #DE-SL)
     * insert enableWhenBoolean(1.6, =, false)
-    * answerValueSet = Canonical(SEU_EF_AlterKindVS)
+    * answerValueSet = Canonical(SEU_EF_AlterKindEinreiseVS)
     * required = true
   * item[+]
     * insert addItem(1.7, #string, Geburtsort)
@@ -108,6 +109,7 @@ Description: "Elternbefragung SL"
     * required = true
   * item[+]
     * insert addItem(1.9, #string, PLZ)
+    * insert regEx([["^[0-9]{5}$"]])
     * required = true
   * item[+]
     * insert addItem(1.10, #string, Wohnort)
@@ -141,6 +143,7 @@ Description: "Elternbefragung SL"
     * required = true
   * item[+]
     * insert addItem(2.4, #string, PLZ)
+    * insert regEx([["^[0-9]{5}$"]])
     * required = true
   * item[+]
     * insert addItem(2.5, #string, Wohnort)
@@ -150,8 +153,10 @@ Description: "Elternbefragung SL"
     * required = true
   * item[+]
     * insert addItem(2.7, #string, Telefonnummer)
+    * insert regEx([["^(\\+|0)(\\d|\\s)*\\d$"]])
   * item[+]
     * insert addItem(2.8, #string, Email)
+    * insert regEx([["^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$"]])
   * item[+]
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
     * insert addItem(2.9, #choice, Staatsangehörigkeit)
@@ -220,7 +225,7 @@ Description: "Elternbefragung SL"
     * insert addItem(4.0b, #boolean, Ist das Kind in einem Kindergarten/einer Kindertageseinrichtung?)
     * required = true
   * item[+]
-    * insert addItemWithSource(4.1a, #choice, Wie alt war das Kind bei der Aufnahme in die KiTa?, #DE-SL)
+    * insert addItemWithSource(4.1a, #choice, Wie alt war das Kind bei der Aufnahme in die Kita?, #DE-SL)
     * answerValueSet = Canonical(SEU_EF_AlterKindVS)
     * required = true
   * item[+]
@@ -228,7 +233,7 @@ Description: "Elternbefragung SL"
     * answerValueSet = Canonical(SEU_EF_DauerBWVS)
     * required = true
   * item[+]
-    * insert addItemWithSource(4.1c, #choice, [[Dauer Kindertagebetreuung in Jahren]], #DE-BB)
+    * insert addItemWithSource(4.1c, #choice, [[Dauer Kindertagesbetreuung in Jahren]], #DE-BB)
     * answerValueSet = Canonical(SEU_EF_DauerBBVS)
     * required = true
   * item[+]
@@ -342,7 +347,7 @@ Description: "Elternbefragung SL"
     * insert enableWhenBoolean(8.23, =, true)   
     * repeats = true
   * item[+]
-    * insert addItem(8.27, #boolean, [[Wurde ihr Kind operiert]])
+    * insert addItem(8.27, #boolean, [[Wurde Ihr Kind operiert]])
     * required = true
     * item[+]
       * insert addItem(8.27.2, #choice, [[Welche Operationen wurden durchgeführt?]])
@@ -353,10 +358,10 @@ Description: "Elternbefragung SL"
         * insert addItemWithSource(8.27.2.1, #string, [[Sonstige Operationen?]], #DE-SL)
         * insert enableWhenCode(8.27.2, =, SEU_EF_OperationenCS, sonstige_operation)
   * item[+]
-    * insert addItem(8.28a, #boolean, [[Hatte ihr Kind einen Unfall]])
+    * insert addItem(8.28a, #boolean, [[Hatte Ihr Kind einen Unfall]])
     * required = true
   * item[+]
-    * insert addItem(8.28.g, #group, [[Hatte ihr Kind einen Unfall]])
+    * insert addItem(8.28.g, #group, [[Hatte Ihr Kind einen Unfall]])
     * insert enableWhenBoolean(8.28a, =, true)
     * repeats = true
     * item[+]
@@ -368,7 +373,7 @@ Description: "Elternbefragung SL"
       * answerValueSet = Canonical(SEU_EF_UnfallVS)
       * required = true
   * item[+]
-    * insert addItemWithSource(8.30, #boolean, [[Wurde Ihr Kind jemals aufgrund von Unfallverletzungen von einem Arzt behandelt??]], #DE-SL)
+    * insert addItemWithSource(8.30, #boolean, [[Wurde Ihr Kind jemals aufgrund von Unfallverletzungen von einem Arzt behandelt?]], #DE-SL)
     * required = true
   * item[+]
     * insert addItemWithSource(8.31, #boolean, [[Einnässen tags]], #DE-SL)
@@ -396,7 +401,7 @@ Description: "Elternbefragung SL"
     * required = true
   * item[+]
     * required = true
-    * insert addItemWithSource(8.39, #boolean, [[Erkrankungen Fieberkrampf/Krampsanfall]], #DE-SL)
+    * insert addItemWithSource(8.39, #boolean, [[Erkrankungen Fieberkrampf/Krampfanfall]], #DE-SL)
   * item[+]
     * insert addItemWithSource(8.40, #boolean, [[Erkrankungen Harnwegserkrankungen]], #DE-SL)
     * required = true
@@ -445,7 +450,7 @@ Description: "Elternbefragung SL"
     * answerValueSet = Canonical(SEU_EF_UnfallortVS)
     * required = true
   * item[+]
-    * insert addItemWithSource(8.54, #choice, [[Unfälle Knochenbrücke/Weichteilverletzungen]], #DE-SL)
+    * insert addItemWithSource(8.54, #choice, [[Unfälle Knochenbrüche/Weichteilverletzungen]], #DE-SL)
     * answerValueSet = Canonical(SEU_EF_UnfallortVS)
     * required = true
   * item[+]
@@ -485,17 +490,17 @@ Description: "Elternbefragung SL"
 * item[+]
   * insert addItem(9, #group, [[Förderungen]])
   * item[+]
-    * insert addItemWithSource(9.1a, #boolean, [[Werden oder wurden bei Ihrem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)?]], #DE-SL)    
+    * insert addItemWithSource(9.1a, #boolean, [[Werden oder wurden bei Ihrem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)]], #DE-SL)    
     * required = true
   * item[+]
     * insert addGroup(9.1a.g, Therapien)
     * insert enableWhenBoolean(9.1a, =, true)
     * insert addSource(#DE-SN)
     * item[+]
-      * insert addItemWithSource(9.11, #boolean, [[Fördermaßn. Integration in Regel-KiTa]], #DE-SL)
+      * insert addItemWithSource(9.11, #boolean, [[Fördermaßn. Integration in Regel-Kita]], #DE-SL)
       * required = true
     * item[+]
-      * insert addItemWithSource(9.12, #boolean, [[Fördermaßn. FörderKiTa/Integrative KiTa]], #DE-SL)
+      * insert addItemWithSource(9.12, #boolean, [[Fördermaßn. FörderKita/Integrative Kita]], #DE-SL)
       * required = true
     * item[+]
       * insert addItemWithSource(9.13, #boolean, [[Fördermaßn. Vorschul. Päd. Sprachförderung]], #DE-SL)

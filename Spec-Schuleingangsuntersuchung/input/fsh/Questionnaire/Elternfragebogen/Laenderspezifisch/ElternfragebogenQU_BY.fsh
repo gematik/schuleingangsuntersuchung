@@ -67,12 +67,14 @@ Description: "ElternbefragungBY"
     * insert initialExpression("%patient.name[0].given[0]")
   * item[+]
     * insert addItem(2.4, #string, PLZ)
+    * insert regEx([["^[0-9]{5}$"]])
   * item[+]
     * insert addItem(2.5, #string, Wohnort)
   * item[+]
     * insert addItem(2.6, #string, Straße)
   * item[+]
     * insert addItem(2.7, #string, Telefonnummer)
+    * insert regEx([["^(\\+|0)(\\d|\\s)*\\d$"]])
 //********************************************
 // Familiendaten
 * item[+]

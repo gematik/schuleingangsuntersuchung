@@ -91,7 +91,7 @@ Description: "Elternbefragung NI"
   * item[+]
     * insert addItem(3.2, #group, Familiäre Vorgeschichte)
     * item[+]
-      * insert addItemWithSource(3.2.4b, #boolean, [[Ist ihr Kind an Windpocken erkrankt]], #DE-HE)
+      * insert addItemWithSource(3.2.4b, #boolean, [[Ist Ihr Kind an Windpocken erkrankt]], #DE-HE)
       * required = true
     * item[+]
       * insert addItem(3.2.6, #boolean, [[Hat Ihr Kind eine körperliche, geistige oder seelische Behinderung?]])
@@ -125,7 +125,7 @@ Description: "Elternbefragung NI"
     * insert addItem(5.3a, #integer, [[Geburtslänge (in cm)]])
     * required = true
   * item[+]
-    * insert addItem(5.3c, #integer, [[In welcher SS-Woche wurde ihr Kind geboren?]])
+    * insert addItem(5.3c, #integer, [[In welcher SS-Woche wurde Ihr Kind geboren?]])
     * required = true
   * item[+]
     * insert addItem(5.5, #boolean, [[Auffälligkeit bei der Geburt]])
@@ -186,7 +186,7 @@ Description: "Elternbefragung NI"
       * insert addItem(8.21.g.1, #text, [[Welche Behinderung]])
       * required = true
   * item[+]
-    * insert addItem(8.27, #boolean, [[Wurde ihr Kind operiert]])
+    * insert addItem(8.27, #boolean, [[Wurde Ihr Kind operiert]])
     * required = true
     * item[+]
       * insert addItem(8.27.1, #choice, [[Wie fand die Operation statt?]])
@@ -239,7 +239,7 @@ Description: "Elternbefragung NI"
 * item[+]
   * insert addItem(9, #group, [[Förderungen]])
   * item[+]
-    * insert addItemWithSource(9.1a, #boolean, [[Werden oder wurden bei Ihrem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)?]], #DE-SL)
+    * insert addItemWithSource(9.1a, #boolean, [[Werden oder wurden bei Ihrem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)]], #DE-SL)
     * required = true
   * item[+]
     * insert addGroup(9.1a.g, Therapien)
@@ -305,7 +305,7 @@ Description: "Elternbefragung NI"
     * insert addItemWithSource(12.20, #boolean, [[Ist Ihr Kind Mitglied in einem Sportverein?]], #DE-NI)
     * required = true
   * item[+]
-    * insert addItemWithSource(12.21, #choice, [[Wie oft geht ihr Kind in den Sportverein?]], #DE-NI)
+    * insert addItemWithSource(12.21, #choice, [[Wie oft geht Ihr Kind in den Sportverein?]], #DE-NI)
     * insert enableWhenBoolean(12.20, =, true)
     * answerValueSet = Canonical(WieOftImSportVereinVS)
     * required = true

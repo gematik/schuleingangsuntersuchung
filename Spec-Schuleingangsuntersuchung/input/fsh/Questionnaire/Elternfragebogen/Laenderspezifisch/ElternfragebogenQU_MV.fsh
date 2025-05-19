@@ -48,6 +48,7 @@ Description: "Elternbefragung MV"
     * required = true
   * item[+]
     * insert addItem(1.9, #string, PLZ)
+    * insert regEx([["^[0-9]{5}$"]])
     * required = true
   * item[+]
     * insert addItem(1.10, #string, Wohnort)
@@ -74,14 +75,17 @@ Description: "Elternbefragung MV"
     * insert initialExpression("%patient.name[0].given[0]")
   * item[+]
     * insert addItem(2.4, #string, PLZ)
+    * insert regEx([["^[0-9]{5}$"]])
   * item[+]
     * insert addItem(2.5, #string, Wohnort)
   * item[+]
     * insert addItem(2.6, #string, Straße)
   * item[+]
     * insert addItem(2.7, #string, Telefonnummer)
+    * insert regEx([["^(\\+|0)(\\d|\\s)*\\d$"]])
   * item[+]
     * insert addItem(2.8, #string, Email)
+    * insert regEx([["^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$"]])
   * item[+]
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
     * insert addItem(2.10, #choice, Herkunftsland)
@@ -215,16 +219,16 @@ Description: "Elternbefragung MV"
     * insert enableWhenBoolean(8.23, =, true)   
     * repeats = true
   * item[+]
-    * insert addItem(8.27, #boolean, [[Wurde ihr Kind operiert]])
+    * insert addItem(8.27, #boolean, [[Wurde Ihr Kind operiert]])
     * item[+]
       * insert addItem(8.27.2, #choice, [[Welche Operationen wurden durchgeführt?]])
       * repeats = true
       * insert enableWhenBoolean(8.27, =, true)
       * answerValueSet = Canonical(SEU_EF_OperationenVS)
   * item[+]
-    * insert addItem(8.28a, #boolean, [[Hatte ihr Kind einen Unfall]])
+    * insert addItem(8.28a, #boolean, [[Hatte Ihr Kind einen Unfall]])
   * item[+]
-    * insert addItem(8.28.g, #group, [[Hatte ihr Kind einen Unfall]])
+    * insert addItem(8.28.g, #group, [[Hatte Ihr Kind einen Unfall]])
     * insert enableWhenBoolean(8.28a, =, true)
     * insert enableWhenBoolean(8.28b, =, true)
     * enableBehavior = #any

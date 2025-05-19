@@ -4003,6 +4003,12 @@
               "code": "1.9",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/regex",
+              "valueString": "^[0-9]{5}$"
+            }
           ]
         },
         {
@@ -4046,6 +4052,12 @@
             {
               "code": "2.7",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/regex",
+              "valueString": "^(\\+|0)(\\d|\\s)*\\d$"
             }
           ]
         },
@@ -4539,7 +4551,7 @@
         {
           "linkId": "8.30.1",
           "type": "boolean",
-          "text": "(8.30.1) Nässt ihr Kind ein?",
+          "text": "(8.30.1) Nässt Ihr Kind ein?",
           "code": [
             {
               "code": "8.30.1",
@@ -4614,7 +4626,7 @@
         {
           "linkId": "4.5",
           "type": "boolean",
-          "text": "(4.5) Besucht ihr Kind eine andere Form der Tagesbetreuung?",
+          "text": "(4.5) Besucht Ihr Kind eine andere Form der Tagesbetreuung?",
           "code": [
             {
               "code": "4.5",

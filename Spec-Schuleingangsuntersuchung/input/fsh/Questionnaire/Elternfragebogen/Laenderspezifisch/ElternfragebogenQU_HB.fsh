@@ -65,16 +65,19 @@ Description: "Elternbefragung HB"
     * insert initialExpression("%patient.name[0].given[0]")
   * item[+]
     * insert addItem(2.4, #string, PLZ)
+    * insert regEx([["^[0-9]{5}$"]])
   * item[+]
     * insert addItem(2.5, #string, Wohnort)
   * item[+]
     * insert addItem(2.6, #string, Straße)
   * item[+]
     * insert addItem(2.7, #string, Telefonnummer)
+    * insert regEx([["^(\\+|0)(\\d|\\s)*\\d$"]])
   * item[+]
     * insert addItemWithSource(2.7a, #string, [[Handynummer]], #DE-HH)
   * item[+]
     * insert addItem(2.8, #string, Email)
+    * insert regEx([["^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$"]])
   * item[+]
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
     * insert addItem(2.9, #choice, Staatsangehörigkeit)

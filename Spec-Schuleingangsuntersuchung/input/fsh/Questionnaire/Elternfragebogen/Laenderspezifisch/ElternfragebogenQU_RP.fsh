@@ -69,6 +69,7 @@ Description: "Elternbefragung RP"
     * answerValueSet = Canonical(GenderDEVS)
   * item[+]
     * insert addItem(1.9, #string, PLZ)
+    * insert regEx([["^[0-9]{5}$"]])
   * item[+]
     * insert addItem(1.10, #string, Wohnort)
   * item[+]
@@ -100,14 +101,17 @@ Description: "Elternbefragung RP"
     * insert initialExpression("%patient.name[0].given[0]")
   * item[+]
     * insert addItem(2.4, #string, PLZ)
+    * insert regEx([["^[0-9]{5}$"]])
   * item[+]
     * insert addItem(2.5, #string, Wohnort)
   * item[+]
     * insert addItem(2.6, #string, Straße)
   * item[+]
     * insert addItem(2.7, #string, Telefonnummer)
+    * insert regEx([["^(\\+|0)(\\d|\\s)*\\d$"]])
   * item[+]
     * insert addItem(2.8, #string, Email)
+    * insert regEx([["^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$"]])
   * item[+]
     * insert addItemWithSource(2.10a, #boolean, [[Herkunftsland Deutsch?]], #DE-RP)
   * item[+]
@@ -315,7 +319,7 @@ Description: "Elternbefragung RP"
 * item[+]
   * insert addGroup(12, Sonstiges)
   * item[+]
-    * insert addItemWithSource(12.23, #boolean, [[Fährt ihr Kind frei Fahrrad]], #DE-HB)
+    * insert addItemWithSource(12.23, #boolean, [[Fährt Ihr Kind frei Fahrrad]], #DE-HB)
     * required = true
 //********************************************
 // Informationen Eltern

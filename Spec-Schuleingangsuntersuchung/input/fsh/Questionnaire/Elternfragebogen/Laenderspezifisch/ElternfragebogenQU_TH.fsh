@@ -63,6 +63,7 @@ Description: "Elternbefragung TH"
     * required = true
   * item[+]
     * insert addItem(2.4, #string, PLZ)
+    * insert regEx([["^[0-9]{5}$"]])
     * required = true
   * item[+]
     * insert addItem(2.5, #string, Wohnort)
@@ -72,6 +73,7 @@ Description: "Elternbefragung TH"
     * required = true
   * item[+]
     * insert addItem(2.7, #string, Telefonnummer)
+    * insert regEx([["^(\\+|0)(\\d|\\s)*\\d$"]])
   * item[+]
     * insert addItemWithSource(2.7a, #string, [[Handynummer]], #DE-HH)
 //********************************************
@@ -222,7 +224,7 @@ Description: "Elternbefragung TH"
 * item[+]
   * insert addGroup(12, Sonstiges)
   * item[+]
-    * insert addItemWithSource(12.23, #boolean, [[Fährt ihr Kind frei Fahrrad]], #DE-HB)
+    * insert addItemWithSource(12.23, #boolean, [[Fährt Ihr Kind frei Fahrrad]], #DE-HB)
     * required = true
 //********************************************
 // Informationen Eltern

@@ -2946,7 +2946,7 @@
             {
               "linkId": "3.2.4b",
               "type": "boolean",
-              "text": "(3.2.4b) Ist ihr Kind an Windpocken erkrankt",
+              "text": "(3.2.4b) Ist Ihr Kind an Windpocken erkrankt",
               "code": [
                 {
                   "code": "3.2.4b",
@@ -3111,7 +3111,7 @@
         {
           "linkId": "5.3c",
           "type": "integer",
-          "text": "(5.3c) In welcher SS-Woche wurde ihr Kind geboren?",
+          "text": "(5.3c) In welcher SS-Woche wurde Ihr Kind geboren?",
           "code": [
             {
               "code": "5.3c",
@@ -3399,7 +3399,7 @@
         {
           "linkId": "8.27",
           "type": "boolean",
-          "text": "(8.27) Wurde ihr Kind operiert",
+          "text": "(8.27) Wurde Ihr Kind operiert",
           "code": [
             {
               "code": "8.27",
@@ -3691,7 +3691,7 @@
         {
           "linkId": "9.1a",
           "type": "boolean",
-          "text": "(9.1a) Werden oder wurden bei Ihrem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)?",
+          "text": "(9.1a) Werden oder wurden bei Ihrem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)",
           "code": [
             {
               "code": "9.1a",
@@ -3998,7 +3998,7 @@
         {
           "linkId": "12.21",
           "type": "choice",
-          "text": "(12.21) Wie oft geht ihr Kind in den Sportverein?",
+          "text": "(12.21) Wie oft geht Ihr Kind in den Sportverein?",
           "code": [
             {
               "code": "12.21",

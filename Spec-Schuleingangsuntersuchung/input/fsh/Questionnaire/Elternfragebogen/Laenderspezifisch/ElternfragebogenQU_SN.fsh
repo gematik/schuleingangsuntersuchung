@@ -41,6 +41,7 @@ Description: "Elternbefragung SN"
     * insert initialExpression("%patient.birthdate")
   * item[+]
     * insert addItem(1.9, #string, PLZ)
+    * insert regEx([["^[0-9]{5}$"]])
   * item[+]
     * insert addItem(1.10, #string, Wohnort)
   * item[+]
@@ -60,6 +61,7 @@ Description: "Elternbefragung SN"
     * insert initialExpression("%patient.name[0].given[0]")
   * item[+]
     * insert addItem(2.7, #string, Telefonnummer)
+    * insert regEx([["^(\\+|0)(\\d|\\s)*\\d$"]])
 //********************************************
 // Familiendaten
 * item[+]
@@ -201,17 +203,17 @@ Description: "Elternbefragung SN"
     * insert enableWhenBoolean(8.23, =, true)   
     * repeats = true
   * item[+]
-    * insert addItem(8.27, #boolean, [[Wurde ihr Kind operiert]])
+    * insert addItem(8.27, #boolean, [[Wurde Ihr Kind operiert]])
     * item[+]
       * insert addItem(8.27.1, #choice, [[Wie fand die Operation statt?]])
       * insert enableWhenBoolean(8.27, =, true)
       * answerValueSet = Canonical(VersorgungsartVS)
   * item[+]
-    * insert addItem(8.28a, #boolean, [[Hatte ihr Kind einen Unfall]])
+    * insert addItem(8.28a, #boolean, [[Hatte Ihr Kind einen Unfall]])
   * item[+]
     * insert addItemWithSource(8.28b, #boolean, [[Hatte  Ihr Kind jemals einen Unfall, der ärztlich behandelt wurde?]], #DE-BB)
   * item[+]
-    * insert addItem(8.28.g, #group, [[Hatte ihr Kind einen Unfall]])
+    * insert addItem(8.28.g, #group, [[Hatte Ihr Kind einen Unfall]])
     * insert enableWhenBoolean(8.28a, =, true)
     * repeats = true
     * item[+]
@@ -236,7 +238,7 @@ Description: "Elternbefragung SN"
 * item[+]
   * insert addItem(9, #group, [[Förderungen]])
   * item[+]
-    * insert addItemWithSource(9.1a, #boolean, [[Werden oder wurden bei Ihrem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)?]], #DE-SL)    
+    * insert addItemWithSource(9.1a, #boolean, [[Werden oder wurden bei Ihrem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)]], #DE-SL)    
   * item[+]
     * insert addGroup(9.1a.g, Therapien)
     * insert enableWhenBoolean(9.1a, =, true)

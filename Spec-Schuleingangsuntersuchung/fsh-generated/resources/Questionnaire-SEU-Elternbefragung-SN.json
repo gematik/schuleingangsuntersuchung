@@ -874,6 +874,12 @@
               "code": "1.9",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/regex",
+              "valueString": "^[0-9]{5}$"
+            }
           ]
         },
         {
@@ -971,6 +977,12 @@
             {
               "code": "2.7",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/regex",
+              "valueString": "^(\\+|0)(\\d|\\s)*\\d$"
             }
           ]
         }
@@ -1656,7 +1668,7 @@
         {
           "linkId": "8.27",
           "type": "boolean",
-          "text": "(8.27) Wurde ihr Kind operiert",
+          "text": "(8.27) Wurde Ihr Kind operiert",
           "code": [
             {
               "code": "8.27",
@@ -1688,7 +1700,7 @@
         {
           "linkId": "8.28a",
           "type": "boolean",
-          "text": "(8.28a) Hatte ihr Kind einen Unfall",
+          "text": "(8.28a) Hatte Ihr Kind einen Unfall",
           "code": [
             {
               "code": "8.28a",
@@ -1719,7 +1731,7 @@
         {
           "linkId": "8.28.g",
           "type": "group",
-          "text": "(8.28.g) Hatte ihr Kind einen Unfall",
+          "text": "(8.28.g) Hatte Ihr Kind einen Unfall",
           "code": [
             {
               "code": "8.28.g",
@@ -1871,7 +1883,7 @@
         {
           "linkId": "9.1a",
           "type": "boolean",
-          "text": "(9.1a) Werden oder wurden bei Ihrem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)?",
+          "text": "(9.1a) Werden oder wurden bei Ihrem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)",
           "code": [
             {
               "code": "9.1a",
