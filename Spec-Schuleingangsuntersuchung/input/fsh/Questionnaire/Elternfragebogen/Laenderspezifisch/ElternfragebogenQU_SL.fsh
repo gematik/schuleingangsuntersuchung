@@ -3,40 +3,10 @@ InstanceOf: Questionnaire
 Usage: #example
 Title: "Elternbefragung SL"
 Description: "Elternbefragung SL"
-* contained[+] = SEU-EF-NeinAbgeschlossenLaeuftGeplantVS
 * contained[+] = DeuevAnlage8LaenderkennzeichenVS
-* contained[+] = WohnsituationKindVS  // TODO: Unused?
-* contained[+] = WohnsituationKindAlternativ1VS // TODO: Unused?
 * contained[+] = WohnsituationKindAlternativ2VS
-* contained[+] = GenderDEVS
 * contained[+] = ISO6392_LanguageVS
-* contained[+] = ChronischeErkrankungenVS
-* contained[+] = JaNeinAngemeldetVS
-* contained[+] = RechtsLinksHaenderVS
-* contained[+] = AuffaelligkeitVerhaltenVS
-* contained[+] = LinksRechtsBeidseitsKeineAngabeVS
-* contained[+] = StoffwechselstoerungVS
-* contained[+] = ErkrankungVS
-* contained[+] = InfektionsKrankheitVS
-* contained[+] = ErkrankungenLetztesJahrVS
-* contained[+] = PflegegradVS
-* contained[+] = UnfallOrtVS
-* contained[+] = UnfallArtVS
-* contained[+] = GeplantFindetStattAbgeschlossenVS
-* contained[+] = HaeufigkeitAuswahlVS
-* contained[+] = SEU_EF_BildungsabschlussVS
-* contained[+] = SEU_EF_BerufsbildungVS
-* contained[+] = ErwerbsstatusVS
-* contained[+] = FamilienrolleVS
 * contained[+] = VersorgungsartVS
-* contained[+] = ChronischeKrankheitenVS
-* contained[+] = UeberwiegendGesprocheneSpracheVS
-* contained[+] = EntwicklungVS
-* contained[+] = AtopischeErkrankungenVS
-* contained[+] = AllgemeineBeschwerdenVS
-* contained[+] = ErwerbsstatusInclSonstigesVS
-* contained[+] = JaNeinWartelisteVS
-* contained[+] = SEU_EF_MedienkonsumVS
 * contained[+] = SEU_EF_OperationenVS
 * contained[+] = SEU_EF_UnfallVS
 * contained[+] = SEU_EF_AlterKindVS
@@ -44,84 +14,74 @@ Description: "Elternbefragung SL"
 * contained[+] = SEU_EF_SchwangerschaftVS
 * contained[+] = SEU_EF_UnfallortVS
 * contained[+] = SEU_EF_BehandlungstypVS
-* contained[+] = SEU_EF_DauerBWVS
-* contained[+] = SEU_EF_HilfsmittelVS
-* contained[+] = SEU_EF_FachaerzteVS
-* contained[+] = SEU_EF_DauerBBVS
 * contained[+] = SEU_EF_SpracheVS
-* contained[+] = SEU_EF_FrequenzVS
-* contained[+] = SEU_EF_BildungsabschlussBBVS
+* contained[+] = SEU-UB-StaatsangehoerigkeitVS
 * id = "SEU-Elternbefragung-SL"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/ElternbefragungSL"
 * title = "SEU Elternfragebogen SL"
 * insert launchContext("patient", #Patient, "Patientenkontext")
 * status = #draft
-* item[+]
-  * insert addGroup(0, Schule & Vorgangsnummer)
-  * item[+]
-    * insert addItem(0.1, #string, Name der Schule)
-    * required = true
-  * item[+]
-    * insert addItem(0.2, #string, Vorgangsnummer)
-    * required = true
+//********************************************
+// Personenbezogene Daten Kind
 * item[+]
   * type = #group
   * linkId = "1"
   * text = "(1) Personenbezogene Daten Kind"
   * item[+]
-    * insert addItem(1.1, #string, Nachname des Kindes)
-    * insert initialExpression("%patient.name[0].family")
+    * insert addItemWithSource(1.4a, #choice, [[Staatsangehörigkeit]], #DE-BB)
+    * answerValueSet = Canonical(SEU-UB-StaatsangehoerigkeitVS)
     * required = true
   * item[+]
-    * insert addItem(1.2, #string, Vorname des Kindes)
-    * insert initialExpression("%patient.name[0].given[0]")
-    * required = true
-  * item[+]
-    * insert addItem(1.3, #date, Geburtsdatum)
-    * insert initialExpression("%patient.birthdate")
-    * required = true
-  * item[+]
-    * insert addItem(1.4, #choice, Staatsangehörigkeit)
+    * insert addItemWithSource(1.4a.1, #choice, [[Staatsangehörigkeit andere]], #DE-BB)
+    * insert enableWhenCode(1.4a, =, SEU-UB-StaatsangehoerigkeitCS, 2)
+    * insert enableWhenCode(1.4a, =, SEU-UB-StaatsangehoerigkeitCS, 3)
+    * enableBehavior = #any
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
     * required = true
-    //TODO: initial expression
   * item[+]
-    * insert addItem(1.5, #choice, Geburtsland)
+    * insert addItemWithSource(1.4b, #choice, [[Staatsangehörigkeit Mutter]], #DE-BB)
+    * answerValueSet = Canonical(SEU-UB-StaatsangehoerigkeitVS)
+    * required = true
+  * item[+]
+    * insert addItemWithSource(1.4b.1, #choice, [[Staatsangehörigkeit Mutter andere]], #DE-BB)
+    * insert enableWhenCode(1.4b, =, SEU-UB-StaatsangehoerigkeitCS, 2)
+    * insert enableWhenCode(1.4b, =, SEU-UB-StaatsangehoerigkeitCS, 3)
+    * enableBehavior = #any
+    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
+    * required = true
+  * item[+]
+    * insert addItemWithSource(1.4c, #choice, [[Staatsangehörigkeit Vater]], #DE-BB)
+    * answerValueSet = Canonical(SEU-UB-StaatsangehoerigkeitVS)
+    * required = true
+  * item[+]
+    * insert addItemWithSource(1.4c.1, #choice, [[Staatsangehörigkeit Vater andere]], #DE-BB)
+    * insert enableWhenCode(1.4c, =, SEU-UB-StaatsangehoerigkeitCS, 2)
+    * insert enableWhenCode(1.4c, =, SEU-UB-StaatsangehoerigkeitCS, 3)
+    * enableBehavior = #any
+    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
+    * required = true
+  * item[+]
+    * insert addItem(1.5, #choice, [[Geburtsland]])
+    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
+    * required = true
+  * item[+]
+    * insert addItemWithSource(1.5a, #choice, [[Geburtsland Mutter]], #DE-BB)
+    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
+    * required = true
+  * item[+]
+    * insert addItemWithSource(1.5b, #choice, [[Geburtsland Vater]], #DE-BB)
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
     * required = true
   * item[+]
     * insert addItem(1.6, #boolean, In Deutschland geboren)
     * required = true
   * item[+]
-    * insert addItem(1.6.1, #date, Seit wann wohnt das Kind in Deutschland?)
-    * insert enableWhenBoolean(1.6, =, false)
-    * required = true
-  * item[+]
     * insert addItemWithSource(1.6.1a, #choice, Wie alt war das Kind bei Einreise nach Deutschland?, #DE-SL)
+    * required = true
     * insert enableWhenBoolean(1.6, =, false)
     * answerValueSet = Canonical(SEU_EF_AlterKindEinreiseVS)
-    * required = true
   * item[+]
-    * insert addItem(1.7, #string, Geburtsort)
-  * item[+]
-    * insert addItem(1.8, #choice, Geschlecht)
-    * answerValueSet = Canonical(GenderDEVS)
-    * required = true
-  * item[+]
-    * insert addItem(1.9, #string, PLZ)
-    * insert regEx([["^[0-9]{5}$"]])
-    * required = true
-  * item[+]
-    * insert addItem(1.10, #string, Wohnort)
-    * required = true
-  * item[+]
-    * insert addItem(1.11, #string, Straße)
-    * required = true
-  * item[+]
-    * insert addItem(1.11a, #string, Hausnummer)
-    * required = true
-  * item[+]
-    * insert addItemWithSource(1.12a, #choice, Kind lebt hauptsächlich bei, #DE-BB)
+    * insert addItemWithSource(1.12a, #choice, [[Kind lebt hauptsächlich bei]], #DE-BB)
     * answerValueSet = Canonical(WohnsituationKindAlternativ2VS)
     * required = true
 //********************************************
@@ -130,90 +90,25 @@ Description: "Elternbefragung SL"
   * insert addItem(2, #group, Personenbezogene Daten Personensorgeberechtigter)
   * repeats = true
   * item[+]
-    * answerValueSet = Canonical(GenderDEVS)
-    * insert addItem(2.1, #choice, Geschlecht)
-    * required = true
-  * item[+]
-    * insert addItem(2.2, #string, Nachname)
-    * insert initialExpression("%patient.name[0].family")
-    * required = true
-  * item[+]
-    * insert addItem(2.3, #string, Vorname)
-    * insert initialExpression("%patient.name[0].given[0]")
-    * required = true
-  * item[+]
-    * insert addItem(2.4, #string, PLZ)
-    * insert regEx([["^[0-9]{5}$"]])
-    * required = true
-  * item[+]
-    * insert addItem(2.5, #string, Wohnort)
-    * required = true
-  * item[+]
-    * insert addItem(2.6, #string, Straße)
-    * required = true
-  * item[+]
-    * insert addItem(2.7, #string, Telefonnummer)
-    * insert regEx([["^(\\+|0)(\\d|\\s)*\\d$"]])
-  * item[+]
-    * insert addItem(2.8, #string, Email)
-    * insert regEx([["^[a-zA-Z0-9.!#$%&’*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\\.[a-zA-Z0-9-]+)*$"]])
-  * item[+]
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
     * insert addItem(2.9, #choice, Staatsangehörigkeit)
-    * required = true
-  * item[+]
-    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
-    * insert addItem(2.10, #choice, Herkunftsland)
-    * required = true
-  * item[+]
-    * answerValueSet = Canonical(ISO6392_LanguageVS)
-    * insert addItem(2.11, #choice, Muttersprache)
-    * required = true
-  * item[+]
-    * insert addItem(2.12, #date, Geburtsdatum)
     * required = true
 //********************************************
 // Familiendaten
 * item[+]
   * insert addItem(3, #group, Familiendaten)
   * item[+]
-    * insert addItem(3.1, #integer, Anzahl der Geschwister)
-    * required = true
-  * item[+]
     * insert addItemWithSource(3.1a, #integer, Anzahl der im Familienverbund lebenden Kinder, #DE-SL)
     * insert minValueInt(0)
     * insert maxValueInt(10)
     * required = true
   * item[+]
-    * insert addItem(3.1.1, #group, Details Geschwister)
-    * repeats = true
-    * enableWhen[+]
-      * question = "3.1"
-      * operator = #> 
-      * answerInteger = 0
+    * insert addItemWithSource(3.1b, #integer, Aktuell im Haushalt lebende Kinder, #DE-SL)
+    * insert minValueInt(0)
+    * insert maxValueInt(10)
     * required = true
   * item[+]
     * insert addItem(3.2, #group, Familiäre Vorgeschichte)
-    * item[+]
-      * insert addItem(3.2.1, #boolean, Brillenträger)
-      * required = true
-    * item[+]
-      * insert addItem(3.2.2, #boolean, Lese/Rechtschreibschwäche)
-      * required = true
-    * item[+]
-      * insert addItem(3.2.3, #boolean, Rechenschwäche)
-      * required = true
-    * item[+]
-      * insert addItem(3.2.4, #choice, Erkrankung)
-      * answerValueSet = Canonical(ChronischeErkrankungenVS)
-      * repeats = true
-    * item[+]
-      * insert addItem(3.2.5, #choice, Chronische Erkrankung)
-      * answerValueSet = Canonical(ChronischeKrankheitenVS)
-      * repeats = true
-      * item[+]
-        * insert enableWhenCode(3.2.5, =, ChronischeKrankheiten, sonstiges)
-        * insert addItem(3.2.5.1, #string, [[Welche sonstige(n) chronischen Erkrankung(en)?]])
     * item[+]
       * insert addItemWithSource(3.2.6a, #boolean, [[Liegt bei Ihrem Kind ein Grad der Behinderung/ein Pflegegrad vor?]], #DE-SL)
       * required = true
@@ -222,22 +117,9 @@ Description: "Elternbefragung SL"
 * item[+]
   * insert addItem(4, #group, Kinderbetreuung)
   * item[+]
-    * insert addItem(4.0b, #boolean, Ist das Kind in einem Kindergarten/einer Kindertageseinrichtung?)
-    * required = true
-  * item[+]
     * insert addItemWithSource(4.1a, #choice, Wie alt war das Kind bei der Aufnahme in die Kita?, #DE-SL)
     * answerValueSet = Canonical(SEU_EF_AlterKindVS)
     * required = true
-  * item[+]
-    * insert addItemWithSource(4.1b, #choice, Wie lange besucht Ihr Kind bis jetzt eine Kindertageseinrichtung?, #DE-BW)
-    * answerValueSet = Canonical(SEU_EF_DauerBWVS)
-    * required = true
-  * item[+]
-    * insert addItemWithSource(4.1c, #choice, [[Dauer Kindertagesbetreuung in Jahren]], #DE-BB)
-    * answerValueSet = Canonical(SEU_EF_DauerBBVS)
-    * required = true
-  * item[+]
-    * insert addItem(4.6, #boolean, Besucht Ihr Kind eine Kita in einem anderen Bundesland?)
 //********************************************
 // Schwangerschaft und Geburt
 * item[+]
@@ -275,14 +157,9 @@ Description: "Elternbefragung SL"
   * item[+]
     * insert addItemWithSource(6.1b, #choice, [[1. vorrangig in der Familie gesprochene Sprache]], #DE-SL)
     * answerValueSet = Canonical(ISO6392_LanguageVS)
-    * required = true
   * item[+]
     * insert addItemWithSource(6.1c, #choice, [[2. vorrangig in der Familie gesprochene Sprache]], #DE-SL)
     * answerValueSet = Canonical(ISO6392_LanguageVS)
-    * required = true
-  * item[+]
-    * answerValueSet = Canonical(JaNeinAngemeldetVS)
-    * insert addItem(6.3, #choice, [[Teilnahme des Kindes an einem Deutschkurs]])
     * required = true
 //********************************************
 // Entwicklung
@@ -318,37 +195,13 @@ Description: "Elternbefragung SL"
       * answerValueSet = Canonical(SEU_EF_SpracheVS)
       * required = true
   * item[+]
-    * insert addItem(8.12.g, #group, [[Infektionskrankheiten]])
-    * repeats = true
-    * required = true
-    * item[+]
-      * answerValueSet = Canonical(InfektionsKrankheitVS)
-      * insert addItem(8.12.g.1, #open-choice, [[Infektionskrankheit]])
-      * required = true
-  * item[+]
-    * insert addItem(8.15, #boolean, [[Krankenhausaufenthalt]])
-    * required = true
-    * item[+]
-      * insert addItem(8.15.1, #string, [[Detaillierte Angaben zum Krankenhausaufenthalt?]])
-      * insert enableWhenBoolean(8.15, =, true)
-      * required = true
-  * item[+]
-    * insert addItem(8.19, #integer, [[Grad der Behinderung]])
-    * required = true
-  * item[+]
-    * answerValueSet = Canonical(PflegegradVS)
-    * insert addItem(8.20, #choice, [[Pflegegrad]])
-    * required = true
-  * item[+]
-    * insert addItem(8.23, #boolean, [[Regelmäßige Medikamenteneinnahme]])
-    * required = true
-  * item[+]
-    * insert addItem(8.23.1, #string, [[Welches Medikament]])
-    * insert enableWhenBoolean(8.23, =, true)   
-    * repeats = true
-  * item[+]
     * insert addItem(8.27, #boolean, [[Wurde Ihr Kind operiert]])
     * required = true
+    * item[+]
+      * insert addItem(8.27.1, #choice, [[Wie fand die Operation statt?]])
+      * insert enableWhenBoolean(8.27, =, true)
+      * answerValueSet = Canonical(VersorgungsartVS)
+      * required = true
     * item[+]
       * insert addItem(8.27.2, #choice, [[Welche Operationen wurden durchgeführt?]])
       * repeats = true
@@ -363,15 +216,11 @@ Description: "Elternbefragung SL"
   * item[+]
     * insert addItem(8.28.g, #group, [[Hatte Ihr Kind einen Unfall]])
     * insert enableWhenBoolean(8.28a, =, true)
+    * enableBehavior = #any
     * repeats = true
-    * item[+]
-      * answerValueSet = Canonical(UnfallArtVS)
-      * insert addItem(8.28.g.2, #choice, [[Art des Unfalls]])
-      * required = true
     * item[+]
       * insert addItemWithSource(8.28.g.3, #choice, [[Anlass des Unfalls]], #DE-SL)
       * answerValueSet = Canonical(SEU_EF_UnfallVS)
-      * required = true
   * item[+]
     * insert addItemWithSource(8.30, #boolean, [[Wurde Ihr Kind jemals aufgrund von Unfallverletzungen von einem Arzt behandelt?]], #DE-SL)
     * required = true
@@ -400,8 +249,8 @@ Description: "Elternbefragung SL"
     * insert addItemWithSource(8.38, #boolean, [[Erkrankungen Pseudocroup]], #DE-SL)
     * required = true
   * item[+]
-    * required = true
     * insert addItemWithSource(8.39, #boolean, [[Erkrankungen Fieberkrampf/Krampfanfall]], #DE-SL)
+    * required = true
   * item[+]
     * insert addItemWithSource(8.40, #boolean, [[Erkrankungen Harnwegserkrankungen]], #DE-SL)
     * required = true
@@ -443,8 +292,8 @@ Description: "Elternbefragung SL"
     * required = true
   * item[+]
     * insert addItemWithSource(8.52, #choice, [[Unfälle Verbrennung/Verbrühung]], #DE-SL)
-    * answerValueSet = Canonical(SEU_EF_UnfallortVS)
     * required = true
+    * answerValueSet = Canonical(SEU_EF_UnfallortVS)
   * item[+]
     * insert addItemWithSource(8.53, #choice, [[Unfälle Intoxikation]], #DE-SL)
     * answerValueSet = Canonical(SEU_EF_UnfallortVS)
@@ -464,6 +313,10 @@ Description: "Elternbefragung SL"
   * item[+]
     * insert addItemWithSource(8.57, #boolean, [[Reg. Med. Antikonvulsiva]], #DE-SL)
     * required = true
+    * item[+]
+      * insert addItem(8.57.1, #string, [[Wegen welcher Erkrankungen ist Ihr Kind zurzeit in Behandlung??]])
+      * required = true
+      * insert enableWhenBoolean(8.57, =, true)
   * item[+]
     * insert addItemWithSource(8.58, #boolean, [[Reg. Med. Antiasthmatika/Antiallergika]], #DE-SL)
     * required = true
@@ -491,11 +344,11 @@ Description: "Elternbefragung SL"
   * insert addItem(9, #group, [[Förderungen]])
   * item[+]
     * insert addItemWithSource(9.1a, #boolean, [[Werden oder wurden bei Ihrem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)]], #DE-SL)    
-    * required = true
   * item[+]
     * insert addGroup(9.1a.g, Therapien)
     * insert enableWhenBoolean(9.1a, =, true)
     * insert addSource(#DE-SN)
+    * required = true
     * item[+]
       * insert addItemWithSource(9.11, #boolean, [[Fördermaßn. Integration in Regel-Kita]], #DE-SL)
       * required = true
@@ -510,28 +363,5 @@ Description: "Elternbefragung SL"
 * item[+]
   * insert addGroup(12, Sonstiges)
   * item[+]
-    * insert addItem(12.7, #boolean, Regelmäßig Sport)
-    * required = true
-  * item[+]
     * insert addItemWithSource(12.7a, #boolean, [[Präv. Maßnahmen Regemäßig Sport im Verein]], #DE-SL)
-    * required = true
-//********************************************
-// Informationen Eltern
-* item[+]
-  * insert addGroup(13, Informationen Eltern)
-  * item[+]
-    * insert addItem(13.1, #choice, Schulabschluss 1. Elternteil)
-    * answerValueSet = Canonical(SEU_EF_BildungsabschlussVS)
-    * required = true
-  * item[+]
-    * insert addItem(13.2, #choice, Schulabschluss 2. Elternteil)
-    * answerValueSet = Canonical(SEU_EF_BildungsabschlussVS)
-    * required = true
-  * item[+]
-    * insert addItem(13.3, #choice, Berufsabschluss 1. Elternteil)
-    * answerValueSet = Canonical(SEU_EF_BerufsbildungVS)
-    * required = true
-  * item[+]
-    * insert addItem(13.4, #choice, Berufsabschluss 2. Elternteil)
-    * answerValueSet = Canonical(SEU_EF_BerufsbildungVS)
     * required = true
