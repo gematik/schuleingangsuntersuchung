@@ -786,17 +786,6 @@
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
           ]
-        },
-        {
-          "linkId": "0.2",
-          "type": "string",
-          "text": "(0.2) Vorgangsnummer",
-          "code": [
-            {
-              "code": "0.2",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ]
         }
       ]
     },

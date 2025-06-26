@@ -24,8 +24,6 @@ Description: "Elternbefragung SN"
   * insert addGroup(0, Schule & Vorgangsnummer)
   * item[+]
     * insert addItem(0.1, #string, Name der Schule)
-  * item[+]
-    * insert addItem(0.2, #string, Vorgangsnummer)
 * item[+]
   * type = #group
   * linkId = "1"
