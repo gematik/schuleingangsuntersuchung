@@ -453,6 +453,10 @@ Description: "Elternbefragung"
     * answerValueSet = Canonical(SEU_UB_KindergartenArtVS)
   * item[+]
     * insert addItem(4.6, #boolean, Besucht Ihr Kind eine Kita in einem anderen Bundesland?)
+    * enableWhen[+]
+      * question = "4.0b"
+      * operator = #=
+      * answerBoolean = true
   * item[+]
     * insert addItem(4.6b, #string, Name des Kindergartens)
     * enableWhen[+]
@@ -475,6 +479,10 @@ Description: "Elternbefragung"
       * answerBoolean = true
   * item[+]
     * insert addItemWithSource(4.9, #date, [[Seit wann besucht das Kind eine Kita?]], #DE-SN)
+    * enableWhen[+]
+      * question = "4.0b"
+      * operator = #=
+      * answerBoolean = true
   * item[+]
     * insert addItemWithSource(4.10, #boolean, [[Bekommt oder wartet Ihr Kind auf eine spezielle Förderung oder Therapie?]], #DE-SN)
   * item[+]

@@ -83,6 +83,10 @@ Description: "Elternbefragung SN"
     * insert addItem(4.0b, #boolean, Ist das Kind in einem Kindergarten/einer Kindertageseinrichtung?)
   * item[+]
     * insert addItem(4.6, #boolean, Besucht Ihr Kind eine Kita in einem anderen Bundesland?)
+    * enableWhen[+]
+      * question = "4.0b"
+      * operator = #=
+      * answerBoolean = true
   * item[+]
     * insert addItem(4.6b, #string, Name des Kindergartens)
     * enableWhen[+]
@@ -97,6 +101,10 @@ Description: "Elternbefragung SN"
       * answerBoolean = true
   * item[+]
     * insert addItemWithSource(4.9, #date, [[Seit wann besucht das Kind eine Kita?]], #DE-SN)
+    * enableWhen[+]
+      * question = "4.0b"
+      * operator = #=
+      * answerBoolean = true
 //********************************************
 // Schwangerschaft und Geburt
 * item[+]

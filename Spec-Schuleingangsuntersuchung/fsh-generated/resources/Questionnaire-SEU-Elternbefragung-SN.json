@@ -1081,6 +1081,13 @@
               "code": "4.6",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
+          ],
+          "enableWhen": [
+            {
+              "question": "4.0b",
+              "operator": "=",
+              "answerBoolean": true
+            }
           ]
         },
         {
@@ -1145,6 +1152,13 @@
                 "system": "urn:iso:std:iso:3166-2:de",
                 "code": "DE-SN"
               }
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "4.0b",
+              "operator": "=",
+              "answerBoolean": true
             }
           ]
         }

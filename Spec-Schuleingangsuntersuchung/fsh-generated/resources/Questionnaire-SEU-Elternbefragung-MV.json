@@ -2997,6 +2997,13 @@
                 "code": "DE-SN"
               }
             }
+          ],
+          "enableWhen": [
+            {
+              "question": "4.0b",
+              "operator": "=",
+              "answerBoolean": true
+            }
           ]
         }
       ]

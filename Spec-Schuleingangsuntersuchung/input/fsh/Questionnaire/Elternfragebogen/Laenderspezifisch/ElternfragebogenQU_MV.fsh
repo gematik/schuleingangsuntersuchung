@@ -130,6 +130,10 @@ Description: "Elternbefragung MV"
       * answerBoolean = true
   * item[+]
     * insert addItemWithSource(4.9, #date, [[Seit wann besucht das Kind eine Kita?]], #DE-SN)
+    * enableWhen[+]
+      * question = "4.0b"
+      * operator = #=
+      * answerBoolean = true
 //********************************************
 // Schwangerschaft und Geburt
 * item[+]
