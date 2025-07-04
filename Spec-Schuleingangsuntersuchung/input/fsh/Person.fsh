@@ -122,7 +122,7 @@ Id: Person
   * name only HumannameDeBasis
   * address 1.. MS
   * address only AddressDeBasis
-  * extension contains ContactBirthDate named ContactBirthDate 0..*
+  * extension contains ContactBirthDate named ContactBirthDate 1..*
 * contact[Kindertagesstaette]
   * relationship 1.. MS
     * coding
