@@ -234,50 +234,6 @@
       "country": "DE"
     },
     {
-      "type": "both",
-      "line": [
-        "Musterweg 2",
-        "3. Etage"
-      ],
-      "_line": [
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
-              "valueString": "Musterweg"
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
-              "valueString": "2"
-            }
-          ]
-        },
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator",
-              "valueString": "3. Etage"
-            }
-          ]
-        }
-      ],
-      "city": "Musterhausen",
-      "_city": {
-        "extension": [
-          {
-            "url": "https://www.oegd.de/fhir/seu//StructureDefinition/FruehererGemeindeNameEX",
-            "valueString": "Altes Musterhausen"
-          },
-          {
-            "url": "http://fhir.de/StructureDefinition/destatis/ags",
-            "valueString": "03 2 54 021"
-          }
-        ]
-      },
-      "postalCode": "98764",
-      "country": "DE"
-    },
-    {
       "type": "postal",
       "line": [
         "Postfach 8 15"

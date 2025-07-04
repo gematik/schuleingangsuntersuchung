@@ -52,7 +52,6 @@ Id: Person
   * ^slicing.rules = #open
 * address contains
     Hauptwohnsitz 0..* MS and
-    Strassenanschrift 0..* MS and
     Postfach 0..* MS
 * address[Hauptwohnsitz] only AddressDeBasis
   * ^patternAddress.type = #both
@@ -76,19 +75,6 @@ Id: Person
     * extension[Adresszusatz] 0..0 
     * extension[Postfach] 0..1 MS
   * city 1.. MS
-  * postalCode 1.. MS
-  * country 1.. MS
-    * obeys address-cnt-2or3-char
-* address[Strassenanschrift] only AddressDeBasis
-  * ^patternAddress.type = #both
-  * type 1.. MS
-  * line 1.. MS
-    * extension[Strasse] 0..1 MS
-    * extension[Hausnummer] 0..1 MS
-    * extension[Adresszusatz] 0..1 MS
-    * extension[Postfach] 0..0
-  * city 1.. MS
-    * extension contains http://fhir.de/StructureDefinition/destatis/ags named gemeindeschluessel 0..1 MS and FruehererGemeindeNameEX named frueherergemeindename 0..1 MS
   * postalCode 1.. MS
   * country 1.. MS
     * obeys address-cnt-2or3-char
@@ -234,22 +220,6 @@ Usage: #example
 * address[Hauptwohnsitz].city.extension[=].valueString = "03 2 54 021"
 * address[Hauptwohnsitz].postalCode = "98764"
 * address[Hauptwohnsitz].country = "DE"
-* address[Strassenanschrift].type = #both
-* address[Strassenanschrift].line[0] = "Musterweg 2"
-* address[Strassenanschrift].line[+] = "3. Etage"
-* address[Strassenanschrift].line[0].extension[0].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"
-* address[Strassenanschrift].line[=].extension[=].valueString = "Musterweg"
-* address[Strassenanschrift].line[=].extension[+].url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"
-* address[Strassenanschrift].line[=].extension[=].valueString = "2"
-* address[Strassenanschrift].line[+].extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-additionalLocator"
-* address[Strassenanschrift].line[=].extension.valueString = "3. Etage"
-* address[Strassenanschrift].city = "Musterhausen"
-* address[Strassenanschrift].city.extension[+].url = "https://www.oegd.de/fhir/seu//StructureDefinition/FruehererGemeindeNameEX"
-* address[Strassenanschrift].city.extension[=].valueString = "Altes Musterhausen"
-* address[Strassenanschrift].city.extension[+].url = $ags
-* address[Strassenanschrift].city.extension[=].valueString = "03 2 54 021"
-* address[Strassenanschrift].postalCode = "98764"
-* address[Strassenanschrift].country = "DE"
 * address[Postfach].type = #postal
 * address[Postfach].line = "Postfach 8 15"
   * extension.url = "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox"
