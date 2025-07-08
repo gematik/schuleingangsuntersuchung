@@ -38,6 +38,12 @@ Description: "Elternbefragung SN"
     * insert addItem(1.3, #date, Geburtsdatum)
     * insert initialExpression("%patient.birthdate")
   * item[+]
+    * insert addItem(1.6, #boolean, In Deutschland geboren)
+  * item[+]
+    * insert addItemWithSource(1.6.2, #choice, [[Geburtsland]], #DE-ST)
+    * insert enableWhenBoolean(1.6, =, false)
+    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
+  * item[+]
     * insert addItem(1.9, #string, PLZ)
     * insert regEx([["^[0-9]{5}$"]])
   * item[+]
