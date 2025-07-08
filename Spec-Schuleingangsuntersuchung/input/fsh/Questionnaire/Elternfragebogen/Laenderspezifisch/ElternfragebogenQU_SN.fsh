@@ -64,8 +64,23 @@ Description: "Elternbefragung SN"
     * insert addItem(2.3, #string, Vorname)
     * insert initialExpression("%patient.name[0].given[0]")
   * item[+]
-    * insert addItem(2.7, #string, Telefonnummer)
-    * insert regEx([["^(\\+|0)(\\d|\\s)*\\d$"]])
+    * insert addItemWithSource(2.14, #boolean, [[In Deutschland geboren]], #DE-SN)
+  * item[+]
+    * insert addItemWithSource(2.14.1, #choice, [[Geburtsland]], #DE-SN)
+    * insert enableWhenBoolean(2.14, =, false)
+    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
+  * item[+]
+    * insert addItemWithSource(2.15, #boolean, [[Deutsche Staatsangehörigkeit]], #DE-SN)
+  * item[+]
+    * insert addItemWithSource(2.15.1, #choice, [[Staatsangehörigkeit]], #DE-SN)
+    * insert enableWhenBoolean(2.15, =, false)
+    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
+  * item[+]
+    * insert addItemWithSource(2.16, #choice, [[Schulabschluss]], #DE-SN)
+    * answerValueSet = Canonical(SEU_EF_BildungsabschlussVS)
+  * item[+]
+    * insert addItemWithSource(2.17, #choice, [[Berufstätigkeit]], #DE-SN)
+    * answerValueSet = Canonical(ErwerbsstatusVS)
 //********************************************
 // Familiendaten
 * item[+]

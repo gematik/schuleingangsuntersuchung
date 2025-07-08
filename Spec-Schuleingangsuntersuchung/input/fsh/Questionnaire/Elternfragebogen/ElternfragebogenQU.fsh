@@ -324,6 +324,24 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItemWithSource(2.13, #choice, [[Zusammenlebend]], #DE-HH)
     * answerValueSet = Canonical(PersonensorgeberechtigterZusammenlebendVS)
+  * item[+]
+    * insert addItemWithSource(2.14, #boolean, [[In Deutschland geboren]], #DE-SN)
+  * item[+]
+    * insert addItemWithSource(2.14.1, #choice, [[Geburtsland]], #DE-SN)
+    * insert enableWhenBoolean(2.14, =, false)
+    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
+  * item[+]
+    * insert addItemWithSource(2.15, #boolean, [[Deutsche Staatsangehörigkeit]], #DE-SN)
+  * item[+]
+    * insert addItemWithSource(2.15.1, #choice, [[Staatsangehörigkeit]], #DE-SN)
+    * insert enableWhenBoolean(2.15, =, false)
+    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
+  * item[+]
+    * insert addItemWithSource(2.16, #choice, [[Schulabschluss]], #DE-SN)
+    * answerValueSet = Canonical(SEU_EF_BildungsabschlussVS)
+  * item[+]
+    * insert addItemWithSource(2.17, #choice, [[Berufstätigkeit]], #DE-SN)
+    * answerValueSet = Canonical(ErwerbsstatusVS)
 //********************************************
 // Familiendaten
 * item[+]
