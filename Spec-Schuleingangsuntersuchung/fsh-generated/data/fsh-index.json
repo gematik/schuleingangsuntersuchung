@@ -1709,7 +1709,7 @@
     "fshType": "Instance",
     "fshFile": "Questionnaire/Elternfragebogen/Laenderspezifisch/ElternfragebogenQU_SN.fsh",
     "startLine": 1,
-    "endLine": 290
+    "endLine": 244
   },
   {
     "outputFile": "Questionnaire-SEU-Elternbefragung-ST.json",
@@ -1733,7 +1733,7 @@
     "fshType": "Instance",
     "fshFile": "Questionnaire/Elternfragebogen/ElternfragebogenQU.fsh",
     "startLine": 1,
-    "endLine": 1696
+    "endLine": 1721
   },
   {
     "outputFile": "Questionnaire-SEU-Untersuchungsbogen.json",
