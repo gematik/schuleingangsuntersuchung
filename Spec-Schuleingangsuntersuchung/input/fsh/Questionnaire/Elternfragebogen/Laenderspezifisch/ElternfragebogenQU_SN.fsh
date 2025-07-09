@@ -189,7 +189,7 @@ Description: "Elternbefragung SN"
     * repeats = true
   * item[+]
     * insert addItem(8.27, #boolean, [[Wurde Ihr Kind operiert]])
-    * item[+]
+  * item[+]
     * insert addItemWithSource(8.31, #boolean, [[Einnässen tags]], #DE-SL)
   * item[+]
     * insert addItemWithSource(8.74, #boolean, [[Hauterkrankungen]], #DE-SN)
