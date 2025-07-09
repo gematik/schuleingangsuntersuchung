@@ -128,6 +128,11 @@ Description: "Elternbefragung SN"
       * insert addItem(5.5.1, #string, [[Welche Auffälligkeit?]])
 //********************************************
 // Sprache
+* item[+]
+  * insert addItem(6, #group, [[Sprache]])
+  * item[+] insert addItemWithSource(6.1d, #boolean, [[Kind wächst mehrsprachig auf]], #DE-BY)
+  * item[+]
+    * insert addItem(6.4, #boolean, [[Sprachauffälligkeiten]])
 //********************************************
 // Entwicklung
 * item[+]
@@ -156,48 +161,10 @@ Description: "Elternbefragung SN"
       * insert addItem(8.3.1, #string, [[Welche Sehstörung]])
       * insert enableWhenBoolean(8.3, =, true)
   * item[+]
-    * insert addItem(8.6, #boolean, [[Brillenträger?]])
-  * item[+]
     * insert addItem(8.9, #boolean, [[Schwere Hörstörung vorhanden?]])
     * item[+]
       * insert addItem(8.9.1, #string, [[Welche Hörstörung]])
       * insert enableWhenBoolean(8.9, =, true)
-  * item[+]
-    * insert addItem(8.9.G, #group, [[Details: Angeborene schwere Hörstörung]])
-    * enableWhen[+]
-      * question = "8.9"
-      * operator = #=
-      * answerBoolean = true 
-    * item[+]
-      * insert addItem(8.9.G.hoergeraete.G, #group, [[Hörgeräte]])
-      * repeats = true
-      * item[+]
-        * answerValueSet = Canonical(LinksRechtsBeidseitsKeineAngabeVS)
-        * insert addItem(8.9.G.hoergeraete.G.1, #choice, [[Höregerätseite]])
-    * item[+]
-      * insert addItem(8.9.G.cochlea.G, #group, [[Cochleaimplantate]])
-      * repeats = true
-      * item[+]
-        * answerValueSet = Canonical(LinksRechtsBeidseitsKeineAngabeVS)
-        * insert addItem(8.9.G.cochlea.G.1, #choice, [[Cochleaimplantat-Seite]])
-  * item[+]
-    * insert addItem(8.10g, #group, [[Stoffwechsel & Hormonstörungen]])
-    * repeats = true
-    * item[+]
-      * answerValueSet = Canonical(StoffwechselstoerungVS)
-      * insert addItem(8.10g.1, #choice, [[Art der Störung oder Erkrankung]])
-  * item[+]
-    * insert addItem(8.11.g, #group, [[Erkrankungen]])
-    * repeats = true
-    * item[+]
-      * answerValueSet = Canonical(ErkrankungVS)
-      * insert addItem(8.11.g.1, #open-choice, [[Erkrankung]])
-  * item[+]
-    * insert addItem(8.12.g, #group, [[Infektionskrankheiten]])
-    * repeats = true
-    * item[+]
-      * answerValueSet = Canonical(InfektionsKrankheitVS)
-      * insert addItem(8.12.g.1, #open-choice, [[Infektionskrankheit]])
   * item[+]
     * insert addItemWithSource(8.14b, #text, [[Bisher durchgemachte Erkrankungen, bspw. Windpocken oder Masern. Zeitlich nicht bestimmt]], #DE-BW)    
   * item[+]
@@ -220,23 +187,7 @@ Description: "Elternbefragung SN"
   * item[+]
     * insert addItem(8.27, #boolean, [[Wurde Ihr Kind operiert]])
     * item[+]
-      * insert addItem(8.27.1, #choice, [[Wie fand die Operation statt?]])
-      * insert enableWhenBoolean(8.27, =, true)
-      * answerValueSet = Canonical(VersorgungsartVS)
-  * item[+]
-    * insert addItem(8.28a, #boolean, [[Hatte Ihr Kind einen Unfall]])
-  * item[+]
-    * insert addItemWithSource(8.28b, #boolean, [[Hatte  Ihr Kind jemals einen Unfall, der ärztlich behandelt wurde?]], #DE-BB)
-  * item[+]
-    * insert addItem(8.28.g, #group, [[Hatte Ihr Kind einen Unfall]])
-    * insert enableWhenBoolean(8.28a, =, true)
-    * repeats = true
-    * item[+]
-      * answerValueSet = Canonical(UnfallOrtVS)
-      * insert addItem(8.28.g.1, #choice, [[Ort des Unfall]])
-    * item[+]
-      * answerValueSet = Canonical(UnfallArtVS)
-      * insert addItem(8.28.g.2, #choice, [[Art des Unfalls]])
+    * insert addItemWithSource(8.31, #boolean, [[Einnässen tags]], #DE-SL)
   * item[+]
     * insert addItemWithSource(8.74, #boolean, [[Hauterkrankungen]], #DE-SN)
   * item[+]
@@ -247,7 +198,6 @@ Description: "Elternbefragung SN"
   * item[+]
     * insert addItemWithSource(8.77, #string, [[Welche orthopädischen Erkrankungen]], #DE-SN)
     * insert enableWhenBoolean(8.76, =, true)
-
 //********************************************
 // Förderungen
 * item[+]
@@ -289,12 +239,4 @@ Description: "Elternbefragung SN"
   * insert addGroup(11, Arzt)
   * item[+]
     * insert addItem(11.2, #string, Name Kinderarzt)
-//********************************************
-// Sonstiges
-//********************************************
-// Informationen Eltern
-* item[+]
-  * insert addGroup(13, Informationen Eltern)
-  * item[+]
-    * insert addItem(13.12, #boolean, [[Einwilligung zur Datenerhebung früherer Untersuchungen, welche beim Gesundheitsamt vorliegen]])
 
