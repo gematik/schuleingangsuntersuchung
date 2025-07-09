@@ -96,6 +96,13 @@ Description: "Elternbefragung"
 * contained[+] = AErztlichFestgestellteKrankheitenVS
 * contained[+] = FruehereErkrankungenVS
 * contained[+] = DerzeitigeErkrankungenVS
+* contained[+] = LebensumfeldVS
+* contained[+] = SorgenKindVS
+* contained[+] = ErkrankungenKindVS
+* contained[+] = SEUEFMedienkonsumBerlinVS
+* contained[+] = SchulabschlussBerlinVS
+* contained[+] = BerufstaetigkeitElternBerlinVS
+
 * id = "SEU-Elternbefragung"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung"
 * title = "SEU Elternfragebogen Maximaldatensatz"
