@@ -3,7 +3,10 @@ InstanceOf: Questionnaire
 Usage: #example
 Title: "Elternbefragung SN"
 Description: "Elternbefragung SN"
+* contained[+] = DeuevAnlage8LaenderkennzeichenVS
 * contained[+] = SEU-EF-NeinAbgeschlossenLaeuftGeplantVS
+* contained[+] = SEU_EF_BildungsabschlussVS
+* contained[+] = ErwerbsstatusVS
 * contained[+] = RechtsLinksHaenderVS
 * contained[+] = LinksRechtsBeidseitsKeineAngabeVS
 * contained[+] = StoffwechselstoerungVS
