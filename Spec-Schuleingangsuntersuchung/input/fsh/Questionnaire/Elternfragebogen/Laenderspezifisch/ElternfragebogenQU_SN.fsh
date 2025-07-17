@@ -27,6 +27,8 @@ Description: "Elternbefragung SN"
   * insert addGroup(0, Schule & Vorgangsnummer)
   * item[+]
     * insert addItem(0.1, #string, Name der Schule)
+//********************************************
+// Personenbezogene Daten Kind
 * item[+]
   * type = #group
   * linkId = "1"
@@ -66,24 +68,6 @@ Description: "Elternbefragung SN"
   * item[+]
     * insert addItem(2.3, #string, Vorname)
     * insert initialExpression("%patient.name[0].given[0]")
-  * item[+]
-    * insert addItemWithSource(2.14, #boolean, [[In Deutschland geboren]], #DE-SN)
-  * item[+]
-    * insert addItemWithSource(2.14.1, #choice, [[Geburtsland]], #DE-SN)
-    * insert enableWhenBoolean(2.14, =, false)
-    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
-  * item[+]
-    * insert addItemWithSource(2.15, #boolean, [[Deutsche Staatsangehörigkeit]], #DE-SN)
-  * item[+]
-    * insert addItemWithSource(2.15.1, #choice, [[Staatsangehörigkeit]], #DE-SN)
-    * insert enableWhenBoolean(2.15, =, false)
-    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
-  * item[+]
-    * insert addItemWithSource(2.16, #choice, [[Schulabschluss]], #DE-SN)
-    * answerValueSet = Canonical(SEU_EF_BildungsabschlussVS)
-  * item[+]
-    * insert addItemWithSource(2.17, #choice, [[Berufstätigkeit]], #DE-SN)
-    * answerValueSet = Canonical(ErwerbsstatusVS)
 //********************************************
 // Familiendaten
 * item[+]
@@ -242,4 +226,17 @@ Description: "Elternbefragung SN"
   * insert addGroup(11, Arzt)
   * item[+]
     * insert addItem(11.2, #string, Name Kinderarzt)
-
+//********************************************
+// Informationen Eltern
+* item[+]
+  * insert addGroup(13, [[Informationen Eltern]])
+  * item[+]
+    * insert addItem(13.1, #choice, [[Schulabschluss 1. Elternteil]])
+    * answerValueSet = Canonical(SEU_EF_BildungsabschlussVS)
+  * item[+]
+    * insert addItem(13.5, #choice, [[Berufstätigkeit 1. Elternteil]])
+    * answerValueSet = Canonical(ErwerbsstatusVS)
+  * item[+]
+    * insert addItemWithSource(13.17, #boolean, [[Deutsche Staatsangehörigkeit? Elternteil 1]], #DE-BW)
+  * item[+]
+    * insert addItemWithSource(13.19, #boolean, [[in Deutschland geboren? Elternteil 1]], #DE-BW)
