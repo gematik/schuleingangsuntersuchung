@@ -2787,144 +2787,6 @@
               }
             }
           ]
-        },
-        {
-          "linkId": "2.14",
-          "type": "boolean",
-          "text": "(2.14) In Deutschland geboren",
-          "code": [
-            {
-              "code": "2.14",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-SN"
-              }
-            }
-          ]
-        },
-        {
-          "linkId": "2.14.1",
-          "type": "choice",
-          "text": "(2.14.1) Geburtsland",
-          "code": [
-            {
-              "code": "2.14.1",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-SN"
-              }
-            }
-          ],
-          "enableWhen": [
-            {
-              "question": "2.14",
-              "operator": "=",
-              "answerBoolean": false
-            }
-          ],
-          "answerValueSet": "#DeuevAnlage8LaenderkennzeichenVS"
-        },
-        {
-          "linkId": "2.15",
-          "type": "boolean",
-          "text": "(2.15) Deutsche Staatsangehörigkeit",
-          "code": [
-            {
-              "code": "2.15",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-SN"
-              }
-            }
-          ]
-        },
-        {
-          "linkId": "2.15.1",
-          "type": "choice",
-          "text": "(2.15.1) Staatsangehörigkeit",
-          "code": [
-            {
-              "code": "2.15.1",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-SN"
-              }
-            }
-          ],
-          "enableWhen": [
-            {
-              "question": "2.15",
-              "operator": "=",
-              "answerBoolean": false
-            }
-          ],
-          "answerValueSet": "#DeuevAnlage8LaenderkennzeichenVS"
-        },
-        {
-          "linkId": "2.16",
-          "type": "choice",
-          "text": "(2.16) Schulabschluss",
-          "code": [
-            {
-              "code": "2.16",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-SN"
-              }
-            }
-          ],
-          "answerValueSet": "#seu-ef-bildungsabschluss-vs"
-        },
-        {
-          "linkId": "2.17",
-          "type": "choice",
-          "text": "(2.17) Berufstätigkeit",
-          "code": [
-            {
-              "code": "2.17",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-SN"
-              }
-            }
-          ],
-          "answerValueSet": "#erwerbsstatus-vs"
         }
       ]
     },
@@ -3775,6 +3637,77 @@
             {
               "code": "11.2",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "13",
+      "type": "group",
+      "text": "(13) Informationen Eltern",
+      "item": [
+        {
+          "linkId": "13.1",
+          "type": "choice",
+          "text": "(13.1) Schulabschluss 1. Elternteil",
+          "code": [
+            {
+              "code": "13.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "answerValueSet": "#seu-ef-bildungsabschluss-vs"
+        },
+        {
+          "linkId": "13.5",
+          "type": "choice",
+          "text": "(13.5) Berufstätigkeit 1. Elternteil",
+          "code": [
+            {
+              "code": "13.5",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "answerValueSet": "#erwerbsstatus-vs"
+        },
+        {
+          "linkId": "13.17",
+          "type": "boolean",
+          "text": "(13.17) Deutsche Staatsangehörigkeit? Elternteil 1",
+          "code": [
+            {
+              "code": "13.17",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BW"
+              }
+            }
+          ]
+        },
+        {
+          "linkId": "13.19",
+          "type": "boolean",
+          "text": "(13.19) in Deutschland geboren? Elternteil 1",
+          "code": [
+            {
+              "code": "13.19",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BW"
+              }
             }
           ]
         }
