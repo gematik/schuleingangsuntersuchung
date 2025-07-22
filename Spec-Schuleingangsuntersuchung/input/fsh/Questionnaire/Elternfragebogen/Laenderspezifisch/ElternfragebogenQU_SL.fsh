@@ -30,7 +30,6 @@ Description: "Elternbefragung SL"
   * item[+]
     * insert addItemWithSource(1.4b.2, #choice, [[Staatsangehörigkeit Mutter]], #DE-SL)
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
-    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
     * required = true
   * item[+]
     * insert addItemWithSource(1.4c.2, #choice, [[Staatsangehörigkeit Vater]], #DE-SL)
@@ -56,15 +55,6 @@ Description: "Elternbefragung SL"
   * item[+]
     * insert addItemWithSource(1.12b, #choice, [[Kind lebt hauptsächlich bei]], #DE-SL)
     * answerValueSet = Canonical(WohnsituationKindAlternativ1VS)
-    * required = true
-//********************************************
-// Personenbezogene Daten Personenberechtigter
-* item[+]
-  * insert addItem(2, #group, Personenbezogene Daten Personensorgeberechtigter)
-  * repeats = true
-  * item[+]
-    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
-    * insert addItem(2.9, #choice, Staatsangehörigkeit)
     * required = true
 //********************************************
 // Familiendaten
