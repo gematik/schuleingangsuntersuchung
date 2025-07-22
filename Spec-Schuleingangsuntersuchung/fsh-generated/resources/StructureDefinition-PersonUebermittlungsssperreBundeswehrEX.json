@@ -2,7 +2,6 @@
   "resourceType": "StructureDefinition",
   "id": "PersonUebermittlungsssperreBundeswehrEX",
   "url": "https://www.oegd.de/fhir/seu/StructureDefinition/PersonUebermittlungsssperreBundeswehrEX",
-  "version": "0.1.0",
   "name": "PersonUebermittlungsssperreBundeswehrEX",
   "title": "Übermittlungssperre Bundeswehr",
   "status": "draft",

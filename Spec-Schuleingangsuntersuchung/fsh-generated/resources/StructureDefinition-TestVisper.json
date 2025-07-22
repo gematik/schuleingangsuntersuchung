@@ -2,7 +2,6 @@
   "resourceType": "StructureDefinition",
   "id": "TestVisper",
   "url": "https://www.oegd.de/fhir/seu/StructureDefinition/TestVisper",
-  "version": "0.1.0",
   "name": "TestVisper",
   "status": "draft",
   "fhirVersion": "4.0.1",

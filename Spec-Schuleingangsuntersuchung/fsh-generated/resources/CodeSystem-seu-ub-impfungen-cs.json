@@ -6,7 +6,6 @@
   "id": "seu-ub-impfungen-cs",
   "title": "SEU_UB_Impfungen CodeSystem",
   "description": "CodeSystem für die Angabe von Impfungen.",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ub-impfungen-cs",
   "concept": [
     {

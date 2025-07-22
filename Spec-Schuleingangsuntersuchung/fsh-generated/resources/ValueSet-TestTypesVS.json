@@ -5,7 +5,6 @@
   "id": "TestTypesVS",
   "title": "SEU Status Kind",
   "description": "Diese Codes enthalten die möglichen SEU Point Assessment Types",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/TestTypesVS",
   "compose": {
     "include": [

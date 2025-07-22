@@ -5,7 +5,6 @@
   "id": "SaarlandAntwortenUntersuchungenVS",
   "title": "SaarlandAntwortenUntersuchungenVS",
   "description": "SaarlandAntwortenUntersuchungenVS",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/SaarlandAntwortenUntersuchungenVS",
   "expansion": {
     "contains": [

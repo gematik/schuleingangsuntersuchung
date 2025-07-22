@@ -5,7 +5,6 @@
   "name": "SEU_UB_BesonderheitenCS",
   "id": "SEU-UB-BesonderheitenCS",
   "title": "SEU Besonderheiten",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-BesonderheitenCS",
   "concept": [
     {

@@ -5,7 +5,6 @@
   "id": "SEU-UB-SpracheStudieVS",
   "title": "SEU Sprache Studie",
   "description": "Dieses ValueSet enthält die auswählbaren Sprachen zu einer Studie. Als CodeSystem wird 'urn:iso:std:iso:639-2' als Basis genommen.",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-SpracheStudieVS",
   "expansion": {
     "timestamp": "2024-03-30T13:28:00+00:00",

@@ -6,7 +6,6 @@
   "id": "seu-ef-behandlungstyp-cs",
   "title": "SEU_EF_Behandlungstyp CodeSystem",
   "description": "CodeSystem für die Angabe des Behandlungstyps.",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-behandlungstyp-cs",
   "concept": [
     {

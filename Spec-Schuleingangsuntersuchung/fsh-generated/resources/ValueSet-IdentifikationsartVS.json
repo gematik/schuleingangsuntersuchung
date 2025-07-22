@@ -3,7 +3,6 @@
   "status": "draft",
   "name": "IdentifikationsartVS",
   "id": "IdentifikationsartVS",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/IdentifikationsartVS",
   "compose": {
     "include": [

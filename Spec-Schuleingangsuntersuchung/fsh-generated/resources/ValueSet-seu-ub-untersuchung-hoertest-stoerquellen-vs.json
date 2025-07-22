@@ -5,7 +5,6 @@
   "id": "seu-ub-untersuchung-hoertest-stoerquellen-vs",
   "title": "SEU_UB_Untersuchung Hörtest Störquellen ValueSet",
   "description": "ValueSet, das mögliche Störquellen bei einem Hörtest enthält.",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ub-untersuchung-hoertest-stoerquellen-vs",
   "expansion": {
     "timestamp": "2024-09-10T12:00:00+00:00",

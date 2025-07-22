@@ -5,7 +5,6 @@
   "id": "SEU-UB-AntwortTeilnahmeVS",
   "title": "SEU Antwort auf Fragen zur Teilnahme",
   "description": "Diese Codes enthalten Antworten zur Teilnahme an etwas",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-AntwortTeilnahmeVS",
   "expansion": {
     "timestamp": "2024-10-20T11:50:47+00:00",

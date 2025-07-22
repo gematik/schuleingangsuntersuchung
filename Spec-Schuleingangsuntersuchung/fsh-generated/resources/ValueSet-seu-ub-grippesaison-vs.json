@@ -5,7 +5,6 @@
   "id": "seu-ub-grippesaison-vs",
   "title": "SEU_UB_Grippesaison ValueSet",
   "description": "ValueSet, das die Grippesaisons von 20/21 bis 23/24 enthält.",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ub-grippesaison-vs",
   "expansion": {
     "timestamp": "2024-09-10T12:00:00+00:00",

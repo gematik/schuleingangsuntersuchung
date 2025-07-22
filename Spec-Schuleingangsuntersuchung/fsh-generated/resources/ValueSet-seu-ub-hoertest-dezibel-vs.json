@@ -5,7 +5,6 @@
   "id": "seu-ub-hoertest-dezibel-vs",
   "title": "SEU_UB_Hörtest ValueSet",
   "description": "ValueSet, das verschiedene Dezibelstufen im Hörtest enthält.",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ub-hoertest-dezibel-vs",
   "expansion": {
     "timestamp": "2024-09-10T12:00:00+00:00",

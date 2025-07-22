@@ -6,7 +6,6 @@
   "id": "bewertungsvorschlag-cs",
   "title": "Bewertungsvorschlag CodeSystem",
   "description": "CodeSystem, das verschiedene Bewertungsvorschläge enthält.",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/bewertungsvorschlag-cs",
   "concept": [
     {

@@ -4,7 +4,6 @@
   "name": "PaediatrischeLeistungVS",
   "id": "PaediatrischeLeistungVS",
   "title": "SEU Assessment Result",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/PaediatrischeLeistungVS",
   "compose": {
     "include": [

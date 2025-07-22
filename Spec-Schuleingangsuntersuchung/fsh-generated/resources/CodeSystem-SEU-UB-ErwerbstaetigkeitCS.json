@@ -5,7 +5,6 @@
   "name": "SEU_UB_ErwerbstaetigkeitCS",
   "id": "SEU-UB-ErwerbstaetigkeitCS",
   "title": "SEU Erwerbstätigkeit",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-ErwerbstaetigkeitCS",
   "concept": [
     {

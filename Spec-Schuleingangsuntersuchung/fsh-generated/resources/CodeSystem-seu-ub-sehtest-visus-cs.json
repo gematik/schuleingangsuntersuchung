@@ -6,7 +6,6 @@
   "id": "seu-ub-sehtest-visus-cs",
   "title": "SEU_UB_Sehtest Visus CodeSystem",
   "description": "CodeSystem für die Angabe der Visuswerte im Sehtest.",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ub-sehtest-visus-cs",
   "concept": [
     {

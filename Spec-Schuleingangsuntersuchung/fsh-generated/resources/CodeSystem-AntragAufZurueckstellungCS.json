@@ -6,7 +6,6 @@
   "id": "AntragAufZurueckstellungCS",
   "title": "AntragAufZurueckstellungCS",
   "description": "AntragAufZurueckstellungCS",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/AntragAufZurueckstellungCS",
   "concept": [
     {

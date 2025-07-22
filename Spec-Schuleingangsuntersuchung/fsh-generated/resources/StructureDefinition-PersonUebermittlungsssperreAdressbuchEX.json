@@ -2,7 +2,6 @@
   "resourceType": "StructureDefinition",
   "id": "PersonUebermittlungsssperreAdressbuchEX",
   "url": "https://www.oegd.de/fhir/seu/StructureDefinition/PersonUebermittlungsssperreAdressbuchEX",
-  "version": "0.1.0",
   "name": "PersonUebermittlungsssperreAdressbuchEX",
   "title": "Übermittlungssperre Adressbuch",
   "status": "draft",

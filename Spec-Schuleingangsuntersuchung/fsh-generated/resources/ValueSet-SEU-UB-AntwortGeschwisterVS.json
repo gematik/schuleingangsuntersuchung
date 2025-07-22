@@ -5,7 +5,6 @@
   "id": "SEU-UB-AntwortGeschwisterVS",
   "title": "SEU Antwort Geschwister",
   "description": "Diese Codes enthalten Informationen über die Anzahl der Geschwister",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-AntwortGeschwisterVS",
   "expansion": {
     "timestamp": "2024-10-20T11:50:47+00:00",

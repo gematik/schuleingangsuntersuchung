@@ -5,7 +5,6 @@
   "id": "SEU-UB-MasernimpfungNichtErforderlichGrundVS",
   "title": "SEU Masernimpfung nicht erforderlich Grund",
   "description": "Diese Codes enthalten Angaben zum Grund, warum die Masernimpfung nicht erforderlich ist",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-MasernimpfungNichtErforderlichGrundVS",
   "expansion": {
     "timestamp": "2024-10-20T11:50:47+00:00",

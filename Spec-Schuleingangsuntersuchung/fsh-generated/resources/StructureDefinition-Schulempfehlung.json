@@ -2,7 +2,6 @@
   "resourceType": "StructureDefinition",
   "id": "Schulempfehlung",
   "url": "https://www.oegd.de/fhir/seu/StructureDefinition/Schulempfehlung",
-  "version": "0.1.0",
   "name": "Schulempfehlung",
   "status": "draft",
   "fhirVersion": "4.0.1",

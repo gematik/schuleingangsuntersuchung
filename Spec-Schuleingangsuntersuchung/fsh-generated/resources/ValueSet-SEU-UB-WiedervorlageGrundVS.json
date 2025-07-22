@@ -5,7 +5,6 @@
   "id": "SEU-UB-WiedervorlageGrundVS",
   "title": "SEU Wiedervorlage Grund",
   "description": "Diese Codes enthalten Gründe für die Wiedervorlage der SEU",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-WiedervorlageGrundVS",
   "expansion": {
     "timestamp": "2024-03-30T13:28:00+00:00",

@@ -2,7 +2,6 @@
   "resourceType": "StructureDefinition",
   "id": "ChronischeKrankheit",
   "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ChronischeKrankheit",
-  "version": "0.1.0",
   "name": "ChronischeKrankheit",
   "status": "draft",
   "fhirVersion": "4.0.1",

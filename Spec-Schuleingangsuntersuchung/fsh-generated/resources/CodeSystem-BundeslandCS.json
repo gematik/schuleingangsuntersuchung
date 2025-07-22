@@ -4,7 +4,6 @@
   "content": "complete",
   "name": "BundeslandCS",
   "id": "BundeslandCS",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/BundeslandCS",
   "concept": [
     {

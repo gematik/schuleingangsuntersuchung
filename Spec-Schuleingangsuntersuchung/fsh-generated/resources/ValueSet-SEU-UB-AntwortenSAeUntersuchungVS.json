@@ -5,7 +5,6 @@
   "id": "SEU-UB-AntwortenSAeUntersuchungVS",
   "title": "SEU Antworten schulärztliche Untersuchung",
   "description": "Diese Codes enthalten die Antworten Fragen der schulärztlichen Untersuchung",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-AntwortenSAeUntersuchungVS",
   "expansion": {
     "timestamp": "2024-10-20T11:50:47+00:00",

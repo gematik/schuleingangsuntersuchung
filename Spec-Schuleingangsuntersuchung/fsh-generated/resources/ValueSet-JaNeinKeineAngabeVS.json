@@ -4,7 +4,6 @@
   "name": "JaNeinKeineAngabeVS",
   "id": "JaNeinKeineAngabeVS",
   "title": "Ja-Nein-Keine Angabe ValueSet",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/JaNeinKeineAngabeVS",
   "expansion": {
     "timestamp": "2024-06-24T12:00:00+00:00",

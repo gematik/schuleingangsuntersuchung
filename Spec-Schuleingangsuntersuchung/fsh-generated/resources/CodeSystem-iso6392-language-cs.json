@@ -6,7 +6,6 @@
   "id": "iso6392-language-cs",
   "title": "ISO 639-2 Language Codes",
   "description": "Language codes according to ISO 639-2.",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/iso6392-language-cs",
   "concept": [
     {

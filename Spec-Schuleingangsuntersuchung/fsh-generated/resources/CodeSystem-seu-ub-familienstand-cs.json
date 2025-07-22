@@ -6,7 +6,6 @@
   "id": "seu-ub-familienstand-cs",
   "title": "SEU_UB_Familienstand CodeSystem",
   "description": "CodeSystem für die Angabe der Familiensituation.",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ub-familienstand-cs",
   "concept": [
     {

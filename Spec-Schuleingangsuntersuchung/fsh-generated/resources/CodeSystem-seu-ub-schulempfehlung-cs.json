@@ -6,7 +6,6 @@
   "id": "seu-ub-schulempfehlung-cs",
   "title": "SEU_UB_Schulempfehlung CodeSystem",
   "description": "CodeSystem für die Angabe von Schulempfehlungen.",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ub-schulempfehlung-cs",
   "concept": [
     {

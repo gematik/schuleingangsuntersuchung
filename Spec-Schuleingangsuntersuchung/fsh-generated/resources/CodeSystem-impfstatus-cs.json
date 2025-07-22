@@ -6,7 +6,6 @@
   "id": "impfstatus-cs",
   "title": "Impfstatus CodeSystem",
   "description": "CodeSystem für den Impfstatus basierend auf den spezifischen Kategorien.",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/impfstatus-cs",
   "concept": [
     {

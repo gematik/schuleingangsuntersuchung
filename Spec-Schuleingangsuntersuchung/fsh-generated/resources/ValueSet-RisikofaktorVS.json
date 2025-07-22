@@ -4,7 +4,6 @@
   "name": "RisikofaktorVS",
   "id": "RisikofaktorVS",
   "title": "SEU Risikofaktoren",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/RisikofaktorVS",
   "compose": {
     "include": [

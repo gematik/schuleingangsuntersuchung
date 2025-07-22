@@ -2,7 +2,6 @@
   "resourceType": "StructureDefinition",
   "id": "TestPraep",
   "url": "https://www.oegd.de/fhir/seu/StructureDefinition/TestPraep",
-  "version": "0.1.0",
   "name": "TestPraep",
   "status": "draft",
   "fhirVersion": "4.0.1",

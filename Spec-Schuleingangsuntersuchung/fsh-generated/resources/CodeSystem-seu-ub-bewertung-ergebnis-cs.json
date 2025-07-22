@@ -6,7 +6,6 @@
   "id": "seu-ub-bewertung-ergebnis-cs",
   "title": "SEU_UB_Bewertung Ergebnis CodeSystem",
   "description": "CodeSystem für die Bewertung des Ergebnisses.",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ub-bewertung-ergebnis-cs",
   "concept": [
     {

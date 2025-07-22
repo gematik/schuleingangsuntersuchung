@@ -5,7 +5,6 @@
   "name": "SEU_UB_MasernimpfungNichtErforderlichGrundCS",
   "id": "SEU-UB-MasernimpfungNichtErforderlichGrundCS",
   "title": "SEU Masernimpfung nicht erforderlich Grund",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-MasernimpfungNichtErforderlichGrundCS",
   "concept": [
     {

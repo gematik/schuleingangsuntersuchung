@@ -5,7 +5,6 @@
   "id": "SEU-UB-AntwortAuffaelligkeitVS",
   "title": "SEU Antwort Auffälligkeit",
   "description": "Diese Codes enthalten Antwortmöglichkeiten zu Auffälligkeiten",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-AntwortAuffaelligkeitVS",
   "expansion": {
     "timestamp": "2024-10-20T11:50:47+00:00",

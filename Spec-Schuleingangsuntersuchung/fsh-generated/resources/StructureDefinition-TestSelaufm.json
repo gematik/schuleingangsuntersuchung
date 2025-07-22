@@ -2,7 +2,6 @@
   "resourceType": "StructureDefinition",
   "id": "TestSelaufm",
   "url": "https://www.oegd.de/fhir/seu/StructureDefinition/TestSelaufm",
-  "version": "0.1.0",
   "name": "TestSelaufm",
   "status": "draft",
   "fhirVersion": "4.0.1",

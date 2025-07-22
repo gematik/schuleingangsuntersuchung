@@ -5,7 +5,6 @@
   "id": "KrankenhausaufenthaltGrundVS",
   "title": "KrankenhausaufenthaltGrundVS",
   "description": "ValueSet, das den Grund des Krankenhausaufenthaltes beschreibt. Es enthält die Kategorien: akute Erkrankung, chronische Krankheit, Unfall, stationäre Operation(en), und sonstiges. Dieses CodeSystem kann verwendet werden, um den Grund eines Krankenhausaufenthaltes zu kategorisieren.",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/KrankenhausaufenthaltGrundVS",
   "expansion": {
     "contains": [

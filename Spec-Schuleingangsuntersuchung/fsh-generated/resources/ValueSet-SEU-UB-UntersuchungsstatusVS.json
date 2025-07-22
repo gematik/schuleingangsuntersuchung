@@ -5,7 +5,6 @@
   "id": "SEU-UB-UntersuchungsstatusVS",
   "title": "SEU Untersuchungsstatus",
   "description": "Diese Codes enthalten Untersuchungsstatus der SEU",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-UntersuchungsstatusVS",
   "expansion": {
     "timestamp": "2024-03-30T13:28:00+00:00",

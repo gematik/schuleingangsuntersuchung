@@ -6,7 +6,6 @@
   "id": "RauchortCS",
   "title": "RauchortCS",
   "description": "CodeSystem, das den Ort des Rauchens beschreibt.",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/RauchortCS",
   "concept": [
     {

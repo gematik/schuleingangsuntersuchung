@@ -5,7 +5,6 @@
   "name": "SEU_UB_UntersuchungsstatusCS",
   "id": "SEU-UB-UntersuchungsstatusCS",
   "title": "SEU Untersuchungsstatus",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-UntersuchungsstatusCS",
   "concept": [
     {

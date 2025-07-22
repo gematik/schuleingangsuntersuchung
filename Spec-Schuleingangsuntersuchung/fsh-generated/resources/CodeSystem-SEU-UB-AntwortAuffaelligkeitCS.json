@@ -5,7 +5,6 @@
   "name": "SEU_UB_AntwortAuffaelligkeitCS",
   "id": "SEU-UB-AntwortAuffaelligkeitCS",
   "title": "SEU Antwort Auffälligkeit",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-AntwortAuffaelligkeitCS",
   "concept": [
     {

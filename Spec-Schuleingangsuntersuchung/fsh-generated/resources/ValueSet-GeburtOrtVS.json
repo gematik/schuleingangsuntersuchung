@@ -3,7 +3,6 @@
   "status": "draft",
   "name": "GeburtOrtVS",
   "id": "GeburtOrtVS",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/GeburtOrtVS",
   "compose": {
     "include": [

@@ -3,7 +3,6 @@
   "status": "draft",
   "name": "QuelleTodesursachenVS",
   "id": "QuelleTodesursachenVS",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/QuelleTodesursachenVS",
   "compose": {
     "include": [

@@ -2,7 +2,6 @@
   "resourceType": "StructureDefinition",
   "id": "PersonUebermittlungsssperrePolitikEX",
   "url": "https://www.oegd.de/fhir/seu/StructureDefinition/PersonUebermittlungsssperrePolitikEX",
-  "version": "0.1.0",
   "name": "PersonUebermittlungsssperrePolitikEX",
   "title": "Übermittlungssperre Politik",
   "status": "draft",

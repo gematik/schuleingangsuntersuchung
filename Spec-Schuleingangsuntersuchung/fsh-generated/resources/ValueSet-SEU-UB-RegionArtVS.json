@@ -5,7 +5,6 @@
   "id": "SEU-UB-RegionArtVS",
   "title": "SEU-AF Art der Region",
   "description": "Diese Codes enthalten die Art einer Region",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-RegionArtVS",
   "expansion": {
     "timestamp": "2024-03-30T13:28:00+00:00",

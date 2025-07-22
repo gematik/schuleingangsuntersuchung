@@ -5,7 +5,6 @@
   "name": "SEU_UB_UntersuchungsstatusFdSScreeningCS",
   "id": "SEU-UB-UntersuchungsstatusFdSScreeningCS",
   "title": "SEU Untersuchungsstatus FdS-Screening",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-UntersuchungsstatusFdSScreeningCS",
   "concept": [
     {

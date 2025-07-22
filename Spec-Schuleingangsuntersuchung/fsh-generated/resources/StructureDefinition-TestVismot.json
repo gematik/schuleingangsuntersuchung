@@ -2,7 +2,6 @@
   "resourceType": "StructureDefinition",
   "id": "TestVismot",
   "url": "https://www.oegd.de/fhir/seu/StructureDefinition/TestVismot",
-  "version": "0.1.0",
   "name": "TestVismot",
   "status": "draft",
   "fhirVersion": "4.0.1",

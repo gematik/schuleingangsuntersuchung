@@ -6,7 +6,6 @@
   "id": "seu-ub-untersuchungsergebnis-cs",
   "title": "SEU_UB_Untersuchungsergebnis CodeSystem",
   "description": "CodeSystem für die Angabe des Untersuchungsergebnisses.",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ub-untersuchungsergebnis-cs",
   "concept": [
     {

@@ -6,7 +6,6 @@
   "id": "seu-ub-verwandtepersondeutschkenntnis-cs",
   "title": "SEU_UB_Deutschkenntnis",
   "description": "CodeSystem für die Deutschkenntnisse einer verwandten Person.",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ub-verwandtepersondeutschkenntnis-cs",
   "concept": [
     {

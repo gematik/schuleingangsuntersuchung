@@ -5,7 +5,6 @@
   "id": "SEU-UB-UntersuchungsergebnisseSAeUVS",
   "title": "SEU Untersuchungsergebnisse SÄU",
   "description": "Diese Codes enthalten Untersuchungsergebnisse der SÄU",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-UntersuchungsergebnisseSAeUVS",
   "expansion": {
     "timestamp": "2024-10-20T11:50:47+00:00",

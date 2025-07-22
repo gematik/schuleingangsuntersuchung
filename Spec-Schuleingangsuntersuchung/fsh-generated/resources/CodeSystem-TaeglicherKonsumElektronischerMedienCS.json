@@ -6,7 +6,6 @@
   "id": "TaeglicherKonsumElektronischerMedienCS",
   "title": "TaeglicherKonsumElektronischerMedienCS",
   "description": "TaeglicherKonsumElektronischerMedienCS",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/TaeglicherKonsumElektronischerMedienCS",
   "concept": [
     {

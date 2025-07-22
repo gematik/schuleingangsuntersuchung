@@ -5,7 +5,6 @@
   "id": "seu-ub-rotaimpfung-vs",
   "title": "SEU_UB_Rotaimpfung ValueSet",
   "description": "ValueSet, das verschiedene Rotavirus-Impfstoffe enthält.",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ub-rotaimpfung-vs",
   "expansion": {
     "timestamp": "2024-09-10T12:00:00+00:00",

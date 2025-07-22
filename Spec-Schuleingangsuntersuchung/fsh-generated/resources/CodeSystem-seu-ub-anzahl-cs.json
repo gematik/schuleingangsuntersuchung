@@ -6,7 +6,6 @@
   "id": "seu-ub-anzahl-cs",
   "title": "SEU_UB_Anzahl CodeSystem",
   "description": "CodeSystem für die Angabe einer Anzahl von 0 bis 9.",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ub-anzahl-cs",
   "concept": [
     {

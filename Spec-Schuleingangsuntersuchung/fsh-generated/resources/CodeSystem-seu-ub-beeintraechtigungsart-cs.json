@@ -6,7 +6,6 @@
   "id": "seu-ub-beeintraechtigungsart-cs",
   "title": "SEU_UB_Beeinträchtigungsart CodeSystem",
   "description": "CodeSystem für die Angabe der Art der Beeinträchtigung.",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ub-beeintraechtigungsart-cs",
   "concept": [
     {

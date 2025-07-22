@@ -6,7 +6,6 @@
   "id": "seu-ub-impfschema-cs",
   "title": "SEU_UB_Impfschema CodeSystem",
   "description": "CodeSystem für die Angabe des Impfschemas.",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ub-impfschema-cs",
   "concept": [
     {

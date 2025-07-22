@@ -9,7 +9,6 @@
       "name": "DeuevAnlage8LaenderkennzeichenVS",
       "title": "DeuevAnlage8LaenderkennzeichenVS",
       "description": "DeuevAnlage8LaenderkennzeichenVS",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/DeuevAnlage8LaenderkennzeichenVS",
       "expansion": {
         "timestamp": "2024-04-04T09:11:28+00:00",
@@ -1697,7 +1696,6 @@
       "name": "WohnsituationKindAlternativ2VS",
       "title": "WohnsituationKindAlternativ2VS",
       "description": "ValueSet, das verschiedene Wohnsituationen des Kindes enthält.",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/WohnsituationKindAlternativ2VS",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -1820,7 +1818,6 @@
       "name": "ISO6392_LanguageVS",
       "title": "Language ValueSet",
       "description": "ValueSet containing all language codes from the ISO 639-2 CodeSystem.",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/language-valueset",
       "expansion": {
         "timestamp": "2024-09-12T12:00:00+00:00",
@@ -3695,7 +3692,6 @@
       "name": "VersorgungsartVS",
       "title": "Versorgungsart ValueSet",
       "description": "VersorgungsartVS",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/versorgungsart-vs",
       "expansion": {
         "timestamp": "2024-04-06T12:00:00+00:00",
@@ -3727,7 +3723,6 @@
       "name": "SEU_EF_OperationenVS",
       "title": "SEU_EF_Operationen ValueSet",
       "description": "ValueSet, das verschiedene durchgeführte Operationen enthält.",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-operationen-vs",
       "expansion": {
         "timestamp": "2024-09-10T12:00:00+00:00",
@@ -3784,7 +3779,6 @@
       "name": "SEU_EF_UnfallVS",
       "title": "SEU_EF_Unfall ValueSet",
       "description": "ValueSet, das verschiedene Unfallumstände enthält.",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-unfall-vs",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -3816,7 +3810,6 @@
       "name": "SEU_EF_AlterKindVS",
       "title": "SEU_EF_Alter Kind ValueSet",
       "description": "ValueSet, das das Alter eines Kindes enthält.",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-alter-kind-vs",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -3898,7 +3891,6 @@
       "name": "SEU_EF_AlterKindEinreiseVS",
       "title": "SEU_EF_Alter Kind Einreise ValueSet",
       "description": "ValueSet, das das Alter eines Kindes bei Einreise enthält.",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-alter-kind-einreise-vs",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -3985,7 +3977,6 @@
       "name": "SEU_EF_SchwangerschaftVS",
       "title": "SEU_EF_Schwangerschaft ValueSet",
       "description": "ValueSet, das den Schwangerschaftsstatus enthält.",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-schwangerschaft-vs",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -4022,7 +4013,6 @@
       "name": "SEU_EF_UnfallortVS",
       "title": "SEU_EF_Unfallort ValueSet",
       "description": "ValueSet, das die verschiedenen Unfallorte enthält.",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-unfallort-vs",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -4074,7 +4064,6 @@
       "name": "SEU_EF_BehandlungstypVS",
       "title": "SEU_EF_Behandlungstyp ValueSet",
       "description": "ValueSet, das verschiedene Behandlungstypen enthält.",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-behandlungstyp-vs",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -4121,7 +4110,6 @@
       "name": "SEU_EF_SpracheVS",
       "title": "SEU_EF_Sprache ValueSet",
       "description": "ValueSet, das verschiedene Sprachprobleme enthält.",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-sprache-vs",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -4158,7 +4146,6 @@
       "name": "SEU_UB_StaatsangehoerigkeitVS",
       "title": "SEU Staatsangehörigkeit",
       "description": "Diese Codes enthalten Angaben zur Staatsangehörigkeit",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-StaatsangehoerigkeitVS",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -4226,12 +4213,12 @@
       "text": "(1) Personenbezogene Daten Kind",
       "item": [
         {
-          "linkId": "1.4a",
+          "linkId": "1.4b.2",
           "type": "choice",
-          "text": "(1.4a) Staatsangehörigkeit",
+          "text": "(1.4b.2) Staatsangehörigkeit Mutter",
           "code": [
             {
-              "code": "1.4a",
+              "code": "1.4b.2",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
           ],
@@ -4240,61 +4227,20 @@
               "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
               "valueCoding": {
                 "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BB"
+                "code": "DE-SL"
               }
             }
           ],
-          "answerValueSet": "#SEU-UB-StaatsangehoerigkeitVS",
-          "required": true
-        },
-        {
-          "linkId": "1.4a.1",
-          "type": "choice",
-          "text": "(1.4a.1) Staatsangehörigkeit andere",
-          "code": [
-            {
-              "code": "1.4a.1",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BB"
-              }
-            }
-          ],
-          "enableWhen": [
-            {
-              "question": "1.4a",
-              "operator": "=",
-              "answerCoding": {
-                "code": "2",
-                "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-StaatsangehoerigkeitCS"
-              }
-            },
-            {
-              "question": "1.4a",
-              "operator": "=",
-              "answerCoding": {
-                "code": "3",
-                "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-StaatsangehoerigkeitCS"
-              }
-            }
-          ],
-          "enableBehavior": "any",
           "answerValueSet": "#DeuevAnlage8LaenderkennzeichenVS",
           "required": true
         },
         {
-          "linkId": "1.4b",
+          "linkId": "1.4c.2",
           "type": "choice",
-          "text": "(1.4b) Staatsangehörigkeit Mutter",
+          "text": "(1.4c.2) Staatsangehörigkeit Vater",
           "code": [
             {
-              "code": "1.4b",
+              "code": "1.4c.2",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
           ],
@@ -4303,114 +4249,10 @@
               "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
               "valueCoding": {
                 "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BB"
+                "code": "DE-SL"
               }
             }
           ],
-          "answerValueSet": "#SEU-UB-StaatsangehoerigkeitVS",
-          "required": true
-        },
-        {
-          "linkId": "1.4b.1",
-          "type": "choice",
-          "text": "(1.4b.1) Staatsangehörigkeit Mutter andere",
-          "code": [
-            {
-              "code": "1.4b.1",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BB"
-              }
-            }
-          ],
-          "enableWhen": [
-            {
-              "question": "1.4b",
-              "operator": "=",
-              "answerCoding": {
-                "code": "2",
-                "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-StaatsangehoerigkeitCS"
-              }
-            },
-            {
-              "question": "1.4b",
-              "operator": "=",
-              "answerCoding": {
-                "code": "3",
-                "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-StaatsangehoerigkeitCS"
-              }
-            }
-          ],
-          "enableBehavior": "any",
-          "answerValueSet": "#DeuevAnlage8LaenderkennzeichenVS",
-          "required": true
-        },
-        {
-          "linkId": "1.4c",
-          "type": "choice",
-          "text": "(1.4c) Staatsangehörigkeit Vater",
-          "code": [
-            {
-              "code": "1.4c",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BB"
-              }
-            }
-          ],
-          "answerValueSet": "#SEU-UB-StaatsangehoerigkeitVS",
-          "required": true
-        },
-        {
-          "linkId": "1.4c.1",
-          "type": "choice",
-          "text": "(1.4c.1) Staatsangehörigkeit Vater andere",
-          "code": [
-            {
-              "code": "1.4c.1",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BB"
-              }
-            }
-          ],
-          "enableWhen": [
-            {
-              "question": "1.4c",
-              "operator": "=",
-              "answerCoding": {
-                "code": "2",
-                "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-StaatsangehoerigkeitCS"
-              }
-            },
-            {
-              "question": "1.4c",
-              "operator": "=",
-              "answerCoding": {
-                "code": "3",
-                "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-StaatsangehoerigkeitCS"
-              }
-            }
-          ],
-          "enableBehavior": "any",
           "answerValueSet": "#DeuevAnlage8LaenderkennzeichenVS",
           "required": true
         },
@@ -4425,6 +4267,38 @@
             }
           ],
           "answerValueSet": "#DeuevAnlage8LaenderkennzeichenVS",
+          "required": true
+        },
+        {
+          "linkId": "1.5.1",
+          "type": "choice",
+          "text": "(1.5.1) Wie alt war das Kind bei Einreise nach Deutschland?",
+          "code": [
+            {
+              "code": "1.5.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-SL"
+              }
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "1.5",
+              "operator": "=",
+              "answerCoding": {
+                "code": "D",
+                "system": "http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen"
+              }
+            }
+          ],
+          "answerValueSet": "#seu-ef-alter-kind-einreise-vs",
           "required": true
         },
         {
@@ -4472,24 +4346,12 @@
           "required": true
         },
         {
-          "linkId": "1.6",
-          "type": "boolean",
-          "text": "(1.6) In Deutschland geboren",
-          "code": [
-            {
-              "code": "1.6",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "required": true
-        },
-        {
-          "linkId": "1.6.1a",
+          "linkId": "1.12b",
           "type": "choice",
-          "text": "(1.6.1a) Wie alt war das Kind bei Einreise nach Deutschland?",
+          "text": "(1.12b) Kind lebt hauptsächlich bei",
           "code": [
             {
-              "code": "1.6.1a",
+              "code": "1.12b",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
           ],
@@ -4502,63 +4364,7 @@
               }
             }
           ],
-          "required": true,
-          "enableWhen": [
-            {
-              "question": "1.6",
-              "operator": "=",
-              "answerBoolean": false
-            }
-          ],
-          "answerValueSet": "#seu-ef-alter-kind-einreise-vs"
-        },
-        {
-          "linkId": "1.12a",
-          "type": "choice",
-          "text": "(1.12a) Kind lebt hauptsächlich bei",
-          "code": [
-            {
-              "code": "1.12a",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BB"
-              }
-            }
-          ],
-          "answerValueSet": "#WohnsituationKindAlternativ2VS",
-          "required": true
-        }
-      ]
-    },
-    {
-      "linkId": "2",
-      "type": "group",
-      "text": "(2) Personenbezogene Daten Personensorgeberechtigter",
-      "code": [
-        {
-          "code": "2",
-          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-        }
-      ],
-      "repeats": true,
-      "item": [
-        {
-          "answerValueSet": "#DeuevAnlage8LaenderkennzeichenVS",
-          "linkId": "2.9",
-          "type": "choice",
-          "text": "(2.9) Staatsangehörigkeit",
-          "code": [
-            {
-              "code": "2.9",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
+          "answerValueSet": "https://www.oegd.de/fhir/seu/ValueSet/WohnsituationKindAlternativ1VS",
           "required": true
         }
       ]
@@ -4604,35 +4410,6 @@
           "required": true
         },
         {
-          "linkId": "3.1b",
-          "type": "integer",
-          "text": "(3.1b) Aktuell im Haushalt lebende Kinder",
-          "code": [
-            {
-              "code": "3.1b",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-SL"
-              }
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/minValue",
-              "valueInteger": 0
-            },
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
-              "valueInteger": 10
-            }
-          ],
-          "required": true
-        },
-        {
           "linkId": "3.2",
           "type": "group",
           "text": "(3.2) Familiäre Vorgeschichte",
@@ -4643,6 +4420,19 @@
             }
           ],
           "item": [
+            {
+              "linkId": "3.2.4",
+              "type": "choice",
+              "text": "(3.2.4) Erkrankung",
+              "code": [
+                {
+                  "code": "3.2.4",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "answerValueSet": "https://www.oegd.de/fhir/seu/ValueSet/ChronischeErkrankungenVS",
+              "repeats": true
+            },
             {
               "linkId": "3.2.6a",
               "type": "boolean",
@@ -4910,26 +4700,29 @@
           "answerValueSet": "#language-valueset"
         },
         {
-          "linkId": "6.1c",
+          "linkId": "6.2",
           "type": "choice",
-          "text": "(6.1c) 2. vorrangig in der Familie gesprochene Sprache",
+          "text": "(6.2) Muttersprache des Kindes",
           "code": [
             {
-              "code": "6.1c",
+              "code": "6.2",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-SL"
-              }
             }
           ],
           "answerValueSet": "#language-valueset",
           "required": true
+        },
+        {
+          "linkId": "6.3",
+          "type": "choice",
+          "text": "(6.3) Teilnahme des Kindes an einem Deutschkurs",
+          "code": [
+            {
+              "code": "6.3",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "answerValueSet": "https://www.oegd.de/fhir/seu/ValueSet/JaNeinAngemeldetVS"
         }
       ]
     },
@@ -5117,26 +4910,6 @@
           "required": true,
           "item": [
             {
-              "linkId": "8.27.1",
-              "type": "choice",
-              "text": "(8.27.1) Wie fand die Operation statt?",
-              "code": [
-                {
-                  "code": "8.27.1",
-                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-                }
-              ],
-              "enableWhen": [
-                {
-                  "question": "8.27",
-                  "operator": "=",
-                  "answerBoolean": true
-                }
-              ],
-              "answerValueSet": "#versorgungsart-vs",
-              "required": true
-            },
-            {
               "linkId": "8.27.2",
               "type": "choice",
               "text": "(8.27.2) Welche Operationen wurden durchgeführt?",
@@ -5191,61 +4964,6 @@
           ]
         },
         {
-          "linkId": "8.28a",
-          "type": "boolean",
-          "text": "(8.28a) Hatte Ihr Kind einen Unfall",
-          "code": [
-            {
-              "code": "8.28a",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "required": true
-        },
-        {
-          "linkId": "8.28.g",
-          "type": "group",
-          "text": "(8.28.g) Hatte Ihr Kind einen Unfall",
-          "code": [
-            {
-              "code": "8.28.g",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "enableWhen": [
-            {
-              "question": "8.28a",
-              "operator": "=",
-              "answerBoolean": true
-            }
-          ],
-          "enableBehavior": "any",
-          "repeats": true,
-          "item": [
-            {
-              "linkId": "8.28.g.3",
-              "type": "choice",
-              "text": "(8.28.g.3) Anlass des Unfalls",
-              "code": [
-                {
-                  "code": "8.28.g.3",
-                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-                }
-              ],
-              "extension": [
-                {
-                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-                  "valueCoding": {
-                    "system": "urn:iso:std:iso:3166-2:de",
-                    "code": "DE-SL"
-                  }
-                }
-              ],
-              "answerValueSet": "#seu-ef-unfall-vs"
-            }
-          ]
-        },
-        {
           "linkId": "8.30",
           "type": "boolean",
           "text": "(8.30) Wurde Ihr Kind jemals aufgrund von Unfallverletzungen von einem Arzt behandelt?",
@@ -5265,6 +4983,26 @@
             }
           ],
           "required": true
+        },
+        {
+          "linkId": "8.30.1",
+          "type": "boolean",
+          "text": "(8.30.1) Nässt Ihr Kind ein?",
+          "code": [
+            {
+              "code": "8.30.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BE"
+              }
+            }
+          ]
         },
         {
           "linkId": "8.31",
@@ -6174,6 +5912,37 @@
             }
           ],
           "required": true
+        }
+      ]
+    },
+    {
+      "linkId": "13",
+      "type": "group",
+      "text": "(13) Informationen Eltern",
+      "item": [
+        {
+          "linkId": "13.1",
+          "type": "choice",
+          "text": "(13.1) Schulabschluss 1. Elternteil",
+          "code": [
+            {
+              "code": "13.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "answerValueSet": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-bildungsabschluss-vs"
+        },
+        {
+          "linkId": "13.2",
+          "type": "choice",
+          "text": "(13.2) Schulabschluss 2. Elternteil",
+          "code": [
+            {
+              "code": "13.2",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "answerValueSet": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-bildungsabschluss-vs"
         }
       ]
     }

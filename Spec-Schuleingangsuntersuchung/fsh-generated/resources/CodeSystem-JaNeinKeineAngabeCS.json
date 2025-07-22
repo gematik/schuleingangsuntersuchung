@@ -5,7 +5,6 @@
   "name": "JaNeinKeineAngabeCS",
   "id": "JaNeinKeineAngabeCS",
   "title": "Ja-Nein-Keine Angabe CodeSystem",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/JaNeinKeineAngabeCS",
   "concept": [
     {

@@ -2,7 +2,6 @@
   "resourceType": "StructureDefinition",
   "id": "StatusKind",
   "url": "https://www.oegd.de/fhir/seu/StructureDefinition/StatusKind",
-  "version": "0.1.0",
   "name": "StatusKind",
   "status": "draft",
   "fhirVersion": "4.0.1",

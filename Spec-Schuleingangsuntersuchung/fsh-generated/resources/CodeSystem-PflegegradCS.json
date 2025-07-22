@@ -6,7 +6,6 @@
   "id": "PflegegradCS",
   "title": "PflegegradCS",
   "description": "PflegegradCS",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/PflegegradCS",
   "concept": [
     {

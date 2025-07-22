@@ -3,7 +3,6 @@
   "status": "draft",
   "name": "BestattungsartVS",
   "id": "BestattungsartVS",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/BestattungsartVS",
   "compose": {
     "include": [

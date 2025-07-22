@@ -2,7 +2,6 @@
   "resourceType": "StructureDefinition",
   "id": "TestPswoe",
   "url": "https://www.oegd.de/fhir/seu/StructureDefinition/TestPswoe",
-  "version": "0.1.0",
   "name": "TestPswoe",
   "status": "draft",
   "fhirVersion": "4.0.1",

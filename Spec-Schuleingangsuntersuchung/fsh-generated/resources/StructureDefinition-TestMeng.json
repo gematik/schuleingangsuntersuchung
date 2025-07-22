@@ -2,7 +2,6 @@
   "resourceType": "StructureDefinition",
   "id": "TestMeng",
   "url": "https://www.oegd.de/fhir/seu/StructureDefinition/TestMeng",
-  "version": "0.1.0",
   "name": "TestMeng",
   "status": "draft",
   "fhirVersion": "4.0.1",

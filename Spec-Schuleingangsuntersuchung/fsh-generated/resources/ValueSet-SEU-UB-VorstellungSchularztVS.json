@@ -5,7 +5,6 @@
   "id": "SEU-UB-VorstellungSchularztVS",
   "title": "SEU Vorstellung Schularzt",
   "description": "Diese Codes Angaben über die Vorstellung beim Schularzt",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-VorstellungSchularztVS",
   "expansion": {
     "timestamp": "2024-03-30T13:28:00+00:00",

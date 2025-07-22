@@ -4,7 +4,6 @@
   "content": "complete",
   "name": "AngabeTotgeborenCS",
   "id": "AngabeTotgeborenCS",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/AngabeTotgeborenCS",
   "concept": [
     {

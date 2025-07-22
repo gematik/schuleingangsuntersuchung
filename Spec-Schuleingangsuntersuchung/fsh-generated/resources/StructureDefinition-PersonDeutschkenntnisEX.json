@@ -2,7 +2,6 @@
   "resourceType": "StructureDefinition",
   "id": "PersonDeutschkenntnisEX",
   "url": "https://www.oegd.de/fhir/seu/StructureDefinition/PersonDeutschkenntnisEX",
-  "version": "0.1.0",
   "name": "PersonDeutschkenntnisEX",
   "title": "Deutschkenntnisse",
   "status": "draft",

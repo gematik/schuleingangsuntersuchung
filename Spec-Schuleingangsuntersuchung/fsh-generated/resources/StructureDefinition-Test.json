@@ -2,7 +2,6 @@
   "resourceType": "StructureDefinition",
   "id": "Test",
   "url": "https://www.oegd.de/fhir/seu/StructureDefinition/Test",
-  "version": "0.1.0",
   "name": "Test",
   "status": "draft",
   "fhirVersion": "4.0.1",

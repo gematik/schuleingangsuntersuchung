@@ -2,7 +2,6 @@
   "resourceType": "StructureDefinition",
   "id": "TestKoord",
   "url": "https://www.oegd.de/fhir/seu/StructureDefinition/TestKoord",
-  "version": "0.1.0",
   "name": "TestKoord",
   "status": "draft",
   "fhirVersion": "4.0.1",

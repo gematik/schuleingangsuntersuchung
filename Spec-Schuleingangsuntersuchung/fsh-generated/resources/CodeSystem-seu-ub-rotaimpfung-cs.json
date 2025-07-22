@@ -6,7 +6,6 @@
   "id": "seu-ub-rotaimpfung-cs",
   "title": "SEU_UB_Rotaimpfung CodeSystem",
   "description": "CodeSystem für die Angabe der Rotavirus-Impfstoffe.",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ub-rotaimpfung-cs",
   "concept": [
     {

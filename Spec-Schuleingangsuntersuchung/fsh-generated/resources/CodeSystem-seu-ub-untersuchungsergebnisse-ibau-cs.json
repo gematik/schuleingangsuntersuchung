@@ -6,7 +6,6 @@
   "id": "seu-ub-untersuchungsergebnisse-ibau-cs",
   "title": "SEU_UB_Untersuchungsergebnisse IBAU CodeSystem",
   "description": "CodeSystem für die Untersuchungsergebnisse IBAU.",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ub-untersuchungsergebnisse-ibau-cs",
   "concept": [
     {

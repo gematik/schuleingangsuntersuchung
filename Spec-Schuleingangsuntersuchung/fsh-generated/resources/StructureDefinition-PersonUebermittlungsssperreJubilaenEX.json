@@ -2,7 +2,6 @@
   "resourceType": "StructureDefinition",
   "id": "PersonUebermittlungsssperreJubilaenEX",
   "url": "https://www.oegd.de/fhir/seu/StructureDefinition/PersonUebermittlungsssperreJubilaenEX",
-  "version": "0.1.0",
   "name": "PersonUebermittlungsssperreJubilaenEX",
   "title": "Übermittlungssperre Jubilaen",
   "status": "draft",
