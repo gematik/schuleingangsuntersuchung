@@ -81,8 +81,8 @@ Description: "Elternbefragung SL"
     * insert enableWhenBoolean(1.6, =, false)
     * answerValueSet = Canonical(SEU_EF_AlterKindEinreiseVS)
   * item[+]
-    * insert addItemWithSource(1.12a, #choice, [[Kind lebt hauptsächlich bei]], #DE-BB)
-    * answerValueSet = Canonical(WohnsituationKindAlternativ2VS)
+    * insert addItemWithSource(1.12b, #choice, [[Kind lebt hauptsächlich bei]], #DE-SL)
+    * answerValueSet = Canonical(WohnsituationKindAlternativ1VS)
     * required = true
 //********************************************
 // Personenbezogene Daten Personenberechtigter
@@ -103,12 +103,11 @@ Description: "Elternbefragung SL"
     * insert maxValueInt(10)
     * required = true
   * item[+]
-    * insert addItemWithSource(3.1b, #integer, Aktuell im Haushalt lebende Kinder, #DE-SL)
-    * insert minValueInt(0)
-    * insert maxValueInt(10)
-    * required = true
-  * item[+]
-    * insert addItem(3.2, #group, Familiäre Vorgeschichte)
+    * insert addItem(3.2, #group, [[Familiäre Vorgeschichte]])
+    * item[+]
+      * insert addItem(3.2.4, #choice, [[Erkrankung]])
+      * answerValueSet = Canonical(ChronischeErkrankungenVS)
+      * repeats = true
     * item[+]
       * insert addItemWithSource(3.2.6a, #boolean, [[Liegt bei Ihrem Kind ein Grad der Behinderung/ein Pflegegrad vor?]], #DE-SL)
       * required = true
@@ -158,9 +157,12 @@ Description: "Elternbefragung SL"
     * insert addItemWithSource(6.1b, #choice, [[1. vorrangig in der Familie gesprochene Sprache]], #DE-SL)
     * answerValueSet = Canonical(ISO6392_LanguageVS)
   * item[+]
-    * insert addItemWithSource(6.1c, #choice, [[2. vorrangig in der Familie gesprochene Sprache]], #DE-SL)
+    * insert addItem(6.2, #choice, [[Muttersprache des Kindes]])
     * answerValueSet = Canonical(ISO6392_LanguageVS)
     * required = true
+  * item[+]
+    * insert addItem(6.3, #choice, [[Teilnahme des Kindes an einem Deutschkurs]])
+    * answerValueSet = Canonical(JaNeinAngemeldetVS)
 //********************************************
 // Entwicklung
 * item[+]
@@ -198,11 +200,6 @@ Description: "Elternbefragung SL"
     * insert addItem(8.27, #boolean, [[Wurde Ihr Kind operiert]])
     * required = true
     * item[+]
-      * insert addItem(8.27.1, #choice, [[Wie fand die Operation statt?]])
-      * insert enableWhenBoolean(8.27, =, true)
-      * answerValueSet = Canonical(VersorgungsartVS)
-      * required = true
-    * item[+]
       * insert addItem(8.27.2, #choice, [[Welche Operationen wurden durchgeführt?]])
       * repeats = true
       * insert enableWhenBoolean(8.27, =, true)
@@ -211,19 +208,10 @@ Description: "Elternbefragung SL"
         * insert addItemWithSource(8.27.2.1, #string, [[Sonstige Operationen?]], #DE-SL)
         * insert enableWhenCode(8.27.2, =, SEU_EF_OperationenCS, sonstige_operation)
   * item[+]
-    * insert addItem(8.28a, #boolean, [[Hatte Ihr Kind einen Unfall]])
-    * required = true
-  * item[+]
-    * insert addItem(8.28.g, #group, [[Hatte Ihr Kind einen Unfall]])
-    * insert enableWhenBoolean(8.28a, =, true)
-    * enableBehavior = #any
-    * repeats = true
-    * item[+]
-      * insert addItemWithSource(8.28.g.3, #choice, [[Anlass des Unfalls]], #DE-SL)
-      * answerValueSet = Canonical(SEU_EF_UnfallVS)
-  * item[+]
     * insert addItemWithSource(8.30, #boolean, [[Wurde Ihr Kind jemals aufgrund von Unfallverletzungen von einem Arzt behandelt?]], #DE-SL)
     * required = true
+  * item[+]
+    * insert addItemWithSource(8.30.1, #boolean, [[Nässt Ihr Kind ein?]], #DE-BE)
   * item[+]
     * insert addItemWithSource(8.31, #boolean, [[Einnässen tags]], #DE-SL)
     * required = true
@@ -365,3 +353,13 @@ Description: "Elternbefragung SL"
   * item[+]
     * insert addItemWithSource(12.7a, #boolean, [[Präv. Maßnahmen Regemäßig Sport im Verein]], #DE-SL)
     * required = true
+//********************************************
+// Informationen Eltern
+* item[+]
+  * insert addGroup(13, [[Informationen Eltern]])
+  * item[+]
+    * insert addItem(13.1, #choice, [[Schulabschluss 1. Elternteil]])
+    * answerValueSet = Canonical(SEU_EF_BildungsabschlussVS)
+  * item[+]
+    * insert addItem(13.2, #choice, [[Schulabschluss 2. Elternteil]])
+    * answerValueSet = Canonical(SEU_EF_BildungsabschlussVS)
