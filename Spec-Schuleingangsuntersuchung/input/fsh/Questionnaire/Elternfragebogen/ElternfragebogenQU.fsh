@@ -183,6 +183,9 @@ Description: "Elternbefragung"
     * enableBehavior = #any
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
   * item[+]
+    * insert addItemWithSource(1.4b.2, #choice, [[Staatsangehörigkeit Mutter]], #DE-SL)
+    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
+  * item[+]
     * insert addItemWithSource(1.4c, #choice, [[Staatsangehörigkeit Vater]], #DE-BB)
     * answerValueSet = Canonical(SEU-UB-StaatsangehoerigkeitVS)
   * item[+]
@@ -190,6 +193,9 @@ Description: "Elternbefragung"
     * insert enableWhenCode(1.4c, =, SEU-UB-StaatsangehoerigkeitCS, 2)
     * insert enableWhenCode(1.4c, =, SEU-UB-StaatsangehoerigkeitCS, 3)
     * enableBehavior = #any
+    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
+  * item[+]
+    * insert addItemWithSource(1.4c.2, #choice, [[Staatsangehörigkeit Vater]], #DE-SL)
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
   * item[+]
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)

@@ -28,36 +28,12 @@ Description: "Elternbefragung SL"
   * linkId = "1"
   * text = "(1) Personenbezogene Daten Kind"
   * item[+]
-    * insert addItemWithSource(1.4a, #choice, [[Staatsangehörigkeit]], #DE-BB)
-    * answerValueSet = Canonical(SEU-UB-StaatsangehoerigkeitVS)
-    * required = true
-  * item[+]
-    * insert addItemWithSource(1.4a.1, #choice, [[Staatsangehörigkeit andere]], #DE-BB)
-    * insert enableWhenCode(1.4a, =, SEU-UB-StaatsangehoerigkeitCS, 2)
-    * insert enableWhenCode(1.4a, =, SEU-UB-StaatsangehoerigkeitCS, 3)
-    * enableBehavior = #any
+    * insert addItemWithSource(1.4b.2, #choice, [[Staatsangehörigkeit Mutter]], #DE-SL)
+    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
     * required = true
   * item[+]
-    * insert addItemWithSource(1.4b, #choice, [[Staatsangehörigkeit Mutter]], #DE-BB)
-    * answerValueSet = Canonical(SEU-UB-StaatsangehoerigkeitVS)
-    * required = true
-  * item[+]
-    * insert addItemWithSource(1.4b.1, #choice, [[Staatsangehörigkeit Mutter andere]], #DE-BB)
-    * insert enableWhenCode(1.4b, =, SEU-UB-StaatsangehoerigkeitCS, 2)
-    * insert enableWhenCode(1.4b, =, SEU-UB-StaatsangehoerigkeitCS, 3)
-    * enableBehavior = #any
-    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
-    * required = true
-  * item[+]
-    * insert addItemWithSource(1.4c, #choice, [[Staatsangehörigkeit Vater]], #DE-BB)
-    * answerValueSet = Canonical(SEU-UB-StaatsangehoerigkeitVS)
-    * required = true
-  * item[+]
-    * insert addItemWithSource(1.4c.1, #choice, [[Staatsangehörigkeit Vater andere]], #DE-BB)
-    * insert enableWhenCode(1.4c, =, SEU-UB-StaatsangehoerigkeitCS, 2)
-    * insert enableWhenCode(1.4c, =, SEU-UB-StaatsangehoerigkeitCS, 3)
-    * enableBehavior = #any
+    * insert addItemWithSource(1.4c.2, #choice, [[Staatsangehörigkeit Vater]], #DE-SL)
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
     * required = true
   * item[+]
