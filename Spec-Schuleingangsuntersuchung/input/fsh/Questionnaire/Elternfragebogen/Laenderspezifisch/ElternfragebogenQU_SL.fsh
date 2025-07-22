@@ -41,6 +41,11 @@ Description: "Elternbefragung SL"
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
     * required = true
   * item[+]
+    * insert addItemWithSource(1.5.1, #choice, [[Wie alt war das Kind bei Einreise nach Deutschland?]], #DE-SL)
+    * insert enableWhenCode(1.5, =, [[http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen]], D)
+    * answerValueSet = Canonical(SEU_EF_AlterKindEinreiseVS)
+    * required = true
+  * item[+]
     * insert addItemWithSource(1.5a, #choice, [[Geburtsland Mutter]], #DE-BB)
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
     * required = true
@@ -48,14 +53,6 @@ Description: "Elternbefragung SL"
     * insert addItemWithSource(1.5b, #choice, [[Geburtsland Vater]], #DE-BB)
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
     * required = true
-  * item[+]
-    * insert addItem(1.6, #boolean, In Deutschland geboren)
-    * required = true
-  * item[+]
-    * insert addItemWithSource(1.6.1a, #choice, Wie alt war das Kind bei Einreise nach Deutschland?, #DE-SL)
-    * required = true
-    * insert enableWhenBoolean(1.6, =, false)
-    * answerValueSet = Canonical(SEU_EF_AlterKindEinreiseVS)
   * item[+]
     * insert addItemWithSource(1.12b, #choice, [[Kind lebt hauptsächlich bei]], #DE-SL)
     * answerValueSet = Canonical(WohnsituationKindAlternativ1VS)

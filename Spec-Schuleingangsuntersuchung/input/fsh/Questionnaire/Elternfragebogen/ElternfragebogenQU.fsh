@@ -200,10 +200,14 @@ Description: "Elternbefragung"
   * item[+]
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
     * insert addItemWithSource(1.4d, #choice, [[Staatsangehörigkeit: andere/weitere?]], #DE-BE)
-    * repeats = true  
+    * repeats = true
   * item[+]
     * insert addItem(1.5, #choice, [[Geburtsland]])
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
+  * item[+]
+    * insert addItemWithSource(1.5.1, #choice, [[Wie alt war das Kind bei Einreise nach Deutschland?]], #DE-SL)
+    * insert enableWhenCode(1.5, =, [[http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen]], D)
+    * answerValueSet = Canonical(SEU_EF_AlterKindEinreiseVS)
   * item[+]
     * insert addItemWithSource(1.5a, #choice, [[Geburtsland Mutter]], #DE-BB)
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
@@ -219,21 +223,17 @@ Description: "Elternbefragung"
   * item[+] insert addItemWithSource(1.5d.1, #string, [[Elternsprache 2 andere]], #DE-BY)
     * insert enableWhenCode(1.5d, =, SEU_UB_AuswaehlbareElternspracheErweiterungCS, 98)
   * item[+]
-    * insert addItem(1.6, #boolean, In Deutschland geboren)
+    * insert addItem(1.6, #boolean, [[In Deutschland geboren]])
   // The same like 1.5, but with a dependency from 1.6
   * item[+]
     * insert addItemWithSource(1.6.2, #choice, [[Geburtsland]], #DE-ST)
     * insert enableWhenBoolean(1.6, =, false)
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
   * item[+]
-    * insert addItem(1.6.1, #date, Seit wann wohnt das Kind in Deutschland?)
+    * insert addItem(1.6.1, #date, [[Seit wann wohnt das Kind in Deutschland?]])
     * insert enableWhenBoolean(1.6, =, false)
   * item[+]
     * insert addItemWithSource(1.6.3, #date,[[Seit wann lebt Ihr Kind in Deutschland (Monat/Jahr)?]], #DE-BE)
-  * item[+]
-    * insert addItemWithSource(1.6.1a, #choice, Wie alt war das Kind bei Einreise nach Deutschland?, #DE-SL)
-    * insert enableWhenBoolean(1.6, =, false)
-    * answerValueSet = Canonical(SEU_EF_AlterKindEinreiseVS)
   * item[+]
     * insert addItem(1.7, #string, Geburtsort)
   * item[+]
