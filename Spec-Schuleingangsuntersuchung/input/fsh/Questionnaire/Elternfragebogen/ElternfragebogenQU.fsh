@@ -1187,6 +1187,9 @@ Description: "Elternbefragung"
     * insert addItemWithSource(8.63, #boolean, [[Reg. Med. Homöopathische Präparate]], #DE-SL)
   * item[+]
     * insert addItemWithSource(8.64, #boolean, [[Reg. Med. Sonstige]], #DE-SL)
+  * item[+]
+    * insert addItemWithSource(8.64.1, #string, [[Sonstiges, und zwar:]], #DE-SL)
+    * insert enableWhenBoolean(8.64, =, true)
 
 
   * item[+]

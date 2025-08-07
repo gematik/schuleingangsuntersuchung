@@ -292,7 +292,6 @@ Description: "Elternbefragung SL"
     * insert addItemWithSource(8.57, #boolean, [[Reg. Med. Antikonvulsiva]], #DE-SL)
     * item[+]
       * insert addItem(8.57.1, #string, [[Wegen welcher Erkrankungen ist Ihr Kind zurzeit in Behandlung??]])
-      * required = true
       * insert enableWhenBoolean(8.57, =, true)
   * item[+]
     * insert addItemWithSource(8.58, #boolean, [[Reg. Med. Antiasthmatika/Antiallergika]], #DE-SL)
@@ -308,6 +307,9 @@ Description: "Elternbefragung SL"
     * insert addItemWithSource(8.63, #boolean, [[Reg. Med. Homöopathische Präparate]], #DE-SL)
   * item[+]
     * insert addItemWithSource(8.64, #boolean, [[Reg. Med. Sonstige]], #DE-SL)
+  * item[+]
+    * insert addItemWithSource(8.64.1, #string, [[Sonstiges, und zwar:]], #DE-SL)
+    * insert enableWhenBoolean(8.64, =, true)
 //********************************************
 // Förderungen
 * item[+]
