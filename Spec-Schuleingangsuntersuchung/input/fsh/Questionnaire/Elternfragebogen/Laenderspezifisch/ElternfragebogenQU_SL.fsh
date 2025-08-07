@@ -64,7 +64,6 @@ Description: "Elternbefragung SL"
     * insert addItemWithSource(3.1a, #integer, Anzahl der im Familienverbund lebenden Kinder, #DE-SL)
     * insert minValueInt(0)
     * insert maxValueInt(10)
-    * required = true
   * item[+]
     * insert addItem(3.2, #group, [[Familiäre Vorgeschichte]])
     * item[+]
@@ -132,13 +131,10 @@ Description: "Elternbefragung SL"
   * insert addItem(7, #group, [[Entwicklung]])
   * item[+]
     * insert addItemWithSource(7.3a, #boolean, [[Freies Laufen (bis 15 Monate)]], #DE-SL)
-    * required = true
   * item[+]
     * insert addItemWithSource(7.4a, #boolean, [[Erste Worte bis 1 Jahr]], #DE-SL)
-    * required = true
   * item[+]
     * insert addItemWithSource(7.5a, #boolean, [[Kleine Sätze bis 2 Jahre]], #DE-SL)
-    * required = true
 //********************************************
 // Erkrankungen und gesundheitliche Einschränkungen
 * item[+]
