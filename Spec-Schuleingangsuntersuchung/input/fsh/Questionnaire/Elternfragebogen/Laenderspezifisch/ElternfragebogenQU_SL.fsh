@@ -235,6 +235,9 @@ Description: "Elternbefragung SL"
     * insert addItemWithSource(8.42i, #boolean, [[Asthma bronchiale]], #DE-SL)
   * item[+]
     * insert addItemWithSource(8.43, #boolean, [[Erkrankungen Sonstige]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.43.1, #string, [[Sonstiges, und zwar:]], #DE-SL)
+      * insert enableWhenBoolean(8.43, =, true)
 
 // Operationen
   * item[+]
