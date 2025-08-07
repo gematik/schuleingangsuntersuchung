@@ -407,8 +407,8 @@ Description: "Elternbefragung"
     * item[+]
       * insert addItem(3.2.6, #boolean, [[Hat Ihr Kind eine körperliche, geistige oder seelische Behinderung?]])
       * item[+]
+        * insert addItem(3.2.6.1, #string, [[Welche Behinderung?]])
         * insert enableWhenBoolean(3.2.6, =, true)
-        * insert addItem(3.2.6.1, #string, Welche Behinderung?)
     * item[+]
       * insert addItemWithSource(3.2.6a, #boolean, [[Liegt bei Ihrem Kind ein Grad der Behinderung/ein Pflegegrad vor?]], #DE-SL)
     * item[+]
@@ -605,13 +605,13 @@ Description: "Elternbefragung"
 * item[+]
   * insert addItem(6, #group, [[Sprache]])
   * item[+]
-    * answerValueSet = Canonical(ISO6392_LanguageVS)
     * insert addItem(6.1, #choice, [[Welche Sprachen werden Zuhause gesprochen?]])
+    * answerValueSet = Canonical(ISO6392_LanguageVS)
     * repeats = true
   * item[+]
-    * answerValueSet = Canonical(UeberwiegendGesprocheneSpracheVS)
     * insert addItem(6.1a, #choice, [[Welche Sprachen wurden mit dem Kind in den ersten 4 Lebensjahren überwiegend gesprochen?]])
-    * repeats = true    
+    * answerValueSet = Canonical(UeberwiegendGesprocheneSpracheVS)
+    * repeats = true
   * item[+]
     * insert addItemWithSource(6.1b, #choice, [[1. vorrangig in der Familie gesprochene Sprache]], #DE-SL)
     * answerValueSet = Canonical(ISO6392_LanguageVS)
@@ -626,11 +626,11 @@ Description: "Elternbefragung"
     * insert enableWhenCode(6.1e, =, SEU_UB_GesprocheneSpracheCS, 8)
     * enableBehavior = #any
   * item[+]
-    * answerValueSet = Canonical(ISO6392_LanguageVS)
     * insert addItem(6.2, #choice, [[Muttersprache des Kindes]])
+    * answerValueSet = Canonical(ISO6392_LanguageVS)
   * item[+]
-    * answerValueSet = Canonical(JaNeinAngemeldetVS)
     * insert addItem(6.3, #choice, [[Teilnahme des Kindes an einem Deutschkurs]])
+    * answerValueSet = Canonical(JaNeinAngemeldetVS)
   * item[+]
     * insert addItem(6.4, #boolean, [[Sprachauffälligkeiten]])
     * item[+]
