@@ -255,8 +255,9 @@ Description: "Elternbefragung SL"
   * item[+]
     * insert addItemWithSource(8.50, #boolean, [[Operationen Augenoperation]], #DE-SL)
   * item[+]
+    * insert addItemWithSource(8.50a, #boolean, [[Paukendrainage]], #DE-SL)
+  * item[+]
     * insert addItemWithSource(8.51, #boolean, [[Operationen Sonstige OP]], #DE-SL)
-    * required = true
   * item[+]
     * insert addItemWithSource(8.52, #choice, [[Unfälle Verbrennung/Verbrühung]], #DE-SL)
     * required = true

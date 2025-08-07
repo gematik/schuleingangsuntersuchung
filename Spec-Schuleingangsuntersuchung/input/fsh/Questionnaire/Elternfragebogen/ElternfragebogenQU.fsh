@@ -1140,6 +1140,8 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItemWithSource(8.50, #boolean, [[Operationen Augenoperation]], #DE-SL)
   * item[+]
+    * insert addItemWithSource(8.50a, #boolean, [[Paukendrainage]], #DE-SL)
+  * item[+]
     * insert addItemWithSource(8.51, #boolean, [[Operationen Sonstige OP]], #DE-SL)
 
 // Unfälle
