@@ -74,16 +74,6 @@ Description: "StoffwechselstoerungCS"
 * #diab_mell_typ_i "Diab. mell. Typ I"
 * #diab_mell_typ_ii "Diab. mell. Typ II"
 
-CodeSystem: PflegegradCS
-Id: PflegegradCS
-Title: "PflegegradCS"
-Description: "PflegegradCS"
-* #pflegegrad_1 "Pflegegrad 1"
-* #pflegegrad_2 "Pflegegrad 2"
-* #pflegegrad_3 "Pflegegrad 3"
-* #pflegegrad_4 "Pflegegrad 4"
-* #pflegegrad_5 "Pflegegrad 5"
-
 CodeSystem: UnfallOrtCS
 Id: UnfallOrtCS
 Title: "UnfallOrtCS"

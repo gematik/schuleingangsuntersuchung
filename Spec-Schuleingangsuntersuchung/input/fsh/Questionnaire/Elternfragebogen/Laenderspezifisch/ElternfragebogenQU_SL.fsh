@@ -7,6 +7,8 @@ Description: "Elternbefragung SL"
 * contained[+] = WohnsituationKindAlternativ2VS
 * contained[+] = ISO6392_LanguageVS
 * contained[+] = VersorgungsartVS
+* contained[+] = PflegegradVS
+* contained[+] = GradDerBehinderungVS
 * contained[+] = SEU_EF_OperationenVS
 * contained[+] = SEU_EF_UnfallVS
 * contained[+] = SEU_EF_AlterKindVS
@@ -64,7 +66,6 @@ Description: "Elternbefragung SL"
     * insert addItemWithSource(3.1a, #integer, Anzahl der im Familienverbund lebenden Kinder, #DE-SL)
     * insert minValueInt(0)
     * insert maxValueInt(10)
-    * required = true
   * item[+]
     * insert addItem(3.2, #group, [[Familiäre Vorgeschichte]])
     * item[+]
@@ -74,6 +75,14 @@ Description: "Elternbefragung SL"
     * item[+]
       * insert addItemWithSource(3.2.6a, #boolean, [[Liegt bei Ihrem Kind ein Grad der Behinderung/ein Pflegegrad vor?]], #DE-SL)
       * required = true
+      * item[+]
+        * insert addItemWithSource(3.2.6a.1, #choice, [[Grad der Behinderung]], #DE-SL)
+        * insert enableWhenBoolean(3.2.6a, =, true)
+        * answerValueSet = Canonical(GradDerBehinderungVS)
+      * item[+]
+        * insert addItemWithSource(3.2.6a.2, #choice, [[Pflegegrad]], #DE-SL)
+        * insert enableWhenBoolean(3.2.6a, =, true)
+        * answerValueSet = Canonical(PflegegradVS)
 //********************************************
 // Kinderbetreuung
 * item[+]
@@ -132,13 +141,10 @@ Description: "Elternbefragung SL"
   * insert addItem(7, #group, [[Entwicklung]])
   * item[+]
     * insert addItemWithSource(7.3a, #boolean, [[Freies Laufen (bis 15 Monate)]], #DE-SL)
-    * required = true
   * item[+]
     * insert addItemWithSource(7.4a, #boolean, [[Erste Worte bis 1 Jahr]], #DE-SL)
-    * required = true
   * item[+]
     * insert addItemWithSource(7.5a, #boolean, [[Kleine Sätze bis 2 Jahre]], #DE-SL)
-    * required = true
 //********************************************
 // Erkrankungen und gesundheitliche Einschränkungen
 * item[+]
@@ -173,6 +179,8 @@ Description: "Elternbefragung SL"
   * item[+]
     * insert addItemWithSource(8.30, #boolean, [[Wurde Ihr Kind jemals aufgrund von Unfallverletzungen von einem Arzt behandelt?]], #DE-SL)
     * required = true
+
+// Inkontinenz
   * item[+]
     * insert addItemWithSource(8.30.1, #boolean, [[Nässt Ihr Kind ein?]], #DE-BE)
   * item[+]
@@ -181,66 +189,82 @@ Description: "Elternbefragung SL"
   * item[+]
     * insert addItemWithSource(8.32, #boolean, [[Einnässen nachts]], #DE-SL)
     * required = true
+
+// Einkoten
   * item[+]
     * insert addItemWithSource(8.33, #boolean, [[Einkoten tags]], #DE-SL)
     * required = true
   * item[+]
     * insert addItemWithSource(8.34, #boolean, [[Einkoten nachts]], #DE-SL)
     * required = true
+
+// Bisherige Erkrankungen
   * item[+]
-    * insert addItemWithSource(8.35, #boolean, [[Erkrankungen Tuberkuloseerkrankung]], #DE-SL)
-    * required = true
-  * item[+]
-    * insert addItemWithSource(8.36, #boolean, [[Erkrankungen Meningitis/Enceph.]], #DE-SL)
-    * required = true
-  * item[+]
-    * insert addItemWithSource(8.37, #boolean, [[Erkrankungen Pneumonien]], #DE-SL)
-    * required = true
-  * item[+]
-    * insert addItemWithSource(8.38, #boolean, [[Erkrankungen Pseudocroup]], #DE-SL)
-    * required = true
-  * item[+]
-    * insert addItemWithSource(8.39, #boolean, [[Erkrankungen Fieberkrampf/Krampfanfall]], #DE-SL)
-    * required = true
-  * item[+]
-    * insert addItemWithSource(8.40, #boolean, [[Erkrankungen Harnwegserkrankungen]], #DE-SL)
-    * required = true
-  * item[+]
-    * insert addItemWithSource(8.41, #boolean, [[Erkrankungen rez Otitis media]], #DE-SL)
-    * required = true
-  * item[+]
-    * insert addItemWithSource(8.42, #boolean, [[Erkrankungen Allergie]], #DE-SL)
-    * required = true
-  * item[+]
-    * insert addItemWithSource(8.42a, #boolean, [[Erkrankungen Neurodermitis]], #DE-SL)
-    * required = true
-  * item[+]
-    * insert addItemWithSource(8.43, #boolean, [[Erkrankungen Sonstige]], #DE-SL)
-    * required = true
+    * insert addItemWithSource(8.35a, #group, [[Bisherige Erkrankungen Ihres Kindes?]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.35, #boolean, [[Erkrankungen Tuberkuloseerkrankung]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.36, #boolean, [[Erkrankungen Meningitis/Enceph.]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.37, #boolean, [[Erkrankungen Pneumonien]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.38, #boolean, [[Erkrankungen Pseudocroup]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.39, #boolean, [[Erkrankungen Fieberkrampf/Krampfanfall]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.40, #boolean, [[Erkrankungen Harnwegserkrankungen]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.41, #boolean, [[Erkrankungen rez Otitis media]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.42, #boolean, [[Erkrankungen Allergie]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.42a, #boolean, [[Erkrankungen Neurodermitis]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.42b, #boolean, [[Keuchhusten]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.42c, #boolean, [[Scharlach]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.42d, #boolean, [[Chron. Bronchitis]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.42e, #boolean, [[Mumps]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.42f, #boolean, [[Röteln]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.42g, #boolean, [[Windpocken]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.42h, #boolean, [[Masern]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.42i, #boolean, [[Asthma bronchiale]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.43, #boolean, [[Erkrankungen Sonstige]], #DE-SL)
+      * item[+]
+        * insert addItemWithSource(8.43.1, #string, [[Sonstiges, und zwar:]], #DE-SL)
+        * insert enableWhenBoolean(8.43, =, true)
+
+// Operationen
   * item[+]
     * insert addItemWithSource(8.44, #boolean, [[Operationen Adenotomie]], #DE-SL)
-    * required = true
   * item[+]
     * insert addItemWithSource(8.45, #boolean, [[Operationen Tonsillen-OP]], #DE-SL)
-    * required = true
   * item[+]
     * insert addItemWithSource(8.46, #boolean, [[Operationen Herniotomie]], #DE-SL)
-    * required = true
   * item[+]
     * insert addItemWithSource(8.47, #boolean, [[Operationen Appendektomie]], #DE-SL)
-    * required = true
   * item[+]
     * insert addItemWithSource(8.48, #boolean, [[Operationen Circumcision]], #DE-SL)
-    * required = true
   * item[+]
     * insert addItemWithSource(8.49, #boolean, [[Operationen Orchidopexie]], #DE-SL)
-    * required = true
   * item[+]
     * insert addItemWithSource(8.50, #boolean, [[Operationen Augenoperation]], #DE-SL)
-    * required = true
+  * item[+]
+    * insert addItemWithSource(8.50a, #boolean, [[Paukendrainage]], #DE-SL)
   * item[+]
     * insert addItemWithSource(8.51, #boolean, [[Operationen Sonstige OP]], #DE-SL)
-    * required = true
+    * item[+]
+      * insert addItemWithSource(8.51.1, #string, [[Sonstiges, und zwar:]], #DE-SL)
+      * insert enableWhenBoolean(8.51, =, true)
+
+// Unfälle
   * item[+]
     * insert addItemWithSource(8.52, #choice, [[Unfälle Verbrennung/Verbrühung]], #DE-SL)
     * required = true
@@ -261,34 +285,35 @@ Description: "Elternbefragung SL"
     * insert addItemWithSource(8.56, #choice, [[Unfälle Sonstige]], #DE-SL)
     * answerValueSet = Canonical(SEU_EF_UnfallortVS)
     * required = true
-  * item[+]
-    * insert addItemWithSource(8.57, #boolean, [[Reg. Med. Antikonvulsiva]], #DE-SL)
-    * required = true
     * item[+]
-      * insert addItem(8.57.1, #string, [[Wegen welcher Erkrankungen ist Ihr Kind zurzeit in Behandlung??]])
-      * required = true
-      * insert enableWhenBoolean(8.57, =, true)
+      * insert addItemWithSource(8.56.1, #string, [[Sonstiges, und zwar:]], #DE-SL)
+      * insert enableWhenBoolean(8.56, =, true)
+    
+// Medikamente
   * item[+]
-    * insert addItemWithSource(8.58, #boolean, [[Reg. Med. Antiasthmatika/Antiallergika]], #DE-SL)
-    * required = true
-  * item[+]
-    * insert addItemWithSource(8.59, #boolean, [[Reg. Med. Psychopharmaka]], #DE-SL)
-    * required = true
-  * item[+]
-    * insert addItemWithSource(8.60, #boolean, [[Reg. Med. Cardiaca/Kreislaufpräparate]], #DE-SL)
-    * required = true
-  * item[+]
-    * insert addItemWithSource(8.61, #boolean, [[Reg. Med. Jodid oder Thyroxin]], #DE-SL)
-    * required = true
-  * item[+]
-    * insert addItemWithSource(8.62, #boolean, [[Reg. Med. Dermatologische Präparate]], #DE-SL)
-    * required = true
-  * item[+]
-    * insert addItemWithSource(8.63, #boolean, [[Reg. Med. Homöopathische Präparate]], #DE-SL)
-    * required = true
-  * item[+]
-    * insert addItemWithSource(8.64, #boolean, [[Reg. Med. Sonstige]], #DE-SL)
-    * required = true
+    * insert addItemWithSource(8.57a, #boolean, [[Regelmäßige Einnahme von Medikamenten?]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.57, #boolean, [[Reg. Med. Antikonvulsiva]], #DE-SL)
+      * item[+]
+        * insert addItem(8.57.1, #string, [[Wegen welcher Erkrankungen ist Ihr Kind zurzeit in Behandlung??]])
+        * insert enableWhenBoolean(8.57, =, true)
+    * item[+]
+      * insert addItemWithSource(8.58, #boolean, [[Reg. Med. Antiasthmatika/Antiallergika]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.59, #boolean, [[Reg. Med. Psychopharmaka]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.60, #boolean, [[Reg. Med. Cardiaca/Kreislaufpräparate]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.61, #boolean, [[Reg. Med. Jodid oder Thyroxin]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.62, #boolean, [[Reg. Med. Dermatologische Präparate]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.63, #boolean, [[Reg. Med. Homöopathische Präparate]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.64, #boolean, [[Reg. Med. Sonstige]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.64.1, #string, [[Sonstiges, und zwar:]], #DE-SL)
+      * insert enableWhenBoolean(8.64, =, true)
 //********************************************
 // Förderungen
 * item[+]
@@ -301,21 +326,27 @@ Description: "Elternbefragung SL"
     * insert addSource(#DE-SN)
     * required = true
     * item[+]
+      * insert addItemWithSource(9.2ba, #boolean, [[Logopädie]], #DE-BB)
+    * item[+]
+      * insert addItemWithSource(9.2ea, #boolean, [[Andere]], #DE-BB)
+    * item[+]
+      * insert addItemWithSource(9.3a, #boolean, [[Frühförderung]], #DE-BB)
+    * item[+]
+      * insert addItemWithSource(9.4a, #boolean, [[Ergotherapie]], #DE-BB)
+    * item[+]
+      * insert addItemWithSource(9.6a, #boolean, [[Physiotherapie / Krankengymnastik]], #DE-BB)
+    * item[+]
       * insert addItemWithSource(9.11, #boolean, [[Fördermaßn. Integration in Regel-Kita]], #DE-SL)
-      * required = true
     * item[+]
       * insert addItemWithSource(9.12, #boolean, [[Fördermaßn. FörderKita/Integrative Kita]], #DE-SL)
-      * required = true
     * item[+]
       * insert addItemWithSource(9.13, #boolean, [[Fördermaßn. Vorschul. Päd. Sprachförderung]], #DE-SL)
-      * required = true
 //********************************************
 // Sonstiges
 * item[+]
   * insert addGroup(12, Sonstiges)
   * item[+]
     * insert addItemWithSource(12.7a, #boolean, [[Präv. Maßnahmen Regemäßig Sport im Verein]], #DE-SL)
-    * required = true
 //********************************************
 // Informationen Eltern
 * item[+]

@@ -21,6 +21,7 @@ Description: "Elternbefragung"
 * contained[+] = InfektionsKrankheitVS
 * contained[+] = ErkrankungenLetztesJahrVS
 * contained[+] = PflegegradVS
+* contained[+] = GradDerBehinderungVS
 * contained[+] = UnfallOrtVS
 * contained[+] = UnfallArtVS
 * contained[+] = GeplantFindetStattAbgeschlossenVS
@@ -407,10 +408,19 @@ Description: "Elternbefragung"
     * item[+]
       * insert addItem(3.2.6, #boolean, [[Hat Ihr Kind eine körperliche, geistige oder seelische Behinderung?]])
       * item[+]
+        * insert addItem(3.2.6.1, #string, [[Welche Behinderung?]])
         * insert enableWhenBoolean(3.2.6, =, true)
-        * insert addItem(3.2.6.1, #string, Welche Behinderung?)
     * item[+]
       * insert addItemWithSource(3.2.6a, #boolean, [[Liegt bei Ihrem Kind ein Grad der Behinderung/ein Pflegegrad vor?]], #DE-SL)
+      * item[+]
+        * insert addItemWithSource(3.2.6a.1, #choice, [[Grad der Behinderung]], #DE-SL)
+        * insert enableWhenBoolean(3.2.6a, =, true)
+        * answerValueSet = Canonical(GradDerBehinderungVS)
+      * item[+]
+        * insert addItemWithSource(3.2.6a.2, #choice, [[Pflegegrad]], #DE-SL)
+        * insert enableWhenBoolean(3.2.6a, =, true)
+        * answerValueSet = Canonical(PflegegradVS)
+      
     * item[+]
       * insert addItem(3.2.7, #boolean, Schilddrüsenerkrankung)
       * item[+]
@@ -605,32 +615,34 @@ Description: "Elternbefragung"
 * item[+]
   * insert addItem(6, #group, [[Sprache]])
   * item[+]
-    * answerValueSet = Canonical(ISO6392_LanguageVS)
     * insert addItem(6.1, #choice, [[Welche Sprachen werden Zuhause gesprochen?]])
+    * answerValueSet = Canonical(ISO6392_LanguageVS)
     * repeats = true
   * item[+]
-    * answerValueSet = Canonical(UeberwiegendGesprocheneSpracheVS)
     * insert addItem(6.1a, #choice, [[Welche Sprachen wurden mit dem Kind in den ersten 4 Lebensjahren überwiegend gesprochen?]])
-    * repeats = true    
+    * answerValueSet = Canonical(UeberwiegendGesprocheneSpracheVS)
+    * repeats = true
   * item[+]
     * insert addItemWithSource(6.1b, #choice, [[1. vorrangig in der Familie gesprochene Sprache]], #DE-SL)
     * answerValueSet = Canonical(ISO6392_LanguageVS)
   * item[+]
     * insert addItemWithSource(6.1c, #choice, [[2. vorrangig in der Familie gesprochene Sprache]], #DE-SL)
     * answerValueSet = Canonical(ISO6392_LanguageVS)
-  * item[+] insert addItemWithSource(6.1d, #boolean, [[Kind wächst mehrsprachig auf]], #DE-BY)
-  * item[+] insert addItemWithSource(6.1e, #choice, [[Zu Hause gesprochene Sprache(n)]], #DE-BY)
+  * item[+]
+    * insert addItemWithSource(6.1d, #boolean, [[Kind wächst mehrsprachig auf]], #DE-BY)
+  * item[+]
+    * insert addItemWithSource(6.1e, #choice, [[Zu Hause gesprochene Sprache(n)]], #DE-BY)
     * answerValueSet = Canonical(SEU_UB_GesprocheneSpracheVS)
   * item[+] insert addItemWithSource(6.1f, #string, [[Zu Hause gesprochene Sprache(n) andere]], #DE-BY)
     * insert enableWhenCode(6.1e, =, SEU_UB_GesprocheneSpracheCS, 2)
     * insert enableWhenCode(6.1e, =, SEU_UB_GesprocheneSpracheCS, 8)
     * enableBehavior = #any
   * item[+]
-    * answerValueSet = Canonical(ISO6392_LanguageVS)
     * insert addItem(6.2, #choice, [[Muttersprache des Kindes]])
+    * answerValueSet = Canonical(ISO6392_LanguageVS)
   * item[+]
-    * answerValueSet = Canonical(JaNeinAngemeldetVS)
     * insert addItem(6.3, #choice, [[Teilnahme des Kindes an einem Deutschkurs]])
+    * answerValueSet = Canonical(JaNeinAngemeldetVS)
   * item[+]
     * insert addItem(6.4, #boolean, [[Sprachauffälligkeiten]])
     * item[+]
@@ -1006,6 +1018,8 @@ Description: "Elternbefragung"
     * insert addItemWithSource(8.26a, #text, [[Gesundheitsstörungen und Besonderheiten beim Kind, die nach Meinung der Eltern zu berücksichtigen sind]], #DE-TH)
   * item[+]
     * insert addItemWithSource(8.26b, #text, [[Sonstige gesundheitliche Probleme, die hinsichtlich der Einschulung besprochen werden sollen]], #DE-ST)
+
+// Operationen
   * item[+]
     * insert addItem(8.27, #boolean, [[Wurde Ihr Kind operiert]])
     * item[+]
@@ -1022,6 +1036,8 @@ Description: "Elternbefragung"
         * insert enableWhenCode(8.27.2, =, SEU_EF_OperationenCS, sonstige_operation)
   * item[+]
     * insert addItemWithSource(8.27a, #boolean, [[Ambulante Operation(en)]], #DE-ST)
+
+// Unfälle
   * item[+]
     * insert addItem(8.28a, #boolean, [[Hatte Ihr Kind einen Unfall]])
   * item[+]
@@ -1041,6 +1057,8 @@ Description: "Elternbefragung"
     * item[+]
       * insert addItemWithSource(8.28.g.3, #choice, [[Anlass des Unfalls]], #DE-SL)
       * answerValueSet = Canonical(SEU_EF_UnfallVS)
+
+// Befindlichkeitsstörungen
   * item[+]
     * insert addItem(8.29, #choice, [[Hat Ihr Kind häufiger Befindlichkeitsstörungen?]])
     * repeats = true 
@@ -1050,36 +1068,65 @@ Description: "Elternbefragung"
       * insert enableWhenCode(8.29, =, AllgemeineBeschwerdenCS, sonstige)
   * item[+]
     * insert addItemWithSource(8.30, #boolean, [[Wurde Ihr Kind jemals aufgrund von Unfallverletzungen von einem Arzt behandelt?]], #DE-SL)
+
+// Inkontinenz
   * item[+]
     * insert addItemWithSource(8.30.1, #boolean, [[Nässt Ihr Kind ein?]], #DE-BE)
   * item[+]
     * insert addItemWithSource(8.31, #boolean, [[Einnässen tags]], #DE-SL)
   * item[+]
     * insert addItemWithSource(8.32, #boolean, [[Einnässen nachts]], #DE-SL)
+    
+// Einkoten
   * item[+]
     * insert addItemWithSource(8.33, #boolean, [[Einkoten tags]], #DE-SL)
   * item[+]
     * insert addItemWithSource(8.34, #boolean, [[Einkoten nachts]], #DE-SL)
+
+// Bisherige Erkrankungen
   * item[+]
-    * insert addItemWithSource(8.35, #boolean, [[Erkrankungen Tuberkuloseerkrankung]], #DE-SL)
-  * item[+]
-    * insert addItemWithSource(8.36, #boolean, [[Erkrankungen Meningitis/Enceph.]], #DE-SL)
-  * item[+]
-    * insert addItemWithSource(8.37, #boolean, [[Erkrankungen Pneumonien]], #DE-SL)
-  * item[+]
-    * insert addItemWithSource(8.38, #boolean, [[Erkrankungen Pseudocroup]], #DE-SL)
-  * item[+]
-    * insert addItemWithSource(8.39, #boolean, [[Erkrankungen Fieberkrampf/Krampfanfall]], #DE-SL)
-  * item[+]
-    * insert addItemWithSource(8.40, #boolean, [[Erkrankungen Harnwegserkrankungen]], #DE-SL)
-  * item[+]
-    * insert addItemWithSource(8.41, #boolean, [[Erkrankungen rez Otitis media]], #DE-SL)
-  * item[+]
-    * insert addItemWithSource(8.42, #boolean, [[Erkrankungen Allergie]], #DE-SL)
-  * item[+]
-    * insert addItemWithSource(8.42a, #boolean, [[Erkrankungen Neurodermitis]], #DE-SL)
-  * item[+]
-    * insert addItemWithSource(8.43, #boolean, [[Erkrankungen Sonstige]], #DE-SL)
+    * insert addItemWithSource(8.35a, #group, [[Bisherige Erkrankungen Ihres Kindes?]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.35, #boolean, [[Erkrankungen Tuberkuloseerkrankung]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.36, #boolean, [[Erkrankungen Meningitis/Enceph.]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.37, #boolean, [[Erkrankungen Pneumonien]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.38, #boolean, [[Erkrankungen Pseudocroup]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.39, #boolean, [[Erkrankungen Fieberkrampf/Krampfanfall]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.40, #boolean, [[Erkrankungen Harnwegserkrankungen]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.41, #boolean, [[Erkrankungen rez Otitis media]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.42, #boolean, [[Erkrankungen Allergie]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.42a, #boolean, [[Erkrankungen Neurodermitis]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.42b, #boolean, [[Keuchhusten]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.42c, #boolean, [[Scharlach]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.42d, #boolean, [[Chron. Bronchitis]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.42e, #boolean, [[Mumps]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.42f, #boolean, [[Röteln]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.42g, #boolean, [[Windpocken]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.42h, #boolean, [[Masern]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.42i, #boolean, [[Asthma bronchiale]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.43, #boolean, [[Erkrankungen Sonstige]], #DE-SL)
+      * item[+]
+        * insert addItemWithSource(8.43.1, #string, [[Sonstiges, und zwar:]], #DE-SL)
+        * insert enableWhenBoolean(8.43, =, true)
+
+// Operationen
   * item[+]
     * insert addItemWithSource(8.44, #boolean, [[Operationen Adenotomie]], #DE-SL)
   * item[+]
@@ -1095,7 +1142,14 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItemWithSource(8.50, #boolean, [[Operationen Augenoperation]], #DE-SL)
   * item[+]
+    * insert addItemWithSource(8.50a, #boolean, [[Paukendrainage]], #DE-SL)
+  * item[+]
     * insert addItemWithSource(8.51, #boolean, [[Operationen Sonstige OP]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.51.1, #string, [[Sonstiges, und zwar:]], #DE-SL)
+      * insert enableWhenBoolean(8.51, =, true)
+
+// Unfälle
   * item[+]
     * insert addItemWithSource(8.52, #choice, [[Unfälle Verbrennung/Verbrühung]], #DE-SL)
     * answerValueSet = Canonical(SEU_EF_UnfallortVS)
@@ -1111,25 +1165,37 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItemWithSource(8.56, #choice, [[Unfälle Sonstige]], #DE-SL)
     * answerValueSet = Canonical(SEU_EF_UnfallortVS)
-  * item[+]
-    * insert addItemWithSource(8.57, #boolean, [[Reg. Med. Antikonvulsiva]], #DE-SL)
     * item[+]
-      * insert addItem(8.57.1, #string, [[Wegen welcher Erkrankungen ist Ihr Kind zurzeit in Behandlung??]])
-      * insert enableWhenBoolean(8.57, =, true)
+      * insert addItemWithSource(8.56.1, #string, [[Sonstiges, und zwar:]], #DE-SL)
+      * insert enableWhenBoolean(8.56, =, true)
+
+// Medikamente
   * item[+]
-    * insert addItemWithSource(8.58, #boolean, [[Reg. Med. Antiasthmatika/Antiallergika]], #DE-SL)
-  * item[+]
-    * insert addItemWithSource(8.59, #boolean, [[Reg. Med. Psychopharmaka]], #DE-SL)
-  * item[+]
-    * insert addItemWithSource(8.60, #boolean, [[Reg. Med. Cardiaca/Kreislaufpräparate]], #DE-SL)
-  * item[+]
-    * insert addItemWithSource(8.61, #boolean, [[Reg. Med. Jodid oder Thyroxin]], #DE-SL)
-  * item[+]
-    * insert addItemWithSource(8.62, #boolean, [[Reg. Med. Dermatologische Präparate]], #DE-SL)
-  * item[+]
-    * insert addItemWithSource(8.63, #boolean, [[Reg. Med. Homöopathische Präparate]], #DE-SL)
-  * item[+]
-    * insert addItemWithSource(8.64, #boolean, [[Reg. Med. Sonstige]], #DE-SL)
+    * insert addItemWithSource(8.57a, #boolean, [[Regelmäßige Einnahme von Medikamenten?]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.57, #boolean, [[Reg. Med. Antikonvulsiva]], #DE-SL)
+      * item[+]
+        * insert addItem(8.57.1, #string, [[Wegen welcher Erkrankungen ist Ihr Kind zurzeit in Behandlung??]])
+        * insert enableWhenBoolean(8.57, =, true)
+    * item[+]
+      * insert addItemWithSource(8.58, #boolean, [[Reg. Med. Antiasthmatika/Antiallergika]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.59, #boolean, [[Reg. Med. Psychopharmaka]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.60, #boolean, [[Reg. Med. Cardiaca/Kreislaufpräparate]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.61, #boolean, [[Reg. Med. Jodid oder Thyroxin]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.62, #boolean, [[Reg. Med. Dermatologische Präparate]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.63, #boolean, [[Reg. Med. Homöopathische Präparate]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.64, #boolean, [[Reg. Med. Sonstige]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.64.1, #string, [[Sonstiges, und zwar:]], #DE-SL)
+      * insert enableWhenBoolean(8.64, =, true)
+
+
   * item[+]
     * insert addItemWithSource(8.65, #boolean, [[Orthese]], #DE-BB)
   * item[+]
