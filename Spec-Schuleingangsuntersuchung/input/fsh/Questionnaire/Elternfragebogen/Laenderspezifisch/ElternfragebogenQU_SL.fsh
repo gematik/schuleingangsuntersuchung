@@ -287,34 +287,27 @@ Description: "Elternbefragung SL"
       * insert addItemWithSource(8.56.1, #string, [[Sonstiges, und zwar:]], #DE-SL)
       * insert enableWhenBoolean(8.56, =, true)
     
+// Medikamente
   * item[+]
     * insert addItemWithSource(8.57, #boolean, [[Reg. Med. Antikonvulsiva]], #DE-SL)
-    * required = true
     * item[+]
       * insert addItem(8.57.1, #string, [[Wegen welcher Erkrankungen ist Ihr Kind zurzeit in Behandlung??]])
       * required = true
       * insert enableWhenBoolean(8.57, =, true)
   * item[+]
     * insert addItemWithSource(8.58, #boolean, [[Reg. Med. Antiasthmatika/Antiallergika]], #DE-SL)
-    * required = true
   * item[+]
     * insert addItemWithSource(8.59, #boolean, [[Reg. Med. Psychopharmaka]], #DE-SL)
-    * required = true
   * item[+]
     * insert addItemWithSource(8.60, #boolean, [[Reg. Med. Cardiaca/Kreislaufpräparate]], #DE-SL)
-    * required = true
   * item[+]
     * insert addItemWithSource(8.61, #boolean, [[Reg. Med. Jodid oder Thyroxin]], #DE-SL)
-    * required = true
   * item[+]
     * insert addItemWithSource(8.62, #boolean, [[Reg. Med. Dermatologische Präparate]], #DE-SL)
-    * required = true
   * item[+]
     * insert addItemWithSource(8.63, #boolean, [[Reg. Med. Homöopathische Präparate]], #DE-SL)
-    * required = true
   * item[+]
     * insert addItemWithSource(8.64, #boolean, [[Reg. Med. Sonstige]], #DE-SL)
-    * required = true
 //********************************************
 // Förderungen
 * item[+]
