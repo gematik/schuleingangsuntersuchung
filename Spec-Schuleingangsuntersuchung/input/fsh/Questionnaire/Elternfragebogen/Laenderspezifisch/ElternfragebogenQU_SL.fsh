@@ -200,44 +200,46 @@ Description: "Elternbefragung SL"
 
 // Bisherige Erkrankungen
   * item[+]
-    * insert addItemWithSource(8.35, #boolean, [[Erkrankungen Tuberkuloseerkrankung]], #DE-SL)
-  * item[+]
-    * insert addItemWithSource(8.36, #boolean, [[Erkrankungen Meningitis/Enceph.]], #DE-SL)
-  * item[+]
-    * insert addItemWithSource(8.37, #boolean, [[Erkrankungen Pneumonien]], #DE-SL)
-  * item[+]
-    * insert addItemWithSource(8.38, #boolean, [[Erkrankungen Pseudocroup]], #DE-SL)
-  * item[+]
-    * insert addItemWithSource(8.39, #boolean, [[Erkrankungen Fieberkrampf/Krampfanfall]], #DE-SL)
-  * item[+]
-    * insert addItemWithSource(8.40, #boolean, [[Erkrankungen Harnwegserkrankungen]], #DE-SL)
-  * item[+]
-    * insert addItemWithSource(8.41, #boolean, [[Erkrankungen rez Otitis media]], #DE-SL)
-  * item[+]
-    * insert addItemWithSource(8.42, #boolean, [[Erkrankungen Allergie]], #DE-SL)
-  * item[+]
-    * insert addItemWithSource(8.42a, #boolean, [[Erkrankungen Neurodermitis]], #DE-SL)
-  * item[+]
-    * insert addItemWithSource(8.42b, #boolean, [[Keuchhusten]], #DE-SL)
-  * item[+]
-    * insert addItemWithSource(8.42c, #boolean, [[Scharlach]], #DE-SL)
-  * item[+]
-    * insert addItemWithSource(8.42d, #boolean, [[Chron. Bronchitis]], #DE-SL)
-  * item[+]
-    * insert addItemWithSource(8.42e, #boolean, [[Mumps]], #DE-SL)
-  * item[+]
-    * insert addItemWithSource(8.42f, #boolean, [[Röteln]], #DE-SL)
-  * item[+]
-    * insert addItemWithSource(8.42g, #boolean, [[Windpocken]], #DE-SL)
-  * item[+]
-    * insert addItemWithSource(8.42h, #boolean, [[Masern]], #DE-SL)
-  * item[+]
-    * insert addItemWithSource(8.42i, #boolean, [[Asthma bronchiale]], #DE-SL)
-  * item[+]
-    * insert addItemWithSource(8.43, #boolean, [[Erkrankungen Sonstige]], #DE-SL)
+    * insert addItemWithSource(8.35a, #group, [[Bisherige Erkrankungen Ihres Kindes?]], #DE-SL)
     * item[+]
-      * insert addItemWithSource(8.43.1, #string, [[Sonstiges, und zwar:]], #DE-SL)
-      * insert enableWhenBoolean(8.43, =, true)
+      * insert addItemWithSource(8.35, #boolean, [[Erkrankungen Tuberkuloseerkrankung]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.36, #boolean, [[Erkrankungen Meningitis/Enceph.]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.37, #boolean, [[Erkrankungen Pneumonien]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.38, #boolean, [[Erkrankungen Pseudocroup]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.39, #boolean, [[Erkrankungen Fieberkrampf/Krampfanfall]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.40, #boolean, [[Erkrankungen Harnwegserkrankungen]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.41, #boolean, [[Erkrankungen rez Otitis media]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.42, #boolean, [[Erkrankungen Allergie]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.42a, #boolean, [[Erkrankungen Neurodermitis]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.42b, #boolean, [[Keuchhusten]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.42c, #boolean, [[Scharlach]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.42d, #boolean, [[Chron. Bronchitis]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.42e, #boolean, [[Mumps]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.42f, #boolean, [[Röteln]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.42g, #boolean, [[Windpocken]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.42h, #boolean, [[Masern]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.42i, #boolean, [[Asthma bronchiale]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.43, #boolean, [[Erkrankungen Sonstige]], #DE-SL)
+      * item[+]
+        * insert addItemWithSource(8.43.1, #string, [[Sonstiges, und zwar:]], #DE-SL)
+        * insert enableWhenBoolean(8.43, =, true)
 
 // Operationen
   * item[+]
@@ -289,27 +291,29 @@ Description: "Elternbefragung SL"
     
 // Medikamente
   * item[+]
-    * insert addItemWithSource(8.57, #boolean, [[Reg. Med. Antikonvulsiva]], #DE-SL)
+    * insert addItemWithSource(8.57a, #boolean, [[Regelmäßige Einnahme von Medikamenten?]], #DE-SL)
     * item[+]
-      * insert addItem(8.57.1, #string, [[Wegen welcher Erkrankungen ist Ihr Kind zurzeit in Behandlung??]])
-      * insert enableWhenBoolean(8.57, =, true)
-  * item[+]
-    * insert addItemWithSource(8.58, #boolean, [[Reg. Med. Antiasthmatika/Antiallergika]], #DE-SL)
-  * item[+]
-    * insert addItemWithSource(8.59, #boolean, [[Reg. Med. Psychopharmaka]], #DE-SL)
-  * item[+]
-    * insert addItemWithSource(8.60, #boolean, [[Reg. Med. Cardiaca/Kreislaufpräparate]], #DE-SL)
-  * item[+]
-    * insert addItemWithSource(8.61, #boolean, [[Reg. Med. Jodid oder Thyroxin]], #DE-SL)
-  * item[+]
-    * insert addItemWithSource(8.62, #boolean, [[Reg. Med. Dermatologische Präparate]], #DE-SL)
-  * item[+]
-    * insert addItemWithSource(8.63, #boolean, [[Reg. Med. Homöopathische Präparate]], #DE-SL)
-  * item[+]
-    * insert addItemWithSource(8.64, #boolean, [[Reg. Med. Sonstige]], #DE-SL)
-  * item[+]
-    * insert addItemWithSource(8.64.1, #string, [[Sonstiges, und zwar:]], #DE-SL)
-    * insert enableWhenBoolean(8.64, =, true)
+      * insert addItemWithSource(8.57, #boolean, [[Reg. Med. Antikonvulsiva]], #DE-SL)
+      * item[+]
+        * insert addItem(8.57.1, #string, [[Wegen welcher Erkrankungen ist Ihr Kind zurzeit in Behandlung??]])
+        * insert enableWhenBoolean(8.57, =, true)
+    * item[+]
+      * insert addItemWithSource(8.58, #boolean, [[Reg. Med. Antiasthmatika/Antiallergika]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.59, #boolean, [[Reg. Med. Psychopharmaka]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.60, #boolean, [[Reg. Med. Cardiaca/Kreislaufpräparate]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.61, #boolean, [[Reg. Med. Jodid oder Thyroxin]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.62, #boolean, [[Reg. Med. Dermatologische Präparate]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.63, #boolean, [[Reg. Med. Homöopathische Präparate]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.64, #boolean, [[Reg. Med. Sonstige]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.64.1, #string, [[Sonstiges, und zwar:]], #DE-SL)
+      * insert enableWhenBoolean(8.64, =, true)
 //********************************************
 // Förderungen
 * item[+]
