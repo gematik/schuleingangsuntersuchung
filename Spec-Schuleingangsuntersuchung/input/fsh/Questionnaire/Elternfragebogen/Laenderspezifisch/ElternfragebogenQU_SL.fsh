@@ -218,6 +218,22 @@ Description: "Elternbefragung SL"
   * item[+]
     * insert addItemWithSource(8.42a, #boolean, [[Erkrankungen Neurodermitis]], #DE-SL)
   * item[+]
+    * insert addItemWithSource(8.42b, #boolean, [[Keuchhusten]], #DE-SL)
+  * item[+]
+    * insert addItemWithSource(8.42c, #boolean, [[Scharlach]], #DE-SL)
+  * item[+]
+    * insert addItemWithSource(8.42d, #boolean, [[Chron. Bronchitis]], #DE-SL)
+  * item[+]
+    * insert addItemWithSource(8.42e, #boolean, [[Mumps]], #DE-SL)
+  * item[+]
+    * insert addItemWithSource(8.42f, #boolean, [[Röteln]], #DE-SL)
+  * item[+]
+    * insert addItemWithSource(8.42g, #boolean, [[Windpocken]], #DE-SL)
+  * item[+]
+    * insert addItemWithSource(8.42h, #boolean, [[Masern]], #DE-SL)
+  * item[+]
+    * insert addItemWithSource(8.42i, #boolean, [[Asthma bronchiale]], #DE-SL)
+  * item[+]
     * insert addItemWithSource(8.43, #boolean, [[Erkrankungen Sonstige]], #DE-SL)
 
 // Operationen
