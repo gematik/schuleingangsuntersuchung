@@ -320,6 +320,16 @@ Description: "Elternbefragung SL"
     * insert addSource(#DE-SN)
     * required = true
     * item[+]
+      * insert addItemWithSource(9.2ba, #boolean, [[Logopädie]], #DE-BB)
+    * item[+]
+      * insert addItemWithSource(9.2ea, #boolean, [[Andere]], #DE-BB)
+    * item[+]
+      * insert addItemWithSource(9.3a, #boolean, [[Frühförderung]], #DE-BB)
+    * item[+]
+      * insert addItemWithSource(9.4a, #boolean, [[Ergotherapie]], #DE-BB)
+    * item[+]
+      * insert addItemWithSource(9.6a, #boolean, [[Physiotherapie / Krankengymnastik]], #DE-BB)
+    * item[+]
       * insert addItemWithSource(9.11, #boolean, [[Fördermaßn. Integration in Regel-Kita]], #DE-SL)
     * item[+]
       * insert addItemWithSource(9.12, #boolean, [[Fördermaßn. FörderKita/Integrative Kita]], #DE-SL)
