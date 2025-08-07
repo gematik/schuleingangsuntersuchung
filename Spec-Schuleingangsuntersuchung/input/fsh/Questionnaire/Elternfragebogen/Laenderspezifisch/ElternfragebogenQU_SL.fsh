@@ -201,34 +201,24 @@ Description: "Elternbefragung SL"
 // Bisherige Erkrankungen
   * item[+]
     * insert addItemWithSource(8.35, #boolean, [[Erkrankungen Tuberkuloseerkrankung]], #DE-SL)
-    * required = true
   * item[+]
     * insert addItemWithSource(8.36, #boolean, [[Erkrankungen Meningitis/Enceph.]], #DE-SL)
-    * required = true
   * item[+]
     * insert addItemWithSource(8.37, #boolean, [[Erkrankungen Pneumonien]], #DE-SL)
-    * required = true
   * item[+]
     * insert addItemWithSource(8.38, #boolean, [[Erkrankungen Pseudocroup]], #DE-SL)
-    * required = true
   * item[+]
     * insert addItemWithSource(8.39, #boolean, [[Erkrankungen Fieberkrampf/Krampfanfall]], #DE-SL)
-    * required = true
   * item[+]
     * insert addItemWithSource(8.40, #boolean, [[Erkrankungen Harnwegserkrankungen]], #DE-SL)
-    * required = true
   * item[+]
     * insert addItemWithSource(8.41, #boolean, [[Erkrankungen rez Otitis media]], #DE-SL)
-    * required = true
   * item[+]
     * insert addItemWithSource(8.42, #boolean, [[Erkrankungen Allergie]], #DE-SL)
-    * required = true
   * item[+]
     * insert addItemWithSource(8.42a, #boolean, [[Erkrankungen Neurodermitis]], #DE-SL)
-    * required = true
   * item[+]
     * insert addItemWithSource(8.43, #boolean, [[Erkrankungen Sonstige]], #DE-SL)
-    * required = true
 
 // Operationen
   * item[+]
