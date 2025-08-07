@@ -179,6 +179,8 @@ Description: "Elternbefragung SL"
   * item[+]
     * insert addItemWithSource(8.30, #boolean, [[Wurde Ihr Kind jemals aufgrund von Unfallverletzungen von einem Arzt behandelt?]], #DE-SL)
     * required = true
+
+// Inkontinenz
   * item[+]
     * insert addItemWithSource(8.30.1, #boolean, [[Nässt Ihr Kind ein?]], #DE-BE)
   * item[+]
@@ -187,12 +189,16 @@ Description: "Elternbefragung SL"
   * item[+]
     * insert addItemWithSource(8.32, #boolean, [[Einnässen nachts]], #DE-SL)
     * required = true
+
+// Einkoten
   * item[+]
     * insert addItemWithSource(8.33, #boolean, [[Einkoten tags]], #DE-SL)
     * required = true
   * item[+]
     * insert addItemWithSource(8.34, #boolean, [[Einkoten nachts]], #DE-SL)
     * required = true
+
+// Bisherige Erkrankungen
   * item[+]
     * insert addItemWithSource(8.35, #boolean, [[Erkrankungen Tuberkuloseerkrankung]], #DE-SL)
     * required = true
@@ -223,6 +229,8 @@ Description: "Elternbefragung SL"
   * item[+]
     * insert addItemWithSource(8.43, #boolean, [[Erkrankungen Sonstige]], #DE-SL)
     * required = true
+
+// Operationen
   * item[+]
     * insert addItemWithSource(8.44, #boolean, [[Operationen Adenotomie]], #DE-SL)
     * required = true

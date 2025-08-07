@@ -1018,6 +1018,8 @@ Description: "Elternbefragung"
     * insert addItemWithSource(8.26a, #text, [[Gesundheitsstörungen und Besonderheiten beim Kind, die nach Meinung der Eltern zu berücksichtigen sind]], #DE-TH)
   * item[+]
     * insert addItemWithSource(8.26b, #text, [[Sonstige gesundheitliche Probleme, die hinsichtlich der Einschulung besprochen werden sollen]], #DE-ST)
+
+// Operationen
   * item[+]
     * insert addItem(8.27, #boolean, [[Wurde Ihr Kind operiert]])
     * item[+]
@@ -1034,6 +1036,8 @@ Description: "Elternbefragung"
         * insert enableWhenCode(8.27.2, =, SEU_EF_OperationenCS, sonstige_operation)
   * item[+]
     * insert addItemWithSource(8.27a, #boolean, [[Ambulante Operation(en)]], #DE-ST)
+
+// Unfälle
   * item[+]
     * insert addItem(8.28a, #boolean, [[Hatte Ihr Kind einen Unfall]])
   * item[+]
@@ -1053,6 +1057,8 @@ Description: "Elternbefragung"
     * item[+]
       * insert addItemWithSource(8.28.g.3, #choice, [[Anlass des Unfalls]], #DE-SL)
       * answerValueSet = Canonical(SEU_EF_UnfallVS)
+
+// Befindlichkeitsstörungen
   * item[+]
     * insert addItem(8.29, #choice, [[Hat Ihr Kind häufiger Befindlichkeitsstörungen?]])
     * repeats = true 
@@ -1062,16 +1068,22 @@ Description: "Elternbefragung"
       * insert enableWhenCode(8.29, =, AllgemeineBeschwerdenCS, sonstige)
   * item[+]
     * insert addItemWithSource(8.30, #boolean, [[Wurde Ihr Kind jemals aufgrund von Unfallverletzungen von einem Arzt behandelt?]], #DE-SL)
+
+// Inkontinenz
   * item[+]
     * insert addItemWithSource(8.30.1, #boolean, [[Nässt Ihr Kind ein?]], #DE-BE)
   * item[+]
     * insert addItemWithSource(8.31, #boolean, [[Einnässen tags]], #DE-SL)
   * item[+]
     * insert addItemWithSource(8.32, #boolean, [[Einnässen nachts]], #DE-SL)
+    
+// Einkoten
   * item[+]
     * insert addItemWithSource(8.33, #boolean, [[Einkoten tags]], #DE-SL)
   * item[+]
     * insert addItemWithSource(8.34, #boolean, [[Einkoten nachts]], #DE-SL)
+
+// Bisherige Erkrankungen
   * item[+]
     * insert addItemWithSource(8.35, #boolean, [[Erkrankungen Tuberkuloseerkrankung]], #DE-SL)
   * item[+]
@@ -1092,6 +1104,8 @@ Description: "Elternbefragung"
     * insert addItemWithSource(8.42a, #boolean, [[Erkrankungen Neurodermitis]], #DE-SL)
   * item[+]
     * insert addItemWithSource(8.43, #boolean, [[Erkrankungen Sonstige]], #DE-SL)
+
+// Operationen
   * item[+]
     * insert addItemWithSource(8.44, #boolean, [[Operationen Adenotomie]], #DE-SL)
   * item[+]
@@ -1108,6 +1122,8 @@ Description: "Elternbefragung"
     * insert addItemWithSource(8.50, #boolean, [[Operationen Augenoperation]], #DE-SL)
   * item[+]
     * insert addItemWithSource(8.51, #boolean, [[Operationen Sonstige OP]], #DE-SL)
+
+// Unfälle
   * item[+]
     * insert addItemWithSource(8.52, #choice, [[Unfälle Verbrennung/Verbrühung]], #DE-SL)
     * answerValueSet = Canonical(SEU_EF_UnfallortVS)
@@ -1123,6 +1139,8 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItemWithSource(8.56, #choice, [[Unfälle Sonstige]], #DE-SL)
     * answerValueSet = Canonical(SEU_EF_UnfallortVS)
+
+// Medikamente
   * item[+]
     * insert addItemWithSource(8.57, #boolean, [[Reg. Med. Antikonvulsiva]], #DE-SL)
     * item[+]
@@ -1142,6 +1160,8 @@ Description: "Elternbefragung"
     * insert addItemWithSource(8.63, #boolean, [[Reg. Med. Homöopathische Präparate]], #DE-SL)
   * item[+]
     * insert addItemWithSource(8.64, #boolean, [[Reg. Med. Sonstige]], #DE-SL)
+
+
   * item[+]
     * insert addItemWithSource(8.65, #boolean, [[Orthese]], #DE-BB)
   * item[+]
