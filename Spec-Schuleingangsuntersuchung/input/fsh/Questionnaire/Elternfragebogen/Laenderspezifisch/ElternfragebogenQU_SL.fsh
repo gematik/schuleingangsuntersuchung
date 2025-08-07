@@ -242,25 +242,18 @@ Description: "Elternbefragung SL"
 // Operationen
   * item[+]
     * insert addItemWithSource(8.44, #boolean, [[Operationen Adenotomie]], #DE-SL)
-    * required = true
   * item[+]
     * insert addItemWithSource(8.45, #boolean, [[Operationen Tonsillen-OP]], #DE-SL)
-    * required = true
   * item[+]
     * insert addItemWithSource(8.46, #boolean, [[Operationen Herniotomie]], #DE-SL)
-    * required = true
   * item[+]
     * insert addItemWithSource(8.47, #boolean, [[Operationen Appendektomie]], #DE-SL)
-    * required = true
   * item[+]
     * insert addItemWithSource(8.48, #boolean, [[Operationen Circumcision]], #DE-SL)
-    * required = true
   * item[+]
     * insert addItemWithSource(8.49, #boolean, [[Operationen Orchidopexie]], #DE-SL)
-    * required = true
   * item[+]
     * insert addItemWithSource(8.50, #boolean, [[Operationen Augenoperation]], #DE-SL)
-    * required = true
   * item[+]
     * insert addItemWithSource(8.51, #boolean, [[Operationen Sonstige OP]], #DE-SL)
     * required = true
