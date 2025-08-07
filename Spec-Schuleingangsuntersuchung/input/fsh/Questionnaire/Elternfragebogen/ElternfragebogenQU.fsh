@@ -413,9 +413,9 @@ Description: "Elternbefragung"
     * item[+]
       * insert addItemWithSource(3.2.6a, #boolean, [[Liegt bei Ihrem Kind ein Grad der Behinderung/ein Pflegegrad vor?]], #DE-SL)
       * item[+]
-        * insert addItemWithSource(3.2.6a.1, #integer, [[Grad der Behinderung]], #DE-SL)
+        * insert addItemWithSource(3.2.6a.1, #choice, [[Grad der Behinderung]], #DE-SL)
         * insert enableWhenBoolean(3.2.6a, =, true)
-        * answerValueSet = Canonical(GradderBehinderungVS)
+        * answerValueSet = Canonical(GradDerBehinderungVS)
       * item[+]
         * insert addItemWithSource(3.2.6a.2, #choice, [[Pflegegrad]], #DE-SL)
         * insert enableWhenBoolean(3.2.6a, =, true)
