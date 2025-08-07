@@ -321,20 +321,16 @@ Description: "Elternbefragung SL"
     * required = true
     * item[+]
       * insert addItemWithSource(9.11, #boolean, [[Fördermaßn. Integration in Regel-Kita]], #DE-SL)
-      * required = true
     * item[+]
       * insert addItemWithSource(9.12, #boolean, [[Fördermaßn. FörderKita/Integrative Kita]], #DE-SL)
-      * required = true
     * item[+]
       * insert addItemWithSource(9.13, #boolean, [[Fördermaßn. Vorschul. Päd. Sprachförderung]], #DE-SL)
-      * required = true
 //********************************************
 // Sonstiges
 * item[+]
   * insert addGroup(12, Sonstiges)
   * item[+]
     * insert addItemWithSource(12.7a, #boolean, [[Präv. Maßnahmen Regemäßig Sport im Verein]], #DE-SL)
-    * required = true
 //********************************************
 // Informationen Eltern
 * item[+]
