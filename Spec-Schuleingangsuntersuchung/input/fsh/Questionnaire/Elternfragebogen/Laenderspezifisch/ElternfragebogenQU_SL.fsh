@@ -258,6 +258,9 @@ Description: "Elternbefragung SL"
     * insert addItemWithSource(8.50a, #boolean, [[Paukendrainage]], #DE-SL)
   * item[+]
     * insert addItemWithSource(8.51, #boolean, [[Operationen Sonstige OP]], #DE-SL)
+    * item[+]
+      * insert addItemWithSource(8.51.1, #string, [[Sonstiges, und zwar:]], #DE-SL)
+      * insert enableWhenBoolean(8.51, =, true)
   * item[+]
     * insert addItemWithSource(8.52, #choice, [[Unfälle Verbrennung/Verbrühung]], #DE-SL)
     * required = true
