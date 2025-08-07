@@ -1,0 +1,49 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "GradDerBehinderungCS",
+  "id": "GradDerBehinderungCS",
+  "title": "GradDerBehinderungCS",
+  "description": "GradDerBehinderungCS",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/GradDerBehinderungCS",
+  "concept": [
+    {
+      "code": "grad_20",
+      "display": "20%"
+    },
+    {
+      "code": "grad_30",
+      "display": "30%"
+    },
+    {
+      "code": "grad_40",
+      "display": "40%"
+    },
+    {
+      "code": "grad_50",
+      "display": "50%"
+    },
+    {
+      "code": "grad_60",
+      "display": "60%"
+    },
+    {
+      "code": "grad_70",
+      "display": "70%"
+    },
+    {
+      "code": "grad_80",
+      "display": "80%"
+    },
+    {
+      "code": "grad_90",
+      "display": "90%"
+    },
+    {
+      "code": "grad_100",
+      "display": "100%"
+    }
+  ],
+  "count": 9
+}

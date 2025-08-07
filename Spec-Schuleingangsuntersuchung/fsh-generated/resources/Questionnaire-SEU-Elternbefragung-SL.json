@@ -3718,6 +3718,118 @@
     },
     {
       "resourceType": "ValueSet",
+      "id": "PflegegradVS",
+      "status": "draft",
+      "name": "PflegegradVS",
+      "title": "PflegegradVS",
+      "description": "PflegegradVS",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/PflegegradVS",
+      "expansion": {
+        "timestamp": "2024-04-04T11:16:49+00:00",
+        "contains": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PflegegradCS",
+            "code": "pflegegrad_1",
+            "display": "Pflegegrad 1"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PflegegradCS",
+            "code": "pflegegrad_2",
+            "display": "Pflegegrad 2"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PflegegradCS",
+            "code": "pflegegrad_3",
+            "display": "Pflegegrad 3"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PflegegradCS",
+            "code": "pflegegrad_4",
+            "display": "Pflegegrad 4"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PflegegradCS",
+            "code": "pflegegrad_5",
+            "display": "Pflegegrad 5"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PflegegradCS"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "GradDerBehinderungVS",
+      "status": "draft",
+      "name": "GradDerBehinderungVS",
+      "title": "GradDerBehinderungVS",
+      "description": "GradDerBehinderungVS",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/GradDerBehinderungVS",
+      "expansion": {
+        "timestamp": "2024-04-04T11:16:49+00:00",
+        "contains": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/GradDerBehinderungCS",
+            "code": "grad_20",
+            "display": "20%"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/GradDerBehinderungCS",
+            "code": "grad_30",
+            "display": "30%"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/GradDerBehinderungCS",
+            "code": "grad_40",
+            "display": "40%"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/GradDerBehinderungCS",
+            "code": "grad_50",
+            "display": "50%"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/GradDerBehinderungCS",
+            "code": "grad_60",
+            "display": "60%"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/GradDerBehinderungCS",
+            "code": "grad_70",
+            "display": "70%"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/GradDerBehinderungCS",
+            "code": "grad_80",
+            "display": "80%"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/GradDerBehinderungCS",
+            "code": "grad_90",
+            "display": "90%"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/GradDerBehinderungCS",
+            "code": "grad_100",
+            "display": "100%"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/GradDerBehinderungCS"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
       "id": "seu-ef-operationen-vs",
       "status": "draft",
       "name": "SEU_EF_OperationenVS",
@@ -4406,8 +4518,7 @@
               "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
               "valueInteger": 10
             }
-          ],
-          "required": true
+          ]
         },
         {
           "linkId": "3.2",
@@ -4452,7 +4563,65 @@
                   }
                 }
               ],
-              "required": true
+              "required": true,
+              "item": [
+                {
+                  "linkId": "3.2.6a.1",
+                  "type": "choice",
+                  "text": "(3.2.6a.1) Grad der Behinderung",
+                  "code": [
+                    {
+                      "code": "3.2.6a.1",
+                      "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                    }
+                  ],
+                  "extension": [
+                    {
+                      "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                      "valueCoding": {
+                        "system": "urn:iso:std:iso:3166-2:de",
+                        "code": "DE-SL"
+                      }
+                    }
+                  ],
+                  "enableWhen": [
+                    {
+                      "question": "3.2.6a",
+                      "operator": "=",
+                      "answerBoolean": true
+                    }
+                  ],
+                  "answerValueSet": "#GradDerBehinderungVS"
+                },
+                {
+                  "linkId": "3.2.6a.2",
+                  "type": "choice",
+                  "text": "(3.2.6a.2) Pflegegrad",
+                  "code": [
+                    {
+                      "code": "3.2.6a.2",
+                      "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                    }
+                  ],
+                  "extension": [
+                    {
+                      "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                      "valueCoding": {
+                        "system": "urn:iso:std:iso:3166-2:de",
+                        "code": "DE-SL"
+                      }
+                    }
+                  ],
+                  "enableWhen": [
+                    {
+                      "question": "3.2.6a",
+                      "operator": "=",
+                      "answerBoolean": true
+                    }
+                  ],
+                  "answerValueSet": "#PflegegradVS"
+                }
+              ]
             }
           ]
         }
@@ -4755,8 +4924,7 @@
                 "code": "DE-SL"
               }
             }
-          ],
-          "required": true
+          ]
         },
         {
           "linkId": "7.4a",
@@ -4776,8 +4944,7 @@
                 "code": "DE-SL"
               }
             }
-          ],
-          "required": true
+          ]
         },
         {
           "linkId": "7.5a",
@@ -4797,8 +4964,7 @@
                 "code": "DE-SL"
               }
             }
-          ],
-          "required": true
+          ]
         }
       ]
     },
@@ -5089,12 +5255,12 @@
           "required": true
         },
         {
-          "linkId": "8.35",
-          "type": "boolean",
-          "text": "(8.35) Erkrankungen Tuberkuloseerkrankung",
+          "linkId": "8.35a",
+          "type": "group",
+          "text": "(8.35a) Bisherige Erkrankungen Ihres Kindes?",
           "code": [
             {
-              "code": "8.35",
+              "code": "8.35a",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
           ],
@@ -5107,196 +5273,397 @@
               }
             }
           ],
-          "required": true
-        },
-        {
-          "linkId": "8.36",
-          "type": "boolean",
-          "text": "(8.36) Erkrankungen Meningitis/Enceph.",
-          "code": [
+          "item": [
             {
-              "code": "8.36",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
+              "linkId": "8.35",
+              "type": "boolean",
+              "text": "(8.35) Erkrankungen Tuberkuloseerkrankung",
+              "code": [
+                {
+                  "code": "8.35",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-SL"
+                  }
+                }
+              ]
+            },
             {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-SL"
-              }
-            }
-          ],
-          "required": true
-        },
-        {
-          "linkId": "8.37",
-          "type": "boolean",
-          "text": "(8.37) Erkrankungen Pneumonien",
-          "code": [
+              "linkId": "8.36",
+              "type": "boolean",
+              "text": "(8.36) Erkrankungen Meningitis/Enceph.",
+              "code": [
+                {
+                  "code": "8.36",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-SL"
+                  }
+                }
+              ]
+            },
             {
-              "code": "8.37",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
+              "linkId": "8.37",
+              "type": "boolean",
+              "text": "(8.37) Erkrankungen Pneumonien",
+              "code": [
+                {
+                  "code": "8.37",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-SL"
+                  }
+                }
+              ]
+            },
             {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-SL"
-              }
-            }
-          ],
-          "required": true
-        },
-        {
-          "linkId": "8.38",
-          "type": "boolean",
-          "text": "(8.38) Erkrankungen Pseudocroup",
-          "code": [
+              "linkId": "8.38",
+              "type": "boolean",
+              "text": "(8.38) Erkrankungen Pseudocroup",
+              "code": [
+                {
+                  "code": "8.38",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-SL"
+                  }
+                }
+              ]
+            },
             {
-              "code": "8.38",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
+              "linkId": "8.39",
+              "type": "boolean",
+              "text": "(8.39) Erkrankungen Fieberkrampf/Krampfanfall",
+              "code": [
+                {
+                  "code": "8.39",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-SL"
+                  }
+                }
+              ]
+            },
             {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-SL"
-              }
-            }
-          ],
-          "required": true
-        },
-        {
-          "linkId": "8.39",
-          "type": "boolean",
-          "text": "(8.39) Erkrankungen Fieberkrampf/Krampfanfall",
-          "code": [
+              "linkId": "8.40",
+              "type": "boolean",
+              "text": "(8.40) Erkrankungen Harnwegserkrankungen",
+              "code": [
+                {
+                  "code": "8.40",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-SL"
+                  }
+                }
+              ]
+            },
             {
-              "code": "8.39",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
+              "linkId": "8.41",
+              "type": "boolean",
+              "text": "(8.41) Erkrankungen rez Otitis media",
+              "code": [
+                {
+                  "code": "8.41",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-SL"
+                  }
+                }
+              ]
+            },
             {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-SL"
-              }
-            }
-          ],
-          "required": true
-        },
-        {
-          "linkId": "8.40",
-          "type": "boolean",
-          "text": "(8.40) Erkrankungen Harnwegserkrankungen",
-          "code": [
+              "linkId": "8.42",
+              "type": "boolean",
+              "text": "(8.42) Erkrankungen Allergie",
+              "code": [
+                {
+                  "code": "8.42",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-SL"
+                  }
+                }
+              ]
+            },
             {
-              "code": "8.40",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
+              "linkId": "8.42a",
+              "type": "boolean",
+              "text": "(8.42a) Erkrankungen Neurodermitis",
+              "code": [
+                {
+                  "code": "8.42a",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-SL"
+                  }
+                }
+              ]
+            },
             {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-SL"
-              }
-            }
-          ],
-          "required": true
-        },
-        {
-          "linkId": "8.41",
-          "type": "boolean",
-          "text": "(8.41) Erkrankungen rez Otitis media",
-          "code": [
+              "linkId": "8.42b",
+              "type": "boolean",
+              "text": "(8.42b) Keuchhusten",
+              "code": [
+                {
+                  "code": "8.42b",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-SL"
+                  }
+                }
+              ]
+            },
             {
-              "code": "8.41",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
+              "linkId": "8.42c",
+              "type": "boolean",
+              "text": "(8.42c) Scharlach",
+              "code": [
+                {
+                  "code": "8.42c",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-SL"
+                  }
+                }
+              ]
+            },
             {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-SL"
-              }
-            }
-          ],
-          "required": true
-        },
-        {
-          "linkId": "8.42",
-          "type": "boolean",
-          "text": "(8.42) Erkrankungen Allergie",
-          "code": [
+              "linkId": "8.42d",
+              "type": "boolean",
+              "text": "(8.42d) Chron. Bronchitis",
+              "code": [
+                {
+                  "code": "8.42d",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-SL"
+                  }
+                }
+              ]
+            },
             {
-              "code": "8.42",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
+              "linkId": "8.42e",
+              "type": "boolean",
+              "text": "(8.42e) Mumps",
+              "code": [
+                {
+                  "code": "8.42e",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-SL"
+                  }
+                }
+              ]
+            },
             {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-SL"
-              }
-            }
-          ],
-          "required": true
-        },
-        {
-          "linkId": "8.42a",
-          "type": "boolean",
-          "text": "(8.42a) Erkrankungen Neurodermitis",
-          "code": [
+              "linkId": "8.42f",
+              "type": "boolean",
+              "text": "(8.42f) Röteln",
+              "code": [
+                {
+                  "code": "8.42f",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-SL"
+                  }
+                }
+              ]
+            },
             {
-              "code": "8.42a",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
+              "linkId": "8.42g",
+              "type": "boolean",
+              "text": "(8.42g) Windpocken",
+              "code": [
+                {
+                  "code": "8.42g",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-SL"
+                  }
+                }
+              ]
+            },
             {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-SL"
-              }
-            }
-          ],
-          "required": true
-        },
-        {
-          "linkId": "8.43",
-          "type": "boolean",
-          "text": "(8.43) Erkrankungen Sonstige",
-          "code": [
+              "linkId": "8.42h",
+              "type": "boolean",
+              "text": "(8.42h) Masern",
+              "code": [
+                {
+                  "code": "8.42h",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-SL"
+                  }
+                }
+              ]
+            },
             {
-              "code": "8.43",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
+              "linkId": "8.42i",
+              "type": "boolean",
+              "text": "(8.42i) Asthma bronchiale",
+              "code": [
+                {
+                  "code": "8.42i",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-SL"
+                  }
+                }
+              ]
+            },
             {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-SL"
-              }
+              "linkId": "8.43",
+              "type": "boolean",
+              "text": "(8.43) Erkrankungen Sonstige",
+              "code": [
+                {
+                  "code": "8.43",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-SL"
+                  }
+                }
+              ],
+              "item": [
+                {
+                  "linkId": "8.43.1",
+                  "type": "string",
+                  "text": "(8.43.1) Sonstiges, und zwar:",
+                  "code": [
+                    {
+                      "code": "8.43.1",
+                      "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                    }
+                  ],
+                  "extension": [
+                    {
+                      "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                      "valueCoding": {
+                        "system": "urn:iso:std:iso:3166-2:de",
+                        "code": "DE-SL"
+                      }
+                    }
+                  ],
+                  "enableWhen": [
+                    {
+                      "question": "8.43",
+                      "operator": "=",
+                      "answerBoolean": true
+                    }
+                  ]
+                }
+              ]
             }
-          ],
-          "required": true
+          ]
         },
         {
           "linkId": "8.44",
@@ -5316,8 +5683,7 @@
                 "code": "DE-SL"
               }
             }
-          ],
-          "required": true
+          ]
         },
         {
           "linkId": "8.45",
@@ -5337,8 +5703,7 @@
                 "code": "DE-SL"
               }
             }
-          ],
-          "required": true
+          ]
         },
         {
           "linkId": "8.46",
@@ -5358,8 +5723,7 @@
                 "code": "DE-SL"
               }
             }
-          ],
-          "required": true
+          ]
         },
         {
           "linkId": "8.47",
@@ -5379,8 +5743,7 @@
                 "code": "DE-SL"
               }
             }
-          ],
-          "required": true
+          ]
         },
         {
           "linkId": "8.48",
@@ -5400,8 +5763,7 @@
                 "code": "DE-SL"
               }
             }
-          ],
-          "required": true
+          ]
         },
         {
           "linkId": "8.49",
@@ -5421,8 +5783,7 @@
                 "code": "DE-SL"
               }
             }
-          ],
-          "required": true
+          ]
         },
         {
           "linkId": "8.50",
@@ -5442,8 +5803,27 @@
                 "code": "DE-SL"
               }
             }
+          ]
+        },
+        {
+          "linkId": "8.50a",
+          "type": "boolean",
+          "text": "(8.50a) Paukendrainage",
+          "code": [
+            {
+              "code": "8.50a",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
           ],
-          "required": true
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-SL"
+              }
+            }
+          ]
         },
         {
           "linkId": "8.51",
@@ -5464,7 +5844,35 @@
               }
             }
           ],
-          "required": true
+          "item": [
+            {
+              "linkId": "8.51.1",
+              "type": "string",
+              "text": "(8.51.1) Sonstiges, und zwar:",
+              "code": [
+                {
+                  "code": "8.51.1",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-SL"
+                  }
+                }
+              ],
+              "enableWhen": [
+                {
+                  "question": "8.51",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ]
+            }
+          ]
         },
         {
           "linkId": "8.52",
@@ -5574,43 +5982,30 @@
             }
           ],
           "answerValueSet": "#seu-ef-unfallort-vs",
-          "required": true
-        },
-        {
-          "linkId": "8.57",
-          "type": "boolean",
-          "text": "(8.57) Reg. Med. Antikonvulsiva",
-          "code": [
-            {
-              "code": "8.57",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-SL"
-              }
-            }
-          ],
           "required": true,
           "item": [
             {
-              "linkId": "8.57.1",
+              "linkId": "8.56.1",
               "type": "string",
-              "text": "(8.57.1) Wegen welcher Erkrankungen ist Ihr Kind zurzeit in Behandlung??",
+              "text": "(8.56.1) Sonstiges, und zwar:",
               "code": [
                 {
-                  "code": "8.57.1",
+                  "code": "8.56.1",
                   "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
                 }
               ],
-              "required": true,
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-SL"
+                  }
+                }
+              ],
               "enableWhen": [
                 {
-                  "question": "8.57",
+                  "question": "8.56",
                   "operator": "=",
                   "answerBoolean": true
                 }
@@ -5619,12 +6014,12 @@
           ]
         },
         {
-          "linkId": "8.58",
+          "linkId": "8.57a",
           "type": "boolean",
-          "text": "(8.58) Reg. Med. Antiasthmatika/Antiallergika",
+          "text": "(8.57a) Regelmäßige Einnahme von Medikamenten?",
           "code": [
             {
-              "code": "8.58",
+              "code": "8.57a",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
           ],
@@ -5637,133 +6032,215 @@
               }
             }
           ],
-          "required": true
-        },
-        {
-          "linkId": "8.59",
-          "type": "boolean",
-          "text": "(8.59) Reg. Med. Psychopharmaka",
-          "code": [
+          "item": [
             {
-              "code": "8.59",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
+              "linkId": "8.57",
+              "type": "boolean",
+              "text": "(8.57) Reg. Med. Antikonvulsiva",
+              "code": [
+                {
+                  "code": "8.57",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-SL"
+                  }
+                }
+              ],
+              "item": [
+                {
+                  "linkId": "8.57.1",
+                  "type": "string",
+                  "text": "(8.57.1) Wegen welcher Erkrankungen ist Ihr Kind zurzeit in Behandlung??",
+                  "code": [
+                    {
+                      "code": "8.57.1",
+                      "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                    }
+                  ],
+                  "enableWhen": [
+                    {
+                      "question": "8.57",
+                      "operator": "=",
+                      "answerBoolean": true
+                    }
+                  ]
+                }
+              ]
+            },
             {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-SL"
-              }
-            }
-          ],
-          "required": true
-        },
-        {
-          "linkId": "8.60",
-          "type": "boolean",
-          "text": "(8.60) Reg. Med. Cardiaca/Kreislaufpräparate",
-          "code": [
+              "linkId": "8.58",
+              "type": "boolean",
+              "text": "(8.58) Reg. Med. Antiasthmatika/Antiallergika",
+              "code": [
+                {
+                  "code": "8.58",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-SL"
+                  }
+                }
+              ]
+            },
             {
-              "code": "8.60",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
+              "linkId": "8.59",
+              "type": "boolean",
+              "text": "(8.59) Reg. Med. Psychopharmaka",
+              "code": [
+                {
+                  "code": "8.59",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-SL"
+                  }
+                }
+              ]
+            },
             {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-SL"
-              }
-            }
-          ],
-          "required": true
-        },
-        {
-          "linkId": "8.61",
-          "type": "boolean",
-          "text": "(8.61) Reg. Med. Jodid oder Thyroxin",
-          "code": [
+              "linkId": "8.60",
+              "type": "boolean",
+              "text": "(8.60) Reg. Med. Cardiaca/Kreislaufpräparate",
+              "code": [
+                {
+                  "code": "8.60",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-SL"
+                  }
+                }
+              ]
+            },
             {
-              "code": "8.61",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
+              "linkId": "8.61",
+              "type": "boolean",
+              "text": "(8.61) Reg. Med. Jodid oder Thyroxin",
+              "code": [
+                {
+                  "code": "8.61",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-SL"
+                  }
+                }
+              ]
+            },
             {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-SL"
-              }
-            }
-          ],
-          "required": true
-        },
-        {
-          "linkId": "8.62",
-          "type": "boolean",
-          "text": "(8.62) Reg. Med. Dermatologische Präparate",
-          "code": [
+              "linkId": "8.62",
+              "type": "boolean",
+              "text": "(8.62) Reg. Med. Dermatologische Präparate",
+              "code": [
+                {
+                  "code": "8.62",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-SL"
+                  }
+                }
+              ]
+            },
             {
-              "code": "8.62",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
+              "linkId": "8.63",
+              "type": "boolean",
+              "text": "(8.63) Reg. Med. Homöopathische Präparate",
+              "code": [
+                {
+                  "code": "8.63",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-SL"
+                  }
+                }
+              ]
+            },
             {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-SL"
-              }
-            }
-          ],
-          "required": true
-        },
-        {
-          "linkId": "8.63",
-          "type": "boolean",
-          "text": "(8.63) Reg. Med. Homöopathische Präparate",
-          "code": [
+              "linkId": "8.64",
+              "type": "boolean",
+              "text": "(8.64) Reg. Med. Sonstige",
+              "code": [
+                {
+                  "code": "8.64",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-SL"
+                  }
+                }
+              ]
+            },
             {
-              "code": "8.63",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+              "linkId": "8.64.1",
+              "type": "string",
+              "text": "(8.64.1) Sonstiges, und zwar:",
+              "code": [
+                {
+                  "code": "8.64.1",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-SL"
+                  }
+                }
+              ],
+              "enableWhen": [
+                {
+                  "question": "8.64",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ]
             }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-SL"
-              }
-            }
-          ],
-          "required": true
-        },
-        {
-          "linkId": "8.64",
-          "type": "boolean",
-          "text": "(8.64) Reg. Med. Sonstige",
-          "code": [
-            {
-              "code": "8.64",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-SL"
-              }
-            }
-          ],
-          "required": true
+          ]
         }
       ]
     },
@@ -5821,6 +6298,106 @@
           "required": true,
           "item": [
             {
+              "linkId": "9.2ba",
+              "type": "boolean",
+              "text": "(9.2ba) Logopädie",
+              "code": [
+                {
+                  "code": "9.2ba",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-BB"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "9.2ea",
+              "type": "boolean",
+              "text": "(9.2ea) Andere",
+              "code": [
+                {
+                  "code": "9.2ea",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-BB"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "9.3a",
+              "type": "boolean",
+              "text": "(9.3a) Frühförderung",
+              "code": [
+                {
+                  "code": "9.3a",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-BB"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "9.4a",
+              "type": "boolean",
+              "text": "(9.4a) Ergotherapie",
+              "code": [
+                {
+                  "code": "9.4a",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-BB"
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "9.6a",
+              "type": "boolean",
+              "text": "(9.6a) Physiotherapie / Krankengymnastik",
+              "code": [
+                {
+                  "code": "9.6a",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-BB"
+                  }
+                }
+              ]
+            },
+            {
               "linkId": "9.11",
               "type": "boolean",
               "text": "(9.11) Fördermaßn. Integration in Regel-Kita",
@@ -5838,8 +6415,7 @@
                     "code": "DE-SL"
                   }
                 }
-              ],
-              "required": true
+              ]
             },
             {
               "linkId": "9.12",
@@ -5859,8 +6435,7 @@
                     "code": "DE-SL"
                   }
                 }
-              ],
-              "required": true
+              ]
             },
             {
               "linkId": "9.13",
@@ -5880,8 +6455,7 @@
                     "code": "DE-SL"
                   }
                 }
-              ],
-              "required": true
+              ]
             }
           ]
         }
@@ -5910,8 +6484,7 @@
                 "code": "DE-SL"
               }
             }
-          ],
-          "required": true
+          ]
         }
       ]
     },

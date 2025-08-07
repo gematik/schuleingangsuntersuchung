@@ -1,0 +1,66 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "GradDerBehinderungVS",
+  "id": "GradDerBehinderungVS",
+  "title": "GradDerBehinderungVS",
+  "description": "GradDerBehinderungVS",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/GradDerBehinderungVS",
+  "expansion": {
+    "timestamp": "2024-04-04T11:16:49+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/GradDerBehinderungCS",
+        "code": "grad_20",
+        "display": "20%"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/GradDerBehinderungCS",
+        "code": "grad_30",
+        "display": "30%"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/GradDerBehinderungCS",
+        "code": "grad_40",
+        "display": "40%"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/GradDerBehinderungCS",
+        "code": "grad_50",
+        "display": "50%"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/GradDerBehinderungCS",
+        "code": "grad_60",
+        "display": "60%"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/GradDerBehinderungCS",
+        "code": "grad_70",
+        "display": "70%"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/GradDerBehinderungCS",
+        "code": "grad_80",
+        "display": "80%"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/GradDerBehinderungCS",
+        "code": "grad_90",
+        "display": "90%"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/GradDerBehinderungCS",
+        "code": "grad_100",
+        "display": "100%"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/GradDerBehinderungCS"
+      }
+    ]
+  }
+}
