@@ -227,28 +227,6 @@ Description: "StoffwechselstoerungVS"
 * ^expansion.contains[=].code = #diab_mell_typ_ii
 * ^expansion.contains[=].display = "Diab. mell. Typ II"
 
-ValueSet: PflegegradVS
-Id: PflegegradVS
-Title: "PflegegradVS"
-Description: "PflegegradVS"
-* include codes from system PflegegradCS
-* ^expansion.timestamp = "2024-04-04T11:16:49+00:00"
-* ^expansion.contains[0].system = "https://www.oegd.de/fhir/seu/CodeSystem/PflegegradCS"
-* ^expansion.contains[=].code = #pflegegrad_1
-* ^expansion.contains[=].display = "Pflegegrad 1"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/PflegegradCS"
-* ^expansion.contains[=].code = #pflegegrad_2
-* ^expansion.contains[=].display = "Pflegegrad 2"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/PflegegradCS"
-* ^expansion.contains[=].code = #pflegegrad_3
-* ^expansion.contains[=].display = "Pflegegrad 3"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/PflegegradCS"
-* ^expansion.contains[=].code = #pflegegrad_4
-* ^expansion.contains[=].display = "Pflegegrad 4"
-* ^expansion.contains[+].system = "https://www.oegd.de/fhir/seu/CodeSystem/PflegegradCS"
-* ^expansion.contains[=].code = #pflegegrad_5
-* ^expansion.contains[=].display = "Pflegegrad 5"
-
 ValueSet: UnfallOrtVS
 Id: UnfallOrtVS
 Title: "UnfallOrtVS"

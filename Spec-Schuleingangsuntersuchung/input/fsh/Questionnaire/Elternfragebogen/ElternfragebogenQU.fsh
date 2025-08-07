@@ -21,6 +21,7 @@ Description: "Elternbefragung"
 * contained[+] = InfektionsKrankheitVS
 * contained[+] = ErkrankungenLetztesJahrVS
 * contained[+] = PflegegradVS
+* contained[+] = GradDerBehinderungVS
 * contained[+] = UnfallOrtVS
 * contained[+] = UnfallArtVS
 * contained[+] = GeplantFindetStattAbgeschlossenVS
@@ -411,6 +412,15 @@ Description: "Elternbefragung"
         * insert enableWhenBoolean(3.2.6, =, true)
     * item[+]
       * insert addItemWithSource(3.2.6a, #boolean, [[Liegt bei Ihrem Kind ein Grad der Behinderung/ein Pflegegrad vor?]], #DE-SL)
+      * item[+]
+        * insert addItemWithSource(3.2.6a.1, #integer, [[Grad der Behinderung]], #DE-SL)
+        * insert enableWhenBoolean(3.2.6a, =, true)
+        * answerValueSet = Canonical(GradderBehinderungVS)
+      * item[+]
+        * insert addItemWithSource(3.2.6a.2, #choice, [[Pflegegrad]], #DE-SL)
+        * insert enableWhenBoolean(3.2.6a, =, true)
+        * answerValueSet = Canonical(PflegegradVS)
+      
     * item[+]
       * insert addItem(3.2.7, #boolean, Schilddrüsenerkrankung)
       * item[+]

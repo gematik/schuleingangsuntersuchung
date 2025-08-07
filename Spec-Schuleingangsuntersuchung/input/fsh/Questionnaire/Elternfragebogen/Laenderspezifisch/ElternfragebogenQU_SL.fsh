@@ -7,6 +7,8 @@ Description: "Elternbefragung SL"
 * contained[+] = WohnsituationKindAlternativ2VS
 * contained[+] = ISO6392_LanguageVS
 * contained[+] = VersorgungsartVS
+* contained[+] = PflegegradVS
+* contained[+] = GradDerBehinderungVS
 * contained[+] = SEU_EF_OperationenVS
 * contained[+] = SEU_EF_UnfallVS
 * contained[+] = SEU_EF_AlterKindVS
@@ -73,6 +75,14 @@ Description: "Elternbefragung SL"
     * item[+]
       * insert addItemWithSource(3.2.6a, #boolean, [[Liegt bei Ihrem Kind ein Grad der Behinderung/ein Pflegegrad vor?]], #DE-SL)
       * required = true
+      * item[+]
+        * insert addItemWithSource(3.2.6a.1, #choice, [[Grad der Behinderung]], #DE-SL)
+        * insert enableWhenBoolean(3.2.6a, =, true)
+        * answerValueSet = Canonical(GradderBehinderungVS)
+      * item[+]
+        * insert addItemWithSource(3.2.6a.2, #choice, [[Pflegegrad]], #DE-SL)
+        * insert enableWhenBoolean(3.2.6a, =, true)
+        * answerValueSet = Canonical(PflegegradVS)
 //********************************************
 // Kinderbetreuung
 * item[+]
