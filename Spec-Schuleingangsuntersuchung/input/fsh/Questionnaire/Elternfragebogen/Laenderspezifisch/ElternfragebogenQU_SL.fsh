@@ -261,6 +261,8 @@ Description: "Elternbefragung SL"
     * item[+]
       * insert addItemWithSource(8.51.1, #string, [[Sonstiges, und zwar:]], #DE-SL)
       * insert enableWhenBoolean(8.51, =, true)
+
+// Unfälle
   * item[+]
     * insert addItemWithSource(8.52, #choice, [[Unfälle Verbrennung/Verbrühung]], #DE-SL)
     * required = true
@@ -281,6 +283,10 @@ Description: "Elternbefragung SL"
     * insert addItemWithSource(8.56, #choice, [[Unfälle Sonstige]], #DE-SL)
     * answerValueSet = Canonical(SEU_EF_UnfallortVS)
     * required = true
+    * item[+]
+      * insert addItemWithSource(8.56.1, #string, [[Sonstiges, und zwar:]], #DE-SL)
+      * insert enableWhenBoolean(8.56, =, true)
+    
   * item[+]
     * insert addItemWithSource(8.57, #boolean, [[Reg. Med. Antikonvulsiva]], #DE-SL)
     * required = true

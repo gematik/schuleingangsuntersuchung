@@ -1163,6 +1163,9 @@ Description: "Elternbefragung"
   * item[+]
     * insert addItemWithSource(8.56, #choice, [[Unfälle Sonstige]], #DE-SL)
     * answerValueSet = Canonical(SEU_EF_UnfallortVS)
+    * item[+]
+      * insert addItemWithSource(8.56.1, #string, [[Sonstiges, und zwar:]], #DE-SL)
+      * insert enableWhenBoolean(8.56, =, true)
 
 // Medikamente
   * item[+]
