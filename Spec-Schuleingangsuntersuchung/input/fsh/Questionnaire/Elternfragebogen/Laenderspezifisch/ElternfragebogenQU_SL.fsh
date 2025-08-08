@@ -4,8 +4,10 @@ Usage: #example
 Title: "Elternbefragung SL"
 Description: "Elternbefragung SL"
 * contained[+] = DeuevAnlage8LaenderkennzeichenVS
-* contained[+] = WohnsituationKindAlternativ2VS
+* contained[+] = WohnsituationKindAlternativ1VS
 * contained[+] = ISO6392_LanguageVS
+* contained[+] = ChronischeErkrankungenVS
+* contained[+] = JaNeinAngemeldetVS
 * contained[+] = VersorgungsartVS
 * contained[+] = PflegegradVS
 * contained[+] = GradDerBehinderungVS
@@ -17,6 +19,7 @@ Description: "Elternbefragung SL"
 * contained[+] = SEU_EF_UnfallortVS
 * contained[+] = SEU_EF_BehandlungstypVS
 * contained[+] = SEU_EF_SpracheVS
+* contained[+] = SEU_EF_BildungsabschlussVS
 * contained[+] = SEU-UB-StaatsangehoerigkeitVS
 * id = "SEU-Elternbefragung-SL"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/ElternbefragungSL"
@@ -287,7 +290,10 @@ Description: "Elternbefragung SL"
     * required = true
     * item[+]
       * insert addItemWithSource(8.56.1, #string, [[Sonstiges, und zwar:]], #DE-SL)
-      * insert enableWhenBoolean(8.56, =, true)
+      * insert enableWhenExists(8.56)
+      * insert enableWhenCode(8.56, !=, SEU_EF_UnfallortCS, nein)
+      * insert enableWhenCode(8.56, !=, SEU_EF_UnfallortCS, keine_angabe)
+      * enableBehavior = #all
     
 // Medikamente
   * item[+]
