@@ -1691,69 +1691,39 @@
     },
     {
       "resourceType": "ValueSet",
-      "id": "WohnsituationKindAlternativ2VS",
+      "id": "WohnsituationKindAlternativ1VS",
       "status": "draft",
-      "name": "WohnsituationKindAlternativ2VS",
-      "title": "WohnsituationKindAlternativ2VS",
+      "name": "WohnsituationKindAlternativ1VS",
+      "title": "WohnsituationKindAlternativ1VS",
       "description": "ValueSet, das verschiedene Wohnsituationen des Kindes enthält.",
-      "url": "https://www.oegd.de/fhir/seu/ValueSet/WohnsituationKindAlternativ2VS",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/WohnsituationKindAlternativ1VS",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
         "contains": [
           {
             "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
             "code": "eltern",
-            "display": "Leibliche Eltern"
+            "display": "Bei beiden leiblichen Eltern"
           },
           {
             "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
-            "code": "mutter_mit_partner",
-            "display": "Mutter mit Partner/in"
+            "code": "alleinerziehender_elternteil",
+            "display": "Bei alleinerziehendem Elternteil"
           },
           {
             "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
-            "code": "mutter_alleinerziehend",
-            "display": "Mutter alleinerziehend"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
-            "code": "vater_mit_partner",
-            "display": "Vater mit Partner/in"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
-            "code": "vater_alleinerziehend",
-            "display": "Vater alleinerziehend"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
-            "code": "wechselmodell",
-            "display": "Wechselmodell"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
-            "code": "heim",
-            "display": "Heim"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
-            "code": "pflegeeltern",
-            "display": "Pflegeeltern"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
-            "code": "andere_familienmitglieder",
-            "display": "Andere Familienmitglieder/Verwandte"
+            "code": "elternteil_mit_partner",
+            "display": "Bei Elternteil mit Partner"
           },
           {
             "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
             "code": "andere",
-            "display": "Andere Personen"
+            "display": "Bei Großeltern, Pflegeeltern, Adoptiveltern oder anderen"
           },
           {
             "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
             "code": "keine_angabe",
-            "display": "Keine Angabe"
+            "display": "Keine Angaben"
           }
         ]
       },
@@ -1764,47 +1734,23 @@
             "concept": [
               {
                 "code": "eltern",
-                "display": "Leibliche Eltern"
+                "display": "Bei beiden leiblichen Eltern"
               },
               {
-                "code": "mutter_mit_partner",
-                "display": "Mutter mit Partner/in"
+                "code": "alleinerziehender_elternteil",
+                "display": "Bei alleinerziehendem Elternteil"
               },
               {
-                "code": "mutter_alleinerziehend",
-                "display": "Mutter alleinerziehend"
-              },
-              {
-                "code": "vater_mit_partner",
-                "display": "Vater mit Partner/in"
-              },
-              {
-                "code": "vater_alleinerziehend",
-                "display": "Vater alleinerziehend"
-              },
-              {
-                "code": "wechselmodell",
-                "display": "Wechselmodell"
-              },
-              {
-                "code": "heim",
-                "display": "Heim"
-              },
-              {
-                "code": "pflegeeltern",
-                "display": "Pflegeeltern"
-              },
-              {
-                "code": "andere_familienmitglieder",
-                "display": "Andere Familienmitglieder/Verwandte"
+                "code": "elternteil_mit_partner",
+                "display": "Bei Elternteil mit Partner"
               },
               {
                 "code": "andere",
-                "display": "Andere Personen"
+                "display": "Bei Großeltern, Pflegeeltern, Adoptiveltern oder anderen"
               },
               {
                 "code": "keine_angabe",
-                "display": "Keine Angabe"
+                "display": "Keine Angaben"
               }
             ]
           }
@@ -3687,6 +3633,98 @@
     },
     {
       "resourceType": "ValueSet",
+      "id": "ChronischeErkrankungenVS",
+      "status": "draft",
+      "name": "ChronischeErkrankungenVS",
+      "title": "ChronischeErkrankungenVS",
+      "description": "ChronischeErkrankungenVS",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/ChronischeErkrankungenVS",
+      "expansion": {
+        "timestamp": "2024-04-04T10:10:32+00:00",
+        "contains": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ChronischeErkrankungenCS",
+            "code": "allergie",
+            "display": "Allergie"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ChronischeErkrankungenCS",
+            "code": "fettstoffwechselstörung",
+            "display": "Fettstoffwechselstörung"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ChronischeErkrankungenCS",
+            "code": "bluthochdruck",
+            "display": "Bluthochdruck"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ChronischeErkrankungenCS",
+            "code": "schlaganfall",
+            "display": "Schlaganfall"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ChronischeErkrankungenCS",
+            "code": "herzinfarkt",
+            "display": "Herzinfarkt"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ChronischeErkrankungenCS",
+            "code": "zuckerkrankheit",
+            "display": "Zuckerkrankheit"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ChronischeErkrankungenCS",
+            "code": "übergewicht",
+            "display": "Übergewicht"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ChronischeErkrankungenCS"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "JaNeinAngemeldetVS",
+      "status": "draft",
+      "name": "JaNeinAngemeldetVS",
+      "title": "JaNeinAngemeldetVS",
+      "description": "JaNeinAngemeldetVS",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/JaNeinAngemeldetVS",
+      "expansion": {
+        "timestamp": "2024-04-04T10:25:43+00:00",
+        "contains": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/JaNeinAngemeldetCS",
+            "code": "ja",
+            "display": "Ja"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/JaNeinAngemeldetCS",
+            "code": "nein",
+            "display": "Nein"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/JaNeinAngemeldetCS",
+            "code": "ist-angemeldet",
+            "display": "Ist angemeldet"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/JaNeinAngemeldetCS"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
       "id": "versorgungsart-vs",
       "status": "draft",
       "name": "VersorgungsartVS",
@@ -4253,6 +4291,57 @@
     },
     {
       "resourceType": "ValueSet",
+      "id": "seu-ef-bildungsabschluss-vs",
+      "status": "draft",
+      "name": "SEU_EF_BildungsabschlussVS",
+      "title": "SEU_EF_Bildungsabschluss ValueSet",
+      "description": "ValueSet, das verschiedene Bildungsabschlüsse enthält.",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-bildungsabschluss-vs",
+      "expansion": {
+        "timestamp": "2024-10-20T11:50:47+00:00",
+        "contains": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-bildungsabschluss-cs",
+            "code": "kein_schulabschluss",
+            "display": "Kein Schulabschluss"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-bildungsabschluss-cs",
+            "code": "hauptschulabschluss",
+            "display": "Hauptschulabschluss"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-bildungsabschluss-cs",
+            "code": "mittlere_reife",
+            "display": "Mittlere Reife oder vergleichbar"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-bildungsabschluss-cs",
+            "code": "abitur_fachhochschulreife",
+            "display": "Abitur/Fachhochschulreife oder vergleichbar"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-bildungsabschluss-cs",
+            "code": "sonder_foerderschule",
+            "display": "Sonder-/Förderschule"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-bildungsabschluss-cs",
+            "code": "in_schulischer_ausbildung",
+            "display": "Derzeit noch in schulischer Ausbildung (Schüler*in)"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-bildungsabschluss-cs"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
       "id": "SEU-UB-StaatsangehoerigkeitVS",
       "status": "draft",
       "name": "SEU_UB_StaatsangehoerigkeitVS",
@@ -4476,7 +4565,7 @@
               }
             }
           ],
-          "answerValueSet": "https://www.oegd.de/fhir/seu/ValueSet/WohnsituationKindAlternativ1VS",
+          "answerValueSet": "#WohnsituationKindAlternativ1VS",
           "required": true
         }
       ]
@@ -4541,7 +4630,7 @@
                   "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
                 }
               ],
-              "answerValueSet": "https://www.oegd.de/fhir/seu/ValueSet/ChronischeErkrankungenVS",
+              "answerValueSet": "#ChronischeErkrankungenVS",
               "repeats": true
             },
             {
@@ -4891,7 +4980,7 @@
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
           ],
-          "answerValueSet": "https://www.oegd.de/fhir/seu/ValueSet/JaNeinAngemeldetVS"
+          "answerValueSet": "#JaNeinAngemeldetVS"
         }
       ]
     },
@@ -6006,10 +6095,27 @@
               "enableWhen": [
                 {
                   "question": "8.56",
-                  "operator": "=",
+                  "operator": "exists",
                   "answerBoolean": true
+                },
+                {
+                  "question": "8.56",
+                  "operator": "!=",
+                  "answerCoding": {
+                    "code": "nein",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-unfallort-cs"
+                  }
+                },
+                {
+                  "question": "8.56",
+                  "operator": "!=",
+                  "answerCoding": {
+                    "code": "keine_angabe",
+                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-unfallort-cs"
+                  }
                 }
-              ]
+              ],
+              "enableBehavior": "all"
             }
           ]
         },
@@ -6503,7 +6609,7 @@
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
           ],
-          "answerValueSet": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-bildungsabschluss-vs"
+          "answerValueSet": "#seu-ef-bildungsabschluss-vs"
         },
         {
           "linkId": "13.2",
@@ -6515,7 +6621,7 @@
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
           ],
-          "answerValueSet": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-bildungsabschluss-vs"
+          "answerValueSet": "#seu-ef-bildungsabschluss-vs"
         }
       ]
     }
