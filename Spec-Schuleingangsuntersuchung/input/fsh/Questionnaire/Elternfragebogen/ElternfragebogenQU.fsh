@@ -1167,7 +1167,10 @@ Description: "Elternbefragung"
     * answerValueSet = Canonical(SEU_EF_UnfallortVS)
     * item[+]
       * insert addItemWithSource(8.56.1, #string, [[Sonstiges, und zwar:]], #DE-SL)
-      * insert enableWhenBoolean(8.56, =, true)
+      * insert enableWhenExists(8.56)
+      * insert enableWhenCode(8.56, !=, SEU_EF_UnfallortCS, nein)
+      * insert enableWhenCode(8.56, !=, SEU_EF_UnfallortCS, keine_angabe)
+      * enableBehavior = #all
 
 // Medikamente
   * item[+]
