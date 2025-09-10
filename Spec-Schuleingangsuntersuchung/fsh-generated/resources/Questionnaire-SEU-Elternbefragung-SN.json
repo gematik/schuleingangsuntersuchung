@@ -2553,6 +2553,24 @@
       "text": "(0) Schule & Vorgangsnummer",
       "item": [
         {
+          "linkId": "0.1h",
+          "type": "display",
+          "text": "Bitte tragen Sie die Grundschule ein, an der Sie Ihr Kind anmelden werden oder bereits angemeldet haben. Die Schule erhält eine Mitteilung über schulrelevante Ergebnisse.",
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "help",
+                    "system": "http://hl7.org/fhir/questionnaire-item-control"
+                  }
+                ]
+              }
+            }
+          ]
+        },
+        {
           "linkId": "0.1",
           "type": "string",
           "text": "(0.1) Name der Schule",

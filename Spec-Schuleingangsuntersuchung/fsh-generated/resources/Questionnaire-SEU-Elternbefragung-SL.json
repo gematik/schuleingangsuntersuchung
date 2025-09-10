@@ -5107,6 +5107,7 @@
             }
           ],
           "answerValueSet": "#seu-ef-behandlungstyp-vs",
+          "repeats": true,
           "required": true
         },
         {

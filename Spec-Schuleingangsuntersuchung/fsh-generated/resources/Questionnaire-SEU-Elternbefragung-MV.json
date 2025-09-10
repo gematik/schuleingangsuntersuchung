@@ -3262,7 +3262,8 @@
               "answerBoolean": true
             }
           ],
-          "answerValueSet": "#seu-ef-behandlungstyp-vs"
+          "answerValueSet": "#seu-ef-behandlungstyp-vs",
+          "repeats": true
         },
         {
           "linkId": "8.11.g",
