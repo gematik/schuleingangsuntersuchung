@@ -26,6 +26,8 @@ Description: "Elternbefragung SN"
 * item[+]
   * insert addGroup(0, Schule & Vorgangsnummer)
   * item[+]
+    * insert helpItem(0.1h, [[Bitte tragen Sie die Grundschule ein, an der Sie Ihr Kind anmelden werden oder bereits angemeldet haben. Die Schule erhält eine Mitteilung über schulrelevante Ergebnisse.]])
+  * item[+]
     * insert addItem(0.1, #string, Name der Schule)
 //********************************************
 // Personenbezogene Daten Kind
