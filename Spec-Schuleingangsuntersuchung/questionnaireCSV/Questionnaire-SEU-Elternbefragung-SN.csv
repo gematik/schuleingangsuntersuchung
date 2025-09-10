@@ -1,5 +1,6 @@
 "Link-ID","Text","Typ","Enable When","Wertemenge","Herkunft","Nutzung"
 "0","(0) Schule & Vorgangsnummer","group","","","",""
+"0.1h","Bitte tragen Sie die Grundschule ein, an der Sie Ihr Kind anmelden werden oder bereits angemeldet haben. Die Schule erhält eine Mitteilung über schulrelevante Ergebnisse.","display","","","",""
 "0.1","(0.1) Name der Schule","string","","","",""
 "1","(1) Personenbezogene Daten Kind","group","","","",""
 "1.1","(1.1) Nachname des Kindes","string","","","",""
