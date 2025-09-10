@@ -752,6 +752,7 @@ Description: "Elternbefragung"
     * insert addItemWithSource(8.2a, #choice, [[Welche Behandlung? (Mehrfachnennung möglich)]], #DE-SL)
     * insert enableWhenBoolean(8.1, =, true)
     * answerValueSet = Canonical(SEU_EF_BehandlungstypVS)
+    * repeats = true
   * item[+]
     * insert addItem(8.2b, #text, [[Freitext Angabe, abhängig zu 'Regelmäßig_Behandlung'. Angabe zu Grund und Fachrichtung]])
     * insert enableWhenBoolean(8.1, =, true)

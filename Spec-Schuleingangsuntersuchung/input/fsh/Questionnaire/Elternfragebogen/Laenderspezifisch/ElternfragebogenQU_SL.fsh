@@ -159,6 +159,7 @@ Description: "Elternbefragung SL"
     * insert addItemWithSource(8.2a, #choice, [[Welche Behandlung? (Mehrfachnennung möglich)]], #DE-SL)
     * insert enableWhenBoolean(8.1, =, true)
     * answerValueSet = Canonical(SEU_EF_BehandlungstypVS)
+    * repeats = true
     * required = true
   * item[+]
     * insert addItem(8.4, #boolean, [[Sprachstörung vorhanden?]])
