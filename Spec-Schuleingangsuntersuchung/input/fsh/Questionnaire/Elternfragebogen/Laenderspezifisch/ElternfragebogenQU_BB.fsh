@@ -43,7 +43,6 @@ Description: "Elternbefragung BB"
 * contained[+] = SEU_EF_SchwangerschaftVS
 * contained[+] = SEU_EF_UnfallortVS
 * contained[+] = SEU_EF_BehandlungstypVS
-* contained[+] = SEU_EF_DauerBWVS
 * contained[+] = SEU_EF_HilfsmittelVS
 * contained[+] = SEU_EF_FachaerzteVS
 * contained[+] = SEU_EF_DauerBBVS

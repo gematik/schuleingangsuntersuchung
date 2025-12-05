@@ -77,6 +77,8 @@ Description: "Elternbefragung SN"
   * item[+]
     * insert addItem(3.2, #group, Familiäre Vorgeschichte)
     * item[+]
+      * insert helpItem(3.2.5-info, [[Bitte geben sie die chronischen Erkrankungen des Kindes an.]])
+    * item[+]
       * insert addItem(3.2.5, #choice, Chronische Erkrankung)
       * answerValueSet = Canonical(ChronischeKrankheitenVS)
       * repeats = true
