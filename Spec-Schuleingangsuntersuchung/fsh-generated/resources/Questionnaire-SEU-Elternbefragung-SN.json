@@ -2816,6 +2816,24 @@
           ],
           "item": [
             {
+              "linkId": "3.2.5-info",
+              "type": "display",
+              "text": "Bitte geben sie die chronischen Erkrankungen des Kindes an.",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "code": "help",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
               "linkId": "3.2.5",
               "type": "choice",
               "text": "(3.2.5) Chronische Erkrankung",
