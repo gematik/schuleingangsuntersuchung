@@ -44,5 +44,5 @@ Leitfaden für Kommentierende:
 
 ### Fürsorger
 <!-- Namen und Kontaktdaten der verantwortlichen Personen /Ansprechpartner-->
+* Patrick Werner (pw@gefyra.de)
 * Patrick Werner (pw@echinos.eu)
-* Rüdiger Hochscheidt (ruediger.hochscheidt@H-IT-Beratung.de)
