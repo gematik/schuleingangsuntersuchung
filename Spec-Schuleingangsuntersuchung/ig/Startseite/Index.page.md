@@ -30,36 +30,19 @@ Version: 0.9.0
 
 Reifegrad: Draft 
 
-Abstimmungsverfahren: geplant
+Abstimmungsverfahren: Kommentierungsverfahren der Länder läuft
 
-### Mitwirkungs- und Kommentierungsmöglichkeiten
+### Review und Kommentierung
 
-Mitwirkungs- und Kommentierungsmöglichkeiten werden zurzeit ausgearbeitet.
-<!--- z.B. Jira-Links oder GitHub IssueTracker für Kommentare und Change-Requests, alternative Kommentierungsplattformen, 
-eMail-Verteiler für Interessenten, GoogleGroups, Chats, Foren o.ä.  --->
+Leitfaden für Kommentierende: 
 
-### Beteiligte Organsiationen
-* Bundesministerium für Gesundheit
-* Robert Koch-Institut
-* Gesundheitsamt Hessen
+### Beteiligte Organsisationen
+* ELFA Maßnahme Interoperabilität (Förderprojekt Pakt ÖGD)
+* Bundesministerium für Gesundheit (IOP ÖGD Task Force)
+* gematik GmbH
 * Gefyra GmbH
 
 ### Fürsorger
 <!-- Namen und Kontaktdaten der verantwortlichen Personen /Ansprechpartner-->
-* Yannick Börner
-* Patrick Werner
-
-
-### Weitere Links
-<!-- z. B. Beschreibungen des UseCases, Datenmodell, ges. Vorgaben, fachliche Anforderungen, relevante Spezifikationen-->
-* https://www.lgl.bayern.de/gesundheit/praevention/kindergesundheit/schuleingangsuntersuchung/index.htm 
-* https://stadt.muenchen.de/service/info/sg-schulgesundheit/10278765/ 
-* https://www.lgl.bayern.de/das_lgl/aufgaben_zustaendigkeiten/ge_aufgaben/ge4_schuleingangsuntersuchung.htm 
-
-
-
-
-
-
-
-
+* Patrick Werner (pw@echinos.eu)
+* Rüdiger Hochscheidt (ruediger.hochscheidt@H-IT-Beratung.de)

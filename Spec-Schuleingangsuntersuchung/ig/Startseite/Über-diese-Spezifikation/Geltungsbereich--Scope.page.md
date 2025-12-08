@@ -30,7 +30,7 @@ Die FHIR-Spezifikation zur Schuleingangsuntersuchung betrifft:
 
 - **Weitere Hilfseinrichtungen:** Dies können Elternberatungsstellen und pädagogische Dienste für Kinder sein, die Informationen über den Gesundheitszustand von Kindern benötigen.
 
-Die Spezifikation ist voerst für niemanden verbindlich, allerdings empfohlen für die oben genannten Akteure.
+Die Spezifikation ist vorerst für niemanden verbindlich, allerdings empfohlen für die oben genannten Akteure.
 
 
 

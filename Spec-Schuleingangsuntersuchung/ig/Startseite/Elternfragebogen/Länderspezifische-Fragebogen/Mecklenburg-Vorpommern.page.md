@@ -1,0 +1,113 @@
+## {{page-title}}
+
+### Elternfragebogen Schuleingangsuntersuchung Mecklenburg-Vorpommern
+
+[Download: CSV-Version der Tabelle](https://raw.githubusercontent.com/gematik/schuleingangsuntersuchung/main/Spec-Schuleingangsuntersuchung/questionnaireCSV/Questionnaire-SEU-Elternbefragung-BY.csv "Title")
+
+| Link-ID | Text |  Typ | Enable When | Wertemenge | Herkunft | Nutzung |
+|------------------|---------------|---------------|-------------|-------------|-------------|-------------|
+| 1 | (1) Personenbezogene Daten Kind | group |  |  |  |  |
+| 1.1 | (1.1) Nachname des Kindes | string |  |  |  |  |
+| 1.2 | (1.2) Vorname des Kindes | string |  |  |  |  |
+| 1.3 | (1.3) Geburtsdatum | date |  |  |  |  |
+| 1.4 | (1.4) Staatsangehörigkeit | choice |  | Afghanistan :: Ägypten :: Åland :: Albanien :: Algerien :: Amerik.-Jungferninseln :: Amerikanisch-Samoa :: Andorra :: Angola :: ... |  |  |
+| 1.7 | (1.7) Geburtsort | string |  |  |  |  |
+| 1.9 | (1.9) PLZ | string |  |  |  |  |
+| 1.10 | (1.10) Wohnort | string |  |  |  |  |
+| 1.11 | (1.11) Straße | string |  |  |  |  |
+| 1.11a | (1.11a) Hausnummer | string |  |  |  |  |
+| 2 | (2) Personenbezogene Daten Personensorgeberechtigter | group |  |  |  |  |
+| 2.1 | (2.1) Geschlecht | choice |  | männlich :: weiblich :: unbekannt :: divers  |  |  |
+| 2.2 | (2.2) Nachname | string |  |  |  |  |
+| 2.3 | (2.3) Vorname | string |  |  |  |  |
+| 2.4 | (2.4) PLZ | string |  |  |  |  |
+| 2.5 | (2.5) Wohnort | string |  |  |  |  |
+| 2.6 | (2.6) Straße | string |  |  |  |  |
+| 2.7 | (2.7) Telefonnummer | string |  |  |  |  |
+| 2.8 | (2.8) Email | string |  |  |  |  |
+| 2.10 | (2.10) Herkunftsland | choice |  | Afghanistan :: Ägypten :: Åland :: Albanien :: Algerien :: Amerik.-Jungferninseln :: Amerikanisch-Samoa :: Andorra :: Angola :: ... |  |  |
+| 3 | (3) Familiendaten | group |  |  |  |  |
+| 3.1 | (3.1) Anzahl der Geschwister | integer |  |  |  |  |
+| 3.1b | (3.1b) Aktuell im Haushalt lebende Kinder | integer |  |  | DE-SL |  |
+| 3.1.1 | (3.1.1) Details Geschwister | group | 3.1 > 0 |  |  |  |
+| 3.1.1.1 | (3.1.1.1) Geburtsdatum des Geschwisters | date |  |  |  |  |
+| 3.2 | (3.2) Familiäre Vorgeschichte | group |  |  |  |  |
+| 3.2.6 | (3.2.6) Hat Ihr Kind eine körperliche, geistige oder seelische Behinderung? | boolean |  |  |  |  |
+| 3.2.6a | (3.2.6a) Liegt bei Ihrem Kind ein Grad der Behinderung/ein Pflegegrad vor? | boolean |  |  | DE-SL |  |
+| 4 | (4) Kinderbetreuung | group |  |  |  |  |
+| 4.0b | (4.0b) Ist das Kind in einem Kindergarten/einer Kindertageseinrichtung? | boolean |  |  |  |  |
+| 4.7 | (4.7) Erfolgte die Betreuung auch durch eine Tagesmutter? | boolean |  |  |  |  |
+| 4.8 | (4.8) Seit wann ist die Tagesmutter im Einsatz? | date | 4.7 = true |  |  |  |
+| 4.9 | (4.9) Seit wann besucht das Kind eine Kita? | date |  |  | DE-SN |  |
+| 5 | (5) Schwangerschaft und Geburt | group |  |  |  |  |
+| 5.2.a | (5.2.a) Geburtsgewicht (in Gramm) | integer |  |  | DE-SL |  |
+| 5.3a | (5.3a) Geburtslänge (in cm) | integer |  |  |  |  |
+| 5.5 | (5.5) Auffälligkeit bei der Geburt | boolean |  |  |  |  |
+| 5.5.1 | (5.5.1) Welche Auffälligkeit? | string | 5.5 = true |  |  |  |
+| 5.6 | (5.6) Auffälligkeit/Krankheit in der Schwangerschaft | boolean |  |  |  |  |
+| 5.6.1 | (5.6.1) Welche Auffälligkeit? | string | 5.6 = true |  |  |  |
+| 5.8 | (5.8) Stillen / mit Muttermilch ernährt | boolean |  |  | DE-SL |  |
+| 7 | (7) Entwicklung | group |  |  |  |  |
+| 7.1 | (7.1) Sind Sie mit der Entwicklung ihres Kinds zufrieden? | boolean |  |  |  |  |
+| 7.2 | (7.2) Mit was sind Sie Unzufrieden? | text | 7.1 = false |  |  |  |
+| 7.3 | (7.3) Freies Laufen ab? (Monate) | integer |  |  |  |  |
+| 7.5 | (7.5) Erste Sätze ab? (Monate) | integer |  |  |  |  |
+| 7.11 | (7.11) Auffälligkeit des Verhaltens | open-choice |  | Konzentrationsstörung :: Bettnässen :: Einkoten :: Ängstlichkeit :: Aggressivität :: Schlafstörung :: Motorische Unruhe/Hyperaktivität :: Riskantes Handeln :: Schlechter Appetit :: ... |  |  |
+| 8 | (8) Erkrankungen und gesundheitliche Einschränkungen | group |  |  |  |  |
+| 8.1 | (8.1) In regelmäßiger ärztlicher bzw. psychologischer Behandlung | boolean |  |  |  |  |
+| 8.2a | (8.2a) Welche Behandlung? (Mehrfachnennung möglich) | choice | 8.1 = true | Ärztlich :: Zahnärztlich :: Psychologisch/Kinder- und Jugendpsychiatrisch :: Sonstige Behandlung :: Keine Angabe  | DE-SL |  |
+| 8.11.g | (8.11.g) Erkrankungen | group |  |  |  |  |
+| 8.11.g.1 | (8.11.g.1) Erkrankung | open-choice |  |  |  |  |
+| 8.13.g | (8.13.g) Erkrankungen im letzten Jahr | group |  |  |  |  |
+| 8.13.g.1 | (8.13.g.1) Erkrankung | open-choice |  | Mittelohrentzündung :: Hals-/Mandelentzündung :: Pseudokrupp-Anfall :: Bronchitis :: Lungenentzündung :: Magen-Darm-Infektion :: Fieberkrämpfe :: Cerebraler Krampfanfall :: Blasen/Harnwegsentzündung  |  |  |
+| 8.15 | (8.15) Krankenhausaufenthalt | boolean |  |  |  |  |
+| 8.16a | (8.16a) Besitzt Ihr Kind Allergien? | choice |  | Atopische/Allergische Erkrankungen :: Nahrungsmittelallergien :: Pollenallergien :: Hausstaubmilbenallergien :: Schimmelpilzallergien :: Tierhaarallergien :: Medikamentenallergien :: Sonstige atopische/allergische Erkrankungen  |  |  |
+| 8.19 | (8.19) Grad der Behinderung | integer |  |  |  |  |
+| 8.20 | (8.20) Pflegegrad | choice |  | Pflegegrad 1 :: Pflegegrad 2 :: Pflegegrad 3 :: Pflegegrad 4 :: Pflegegrad 5  |  |  |
+| 8.21 | (8.21) Schwere Behinderung vorhanden? | boolean |  |  |  |  |
+| 8.21.g | (8.21.g) Details Behinderung | group | 8.21 = true |  |  |  |
+| 8.21.g.2 | (8.21.g.2) Behinderung Merkzeichen | text |  |  |  |  |
+| 8.23 | (8.23) Regelmäßige Medikamenteneinnahme | boolean |  |  |  |  |
+| 8.23.1 | (8.23.1) Welches Medikament | string | 8.23 = true |  |  |  |
+| 8.27 | (8.27) Wurde ihr Kind operiert | boolean |  |  |  |  |
+| 8.27.2 | (8.27.2) Welche Operationen wurden durchgeführt? | choice | 8.27 = true | Entfernung der Rachenpolypen :: Paukendrainage :: Mandeloperation :: Blinddarmoperation :: Leisten-/Nabelbruchoperation :: Augenoperation :: Sonstige Operation  |  |  |
+| 8.28a | (8.28a) Hatte ihr Kind einen Unfall | boolean |  |  |  |  |
+| 8.28.g | (8.28.g) Hatte ihr Kind einen Unfall | group | 8.28a = true, 8.28b = true |  |  |  |
+| 8.28.g.2 | (8.28.g.2) Art des Unfalls | choice |  | Gehirnerschütterung :: Schwere Schnittverletzung :: Vergiftung :: Knochenbruch :: Prellung :: Verstauchung/Verrenkung/Ausrenkung :: Offene Wunde :: Verbrühung/Verbrennung/Verätzung :: Andere  |  |  |
+| 8.33 | (8.33) Einkoten tags | boolean |  |  | DE-SL |  |
+| 8.34 | (8.34) Einkoten nachts | boolean |  |  | DE-SL |  |
+| 9 | (9) Förderungen | group |  |  |  |  |
+| 9.1a.g | (9.1a.g) Therapien | group | 9.1a = true |  | DE-SN |  |
+| 9.2 | (9.2) Sprachtherapie | choice |  | nein :: abgeschlossen :: läuft z.Zt. Noch :: geplant  |  |  |
+| 9.2a | (9.2a) Sprachförderung | choice |  | Warteliste :: Ja :: Nein  | DE-BW |  |
+| 9.2b | (9.2b) Logopädie | choice |  | Warteliste :: Ja :: Nein  | DE-BW |  |
+| 9.2c | (9.2c) Ergotherapie | choice |  | Warteliste :: Ja :: Nein  | DE-BW |  |
+| 9.2d | (9.2d) Psychotherapie | choice |  | Warteliste :: Ja :: Nein  | DE-BW |  |
+| 9.2e | (9.2e) Andere Beratungs-, Förder- oder Heilmaßnahmen | choice |  | Warteliste :: Ja :: Nein  | DE-BW |  |
+| 9.3 | (9.3) Frühförderung | choice |  | nein :: abgeschlossen :: läuft z.Zt. Noch :: geplant  |  |  |
+| 9.4 | (9.4) Ergotherapie | choice |  | nein :: abgeschlossen :: läuft z.Zt. Noch :: geplant  |  |  |
+| 9.6 | (9.6) Physiotherapie | choice |  | nein :: abgeschlossen :: läuft z.Zt. Noch :: geplant  |  |  |
+| 9.9 | (9.9) Integrative Betreuung | choice |  | nein :: abgeschlossen :: läuft z.Zt. Noch :: geplant  |  |  |
+| 10 | (10) Medienkonsum | group |  |  |  |  |
+| 10.1 | (10.1) Durchschnittlich pro Tag am Fernseher/Smartphone/Tablet/Spielkonsole/Computer | integer |  |  |  |  |
+| 10.2 | (10.2) Fernsehgerät/Computer/Spielkonsole im Zimmer? | boolean |  |  |  |  |
+| 11 | (11) Arzt | group |  |  |  |  |
+| 11.2 | (11.2) Name Kinderarzt | string |  |  |  |  |
+| 11.3 | (11.3) Name Facharzt | string |  |  |  |  |
+| 12 | (12) Sonstiges | group |  |  |  |  |
+| 12.7 | (12.7) Regelmäßig Sport | boolean |  |  |  |  |
+| 13 | (13) Informationen Eltern | group |  |  |  |  |
+| 13.5a | (13.5a) Berufstätigkeit 1. Elternteil | choice |  | Nicht erwerbstätig :: Teilzeit :: Vollzeit :: Sonstiges  | DE-BW |  |
+| 13.6 | (13.6) Berufstätigkeit 2. Elternteil | choice |  | Nicht erwerbstätig :: Teilzeit :: Vollzeit  |  |  |
+
+<tabs>
+    <tab title="Table">      
+        {{table:SEU-Elternbefragung-MV}}
+    </tab>
+    <tab title="JSON">
+        {{json:SEU-Elternbefragung-MV}}
+    </tab>
+    <tab title="XML">
+        {{xml:SEU-Elternbefragung-MV}}
+    </tab>
+</tabs>

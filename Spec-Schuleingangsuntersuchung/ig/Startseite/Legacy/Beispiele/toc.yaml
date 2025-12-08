@@ -1,7 +1,5 @@
 - name: Index
   filename: Index.page.md
-- name: PersonBeispiel
-  filename: PersonBeispiel.page.md
 - name: ChronischeKrankheitBeispiel
   filename: ChronischeKrankheitBeispiel.page.md
 - name: BehinderungBeispiel

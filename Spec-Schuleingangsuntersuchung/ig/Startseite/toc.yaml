@@ -6,5 +6,11 @@
   filename: ReleaseNotes.page.md
 - name: Über diese Spezifikation
   filename: Über-diese-Spezifikation
-- name: Artefakte
-  filename: Artefakte
+- name: Elternfragebogen
+  filename: Elternfragebogen
+- name: Untersuchungsbogen
+  filename: Untersuchungsbogen
+- name: Legacy
+  filename: Legacy
+- name: XMeld
+  filename: XMeld

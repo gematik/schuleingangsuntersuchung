@@ -1,5 +1,5 @@
 title: Schuleingangsuntersuchung
 description: 
 version: 
-style-root: project
-style-name: BestPractice
+style-root: styles
+style-name: twolevelmenu
