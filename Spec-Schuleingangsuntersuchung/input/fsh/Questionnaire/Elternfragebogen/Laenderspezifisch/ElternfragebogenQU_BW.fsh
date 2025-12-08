@@ -14,6 +14,9 @@ Description: "Elternbefragung BW"
 * title = "SEU Elternfragebogen BW"
 * insert launchContext("patient", #Patient, "Patientenkontext")
 * status = #draft
+* derivedFrom[0] = Canonical(Elternbefragung)
+//********************************************
+// Personenbezogene Daten Kind
 * item[+]
   * type = #group
   * linkId = "1"

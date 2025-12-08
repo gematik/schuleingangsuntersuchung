@@ -18,6 +18,8 @@ Description: "Elternbefragung BE"
 * title = "SEU Elternfragebogen Berlin"
 * insert launchContext("patient", #Patient, "Patientenkontext")
 * status = #draft
+* derivedFrom[0] = Canonical(Elternbefragung)
+//********************************************
 * item[+]
   * insert addItem(1, #group, [[Angaben zur Person]])
   * item[+]

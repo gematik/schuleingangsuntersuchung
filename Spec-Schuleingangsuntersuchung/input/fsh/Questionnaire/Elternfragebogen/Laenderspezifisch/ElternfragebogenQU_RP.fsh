@@ -19,6 +19,8 @@ Description: "Elternbefragung RP"
 * title = "SEU Elternfragebogen RP"
 * insert launchContext("patient", #Patient, "Patientenkontext")
 * status = #draft
+* derivedFrom[0] = Canonical(Elternbefragung)
+//********************************************
 * item[+]
   * insert addGroup(0, Schule & Vorgangsnummer)
   * item[+]

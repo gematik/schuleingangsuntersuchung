@@ -26,6 +26,7 @@ Description: "Elternbefragung SL"
 * title = "SEU Elternfragebogen SL"
 * insert launchContext("patient", #Patient, "Patientenkontext")
 * status = #draft
+* derivedFrom[0] = Canonical(Elternbefragung)
 //********************************************
 // Personenbezogene Daten Kind
 * item[+]

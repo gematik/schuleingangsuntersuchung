@@ -23,6 +23,8 @@ Description: "Elternbefragung SN"
 * title = "SEU Elternfragebogen SN"
 * insert launchContext("patient", #Patient, "Patientenkontext")
 * status = #draft
+* derivedFrom[0] = Canonical(Elternbefragung)
+//********************************************
 * item[+]
   * insert addGroup(0, Schule & Vorgangsnummer)
   * item[+]
