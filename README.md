@@ -19,3 +19,11 @@ java -cp target/QuestionnaireMarkdownTableRenderer-1.0-SNAPSHOT-jar-with-depende
 ## DEMIS Jourfix
 
 [Offene Issues für den nächsten DEMIS Jourfix](https://github.com/Gefyra/OEGD/labels/DEMIS%20Jourfix)
+
+## License
+
+Copyright 2025 Hessisches Ministerium für Familie, Senioren, Sport, Gesundheit und Pflege
+
+Apache License, Version 2.0
+
+See the [LICENSE](./LICENSE) for the specific language governing permissions and limitations under the License
