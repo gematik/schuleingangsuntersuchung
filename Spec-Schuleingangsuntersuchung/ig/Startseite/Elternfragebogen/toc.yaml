@@ -1,0 +1,8 @@
+- name: Index
+  filename: Index.page.md
+- name: Maximaldatensatz
+  filename: Maximaldatensatz.page.md
+- name: Länderspezifische Fragebogen
+  filename: Länderspezifische-Fragebogen
+- name: Demonstrator
+  filename: Demonstrator.page.md

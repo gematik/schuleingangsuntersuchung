@@ -1,0 +1,6 @@
+- name: Index
+  filename: Index.page.md
+- name: Questionnaire
+  filename: Questionnaire.page.md
+- name: Demonstrator
+  filename: Demonstrator.page.md
