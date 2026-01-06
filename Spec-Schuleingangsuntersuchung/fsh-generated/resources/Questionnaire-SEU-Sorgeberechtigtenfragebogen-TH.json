@@ -1101,13 +1101,6 @@
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
           ],
-          "enableWhen": [
-            {
-              "question": "8.9",
-              "operator": "=",
-              "answerBoolean": true
-            }
-          ],
           "item": [
             {
               "linkId": "8.9.G.hoergeraete.G",
@@ -1394,13 +1387,6 @@
           "linkId": "9.1a.g",
           "type": "group",
           "text": "(9.1a.g) Therapien",
-          "enableWhen": [
-            {
-              "question": "9.1a",
-              "operator": "=",
-              "answerBoolean": true
-            }
-          ],
           "extension": [
             {
               "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",

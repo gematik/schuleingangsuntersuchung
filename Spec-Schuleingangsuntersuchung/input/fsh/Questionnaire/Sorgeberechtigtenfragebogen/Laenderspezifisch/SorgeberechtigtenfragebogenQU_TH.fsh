@@ -136,10 +136,7 @@ Description: "Sorgeberechtigtenfragebogen TH"
     * required = true
   * item[+]
     * insert addItem(8.9.G, #group, [[Details: Angeborene schwere Hörstörung]])
-    * enableWhen[+]
-      * question = "8.9"
-      * operator = #=
-      * answerBoolean = true
+    //* insert enableWhenBoolean(8.9, =, true) TODO auskommentiert ohne fachliche überprüfung
     * item[+]
       * insert addItem(8.9.G.hoergeraete.G, #group, [[Hörgeräte]])
       * repeats = true
@@ -200,7 +197,7 @@ Description: "Sorgeberechtigtenfragebogen TH"
   * insert addItem(9, #group, [[Förderungen]])
   * item[+]
     * insert addGroup(9.1a.g, Therapien)
-    * insert enableWhenBoolean(9.1a, =, true)
+    //* insert enableWhenBoolean(9.1a, =, true) TODO auskommentiert ohne fachliche überprüfung
     * insert addSource(#DE-SN)
     * item[+]
       * insert addItemWithSource(9.3a, #boolean, [[Frühförderung]], #DE-BB)

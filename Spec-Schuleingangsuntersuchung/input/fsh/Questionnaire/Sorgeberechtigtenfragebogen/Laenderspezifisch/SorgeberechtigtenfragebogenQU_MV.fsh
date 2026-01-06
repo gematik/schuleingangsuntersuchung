@@ -252,7 +252,7 @@ Description: "Sorgeberechtigtenfragebogen MV"
   * insert addItem(9, #group, [[Förderungen]])
   * item[+]
     * insert addGroup(9.1a.g, Therapien)
-    * insert enableWhenBoolean(9.1a, =, true)
+    //* insert enableWhenBoolean(9.1a, =, true) TODO auskommentiert ohne fachliche überprüfung
     * insert addSource(#DE-SN)
     * item[+]
       * insert addItem(9.2, #choice, [[Sprachtherapie]])

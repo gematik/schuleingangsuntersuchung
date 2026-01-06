@@ -813,7 +813,7 @@
     "fshType": "Instance",
     "fshFile": "Questionnaire\\Sorgeberechtigtenfragebogen\\Laenderspezifisch\\SorgeberechtigtenfragebogenQU_TH.fsh",
     "startLine": 1,
-    "endLine": 236
+    "endLine": 233
   },
   {
     "outputFile": "Questionnaire-SEU-Sorgeberechtigtenfragebogen.json",
