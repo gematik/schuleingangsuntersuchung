@@ -1,99 +1,17 @@
 ## {{page-title}}
 
+### Rendering
+
+<iframe src="https://gematik.github.io/poc-isik-formular/index.html?base=https://fhir.simplifier.net/schuleingangsuntersuchung&id=SorgeberechtigtenfragebogenHH&minimal=true" style="width:100%; height:300px; border:none; display:block;"></iframe>
+
 ### Sorgeberechtigtenfragebogen Schuleingangsuntersuchung Hamburg
 
-[Download: CSV-Version der Tabelle](https://raw.githubusercontent.com/gematik/schuleingangsuntersuchung/main/Spec-Schuleingangsuntersuchung/questionnaireCSV/Questionnaire-SEU-Elternbefragung-HH.csv "Title")
-
-| Link-ID | Text |  Typ | Enable When | Wertemenge | Herkunft | Nutzung |
-|------------------|---------------|---------------|-------------|-------------|-------------|-------------|
-| 0 | (0) Schule & Vorgangsnummer | group |  |  |  |  |
-| 0.1 | (0.1) Name der Schule | string |  |  |  |  |
-| 0.2 | (0.2) Vorgangsnummer | string |  |  |  |  |
-| 0.3 | (0.3) Mandant (Bezirk) | choice |  | Altona :: Bergedorf :: Eimsbüttel :: Hamburg Mitte :: Hamburg Nord :: Harburg :: Wandsbek  | DE-HH |  |
-| 0.4 | (0.4) SOM Schulordnungsmerkmal | string |  |  | DE-HH |  |
-| 0.5 | (0.5) Organisierende Schule | string |  |  | DE-HH |  |
-| 0.6 | (0.6) Schulbezirk | string |  |  | DE-HH |  |
-| 0.7 | (0.7) Einschulungsjahr | integer |  |  | DE-HH |  |
-| 0.8 | (0.8) Einrichtungsart | string |  |  | DE-HH |  |
-| 0.10 | (0.10) Datum der Untersuchung | date |  |  | DE-HB |  |
-| 0.11 | (0.11) Aufnahmeschule (bezeichnet die Schule zu der das  Kind wirklich geht) | string |  |  | DE-HB |  |
-| 0.12 | (0.12) Ortsteilnummer (bezogen auf den Wohnort des Kindes) | string |  |  | DE-HB |  |
-| 0.14 | (0.14) Hat das Kind einen i-Helfer? | boolean |  |  | DE-MV |  |
-| 0.15 | (0.15) Bemerkung | string |  |  | DE-HH |  |
-| 1 | (1) Personenbezogene Daten Kind | group |  |  |  |  |
-| 1.1 | (1.1) Nachname des Kindes | string |  |  |  |  |
-| 1.1a | (1.1a) Geburtsname des Kindes | string |  |  | DE-HH |  |
-| 1.2 | (1.2) Vorname des Kindes | string |  |  |  |  |
-| 1.3 | (1.3) Geburtsdatum | date |  |  |  |  |
-| 1.4 | (1.4) Staatsangehörigkeit | choice |  | Afghanistan :: Ägypten :: Åland :: Albanien :: Algerien :: Amerik.-Jungferninseln :: Amerikanisch-Samoa :: Andorra :: Angola :: ... |  |  |
-| 1.4b | (1.4b) Staatsangehörigkeit Mutter | choice |  | Deutsch :: Deutsch UND andere :: Andere :: keine Angaben  | DE-BB |  |
-| 1.4c | (1.4c) Staatsangehörigkeit Vater | choice |  | Deutsch :: Deutsch UND andere :: Andere :: keine Angaben  | DE-BB |  |
-| 1.5 | (1.5) Geburtsland | choice |  | Afghanistan :: Ägypten :: Åland :: Albanien :: Algerien :: Amerik.-Jungferninseln :: Amerikanisch-Samoa :: Andorra :: Angola :: ... |  |  |
-| 1.5a | (1.5a) Geburtsland Mutter | choice |  | Afghanistan :: Ägypten :: Åland :: Albanien :: Algerien :: Amerik.-Jungferninseln :: Amerikanisch-Samoa :: Andorra :: Angola :: ... | DE-BB |  |
-| 1.5b | (1.5b) Geburtsland Vater | choice |  | Afghanistan :: Ägypten :: Åland :: Albanien :: Algerien :: Amerik.-Jungferninseln :: Amerikanisch-Samoa :: Andorra :: Angola :: ... | DE-BB |  |
-| 1.7 | (1.7) Geburtsort | string |  |  |  |  |
-| 1.8 | (1.8) Geschlecht | choice |  | männlich :: weiblich :: unbekannt :: divers  |  |  |
-| 1.9 | (1.9) PLZ | string |  |  |  |  |
-| 1.10 | (1.10) Wohnort | string |  |  |  |  |
-| 1.11 | (1.11) Straße | string |  |  |  |  |
-| 1.11a | (1.11a) Hausnummer | string |  |  |  |  |
-| 1.14 | (1.14) Kinderarzt | string |  |  | DE-HH |  |
-| 1.15 | (1.15) Zahnarzt | string |  |  | DE-HH |  |
-| 1.16 | (1.16) Kiefernorthopäde | string |  |  | DE-HH |  |
-| 1.17 | (1.17) Auskunftssperren | group |  |  | DE-HH |  |
-| 1.17.1 | (1.17.1) Nicht näher spezifizierte Sperre | boolean |  |  | DE-HH |  |
-| 1.17.2 | (1.17.2) Gefahr für Leben (BMG §51 (1)) | boolean |  |  | DE-HH |  |
-| 1.17.3 | (1.17.3) Adpotionspflegeverhältnis (BMG § 51 (5) 2.) | boolean |  |  | DE-HH |  |
-| 2 | (2) Personenbezogene Daten Personensorgeberechtigter | group |  |  |  |  |
-| 2.0 | (2.0) Beziehung | choice |  | Mutter :: Vater :: Leibliche Mutter :: Leiblicher Vater :: Adoptiv-/Pflegemutter :: Adoptiv-/Pflegevater :: Natürliche Person (nicht spezifiziert) :: Jugendamt :: Juristische Person :: ... | DE-HH |  |
-| 2.1 | (2.1) Geschlecht | choice |  | männlich :: weiblich :: unbekannt :: divers  |  |  |
-| 2.2 | (2.2) Nachname | string |  |  |  |  |
-| 2.3 | (2.3) Vorname | string |  |  |  |  |
-| 2.4 | (2.4) PLZ | string |  |  |  |  |
-| 2.5 | (2.5) Wohnort | string |  |  |  |  |
-| 2.6 | (2.6) Straße | string |  |  |  |  |
-| 2.7 | (2.7) Telefonnummer | string |  |  |  |  |
-| 2.7a | (2.7a) Handynummer | string |  |  | DE-HH |  |
-| 2.8 | (2.8) Email | string |  |  |  |  |
-| 2.9 | (2.9) Staatsangehörigkeit | choice |  | Afghanistan :: Ägypten :: Åland :: Albanien :: Algerien :: Amerik.-Jungferninseln :: Amerikanisch-Samoa :: Andorra :: Angola :: ... |  |  |
-| 2.12 | (2.12) Geburtsdatum | date |  |  |  |  |
-| 2.13 | (2.13) Zusammenlebend | choice |  | Ja :: Nein :: Zeitweise  | DE-HH |  |
-| 3 | (3) Familiendaten | group |  |  |  |  |
-| 3.1 | (3.1) Anzahl der Geschwister | integer |  |  |  |  |
-| 3.1c | (3.1c) Kinder im Haushalt | integer |  |  | DE-HH |  |
-| 3.1.1 | (3.1.1) Details Geschwister | group | 3.1 > 0, 3.1c > 1 |  |  |  |
-| 3.1.1.1 | (3.1.1.1) Geburtsdatum des Geschwisters | date |  |  |  |  |
-| 3.1.1.2 | (3.1.1.2) Geschlecht des Geschwisters | choice |  | männlich :: weiblich :: unbekannt :: divers  |  |  |
-| 3.2 | (3.2) Familiäre Vorgeschichte | group |  |  |  |  |
-| 3.2.4 | (3.2.4) Erkrankung | choice |  | Allergie :: Fettstoffwechselstörung :: Bluthochdruck :: Schlaganfall :: Herzinfarkt :: Zuckerkrankheit :: Übergewicht  |  |  |
-| 3.2.6 | (3.2.6) Hat Ihr Kind eine körperliche, geistige oder seelische Behinderung? | boolean |  |  |  |  |
-| 3.2.6.1 | (3.2.6.1) Welche Behinderung? | string | 3.2.6 = true |  |  |  |
-| 3.3 | (3.3) Aktuell im Haushalt lebende Erwachsene | integer |  |  | DE-BB |  |
-| 4 | (4) Kinderbetreuung | group |  |  |  |  |
-| 4.0a | (4.0a) Besucht Ihr Kind weniger als 5 Stunden täglich den Kindergarten? | boolean |  |  |  |  |
-| 4.0b | (4.0b) Ist das Kind in einem Kindergarten/einer Kindertageseinrichtung? | boolean |  |  |  |  |
-| 4.1 | (4.1) Besuch Kita/Krippe (Dauer in Jahren) | integer |  |  |  |  |
-| 4.6b | (4.6b) Name des Kindergartens | string | 4.0b = true |  |  |  |
-| 4.6a | (4.6a) Anschrift des Kindergartens | string | 4.0b = true |  | DE-SN |  |
-| 4.10 | (4.10) Bekommt oder wartet Ihr Kind auf eine spezielle Förderung oder Therapie? | boolean |  |  | DE-SN |  |
-| 5 | (5) Schwangerschaft und Geburt | group |  |  |  |  |
-| 5.2 | (5.2) Geburtsgewicht (in Gramm) | integer |  |  |  |  |
-| 5.3a | (5.3a) Geburtslänge (in cm) | integer |  |  |  |  |
-| 5.3b | (5.3b) Kopfumfang (in cm) | integer |  |  |  |  |
-| 5.3c | (5.3c) In welcher SS-Woche wurde ihr Kind geboren? | integer |  |  |  |  |
-| 5.5 | (5.5) Auffälligkeit bei der Geburt | boolean |  |  |  |  |
-| 5.5.1 | (5.5.1) Welche Auffälligkeit? | string | 5.5 = true |  |  |  |
-| 5.11 | (5.11) APGAR | string |  |  | DE-HB |  |
-| 5.12 | (5.12) pH- Wert | string |  |  | DE-HB |  |
-| 8 | (8) Erkrankungen und gesundheitliche Einschränkungen | group |  |  |  |  |
-| 8.18 | (8.18) Behindertenausweis vorhanden | boolean |  |  |  |  |
-
 <tabs>
-    <tab title="Table">      
-        {{table:SEU-Elternbefragung-HH}}
-    </tab>
     <tab title="JSON">
         {{json:SEU-Elternbefragung-HH}}
+    </tab>
+    <tab title="Table">      
+        {{table:SEU-Elternbefragung-HH}}
     </tab>
     <tab title="XML">
         {{xml:SEU-Elternbefragung-HH}}
