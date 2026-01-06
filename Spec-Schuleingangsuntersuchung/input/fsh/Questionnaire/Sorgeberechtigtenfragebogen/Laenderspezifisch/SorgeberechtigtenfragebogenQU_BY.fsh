@@ -1,8 +1,8 @@
-Instance: ElternbefragungBY
+Instance: SorgeberechtigtenfragebogenBY
 InstanceOf: Questionnaire
 Usage: #example
-Title: "ElternbefragungBY"
-Description: "ElternbefragungBY"
+Title: "SorgeberechtigtenfragebogenBY"
+Description: "SorgeberechtigtenfragebogenBY"
 * contained[+] = SEU_EF_NeinAbgeschlossenLaeuftGeplantVS
 * contained[+] = DeuevAnlage8LaenderkennzeichenVS
 * contained[+] = SEU_UB_TeilnahmeVorkursDeutschVS
@@ -19,12 +19,12 @@ Description: "ElternbefragungBY"
 * contained[+] = SEU_UB_AntwortKindergartenBesuchVS
 * contained[+] = SEU_UB_KontaktDeutscheSpracheVS
 * contained[+] = SEU_UB_HaendigkeitVS
-* id = "SEU-Elternbefragung-BY"
-* url = "https://www.oegd.de/fhir/seu/Questionnaire/ElternbefragungBY"
+* id = "SEU-Sorgeberechtigtenfragebogen-BY"
+* url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenBY"
 * title = "SEU Elternfragebogen BY"
 * insert launchContext("patient", #Patient, "Patientenkontext")
 * status = #draft
-* derivedFrom[0] = Canonical(Elternbefragung)
+* derivedFrom[0] = Canonical(Sorgeberechtigtenfragebogen)
 //********************************************
 // Personenbezogene Daten Kind
 * item[+]

@@ -1,8 +1,8 @@
-Instance: Elternbefragung
+Instance: Sorgeberechtigtenfragebogen
 InstanceOf: Questionnaire
 Usage: #example
-Title: "Elternbefragung"
-Description: "Elternbefragung"
+Title: "Sorgeberechtigtenfragebogen"
+Description: "Sorgeberechtigtenfragebogen"
 * contained[+] = SEU_EF_NeinAbgeschlossenLaeuftGeplantVS
 * contained[+] = DeuevAnlage8LaenderkennzeichenVS
 * contained[+] = WohnsituationKindVS
@@ -104,8 +104,8 @@ Description: "Elternbefragung"
 * contained[+] = SchulabschlussBerlinVS
 * contained[+] = BerufstaetigkeitElternBerlinVS
 
-* id = "SEU-Elternbefragung"
-* url = "https://www.oegd.de/fhir/seu/Questionnaire/Elternbefragung"
+* id = "SEU-Sorgeberechtigtenfragebogen"
+* url = "https://www.oegd.de/fhir/seu/Questionnaire/Sorgeberechtigtenfragebogen"
 * title = "SEU Elternfragebogen Maximaldatensatz"
 * insert launchContext("patient", #Patient, "Patientenkontext")
 * status = #draft

@@ -1,20 +1,20 @@
-Instance: ElternbefragungBW
+Instance: SorgeberechtigtenfragebogenBW
 InstanceOf: Questionnaire
 Usage: #example
-Title: "Elternbefragung BW"
-Description: "Elternbefragung BW"
+Title: "Sorgeberechtigtenfragebogen BW"
+Description: "Sorgeberechtigtenfragebogen BW"
 * contained[+] = GenderDEVS
 * contained[+] = ErwerbsstatusInclSonstigesVS
 * contained[+] = JaNeinWartelisteVS
 * contained[+] = SEU_EF_MedienkonsumVS
 * contained[+] = SEU_EF_DauerBWVS
 * contained[+] = SEU_EF_BildungsabschlussBWVS
-* id = "SEU-Elternbefragung-BW"
-* url = "https://www.oegd.de/fhir/seu/Questionnaire/ElternbefragungBW"
+* id = "SEU-Sorgeberechtigtenfragebogen-BW"
+* url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenBW"
 * title = "SEU Elternfragebogen BW"
 * insert launchContext("patient", #Patient, "Patientenkontext")
 * status = #draft
-* derivedFrom[0] = Canonical(Elternbefragung)
+* derivedFrom[0] = Canonical(Sorgeberechtigtenfragebogen)
 //********************************************
 // Personenbezogene Daten Kind
 * item[+]

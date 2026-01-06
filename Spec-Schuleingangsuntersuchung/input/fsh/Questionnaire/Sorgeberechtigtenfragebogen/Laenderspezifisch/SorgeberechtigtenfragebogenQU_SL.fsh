@@ -1,8 +1,8 @@
-Instance: ElternbefragungSL
+Instance: SorgeberechtigtenfragebogenSL
 InstanceOf: Questionnaire
 Usage: #example
-Title: "Elternbefragung SL"
-Description: "Elternbefragung SL"
+Title: "Sorgeberechtigtenfragebogen SL"
+Description: "Sorgeberechtigtenfragebogen SL"
 * contained[+] = DeuevAnlage8LaenderkennzeichenVS
 * contained[+] = WohnsituationKindAlternativ1VS
 * contained[+] = ISO6392_LanguageVS
@@ -21,12 +21,12 @@ Description: "Elternbefragung SL"
 * contained[+] = SEU_EF_SpracheVS
 * contained[+] = SEU_EF_BildungsabschlussVS
 * contained[+] = SEU-UB-StaatsangehoerigkeitVS
-* id = "SEU-Elternbefragung-SL"
-* url = "https://www.oegd.de/fhir/seu/Questionnaire/ElternbefragungSL"
+* id = "SEU-Sorgeberechtigtenfragebogen-SL"
+* url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenSL"
 * title = "SEU Elternfragebogen SL"
 * insert launchContext("patient", #Patient, "Patientenkontext")
 * status = #draft
-* derivedFrom[0] = Canonical(Elternbefragung)
+* derivedFrom[0] = Canonical(Sorgeberechtigtenfragebogen)
 //********************************************
 // Personenbezogene Daten Kind
 * item[+]
