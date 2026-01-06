@@ -1,4 +1,4 @@
-CodeSystem: SEU-EF-NeinAbgeschlossenLaeuftGeplantCS
+CodeSystem: SEU_EF_NeinAbgeschlossenLaeuftGeplantCS
 Id: SEU-EF-NeinAbgeschlossenLaeuftGeplantCS
 Title: "SEU-EF-NeinAbgeschlossenLaeuftGeplant"
 * #nein "nein"

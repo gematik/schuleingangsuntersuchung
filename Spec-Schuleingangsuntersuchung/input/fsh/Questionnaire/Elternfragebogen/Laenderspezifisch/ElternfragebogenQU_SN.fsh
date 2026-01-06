@@ -4,7 +4,7 @@ Usage: #example
 Title: "Elternbefragung SN"
 Description: "Elternbefragung SN"
 * contained[+] = DeuevAnlage8LaenderkennzeichenVS
-* contained[+] = SEU-EF-NeinAbgeschlossenLaeuftGeplantVS
+* contained[+] = SEU_EF_NeinAbgeschlossenLaeuftGeplantVS
 * contained[+] = SEU_EF_BildungsabschlussVS
 * contained[+] = ErwerbsstatusVS
 * contained[+] = RechtsLinksHaenderVS
@@ -203,7 +203,7 @@ Description: "Elternbefragung SN"
     * insert addSource(#DE-SN)
     * item[+]
       * insert addItem(9.2, #choice, [[Sprachtherapie]])
-      * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
+      * answerValueSet = Canonical(SEU_EF_NeinAbgeschlossenLaeuftGeplantVS)
     * item[+]
       * insert addItemWithSource(9.2b, #choice, [[Logopädie]], #DE-BW)
       * answerValueSet = Canonical(JaNeinWartelisteVS)
@@ -215,13 +215,13 @@ Description: "Elternbefragung SN"
       * answerValueSet = Canonical(JaNeinWartelisteVS)
     * item[+]
       * insert addItem(9.3, #choice, [[Frühförderung]])
-      * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
+      * answerValueSet = Canonical(SEU_EF_NeinAbgeschlossenLaeuftGeplantVS)
     * item[+]
       * insert addItem(9.6, #choice, [[Physiotherapie]])
-      * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
+      * answerValueSet = Canonical(SEU_EF_NeinAbgeschlossenLaeuftGeplantVS)
     * item[+]
       * insert addItem(9.9, #choice, [[Integrative Betreuung]])
-      * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
+      * answerValueSet = Canonical(SEU_EF_NeinAbgeschlossenLaeuftGeplantVS)
     * item[+]
       * insert addItem(9.10, #string, [[Sonstige Förderung]])
 //********************************************

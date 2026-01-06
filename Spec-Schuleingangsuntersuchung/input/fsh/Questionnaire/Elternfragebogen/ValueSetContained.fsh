@@ -1,19 +1,19 @@
-ValueSet: SEU-EF-NeinAbgeschlossenLaeuftGeplantVS
+ValueSet: SEU_EF_NeinAbgeschlossenLaeuftGeplantVS
 Id: SEU-EF-NeinAbgeschlossenLaeuftGeplantVS
-Title: "SEU-EF-NeinAbgeschlossenLaeuftGeplantVS"
-Description: "SEU-EF-NeinAbgeschlossenLaeuftGeplantVS"
-* include codes from system SEU-EF-NeinAbgeschlossenLaeuftGeplantCS
+Title: "SEU_EF_NeinAbgeschlossenLaeuftGeplantVS"
+Description: "SEU_EF_NeinAbgeschlossenLaeuftGeplantVS"
+* include codes from system SEU_EF_NeinAbgeschlossenLaeuftGeplantCS
 * ^expansion.timestamp = "2024-03-27T12:20:50+00:00"
-* ^expansion.contains[0].system = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantCS)
+* ^expansion.contains[0].system = Canonical(SEU_EF_NeinAbgeschlossenLaeuftGeplantCS)
 * ^expansion.contains[=].code = #nein
 * ^expansion.contains[=].display = "nein"
-* ^expansion.contains[+].system = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantCS)
+* ^expansion.contains[+].system = Canonical(SEU_EF_NeinAbgeschlossenLaeuftGeplantCS)
 * ^expansion.contains[=].code = #abgeschlossen
 * ^expansion.contains[=].display = "abgeschlossen"
-* ^expansion.contains[+].system = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantCS)
+* ^expansion.contains[+].system = Canonical(SEU_EF_NeinAbgeschlossenLaeuftGeplantCS)
 * ^expansion.contains[=].code = #läuft
 * ^expansion.contains[=].display = "läuft z.Zt. Noch"
-* ^expansion.contains[+].system = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantCS)
+* ^expansion.contains[+].system = Canonical(SEU_EF_NeinAbgeschlossenLaeuftGeplantCS)
 * ^expansion.contains[=].code = #geplant
 * ^expansion.contains[=].display = "geplant"
 
@@ -1547,16 +1547,6 @@ Description: "ValueSet, das die Kategorien des Medienkonsums in Stunden enthält
 * ^expansion.contains[+].system = Canonical(SEUEFMedienkonsumBerlinCS)
 * ^expansion.contains[=].code = #ueber_3
 * ^expansion.contains[=].display = "über 3 Stunden"
-
-CodeSystem: SEU_UB_FamilienstandCS
-Id: seu-ub-familienstand-cs
-Title: "SEU_UB_Familienstand CodeSystem"
-Description: "CodeSystem für die Angabe der Familiensituation."
-* #bei_beiden_leiblichen_Eltern "Bei beiden leiblichen Eltern"
-* #bei_alleinerziehendem_Elternteil "Bei alleinerziehendem Elternteil"
-* #bei_Elternteil_mit_Partner "Bei Elternteil mit Partner"
-* #bei_Grosseltern_oder_anderen "Bei Großeltern, Pflegeeltern, Adoptiveltern oder anderen"
-* #keine_Angaben "Keine Angaben"
 
 CodeSystem: SEU_EF_OperationenCS
 Id: seu-ef-operationen-cs

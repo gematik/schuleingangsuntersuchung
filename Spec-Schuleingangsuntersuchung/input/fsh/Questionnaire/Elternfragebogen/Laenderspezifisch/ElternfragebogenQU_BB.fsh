@@ -3,7 +3,7 @@ InstanceOf: Questionnaire
 Usage: #example
 Title: "Elternbefragung BB"
 Description: "Elternbefragung BB"
-* contained[+] = SEU-EF-NeinAbgeschlossenLaeuftGeplantVS
+* contained[+] = SEU_EF_NeinAbgeschlossenLaeuftGeplantVS
 * contained[+] = DeuevAnlage8LaenderkennzeichenVS
 * contained[+] = WohnsituationKindVS  // TODO: Unused?
 * contained[+] = WohnsituationKindAlternativ1VS  // TODO: Unused?

@@ -3,7 +3,7 @@ InstanceOf: Questionnaire
 Usage: #example
 Title: "ElternbefragungBY"
 Description: "ElternbefragungBY"
-* contained[+] = SEU-EF-NeinAbgeschlossenLaeuftGeplantVS
+* contained[+] = SEU_EF_NeinAbgeschlossenLaeuftGeplantVS
 * contained[+] = DeuevAnlage8LaenderkennzeichenVS
 * contained[+] = SEU_UB_TeilnahmeVorkursDeutschVS
 * contained[+] = SEU_UB_AuswaehlbareElternspracheVS
@@ -233,7 +233,7 @@ Description: "ElternbefragungBY"
     * answerValueSet = Canonical(SEU_UB_TeilnahmeVorkursDeutschVS)
   * item[+]
     * insert addItemWithSource(9.1c, #choice, [[Sprachtherapie (Logopädie)]], #DE-BY)
-    * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
+    * answerValueSet = Canonical(SEU_EF_NeinAbgeschlossenLaeuftGeplantVS)
 //********************************************
 // Informationen Eltern
 * item[+]

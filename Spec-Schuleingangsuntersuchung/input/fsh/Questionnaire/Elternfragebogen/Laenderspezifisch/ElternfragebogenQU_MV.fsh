@@ -3,7 +3,7 @@ InstanceOf: Questionnaire
 Usage: #example
 Title: "Elternbefragung MV"
 Description: "Elternbefragung MV"
-* contained[+] = SEU-EF-NeinAbgeschlossenLaeuftGeplantVS
+* contained[+] = SEU_EF_NeinAbgeschlossenLaeuftGeplantVS
 * contained[+] = DeuevAnlage8LaenderkennzeichenVS
 * contained[+] = GenderDEVS
 * contained[+] = AuffaelligkeitVerhaltenVS
@@ -256,7 +256,7 @@ Description: "Elternbefragung MV"
     * insert addSource(#DE-SN)
     * item[+]
       * insert addItem(9.2, #choice, [[Sprachtherapie]])
-      * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
+      * answerValueSet = Canonical(SEU_EF_NeinAbgeschlossenLaeuftGeplantVS)
     * item[+]
       * insert addItemWithSource(9.2a, #choice, [[Sprachförderung]], #DE-BW)
       * answerValueSet = Canonical(JaNeinWartelisteVS)
@@ -274,16 +274,16 @@ Description: "Elternbefragung MV"
       * answerValueSet = Canonical(JaNeinWartelisteVS)
     * item[+]
       * insert addItem(9.3, #choice, [[Frühförderung]])
-      * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
+      * answerValueSet = Canonical(SEU_EF_NeinAbgeschlossenLaeuftGeplantVS)
     * item[+]
       * insert addItem(9.4, #choice, [[Ergotherapie]])
-      * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
+      * answerValueSet = Canonical(SEU_EF_NeinAbgeschlossenLaeuftGeplantVS)
     * item[+]
       * insert addItem(9.6, #choice, [[Physiotherapie]])
-      * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
+      * answerValueSet = Canonical(SEU_EF_NeinAbgeschlossenLaeuftGeplantVS)
     * item[+]
       * insert addItem(9.9, #choice, [[Integrative Betreuung]])
-      * answerValueSet = Canonical(SEU-EF-NeinAbgeschlossenLaeuftGeplantVS)
+      * answerValueSet = Canonical(SEU_EF_NeinAbgeschlossenLaeuftGeplantVS)
 //********************************************
 // Medienkonsum
 * item[+]
