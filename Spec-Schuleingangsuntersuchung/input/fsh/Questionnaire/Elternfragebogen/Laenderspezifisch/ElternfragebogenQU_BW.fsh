@@ -28,16 +28,39 @@ Description: "Elternbefragung BW"
     * insert addItem(1.2, #string, Vorname des Kindes)
     * insert initialExpression("%patient.name[0].given[0]")
 //********************************************
+// Familiendaten
+* item[+]
+  * insert addItem(3, #group, [[Familiendaten]])
+  * item[+]
+    * insert addItem(3.1, #integer, [[Anzahl der Geschwister]])
+  * item[+]
+    * insert addItem(3.1.1, #group, [[Details Geschwister]])
+    * repeats = true
+    * insert enableWhenInteger(3.1, >, 0)
+    * insert enableWhenInteger(3.1c, >, 1)
+    * enableBehavior = #any
+    * item[+]
+      * insert addItem(3.1.1.1, #date, [[Geburtsdatum des Geschwisters]])
+//********************************************
 // Kinderbetreuung
 * item[+]
-  * insert addItem(4, #group, Kinderbetreuung)
+  * insert addItem(4, #group, [[Kinderbetreuung]])
   * item[+]
     * insert addItemWithSource(4.0c, #integer, [[Wie viele Stunden ist das Kind pro Woche in einer Kindertageseinrichtung?]], #DE-BW)
   * item[+]
-    * insert addItemWithSource(4.1b, #choice, Wie lange besucht Ihr Kind bis jetzt eine Kindertageseinrichtung?, #DE-BW)
+    * insert addItemWithSource(4.1b, #choice, [[Wie lange besucht Ihr Kind bis jetzt eine deutschsprachig Kindertageseinrichtung?]], #DE-BW)
     * answerValueSet = Canonical(SEU_EF_DauerBWVS)
   * item[+]
     * insert addItemWithSource(4.10, #boolean, [[Bekommt oder wartet Ihr Kind auf eine spezielle Förderung oder Therapie?]], #DE-SN)
+//********************************************
+// Entwicklung
+* item[+]
+  * insert addItem(7, #group, [[Entwicklung]])
+  * item[+]
+    * insert addItem(7.12, #boolean, [[Sorgen Sie sich um die Entwicklung ihres Kindes?]])
+    * item[+]
+      * insert addItem(7.12.1, #string, [[Welche Sorgen]])
+      * insert enableWhenBoolean(7.12, =, true)
 //********************************************
 // Förderungen
 * item[+]

@@ -459,7 +459,7 @@ Description: "Elternbefragung"
     * insert addItemWithSource(4.1a, #choice, Wie alt war das Kind bei der Aufnahme in die Kita?, #DE-SL)
     * answerValueSet = Canonical(SEU_EF_AlterKindVS)
   * item[+]
-    * insert addItemWithSource(4.1b, #choice, Wie lange besucht Ihr Kind bis jetzt eine Kindertageseinrichtung?, #DE-BW)
+    * insert addItemWithSource(4.1b, #choice, [[Wie lange besucht Ihr Kind bis jetzt eine deutschsprachig Kindertageseinrichtung?]], #DE-BW)
     * answerValueSet = Canonical(SEU_EF_DauerBWVS)
   * item[+]
     * insert addItemWithSource(4.1c, #choice, [[Dauer Kindertagesbetreuung in Jahren]], #DE-BB)
