@@ -1,3 +1,3 @@
 ## {{page-title}}
 
-{{namingsystems}}
+{{index:current}}

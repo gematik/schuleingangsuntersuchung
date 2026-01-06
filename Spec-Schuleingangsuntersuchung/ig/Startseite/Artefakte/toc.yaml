@@ -1,8 +1,8 @@
 - name: Index
   filename: Index.page.md
-- name: Person (Patient)
-  filename: Person.page.md
-- name: Verwandte Person (RelatedPerson)
-  filename: VerwandtePerson.page.md
+- name: Profile
+  filename: Profile
+- name: Terminologien
+  filename: Terminologien
 - name: Extensions
   filename: Extensions
