@@ -1,7 +1,14 @@
 ## {{page-title}}
 
 @```
-from StructureDefinition
-	where type = 'ValueSet'
-	select Beschreibung: description, CanonicalURL: url, Kontext: context.expression, Status: status, Version: version
+from ValueSet
+select 
+	Name: name, 
+	Beschreibung: description,
+	CanonicalURL: url,
+	Status: status,
+	Expansion: for expansion.contains select {
+		code,
+		display
+	}
 ```
