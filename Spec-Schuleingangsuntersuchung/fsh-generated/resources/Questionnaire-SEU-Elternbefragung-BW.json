@@ -368,6 +368,68 @@
       ]
     },
     {
+      "linkId": "3",
+      "type": "group",
+      "text": "(3) Familiendaten",
+      "code": [
+        {
+          "code": "3",
+          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+        }
+      ],
+      "item": [
+        {
+          "linkId": "3.1",
+          "type": "integer",
+          "text": "(3.1) Anzahl der Geschwister",
+          "code": [
+            {
+              "code": "3.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
+          "linkId": "3.1.1",
+          "type": "group",
+          "text": "(3.1.1) Details Geschwister",
+          "code": [
+            {
+              "code": "3.1.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "repeats": true,
+          "enableWhen": [
+            {
+              "question": "3.1",
+              "operator": ">",
+              "answerInteger": 0
+            },
+            {
+              "question": "3.1c",
+              "operator": ">",
+              "answerInteger": 1
+            }
+          ],
+          "enableBehavior": "any",
+          "item": [
+            {
+              "linkId": "3.1.1.1",
+              "type": "date",
+              "text": "(3.1.1.1) Geburtsdatum des Geschwisters",
+              "code": [
+                {
+                  "code": "3.1.1.1",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
       "linkId": "4",
       "type": "group",
       "text": "(4) Kinderbetreuung",
@@ -401,7 +463,7 @@
         {
           "linkId": "4.1b",
           "type": "choice",
-          "text": "(4.1b) Wie lange besucht Ihr Kind bis jetzt eine Kindertageseinrichtung?",
+          "text": "(4.1b) Wie lange besucht Ihr Kind bis jetzt eine deutschsprachig Kindertageseinrichtung?",
           "code": [
             {
               "code": "4.1b",
@@ -436,6 +498,50 @@
                 "system": "urn:iso:std:iso:3166-2:de",
                 "code": "DE-SN"
               }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "linkId": "7",
+      "type": "group",
+      "text": "(7) Entwicklung",
+      "code": [
+        {
+          "code": "7",
+          "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+        }
+      ],
+      "item": [
+        {
+          "linkId": "7.12",
+          "type": "boolean",
+          "text": "(7.12) Sorgen Sie sich um die Entwicklung ihres Kindes?",
+          "code": [
+            {
+              "code": "7.12",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "item": [
+            {
+              "linkId": "7.12.1",
+              "type": "string",
+              "text": "(7.12.1) Welche Sorgen",
+              "code": [
+                {
+                  "code": "7.12.1",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "enableWhen": [
+                {
+                  "question": "7.12",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ]
             }
           ]
         }
