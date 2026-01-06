@@ -1050,7 +1050,7 @@ Description: "Sorgeberechtigtenfragebogen"
   * item[+]
     * insert addItem(8.28.g, #group, [[Hatte Ihr Kind einen Unfall]])
     * insert enableWhenBoolean(8.28a, =, true)
-    //* insert enableWhenBoolean(8.28b, =, true) TODO auskommentiert ohne fachliche überprüfung
+    * insert enableWhenBoolean(8.28b, =, true)
     * enableBehavior = #any
     * repeats = true
     * item[+]
