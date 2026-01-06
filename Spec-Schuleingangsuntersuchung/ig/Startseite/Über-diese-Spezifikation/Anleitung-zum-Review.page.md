@@ -41,7 +41,7 @@ kommentieren sind:**
 
 Als Tabelle aller Fragen der Schuleingangsuntersuchung auf Simplifier:
 
--   [Elternfragebogen](https://simplifier.net/guide/Schuleingangsuntersuchung/Startseite/Elternfragebogen.page.md?version=current)
+-   [Sorgeberechtigtenfragebogen](https://simplifier.net/guide/Schuleingangsuntersuchung/Startseite/Sorgeberechtigtenfragebogen.page.md?version=current)
 
 -   [Untersuchungsbogen](https://simplifier.net/guide/Schuleingangsuntersuchung/Startseite/Untersuchungsbogen.page.md?version=current)
 

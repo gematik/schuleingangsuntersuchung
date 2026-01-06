@@ -1,0 +1,128 @@
+## {{page-title}}
+
+### Sorgeberechtigtenfragebogen Schuleingangsuntersuchung Saarland
+
+[Download: CSV-Version der Tabelle](https://raw.githubusercontent.com/gematik/schuleingangsuntersuchung/main/Spec-Schuleingangsuntersuchung/questionnaireCSV/Questionnaire-SEU-Elternbefragung-SL.csv "Title")
+
+| Link-ID | Text |  Typ | Enable When | Wertemenge | Herkunft | Nutzung |
+|------------------|---------------|---------------|-------------|-------------|-------------|-------------|
+| 1 | (1) Personenbezogene Daten Kind | group |  |  |  |  |
+| 1.4b.2 | (1.4b.2) Staatsangehörigkeit Mutter | choice |  | Afghanistan :: Ägypten :: Åland :: Albanien :: Algerien :: Amerik.-Jungferninseln :: Amerikanisch-Samoa :: Andorra :: Angola :: ... | DE-SL |  |
+| 1.4c.2 | (1.4c.2) Staatsangehörigkeit Vater | choice |  | Afghanistan :: Ägypten :: Åland :: Albanien :: Algerien :: Amerik.-Jungferninseln :: Amerikanisch-Samoa :: Andorra :: Angola :: ... | DE-SL |  |
+| 1.5 | (1.5) Geburtsland | choice |  | Afghanistan :: Ägypten :: Åland :: Albanien :: Algerien :: Amerik.-Jungferninseln :: Amerikanisch-Samoa :: Andorra :: Angola :: ... |  |  |
+| 1.5.1 | (1.5.1) Wie alt war das Kind bei Einreise nach Deutschland? | choice | 1.5 = D | Hier geboren :: Unter 1 Jahr :: >= 1 Jahr bis 1 ½ Jahre :: >= 1 ½ Jahre bis 2 Jahre :: >= 2 Jahre bis 2 ½ Jahre :: >= 2 ½ Jahre bis 3 Jahre :: >= 3 Jahre bis 3 ½ Jahre :: >= 3 ½ Jahre bis 4 Jahre :: >= 4 Jahre bis 4 ½ Jahre :: ... | DE-SL |  |
+| 1.5a | (1.5a) Geburtsland Mutter | choice |  | Afghanistan :: Ägypten :: Åland :: Albanien :: Algerien :: Amerik.-Jungferninseln :: Amerikanisch-Samoa :: Andorra :: Angola :: ... | DE-BB |  |
+| 1.5b | (1.5b) Geburtsland Vater | choice |  | Afghanistan :: Ägypten :: Åland :: Albanien :: Algerien :: Amerik.-Jungferninseln :: Amerikanisch-Samoa :: Andorra :: Angola :: ... | DE-BB |  |
+| 1.12b | (1.12b) Kind lebt hauptsächlich bei | choice |  | Bei beiden leiblichen Eltern :: Bei alleinerziehendem Elternteil :: Bei Elternteil mit Partner :: Bei Großeltern, Pflegeeltern, Adoptiveltern oder anderen :: Keine Angaben  | DE-SL |  |
+| 3 | (3) Familiendaten | group |  |  |  |  |
+| 3.1a | (3.1a) Anzahl der im Familienverbund lebenden Kinder | integer |  |  | DE-SL |  |
+| 3.2 | (3.2) Familiäre Vorgeschichte | group |  |  |  |  |
+| 3.2.4 | (3.2.4) Erkrankung | choice |  | Allergie :: Fettstoffwechselstörung :: Bluthochdruck :: Schlaganfall :: Herzinfarkt :: Zuckerkrankheit :: Übergewicht  |  |  |
+| 3.2.6a | (3.2.6a) Liegt bei Ihrem Kind ein Grad der Behinderung/ein Pflegegrad vor? | boolean |  |  | DE-SL |  |
+| 3.2.6a.1 | (3.2.6a.1) Grad der Behinderung | choice | 3.2.6a = true | 20% :: 30% :: 40% :: 50% :: 60% :: 70% :: 80% :: 90% :: 100%  | DE-SL |  |
+| 3.2.6a.2 | (3.2.6a.2) Pflegegrad | choice | 3.2.6a = true | Pflegegrad 1 :: Pflegegrad 2 :: Pflegegrad 3 :: Pflegegrad 4 :: Pflegegrad 5  | DE-SL |  |
+| 4 | (4) Kinderbetreuung | group |  |  |  |  |
+| 4.1a | (4.1a) Wie alt war das Kind bei der Aufnahme in die Kita? | choice |  | Unter 1 Jahr :: >= 1 Jahr bis 1 ½ Jahre :: >= 1 ½ Jahre bis 2 Jahre :: >= 2 Jahre bis 2 ½ Jahre :: >= 2 ½ Jahre bis 3 Jahre :: >= 3 Jahre bis 3 ½ Jahre :: >= 3 ½ Jahre bis 4 Jahre :: >= 4 Jahre bis 4 ½ Jahre :: >= 5 Jahre bis 5 ½ Jahre :: ... | DE-SL |  |
+| 5 | (5) Schwangerschaft und Geburt | group |  |  |  |  |
+| 5.1.a | (5.1.a) Dauer der Schwangerschaft (in Wochen) | integer |  |  | DE-SL |  |
+| 5.2.a | (5.2.a) Geburtsgewicht (in Gramm) | integer |  |  | DE-SL |  |
+| 5.6a | (5.6a) Schwangerschaftsverlauf | choice |  | Normal :: Komplikationen/Risikoschwangerschaft :: Keine Angabe  | DE-SL |  |
+| 5.8 | (5.8) Stillen / mit Muttermilch ernährt | boolean |  |  | DE-SL |  |
+| 5.8.1 | (5.8.1) Stillzeit in Monaten | integer | 5.8 = true |  | DE-SL |  |
+| 6 | (6) Sprache | group |  |  |  |  |
+| 6.1b | (6.1b) 1. vorrangig in der Familie gesprochene Sprache | choice |  | keine Angabe :: Andere :: Afar :: Abchasisch :: Achinesisch :: Acholi :: Dangme :: Adygeisch :: Afrikaans :: ... | DE-SL |  |
+| 6.2 | (6.2) Muttersprache des Kindes | choice |  | keine Angabe :: Andere :: Afar :: Abchasisch :: Achinesisch :: Acholi :: Dangme :: Adygeisch :: Afrikaans :: ... |  |  |
+| 6.3 | (6.3) Teilnahme des Kindes an einem Deutschkurs | choice |  | Ja :: Nein :: Ist angemeldet  |  |  |
+| 7 | (7) Entwicklung | group |  |  |  |  |
+| 7.3a | (7.3a) Freies Laufen (bis 15 Monate) | boolean |  |  | DE-SL |  |
+| 7.4a | (7.4a) Erste Worte bis 1 Jahr | boolean |  |  | DE-SL |  |
+| 7.5a | (7.5a) Kleine Sätze bis 2 Jahre | boolean |  |  | DE-SL |  |
+| 8 | (8) Erkrankungen und gesundheitliche Einschränkungen | group |  |  |  |  |
+| 8.1 | (8.1) In regelmäßiger ärztlicher bzw. psychologischer Behandlung | boolean |  |  |  |  |
+| 8.2a | (8.2a) Welche Behandlung? (Mehrfachnennung möglich) | choice | 8.1 = true | Ärztlich :: Zahnärztlich :: Psychologisch/Kinder- und Jugendpsychiatrisch :: Sonstige Behandlung :: Keine Angabe  | DE-SL |  |
+| 8.4 | (8.4) Sprachstörung vorhanden? | boolean |  |  |  |  |
+| 8.4.1a | (8.4.1a) Störung in der Sprachentwicklung | choice | 8.4 = true | Aussprache :: Stottern :: Aussprache und Stottern  | DE-SL |  |
+| 8.27 | (8.27) Wurde Ihr Kind operiert | boolean |  |  |  |  |
+| 8.27.2 | (8.27.2) Welche Operationen wurden durchgeführt? | choice | 8.27 = true | Entfernung der Rachenpolypen :: Paukendrainage :: Mandeloperation :: Blinddarmoperation :: Leisten-/Nabelbruchoperation :: Augenoperation :: Sonstige Operation  |  |  |
+| 8.27.2.1 | (8.27.2.1) Sonstige Operationen? | string | 8.27.2 = sonstige_operation |  | DE-SL |  |
+| 8.30 | (8.30) Wurde Ihr Kind jemals aufgrund von Unfallverletzungen von einem Arzt behandelt? | boolean |  |  | DE-SL |  |
+| 8.30.1 | (8.30.1) Nässt Ihr Kind ein? | boolean |  |  | DE-BE |  |
+| 8.31 | (8.31) Einnässen tags | boolean |  |  | DE-SL |  |
+| 8.32 | (8.32) Einnässen nachts | boolean |  |  | DE-SL |  |
+| 8.33 | (8.33) Einkoten tags | boolean |  |  | DE-SL |  |
+| 8.34 | (8.34) Einkoten nachts | boolean |  |  | DE-SL |  |
+| 8.35a | (8.35a) Bisherige Erkrankungen Ihres Kindes? | group |  |  | DE-SL |  |
+| 8.35 | (8.35) Erkrankungen Tuberkuloseerkrankung | boolean |  |  | DE-SL |  |
+| 8.36 | (8.36) Erkrankungen Meningitis/Enceph. | boolean |  |  | DE-SL |  |
+| 8.37 | (8.37) Erkrankungen Pneumonien | boolean |  |  | DE-SL |  |
+| 8.38 | (8.38) Erkrankungen Pseudocroup | boolean |  |  | DE-SL |  |
+| 8.39 | (8.39) Erkrankungen Fieberkrampf/Krampfanfall | boolean |  |  | DE-SL |  |
+| 8.40 | (8.40) Erkrankungen Harnwegserkrankungen | boolean |  |  | DE-SL |  |
+| 8.41 | (8.41) Erkrankungen rez Otitis media | boolean |  |  | DE-SL |  |
+| 8.42 | (8.42) Erkrankungen Allergie | boolean |  |  | DE-SL |  |
+| 8.42a | (8.42a) Erkrankungen Neurodermitis | boolean |  |  | DE-SL |  |
+| 8.42b | (8.42b) Keuchhusten | boolean |  |  | DE-SL |  |
+| 8.42c | (8.42c) Scharlach | boolean |  |  | DE-SL |  |
+| 8.42d | (8.42d) Chron. Bronchitis | boolean |  |  | DE-SL |  |
+| 8.42e | (8.42e) Mumps | boolean |  |  | DE-SL |  |
+| 8.42f | (8.42f) Röteln | boolean |  |  | DE-SL |  |
+| 8.42g | (8.42g) Windpocken | boolean |  |  | DE-SL |  |
+| 8.42h | (8.42h) Masern | boolean |  |  | DE-SL |  |
+| 8.42i | (8.42i) Asthma bronchiale | boolean |  |  | DE-SL |  |
+| 8.43 | (8.43) Erkrankungen Sonstige | boolean |  |  | DE-SL |  |
+| 8.43.1 | (8.43.1) Sonstiges, und zwar: | string | 8.43 = true |  | DE-SL |  |
+| 8.44 | (8.44) Operationen Adenotomie | boolean |  |  | DE-SL |  |
+| 8.45 | (8.45) Operationen Tonsillen-OP | boolean |  |  | DE-SL |  |
+| 8.46 | (8.46) Operationen Herniotomie | boolean |  |  | DE-SL |  |
+| 8.47 | (8.47) Operationen Appendektomie | boolean |  |  | DE-SL |  |
+| 8.48 | (8.48) Operationen Circumcision | boolean |  |  | DE-SL |  |
+| 8.49 | (8.49) Operationen Orchidopexie | boolean |  |  | DE-SL |  |
+| 8.50 | (8.50) Operationen Augenoperation | boolean |  |  | DE-SL |  |
+| 8.50a | (8.50a) Paukendrainage | boolean |  |  | DE-SL |  |
+| 8.51 | (8.51) Operationen Sonstige OP | boolean |  |  | DE-SL |  |
+| 8.51.1 | (8.51.1) Sonstiges, und zwar: | string | 8.51 = true |  | DE-SL |  |
+| 8.52 | (8.52) Unfälle Verbrennung/Verbrühung | choice |  | Nein :: Ja; zu Hause :: Freizeit außer Haus :: Gemeinschaftseinrichtung :: Wegeunfall :: Keine Angabe  | DE-SL |  |
+| 8.53 | (8.53) Unfälle Intoxikation | choice |  | Nein :: Ja; zu Hause :: Freizeit außer Haus :: Gemeinschaftseinrichtung :: Wegeunfall :: Keine Angabe  | DE-SL |  |
+| 8.54 | (8.54) Unfälle Knochenbrüche/Weichteilverletzungen | choice |  | Nein :: Ja; zu Hause :: Freizeit außer Haus :: Gemeinschaftseinrichtung :: Wegeunfall :: Keine Angabe  | DE-SL |  |
+| 8.55 | (8.55) Unfälle Schwere Kopfverletzungen | choice |  | Nein :: Ja; zu Hause :: Freizeit außer Haus :: Gemeinschaftseinrichtung :: Wegeunfall :: Keine Angabe  | DE-SL |  |
+| 8.56 | (8.56) Unfälle Sonstige | choice |  | Nein :: Ja; zu Hause :: Freizeit außer Haus :: Gemeinschaftseinrichtung :: Wegeunfall :: Keine Angabe  | DE-SL |  |
+| 8.56.1 | (8.56.1) Sonstiges, und zwar: | string | 8.56 exists true, 8.56 != nein, 8.56 != keine_angabe |  | DE-SL |  |
+| 8.57a | (8.57a) Regelmäßige Einnahme von Medikamenten? | boolean |  |  | DE-SL |  |
+| 8.57 | (8.57) Reg. Med. Antikonvulsiva | boolean |  |  | DE-SL |  |
+| 8.57.1 | (8.57.1) Wegen welcher Erkrankungen ist Ihr Kind zurzeit in Behandlung?? | string | 8.57 = true |  |  |  |
+| 8.58 | (8.58) Reg. Med. Antiasthmatika/Antiallergika | boolean |  |  | DE-SL |  |
+| 8.59 | (8.59) Reg. Med. Psychopharmaka | boolean |  |  | DE-SL |  |
+| 8.60 | (8.60) Reg. Med. Cardiaca/Kreislaufpräparate | boolean |  |  | DE-SL |  |
+| 8.61 | (8.61) Reg. Med. Jodid oder Thyroxin | boolean |  |  | DE-SL |  |
+| 8.62 | (8.62) Reg. Med. Dermatologische Präparate | boolean |  |  | DE-SL |  |
+| 8.63 | (8.63) Reg. Med. Homöopathische Präparate | boolean |  |  | DE-SL |  |
+| 8.64 | (8.64) Reg. Med. Sonstige | boolean |  |  | DE-SL |  |
+| 8.64.1 | (8.64.1) Sonstiges, und zwar: | string | 8.64 = true |  | DE-SL |  |
+| 9 | (9) Förderungen | group |  |  |  |  |
+| 9.1a | (9.1a) Werden oder wurden bei Ihrem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich) | boolean |  |  | DE-SL |  |
+| 9.1a.g | (9.1a.g) Therapien | group | 9.1a = true |  | DE-SN |  |
+| 9.2ba | (9.2ba) Logopädie | boolean |  |  | DE-BB |  |
+| 9.2ea | (9.2ea) Andere | boolean |  |  | DE-BB |  |
+| 9.3a | (9.3a) Frühförderung | boolean |  |  | DE-BB |  |
+| 9.4a | (9.4a) Ergotherapie | boolean |  |  | DE-BB |  |
+| 9.6a | (9.6a) Physiotherapie / Krankengymnastik | boolean |  |  | DE-BB |  |
+| 9.11 | (9.11) Fördermaßn. Integration in Regel-Kita | boolean |  |  | DE-SL |  |
+| 9.12 | (9.12) Fördermaßn. FörderKita/Integrative Kita | boolean |  |  | DE-SL |  |
+| 9.13 | (9.13) Fördermaßn. Vorschul. Päd. Sprachförderung | boolean |  |  | DE-SL |  |
+| 12 | (12) Sonstiges | group |  |  |  |  |
+| 12.7a | (12.7a) Präv. Maßnahmen Regemäßig Sport im Verein | boolean |  |  | DE-SL |  |
+| 13 | (13) Informationen Eltern | group |  |  |  |  |
+| 13.1 | (13.1) Schulabschluss 1. Elternteil | choice |  | Kein Schulabschluss :: Hauptschulabschluss :: Mittlere Reife oder vergleichbar :: Abitur/Fachhochschulreife oder vergleichbar :: Sonder-/Förderschule :: Derzeit noch in schulischer Ausbildung (Schüler*in)  |  |  |
+| 13.2 | (13.2) Schulabschluss 2. Elternteil | choice |  | Kein Schulabschluss :: Hauptschulabschluss :: Mittlere Reife oder vergleichbar :: Abitur/Fachhochschulreife oder vergleichbar :: Sonder-/Förderschule :: Derzeit noch in schulischer Ausbildung (Schüler*in)  |  |  |
+
+<tabs>
+    <tab title="Table">      
+        {{table:SEU-Elternbefragung-SL}}
+    </tab>
+    <tab title="JSON">
+        {{json:SEU-Elternbefragung-SL}}
+    </tab>
+    <tab title="XML">
+        {{xml:SEU-Elternbefragung-SL}}
+    </tab>
+</tabs>

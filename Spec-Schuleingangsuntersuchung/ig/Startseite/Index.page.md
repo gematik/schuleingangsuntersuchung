@@ -12,11 +12,13 @@
 -->
 
 ### Zusammenfassung
-Die Schuleingangsuntersuchung dient der Überprüfung des Gesundheitszustands von Kindern und der Sicherstellung, dass diese optimal auf den Schuleintritt vorbereitet sind. Um diesen Prozess zu optimieren und die Qualität der Gesundheitsversorgung zu verbessern, wurde die vorliegende FHIR-Spezifikation entwickelt.
+Die Schuleingangsuntersuchung dient der Überprüfung des Gesundheitszustands von Kindern und der Sicherstellung, dass diese optimal auf den Schuleintritt vorbereitet sind. Im gesamten Prozess der Schuleingangsuntersuchung sind verschiedene Organisationen und auch die Sorgeberechtigten der einzuschulenden Kinder involviert. Ziel ist es, auf Grundlage von HL7 FHIR einen Standard zu entwickeln, mit dem eine interoperable Datenübertragung von Antworten aus dem sogenannten Sorgeberechtigtenfragebogen an die Gesundheitsämter erfolgen kann. Das Novum bildet hierbei der Maximaldatensatz, aus dem sich die jeweiligen länderspezifischen Fragebögen speisen.
 
-Diese FHIR-Spezifikation bietet eine standardisierte und interoperable Methode zur Erfassung und Übermittlung von Gesundheitsdaten im Zusammenhang mit der Schuleingangsuntersuchung. Die Spezifikation wurde in enger Zusammenarbeit mit Fachleuten aus dem Gesundheitswesen, dem Bildungsbereich und der IT-Branche entwickelt und stellt sicher, dass Datenschutz und Sicherheit gewährleistet sind.
+Die FHIR-Spezifikation bietet eine standardisierte und interoperable Methode zur Erfassung und Übermittlung von Gesundheitsdaten im Zusammenhang mit der Schuleingangsuntersuchung. Die Spezifikation wurde im Rahmen der ELFA-Maßnahme Interoperabilitätsanforderungen verschiedener Fachanwendungen und Plattformlösungen (ELFA = Ein Land für alle) in enger Zusammenarbeit mit Fachpersonen aus dem Öffentlichen Gesundheitsdienst, insbesondere dem Kinder- und Jugendärztlichen Dienst im ÖGD sowie mit IT-Expert:innen und FHIR-Spezialist:innen entwickelt und stellt sicher, dass Datenschutz und Sicherheit gewährleistet sind.
 
-Dieser Implementierungsleitfaden bietet eine umfassende Übersicht über die Standards, Datenstrukturen und Ressourcen, die für die Schuleingangsuntersuchung von Bedeutung sind. Diese Spezifikation dient als Leitfaden für Entwickler, Gesundheitseinrichtungen und Schulen, um sie in ihre Systeme zu integrieren und den Prozess der Schuleingangsuntersuchung zu optimieren.
+Der Implementierungsleitfaden beinhaltet den Sorgeberechtigtenfragebogen auf Basis eines FHIR-Questionnaire, sowie die Stammdaten der beteiligten Personen als Profil. Die Spezifikation dient als Leitfaden für Entwickler:innen, Gesundheitseinrichtungen und Schulen, um sie in ihre Systeme zu integrieren und den Prozess der Schuleingangsuntersuchung zu optimieren. 
+
+Die Spezifikation befindet sich aktuell in einer Pilotierungsphase in vier Bundesländern unter Beteiligung von jeweils einem teilnehmenden Gesundheitsamt und dessen Softwarehersteller für die Fachverfahren.
 
 
 ### Anfangs- und (geplantes) Enddatum
@@ -26,7 +28,7 @@ Enddatum: Noch nicht geplant
 
 ### Status
 
-Version: 0.9.0
+Version: 1.0.0-ballot
 
 Reifegrad: Draft 
 

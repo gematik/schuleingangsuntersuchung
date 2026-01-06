@@ -1,8 +1,10 @@
 ## {{page-title}}
 
-### Version 0.9.0 <!-- Major Version-->
+### Version 1.0.0-ballot
 
-#### Package (Verlinkung folgt)
+
+
+### Version 0.9.0
 
 * `added` Relevante Profile wurden hinzugefügt 
 * `added` Relevante Terminologie wurde hinzugefügt 
