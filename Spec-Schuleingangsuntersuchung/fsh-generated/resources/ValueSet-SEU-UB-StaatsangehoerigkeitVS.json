@@ -10,22 +10,22 @@
     "timestamp": "2024-10-20T11:50:47+00:00",
     "contains": [
       {
-        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-GesprocheneSpracheCS",
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-StaatsangehoerigkeitCS",
         "code": "1",
         "display": "Deutsch"
       },
       {
-        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-GesprocheneSpracheCS",
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-StaatsangehoerigkeitCS",
         "code": "2",
         "display": "Deutsch UND andere"
       },
       {
-        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-GesprocheneSpracheCS",
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-StaatsangehoerigkeitCS",
         "code": "3",
         "display": "Andere"
       },
       {
-        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-GesprocheneSpracheCS",
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-StaatsangehoerigkeitCS",
         "code": "9",
         "display": "keine Angaben"
       }

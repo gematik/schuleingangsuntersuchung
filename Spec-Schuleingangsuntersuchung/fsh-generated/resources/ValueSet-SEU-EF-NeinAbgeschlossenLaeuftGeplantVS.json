@@ -1,10 +1,10 @@
 {
   "resourceType": "ValueSet",
   "status": "draft",
-  "name": "SEU-EF-NeinAbgeschlossenLaeuftGeplantVS",
+  "name": "SEU_EF_NeinAbgeschlossenLaeuftGeplantVS",
   "id": "SEU-EF-NeinAbgeschlossenLaeuftGeplantVS",
-  "title": "SEU-EF-NeinAbgeschlossenLaeuftGeplantVS",
-  "description": "SEU-EF-NeinAbgeschlossenLaeuftGeplantVS",
+  "title": "SEU_EF_NeinAbgeschlossenLaeuftGeplantVS",
+  "description": "SEU_EF_NeinAbgeschlossenLaeuftGeplantVS",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-EF-NeinAbgeschlossenLaeuftGeplantVS",
   "expansion": {
     "timestamp": "2024-03-27T12:20:50+00:00",

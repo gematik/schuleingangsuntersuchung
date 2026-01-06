@@ -2,7 +2,7 @@
   "resourceType": "CodeSystem",
   "status": "draft",
   "content": "complete",
-  "name": "SEU-EF-NeinAbgeschlossenLaeuftGeplantCS",
+  "name": "SEU_EF_NeinAbgeschlossenLaeuftGeplantCS",
   "id": "SEU-EF-NeinAbgeschlossenLaeuftGeplantCS",
   "title": "SEU-EF-NeinAbgeschlossenLaeuftGeplant",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-EF-NeinAbgeschlossenLaeuftGeplantCS",
