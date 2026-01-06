@@ -5,6 +5,7 @@
   "id": "seu-ef-dauer-vs",
   "title": "SEU_EF_Dauer ValueSet",
   "description": "ValueSet, das verschiedene Dauern enthält.",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-dauer-vs",
   "expansion": {
     "timestamp": "2024-10-20T11:50:47+00:00",

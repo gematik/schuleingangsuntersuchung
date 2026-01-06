@@ -5,6 +5,7 @@
   "id": "PflegegradVS",
   "title": "PflegegradVS",
   "description": "PflegegradVS",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/PflegegradVS",
   "expansion": {
     "timestamp": "2024-04-04T11:16:49+00:00",

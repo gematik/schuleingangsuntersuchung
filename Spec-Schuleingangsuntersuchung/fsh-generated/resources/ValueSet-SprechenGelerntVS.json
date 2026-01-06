@@ -5,6 +5,7 @@
   "id": "SprechenGelerntVS",
   "title": "Sprechen gelernt Value Set",
   "description": "ValueSet, das beschreibt, wann das Kind sprechen gelernt hat (mind. 2-Wort-Sätze, ca. 50 Wörter).",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/SprechenGelerntVS",
   "expansion": {
     "timestamp": "2024-10-20T11:50:47+00:00",

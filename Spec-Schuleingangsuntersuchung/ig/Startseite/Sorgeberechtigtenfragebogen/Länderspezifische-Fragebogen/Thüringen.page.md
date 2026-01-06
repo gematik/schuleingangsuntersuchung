@@ -2,18 +2,18 @@
 
 ### Rendering
 
-<iframe src="https://gematik.github.io/poc-isik-formular/index.html?base=https://fhir.simplifier.net/schuleingangsuntersuchung&id=SorgeberechtigtenfragebogenTH&minimal=true" style="width:100%; height:300px; border:none; display:block;"></iframe>
+<iframe src="https://gematik.github.io/poc-isik-formular/index.html?base=https://fhir.simplifier.net/schuleingangsuntersuchung&id=SEU-Sorgeberechtigtenfragebogen-TH&minimal=true" style="width:100%; height:300px; border:none; display:block;"></iframe>
 
 ### Sorgeberechtigtenfragebogen Schuleingangsuntersuchung Thüringen
 
 <tabs>
     <tab title="JSON">
-        {{json:SEU-Elternbefragung-TH}}
+        {{json:SEU-Sorgeberechtigtenfragebogen-TH}}
     </tab>
     <tab title="Table">      
-        {{table:SEU-Elternbefragung-TH}}
+        {{table:SEU-Sorgeberechtigtenfragebogen-TH}}
     </tab>
     <tab title="XML">
-        {{xml:SEU-Elternbefragung-TH}}
+        {{xml:SEU-Sorgeberechtigtenfragebogen-TH}}
     </tab>
 </tabs>

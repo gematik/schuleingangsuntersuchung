@@ -9,6 +9,7 @@
       "name": "GenderDEVS",
       "title": "SEU-AF Geschlecht DE",
       "description": "Diese Codes enthalten die Angabe des Geschlechts",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/GenderDEVS",
       "expansion": {
         "timestamp": "2024-03-30T13:28:00+00:00",
@@ -50,6 +51,7 @@
       "name": "ErwerbsstatusInclSonstigesVS",
       "title": "Erwerbsstatus ValueSet incl. Sonstiges",
       "description": "ErwerbsstatusInclSonstigesVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/erwerbsstatus-incl-sonstiges-vs",
       "expansion": {
         "timestamp": "2025-03-04T12:00:00+00:00",
@@ -109,6 +111,7 @@
       "name": "JaNeinWartelisteVS",
       "title": "JaNeinWartelisteVS",
       "description": "JaNeinWartelisteVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/ja-nein-warteliste",
       "expansion": {
         "timestamp": "2024-06-26T15:47:43+00:00",
@@ -164,6 +167,7 @@
       "name": "SEU_EF_MedienkonsumVS",
       "title": "SEU_EF_Medienkonsum ValueSet",
       "description": "ValueSet, das die Kategorien des Medienkonsums in Stunden enthält.",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-medienkonsum-vs",
       "expansion": {
         "timestamp": "2024-09-10T12:00:00+00:00",
@@ -215,6 +219,7 @@
       "name": "SEU_EF_DauerBWVS",
       "title": "SEU_EF_Zeitraum ValueSet",
       "description": "ValueSet, das verschiedene Zeiträume enthält.",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-zeitraum-vs",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -261,6 +266,7 @@
       "name": "SEU_EF_BildungsabschlussBWVS",
       "title": "SEU_EF_BildungsabschlussBWVS ValueSet",
       "description": "ValueSet, das verschiedene Bildungsabschlüsse enthält.",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-bildungsabschluss-bwvs",
       "expansion": {
         "timestamp": "2024-12-09T10:35:47+00:00",

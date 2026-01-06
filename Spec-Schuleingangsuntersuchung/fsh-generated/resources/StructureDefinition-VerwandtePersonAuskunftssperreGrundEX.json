@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "VerwandtePersonAuskunftssperreGrundEX",
   "url": "https://www.oegd.de/fhir/seu/StructureDefinition/VerwandtePersonAuskunftssperreGrundEX",
+  "version": "0.1.0",
   "name": "VerwandtePersonAuskunftssperreGrundEX",
   "title": "Verwandte Person Auskunftssperre Grund Extension",
   "status": "draft",

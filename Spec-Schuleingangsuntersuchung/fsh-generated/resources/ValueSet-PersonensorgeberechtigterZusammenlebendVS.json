@@ -5,6 +5,7 @@
   "id": "PersonensorgeberechtigterZusammenlebendVS",
   "title": "PersonensorgeberechtigterZusammenlebendVS",
   "description": "PersonensorgeberechtigterZusammenlebendVS",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/PersonensorgeberechtigterZusammenlebendVS",
   "expansion": {
     "timestamp": "2025-02-21T11:50:47+00:00",

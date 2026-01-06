@@ -9,6 +9,7 @@
       "name": "LinksRechtsBeidseitsKeineAngabeVS",
       "title": "LinksRechtsBeidseitsKeineAngabeVS",
       "description": "LinksRechtsBeidseitsKeineAngabeCS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/LinksRechtsBeidseitsKeineAngabeVS",
       "expansion": {
         "timestamp": "2024-04-04T10:44:31+00:00",
@@ -50,6 +51,7 @@
       "name": "ErkrankungVS",
       "title": "ErkrankungVS",
       "description": "ErkrankungVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/ErkrankungVS",
       "expansion": {
         "timestamp": "2024-04-04T10:55:53+00:00",
@@ -166,6 +168,7 @@
       "name": "InfektionsKrankheitVS",
       "title": "InfektionsKrankheitVS",
       "description": "InfektionsKrankheitVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/InfektionsKrankheitVS",
       "expansion": {
         "timestamp": "2024-04-04T11:02:42+00:00",
@@ -252,6 +255,7 @@
       "name": "PflegegradVS",
       "title": "PflegegradVS",
       "description": "PflegegradVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/PflegegradVS",
       "expansion": {
         "timestamp": "2024-04-04T11:16:49+00:00",
@@ -298,6 +302,7 @@
       "name": "UnfallOrtVS",
       "title": "UnfallOrtVS",
       "description": "UnfallOrtVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/UnfallOrtVS",
       "expansion": {
         "timestamp": "2024-04-04T11:34:46+00:00",
@@ -344,6 +349,7 @@
       "name": "AtopischeErkrankungenVS",
       "title": "ValueSet für atopische/allergische Erkrankungen",
       "description": "Dieses ValueSet beinhaltet eine Auswahl von Codes für die Klassifikation von atopischen/allergischen Erkrankungen, definiert im zugehörigen CodeSystem.",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/atopische-erkrankungen-vs",
       "expansion": {
         "timestamp": "2024-04-12T15:47:43+00:00",
@@ -405,6 +411,7 @@
       "name": "SEU_EF_UnfallortVS",
       "title": "SEU_EF_Unfallort ValueSet",
       "description": "ValueSet, das die verschiedenen Unfallorte enthält.",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-unfallort-vs",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -456,6 +463,7 @@
       "name": "SEU_EF_HilfsmittelVS",
       "title": "SEU_EF_Hilfsmittel ValueSet",
       "description": "ValueSet, das verschiedene Hilfsmittel enthält.",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-hilfsmittel-vs",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",

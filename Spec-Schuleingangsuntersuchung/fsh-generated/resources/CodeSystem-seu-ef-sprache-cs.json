@@ -6,6 +6,7 @@
   "id": "seu-ef-sprache-cs",
   "title": "SEU_EF_Sprache CodeSystem",
   "description": "CodeSystem für die Angabe von Sprachproblemen.",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-sprache-cs",
   "concept": [
     {

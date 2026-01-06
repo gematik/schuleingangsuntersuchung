@@ -6,6 +6,7 @@
   "id": "KinderbetreuungCS",
   "title": "KinderbetreuungCS",
   "description": "CodeSystem, das die verschiedenen Betreuungsformen eines Kindes beschreibt.",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/KinderbetreuungCS",
   "concept": [
     {

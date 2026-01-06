@@ -5,6 +5,7 @@
   "id": "seu-ef-alter-kind-einreise-vs",
   "title": "SEU_EF_Alter Kind Einreise ValueSet",
   "description": "ValueSet, das das Alter eines Kindes bei Einreise enthält.",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-alter-kind-einreise-vs",
   "expansion": {
     "timestamp": "2024-10-20T11:50:47+00:00",

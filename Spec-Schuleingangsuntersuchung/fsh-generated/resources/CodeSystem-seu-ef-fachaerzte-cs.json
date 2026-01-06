@@ -6,6 +6,7 @@
   "id": "seu-ef-fachaerzte-cs",
   "title": "SEU_EF_Fachärzte CodeSystem",
   "description": "CodeSystem für die Angabe von Fachärzten.",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-fachaerzte-cs",
   "concept": [
     {

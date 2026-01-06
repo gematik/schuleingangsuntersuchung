@@ -6,6 +6,7 @@
   "id": "TagsNachtsSauberCS",
   "title": "TagsNachtsSauberCS",
   "description": "CodeSystem, das beschreibt, wann das Kind tags und nachts sauber (trocken) wurde.",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/TagsNachtsSauberCS",
   "concept": [
     {

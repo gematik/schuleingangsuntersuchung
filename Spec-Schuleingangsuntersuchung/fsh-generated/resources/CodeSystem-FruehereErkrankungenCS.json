@@ -6,6 +6,7 @@
   "id": "FruehereErkrankungenCS",
   "title": "Frühere Erkrankungen",
   "description": "Dieses CodeSystem enthält Codes für frühere Erkrankungen.",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/FruehereErkrankungenCS",
   "concept": [
     {

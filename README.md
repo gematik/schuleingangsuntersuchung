@@ -9,7 +9,7 @@ Um bestimmte Issues den jeweiligen Jourfixes zuzuweisen, bitte das jeweilige Lab
 Project clonen, nach Readme builden, dann zum Beispiel:
 
 ```
-java -cp target/QuestionnaireMarkdownTableRenderer-1.0-SNAPSHOT-jar-with-dependencies.jar questionnairerenderer.QuestionnaireProcessor ../schuleingangsuntersuchung/Spec-Schuleingangsuntersuchung/fsh-generated/resources/Questionnaire-SEU-Elternbefragung-TH.json
+java -cp target/QuestionnaireMarkdownTableRenderer-1.0-SNAPSHOT-jar-with-dependencies.jar questionnairerenderer.QuestionnaireProcessor ../schuleingangsuntersuchung/Spec-Schuleingangsuntersuchung/fsh-generated/resources/Questionnaire-SEU-Sorgeberechtigtenfragebogen-TH.json
 ```
 
 ## Koordinierungs Jourfix

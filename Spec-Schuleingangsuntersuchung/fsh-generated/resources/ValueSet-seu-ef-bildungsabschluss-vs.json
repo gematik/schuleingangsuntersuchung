@@ -5,6 +5,7 @@
   "id": "seu-ef-bildungsabschluss-vs",
   "title": "SEU_EF_Bildungsabschluss ValueSet",
   "description": "ValueSet, das verschiedene Bildungsabschlüsse enthält.",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-bildungsabschluss-vs",
   "expansion": {
     "timestamp": "2024-10-20T11:50:47+00:00",

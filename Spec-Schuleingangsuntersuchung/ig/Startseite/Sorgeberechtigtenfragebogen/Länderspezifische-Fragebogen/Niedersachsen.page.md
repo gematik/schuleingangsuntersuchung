@@ -2,18 +2,18 @@
 
 ### Rendering
 
-<iframe src="https://gematik.github.io/poc-isik-formular/index.html?base=https://fhir.simplifier.net/schuleingangsuntersuchung&id=SorgeberechtigtenfragebogenNI&minimal=true" style="width:100%; height:300px; border:none; display:block;"></iframe>
+<iframe src="https://gematik.github.io/poc-isik-formular/index.html?base=https://fhir.simplifier.net/schuleingangsuntersuchung&id=SEU-Sorgeberechtigtenfragebogen-NI&minimal=true" style="width:100%; height:300px; border:none; display:block;"></iframe>
 
 ### Sorgeberechtigtenfragebogen Schuleingangsuntersuchung Niedersachsen
 
 <tabs>
     <tab title="JSON">
-        {{json:SEU-Elternbefragung-NI}}
+        {{json:SEU-Sorgeberechtigtenfragebogen-NI}}
     </tab>
     <tab title="Table">      
-        {{table:SEU-Elternbefragung-NI}}
+        {{table:SEU-Sorgeberechtigtenfragebogen-NI}}
     </tab>
     <tab title="XML">
-        {{xml:SEU-Elternbefragung-NI}}
+        {{xml:SEU-Sorgeberechtigtenfragebogen-NI}}
     </tab>
 </tabs>

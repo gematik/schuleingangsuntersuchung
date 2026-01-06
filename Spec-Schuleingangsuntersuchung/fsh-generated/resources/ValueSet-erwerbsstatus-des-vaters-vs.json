@@ -5,6 +5,7 @@
   "id": "erwerbsstatus-des-vaters-vs",
   "title": "Erwerbsstatus des Vaters ValueSet",
   "description": "ErwerbsstatusDesVatersVS",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/erwerbsstatus-des-vaters-vs",
   "expansion": {
     "timestamp": "2025-03-04T12:00:00+00:00",

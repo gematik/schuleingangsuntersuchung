@@ -6,6 +6,7 @@
   "id": "SprechenGelerntCS",
   "title": "SprechenGelerntCS",
   "description": "CodeSystem, das beschreibt, wann das Kind sprechen gelernt hat (mind. 2-Wort-Sätze, ca. 50 Wörter).",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/SprechenGelerntCS",
   "concept": [
     {

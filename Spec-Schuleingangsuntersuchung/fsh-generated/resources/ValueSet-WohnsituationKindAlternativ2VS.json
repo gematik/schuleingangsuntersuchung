@@ -5,6 +5,7 @@
   "id": "WohnsituationKindAlternativ2VS",
   "title": "WohnsituationKindAlternativ2VS",
   "description": "ValueSet, das verschiedene Wohnsituationen des Kindes enthält.",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/WohnsituationKindAlternativ2VS",
   "expansion": {
     "timestamp": "2024-10-20T11:50:47+00:00",

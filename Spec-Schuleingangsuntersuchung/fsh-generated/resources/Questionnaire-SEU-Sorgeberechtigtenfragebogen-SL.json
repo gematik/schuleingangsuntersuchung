@@ -9,6 +9,7 @@
       "name": "DeuevAnlage8LaenderkennzeichenVS",
       "title": "DeuevAnlage8LaenderkennzeichenVS",
       "description": "DeuevAnlage8LaenderkennzeichenVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/DeuevAnlage8LaenderkennzeichenVS",
       "expansion": {
         "timestamp": "2024-04-04T09:11:28+00:00",
@@ -1696,6 +1697,7 @@
       "name": "WohnsituationKindAlternativ1VS",
       "title": "WohnsituationKindAlternativ1VS",
       "description": "ValueSet, das verschiedene Wohnsituationen des Kindes enthält.",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/WohnsituationKindAlternativ1VS",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -1764,6 +1766,7 @@
       "name": "ISO6392_LanguageVS",
       "title": "Language ValueSet",
       "description": "ValueSet containing all language codes from the ISO 639-2 CodeSystem.",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/language-valueset",
       "expansion": {
         "timestamp": "2024-09-12T12:00:00+00:00",
@@ -3638,6 +3641,7 @@
       "name": "ChronischeErkrankungenVS",
       "title": "ChronischeErkrankungenVS",
       "description": "ChronischeErkrankungenVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/ChronischeErkrankungenVS",
       "expansion": {
         "timestamp": "2024-04-04T10:10:32+00:00",
@@ -3694,6 +3698,7 @@
       "name": "JaNeinAngemeldetVS",
       "title": "JaNeinAngemeldetVS",
       "description": "JaNeinAngemeldetVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/JaNeinAngemeldetVS",
       "expansion": {
         "timestamp": "2024-04-04T10:25:43+00:00",
@@ -3730,6 +3735,7 @@
       "name": "VersorgungsartVS",
       "title": "Versorgungsart ValueSet",
       "description": "VersorgungsartVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/versorgungsart-vs",
       "expansion": {
         "timestamp": "2024-04-06T12:00:00+00:00",
@@ -3761,6 +3767,7 @@
       "name": "PflegegradVS",
       "title": "PflegegradVS",
       "description": "PflegegradVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/PflegegradVS",
       "expansion": {
         "timestamp": "2024-04-04T11:16:49+00:00",
@@ -3807,6 +3814,7 @@
       "name": "GradDerBehinderungVS",
       "title": "GradDerBehinderungVS",
       "description": "GradDerBehinderungVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/GradDerBehinderungVS",
       "expansion": {
         "timestamp": "2024-04-04T11:16:49+00:00",
@@ -3873,6 +3881,7 @@
       "name": "SEU_EF_OperationenVS",
       "title": "SEU_EF_Operationen ValueSet",
       "description": "ValueSet, das verschiedene durchgeführte Operationen enthält.",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-operationen-vs",
       "expansion": {
         "timestamp": "2024-09-10T12:00:00+00:00",
@@ -3929,6 +3938,7 @@
       "name": "SEU_EF_UnfallVS",
       "title": "SEU_EF_Unfall ValueSet",
       "description": "ValueSet, das verschiedene Unfallumstände enthält.",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-unfall-vs",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -3960,6 +3970,7 @@
       "name": "SEU_EF_AlterKindVS",
       "title": "SEU_EF_Alter Kind ValueSet",
       "description": "ValueSet, das das Alter eines Kindes enthält.",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-alter-kind-vs",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -4041,6 +4052,7 @@
       "name": "SEU_EF_AlterKindEinreiseVS",
       "title": "SEU_EF_Alter Kind Einreise ValueSet",
       "description": "ValueSet, das das Alter eines Kindes bei Einreise enthält.",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-alter-kind-einreise-vs",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -4127,6 +4139,7 @@
       "name": "SEU_EF_SchwangerschaftVS",
       "title": "SEU_EF_Schwangerschaft ValueSet",
       "description": "ValueSet, das den Schwangerschaftsstatus enthält.",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-schwangerschaft-vs",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -4163,6 +4176,7 @@
       "name": "SEU_EF_UnfallortVS",
       "title": "SEU_EF_Unfallort ValueSet",
       "description": "ValueSet, das die verschiedenen Unfallorte enthält.",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-unfallort-vs",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -4214,6 +4228,7 @@
       "name": "SEU_EF_BehandlungstypVS",
       "title": "SEU_EF_Behandlungstyp ValueSet",
       "description": "ValueSet, das verschiedene Behandlungstypen enthält.",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-behandlungstyp-vs",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -4260,6 +4275,7 @@
       "name": "SEU_EF_SpracheVS",
       "title": "SEU_EF_Sprache ValueSet",
       "description": "ValueSet, das verschiedene Sprachprobleme enthält.",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-sprache-vs",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -4296,6 +4312,7 @@
       "name": "SEU_EF_BildungsabschlussVS",
       "title": "SEU_EF_Bildungsabschluss ValueSet",
       "description": "ValueSet, das verschiedene Bildungsabschlüsse enthält.",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-bildungsabschluss-vs",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -4347,6 +4364,7 @@
       "name": "SEU_UB_StaatsangehoerigkeitVS",
       "title": "SEU Staatsangehörigkeit",
       "description": "Diese Codes enthalten Angaben zur Staatsangehörigkeit",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-StaatsangehoerigkeitVS",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",

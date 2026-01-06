@@ -9,6 +9,7 @@
       "name": "SEU_EF_NeinAbgeschlossenLaeuftGeplantVS",
       "title": "SEU_EF_NeinAbgeschlossenLaeuftGeplantVS",
       "description": "SEU_EF_NeinAbgeschlossenLaeuftGeplantVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-EF-NeinAbgeschlossenLaeuftGeplantVS",
       "expansion": {
         "timestamp": "2024-03-27T12:20:50+00:00",
@@ -50,6 +51,7 @@
       "name": "DeuevAnlage8LaenderkennzeichenVS",
       "title": "DeuevAnlage8LaenderkennzeichenVS",
       "description": "DeuevAnlage8LaenderkennzeichenVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/DeuevAnlage8LaenderkennzeichenVS",
       "expansion": {
         "timestamp": "2024-04-04T09:11:28+00:00",
@@ -1737,6 +1739,7 @@
       "name": "GenderDEVS",
       "title": "SEU-AF Geschlecht DE",
       "description": "Diese Codes enthalten die Angabe des Geschlechts",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/GenderDEVS",
       "expansion": {
         "timestamp": "2024-03-30T13:28:00+00:00",
@@ -1778,6 +1781,7 @@
       "name": "AuffaelligkeitVerhaltenVS",
       "title": "AuffaelligkeitVerhaltenVS",
       "description": "AuffaelligkeitVerhaltenVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/AuffaelligkeitVerhaltenVS",
       "expansion": {
         "timestamp": "2024-04-04T10:40:04+00:00",
@@ -1924,6 +1928,7 @@
       "name": "ErkrankungenLetztesJahrVS",
       "title": "ErkrankungenLetztesJahrVS",
       "description": "ErkrankungenLetztesJahrVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/ErkrankungenLetztesJahrVS",
       "expansion": {
         "timestamp": "2024-04-04T11:07:53+00:00",
@@ -2028,6 +2033,7 @@
       "name": "PflegegradVS",
       "title": "PflegegradVS",
       "description": "PflegegradVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/PflegegradVS",
       "expansion": {
         "timestamp": "2024-04-04T11:16:49+00:00",
@@ -2074,6 +2080,7 @@
       "name": "UnfallArtVS",
       "title": "UnfallArtVS",
       "description": "UnfallArtVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/UnfallArtVS",
       "expansion": {
         "timestamp": "2024-04-04T11:38:03+00:00",
@@ -2140,6 +2147,7 @@
       "name": "ErwerbsstatusVS",
       "title": "Erwerbsstatus ValueSet",
       "description": "ErwerbsstatusVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/erwerbsstatus-vs",
       "expansion": {
         "timestamp": "2024-04-06T12:00:00+00:00",
@@ -2190,6 +2198,7 @@
       "name": "AtopischeErkrankungenVS",
       "title": "ValueSet für atopische/allergische Erkrankungen",
       "description": "Dieses ValueSet beinhaltet eine Auswahl von Codes für die Klassifikation von atopischen/allergischen Erkrankungen, definiert im zugehörigen CodeSystem.",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/atopische-erkrankungen-vs",
       "expansion": {
         "timestamp": "2024-04-12T15:47:43+00:00",
@@ -2251,6 +2260,7 @@
       "name": "ErwerbsstatusInclSonstigesVS",
       "title": "Erwerbsstatus ValueSet incl. Sonstiges",
       "description": "ErwerbsstatusInclSonstigesVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/erwerbsstatus-incl-sonstiges-vs",
       "expansion": {
         "timestamp": "2025-03-04T12:00:00+00:00",
@@ -2310,6 +2320,7 @@
       "name": "JaNeinWartelisteVS",
       "title": "JaNeinWartelisteVS",
       "description": "JaNeinWartelisteVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/ja-nein-warteliste",
       "expansion": {
         "timestamp": "2024-06-26T15:47:43+00:00",
@@ -2365,6 +2376,7 @@
       "name": "SEU_EF_OperationenVS",
       "title": "SEU_EF_Operationen ValueSet",
       "description": "ValueSet, das verschiedene durchgeführte Operationen enthält.",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-operationen-vs",
       "expansion": {
         "timestamp": "2024-09-10T12:00:00+00:00",
@@ -2421,6 +2433,7 @@
       "name": "SEU_EF_BehandlungstypVS",
       "title": "SEU_EF_Behandlungstyp ValueSet",
       "description": "ValueSet, das verschiedene Behandlungstypen enthält.",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-behandlungstyp-vs",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",

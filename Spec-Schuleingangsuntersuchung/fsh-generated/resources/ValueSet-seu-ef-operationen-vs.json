@@ -5,6 +5,7 @@
   "id": "seu-ef-operationen-vs",
   "title": "SEU_EF_Operationen ValueSet",
   "description": "ValueSet, das verschiedene durchgeführte Operationen enthält.",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-operationen-vs",
   "expansion": {
     "timestamp": "2024-09-10T12:00:00+00:00",

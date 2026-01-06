@@ -6,6 +6,7 @@
   "id": "seu-ef-operationen-cs",
   "title": "SEU_EF_Operationen CodeSystem",
   "description": "CodeSystem für die Angabe von durchgeführten Operationen.",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-operationen-cs",
   "concept": [
     {

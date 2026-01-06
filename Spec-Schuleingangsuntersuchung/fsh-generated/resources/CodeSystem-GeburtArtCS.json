@@ -6,6 +6,7 @@
   "id": "GeburtArtCS",
   "title": "GeburtArtCS",
   "description": "CodeSystem, das die Arten der Geburt enthält.",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/GeburtArtCS",
   "concept": [
     {

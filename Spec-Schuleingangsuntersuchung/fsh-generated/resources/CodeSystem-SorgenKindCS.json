@@ -6,6 +6,7 @@
   "id": "SorgenKindCS",
   "title": "SorgenKindCS",
   "description": "SorgenKindCS",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/SorgenKindCS",
   "concept": [
     {

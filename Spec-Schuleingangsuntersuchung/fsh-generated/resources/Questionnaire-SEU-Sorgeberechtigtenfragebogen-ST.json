@@ -9,6 +9,7 @@
       "name": "SEU_EF_NeinAbgeschlossenLaeuftGeplantVS",
       "title": "SEU_EF_NeinAbgeschlossenLaeuftGeplantVS",
       "description": "SEU_EF_NeinAbgeschlossenLaeuftGeplantVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-EF-NeinAbgeschlossenLaeuftGeplantVS",
       "expansion": {
         "timestamp": "2024-03-27T12:20:50+00:00",
@@ -50,6 +51,7 @@
       "name": "DeuevAnlage8LaenderkennzeichenVS",
       "title": "DeuevAnlage8LaenderkennzeichenVS",
       "description": "DeuevAnlage8LaenderkennzeichenVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/DeuevAnlage8LaenderkennzeichenVS",
       "expansion": {
         "timestamp": "2024-04-04T09:11:28+00:00",
@@ -1737,6 +1739,7 @@
       "name": "WohnsituationKindAlternativ3VS",
       "title": "WohnsituationKindAlternativ3VS",
       "description": "ValueSet, das verschiedene Wohnsituationen des Kindes enthält.",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/WohnsituationKindAlternativ3VS",
       "expansion": {
         "timestamp": "2024-04-04T09:24:55+00:00",
@@ -1823,6 +1826,7 @@
       "name": "GenderDEVS",
       "title": "SEU-AF Geschlecht DE",
       "description": "Diese Codes enthalten die Angabe des Geschlechts",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/GenderDEVS",
       "expansion": {
         "timestamp": "2024-03-30T13:28:00+00:00",
@@ -1864,6 +1868,7 @@
       "name": "ErwerbsstatusAlternativ1VS",
       "title": "ErwerbsstatusAlternativ1VS",
       "description": "Erwerbsstatus des Elternteils",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/ErwerbsstatusAlternativ1VS",
       "expansion": {
         "contains": [
@@ -1913,6 +1918,7 @@
       "name": "TagsNachtsSauberVS",
       "title": "Tags und nachts sauber Value Set",
       "description": "ValueSet, das beschreibt, wann das Kind tags und nachts sauber (trocken) wurde.",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/TagsNachtsSauberVS",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -1954,6 +1960,7 @@
       "name": "SEU_EF_BildungsabschlussBWVS",
       "title": "SEU_EF_BildungsabschlussBWVS ValueSet",
       "description": "ValueSet, das verschiedene Bildungsabschlüsse enthält.",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-bildungsabschluss-bwvs",
       "expansion": {
         "timestamp": "2024-12-09T10:35:47+00:00",
@@ -1990,6 +1997,7 @@
       "name": "GeburtsmodusVS",
       "title": "Geburtsmodus",
       "description": "ValueSet, das den Modus der Geburt enthält.",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/Geburtsmodus",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -2067,6 +2075,7 @@
       "name": "FreiesLaufenGelerntVS",
       "title": "Freies Laufen gelernt Value Set",
       "description": "ValueSet, dass das Alter beschreibt, ab dem das Kind frei laufen kann.",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/FreiesLaufenGelerntVS",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -2108,6 +2117,7 @@
       "name": "SprechenGelerntVS",
       "title": "Sprechen gelernt Value Set",
       "description": "ValueSet, das beschreibt, wann das Kind sprechen gelernt hat (mind. 2-Wort-Sätze, ca. 50 Wörter).",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SprechenGelerntVS",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -2149,6 +2159,7 @@
       "name": "KinderbetreuungVS",
       "title": "KinderbetreuungVS",
       "description": "ValueSet, das die verschiedenen Betreuungsformen eines Kindes beschreibt.",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/KinderbetreuungVS",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -2226,6 +2237,7 @@
       "name": "KitaEintrittsalterVS",
       "title": "Alter bei Kita-Eintritt Value Set",
       "description": "ValueSet, das das Alter des Kindes beim Eintritt in die Kita beschreibt.",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/KitaEintrittsalterVS",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -2294,6 +2306,7 @@
       "name": "RauchortVS",
       "title": "Ort des Rauchens Value Set",
       "description": "ValueSet, das den Ort des Rauchens beschreibt.",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/RauchortVS",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -2335,6 +2348,7 @@
       "name": "AErztlichFestgestellteKrankheitenVS",
       "title": "Ärztlich festgestellte Krankheiten ",
       "description": "Dieses ValueSet beinhaltet eine Auswahl von Codes für die Klassifikation von Ärztlich festgestellten Krankheiten.",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/AErztlichFestgestellteKrankheitenVS",
       "expansion": {
         "contains": [
@@ -2384,6 +2398,7 @@
       "name": "FruehereErkrankungenVS",
       "title": "Frühere Erkrankungen",
       "description": "Dieses ValueSet beinhaltet eine Auswahl von Codes für die Klassifikation früherer Erkrankungen.",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/FruehereErkrankungenVS",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -2515,6 +2530,7 @@
       "name": "DerzeitigeErkrankungenVS",
       "title": "Derzeitige Erkrankungen ValueSet",
       "description": "ValueSet für derzeitige Erkrankungen",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/DerzeitigeErkrankungenVS",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -2601,6 +2617,7 @@
       "name": "AtopischeErkrankungenVS",
       "title": "ValueSet für atopische/allergische Erkrankungen",
       "description": "Dieses ValueSet beinhaltet eine Auswahl von Codes für die Klassifikation von atopischen/allergischen Erkrankungen, definiert im zugehörigen CodeSystem.",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/atopische-erkrankungen-vs",
       "expansion": {
         "timestamp": "2024-04-12T15:47:43+00:00",
@@ -2662,6 +2679,7 @@
       "name": "AllgemeineBeschwerdenVS",
       "title": "ValueSet für allgemeine Beschwerden",
       "description": "Dieses ValueSet beinhaltet eine Auswahl von Codes für die Klassifikation von allgemeinen Beschwerden, definiert im zugehörigen CodeSystem.",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/allgemeine-beschwerden-vs",
       "expansion": {
         "timestamp": "2024-04-12T15:47:43+00:00",
@@ -2708,6 +2726,7 @@
       "name": "KrankenhausaufenthaltGrundVS",
       "title": "KrankenhausaufenthaltGrundVS",
       "description": "ValueSet, das den Grund des Krankenhausaufenthaltes beschreibt. Es enthält die Kategorien: akute Erkrankung, chronische Krankheit, Unfall, stationäre Operation(en), und sonstiges. Dieses CodeSystem kann verwendet werden, um den Grund eines Krankenhausaufenthaltes zu kategorisieren.",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/KrankenhausaufenthaltGrundVS",
       "expansion": {
         "contains": [

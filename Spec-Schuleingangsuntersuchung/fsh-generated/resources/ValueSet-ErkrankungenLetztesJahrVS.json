@@ -5,6 +5,7 @@
   "id": "ErkrankungenLetztesJahrVS",
   "title": "ErkrankungenLetztesJahrVS",
   "description": "ErkrankungenLetztesJahrVS",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/ErkrankungenLetztesJahrVS",
   "expansion": {
     "timestamp": "2024-04-04T11:07:53+00:00",

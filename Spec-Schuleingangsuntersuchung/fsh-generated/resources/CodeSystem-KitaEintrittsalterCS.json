@@ -6,6 +6,7 @@
   "id": "KitaEintrittsalterCS",
   "title": "KitaEintrittsalterCS",
   "description": "CodeSystem, das das Alter des Kindes beim Eintritt in die Kita beschreibt.",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/KitaEintrittsalterCS",
   "concept": [
     {

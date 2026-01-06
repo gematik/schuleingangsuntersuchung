@@ -5,6 +5,7 @@
   "id": "seu-ef-unfallort-vs",
   "title": "SEU_EF_Unfallort ValueSet",
   "description": "ValueSet, das die verschiedenen Unfallorte enthält.",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-unfallort-vs",
   "expansion": {
     "timestamp": "2024-10-20T11:50:47+00:00",

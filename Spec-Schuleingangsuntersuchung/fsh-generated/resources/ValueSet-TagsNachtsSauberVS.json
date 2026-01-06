@@ -5,6 +5,7 @@
   "id": "TagsNachtsSauberVS",
   "title": "Tags und nachts sauber Value Set",
   "description": "ValueSet, das beschreibt, wann das Kind tags und nachts sauber (trocken) wurde.",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/TagsNachtsSauberVS",
   "expansion": {
     "timestamp": "2024-10-20T11:50:47+00:00",

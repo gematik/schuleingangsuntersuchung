@@ -5,6 +5,7 @@
   "id": "SEU-UB-KontaktDeutscheSpracheVS",
   "title": "SEU Kontakt mit der deutschen Sprache",
   "description": "Diese Codes enthalten Angaben über den Kontakt zur deutschen Sprache",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-KontaktDeutscheSpracheVS",
   "expansion": {
     "timestamp": "2024-10-20T11:50:47+00:00",

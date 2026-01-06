@@ -9,6 +9,7 @@
       "name": "DeuevAnlage8LaenderkennzeichenVS",
       "title": "DeuevAnlage8LaenderkennzeichenVS",
       "description": "DeuevAnlage8LaenderkennzeichenVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/DeuevAnlage8LaenderkennzeichenVS",
       "expansion": {
         "timestamp": "2024-04-04T09:11:28+00:00",
@@ -1696,6 +1697,7 @@
       "name": "GenderDEVS",
       "title": "SEU-AF Geschlecht DE",
       "description": "Diese Codes enthalten die Angabe des Geschlechts",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/GenderDEVS",
       "expansion": {
         "timestamp": "2024-03-30T13:28:00+00:00",
@@ -1737,6 +1739,7 @@
       "name": "ChronischeErkrankungenVS",
       "title": "ChronischeErkrankungenVS",
       "description": "ChronischeErkrankungenVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/ChronischeErkrankungenVS",
       "expansion": {
         "timestamp": "2024-04-04T10:10:32+00:00",
@@ -1793,6 +1796,7 @@
       "name": "UnfallOrtVS",
       "title": "UnfallOrtVS",
       "description": "UnfallOrtVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/UnfallOrtVS",
       "expansion": {
         "timestamp": "2024-04-04T11:34:46+00:00",
@@ -1839,6 +1843,7 @@
       "name": "SEU_UB_StaatsangehoerigkeitVS",
       "title": "SEU Staatsangehörigkeit",
       "description": "Diese Codes enthalten Angaben zur Staatsangehörigkeit",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-StaatsangehoerigkeitVS",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -1880,6 +1885,7 @@
       "name": "BezirkeHHVS",
       "title": "BezirkeHHVS",
       "description": "BezirkeHHVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/BezirkeHHVS",
       "expansion": {
         "timestamp": "2025-02-21T11:50:47+00:00",
@@ -1936,6 +1942,7 @@
       "name": "PersonensorgeberechtigterBeziehungVS",
       "title": "PersonensorgeberechtigterBeziehungVS",
       "description": "PersonensorgeberechtigterBeziehungVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/PersonensorgeberechtigterBeziehungVS",
       "expansion": {
         "timestamp": "2025-02-21T11:50:47+00:00",
@@ -2017,6 +2024,7 @@
       "name": "PersonensorgeberechtigterZusammenlebendVS",
       "title": "PersonensorgeberechtigterZusammenlebendVS",
       "description": "PersonensorgeberechtigterZusammenlebendVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/PersonensorgeberechtigterZusammenlebendVS",
       "expansion": {
         "timestamp": "2025-02-21T11:50:47+00:00",

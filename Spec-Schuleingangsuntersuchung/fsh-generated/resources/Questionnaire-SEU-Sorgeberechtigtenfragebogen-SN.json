@@ -9,6 +9,7 @@
       "name": "DeuevAnlage8LaenderkennzeichenVS",
       "title": "DeuevAnlage8LaenderkennzeichenVS",
       "description": "DeuevAnlage8LaenderkennzeichenVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/DeuevAnlage8LaenderkennzeichenVS",
       "expansion": {
         "timestamp": "2024-04-04T09:11:28+00:00",
@@ -1696,6 +1697,7 @@
       "name": "SEU_EF_NeinAbgeschlossenLaeuftGeplantVS",
       "title": "SEU_EF_NeinAbgeschlossenLaeuftGeplantVS",
       "description": "SEU_EF_NeinAbgeschlossenLaeuftGeplantVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-EF-NeinAbgeschlossenLaeuftGeplantVS",
       "expansion": {
         "timestamp": "2024-03-27T12:20:50+00:00",
@@ -1737,6 +1739,7 @@
       "name": "SEU_EF_BildungsabschlussVS",
       "title": "SEU_EF_Bildungsabschluss ValueSet",
       "description": "ValueSet, das verschiedene Bildungsabschlüsse enthält.",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-bildungsabschluss-vs",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -1788,6 +1791,7 @@
       "name": "ErwerbsstatusVS",
       "title": "Erwerbsstatus ValueSet",
       "description": "ErwerbsstatusVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/erwerbsstatus-vs",
       "expansion": {
         "timestamp": "2024-04-06T12:00:00+00:00",
@@ -1838,6 +1842,7 @@
       "name": "RechtsLinksHaenderVS",
       "title": "RechtsLinksHaenderVS",
       "description": "RechtsLinksHaenderVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/RechtsLinksHaenderVS",
       "expansion": {
         "timestamp": "2024-04-04T10:35:15+00:00",
@@ -1879,6 +1884,7 @@
       "name": "LinksRechtsBeidseitsKeineAngabeVS",
       "title": "LinksRechtsBeidseitsKeineAngabeVS",
       "description": "LinksRechtsBeidseitsKeineAngabeCS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/LinksRechtsBeidseitsKeineAngabeVS",
       "expansion": {
         "timestamp": "2024-04-04T10:44:31+00:00",
@@ -1920,6 +1926,7 @@
       "name": "StoffwechselstoerungVS",
       "title": "StoffwechselstoerungVS",
       "description": "StoffwechselstoerungVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/StoffwechselstoerungVS",
       "expansion": {
         "timestamp": "2024-04-04T10:51:23+00:00",
@@ -1976,6 +1983,7 @@
       "name": "ErkrankungVS",
       "title": "ErkrankungVS",
       "description": "ErkrankungVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/ErkrankungVS",
       "expansion": {
         "timestamp": "2024-04-04T10:55:53+00:00",
@@ -2092,6 +2100,7 @@
       "name": "InfektionsKrankheitVS",
       "title": "InfektionsKrankheitVS",
       "description": "InfektionsKrankheitVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/InfektionsKrankheitVS",
       "expansion": {
         "timestamp": "2024-04-04T11:02:42+00:00",
@@ -2178,6 +2187,7 @@
       "name": "UnfallOrtVS",
       "title": "UnfallOrtVS",
       "description": "UnfallOrtVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/UnfallOrtVS",
       "expansion": {
         "timestamp": "2024-04-04T11:34:46+00:00",
@@ -2224,6 +2234,7 @@
       "name": "UnfallArtVS",
       "title": "UnfallArtVS",
       "description": "UnfallArtVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/UnfallArtVS",
       "expansion": {
         "timestamp": "2024-04-04T11:38:03+00:00",
@@ -2290,6 +2301,7 @@
       "name": "VersorgungsartVS",
       "title": "Versorgungsart ValueSet",
       "description": "VersorgungsartVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/versorgungsart-vs",
       "expansion": {
         "timestamp": "2024-04-06T12:00:00+00:00",
@@ -2321,6 +2333,7 @@
       "name": "ChronischeKrankheitenVS",
       "title": "ValueSet für chronische Krankheiten",
       "description": "Dieses ValueSet beinhaltet eine Auswahl von Codes für häufige chronische Krankheiten, definiert im zugehörigen CodeSystem.",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/chronische-krankheiten-vs",
       "expansion": {
         "timestamp": "2024-04-12T15:47:43+00:00",
@@ -2411,6 +2424,7 @@
       "name": "AtopischeErkrankungenVS",
       "title": "ValueSet für atopische/allergische Erkrankungen",
       "description": "Dieses ValueSet beinhaltet eine Auswahl von Codes für die Klassifikation von atopischen/allergischen Erkrankungen, definiert im zugehörigen CodeSystem.",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/atopische-erkrankungen-vs",
       "expansion": {
         "timestamp": "2024-04-12T15:47:43+00:00",
@@ -2472,6 +2486,7 @@
       "name": "JaNeinWartelisteVS",
       "title": "JaNeinWartelisteVS",
       "description": "JaNeinWartelisteVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/ja-nein-warteliste",
       "expansion": {
         "timestamp": "2024-06-26T15:47:43+00:00",

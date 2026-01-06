@@ -5,6 +5,7 @@
   "id": "ErwerbsstatusAlternativ1VS",
   "title": "ErwerbsstatusAlternativ1VS",
   "description": "Erwerbsstatus des Elternteils",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/ErwerbsstatusAlternativ1VS",
   "expansion": {
     "contains": [

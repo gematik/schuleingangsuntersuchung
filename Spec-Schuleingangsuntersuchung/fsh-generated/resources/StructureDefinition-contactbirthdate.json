@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "contactbirthdate",
   "url": "https://www.oegd.de/fhir/seu/StructureDefinition/contactbirthdate",
+  "version": "0.1.0",
   "name": "ContactBirthDate",
   "title": "Birth date of a contact as Date",
   "status": "draft",

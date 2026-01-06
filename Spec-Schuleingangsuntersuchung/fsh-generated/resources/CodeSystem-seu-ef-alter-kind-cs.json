@@ -6,6 +6,7 @@
   "id": "seu-ef-alter-kind-cs",
   "title": "SEU_EF_Alter Kind CodeSystem",
   "description": "CodeSystem für die Angabe des Alters eines Kindes.",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-alter-kind-cs",
   "concept": [
     {

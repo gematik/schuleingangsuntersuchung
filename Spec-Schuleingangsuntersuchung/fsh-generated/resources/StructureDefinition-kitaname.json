@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "kitaname",
   "url": "https://www.oegd.de/fhir/seu/StructureDefinition/kitaname",
+  "version": "0.1.0",
   "name": "KiTaName",
   "title": "KiTa Name as String",
   "status": "draft",

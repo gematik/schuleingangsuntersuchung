@@ -5,6 +5,7 @@
   "id": "SEU-UB-AuswaehlbareElternspracheVS",
   "title": "SEU Auswählbare Elternsprache",
   "description": "Dieses ValueSet enthält die auswählbaren Elternsprachen. Als CodeSystem wird 'urn:ietf:bcp:47' als Basis genommen.",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-AuswaehlbareElternspracheVS",
   "expansion": {
     "timestamp": "2024-09-12T12:00:00+00:00",

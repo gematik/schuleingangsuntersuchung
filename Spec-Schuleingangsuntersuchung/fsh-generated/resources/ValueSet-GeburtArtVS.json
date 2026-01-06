@@ -5,6 +5,7 @@
   "id": "GeburtArtVS",
   "title": "Art der Geburt Value Set",
   "description": "ValueSet, das die Arten der Geburt enthält.",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/GeburtArtVS",
   "expansion": {
     "timestamp": "2024-10-20T11:50:47+00:00",

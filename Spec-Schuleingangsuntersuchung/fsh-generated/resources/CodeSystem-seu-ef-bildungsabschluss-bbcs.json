@@ -6,6 +6,7 @@
   "id": "seu-ef-bildungsabschluss-bbcs",
   "title": "SEU_EF_BildungsabschlussBBCS CodeSystem",
   "description": "CodeSystem für die Angabe des Bildungsabschlusses.",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-bildungsabschluss-bbcs",
   "concept": [
     {

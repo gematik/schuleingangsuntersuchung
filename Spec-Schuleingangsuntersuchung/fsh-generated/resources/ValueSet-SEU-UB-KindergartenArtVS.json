@@ -5,6 +5,7 @@
   "id": "SEU-UB-KindergartenArtVS",
   "title": "SEU Art des Kindergarten",
   "description": "Diese Codes enthalten Abgaben über die Art des Kindergarten",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-KindergartenArtVS",
   "expansion": {
     "timestamp": "2024-10-20T11:50:47+00:00",

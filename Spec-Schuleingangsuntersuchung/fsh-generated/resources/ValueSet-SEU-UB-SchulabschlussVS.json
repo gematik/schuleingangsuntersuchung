@@ -5,6 +5,7 @@
   "id": "SEU-UB-SchulabschlussVS",
   "title": "SEU Schulabschluss",
   "description": "Diese Codes enthalten Angaben zum Schulabschluss",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-SchulabschlussVS",
   "expansion": {
     "timestamp": "2024-10-20T11:50:47+00:00",

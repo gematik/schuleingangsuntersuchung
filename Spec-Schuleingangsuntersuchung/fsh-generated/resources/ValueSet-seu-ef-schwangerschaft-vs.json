@@ -5,6 +5,7 @@
   "id": "seu-ef-schwangerschaft-vs",
   "title": "SEU_EF_Schwangerschaft ValueSet",
   "description": "ValueSet, das den Schwangerschaftsstatus enthält.",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-schwangerschaft-vs",
   "expansion": {
     "timestamp": "2024-10-20T11:50:47+00:00",

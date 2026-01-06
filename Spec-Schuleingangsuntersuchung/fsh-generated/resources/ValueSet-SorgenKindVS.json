@@ -5,6 +5,7 @@
   "id": "SorgenKindVS",
   "title": "SorgenKindVS",
   "description": "SorgenKindVS",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/SorgenKindVS",
   "expansion": {
     "timestamp": "2024-03-27T12:20:50+00:00",

@@ -5,6 +5,7 @@
   "name": "SEU_UB_StaatsangehoerigkeitCS",
   "id": "SEU-UB-StaatsangehoerigkeitCS",
   "title": "SEU Staatsangehörigkeit",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-StaatsangehoerigkeitCS",
   "concept": [
     {

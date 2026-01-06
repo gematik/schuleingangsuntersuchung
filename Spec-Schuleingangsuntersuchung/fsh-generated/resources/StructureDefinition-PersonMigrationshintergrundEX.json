@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "PersonMigrationshintergrundEX",
   "url": "https://www.oegd.de/fhir/seu/StructureDefinition/PersonMigrationshintergrundEX",
+  "version": "0.1.0",
   "name": "PersonMigrationshintergrundEX",
   "title": "Migrationshintergrund",
   "status": "draft",

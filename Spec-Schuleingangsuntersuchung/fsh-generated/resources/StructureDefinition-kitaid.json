@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "kitaid",
   "url": "https://www.oegd.de/fhir/seu/StructureDefinition/kitaid",
+  "version": "0.1.0",
   "name": "KiTaID",
   "title": "KiTa ID as String",
   "status": "draft",

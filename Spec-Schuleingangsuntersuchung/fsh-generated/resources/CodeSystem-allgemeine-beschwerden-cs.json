@@ -6,6 +6,7 @@
   "id": "allgemeine-beschwerden-cs",
   "title": "CodeSystem für allgemeine Beschwerden",
   "description": "Dieses CodeSystem klassifiziert verschiedene Arten von allgemeinen Beschwerden: Kopfschmerzen, Bauchschmerzen, Muskel-, Gelenk- oder Rückenschmerzen, Schlafstörungen und Sonstige.",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/allgemeine-beschwerden-cs",
   "concept": [
     {

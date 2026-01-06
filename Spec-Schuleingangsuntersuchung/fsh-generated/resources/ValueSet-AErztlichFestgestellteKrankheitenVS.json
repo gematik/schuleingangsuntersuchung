@@ -5,6 +5,7 @@
   "id": "AErztlichFestgestellteKrankheitenVS",
   "title": "Ärztlich festgestellte Krankheiten ",
   "description": "Dieses ValueSet beinhaltet eine Auswahl von Codes für die Klassifikation von Ärztlich festgestellten Krankheiten.",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/AErztlichFestgestellteKrankheitenVS",
   "expansion": {
     "contains": [

@@ -5,6 +5,7 @@
   "id": "SEU-UB-AntwortKindergartenBesuchVS",
   "title": "SEU Antwort Kindergartenbesuch",
   "description": "Diese Codes enthalten Antwortmöglichkeiten zur Länge des Kindergartenbesuch",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-AntwortKindergartenBesuchVS",
   "expansion": {
     "timestamp": "2024-10-20T11:50:47+00:00",

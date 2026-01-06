@@ -6,6 +6,7 @@
   "id": "SEUEFMedienkonsumBerlinCS",
   "title": "SEU_EF_Medienkonsum Berlin CodeSystem",
   "description": "CodeSystem für die Angabe des Medienkonsums in Stunden.",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEUEFMedienkonsumBerlinCS",
   "concept": [
     {

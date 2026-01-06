@@ -6,6 +6,7 @@
   "id": "WohnsituationKindCS",
   "title": "Wohnsituation des Kindes",
   "description": "CodeSystem für die Angabe der Wohnsituation des Kindes bzw. der Familiensituation.",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
   "concept": [
     {

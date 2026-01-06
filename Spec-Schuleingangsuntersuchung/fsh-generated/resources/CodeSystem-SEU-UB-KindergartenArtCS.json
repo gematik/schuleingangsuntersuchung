@@ -5,6 +5,7 @@
   "name": "SEU_UB_KindergartenArtCS",
   "id": "SEU-UB-KindergartenArtCS",
   "title": "SEU Art des Kindergarten",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-KindergartenArtCS",
   "concept": [
     {

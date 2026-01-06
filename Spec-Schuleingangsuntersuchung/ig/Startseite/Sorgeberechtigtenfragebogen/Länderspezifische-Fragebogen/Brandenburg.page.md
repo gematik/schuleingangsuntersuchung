@@ -2,18 +2,18 @@
 
 ### Rendering
 
-<iframe src="https://gematik.github.io/poc-isik-formular/index.html?base=https://fhir.simplifier.net/schuleingangsuntersuchung&id=SorgeberechtigtenfragebogenBB&minimal=true" style="width:100%; height:300px; border:none; display:block;"></iframe>
+<iframe src="https://gematik.github.io/poc-isik-formular/index.html?base=https://fhir.simplifier.net/schuleingangsuntersuchung&id=SEU-Sorgeberechtigtenfragebogen-BB&minimal=true" style="width:100%; height:300px; border:none; display:block;"></iframe>
 
 ### Sorgeberechtigtenfragebogen Schuleingangsuntersuchung Brandenburg
 
 <tabs>
     <tab title="JSON">
-        {{json:SEU-Elternbefragung-BB}}
+        {{json:SEU-Sorgeberechtigtenfragebogen-BB}}
     </tab>
     <tab title="Table">      
-        {{table:SEU-Elternbefragung-BB}}
+        {{table:SEU-Sorgeberechtigtenfragebogen-BB}}
     </tab>
     <tab title="XML">
-        {{xml:SEU-Elternbefragung-BB}}
+        {{xml:SEU-Sorgeberechtigtenfragebogen-BB}}
     </tab>
 </tabs>

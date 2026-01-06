@@ -5,6 +5,7 @@
   "id": "ChronischeErkrankungenVS",
   "title": "ChronischeErkrankungenVS",
   "description": "ChronischeErkrankungenVS",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/ChronischeErkrankungenVS",
   "expansion": {
     "timestamp": "2024-04-04T10:10:32+00:00",

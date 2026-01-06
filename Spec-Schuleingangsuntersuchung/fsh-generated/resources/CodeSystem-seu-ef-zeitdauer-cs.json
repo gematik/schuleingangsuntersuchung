@@ -6,6 +6,7 @@
   "id": "seu-ef-zeitdauer-cs",
   "title": "SEU_EF_Zeitdauer CodeSystem",
   "description": "CodeSystem für die Angabe von Zeitdauern.",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-zeitdauer-cs",
   "concept": [
     {

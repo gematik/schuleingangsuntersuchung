@@ -5,6 +5,7 @@
   "id": "seu-ef-fachaerzte-vs",
   "title": "SEU_EF_Fachärzte ValueSet",
   "description": "ValueSet, das verschiedene Fachärzte enthält.",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-fachaerzte-vs",
   "expansion": {
     "timestamp": "2024-10-20T11:50:47+00:00",

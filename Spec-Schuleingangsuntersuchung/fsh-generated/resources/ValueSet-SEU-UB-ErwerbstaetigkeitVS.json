@@ -5,6 +5,7 @@
   "id": "SEU-UB-ErwerbstaetigkeitVS",
   "title": "SEU Erwerbstätigkeit",
   "description": "Diese Codes enthalten Angaben zur Erwerbstätigkeit",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-ErwerbstaetigkeitVS",
   "expansion": {
     "timestamp": "2024-10-20T11:50:47+00:00",

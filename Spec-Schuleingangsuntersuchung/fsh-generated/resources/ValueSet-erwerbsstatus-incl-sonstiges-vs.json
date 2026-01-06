@@ -5,6 +5,7 @@
   "id": "erwerbsstatus-incl-sonstiges-vs",
   "title": "Erwerbsstatus ValueSet incl. Sonstiges",
   "description": "ErwerbsstatusInclSonstigesVS",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/erwerbsstatus-incl-sonstiges-vs",
   "expansion": {
     "timestamp": "2025-03-04T12:00:00+00:00",

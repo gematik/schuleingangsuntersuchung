@@ -6,6 +6,7 @@
   "id": "seu-ef-dauer-he-cs",
   "title": "SEU_EF_Dauer CodeSystem",
   "description": "CodeSystem für die Angabe der Dauer.",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-dauer-he-cs",
   "concept": [
     {

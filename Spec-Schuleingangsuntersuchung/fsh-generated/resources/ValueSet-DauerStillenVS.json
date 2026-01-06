@@ -5,6 +5,7 @@
   "id": "DauerStillenVS",
   "title": "Dauer des Stillens ValueSet",
   "description": "ValueSet, das verschiedene Dauern des Stillens enthält.",
+  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/DauerStillenVS",
   "expansion": {
     "timestamp": "2024-10-20T11:50:47+00:00",

@@ -2,6 +2,7 @@
   "resourceType": "StructureDefinition",
   "id": "PersonUebermittlungsssperreReligionEX",
   "url": "https://www.oegd.de/fhir/seu/StructureDefinition/PersonUebermittlungsssperreReligionEX",
+  "version": "0.1.0",
   "name": "PersonUebermittlungsssperreReligionEX",
   "title": "Übermittlungssperre Religion",
   "status": "draft",

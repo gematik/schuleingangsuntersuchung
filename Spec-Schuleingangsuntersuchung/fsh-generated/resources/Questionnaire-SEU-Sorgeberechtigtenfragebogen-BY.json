@@ -9,6 +9,7 @@
       "name": "SEU_EF_NeinAbgeschlossenLaeuftGeplantVS",
       "title": "SEU_EF_NeinAbgeschlossenLaeuftGeplantVS",
       "description": "SEU_EF_NeinAbgeschlossenLaeuftGeplantVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-EF-NeinAbgeschlossenLaeuftGeplantVS",
       "expansion": {
         "timestamp": "2024-03-27T12:20:50+00:00",
@@ -50,6 +51,7 @@
       "name": "DeuevAnlage8LaenderkennzeichenVS",
       "title": "DeuevAnlage8LaenderkennzeichenVS",
       "description": "DeuevAnlage8LaenderkennzeichenVS",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/DeuevAnlage8LaenderkennzeichenVS",
       "expansion": {
         "timestamp": "2024-04-04T09:11:28+00:00",
@@ -1737,6 +1739,7 @@
       "name": "SEU_UB_TeilnahmeVorkursDeutschVS",
       "title": "SEU Teilnahme Vorkurs Deutsch",
       "description": "Diese Codes enthalten die Angabe über eine Teilnahme am Vorkurs Deutsch",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-TeilnahmeVorkursDeutschVS",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -1778,6 +1781,7 @@
       "name": "SEU_UB_AuswaehlbareElternspracheVS",
       "title": "SEU Auswählbare Elternsprache",
       "description": "Dieses ValueSet enthält die auswählbaren Elternsprachen. Als CodeSystem wird 'urn:ietf:bcp:47' als Basis genommen.",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-AuswaehlbareElternspracheVS",
       "expansion": {
         "timestamp": "2024-09-12T12:00:00+00:00",
@@ -3647,6 +3651,7 @@
       "name": "SEU_UB_KindergartenArtVS",
       "title": "SEU Art des Kindergarten",
       "description": "Diese Codes enthalten Abgaben über die Art des Kindergarten",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-KindergartenArtVS",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -3688,6 +3693,7 @@
       "name": "SEU_UB_GesprocheneSpracheVS",
       "title": "SEU Gesprochene Sprache",
       "description": "Diese Codes enthalten Angaben zur gesprochenen Sprache",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-GesprocheneSpracheVS",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -3729,6 +3735,7 @@
       "name": "SEU_UB_AntwortAugenarztVS",
       "title": "SEU Antwort Augenarzt",
       "description": "Diese Codes enthalten die Antworten auf Fragen zu einer Augenarztuntersuchung",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-AntwortAugenarztVS",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -3795,6 +3802,7 @@
       "name": "SEU_UB_JaNeinKeineAngabeVS",
       "title": "SEU Ja-Nein-KeineAngabe",
       "description": "Diese Codes können Boolean erweitern um 'Keine Angabe'",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-JaNeinKeineAngabeVS",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -3845,6 +3853,7 @@
       "name": "SEU_UB_ErwerbstaetigkeitVS",
       "title": "SEU Erwerbstätigkeit",
       "description": "Diese Codes enthalten Angaben zur Erwerbstätigkeit",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-ErwerbstaetigkeitVS",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -3906,6 +3915,7 @@
       "name": "SEU_UB_SchulabschlussVS",
       "title": "SEU Schulabschluss",
       "description": "Diese Codes enthalten Angaben zum Schulabschluss",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-SchulabschlussVS",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -3957,6 +3967,7 @@
       "name": "SEU_UB_StaatsangehoerigkeitVS",
       "title": "SEU Staatsangehörigkeit",
       "description": "Diese Codes enthalten Angaben zur Staatsangehörigkeit",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-StaatsangehoerigkeitVS",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -3998,6 +4009,7 @@
       "name": "SEU_UB_GeburtslandVS",
       "title": "SEU Geburtsland",
       "description": "Diese Codes enthalten Angaben zum Geburtsland",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-GeburtslandVS",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -4034,6 +4046,7 @@
       "name": "SEU_UB_AntwortErwachseneVS",
       "title": "SEU Antwort Erwachsene",
       "description": "Diese Codes enthalten Informationen über die Anzahl der Erwachsenen",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-AntwortErwachseneVS",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -4102,6 +4115,7 @@
       "name": "SEU_UB_AntwortKindergartenBesuchVS",
       "title": "SEU Antwort Kindergartenbesuch",
       "description": "Diese Codes enthalten Antwortmöglichkeiten zur Länge des Kindergartenbesuch",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-AntwortKindergartenBesuchVS",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -4158,6 +4172,7 @@
       "name": "SEU_UB_KontaktDeutscheSpracheVS",
       "title": "SEU Kontakt mit der deutschen Sprache",
       "description": "Diese Codes enthalten Angaben über den Kontakt zur deutschen Sprache",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-KontaktDeutscheSpracheVS",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -4194,6 +4209,7 @@
       "name": "SEU_UB_HaendigkeitVS",
       "title": "SEU Händigkeit",
       "description": "Diese Codes enthalten Angaben zur Händigkeit",
+      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-HaendigkeitVS",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
