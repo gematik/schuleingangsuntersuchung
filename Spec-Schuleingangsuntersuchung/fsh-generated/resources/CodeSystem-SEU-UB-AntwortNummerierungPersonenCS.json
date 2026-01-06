@@ -5,7 +5,6 @@
   "name": "SEU_UB_AntwortNummerierungPersonenCS",
   "id": "SEU-UB-AntwortNummerierungPersonenCS",
   "title": "SEU Antwort Geschwister",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-AntwortNummerierungPersonenCS",
   "concept": [
     {

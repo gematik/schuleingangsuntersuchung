@@ -2,7 +2,6 @@
   "resourceType": "StructureDefinition",
   "id": "ItemSource",
   "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-  "version": "0.1.0",
   "name": "ItemSource",
   "title": "ItemSource",
   "status": "draft",

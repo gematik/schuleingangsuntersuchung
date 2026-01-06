@@ -5,7 +5,6 @@
   "name": "SEU_UB_GeburtslandCS",
   "id": "SEU-UB-GeburtslandCS",
   "title": "SEU Geburtsland",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-GeburtslandCS",
   "concept": [
     {

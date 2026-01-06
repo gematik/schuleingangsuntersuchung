@@ -5,7 +5,6 @@
   "id": "SEU-UB-AntwortAugenarztVS",
   "title": "SEU Antwort Augenarzt",
   "description": "Diese Codes enthalten die Antworten auf Fragen zu einer Augenarztuntersuchung",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-AntwortAugenarztVS",
   "expansion": {
     "timestamp": "2024-10-20T11:50:47+00:00",

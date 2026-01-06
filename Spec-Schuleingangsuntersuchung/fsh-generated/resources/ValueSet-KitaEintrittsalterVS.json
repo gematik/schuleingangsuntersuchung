@@ -5,7 +5,6 @@
   "id": "KitaEintrittsalterVS",
   "title": "Alter bei Kita-Eintritt Value Set",
   "description": "ValueSet, das das Alter des Kindes beim Eintritt in die Kita beschreibt.",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/KitaEintrittsalterVS",
   "expansion": {
     "timestamp": "2024-10-20T11:50:47+00:00",

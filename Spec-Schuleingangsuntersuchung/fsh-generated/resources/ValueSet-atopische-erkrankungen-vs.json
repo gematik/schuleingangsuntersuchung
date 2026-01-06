@@ -5,7 +5,6 @@
   "id": "atopische-erkrankungen-vs",
   "title": "ValueSet für atopische/allergische Erkrankungen",
   "description": "Dieses ValueSet beinhaltet eine Auswahl von Codes für die Klassifikation von atopischen/allergischen Erkrankungen, definiert im zugehörigen CodeSystem.",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/atopische-erkrankungen-vs",
   "expansion": {
     "timestamp": "2024-04-12T15:47:43+00:00",

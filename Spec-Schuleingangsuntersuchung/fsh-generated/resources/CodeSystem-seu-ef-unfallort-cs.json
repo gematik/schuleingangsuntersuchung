@@ -6,7 +6,6 @@
   "id": "seu-ef-unfallort-cs",
   "title": "SEU_EF_Unfallort CodeSystem",
   "description": "CodeSystem für die Angabe des Unfallortes.",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-unfallort-cs",
   "concept": [
     {

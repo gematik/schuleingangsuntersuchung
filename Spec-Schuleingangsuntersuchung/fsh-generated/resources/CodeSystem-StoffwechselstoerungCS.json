@@ -6,7 +6,6 @@
   "id": "StoffwechselstoerungCS",
   "title": "StoffwechselstoerungCS",
   "description": "StoffwechselstoerungCS",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/StoffwechselstoerungCS",
   "concept": [
     {

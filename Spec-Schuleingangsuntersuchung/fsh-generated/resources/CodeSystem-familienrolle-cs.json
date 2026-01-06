@@ -6,7 +6,6 @@
   "id": "familienrolle-cs",
   "title": "Familienrolle CodeSystem",
   "description": "FamilienrolleCS",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/familienrolle-cs",
   "concept": [
     {

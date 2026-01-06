@@ -9,7 +9,6 @@
       "name": "DeuevAnlage8LaenderkennzeichenVS",
       "title": "DeuevAnlage8LaenderkennzeichenVS",
       "description": "DeuevAnlage8LaenderkennzeichenVS",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/DeuevAnlage8LaenderkennzeichenVS",
       "expansion": {
         "timestamp": "2024-04-04T09:11:28+00:00",
@@ -1697,7 +1696,6 @@
       "name": "GenderDEVS",
       "title": "SEU-AF Geschlecht DE",
       "description": "Diese Codes enthalten die Angabe des Geschlechts",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/GenderDEVS",
       "expansion": {
         "timestamp": "2024-03-30T13:28:00+00:00",
@@ -1739,7 +1737,6 @@
       "name": "ISO6392_LanguageVS",
       "title": "Language ValueSet",
       "description": "ValueSet containing all language codes from the ISO 639-2 CodeSystem.",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/language-valueset",
       "expansion": {
         "timestamp": "2024-09-12T12:00:00+00:00",
@@ -3614,7 +3611,6 @@
       "name": "PersonensorgeberechtigterBeziehungVS",
       "title": "PersonensorgeberechtigterBeziehungVS",
       "description": "PersonensorgeberechtigterBeziehungVS",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/PersonensorgeberechtigterBeziehungVS",
       "expansion": {
         "timestamp": "2025-02-21T11:50:47+00:00",
@@ -3696,7 +3692,6 @@
       "name": "PersonensorgeberechtigterZusammenlebendVS",
       "title": "PersonensorgeberechtigterZusammenlebendVS",
       "description": "PersonensorgeberechtigterZusammenlebendVS",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/PersonensorgeberechtigterZusammenlebendVS",
       "expansion": {
         "timestamp": "2025-02-21T11:50:47+00:00",

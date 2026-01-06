@@ -5,7 +5,6 @@
   "id": "DerzeitigeErkrankungenVS",
   "title": "Derzeitige Erkrankungen ValueSet",
   "description": "ValueSet für derzeitige Erkrankungen",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/DerzeitigeErkrankungenVS",
   "expansion": {
     "timestamp": "2024-10-20T11:50:47+00:00",

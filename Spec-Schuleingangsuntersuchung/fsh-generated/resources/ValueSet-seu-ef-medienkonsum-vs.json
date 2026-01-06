@@ -5,7 +5,6 @@
   "id": "seu-ef-medienkonsum-vs",
   "title": "SEU_EF_Medienkonsum ValueSet",
   "description": "ValueSet, das die Kategorien des Medienkonsums in Stunden enthält.",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-medienkonsum-vs",
   "expansion": {
     "timestamp": "2024-09-10T12:00:00+00:00",

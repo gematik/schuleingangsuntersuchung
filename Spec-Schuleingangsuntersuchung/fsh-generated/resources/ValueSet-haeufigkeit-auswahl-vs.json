@@ -5,7 +5,6 @@
   "id": "haeufigkeit-auswahl-vs",
   "title": "Häufigkeit Auswahl ValueSet",
   "description": "HaeufigkeitAuswahlVS",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/haeufigkeit-auswahl-vs",
   "expansion": {
     "timestamp": "2024-04-06T12:00:00+00:00",
