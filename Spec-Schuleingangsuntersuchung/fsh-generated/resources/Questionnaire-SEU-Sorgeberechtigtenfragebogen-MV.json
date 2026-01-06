@@ -3504,11 +3504,6 @@
               "question": "8.28a",
               "operator": "=",
               "answerBoolean": true
-            },
-            {
-              "question": "8.28b",
-              "operator": "=",
-              "answerBoolean": true
             }
           ],
           "enableBehavior": "any",
