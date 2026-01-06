@@ -15,7 +15,7 @@ Description: "Sorgeberechtigtenfragebogen BE"
 * contained[+] = BerufstaetigkeitElternBerlinVS
 * id = "SEU-Sorgeberechtigtenfragebogen-BE"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenBE"
-* title = "SEU Elternfragebogen Berlin"
+* title = "SEU Sorgeberechtigtenfragebogen Berlin"
 * insert launchContext("patient", #Patient, "Patientenkontext")
 * status = #draft
 * derivedFrom[0] = Canonical(Sorgeberechtigtenfragebogen)

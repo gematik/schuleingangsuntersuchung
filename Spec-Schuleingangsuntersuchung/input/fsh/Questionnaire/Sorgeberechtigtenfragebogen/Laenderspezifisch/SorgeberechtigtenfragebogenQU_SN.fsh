@@ -20,7 +20,7 @@ Description: "Sorgeberechtigtenfragebogen SN"
 * contained[+] = JaNeinWartelisteVS
 * id = "SEU-Sorgeberechtigtenfragebogen-SN"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenSN"
-* title = "SEU Elternfragebogen SN"
+* title = "SEU Sorgeberechtigtenfragebogen SN"
 * insert launchContext("patient", #Patient, "Patientenkontext")
 * status = #draft
 * derivedFrom[0] = Canonical(Sorgeberechtigtenfragebogen)

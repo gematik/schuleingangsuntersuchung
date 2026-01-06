@@ -18,7 +18,7 @@ Description: "Sorgeberechtigtenfragebogen MV"
 * contained[+] = SEU_EF_BehandlungstypVS
 * id = "SEU-Sorgeberechtigtenfragebogen-MV"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenMV"
-* title = "SEU Elternfragebogen MV"
+* title = "SEU Sorgeberechtigtenfragebogen MV"
 * insert launchContext("patient", #Patient, "Patientenkontext")
 * status = #draft
 * derivedFrom[0] = Canonical(Sorgeberechtigtenfragebogen)
@@ -236,7 +236,7 @@ Description: "Sorgeberechtigtenfragebogen MV"
   * item[+]
     * insert addItem(8.28.g, #group, [[Hatte Ihr Kind einen Unfall]])
     * insert enableWhenBoolean(8.28a, =, true)
-    * insert enableWhenBoolean(8.28b, =, true)
+    //* insert enableWhenBoolean(8.28b, =, true) TODO auskommentiert ohne fachliche überprüfung
     * enableBehavior = #any
     * repeats = true
     * item[+]

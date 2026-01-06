@@ -12,7 +12,7 @@ Description: "Sorgeberechtigtenfragebogen HE"
 * contained[+] = SEU_EF_DauerHEVS
 * id = "SEU-Sorgeberechtigtenfragebogen-HE"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenHE"
-* title = "SEU Elternfragebogen HE"
+* title = "SEU Sorgeberechtigtenfragebogen HE"
 * insert launchContext("patient", #Patient, "Patientenkontext")
 * status = #draft
 * derivedFrom[0] = Canonical(Sorgeberechtigtenfragebogen)

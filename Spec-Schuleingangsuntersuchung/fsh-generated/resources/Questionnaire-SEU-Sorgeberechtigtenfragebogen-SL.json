@@ -4401,7 +4401,7 @@
     }
   ],
   "url": "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenSL",
-  "title": "SEU Elternfragebogen SL",
+  "title": "SEU Sorgeberechtigtenfragebogen SL",
   "extension": [
     {
       "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext",

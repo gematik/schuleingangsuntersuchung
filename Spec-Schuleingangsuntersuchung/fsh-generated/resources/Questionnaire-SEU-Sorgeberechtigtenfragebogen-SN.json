@@ -2537,7 +2537,7 @@
     }
   ],
   "url": "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenSN",
-  "title": "SEU Elternfragebogen SN",
+  "title": "SEU Sorgeberechtigtenfragebogen SN",
   "extension": [
     {
       "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext",

@@ -24,7 +24,7 @@ Description: "Sorgeberechtigtenfragebogen ST"
 * contained[+] = KrankenhausaufenthaltGrundVS
 * id = "SEU-Sorgeberechtigtenfragebogen-ST"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenST"
-* title = "SEU Elternfragebogen ST"
+* title = "SEU Sorgeberechtigtenfragebogen ST"
 * insert launchContext("patient", #Patient, "Patientenkontext")
 * status = #draft
 * derivedFrom[0] = Canonical(Sorgeberechtigtenfragebogen)

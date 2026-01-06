@@ -4145,7 +4145,7 @@
     }
   ],
   "url": "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenRP",
-  "title": "SEU Elternfragebogen RP",
+  "title": "SEU Sorgeberechtigtenfragebogen RP",
   "extension": [
     {
       "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext",

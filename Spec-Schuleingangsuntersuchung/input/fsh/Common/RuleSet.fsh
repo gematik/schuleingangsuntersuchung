@@ -42,7 +42,7 @@ RuleSet: addItem(linkId, type, text)
 * linkId = "{linkId}"
 * type = {type}
 * text = "({linkId}) {text}"
-* code = $elternfragebogenKodierungen#{linkId}
+* code = $SorgeberechtigtenfragebogenKodierungen#{linkId}
 
 RuleSet: addItemWithSource(linkId, type, text, source)
 * insert addItem({linkId}, {type}, [[{text}]])

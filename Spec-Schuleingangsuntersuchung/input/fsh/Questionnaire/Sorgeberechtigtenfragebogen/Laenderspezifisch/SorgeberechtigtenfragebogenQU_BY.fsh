@@ -21,7 +21,7 @@ Description: "SorgeberechtigtenfragebogenBY"
 * contained[+] = SEU_UB_HaendigkeitVS
 * id = "SEU-Sorgeberechtigtenfragebogen-BY"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenBY"
-* title = "SEU Elternfragebogen BY"
+* title = "SEU Sorgeberechtigtenfragebogen BY"
 * insert launchContext("patient", #Patient, "Patientenkontext")
 * status = #draft
 * derivedFrom[0] = Canonical(Sorgeberechtigtenfragebogen)

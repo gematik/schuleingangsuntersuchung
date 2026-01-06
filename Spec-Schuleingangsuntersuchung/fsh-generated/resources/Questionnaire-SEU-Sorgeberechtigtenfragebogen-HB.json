@@ -3728,7 +3728,7 @@
     }
   ],
   "url": "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenHB",
-  "title": "SEU Elternfragebogen HB",
+  "title": "SEU Sorgeberechtigtenfragebogen HB",
   "extension": [
     {
       "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext",

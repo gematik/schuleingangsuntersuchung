@@ -106,7 +106,7 @@ Description: "Sorgeberechtigtenfragebogen"
 
 * id = "SEU-Sorgeberechtigtenfragebogen"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Sorgeberechtigtenfragebogen"
-* title = "SEU Elternfragebogen Maximaldatensatz"
+* title = "SEU Sorgeberechtigtenfragebogen Maximaldatensatz"
 * insert launchContext("patient", #Patient, "Patientenkontext")
 * status = #draft
 * item[+]
@@ -1050,7 +1050,7 @@ Description: "Sorgeberechtigtenfragebogen"
   * item[+]
     * insert addItem(8.28.g, #group, [[Hatte Ihr Kind einen Unfall]])
     * insert enableWhenBoolean(8.28a, =, true)
-    * insert enableWhenBoolean(8.28b, =, true)
+    //* insert enableWhenBoolean(8.28b, =, true) TODO auskommentiert ohne fachliche überprüfung
     * enableBehavior = #any
     * repeats = true
     * item[+]

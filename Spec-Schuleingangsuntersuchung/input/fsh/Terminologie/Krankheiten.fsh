@@ -10,7 +10,7 @@ Description: "ChronischeErkrankungenCS"
 * #zuckerkrankheit "Zuckerkrankheit"
 * #übergewicht "Übergewicht"
 
-// Einmal im Elternfragebogen
+// Einmal im Sorgeberechtigtenfragebogen
 CodeSystem: ErkrankungCS
 Id: ErkrankungCS
 Title: "ErkrankungCS"
@@ -35,7 +35,7 @@ Description: "ErkrankungCS"
 * #ass "Autismus-Spektrum-Störung (ASS)"
 * #schilddrüsenfunktionsstörung "Schilddrüsenfunktionsstörung"
 
-// Einmal im Elternfragebogen
+// Einmal im Sorgeberechtigtenfragebogen
 CodeSystem: InfektionsKrankheitCS
 Id: InfektionsKrankheitCS
 Title: "InfektionsKrankheitCS"
@@ -54,7 +54,7 @@ Description: "InfektionsKrankheitCS"
 * #scharlach "Scharlach"
 * #windpocken "Windpocken"
 
-// Einmal im Elternfragebogen
+// Einmal im Sorgeberechtigtenfragebogen
 CodeSystem: ErkrankungenLetztesJahrCS
 Id: ErkrankungenLetztesJahrCS
 Title: "ErkrankungenLetztesJahrCS"
@@ -70,7 +70,7 @@ Description: "ErkrankungenLetztesJahrCS"
 * #blasen_harnwegsentzündung "Blasen/Harnwegsentzündung"
 * #verbrennungen "Verbrennungen"
 
-// Einmal im Elternfragebogen
+// Einmal im Sorgeberechtigtenfragebogen
 CodeSystem: ChronischeKrankheiten
 Id: chronische-krankheiten
 Title: "CodeSystem für chronische Krankheiten"
@@ -126,7 +126,7 @@ Description: "Dieses CodeSystem enthält Codes für derzeitige Erkrankungen."
 * #nieren_blasenerkrankungen "Nieren- /Blasenerkrankung(en)"      // TODO: dopplung mit FruehereErkrankungenCS
 * #sonstige_welche "sonstige Erkrankung(en) / welche?"
 
-// Einmal im Elternfragebogen
+// Einmal im Sorgeberechtigtenfragebogen
 ValueSet: ChronischeErkrankungenVS
 Id: ChronischeErkrankungenVS
 Title: "ChronischeErkrankungenVS"
@@ -155,7 +155,7 @@ Description: "ChronischeErkrankungenVS"
 * ^expansion.contains[=].code = #übergewicht
 * ^expansion.contains[=].display = "Übergewicht"
 
-// Einmal im Elternfragebogen
+// Einmal im Sorgeberechtigtenfragebogen
 ValueSet: ErkrankungVS
 Id: ErkrankungVS
 Title: "ErkrankungVS"
@@ -220,7 +220,7 @@ Description: "ErkrankungVS"
 * ^expansion.contains[=].code = #schilddrüsenfunktionsstörung
 * ^expansion.contains[=].display = "Schilddrüsenfunktionsstörung"
 
-// Einmal im Elternfragebogen
+// Einmal im Sorgeberechtigtenfragebogen
 ValueSet: InfektionsKrankheitVS
 Id: InfektionsKrankheitVS
 Title: "InfektionsKrankheitVS"
@@ -267,7 +267,7 @@ Description: "InfektionsKrankheitVS"
 * ^expansion.contains[=].code = #windpocken
 * ^expansion.contains[=].display = "Windpocken"
 
-// Einmal im Elternfragebogen
+// Einmal im Sorgeberechtigtenfragebogen
 ValueSet: ErkrankungenLetztesJahrVS
 Id: ErkrankungenLetztesJahrVS
 Title: "ErkrankungenLetztesJahrVS"
@@ -310,7 +310,7 @@ Description: "ErkrankungenLetztesJahrVS"
 * ^expansion.contains[=].code = #blasen_harnwegsentzündung
 * ^expansion.contains[=].display = "Blasen/Harnwegsentzündung"
 
-// Einmal im Elternfragebogen
+// Einmal im Sorgeberechtigtenfragebogen
 ValueSet: ErkrankungenLetztesJahrPlusVerbrennungenVS
 Id: ErkrankungenLetztesJahrPlusVerbrennungenVS
 Title: "ErkrankungenLetztesJahrPlusVerbrennungenVS"
@@ -348,7 +348,7 @@ Description: "ErkrankungenLetztesJahrPlusVerbrennungenVS"
 * ^expansion.contains[=].code = #verbrennungen
 * ^expansion.contains[=].display = "Verbrennungen"
 
-// Einmal im Elternfragebogen
+// Einmal im Sorgeberechtigtenfragebogen
 ValueSet: ChronischeKrankheitenVS
 Id: chronische-krankheiten-vs
 Title: "ValueSet für chronische Krankheiten"
@@ -384,7 +384,7 @@ Description: "Dieses ValueSet beinhaltet eine Auswahl von Codes für häufige ch
 * ^expansion.contains[6].code = #sonstiges
 * ^expansion.contains[6].display = "Sonstige chronische Krankheiten"
 
-// Zweimal im Elternfragebogen
+// Zweimal im Sorgeberechtigtenfragebogen
 ValueSet: AtopischeErkrankungenVS
 Id: atopische-erkrankungen-vs
 Title: "ValueSet für atopische/allergische Erkrankungen"
@@ -521,7 +521,7 @@ Description: "ValueSet für derzeitige Erkrankungen"
 * ^expansion.contains[=].code = #sonstige_welche
 * ^expansion.contains[=].display = "sonstige Erkrankung(en)"
 
-// Einmal im Elternfragebogen
+// Einmal im Sorgeberechtigtenfragebogen
 ValueSet: ErkrankungenKindVS
 Id: ErkrankungenKindVS
 Title: "ErkrankungenKindVS"

@@ -2475,7 +2475,7 @@
     }
   ],
   "url": "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenMV",
-  "title": "SEU Elternfragebogen MV",
+  "title": "SEU Sorgeberechtigtenfragebogen MV",
   "extension": [
     {
       "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext",

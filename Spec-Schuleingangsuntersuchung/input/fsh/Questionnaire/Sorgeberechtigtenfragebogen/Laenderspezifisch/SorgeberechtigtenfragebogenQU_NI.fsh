@@ -25,7 +25,7 @@ Description: "Sorgeberechtigtenfragebogen NI"
 * contained[+] = WieOftTrainingVS
 * id = "SEU-Sorgeberechtigtenfragebogen-NI"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenNI"
-* title = "SEU Elternfragebogen NI"
+* title = "SEU Sorgeberechtigtenfragebogen NI"
 * insert launchContext("patient", #Patient, "Patientenkontext")
 * status = #draft
 * derivedFrom[0] = Canonical(Sorgeberechtigtenfragebogen)

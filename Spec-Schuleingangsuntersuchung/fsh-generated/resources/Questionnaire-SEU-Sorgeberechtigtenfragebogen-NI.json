@@ -2633,7 +2633,7 @@
     }
   ],
   "url": "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenNI",
-  "title": "SEU Elternfragebogen NI",
+  "title": "SEU Sorgeberechtigtenfragebogen NI",
   "extension": [
     {
       "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext",

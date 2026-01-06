@@ -13,7 +13,7 @@ Description: "Sorgeberechtigtenfragebogen TH"
 * contained[+] = SEU_EF_HilfsmittelVS
 * id = "SEU-Sorgeberechtigtenfragebogen-TH"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenTH"
-* title = "SEU Elternfragebogen TH"
+* title = "SEU Sorgeberechtigtenfragebogen TH"
 * insert launchContext("patient", #Patient, "Patientenkontext")
 * status = #draft
 * derivedFrom[0] = Canonical(Sorgeberechtigtenfragebogen)

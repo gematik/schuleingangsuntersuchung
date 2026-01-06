@@ -57,7 +57,7 @@ Description: "Sorgeberechtigtenfragebogen BB"
 * contained[+] = SEU_EF_ZeitdauerVS
 * id = "SEU-Sorgeberechtigtenfragebogen-BB"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenBB"
-* title = "SEU Elternfragebogen BB"
+* title = "SEU Sorgeberechtigtenfragebogen BB"
 * insert launchContext("patient", #Patient, "Patientenkontext")
 * status = #draft
 * derivedFrom[0] = Canonical(Sorgeberechtigtenfragebogen)
@@ -212,7 +212,7 @@ Description: "Sorgeberechtigtenfragebogen BB"
   * item[+]
     * insert addItem(8.28.g, #group, [[Hatte Ihr Kind einen Unfall]])
     * insert enableWhenBoolean(8.28a, =, true)
-    * insert enableWhenBoolean(8.28b, =, true)
+    //* insert enableWhenBoolean(8.28b, =, true) TODO auskommentiert ohne fachliche überprüfung
     * enableBehavior = #any
     * item[+]
       * answerValueSet = Canonical(UnfallOrtVS)

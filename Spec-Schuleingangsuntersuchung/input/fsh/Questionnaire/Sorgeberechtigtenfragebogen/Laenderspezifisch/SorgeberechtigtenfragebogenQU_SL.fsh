@@ -23,7 +23,7 @@ Description: "Sorgeberechtigtenfragebogen SL"
 * contained[+] = SEU-UB-StaatsangehoerigkeitVS
 * id = "SEU-Sorgeberechtigtenfragebogen-SL"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenSL"
-* title = "SEU Elternfragebogen SL"
+* title = "SEU Sorgeberechtigtenfragebogen SL"
 * insert launchContext("patient", #Patient, "Patientenkontext")
 * status = #draft
 * derivedFrom[0] = Canonical(Sorgeberechtigtenfragebogen)

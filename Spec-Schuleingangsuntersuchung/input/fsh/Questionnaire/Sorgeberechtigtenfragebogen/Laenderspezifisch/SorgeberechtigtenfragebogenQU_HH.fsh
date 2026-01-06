@@ -13,7 +13,7 @@ Description: "Sorgeberechtigtenfragebogen HH"
 * contained[+] = PersonensorgeberechtigterZusammenlebendVS
 * id = "SEU-Sorgeberechtigtenfragebogen-HH"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenHH"
-* title = "SEU Elternfragebogen HH"
+* title = "SEU Sorgeberechtigtenfragebogen HH"
 * insert launchContext("patient", #Patient, "Patientenkontext")
 * status = #draft
 * derivedFrom[0] = Canonical(Sorgeberechtigtenfragebogen)

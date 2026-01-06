@@ -10,7 +10,7 @@ Description: "Sorgeberechtigtenfragebogen HB"
 * contained[+] = PersonensorgeberechtigterZusammenlebendVS
 * id = "SEU-Sorgeberechtigtenfragebogen-HB"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenHB"
-* title = "SEU Elternfragebogen HB"
+* title = "SEU Sorgeberechtigtenfragebogen HB"
 * insert launchContext("patient", #Patient, "Patientenkontext")
 * status = #draft
 * derivedFrom[0] = Canonical(Sorgeberechtigtenfragebogen)

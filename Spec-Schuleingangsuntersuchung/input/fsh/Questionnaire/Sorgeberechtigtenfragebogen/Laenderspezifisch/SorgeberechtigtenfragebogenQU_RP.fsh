@@ -16,7 +16,7 @@ Description: "Sorgeberechtigtenfragebogen RP"
 * contained[+] = PersonensorgeberechtigterBeziehungVS
 * id = "SEU-Sorgeberechtigtenfragebogen-RP"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenRP"
-* title = "SEU Elternfragebogen RP"
+* title = "SEU Sorgeberechtigtenfragebogen RP"
 * insert launchContext("patient", #Patient, "Patientenkontext")
 * status = #draft
 * derivedFrom[0] = Canonical(Sorgeberechtigtenfragebogen)

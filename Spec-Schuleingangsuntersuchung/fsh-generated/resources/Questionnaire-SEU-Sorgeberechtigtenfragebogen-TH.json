@@ -505,7 +505,7 @@
     }
   ],
   "url": "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenTH",
-  "title": "SEU Elternfragebogen TH",
+  "title": "SEU Sorgeberechtigtenfragebogen TH",
   "extension": [
     {
       "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-launchContext",

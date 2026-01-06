@@ -11,7 +11,7 @@ Description: "Sorgeberechtigtenfragebogen BW"
 * contained[+] = SEU_EF_BildungsabschlussBWVS
 * id = "SEU-Sorgeberechtigtenfragebogen-BW"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenBW"
-* title = "SEU Elternfragebogen BW"
+* title = "SEU Sorgeberechtigtenfragebogen BW"
 * insert launchContext("patient", #Patient, "Patientenkontext")
 * status = #draft
 * derivedFrom[0] = Canonical(Sorgeberechtigtenfragebogen)
