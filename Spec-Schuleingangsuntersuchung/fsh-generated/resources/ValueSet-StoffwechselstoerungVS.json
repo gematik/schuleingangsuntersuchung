@@ -5,7 +5,6 @@
   "id": "StoffwechselstoerungVS",
   "title": "StoffwechselstoerungVS",
   "description": "StoffwechselstoerungVS",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/StoffwechselstoerungVS",
   "expansion": {
     "timestamp": "2024-04-04T10:51:23+00:00",

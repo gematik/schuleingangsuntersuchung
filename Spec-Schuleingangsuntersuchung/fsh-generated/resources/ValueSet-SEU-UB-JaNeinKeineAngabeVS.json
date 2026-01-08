@@ -5,7 +5,6 @@
   "id": "SEU-UB-JaNeinKeineAngabeVS",
   "title": "SEU Ja-Nein-KeineAngabe",
   "description": "Diese Codes können Boolean erweitern um 'Keine Angabe'",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-JaNeinKeineAngabeVS",
   "expansion": {
     "timestamp": "2024-10-20T11:50:47+00:00",

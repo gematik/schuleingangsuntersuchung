@@ -9,7 +9,6 @@
       "name": "DeuevAnlage8LaenderkennzeichenVS",
       "title": "DeuevAnlage8LaenderkennzeichenVS",
       "description": "DeuevAnlage8LaenderkennzeichenVS",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/DeuevAnlage8LaenderkennzeichenVS",
       "expansion": {
         "timestamp": "2024-04-04T09:11:28+00:00",
@@ -1697,7 +1696,6 @@
       "name": "WohnsituationKindVS",
       "title": "WohnsituationKindVS",
       "description": "WohnsituationKindVS",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/WohnsituationKindVS",
       "expansion": {
         "timestamp": "2024-04-04T09:24:55+00:00",
@@ -1757,7 +1755,6 @@
       "name": "GenderDEVS",
       "title": "SEU-AF Geschlecht DE",
       "description": "Diese Codes enthalten die Angabe des Geschlechts",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/GenderDEVS",
       "expansion": {
         "timestamp": "2024-03-30T13:28:00+00:00",
@@ -1799,7 +1796,6 @@
       "name": "ISO6392_LanguageVS",
       "title": "Language ValueSet",
       "description": "ValueSet containing all language codes from the ISO 639-2 CodeSystem.",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/language-valueset",
       "expansion": {
         "timestamp": "2024-09-12T12:00:00+00:00",
@@ -3674,7 +3670,6 @@
       "name": "InfektionsKrankheitVS",
       "title": "InfektionsKrankheitVS",
       "description": "InfektionsKrankheitVS",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/InfektionsKrankheitVS",
       "expansion": {
         "timestamp": "2024-04-04T11:02:42+00:00",
@@ -3761,7 +3756,6 @@
       "name": "ChronischeErkrankungenVS",
       "title": "ChronischeErkrankungenVS",
       "description": "ChronischeErkrankungenVS",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/ChronischeErkrankungenVS",
       "expansion": {
         "timestamp": "2024-04-04T10:10:32+00:00",
@@ -3818,7 +3812,6 @@
       "name": "JaNeinAngemeldetVS",
       "title": "JaNeinAngemeldetVS",
       "description": "JaNeinAngemeldetVS",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/JaNeinAngemeldetVS",
       "expansion": {
         "timestamp": "2024-04-04T10:25:43+00:00",
@@ -3855,7 +3848,6 @@
       "name": "AtopischeErkrankungenVS",
       "title": "ValueSet für atopische/allergische Erkrankungen",
       "description": "Dieses ValueSet beinhaltet eine Auswahl von Codes für die Klassifikation von atopischen/allergischen Erkrankungen, definiert im zugehörigen CodeSystem.",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/atopische-erkrankungen-vs",
       "expansion": {
         "timestamp": "2024-04-12T15:47:43+00:00",
@@ -3917,7 +3909,6 @@
       "name": "ChronischeKrankheitenVS",
       "title": "ValueSet für chronische Krankheiten",
       "description": "Dieses ValueSet beinhaltet eine Auswahl von Codes für häufige chronische Krankheiten, definiert im zugehörigen CodeSystem.",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/chronische-krankheiten-vs",
       "expansion": {
         "timestamp": "2024-04-12T15:47:43+00:00",
@@ -4008,7 +3999,6 @@
       "name": "GeburtArtVS",
       "title": "Art der Geburt Value Set",
       "description": "ValueSet, das die Arten der Geburt enthält.",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/GeburtArtVS",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -4068,7 +4058,6 @@
       "name": "PersonensorgeberechtigterBeziehungVS",
       "title": "PersonensorgeberechtigterBeziehungVS",
       "description": "PersonensorgeberechtigterBeziehungVS",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/PersonensorgeberechtigterBeziehungVS",
       "expansion": {
         "timestamp": "2025-02-21T11:50:47+00:00",

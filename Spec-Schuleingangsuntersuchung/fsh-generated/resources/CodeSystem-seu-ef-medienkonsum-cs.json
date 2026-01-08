@@ -6,7 +6,6 @@
   "id": "seu-ef-medienkonsum-cs",
   "title": "SEU_EF_Medienkonsum CodeSystem",
   "description": "CodeSystem für die Angabe des Medienkonsums in Stunden.",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-medienkonsum-cs",
   "concept": [
     {

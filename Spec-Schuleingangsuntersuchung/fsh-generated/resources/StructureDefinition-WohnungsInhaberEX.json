@@ -2,7 +2,6 @@
   "resourceType": "StructureDefinition",
   "id": "WohnungsInhaberEX",
   "url": "https://www.oegd.de/fhir/seu/StructureDefinition/WohnungsInhaberEX",
-  "version": "0.1.0",
   "name": "WohnungsInhaberEX",
   "title": "Wohnungsinhaber Extension",
   "status": "draft",

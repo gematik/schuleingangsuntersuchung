@@ -4,7 +4,6 @@
   "name": "PersonEthnieVS",
   "id": "PersonEthnieVS",
   "title": "SEU Sprachlich-ethnischer Familienhintergrund",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/PersonEthnieVS",
   "compose": {
     "include": [

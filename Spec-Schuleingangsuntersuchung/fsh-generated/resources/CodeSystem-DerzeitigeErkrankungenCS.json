@@ -6,7 +6,6 @@
   "id": "DerzeitigeErkrankungenCS",
   "title": "CodeSystem für derzeitige Erkrankungen",
   "description": "Dieses CodeSystem enthält Codes für derzeitige Erkrankungen.",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/CodeSystem/DerzeitigeErkrankungenCS",
   "concept": [
     {

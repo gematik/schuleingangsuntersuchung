@@ -5,7 +5,6 @@
   "id": "InfektionsKrankheitVS",
   "title": "InfektionsKrankheitVS",
   "description": "InfektionsKrankheitVS",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/InfektionsKrankheitVS",
   "expansion": {
     "timestamp": "2024-04-04T11:02:42+00:00",

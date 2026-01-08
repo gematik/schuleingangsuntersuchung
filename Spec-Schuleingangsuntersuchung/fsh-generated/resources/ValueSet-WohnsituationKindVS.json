@@ -5,7 +5,6 @@
   "id": "WohnsituationKindVS",
   "title": "WohnsituationKindVS",
   "description": "WohnsituationKindVS",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/WohnsituationKindVS",
   "expansion": {
     "timestamp": "2024-04-04T09:24:55+00:00",

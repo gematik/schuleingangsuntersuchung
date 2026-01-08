@@ -5,7 +5,6 @@
   "id": "SEU-EF-NeinAbgeschlossenLaeuftGeplantVS",
   "title": "SEU_EF_NeinAbgeschlossenLaeuftGeplantVS",
   "description": "SEU_EF_NeinAbgeschlossenLaeuftGeplantVS",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-EF-NeinAbgeschlossenLaeuftGeplantVS",
   "expansion": {
     "timestamp": "2024-03-27T12:20:50+00:00",

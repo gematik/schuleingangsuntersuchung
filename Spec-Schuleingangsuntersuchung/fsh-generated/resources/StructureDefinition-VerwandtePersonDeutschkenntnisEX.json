@@ -2,7 +2,6 @@
   "resourceType": "StructureDefinition",
   "id": "VerwandtePersonDeutschkenntnisEX",
   "url": "https://www.oegd.de/fhir/seu/StructureDefinition/VerwandtePersonDeutschkenntnisEX",
-  "version": "0.1.0",
   "name": "VerwandtePersonDeutschkenntnisEX",
   "title": "Deutschkenntnisse",
   "status": "draft",

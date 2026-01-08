@@ -9,7 +9,6 @@
       "name": "SEU_EF_NeinAbgeschlossenLaeuftGeplantVS",
       "title": "SEU_EF_NeinAbgeschlossenLaeuftGeplantVS",
       "description": "SEU_EF_NeinAbgeschlossenLaeuftGeplantVS",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-EF-NeinAbgeschlossenLaeuftGeplantVS",
       "expansion": {
         "timestamp": "2024-03-27T12:20:50+00:00",
@@ -51,7 +50,6 @@
       "name": "DeuevAnlage8LaenderkennzeichenVS",
       "title": "DeuevAnlage8LaenderkennzeichenVS",
       "description": "DeuevAnlage8LaenderkennzeichenVS",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/DeuevAnlage8LaenderkennzeichenVS",
       "expansion": {
         "timestamp": "2024-04-04T09:11:28+00:00",
@@ -1739,7 +1737,6 @@
       "name": "GenderDEVS",
       "title": "SEU-AF Geschlecht DE",
       "description": "Diese Codes enthalten die Angabe des Geschlechts",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/GenderDEVS",
       "expansion": {
         "timestamp": "2024-03-30T13:28:00+00:00",
@@ -1781,7 +1778,6 @@
       "name": "UnfallOrtVS",
       "title": "UnfallOrtVS",
       "description": "UnfallOrtVS",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/UnfallOrtVS",
       "expansion": {
         "timestamp": "2024-04-04T11:34:46+00:00",
@@ -1828,7 +1824,6 @@
       "name": "SEU_EF_BildungsabschlussVS",
       "title": "SEU_EF_Bildungsabschluss ValueSet",
       "description": "ValueSet, das verschiedene Bildungsabschlüsse enthält.",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-bildungsabschluss-vs",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -1880,7 +1875,6 @@
       "name": "ErwerbsstatusVS",
       "title": "Erwerbsstatus ValueSet",
       "description": "ErwerbsstatusVS",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/erwerbsstatus-vs",
       "expansion": {
         "timestamp": "2024-04-06T12:00:00+00:00",
@@ -1931,7 +1925,6 @@
       "name": "VersorgungsartVS",
       "title": "Versorgungsart ValueSet",
       "description": "VersorgungsartVS",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/versorgungsart-vs",
       "expansion": {
         "timestamp": "2024-04-06T12:00:00+00:00",
@@ -1963,7 +1956,6 @@
       "name": "JaNeinWartelisteVS",
       "title": "JaNeinWartelisteVS",
       "description": "JaNeinWartelisteVS",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/ja-nein-warteliste",
       "expansion": {
         "timestamp": "2024-06-26T15:47:43+00:00",
@@ -2019,7 +2011,6 @@
       "name": "SEU_EF_MedienkonsumVS",
       "title": "SEU_EF_Medienkonsum ValueSet",
       "description": "ValueSet, das die Kategorien des Medienkonsums in Stunden enthält.",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-medienkonsum-vs",
       "expansion": {
         "timestamp": "2024-09-10T12:00:00+00:00",
@@ -2071,7 +2062,6 @@
       "name": "SEU_EF_OperationenVS",
       "title": "SEU_EF_Operationen ValueSet",
       "description": "ValueSet, das verschiedene durchgeführte Operationen enthält.",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-operationen-vs",
       "expansion": {
         "timestamp": "2024-09-10T12:00:00+00:00",
@@ -2128,7 +2118,6 @@
       "name": "SEU_EF_UnfallortVS",
       "title": "SEU_EF_Unfallort ValueSet",
       "description": "ValueSet, das die verschiedenen Unfallorte enthält.",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-unfallort-vs",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -2180,7 +2169,6 @@
       "name": "SEU_EF_ZeitdauerVS",
       "title": "SEU_EF_Zeitdauer ValueSet",
       "description": "ValueSet, das verschiedene Zeitdauern enthält.",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-zeitdauer-vs",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -2232,7 +2220,6 @@
       "name": "SEU_UB_StaatsangehoerigkeitVS",
       "title": "SEU Staatsangehörigkeit",
       "description": "Diese Codes enthalten Angaben zur Staatsangehörigkeit",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-StaatsangehoerigkeitVS",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -2274,7 +2261,6 @@
       "name": "GeburtArtVS",
       "title": "Art der Geburt Value Set",
       "description": "ValueSet, das die Arten der Geburt enthält.",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/GeburtArtVS",
       "expansion": {
         "timestamp": "2024-10-20T11:50:47+00:00",
@@ -2334,7 +2320,6 @@
       "name": "ErkrankungenLetztesJahrPlusVerbrennungenVS",
       "title": "ErkrankungenLetztesJahrPlusVerbrennungenVS",
       "description": "ErkrankungenLetztesJahrPlusVerbrennungenVS",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/ErkrankungenLetztesJahrPlusVerbrennungenVS",
       "expansion": {
         "timestamp": "2024-04-04T11:07:53+00:00",
@@ -2406,7 +2391,6 @@
       "name": "JaNeinWeissNichtVS",
       "title": "JaNeinWeissNichtVS",
       "description": "JaNeinWeissNichtVS",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/JaNeinWeissNichtVS",
       "expansion": {
         "timestamp": "2024-04-06T12:00:00+00:00",
@@ -2443,7 +2427,6 @@
       "name": "WerErziehtDasKindVS",
       "title": "WerErziehtDasKindVS",
       "description": "WerErziehtDasKindVS",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/WerErziehtDasKindVS",
       "expansion": {
         "timestamp": "2024-04-06T12:00:00+00:00",
@@ -2530,7 +2513,6 @@
       "name": "WieVieleStundenFreizeitVS",
       "title": "WieVieleStundenFreizeitVS",
       "description": "WieVieleStundenFreizeitVS",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/WieVieleStundenFreizeitVS",
       "expansion": {
         "contains": [
@@ -2566,7 +2548,6 @@
       "name": "WieOftImSportVereinVS",
       "title": "WieOftImSportVereinVS",
       "description": "WieOftImSportVereinVS",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/WieOftImSportVereinVS",
       "expansion": {
         "contains": [
@@ -2597,7 +2578,6 @@
       "name": "WieOftTrainingVS",
       "title": "WieOftTrainingVS",
       "description": "WieOftTrainingVS",
-      "version": "0.1.0",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/WieOftTrainingVS",
       "expansion": {
         "contains": [

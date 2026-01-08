@@ -2,7 +2,6 @@
   "resourceType": "StructureDefinition",
   "id": "Person",
   "url": "https://www.oegd.de/fhir/seu/StructureDefinition/Person",
-  "version": "0.1.0",
   "name": "Person",
   "status": "draft",
   "fhirVersion": "4.0.1",
@@ -13,20 +12,6 @@
   "derivation": "constraint",
   "differential": {
     "element": [
-      {
-        "id": "Patient.extension",
-        "path": "Patient.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
       {
         "id": "Patient.extension:Geburtsort",
         "path": "Patient.extension",
@@ -385,20 +370,6 @@
         "mustSupport": true
       },
       {
-        "id": "Patient.gender.extension",
-        "path": "Patient.gender.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
-      },
-      {
         "id": "Patient.gender.extension:Geschlecht-Administrativ",
         "path": "Patient.gender.extension",
         "sliceName": "Geschlecht-Administrativ",
@@ -505,20 +476,6 @@
         "path": "Patient.address.city",
         "min": 1,
         "mustSupport": true
-      },
-      {
-        "id": "Patient.address:Hauptwohnsitz.city.extension",
-        "path": "Patient.address.city.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
       },
       {
         "id": "Patient.address:Hauptwohnsitz.city.extension:gemeindeschluessel",
@@ -681,16 +638,6 @@
       {
         "id": "Patient.contact:Personensorgeberechtigte.extension",
         "path": "Patient.contact.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
         "min": 1
       },
       {
@@ -757,20 +704,6 @@
         "sliceName": "Kindertagesstaette",
         "min": 0,
         "max": "*"
-      },
-      {
-        "id": "Patient.contact:Kindertagesstaette.extension",
-        "path": "Patient.contact.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        }
       },
       {
         "id": "Patient.contact:Kindertagesstaette.extension:KiTaName",
@@ -867,16 +800,6 @@
       {
         "id": "Patient.communication:deutsch.extension",
         "path": "Patient.communication.extension",
-        "slicing": {
-          "discriminator": [
-            {
-              "type": "value",
-              "path": "url"
-            }
-          ],
-          "ordered": false,
-          "rules": "open"
-        },
         "min": 1,
         "mustSupport": true
       },

@@ -5,7 +5,6 @@
   "id": "seu-ef-sprache-vs",
   "title": "SEU_EF_Sprache ValueSet",
   "description": "ValueSet, das verschiedene Sprachprobleme enthält.",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-sprache-vs",
   "expansion": {
     "timestamp": "2024-10-20T11:50:47+00:00",

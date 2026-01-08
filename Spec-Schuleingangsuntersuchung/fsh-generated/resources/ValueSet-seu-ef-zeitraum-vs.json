@@ -5,7 +5,6 @@
   "id": "seu-ef-zeitraum-vs",
   "title": "SEU_EF_Zeitraum ValueSet",
   "description": "ValueSet, das verschiedene Zeiträume enthält.",
-  "version": "0.1.0",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-zeitraum-vs",
   "expansion": {
     "timestamp": "2024-10-20T11:50:47+00:00",
