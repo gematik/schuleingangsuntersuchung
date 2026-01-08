@@ -6,7 +6,7 @@
 
 ### Version 0.9.0
 
-* `added` Relevante Profile wurden hinzugefügt 
-* `added` Relevante Terminologie wurde hinzugefügt 
-* `added` Relevante Extensions wurden hinzugefügt
-* `added` Implementierungsleitfaden wurde hinzugefügt
+* Relevante Profile wurden hinzugefügt 
+* Relevante Terminologie wurde hinzugefügt 
+* Relevante Extensions wurden hinzugefügt
+* Implementierungsleitfaden wurde hinzugefügt

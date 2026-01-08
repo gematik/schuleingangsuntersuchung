@@ -51,10 +51,8 @@ Variante 2 mit allen Datenelementen aller notwendigen dezentraler spezifischer S
 - Für jede Umsetzung in den Fachanwendungen wird je Bundesland zum Beispiel eine spezifische Spezifikation erstellt. Diese Spezifikationen werden in der Software-Entwicklung realisiert und entsprechend produktiv gesetzt.
 
 - In simplifier werden für jede Anwendungsfallgruppe (z.B.: SEU - Schuleingangsuntersuchung) ein Projekt geführt. In dem Projekt sind sowohl die Spezifikation „Maximalansatz" als auch die spezifischen Spezifikationen enthalten. Am Beispiel SEU:
-  - Questionnaire Sorgeberechtigtenfragebogen (1 + n)
-  - Questionnaire Untersuchungsbogen (1+n)
-  - Profile zu Sorgeberechtigtenfragebogen und Untersuchungsbogen (1+n)
-  - Stammdaten aus XMeld (1)    
+  - Questionnaire Sorgeberechtigtenfragebogen
+  - Stammdaten
 - Wenn eine spezifische Spezifikation neu oder geänderte Datenelemente benötigt, ist die Änderung sowohl in der Spezifikation des Maximaldatensatzes als auch in der spezifischen Spezifikation vorzunehmen. Es entsteht ein weiteres Release für die spezifische Spezifikation als auch dem Maximaldatensatz für einen Anwendungsfall. Ein Hersteller sorgt in seiner Fachanwendung dafür, dass das im Kontext passende Release der spezifischen Spezifikation herangezogen wird.
 
 **Release-Prozess**

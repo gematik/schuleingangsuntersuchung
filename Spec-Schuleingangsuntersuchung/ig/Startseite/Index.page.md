@@ -20,6 +20,8 @@ Der Implementierungsleitfaden beinhaltet den Sorgeberechtigtenfragebogen auf Bas
 
 Die Spezifikation befindet sich aktuell in einer Pilotierungsphase in vier Bundesländern unter Beteiligung von jeweils einem teilnehmenden Gesundheitsamt und dessen Softwarehersteller für die Fachverfahren.
 
+TODO NM: letzter Abschnitt raus
+
 
 ### Anfangs- und (geplantes) Enddatum
 
@@ -32,11 +34,7 @@ Version: 1.0.0-ballot
 
 Reifegrad: Draft 
 
-Abstimmungsverfahren: Kommentierungsverfahren der Länder läuft
-
-### Review und Kommentierung
-
-Leitfaden für Kommentierende: 
+Abstimmungsverfahren: Kommentierungsverfahren läuft
 
 ### Beteiligte Organsisationen
 * ELFA Maßnahme Interoperabilität (Förderprojekt Pakt ÖGD)
@@ -44,7 +42,9 @@ Leitfaden für Kommentierende:
 * gematik GmbH
 * Gefyra GmbH
 
-### Fürsorger
+### Autoren
 <!-- Namen und Kontaktdaten der verantwortlichen Personen /Ansprechpartner-->
+* Daniel Bachmann (daniel.brachmann@feynsinn.de)
 * Patrick Werner (pw@gefyra.de)
-* Patrick Werner (pw@echinos.eu)
+* Jonas Schön (js@gefyra.de)
+* Stefan Lang (sl@gefyra.de)
