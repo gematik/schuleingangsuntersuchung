@@ -18,15 +18,10 @@ Die FHIR-Spezifikation bietet eine standardisierte und interoperable Methode zur
 
 Der Implementierungsleitfaden beinhaltet den Sorgeberechtigtenfragebogen auf Basis eines FHIR-Questionnaire, sowie die Stammdaten der beteiligten Personen als Profil. Die Spezifikation dient als Leitfaden für Entwickler:innen, Gesundheitseinrichtungen und Schulen, um sie in ihre Systeme zu integrieren und den Prozess der Schuleingangsuntersuchung zu optimieren. 
 
-Die Spezifikation befindet sich aktuell in einer Pilotierungsphase in vier Bundesländern unter Beteiligung von jeweils einem teilnehmenden Gesundheitsamt und dessen Softwarehersteller für die Fachverfahren.
 
-TODO NM: letzter Abschnitt raus
-
-
-### Anfangs- und (geplantes) Enddatum
+### Anfangsdatum
 
 Anfangsdatum: September 2023
-Enddatum: Noch nicht geplant
 
 ### Status
 
@@ -38,13 +33,13 @@ Abstimmungsverfahren: Kommentierungsverfahren läuft
 
 ### Beteiligte Organsisationen
 * ELFA Maßnahme Interoperabilität (Förderprojekt Pakt ÖGD)
-* Bundesministerium für Gesundheit (IOP ÖGD Task Force)
+* Bundesministerium für Gesundheit (IOP ÖGD Task Force bis 30.9.2024)
 * gematik GmbH
 * Gefyra GmbH
 
 ### Autoren
 <!-- Namen und Kontaktdaten der verantwortlichen Personen /Ansprechpartner-->
-* Daniel Bachmann (daniel.brachmann@feynsinn.de)
+* Daniel Brachmann (daniel.brachmann@feynsinn.de)
 * Patrick Werner (pw@gefyra.de)
 * Jonas Schön (js@gefyra.de)
 * Stefan Lang (sl@gefyra.de)

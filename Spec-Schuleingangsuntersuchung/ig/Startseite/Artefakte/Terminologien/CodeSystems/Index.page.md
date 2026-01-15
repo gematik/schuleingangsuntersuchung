@@ -1,30 +1,29 @@
 ## {{page-title}}
 
-### Alle ValueSets innerhalb des Projektes
+### Alle CodeSystems innerhalb des Projektes
 
 @```
-from ValueSet
-where name != 'DeuevAnlage8LaenderkennzeichenVS' 
-    and name != 'ISO6392_LanguageVS'
-	and name != 'SEU_UB_AuswaehlbareElternspracheVS'
+from CodeSystem
+where name != 'ISO6392_LanguageCS' 
+    and name != 'DeuevAnlage8Laenderkennzeichen'
 select 
 	Name: name, 
 	Beschreibung: description,
 	CanonicalURL: url,
 	Status: status,
-	Expansion: for expansion.contains select {
+	Expansion: for concept select {
 		code,
 		display
 	}
 ```
 
-### ISO6392_LanguageVS, DeuevAnlage8LaenderkennzeichenVS und SEU_UB_AuswaehlbareElternspracheVS
+### ISO6392_LanguageCS und DeuevAnlage8Laenderkennzeichen
 
-Die drei ValueSets werden ohne concept dargestellt, weil es zu groß ist. Bitte auf den Link klicken und den Inhalt im ValueSet selber anschauen.
+Die zwei CodeSystems werden ohne concept dargestellt, weil es zu groß ist. Bitte auf den Link klicken und den Inhalt im CodeSystem selber anschauen.
 
 @```
-from ValueSet
-where name = 'ISO6392_LanguageVS'
+from CodeSystem
+where name = 'ISO6392_LanguageCS'
 select 
 	Name: name, 
 	Beschreibung: description,
@@ -33,18 +32,8 @@ select
 ```
 
 @```
-from ValueSet
-where name = 'DeuevAnlage8LaenderkennzeichenVS'
-select 
-	Name: name, 
-	Beschreibung: description,
-	CanonicalURL: url,
-	Status: status
-```
-
-@```
-from ValueSet
-where name = 'SEU_UB_AuswaehlbareElternspracheVS'
+from CodeSystem
+where name = 'DeuevAnlage8Laenderkennzeichen'
 select 
 	Name: name, 
 	Beschreibung: description,

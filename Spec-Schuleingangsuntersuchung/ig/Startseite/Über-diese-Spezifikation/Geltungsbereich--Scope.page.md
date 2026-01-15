@@ -13,4 +13,4 @@ Die Spezifikation richtet sich an:
 
 ### Entscheidung für einen Questionnaire
 
-Für die Datenerhebung wurde die Verwendung eines Questionnaires gewählt. Dies basiert auf der Tatsache, dass viele der erhobenen Daten nur einmal benötigt werden und nach der Sichtung nicht mehr relevant sind. Die wenigen Datenpunkte, die für statistische Zwecke von Bedeutung sind, müssten noch strukturiert extrahiert werden. Diese Extraktion ist jedoch derzeit außerhalb des Scope dieser Spezifikation.
+Für die Datenerhebung wurde die Verwendung eines Questionnaires gewählt. Dies basiert auf der Tatsache, dass viele der erhobenen Daten nach der Erhebung im Gesundheitsamt verbleiben. Bestimmte Datenpunkte, die für statistische Zwecke von Bedeutung sind, müssten noch strukturiert extrahiert werden. Diese Extraktion ist jedoch derzeit außerhalb des Scope dieser Spezifikation.

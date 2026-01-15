@@ -7,51 +7,31 @@ expand: 1
 
 ### Metadaten
 
-@```
+<fql>
 from
 	StructureDefinition
 where
 	url = %canonical
 select
-	Canonical: url, Status: status, Version: version, Basis: baseDefinition
-```
+	Canonical: url,
+    Status: status,
+    Version: version,
+    Basis: baseDefinition
+</fql>
 
 ### Inhalt
 
 <tabs>
   <tab title="Darstellung">{{tree, buttons}}</tab>
-  <tab title="Beschreibung"> 
-        @```
-        from
-	        StructureDefinition
-        where
-	        url = %canonical
-        select
-	        Beschreibung: description
-        with
-            no header
-        ```
-        @```
-        from 
-            StructureDefinition 
-        where 
-            url = %canonical
-        for 
-            differential.element 
-            where 
-                mustSupport = true 
-            select Feldname: id, Kurzbeschreibung: short, Hinweise: comment
-        ```
-  </tab>
   <tab title="XML">{{xml}}</tab>
   <tab title="JSON">{{json}}</tab>
   <tab title="Link">{{link}}</tab>
 </tabs>
 
 ### Constraints/Invarianten
-@``` 
+<fql>
 from StructureDefinition where url = %canonical for differential.element.constraint select Name: key, Schweregrad: severity, Beschreibung: human, Ausdruck: expression
-```
+</fql>
 
 ### Beispiele
 <!-- Funktion der Beispiele beschreiben!-->
