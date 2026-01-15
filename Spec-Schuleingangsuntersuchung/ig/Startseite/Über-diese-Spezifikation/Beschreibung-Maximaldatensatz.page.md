@@ -7,29 +7,29 @@ In den Bundesländern existieren heute unterschiedliche, fachliche Datenmodelle.
 Es ist nicht möglich, eine interoperable Spezifikation für einen Anwendungsfall zu erarbeiten, dennoch sollen Synergien bestmöglich genutzt werden.
 
 **Übergreifende Ziele**
-Ziel der ELFA Maßnahme IOP ist es, ein übergreifend, homogenes Datenmodell zu schaffen. Jedoch ist dies heute nicht realistisch möglich.
+Vision der ELFA Maßnahme IOP ist es, ein übergreifend, homogenes Datenmodell zu schaffen. Jedoch ist dies heute nicht realistisch möglich.
 
 Daher werden folgende Ziele verfolgt:
 
 - Identifikation der bei allen übereinstimmenden Datenelemente und einheitliche Festlegungen für diese
 
-- Identifikation der unterschiedlichen Datenelemente mit der jedoch gleichen Bedeutung (z.B.: Geburtsdatum und Alter) und Erarbeitung eines übergreifenden Konsens
+- Identifikation der unterschiedlichen Datenelemente mit der jedoch gleichen Bedeutung (z.B.: Geburtsdatum und Alter) und Weitergabe an die Fachlichkeit zur Erarbeitung eines übergreifenden Konsens
 
-- Standardisierung der Methode zur Darstellung, Kommunikation und Erarbeitung eines fachlichen Datenmodell
+- Erarbeitung einer standardisierten Methode zur Darstellung, Kommunikation und Erarbeitung eines fachlichen Datenmodell
 
--   Erarbeitung einer Vorgehensweise zur schrittweisen, kontinuierlichen Erweiterung der übergreifend, einheitlichen Datenelemente
+- Erarbeitung einer Vorgehensweise zur schrittweisen, kontinuierlichen Erweiterung der übergreifend, einheitlichen Datenelemente
 
-**Folgen für die Ausarbeitung interoperable Datenspezifikationen**
+**Folgen für die Ausarbeitung interoperabler Datenspezifikationen**
 
 Für die technische Spezifikation sind zwei Varianten denkbar:
 
 - Variante 1: Nur die Datenelemente, welche im Konsens sind, werden als interoperabler Standard spezifiziert und die differierenden Datenelemente werden von den dezentralen Verantwortlichen festgelegt und sind inhomogen.
 
-- Variante 2: Es werden alle Datenelemente spezifiziert und zentral koordiniert festgelegt. Die Datenelemente im Konsens sind interoperabel. Die dezentralen Datenelemente sind auch inhomogen. Jedoch wird darauf geachtet, dass die Konsensmenge sich kontinuierlich vergrößert. Die Vorgehensweise für alle transparent ist und eine schrittweise Annäherung von Release zu Release unterstützt wird.
+- Variante 2: Es werden alle Datenelemente spezifiziert und zentral koordiniert festgelegt. Die Datenelemente im Konsens sind dabei interoperabel. Die dezentralen Datenelemente sind inhomogen. Jedoch wird darauf im Zuge der Netzwerkarbeit und Kommunikation mit den Verantwortlichen hingearbeitet, dass die Konsensmenge sich kontinuierlich vergrößert. Die Vorgehensweise ist für alle transparent und eine schrittweise Annäherung soll von Release zu Release unterstützt werden.
 
 **Maximalansatz**
 
-Variante 2 mit allen Datenelementen aller notwendigen dezentraler spezifischer Spezifikationen werden zentral koordiniert spezifiziert und veröffentlicht.
+Anwendung der Variante 2: Alle Datenelemente aller dezentralen landesspezifischen Spezifikationen werden zentral koordiniert spezifiziert und veröffentlicht.
 
 **Vorteile**
 
@@ -42,18 +42,18 @@ Variante 2 mit allen Datenelementen aller notwendigen dezentraler spezifischer S
 - Sprache, Vorgehensweisen und Ziele sind einheitlich und sorgen für eine effiziente, schrittweise Annäherung.
 
 **Nachteile**
-- Abgestimmtes Release-Vorgehen führt zu Terminen, welche für alle verbindlich sind. (z.B. Änderungen für die Fragebögen der Schuleingangsuntersuchung wird nicht abhängig vom Schulbeginn festgelegt, sondern abhängig von einem für alle Bundesländer möglichen Termin)
+- Abgestimmtes Release-Vorgehen führt zu Terminen, welche für alle verbindlich sind (z.B. Änderungen für die Fragebögen der Schuleingangsuntersuchung werden nicht abhängig vom Schulbeginn festgelegt, sondern abhängig von einem für alle Bundesländer möglichen Termin).
 
 **Ausprägungen der Spezifikationen**
 
-- Für jeden Anwendungsfall wird eine Spezifikation „Maximalansatz" spezifiziert. Diese Spezifikation wird in der Software-Entwicklung nicht verwendet bzw. in Fachanwendungen produktiv eingesetzt.
+- Es wird eine übergreifende Spezifikation „Maximalansatz" spezifiziert. Diese Spezifikation wird in der Software-Entwicklung nicht verwendet bzw. in Fachanwendungen produktiv eingesetzt.
 
 - Für jede Umsetzung in den Fachanwendungen wird je Bundesland zum Beispiel eine spezifische Spezifikation erstellt. Diese Spezifikationen werden in der Software-Entwicklung realisiert und entsprechend produktiv gesetzt.
 
 - In simplifier werden für jede Anwendungsfallgruppe (z.B.: SEU - Schuleingangsuntersuchung) ein Projekt geführt. In dem Projekt sind sowohl die Spezifikation „Maximalansatz" als auch die spezifischen Spezifikationen enthalten. Am Beispiel SEU:
   - Questionnaire Sorgeberechtigtenfragebogen
   - Stammdaten
-- Wenn eine spezifische Spezifikation neu oder geänderte Datenelemente benötigt, ist die Änderung sowohl in der Spezifikation des Maximaldatensatzes als auch in der spezifischen Spezifikation vorzunehmen. Es entsteht ein weiteres Release für die spezifische Spezifikation als auch dem Maximaldatensatz für einen Anwendungsfall. Ein Hersteller sorgt in seiner Fachanwendung dafür, dass das im Kontext passende Release der spezifischen Spezifikation herangezogen wird.
+- Wenn eine landesspezifische Spezifikation neu angelegt werden soll oder geänderte Datenelemente benötigt werden, ist die Änderung sowohl in der Spezifikation des Maximaldatensatzes als auch in der spezifischen Spezifikation vorzunehmen. Damit einhergehend entsteht ein weiteres Release für die landesspezifische Spezifikation als auch für den Maximaldatensatz für den Anwendungsfall. Ein Hersteller sorgt in seiner Fachanwendung dafür, dass das im Kontext des Einschulungsjahres passende Release der spezifischen Spezifikation herangezogen wird.
 
 **Release-Prozess**
 
@@ -61,9 +61,9 @@ Variante 2 mit allen Datenelementen aller notwendigen dezentraler spezifischer S
 
 - diese Stelle erstellt eine Übersicht aller gewünschten Veränderungen
 
-- die Anforderer nehmen aufgrund der Übersicht und gewonnen Transparenz Konsensausweitung vor
+- die Anforderer nehmen aufgrund der Übersicht und gewonnen Transparenz eine entsprechende Konsensausweitung vor
 
-- Anpassung der Spezifikationen (Maximaldatensatz als auch spezifische Spezifikationen)
+- Anpassung der Spezifikationen (Maximaldatensatz als auch landesspezifische Spezifikationen)
 
 - Kommentierungsphase durch die Anforderer, Festschreibung des neuen Release
 

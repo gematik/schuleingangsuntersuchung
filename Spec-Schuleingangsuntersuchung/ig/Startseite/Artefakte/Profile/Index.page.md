@@ -20,7 +20,7 @@ Das Profil **VerwandtePerson** (basierend auf FHIR RelatedPerson) stellt Sorgebe
 
 ### Integration mit Questionnaires
 
-Die Profile werden dazu verwendet, die im IG definierten Questionnaires einen "Patientenbezug" geben zu können. Dies ermöglicht es, Fragebogendaten kontextbezogen an die richtige Person zu binden. Mittels Extensions sind proprietäre Informationen aus dem XMeld abgebildet. Diese Informationen wurden teilweise nicht semantisch standardisiert, sondern folgen den originalen XMeld-Strukturen, um eine nahtlose Integration mit bestehenden Meldewesen-Systemen zu gewährleisten.
+Die Profile werden dazu verwendet, den im IG definierten Questionnaires einen "Patientenbezug" geben zu können. Dies ermöglicht es, Fragebogendaten kontextbezogen an die richtige Person zu binden. Mittels Extensions sind proprietäre Informationen aus dem XMeld abgebildet. Diese Informationen wurden teilweise nicht semantisch standardisiert, sondern folgen den originalen XMeld-Strukturen, um eine nahtlose Integration mit bestehenden Meldewesen-Systemen zu gewährleisten.
 
 ### Quelle und Hintergrund
 
