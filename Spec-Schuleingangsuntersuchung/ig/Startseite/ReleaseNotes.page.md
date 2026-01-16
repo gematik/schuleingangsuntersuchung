@@ -2,7 +2,7 @@
 
 ### Version 1.0.0-ballot
 
-
+Veröffentlichung für die Ballotierung
 
 ### Version 0.9.0
 
