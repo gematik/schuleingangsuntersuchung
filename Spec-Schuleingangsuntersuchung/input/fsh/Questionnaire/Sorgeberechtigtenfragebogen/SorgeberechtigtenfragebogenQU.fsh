@@ -1014,6 +1014,22 @@ Description: "Sorgeberechtigtenfragebogen"
     * item[+]
       * insert addItem(8.21.g.2, #text, [[Behinderung Merkzeichen]])
   * item[+]
+    * insert addItemWithSource(8.22a, #boolean, [[Wurde bei Ihrem Kind eine Behinderung festgestellt?]], #DE-TH)
+    * item[+]
+      * insert addItem(8.22a.1, #text, [[Welcher Behinderungsgrad?]])
+      * insert enableWhenBoolean(8.22a, =, true)
+  * item[+]
+    * insert addItemWithSource(8.22b, #boolean, [[Ist Ihr Kind Inhaber eines Schwerbehindertenausweises?]], #DE-TH)
+    * item[+]
+      * insert addItem(8.22b.1, #integer, [[Welches Merkzeichen?]])
+      * insert enableWhenBoolean(8.22b, =, true)
+  * item[+]
+    * insert addItemWithSource(8.22c, #boolean, [[Beansprucht Ihr Kind Leistungen der Pflegeversicherung?]], #DE-TH)
+    * item[+]
+      * insert addItem(8.22c.1, #choice, [[Welcher Pflegegrad?]])
+      * insert enableWhenBoolean(8.22c, =, true)
+      * answerValueSet = Canonical(PflegegradVS)
+  * item[+]
     * insert addItem(8.23, #boolean, [[Regelmäßige Medikamenteneinnahme]])
   * item[+]
     * insert addItem(8.23.1, #string, [[Welches Medikament]])
