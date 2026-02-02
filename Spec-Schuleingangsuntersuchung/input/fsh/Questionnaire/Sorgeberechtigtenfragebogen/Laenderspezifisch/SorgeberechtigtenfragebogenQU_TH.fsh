@@ -98,8 +98,6 @@ Description: "Sorgeberechtigtenfragebogen TH"
 * item[+]
   * insert addItem(5, #group, [[Schwangerschaft und Geburt]])
   * item[+]
-    * insert addItem(5.4, #boolean, [[Waren Geburtsgewicht und Geburtslänge normal?]])
-  * item[+]
     * insert addItem(5.5, #boolean, [[Auffälligkeit bei der Geburt]])
     * item[+]
       * insert enableWhenBoolean(5.5, =, true)
@@ -110,18 +108,6 @@ Description: "Sorgeberechtigtenfragebogen TH"
     * item[+]
       * insert enableWhenBoolean(5.6, =, true)
       * insert addItem(5.6.1, #string, [[Welche Auffälligkeit?]])
-    // "APGAR" steht im Deutschen für folgende Kennzeichen: Atmung, Puls, Grundtonus (Muskelspannung und Bewegung), Aussehen (Hautfarbe) und Reflexe
-  * item[+]
-    * insert addItemWithSource(5.11, #string, [[APGAR]], #DE-HB)
-    * insert regEx([["^\\d{2}\\/\\d{2}\\/\\d{2}$"]])
-    * insert entryFormat([[XX/XX/XX]])
-    * required = true
-    // "pH-Wert" ist eine Messung des Säurebasengrades im Blut oder einer Flüssigkeit. Ein typischer pH-Wert für ein neugeborenes Kind liegt zwischen 7,15 und 7,45.
-  * item[+]
-    * insert addItemWithSource(5.12, #string, [[pH- Wert]], #DE-HB)
-    * insert regEx([["^\\d,\\d{2}$"]])
-    * insert entryFormat([[X,XX]])
-    * required = true
 //********************************************
 // Entwicklung
 * item[+]
