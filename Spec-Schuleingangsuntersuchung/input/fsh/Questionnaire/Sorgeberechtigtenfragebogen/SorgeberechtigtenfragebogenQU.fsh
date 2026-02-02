@@ -573,6 +573,10 @@ Description: "Sorgeberechtigtenfragebogen"
     * item[+]
       * insert enableWhenBoolean(5.5, =, true)
       * insert addItem(5.5.1, #string, [[Welche Auffälligkeit?]])
+    * item[+]
+      * insert enableWhenBoolean(5.5, =, true)
+      * insert addItem(5.5.1a, #choice, [[Falls ja, welche?]], #DE-TH)
+      * answerValueSet = Canonical(SEU_EF_GeburtAuffälligkeitVS)
   * item[+]
     * insert addItem(5.6, #boolean, [[Auffälligkeit/Krankheit in der Schwangerschaft]])
     * item[+]

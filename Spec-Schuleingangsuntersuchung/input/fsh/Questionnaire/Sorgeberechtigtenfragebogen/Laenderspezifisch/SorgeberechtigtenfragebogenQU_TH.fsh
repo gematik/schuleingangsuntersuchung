@@ -101,6 +101,15 @@ Description: "Sorgeberechtigtenfragebogen TH"
     * insert addItem(5.4, #boolean, [[Waren Geburtsgewicht und Geburtslänge normal?]])
   * item[+]
     * insert addItem(5.5, #boolean, [[Auffälligkeit bei der Geburt]])
+    * item[+]
+      * insert enableWhenBoolean(5.5, =, true)
+      * insert addItem(5.5.1a, #choice, [[Falls ja, welche?]], #DE-TH)
+      * answerValueSet = Canonical(SEU_EF_GeburtAuffälligkeitVS)
+  * item[+]
+    * insert addItem(5.6, #boolean, [[Auffälligkeit/Krankheit in der Schwangerschaft]])
+    * item[+]
+      * insert enableWhenBoolean(5.6, =, true)
+      * insert addItem(5.6.1, #string, [[Welche Auffälligkeit?]])
     // "APGAR" steht im Deutschen für folgende Kennzeichen: Atmung, Puls, Grundtonus (Muskelspannung und Bewegung), Aussehen (Hautfarbe) und Reflexe
   * item[+]
     * insert addItemWithSource(5.11, #string, [[APGAR]], #DE-HB)
