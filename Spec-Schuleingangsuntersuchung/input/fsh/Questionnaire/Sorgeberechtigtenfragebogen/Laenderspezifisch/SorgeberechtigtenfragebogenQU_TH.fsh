@@ -11,6 +11,7 @@ Description: "Sorgeberechtigtenfragebogen TH"
 * contained[+] = AtopischeErkrankungenVS
 * contained[+] = SEU_EF_UnfallortVS
 * contained[+] = SEU_EF_HilfsmittelVS
+* contained[+] = GeburtBesonderheitenVS
 * id = "SEU-Sorgeberechtigtenfragebogen-TH"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenTH"
 * title = "SEU Sorgeberechtigtenfragebogen TH"
@@ -99,15 +100,19 @@ Description: "Sorgeberechtigtenfragebogen TH"
   * insert addItem(5, #group, [[Schwangerschaft und Geburt]])
   * item[+]
     * insert addItem(5.5, #boolean, [[Auffälligkeit bei der Geburt]])
+    * required = true
     * item[+]
       * insert enableWhenBoolean(5.5, =, true)
       * insert addItem(5.5.1a, #choice, [[Falls ja, welche?]], #DE-TH)
-      * answerValueSet = Canonical(SEU_EF_GeburtAuffälligkeitVS)
+      * answerValueSet = Canonical(GeburtBesonderheitenVS)
+      * required = true
   * item[+]
     * insert addItem(5.6, #boolean, [[Auffälligkeit/Krankheit in der Schwangerschaft]])
+    * required = true
     * item[+]
       * insert enableWhenBoolean(5.6, =, true)
       * insert addItem(5.6.1, #string, [[Welche Auffälligkeit?]])
+      * required = true
 //********************************************
 // Entwicklung
 * item[+]

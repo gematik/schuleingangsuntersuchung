@@ -66,6 +66,7 @@ Description: "Sorgeberechtigtenfragebogen"
 * contained[+] = SEU_UB_TeilnahmeVorkursDeutschVS
 * contained[+] = GeburtArtVS
 * contained[+] = GeburtsmodusVS
+* contained[+] = GeburtBesonderheitenVS
 * contained[+] = SEU_UB_AuswaehlbareElternspracheVS
 * contained[+] = SEU_UB_KindergartenArtVS
 * contained[+] = SEU_UB_GesprocheneSpracheVS
