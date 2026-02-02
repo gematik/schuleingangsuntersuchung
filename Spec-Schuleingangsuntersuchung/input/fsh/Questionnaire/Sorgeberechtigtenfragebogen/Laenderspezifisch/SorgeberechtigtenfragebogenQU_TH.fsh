@@ -121,8 +121,19 @@ Description: "Sorgeberechtigtenfragebogen TH"
   * item[+]
     * insert addItem(7.10, #text, [[Angabe zu Entwicklungsverzögerungen, bspw. beim Erlernen des Sitzens/Laufens]])
   * item[+]
+    * insert addItem(7.10a, #integer, [[Freies Laufen ab .. (Lebensmonat)]])
+    * insert minValueInt(0)
+  * item[+]
+    * insert addItem(7.10b, #integer, [[Erste Worte sprechen (außer Mama, Papa) ab .. (Lebensmonat)]])
+    * insert minValueInt(0)
+  * item[+]
     * insert addItemWithSource(7.11a, #boolean, [[Auffälligkeit des Verhaltens]], #DE-HE)
     * required = true
+  * item[+]
+    * insert addItemWithSource(7.11c, #boolean, [[Besonderheiten der Entwicklung]], #DE-TH)
+    * item[+]
+      * insert addItemWithSource(7.11c.1, #text, [[Falls ja, welche?]], #DE-TH)
+      * insert enableWhenBoolean(7.11c, =, true)
 //********************************************
 // Erkrankungen und gesundheitliche Einschränkungen
 * item[+]

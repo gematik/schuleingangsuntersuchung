@@ -734,11 +734,22 @@ Description: "Sorgeberechtigtenfragebogen"
   * item[+]
     * insert addItem(7.10, #text, [[Angabe zu Entwicklungsverzögerungen, bspw. beim Erlernen des Sitzens/Laufens]])
   * item[+]
+    * insert addItem(7.10a, #integer, [[Freies Laufen ab .. (Lebensmonat)]])
+    * insert minValueInt(0)
+  * item[+]
+    * insert addItem(7.10b, #integer, [[Erste Worte sprechen (außer Mama, Papa) ab .. (Lebensmonat)]])
+    * insert minValueInt(0)
+  * item[+]
     * insert addItem(7.11, #open-choice, [[Auffälligkeit des Verhaltens]])
     * repeats = true
     * answerValueSet = Canonical(AuffaelligkeitVerhaltenVS)
   * item[+]
     * insert addItemWithSource(7.11a, #boolean, [[Auffälligkeit des Verhaltens]], #DE-HE)
+  * item[+]
+    * insert addItemWithSource(7.11c, #boolean, [[Besonderheiten der Entwicklung]], #DE-TH)
+    * item[+]
+      * insert addItemWithSource(7.11c.1, #text, [[Falls ja, welche?]], #DE-TH)
+      * insert enableWhenBoolean(7.11c, =, true)
   * item[+]
     * insert addItemWithSource(7.11b, #boolean, [[Würden Sie sagen, dass Ihr Kind insgesamt gesehen in einem oder mehreren der folgenden Bereiche Schwierigkeiten hat: Stimmung (bedrückt, ängstlich, schwankend, aufbrausend), Konzentration (kann nicht lange stillsitzen, hört beim Vorlesen nicht ausdauernd zu), Verhalten, Umgang mit Anderen?]], #DE-BY)
   * item[+]
