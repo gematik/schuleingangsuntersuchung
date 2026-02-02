@@ -121,14 +121,18 @@ Description: "Sorgeberechtigtenfragebogen TH"
   * item[+]
     * insert addItem(7.10a, #integer, [[Freies Laufen ab .. (Lebensmonat)]])
     * insert minValueInt(0)
+    * required = true
   * item[+]
     * insert addItem(7.10b, #integer, [[Erste Worte sprechen (außer Mama, Papa) ab .. (Lebensmonat)]])
     * insert minValueInt(0)
+    * required = true
   * item[+]
     * insert addItemWithSource(7.11c, #boolean, [[Besonderheiten der Entwicklung]], #DE-TH)
+    * required = true
     * item[+]
       * insert addItemWithSource(7.11c.1, #text, [[Falls ja, welche?]], #DE-TH)
       * insert enableWhenBoolean(7.11c, =, true)
+      * required = true
 //********************************************
 // Erkrankungen und gesundheitliche Einschränkungen
 * item[+]
