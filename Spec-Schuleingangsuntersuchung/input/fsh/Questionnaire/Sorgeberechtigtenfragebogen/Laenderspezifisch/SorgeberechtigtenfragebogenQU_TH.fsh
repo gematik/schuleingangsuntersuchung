@@ -128,14 +128,6 @@ Description: "Sorgeberechtigtenfragebogen TH"
 * item[+]
   * insert addItem(8, #group, [[Erkrankungen und gesundheitliche Einschränkungen]])
   * item[+]
-    * insert addItem(8.6, #boolean, [[Brillenträger?]])
-    * required = true
-  * item[+]
-    * insert addItemWithSource(8.6a, #choice, [[Hilfsmittel?]], #DE-BB)
-    * answerValueSet = Canonical(SEU_EF_HilfsmittelVS)
-    * repeats = true
-    * required = true
-  * item[+]
     * insert addItemWithSource(8.6b, #boolean, [[Nutzt Ihr Kind Hilfsmittel?]], #DE-TH)
     * item[+]
       * insert addItemWithSource(8.6b.1, #choice, [[Falls ja, welche?]], #DE-TH)
@@ -143,16 +135,6 @@ Description: "Sorgeberechtigtenfragebogen TH"
       * answerValueSet = Canonical(SEU_EF_HilfsmittelTHVS)
       * repeats = true
       * required = true
-  * item[+]
-    * insert addItem(8.9.G, #group, [[Details: Angeborene schwere Hörstörung]])
-    //* insert enableWhenBoolean(8.9, =, true) TODO auskommentiert ohne fachliche überprüfung
-    * item[+]
-      * insert addItem(8.9.G.hoergeraete.G, #group, [[Hörgeräte]])
-      * repeats = true
-      * item[+]
-        * answerValueSet = Canonical(LinksRechtsBeidseitsKeineAngabeVS)
-        * insert addItem(8.9.G.hoergeraete.G.1, #choice, [[Höregerätseite]])
-        * required = true
   * item[+]
     * insert addItem(8.11.g, #group, [[Erkrankungen]])
     * repeats = true
