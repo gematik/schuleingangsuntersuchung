@@ -1920,13 +1920,20 @@ Description: "CodeSystem für die Angabe von Hilfsmitteln."
 * #hoerhilfe "Hörhilfe"
 * #orthese "Orthese"
 * #zahnersatz "Zahnersatz (Prothese, Platzhalter)"
+* #rollstuhl "Rollstuhl"
+* #gehhilfe "Gehhilfe"
+* #schuheinlage "Schuheinlage"
 * #anderes "Anderes"
 
 ValueSet: SEU_EF_HilfsmittelVS
 Id: seu-ef-hilfsmittel-vs
 Title: "SEU_EF_Hilfsmittel ValueSet"
 Description: "ValueSet, das verschiedene Hilfsmittel enthält."
-* include codes from system SEU_EF_HilfsmittelCS
+* SEU_EF_HilfsmittelCS#sehhilfe "Sehhilfe (z. B. Brille)"
+* SEU_EF_HilfsmittelCS#hoerhilfe "Hörhilfe"
+* SEU_EF_HilfsmittelCS#orthese "Orthese"
+* SEU_EF_HilfsmittelCS#zahnersatz "Zahnersatz (Prothese, Platzhalter)"
+* SEU_EF_HilfsmittelCS#anderes "Anderes"
 * ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
 * ^expansion.contains[0].system = Canonical(SEU_EF_HilfsmittelCS)
 * ^expansion.contains[=].code = #sehhilfe
@@ -1943,6 +1950,36 @@ Description: "ValueSet, das verschiedene Hilfsmittel enthält."
 * ^expansion.contains[+].system = Canonical(SEU_EF_HilfsmittelCS)
 * ^expansion.contains[=].code = #anderes
 * ^expansion.contains[=].display = "Anderes"
+
+ValueSet: SEU_EF_HilfsmittelTHVS
+Id: SEU_EF_HilfsmittelTHVS
+Title: "SEU_EF_Hilfsmittel Mehrfach ValueSet"
+Description: "ValueSet, das verschiedene Hilfsmittel für Mehrfachauswahl enthält."
+* SEU_EF_HilfsmittelCS#sehhilfe "Sehhilfe (z. B. Brille)"
+* SEU_EF_HilfsmittelCS#hoerhilfe "Hörhilfe"
+* SEU_EF_HilfsmittelCS#orthese "Orthese"
+* SEU_EF_HilfsmittelCS#rollstuhl "Rollstuhl"
+* SEU_EF_HilfsmittelCS#gehhilfe "Gehhilfe"
+* SEU_EF_HilfsmittelCS#schuheinlage "Schuheinlage"
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
+* ^expansion.contains[0].system = Canonical(SEU_EF_HilfsmittelCS)
+* ^expansion.contains[=].code = #sehhilfe
+* ^expansion.contains[=].display = "Sehhilfe (z. B. Brille)"
+* ^expansion.contains[+].system = Canonical(SEU_EF_HilfsmittelCS)
+* ^expansion.contains[=].code = #hoerhilfe
+* ^expansion.contains[=].display = "Hörhilfe"
+* ^expansion.contains[+].system = Canonical(SEU_EF_HilfsmittelCS)
+* ^expansion.contains[=].code = #orthese
+* ^expansion.contains[=].display = "Orthese"
+* ^expansion.contains[+].system = Canonical(SEU_EF_HilfsmittelCS)
+* ^expansion.contains[=].code = #rollstuhl
+* ^expansion.contains[=].display = "Rollstuhl"
+* ^expansion.contains[+].system = Canonical(SEU_EF_HilfsmittelCS)
+* ^expansion.contains[=].code = #gehhilfe
+* ^expansion.contains[=].display = "Gehhilfe"
+* ^expansion.contains[+].system = Canonical(SEU_EF_HilfsmittelCS)
+* ^expansion.contains[=].code = #schuheinlage
+* ^expansion.contains[=].display = "Schuheinlage"
 
 CodeSystem: SEU_EF_FachaerzteCS
 Id: seu-ef-fachaerzte-cs

@@ -52,6 +52,7 @@ Description: "Sorgeberechtigtenfragebogen"
 * contained[+] = SEU_EF_BehandlungstypVS
 * contained[+] = SEU_EF_DauerBWVS
 * contained[+] = SEU_EF_HilfsmittelVS
+* contained[+] = SEU_EF_HilfsmittelTHVS
 * contained[+] = SEU_EF_FachaerzteVS
 * contained[+] = SEU_EF_DauerBBVS
 * contained[+] = SEU_EF_SpracheVS
@@ -797,6 +798,13 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert addItemWithSource(8.6a, #choice, [[Hilfsmittel?]], #DE-BB)
     * answerValueSet = Canonical(SEU_EF_HilfsmittelVS)
     * repeats = true
+  * item[+]
+    * insert addItemWithSource(8.6b, #boolean, [[Nutzt Ihr Kind Hilfsmittel?]], #DE-TH)
+    * item[+]
+      * insert addItemWithSource(8.6b.1, #choice, [[Falls ja, welche?]], #DE-TH)
+      * insert enableWhenBoolean(8.6b, =, true)
+      * answerValueSet = Canonical(SEU_EF_HilfsmittelVS)
+      * repeats = true
   * item[+]
     * insert addItem(8.7, #date, [[Letzte Untersuchung beim Augenarzt?]])
   * item[+] insert addItemWithSource(8.7a, #boolean, [[Augenarztbesuch]], #DE-BY)

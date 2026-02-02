@@ -11,6 +11,7 @@ Description: "Sorgeberechtigtenfragebogen TH"
 * contained[+] = AtopischeErkrankungenVS
 * contained[+] = SEU_EF_UnfallortVS
 * contained[+] = SEU_EF_HilfsmittelVS
+* contained[+] = SEU_EF_HilfsmittelTHVS
 * contained[+] = GeburtBesonderheitenVS
 * id = "SEU-Sorgeberechtigtenfragebogen-TH"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenTH"
@@ -134,6 +135,14 @@ Description: "Sorgeberechtigtenfragebogen TH"
     * answerValueSet = Canonical(SEU_EF_HilfsmittelVS)
     * repeats = true
     * required = true
+  * item[+]
+    * insert addItemWithSource(8.6b, #boolean, [[Nutzt Ihr Kind Hilfsmittel?]], #DE-TH)
+    * item[+]
+      * insert addItemWithSource(8.6b.1, #choice, [[Falls ja, welche?]], #DE-TH)
+      * insert enableWhenBoolean(8.6b, =, true)
+      * answerValueSet = Canonical(SEU_EF_HilfsmittelTHVS)
+      * repeats = true
+      * required = true
   * item[+]
     * insert addItem(8.9.G, #group, [[Details: Angeborene schwere Hörstörung]])
     //* insert enableWhenBoolean(8.9, =, true) TODO auskommentiert ohne fachliche überprüfung
