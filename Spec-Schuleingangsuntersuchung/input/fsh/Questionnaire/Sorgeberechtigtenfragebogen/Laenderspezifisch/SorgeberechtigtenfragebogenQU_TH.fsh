@@ -173,8 +173,12 @@ Description: "Sorgeberechtigtenfragebogen TH"
     * insert addItem(8.16a, #choice, [[Besitzt Ihr Kind Allergien?]])
     * required = true
   * item[+]
-    * answerValueSet = Canonical(AtopischeErkrankungenVS)
-    * insert addItemWithSource(8.16b, #string, [[Gesundheitsstörungen in der Familie des Kindes  (z.B. Allergien, Asthma b.,Epilepsie)]],  #DE-TH)
+    * insert addItemWithSource(8.16b, #boolean, [[Gibt es Gesundheitsstörungen in der Familie, von denen Sie wissen oder vermuten, dass sie Auswirkungen auf die Entwicklung oder Belastbarkeit Ihres Kindes haben könnten bzw. im Schulalltag zu berücksichtigen wären (z. B. Sehstörung, Hörstörung, Herz-Kreislauf-Erkrankung, Allergie, Asthma bronchiale, Epilepsie, Depression oder andere psychische Erkrankung, Rheuma, Diabetes mellitus, Krebserkrankung, andere schwere Erkrankung)]], #DE-TH)
+    * required = true
+    * item[+]
+      * insert addItemWithSource(8.16b.1, #string, [[Wenn ja, welche?]], #DE-TH)
+      * insert enableWhenBoolean(8.16b, =, true)
+      * required = true
   * item[+]
     * answerValueSet = Canonical(PflegegradVS)
     * insert addItem(8.20, #choice, [[Pflegegrad]])
