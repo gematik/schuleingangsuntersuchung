@@ -172,20 +172,26 @@ Description: "Sorgeberechtigtenfragebogen TH"
       * required = true
   * item[+]
     * insert addItemWithSource(8.22a, #boolean, [[Wurde bei Ihrem Kind eine Behinderung festgestellt?]], #DE-TH)
+    * required = true
     * item[+]
       * insert addItem(8.22a.1, #text, [[Welcher Behinderungsgrad?]])
       * insert enableWhenBoolean(8.22a, =, true)
+      * required = true
   * item[+]
     * insert addItemWithSource(8.22b, #boolean, [[Ist Ihr Kind Inhaber eines Schwerbehindertenausweises?]], #DE-TH)
+    * required = true
     * item[+]
       * insert addItem(8.22b.1, #integer, [[Welches Merkzeichen?]])
       * insert enableWhenBoolean(8.22b, =, true)
+      * required = true
   * item[+]
     * insert addItemWithSource(8.22c, #boolean, [[Beansprucht Ihr Kind Leistungen der Pflegeversicherung?]], #DE-TH)
+    * required = true
     * item[+]
       * insert addItem(8.22c.1, #choice, [[Welcher Pflegegrad?]])
       * insert enableWhenBoolean(8.22c, =, true)
       * answerValueSet = Canonical(PflegegradVS)
+      * required = true
   * item[+]
     * insert addItemWithSource(8.26a, #text, [[Gesundheitsstörungen und Besonderheiten beim Kind, die nach Meinung der Eltern zu berücksichtigen sind]], #DE-TH)
   * item[+]
