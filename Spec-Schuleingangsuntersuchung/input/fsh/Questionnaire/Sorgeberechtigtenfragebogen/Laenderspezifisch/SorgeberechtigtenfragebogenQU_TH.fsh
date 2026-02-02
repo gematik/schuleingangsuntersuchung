@@ -171,10 +171,6 @@ Description: "Sorgeberechtigtenfragebogen TH"
       * insert enableWhenBoolean(8.16b, =, true)
       * required = true
   * item[+]
-    * answerValueSet = Canonical(PflegegradVS)
-    * insert addItem(8.20, #choice, [[Pflegegrad]])
-    * required = true
-  * item[+]
     * insert addItemWithSource(8.22a, #boolean, [[Wurde bei Ihrem Kind eine Behinderung festgestellt?]], #DE-TH)
     * item[+]
       * insert addItem(8.22a.1, #text, [[Welcher Behinderungsgrad?]])
