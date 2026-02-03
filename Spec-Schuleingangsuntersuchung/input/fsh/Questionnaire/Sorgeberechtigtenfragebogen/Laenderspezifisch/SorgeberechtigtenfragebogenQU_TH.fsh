@@ -104,7 +104,7 @@ Description: "Sorgeberechtigtenfragebogen TH"
     * required = true
     * item[+]
       * insert enableWhenBoolean(5.5, =, true)
-      * insert addItem(5.5.1a, #choice, [[Falls ja, welche?]], #DE-TH)
+      * insert addItemWithSource(5.5.1a, #choice, [[Falls ja, welche?]], #DE-TH)
       * answerValueSet = Canonical(GeburtBesonderheitenVS)
       * required = true
   * item[+]
