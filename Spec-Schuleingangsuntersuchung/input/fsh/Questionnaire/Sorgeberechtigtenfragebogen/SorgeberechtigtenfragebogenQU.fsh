@@ -18,7 +18,9 @@ Description: "Sorgeberechtigtenfragebogen"
 * contained[+] = LinksRechtsBeidseitsKeineAngabeVS
 * contained[+] = StoffwechselstoerungVS
 * contained[+] = ErkrankungVS
+* contained[+] = ErkrankungenTHVS
 * contained[+] = InfektionsKrankheitVS
+* contained[+] = InfektionsKrankheitTHVS
 * contained[+] = ErkrankungenLetztesJahrVS
 * contained[+] = PflegegradVS
 * contained[+] = GradDerBehinderungVS
@@ -433,7 +435,7 @@ Description: "Sorgeberechtigtenfragebogen"
       * insert addItem(3.2.7, #boolean, Schilddrüsenerkrankung)
       * item[+]
         * insert enableWhenBoolean(3.2.7, =, true)
-        * insert addItem(3.2.7.1, #string, Welche Schilddrüsenerkrankung?)      
+        * insert addItem(3.2.7.1, #string, Welche Schilddrüsenerkrankung?)
   * item[+]
     * insert addItemWithSource(3.2a, #group, [[Gibt es in der Familie (Eltern, Geschwister)]], #DE-BY)
     * item[+]
@@ -818,6 +820,7 @@ Description: "Sorgeberechtigtenfragebogen"
       * insert enableWhenBoolean(8.6b, =, true)
       * answerValueSet = Canonical(SEU_EF_HilfsmittelVS)
       * repeats = true
+
   * item[+]
     * insert addItem(8.7, #date, [[Letzte Untersuchung beim Augenarzt?]])
   * item[+] insert addItemWithSource(8.7a, #boolean, [[Augenarztbesuch]], #DE-BY)
@@ -920,9 +923,9 @@ Description: "Sorgeberechtigtenfragebogen"
     * item[+]
       * answerValueSet = Canonical(ErkrankungVS)
       * insert addItem(8.11.g.1, #open-choice, [[Erkrankung]])
-    * item[+]  
+    * item[+]
       * insert addItem(8.11.g.2, #date, [[Erkrankungsbeginn]])
-    * item[+]        
+    * item[+]
       * insert addItem(8.11.g.3, #boolean, [[Durch Ärzt:in festgestellt]])
   * item[+]
     * insert addItem(8.12.g, #group, [[Infektionskrankheiten]])
@@ -930,7 +933,7 @@ Description: "Sorgeberechtigtenfragebogen"
     * item[+]
       * answerValueSet = Canonical(InfektionsKrankheitVS)
       * insert addItem(8.12.g.1, #open-choice, [[Infektionskrankheit]])
-    * item[+]  
+    * item[+]
       * insert addItem(8.12.g.2, #date, [[Erkrankungsbeginn]])
   * item[+]
     * insert addItem(8.13.g, #group, [[Erkrankungen im letzten Jahr]])
@@ -950,7 +953,7 @@ Description: "Sorgeberechtigtenfragebogen"
       * insert enableWhenBoolean(8.14, =, true)
       * repeats = true 
   * item[+]
-    * insert addItemWithSource(8.14b, #text, [[Bisher durchgemachte Erkrankungen, bspw. Windpocken oder Masern. Zeitlich nicht bestimmt]], #DE-BW)    
+    * insert addItemWithSource(8.14b, #text, [[Bisher durchgemachte Erkrankungen, bspw. Windpocken oder Masern. Zeitlich nicht bestimmt]], #DE-BW)
   * item[+]
     * insert addItemWithSource(8.14c, #open-choice, [[Welche der folgenden Krankheiten wurden bei Ihrem Kind jemals ärztlich diagnostiziert?]], #DE-TH)
     * answerValueSet = Canonical(ErkrankungenTHVS)
@@ -987,7 +990,6 @@ Description: "Sorgeberechtigtenfragebogen"
     * item[+]
       * insert addItem(8.16a.1, #string, [[Welche sonstigen Allergien?]])  
       * insert enableWhenCode(8.16a, =, AtopischeErkrankungenCS, sonstiges)
-      
 // Familienanamnese
   * item[+]
     * insert addItemWithSource(8.16b, #boolean, [[Gibt es Gesundheitsstörungen in der Familie, von denen Sie wissen oder vermuten, dass sie Auswirkungen auf die Entwicklung oder Belastbarkeit Ihres Kindes haben könnten bzw. im Schulalltag zu berücksichtigen wären (z. B. Sehstörung, Hörstörung, Herz-Kreislauf-Erkrankung, Allergie, Asthma bronchiale, Epilepsie, Depression oder andere psychische Erkrankung, Rheuma, Diabetes mellitus, Krebserkrankung, andere schwere Erkrankung)]], #DE-TH)
@@ -1015,9 +1017,9 @@ Description: "Sorgeberechtigtenfragebogen"
     * item[+]
       * insert addItemWithSource(8.16e.1, #string, [[Welche sonstigen derzeitigen Erkrankungen?]], #DE-ST)
       * insert enableWhenCode(8.16e, =, DerzeitigeErkrankungenCS, sonstige_welche)
-
   * item[+]
     * insert addItem(8.17, #boolean, [[Entwicklungsdiagnostik]])
+// Behinderung
   * item[+]
     * insert addItem(8.18, #boolean, [[Behindertenausweis vorhanden]])
   * item[+]
@@ -1050,6 +1052,7 @@ Description: "Sorgeberechtigtenfragebogen"
       * insert addItem(8.22c.1, #choice, [[Welcher Pflegegrad?]])
       * insert enableWhenBoolean(8.22c, =, true)
       * answerValueSet = Canonical(PflegegradVS)
+// Medikamente
   * item[+]
     * insert addItem(8.23, #boolean, [[Regelmäßige Medikamenteneinnahme]])
   * item[+]
@@ -1097,7 +1100,6 @@ Description: "Sorgeberechtigtenfragebogen"
         * insert enableWhenCode(8.27.2, =, SEU_EF_OperationenCS, sonstige_operation)
   * item[+]
     * insert addItemWithSource(8.27a, #boolean, [[Ambulante Operation(en)]], #DE-ST)
-
   * item[+]
     * insert addItemWithSource(8.27b, #boolean, [[Wurde Ihr Kind jemals operiert bzw. ist eine Operation geplant?]], #DE-TH)
     * item[+]
@@ -1135,9 +1137,9 @@ Description: "Sorgeberechtigtenfragebogen"
     * item[+]
       * insert addItem(8.29.1, #string, [[Welche sonstige Befindlichkeitstörung?]])
       * insert enableWhenCode(8.29, =, AllgemeineBeschwerdenCS, sonstige)
+// Unfallverletzungen
   * item[+]
     * insert addItemWithSource(8.30, #boolean, [[Wurde Ihr Kind jemals aufgrund von Unfallverletzungen von einem Arzt behandelt?]], #DE-SL)
-
 // Inkontinenz
   * item[+]
     * insert addItemWithSource(8.30.1, #boolean, [[Nässt Ihr Kind ein?]], #DE-BE)
@@ -1145,19 +1147,16 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert addItemWithSource(8.31, #boolean, [[Einnässen tags]], #DE-SL)
   * item[+]
     * insert addItemWithSource(8.32, #boolean, [[Einnässen nachts]], #DE-SL)
-    
 // Einkoten
   * item[+]
     * insert addItemWithSource(8.33, #boolean, [[Einkoten tags]], #DE-SL)
   * item[+]
     * insert addItemWithSource(8.34, #boolean, [[Einkoten nachts]], #DE-SL)
-
 // Verhaltensauffälligkeiten
   * item[+]
     * insert addItemWithSource(8.34a, #choice, [[Zeigte Ihr Kind in den vergangenen 12 Monaten folgende Verhaltensauffälligkeiten?]], #DE-TH)
     * answerValueSet = Canonical(VerhaltensauffaelligkeitenVS)
     * repeats = true
-
 // Bisherige Erkrankungen
   * item[+]
     * insert addItemWithSource(8.35a, #group, [[Bisherige Erkrankungen Ihres Kindes?]], #DE-SL)
@@ -1453,6 +1452,7 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert addItemWithSource(9.13a, #choice, [[Welche Behandlungen oder Unterstützungen hat Ihr Kind jemals erhalten?]], #DE-TH)
     * answerValueSet = Canonical(FoerderungVS)
     * repeats = true
+// Kuren
   * item[+]
     * insert addItem(9.11.g, #group, [[Kuren]])
     * repeats = true
@@ -1466,6 +1466,7 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert addItemWithSource(9.15, #boolean, [[Komplexleistung]], #DE-HB)
   * item[+]
     * insert addItemWithSource(9.16, #boolean, [[Persönliche Hilfe/Eingliederungshilfe in Kita]], #DE-HB)
+  
 // Förderungen in den vergangenen 12 Monaten
 // Alle Unteritems der Gruppe 9a sind exakte Kopien der Gruppe 9. Bei Änderungen der Gruppe 9, müssen alle Unterpunkte der Gruppe 9 erneut in die Gruppe 9a kopiert werden. Ebenfalls müssen alle 9. durch 9a. ersetzt werden.
 * item[+]

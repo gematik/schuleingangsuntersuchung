@@ -4,8 +4,8 @@ Usage: #example
 Title: "Sorgeberechtigtenfragebogen TH"
 Description: "Sorgeberechtigtenfragebogen TH"
 * contained[+] = LinksRechtsBeidseitsKeineAngabeVS
-* contained[+] = ErkrankungVS
-* contained[+] = InfektionsKrankheitVS
+* contained[+] = ErkrankungenTHVS
+* contained[+] = InfektionsKrankheitTHVS
 * contained[+] = PflegegradVS
 * contained[+] = UnfallOrtVS
 * contained[+] = AtopischeErkrankungenVS
@@ -138,6 +138,7 @@ Description: "Sorgeberechtigtenfragebogen TH"
 // Erkrankungen und gesundheitliche Einschränkungen
 * item[+]
   * insert addItem(8, #group, [[Erkrankungen und gesundheitliche Einschränkungen]])
+// Hilfsmittel
   * item[+]
     * insert addItemWithSource(8.6b, #boolean, [[Nutzt Ihr Kind Hilfsmittel?]], #DE-TH)
     * item[+]
@@ -157,6 +158,7 @@ Description: "Sorgeberechtigtenfragebogen TH"
     * answerValueSet = Canonical(InfektionsKrankheitTHVS)
     * repeats = true
     * required = true
+// Krankenhausaufenthalte
   * item[+]
     * insert addItem(8.15, #boolean, [[Krankenhausaufenthalt]])
     * required = true
@@ -164,10 +166,13 @@ Description: "Sorgeberechtigtenfragebogen TH"
       * insert addItem(8.15.1, #string, [[Detaillierte Angaben zum Krankenhausaufenthalt?]])
       * insert enableWhenBoolean(8.15, =, true)
       * required = true
+// Atopische Erkrankungen
   * item[+]
     * answerValueSet = Canonical(AtopischeErkrankungenVS)  
     * insert addItem(8.16a, #choice, [[Besitzt Ihr Kind Allergien?]])
     * required = true
+
+// Familienanamnese
   * item[+]
     * insert addItemWithSource(8.16b, #boolean, [[Gibt es Gesundheitsstörungen in der Familie, von denen Sie wissen oder vermuten, dass sie Auswirkungen auf die Entwicklung oder Belastbarkeit Ihres Kindes haben könnten bzw. im Schulalltag zu berücksichtigen wären (z. B. Sehstörung, Hörstörung, Herz-Kreislauf-Erkrankung, Allergie, Asthma bronchiale, Epilepsie, Depression oder andere psychische Erkrankung, Rheuma, Diabetes mellitus, Krebserkrankung, andere schwere Erkrankung)]], #DE-TH)
     * required = true
@@ -175,6 +180,7 @@ Description: "Sorgeberechtigtenfragebogen TH"
       * insert addItemWithSource(8.16b.1, #string, [[Wenn ja, welche?]], #DE-TH)
       * insert enableWhenBoolean(8.16b, =, true)
       * required = true
+// Behinderungen und Pflegegrad
   * item[+]
     * insert addItemWithSource(8.22a, #boolean, [[Wurde bei Ihrem Kind eine Behinderung festgestellt?]], #DE-TH)
     * required = true
@@ -197,8 +203,6 @@ Description: "Sorgeberechtigtenfragebogen TH"
       * insert enableWhenBoolean(8.22c, =, true)
       * answerValueSet = Canonical(PflegegradVS)
       * required = true
-  * item[+]
-    * insert addItemWithSource(8.26a, #text, [[Gesundheitsstörungen und Besonderheiten beim Kind, die nach Meinung der Eltern zu berücksichtigen sind]], #DE-TH)
 // Verhaltensauffälligkeiten
   * item[+]
     * insert addItemWithSource(8.34a, #choice, [[Zeigte Ihr Kind in den vergangenen 12 Monaten folgende Verhaltensauffälligkeiten?]], #DE-TH)
@@ -213,16 +217,6 @@ Description: "Sorgeberechtigtenfragebogen TH"
       * insert addItemWithSource(8.27b.1, #text, [[Falls ja, welche Operationen und wann?]], #DE-TH)
       * insert enableWhenBoolean(8.27b, =, true)
       * required = true
-  * item[+]
-    * insert addItemWithSource(8.51, #boolean, [[Operationen Sonstige OP]], #DE-SL)
-    * required = true
-  * item[+]
-    * insert addItemWithSource(8.56, #choice, [[Unfälle Sonstige]], #DE-SL)
-    * answerValueSet = Canonical(SEU_EF_UnfallortVS)
-    * required = true
-  * item[+]
-    * insert addItemWithSource(8.82, #string, [[Kur mit welchem Behandlungsschwerpunkt?]], #DE-TH)
-    * required = true
 // Unfälle
   * item[+]
     * insert addItemWithSource(8.28b, #boolean, [[Hatte  Ihr Kind jemals einen Unfall, der ärztlich behandelt wurde?]], #DE-BB)
