@@ -652,6 +652,14 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert enableWhenCode(6.1e, =, SEU_UB_GesprocheneSpracheCS, 8)
     * enableBehavior = #any
   * item[+]
+    * insert addItemWithSource(6.1f, #choice, [[Welche Sprache wird mit dem Kind zu Hause gesprochen?]], #DE-TH)
+    * answerValueSet = Canonical(UeberwiegendGesprocheneSpracheVS)
+    * item[+]
+      * insert addItemWithSource(6.1f.1, #text, [[Welche Sprache?]], #DE-TH)
+      * insert enableWhenCode(6.1f, =, UeberwiegendGesprocheneSpracheCS, andere)
+      * insert enableWhenCode(6.1f, =, UeberwiegendGesprocheneSpracheCS, deutsch_andere)
+      * enableBehavior = #any
+  * item[+]
     * insert addItem(6.2, #choice, [[Muttersprache des Kindes]])
     * answerValueSet = Canonical(ISO6392_LanguageVS)
   * item[+]
