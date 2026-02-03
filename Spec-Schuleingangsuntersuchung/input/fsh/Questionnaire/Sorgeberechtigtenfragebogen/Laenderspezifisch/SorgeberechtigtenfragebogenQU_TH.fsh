@@ -13,6 +13,7 @@ Description: "Sorgeberechtigtenfragebogen TH"
 * contained[+] = SEU_EF_HilfsmittelVS
 * contained[+] = SEU_EF_HilfsmittelTHVS
 * contained[+] = GeburtBesonderheitenVS
+* contained[+] = VerhaltensauffaelligkeitenVS
 * id = "SEU-Sorgeberechtigtenfragebogen-TH"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenTH"
 * title = "SEU Sorgeberechtigtenfragebogen TH"
@@ -198,6 +199,13 @@ Description: "Sorgeberechtigtenfragebogen TH"
       * required = true
   * item[+]
     * insert addItemWithSource(8.26a, #text, [[Gesundheitsstörungen und Besonderheiten beim Kind, die nach Meinung der Eltern zu berücksichtigen sind]], #DE-TH)
+// Verhaltensauffälligkeiten
+  * item[+]
+    * insert addItemWithSource(8.34a, #choice, [[Zeigte Ihr Kind in den vergangenen 12 Monaten folgende Verhaltensauffälligkeiten?]], #DE-TH)
+    * answerValueSet = Canonical(VerhaltensauffaelligkeitenVS)
+    * repeats = true
+    * required = true
+// Operationen
   * item[+]
     * insert addItemWithSource(8.51, #boolean, [[Operationen Sonstige OP]], #DE-SL)
     * required = true

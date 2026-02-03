@@ -106,6 +106,7 @@ Description: "Sorgeberechtigtenfragebogen"
 * contained[+] = SchulabschlussBerlinVS
 * contained[+] = BerufstaetigkeitElternBerlinVS
 * contained[+] = FoerderungVS
+* contained[+] = VerhaltensauffaelligkeitenVS
 
 * id = "SEU-Sorgeberechtigtenfragebogen"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Sorgeberechtigtenfragebogen"
@@ -1142,6 +1143,12 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert addItemWithSource(8.33, #boolean, [[Einkoten tags]], #DE-SL)
   * item[+]
     * insert addItemWithSource(8.34, #boolean, [[Einkoten nachts]], #DE-SL)
+
+// Verhaltensauffälligkeiten
+  * item[+]
+    * insert addItemWithSource(8.34a, #choice, [[Zeigte Ihr Kind in den vergangenen 12 Monaten folgende Verhaltensauffälligkeiten?]], #DE-TH)
+    * answerValueSet = Canonical(VerhaltensauffaelligkeitenVS)
+    * repeats = true
 
 // Bisherige Erkrankungen
   * item[+]
