@@ -207,6 +207,13 @@ Description: "Sorgeberechtigtenfragebogen TH"
     * required = true
 // Operationen
   * item[+]
+    * insert addItemWithSource(8.27b, #boolean, [[Wurde Ihr Kind jemals operiert bzw. ist eine Operation geplant?]], #DE-TH)
+    * required = true
+    * item[+]
+      * insert addItemWithSource(8.27b.1, #text, [[Falls ja, welche Operationen und wann?]], #DE-TH)
+      * insert enableWhenBoolean(8.27b, =, true)
+      * required = true
+  * item[+]
     * insert addItemWithSource(8.51, #boolean, [[Operationen Sonstige OP]], #DE-SL)
     * required = true
   * item[+]
@@ -216,6 +223,14 @@ Description: "Sorgeberechtigtenfragebogen TH"
   * item[+]
     * insert addItemWithSource(8.82, #string, [[Kur mit welchem Behandlungsschwerpunkt?]], #DE-TH)
     * required = true
+// Unfälle
+  * item[+]
+    * insert addItemWithSource(8.28b, #boolean, [[Hatte  Ihr Kind jemals einen Unfall, der ärztlich behandelt wurde?]], #DE-BB)
+    * required = true
+    * item[+]
+      * insert addItemWithSource(8.28b.1, #text, [[Falls ja, welche Verletzung und wann?]], #DE-TH)
+      * insert enableWhenBoolean(8.28b, =, true)
+      * required = true
 //********************************************
 // Förderungen
 * item[+]
