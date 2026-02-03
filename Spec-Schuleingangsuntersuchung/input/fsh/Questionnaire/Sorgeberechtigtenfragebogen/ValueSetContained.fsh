@@ -1912,6 +1912,31 @@ Description: "ValueSet, das verschiedene Dauern enthält."
 * ^expansion.contains[=].code = #keine_angabe
 * ^expansion.contains[=].display = "Keine Angabe"
 
+ValueSet: SEU_EF_DauerTHVS
+Id: seu-ef-dauer-th-vs
+Title: "SEU_EF_Dauer ValueSet"
+Description: "ValueSet, das verschiedene Dauern enthält."
+* include codes from system SEU_EF_DauerCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
+* ^expansion.contains[0].system = Canonical(SEU_EF_DauerCS)
+* ^expansion.contains[=].code = #gar_nicht
+* ^expansion.contains[=].display = "Gar nicht"
+* ^expansion.contains[+].system = Canonical(SEU_EF_DauerCS)
+* ^expansion.contains[=].code = #unter_1_jahr
+* ^expansion.contains[=].display = "Unter 1 Jahr"
+* ^expansion.contains[+].system = Canonical(SEU_EF_DauerCS)
+* ^expansion.contains[=].code = #ueber_1_jahr
+* ^expansion.contains[=].display = "Über 1 Jahr"
+* ^expansion.contains[+].system = Canonical(SEU_EF_DauerCS)
+* ^expansion.contains[=].code = #ueber_2_jahre
+* ^expansion.contains[=].display = "Über 2 Jahre"
+* ^expansion.contains[+].system = Canonical(SEU_EF_DauerCS)
+* ^expansion.contains[=].code = #ueber_3_jahre
+* ^expansion.contains[=].display = "Über 3 Jahre"
+* ^expansion.contains[+].system = Canonical(SEU_EF_DauerCS)
+* ^expansion.contains[=].code = #ueber_4_jahre
+* ^expansion.contains[=].display = "Über 4 Jahre"
+
 CodeSystem: SEU_EF_HilfsmittelCS
 Id: seu-ef-hilfsmittel-cs
 Title: "SEU_EF_Hilfsmittel CodeSystem"

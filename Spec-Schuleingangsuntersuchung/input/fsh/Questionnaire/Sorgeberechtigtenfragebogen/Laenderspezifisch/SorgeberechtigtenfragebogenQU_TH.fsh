@@ -9,6 +9,7 @@ Description: "Sorgeberechtigtenfragebogen TH"
 * contained[+] = PflegegradVS
 * contained[+] = UnfallOrtVS
 * contained[+] = AtopischeErkrankungenVS
+* contained[+] = SEU_EF_DauerTHVS
 * contained[+] = SEU_EF_UnfallortVS
 * contained[+] = SEU_EF_HilfsmittelVS
 * contained[+] = SEU_EF_HilfsmittelTHVS
@@ -84,6 +85,10 @@ Description: "Sorgeberechtigtenfragebogen TH"
 // Kinderbetreuung
 * item[+]
   * insert addItem(4, #group, Kinderbetreuung)
+  * item[+]
+    * insert addItemWithSource(4.1e, #choice, [[Besucht Ihr Kind einen Kindergarten oder eine Tagesmutter?]], #DE-TH)
+    * answerValueSet = Canonical(SEU_EF_DauerTHVS)
+    * required = true
   * item[+]
     * insert addItemWithSource(4.11, #group, [[Das Kind wurde bis zum Alter von Jahren und Monaten ausschließlich innerhalb der Familie betreut.]], #DE-RP)
     * item[+]

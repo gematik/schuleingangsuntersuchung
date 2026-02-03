@@ -60,6 +60,7 @@ Description: "Sorgeberechtigtenfragebogen"
 * contained[+] = SEU_EF_SpracheVS
 * contained[+] = SEU_EF_FrequenzVS
 * contained[+] = SEU_EF_DauerHEVS
+* contained[+] = SEU_EF_DauerTHVS
 * contained[+] = SEU_EF_ZeitdauerVS
 * contained[+] = icd10gm-2024
 * contained[+] = SEU_EF_BildungsabschlussBBVS
@@ -473,6 +474,9 @@ Description: "Sorgeberechtigtenfragebogen"
   * item[+]
     * insert addItemWithSource(4.1d, #choice, [[Dauer Besuch Kita/Krippe]], #DE-HE)
     * answerValueSet = Canonical(SEU_EF_DauerHEVS)
+  * item[+]
+    * insert addItemWithSource(4.1e, #choice, [[Besucht Ihr Kind einen Kindergarten oder eine Tagesmutter?]], #DE-TH)
+    * answerValueSet = Canonical(SEU_EF_DauerTHVS)
   * item[+]
     * insert addItem(4.2, #integer, Dauer Kita/Krippe pro Woche in Stunden)
   * item[+]
