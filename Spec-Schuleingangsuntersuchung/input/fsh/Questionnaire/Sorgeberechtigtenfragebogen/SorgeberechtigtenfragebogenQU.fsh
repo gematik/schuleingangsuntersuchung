@@ -951,6 +951,14 @@ Description: "Sorgeberechtigtenfragebogen"
   * item[+]
     * insert addItemWithSource(8.14b, #text, [[Bisher durchgemachte Erkrankungen, bspw. Windpocken oder Masern. Zeitlich nicht bestimmt]], #DE-BW)    
   * item[+]
+    * insert addItemWithSource(8.14c, #open-choice, [[Welche der folgenden Krankheiten wurden bei Ihrem Kind jemals ärztlich diagnostiziert?]], #DE-TH)
+    * answerValueSet = Canonical(ErkrankungenTHVS)
+    * repeats = true
+  * item[+]
+    * insert addItemWithSource(8.14d, #open-choice, [[Welche der Infektionskrankheiten hat Ihr Kind durchgemacht?]], #DE-TH)
+    * answerValueSet = Canonical(InfektionsKrankheitTHVS)
+    * repeats = true
+  * item[+]
     * insert addItem(8.14a, #boolean, [[Muss Ihr Kind krankheitsbedingt eine spezielle Diät einhalten?]])      
   * item[+]
     * insert addItem(8.15, #boolean, [[Krankenhausaufenthalt]])

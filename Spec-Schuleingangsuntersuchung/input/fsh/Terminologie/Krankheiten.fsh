@@ -34,6 +34,21 @@ Description: "ErkrankungCS"
 * #diabetes "Diabetes"
 * #ass "Autismus-Spektrum-Störung (ASS)"
 * #schilddrüsenfunktionsstörung "Schilddrüsenfunktionsstörung"
+* #mittelohrentzuendung_gehaeuft "Mittelohrentzündung (gehäuft)"
+* #hals_mandelentzuendung_gehaeuft "Hals-/Mandelentzündung (gehäuft)"
+* #lungenentzuendung "Lungenentzündung"
+* #epilepsie_krampfanfall "Epilepsie/Krampfanfall"
+* #allergie "Allergie"
+* #nahrungsmittelunvertraeglichkeit "Nahrungsmittelunverträglichkeit"
+* #herzfehler_herzerkrankung "Herzfehler/Herzerkrankung"
+* #chronische_magen_darm_erkrankung "Chronische Magen-Darm-Erkrankung"
+* #diabetes_mellitus "Diabetes mellitus"
+* #asthma_bronchiale "Asthma bronchiale"
+* #orthopaedisches_leiden "Orthopädisches Leiden"
+* #ads "Aufmerksamkeits-Defizit-Syndrom (ADS)"
+* #adhs "Aufmerksamkeits-Defizit-Hyperaktivitäts-Störung (ADHS)"
+* #psychische_erkrankung "Psychische Erkrankung"
+* #tumor_krebserkrankung "Tumor/Krebserkrankung"
 
 // Einmal im Sorgeberechtigtenfragebogen
 CodeSystem: InfektionsKrankheitCS
@@ -220,6 +235,76 @@ Description: "ErkrankungVS"
 * ^expansion.contains[=].code = #schilddrüsenfunktionsstörung
 * ^expansion.contains[=].display = "Schilddrüsenfunktionsstörung"
 
+ValueSet: ErkrankungenTHVS
+Id: ErkrankungenTHVS
+Title: "ErkrankungenTHVS"
+Description: "ErkrankungenTHVS"
+* include codes from system ErkrankungCS
+* ^expansion.timestamp = "2024-04-04T11:02:42+00:00"
+* ^expansion.contains[0].system = Canonical(ErkrankungCS)
+* ^expansion.contains[=].code = #mittelohrentzuendung_gehaeuft
+* ^expansion.contains[=].display = "Mittelohrentzündung (gehäuft)"
+* ^expansion.contains[+].system = Canonical(ErkrankungCS)
+* ^expansion.contains[=].code = #hals_mandelentzuendung_gehaeuft
+* ^expansion.contains[=].display = "Hals-/Mandelentzündung (gehäuft)"
+* ^expansion.contains[+].system = Canonical(ErkrankungCS)
+* ^expansion.contains[=].code = #lungenentzuendung
+* ^expansion.contains[=].display = "Lungenentzündung"
+* ^expansion.contains[+].system = Canonical(ErkrankungCS)
+* ^expansion.contains[=].code = #epilepsie_krampfanfall
+* ^expansion.contains[=].display = "Epilepsie/Krampfanfall"
+* ^expansion.contains[+].system = Canonical(ErkrankungCS)
+* ^expansion.contains[=].code = #allergie
+* ^expansion.contains[=].display = "Allergie"
+* ^expansion.contains[+].system = Canonical(ErkrankungCS)
+* ^expansion.contains[=].code = #nahrungsmittelunvertraeglichkeit
+* ^expansion.contains[=].display = "Nahrungsmittelunverträglichkeit"
+* ^expansion.contains[+].system = Canonical(ErkrankungCS)
+* ^expansion.contains[=].code = #herzfehler_herzerkrankung
+* ^expansion.contains[=].display = "Herzfehler/Herzerkrankung"
+* ^expansion.contains[+].system = Canonical(ErkrankungCS)
+* ^expansion.contains[=].code = #chronische_magen_darm_erkrankung
+* ^expansion.contains[=].display = "Chronische Magen-Darm-Erkrankung"
+* ^expansion.contains[+].system = Canonical(ErkrankungCS)
+* ^expansion.contains[=].code = #diabetes_mellitus
+* ^expansion.contains[=].display = "Diabetes Mellitus"
+* ^expansion.contains[+].system = Canonical(ErkrankungCS)
+* ^expansion.contains[=].code = #asthma_bronchiale
+* ^expansion.contains[=].display = "Asthma Bronchiale"
+* ^expansion.contains[+].system = Canonical(ErkrankungCS)
+* ^expansion.contains[=].code = #neurodermitis
+* ^expansion.contains[=].display = "Neurodermitis"
+* ^expansion.contains[+].system = Canonical(ErkrankungCS)
+* ^expansion.contains[=].code = #sehstörung
+* ^expansion.contains[=].display = "Sehstörung"
+* ^expansion.contains[+].system = Canonical(ErkrankungCS)
+* ^expansion.contains[=].code = #hörstörung
+* ^expansion.contains[=].display = "Hörstörung"
+* ^expansion.contains[+].system = Canonical(ErkrankungCS)
+* ^expansion.contains[=].code = #sprachauffälligkeit
+* ^expansion.contains[=].display = "Sprachauffälligkeit"
+* ^expansion.contains[+].system = Canonical(ErkrankungCS)
+* ^expansion.contains[=].code = #bewegungsstörung
+* ^expansion.contains[=].display = "Bewegungsstörung"
+* ^expansion.contains[+].system = Canonical(ErkrankungCS)
+* ^expansion.contains[=].code = #orthopaedisches_leiden
+* ^expansion.contains[=].display = "Orthopädisches Leiden"
+* ^expansion.contains[+].system = Canonical(ErkrankungCS)
+* ^expansion.contains[=].code = #ads
+* ^expansion.contains[=].display = "Aufmerksamkeits-Defizit-Syndrom (ADS)"
+* ^expansion.contains[+].system = Canonical(ErkrankungCS)
+* ^expansion.contains[=].code = #adhs
+* ^expansion.contains[=].display = "Auffmerksamkeits-Defizit-Hyperaktivitäts-Störung (ADHS)"
+* ^expansion.contains[+].system = Canonical(ErkrankungCS)
+* ^expansion.contains[=].code = #ass
+* ^expansion.contains[=].display = "Autismus-Spektrum-Störung (ASS)"
+* ^expansion.contains[+].system = Canonical(ErkrankungCS)
+* ^expansion.contains[=].code = #psychische_erkrankung
+* ^expansion.contains[=].display = "Psychische Erkrankung"
+* ^expansion.contains[+].system = Canonical(ErkrankungCS)
+* ^expansion.contains[=].code = #tumor_krebserkrankung
+* ^expansion.contains[=].display = "Tumor/Krebserkrankung"
+
 // Einmal im Sorgeberechtigtenfragebogen
 ValueSet: InfektionsKrankheitVS
 Id: InfektionsKrankheitVS
@@ -266,6 +351,37 @@ Description: "InfektionsKrankheitVS"
 * ^expansion.contains[+].system = Canonical(InfektionsKrankheitCS)
 * ^expansion.contains[=].code = #windpocken
 * ^expansion.contains[=].display = "Windpocken"
+
+ValueSet: InfektionsKrankheitTHVS
+Id: InfektionsKrankheitTHVS
+Title: "InfektionsKrankheitTHVS"
+Description: "InfektionsKrankheitTHVS"
+* include codes from system InfektionsKrankheitCS
+* ^expansion.timestamp = "2024-04-04T11:05:28+00:00"
+* ^expansion.contains[+].system = Canonical(InfektionsKrankheitCS)
+* ^expansion.contains[=].code = #hirnhautentzündung
+* ^expansion.contains[=].display = "Hirnhautentzündung"
+* ^expansion.contains[+].system = Canonical(InfektionsKrankheitCS)
+* ^expansion.contains[=].code = #keuchhusten
+* ^expansion.contains[=].display = "Keuchhusten"
+* ^expansion.contains[+].system = Canonical(InfektionsKrankheitCS)
+* ^expansion.contains[=].code = #windpocken
+* ^expansion.contains[=].display = "Windpocken"
+* ^expansion.contains[+].system = Canonical(InfektionsKrankheitCS)
+* ^expansion.contains[=].code = #mumps
+* ^expansion.contains[=].display = "Mumps"
+* ^expansion.contains[+].system = Canonical(InfektionsKrankheitCS)
+* ^expansion.contains[=].code = #masern
+* ^expansion.contains[=].display = "Masern"
+* ^expansion.contains[+].system = Canonical(InfektionsKrankheitCS)
+* ^expansion.contains[=].code = #röteln
+* ^expansion.contains[=].display = "Röteln"
+* ^expansion.contains[+].system = Canonical(InfektionsKrankheitCS)
+* ^expansion.contains[=].code = #scharlach
+* ^expansion.contains[=].display = "Scharlach"
+* ^expansion.contains[+].system = Canonical(InfektionsKrankheitCS)
+* ^expansion.contains[=].code = #borreliose
+* ^expansion.contains[=].display = "Borreliose"
 
 // Einmal im Sorgeberechtigtenfragebogen
 ValueSet: ErkrankungenLetztesJahrVS
