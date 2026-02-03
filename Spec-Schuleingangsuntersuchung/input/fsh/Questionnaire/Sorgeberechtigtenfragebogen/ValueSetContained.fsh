@@ -1952,7 +1952,7 @@ Description: "ValueSet, das verschiedene Hilfsmittel enthält."
 * ^expansion.contains[=].display = "Anderes"
 
 ValueSet: SEU_EF_HilfsmittelTHVS
-Id: SEU_EF_HilfsmittelTHVS
+Id: seu-ef-hilfsmittel-th-vs
 Title: "SEU_EF_Hilfsmittel Mehrfach ValueSet"
 Description: "ValueSet, das verschiedene Hilfsmittel für Mehrfachauswahl enthält."
 * SEU_EF_HilfsmittelCS#sehhilfe "Sehhilfe (z. B. Brille)"
