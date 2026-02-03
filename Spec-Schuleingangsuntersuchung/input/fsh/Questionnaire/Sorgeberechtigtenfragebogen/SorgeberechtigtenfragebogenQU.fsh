@@ -105,6 +105,7 @@ Description: "Sorgeberechtigtenfragebogen"
 * contained[+] = SEUEFMedienkonsumBerlinVS
 * contained[+] = SchulabschlussBerlinVS
 * contained[+] = BerufstaetigkeitElternBerlinVS
+* contained[+] = FoerderungVS
 
 * id = "SEU-Sorgeberechtigtenfragebogen"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Sorgeberechtigtenfragebogen"
@@ -1426,6 +1427,10 @@ Description: "Sorgeberechtigtenfragebogen"
     * item[+]
       * insert addItemWithSource(9.13, #boolean, [[Fördermaßn. Vorschul. Päd. Sprachförderung]], #DE-SL)
   * item[+]
+    * insert addItemWithSource(9.13a, #choice, [[Welche Behandlungen oder Unterstützungen hat Ihr Kind jemals erhalten?]], #DE-TH)
+    * answerValueSet = Canonical(FoerderungVS)
+    * repeats = true
+  * item[+]
     * insert addItem(9.11.g, #group, [[Kuren]])
     * repeats = true
     * item[+]
@@ -1546,6 +1551,10 @@ Description: "Sorgeberechtigtenfragebogen"
       * insert addItemWithSource(9a.12, #boolean, [[Fördermaßn. FörderKita/Integrative Kita]], #DE-SL)
     * item[+]
       * insert addItemWithSource(9a.13, #boolean, [[Fördermaßn. Vorschul. Päd. Sprachförderung]], #DE-SL)
+  * item[+]
+    * insert addItemWithSource(9a.13a, #choice, [[Welche Behandlungen oder Unterstützungen hat Ihr Kind jemals erhalten?]], #DE-TH)
+    * answerValueSet = Canonical(FoerderungVS)
+    * repeats = true
   * item[+]
     * insert addItem(9a.11.g, #group, [[Kuren]])
     * repeats = true
