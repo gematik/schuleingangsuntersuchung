@@ -1637,6 +1637,8 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert addItem(11.2, #string, Name Kinderarzt)
   * item[+]
     * insert addItem(11.3, #string, Name Facharzt)
+  * item[+]
+    * insert addItemWithSource(11.4, #open-choice, [[Bei welchen Ärztinnen oder Ärzten haben Sie Ihr Kind in den vergangenen 12 Monaten vorgestellt?]], #DE-TH)
 //********************************************
 // Sonstiges
 * item[+]

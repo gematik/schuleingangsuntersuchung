@@ -256,7 +256,8 @@ Description: "Sorgeberechtigtenfragebogen TH"
 * item[+]
   * insert addGroup(11, Arzt)
   * item[+]
-    * insert addItem(11.2, #string, Name Kinderarzt)
+    * insert addItemWithSource(11.4, #open-choice, [[Bei welchen Ärztinnen oder Ärzten haben Sie Ihr Kind in den vergangenen 12 Monaten vorgestellt?]], #DE-TH)
+    * required = true
 //********************************************
 // Sonstiges
 * item[+]
