@@ -203,6 +203,15 @@ Description: "Sorgeberechtigtenfragebogen TH"
       * insert enableWhenBoolean(8.22c, =, true)
       * answerValueSet = Canonical(PflegegradVS)
       * required = true
+// Medikamente
+  * item[+]
+    * insert addItem(8.23, #boolean, [[Regelmäßige Medikamenteneinnahme]])
+    * required = true
+  * item[+]
+    * insert addItem(8.23.1, #string, [[Welches Medikament]])
+    * insert enableWhenBoolean(8.23, =, true)
+    * repeats = true
+    * required = true
 // Verhaltensauffälligkeiten
   * item[+]
     * insert addItemWithSource(8.34a, #choice, [[Zeigte Ihr Kind in den vergangenen 12 Monaten folgende Verhaltensauffälligkeiten?]], #DE-TH)
