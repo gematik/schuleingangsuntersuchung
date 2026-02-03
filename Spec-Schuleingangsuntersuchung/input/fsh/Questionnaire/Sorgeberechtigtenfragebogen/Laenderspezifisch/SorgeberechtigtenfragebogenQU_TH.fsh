@@ -212,6 +212,14 @@ Description: "Sorgeberechtigtenfragebogen TH"
     * insert enableWhenBoolean(8.23, =, true)
     * repeats = true
     * required = true
+  * item[+]
+    * insert addItemWithSource(8.25a, #boolean, [[Muss Ihr Kind ein Notfallset mit sich führen?]], #DE-TH)
+    * item[+]
+      * insert addItemWithSource(8.25a.1, #text, [[Falls ja, warum?]], #DE-TH)
+      * insert enableWhenBoolean(8.25a, =, true)
+    * item[+]
+      * insert addItemWithSource(8.25a.2, #text, [[Namen der Notfallmedikamente]], #DE-TH)
+      * insert enableWhenBoolean(8.25a, =, true)
 // Verhaltensauffälligkeiten
   * item[+]
     * insert addItemWithSource(8.34a, #choice, [[Zeigte Ihr Kind in den vergangenen 12 Monaten folgende Verhaltensauffälligkeiten?]], #DE-TH)

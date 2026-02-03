@@ -1066,6 +1066,14 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert addItem(8.24.1, #text, [[Welches Medikament]])
     * repeats = true
   * item[+]
+    * insert addItemWithSource(8.25a, #boolean, [[Muss Ihr Kind ein Notfallset mit sich führen?]], #DE-TH)
+    * item[+]
+      * insert addItemWithSource(8.25a.1, #text, [[Falls ja, warum?]], #DE-TH)
+      * insert enableWhenBoolean(8.25a, =, true)
+    * item[+]
+      * insert addItemWithSource(8.25a.2, #text, [[Namen der Notfallmedikamente]], #DE-TH)
+      * insert enableWhenBoolean(8.25a, =, true)
+  * item[+]
     * insert addItem(8.25, #boolean, [[Eine Erkrankung, die in einer Notfallsituation beachtet werden muss]])
   * item[+]
     * insert enableWhenBoolean(8.25, =, true)
