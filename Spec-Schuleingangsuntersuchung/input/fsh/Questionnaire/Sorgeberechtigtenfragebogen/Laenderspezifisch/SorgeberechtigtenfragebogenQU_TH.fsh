@@ -219,22 +219,6 @@ Description: "Sorgeberechtigtenfragebogen TH"
 * item[+]
   * insert addItem(9, #group, [[Förderungen]])
   * item[+]
-    * insert addGroup(9.1a.g, Therapien)
-    //* insert enableWhenBoolean(9.1a, =, true) TODO auskommentiert ohne fachliche überprüfung
-    * insert addSource(#DE-SN)
-    * item[+]
-      * insert addItemWithSource(9.3a, #boolean, [[Frühförderung]], #DE-BB)
-      * required = true
-  * item[+]
-    * insert addItem(9.11.g, #group, [[Kuren]])
-    * repeats = true
-    * item[+]
-      * insert addItem(9.11.g.1, #date, [[Wann]])
-      * required = true
-    * item[+]
-      * insert addItem(9.11.g.2, #string, [[Behandlungsschwerpunkt]])
-      * required = true
-  * item[+]
     * insert addItemWithSource(9.13a, #choice, [[Welche Behandlungen oder Unterstützungen hat Ihr Kind jemals erhalten?]], #DE-TH)
     * answerValueSet = Canonical(FoerderungVS)
     * repeats = true
