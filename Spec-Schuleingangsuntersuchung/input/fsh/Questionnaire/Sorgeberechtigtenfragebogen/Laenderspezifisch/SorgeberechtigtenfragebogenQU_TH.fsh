@@ -145,23 +145,7 @@ Description: "Sorgeberechtigtenfragebogen TH"
       * answerValueSet = Canonical(SEU_EF_HilfsmittelTHVS)
       * repeats = true
       * required = true
-  * item[+]
-    * insert addItem(8.11.g, #group, [[Erkrankungen]])
-    * repeats = true
-    * item[+]
-      * answerValueSet = Canonical(ErkrankungVS)
-      * insert addItem(8.11.g.1, #open-choice, [[Erkrankung]])
-      * required = true
-  * item[+]
-    * insert addItem(8.12.g, #group, [[Infektionskrankheiten]])
-    * repeats = true
-    * item[+]
-      * answerValueSet = Canonical(InfektionsKrankheitVS)
-      * insert addItem(8.12.g.1, #open-choice, [[Infektionskrankheit]])
-      * required = true
-  * item[+]
-    * insert addItemWithSource(8.14b, #text, [[Bisher durchgemachte Erkrankungen, bspw. Windpocken oder Masern. Zeitlich nicht bestimmt]], #DE-BW)
-    * required = true   
+// Erkrankungen
   * item[+]
     * insert addItemWithSource(8.14c, #open-choice, [[Welche der folgenden Krankheiten wurden bei Ihrem Kind jemals ärztlich diagnostiziert?]], #DE-TH)
     * answerValueSet = Canonical(ErkrankungenTHVS)
