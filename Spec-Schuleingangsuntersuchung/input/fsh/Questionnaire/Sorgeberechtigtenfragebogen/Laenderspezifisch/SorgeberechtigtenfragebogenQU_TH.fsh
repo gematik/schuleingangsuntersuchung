@@ -114,11 +114,6 @@ Description: "Sorgeberechtigtenfragebogen TH"
       * insert enableWhenBoolean(5.6, =, true)
       * insert addItem(5.6.1, #string, [[Welche Auffälligkeit?]])
       * required = true
-  * item[+]
-    * insert addItemWithSource(9.13a, #choice, [[Welche Behandlungen oder Unterstützungen hat Ihr Kind jemals erhalten?]], #DE-TH)
-    * answerValueSet = Canonical(FoerderungVS)
-    * repeats = true
-    * required = true
 //********************************************
 // Entwicklung
 * item[+]
@@ -239,6 +234,11 @@ Description: "Sorgeberechtigtenfragebogen TH"
     * item[+]
       * insert addItem(9.11.g.2, #string, [[Behandlungsschwerpunkt]])
       * required = true
+  * item[+]
+    * insert addItemWithSource(9.13a, #choice, [[Welche Behandlungen oder Unterstützungen hat Ihr Kind jemals erhalten?]], #DE-TH)
+    * answerValueSet = Canonical(FoerderungVS)
+    * repeats = true
+    * required = true
 //********************************************
 // Arzt
 * item[+]
