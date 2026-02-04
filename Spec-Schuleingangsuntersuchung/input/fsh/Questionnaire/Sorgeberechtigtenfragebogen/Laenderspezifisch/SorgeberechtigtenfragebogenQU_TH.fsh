@@ -15,6 +15,8 @@ Description: "Sorgeberechtigtenfragebogen TH"
 * contained[+] = SEU_EF_HilfsmittelTHVS
 * contained[+] = GeburtBesonderheitenVS
 * contained[+] = VerhaltensauffaelligkeitenVS
+* contained[+] = FoerderungVS
+* contained[+] = UeberwiegendGesprocheneSpracheVS
 * id = "SEU-Sorgeberechtigtenfragebogen-TH"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenTH"
 * title = "SEU Sorgeberechtigtenfragebogen TH"
@@ -26,7 +28,13 @@ Description: "Sorgeberechtigtenfragebogen TH"
   * item[+]
     * insert addItem(0.1, #string, Name der Schule)
     * required = true
-
+  * item[+]
+    * insert addItem(0.3.1, #string, [[PLZ der Schule]])
+    * insert regEx([["^[0-9]{4,5}$"]])
+  * item[+]
+    * insert addItem(0.3.2, #string, [[Ort der Schule]])
+  * item[+]
+    * insert addItem(0.3.3, #string, [[Straße der Schule]])
   * item[+]
     * insert addItemWithSource(0.10, #date, [[Datum der Untersuchung]], #DE-HB)
     * required = true
@@ -34,7 +42,6 @@ Description: "Sorgeberechtigtenfragebogen TH"
     * insert addItemWithSource(0.13, #string, [[Ort der Untersuchung]], #DE-TH)
     * maxLength = 30
     * required = true
-
 //********************************************
 // Personenbezogene Daten Kind
 * item[+]
@@ -89,18 +96,6 @@ Description: "Sorgeberechtigtenfragebogen TH"
     * insert addItemWithSource(4.1e, #choice, [[Besucht Ihr Kind einen Kindergarten oder eine Tagesmutter?]], #DE-TH)
     * answerValueSet = Canonical(SEU_EF_DauerTHVS)
     * required = true
-  * item[+]
-    * insert addItemWithSource(4.11, #group, [[Das Kind wurde bis zum Alter von Jahren und Monaten ausschließlich innerhalb der Familie betreut.]], #DE-RP)
-    * item[+]
-      * insert addItemWithSource(4.11.1, #integer, [[Jahre]], #DE-RP)
-      * insert uunit(a, "Jahre")
-      * insert minValueInt(0)
-      * insert maxValueInt(7)
-    * item[+]
-      * insert addItemWithSource(4.11.2, #integer, [[Monate]], #DE-RP)
-      * insert uunit(mo, "Monate")
-      * insert minValueInt(0)
-      * insert maxValueInt(12)
 //********************************************
 // Schwangerschaft und Geburt
 * item[+]
@@ -177,20 +172,6 @@ Description: "Sorgeberechtigtenfragebogen TH"
     * answerValueSet = Canonical(InfektionsKrankheitTHVS)
     * repeats = true
     * required = true
-// Krankenhausaufenthalte
-  * item[+]
-    * insert addItem(8.15, #boolean, [[Krankenhausaufenthalt]])
-    * required = true
-    * item[+]
-      * insert addItem(8.15.1, #string, [[Detaillierte Angaben zum Krankenhausaufenthalt?]])
-      * insert enableWhenBoolean(8.15, =, true)
-      * required = true
-// Atopische Erkrankungen
-  * item[+]
-    * answerValueSet = Canonical(AtopischeErkrankungenVS)  
-    * insert addItem(8.16a, #choice, [[Besitzt Ihr Kind Allergien?]])
-    * required = true
-
 // Familienanamnese
   * item[+]
     * insert addItemWithSource(8.16b, #boolean, [[Gibt es Gesundheitsstörungen in der Familie, von denen Sie wissen oder vermuten, dass sie Auswirkungen auf die Entwicklung oder Belastbarkeit Ihres Kindes haben könnten bzw. im Schulalltag zu berücksichtigen wären (z. B. Sehstörung, Hörstörung, Herz-Kreislauf-Erkrankung, Allergie, Asthma bronchiale, Epilepsie, Depression oder andere psychische Erkrankung, Rheuma, Diabetes mellitus, Krebserkrankung, andere schwere Erkrankung)]], #DE-TH)
@@ -279,13 +260,6 @@ Description: "Sorgeberechtigtenfragebogen TH"
     * required = true
   * item[+]
     * insert addItemWithSource(11.5, #text, [[Name des behandelnden Kinder- oder Hausarztes und Praxisort:]], #DE-TH)
-    * required = true
-//********************************************
-// Sonstiges
-* item[+]
-  * insert addGroup(12, Sonstiges)
-  * item[+]
-    * insert addItemWithSource(12.23, #boolean, [[Fährt Ihr Kind frei Fahrrad]], #DE-HB)
     * required = true
 //********************************************
 // Informationen Eltern

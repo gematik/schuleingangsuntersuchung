@@ -128,6 +128,13 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert addItemWithSource(0.3, #choice, [[Mandant (Bezirk)]], #DE-HH)
     * answerValueSet = Canonical(BezirkeHHVS)
   * item[+]
+    * insert addItem(0.3.1, #string, [[PLZ der Schule]])
+    * insert regEx([["^[0-9]{4,5}$"]])
+  * item[+]
+    * insert addItem(0.3.2, #string, [[Ort der Schule]])
+  * item[+]
+    * insert addItem(0.3.3, #string, [[Straße der Schule]])
+  * item[+]
     * insert addItemWithSource(0.4, #string, [[SOM Schulordnungsmerkmal]], #DE-HH)
   * item[+]
     * insert addItemWithSource(0.5, #string, [[Organisierende Schule]], #DE-HH)
