@@ -1,0 +1,45 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "VerhaltensauffaelligkeitenCS",
+  "id": "VerhaltensauffaelligkeitenCS",
+  "title": "VerhaltensauffälligkeitenCS",
+  "description": "CodeSystem zur Kodierung von Verhaltensauffälligkeiten bei Kindern im Rahmen der Schuleingangsuntersuchung.",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/VerhaltensauffaelligkeitenCS",
+  "concept": [
+    {
+      "code": "konzentrationsstoerung",
+      "display": "Konzentrationsstörung"
+    },
+    {
+      "code": "einnaessen",
+      "display": "Einnässen"
+    },
+    {
+      "code": "einkoten",
+      "display": "Einkoten"
+    },
+    {
+      "code": "aengstlichkeit",
+      "display": "Ängstlichkeit"
+    },
+    {
+      "code": "aggressivitaet",
+      "display": "Aggressivität"
+    },
+    {
+      "code": "schlafstoerungen",
+      "display": "Schlafstörung"
+    },
+    {
+      "code": "motorische_unruhe_hyperaktivitaet",
+      "display": "Motorische Unruhe, Hyperaktivität"
+    },
+    {
+      "code": "unueberlegte_risikante_handlungen",
+      "display": "Unüberlegte riskante Handlungen"
+    }
+  ],
+  "count": 8
+}

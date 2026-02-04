@@ -1,0 +1,77 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "SEU_EF_HilfsmittelTHVS",
+  "id": "seu-ef-hilfsmittel-th-vs",
+  "title": "SEU_EF_Hilfsmittel Mehrfach ValueSet",
+  "description": "ValueSet, das verschiedene Hilfsmittel für Mehrfachauswahl enthält.",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-hilfsmittel-th-vs",
+  "expansion": {
+    "timestamp": "2024-10-20T11:50:47+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-hilfsmittel-cs",
+        "code": "sehhilfe",
+        "display": "Sehhilfe (z. B. Brille)"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-hilfsmittel-cs",
+        "code": "hoerhilfe",
+        "display": "Hörhilfe"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-hilfsmittel-cs",
+        "code": "orthese",
+        "display": "Orthese"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-hilfsmittel-cs",
+        "code": "rollstuhl",
+        "display": "Rollstuhl"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-hilfsmittel-cs",
+        "code": "gehhilfe",
+        "display": "Gehhilfe"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-hilfsmittel-cs",
+        "code": "schuheinlage",
+        "display": "Schuheinlage"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-hilfsmittel-cs",
+        "concept": [
+          {
+            "code": "sehhilfe",
+            "display": "Sehhilfe (z. B. Brille)"
+          },
+          {
+            "code": "hoerhilfe",
+            "display": "Hörhilfe"
+          },
+          {
+            "code": "orthese",
+            "display": "Orthese"
+          },
+          {
+            "code": "rollstuhl",
+            "display": "Rollstuhl"
+          },
+          {
+            "code": "gehhilfe",
+            "display": "Gehhilfe"
+          },
+          {
+            "code": "schuheinlage",
+            "display": "Schuheinlage"
+          }
+        ]
+      }
+    ]
+  }
+}

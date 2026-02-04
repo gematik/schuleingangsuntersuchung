@@ -1,0 +1,126 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "ErkrankungenTHVS",
+  "id": "ErkrankungenTHVS",
+  "title": "ErkrankungenTHVS",
+  "description": "ErkrankungenTHVS",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/ErkrankungenTHVS",
+  "expansion": {
+    "timestamp": "2024-04-04T11:02:42+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+        "code": "mittelohrentzuendung_gehaeuft",
+        "display": "Mittelohrentzündung (gehäuft)"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+        "code": "hals_mandelentzuendung_gehaeuft",
+        "display": "Hals-/Mandelentzündung (gehäuft)"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+        "code": "lungenentzuendung",
+        "display": "Lungenentzündung"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+        "code": "epilepsie_krampfanfall",
+        "display": "Epilepsie/Krampfanfall"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+        "code": "allergie",
+        "display": "Allergie"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+        "code": "nahrungsmittelunvertraeglichkeit",
+        "display": "Nahrungsmittelunverträglichkeit"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+        "code": "herzfehler_herzerkrankung",
+        "display": "Herzfehler/Herzerkrankung"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+        "code": "chronische_magen_darm_erkrankung",
+        "display": "Chronische Magen-Darm-Erkrankung"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+        "code": "diabetes_mellitus",
+        "display": "Diabetes Mellitus"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+        "code": "asthma_bronchiale",
+        "display": "Asthma Bronchiale"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+        "code": "neurodermitis",
+        "display": "Neurodermitis"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+        "code": "sehstörung",
+        "display": "Sehstörung"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+        "code": "hörstörung",
+        "display": "Hörstörung"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+        "code": "sprachauffälligkeit",
+        "display": "Sprachauffälligkeit"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+        "code": "bewegungsstörung",
+        "display": "Bewegungsstörung"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+        "code": "orthopaedisches_leiden",
+        "display": "Orthopädisches Leiden"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+        "code": "ads",
+        "display": "Aufmerksamkeits-Defizit-Syndrom (ADS)"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+        "code": "adhs",
+        "display": "Auffmerksamkeits-Defizit-Hyperaktivitäts-Störung (ADHS)"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+        "code": "ass",
+        "display": "Autismus-Spektrum-Störung (ASS)"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+        "code": "psychische_erkrankung",
+        "display": "Psychische Erkrankung"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+        "code": "tumor_krebserkrankung",
+        "display": "Tumor/Krebserkrankung"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS"
+      }
+    ]
+  }
+}

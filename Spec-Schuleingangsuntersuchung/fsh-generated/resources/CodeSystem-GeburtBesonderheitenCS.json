@@ -1,0 +1,29 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "GeburtBesonderheitenCS",
+  "id": "GeburtBesonderheitenCS",
+  "title": "CodeSystem für Auffälligkeiten bei der Geburt",
+  "description": "Dieses CodeSystem klassifiziert verschiedene Auffälligkeiten, die bei der Geburt auftreten können.",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/GeburtBesonderheitenCS",
+  "concept": [
+    {
+      "code": "fruehgeburt",
+      "display": "Frühgeburt"
+    },
+    {
+      "code": "mehrlingsgeburt",
+      "display": "Mehrlingsgeburt"
+    },
+    {
+      "code": "entbindung_per_zange_saugglocke",
+      "display": "Entbindung per Zange oder Saugglocke"
+    },
+    {
+      "code": "neonatale_betreuung",
+      "display": "NNeonatologische Betreuung des Kindes nach der Geburt"
+    }
+  ],
+  "count": 4
+}

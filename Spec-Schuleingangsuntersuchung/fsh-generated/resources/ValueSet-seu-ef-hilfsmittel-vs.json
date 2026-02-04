@@ -39,7 +39,29 @@
   "compose": {
     "include": [
       {
-        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-hilfsmittel-cs"
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-hilfsmittel-cs",
+        "concept": [
+          {
+            "code": "sehhilfe",
+            "display": "Sehhilfe (z. B. Brille)"
+          },
+          {
+            "code": "hoerhilfe",
+            "display": "Hörhilfe"
+          },
+          {
+            "code": "orthese",
+            "display": "Orthese"
+          },
+          {
+            "code": "zahnersatz",
+            "display": "Zahnersatz (Prothese, Platzhalter)"
+          },
+          {
+            "code": "anderes",
+            "display": "Anderes"
+          }
+        ]
       }
     ]
   }
