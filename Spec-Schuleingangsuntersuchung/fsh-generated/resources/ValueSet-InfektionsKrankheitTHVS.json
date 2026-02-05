@@ -1,0 +1,61 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "InfektionsKrankheitTHVS",
+  "id": "InfektionsKrankheitTHVS",
+  "title": "InfektionsKrankheitTHVS",
+  "description": "InfektionsKrankheitTHVS",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/InfektionsKrankheitTHVS",
+  "expansion": {
+    "timestamp": "2024-04-04T11:05:28+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS",
+        "code": "hirnhautentzündung",
+        "display": "Hirnhautentzündung"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS",
+        "code": "keuchhusten",
+        "display": "Keuchhusten"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS",
+        "code": "windpocken",
+        "display": "Windpocken"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS",
+        "code": "mumps",
+        "display": "Mumps"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS",
+        "code": "masern",
+        "display": "Masern"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS",
+        "code": "röteln",
+        "display": "Röteln"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS",
+        "code": "scharlach",
+        "display": "Scharlach"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS",
+        "code": "borreliose",
+        "display": "Borreliose"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/InfektionsKrankheitCS"
+      }
+    ]
+  }
+}

@@ -83,7 +83,67 @@
     {
       "code": "schilddrüsenfunktionsstörung",
       "display": "Schilddrüsenfunktionsstörung"
+    },
+    {
+      "code": "mittelohrentzuendung_gehaeuft",
+      "display": "Mittelohrentzündung (gehäuft)"
+    },
+    {
+      "code": "hals_mandelentzuendung_gehaeuft",
+      "display": "Hals-/Mandelentzündung (gehäuft)"
+    },
+    {
+      "code": "lungenentzuendung",
+      "display": "Lungenentzündung"
+    },
+    {
+      "code": "epilepsie_krampfanfall",
+      "display": "Epilepsie/Krampfanfall"
+    },
+    {
+      "code": "allergie",
+      "display": "Allergie"
+    },
+    {
+      "code": "nahrungsmittelunvertraeglichkeit",
+      "display": "Nahrungsmittelunverträglichkeit"
+    },
+    {
+      "code": "herzfehler_herzerkrankung",
+      "display": "Herzfehler/Herzerkrankung"
+    },
+    {
+      "code": "chronische_magen_darm_erkrankung",
+      "display": "Chronische Magen-Darm-Erkrankung"
+    },
+    {
+      "code": "diabetes_mellitus",
+      "display": "Diabetes mellitus"
+    },
+    {
+      "code": "asthma_bronchiale",
+      "display": "Asthma bronchiale"
+    },
+    {
+      "code": "orthopaedisches_leiden",
+      "display": "Orthopädisches Leiden"
+    },
+    {
+      "code": "ads",
+      "display": "Aufmerksamkeits-Defizit-Syndrom (ADS)"
+    },
+    {
+      "code": "adhs",
+      "display": "Aufmerksamkeits-Defizit-Hyperaktivitäts-Störung (ADHS)"
+    },
+    {
+      "code": "psychische_erkrankung",
+      "display": "Psychische Erkrankung"
+    },
+    {
+      "code": "tumor_krebserkrankung",
+      "display": "Tumor/Krebserkrankung"
     }
   ],
-  "count": 19
+  "count": 34
 }

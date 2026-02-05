@@ -1,0 +1,59 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "GeburtBesonderheitenVS",
+  "id": "GeburtBesonderheitenVS",
+  "title": "Geburt Besonderheiten Value Set",
+  "description": "ValueSet, das verschiedene Auffälligkeiten bei der Geburt enthält.",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/GeburtBesonderheitenVS",
+  "expansion": {
+    "timestamp": "2024-10-20T11:50:47+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/GeburtBesonderheitenCS",
+        "code": "fruehgeburt",
+        "display": "Frühgeburt"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/GeburtBesonderheitenCS",
+        "code": "mehrlingsgeburt",
+        "display": "Mehrlingsgeburt"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/GeburtBesonderheitenCS",
+        "code": "entbindung_per_zange_saugglocke",
+        "display": "Entbindung per Zange oder Saugglocke"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/GeburtBesonderheitenCS",
+        "code": "neonatale_betreuung",
+        "display": "Neonatologische Betreuung des Kindes nach der Geburt"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/GeburtBesonderheitenCS",
+        "concept": [
+          {
+            "code": "fruehgeburt",
+            "display": "Frühgeburt"
+          },
+          {
+            "code": "mehrlingsgeburt",
+            "display": "Mehrlingsgeburt"
+          },
+          {
+            "code": "entbindung_per_zange_saugglocke",
+            "display": "Entbindung per Zange oder Saugglocke"
+          },
+          {
+            "code": "neonatale_betreuung",
+            "display": "Neonatologische Betreuung des Kindes nach der Geburt"
+          }
+        ]
+      }
+    ]
+  }
+}

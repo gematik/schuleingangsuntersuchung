@@ -1912,6 +1912,31 @@ Description: "ValueSet, das verschiedene Dauern enthält."
 * ^expansion.contains[=].code = #keine_angabe
 * ^expansion.contains[=].display = "Keine Angabe"
 
+ValueSet: SEU_EF_DauerTHVS
+Id: seu-ef-dauer-th-vs
+Title: "SEU_EF_Dauer ValueSet"
+Description: "ValueSet, das verschiedene Dauern enthält."
+* include codes from system SEU_EF_DauerCS
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
+* ^expansion.contains[0].system = Canonical(SEU_EF_DauerCS)
+* ^expansion.contains[=].code = #gar_nicht
+* ^expansion.contains[=].display = "Gar nicht"
+* ^expansion.contains[+].system = Canonical(SEU_EF_DauerCS)
+* ^expansion.contains[=].code = #unter_1_jahr
+* ^expansion.contains[=].display = "Unter 1 Jahr"
+* ^expansion.contains[+].system = Canonical(SEU_EF_DauerCS)
+* ^expansion.contains[=].code = #ueber_1_jahr
+* ^expansion.contains[=].display = "Über 1 Jahr"
+* ^expansion.contains[+].system = Canonical(SEU_EF_DauerCS)
+* ^expansion.contains[=].code = #ueber_2_jahre
+* ^expansion.contains[=].display = "Über 2 Jahre"
+* ^expansion.contains[+].system = Canonical(SEU_EF_DauerCS)
+* ^expansion.contains[=].code = #ueber_3_jahre
+* ^expansion.contains[=].display = "Über 3 Jahre"
+* ^expansion.contains[+].system = Canonical(SEU_EF_DauerCS)
+* ^expansion.contains[=].code = #ueber_4_jahre
+* ^expansion.contains[=].display = "Über 4 Jahre"
+
 CodeSystem: SEU_EF_HilfsmittelCS
 Id: seu-ef-hilfsmittel-cs
 Title: "SEU_EF_Hilfsmittel CodeSystem"
@@ -1920,13 +1945,20 @@ Description: "CodeSystem für die Angabe von Hilfsmitteln."
 * #hoerhilfe "Hörhilfe"
 * #orthese "Orthese"
 * #zahnersatz "Zahnersatz (Prothese, Platzhalter)"
+* #rollstuhl "Rollstuhl"
+* #gehhilfe "Gehhilfe"
+* #schuheinlage "Schuheinlage"
 * #anderes "Anderes"
 
 ValueSet: SEU_EF_HilfsmittelVS
 Id: seu-ef-hilfsmittel-vs
 Title: "SEU_EF_Hilfsmittel ValueSet"
 Description: "ValueSet, das verschiedene Hilfsmittel enthält."
-* include codes from system SEU_EF_HilfsmittelCS
+* SEU_EF_HilfsmittelCS#sehhilfe "Sehhilfe (z. B. Brille)"
+* SEU_EF_HilfsmittelCS#hoerhilfe "Hörhilfe"
+* SEU_EF_HilfsmittelCS#orthese "Orthese"
+* SEU_EF_HilfsmittelCS#zahnersatz "Zahnersatz (Prothese, Platzhalter)"
+* SEU_EF_HilfsmittelCS#anderes "Anderes"
 * ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
 * ^expansion.contains[0].system = Canonical(SEU_EF_HilfsmittelCS)
 * ^expansion.contains[=].code = #sehhilfe
@@ -1943,6 +1975,36 @@ Description: "ValueSet, das verschiedene Hilfsmittel enthält."
 * ^expansion.contains[+].system = Canonical(SEU_EF_HilfsmittelCS)
 * ^expansion.contains[=].code = #anderes
 * ^expansion.contains[=].display = "Anderes"
+
+ValueSet: SEU_EF_HilfsmittelTHVS
+Id: seu-ef-hilfsmittel-th-vs
+Title: "SEU_EF_Hilfsmittel Mehrfach ValueSet"
+Description: "ValueSet, das verschiedene Hilfsmittel für Mehrfachauswahl enthält."
+* SEU_EF_HilfsmittelCS#sehhilfe "Sehhilfe (z. B. Brille)"
+* SEU_EF_HilfsmittelCS#hoerhilfe "Hörhilfe"
+* SEU_EF_HilfsmittelCS#orthese "Orthese"
+* SEU_EF_HilfsmittelCS#rollstuhl "Rollstuhl"
+* SEU_EF_HilfsmittelCS#gehhilfe "Gehhilfe"
+* SEU_EF_HilfsmittelCS#schuheinlage "Schuheinlage"
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
+* ^expansion.contains[0].system = Canonical(SEU_EF_HilfsmittelCS)
+* ^expansion.contains[=].code = #sehhilfe
+* ^expansion.contains[=].display = "Sehhilfe (z. B. Brille)"
+* ^expansion.contains[+].system = Canonical(SEU_EF_HilfsmittelCS)
+* ^expansion.contains[=].code = #hoerhilfe
+* ^expansion.contains[=].display = "Hörhilfe"
+* ^expansion.contains[+].system = Canonical(SEU_EF_HilfsmittelCS)
+* ^expansion.contains[=].code = #orthese
+* ^expansion.contains[=].display = "Orthese"
+* ^expansion.contains[+].system = Canonical(SEU_EF_HilfsmittelCS)
+* ^expansion.contains[=].code = #rollstuhl
+* ^expansion.contains[=].display = "Rollstuhl"
+* ^expansion.contains[+].system = Canonical(SEU_EF_HilfsmittelCS)
+* ^expansion.contains[=].code = #gehhilfe
+* ^expansion.contains[=].display = "Gehhilfe"
+* ^expansion.contains[+].system = Canonical(SEU_EF_HilfsmittelCS)
+* ^expansion.contains[=].code = #schuheinlage
+* ^expansion.contains[=].display = "Schuheinlage"
 
 CodeSystem: SEU_EF_FachaerzteCS
 Id: seu-ef-fachaerzte-cs

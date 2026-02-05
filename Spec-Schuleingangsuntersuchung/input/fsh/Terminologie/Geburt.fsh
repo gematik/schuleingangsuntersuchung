@@ -11,6 +11,15 @@ Description: "CodeSystem, das die Arten der Geburt enthält."
 * #frühgeburt_und_weitere_komplikationen "Frühgeburt und weitere Geburtskomplikationen"
 * #weitere_komplikationen "weitere Geburtskomplikationen (z.B. Saugglocke, Zangengeburt)"   // TODO: ähnlich wie #mit_Saugglocke_oder_zangen, aber nicht identisch
 
+CodeSystem: GeburtBesonderheitenCS
+Id: GeburtBesonderheitenCS
+Title: "CodeSystem für Auffälligkeiten bei der Geburt"
+Description: "Dieses CodeSystem klassifiziert verschiedene Auffälligkeiten, die bei der Geburt auftreten können."
+* #fruehgeburt "Frühgeburt"
+* #mehrlingsgeburt "Mehrlingsgeburt"
+* #entbindung_per_zange_saugglocke "Entbindung per Zange oder Saugglocke"
+* #neonatale_betreuung "NNeonatologische Betreuung des Kindes nach der Geburt"
+
 ValueSet: GeburtArtVS
 Id: GeburtArtVS
 Title: "Art der Geburt Value Set"
@@ -62,3 +71,25 @@ Description: "ValueSet, das den Modus der Geburt enthält."
 * ^expansion.contains[+].system = Canonical(GeburtArtCS)
 * ^expansion.contains[=].code = #weitere_komplikationen
 * ^expansion.contains[=].display = "weitere Geburtskomplikationen (z.B. Saugglocke, Zangengeburt)"
+
+ValueSet: GeburtBesonderheitenVS
+Id: GeburtBesonderheitenVS
+Title: "Geburt Besonderheiten Value Set"
+Description: "ValueSet, das verschiedene Auffälligkeiten bei der Geburt enthält."
+* GeburtBesonderheitenCS#fruehgeburt "Frühgeburt"
+* GeburtBesonderheitenCS#mehrlingsgeburt "Mehrlingsgeburt"
+* GeburtBesonderheitenCS#entbindung_per_zange_saugglocke "Entbindung per Zange oder Saugglocke"
+* GeburtBesonderheitenCS#neonatale_betreuung "Neonatologische Betreuung des Kindes nach der Geburt"
+* ^expansion.timestamp = "2024-10-20T11:50:47+00:00"
+* ^expansion.contains[+].system = Canonical(GeburtBesonderheitenCS)
+* ^expansion.contains[=].code = #fruehgeburt
+* ^expansion.contains[=].display = "Frühgeburt"
+* ^expansion.contains[+].system = Canonical(GeburtBesonderheitenCS)
+* ^expansion.contains[=].code = #mehrlingsgeburt
+* ^expansion.contains[=].display = "Mehrlingsgeburt"
+* ^expansion.contains[+].system = Canonical(GeburtBesonderheitenCS)
+* ^expansion.contains[=].code = #entbindung_per_zange_saugglocke
+* ^expansion.contains[=].display = "Entbindung per Zange oder Saugglocke"
+* ^expansion.contains[+].system = Canonical(GeburtBesonderheitenCS)
+* ^expansion.contains[=].code = #neonatale_betreuung
+* ^expansion.contains[=].display = "Neonatologische Betreuung des Kindes nach der Geburt"

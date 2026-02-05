@@ -1,0 +1,49 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "ArzttypenCS",
+  "id": "ArzttypenCS",
+  "title": "Arzttypen",
+  "description": "CodeSystem für die Angabe der Arzttypen.",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/ArzttypenCS",
+  "concept": [
+    {
+      "code": "kinderarzt",
+      "display": "Kinderarzt/Hausarzt"
+    },
+    {
+      "code": "zahnarzt",
+      "display": "Zahnarzt"
+    },
+    {
+      "code": "kieferorthopaede",
+      "display": "Kieferorthopäde"
+    },
+    {
+      "code": "augenarzt",
+      "display": "Augenarzt"
+    },
+    {
+      "code": "hnoarzt",
+      "display": "Hals-Nasen-Ohren-Arzt"
+    },
+    {
+      "code": "hautarzt",
+      "display": "Hautarzt"
+    },
+    {
+      "code": "urologe",
+      "display": "Urologe"
+    },
+    {
+      "code": "chirurg",
+      "display": "Chirurg/Orthopäde"
+    },
+    {
+      "code": "kinder_jugend_psychiater",
+      "display": "Kinder- und Jugendpsychiater"
+    }
+  ],
+  "count": 9
+}

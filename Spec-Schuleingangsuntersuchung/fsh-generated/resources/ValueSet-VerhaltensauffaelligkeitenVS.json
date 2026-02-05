@@ -1,0 +1,61 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "VerhaltensauffaelligkeitenVS",
+  "id": "VerhaltensauffaelligkeitenVS",
+  "title": "VerhaltensauffaelligkeitenVS",
+  "description": "ValueSet zur Auswahl von Verhaltensauffälligkeiten bei Kindern im Rahmen der Schuleingangsuntersuchung.",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/VerhaltensauffaelligkeitenVS",
+  "expansion": {
+    "timestamp": "2024-04-04T11:02:42+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/VerhaltensauffaelligkeitenCS",
+        "code": "konzentrationsstoerung",
+        "display": "Konzentrationsstörung"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/VerhaltensauffaelligkeitenCS",
+        "code": "einnaessen",
+        "display": "Einnässen"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/VerhaltensauffaelligkeitenCS",
+        "code": "einkoten",
+        "display": "Einkoten"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/VerhaltensauffaelligkeitenCS",
+        "code": "aengstlichkeit",
+        "display": "Ängstlichkeit"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/VerhaltensauffaelligkeitenCS",
+        "code": "aggressivitaet",
+        "display": "Aggressivität"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/VerhaltensauffaelligkeitenCS",
+        "code": "schlafstoerungen",
+        "display": "Schlafstörung"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/VerhaltensauffaelligkeitenCS",
+        "code": "motorische_unruhe_hyperaktivitaet",
+        "display": "Motorische Unruhe, Hyperaktivität"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/VerhaltensauffaelligkeitenCS",
+        "code": "unueberlegte_risikante_handlungen",
+        "display": "Unüberlegte riskante Handlungen"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/VerhaltensauffaelligkeitenCS"
+      }
+    ]
+  }
+}

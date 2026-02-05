@@ -1,0 +1,104 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "ArzttypenVS",
+  "id": "ArzttypenVS",
+  "title": "ArzttypenVS",
+  "description": "ValueSet, das verschiedene Arzttypen enthält.",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/ArzttypenVS",
+  "expansion": {
+    "timestamp": "2024-04-04T09:24:55+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ArzttypenCS",
+        "code": "kinderarzt",
+        "display": "Kinderarzt/Hausarzt"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ArzttypenCS",
+        "code": "zahnarzt",
+        "display": "Zahnarzt"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ArzttypenCS",
+        "code": "kieferorthopaede",
+        "display": "Kieferorthopäde"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ArzttypenCS",
+        "code": "augenarzt",
+        "display": "Augenarzt"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ArzttypenCS",
+        "code": "hnoarzt",
+        "display": "Hals-Nasen-Ohren-Arzt"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ArzttypenCS",
+        "code": "hautarzt",
+        "display": "Hautarzt"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ArzttypenCS",
+        "code": "urologe",
+        "display": "Urologe"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ArzttypenCS",
+        "code": "chirurg",
+        "display": "Chirurg/Orthopäde"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ArzttypenCS",
+        "code": "kinder_jugend_psychiater",
+        "display": "Kinder- und Jugendpsychiater"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/ArzttypenCS",
+        "concept": [
+          {
+            "code": "kinderarzt",
+            "display": "Kinderarzt/Hausarzt"
+          },
+          {
+            "code": "zahnarzt",
+            "display": "Zahnarzt"
+          },
+          {
+            "code": "kieferorthopaede",
+            "display": "Kieferorthopäde"
+          },
+          {
+            "code": "augenarzt",
+            "display": "Augenarzt"
+          },
+          {
+            "code": "hnoarzt",
+            "display": "Hals-Nasen-Ohren-Arzt"
+          },
+          {
+            "code": "hautarzt",
+            "display": "Hautarzt"
+          },
+          {
+            "code": "urologe",
+            "display": "Urologe"
+          },
+          {
+            "code": "chirurg",
+            "display": "Chirurg/Orthopäde"
+          },
+          {
+            "code": "kinder_jugend_psychiater",
+            "display": "Kinder- und Jugendpsychiater"
+          }
+        ]
+      }
+    ]
+  }
+}

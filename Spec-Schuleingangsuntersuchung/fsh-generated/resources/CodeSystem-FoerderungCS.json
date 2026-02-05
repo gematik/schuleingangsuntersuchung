@@ -1,0 +1,61 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "FoerderungCS",
+  "id": "FoerderungCS",
+  "title": "FoerderungCS",
+  "description": "FoerderungCS",
+  "url": "https://www.oegd.de/fhir/seu/CodeSystem/FoerderungCS",
+  "concept": [
+    {
+      "code": "logopaedie",
+      "display": "Logopädie"
+    },
+    {
+      "code": "ergotherapie",
+      "display": "Ergotherapie"
+    },
+    {
+      "code": "physiotherapie_krankengymnastik",
+      "display": "Physiotherapie/Krankengymnastik"
+    },
+    {
+      "code": "sozialpaediatrisches_zentrum",
+      "display": "Sozialpädiatrisches Zentrum (SPZ)"
+    },
+    {
+      "code": "fuehe_hilfen",
+      "display": "Frühe Hilfen"
+    },
+    {
+      "code": "integrationskind_kindergarrten",
+      "display": "Integrationskind im Kindergarten"
+    },
+    {
+      "code": "einzelkindintegration",
+      "display": "Einzelkindintegration (1:1 Betreuung)"
+    },
+    {
+      "code": "sprachfoerderung_kindergarten",
+      "display": "Sprachförderung im Kindergarten"
+    },
+    {
+      "code": "fruehfoerderstelle",
+      "display": "Frühförderstelle"
+    },
+    {
+      "code": "familienberatungsstelle",
+      "display": "Familienberatungsstelle"
+    },
+    {
+      "code": "physiologische_behandlung_psychotherapie",
+      "display": "Physiologische Behandlung/Psychotherapie"
+    },
+    {
+      "code": "jugendamt_familienhilfe",
+      "display": "Jugendamt/Familienhilfe"
+    }
+  ],
+  "count": 12
+}

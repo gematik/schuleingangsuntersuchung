@@ -25,9 +25,21 @@
       "display": "Zahnersatz (Prothese, Platzhalter)"
     },
     {
+      "code": "rollstuhl",
+      "display": "Rollstuhl"
+    },
+    {
+      "code": "gehhilfe",
+      "display": "Gehhilfe"
+    },
+    {
+      "code": "schuheinlage",
+      "display": "Schuheinlage"
+    },
+    {
       "code": "anderes",
       "display": "Anderes"
     }
   ],
-  "count": 5
+  "count": 8
 }

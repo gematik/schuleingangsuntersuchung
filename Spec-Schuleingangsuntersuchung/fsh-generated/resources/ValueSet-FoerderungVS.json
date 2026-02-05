@@ -1,0 +1,81 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "FoerderungVS",
+  "id": "FoerderungVS",
+  "title": "FoerderungVS",
+  "description": "FoerderungVS",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/FoerderungVS",
+  "expansion": {
+    "timestamp": "2024-04-04T11:16:49+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/FoerderungCS",
+        "code": "logopaedie",
+        "display": "Logopädie"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/FoerderungCS",
+        "code": "ergotherapie",
+        "display": "Ergotherapie"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/FoerderungCS",
+        "code": "physiotherapie_krankengymnastik",
+        "display": "Physiotherapie/Krankengymnastik"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/FoerderungCS",
+        "code": "sozialpaediatrisches_zentrum",
+        "display": "Sozialpädiatrisches Zentrum (SPZ)"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/FoerderungCS",
+        "code": "fuehe_hilfen",
+        "display": "Frühe Hilfen"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/FoerderungCS",
+        "code": "integrationskind_kindergarrten",
+        "display": "Integrationskind im Kindergarten"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/FoerderungCS",
+        "code": "einzelkindintegration",
+        "display": "Einzelkindintegration (1:1 Betreuung)"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/FoerderungCS",
+        "code": "sprachfoerderung_kindergarten",
+        "display": "Sprachförderung im Kindergarten"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/FoerderungCS",
+        "code": "fruehfoerderstelle",
+        "display": "Frühförderstelle"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/FoerderungCS",
+        "code": "familienberatungsstelle",
+        "display": "Familienberatungsstelle"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/FoerderungCS",
+        "code": "physiologische_behandlung_psychotherapie",
+        "display": "Physiologische Behandlung/Psychotherapie"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/FoerderungCS",
+        "code": "jugendamt_familienhilfe",
+        "display": "Jugendamt/Familienhilfe"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/FoerderungCS"
+      }
+    ]
+  }
+}

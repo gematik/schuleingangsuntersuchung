@@ -4,13 +4,19 @@ Usage: #example
 Title: "Sorgeberechtigtenfragebogen TH"
 Description: "Sorgeberechtigtenfragebogen TH"
 * contained[+] = LinksRechtsBeidseitsKeineAngabeVS
-* contained[+] = ErkrankungVS
-* contained[+] = InfektionsKrankheitVS
+* contained[+] = ErkrankungenTHVS
+* contained[+] = InfektionsKrankheitTHVS
 * contained[+] = PflegegradVS
 * contained[+] = UnfallOrtVS
 * contained[+] = AtopischeErkrankungenVS
+* contained[+] = SEU_EF_DauerTHVS
 * contained[+] = SEU_EF_UnfallortVS
 * contained[+] = SEU_EF_HilfsmittelVS
+* contained[+] = SEU_EF_HilfsmittelTHVS
+* contained[+] = GeburtBesonderheitenVS
+* contained[+] = VerhaltensauffaelligkeitenVS
+* contained[+] = FoerderungVS
+* contained[+] = UeberwiegendGesprocheneSpracheVS
 * id = "SEU-Sorgeberechtigtenfragebogen-TH"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenTH"
 * title = "SEU Sorgeberechtigtenfragebogen TH"
@@ -22,7 +28,13 @@ Description: "Sorgeberechtigtenfragebogen TH"
   * item[+]
     * insert addItem(0.1, #string, Name der Schule)
     * required = true
-
+  * item[+]
+    * insert addItem(0.3.1, #string, [[PLZ der Schule]])
+    * insert regEx([["^[0-9]{4,5}$"]])
+  * item[+]
+    * insert addItem(0.3.2, #string, [[Ort der Schule]])
+  * item[+]
+    * insert addItem(0.3.3, #string, [[Straße der Schule]])
   * item[+]
     * insert addItemWithSource(0.10, #date, [[Datum der Untersuchung]], #DE-HB)
     * required = true
@@ -30,7 +42,6 @@ Description: "Sorgeberechtigtenfragebogen TH"
     * insert addItemWithSource(0.13, #string, [[Ort der Untersuchung]], #DE-TH)
     * maxLength = 30
     * required = true
-
 //********************************************
 // Personenbezogene Daten Kind
 * item[+]
@@ -82,147 +93,173 @@ Description: "Sorgeberechtigtenfragebogen TH"
 * item[+]
   * insert addItem(4, #group, Kinderbetreuung)
   * item[+]
-    * insert addItemWithSource(4.11, #group, [[Das Kind wurde bis zum Alter von Jahren und Monaten ausschließlich innerhalb der Familie betreut.]], #DE-RP)
-    * item[+]
-      * insert addItemWithSource(4.11.1, #integer, [[Jahre]], #DE-RP)
-      * insert uunit(a, "Jahre")
-      * insert minValueInt(0)
-      * insert maxValueInt(7)
-    * item[+]
-      * insert addItemWithSource(4.11.2, #integer, [[Monate]], #DE-RP)
-      * insert uunit(mo, "Monate")
-      * insert minValueInt(0)
-      * insert maxValueInt(12)
+    * insert addItemWithSource(4.1e, #choice, [[Besucht Ihr Kind einen Kindergarten oder eine Tagesmutter?]], #DE-TH)
+    * answerValueSet = Canonical(SEU_EF_DauerTHVS)
+    * required = true
 //********************************************
 // Schwangerschaft und Geburt
 * item[+]
   * insert addItem(5, #group, [[Schwangerschaft und Geburt]])
   * item[+]
-    * insert addItem(5.4, #boolean, [[Waren Geburtsgewicht und Geburtslänge normal?]])
-  * item[+]
     * insert addItem(5.5, #boolean, [[Auffälligkeit bei der Geburt]])
-    // "APGAR" steht im Deutschen für folgende Kennzeichen: Atmung, Puls, Grundtonus (Muskelspannung und Bewegung), Aussehen (Hautfarbe) und Reflexe
-  * item[+]
-    * insert addItemWithSource(5.11, #string, [[APGAR]], #DE-HB)
-    * insert regEx([["^\\d{2}\\/\\d{2}\\/\\d{2}$"]])
-    * insert entryFormat([[XX/XX/XX]])
     * required = true
-    // "pH-Wert" ist eine Messung des Säurebasengrades im Blut oder einer Flüssigkeit. Ein typischer pH-Wert für ein neugeborenes Kind liegt zwischen 7,15 und 7,45.
+    * item[+]
+      * insert enableWhenBoolean(5.5, =, true)
+      * insert addItemWithSource(5.5.1a, #choice, [[Falls ja, welche?]], #DE-TH)
+      * answerValueSet = Canonical(GeburtBesonderheitenVS)
+      * required = true
   * item[+]
-    * insert addItemWithSource(5.12, #string, [[pH- Wert]], #DE-HB)
-    * insert regEx([["^\\d,\\d{2}$"]])
-    * insert entryFormat([[X,XX]])
+    * insert addItem(5.6, #boolean, [[Auffälligkeit/Krankheit in der Schwangerschaft]])
     * required = true
+    * item[+]
+      * insert enableWhenBoolean(5.6, =, true)
+      * insert addItem(5.6.1, #string, [[Welche Auffälligkeit?]])
+      * required = true
+//********************************************
+// Sprache
+* item[+]
+  * insert addItem(6, #group, [[Sprache]])
+  * item[+]
+    * insert addItemWithSource(6.1f, #choice, [[Welche Sprache wird mit dem Kind zu Hause gesprochen?]], #DE-TH)
+    * answerValueSet = Canonical(UeberwiegendGesprocheneSpracheVS)
+    * required = true
+    * item[+]
+      * insert addItemWithSource(6.1f.1, #text, [[Welche Sprache?]], #DE-TH)
+      * insert enableWhenCode(6.1f, =, UeberwiegendGesprocheneSpracheCS, andere)
+      * insert enableWhenCode(6.1f, =, UeberwiegendGesprocheneSpracheCS, deutsch_andere)
+      * enableBehavior = #any
+      * required = true
 //********************************************
 // Entwicklung
 * item[+]
   * insert addItem(7, #group, [[Entwicklung]])
   * item[+]
-    * insert addItem(7.10, #text, [[Angabe zu Entwicklungsverzögerungen, bspw. beim Erlernen des Sitzens/Laufens]])
-  * item[+]
-    * insert addItemWithSource(7.11a, #boolean, [[Auffälligkeit des Verhaltens]], #DE-HE)
+    * insert addItem(7.10a, #integer, [[Freies Laufen ab .. (Lebensmonat)]])
+    * insert minValueInt(0)
     * required = true
+  * item[+]
+    * insert addItem(7.10b, #integer, [[Erste Worte sprechen (außer Mama, Papa) ab .. (Lebensmonat)]])
+    * insert minValueInt(0)
+    * required = true
+  * item[+]
+    * insert addItemWithSource(7.11c, #boolean, [[Besonderheiten der Entwicklung]], #DE-TH)
+    * required = true
+    * item[+]
+      * insert addItemWithSource(7.11c.1, #text, [[Falls ja, welche?]], #DE-TH)
+      * insert enableWhenBoolean(7.11c, =, true)
+      * required = true
 //********************************************
 // Erkrankungen und gesundheitliche Einschränkungen
 * item[+]
   * insert addItem(8, #group, [[Erkrankungen und gesundheitliche Einschränkungen]])
+// Hilfsmittel
   * item[+]
-    * insert addItem(8.6, #boolean, [[Brillenträger?]])
-    * required = true
-  * item[+]
-    * insert addItemWithSource(8.6a, #choice, [[Hilfsmittel?]], #DE-BB)
-    * answerValueSet = Canonical(SEU_EF_HilfsmittelVS)
-    * repeats = true
-    * required = true
-  * item[+]
-    * insert addItem(8.9.G, #group, [[Details: Angeborene schwere Hörstörung]])
-    //* insert enableWhenBoolean(8.9, =, true) TODO auskommentiert ohne fachliche überprüfung
+    * insert addItemWithSource(8.6b, #boolean, [[Nutzt Ihr Kind Hilfsmittel?]], #DE-TH)
     * item[+]
-      * insert addItem(8.9.G.hoergeraete.G, #group, [[Hörgeräte]])
+      * insert addItemWithSource(8.6b.1, #choice, [[Falls ja, welche?]], #DE-TH)
+      * insert enableWhenBoolean(8.6b, =, true)
+      * answerValueSet = Canonical(SEU_EF_HilfsmittelTHVS)
       * repeats = true
-      * item[+]
-        * answerValueSet = Canonical(LinksRechtsBeidseitsKeineAngabeVS)
-        * insert addItem(8.9.G.hoergeraete.G.1, #choice, [[Höregerätseite]])
-        * required = true
+      * required = true
+// Erkrankungen
   * item[+]
-    * insert addItem(8.11.g, #group, [[Erkrankungen]])
+    * insert addItemWithSource(8.14c, #open-choice, [[Welche der folgenden Krankheiten wurden bei Ihrem Kind jemals ärztlich diagnostiziert?]], #DE-TH)
+    * answerValueSet = Canonical(ErkrankungenTHVS)
     * repeats = true
-    * item[+]
-      * answerValueSet = Canonical(ErkrankungVS)
-      * insert addItem(8.11.g.1, #open-choice, [[Erkrankung]])
-      * required = true
+    * required = true
   * item[+]
-    * insert addItem(8.12.g, #group, [[Infektionskrankheiten]])
+    * insert addItemWithSource(8.14d, #open-choice, [[Welche der Infektionskrankheiten hat Ihr Kind durchgemacht?]], #DE-TH)
+    * answerValueSet = Canonical(InfektionsKrankheitTHVS)
     * repeats = true
-    * item[+]
-      * answerValueSet = Canonical(InfektionsKrankheitVS)
-      * insert addItem(8.12.g.1, #open-choice, [[Infektionskrankheit]])
-      * required = true
+    * required = true
+// Familienanamnese
   * item[+]
-    * insert addItemWithSource(8.14b, #text, [[Bisher durchgemachte Erkrankungen, bspw. Windpocken oder Masern. Zeitlich nicht bestimmt]], #DE-BW)
-    * required = true   
-  * item[+]
-    * insert addItem(8.15, #boolean, [[Krankenhausaufenthalt]])
+    * insert addItemWithSource(8.16b, #boolean, [[Gibt es Gesundheitsstörungen in der Familie, von denen Sie wissen oder vermuten, dass sie Auswirkungen auf die Entwicklung oder Belastbarkeit Ihres Kindes haben könnten bzw. im Schulalltag zu berücksichtigen wären (z. B. Sehstörung, Hörstörung, Herz-Kreislauf-Erkrankung, Allergie, Asthma bronchiale, Epilepsie, Depression oder andere psychische Erkrankung, Rheuma, Diabetes mellitus, Krebserkrankung, andere schwere Erkrankung)]], #DE-TH)
     * required = true
     * item[+]
-      * insert addItem(8.15.1, #string, [[Detaillierte Angaben zum Krankenhausaufenthalt?]])
-      * insert enableWhenBoolean(8.15, =, true)
+      * insert addItemWithSource(8.16b.1, #string, [[Wenn ja, welche?]], #DE-TH)
+      * insert enableWhenBoolean(8.16b, =, true)
+      * required = true
+// Behinderungen und Pflegegrad
+  * item[+]
+    * insert addItemWithSource(8.22a, #boolean, [[Wurde bei Ihrem Kind eine Behinderung festgestellt?]], #DE-TH)
+    * required = true
+    * item[+]
+      * insert addItem(8.22a.1, #text, [[Welcher Behinderungsgrad?]])
+      * insert enableWhenBoolean(8.22a, =, true)
       * required = true
   * item[+]
-    * answerValueSet = Canonical(AtopischeErkrankungenVS)  
-    * insert addItem(8.16a, #choice, [[Besitzt Ihr Kind Allergien?]])
+    * insert addItemWithSource(8.22b, #boolean, [[Ist Ihr Kind Inhaber eines Schwerbehindertenausweises?]], #DE-TH)
+    * required = true
+    * item[+]
+      * insert addItem(8.22b.1, #integer, [[Welches Merkzeichen?]])
+      * insert enableWhenBoolean(8.22b, =, true)
+      * required = true
+  * item[+]
+    * insert addItemWithSource(8.22c, #boolean, [[Beansprucht Ihr Kind Leistungen der Pflegeversicherung?]], #DE-TH)
+    * required = true
+    * item[+]
+      * insert addItem(8.22c.1, #choice, [[Welcher Pflegegrad?]])
+      * insert enableWhenBoolean(8.22c, =, true)
+      * answerValueSet = Canonical(PflegegradVS)
+      * required = true
+// Medikamente
+  * item[+]
+    * insert addItem(8.23, #boolean, [[Regelmäßige Medikamenteneinnahme]])
     * required = true
   * item[+]
-    * answerValueSet = Canonical(AtopischeErkrankungenVS)
-    * insert addItemWithSource(8.16b, #string, [[Gesundheitsstörungen in der Familie des Kindes  (z.B. Allergien, Asthma b.,Epilepsie)]],  #DE-TH)
-  * item[+]
-    * answerValueSet = Canonical(PflegegradVS)
-    * insert addItem(8.20, #choice, [[Pflegegrad]])
+    * insert addItem(8.23.1, #string, [[Welches Medikament]])
+    * insert enableWhenBoolean(8.23, =, true)
+    * repeats = true
     * required = true
   * item[+]
-    * insert addItemWithSource(8.26a, #text, [[Gesundheitsstörungen und Besonderheiten beim Kind, die nach Meinung der Eltern zu berücksichtigen sind]], #DE-TH)
+    * insert addItemWithSource(8.25a, #boolean, [[Muss Ihr Kind ein Notfallset mit sich führen?]], #DE-TH)
+    * item[+]
+      * insert addItemWithSource(8.25a.1, #text, [[Falls ja, warum?]], #DE-TH)
+      * insert enableWhenBoolean(8.25a, =, true)
+    * item[+]
+      * insert addItemWithSource(8.25a.2, #text, [[Namen der Notfallmedikamente]], #DE-TH)
+      * insert enableWhenBoolean(8.25a, =, true)
+// Verhaltensauffälligkeiten
   * item[+]
-    * insert addItemWithSource(8.51, #boolean, [[Operationen Sonstige OP]], #DE-SL)
+    * insert addItemWithSource(8.34a, #choice, [[Zeigte Ihr Kind in den vergangenen 12 Monaten folgende Verhaltensauffälligkeiten?]], #DE-TH)
+    * answerValueSet = Canonical(VerhaltensauffaelligkeitenVS)
+    * repeats = true
     * required = true
+// Operationen
   * item[+]
-    * insert addItemWithSource(8.56, #choice, [[Unfälle Sonstige]], #DE-SL)
-    * answerValueSet = Canonical(SEU_EF_UnfallortVS)
+    * insert addItemWithSource(8.27b, #boolean, [[Wurde Ihr Kind jemals operiert bzw. ist eine Operation geplant?]], #DE-TH)
     * required = true
+    * item[+]
+      * insert addItemWithSource(8.27b.1, #text, [[Falls ja, welche Operationen und wann?]], #DE-TH)
+      * insert enableWhenBoolean(8.27b, =, true)
+      * required = true
+// Unfälle
   * item[+]
-    * insert addItemWithSource(8.82, #string, [[Kur mit welchem Behandlungsschwerpunkt?]], #DE-TH)
+    * insert addItemWithSource(8.28b, #boolean, [[Hatte  Ihr Kind jemals einen Unfall, der ärztlich behandelt wurde?]], #DE-BB)
     * required = true
+    * item[+]
+      * insert addItemWithSource(8.28b.1, #text, [[Falls ja, welche Verletzung und wann?]], #DE-TH)
+      * insert enableWhenBoolean(8.28b, =, true)
+      * required = true
 //********************************************
 // Förderungen
 * item[+]
   * insert addItem(9, #group, [[Förderungen]])
   * item[+]
-    * insert addGroup(9.1a.g, Therapien)
-    //* insert enableWhenBoolean(9.1a, =, true) TODO auskommentiert ohne fachliche überprüfung
-    * insert addSource(#DE-SN)
-    * item[+]
-      * insert addItemWithSource(9.3a, #boolean, [[Frühförderung]], #DE-BB)
-      * required = true
-  * item[+]
-    * insert addItem(9.11.g, #group, [[Kuren]])
+    * insert addItemWithSource(9.13a, #choice, [[Welche Behandlungen oder Unterstützungen hat Ihr Kind jemals erhalten?]], #DE-TH)
+    * answerValueSet = Canonical(FoerderungVS)
     * repeats = true
-    * item[+]
-      * insert addItem(9.11.g.1, #date, [[Wann]])
-      * required = true
-    * item[+]
-      * insert addItem(9.11.g.2, #string, [[Behandlungsschwerpunkt]])
-      * required = true
+    * required = true
 //********************************************
 // Arzt
 * item[+]
   * insert addGroup(11, Arzt)
   * item[+]
-    * insert addItem(11.2, #string, Name Kinderarzt)
-//********************************************
-// Sonstiges
-* item[+]
-  * insert addGroup(12, Sonstiges)
+    * insert addItemWithSource(11.4, #open-choice, [[Bei welchen Ärztinnen oder Ärzten haben Sie Ihr Kind in den vergangenen 12 Monaten vorgestellt?]], #DE-TH)
+    * required = true
   * item[+]
-    * insert addItemWithSource(12.23, #boolean, [[Fährt Ihr Kind frei Fahrrad]], #DE-HB)
+    * insert addItemWithSource(11.5, #text, [[Name des behandelnden Kinder- oder Hausarztes und Praxisort:]], #DE-TH)
     * required = true
 //********************************************
 // Informationen Eltern
