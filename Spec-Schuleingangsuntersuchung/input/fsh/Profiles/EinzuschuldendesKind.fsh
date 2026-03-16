@@ -1,6 +1,7 @@
 Profile: EinzuschuldendesKind
 Parent: Patient
 Id: EinzuschuldendesKind
+Description: "Dieses Profil stellt die untersuchte Person (das Schulkind) dar und enthält deren Basisdaten aus dem XMeld Modul. Es umfasst Identifikatoren, Namen, Geburtsdatum und Geschlecht (inklusive amtlich-administratives Geschlecht), Adressen mit Unterscheidung zwischen Straßenanschrift und Postfach mit erweiterten Adressfeldkomponenten, XMeld-spezifische Übermittlungssperren (Religion, Politik, Jubiläen, Adressbuch, Bundeswehr), Migrationshindergrund und Deutschkenntnisse sowie Kontaktinformationen zu Sorgeberechtigten und Kindertageseinrichtungen."
 * identifier MS
   * ^slicing.discriminator.type = #pattern
   * ^slicing.discriminator.path = "$this"

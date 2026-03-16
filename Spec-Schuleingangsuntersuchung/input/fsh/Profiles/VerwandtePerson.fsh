@@ -1,6 +1,7 @@
 Profile: VerwandtePerson
 Parent: RelatedPerson
 Id: VerwandtePerson
+Description: "Dieses Profil stellt Sorgeberechtigte, Erziehungsberechtigte und andere relevante Bezugspersonen der untersuchten Person dar. Es enthält Beziehungsdefinitionen zur untersuchten Person, Kontaktinformationen einschließlich Namen und Adressen mit erweiterten Adressfeldkomponenten, XMeld-Kerninformationen wie Auskünftssperren (Grund und Frist) sowie Datenendeinformation, Deutschkenntnisse und eine Verknüpfung zur Patientenressource für eindeutige Zuordnung."
 * patient 1..1 MS
   * reference 1..
 * name MS
