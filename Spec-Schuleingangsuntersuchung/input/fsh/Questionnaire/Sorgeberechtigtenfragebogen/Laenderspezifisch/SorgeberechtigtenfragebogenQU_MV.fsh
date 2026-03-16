@@ -300,7 +300,7 @@ Description: "Sorgeberechtigtenfragebogen MV"
   * item[+]
     * insert addItem(11.2, #string, Name Kinderarzt)
   * item[+]
-    * insert addItem(11.3, #string, Name Facharzt)
+    * insert addItem(11.3, #text, Name Fachärzte)
 //********************************************
 // Sonstiges
 * item[+]
