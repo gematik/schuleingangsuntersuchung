@@ -1078,12 +1078,6 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert enableWhenBoolean(8.23, =, true)   
     * repeats = true
   * item[+]
-    * insert addItem(8.24, #boolean, [[Medikamenteneinnahme in der Schulzeit?]])
-  * item[+]
-    * insert enableWhenBoolean(8.24, =, true)
-    * insert addItem(8.24.1, #text, [[Welches Medikament]])
-    * repeats = true
-  * item[+]
     * insert addItemWithSource(8.25a, #boolean, [[Muss Ihr Kind ein Notfallset mit sich führen?]], #DE-TH)
     * item[+]
       * insert addItemWithSource(8.25a.1, #text, [[Falls ja, warum?]], #DE-TH)
