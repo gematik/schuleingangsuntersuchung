@@ -126,7 +126,7 @@ Usage: #example
   * extension.url = "http://hl7.org/fhir/StructureDefinition/humanname-own-name"
   * extension.valueString = "Gabler"
 * gender = #female
-* patient = Reference(PersonBeispiel)
+* patient = Reference(EinzuschuldendesKindBeispiel)
 * birthDate = "1952-01-17"
 * address[Strassenanschrift].type = #both
 * address[Strassenanschrift].line[0] = "Musterstrasse 18"

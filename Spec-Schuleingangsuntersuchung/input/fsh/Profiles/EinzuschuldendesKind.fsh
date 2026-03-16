@@ -1,6 +1,6 @@
-Profile: Person
+Profile: EinzuschuldendesKind
 Parent: Patient
-Id: Person
+Id: EinzuschuldendesKind
 * identifier MS
   * ^slicing.discriminator.type = #pattern
   * ^slicing.discriminator.path = "$this"
@@ -175,8 +175,8 @@ Description: "Diese Extension enthält Angaben zu den Deutschkenntnissen der bet
 * value[x] only CodeableConcept
 * valueCodeableConcept from PersonDeutschkenntnisVS
 
-Instance: PersonBeispiel
-InstanceOf: Person
+Instance: EinzuschuldendesKindBeispiel
+InstanceOf: EinzuschuldendesKind
 Usage: #example
 * extension[SperreBundeswehr].valueBoolean = true
 * extension[Migrationshintergrund].valueCodeableConcept = PersonEthnieCS#2 "GUS/Osteuropa"
