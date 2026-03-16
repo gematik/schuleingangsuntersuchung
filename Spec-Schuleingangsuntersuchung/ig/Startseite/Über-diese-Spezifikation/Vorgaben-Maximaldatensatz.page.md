@@ -15,3 +15,7 @@ In der QuestionnaireResponse muss die Version des Fragebogens angegeben werden, 
 ```
 "questionnaire": "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenNI|1.0.0"
 ```
+
+### Vorgaben zur Darstellung
+
+Die definierten Questionniare sind im jeweiligen Realm (Bundesland) vollständig in der Benutzeroberfläche darzustellen. Ausgefüllte Fragebögen sind als QuestionnaireResponse-Ressourcen zu erstellen und zu persistieren.
