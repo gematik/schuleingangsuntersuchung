@@ -1,9 +1,10 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "Person",
-  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/Person",
-  "name": "Person",
+  "id": "EinzuschuldendesKind",
+  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/EinzuschuldendesKind",
+  "name": "EinzuschuldendesKind",
   "status": "draft",
+  "description": "Dieses Profil stellt die untersuchte Person (das Schulkind) dar und enthält deren Basisdaten aus dem XMeld Modul. Es umfasst Identifikatoren, Namen, Geburtsdatum und Geschlecht (inklusive amtlich-administratives Geschlecht), Adressen mit Unterscheidung zwischen Straßenanschrift und Postfach mit erweiterten Adressfeldkomponenten, XMeld-spezifische Übermittlungssperren (Religion, Politik, Jubiläen, Adressbuch, Bundeswehr), Migrationshindergrund und Deutschkenntnisse sowie Kontaktinformationen zu Sorgeberechtigten und Kindertageseinrichtungen.",
   "fhirVersion": "4.0.1",
   "kind": "resource",
   "abstract": false,
@@ -525,7 +526,7 @@
             "severity": "warning",
             "human": "The content of the country element (if present) SHALL be selected EITHER from ValueSet ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2 OR MAY be selected from ISO Country Alpha-3 Value Set http://hl7.org/fhir/ValueSet/iso3166-1-3, IF the country is not specified in value Set ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2.",
             "expression": "country.empty() or (country.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-2') or country.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-3'))",
-            "source": "https://www.oegd.de/fhir/seu/StructureDefinition/Person"
+            "source": "https://www.oegd.de/fhir/seu/StructureDefinition/EinzuschuldendesKind"
           }
         ],
         "mustSupport": true
@@ -607,7 +608,7 @@
             "severity": "warning",
             "human": "The content of the country element (if present) SHALL be selected EITHER from ValueSet ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2 OR MAY be selected from ISO Country Alpha-3 Value Set http://hl7.org/fhir/ValueSet/iso3166-1-3, IF the country is not specified in value Set ISO Country Alpha-2 http://hl7.org/fhir/ValueSet/iso3166-1-2.",
             "expression": "country.empty() or (country.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-2') or country.memberOf('http://hl7.org/fhir/ValueSet/iso3166-1-3'))",
-            "source": "https://www.oegd.de/fhir/seu/StructureDefinition/Person"
+            "source": "https://www.oegd.de/fhir/seu/StructureDefinition/EinzuschuldendesKind"
           }
         ],
         "mustSupport": true

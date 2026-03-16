@@ -2045,6 +2045,9 @@
       }
     }
   ],
+  "version": "1.0.0",
+  "status": "active",
+  "experimental": false,
   "url": "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenHE",
   "title": "SEU Sorgeberechtigtenfragebogen HE",
   "extension": [
@@ -2069,7 +2072,6 @@
       ]
     }
   ],
-  "status": "draft",
   "derivedFrom": [
     "https://www.oegd.de/fhir/seu/Questionnaire/Sorgeberechtigtenfragebogen"
   ],
@@ -3026,8 +3028,8 @@
         },
         {
           "linkId": "11.3",
-          "type": "string",
-          "text": "(11.3) Name Facharzt",
+          "type": "text",
+          "text": "(11.3) Name Fachärzte",
           "code": [
             {
               "code": "11.3",
