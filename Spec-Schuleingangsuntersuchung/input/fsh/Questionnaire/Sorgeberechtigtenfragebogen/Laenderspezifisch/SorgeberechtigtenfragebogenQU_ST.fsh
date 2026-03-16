@@ -22,11 +22,11 @@ Description: "Sorgeberechtigtenfragebogen ST"
 * contained[+] = AtopischeErkrankungenVS
 * contained[+] = AllgemeineBeschwerdenVS
 * contained[+] = KrankenhausaufenthaltGrundVS
+* insert QMeta(1.0.0)
 * id = "SEU-Sorgeberechtigtenfragebogen-ST"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenST"
 * title = "SEU Sorgeberechtigtenfragebogen ST"
 * insert launchContext("patient", #Patient, "Patientenkontext")
-* status = #draft
 * derivedFrom[0] = Canonical(Sorgeberechtigtenfragebogen)
 //********************************************
 // Personenbezogene Daten Kind

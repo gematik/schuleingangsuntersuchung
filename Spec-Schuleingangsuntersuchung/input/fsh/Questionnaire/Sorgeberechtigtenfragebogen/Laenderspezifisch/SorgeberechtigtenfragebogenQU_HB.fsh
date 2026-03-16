@@ -8,11 +8,11 @@ Description: "Sorgeberechtigtenfragebogen HB"
 * contained[+] = ISO6392_LanguageVS
 * contained[+] = PersonensorgeberechtigterBeziehungVS
 * contained[+] = PersonensorgeberechtigterZusammenlebendVS
+* insert QMeta(1.0.0)
 * id = "SEU-Sorgeberechtigtenfragebogen-HB"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenHB"
 * title = "SEU Sorgeberechtigtenfragebogen HB"
 * insert launchContext("patient", #Patient, "Patientenkontext")
-* status = #draft
 * derivedFrom[0] = Canonical(Sorgeberechtigtenfragebogen)
 //********************************************
 * item[+]

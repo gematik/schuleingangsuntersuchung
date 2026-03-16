@@ -21,11 +21,11 @@ Description: "Sorgeberechtigtenfragebogen SL"
 * contained[+] = SEU_EF_SpracheVS
 * contained[+] = SEU_EF_BildungsabschlussVS
 * contained[+] = SEU-UB-StaatsangehoerigkeitVS
+* insert QMeta(1.0.0)
 * id = "SEU-Sorgeberechtigtenfragebogen-SL"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenSL"
 * title = "SEU Sorgeberechtigtenfragebogen SL"
 * insert launchContext("patient", #Patient, "Patientenkontext")
-* status = #draft
 * derivedFrom[0] = Canonical(Sorgeberechtigtenfragebogen)
 //********************************************
 // Personenbezogene Daten Kind

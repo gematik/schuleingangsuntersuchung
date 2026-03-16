@@ -17,11 +17,11 @@ Description: "Sorgeberechtigtenfragebogen TH"
 * contained[+] = VerhaltensauffaelligkeitenVS
 * contained[+] = FoerderungVS
 * contained[+] = UeberwiegendGesprocheneSpracheVS
+* insert QMeta(1.0.0)
 * id = "SEU-Sorgeberechtigtenfragebogen-TH"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenTH"
 * title = "SEU Sorgeberechtigtenfragebogen TH"
 * insert launchContext("patient", #Patient, "Patientenkontext")
-* status = #draft
 * derivedFrom[0] = Canonical(Sorgeberechtigtenfragebogen)
 * item[+]
   * insert addGroup(0, Schule & Vorgangsnummer)

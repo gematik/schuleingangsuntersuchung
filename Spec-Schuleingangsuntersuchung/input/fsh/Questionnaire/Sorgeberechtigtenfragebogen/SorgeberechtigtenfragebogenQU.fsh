@@ -110,12 +110,11 @@ Description: "Sorgeberechtigtenfragebogen"
 * contained[+] = BerufstaetigkeitElternBerlinVS
 * contained[+] = FoerderungVS
 * contained[+] = VerhaltensauffaelligkeitenVS
-
+* insert QMeta(1.0.0)
 * id = "SEU-Sorgeberechtigtenfragebogen"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Sorgeberechtigtenfragebogen"
 * title = "SEU Sorgeberechtigtenfragebogen Maximaldatensatz"
 * insert launchContext("patient", #Patient, "Patientenkontext")
-* status = #draft
 * item[+]
   * insert addGroup(0, Schule & Vorgangsnummer)
   * item[+]
@@ -1651,7 +1650,7 @@ Description: "Sorgeberechtigtenfragebogen"
 * item[+]
   * insert addGroup(11, Arzt)
   * item[+]
-    * insert addItem(11.1, #boolean, Hat das Kind bislang ärztliche Behandlung oder Untersützung erhalten?)
+    * insert addItem(11.1, #boolean, Hat das Kind bislang ärztliche Behandlung oder Unterstützung erhalten?)
   * item[+]
     * insert addItem(11.2, #string, Name Kinderarzt)
   * item[+]

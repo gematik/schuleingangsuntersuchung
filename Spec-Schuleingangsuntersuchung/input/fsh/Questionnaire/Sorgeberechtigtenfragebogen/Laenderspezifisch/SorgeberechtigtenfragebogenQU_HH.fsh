@@ -11,11 +11,11 @@ Description: "Sorgeberechtigtenfragebogen HH"
 * contained[+] = BezirkeHHVS
 * contained[+] = PersonensorgeberechtigterBeziehungVS
 * contained[+] = PersonensorgeberechtigterZusammenlebendVS
+* insert QMeta(1.0.0)
 * id = "SEU-Sorgeberechtigtenfragebogen-HH"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenHH"
 * title = "SEU Sorgeberechtigtenfragebogen HH"
 * insert launchContext("patient", #Patient, "Patientenkontext")
-* status = #draft
 * derivedFrom[0] = Canonical(Sorgeberechtigtenfragebogen)
 //********************************************
 * item[+]

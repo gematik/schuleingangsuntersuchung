@@ -16,11 +16,11 @@ Description: "Sorgeberechtigtenfragebogen MV"
 * contained[+] = JaNeinWartelisteVS
 * contained[+] = SEU_EF_OperationenVS
 * contained[+] = SEU_EF_BehandlungstypVS
+* insert QMeta(1.0.0)
 * id = "SEU-Sorgeberechtigtenfragebogen-MV"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenMV"
 * title = "SEU Sorgeberechtigtenfragebogen MV"
 * insert launchContext("patient", #Patient, "Patientenkontext")
-* status = #draft
 * derivedFrom[0] = Canonical(Sorgeberechtigtenfragebogen)
 //********************************************
 // Personenbezogene Daten Kind

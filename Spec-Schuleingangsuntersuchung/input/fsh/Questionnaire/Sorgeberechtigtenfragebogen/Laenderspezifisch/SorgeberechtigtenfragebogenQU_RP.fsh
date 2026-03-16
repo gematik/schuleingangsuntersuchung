@@ -14,11 +14,11 @@ Description: "Sorgeberechtigtenfragebogen RP"
 * contained[+] = ChronischeKrankheitenVS
 * contained[+] = GeburtArtVS
 * contained[+] = PersonensorgeberechtigterBeziehungVS
+* insert QMeta(1.0.0)
 * id = "SEU-Sorgeberechtigtenfragebogen-RP"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenRP"
 * title = "SEU Sorgeberechtigtenfragebogen RP"
 * insert launchContext("patient", #Patient, "Patientenkontext")
-* status = #draft
 * derivedFrom[0] = Canonical(Sorgeberechtigtenfragebogen)
 //********************************************
 * item[+]

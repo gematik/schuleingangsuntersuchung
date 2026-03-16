@@ -9,11 +9,11 @@ Description: "Sorgeberechtigtenfragebogen BW"
 * contained[+] = SEU_EF_MedienkonsumVS
 * contained[+] = SEU_EF_DauerBWVS
 * contained[+] = SEU_EF_BildungsabschlussBWVS
+* insert QMeta(1.0.0)
 * id = "SEU-Sorgeberechtigtenfragebogen-BW"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenBW"
 * title = "SEU Sorgeberechtigtenfragebogen BW"
 * insert launchContext("patient", #Patient, "Patientenkontext")
-* status = #draft
 * derivedFrom[0] = Canonical(Sorgeberechtigtenfragebogen)
 //********************************************
 // Personenbezogene Daten Kind

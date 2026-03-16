@@ -23,11 +23,11 @@ Description: "Sorgeberechtigtenfragebogen NI"
 * contained[+] = WieVieleStundenFreizeitVS
 * contained[+] = WieOftImSportVereinVS
 * contained[+] = WieOftTrainingVS
+* insert QMeta(1.0.0)
 * id = "SEU-Sorgeberechtigtenfragebogen-NI"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenNI"
 * title = "SEU Sorgeberechtigtenfragebogen NI"
 * insert launchContext("patient", #Patient, "Patientenkontext")
-* status = #draft
 * derivedFrom[0] = Canonical(Sorgeberechtigtenfragebogen)
 //********************************************
 // Personenbezogene Daten Kind

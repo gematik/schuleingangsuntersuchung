@@ -147,3 +147,8 @@ RuleSet: entryFormat(entryFormat)
 * extension[+]
   * url = "http://hl7.org/fhir/StructureDefinition/entryFormat"
   * valueString = "{entryFormat}"
+
+RuleSet: QMeta(version)
+* version = "{version}"
+* status = #active
+* experimental = false

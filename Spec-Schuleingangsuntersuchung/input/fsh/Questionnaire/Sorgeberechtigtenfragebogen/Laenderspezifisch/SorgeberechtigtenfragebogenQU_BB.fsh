@@ -55,11 +55,11 @@ Description: "Sorgeberechtigtenfragebogen BB"
 * contained[+] = SEU-UB-StaatsangehoerigkeitVS
 * contained[+] = DauerStillenVS
 * contained[+] = SEU_EF_ZeitdauerVS
+* insert QMeta(1.0.0)
 * id = "SEU-Sorgeberechtigtenfragebogen-BB"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenBB"
 * title = "SEU Sorgeberechtigtenfragebogen BB"
 * insert launchContext("patient", #Patient, "Patientenkontext")
-* status = #draft
 * derivedFrom[0] = Canonical(Sorgeberechtigtenfragebogen)
 //********************************************
 * item[+]
