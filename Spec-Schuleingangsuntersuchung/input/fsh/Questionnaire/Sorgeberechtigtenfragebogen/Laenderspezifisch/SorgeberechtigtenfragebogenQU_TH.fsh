@@ -135,10 +135,12 @@ Description: "Sorgeberechtigtenfragebogen TH"
   * insert addItem(7, #group, [[Entwicklung]])
   * item[+]
     * insert addItem(7.10a, #integer, [[Freies Laufen ab .. (Lebensmonat)]])
+    * insert uunit(mo, "Monate")
     * insert minValueInt(0)
     * required = true
   * item[+]
     * insert addItem(7.10b, #integer, [[Erste Worte sprechen (außer Mama, Papa) ab .. (Lebensmonat)]])
+    * insert uunit(mo, "Monate")
     * insert minValueInt(0)
     * required = true
   * item[+]

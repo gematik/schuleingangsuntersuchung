@@ -463,8 +463,10 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert addItemWithSource(4.0b.b, #boolean, [[Besucht Ihr Kind derzeit einen Kindergarten?]], #DE-BY)
   * item[+]
     * insert addItemWithSource(4.0c, #integer, [[Wie viele Stunden ist das Kind pro Woche in einer Kindertageseinrichtung?]], #DE-BW)
+    * insert uunit(h, "Stunden")
   * item[+]
     * insert addItem(4.1, #integer, [[Besuch Kita/Krippe (Dauer in Jahren)]])
+    * insert uunit(a, "Jahre")
   * item[+]
     * insert addItemWithSource(4.1z, #choice, [[Dauer Krippen-/ KITA-/ Kindergartenbesuch (in Jahren)]], #DE-BY)
     * answerValueSet = Canonical(SEU_UB_AntwortKindergartenBesuchVS)
@@ -485,6 +487,7 @@ Description: "Sorgeberechtigtenfragebogen"
     * answerValueSet = Canonical(SEU_EF_DauerTHVS)
   * item[+]
     * insert addItem(4.2, #integer, Dauer Kita/Krippe pro Woche in Stunden)
+    * insert uunit(h, "Stunden")
   * item[+]
     * insert addItem(4.4, #date, [[Angabe des Datums, seit wann das Kind keine Kita mehr besucht.]])
   * item[+]
@@ -578,10 +581,13 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert maxValueInt(6500)    
   * item[+]
     * insert addItem(5.3a, #integer, [[Geburtslänge (in cm)]])
+    * insert uunit(cm, "cm")
   * item[+]
     * insert addItem(5.3b, #integer, [[Kopfumfang (in cm)]])
+    * insert uunit(cm, "cm")
   * item[+]
     * insert addItem(5.3c, #integer, [[In welcher SS-Woche wurde Ihr Kind geboren?]])
+    * insert uunit(wk, "Wochen")
   * item[+]
     * insert addItem(5.4, #boolean, [[Waren Geburtsgewicht und Geburtslänge normal?]])
   * item[+]
@@ -700,8 +706,10 @@ Description: "Sorgeberechtigtenfragebogen"
       * answerBoolean = false
     * item[+]
       * insert addItem(6.6.1, #integer, [[Jahre]])
+      * insert uunit(a, "Jahre")
     * item[+]
       * insert addItem(6.6.2, #integer, [[Monate]])
+      * insert uunit(mo, "Monate")
 //********************************************
 // Entwicklung
 * item[+]
@@ -716,6 +724,7 @@ Description: "Sorgeberechtigtenfragebogen"
       * answerBoolean = false
   * item[+]
     * insert addItem(7.3, #integer, [[Freies Laufen ab? (Monate)]])
+    * insert uunit(mo, "Monate")
   * item[+]
     * insert addItemWithSource(7.3a, #boolean, [[Freies Laufen (bis 15 Monate)]], #DE-SL)
   * item[+]
@@ -723,10 +732,12 @@ Description: "Sorgeberechtigtenfragebogen"
     * answerValueSet = Canonical(FreiesLaufenGelerntVS)
   * item[+]
     * insert addItem(7.4, #integer, [[Erste Worte ab? (Monate)]])
+    * insert uunit(mo, "Monate")
   * item[+]
     * insert addItemWithSource(7.4a, #boolean, [[Erste Worte bis 1 Jahr]], #DE-SL)
   * item[+]
     * insert addItem(7.5, #integer, [[Erste Sätze ab? (Monate)]])
+    * insert uunit(mo, "Monate")
   * item[+]
     * insert addItemWithSource(7.5a, #boolean, [[Kleine Sätze bis 2 Jahre]], #DE-SL)
   * item[+]
@@ -740,8 +751,10 @@ Description: "Sorgeberechtigtenfragebogen"
     * answerValueSet = Canonical(TagsNachtsSauberVS)
   * item[+]
     * insert addItem(7.6, #integer, [[Tagsüber ohne Windeln ab? (Jahre)]])
+    * insert uunit(a, "Jahre")
   * item[+]
     * insert addItem(7.7, #integer, [[Nachts ohne Windeln ab? (Jahre)]])
+    * insert uunit(a, "Jahre")
   * item[+]
     * insert addItem(7.8, #boolean, [[Besonderheiten in der Säuglings- u. Kleinkinderzeit?]])
   * item[+]
@@ -759,9 +772,11 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert addItem(7.10, #text, [[Angabe zu Entwicklungsverzögerungen, bspw. beim Erlernen des Sitzens/Laufens]])
   * item[+]
     * insert addItem(7.10a, #integer, [[Freies Laufen ab .. (Lebensmonat)]])
+    * insert uunit(mo, "Monate")
     * insert minValueInt(0)
   * item[+]
     * insert addItem(7.10b, #integer, [[Erste Worte sprechen (außer Mama, Papa) ab .. (Lebensmonat)]])
+    * insert uunit(mo, "Monate")
     * insert minValueInt(0)
   * item[+]
     * insert addItem(7.11, #open-choice, [[Auffälligkeit des Verhaltens]])
@@ -1045,6 +1060,7 @@ Description: "Sorgeberechtigtenfragebogen"
   * item[+]
     * insert addItem(8.18, #boolean, [[Behindertenausweis vorhanden]])
   * item[+]
+    // TODO: Einheit für Grad der Behinderung prüfen (GdB ist dimensionslos nach deutschem Recht, ggf. % als UCUM-Einheit)
     * insert addItem(8.19, #integer, [[Grad der Behinderung]])
   * item[+]
     * answerValueSet = Canonical(PflegegradVS)

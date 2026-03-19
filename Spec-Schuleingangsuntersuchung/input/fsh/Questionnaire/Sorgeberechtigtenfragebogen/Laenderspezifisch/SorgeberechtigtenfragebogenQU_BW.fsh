@@ -33,6 +33,7 @@ Description: "Sorgeberechtigtenfragebogen BW"
   * insert addItem(4, #group, Kinderbetreuung)
   * item[+]
     * insert addItemWithSource(4.0c, #integer, [[Wie viele Stunden ist das Kind pro Woche in einer Kindertageseinrichtung?]], #DE-BW)
+    * insert uunit(h, "Stunden")
   * item[+]
     * insert addItemWithSource(4.1b, #choice, Wie lange besucht Ihr Kind bis jetzt eine Kindertageseinrichtung?, #DE-BW)
     * answerValueSet = Canonical(SEU_EF_DauerBWVS)

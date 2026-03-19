@@ -124,9 +124,11 @@ Description: "Sorgeberechtigtenfragebogen NI"
     * required = true
   * item[+]
     * insert addItem(5.3a, #integer, [[Geburtslänge (in cm)]])
+    * insert uunit(cm, "cm")
     * required = true
   * item[+]
     * insert addItem(5.3c, #integer, [[In welcher SS-Woche wurde Ihr Kind geboren?]])
+    * insert uunit(wk, "Wochen")
     * required = true
   * item[+]
     * insert addItem(5.5, #boolean, [[Auffälligkeit bei der Geburt]])

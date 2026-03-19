@@ -146,6 +146,7 @@ Description: "Sorgeberechtigtenfragebogen MV"
     * insert maxValueInt(6500)    
   * item[+]
     * insert addItem(5.3a, #integer, [[Geburtslänge (in cm)]])
+    * insert uunit(cm, "cm")
   * item[+]
     * insert addItem(5.5, #boolean, [[Auffälligkeit bei der Geburt]])
     * item[+]
@@ -172,8 +173,10 @@ Description: "Sorgeberechtigtenfragebogen MV"
       * answerBoolean = false
   * item[+]
     * insert addItem(7.3, #integer, [[Freies Laufen ab? (Monate)]])
+    * insert uunit(mo, "Monate")
   * item[+]
     * insert addItem(7.5, #integer, [[Erste Sätze ab? (Monate)]])
+    * insert uunit(mo, "Monate")
   * item[+]
     * insert addItem(7.11, #open-choice, [[Auffälligkeit des Verhaltens]])
     * repeats = true
@@ -207,6 +210,7 @@ Description: "Sorgeberechtigtenfragebogen MV"
     * answerValueSet = Canonical(AtopischeErkrankungenVS)  
     * insert addItem(8.16a, #choice, [[Besitzt Ihr Kind Allergien?]])
   * item[+]
+    // TODO: Einheit für Grad der Behinderung prüfen (GdB ist dimensionslos nach deutschem Recht, ggf. % als UCUM-Einheit)
     * insert addItem(8.19, #integer, [[Grad der Behinderung]])
   * item[+]
     * answerValueSet = Canonical(PflegegradVS)

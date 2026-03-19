@@ -236,8 +236,10 @@ Description: "Sorgeberechtigtenfragebogen RP"
       * answerBoolean = false
     * item[+]
       * insert addItem(6.6.1, #integer, [[Jahre]])
+      * insert uunit(a, "Jahre")
     * item[+]
       * insert addItem(6.6.2, #integer, [[Monate]])
+      * insert uunit(mo, "Monate")
 //********************************************
 // Entwicklung
 * item[+]

@@ -114,6 +114,7 @@ Description: "Sorgeberechtigtenfragebogen SN"
     * insert uunit(g, "Gramm")
   * item[+]
     * insert addItem(5.3a, #integer, [[Geburtslänge (in cm)]])
+    * insert uunit(cm, "cm")
   * item[+]
     * insert addItem(5.5, #boolean, [[Auffälligkeit bei der Geburt]])
     * item[+]
@@ -132,10 +133,13 @@ Description: "Sorgeberechtigtenfragebogen SN"
   * insert addItem(7, #group, [[Entwicklung]])
   * item[+]
     * insert addItem(7.3, #integer, [[Freies Laufen ab? (Monate)]])
+    * insert uunit(mo, "Monate")
   * item[+]
     * insert addItem(7.4, #integer, [[Erste Worte ab? (Monate)]])
+    * insert uunit(mo, "Monate")
   * item[+]
     * insert addItem(7.6, #integer, [[Tagsüber ohne Windeln ab? (Jahre)]])
+    * insert uunit(a, "Jahre")
   * item[+]
     * answerValueSet = Canonical(RechtsLinksHaenderVS)
     * insert addItem(7.9, #choice, [[Links- oder Rechtshänder]])

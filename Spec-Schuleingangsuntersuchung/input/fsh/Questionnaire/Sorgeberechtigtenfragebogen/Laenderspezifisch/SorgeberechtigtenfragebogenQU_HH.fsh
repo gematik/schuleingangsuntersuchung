@@ -207,6 +207,7 @@ Description: "Sorgeberechtigtenfragebogen HH"
     * insert addItem(4.0b, #boolean, Ist das Kind in einem Kindergarten/einer Kindertageseinrichtung?)
   * item[+]
     * insert addItem(4.1, #integer, [[Besuch Kita/Krippe (Dauer in Jahren)]])
+    * insert uunit(a, "Jahre")
   * item[+]
     * insert addItem(4.6b, #string, Name des Kindergartens)
     * enableWhen[+]
@@ -231,12 +232,15 @@ Description: "Sorgeberechtigtenfragebogen HH"
     * required = true
   * item[+]
     * insert addItem(5.3a, #integer, [[Geburtslänge (in cm)]])
+    * insert uunit(cm, "cm")
     * required = true
   * item[+]
     * insert addItem(5.3b, #integer, [[Kopfumfang (in cm)]])
+    * insert uunit(cm, "cm")
     * required = true
   * item[+]
     * insert addItem(5.3c, #integer, [[In welcher SS-Woche wurde Ihr Kind geboren?]])
+    * insert uunit(wk, "Wochen")
     * required = true
   * item[+]
     * insert addItem(5.5, #boolean, [[Auffälligkeit bei der Geburt]])
