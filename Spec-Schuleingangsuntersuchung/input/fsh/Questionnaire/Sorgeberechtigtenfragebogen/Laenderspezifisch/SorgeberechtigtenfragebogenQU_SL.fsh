@@ -20,7 +20,7 @@ Description: "Sorgeberechtigtenfragebogen SL"
 * contained[+] = SEU_EF_BehandlungstypVS
 * contained[+] = SEU_EF_SpracheVS
 * contained[+] = SEU_EF_BildungsabschlussVS
-* contained[+] = SEU-UB-StaatsangehoerigkeitVS
+* contained[+] = SEU_UB_StaatsangehoerigkeitVS
 * insert QMeta(1.0.0)
 * id = "SEU-Sorgeberechtigtenfragebogen-SL"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenSL"

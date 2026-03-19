@@ -15,7 +15,7 @@ Description: "Sorgeberechtigtenfragebogen NI"
 * contained[+] = SEU_EF_OperationenVS
 * contained[+] = SEU_EF_UnfallortVS
 * contained[+] = SEU_EF_ZeitdauerVS
-* contained[+] = SEU-UB-StaatsangehoerigkeitVS
+* contained[+] = SEU_UB_StaatsangehoerigkeitVS
 * contained[+] = GeburtArtVS
 * contained[+] = ErkrankungenLetztesJahrPlusVerbrennungenVS
 * contained[+] = JaNeinWeissNichtVS
@@ -37,7 +37,7 @@ Description: "Sorgeberechtigtenfragebogen NI"
   * text = "(1) Personenbezogene Daten Kind"
   * item[+]
     * insert addItemWithSource(1.4b, #choice, [[Staatsangehörigkeit Mutter]], #DE-BB)
-    * answerValueSet = Canonical(SEU-UB-StaatsangehoerigkeitVS)
+    * answerValueSet = Canonical(SEU_UB_StaatsangehoerigkeitVS)
     * required = true
   * item[+]
     * insert addItemWithSource(1.4b.1, #choice, [[Staatsangehörigkeit Mutter andere]], #DE-BB)
@@ -48,7 +48,7 @@ Description: "Sorgeberechtigtenfragebogen NI"
     * required = true
   * item[+]
     * insert addItemWithSource(1.4c, #choice, [[Staatsangehörigkeit Vater]], #DE-BB)
-    * answerValueSet = Canonical(SEU-UB-StaatsangehoerigkeitVS)
+    * answerValueSet = Canonical(SEU_UB_StaatsangehoerigkeitVS)
     * required = true
   * item[+]
     * insert addItemWithSource(1.4c.1, #choice, [[Staatsangehörigkeit Vater andere]], #DE-BB)

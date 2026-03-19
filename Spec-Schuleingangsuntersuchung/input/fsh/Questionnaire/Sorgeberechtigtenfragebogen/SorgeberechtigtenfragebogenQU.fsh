@@ -65,7 +65,6 @@ Description: "Sorgeberechtigtenfragebogen"
 * contained[+] = icd10gm-2024
 * contained[+] = SEU_EF_BildungsabschlussBBVS
 * contained[+] = SEU_EF_BildungsabschlussBWVS
-* contained[+] = SEU-UB-StaatsangehoerigkeitVS
 * contained[+] = DauerStillenVS
 * contained[+] = SEU_UB_TeilnahmeVorkursDeutschVS
 * contained[+] = GeburtArtVS
@@ -182,7 +181,7 @@ Description: "Sorgeberechtigtenfragebogen"
   //TODO: initial expression
   * item[+]
     * insert addItemWithSource(1.4a, #choice, [[Staatsangehörigkeit]], #DE-BB)
-    * answerValueSet = Canonical(SEU-UB-StaatsangehoerigkeitVS)
+    * answerValueSet = Canonical(SEU_UB_StaatsangehoerigkeitVS)
   * item[+]
     * insert addItemWithSource(1.4a.1, #choice, [[Staatsangehörigkeit andere]], #DE-BB)
     * insert enableWhenCode(1.4a, =, SEU-UB-StaatsangehoerigkeitCS, 2)
@@ -191,7 +190,7 @@ Description: "Sorgeberechtigtenfragebogen"
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
   * item[+]
     * insert addItemWithSource(1.4b, #choice, [[Staatsangehörigkeit Mutter]], #DE-BB)
-    * answerValueSet = Canonical(SEU-UB-StaatsangehoerigkeitVS)
+    * answerValueSet = Canonical(SEU_UB_StaatsangehoerigkeitVS)
   * item[+]
     * insert addItemWithSource(1.4b.1, #choice, [[Staatsangehörigkeit Mutter andere]], #DE-BB)
     * insert enableWhenCode(1.4b, =, SEU-UB-StaatsangehoerigkeitCS, 2)
@@ -203,7 +202,7 @@ Description: "Sorgeberechtigtenfragebogen"
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
   * item[+]
     * insert addItemWithSource(1.4c, #choice, [[Staatsangehörigkeit Vater]], #DE-BB)
-    * answerValueSet = Canonical(SEU-UB-StaatsangehoerigkeitVS)
+    * answerValueSet = Canonical(SEU_UB_StaatsangehoerigkeitVS)
   * item[+]
     * insert addItemWithSource(1.4c.1, #choice, [[Staatsangehörigkeit Vater andere]], #DE-BB)
     * insert enableWhenCode(1.4c, =, SEU-UB-StaatsangehoerigkeitCS, 2)
