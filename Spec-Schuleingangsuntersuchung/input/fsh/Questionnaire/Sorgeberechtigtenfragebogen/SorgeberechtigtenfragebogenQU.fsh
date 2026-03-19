@@ -865,6 +865,7 @@ Description: "Sorgeberechtigtenfragebogen"
     * item[+]
       * insert addItem(8.9.G.hoergeraete.G, #group, [[Hörgeräte]])
       * repeats = true
+      * insert maxOccurs(2)
       * item[+]
         * answerValueSet = Canonical(LinksRechtsBeidseitsKeineAngabeVS)
         * insert addItem(8.9.G.hoergeraete.G.1, #choice, [[Höregerätseite]])
@@ -873,6 +874,7 @@ Description: "Sorgeberechtigtenfragebogen"
     * item[+]
       * insert addItem(8.9.G.cochlea.G, #group, [[Cochleaimplantate]])
       * repeats = true
+      * insert maxOccurs(2)
       * item[+]
         * answerValueSet = Canonical(LinksRechtsBeidseitsKeineAngabeVS)
         * insert addItem(8.9.G.cochlea.G.1, #choice, [[Cochleaimplantat-Seite]])
