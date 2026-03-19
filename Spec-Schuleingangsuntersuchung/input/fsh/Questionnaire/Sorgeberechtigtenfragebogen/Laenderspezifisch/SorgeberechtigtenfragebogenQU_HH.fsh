@@ -6,7 +6,6 @@ Description: "Sorgeberechtigtenfragebogen HH"
 * contained[+] = DeuevAnlage8LaenderkennzeichenVS
 * contained[+] = GenderDEVS
 * contained[+] = ChronischeErkrankungenVS
-* contained[+] = UnfallOrtVS
 * contained[+] = SEU_UB_StaatsangehoerigkeitVS
 * contained[+] = BezirkeHHVS
 * contained[+] = PersonensorgeberechtigterBeziehungVS

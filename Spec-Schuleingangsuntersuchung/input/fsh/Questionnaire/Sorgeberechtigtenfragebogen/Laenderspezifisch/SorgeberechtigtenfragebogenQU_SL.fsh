@@ -8,11 +8,9 @@ Description: "Sorgeberechtigtenfragebogen SL"
 * contained[+] = ISO6392_LanguageVS
 * contained[+] = ChronischeErkrankungenVS
 * contained[+] = JaNeinAngemeldetVS
-* contained[+] = VersorgungsartVS
 * contained[+] = PflegegradVS
 * contained[+] = GradDerBehinderungVS
 * contained[+] = SEU_EF_OperationenVS
-* contained[+] = SEU_EF_UnfallVS
 * contained[+] = SEU_EF_AlterKindVS
 * contained[+] = SEU_EF_AlterKindEinreiseVS
 * contained[+] = SEU_EF_SchwangerschaftVS
@@ -20,7 +18,6 @@ Description: "Sorgeberechtigtenfragebogen SL"
 * contained[+] = SEU_EF_BehandlungstypVS
 * contained[+] = SEU_EF_SpracheVS
 * contained[+] = SEU_EF_BildungsabschlussVS
-* contained[+] = SEU_UB_StaatsangehoerigkeitVS
 * insert QMeta(1.0.0)
 * id = "SEU-Sorgeberechtigtenfragebogen-SL"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenSL"

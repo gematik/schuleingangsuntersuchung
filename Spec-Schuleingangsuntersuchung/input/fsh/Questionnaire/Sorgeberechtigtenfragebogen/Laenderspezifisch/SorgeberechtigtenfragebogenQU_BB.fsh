@@ -3,19 +3,10 @@ InstanceOf: Questionnaire
 Usage: #example
 Title: "Sorgeberechtigtenfragebogen BB"
 Description: "Sorgeberechtigtenfragebogen BB"
-* contained[+] = SEU_EF_NeinAbgeschlossenLaeuftGeplantVS
 * contained[+] = DeuevAnlage8LaenderkennzeichenVS
-* contained[+] = WohnsituationKindVS  // TODO: Unused?
-* contained[+] = WohnsituationKindAlternativ1VS  // TODO: Unused?
 * contained[+] = WohnsituationKindAlternativ2VS
-* contained[+] = GenderDEVS
 * contained[+] = ISO6392_LanguageVS
-* contained[+] = ChronischeErkrankungenVS
-* contained[+] = JaNeinAngemeldetVS
-* contained[+] = RechtsLinksHaenderVS
 * contained[+] = AuffaelligkeitVerhaltenVS
-* contained[+] = LinksRechtsBeidseitsKeineAngabeVS
-* contained[+] = StoffwechselstoerungVS
 * contained[+] = ErkrankungVS
 * contained[+] = InfektionsKrankheitVS
 * contained[+] = ErkrankungenLetztesJahrVS
@@ -23,35 +14,13 @@ Description: "Sorgeberechtigtenfragebogen BB"
 * contained[+] = UnfallOrtVS
 * contained[+] = UnfallArtVS
 * contained[+] = GeplantFindetStattAbgeschlossenVS
-* contained[+] = HaeufigkeitAuswahlVS
-* contained[+] = SEU_EF_BildungsabschlussVS
 * contained[+] = SEU_EF_BerufsbildungVS
 * contained[+] = ErwerbsstatusVS
-* contained[+] = FamilienrolleVS
-* contained[+] = VersorgungsartVS
-* contained[+] = ChronischeKrankheitenVS
-* contained[+] = UeberwiegendGesprocheneSpracheVS
-* contained[+] = EntwicklungVS
-* contained[+] = AtopischeErkrankungenVS
-* contained[+] = AllgemeineBeschwerdenVS
-* contained[+] = ErwerbsstatusInclSonstigesVS
-* contained[+] = JaNeinWartelisteVS
-* contained[+] = SEU_EF_MedienkonsumVS
-* contained[+] = SEU_EF_OperationenVS
-* contained[+] = SEU_EF_UnfallVS
-* contained[+] = SEU_EF_AlterKindVS
-* contained[+] = SEU_EF_SchwangerschaftVS
-* contained[+] = SEU_EF_UnfallortVS
-* contained[+] = SEU_EF_BehandlungstypVS
 * contained[+] = SEU_EF_HilfsmittelVS
 * contained[+] = SEU_EF_FachaerzteVS
 * contained[+] = SEU_EF_DauerBBVS
-* contained[+] = SEU_EF_SpracheVS
 * contained[+] = SEU_EF_FrequenzVS
-* contained[+] = SEU_EF_DauerHEVS
-* contained[+] = icd10gm-2024
 * contained[+] = SEU_EF_BildungsabschlussBBVS
-* contained[+] = SEU_EF_BildungsabschlussBWVS
 * contained[+] = SEU_UB_StaatsangehoerigkeitVS
 * contained[+] = DauerStillenVS
 * contained[+] = SEU_EF_ZeitdauerVS

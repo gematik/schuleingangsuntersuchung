@@ -6,7 +6,6 @@ Description: "Sorgeberechtigtenfragebogen NI"
 * contained[+] = SEU_EF_NeinAbgeschlossenLaeuftGeplantVS
 * contained[+] = DeuevAnlage8LaenderkennzeichenVS
 * contained[+] = GenderDEVS
-* contained[+] = UnfallOrtVS
 * contained[+] = SEU_EF_BildungsabschlussVS
 * contained[+] = ErwerbsstatusVS
 * contained[+] = VersorgungsartVS

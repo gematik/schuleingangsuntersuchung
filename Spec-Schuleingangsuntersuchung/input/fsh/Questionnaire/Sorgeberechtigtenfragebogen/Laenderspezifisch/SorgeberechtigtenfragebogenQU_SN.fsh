@@ -8,13 +8,6 @@ Description: "Sorgeberechtigtenfragebogen SN"
 * contained[+] = SEU_EF_BildungsabschlussVS
 * contained[+] = ErwerbsstatusVS
 * contained[+] = RechtsLinksHaenderVS
-* contained[+] = LinksRechtsBeidseitsKeineAngabeVS
-* contained[+] = StoffwechselstoerungVS
-* contained[+] = ErkrankungVS
-* contained[+] = InfektionsKrankheitVS
-* contained[+] = UnfallOrtVS
-* contained[+] = UnfallArtVS
-* contained[+] = VersorgungsartVS
 * contained[+] = ChronischeKrankheitenVS
 * contained[+] = AtopischeErkrankungenVS
 * contained[+] = JaNeinWartelisteVS

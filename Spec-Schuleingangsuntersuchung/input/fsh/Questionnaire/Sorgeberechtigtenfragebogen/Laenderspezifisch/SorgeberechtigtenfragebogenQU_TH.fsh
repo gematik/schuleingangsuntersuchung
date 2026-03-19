@@ -3,15 +3,10 @@ InstanceOf: Questionnaire
 Usage: #example
 Title: "Sorgeberechtigtenfragebogen TH"
 Description: "Sorgeberechtigtenfragebogen TH"
-* contained[+] = LinksRechtsBeidseitsKeineAngabeVS
 * contained[+] = ErkrankungenTHVS
 * contained[+] = InfektionsKrankheitTHVS
 * contained[+] = PflegegradVS
-* contained[+] = UnfallOrtVS
-* contained[+] = AtopischeErkrankungenVS
 * contained[+] = SEU_EF_DauerTHVS
-* contained[+] = SEU_EF_UnfallortVS
-* contained[+] = SEU_EF_HilfsmittelVS
 * contained[+] = SEU_EF_HilfsmittelTHVS
 * contained[+] = GeburtBesonderheitenVS
 * contained[+] = VerhaltensauffaelligkeitenVS
