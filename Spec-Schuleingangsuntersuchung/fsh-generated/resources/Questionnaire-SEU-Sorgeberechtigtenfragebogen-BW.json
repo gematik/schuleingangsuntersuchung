@@ -397,6 +397,14 @@
                 "system": "urn:iso:std:iso:3166-2:de",
                 "code": "DE-BW"
               }
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "code": "h",
+                "system": "http://unitsofmeasure.org",
+                "display": "Stunden"
+              }
             }
           ]
         },

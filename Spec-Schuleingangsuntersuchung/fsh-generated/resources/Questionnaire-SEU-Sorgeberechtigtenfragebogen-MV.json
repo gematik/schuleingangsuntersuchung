@@ -3056,6 +3056,16 @@
               "code": "5.3a",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "code": "cm",
+                "system": "http://unitsofmeasure.org",
+                "display": "cm"
+              }
+            }
           ]
         },
         {
@@ -3191,6 +3201,16 @@
               "code": "7.3",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "code": "mo",
+                "system": "http://unitsofmeasure.org",
+                "display": "Monate"
+              }
+            }
           ]
         },
         {
@@ -3201,6 +3221,16 @@
             {
               "code": "7.5",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "code": "mo",
+                "system": "http://unitsofmeasure.org",
+                "display": "Monate"
+              }
             }
           ]
         },
