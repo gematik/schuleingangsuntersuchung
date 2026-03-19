@@ -120,15 +120,9 @@ Description: "Sorgeberechtigtenfragebogen TH"
 * item[+]
   * insert addItem(6, #group, [[Sprache]])
   * item[+]
-    * insert addItemWithSource(6.1f, #choice, [[Welche Sprache wird mit dem Kind zu Hause gesprochen?]], #DE-TH)
+    * insert addItemWithSource(6.1f, #open-choice, [[Welche Sprache wird mit dem Kind zu Hause gesprochen?]], #DE-TH)
     * answerValueSet = Canonical(UeberwiegendGesprocheneSpracheVS)
     * required = true
-    * item[+]
-      * insert addItemWithSource(6.1f.1, #text, [[Welche Sprache?]], #DE-TH)
-      * insert enableWhenCode(6.1f, =, UeberwiegendGesprocheneSpracheCS, andere)
-      * insert enableWhenCode(6.1f, =, UeberwiegendGesprocheneSpracheCS, deutsch_andere)
-      * enableBehavior = #any
-      * required = true
 //********************************************
 // Entwicklung
 * item[+]

@@ -174,13 +174,10 @@ Description: "Sorgeberechtigtenfragebogen SL"
     * insert addItem(8.27, #boolean, [[Wurde Ihr Kind operiert]])
     * required = true
     * item[+]
-      * insert addItem(8.27.2, #choice, [[Welche Operationen wurden durchgeführt?]])
+      * insert addItem(8.27.2, #open-choice, [[Welche Operationen wurden durchgeführt?]])
       * repeats = true
       * insert enableWhenBoolean(8.27, =, true)
       * answerValueSet = Canonical(SEU_EF_OperationenVS)
-      * item[+]
-        * insert addItemWithSource(8.27.2.1, #string, [[Sonstige Operationen?]], #DE-SL)
-        * insert enableWhenCode(8.27.2, =, SEU_EF_OperationenCS, sonstige_operation)
   * item[+]
     * insert addItemWithSource(8.30, #boolean, [[Wurde Ihr Kind jemals aufgrund von Unfallverletzungen von einem Arzt behandelt?]], #DE-SL)
     * required = true
@@ -287,6 +284,7 @@ Description: "Sorgeberechtigtenfragebogen SL"
     * answerValueSet = Canonical(SEU_EF_UnfallortVS)
     * required = true
   * item[+]
+    // TODO: 8.56.1 hat 3 enableWhen-Bedingungen (exists + != nein + != keine_angabe, ALL) - nicht durch "Sonstiges"-Auswahl gesteuert. Prüfen ob open-choice sinnvoll oder anderes Vorgehen nötig.
     * insert addItemWithSource(8.56, #choice, [[Unfälle Sonstige]], #DE-SL)
     * answerValueSet = Canonical(SEU_EF_UnfallortVS)
     * required = true
