@@ -1429,6 +1429,14 @@
           ],
           "extension": [
             {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "code": "mo",
+                "system": "http://unitsofmeasure.org",
+                "display": "Monate"
+              }
+            },
+            {
               "url": "http://hl7.org/fhir/StructureDefinition/minValue",
               "valueInteger": 0
             }
@@ -1446,6 +1454,14 @@
             }
           ],
           "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "code": "mo",
+                "system": "http://unitsofmeasure.org",
+                "display": "Monate"
+              }
+            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/minValue",
               "valueInteger": 0
