@@ -4,47 +4,6 @@
   "contained": [
     {
       "resourceType": "ValueSet",
-      "id": "LinksRechtsBeidseitsKeineAngabeVS",
-      "status": "draft",
-      "name": "LinksRechtsBeidseitsKeineAngabeVS",
-      "title": "LinksRechtsBeidseitsKeineAngabeVS",
-      "description": "LinksRechtsBeidseitsKeineAngabeCS",
-      "url": "https://www.oegd.de/fhir/seu/ValueSet/LinksRechtsBeidseitsKeineAngabeVS",
-      "expansion": {
-        "timestamp": "2024-04-04T10:44:31+00:00",
-        "contains": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/LinksRechtsBeidseitsKeineAngabeCS",
-            "code": "links",
-            "display": "Links"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/LinksRechtsBeidseitsKeineAngabeCS",
-            "code": "rechts",
-            "display": "Rechts"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/LinksRechtsBeidseitsKeineAngabeCS",
-            "code": "beidseits",
-            "display": "Beidseits"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/LinksRechtsBeidseitsKeineAngabeCS",
-            "code": "keine_angabe",
-            "display": "Keine Angabe"
-          }
-        ]
-      },
-      "compose": {
-        "include": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/LinksRechtsBeidseitsKeineAngabeCS"
-          }
-        ]
-      }
-    },
-    {
-      "resourceType": "ValueSet",
       "id": "ErkrankungenTHVS",
       "status": "draft",
       "name": "ErkrankungenTHVS",
@@ -278,113 +237,6 @@
     },
     {
       "resourceType": "ValueSet",
-      "id": "UnfallOrtVS",
-      "status": "draft",
-      "name": "UnfallOrtVS",
-      "title": "UnfallOrtVS",
-      "description": "UnfallOrtVS",
-      "url": "https://www.oegd.de/fhir/seu/ValueSet/UnfallOrtVS",
-      "expansion": {
-        "timestamp": "2024-04-04T11:34:46+00:00",
-        "contains": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallOrtCS",
-            "code": "zu_hause",
-            "display": "Zu Hause"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallOrtCS",
-            "code": "kita",
-            "display": "Kita"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallOrtCS",
-            "code": "freizeit",
-            "display": "Freizeit"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallOrtCS",
-            "code": "straßenverkehr",
-            "display": "Straßenverkehr"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallOrtCS",
-            "code": "anderer_ort",
-            "display": "Anderer Ort"
-          }
-        ]
-      },
-      "compose": {
-        "include": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallOrtCS"
-          }
-        ]
-      }
-    },
-    {
-      "resourceType": "ValueSet",
-      "id": "atopische-erkrankungen-vs",
-      "status": "draft",
-      "name": "AtopischeErkrankungenVS",
-      "title": "ValueSet für atopische/allergische Erkrankungen",
-      "description": "Dieses ValueSet beinhaltet eine Auswahl von Codes für die Klassifikation von atopischen/allergischen Erkrankungen, definiert im zugehörigen CodeSystem.",
-      "url": "https://www.oegd.de/fhir/seu/ValueSet/atopische-erkrankungen-vs",
-      "expansion": {
-        "timestamp": "2024-04-12T15:47:43+00:00",
-        "contains": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs",
-            "code": "atopische_allergische",
-            "display": "Atopische/Allergische Erkrankungen"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs",
-            "code": "nahrungsmittel",
-            "display": "Nahrungsmittelallergien"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs",
-            "code": "pollen",
-            "display": "Pollenallergien"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs",
-            "code": "hausstaubmilben",
-            "display": "Hausstaubmilbenallergien"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs",
-            "code": "schimmelpilze",
-            "display": "Schimmelpilzallergien"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs",
-            "code": "tierhaare",
-            "display": "Tierhaarallergien"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs",
-            "code": "medikamente",
-            "display": "Medikamentenallergien"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs",
-            "code": "sonstiges",
-            "display": "Sonstige atopische/allergische Erkrankungen"
-          }
-        ]
-      },
-      "compose": {
-        "include": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs"
-          }
-        ]
-      }
-    },
-    {
-      "resourceType": "ValueSet",
       "id": "seu-ef-dauer-th-vs",
       "status": "draft",
       "name": "SEU_EF_DauerTHVS",
@@ -430,125 +282,6 @@
         "include": [
           {
             "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-dauer-cs"
-          }
-        ]
-      }
-    },
-    {
-      "resourceType": "ValueSet",
-      "id": "seu-ef-unfallort-vs",
-      "status": "draft",
-      "name": "SEU_EF_UnfallortVS",
-      "title": "SEU_EF_Unfallort ValueSet",
-      "description": "ValueSet, das die verschiedenen Unfallorte enthält.",
-      "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-unfallort-vs",
-      "expansion": {
-        "timestamp": "2024-10-20T11:50:47+00:00",
-        "contains": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-unfallort-cs",
-            "code": "nein",
-            "display": "Nein"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-unfallort-cs",
-            "code": "ja_zu_hause",
-            "display": "Ja; zu Hause"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-unfallort-cs",
-            "code": "freizeit_ausser_haus",
-            "display": "Freizeit außer Haus"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-unfallort-cs",
-            "code": "gemeinschaftseinrichtung",
-            "display": "Gemeinschaftseinrichtung"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-unfallort-cs",
-            "code": "wegeunfall",
-            "display": "Wegeunfall"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-unfallort-cs",
-            "code": "keine_angabe",
-            "display": "Keine Angabe"
-          }
-        ]
-      },
-      "compose": {
-        "include": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-unfallort-cs"
-          }
-        ]
-      }
-    },
-    {
-      "resourceType": "ValueSet",
-      "id": "seu-ef-hilfsmittel-vs",
-      "status": "draft",
-      "name": "SEU_EF_HilfsmittelVS",
-      "title": "SEU_EF_Hilfsmittel ValueSet",
-      "description": "ValueSet, das verschiedene Hilfsmittel enthält.",
-      "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-hilfsmittel-vs",
-      "expansion": {
-        "timestamp": "2024-10-20T11:50:47+00:00",
-        "contains": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-hilfsmittel-cs",
-            "code": "sehhilfe",
-            "display": "Sehhilfe (z. B. Brille)"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-hilfsmittel-cs",
-            "code": "hoerhilfe",
-            "display": "Hörhilfe"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-hilfsmittel-cs",
-            "code": "orthese",
-            "display": "Orthese"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-hilfsmittel-cs",
-            "code": "zahnersatz",
-            "display": "Zahnersatz (Prothese, Platzhalter)"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-hilfsmittel-cs",
-            "code": "anderes",
-            "display": "Anderes"
-          }
-        ]
-      },
-      "compose": {
-        "include": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-hilfsmittel-cs",
-            "concept": [
-              {
-                "code": "sehhilfe",
-                "display": "Sehhilfe (z. B. Brille)"
-              },
-              {
-                "code": "hoerhilfe",
-                "display": "Hörhilfe"
-              },
-              {
-                "code": "orthese",
-                "display": "Orthese"
-              },
-              {
-                "code": "zahnersatz",
-                "display": "Zahnersatz (Prothese, Platzhalter)"
-              },
-              {
-                "code": "anderes",
-                "display": "Anderes"
-              }
-            ]
           }
         ]
       }
@@ -1342,7 +1075,7 @@
       "item": [
         {
           "linkId": "6.1f",
-          "type": "choice",
+          "type": "open-choice",
           "text": "(6.1f) Welche Sprache wird mit dem Kind zu Hause gesprochen?",
           "code": [
             {
@@ -1360,49 +1093,7 @@
             }
           ],
           "answerValueSet": "#ueberwiegend-gesprochene-sprache-vs",
-          "required": true,
-          "item": [
-            {
-              "linkId": "6.1f.1",
-              "type": "text",
-              "text": "(6.1f.1) Welche Sprache?",
-              "code": [
-                {
-                  "code": "6.1f.1",
-                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-                }
-              ],
-              "extension": [
-                {
-                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-                  "valueCoding": {
-                    "system": "urn:iso:std:iso:3166-2:de",
-                    "code": "DE-TH"
-                  }
-                }
-              ],
-              "enableWhen": [
-                {
-                  "question": "6.1f",
-                  "operator": "=",
-                  "answerCoding": {
-                    "code": "andere",
-                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/ueberwiegend-gesprochene-sprache-cs"
-                  }
-                },
-                {
-                  "question": "6.1f",
-                  "operator": "=",
-                  "answerCoding": {
-                    "code": "deutsch_andere",
-                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/ueberwiegend-gesprochene-sprache-cs"
-                  }
-                }
-              ],
-              "enableBehavior": "any",
-              "required": true
-            }
-          ]
+          "required": true
         }
       ]
     },

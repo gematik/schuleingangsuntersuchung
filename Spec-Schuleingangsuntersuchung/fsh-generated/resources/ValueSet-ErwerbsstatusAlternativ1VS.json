@@ -7,6 +7,7 @@
   "description": "Erwerbsstatus des Elternteils",
   "url": "https://www.oegd.de/fhir/seu/ValueSet/ErwerbsstatusAlternativ1VS",
   "expansion": {
+    "timestamp": "2025-03-04T12:00:00+00:00",
     "contains": [
       {
         "system": "https://www.oegd.de/fhir/seu/CodeSystem/erwerbsstatus-cs",

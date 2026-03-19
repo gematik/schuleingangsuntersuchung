@@ -3725,37 +3725,6 @@
     },
     {
       "resourceType": "ValueSet",
-      "id": "versorgungsart-vs",
-      "status": "draft",
-      "name": "VersorgungsartVS",
-      "title": "Versorgungsart ValueSet",
-      "description": "VersorgungsartVS",
-      "url": "https://www.oegd.de/fhir/seu/ValueSet/versorgungsart-vs",
-      "expansion": {
-        "timestamp": "2024-04-06T12:00:00+00:00",
-        "contains": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/versorgungsart-cs",
-            "code": "ambulant",
-            "display": "Ambulant"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/versorgungsart-cs",
-            "code": "krankenhaus",
-            "display": "Krankenhaus"
-          }
-        ]
-      },
-      "compose": {
-        "include": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/versorgungsart-cs"
-          }
-        ]
-      }
-    },
-    {
-      "resourceType": "ValueSet",
       "id": "PflegegradVS",
       "status": "draft",
       "name": "PflegegradVS",
@@ -3918,37 +3887,6 @@
         "include": [
           {
             "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-operationen-cs"
-          }
-        ]
-      }
-    },
-    {
-      "resourceType": "ValueSet",
-      "id": "seu-ef-unfall-vs",
-      "status": "draft",
-      "name": "SEU_EF_UnfallVS",
-      "title": "SEU_EF_Unfall ValueSet",
-      "description": "ValueSet, das verschiedene Unfallumstände enthält.",
-      "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-unfall-vs",
-      "expansion": {
-        "timestamp": "2024-10-20T11:50:47+00:00",
-        "contains": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-unfall-cs",
-            "code": "bei_freizeitaktivitaeten",
-            "display": "Bei Freizeitaktivitäten"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-unfall-cs",
-            "code": "beim_kindergartenbesuch",
-            "display": "Beim Kindergartenbesuch"
-          }
-        ]
-      },
-      "compose": {
-        "include": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-unfall-cs"
           }
         ]
       }
@@ -4336,47 +4274,6 @@
         "include": [
           {
             "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-bildungsabschluss-cs"
-          }
-        ]
-      }
-    },
-    {
-      "resourceType": "ValueSet",
-      "id": "SEU-UB-StaatsangehoerigkeitVS",
-      "status": "draft",
-      "name": "SEU_UB_StaatsangehoerigkeitVS",
-      "title": "SEU Staatsangehörigkeit",
-      "description": "Diese Codes enthalten Angaben zur Staatsangehörigkeit",
-      "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-StaatsangehoerigkeitVS",
-      "expansion": {
-        "timestamp": "2024-10-20T11:50:47+00:00",
-        "contains": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-StaatsangehoerigkeitCS",
-            "code": "1",
-            "display": "Deutsch"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-StaatsangehoerigkeitCS",
-            "code": "2",
-            "display": "Deutsch UND andere"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-StaatsangehoerigkeitCS",
-            "code": "3",
-            "display": "Andere"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-StaatsangehoerigkeitCS",
-            "code": "9",
-            "display": "keine Angaben"
-          }
-        ]
-      },
-      "compose": {
-        "include": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-StaatsangehoerigkeitCS"
           }
         ]
       }
@@ -5172,7 +5069,7 @@
           "item": [
             {
               "linkId": "8.27.2",
-              "type": "choice",
+              "type": "open-choice",
               "text": "(8.27.2) Welche Operationen wurden durchgeführt?",
               "code": [
                 {
@@ -5188,39 +5085,7 @@
                   "answerBoolean": true
                 }
               ],
-              "answerValueSet": "#seu-ef-operationen-vs",
-              "item": [
-                {
-                  "linkId": "8.27.2.1",
-                  "type": "string",
-                  "text": "(8.27.2.1) Sonstige Operationen?",
-                  "code": [
-                    {
-                      "code": "8.27.2.1",
-                      "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-                    }
-                  ],
-                  "extension": [
-                    {
-                      "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-                      "valueCoding": {
-                        "system": "urn:iso:std:iso:3166-2:de",
-                        "code": "DE-SL"
-                      }
-                    }
-                  ],
-                  "enableWhen": [
-                    {
-                      "question": "8.27.2",
-                      "operator": "=",
-                      "answerCoding": {
-                        "code": "sonstige_operation",
-                        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-operationen-cs"
-                      }
-                    }
-                  ]
-                }
-              ]
+              "answerValueSet": "#seu-ef-operationen-vs"
             }
           ]
         },
