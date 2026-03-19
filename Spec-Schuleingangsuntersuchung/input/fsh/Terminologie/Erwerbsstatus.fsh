@@ -115,6 +115,7 @@ Description: "Erwerbsstatus des Elternteils"
 * ErwerbsstatusCS#erwerbstaetig "Ja"
 * ErwerbsstatusCS#nicht_erwerbstaetig "Nein"
 * ErwerbsstatusCS#ausbildung_oder_studium "zur Zeit Ausbildung/ Studium"
+* ^expansion.timestamp = "2025-03-04T12:00:00+00:00"
 * ^expansion.contains[0].system = Canonical(ErwerbsstatusCS)
 * ^expansion.contains[=].code = #erwerbstaetig
 * ^expansion.contains[=].display = "Ja"

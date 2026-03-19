@@ -539,6 +539,7 @@ Description: "Dieses ValueSet beinhaltet eine Auswahl von Codes für die Klassif
 * ChronischeKrankheiten#asthma "Asthma"
 * ChronischeKrankheiten#chronische_bronchitis "chronische Bronchitis"
 * ChronischeKrankheiten#neurodermitis "Neurodermitis"
+* ^expansion.timestamp = "2025-03-04T12:00:00+00:00"
 * ^expansion.contains[+].system = Canonical(ChronischeKrankheiten)
 * ^expansion.contains[=].code = #asthma
 * ^expansion.contains[=].display = "Asthma"
