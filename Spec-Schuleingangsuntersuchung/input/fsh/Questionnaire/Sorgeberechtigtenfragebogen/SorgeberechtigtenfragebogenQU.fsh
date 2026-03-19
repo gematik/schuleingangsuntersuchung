@@ -623,16 +623,18 @@ Description: "Sorgeberechtigtenfragebogen"
   * item[+]
     * insert addItemWithSource(5.10a, #choice, [[Geburtsmodus]], #DE-ST)
     * answerValueSet = Canonical(GeburtsmodusVS)
-    // "APGAR" steht im Deutschen für folgende Kennzeichen: Atmung, Puls, Grundtonus (Muskelspannung und Bewegung), Aussehen (Hautfarbe) und Reflexe
   * item[+]
     * insert addItemWithSource(5.11, #string, [[APGAR]], #DE-HB)
     * insert regEx([["^\\d{2}\\/\\d{2}\\/\\d{2}$"]])
     * insert entryFormat([[XX/XX/XX]])
-    // "pH-Wert" ist eine Messung des Säurebasengrades im Blut oder einer Flüssigkeit. Ein typischer pH-Wert für ein neugeborenes Kind liegt zwischen 7,15 und 7,45.
+    * item[+]
+      * insert helpItem(5.11h, [[APGAR steht im Deutschen für folgende Kennzeichen: Atmung, Puls, Grundtonus (Muskelspannung und Bewegung), Aussehen (Hautfarbe) und Reflexe]])
   * item[+]
-    * insert addItemWithSource(5.12, #string, [[pH- Wert]], #DE-HB)
+    * insert addItemWithSource(5.12, #string, [[pH-Wert]], #DE-HB)
     * insert regEx([["^\\d,\\d{2}$"]])
     * insert entryFormat([[X,XX]])
+    * item[+]
+      * insert helpItem(5.12h, [[pH-Wert ist eine Messung des Säurebasengrades im Blut oder einer Flüssigkeit. Ein typischer pH-Wert für ein neugeborenes Kind liegt zwischen 7,15 und 7,45.]])
 
 //********************************************
 // Sprache
