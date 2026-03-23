@@ -22,4 +22,5 @@ Die definierten Questionniare sind im jeweiligen Realm (Bundesland) vollständig
 
 ### ICD-10-GM
 
-ICD-10-GM ist nicht mehr Contained innerhalb der ValueSets. An dieser Stelle verweisen wir auf die Anbindung des [Zentraler Terminologieserver](https://terminologien.bfarm.de/fhirpackages.html) für das deutsche Gesundheitswesen. Hier können die aktuellen ValueSets abgefrufen werden und auf einem internen Terminologieserver bereitgestellt werden.
+ICD-10-GM ist nicht mehr contained innerhalb der Questionnaire. An dieser Stelle verweisen wir auf die Anbindung des [Zentraler Terminologieserver](https://terminologien.bfarm.de/fhirpackages.html) für das deutsche Gesundheitswesen. Hier können die aktuellen ValueSets abgefrufen werden und auf einem internen Terminologieserver bereitgestellt werden.
+Ein Renderer muss die Funktion, externe ValueSets zu laden, unterstützen.
