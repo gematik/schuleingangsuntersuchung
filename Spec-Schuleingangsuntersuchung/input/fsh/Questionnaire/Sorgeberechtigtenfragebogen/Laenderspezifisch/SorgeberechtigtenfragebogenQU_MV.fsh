@@ -8,7 +8,7 @@ Description: "Sorgeberechtigtenfragebogen MV"
 * contained[+] = GenderDEVS
 * contained[+] = AuffaelligkeitVerhaltenVS
 * contained[+] = ErkrankungenLetztesJahrVS
-* contained[+] = PflegegradVS
+* contained[+] = pflegegrad-de
 * contained[+] = UnfallArtVS
 * contained[+] = ErwerbsstatusVS
 * contained[+] = AtopischeErkrankungenVS
@@ -213,7 +213,7 @@ Description: "Sorgeberechtigtenfragebogen MV"
     // TODO: Einheit für Grad der Behinderung prüfen (GdB ist dimensionslos nach deutschem Recht, ggf. % als UCUM-Einheit)
     * insert addItem(8.19, #integer, [[Grad der Behinderung]])
   * item[+]
-    * answerValueSet = Canonical(PflegegradVS)
+    * answerValueSet = $pflegegrad-de
     * insert addItem(8.20, #choice, [[Pflegegrad]])
   * item[+]
     * insert addItem(8.21, #boolean, [[Schwere Behinderung vorhanden?]])

@@ -1,35 +1,3 @@
-CodeSystem: PflegegradCS
-Id: PflegegradCS
-Title: "PflegegradCS"
-Description: "PflegegradCS"
-* #pflegegrad_1 "Pflegegrad 1"
-* #pflegegrad_2 "Pflegegrad 2"
-* #pflegegrad_3 "Pflegegrad 3"
-* #pflegegrad_4 "Pflegegrad 4"
-* #pflegegrad_5 "Pflegegrad 5"
-
-ValueSet: PflegegradVS
-Id: PflegegradVS
-Title: "PflegegradVS"
-Description: "PflegegradVS"
-* include codes from system PflegegradCS
-* ^expansion.timestamp = "2024-04-04T11:16:49+00:00"
-* ^expansion.contains[0].system = Canonical(PflegegradCS)
-* ^expansion.contains[=].code = #pflegegrad_1
-* ^expansion.contains[=].display = "Pflegegrad 1"
-* ^expansion.contains[+].system = Canonical(PflegegradCS)
-* ^expansion.contains[=].code = #pflegegrad_2
-* ^expansion.contains[=].display = "Pflegegrad 2"
-* ^expansion.contains[+].system = Canonical(PflegegradCS)
-* ^expansion.contains[=].code = #pflegegrad_3
-* ^expansion.contains[=].display = "Pflegegrad 3"
-* ^expansion.contains[+].system = Canonical(PflegegradCS)
-* ^expansion.contains[=].code = #pflegegrad_4
-* ^expansion.contains[=].display = "Pflegegrad 4"
-* ^expansion.contains[+].system = Canonical(PflegegradCS)
-* ^expansion.contains[=].code = #pflegegrad_5
-* ^expansion.contains[=].display = "Pflegegrad 5"
-
 CodeSystem: GradDerBehinderungCS
 Id: GradDerBehinderungCS
 Title: "GradDerBehinderungCS"

@@ -8,7 +8,7 @@ Description: "Sorgeberechtigtenfragebogen SL"
 * contained[+] = ISO6392_LanguageVS
 * contained[+] = ChronischeErkrankungenVS
 * contained[+] = JaNeinAngemeldetVS
-* contained[+] = PflegegradVS
+* contained[+] = pflegegrad-de
 * contained[+] = GradDerBehinderungVS
 * contained[+] = SEU_EF_OperationenVS
 * contained[+] = SEU_EF_AlterKindVS
@@ -83,7 +83,7 @@ Description: "Sorgeberechtigtenfragebogen SL"
       * item[+]
         * insert addItemWithSource(3.2.6a.2, #choice, [[Pflegegrad]], #DE-SL)
         * insert enableWhenBoolean(3.2.6a, =, true)
-        * answerValueSet = Canonical(PflegegradVS)
+        * answerValueSet = $pflegegrad-de
 //********************************************
 // Kinderbetreuung
 * item[+]

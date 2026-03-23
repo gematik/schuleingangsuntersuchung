@@ -22,7 +22,7 @@ Description: "Sorgeberechtigtenfragebogen"
 * contained[+] = InfektionsKrankheitVS
 * contained[+] = InfektionsKrankheitTHVS
 * contained[+] = ErkrankungenLetztesJahrVS
-* contained[+] = PflegegradVS
+* contained[+] = pflegegrad-de
 * contained[+] = GradDerBehinderungVS
 * contained[+] = UnfallOrtVS
 * contained[+] = UnfallArtVS
@@ -424,7 +424,7 @@ Description: "Sorgeberechtigtenfragebogen"
       * item[+]
         * insert addItemWithSource(3.2.6a.2, #choice, [[Pflegegrad]], #DE-SL)
         * insert enableWhenBoolean(3.2.6a, =, true)
-        * answerValueSet = Canonical(PflegegradVS)
+        * answerValueSet = $pflegegrad-de
       
     * item[+]
       * insert addItem(3.2.7, #boolean, Schilddrüsenerkrankung)
@@ -1033,7 +1033,7 @@ Description: "Sorgeberechtigtenfragebogen"
   * item[+]
     * insert addItem(8.19, #integer, [[Grad der Behinderung]])
   * item[+]
-    * answerValueSet = Canonical(PflegegradVS)
+    * answerValueSet = $pflegegrad-de
     * insert addItem(8.20, #choice, [[Pflegegrad]])
   * item[+]
     * insert addItem(8.21, #boolean, [[Schwere Behinderung vorhanden?]])
@@ -1059,7 +1059,7 @@ Description: "Sorgeberechtigtenfragebogen"
     * item[+]
       * insert addItem(8.22c.1, #choice, [[Welcher Pflegegrad?]])
       * insert enableWhenBoolean(8.22c, =, true)
-      * answerValueSet = Canonical(PflegegradVS)
+      * answerValueSet = $pflegegrad-de
 // Medikamente
   * item[+]
     * insert addItem(8.23, #boolean, [[Regelmäßige Medikamenteneinnahme]])

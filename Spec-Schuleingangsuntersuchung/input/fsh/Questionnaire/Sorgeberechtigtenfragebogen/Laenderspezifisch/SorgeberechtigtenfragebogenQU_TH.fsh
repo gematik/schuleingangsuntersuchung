@@ -5,7 +5,7 @@ Title: "Sorgeberechtigtenfragebogen TH"
 Description: "Sorgeberechtigtenfragebogen TH"
 * contained[+] = ErkrankungenTHVS
 * contained[+] = InfektionsKrankheitTHVS
-* contained[+] = PflegegradVS
+* contained[+] = pflegegrad-de
 * contained[+] = SEU_EF_DauerTHVS
 * contained[+] = SEU_EF_HilfsmittelTHVS
 * contained[+] = GeburtBesonderheitenVS
@@ -192,7 +192,7 @@ Description: "Sorgeberechtigtenfragebogen TH"
     * item[+]
       * insert addItem(8.22c.1, #choice, [[Welcher Pflegegrad?]])
       * insert enableWhenBoolean(8.22c, =, true)
-      * answerValueSet = Canonical(PflegegradVS)
+      * answerValueSet = $pflegegrad-de
       * required = true
 // Medikamente
   * item[+]

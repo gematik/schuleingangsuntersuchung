@@ -10,7 +10,7 @@ Description: "Sorgeberechtigtenfragebogen BB"
 * contained[+] = ErkrankungVS
 * contained[+] = InfektionsKrankheitVS
 * contained[+] = ErkrankungenLetztesJahrVS
-* contained[+] = PflegegradVS
+* contained[+] = pflegegrad-de
 * contained[+] = UnfallOrtVS
 * contained[+] = UnfallArtVS
 * contained[+] = GeplantFindetStattAbgeschlossenVS
@@ -162,7 +162,7 @@ Description: "Sorgeberechtigtenfragebogen BB"
   * item[+]
     * insert addItem(8.19, #integer, [[Grad der Behinderung]])
   * item[+]
-    * answerValueSet = Canonical(PflegegradVS)
+    * answerValueSet = $pflegegrad-de
     * insert addItem(8.20, #choice, [[Pflegegrad]])
   * item[+]
     * insert addItem(8.23, #boolean, [[Regelmäßige Medikamenteneinnahme]])
