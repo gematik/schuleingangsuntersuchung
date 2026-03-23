@@ -4139,46 +4139,79 @@
     },
     {
       "resourceType": "ValueSet",
-      "id": "PflegegradVS",
-      "status": "draft",
-      "name": "PflegegradVS",
-      "title": "PflegegradVS",
-      "description": "PflegegradVS",
-      "url": "https://www.oegd.de/fhir/seu/ValueSet/PflegegradVS",
-      "expansion": {
-        "timestamp": "2024-04-04T11:16:49+00:00",
-        "contains": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PflegegradCS",
-            "code": "pflegegrad_1",
-            "display": "Pflegegrad 1"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PflegegradCS",
-            "code": "pflegegrad_2",
-            "display": "Pflegegrad 2"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PflegegradCS",
-            "code": "pflegegrad_3",
-            "display": "Pflegegrad 3"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PflegegradCS",
-            "code": "pflegegrad_4",
-            "display": "Pflegegrad 4"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PflegegradCS",
-            "code": "pflegegrad_5",
-            "display": "Pflegegrad 5"
-          }
+      "id": "pflegegrad-de",
+      "meta": {
+        "profile": [
+          "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
         ]
       },
+      "url": "http://fhir.de/ValueSet/pflegegrad-de",
+      "version": "1.5.4",
+      "name": "PflegegradDE",
+      "title": "PflegegradDE ValueSet",
+      "status": "active",
+      "experimental": false,
+      "date": "2025-06-16",
+      "publisher": "HL7 Deutschland e.V. (Technisches Komitee FHIR)",
+      "contact": [
+        {
+          "telecom": [
+            {
+              "system": "url",
+              "value": "http://hl7.de/technische-komitees/fhir/"
+            }
+          ]
+        }
+      ],
+      "description": "Codes zur genaueren Differenzierung des Pflegegrads.",
       "compose": {
         "include": [
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PflegegradCS"
+            "system": "http://fhir.de/CodeSystem/bfarm/ops",
+            "filter": [
+              {
+                "property": "parent",
+                "op": "=",
+                "value": "9-984"
+              }
+            ]
+          }
+        ]
+      },
+      "expansion": {
+        "identifier": "440c50b5-7272-4184-9ddd-95a75d8207f8",
+        "timestamp": "2019-07-06",
+        "total": 6,
+        "contains": [
+          {
+            "system": "http://fhir.de/CodeSystem/bfarm/ops",
+            "code": "9-984.6",
+            "display": "Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 1"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/bfarm/ops",
+            "code": "9-984.7",
+            "display": "Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 2"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/bfarm/ops",
+            "code": "9-984.8",
+            "display": "Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 3"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/bfarm/ops",
+            "code": "9-984.9",
+            "display": "Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 4"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/bfarm/ops",
+            "code": "9-984.a",
+            "display": "Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 5"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/bfarm/ops",
+            "code": "9-984.b",
+            "display": "Pflegebedürftigkeit: Erfolgter Antrag auf Einstufung in einen Pflegegrad"
           }
         ]
       }
@@ -5573,7 +5606,7 @@
           ]
         },
         {
-          "answerValueSet": "#PflegegradVS",
+          "answerValueSet": "http://fhir.de/ValueSet/pflegegrad-de",
           "linkId": "8.20",
           "type": "choice",
           "text": "(8.20) Pflegegrad",
