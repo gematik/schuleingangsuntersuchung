@@ -19,3 +19,7 @@ In der QuestionnaireResponse muss die Version des Fragebogens angegeben werden, 
 ### Vorgaben zur Darstellung
 
 Die definierten Questionniare sind im jeweiligen Realm (Bundesland) vollständig in der Benutzeroberfläche darzustellen. Ausgefüllte Fragebögen sind als QuestionnaireResponse-Ressourcen zu erstellen und zu persistieren.
+
+### ICD-10-GM
+
+ICD-10-GM ist nicht mehr Contained innerhalb der ValueSets. An dieser Stelle verweisen wir auf die Anbindung des [Zentraler Terminologieserver](https://terminologien.bfarm.de/fhirpackages.html) für das deutsche Gesundheitswesen. Hier können die aktuellen ValueSets abgefrufen werden und auf einem internen Terminologieserver bereitgestellt werden.

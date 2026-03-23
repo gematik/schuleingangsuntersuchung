@@ -62,7 +62,6 @@ Description: "Sorgeberechtigtenfragebogen"
 * contained[+] = SEU_EF_DauerHEVS
 * contained[+] = SEU_EF_DauerTHVS
 * contained[+] = SEU_EF_ZeitdauerVS
-* contained[+] = icd10gm-2024
 * contained[+] = SEU_EF_BildungsabschlussBBVS
 * contained[+] = SEU_EF_BildungsabschlussBWVS
 * contained[+] = DauerStillenVS
@@ -399,7 +398,7 @@ Description: "Sorgeberechtigtenfragebogen"
       * repeats = true
     * item[+]
       * insert addItemWithSource(3.2.4a, #choice, Erkrankung, #DE-BB)
-      * answerValueSet = Canonical(icd10gm-2024)
+      * answerValueSet = $icd-10-gm
       * repeats = true
     * item[+]
       * insert addItemWithSource(3.2.4b, #boolean, [[Ist Ihr Kind an Windpocken erkrankt]], #DE-HE)
