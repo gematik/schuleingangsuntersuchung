@@ -49,7 +49,7 @@ Description: "Sorgeberechtigtenfragebogen BW"
     * insert addItemWithSource(4.0c, #integer, [[Wie viele Stunden ist das Kind pro Woche in einer Kindertageseinrichtung?]], #DE-BW)
     * insert uunit(h, "Stunden")
   * item[+]
-    * insert addItemWithSource(4.1b, #choice, [[Wie lange besucht Ihr Kind bis jetzt eine deutschsprachig Kindertageseinrichtung?]], #DE-BW)
+    * insert addItemWithSource(4.1b, #choice, [[Wie lange besucht das Kind bis jetzt eine deutschsprachig Kindertageseinrichtung?]], #DE-BW)
     * answerValueSet = Canonical(SEU_EF_DauerBWVS)
   * item[+]
     * insert addItemWithSource(4.10, #boolean, [[Bekommt oder wartet Ihr Kind auf eine spezielle Förderung oder Therapie?]], #DE-SN)
@@ -58,7 +58,7 @@ Description: "Sorgeberechtigtenfragebogen BW"
 * item[+]
   * insert addItem(7, #group, [[Entwicklung]])
   * item[+]
-    * insert addItem(7.12, #boolean, [[Sorgen Sie sich um die Entwicklung ihres Kindes?]])
+    * insert addItem(7.12, #boolean, [[Sorgen Sie sich um die Entwicklung des Kindes?]])
     * item[+]
       * insert addItem(7.12.1, #string, [[Welche Sorgen]])
       * insert enableWhenBoolean(7.12, =, true)
@@ -116,10 +116,10 @@ Description: "Sorgeberechtigtenfragebogen BW"
 * item[+]
   * insert addGroup(10, Medienkonsum)
   * item[+]
-    * insert addItemWithSource(10.3a, #choice, [[Wie lange sieht Ihr Kind durchschnittlich pro Tag Fernsehsendungen und Filme an und/oder spielt mit dem Smartphone/Tablet/Computer/ an der Spielkonsole? An einem Wochentag:]], #DE-BW)
+    * insert addItemWithSource(10.3a, #choice, [[Wie lange sieht das Kind durchschnittlich pro Tag Fernsehsendungen und Filme an und/oder spielt mit dem Smartphone/Tablet/Computer/ an der Spielkonsole? An einem Wochentag:]], #DE-BW)
     * answerValueSet = Canonical(SEU_EF_MedienkonsumVS)
   * item[+]
-    * insert addItemWithSource(10.4a, #choice, [[Wie lange sieht Ihr Kind durchschnittlich pro Tag Fernsehsendungen und Filme an und/oder spielt mit dem Smartphone/Tablet/Computer/ an der Spielkonsole? An einem Samstag/ Sonntag:]], #DE-BW)
+    * insert addItemWithSource(10.4a, #choice, [[Wie lange sieht das Kind durchschnittlich pro Tag Fernsehsendungen und Filme an und/oder spielt mit dem Smartphone/Tablet/Computer/ an der Spielkonsole? An einem Samstag/ Sonntag:]], #DE-BW)
     * answerValueSet = Canonical(SEU_EF_MedienkonsumVS)
 //********************************************
 // Informationen Eltern

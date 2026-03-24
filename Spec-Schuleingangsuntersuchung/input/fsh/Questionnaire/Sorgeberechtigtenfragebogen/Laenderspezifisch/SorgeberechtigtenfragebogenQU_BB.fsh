@@ -167,11 +167,11 @@ Description: "Sorgeberechtigtenfragebogen BB"
   * item[+]
     * insert addItem(8.23, #boolean, [[Regelmäßige Medikamenteneinnahme]])
   * item[+]
-    * insert addItem(8.27, #boolean, [[Wurde Ihr Kind operiert]])
+    * insert addItem(8.27, #boolean, [[Wurde das Kind operiert]])
   * item[+]
-    * insert addItem(8.28a, #boolean, [[Hatte Ihr Kind einen Unfall]])
+    * insert addItem(8.28a, #boolean, [[Hatte das Kind einen Unfall]])
   * item[+]
-    * insert addItem(8.28.g, #group, [[Hatte Ihr Kind einen Unfall]])
+    * insert addItem(8.28.g, #group, [[Hatte das Kind einen Unfall]])
     * insert enableWhenBoolean(8.28a, =, true)
     //* insert enableWhenBoolean(8.28b, =, true) TODO auskommentiert ohne fachliche überprüfung
     * enableBehavior = #any
@@ -199,7 +199,7 @@ Description: "Sorgeberechtigtenfragebogen BB"
 * item[+]
   * insert addItemWithSource(9a, #group, [[Förderungen in den vergangenen 12 Monaten]], #DE-BB)
   * item[+]
-    * insert addItemWithSource(9a.1a, #boolean, [[Werden oder wurden bei Ihrem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)]], #DE-SL)    
+    * insert addItemWithSource(9a.1a, #boolean, [[Werden oder wurden bei dem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)]], #DE-SL)    
   * item[+]
     * insert addGroup(9a.1a.g, Therapien)
     * insert enableWhenBoolean(9a.1a, =, true)
@@ -229,10 +229,10 @@ Description: "Sorgeberechtigtenfragebogen BB"
 * item[+]
   * insert addGroup(10, Medienkonsum)
   * item[+]
-    * insert addItemWithSource(10.3b, #choice, [[Wie lange sieht nutzt Kind Fernseher, Smartphone oder Spielkonsole an einem Wochentag]], #DE-BB)
+    * insert addItemWithSource(10.3b, #choice, [[Wie lange sieht bzw. nutzt das Kind Fernseher, Smartphone oder Spielkonsole an einem Wochentag]], #DE-BB)
     * answerValueSet = Canonical(SEU_EF_ZeitdauerVS)
   * item[+]
-    * insert addItemWithSource(10.4b, #choice, [[Wie lange sieht nutzt Kind Fernseher, Smartphone oder Spielkonsole am Wochenende]], #DE-BW)
+    * insert addItemWithSource(10.4b, #choice, [[Wie lange sieht bzw. nutzt das Kind Fernseher, Smartphone oder Spielkonsole am Wochenende]], #DE-BW)
     * answerValueSet = Canonical(SEU_EF_ZeitdauerVS)
 //********************************************
 // Arzt

@@ -91,7 +91,7 @@ Description: "SorgeberechtigtenfragebogenBY"
 * item[+]
   * insert addItem(4, #group, Kinderbetreuung)
   * item[+]
-    * insert addItemWithSource(4.0b.b, #boolean, [[Besucht Ihr Kind derzeit einen Kindergarten?]], #DE-BY)
+    * insert addItemWithSource(4.0b.b, #boolean, [[Besucht das Kind derzeit einen Kindergarten?]], #DE-BY)
   * item[+]
     * insert addItemWithSource(4.1z, #choice, [[Dauer Krippen-/ KITA-/ Kindergartenbesuch (in Jahren)]], #DE-BY)
     * answerValueSet = Canonical(SEU_UB_AntwortKindergartenBesuchVS)
@@ -139,7 +139,7 @@ Description: "SorgeberechtigtenfragebogenBY"
   * item[+] insert addItemWithSource(7.9a, #choice, [[Händigkeit]], #DE-BY)
     * answerValueSet = Canonical(SEU_UB_HaendigkeitVS)
   * item[+]
-    * insert addItemWithSource(7.11b, #boolean, [[Würden Sie sagen, dass Ihr Kind insgesamt gesehen in einem oder mehreren der folgenden Bereiche Schwierigkeiten hat: Stimmung (bedrückt, ängstlich, schwankend, aufbrausend), Konzentration (kann nicht lange stillsitzen, hört beim Vorlesen nicht ausdauernd zu), Verhalten, Umgang mit Anderen?]], #DE-BY)
+    * insert addItemWithSource(7.11b, #boolean, [[Würden Sie sagen, dass das Kind insgesamt gesehen in einem oder mehreren der folgenden Bereiche Schwierigkeiten hat: Stimmung (bedrückt, ängstlich, schwankend, aufbrausend), Konzentration (kann nicht lange stillsitzen, hört beim Vorlesen nicht ausdauernd zu), Verhalten, Umgang mit Anderen?]], #DE-BY)
 //********************************************
 // Erkrankungen und gesundheitliche Einschränkungen
 * item[+]

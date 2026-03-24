@@ -141,7 +141,7 @@ Description: "Sorgeberechtigtenfragebogen RP"
       * answerValueSet = Canonical(ChronischeKrankheitenVS)
       * repeats = true
     * item[+]
-      * insert addItem(3.2.6, #boolean, [[Hat Ihr Kind eine körperliche, geistige oder seelische Behinderung?]])
+      * insert addItem(3.2.6, #boolean, [[Hat das Kind eine körperliche, geistige oder seelische Behinderung?]])
       * item[+]
         * insert enableWhenBoolean(3.2.6, =, true)
         * insert addItem(3.2.6.1, #string, Welche Behinderung?)
@@ -270,7 +270,7 @@ Description: "Sorgeberechtigtenfragebogen RP"
       * insert enableWhenBoolean(8.15, =, true)
   * item[+]
     * answerValueSet = Canonical(AtopischeErkrankungenVS)  
-    * insert addItem(8.16a, #open-choice, [[Besitzt Ihr Kind Allergien?]])
+    * insert addItem(8.16a, #open-choice, [[Besitzt das Kind Allergien?]])
   * item[+]
     * insert addItem(8.23, #boolean, [[Regelmäßige Medikamenteneinnahme]])
   * item[+]
@@ -314,7 +314,7 @@ Description: "Sorgeberechtigtenfragebogen RP"
 * item[+]
   * insert addGroup(12, Sonstiges)
   * item[+]
-    * insert addItemWithSource(12.23, #boolean, [[Fährt Ihr Kind frei Fahrrad]], #DE-HB)
+    * insert addItemWithSource(12.23, #boolean, [[Fährt das Kind frei Fahrrad]], #DE-HB)
     * required = true
 //********************************************
 // Informationen Eltern

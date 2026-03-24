@@ -21,7 +21,7 @@ Description: "Sorgeberechtigtenfragebogen SN"
 * item[+]
   * insert addGroup(0, Schule & Vorgangsnummer)
   * item[+]
-    * insert helpItem(0.1h, [[Bitte tragen Sie die Grundschule ein, an der Sie Ihr Kind anmelden werden oder bereits angemeldet haben. Die Schule erhält eine Mitteilung über schulrelevante Ergebnisse.]])
+    * insert helpItem(0.1h, [[Bitte tragen Sie die Grundschule ein, an der Sie das Kind anmelden werden oder bereits angemeldet haben. Die Schule erhält eine Mitteilung über schulrelevante Ergebnisse.]])
   * item[+]
     * insert addItem(0.1, #string, Name der Schule)
 //********************************************
@@ -161,7 +161,7 @@ Description: "Sorgeberechtigtenfragebogen SN"
       * insert enableWhenBoolean(8.15, =, true)
   * item[+]
     * answerValueSet = Canonical(AtopischeErkrankungenVS)  
-    * insert addItem(8.16a, #open-choice, [[Besitzt Ihr Kind Allergien?]])
+    * insert addItem(8.16a, #open-choice, [[Besitzt das Kind Allergien?]])
   * item[+]
     * insert addItem(8.23, #boolean, [[Regelmäßige Medikamenteneinnahme]])
   * item[+]
@@ -169,7 +169,7 @@ Description: "Sorgeberechtigtenfragebogen SN"
     * insert enableWhenBoolean(8.23, =, true)   
     * repeats = true
   * item[+]
-    * insert addItem(8.27, #boolean, [[Wurde Ihr Kind operiert]])
+    * insert addItem(8.27, #boolean, [[Wurde das Kind operiert]])
   * item[+]
     * insert addItemWithSource(8.31, #boolean, [[Einnässen tags]], #DE-SL)
   * item[+]
@@ -187,7 +187,7 @@ Description: "Sorgeberechtigtenfragebogen SN"
 * item[+]
   * insert addItem(9, #group, [[Förderungen]])
   * item[+]
-    * insert addItemWithSource(9.1a, #boolean, [[Werden oder wurden bei Ihrem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)]], #DE-SL)    
+    * insert addItemWithSource(9.1a, #boolean, [[Werden oder wurden bei dem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)]], #DE-SL)    
   * item[+]
     * insert addGroup(9.1a.g, Therapien)
     * insert enableWhenBoolean(9.1a, =, true)

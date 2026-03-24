@@ -112,9 +112,9 @@ Description: "Sorgeberechtigtenfragebogen MV"
   * item[+]
     * insert addItem(3.2, #group, Familiäre Vorgeschichte)
     * item[+]
-      * insert addItem(3.2.6, #boolean, [[Hat Ihr Kind eine körperliche, geistige oder seelische Behinderung?]])
+      * insert addItem(3.2.6, #boolean, [[Hat das Kind eine körperliche, geistige oder seelische Behinderung?]])
     * item[+]
-      * insert addItemWithSource(3.2.6a, #boolean, [[Liegt bei Ihrem Kind ein Grad der Behinderung/ein Pflegegrad vor?]], #DE-SL)
+      * insert addItemWithSource(3.2.6a, #boolean, [[Liegt bei dem Kind ein Grad der Behinderung/ein Pflegegrad vor?]], #DE-SL)
 //********************************************
 // Kinderbetreuung
 * item[+]
@@ -208,7 +208,7 @@ Description: "Sorgeberechtigtenfragebogen MV"
     * insert addItem(8.15, #boolean, [[Krankenhausaufenthalt]])
   * item[+]
     * answerValueSet = Canonical(AtopischeErkrankungenVS)  
-    * insert addItem(8.16a, #choice, [[Besitzt Ihr Kind Allergien?]])
+    * insert addItem(8.16a, #choice, [[Besitzt das Kind Allergien?]])
   * item[+]
     // TODO: Einheit für Grad der Behinderung prüfen (GdB ist dimensionslos nach deutschem Recht, ggf. % als UCUM-Einheit)
     * insert addItem(8.19, #integer, [[Grad der Behinderung]])
@@ -229,16 +229,16 @@ Description: "Sorgeberechtigtenfragebogen MV"
     * insert enableWhenBoolean(8.23, =, true)   
     * repeats = true
   * item[+]
-    * insert addItem(8.27, #boolean, [[Wurde Ihr Kind operiert]])
+    * insert addItem(8.27, #boolean, [[Wurde das Kind operiert]])
     * item[+]
       * insert addItem(8.27.2, #choice, [[Welche Operationen wurden durchgeführt?]])
       * repeats = true
       * insert enableWhenBoolean(8.27, =, true)
       * answerValueSet = Canonical(SEU_EF_OperationenVS)
   * item[+]
-    * insert addItem(8.28a, #boolean, [[Hatte Ihr Kind einen Unfall]])
+    * insert addItem(8.28a, #boolean, [[Hatte das Kind einen Unfall]])
   * item[+]
-    * insert addItem(8.28.g, #group, [[Hatte Ihr Kind einen Unfall]])
+    * insert addItem(8.28.g, #group, [[Hatte das Kind einen Unfall]])
     * insert enableWhenBoolean(8.28a, =, true)
     //* insert enableWhenBoolean(8.28b, =, true) TODO auskommentiert ohne fachliche überprüfung
     * enableBehavior = #any

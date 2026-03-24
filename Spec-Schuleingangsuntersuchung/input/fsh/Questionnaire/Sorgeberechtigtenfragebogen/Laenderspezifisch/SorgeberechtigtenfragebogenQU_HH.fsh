@@ -190,7 +190,7 @@ Description: "Sorgeberechtigtenfragebogen HH"
       * answerValueSet = Canonical(ChronischeErkrankungenVS)
       * repeats = true
     * item[+]
-      * insert addItem(3.2.6, #boolean, [[Hat Ihr Kind eine körperliche, geistige oder seelische Behinderung?]])
+      * insert addItem(3.2.6, #boolean, [[Hat das Kind eine körperliche, geistige oder seelische Behinderung?]])
       * item[+]
         * insert enableWhenBoolean(3.2.6, =, true)
         * insert addItem(3.2.6.1, #string, Welche Behinderung?)
@@ -201,7 +201,7 @@ Description: "Sorgeberechtigtenfragebogen HH"
 * item[+]
   * insert addItem(4, #group, Kinderbetreuung)
   * item[+]
-    * insert addItem(4.0a, #boolean, Besucht Ihr Kind weniger als 5 Stunden täglich den Kindergarten?)
+    * insert addItem(4.0a, #boolean, Besucht das Kind weniger als 5 Stunden täglich den Kindergarten?)
   * item[+]
     * insert addItem(4.0b, #boolean, Ist das Kind in einem Kindergarten/einer Kindertageseinrichtung?)
   * item[+]
@@ -220,7 +220,7 @@ Description: "Sorgeberechtigtenfragebogen HH"
       * operator = #=
       * answerBoolean = true
   * item[+]
-    * insert addItemWithSource(4.10, #boolean, [[Bekommt oder wartet Ihr Kind auf eine spezielle Förderung oder Therapie?]], #DE-SN)
+    * insert addItemWithSource(4.10, #boolean, [[Bekommt oder wartet das Kind auf eine spezielle Förderung oder Therapie?]], #DE-SN)
 //********************************************
 // Schwangerschaft und Geburt
 * item[+]
@@ -238,7 +238,7 @@ Description: "Sorgeberechtigtenfragebogen HH"
     * insert uunit(cm, "cm")
     * required = true
   * item[+]
-    * insert addItem(5.3c, #integer, [[In welcher SS-Woche wurde Ihr Kind geboren?]])
+    * insert addItem(5.3c, #integer, [[In welcher SS-Woche wurde das Kind geboren?]])
     * insert uunit(wk, "Wochen")
     * required = true
   * item[+]

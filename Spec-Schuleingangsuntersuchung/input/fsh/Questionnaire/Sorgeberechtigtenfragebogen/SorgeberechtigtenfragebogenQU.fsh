@@ -116,7 +116,7 @@ Description: "Sorgeberechtigtenfragebogen"
 * item[+]
   * insert addGroup(0, Schule & Vorgangsnummer)
   * item[+]
-    * insert helpItem(0.1h, [[Bitte tragen Sie die Grundschule ein, an der Sie Ihr Kind anmelden werden oder bereits angemeldet haben. Die Schule erhält eine Mitteilung über schulrelevante Ergebnisse.]])
+    * insert helpItem(0.1h, [[Bitte tragen Sie die Grundschule ein, an der Sie das Kind anmelden werden oder bereits angemeldet haben. Die Schule erhält eine Mitteilung über schulrelevante Ergebnisse.]])
   * item[+]
     * insert addItem(0.1, #string, Name der Schule)
   * item[+]
@@ -247,7 +247,7 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert addItem(1.6.1, #date, [[Seit wann wohnt das Kind in Deutschland?]])
     * insert enableWhenBoolean(1.6, =, false)
   * item[+]
-    * insert addItemWithSource(1.6.3, #date,[[Seit wann lebt Ihr Kind in Deutschland (Monat/Jahr)?]], #DE-BE)
+    * insert addItemWithSource(1.6.3, #date,[[Seit wann lebt das Kind in Deutschland (Monat/Jahr)?]], #DE-BE)
   * item[+]
     * insert addItem(1.7, #string, Geburtsort)
   * item[+]
@@ -401,7 +401,7 @@ Description: "Sorgeberechtigtenfragebogen"
       * answerValueSet = $icd-10-gm
       * repeats = true
     * item[+]
-      * insert addItemWithSource(3.2.4b, #boolean, [[Ist Ihr Kind an Windpocken erkrankt]], #DE-HE)
+      * insert addItemWithSource(3.2.4b, #boolean, [[Ist das Kind an Windpocken erkrankt]], #DE-HE)
     * item[+]
       * insert helpItem(3.2.5-info, [[Bitte geben sie die chronischen Erkrankungen des Kindes an.]])
     * item[+]
@@ -410,12 +410,12 @@ Description: "Sorgeberechtigtenfragebogen"
       * repeats = true
 
     * item[+]
-      * insert addItem(3.2.6, #boolean, [[Hat Ihr Kind eine körperliche, geistige oder seelische Behinderung?]])
+      * insert addItem(3.2.6, #boolean, [[Hat das Kind eine körperliche, geistige oder seelische Behinderung?]])
       * item[+]
         * insert addItem(3.2.6.1, #string, [[Welche Behinderung?]])
         * insert enableWhenBoolean(3.2.6, =, true)
     * item[+]
-      * insert addItemWithSource(3.2.6a, #boolean, [[Liegt bei Ihrem Kind ein Grad der Behinderung/ein Pflegegrad vor?]], #DE-SL)
+      * insert addItemWithSource(3.2.6a, #boolean, [[Liegt bei dem Kind ein Grad der Behinderung/ein Pflegegrad vor?]], #DE-SL)
       * item[+]
         * insert addItemWithSource(3.2.6a.1, #choice, [[Grad der Behinderung]], #DE-SL)
         * insert enableWhenBoolean(3.2.6a, =, true)
@@ -443,11 +443,11 @@ Description: "Sorgeberechtigtenfragebogen"
 * item[+]
   * insert addItem(4, #group, Kinderbetreuung)
   * item[+]
-    * insert addItem(4.0a, #boolean, Besucht Ihr Kind weniger als 5 Stunden täglich den Kindergarten?)
+    * insert addItem(4.0a, #boolean, Besucht das Kind weniger als 5 Stunden täglich den Kindergarten?)
   * item[+]
     * insert addItem(4.0b, #boolean, Ist das Kind in einem Kindergarten/einer Kindertageseinrichtung?)
   * item[+]
-    * insert addItemWithSource(4.0b.b, #boolean, [[Besucht Ihr Kind derzeit einen Kindergarten?]], #DE-BY)
+    * insert addItemWithSource(4.0b.b, #boolean, [[Besucht das Kind derzeit einen Kindergarten?]], #DE-BY)
   * item[+]
     * insert addItemWithSource(4.0c, #integer, [[Wie viele Stunden ist das Kind pro Woche in einer Kindertageseinrichtung?]], #DE-BW)
     * insert uunit(h, "Stunden")
@@ -461,7 +461,7 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert addItemWithSource(4.1a, #choice, Wie alt war das Kind bei der Aufnahme in die Kita?, #DE-SL)
     * answerValueSet = Canonical(SEU_EF_AlterKindVS)
   * item[+]
-    * insert addItemWithSource(4.1b, #choice, [[Wie lange besucht Ihr Kind bis jetzt eine deutschsprachig Kindertageseinrichtung?]], #DE-BW)
+    * insert addItemWithSource(4.1b, #choice, [[Wie lange besucht das Kind bis jetzt eine deutschsprachig Kindertageseinrichtung?]], #DE-BW)
     * answerValueSet = Canonical(SEU_EF_DauerBWVS)
   * item[+]
     * insert addItemWithSource(4.1c, #choice, [[Dauer Kindertagesbetreuung in Jahren]], #DE-BB)
@@ -470,7 +470,7 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert addItemWithSource(4.1d, #choice, [[Dauer Besuch Kita/Krippe]], #DE-HE)
     * answerValueSet = Canonical(SEU_EF_DauerHEVS)
   * item[+]
-    * insert addItemWithSource(4.1e, #choice, [[Besucht Ihr Kind einen Kindergarten oder eine Tagesmutter?]], #DE-TH)
+    * insert addItemWithSource(4.1e, #choice, [[Besucht das Kind einen Kindergarten oder eine Tagesmutter?]], #DE-TH)
     * answerValueSet = Canonical(SEU_EF_DauerTHVS)
   * item[+]
     * insert addItem(4.2, #integer, Dauer Kita/Krippe pro Woche in Stunden)
@@ -478,14 +478,14 @@ Description: "Sorgeberechtigtenfragebogen"
   * item[+]
     * insert addItem(4.4, #date, [[Angabe des Datums, seit wann das Kind keine Kita mehr besucht.]])
   * item[+]
-    * insert addItem(4.5, #boolean, Besucht Ihr Kind eine andere Form der Tagesbetreuung?)
+    * insert addItem(4.5, #boolean, Besucht das Kind eine andere Form der Tagesbetreuung?)
   * item[+]
     * insert addItemWithSource(4.5a, #string, [[Art der Tagesbetreuung?]], #DE-BB)
     * insert enableWhenBoolean(4.5, =, true)
   * item[+] insert addItemWithSource(4.5b, #choice, [[Art des Kindergartens]], #DE-BY)
     * answerValueSet = Canonical(SEU_UB_KindergartenArtVS)
   * item[+]
-    * insert addItem(4.6, #boolean, Besucht Ihr Kind eine Kita in einem anderen Bundesland?)
+    * insert addItem(4.6, #boolean, Besucht das Kind eine Kita in einem anderen Bundesland?)
     * enableWhen[+]
       * question = "4.0b"
       * operator = #=
@@ -517,7 +517,7 @@ Description: "Sorgeberechtigtenfragebogen"
       * operator = #=
       * answerBoolean = true
   * item[+]
-    * insert addItemWithSource(4.10, #boolean, [[Bekommt oder wartet Ihr Kind auf eine spezielle Förderung oder Therapie?]], #DE-SN)
+    * insert addItemWithSource(4.10, #boolean, [[Bekommt oder wartet das Kind auf eine spezielle Förderung oder Therapie?]], #DE-SN)
   * item[+]
     * insert addItemWithSource(4.11, #group, [[Das Kind wurde bis zum Alter von Jahren und Monaten ausschließlich innerhalb der Familie betreut.]], #DE-RP)
     * item[+]
@@ -573,7 +573,7 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert addItem(5.3b, #integer, [[Kopfumfang (in cm)]])
     * insert uunit(cm, "cm")
   * item[+]
-    * insert addItem(5.3c, #integer, [[In welcher SS-Woche wurde Ihr Kind geboren?]])
+    * insert addItem(5.3c, #integer, [[In welcher SS-Woche wurde das Kind geboren?]])
     * insert uunit(wk, "Wochen")
   * item[+]
     * insert addItem(5.4, #boolean, [[Waren Geburtsgewicht und Geburtslänge normal?]])
@@ -772,18 +772,18 @@ Description: "Sorgeberechtigtenfragebogen"
       * insert addItemWithSource(7.11c.1, #text, [[Falls ja, welche?]], #DE-TH)
       * insert enableWhenBoolean(7.11c, =, true)
   * item[+]
-    * insert addItemWithSource(7.11b, #boolean, [[Würden Sie sagen, dass Ihr Kind insgesamt gesehen in einem oder mehreren der folgenden Bereiche Schwierigkeiten hat: Stimmung (bedrückt, ängstlich, schwankend, aufbrausend), Konzentration (kann nicht lange stillsitzen, hört beim Vorlesen nicht ausdauernd zu), Verhalten, Umgang mit Anderen?]], #DE-BY)
+    * insert addItemWithSource(7.11b, #boolean, [[Würden Sie sagen, dass das Kind insgesamt gesehen in einem oder mehreren der folgenden Bereiche Schwierigkeiten hat: Stimmung (bedrückt, ängstlich, schwankend, aufbrausend), Konzentration (kann nicht lange stillsitzen, hört beim Vorlesen nicht ausdauernd zu), Verhalten, Umgang mit Anderen?]], #DE-BY)
   * item[+]
     * insert addItem(7.12, #boolean, [[Sorgen Sie sich um die Entwicklung ihres Kindes?]])
     * item[+]
       * insert addItem(7.12.1, #string, [[Welche Sorgen]])
       * insert enableWhenBoolean(7.12, =, true)
   * item[+]
-    * insert addItemWithSource(7.13, #choice, [[Zeigte Ihr Kind mit 5 Jahren Sprachauffälligkeiten?]], #DE-NI)
+    * insert addItemWithSource(7.13, #choice, [[Zeigte das Kind mit 5 Jahren Sprachauffälligkeiten?]], #DE-NI)
     * answerValueSet = Canonical(JaNeinWeissNichtVS)
   * item[+]
     * answerValueSet = Canonical(SorgenKindVS)
-    * insert addItemWithSource(7.14, #choice, [[Machen Sie sich Sorgen um Ihr Kind wegen]], #DE-BE)
+    * insert addItemWithSource(7.14, #choice, [[Machen Sie sich Sorgen um das Kind wegen]], #DE-BE)
 //********************************************
 // Erkrankungen und gesundheitliche Einschränkungen
 * item[+]
@@ -828,7 +828,7 @@ Description: "Sorgeberechtigtenfragebogen"
     * answerValueSet = Canonical(SEU_EF_HilfsmittelVS)
     * repeats = true
   * item[+]
-    * insert addItemWithSource(8.6b, #boolean, [[Nutzt Ihr Kind Hilfsmittel?]], #DE-TH)
+    * insert addItemWithSource(8.6b, #boolean, [[Nutzt das Kind Hilfsmittel?]], #DE-TH)
     * item[+]
       * insert addItemWithSource(8.6b.1, #open-choice, [[Falls ja, welche?]], #DE-TH)
       * insert enableWhenBoolean(8.6b, =, true)
@@ -971,15 +971,15 @@ Description: "Sorgeberechtigtenfragebogen"
   * item[+]
     * insert addItemWithSource(8.14b, #text, [[Bisher durchgemachte Erkrankungen, bspw. Windpocken oder Masern. Zeitlich nicht bestimmt]], #DE-BW)
   * item[+]
-    * insert addItemWithSource(8.14c, #open-choice, [[Welche der folgenden Krankheiten wurden bei Ihrem Kind jemals ärztlich diagnostiziert?]], #DE-TH)
+    * insert addItemWithSource(8.14c, #open-choice, [[Welche der folgenden Krankheiten wurden bei dem Kind jemals ärztlich diagnostiziert?]], #DE-TH)
     * answerValueSet = Canonical(ErkrankungenTHVS)
     * repeats = true
   * item[+]
-    * insert addItemWithSource(8.14d, #open-choice, [[Welche der Infektionskrankheiten hat Ihr Kind durchgemacht?]], #DE-TH)
+    * insert addItemWithSource(8.14d, #open-choice, [[Welche der Infektionskrankheiten hat das Kind durchgemacht?]], #DE-TH)
     * answerValueSet = Canonical(InfektionsKrankheitTHVS)
     * repeats = true
   * item[+]
-    * insert addItem(8.14a, #boolean, [[Muss Ihr Kind krankheitsbedingt eine spezielle Diät einhalten?]])      
+    * insert addItem(8.14a, #boolean, [[Muss das Kind krankheitsbedingt eine spezielle Diät einhalten?]])      
   * item[+]
     * insert addItem(8.15, #boolean, [[Krankenhausaufenthalt]])
     * item[+]
@@ -1002,7 +1002,7 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert addItem(8.16, #boolean, [[Allergietest]])
   * item[+]
     * answerValueSet = Canonical(AtopischeErkrankungenVS)  
-    * insert addItem(8.16a, #open-choice, [[Besitzt Ihr Kind Allergien?]])
+    * insert addItem(8.16a, #open-choice, [[Besitzt das Kind Allergien?]])
 // Familienanamnese
   * item[+]
     * insert addItemWithSource(8.16b, #boolean, [[Gibt es Gesundheitsstörungen in der Familie, von denen Sie wissen oder vermuten, dass sie Auswirkungen auf die Entwicklung oder Belastbarkeit Ihres Kindes haben könnten bzw. im Schulalltag zu berücksichtigen wären (z. B. Sehstörung, Hörstörung, Herz-Kreislauf-Erkrankung, Allergie, Asthma bronchiale, Epilepsie, Depression oder andere psychische Erkrankung, Rheuma, Diabetes mellitus, Krebserkrankung, andere schwere Erkrankung)]], #DE-TH)
@@ -1044,17 +1044,17 @@ Description: "Sorgeberechtigtenfragebogen"
     * item[+]
       * insert addItem(8.21.g.2, #text, [[Behinderung Merkzeichen]])
   * item[+]
-    * insert addItemWithSource(8.22a, #boolean, [[Wurde bei Ihrem Kind eine Behinderung festgestellt?]], #DE-TH)
+    * insert addItemWithSource(8.22a, #boolean, [[Wurde bei dem Kind eine Behinderung festgestellt?]], #DE-TH)
     * item[+]
       * insert addItem(8.22a.1, #text, [[Welcher Behinderungsgrad?]])
       * insert enableWhenBoolean(8.22a, =, true)
   * item[+]
-    * insert addItemWithSource(8.22b, #boolean, [[Ist Ihr Kind Inhaber eines Schwerbehindertenausweises?]], #DE-TH)
+    * insert addItemWithSource(8.22b, #boolean, [[Ist das Kind Inhaber eines Schwerbehindertenausweises?]], #DE-TH)
     * item[+]
       * insert addItem(8.22b.1, #integer, [[Welches Merkzeichen?]])
       * insert enableWhenBoolean(8.22b, =, true)
   * item[+]
-    * insert addItemWithSource(8.22c, #boolean, [[Beansprucht Ihr Kind Leistungen der Pflegeversicherung?]], #DE-TH)
+    * insert addItemWithSource(8.22c, #boolean, [[Beansprucht das Kind Leistungen der Pflegeversicherung?]], #DE-TH)
     * item[+]
       * insert addItem(8.22c.1, #choice, [[Welcher Pflegegrad?]])
       * insert enableWhenBoolean(8.22c, =, true)
@@ -1067,7 +1067,7 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert enableWhenBoolean(8.23, =, true)   
     * repeats = true
   * item[+]
-    * insert addItemWithSource(8.25a, #boolean, [[Muss Ihr Kind ein Notfallset mit sich führen?]], #DE-TH)
+    * insert addItemWithSource(8.25a, #boolean, [[Muss das Kind ein Notfallset mit sich führen?]], #DE-TH)
     * item[+]
       * insert addItemWithSource(8.25a.1, #text, [[Falls ja, warum?]], #DE-TH)
       * insert enableWhenBoolean(8.25a, =, true)
@@ -1094,7 +1094,7 @@ Description: "Sorgeberechtigtenfragebogen"
 
 // Operationen
   * item[+]
-    * insert addItem(8.27, #boolean, [[Wurde Ihr Kind operiert]])
+    * insert addItem(8.27, #boolean, [[Wurde das Kind operiert]])
     * item[+]
       * insert addItem(8.27.1, #choice, [[Wie fand die Operation statt?]])
       * insert enableWhenBoolean(8.27, =, true)
@@ -1107,20 +1107,20 @@ Description: "Sorgeberechtigtenfragebogen"
   * item[+]
     * insert addItemWithSource(8.27a, #boolean, [[Ambulante Operation(en)]], #DE-ST)
   * item[+]
-    * insert addItemWithSource(8.27b, #boolean, [[Wurde Ihr Kind jemals operiert bzw. ist eine Operation geplant?]], #DE-TH)
+    * insert addItemWithSource(8.27b, #boolean, [[Wurde das Kind jemals operiert bzw. ist eine Operation geplant?]], #DE-TH)
     * item[+]
       * insert addItemWithSource(8.27b.1, #text, [[Falls ja, welche Operationen und wann?]], #DE-TH)
       * insert enableWhenBoolean(8.27b, =, true)
 // Unfälle
   * item[+]
-    * insert addItem(8.28a, #boolean, [[Hatte Ihr Kind einen Unfall]])
+    * insert addItem(8.28a, #boolean, [[Hatte das Kind einen Unfall]])
   * item[+]
-    * insert addItemWithSource(8.28b, #boolean, [[Hatte  Ihr Kind jemals einen Unfall, der ärztlich behandelt wurde?]], #DE-BB)
+    * insert addItemWithSource(8.28b, #boolean, [[Hatte  das Kind jemals einen Unfall, der ärztlich behandelt wurde?]], #DE-BB)
     * item[+]
       * insert addItemWithSource(8.28b.1, #text, [[Falls ja, welche Verletzung und wann?]], #DE-TH)
       * insert enableWhenBoolean(8.28b, =, true)
   * item[+]
-    * insert addItem(8.28.g, #group, [[Hatte Ihr Kind einen Unfall]])
+    * insert addItem(8.28.g, #group, [[Hatte das Kind einen Unfall]])
     * insert enableWhenBoolean(8.28a, =, true)
     * insert enableWhenBoolean(8.28b, =, true)
     * enableBehavior = #any
@@ -1137,15 +1137,15 @@ Description: "Sorgeberechtigtenfragebogen"
 
 // Befindlichkeitsstörungen
   * item[+]
-    * insert addItem(8.29, #open-choice, [[Hat Ihr Kind häufiger Befindlichkeitsstörungen?]])
+    * insert addItem(8.29, #open-choice, [[Hat das Kind häufiger Befindlichkeitsstörungen?]])
     * repeats = true 
     * answerValueSet = Canonical(AllgemeineBeschwerdenVS)
 // Unfallverletzungen
   * item[+]
-    * insert addItemWithSource(8.30, #boolean, [[Wurde Ihr Kind jemals aufgrund von Unfallverletzungen von einem Arzt behandelt?]], #DE-SL)
+    * insert addItemWithSource(8.30, #boolean, [[Wurde das Kind jemals aufgrund von Unfallverletzungen von einem Arzt behandelt?]], #DE-SL)
 // Inkontinenz
   * item[+]
-    * insert addItemWithSource(8.30.1, #boolean, [[Nässt Ihr Kind ein?]], #DE-BE)
+    * insert addItemWithSource(8.30.1, #boolean, [[Nässt das Kind ein?]], #DE-BE)
   * item[+]
     * insert addItemWithSource(8.31, #boolean, [[Einnässen tags]], #DE-SL)
   * item[+]
@@ -1157,7 +1157,7 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert addItemWithSource(8.34, #boolean, [[Einkoten nachts]], #DE-SL)
 // Verhaltensauffälligkeiten
   * item[+]
-    * insert addItemWithSource(8.34a, #choice, [[Zeigte Ihr Kind in den vergangenen 12 Monaten folgende Verhaltensauffälligkeiten?]], #DE-TH)
+    * insert addItemWithSource(8.34a, #choice, [[Zeigte das Kind in den vergangenen 12 Monaten folgende Verhaltensauffälligkeiten?]], #DE-TH)
     * answerValueSet = Canonical(VerhaltensauffaelligkeitenVS)
     * repeats = true
 // Bisherige Erkrankungen
@@ -1256,7 +1256,7 @@ Description: "Sorgeberechtigtenfragebogen"
     * item[+]
       * insert addItemWithSource(8.57, #boolean, [[Reg. Med. Antikonvulsiva]], #DE-SL)
       * item[+]
-        * insert addItem(8.57.1, #string, [[Wegen welcher Erkrankungen ist Ihr Kind zurzeit in Behandlung??]])
+        * insert addItem(8.57.1, #string, [[Wegen welcher Erkrankungen ist das Kind zurzeit in Behandlung??]])
         * insert enableWhenBoolean(8.57, =, true)
     * item[+]
       * insert addItemWithSource(8.58, #boolean, [[Reg. Med. Antiasthmatika/Antiallergika]], #DE-SL)
@@ -1309,26 +1309,26 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert addGroup(8.79, [[Juckender Hautausschlag]])
     * insert addSource(#DE-NI)
     * item[+]
-      * insert addItemWithSource(8.79.1, #boolean, [[Hatte Ihr Kind irgendwann einmal einen juckenden Hautausschlag, der stärker oder schwächer über mind. 6 Montae auftrat?]], #DE-NI)
+      * insert addItemWithSource(8.79.1, #boolean, [[Hatte das Kind irgendwann einmal einen juckenden Hautausschlag, der stärker oder schwächer über mind. 6 Montae auftrat?]], #DE-NI)
     * item[+]
-      * insert addItemWithSource(8.79.2, #boolean, [[Trat dieser juckende Hautausschlag bei Ihrem Kind irgendwann einmal an einer der folgenden Körperstellen auf: In der Ellenbeuge, Kniekehle, an den Hand oder Fußgelenken, im Gesicht oder am Hals?]], #DE-NI)
+      * insert addItemWithSource(8.79.2, #boolean, [[Trat dieser juckende Hautausschlag bei dem Kind irgendwann einmal an einer der folgenden Körperstellen auf: In der Ellenbeuge, Kniekehle, an den Hand oder Fußgelenken, im Gesicht oder am Hals?]], #DE-NI)
       * insert enableWhenBoolean(8.79.1, =, true)
   * item[+]
     * insert addGroup(8.80, [[Geräusche beim Atmen]])
     * insert addSource(#DE-NI)
     * item[+]
-      * insert addItemWithSource(8.80.1, #boolean, [[Hatte Ihr Kind in den letzten 12 Monaten jemals beim Atmen pfeiffende oder keuchende Geräusche im Brustkorb?]], #DE-NI)
+      * insert addItemWithSource(8.80.1, #boolean, [[Hatte das Kind in den letzten 12 Monaten jemals beim Atmen pfeiffende oder keuchende Geräusche im Brustkorb?]], #DE-NI)
     * item[+]
-      * insert addItemWithSource(8.80.2, #boolean, [[Hatte Ihr Kind in den letzten 12 Monaten jemals beim Atmen pfeiffende oder keuchende Geräusche im Brustkorb während oder nach körperlicher Anstrengung?]], #DE-NI)
+      * insert addItemWithSource(8.80.2, #boolean, [[Hatte das Kind in den letzten 12 Monaten jemals beim Atmen pfeiffende oder keuchende Geräusche im Brustkorb während oder nach körperlicher Anstrengung?]], #DE-NI)
     * item[+]
-      * insert addItemWithSource(8.80.3, #boolean, [[Hatte Ihr Kind in den letzten 12 Monaten nachts einen trockenen Reizhusten, obwohl es keine Erkältung oder Bronchitis hatte?]], #DE-NI)
+      * insert addItemWithSource(8.80.3, #boolean, [[Hatte das Kind in den letzten 12 Monaten nachts einen trockenen Reizhusten, obwohl es keine Erkältung oder Bronchitis hatte?]], #DE-NI)
   * item[+]
     * insert addGroup(8.81, [[Niesen, verstopfte Nase]])
     * insert addSource(#DE-NI)
     * item[+]
-      * insert addItemWithSource(8.81.1, #boolean, [[Hatte Ihr Kind in den letzten 12 Monaten Niesanfälle oder eine laufende, verstopfte oder juckende Nase, obwohl es nicht erkältet war?]], #DE-NI)
+      * insert addItemWithSource(8.81.1, #boolean, [[Hatte das Kind in den letzten 12 Monaten Niesanfälle oder eine laufende, verstopfte oder juckende Nase, obwohl es nicht erkältet war?]], #DE-NI)
     * item[+]
-      * insert addItemWithSource(8.81.2, #boolean, [[Hatte Ihr Kind in den letzten 12 Monaten gleichzeitig mit diesen Nasenbeschwerden auch juckende oder tränende Augen?]], #DE-NI)
+      * insert addItemWithSource(8.81.2, #boolean, [[Hatte das Kind in den letzten 12 Monaten gleichzeitig mit diesen Nasenbeschwerden auch juckende oder tränende Augen?]], #DE-NI)
   * item[+]
     * insert addItemWithSource(8.82, #string, [[Kur mit welchem Behandlungsschwerpunkt?]], #DE-TH)
   * item[+]
@@ -1348,7 +1348,7 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert addItemWithSource(9.1c, #choice, [[Sprachtherapie]], #DE-BY)
     * answerValueSet = Canonical(SEU_EF_NeinAbgeschlossenLaeuftGeplantVS)
   * item[+]
-    * insert addItemWithSource(9.1a, #boolean, [[Werden oder wurden bei Ihrem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)]], #DE-SL)    
+    * insert addItemWithSource(9.1a, #boolean, [[Werden oder wurden bei dem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)]], #DE-SL)    
   * item[+]
     * insert addGroup(9.1a.g, Therapien)
     * insert enableWhenBoolean(9.1a, =, true)
@@ -1453,7 +1453,7 @@ Description: "Sorgeberechtigtenfragebogen"
     * item[+]
       * insert addItemWithSource(9.13, #boolean, [[Fördermaßn. Vorschul. Päd. Sprachförderung]], #DE-SL)
   * item[+]
-    * insert addItemWithSource(9.13a, #choice, [[Welche Behandlungen oder Unterstützungen hat Ihr Kind jemals erhalten?]], #DE-TH)
+    * insert addItemWithSource(9.13a, #choice, [[Welche Behandlungen oder Unterstützungen hat das Kind jemals erhalten?]], #DE-TH)
     * answerValueSet = Canonical(FoerderungVS)
     * repeats = true
 // Kuren
@@ -1478,7 +1478,7 @@ Description: "Sorgeberechtigtenfragebogen"
   * item[+]
     * insert addItem(9a.1, #boolean, [[Teilnahme am Vorkurs Deutsch]])
   * item[+]
-    * insert addItemWithSource(9a.1a, #boolean, [[Werden oder wurden bei Ihrem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)?]], #DE-SL)    
+    * insert addItemWithSource(9a.1a, #boolean, [[Werden oder wurden bei dem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)?]], #DE-SL)    
   * item[+]
     * insert addGroup(9a.1a.g, Therapien)
     * insert enableWhenBoolean(9a.1a, =, true)
@@ -1580,7 +1580,7 @@ Description: "Sorgeberechtigtenfragebogen"
     * item[+]
       * insert addItemWithSource(9a.13, #boolean, [[Fördermaßn. Vorschul. Päd. Sprachförderung]], #DE-SL)
   * item[+]
-    * insert addItemWithSource(9a.13a, #choice, [[Welche Behandlungen oder Unterstützungen hat Ihr Kind jemals erhalten?]], #DE-TH)
+    * insert addItemWithSource(9a.13a, #choice, [[Welche Behandlungen oder Unterstützungen hat das Kind jemals erhalten?]], #DE-TH)
     * answerValueSet = Canonical(FoerderungVS)
     * repeats = true
   * item[+]
@@ -1602,26 +1602,26 @@ Description: "Sorgeberechtigtenfragebogen"
   * item[+]
     * insert addItem(10.2, #boolean, Fernsehgerät/Computer/Spielkonsole im Zimmer?)
   * item[+]
-    * insert addItemWithSource(10.2.1, #boolean, [[Mein Kind hat einen eigenen Fernseher?]], #DE-BE)
+    * insert addItemWithSource(10.2.1, #boolean, [[Das Kind hat einen eigenen Fernseher?]], #DE-BE)
   * item[+]
     * insert addItemWithSource(10.2.2, #boolean, [[andere eigene elektronische Geräte]], #DE-BE)
   * item[+]
     * insert enableWhenBoolean(10.2.2, =, true)
     * insert addItemWithSource(10.2.3, #text, [[wenn ja, welche]], #DE-BE)
   * item[+]
-    * insert addItemWithSource(10.3a, #choice, [[Wie lange sieht Ihr Kind durchschnittlich pro Tag Fernsehsendungen und Filme an und/oder spielt mit dem Smartphone/Tablet/Computer/ an der Spielkonsole? An einem Wochentag:]], #DE-BW)
+    * insert addItemWithSource(10.3a, #choice, [[Wie lange sieht das Kind durchschnittlich pro Tag Fernsehsendungen und Filme an und/oder spielt mit dem Smartphone/Tablet/Computer/ an der Spielkonsole? An einem Wochentag:]], #DE-BW)
     * answerValueSet = Canonical(SEU_EF_MedienkonsumVS)
   * item[+]
-    * insert addItemWithSource(10.3b, #choice, [[Wie lange sieht nutzt Kind Fernseher, Smartphone oder Spielkonsole an einem Wochentag]], #DE-BB)
+    * insert addItemWithSource(10.3b, #choice, [[Wie lange sieht bzw. nutzt das Kind Fernseher, Smartphone oder Spielkonsole an einem Wochentag]], #DE-BB)
     * answerValueSet = Canonical(SEU_EF_ZeitdauerVS)
   * item[+]
-    * insert addItemWithSource(10.4a, #choice, [[Wie lange sieht Ihr Kind durchschnittlich pro Tag Fernsehsendungen und Filme an und/oder spielt mit dem Smartphone/Tablet/Computer/ an der Spielkonsole? An einem Samstag/ Sonntag:]], #DE-BW)
+    * insert addItemWithSource(10.4a, #choice, [[Wie lange sieht das Kind durchschnittlich pro Tag Fernsehsendungen und Filme an und/oder spielt mit dem Smartphone/Tablet/Computer/ an der Spielkonsole? An einem Samstag/ Sonntag:]], #DE-BW)
     * answerValueSet = Canonical(SEU_EF_MedienkonsumVS)
   * item[+]
-    * insert addItemWithSource(10.4b, #choice, [[Wie lange sieht nutzt Kind Fernseher, Smartphone oder Spielkonsole am Wochenende]], #DE-BW)
+    * insert addItemWithSource(10.4b, #choice, [[Wie lange sieht bzw. nutzt das Kind Fernseher, Smartphone oder Spielkonsole am Wochenende]], #DE-BW)
     * answerValueSet = Canonical(SEU_EF_ZeitdauerVS)
   * item[+]
-    * insert addItemWithSource(10.4c, #choice, [[Wie viele Stunden am Tag beschäftigt sich Ihr Kind im Durchschnitt mit elektronischen Geräten? (elektronische Geräte sind Fernsehen, DVD, Computer, Tablet, Smartphone, Playstation und andere) ]], #DE-BE)
+    * insert addItemWithSource(10.4c, #choice, [[Wie viele Stunden am Tag beschäftigt sich das Kind im Durchschnitt mit elektronischen Geräten? (elektronische Geräte sind Fernsehen, DVD, Computer, Tablet, Smartphone, Playstation und andere) ]], #DE-BE)
     * answerValueSet = Canonical(SEUEFMedienkonsumBerlinVS)
 //********************************************
 // Arzt
@@ -1634,7 +1634,7 @@ Description: "Sorgeberechtigtenfragebogen"
   * item[+]
     * insert addItem(11.3, #string, Name Facharzt)
   * item[+]
-    * insert addItemWithSource(11.4, #open-choice, [[Bei welchen Ärztinnen oder Ärzten haben Sie Ihr Kind in den vergangenen 12 Monaten vorgestellt?]], #DE-TH)
+    * insert addItemWithSource(11.4, #open-choice, [[Bei welchen Ärztinnen oder Ärzten haben Sie das Kind in den vergangenen 12 Monaten vorgestellt?]], #DE-TH)
   * item[+]
     * insert addItemWithSource(11.5, #text, [[Name des behandelnden Kinder- oder Hausarztes und Praxisort:]], #DE-TH)
 //********************************************
@@ -1699,19 +1699,19 @@ Description: "Sorgeberechtigtenfragebogen"
   * item[+]
     * insert addItemWithSource(12.18, #boolean, [[Fortbewegung: zu Fuß]], #DE-BB)
   * item[+]
-    * insert addItemWithSource(12.19, #choice, [[Wie viele Stunden pro Tag ist Ihr Kind im Freizeitbereich (z.B. Wald oder Garten) körperlich aktiv?]], #DE-NI)
+    * insert addItemWithSource(12.19, #choice, [[Wie viele Stunden pro Tag ist das Kind im Freizeitbereich (z.B. Wald oder Garten) körperlich aktiv?]], #DE-NI)
     * answerValueSet = Canonical(WieVieleStundenFreizeitVS)
   * item[+]
-    * insert addItemWithSource(12.20, #boolean, [[Ist Ihr Kind Mitglied in einem Sportverein?]], #DE-NI)
+    * insert addItemWithSource(12.20, #boolean, [[Ist das Kind Mitglied in einem Sportverein?]], #DE-NI)
   * item[+]
-    * insert addItemWithSource(12.21, #choice, [[Wie oft geht Ihr Kind in den Sportverein?]], #DE-NI)
+    * insert addItemWithSource(12.21, #choice, [[Wie oft geht das Kind in den Sportverein?]], #DE-NI)
     * insert enableWhenBoolean(12.20, =, true)
     * answerValueSet = Canonical(WieOftImSportVereinVS)
   * item[+]
-    * insert addItemWithSource(12.22, #choice, [[Wie oft trainiert Ihr Kind pro Woche außerhalb der Kita angeleitet?]], #DE-NI)
+    * insert addItemWithSource(12.22, #choice, [[Wie oft trainiert das Kind pro Woche außerhalb der Kita angeleitet?]], #DE-NI)
     * answerValueSet = Canonical(WieOftTrainingVS)
   * item[+]
-    * insert addItemWithSource(12.23, #boolean, [[Fährt Ihr Kind frei Fahrrad]], #DE-HB)
+    * insert addItemWithSource(12.23, #boolean, [[Fährt das Kind frei Fahrrad]], #DE-HB)
 //********************************************
 // Informationen Eltern
 * item[+]
