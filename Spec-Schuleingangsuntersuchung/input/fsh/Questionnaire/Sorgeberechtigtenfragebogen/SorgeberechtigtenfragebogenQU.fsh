@@ -432,9 +432,9 @@ Description: "Sorgeberechtigtenfragebogen"
   * item[+]
     * insert addItemWithSource(3.2a, #group, [[Gibt es in der Familie (Eltern, Geschwister)]], #DE-BY)
     * item[+]
-      * insert addItemWithSource(3.2a.2, #boolean, [[► eine Lese-Rechtschreib-Schwäche (Legasthenie)]], #DE-BY)
+      * insert addItemWithSource(3.2a.2, #boolean, [[Eine Lese-Rechtschreib-Schwäche (Legasthenie)]], #DE-BY)
     * item[+]
-      * insert addItemWithSource(3.2a.3, #boolean, [[► eine Rechenschwäche (Dyskalkulie)]], #DE-BY)
+      * insert addItemWithSource(3.2a.3, #boolean, [[Eine Rechenschwäche (Dyskalkulie)]], #DE-BY)
   * item[+]
     * insert addItemWithSource(3.3, #integer, Aktuell im Haushalt lebende Erwachsene, #DE-BB) 
 //********************************************
