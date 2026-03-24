@@ -50,7 +50,7 @@ Description: "Sorgeberechtigtenfragebogen HH"
   * item[+]
     * insert addItemWithSource(0.14, #boolean, [[Hat das Kind einen i-Helfer?]], #DE-MV)
   * item[+]
-    * insert addItemWithSource(0.15, #string, [[Bemerkung]], #DE-HH)
+    * insert addItemWithSource(0.15, #text, [[Bemerkung]], #DE-HH)
 //********************************************
 // Personenbezogene Daten Kind
 * item[+]
@@ -193,7 +193,7 @@ Description: "Sorgeberechtigtenfragebogen HH"
       * insert addItem(3.2.6, #boolean, [[Hat das Kind eine körperliche, geistige oder seelische Behinderung?]])
       * item[+]
         * insert enableWhenBoolean(3.2.6, =, true)
-        * insert addItem(3.2.6.1, #string, Welche Behinderung?)
+        * insert addItem(3.2.6.1, #text, Welche Behinderung?)
   * item[+]
     * insert addItemWithSource(3.3, #integer, Aktuell im Haushalt lebende Erwachsene, #DE-BB)
 //********************************************
@@ -214,7 +214,7 @@ Description: "Sorgeberechtigtenfragebogen HH"
       * operator = #=
       * answerBoolean = true
   * item[+]
-    * insert addItemWithSource(4.6a, #string, Anschrift des Kindergartens, #DE-SN)
+    * insert addItemWithSource(4.6a, #text, Anschrift des Kindergartens, #DE-SN)
     * enableWhen[+]
       * question = "4.0b"
       * operator = #=
@@ -245,7 +245,7 @@ Description: "Sorgeberechtigtenfragebogen HH"
     * insert addItem(5.5, #boolean, [[Auffälligkeit bei der Geburt]])
     * item[+]
       * insert enableWhenBoolean(5.5, =, true)
-      * insert addItem(5.5.1, #string, [[Welche Auffälligkeit?]])
+      * insert addItem(5.5.1, #text, [[Welche Auffälligkeit?]])
   * item[+]
     * insert addItemWithSource(5.11, #string, [[APGAR]], #DE-HB)
     * insert regEx([["^\\d{2}\\/\\d{2}\\/\\d{2}$"]])

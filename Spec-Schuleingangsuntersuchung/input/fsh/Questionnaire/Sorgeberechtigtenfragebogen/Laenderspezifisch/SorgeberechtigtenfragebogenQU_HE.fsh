@@ -194,7 +194,7 @@ Description: "Sorgeberechtigtenfragebogen HE"
   * item[+]
     * insert addItem(8.15, #boolean, [[Krankenhausaufenthalt]])
     * item[+]
-      * insert addItem(8.15.1, #string, [[Detaillierte Angaben zum Krankenhausaufenthalt?]])
+      * insert addItem(8.15.1, #text, [[Detaillierte Angaben zum Krankenhausaufenthalt?]])
       * insert enableWhenBoolean(8.15, =, true)
   * item[+]
     * answerValueSet = Canonical(AtopischeErkrankungenVS)  
@@ -202,7 +202,7 @@ Description: "Sorgeberechtigtenfragebogen HE"
   * item[+]
     * insert addItem(8.23, #boolean, [[Regelmäßige Medikamenteneinnahme]])
   * item[+]
-    * insert addItem(8.23.1, #string, [[Welches Medikament]])
+    * insert addItem(8.23.1, #text, [[Welches Medikament]])
     * insert enableWhenBoolean(8.23, =, true)   
     * repeats = true
 //********************************************
@@ -230,7 +230,7 @@ Description: "Sorgeberechtigtenfragebogen HE"
     * answerValueSet = Canonical(SEU_EF_NeinAbgeschlossenLaeuftGeplantVS)
     * required = true
   * item[+]
-    * insert addItem(9.10, #string, [[Sonstige Förderung]])
+    * insert addItem(9.10, #text, [[Sonstige Förderung]])
 //********************************************
 // Arzt
 * item[+]

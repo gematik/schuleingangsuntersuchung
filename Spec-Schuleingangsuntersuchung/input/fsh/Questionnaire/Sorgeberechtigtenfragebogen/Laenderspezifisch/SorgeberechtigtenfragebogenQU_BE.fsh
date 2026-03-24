@@ -92,7 +92,7 @@ Description: "Sorgeberechtigtenfragebogen BE"
   * item[+]
     * insert addItem(8.23, #boolean, [[Regelmäßige Medikamenteneinnahme]])
     * item[+]
-      * insert addItem(8.23.1, #string, [[Welches Medikament]])
+      * insert addItem(8.23.1, #text, [[Welches Medikament]])
       * insert enableWhenBoolean(8.23, =, true)   
       * repeats = true
   * item[+]

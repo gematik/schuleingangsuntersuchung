@@ -143,7 +143,7 @@ Description: "Sorgeberechtigtenfragebogen ST"
     * required = true
     * item[+]
       * insert enableWhenBoolean(5.6, =, true)
-      * insert addItem(5.6.1, #string, [[Welche Auffälligkeit?]])
+      * insert addItem(5.6.1, #text, [[Welche Auffälligkeit?]])
       * required = true
   * item[+]
     * insert addItemWithSource(5.9, #boolean, [[Mehrlingsgeburt]], #DE-BY)
@@ -210,7 +210,7 @@ Description: "Sorgeberechtigtenfragebogen ST"
     * insert addItem(8.23, #boolean, [[Regelmäßige Medikamenteneinnahme]])
     * required = true
   * item[+]
-    * insert addItem(8.23.1, #string, [[Welches Medikament]])
+    * insert addItem(8.23.1, #text, [[Welches Medikament]])
     * insert enableWhenBoolean(8.23, =, true)   
     * repeats = true
     * required = true
@@ -256,7 +256,7 @@ Description: "Sorgeberechtigtenfragebogen ST"
       * answerValueSet = Canonical(SEU_EF_NeinAbgeschlossenLaeuftGeplantVS)
       * required = true
     * item[+]
-      * insert addItem(9.10, #string, [[Sonstige Förderung]])
+      * insert addItem(9.10, #text, [[Sonstige Förderung]])
       * required = true
 
 //********************************************

@@ -108,7 +108,7 @@ Description: "Sorgeberechtigtenfragebogen TH"
     * required = true
     * item[+]
       * insert enableWhenBoolean(5.6, =, true)
-      * insert addItem(5.6.1, #string, [[Welche Auffälligkeit?]])
+      * insert addItem(5.6.1, #text, [[Welche Auffälligkeit?]])
       * required = true
 //********************************************
 // Sprache
@@ -168,7 +168,7 @@ Description: "Sorgeberechtigtenfragebogen TH"
     * insert addItemWithSource(8.16b, #boolean, [[Gibt es Gesundheitsstörungen in der Familie, von denen Sie wissen oder vermuten, dass sie Auswirkungen auf die Entwicklung oder Belastbarkeit Ihres Kindes haben könnten bzw. im Schulalltag zu berücksichtigen wären (z. B. Sehstörung, Hörstörung, Herz-Kreislauf-Erkrankung, Allergie, Asthma bronchiale, Epilepsie, Depression oder andere psychische Erkrankung, Rheuma, Diabetes mellitus, Krebserkrankung, andere schwere Erkrankung)]], #DE-TH)
     * required = true
     * item[+]
-      * insert addItemWithSource(8.16b.1, #string, [[Wenn ja, welche?]], #DE-TH)
+      * insert addItemWithSource(8.16b.1, #text, [[Wenn ja, welche?]], #DE-TH)
       * insert enableWhenBoolean(8.16b, =, true)
       * required = true
 // Behinderungen und Pflegegrad
@@ -176,7 +176,7 @@ Description: "Sorgeberechtigtenfragebogen TH"
     * insert addItemWithSource(8.22a, #boolean, [[Wurde bei dem Kind eine Behinderung festgestellt?]], #DE-TH)
     * required = true
     * item[+]
-      * insert addItem(8.22a.1, #text, [[Welcher Behinderungsgrad?]])
+      * insert addItem(8.22a.1, #string, [[Welcher Behinderungsgrad?]])
       * insert enableWhenBoolean(8.22a, =, true)
       * required = true
   * item[+]
@@ -199,7 +199,7 @@ Description: "Sorgeberechtigtenfragebogen TH"
     * insert addItem(8.23, #boolean, [[Regelmäßige Medikamenteneinnahme]])
     * required = true
   * item[+]
-    * insert addItem(8.23.1, #string, [[Welches Medikament]])
+    * insert addItem(8.23.1, #text, [[Welches Medikament]])
     * insert enableWhenBoolean(8.23, =, true)
     * repeats = true
     * required = true

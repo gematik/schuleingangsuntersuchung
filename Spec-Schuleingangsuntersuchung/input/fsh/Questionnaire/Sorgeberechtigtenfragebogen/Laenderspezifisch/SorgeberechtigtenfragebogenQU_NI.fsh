@@ -98,7 +98,7 @@ Description: "Sorgeberechtigtenfragebogen NI"
       * required = true
       * item[+]
         * insert enableWhenBoolean(3.2.6, =, true)
-        * insert addItem(3.2.6.1, #string, Welche Behinderung?)
+        * insert addItem(3.2.6.1, #text, Welche Behinderung?)
         * required = true
 //********************************************
 // Kinderbetreuung
@@ -134,7 +134,7 @@ Description: "Sorgeberechtigtenfragebogen NI"
     * required = true
     * item[+]
       * insert enableWhenBoolean(5.5, =, true)
-      * insert addItem(5.5.1, #string, [[Welche Auffälligkeit?]])
+      * insert addItem(5.5.1, #text, [[Welche Auffälligkeit?]])
       * required = true
   * item[+]
     * insert addItemWithSource(5.10, #choice, [[Art der Geburt]], #DE-NI)
@@ -172,7 +172,7 @@ Description: "Sorgeberechtigtenfragebogen NI"
     * insert addItem(8.15, #boolean, [[Krankenhausaufenthalt]])
     * required = true
     * item[+]
-      * insert addItem(8.15.1, #string, [[Detaillierte Angaben zum Krankenhausaufenthalt?]])
+      * insert addItem(8.15.1, #text, [[Detaillierte Angaben zum Krankenhausaufenthalt?]])
       * insert enableWhenBoolean(8.15, =, true)
       * required = true
   * item[+]

@@ -182,7 +182,7 @@ Description: "Sorgeberechtigtenfragebogen BB"
       * answerValueSet = Canonical(UnfallArtVS)
       * insert addItem(8.28.g.2, #choice, [[Art des Unfalls]])
   * item[+]
-    * insert addItemWithSource(8.68, #string, [[Andere Verletzung]], #DE-BB)
+    * insert addItemWithSource(8.68, #text, [[Andere Verletzung]], #DE-BB)
   * item[+]
     * insert addItemWithSource(8.69, #boolean, [[Andere Verletzung: zu Hause]], #DE-BB)
   * item[+]
@@ -219,7 +219,7 @@ Description: "Sorgeberechtigtenfragebogen BB"
     * item[+]
       * insert addItemWithSource(9a.9a, #boolean, [[Integrative Betreuung / Einzelintegration]], #DE-BB)
     * item[+]
-      * insert addItem(9a.10, #string, [[Sonstige Förderung]])
+      * insert addItem(9a.10, #text, [[Sonstige Förderung]])
     * item[+]
       * insert addItemWithSource(9a.11, #boolean, [[Fördermaßn. Integration in Regel-Kita]], #DE-SL)
   * item[+]

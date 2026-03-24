@@ -237,7 +237,7 @@ Description: "Sorgeberechtigtenfragebogen SL"
     * item[+]
       * insert addItemWithSource(8.43, #boolean, [[Erkrankungen Sonstige]], #DE-SL)
       * item[+]
-        * insert addItemWithSource(8.43.1, #string, [[Sonstiges, und zwar:]], #DE-SL)
+        * insert addItemWithSource(8.43.1, #text, [[Sonstiges, und zwar:]], #DE-SL)
         * insert enableWhenBoolean(8.43, =, true)
 
 // Operationen
@@ -260,7 +260,7 @@ Description: "Sorgeberechtigtenfragebogen SL"
   * item[+]
     * insert addItemWithSource(8.51, #boolean, [[Operationen Sonstige OP]], #DE-SL)
     * item[+]
-      * insert addItemWithSource(8.51.1, #string, [[Sonstiges, und zwar:]], #DE-SL)
+      * insert addItemWithSource(8.51.1, #text, [[Sonstiges, und zwar:]], #DE-SL)
       * insert enableWhenBoolean(8.51, =, true)
 
 // Unfälle
@@ -286,7 +286,7 @@ Description: "Sorgeberechtigtenfragebogen SL"
     * answerValueSet = Canonical(SEU_EF_UnfallortVS)
     * required = true
     * item[+]
-      * insert addItemWithSource(8.56.1, #string, [[Sonstiges, und zwar:]], #DE-SL)
+      * insert addItemWithSource(8.56.1, #text, [[Sonstiges, und zwar:]], #DE-SL)
       * insert enableWhenExists(8.56)
       * insert enableWhenCode(8.56, !=, SEU_EF_UnfallortCS, nein)
       * insert enableWhenCode(8.56, !=, SEU_EF_UnfallortCS, keine_angabe)
@@ -298,7 +298,7 @@ Description: "Sorgeberechtigtenfragebogen SL"
     * item[+]
       * insert addItemWithSource(8.57, #boolean, [[Reg. Med. Antikonvulsiva]], #DE-SL)
       * item[+]
-        * insert addItem(8.57.1, #string, [[Wegen welcher Erkrankungen ist das Kind zurzeit in Behandlung??]])
+        * insert addItem(8.57.1, #text, [[Wegen welcher Erkrankungen ist das Kind zurzeit in Behandlung??]])
         * insert enableWhenBoolean(8.57, =, true)
     * item[+]
       * insert addItemWithSource(8.58, #boolean, [[Reg. Med. Antiasthmatika/Antiallergika]], #DE-SL)
@@ -315,7 +315,7 @@ Description: "Sorgeberechtigtenfragebogen SL"
     * item[+]
       * insert addItemWithSource(8.64, #boolean, [[Reg. Med. Sonstige]], #DE-SL)
     * item[+]
-      * insert addItemWithSource(8.64.1, #string, [[Sonstiges, und zwar:]], #DE-SL)
+      * insert addItemWithSource(8.64.1, #text, [[Sonstiges, und zwar:]], #DE-SL)
       * insert enableWhenBoolean(8.64, =, true)
 //********************************************
 // Förderungen

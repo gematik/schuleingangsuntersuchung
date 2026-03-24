@@ -90,7 +90,7 @@ Description: "Sorgeberechtigtenfragebogen SN"
       * operator = #=
       * answerBoolean = true
   * item[+]
-    * insert addItemWithSource(4.6a, #string, Anschrift des Kindergartens, #DE-SN)
+    * insert addItemWithSource(4.6a, #text, Anschrift des Kindergartens, #DE-SN)
     * enableWhen[+]
       * question = "4.0b"
       * operator = #=
@@ -109,7 +109,7 @@ Description: "Sorgeberechtigtenfragebogen SN"
     * insert addItem(5.5, #boolean, [[Auffälligkeit bei der Geburt]])
     * item[+]
       * insert enableWhenBoolean(5.5, =, true)
-      * insert addItem(5.5.1, #string, [[Welche Auffälligkeit?]])
+      * insert addItem(5.5.1, #text, [[Welche Auffälligkeit?]])
 //********************************************
 // Sprache
 * item[+]
@@ -136,7 +136,7 @@ Description: "Sorgeberechtigtenfragebogen SN"
   * item[+]
     * insert addItem(7.12, #boolean, [[Sorgen Sie sich um die Entwicklung ihres Kindes?]])
     * item[+]
-      * insert addItem(7.12.1, #string, [[Welche Sorgen]])
+      * insert addItem(7.12.1, #text, [[Welche Sorgen]])
       * insert enableWhenBoolean(7.12, =, true)
 //********************************************
 // Erkrankungen und gesundheitliche Einschränkungen
@@ -145,19 +145,19 @@ Description: "Sorgeberechtigtenfragebogen SN"
   * item[+]
     * insert addItem(8.3, #boolean, [[Sehstörung vorhanden?]])
     * item[+]
-      * insert addItem(8.3.1, #string, [[Welche Sehstörung]])
+      * insert addItem(8.3.1, #text, [[Welche Sehstörung]])
       * insert enableWhenBoolean(8.3, =, true)
   * item[+]
     * insert addItem(8.9, #boolean, [[Schwere Hörstörung vorhanden?]])
     * item[+]
-      * insert addItem(8.9.1, #string, [[Welche Hörstörung]])
+      * insert addItem(8.9.1, #text, [[Welche Hörstörung]])
       * insert enableWhenBoolean(8.9, =, true)
   * item[+]
     * insert addItemWithSource(8.14b, #text, [[Bisher durchgemachte Erkrankungen, bspw. Windpocken oder Masern. Zeitlich nicht bestimmt]], #DE-BW)    
   * item[+]
     * insert addItem(8.15, #boolean, [[Krankenhausaufenthalt]])
     * item[+]
-      * insert addItem(8.15.1, #string, [[Detaillierte Angaben zum Krankenhausaufenthalt?]])
+      * insert addItem(8.15.1, #text, [[Detaillierte Angaben zum Krankenhausaufenthalt?]])
       * insert enableWhenBoolean(8.15, =, true)
   * item[+]
     * answerValueSet = Canonical(AtopischeErkrankungenVS)  
@@ -165,7 +165,7 @@ Description: "Sorgeberechtigtenfragebogen SN"
   * item[+]
     * insert addItem(8.23, #boolean, [[Regelmäßige Medikamenteneinnahme]])
   * item[+]
-    * insert addItem(8.23.1, #string, [[Welches Medikament]])
+    * insert addItem(8.23.1, #text, [[Welches Medikament]])
     * insert enableWhenBoolean(8.23, =, true)   
     * repeats = true
   * item[+]
@@ -175,12 +175,12 @@ Description: "Sorgeberechtigtenfragebogen SN"
   * item[+]
     * insert addItemWithSource(8.74, #boolean, [[Hauterkrankungen]], #DE-SN)
   * item[+]
-    * insert addItemWithSource(8.75, #string, [[Welche Hauterkrankungen]], #DE-SN)
+    * insert addItemWithSource(8.75, #text, [[Welche Hauterkrankungen]], #DE-SN)
     * insert enableWhenBoolean(8.74, =, true)
   * item[+]
     * insert addItemWithSource(8.76, #boolean, [[Orthopädische Erkrankungen?]], #DE-SN)
   * item[+]
-    * insert addItemWithSource(8.77, #string, [[Welche orthopädischen Erkrankungen]], #DE-SN)
+    * insert addItemWithSource(8.77, #text, [[Welche orthopädischen Erkrankungen]], #DE-SN)
     * insert enableWhenBoolean(8.76, =, true)
 //********************************************
 // Förderungen
@@ -214,7 +214,7 @@ Description: "Sorgeberechtigtenfragebogen SN"
       * insert addItem(9.9, #choice, [[Integrative Betreuung]])
       * answerValueSet = Canonical(SEU_EF_NeinAbgeschlossenLaeuftGeplantVS)
     * item[+]
-      * insert addItem(9.10, #string, [[Sonstige Förderung]])
+      * insert addItem(9.10, #text, [[Sonstige Förderung]])
 //********************************************
 // Medienkonsum
 //********************************************
