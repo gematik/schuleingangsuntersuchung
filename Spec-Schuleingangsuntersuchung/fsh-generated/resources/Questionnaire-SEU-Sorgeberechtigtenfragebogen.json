@@ -11754,7 +11754,7 @@
               "url": "http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire-initialExpression",
               "valueExpression": {
                 "language": "text/fhirpath",
-                "expression": "%patient.birthdate"
+                "expression": "%patient.birthDate"
               }
             }
           ]
