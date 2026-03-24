@@ -1,9 +1,9 @@
 {
   "resourceType": "Patient",
-  "id": "EinzuschuldendesKindBeispiel",
+  "id": "EinzuschulendesKindBeispiel",
   "meta": {
     "profile": [
-      "https://www.oegd.de/fhir/seu/StructureDefinition/EinzuschuldendesKind"
+      "https://www.oegd.de/fhir/seu/StructureDefinition/EinzuschulendesKind"
     ]
   },
   "identifier": [
