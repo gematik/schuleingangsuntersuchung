@@ -126,7 +126,7 @@ Description: "Sorgeberechtigtenfragebogen NI"
     * insert uunit(cm, "cm")
     * required = true
   * item[+]
-    * insert addItem(5.3c, #integer, [[In welcher SS-Woche wurde das Kind geboren?]])
+    * insert addItem(5.3c, #integer, [[In welcher Schwangerschaftswoche wurde das Kind geboren?]])
     * insert uunit(wk, "Wochen")
     * required = true
   * item[+]

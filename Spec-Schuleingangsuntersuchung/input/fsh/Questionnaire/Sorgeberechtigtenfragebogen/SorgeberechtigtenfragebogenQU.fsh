@@ -572,7 +572,7 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert addItem(5.3b, #integer, [[Kopfumfang (in cm)]])
     * insert uunit(cm, "cm")
   * item[+]
-    * insert addItem(5.3c, #integer, [[In welcher SS-Woche wurde das Kind geboren?]])
+    * insert addItem(5.3c, #integer, [[In welcher Schwangerschaftswoche wurde das Kind geboren?]])
     * insert uunit(wk, "Wochen")
   * item[+]
     * insert addItem(5.4, #boolean, [[Waren Geburtsgewicht und Geburtslänge normal?]])
