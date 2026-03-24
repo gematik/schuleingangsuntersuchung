@@ -7,3 +7,6 @@ Alias: $SorgeberechtigtenfragebogenKodierungen = https://www.oegd.de/fhir/seu/Co
 Alias: $rendering-style = http://hl7.org/fhir/StructureDefinition/rendering-style
 Alias: $ISO31662 = urn:iso:std:iso:3166-2:de
 Alias: $deGenderVS = http://fhir.de/CodeSystem/gender-amtlich-de
+
+Alias: $pflegegrad-de = http://fhir.de/ValueSet/pflegegrad-de
+Alias: $icd-10-gm = http://fhir.de/ValueSet/bfarm/icd-10-gm

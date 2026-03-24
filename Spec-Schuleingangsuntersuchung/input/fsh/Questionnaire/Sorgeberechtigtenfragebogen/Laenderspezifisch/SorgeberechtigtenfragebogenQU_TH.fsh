@@ -3,25 +3,20 @@ InstanceOf: Questionnaire
 Usage: #example
 Title: "Sorgeberechtigtenfragebogen TH"
 Description: "Sorgeberechtigtenfragebogen TH"
-* contained[+] = LinksRechtsBeidseitsKeineAngabeVS
 * contained[+] = ErkrankungenTHVS
 * contained[+] = InfektionsKrankheitTHVS
-* contained[+] = PflegegradVS
-* contained[+] = UnfallOrtVS
-* contained[+] = AtopischeErkrankungenVS
+* contained[+] = pflegegrad-de
 * contained[+] = SEU_EF_DauerTHVS
-* contained[+] = SEU_EF_UnfallortVS
-* contained[+] = SEU_EF_HilfsmittelVS
 * contained[+] = SEU_EF_HilfsmittelTHVS
 * contained[+] = GeburtBesonderheitenVS
 * contained[+] = VerhaltensauffaelligkeitenVS
 * contained[+] = FoerderungVS
 * contained[+] = UeberwiegendGesprocheneSpracheVS
+* insert QMeta(1.0.0)
 * id = "SEU-Sorgeberechtigtenfragebogen-TH"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenTH"
 * title = "SEU Sorgeberechtigtenfragebogen TH"
 * insert launchContext("patient", #Patient, "Patientenkontext")
-* status = #draft
 * derivedFrom[0] = Canonical(Sorgeberechtigtenfragebogen)
 * item[+]
   * insert addGroup(0, Schule & Vorgangsnummer)
@@ -120,25 +115,21 @@ Description: "Sorgeberechtigtenfragebogen TH"
 * item[+]
   * insert addItem(6, #group, [[Sprache]])
   * item[+]
-    * insert addItemWithSource(6.1f, #choice, [[Welche Sprache wird mit dem Kind zu Hause gesprochen?]], #DE-TH)
+    * insert addItemWithSource(6.1f, #open-choice, [[Welche Sprache wird mit dem Kind zu Hause gesprochen?]], #DE-TH)
     * answerValueSet = Canonical(UeberwiegendGesprocheneSpracheVS)
     * required = true
-    * item[+]
-      * insert addItemWithSource(6.1f.1, #text, [[Welche Sprache?]], #DE-TH)
-      * insert enableWhenCode(6.1f, =, UeberwiegendGesprocheneSpracheCS, andere)
-      * insert enableWhenCode(6.1f, =, UeberwiegendGesprocheneSpracheCS, deutsch_andere)
-      * enableBehavior = #any
-      * required = true
 //********************************************
 // Entwicklung
 * item[+]
   * insert addItem(7, #group, [[Entwicklung]])
   * item[+]
     * insert addItem(7.10a, #integer, [[Freies Laufen ab .. (Lebensmonat)]])
+    * insert uunit(mo, "Monate")
     * insert minValueInt(0)
     * required = true
   * item[+]
     * insert addItem(7.10b, #integer, [[Erste Worte sprechen (außer Mama, Papa) ab .. (Lebensmonat)]])
+    * insert uunit(mo, "Monate")
     * insert minValueInt(0)
     * required = true
   * item[+]
@@ -201,7 +192,7 @@ Description: "Sorgeberechtigtenfragebogen TH"
     * item[+]
       * insert addItem(8.22c.1, #choice, [[Welcher Pflegegrad?]])
       * insert enableWhenBoolean(8.22c, =, true)
-      * answerValueSet = Canonical(PflegegradVS)
+      * answerValueSet = $pflegegrad-de
       * required = true
 // Medikamente
   * item[+]

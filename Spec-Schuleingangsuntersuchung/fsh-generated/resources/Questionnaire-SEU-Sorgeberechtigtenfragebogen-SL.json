@@ -3725,77 +3725,79 @@
     },
     {
       "resourceType": "ValueSet",
-      "id": "versorgungsart-vs",
-      "status": "draft",
-      "name": "VersorgungsartVS",
-      "title": "Versorgungsart ValueSet",
-      "description": "VersorgungsartVS",
-      "url": "https://www.oegd.de/fhir/seu/ValueSet/versorgungsart-vs",
-      "expansion": {
-        "timestamp": "2024-04-06T12:00:00+00:00",
-        "contains": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/versorgungsart-cs",
-            "code": "ambulant",
-            "display": "Ambulant"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/versorgungsart-cs",
-            "code": "krankenhaus",
-            "display": "Krankenhaus"
-          }
+      "id": "pflegegrad-de",
+      "meta": {
+        "profile": [
+          "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
         ]
       },
+      "url": "http://fhir.de/ValueSet/pflegegrad-de",
+      "version": "1.5.4",
+      "name": "PflegegradDE",
+      "title": "PflegegradDE ValueSet",
+      "status": "active",
+      "experimental": false,
+      "date": "2025-06-16",
+      "publisher": "HL7 Deutschland e.V. (Technisches Komitee FHIR)",
+      "contact": [
+        {
+          "telecom": [
+            {
+              "system": "url",
+              "value": "http://hl7.de/technische-komitees/fhir/"
+            }
+          ]
+        }
+      ],
+      "description": "Codes zur genaueren Differenzierung des Pflegegrads.",
       "compose": {
         "include": [
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/versorgungsart-cs"
-          }
-        ]
-      }
-    },
-    {
-      "resourceType": "ValueSet",
-      "id": "PflegegradVS",
-      "status": "draft",
-      "name": "PflegegradVS",
-      "title": "PflegegradVS",
-      "description": "PflegegradVS",
-      "url": "https://www.oegd.de/fhir/seu/ValueSet/PflegegradVS",
-      "expansion": {
-        "timestamp": "2024-04-04T11:16:49+00:00",
-        "contains": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PflegegradCS",
-            "code": "pflegegrad_1",
-            "display": "Pflegegrad 1"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PflegegradCS",
-            "code": "pflegegrad_2",
-            "display": "Pflegegrad 2"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PflegegradCS",
-            "code": "pflegegrad_3",
-            "display": "Pflegegrad 3"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PflegegradCS",
-            "code": "pflegegrad_4",
-            "display": "Pflegegrad 4"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PflegegradCS",
-            "code": "pflegegrad_5",
-            "display": "Pflegegrad 5"
+            "system": "http://fhir.de/CodeSystem/bfarm/ops",
+            "filter": [
+              {
+                "property": "parent",
+                "op": "=",
+                "value": "9-984"
+              }
+            ]
           }
         ]
       },
-      "compose": {
-        "include": [
+      "expansion": {
+        "identifier": "440c50b5-7272-4184-9ddd-95a75d8207f8",
+        "timestamp": "2019-07-06",
+        "total": 6,
+        "contains": [
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PflegegradCS"
+            "system": "http://fhir.de/CodeSystem/bfarm/ops",
+            "code": "9-984.6",
+            "display": "Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 1"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/bfarm/ops",
+            "code": "9-984.7",
+            "display": "Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 2"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/bfarm/ops",
+            "code": "9-984.8",
+            "display": "Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 3"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/bfarm/ops",
+            "code": "9-984.9",
+            "display": "Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 4"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/bfarm/ops",
+            "code": "9-984.a",
+            "display": "Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 5"
+          },
+          {
+            "system": "http://fhir.de/CodeSystem/bfarm/ops",
+            "code": "9-984.b",
+            "display": "Pflegebedürftigkeit: Erfolgter Antrag auf Einstufung in einen Pflegegrad"
           }
         ]
       }
@@ -3918,37 +3920,6 @@
         "include": [
           {
             "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-operationen-cs"
-          }
-        ]
-      }
-    },
-    {
-      "resourceType": "ValueSet",
-      "id": "seu-ef-unfall-vs",
-      "status": "draft",
-      "name": "SEU_EF_UnfallVS",
-      "title": "SEU_EF_Unfall ValueSet",
-      "description": "ValueSet, das verschiedene Unfallumstände enthält.",
-      "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-unfall-vs",
-      "expansion": {
-        "timestamp": "2024-10-20T11:50:47+00:00",
-        "contains": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-unfall-cs",
-            "code": "bei_freizeitaktivitaeten",
-            "display": "Bei Freizeitaktivitäten"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-unfall-cs",
-            "code": "beim_kindergartenbesuch",
-            "display": "Beim Kindergartenbesuch"
-          }
-        ]
-      },
-      "compose": {
-        "include": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-unfall-cs"
           }
         ]
       }
@@ -4339,49 +4310,11 @@
           }
         ]
       }
-    },
-    {
-      "resourceType": "ValueSet",
-      "id": "SEU-UB-StaatsangehoerigkeitVS",
-      "status": "draft",
-      "name": "SEU_UB_StaatsangehoerigkeitVS",
-      "title": "SEU Staatsangehörigkeit",
-      "description": "Diese Codes enthalten Angaben zur Staatsangehörigkeit",
-      "url": "https://www.oegd.de/fhir/seu/ValueSet/SEU-UB-StaatsangehoerigkeitVS",
-      "expansion": {
-        "timestamp": "2024-10-20T11:50:47+00:00",
-        "contains": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-StaatsangehoerigkeitCS",
-            "code": "1",
-            "display": "Deutsch"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-StaatsangehoerigkeitCS",
-            "code": "2",
-            "display": "Deutsch UND andere"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-StaatsangehoerigkeitCS",
-            "code": "3",
-            "display": "Andere"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-StaatsangehoerigkeitCS",
-            "code": "9",
-            "display": "keine Angaben"
-          }
-        ]
-      },
-      "compose": {
-        "include": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-StaatsangehoerigkeitCS"
-          }
-        ]
-      }
     }
   ],
+  "version": "1.0.0",
+  "status": "active",
+  "experimental": false,
   "url": "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenSL",
   "title": "SEU Sorgeberechtigtenfragebogen SL",
   "extension": [
@@ -4406,7 +4339,6 @@
       ]
     }
   ],
-  "status": "draft",
   "derivedFrom": [
     "https://www.oegd.de/fhir/seu/Questionnaire/Sorgeberechtigtenfragebogen"
   ],
@@ -4711,7 +4643,7 @@
                       "answerBoolean": true
                     }
                   ],
-                  "answerValueSet": "#PflegegradVS"
+                  "answerValueSet": "http://fhir.de/ValueSet/pflegegrad-de"
                 }
               ]
             }
@@ -5170,7 +5102,7 @@
           "item": [
             {
               "linkId": "8.27.2",
-              "type": "choice",
+              "type": "open-choice",
               "text": "(8.27.2) Welche Operationen wurden durchgeführt?",
               "code": [
                 {
@@ -5186,39 +5118,7 @@
                   "answerBoolean": true
                 }
               ],
-              "answerValueSet": "#seu-ef-operationen-vs",
-              "item": [
-                {
-                  "linkId": "8.27.2.1",
-                  "type": "string",
-                  "text": "(8.27.2.1) Sonstige Operationen?",
-                  "code": [
-                    {
-                      "code": "8.27.2.1",
-                      "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-                    }
-                  ],
-                  "extension": [
-                    {
-                      "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-                      "valueCoding": {
-                        "system": "urn:iso:std:iso:3166-2:de",
-                        "code": "DE-SL"
-                      }
-                    }
-                  ],
-                  "enableWhen": [
-                    {
-                      "question": "8.27.2",
-                      "operator": "=",
-                      "answerCoding": {
-                        "code": "sonstige_operation",
-                        "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-operationen-cs"
-                      }
-                    }
-                  ]
-                }
-              ]
+              "answerValueSet": "#seu-ef-operationen-vs"
             }
           ]
         },

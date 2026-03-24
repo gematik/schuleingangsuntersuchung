@@ -3,63 +3,32 @@ InstanceOf: Questionnaire
 Usage: #example
 Title: "Sorgeberechtigtenfragebogen BB"
 Description: "Sorgeberechtigtenfragebogen BB"
-* contained[+] = SEU_EF_NeinAbgeschlossenLaeuftGeplantVS
 * contained[+] = DeuevAnlage8LaenderkennzeichenVS
-* contained[+] = WohnsituationKindVS  // TODO: Unused?
-* contained[+] = WohnsituationKindAlternativ1VS  // TODO: Unused?
 * contained[+] = WohnsituationKindAlternativ2VS
-* contained[+] = GenderDEVS
 * contained[+] = ISO6392_LanguageVS
-* contained[+] = ChronischeErkrankungenVS
-* contained[+] = JaNeinAngemeldetVS
-* contained[+] = RechtsLinksHaenderVS
 * contained[+] = AuffaelligkeitVerhaltenVS
-* contained[+] = LinksRechtsBeidseitsKeineAngabeVS
-* contained[+] = StoffwechselstoerungVS
 * contained[+] = ErkrankungVS
 * contained[+] = InfektionsKrankheitVS
 * contained[+] = ErkrankungenLetztesJahrVS
-* contained[+] = PflegegradVS
+* contained[+] = pflegegrad-de
 * contained[+] = UnfallOrtVS
 * contained[+] = UnfallArtVS
 * contained[+] = GeplantFindetStattAbgeschlossenVS
-* contained[+] = HaeufigkeitAuswahlVS
-* contained[+] = SEU_EF_BildungsabschlussVS
 * contained[+] = SEU_EF_BerufsbildungVS
 * contained[+] = ErwerbsstatusVS
-* contained[+] = FamilienrolleVS
-* contained[+] = VersorgungsartVS
-* contained[+] = ChronischeKrankheitenVS
-* contained[+] = UeberwiegendGesprocheneSpracheVS
-* contained[+] = EntwicklungVS
-* contained[+] = AtopischeErkrankungenVS
-* contained[+] = AllgemeineBeschwerdenVS
-* contained[+] = ErwerbsstatusInclSonstigesVS
-* contained[+] = JaNeinWartelisteVS
-* contained[+] = SEU_EF_MedienkonsumVS
-* contained[+] = SEU_EF_OperationenVS
-* contained[+] = SEU_EF_UnfallVS
-* contained[+] = SEU_EF_AlterKindVS
-* contained[+] = SEU_EF_SchwangerschaftVS
-* contained[+] = SEU_EF_UnfallortVS
-* contained[+] = SEU_EF_BehandlungstypVS
 * contained[+] = SEU_EF_HilfsmittelVS
 * contained[+] = SEU_EF_FachaerzteVS
 * contained[+] = SEU_EF_DauerBBVS
-* contained[+] = SEU_EF_SpracheVS
 * contained[+] = SEU_EF_FrequenzVS
-* contained[+] = SEU_EF_DauerHEVS
-* contained[+] = icd10gm-2024
 * contained[+] = SEU_EF_BildungsabschlussBBVS
-* contained[+] = SEU_EF_BildungsabschlussBWVS
-* contained[+] = SEU-UB-StaatsangehoerigkeitVS
+* contained[+] = SEU_UB_StaatsangehoerigkeitVS
 * contained[+] = DauerStillenVS
 * contained[+] = SEU_EF_ZeitdauerVS
+* insert QMeta(1.0.0)
 * id = "SEU-Sorgeberechtigtenfragebogen-BB"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenBB"
 * title = "SEU Sorgeberechtigtenfragebogen BB"
 * insert launchContext("patient", #Patient, "Patientenkontext")
-* status = #draft
 * derivedFrom[0] = Canonical(Sorgeberechtigtenfragebogen)
 //********************************************
 * item[+]
@@ -81,7 +50,7 @@ Description: "Sorgeberechtigtenfragebogen BB"
     * insert initialExpression("%patient.birthdate")
   * item[+]
     * insert addItemWithSource(1.4a, #choice, [[Staatsangehörigkeit]], #DE-BB)
-    * answerValueSet = Canonical(SEU-UB-StaatsangehoerigkeitVS)
+    * answerValueSet = Canonical(SEU_UB_StaatsangehoerigkeitVS)
   * item[+]
     * insert addItemWithSource(1.4a.1, #choice, [[Staatsangehörigkeit andere]], #DE-BB)
     * insert enableWhenCode(1.4a, =, SEU-UB-StaatsangehoerigkeitCS, 2)
@@ -90,7 +59,7 @@ Description: "Sorgeberechtigtenfragebogen BB"
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
   * item[+]
     * insert addItemWithSource(1.4b, #choice, [[Staatsangehörigkeit Mutter]], #DE-BB)
-    * answerValueSet = Canonical(SEU-UB-StaatsangehoerigkeitVS)
+    * answerValueSet = Canonical(SEU_UB_StaatsangehoerigkeitVS)
   * item[+]
     * insert addItemWithSource(1.4b.1, #choice, [[Staatsangehörigkeit Mutter andere]], #DE-BB)
     * insert enableWhenCode(1.4b, =, SEU-UB-StaatsangehoerigkeitCS, 2)
@@ -99,7 +68,7 @@ Description: "Sorgeberechtigtenfragebogen BB"
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
   * item[+]
     * insert addItemWithSource(1.4c, #choice, [[Staatsangehörigkeit Vater]], #DE-BB)
-    * answerValueSet = Canonical(SEU-UB-StaatsangehoerigkeitVS)
+    * answerValueSet = Canonical(SEU_UB_StaatsangehoerigkeitVS)
   * item[+]
     * insert addItemWithSource(1.4c.1, #choice, [[Staatsangehörigkeit Vater andere]], #DE-BB)
     * insert enableWhenCode(1.4c, =, SEU-UB-StaatsangehoerigkeitCS, 2)
@@ -116,13 +85,8 @@ Description: "Sorgeberechtigtenfragebogen BB"
     * insert addItemWithSource(1.5b, #choice, [[Geburtsland Vater]], #DE-BB)
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
   * item[+]
-    * insert addItemWithSource(1.12a, #choice, [[Kind lebt hauptsächlich bei]], #DE-BB)
+    * insert addItemWithSource(1.12a, #open-choice, [[Kind lebt hauptsächlich bei]], #DE-BB)
     * answerValueSet = Canonical(WohnsituationKindAlternativ2VS)
-  * item[+]
-    * insert addItemWithSource(1.12a.1, #string, [[Kind lebt hauptsächlich bei anderen]], #DE-BB)
-    * insert enableWhenCode(1.12a, =, WohnsituationKindCS, andere_familienmitglieder)
-    * insert enableWhenCode(1.12a, =, WohnsituationKindCS, andere)
-    * enableBehavior = #any
 //********************************************
 // Kinderbetreuung
 * item[+]
@@ -166,12 +130,9 @@ Description: "Sorgeberechtigtenfragebogen BB"
   * item[+]
     * insert addItem(8.1, #boolean, [[In regelmäßiger ärztlicher bzw. psychologischer Behandlung]])
   * item[+]
-    * insert addItemWithSource(8.2c, #choice, [[Chronische Erkrankung, Fachrichtung]], #DE-BB)
+    * insert addItemWithSource(8.2c, #open-choice, [[Chronische Erkrankung, Fachrichtung]], #DE-BB)
     * insert enableWhenBoolean(8.1, =, true)
     * answerValueSet = Canonical(SEU_EF_FachaerzteVS)
-  * item[+]
-    * insert addItemWithSource(8.2c.1, #string, [[Chronische Erkrankung, Andere:]], #DE-BB)
-    * insert enableWhenCode(8.2c, =, SEU_EF_FachaerzteCS, andere)
   * item[+]
     * insert addItemWithSource(8.6a, #choice, [[Hilfsmittel?]], #DE-BB)
     * answerValueSet = Canonical(SEU_EF_HilfsmittelVS)
@@ -201,7 +162,7 @@ Description: "Sorgeberechtigtenfragebogen BB"
   * item[+]
     * insert addItem(8.19, #integer, [[Grad der Behinderung]])
   * item[+]
-    * answerValueSet = Canonical(PflegegradVS)
+    * answerValueSet = $pflegegrad-de
     * insert addItem(8.20, #choice, [[Pflegegrad]])
   * item[+]
     * insert addItem(8.23, #boolean, [[Regelmäßige Medikamenteneinnahme]])

@@ -8,7 +8,7 @@ Description: "Sorgeberechtigtenfragebogen MV"
 * contained[+] = GenderDEVS
 * contained[+] = AuffaelligkeitVerhaltenVS
 * contained[+] = ErkrankungenLetztesJahrVS
-* contained[+] = PflegegradVS
+* contained[+] = pflegegrad-de
 * contained[+] = UnfallArtVS
 * contained[+] = ErwerbsstatusVS
 * contained[+] = AtopischeErkrankungenVS
@@ -16,11 +16,11 @@ Description: "Sorgeberechtigtenfragebogen MV"
 * contained[+] = JaNeinWartelisteVS
 * contained[+] = SEU_EF_OperationenVS
 * contained[+] = SEU_EF_BehandlungstypVS
+* insert QMeta(1.0.0)
 * id = "SEU-Sorgeberechtigtenfragebogen-MV"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenMV"
 * title = "SEU Sorgeberechtigtenfragebogen MV"
 * insert launchContext("patient", #Patient, "Patientenkontext")
-* status = #draft
 * derivedFrom[0] = Canonical(Sorgeberechtigtenfragebogen)
 //********************************************
 // Personenbezogene Daten Kind
@@ -146,6 +146,7 @@ Description: "Sorgeberechtigtenfragebogen MV"
     * insert maxValueInt(6500)    
   * item[+]
     * insert addItem(5.3a, #integer, [[Geburtslänge (in cm)]])
+    * insert uunit(cm, "cm")
   * item[+]
     * insert addItem(5.5, #boolean, [[Auffälligkeit bei der Geburt]])
     * item[+]
@@ -172,8 +173,10 @@ Description: "Sorgeberechtigtenfragebogen MV"
       * answerBoolean = false
   * item[+]
     * insert addItem(7.3, #integer, [[Freies Laufen ab? (Monate)]])
+    * insert uunit(mo, "Monate")
   * item[+]
     * insert addItem(7.5, #integer, [[Erste Sätze ab? (Monate)]])
+    * insert uunit(mo, "Monate")
   * item[+]
     * insert addItem(7.11, #open-choice, [[Auffälligkeit des Verhaltens]])
     * repeats = true
@@ -207,9 +210,10 @@ Description: "Sorgeberechtigtenfragebogen MV"
     * answerValueSet = Canonical(AtopischeErkrankungenVS)  
     * insert addItem(8.16a, #choice, [[Besitzt Ihr Kind Allergien?]])
   * item[+]
+    // TODO: Einheit für Grad der Behinderung prüfen (GdB ist dimensionslos nach deutschem Recht, ggf. % als UCUM-Einheit)
     * insert addItem(8.19, #integer, [[Grad der Behinderung]])
   * item[+]
-    * answerValueSet = Canonical(PflegegradVS)
+    * answerValueSet = $pflegegrad-de
     * insert addItem(8.20, #choice, [[Pflegegrad]])
   * item[+]
     * insert addItem(8.21, #boolean, [[Schwere Behinderung vorhanden?]])
@@ -300,7 +304,7 @@ Description: "Sorgeberechtigtenfragebogen MV"
   * item[+]
     * insert addItem(11.2, #string, Name Kinderarzt)
   * item[+]
-    * insert addItem(11.3, #string, Name Facharzt)
+    * insert addItem(11.3, #text, Name Fachärzte)
 //********************************************
 // Sonstiges
 * item[+]

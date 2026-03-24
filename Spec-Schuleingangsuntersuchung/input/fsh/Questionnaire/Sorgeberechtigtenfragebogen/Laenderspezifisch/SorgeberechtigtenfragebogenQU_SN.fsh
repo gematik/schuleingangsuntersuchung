@@ -8,21 +8,14 @@ Description: "Sorgeberechtigtenfragebogen SN"
 * contained[+] = SEU_EF_BildungsabschlussVS
 * contained[+] = ErwerbsstatusVS
 * contained[+] = RechtsLinksHaenderVS
-* contained[+] = LinksRechtsBeidseitsKeineAngabeVS
-* contained[+] = StoffwechselstoerungVS
-* contained[+] = ErkrankungVS
-* contained[+] = InfektionsKrankheitVS
-* contained[+] = UnfallOrtVS
-* contained[+] = UnfallArtVS
-* contained[+] = VersorgungsartVS
 * contained[+] = ChronischeKrankheitenVS
 * contained[+] = AtopischeErkrankungenVS
 * contained[+] = JaNeinWartelisteVS
+* insert QMeta(1.0.0)
 * id = "SEU-Sorgeberechtigtenfragebogen-SN"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenSN"
 * title = "SEU Sorgeberechtigtenfragebogen SN"
 * insert launchContext("patient", #Patient, "Patientenkontext")
-* status = #draft
 * derivedFrom[0] = Canonical(Sorgeberechtigtenfragebogen)
 //********************************************
 * item[+]
@@ -81,12 +74,9 @@ Description: "Sorgeberechtigtenfragebogen SN"
     * item[+]
       * insert helpItem(3.2.5-info, [[Bitte geben sie die chronischen Erkrankungen des Kindes an.]])
     * item[+]
-      * insert addItem(3.2.5, #choice, Chronische Erkrankung)
+      * insert addItem(3.2.5, #open-choice, Chronische Erkrankung)
       * answerValueSet = Canonical(ChronischeKrankheitenVS)
       * repeats = true
-      * item[+]
-        * insert enableWhenCode(3.2.5, =, ChronischeKrankheiten, sonstiges)
-        * insert addItem(3.2.5.1, #string, [[Welche sonstige(n) chronischen Erkrankung(en)?]])
 //********************************************
 // Kinderbetreuung
 * item[+]
@@ -114,6 +104,7 @@ Description: "Sorgeberechtigtenfragebogen SN"
     * insert uunit(g, "Gramm")
   * item[+]
     * insert addItem(5.3a, #integer, [[Geburtslänge (in cm)]])
+    * insert uunit(cm, "cm")
   * item[+]
     * insert addItem(5.5, #boolean, [[Auffälligkeit bei der Geburt]])
     * item[+]
@@ -132,10 +123,13 @@ Description: "Sorgeberechtigtenfragebogen SN"
   * insert addItem(7, #group, [[Entwicklung]])
   * item[+]
     * insert addItem(7.3, #integer, [[Freies Laufen ab? (Monate)]])
+    * insert uunit(mo, "Monate")
   * item[+]
     * insert addItem(7.4, #integer, [[Erste Worte ab? (Monate)]])
+    * insert uunit(mo, "Monate")
   * item[+]
     * insert addItem(7.6, #integer, [[Tagsüber ohne Windeln ab? (Jahre)]])
+    * insert uunit(a, "Jahre")
   * item[+]
     * answerValueSet = Canonical(RechtsLinksHaenderVS)
     * insert addItem(7.9, #choice, [[Links- oder Rechtshänder]])
@@ -167,10 +161,7 @@ Description: "Sorgeberechtigtenfragebogen SN"
       * insert enableWhenBoolean(8.15, =, true)
   * item[+]
     * answerValueSet = Canonical(AtopischeErkrankungenVS)  
-    * insert addItem(8.16a, #choice, [[Besitzt Ihr Kind Allergien?]])
-    * item[+]
-      * insert addItem(8.16a.1, #string, [[Welche sonstigen Allergien?]])  
-      * insert enableWhenCode(8.16a, =, AtopischeErkrankungenCS, sonstiges)
+    * insert addItem(8.16a, #open-choice, [[Besitzt Ihr Kind Allergien?]])
   * item[+]
     * insert addItem(8.23, #boolean, [[Regelmäßige Medikamenteneinnahme]])
   * item[+]

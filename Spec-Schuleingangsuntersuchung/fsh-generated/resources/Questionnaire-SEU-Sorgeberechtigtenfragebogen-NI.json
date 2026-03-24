@@ -1773,52 +1773,6 @@
     },
     {
       "resourceType": "ValueSet",
-      "id": "UnfallOrtVS",
-      "status": "draft",
-      "name": "UnfallOrtVS",
-      "title": "UnfallOrtVS",
-      "description": "UnfallOrtVS",
-      "url": "https://www.oegd.de/fhir/seu/ValueSet/UnfallOrtVS",
-      "expansion": {
-        "timestamp": "2024-04-04T11:34:46+00:00",
-        "contains": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallOrtCS",
-            "code": "zu_hause",
-            "display": "Zu Hause"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallOrtCS",
-            "code": "kita",
-            "display": "Kita"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallOrtCS",
-            "code": "freizeit",
-            "display": "Freizeit"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallOrtCS",
-            "code": "straßenverkehr",
-            "display": "Straßenverkehr"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallOrtCS",
-            "code": "anderer_ort",
-            "display": "Anderer Ort"
-          }
-        ]
-      },
-      "compose": {
-        "include": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallOrtCS"
-          }
-        ]
-      }
-    },
-    {
-      "resourceType": "ValueSet",
       "id": "seu-ef-bildungsabschluss-vs",
       "status": "draft",
       "name": "SEU_EF_BildungsabschlussVS",
@@ -2515,6 +2469,7 @@
       "description": "WieVieleStundenFreizeitVS",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/WieVieleStundenFreizeitVS",
       "expansion": {
+        "timestamp": "2025-03-04T12:00:00+00:00",
         "contains": [
           {
             "system": "https://www.oegd.de/fhir/seu/CodeSystem/WieVieleStundenFreizeitCS",
@@ -2550,6 +2505,7 @@
       "description": "WieOftImSportVereinVS",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/WieOftImSportVereinVS",
       "expansion": {
+        "timestamp": "2025-03-04T12:00:00+00:00",
         "contains": [
           {
             "system": "https://www.oegd.de/fhir/seu/CodeSystem/WieOftImSportVereinCS",
@@ -2580,6 +2536,7 @@
       "description": "WieOftTrainingVS",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/WieOftTrainingVS",
       "expansion": {
+        "timestamp": "2025-03-04T12:00:00+00:00",
         "contains": [
           {
             "system": "https://www.oegd.de/fhir/seu/CodeSystem/WieOftTrainingCS",
@@ -2612,6 +2569,9 @@
       }
     }
   ],
+  "version": "1.0.0",
+  "status": "active",
+  "experimental": false,
   "url": "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenNI",
   "title": "SEU Sorgeberechtigtenfragebogen NI",
   "extension": [
@@ -2636,7 +2596,6 @@
       ]
     }
   ],
-  "status": "draft",
   "derivedFrom": [
     "https://www.oegd.de/fhir/seu/Questionnaire/Sorgeberechtigtenfragebogen"
   ],
@@ -3084,6 +3043,16 @@
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
           ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "code": "cm",
+                "system": "http://unitsofmeasure.org",
+                "display": "cm"
+              }
+            }
+          ],
           "required": true
         },
         {
@@ -3094,6 +3063,16 @@
             {
               "code": "5.3c",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "code": "wk",
+                "system": "http://unitsofmeasure.org",
+                "display": "Wochen"
+              }
             }
           ],
           "required": true

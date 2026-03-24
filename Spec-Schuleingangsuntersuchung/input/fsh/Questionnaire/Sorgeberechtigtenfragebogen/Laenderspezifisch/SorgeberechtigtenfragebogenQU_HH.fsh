@@ -6,16 +6,15 @@ Description: "Sorgeberechtigtenfragebogen HH"
 * contained[+] = DeuevAnlage8LaenderkennzeichenVS
 * contained[+] = GenderDEVS
 * contained[+] = ChronischeErkrankungenVS
-* contained[+] = UnfallOrtVS
-* contained[+] = SEU-UB-StaatsangehoerigkeitVS
+* contained[+] = SEU_UB_StaatsangehoerigkeitVS
 * contained[+] = BezirkeHHVS
 * contained[+] = PersonensorgeberechtigterBeziehungVS
 * contained[+] = PersonensorgeberechtigterZusammenlebendVS
+* insert QMeta(1.0.0)
 * id = "SEU-Sorgeberechtigtenfragebogen-HH"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenHH"
 * title = "SEU Sorgeberechtigtenfragebogen HH"
 * insert launchContext("patient", #Patient, "Patientenkontext")
-* status = #draft
 * derivedFrom[0] = Canonical(Sorgeberechtigtenfragebogen)
 //********************************************
 * item[+]
@@ -76,11 +75,11 @@ Description: "Sorgeberechtigtenfragebogen HH"
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
   * item[+]
     * insert addItemWithSource(1.4b, #choice, [[Staatsangehörigkeit Mutter]], #DE-BB)
-    * answerValueSet = Canonical(SEU-UB-StaatsangehoerigkeitVS)
+    * answerValueSet = Canonical(SEU_UB_StaatsangehoerigkeitVS)
     * required = true
   * item[+]
     * insert addItemWithSource(1.4c, #choice, [[Staatsangehörigkeit Vater]], #DE-BB)
-    * answerValueSet = Canonical(SEU-UB-StaatsangehoerigkeitVS)
+    * answerValueSet = Canonical(SEU_UB_StaatsangehoerigkeitVS)
     * required = true
   * item[+]
     * insert addItem(1.5, #choice, [[Geburtsland]])
@@ -207,6 +206,7 @@ Description: "Sorgeberechtigtenfragebogen HH"
     * insert addItem(4.0b, #boolean, Ist das Kind in einem Kindergarten/einer Kindertageseinrichtung?)
   * item[+]
     * insert addItem(4.1, #integer, [[Besuch Kita/Krippe (Dauer in Jahren)]])
+    * insert uunit(a, "Jahre")
   * item[+]
     * insert addItem(4.6b, #string, Name des Kindergartens)
     * enableWhen[+]
@@ -231,29 +231,34 @@ Description: "Sorgeberechtigtenfragebogen HH"
     * required = true
   * item[+]
     * insert addItem(5.3a, #integer, [[Geburtslänge (in cm)]])
+    * insert uunit(cm, "cm")
     * required = true
   * item[+]
     * insert addItem(5.3b, #integer, [[Kopfumfang (in cm)]])
+    * insert uunit(cm, "cm")
     * required = true
   * item[+]
     * insert addItem(5.3c, #integer, [[In welcher SS-Woche wurde Ihr Kind geboren?]])
+    * insert uunit(wk, "Wochen")
     * required = true
   * item[+]
     * insert addItem(5.5, #boolean, [[Auffälligkeit bei der Geburt]])
     * item[+]
       * insert enableWhenBoolean(5.5, =, true)
       * insert addItem(5.5.1, #string, [[Welche Auffälligkeit?]])
-    // "APGAR" steht im Deutschen für folgende Kennzeichen: Atmung, Puls, Grundtonus (Muskelspannung und Bewegung), Aussehen (Hautfarbe) und Reflexe
   * item[+]
     * insert addItemWithSource(5.11, #string, [[APGAR]], #DE-HB)
     * insert regEx([["^\\d{2}\\/\\d{2}\\/\\d{2}$"]])
     * insert entryFormat([[XX/XX/XX]])
     * required = true
-    // "pH-Wert" ist eine Messung des Säurebasengrades im Blut oder einer Flüssigkeit. Ein typischer pH-Wert für ein neugeborenes Kind liegt zwischen 7,15 und 7,45.
+    * item[+]
+      * insert helpItem(5.11h, [[APGAR steht im Deutschen für folgende Kennzeichen: Atmung, Puls, Grundtonus (Muskelspannung und Bewegung), Aussehen (Hautfarbe) und Reflexe]])
   * item[+]
-    * insert addItemWithSource(5.12, #string, [[pH- Wert]], #DE-HB)
+    * insert addItemWithSource(5.12, #string, [[pH-Wert]], #DE-HB)
     * insert regEx([["^\\d,\\d{2}$"]])
-    * insert entryFormat([[X,XX]])    
+    * insert entryFormat([[X,XX]])
+    * item[+]
+      * insert helpItem(5.12h, [[pH-Wert ist eine Messung des Säurebasengrades im Blut oder einer Flüssigkeit. Ein typischer pH-Wert für ein neugeborenes Kind liegt zwischen 7,15 und 7,45.]])    
 //********************************************
 // Erkrankungen und gesundheitliche Einschränkungen
 * item[+]

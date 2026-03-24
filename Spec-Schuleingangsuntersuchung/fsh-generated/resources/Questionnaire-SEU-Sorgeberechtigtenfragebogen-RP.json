@@ -4133,6 +4133,9 @@
       }
     }
   ],
+  "version": "1.0.0",
+  "status": "active",
+  "experimental": false,
   "url": "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenRP",
   "title": "SEU Sorgeberechtigtenfragebogen RP",
   "extension": [
@@ -4157,7 +4160,6 @@
       ]
     }
   ],
-  "status": "draft",
   "derivedFrom": [
     "https://www.oegd.de/fhir/seu/Questionnaire/Sorgeberechtigtenfragebogen"
   ],
@@ -4464,7 +4466,7 @@
         },
         {
           "linkId": "1.12",
-          "type": "choice",
+          "type": "open-choice",
           "text": "(1.12) Kind lebt hauptsächlich bei",
           "code": [
             {
@@ -4473,27 +4475,6 @@
             }
           ],
           "answerValueSet": "#WohnsituationKindVS"
-        },
-        {
-          "linkId": "1.12.1",
-          "type": "string",
-          "text": "(1.12.1) Kind lebt hauptsächlich bei anderen",
-          "code": [
-            {
-              "code": "1.12.1",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "enableWhen": [
-            {
-              "question": "1.12",
-              "operator": "=",
-              "answerCoding": {
-                "code": "andere",
-                "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS"
-              }
-            }
-          ]
         }
       ]
     },
@@ -4790,7 +4771,7 @@
             },
             {
               "linkId": "3.2.5",
-              "type": "choice",
+              "type": "open-choice",
               "text": "(3.2.5) Chronische Erkrankung",
               "code": [
                 {
@@ -4799,30 +4780,7 @@
                 }
               ],
               "answerValueSet": "#chronische-krankheiten-vs",
-              "repeats": true,
-              "item": [
-                {
-                  "enableWhen": [
-                    {
-                      "question": "3.2.5",
-                      "operator": "=",
-                      "answerCoding": {
-                        "code": "sonstiges",
-                        "system": "https://www.oegd.de/fhir/seu/CodeSystem/chronische-krankheiten"
-                      }
-                    }
-                  ],
-                  "linkId": "3.2.5.1",
-                  "type": "string",
-                  "text": "(3.2.5.1) Welche sonstige(n) chronischen Erkrankung(en)?",
-                  "code": [
-                    {
-                      "code": "3.2.5.1",
-                      "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-                    }
-                  ]
-                }
-              ]
+              "repeats": true
             },
             {
               "linkId": "3.2.6",
@@ -5303,6 +5261,16 @@
                   "code": "6.6.1",
                   "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
                 }
+              ],
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                  "valueCoding": {
+                    "code": "a",
+                    "system": "http://unitsofmeasure.org",
+                    "display": "Jahre"
+                  }
+                }
               ]
             },
             {
@@ -5313,6 +5281,16 @@
                 {
                   "code": "6.6.2",
                   "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                  "valueCoding": {
+                    "code": "mo",
+                    "system": "http://unitsofmeasure.org",
+                    "display": "Monate"
+                  }
                 }
               ]
             }
@@ -5491,35 +5469,12 @@
         {
           "answerValueSet": "#atopische-erkrankungen-vs",
           "linkId": "8.16a",
-          "type": "choice",
+          "type": "open-choice",
           "text": "(8.16a) Besitzt Ihr Kind Allergien?",
           "code": [
             {
               "code": "8.16a",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "item": [
-            {
-              "linkId": "8.16a.1",
-              "type": "string",
-              "text": "(8.16a.1) Welche sonstigen Allergien?",
-              "code": [
-                {
-                  "code": "8.16a.1",
-                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-                }
-              ],
-              "enableWhen": [
-                {
-                  "question": "8.16a",
-                  "operator": "=",
-                  "answerCoding": {
-                    "code": "sonstiges",
-                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs"
-                  }
-                }
-              ]
             }
           ]
         },

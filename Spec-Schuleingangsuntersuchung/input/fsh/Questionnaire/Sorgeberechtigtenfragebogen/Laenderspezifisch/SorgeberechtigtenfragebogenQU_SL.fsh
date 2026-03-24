@@ -8,11 +8,9 @@ Description: "Sorgeberechtigtenfragebogen SL"
 * contained[+] = ISO6392_LanguageVS
 * contained[+] = ChronischeErkrankungenVS
 * contained[+] = JaNeinAngemeldetVS
-* contained[+] = VersorgungsartVS
-* contained[+] = PflegegradVS
+* contained[+] = pflegegrad-de
 * contained[+] = GradDerBehinderungVS
 * contained[+] = SEU_EF_OperationenVS
-* contained[+] = SEU_EF_UnfallVS
 * contained[+] = SEU_EF_AlterKindVS
 * contained[+] = SEU_EF_AlterKindEinreiseVS
 * contained[+] = SEU_EF_SchwangerschaftVS
@@ -20,12 +18,11 @@ Description: "Sorgeberechtigtenfragebogen SL"
 * contained[+] = SEU_EF_BehandlungstypVS
 * contained[+] = SEU_EF_SpracheVS
 * contained[+] = SEU_EF_BildungsabschlussVS
-* contained[+] = SEU-UB-StaatsangehoerigkeitVS
+* insert QMeta(1.0.0)
 * id = "SEU-Sorgeberechtigtenfragebogen-SL"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenSL"
 * title = "SEU Sorgeberechtigtenfragebogen SL"
 * insert launchContext("patient", #Patient, "Patientenkontext")
-* status = #draft
 * derivedFrom[0] = Canonical(Sorgeberechtigtenfragebogen)
 //********************************************
 // Personenbezogene Daten Kind
@@ -86,7 +83,7 @@ Description: "Sorgeberechtigtenfragebogen SL"
       * item[+]
         * insert addItemWithSource(3.2.6a.2, #choice, [[Pflegegrad]], #DE-SL)
         * insert enableWhenBoolean(3.2.6a, =, true)
-        * answerValueSet = Canonical(PflegegradVS)
+        * answerValueSet = $pflegegrad-de
 //********************************************
 // Kinderbetreuung
 * item[+]
@@ -174,13 +171,10 @@ Description: "Sorgeberechtigtenfragebogen SL"
     * insert addItem(8.27, #boolean, [[Wurde Ihr Kind operiert]])
     * required = true
     * item[+]
-      * insert addItem(8.27.2, #choice, [[Welche Operationen wurden durchgeführt?]])
+      * insert addItem(8.27.2, #open-choice, [[Welche Operationen wurden durchgeführt?]])
       * repeats = true
       * insert enableWhenBoolean(8.27, =, true)
       * answerValueSet = Canonical(SEU_EF_OperationenVS)
-      * item[+]
-        * insert addItemWithSource(8.27.2.1, #string, [[Sonstige Operationen?]], #DE-SL)
-        * insert enableWhenCode(8.27.2, =, SEU_EF_OperationenCS, sonstige_operation)
   * item[+]
     * insert addItemWithSource(8.30, #boolean, [[Wurde Ihr Kind jemals aufgrund von Unfallverletzungen von einem Arzt behandelt?]], #DE-SL)
     * required = true
@@ -287,6 +281,7 @@ Description: "Sorgeberechtigtenfragebogen SL"
     * answerValueSet = Canonical(SEU_EF_UnfallortVS)
     * required = true
   * item[+]
+    // TODO: 8.56.1 hat 3 enableWhen-Bedingungen (exists + != nein + != keine_angabe, ALL) - nicht durch "Sonstiges"-Auswahl gesteuert. Prüfen ob open-choice sinnvoll oder anderes Vorgehen nötig.
     * insert addItemWithSource(8.56, #choice, [[Unfälle Sonstige]], #DE-SL)
     * answerValueSet = Canonical(SEU_EF_UnfallortVS)
     * required = true

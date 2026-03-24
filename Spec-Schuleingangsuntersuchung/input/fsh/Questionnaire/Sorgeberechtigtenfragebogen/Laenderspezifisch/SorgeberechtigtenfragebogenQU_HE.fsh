@@ -10,11 +10,11 @@ Description: "Sorgeberechtigtenfragebogen HE"
 * contained[+] = ChronischeKrankheitenVS
 * contained[+] = AtopischeErkrankungenVS
 * contained[+] = SEU_EF_DauerHEVS
+* insert QMeta(1.0.0)
 * id = "SEU-Sorgeberechtigtenfragebogen-HE"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenHE"
 * title = "SEU Sorgeberechtigtenfragebogen HE"
 * insert launchContext("patient", #Patient, "Patientenkontext")
-* status = #draft
 * derivedFrom[0] = Canonical(Sorgeberechtigtenfragebogen)
 //********************************************
 * item[+]
@@ -135,12 +135,9 @@ Description: "Sorgeberechtigtenfragebogen HE"
     * insert addItem(3.2, #group, Familiäre Vorgeschichte)
     * item[+]
       * insert addItem(3.2.1, #boolean, Brillenträger)
-      * insert addItem(3.2.5, #choice, Chronische Erkrankung)
+      * insert addItem(3.2.5, #open-choice, Chronische Erkrankung)
       * answerValueSet = Canonical(ChronischeKrankheitenVS)
       * repeats = true
-      * item[+]
-        * insert enableWhenCode(3.2.5, =, ChronischeKrankheiten, sonstiges)
-        * insert addItem(3.2.5.1, #string, [[Welche sonstige(n) chronischen Erkrankung(en)?]])
 //********************************************
 // Kinderbetreuung
 * item[+]
@@ -201,10 +198,7 @@ Description: "Sorgeberechtigtenfragebogen HE"
       * insert enableWhenBoolean(8.15, =, true)
   * item[+]
     * answerValueSet = Canonical(AtopischeErkrankungenVS)  
-    * insert addItem(8.16a, #choice, [[Besitzt Ihr Kind Allergien?]])
-    * item[+]
-      * insert addItem(8.16a.1, #string, [[Welche sonstigen Allergien?]])  
-      * insert enableWhenCode(8.16a, =, AtopischeErkrankungenCS, sonstiges)
+    * insert addItem(8.16a, #open-choice, [[Besitzt Ihr Kind Allergien?]])
   * item[+]
     * insert addItem(8.23, #boolean, [[Regelmäßige Medikamenteneinnahme]])
   * item[+]
@@ -244,7 +238,7 @@ Description: "Sorgeberechtigtenfragebogen HE"
   * item[+]
     * insert addItem(11.2, #string, Name Kinderarzt)
   * item[+]
-    * insert addItem(11.3, #string, Name Facharzt)
+    * insert addItem(11.3, #text, Name Fachärzte)
 //********************************************
 // Sonstiges
 * item[+]

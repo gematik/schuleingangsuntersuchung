@@ -19,11 +19,11 @@ Description: "SorgeberechtigtenfragebogenBY"
 * contained[+] = SEU_UB_AntwortKindergartenBesuchVS
 * contained[+] = SEU_UB_KontaktDeutscheSpracheVS
 * contained[+] = SEU_UB_HaendigkeitVS
+* insert QMeta(1.0.0)
 * id = "SEU-Sorgeberechtigtenfragebogen-BY"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenBY"
 * title = "SEU Sorgeberechtigtenfragebogen BY"
 * insert launchContext("patient", #Patient, "Patientenkontext")
-* status = #draft
 * derivedFrom[0] = Canonical(Sorgeberechtigtenfragebogen)
 //********************************************
 // Personenbezogene Daten Kind

@@ -6,7 +6,6 @@ Description: "Sorgeberechtigtenfragebogen NI"
 * contained[+] = SEU_EF_NeinAbgeschlossenLaeuftGeplantVS
 * contained[+] = DeuevAnlage8LaenderkennzeichenVS
 * contained[+] = GenderDEVS
-* contained[+] = UnfallOrtVS
 * contained[+] = SEU_EF_BildungsabschlussVS
 * contained[+] = ErwerbsstatusVS
 * contained[+] = VersorgungsartVS
@@ -15,7 +14,7 @@ Description: "Sorgeberechtigtenfragebogen NI"
 * contained[+] = SEU_EF_OperationenVS
 * contained[+] = SEU_EF_UnfallortVS
 * contained[+] = SEU_EF_ZeitdauerVS
-* contained[+] = SEU-UB-StaatsangehoerigkeitVS
+* contained[+] = SEU_UB_StaatsangehoerigkeitVS
 * contained[+] = GeburtArtVS
 * contained[+] = ErkrankungenLetztesJahrPlusVerbrennungenVS
 * contained[+] = JaNeinWeissNichtVS
@@ -23,11 +22,11 @@ Description: "Sorgeberechtigtenfragebogen NI"
 * contained[+] = WieVieleStundenFreizeitVS
 * contained[+] = WieOftImSportVereinVS
 * contained[+] = WieOftTrainingVS
+* insert QMeta(1.0.0)
 * id = "SEU-Sorgeberechtigtenfragebogen-NI"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenNI"
 * title = "SEU Sorgeberechtigtenfragebogen NI"
 * insert launchContext("patient", #Patient, "Patientenkontext")
-* status = #draft
 * derivedFrom[0] = Canonical(Sorgeberechtigtenfragebogen)
 //********************************************
 // Personenbezogene Daten Kind
@@ -37,7 +36,7 @@ Description: "Sorgeberechtigtenfragebogen NI"
   * text = "(1) Personenbezogene Daten Kind"
   * item[+]
     * insert addItemWithSource(1.4b, #choice, [[Staatsangehörigkeit Mutter]], #DE-BB)
-    * answerValueSet = Canonical(SEU-UB-StaatsangehoerigkeitVS)
+    * answerValueSet = Canonical(SEU_UB_StaatsangehoerigkeitVS)
     * required = true
   * item[+]
     * insert addItemWithSource(1.4b.1, #choice, [[Staatsangehörigkeit Mutter andere]], #DE-BB)
@@ -48,7 +47,7 @@ Description: "Sorgeberechtigtenfragebogen NI"
     * required = true
   * item[+]
     * insert addItemWithSource(1.4c, #choice, [[Staatsangehörigkeit Vater]], #DE-BB)
-    * answerValueSet = Canonical(SEU-UB-StaatsangehoerigkeitVS)
+    * answerValueSet = Canonical(SEU_UB_StaatsangehoerigkeitVS)
     * required = true
   * item[+]
     * insert addItemWithSource(1.4c.1, #choice, [[Staatsangehörigkeit Vater andere]], #DE-BB)
@@ -124,9 +123,11 @@ Description: "Sorgeberechtigtenfragebogen NI"
     * required = true
   * item[+]
     * insert addItem(5.3a, #integer, [[Geburtslänge (in cm)]])
+    * insert uunit(cm, "cm")
     * required = true
   * item[+]
     * insert addItem(5.3c, #integer, [[In welcher SS-Woche wurde Ihr Kind geboren?]])
+    * insert uunit(wk, "Wochen")
     * required = true
   * item[+]
     * insert addItem(5.5, #boolean, [[Auffälligkeit bei der Geburt]])

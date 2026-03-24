@@ -7,6 +7,5 @@ Anforderungen als Ausdruck normativer Festlegungen werden durch die dem [RFC2119
 ### Bedeutung von Must-Support-Flags
 
 Die Bedeutung von [MustSupport-Flags](http://hl7.org/fhir/R4/conformance-rules.html#mustSupport) ist im FHIR-Standard nicht festgelegt und hängt vom Kontext der Implementierung ab. In diesem Leitfaden besagt ein MS Flag folgendes:
-* das Element ist zu persistieren
-* das Element ist in der UI darzustellen
-* das Element ist in der UI veränderbar
+
+Das Element SOLL für die Nutzung durch SDC-Prepopulation vorhanden sein.

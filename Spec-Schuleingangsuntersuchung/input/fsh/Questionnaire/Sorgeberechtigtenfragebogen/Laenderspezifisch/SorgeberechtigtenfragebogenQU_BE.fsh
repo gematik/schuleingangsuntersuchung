@@ -13,11 +13,11 @@ Description: "Sorgeberechtigtenfragebogen BE"
 * contained[+] = LebensumfeldVS
 * contained[+] = SchulabschlussBerlinVS
 * contained[+] = BerufstaetigkeitElternBerlinVS
+* insert QMeta(1.0.0)
 * id = "SEU-Sorgeberechtigtenfragebogen-BE"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenBE"
 * title = "SEU Sorgeberechtigtenfragebogen Berlin"
 * insert launchContext("patient", #Patient, "Patientenkontext")
-* status = #draft
 * derivedFrom[0] = Canonical(Sorgeberechtigtenfragebogen)
 //********************************************
 * item[+]

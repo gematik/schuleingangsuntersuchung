@@ -9,11 +9,11 @@ Description: "Sorgeberechtigtenfragebogen BW"
 * contained[+] = SEU_EF_MedienkonsumVS
 * contained[+] = SEU_EF_DauerBWVS
 * contained[+] = SEU_EF_BildungsabschlussBWVS
+* insert QMeta(1.0.0)
 * id = "SEU-Sorgeberechtigtenfragebogen-BW"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenBW"
 * title = "SEU Sorgeberechtigtenfragebogen BW"
 * insert launchContext("patient", #Patient, "Patientenkontext")
-* status = #draft
 * derivedFrom[0] = Canonical(Sorgeberechtigtenfragebogen)
 //********************************************
 // Personenbezogene Daten Kind
@@ -33,6 +33,7 @@ Description: "Sorgeberechtigtenfragebogen BW"
   * insert addItem(4, #group, Kinderbetreuung)
   * item[+]
     * insert addItemWithSource(4.0c, #integer, [[Wie viele Stunden ist das Kind pro Woche in einer Kindertageseinrichtung?]], #DE-BW)
+    * insert uunit(h, "Stunden")
   * item[+]
     * insert addItemWithSource(4.1b, #choice, Wie lange besucht Ihr Kind bis jetzt eine Kindertageseinrichtung?, #DE-BW)
     * answerValueSet = Canonical(SEU_EF_DauerBWVS)

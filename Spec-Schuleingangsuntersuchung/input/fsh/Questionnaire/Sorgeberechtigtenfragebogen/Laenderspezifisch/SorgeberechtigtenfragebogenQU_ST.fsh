@@ -22,11 +22,11 @@ Description: "Sorgeberechtigtenfragebogen ST"
 * contained[+] = AtopischeErkrankungenVS
 * contained[+] = AllgemeineBeschwerdenVS
 * contained[+] = KrankenhausaufenthaltGrundVS
+* insert QMeta(1.0.0)
 * id = "SEU-Sorgeberechtigtenfragebogen-ST"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenST"
 * title = "SEU Sorgeberechtigtenfragebogen ST"
 * insert launchContext("patient", #Patient, "Patientenkontext")
-* status = #draft
 * derivedFrom[0] = Canonical(Sorgeberechtigtenfragebogen)
 //********************************************
 // Personenbezogene Daten Kind
@@ -189,35 +189,23 @@ Description: "Sorgeberechtigtenfragebogen ST"
       * required = true
   * item[+]
     * answerValueSet = Canonical(AtopischeErkrankungenVS)  
-    * insert addItem(8.16a, #choice, [[Besitzt Ihr Kind Allergien?]])
+    * insert addItem(8.16a, #open-choice, [[Besitzt Ihr Kind Allergien?]])
     * required = true
-    * item[+]
-      * insert addItem(8.16a.1, #string, [[Welche sonstigen Allergien?]])  
-      * insert enableWhenCode(8.16a, =, AtopischeErkrankungenCS, sonstiges)
-      * required = true
   * item[+]
     * insert addItemWithSource(8.16c, #choice, [[Ärztlich festgestellte Krankheiten]], #DE-ST)
     * answerValueSet = Canonical(AErztlichFestgestellteKrankheitenVS)
     * repeats = true
     * required = true
   * item[+]
-    * insert addItemWithSource(8.16d, #choice, [[Frühere Erkrankungen]], #DE-ST)
+    * insert addItemWithSource(8.16d, #open-choice, [[Frühere Erkrankungen]], #DE-ST)
     * answerValueSet = Canonical(FruehereErkrankungenVS)
     * repeats = true
     * required = true
-    * item[+]
-      * insert addItemWithSource(8.16d.1, #string, [[Welche sonstige früheren Erkrankungen?]], #DE-ST)
-      * insert enableWhenCode(8.16d, =, FruehereErkrankungenCS, sonstige_welche)
-      * required = true
   * item[+]
-    * insert addItemWithSource(8.16e, #choice, [[Derzeitige Erkrankungen]], #DE-ST)
+    * insert addItemWithSource(8.16e, #open-choice, [[Derzeitige Erkrankungen]], #DE-ST)
     * answerValueSet = Canonical(DerzeitigeErkrankungenVS)
     * repeats = true
     * required = true
-    * item[+]
-      * insert addItemWithSource(8.16e.1, #string, [[Welche sonstigen derzeitigen Erkrankungen?]], #DE-ST)
-      * insert enableWhenCode(8.16e, =, DerzeitigeErkrankungenCS, sonstige_welche)
-      * required = true
   * item[+]
     * insert addItem(8.23, #boolean, [[Regelmäßige Medikamenteneinnahme]])
     * required = true

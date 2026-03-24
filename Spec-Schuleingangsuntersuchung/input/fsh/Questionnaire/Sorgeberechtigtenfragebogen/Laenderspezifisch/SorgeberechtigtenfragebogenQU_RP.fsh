@@ -14,11 +14,11 @@ Description: "Sorgeberechtigtenfragebogen RP"
 * contained[+] = ChronischeKrankheitenVS
 * contained[+] = GeburtArtVS
 * contained[+] = PersonensorgeberechtigterBeziehungVS
+* insert QMeta(1.0.0)
 * id = "SEU-Sorgeberechtigtenfragebogen-RP"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenRP"
 * title = "SEU Sorgeberechtigtenfragebogen RP"
 * insert launchContext("patient", #Patient, "Patientenkontext")
-* status = #draft
 * derivedFrom[0] = Canonical(Sorgeberechtigtenfragebogen)
 //********************************************
 * item[+]
@@ -79,11 +79,8 @@ Description: "Sorgeberechtigtenfragebogen RP"
   * item[+]
     * insert addItem(1.11a, #string, Hausnummer)
   * item[+]
-    * insert addItem(1.12, #choice, [[Kind lebt hauptsächlich bei]])
+    * insert addItem(1.12, #open-choice, [[Kind lebt hauptsächlich bei]])
     * answerValueSet = Canonical(WohnsituationKindVS)
-  * item[+]
-    * insert addItem(1.12.1, #string, [[Kind lebt hauptsächlich bei anderen]])
-    * insert enableWhenCode(1.12, =, WohnsituationKindCS, andere)
 //********************************************
 // Personenbezogene Daten Personenberechtigter
 * item[+]
@@ -140,12 +137,9 @@ Description: "Sorgeberechtigtenfragebogen RP"
       * answerValueSet = Canonical(ChronischeErkrankungenVS)
       * repeats = true
     * item[+]
-      * insert addItem(3.2.5, #choice, Chronische Erkrankung)
+      * insert addItem(3.2.5, #open-choice, Chronische Erkrankung)
       * answerValueSet = Canonical(ChronischeKrankheitenVS)
       * repeats = true
-      * item[+]
-        * insert enableWhenCode(3.2.5, =, ChronischeKrankheiten, sonstiges)
-        * insert addItem(3.2.5.1, #string, [[Welche sonstige(n) chronischen Erkrankung(en)?]])
     * item[+]
       * insert addItem(3.2.6, #boolean, [[Hat Ihr Kind eine körperliche, geistige oder seelische Behinderung?]])
       * item[+]
@@ -236,8 +230,10 @@ Description: "Sorgeberechtigtenfragebogen RP"
       * answerBoolean = false
     * item[+]
       * insert addItem(6.6.1, #integer, [[Jahre]])
+      * insert uunit(a, "Jahre")
     * item[+]
       * insert addItem(6.6.2, #integer, [[Monate]])
+      * insert uunit(mo, "Monate")
 //********************************************
 // Entwicklung
 * item[+]
@@ -274,10 +270,7 @@ Description: "Sorgeberechtigtenfragebogen RP"
       * insert enableWhenBoolean(8.15, =, true)
   * item[+]
     * answerValueSet = Canonical(AtopischeErkrankungenVS)  
-    * insert addItem(8.16a, #choice, [[Besitzt Ihr Kind Allergien?]])
-    * item[+]
-      * insert addItem(8.16a.1, #string, [[Welche sonstigen Allergien?]])  
-      * insert enableWhenCode(8.16a, =, AtopischeErkrankungenCS, sonstiges)
+    * insert addItem(8.16a, #open-choice, [[Besitzt Ihr Kind Allergien?]])
   * item[+]
     * insert addItem(8.23, #boolean, [[Regelmäßige Medikamenteneinnahme]])
   * item[+]

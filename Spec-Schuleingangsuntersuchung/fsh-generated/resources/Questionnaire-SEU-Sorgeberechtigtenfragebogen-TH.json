@@ -4,47 +4,6 @@
   "contained": [
     {
       "resourceType": "ValueSet",
-      "id": "LinksRechtsBeidseitsKeineAngabeVS",
-      "status": "draft",
-      "name": "LinksRechtsBeidseitsKeineAngabeVS",
-      "title": "LinksRechtsBeidseitsKeineAngabeVS",
-      "description": "LinksRechtsBeidseitsKeineAngabeCS",
-      "url": "https://www.oegd.de/fhir/seu/ValueSet/LinksRechtsBeidseitsKeineAngabeVS",
-      "expansion": {
-        "timestamp": "2024-04-04T10:44:31+00:00",
-        "contains": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/LinksRechtsBeidseitsKeineAngabeCS",
-            "code": "links",
-            "display": "Links"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/LinksRechtsBeidseitsKeineAngabeCS",
-            "code": "rechts",
-            "display": "Rechts"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/LinksRechtsBeidseitsKeineAngabeCS",
-            "code": "beidseits",
-            "display": "Beidseits"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/LinksRechtsBeidseitsKeineAngabeCS",
-            "code": "keine_angabe",
-            "display": "Keine Angabe"
-          }
-        ]
-      },
-      "compose": {
-        "include": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/LinksRechtsBeidseitsKeineAngabeCS"
-          }
-        ]
-      }
-    },
-    {
-      "resourceType": "ValueSet",
       "id": "ErkrankungenTHVS",
       "status": "draft",
       "name": "ErkrankungenTHVS",
@@ -232,153 +191,79 @@
     },
     {
       "resourceType": "ValueSet",
-      "id": "PflegegradVS",
-      "status": "draft",
-      "name": "PflegegradVS",
-      "title": "PflegegradVS",
-      "description": "PflegegradVS",
-      "url": "https://www.oegd.de/fhir/seu/ValueSet/PflegegradVS",
-      "expansion": {
-        "timestamp": "2024-04-04T11:16:49+00:00",
-        "contains": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PflegegradCS",
-            "code": "pflegegrad_1",
-            "display": "Pflegegrad 1"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PflegegradCS",
-            "code": "pflegegrad_2",
-            "display": "Pflegegrad 2"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PflegegradCS",
-            "code": "pflegegrad_3",
-            "display": "Pflegegrad 3"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PflegegradCS",
-            "code": "pflegegrad_4",
-            "display": "Pflegegrad 4"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PflegegradCS",
-            "code": "pflegegrad_5",
-            "display": "Pflegegrad 5"
-          }
+      "id": "pflegegrad-de",
+      "meta": {
+        "profile": [
+          "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
         ]
       },
+      "url": "http://fhir.de/ValueSet/pflegegrad-de",
+      "version": "1.5.4",
+      "name": "PflegegradDE",
+      "title": "PflegegradDE ValueSet",
+      "status": "active",
+      "experimental": false,
+      "date": "2025-06-16",
+      "publisher": "HL7 Deutschland e.V. (Technisches Komitee FHIR)",
+      "contact": [
+        {
+          "telecom": [
+            {
+              "system": "url",
+              "value": "http://hl7.de/technische-komitees/fhir/"
+            }
+          ]
+        }
+      ],
+      "description": "Codes zur genaueren Differenzierung des Pflegegrads.",
       "compose": {
         "include": [
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/PflegegradCS"
-          }
-        ]
-      }
-    },
-    {
-      "resourceType": "ValueSet",
-      "id": "UnfallOrtVS",
-      "status": "draft",
-      "name": "UnfallOrtVS",
-      "title": "UnfallOrtVS",
-      "description": "UnfallOrtVS",
-      "url": "https://www.oegd.de/fhir/seu/ValueSet/UnfallOrtVS",
-      "expansion": {
-        "timestamp": "2024-04-04T11:34:46+00:00",
-        "contains": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallOrtCS",
-            "code": "zu_hause",
-            "display": "Zu Hause"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallOrtCS",
-            "code": "kita",
-            "display": "Kita"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallOrtCS",
-            "code": "freizeit",
-            "display": "Freizeit"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallOrtCS",
-            "code": "straßenverkehr",
-            "display": "Straßenverkehr"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallOrtCS",
-            "code": "anderer_ort",
-            "display": "Anderer Ort"
+            "system": "http://fhir.de/CodeSystem/bfarm/ops",
+            "filter": [
+              {
+                "property": "parent",
+                "op": "=",
+                "value": "9-984"
+              }
+            ]
           }
         ]
       },
-      "compose": {
-        "include": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallOrtCS"
-          }
-        ]
-      }
-    },
-    {
-      "resourceType": "ValueSet",
-      "id": "atopische-erkrankungen-vs",
-      "status": "draft",
-      "name": "AtopischeErkrankungenVS",
-      "title": "ValueSet für atopische/allergische Erkrankungen",
-      "description": "Dieses ValueSet beinhaltet eine Auswahl von Codes für die Klassifikation von atopischen/allergischen Erkrankungen, definiert im zugehörigen CodeSystem.",
-      "url": "https://www.oegd.de/fhir/seu/ValueSet/atopische-erkrankungen-vs",
       "expansion": {
-        "timestamp": "2024-04-12T15:47:43+00:00",
+        "identifier": "440c50b5-7272-4184-9ddd-95a75d8207f8",
+        "timestamp": "2019-07-06",
+        "total": 6,
         "contains": [
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs",
-            "code": "atopische_allergische",
-            "display": "Atopische/Allergische Erkrankungen"
+            "system": "http://fhir.de/CodeSystem/bfarm/ops",
+            "code": "9-984.6",
+            "display": "Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 1"
           },
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs",
-            "code": "nahrungsmittel",
-            "display": "Nahrungsmittelallergien"
+            "system": "http://fhir.de/CodeSystem/bfarm/ops",
+            "code": "9-984.7",
+            "display": "Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 2"
           },
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs",
-            "code": "pollen",
-            "display": "Pollenallergien"
+            "system": "http://fhir.de/CodeSystem/bfarm/ops",
+            "code": "9-984.8",
+            "display": "Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 3"
           },
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs",
-            "code": "hausstaubmilben",
-            "display": "Hausstaubmilbenallergien"
+            "system": "http://fhir.de/CodeSystem/bfarm/ops",
+            "code": "9-984.9",
+            "display": "Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 4"
           },
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs",
-            "code": "schimmelpilze",
-            "display": "Schimmelpilzallergien"
+            "system": "http://fhir.de/CodeSystem/bfarm/ops",
+            "code": "9-984.a",
+            "display": "Pflegebedürftigkeit: Pflegebedürftig nach Pflegegrad 5"
           },
           {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs",
-            "code": "tierhaare",
-            "display": "Tierhaarallergien"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs",
-            "code": "medikamente",
-            "display": "Medikamentenallergien"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs",
-            "code": "sonstiges",
-            "display": "Sonstige atopische/allergische Erkrankungen"
-          }
-        ]
-      },
-      "compose": {
-        "include": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs"
+            "system": "http://fhir.de/CodeSystem/bfarm/ops",
+            "code": "9-984.b",
+            "display": "Pflegebedürftigkeit: Erfolgter Antrag auf Einstufung in einen Pflegegrad"
           }
         ]
       }
@@ -430,125 +315,6 @@
         "include": [
           {
             "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-dauer-cs"
-          }
-        ]
-      }
-    },
-    {
-      "resourceType": "ValueSet",
-      "id": "seu-ef-unfallort-vs",
-      "status": "draft",
-      "name": "SEU_EF_UnfallortVS",
-      "title": "SEU_EF_Unfallort ValueSet",
-      "description": "ValueSet, das die verschiedenen Unfallorte enthält.",
-      "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-unfallort-vs",
-      "expansion": {
-        "timestamp": "2024-10-20T11:50:47+00:00",
-        "contains": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-unfallort-cs",
-            "code": "nein",
-            "display": "Nein"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-unfallort-cs",
-            "code": "ja_zu_hause",
-            "display": "Ja; zu Hause"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-unfallort-cs",
-            "code": "freizeit_ausser_haus",
-            "display": "Freizeit außer Haus"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-unfallort-cs",
-            "code": "gemeinschaftseinrichtung",
-            "display": "Gemeinschaftseinrichtung"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-unfallort-cs",
-            "code": "wegeunfall",
-            "display": "Wegeunfall"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-unfallort-cs",
-            "code": "keine_angabe",
-            "display": "Keine Angabe"
-          }
-        ]
-      },
-      "compose": {
-        "include": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-unfallort-cs"
-          }
-        ]
-      }
-    },
-    {
-      "resourceType": "ValueSet",
-      "id": "seu-ef-hilfsmittel-vs",
-      "status": "draft",
-      "name": "SEU_EF_HilfsmittelVS",
-      "title": "SEU_EF_Hilfsmittel ValueSet",
-      "description": "ValueSet, das verschiedene Hilfsmittel enthält.",
-      "url": "https://www.oegd.de/fhir/seu/ValueSet/seu-ef-hilfsmittel-vs",
-      "expansion": {
-        "timestamp": "2024-10-20T11:50:47+00:00",
-        "contains": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-hilfsmittel-cs",
-            "code": "sehhilfe",
-            "display": "Sehhilfe (z. B. Brille)"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-hilfsmittel-cs",
-            "code": "hoerhilfe",
-            "display": "Hörhilfe"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-hilfsmittel-cs",
-            "code": "orthese",
-            "display": "Orthese"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-hilfsmittel-cs",
-            "code": "zahnersatz",
-            "display": "Zahnersatz (Prothese, Platzhalter)"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-hilfsmittel-cs",
-            "code": "anderes",
-            "display": "Anderes"
-          }
-        ]
-      },
-      "compose": {
-        "include": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/seu-ef-hilfsmittel-cs",
-            "concept": [
-              {
-                "code": "sehhilfe",
-                "display": "Sehhilfe (z. B. Brille)"
-              },
-              {
-                "code": "hoerhilfe",
-                "display": "Hörhilfe"
-              },
-              {
-                "code": "orthese",
-                "display": "Orthese"
-              },
-              {
-                "code": "zahnersatz",
-                "display": "Zahnersatz (Prothese, Platzhalter)"
-              },
-              {
-                "code": "anderes",
-                "display": "Anderes"
-              }
-            ]
           }
         ]
       }
@@ -868,6 +634,9 @@
       }
     }
   ],
+  "version": "1.0.0",
+  "status": "active",
+  "experimental": false,
   "url": "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenTH",
   "title": "SEU Sorgeberechtigtenfragebogen TH",
   "extension": [
@@ -892,7 +661,6 @@
       ]
     }
   ],
-  "status": "draft",
   "derivedFrom": [
     "https://www.oegd.de/fhir/seu/Questionnaire/Sorgeberechtigtenfragebogen"
   ],
@@ -1340,7 +1108,7 @@
       "item": [
         {
           "linkId": "6.1f",
-          "type": "choice",
+          "type": "open-choice",
           "text": "(6.1f) Welche Sprache wird mit dem Kind zu Hause gesprochen?",
           "code": [
             {
@@ -1358,49 +1126,7 @@
             }
           ],
           "answerValueSet": "#ueberwiegend-gesprochene-sprache-vs",
-          "required": true,
-          "item": [
-            {
-              "linkId": "6.1f.1",
-              "type": "text",
-              "text": "(6.1f.1) Welche Sprache?",
-              "code": [
-                {
-                  "code": "6.1f.1",
-                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-                }
-              ],
-              "extension": [
-                {
-                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-                  "valueCoding": {
-                    "system": "urn:iso:std:iso:3166-2:de",
-                    "code": "DE-TH"
-                  }
-                }
-              ],
-              "enableWhen": [
-                {
-                  "question": "6.1f",
-                  "operator": "=",
-                  "answerCoding": {
-                    "code": "andere",
-                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/ueberwiegend-gesprochene-sprache-cs"
-                  }
-                },
-                {
-                  "question": "6.1f",
-                  "operator": "=",
-                  "answerCoding": {
-                    "code": "deutsch_andere",
-                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/ueberwiegend-gesprochene-sprache-cs"
-                  }
-                }
-              ],
-              "enableBehavior": "any",
-              "required": true
-            }
-          ]
+          "required": true
         }
       ]
     },
@@ -1427,6 +1153,14 @@
           ],
           "extension": [
             {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "code": "mo",
+                "system": "http://unitsofmeasure.org",
+                "display": "Monate"
+              }
+            },
+            {
               "url": "http://hl7.org/fhir/StructureDefinition/minValue",
               "valueInteger": 0
             }
@@ -1444,6 +1178,14 @@
             }
           ],
           "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "code": "mo",
+                "system": "http://unitsofmeasure.org",
+                "display": "Monate"
+              }
+            },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/minValue",
               "valueInteger": 0
@@ -1786,7 +1528,7 @@
                   "answerBoolean": true
                 }
               ],
-              "answerValueSet": "#PflegegradVS",
+              "answerValueSet": "http://fhir.de/ValueSet/pflegegrad-de",
               "required": true
             }
           ]

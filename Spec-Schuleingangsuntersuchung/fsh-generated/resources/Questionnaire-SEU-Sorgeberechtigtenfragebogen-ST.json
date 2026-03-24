@@ -1866,6 +1866,7 @@
       "description": "Erwerbsstatus des Elternteils",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/ErwerbsstatusAlternativ1VS",
       "expansion": {
+        "timestamp": "2025-03-04T12:00:00+00:00",
         "contains": [
           {
             "system": "https://www.oegd.de/fhir/seu/CodeSystem/erwerbsstatus-cs",
@@ -2337,6 +2338,7 @@
       "description": "Dieses ValueSet beinhaltet eine Auswahl von Codes für die Klassifikation von Ärztlich festgestellten Krankheiten.",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/AErztlichFestgestellteKrankheitenVS",
       "expansion": {
+        "timestamp": "2025-03-04T12:00:00+00:00",
         "contains": [
           {
             "system": "https://www.oegd.de/fhir/seu/CodeSystem/chronische-krankheiten",
@@ -2710,6 +2712,7 @@
       "description": "ValueSet, das den Grund des Krankenhausaufenthaltes beschreibt. Es enthält die Kategorien: akute Erkrankung, chronische Krankheit, Unfall, stationäre Operation(en), und sonstiges. Dieses CodeSystem kann verwendet werden, um den Grund eines Krankenhausaufenthaltes zu kategorisieren.",
       "url": "https://www.oegd.de/fhir/seu/ValueSet/KrankenhausaufenthaltGrundVS",
       "expansion": {
+        "timestamp": "2025-03-04T12:00:00+00:00",
         "contains": [
           {
             "system": "https://www.oegd.de/fhir/seu/CodeSystem/KrankenhausaufenthaltGrundCS",
@@ -2747,6 +2750,9 @@
       }
     }
   ],
+  "version": "1.0.0",
+  "status": "active",
+  "experimental": false,
   "url": "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenST",
   "title": "SEU Sorgeberechtigtenfragebogen ST",
   "extension": [
@@ -2771,7 +2777,6 @@
       ]
     }
   ],
-  "status": "draft",
   "derivedFrom": [
     "https://www.oegd.de/fhir/seu/Questionnaire/Sorgeberechtigtenfragebogen"
   ],
@@ -3532,7 +3537,7 @@
         {
           "answerValueSet": "#atopische-erkrankungen-vs",
           "linkId": "8.16a",
-          "type": "choice",
+          "type": "open-choice",
           "text": "(8.16a) Besitzt Ihr Kind Allergien?",
           "code": [
             {
@@ -3540,31 +3545,7 @@
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
           ],
-          "required": true,
-          "item": [
-            {
-              "linkId": "8.16a.1",
-              "type": "string",
-              "text": "(8.16a.1) Welche sonstigen Allergien?",
-              "code": [
-                {
-                  "code": "8.16a.1",
-                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-                }
-              ],
-              "enableWhen": [
-                {
-                  "question": "8.16a",
-                  "operator": "=",
-                  "answerCoding": {
-                    "code": "sonstiges",
-                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs"
-                  }
-                }
-              ],
-              "required": true
-            }
-          ]
+          "required": true
         },
         {
           "linkId": "8.16c",
@@ -3591,7 +3572,7 @@
         },
         {
           "linkId": "8.16d",
-          "type": "choice",
+          "type": "open-choice",
           "text": "(8.16d) Frühere Erkrankungen",
           "code": [
             {
@@ -3610,44 +3591,11 @@
           ],
           "answerValueSet": "#FruehereErkrankungenVS",
           "repeats": true,
-          "required": true,
-          "item": [
-            {
-              "linkId": "8.16d.1",
-              "type": "string",
-              "text": "(8.16d.1) Welche sonstige früheren Erkrankungen?",
-              "code": [
-                {
-                  "code": "8.16d.1",
-                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-                }
-              ],
-              "extension": [
-                {
-                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-                  "valueCoding": {
-                    "system": "urn:iso:std:iso:3166-2:de",
-                    "code": "DE-ST"
-                  }
-                }
-              ],
-              "enableWhen": [
-                {
-                  "question": "8.16d",
-                  "operator": "=",
-                  "answerCoding": {
-                    "code": "sonstige_welche",
-                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/FruehereErkrankungenCS"
-                  }
-                }
-              ],
-              "required": true
-            }
-          ]
+          "required": true
         },
         {
           "linkId": "8.16e",
-          "type": "choice",
+          "type": "open-choice",
           "text": "(8.16e) Derzeitige Erkrankungen",
           "code": [
             {
@@ -3666,40 +3614,7 @@
           ],
           "answerValueSet": "#DerzeitigeErkrankungenVS",
           "repeats": true,
-          "required": true,
-          "item": [
-            {
-              "linkId": "8.16e.1",
-              "type": "string",
-              "text": "(8.16e.1) Welche sonstigen derzeitigen Erkrankungen?",
-              "code": [
-                {
-                  "code": "8.16e.1",
-                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-                }
-              ],
-              "extension": [
-                {
-                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-                  "valueCoding": {
-                    "system": "urn:iso:std:iso:3166-2:de",
-                    "code": "DE-ST"
-                  }
-                }
-              ],
-              "enableWhen": [
-                {
-                  "question": "8.16e",
-                  "operator": "=",
-                  "answerCoding": {
-                    "code": "sonstige_welche",
-                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/DerzeitigeErkrankungenCS"
-                  }
-                }
-              ],
-              "required": true
-            }
-          ]
+          "required": true
         },
         {
           "linkId": "8.23",

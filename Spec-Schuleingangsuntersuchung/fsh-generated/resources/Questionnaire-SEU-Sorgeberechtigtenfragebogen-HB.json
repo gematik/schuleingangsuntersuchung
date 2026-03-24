@@ -3722,6 +3722,9 @@
       }
     }
   ],
+  "version": "1.0.0",
+  "status": "active",
+  "experimental": false,
   "url": "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenHB",
   "title": "SEU Sorgeberechtigtenfragebogen HB",
   "extension": [
@@ -3746,7 +3749,6 @@
       ]
     }
   ],
-  "status": "draft",
   "derivedFrom": [
     "https://www.oegd.de/fhir/seu/Questionnaire/Sorgeberechtigtenfragebogen"
   ],
@@ -4322,12 +4324,32 @@
               "url": "http://hl7.org/fhir/StructureDefinition/entryFormat",
               "valueString": "XX/XX/XX"
             }
+          ],
+          "item": [
+            {
+              "linkId": "5.11h",
+              "type": "display",
+              "text": "APGAR steht im Deutschen für folgende Kennzeichen: Atmung, Puls, Grundtonus (Muskelspannung und Bewegung), Aussehen (Hautfarbe) und Reflexe",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "code": "help",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
           ]
         },
         {
           "linkId": "5.12",
           "type": "string",
-          "text": "(5.12) pH- Wert",
+          "text": "(5.12) pH-Wert",
           "code": [
             {
               "code": "5.12",
@@ -4349,6 +4371,26 @@
             {
               "url": "http://hl7.org/fhir/StructureDefinition/entryFormat",
               "valueString": "X,XX"
+            }
+          ],
+          "item": [
+            {
+              "linkId": "5.12h",
+              "type": "display",
+              "text": "pH-Wert ist eine Messung des Säurebasengrades im Blut oder einer Flüssigkeit. Ein typischer pH-Wert für ein neugeborenes Kind liegt zwischen 7,15 und 7,45.",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "code": "help",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control"
+                      }
+                    ]
+                  }
+                }
+              ]
             }
           ]
         }

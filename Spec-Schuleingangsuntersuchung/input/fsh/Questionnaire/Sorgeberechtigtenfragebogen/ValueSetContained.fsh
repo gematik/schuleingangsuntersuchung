@@ -2310,6 +2310,7 @@ Id: WieVieleStundenFreizeitVS
 Title: "WieVieleStundenFreizeitVS"
 Description: "WieVieleStundenFreizeitVS"
 * include codes from system WieVieleStundenFreizeitCS
+* ^expansion.timestamp = "2025-03-04T12:00:00+00:00"
 * ^expansion.contains[+].system = Canonical(WieVieleStundenFreizeitCS)
 * ^expansion.contains[=].code = #unter_1_stunde
 * ^expansion.contains[=].display = "unter 1 Stunde"
@@ -2325,6 +2326,7 @@ Id: WieOftImSportVereinVS
 Title: "WieOftImSportVereinVS"
 Description: "WieOftImSportVereinVS"
 * include codes from system WieOftImSportVereinCS
+* ^expansion.timestamp = "2025-03-04T12:00:00+00:00"
 * ^expansion.contains[+].system = Canonical(WieOftImSportVereinCS)
 * ^expansion.contains[=].code = #1x_wöchentlich
 * ^expansion.contains[=].display = "1x wöchentlich"
@@ -2337,6 +2339,7 @@ Id: WieOftTrainingVS
 Title: "WieOftTrainingVS"
 Description: "WieOftTrainingVS"
 * include codes from system WieOftTrainingCS
+* ^expansion.timestamp = "2025-03-04T12:00:00+00:00"
 * ^expansion.contains[+].system = Canonical(WieOftTrainingCS)
 * ^expansion.contains[=].code = #1_mal
 * ^expansion.contains[=].display = "1 mal"
@@ -2479,6 +2482,7 @@ Id: KrankenhausaufenthaltGrundVS
 Title: "KrankenhausaufenthaltGrundVS"
 Description: "ValueSet, das den Grund des Krankenhausaufenthaltes beschreibt. Es enthält die Kategorien: akute Erkrankung, chronische Krankheit, Unfall, stationäre Operation(en), und sonstiges. Dieses CodeSystem kann verwendet werden, um den Grund eines Krankenhausaufenthaltes zu kategorisieren."
 * include codes from system KrankenhausaufenthaltGrundCS
+* ^expansion.timestamp = "2025-03-04T12:00:00+00:00"
 * ^expansion.contains[+].system = Canonical(KrankenhausaufenthaltGrundCS)
 * ^expansion.contains[=].code = #akute_erkrankung
 * ^expansion.contains[=].display = "akute Erkrankung"

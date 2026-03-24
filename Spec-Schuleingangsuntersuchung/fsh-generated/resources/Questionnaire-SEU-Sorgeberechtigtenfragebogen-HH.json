@@ -1788,52 +1788,6 @@
     },
     {
       "resourceType": "ValueSet",
-      "id": "UnfallOrtVS",
-      "status": "draft",
-      "name": "UnfallOrtVS",
-      "title": "UnfallOrtVS",
-      "description": "UnfallOrtVS",
-      "url": "https://www.oegd.de/fhir/seu/ValueSet/UnfallOrtVS",
-      "expansion": {
-        "timestamp": "2024-04-04T11:34:46+00:00",
-        "contains": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallOrtCS",
-            "code": "zu_hause",
-            "display": "Zu Hause"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallOrtCS",
-            "code": "kita",
-            "display": "Kita"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallOrtCS",
-            "code": "freizeit",
-            "display": "Freizeit"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallOrtCS",
-            "code": "straßenverkehr",
-            "display": "Straßenverkehr"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallOrtCS",
-            "code": "anderer_ort",
-            "display": "Anderer Ort"
-          }
-        ]
-      },
-      "compose": {
-        "include": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/UnfallOrtCS"
-          }
-        ]
-      }
-    },
-    {
-      "resourceType": "ValueSet",
       "id": "SEU-UB-StaatsangehoerigkeitVS",
       "status": "draft",
       "name": "SEU_UB_StaatsangehoerigkeitVS",
@@ -2047,6 +2001,9 @@
       }
     }
   ],
+  "version": "1.0.0",
+  "status": "active",
+  "experimental": false,
   "url": "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenHH",
   "title": "SEU Sorgeberechtigtenfragebogen HH",
   "extension": [
@@ -2071,7 +2028,6 @@
       ]
     }
   ],
-  "status": "draft",
   "derivedFrom": [
     "https://www.oegd.de/fhir/seu/Questionnaire/Sorgeberechtigtenfragebogen"
   ],
@@ -3195,6 +3151,16 @@
               "code": "4.1",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "code": "a",
+                "system": "http://unitsofmeasure.org",
+                "display": "Jahre"
+              }
+            }
           ]
         },
         {
@@ -3307,6 +3273,16 @@
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
           ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "code": "cm",
+                "system": "http://unitsofmeasure.org",
+                "display": "cm"
+              }
+            }
+          ],
           "required": true
         },
         {
@@ -3319,6 +3295,16 @@
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
           ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "code": "cm",
+                "system": "http://unitsofmeasure.org",
+                "display": "cm"
+              }
+            }
+          ],
           "required": true
         },
         {
@@ -3329,6 +3315,16 @@
             {
               "code": "5.3c",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+              "valueCoding": {
+                "code": "wk",
+                "system": "http://unitsofmeasure.org",
+                "display": "Wochen"
+              }
             }
           ],
           "required": true
@@ -3391,12 +3387,32 @@
               "valueString": "XX/XX/XX"
             }
           ],
-          "required": true
+          "required": true,
+          "item": [
+            {
+              "linkId": "5.11h",
+              "type": "display",
+              "text": "APGAR steht im Deutschen für folgende Kennzeichen: Atmung, Puls, Grundtonus (Muskelspannung und Bewegung), Aussehen (Hautfarbe) und Reflexe",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "code": "help",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control"
+                      }
+                    ]
+                  }
+                }
+              ]
+            }
+          ]
         },
         {
           "linkId": "5.12",
           "type": "string",
-          "text": "(5.12) pH- Wert",
+          "text": "(5.12) pH-Wert",
           "code": [
             {
               "code": "5.12",
@@ -3418,6 +3434,26 @@
             {
               "url": "http://hl7.org/fhir/StructureDefinition/entryFormat",
               "valueString": "X,XX"
+            }
+          ],
+          "item": [
+            {
+              "linkId": "5.12h",
+              "type": "display",
+              "text": "pH-Wert ist eine Messung des Säurebasengrades im Blut oder einer Flüssigkeit. Ein typischer pH-Wert für ein neugeborenes Kind liegt zwischen 7,15 und 7,45.",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "code": "help",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control"
+                      }
+                    ]
+                  }
+                }
+              ]
             }
           ]
         }

@@ -1,6 +1,7 @@
 Profile: VerwandtePerson
 Parent: RelatedPerson
 Id: VerwandtePerson
+Description: "Dieses Profil stellt Sorgeberechtigte, Erziehungsberechtigte und andere relevante Bezugspersonen der untersuchten Person dar. Es enthält Beziehungsdefinitionen zur untersuchten Person, Kontaktinformationen einschließlich Namen und Adressen mit erweiterten Adressfeldkomponenten, XMeld-Kerninformationen wie Auskünftssperren (Grund und Frist) sowie Datenendeinformation, Deutschkenntnisse und eine Verknüpfung zur Patientenressource für eindeutige Zuordnung."
 * patient 1..1 MS
   * reference 1..
 * name MS
@@ -126,7 +127,7 @@ Usage: #example
   * extension.url = "http://hl7.org/fhir/StructureDefinition/humanname-own-name"
   * extension.valueString = "Gabler"
 * gender = #female
-* patient = Reference(PersonBeispiel)
+* patient = Reference(EinzuschulendesKindBeispiel)
 * birthDate = "1952-01-17"
 * address[Strassenanschrift].type = #both
 * address[Strassenanschrift].line[0] = "Musterstrasse 18"

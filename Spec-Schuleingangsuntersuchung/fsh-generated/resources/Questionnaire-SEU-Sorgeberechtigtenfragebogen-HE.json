@@ -2045,6 +2045,9 @@
       }
     }
   ],
+  "version": "1.0.0",
+  "status": "active",
+  "experimental": false,
   "url": "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenHE",
   "title": "SEU Sorgeberechtigtenfragebogen HE",
   "extension": [
@@ -2069,7 +2072,6 @@
       ]
     }
   ],
-  "status": "draft",
   "derivedFrom": [
     "https://www.oegd.de/fhir/seu/Questionnaire/Sorgeberechtigtenfragebogen"
   ],
@@ -2547,7 +2549,7 @@
           "item": [
             {
               "linkId": "3.2.5",
-              "type": "choice",
+              "type": "open-choice",
               "text": "(3.2.5) Chronische Erkrankung",
               "code": [
                 {
@@ -2556,30 +2558,7 @@
                 }
               ],
               "answerValueSet": "#chronische-krankheiten-vs",
-              "repeats": true,
-              "item": [
-                {
-                  "enableWhen": [
-                    {
-                      "question": "3.2.5",
-                      "operator": "=",
-                      "answerCoding": {
-                        "code": "sonstiges",
-                        "system": "https://www.oegd.de/fhir/seu/CodeSystem/chronische-krankheiten"
-                      }
-                    }
-                  ],
-                  "linkId": "3.2.5.1",
-                  "type": "string",
-                  "text": "(3.2.5.1) Welche sonstige(n) chronischen Erkrankung(en)?",
-                  "code": [
-                    {
-                      "code": "3.2.5.1",
-                      "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-                    }
-                  ]
-                }
-              ]
+              "repeats": true
             }
           ]
         }
@@ -2855,35 +2834,12 @@
         {
           "answerValueSet": "#atopische-erkrankungen-vs",
           "linkId": "8.16a",
-          "type": "choice",
+          "type": "open-choice",
           "text": "(8.16a) Besitzt Ihr Kind Allergien?",
           "code": [
             {
               "code": "8.16a",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "item": [
-            {
-              "linkId": "8.16a.1",
-              "type": "string",
-              "text": "(8.16a.1) Welche sonstigen Allergien?",
-              "code": [
-                {
-                  "code": "8.16a.1",
-                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-                }
-              ],
-              "enableWhen": [
-                {
-                  "question": "8.16a",
-                  "operator": "=",
-                  "answerCoding": {
-                    "code": "sonstiges",
-                    "system": "https://www.oegd.de/fhir/seu/CodeSystem/atopische-erkrankungen-cs"
-                  }
-                }
-              ]
             }
           ]
         },
@@ -3026,8 +2982,8 @@
         },
         {
           "linkId": "11.3",
-          "type": "string",
-          "text": "(11.3) Name Facharzt",
+          "type": "text",
+          "text": "(11.3) Name Fachärzte",
           "code": [
             {
               "code": "11.3",

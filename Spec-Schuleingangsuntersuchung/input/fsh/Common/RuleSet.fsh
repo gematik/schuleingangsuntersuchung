@@ -138,6 +138,11 @@ RuleSet: helpItem (id, text)
 * text = "{text}"
 * insert itemControl(#help)
 
+RuleSet: maxOccurs(value)
+* extension[+]
+  * url = "http://hl7.org/fhir/StructureDefinition/questionnaire-maxOccurs"
+  * valueInteger = {value}
+
 RuleSet: itemControl(code)
 * extension[+]
   * url = "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl"
@@ -147,3 +152,8 @@ RuleSet: entryFormat(entryFormat)
 * extension[+]
   * url = "http://hl7.org/fhir/StructureDefinition/entryFormat"
   * valueString = "{entryFormat}"
+
+RuleSet: QMeta(version)
+* version = "{version}"
+* status = #active
+* experimental = false

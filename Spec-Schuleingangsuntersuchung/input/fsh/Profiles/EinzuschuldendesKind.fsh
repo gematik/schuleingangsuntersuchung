@@ -1,6 +1,7 @@
-Profile: Person
+Profile: EinzuschulendesKind
 Parent: Patient
-Id: Person
+Id: EinzuschulendesKind
+Description: "Dieses Profil stellt die untersuchte Person (das Schulkind) dar und enthält deren Basisdaten aus dem XMeld Modul. Es umfasst Identifikatoren, Namen, Geburtsdatum und Geschlecht (inklusive amtlich-administratives Geschlecht), Adressen mit Unterscheidung zwischen Straßenanschrift und Postfach mit erweiterten Adressfeldkomponenten, XMeld-spezifische Übermittlungssperren (Religion, Politik, Jubiläen, Adressbuch, Bundeswehr), Migrationshindergrund und Deutschkenntnisse sowie Kontaktinformationen zu Sorgeberechtigten und Kindertageseinrichtungen."
 * identifier MS
   * ^slicing.discriminator.type = #pattern
   * ^slicing.discriminator.path = "$this"
@@ -175,8 +176,8 @@ Description: "Diese Extension enthält Angaben zu den Deutschkenntnissen der bet
 * value[x] only CodeableConcept
 * valueCodeableConcept from PersonDeutschkenntnisVS
 
-Instance: PersonBeispiel
-InstanceOf: Person
+Instance: EinzuschulendesKindBeispiel
+InstanceOf: EinzuschulendesKind
 Usage: #example
 * extension[SperreBundeswehr].valueBoolean = true
 * extension[Migrationshintergrund].valueCodeableConcept = PersonEthnieCS#2 "GUS/Osteuropa"
