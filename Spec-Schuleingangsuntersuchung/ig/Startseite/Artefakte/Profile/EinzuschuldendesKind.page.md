@@ -1,5 +1,5 @@
 ---
-canonical: https://www.oegd.de/fhir/seu/StructureDefinition/EinzuschuldendesKind
+canonical: https://www.oegd.de/fhir/seu/StructureDefinition/EinzuschulendesKind
 expand: 1
 ---
 
@@ -38,15 +38,15 @@ from StructureDefinition where url = %canonical for differential.element.constra
 #### Beispieldatensatz
 <tabs>
     <tab title="Übersicht">      
-        {{render:EinzuschuldendesKindBeispiel}}
+        {{render:EinzuschulendesKindBeispiel}}
     </tab>
     <tab title="XML">      
-        {{xml:EinzuschuldendesKindBeispiel}}
+        {{xml:EinzuschulendesKindBeispiel}}
     </tab>
     <tab title="JSON">
-        {{json:EinzuschuldendesKindBeispiel}}
+        {{json:EinzuschulendesKindBeispiel}}
     </tab>
     <tab title="Link">
-        {{link:EinzuschuldendesKindBeispiel}}
+        {{link:EinzuschulendesKindBeispiel}}
     </tab>
 </tabs>
