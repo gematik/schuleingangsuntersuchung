@@ -985,7 +985,7 @@
         {
           "linkId": "4.1e",
           "type": "choice",
-          "text": "(4.1e) Besucht Ihr Kind einen Kindergarten oder eine Tagesmutter?",
+          "text": "(4.1e) Besucht das Kind einen Kindergarten oder eine Tagesmutter?",
           "code": [
             {
               "code": "4.1e",
@@ -1081,7 +1081,7 @@
                 }
               ],
               "linkId": "5.6.1",
-              "type": "string",
+              "type": "text",
               "text": "(5.6.1) Welche Auffälligkeit?",
               "code": [
                 {
@@ -1260,7 +1260,7 @@
         {
           "linkId": "8.6b",
           "type": "boolean",
-          "text": "(8.6b) Nutzt Ihr Kind Hilfsmittel?",
+          "text": "(8.6b) Nutzt das Kind Hilfsmittel?",
           "code": [
             {
               "code": "8.6b",
@@ -1312,7 +1312,7 @@
         {
           "linkId": "8.14c",
           "type": "open-choice",
-          "text": "(8.14c) Welche der folgenden Krankheiten wurden bei Ihrem Kind jemals ärztlich diagnostiziert?",
+          "text": "(8.14c) Welche der folgenden Krankheiten wurden bei dem Kind jemals ärztlich diagnostiziert?",
           "code": [
             {
               "code": "8.14c",
@@ -1335,7 +1335,7 @@
         {
           "linkId": "8.14d",
           "type": "open-choice",
-          "text": "(8.14d) Welche der Infektionskrankheiten hat Ihr Kind durchgemacht?",
+          "text": "(8.14d) Welche der Infektionskrankheiten hat das Kind durchgemacht?",
           "code": [
             {
               "code": "8.14d",
@@ -1378,7 +1378,7 @@
           "item": [
             {
               "linkId": "8.16b.1",
-              "type": "string",
+              "type": "text",
               "text": "(8.16b.1) Wenn ja, welche?",
               "code": [
                 {
@@ -1409,7 +1409,7 @@
         {
           "linkId": "8.22a",
           "type": "boolean",
-          "text": "(8.22a) Wurde bei Ihrem Kind eine Behinderung festgestellt?",
+          "text": "(8.22a) Wurde bei dem Kind eine Behinderung festgestellt?",
           "code": [
             {
               "code": "8.22a",
@@ -1429,7 +1429,7 @@
           "item": [
             {
               "linkId": "8.22a.1",
-              "type": "text",
+              "type": "string",
               "text": "(8.22a.1) Welcher Behinderungsgrad?",
               "code": [
                 {
@@ -1451,7 +1451,7 @@
         {
           "linkId": "8.22b",
           "type": "boolean",
-          "text": "(8.22b) Ist Ihr Kind Inhaber eines Schwerbehindertenausweises?",
+          "text": "(8.22b) Ist das Kind Inhaber eines Schwerbehindertenausweises?",
           "code": [
             {
               "code": "8.22b",
@@ -1493,7 +1493,7 @@
         {
           "linkId": "8.22c",
           "type": "boolean",
-          "text": "(8.22c) Beansprucht Ihr Kind Leistungen der Pflegeversicherung?",
+          "text": "(8.22c) Beansprucht das Kind Leistungen der Pflegeversicherung?",
           "code": [
             {
               "code": "8.22c",
@@ -1547,7 +1547,7 @@
         },
         {
           "linkId": "8.23.1",
-          "type": "string",
+          "type": "text",
           "text": "(8.23.1) Welches Medikament",
           "code": [
             {
@@ -1568,7 +1568,7 @@
         {
           "linkId": "8.25a",
           "type": "boolean",
-          "text": "(8.25a) Muss Ihr Kind ein Notfallset mit sich führen?",
+          "text": "(8.25a) Muss das Kind ein Notfallset mit sich führen?",
           "code": [
             {
               "code": "8.25a",
@@ -1644,7 +1644,7 @@
         {
           "linkId": "8.34a",
           "type": "choice",
-          "text": "(8.34a) Zeigte Ihr Kind in den vergangenen 12 Monaten folgende Verhaltensauffälligkeiten?",
+          "text": "(8.34a) Zeigte das Kind in den vergangenen 12 Monaten folgende Verhaltensauffälligkeiten?",
           "code": [
             {
               "code": "8.34a",
@@ -1667,7 +1667,7 @@
         {
           "linkId": "8.27b",
           "type": "boolean",
-          "text": "(8.27b) Wurde Ihr Kind jemals operiert bzw. ist eine Operation geplant?",
+          "text": "(8.27b) Wurde das Kind jemals operiert bzw. ist eine Operation geplant?",
           "code": [
             {
               "code": "8.27b",
@@ -1718,7 +1718,7 @@
         {
           "linkId": "8.28b",
           "type": "boolean",
-          "text": "(8.28b) Hatte  Ihr Kind jemals einen Unfall, der ärztlich behandelt wurde?",
+          "text": "(8.28b) Hatte  das Kind jemals einen Unfall, der ärztlich behandelt wurde?",
           "code": [
             {
               "code": "8.28b",
@@ -1782,7 +1782,7 @@
         {
           "linkId": "9.13a",
           "type": "choice",
-          "text": "(9.13a) Welche Behandlungen oder Unterstützungen hat Ihr Kind jemals erhalten?",
+          "text": "(9.13a) Welche Behandlungen oder Unterstützungen hat das Kind jemals erhalten?",
           "code": [
             {
               "code": "9.13a",
@@ -1812,7 +1812,7 @@
         {
           "linkId": "11.4",
           "type": "open-choice",
-          "text": "(11.4) Bei welchen Ärztinnen oder Ärzten haben Sie Ihr Kind in den vergangenen 12 Monaten vorgestellt?",
+          "text": "(11.4) Bei welchen Ärztinnen oder Ärzten haben Sie das Kind in den vergangenen 12 Monaten vorgestellt?",
           "code": [
             {
               "code": "11.4",

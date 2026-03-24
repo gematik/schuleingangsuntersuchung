@@ -4652,7 +4652,7 @@
         {
           "linkId": "4.0b.b",
           "type": "boolean",
-          "text": "(4.0b.b) Besucht Ihr Kind derzeit einen Kindergarten?",
+          "text": "(4.0b.b) Besucht das Kind derzeit einen Kindergarten?",
           "code": [
             {
               "code": "4.0b.b",
@@ -4841,12 +4841,12 @@
           "answerValueSet": "#SEU-UB-GesprocheneSpracheVS"
         },
         {
-          "linkId": "6.1f",
+          "linkId": "6.1e.1",
           "type": "string",
-          "text": "(6.1f) Zu Hause gesprochene Sprache(n) andere",
+          "text": "(6.1e.1) Zu Hause gesprochene Sprache(n) andere",
           "code": [
             {
-              "code": "6.1f",
+              "code": "6.1e.1",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
           ],
@@ -5036,7 +5036,7 @@
         {
           "linkId": "7.11b",
           "type": "boolean",
-          "text": "(7.11b) Würden Sie sagen, dass Ihr Kind insgesamt gesehen in einem oder mehreren der folgenden Bereiche Schwierigkeiten hat: Stimmung (bedrückt, ängstlich, schwankend, aufbrausend), Konzentration (kann nicht lange stillsitzen, hört beim Vorlesen nicht ausdauernd zu), Verhalten, Umgang mit Anderen?",
+          "text": "(7.11b) Würden Sie sagen, dass das Kind insgesamt gesehen in einem oder mehreren der folgenden Bereiche Schwierigkeiten hat: Stimmung (bedrückt, ängstlich, schwankend, aufbrausend), Konzentration (kann nicht lange stillsitzen, hört beim Vorlesen nicht ausdauernd zu), Verhalten, Umgang mit Anderen?",
           "code": [
             {
               "code": "7.11b",
@@ -5480,7 +5480,7 @@
             },
             {
               "linkId": "8.10ga_g.9",
-              "type": "string",
+              "type": "text",
               "text": "(8.10ga_g.9) wenn ja, welche (nur ärztlich diag. Befunde)",
               "code": [
                 {
@@ -5770,7 +5770,7 @@
         },
         {
           "linkId": "8.23.1",
-          "type": "string",
+          "type": "text",
           "text": "(8.23.1) Welches Medikament",
           "code": [
             {

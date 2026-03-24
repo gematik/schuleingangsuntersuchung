@@ -5725,37 +5725,6 @@
     },
     {
       "resourceType": "ValueSet",
-      "id": "entwicklung-vs",
-      "status": "draft",
-      "name": "EntwicklungVS",
-      "title": "ValueSet für Entwicklung",
-      "description": "Dieses ValueSet beinhaltet Codes für die Klassifikation des Zeitpunkts der Entwicklung, definiert im zugehörigen CodeSystem.",
-      "url": "https://www.oegd.de/fhir/seu/ValueSet/entwicklung-vs",
-      "expansion": {
-        "timestamp": "2024-04-12T15:47:43+00:00",
-        "contains": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/entwicklung-cs",
-            "code": "bis_zum_4",
-            "display": "bis zum 4. Lebensjahr"
-          },
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/entwicklung-cs",
-            "code": "spaeter",
-            "display": "später"
-          }
-        ]
-      },
-      "compose": {
-        "include": [
-          {
-            "system": "https://www.oegd.de/fhir/seu/CodeSystem/entwicklung-cs"
-          }
-        ]
-      }
-    },
-    {
-      "resourceType": "ValueSet",
       "id": "TagsNachtsSauberVS",
       "status": "draft",
       "name": "TagsNachtsSauberVS",
@@ -11326,7 +11295,7 @@
         {
           "linkId": "0.1h",
           "type": "display",
-          "text": "Bitte tragen Sie die Grundschule ein, an der Sie Ihr Kind anmelden werden oder bereits angemeldet haben. Die Schule erhält eine Mitteilung über schulrelevante Ergebnisse.",
+          "text": "Bitte tragen Sie die Grundschule ein, an der Sie das Kind anmelden werden oder bereits angemeldet haben. Die Schule erhält eine Mitteilung über schulrelevante Ergebnisse.",
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -11654,7 +11623,7 @@
         },
         {
           "linkId": "0.15",
-          "type": "string",
+          "type": "text",
           "text": "(0.15) Bemerkung",
           "code": [
             {
@@ -12265,7 +12234,7 @@
         {
           "linkId": "1.6.3",
           "type": "date",
-          "text": "(1.6.3) Seit wann lebt Ihr Kind in Deutschland (Monat/Jahr)?",
+          "text": "(1.6.3) Seit wann lebt das Kind in Deutschland (Monat/Jahr)?",
           "code": [
             {
               "code": "1.6.3",
@@ -13240,7 +13209,7 @@
             {
               "linkId": "3.2.4b",
               "type": "boolean",
-              "text": "(3.2.4b) Ist Ihr Kind an Windpocken erkrankt",
+              "text": "(3.2.4b) Ist das Kind an Windpocken erkrankt",
               "code": [
                 {
                   "code": "3.2.4b",
@@ -13291,7 +13260,7 @@
             {
               "linkId": "3.2.6",
               "type": "boolean",
-              "text": "(3.2.6) Hat Ihr Kind eine körperliche, geistige oder seelische Behinderung?",
+              "text": "(3.2.6) Hat das Kind eine körperliche, geistige oder seelische Behinderung?",
               "code": [
                 {
                   "code": "3.2.6",
@@ -13301,7 +13270,7 @@
               "item": [
                 {
                   "linkId": "3.2.6.1",
-                  "type": "string",
+                  "type": "text",
                   "text": "(3.2.6.1) Welche Behinderung?",
                   "code": [
                     {
@@ -13322,7 +13291,7 @@
             {
               "linkId": "3.2.6a",
               "type": "boolean",
-              "text": "(3.2.6a) Liegt bei Ihrem Kind ein Grad der Behinderung/ein Pflegegrad vor?",
+              "text": "(3.2.6a) Liegt bei dem Kind ein Grad der Behinderung/ein Pflegegrad vor?",
               "code": [
                 {
                   "code": "3.2.6a",
@@ -13528,7 +13497,7 @@
         {
           "linkId": "4.0a",
           "type": "boolean",
-          "text": "(4.0a) Besucht Ihr Kind weniger als 5 Stunden täglich den Kindergarten?",
+          "text": "(4.0a) Besucht das Kind weniger als 5 Stunden täglich den Kindergarten?",
           "code": [
             {
               "code": "4.0a",
@@ -13550,7 +13519,7 @@
         {
           "linkId": "4.0b.b",
           "type": "boolean",
-          "text": "(4.0b.b) Besucht Ihr Kind derzeit einen Kindergarten?",
+          "text": "(4.0b.b) Besucht das Kind derzeit einen Kindergarten?",
           "code": [
             {
               "code": "4.0b.b",
@@ -13661,7 +13630,7 @@
         {
           "linkId": "4.1b",
           "type": "choice",
-          "text": "(4.1b) Wie lange besucht Ihr Kind bis jetzt eine Kindertageseinrichtung?",
+          "text": "(4.1b) Wie lange besucht das Kind bis jetzt eine deutschsprachig Kindertageseinrichtung?",
           "code": [
             {
               "code": "4.1b",
@@ -13724,7 +13693,7 @@
         {
           "linkId": "4.1e",
           "type": "choice",
-          "text": "(4.1e) Besucht Ihr Kind einen Kindergarten oder eine Tagesmutter?",
+          "text": "(4.1e) Besucht das Kind einen Kindergarten oder eine Tagesmutter?",
           "code": [
             {
               "code": "4.1e",
@@ -13777,7 +13746,7 @@
         {
           "linkId": "4.5",
           "type": "boolean",
-          "text": "(4.5) Besucht Ihr Kind eine andere Form der Tagesbetreuung?",
+          "text": "(4.5) Besucht das Kind eine andere Form der Tagesbetreuung?",
           "code": [
             {
               "code": "4.5",
@@ -13836,7 +13805,7 @@
         {
           "linkId": "4.6",
           "type": "boolean",
-          "text": "(4.6) Besucht Ihr Kind eine Kita in einem anderen Bundesland?",
+          "text": "(4.6) Besucht das Kind eine Kita in einem anderen Bundesland?",
           "code": [
             {
               "code": "4.6",
@@ -13871,7 +13840,7 @@
         },
         {
           "linkId": "4.6a",
-          "type": "string",
+          "type": "text",
           "text": "(4.6a) Anschrift des Kindergartens",
           "code": [
             {
@@ -13955,7 +13924,7 @@
         {
           "linkId": "4.10",
           "type": "boolean",
-          "text": "(4.10) Bekommt oder wartet Ihr Kind auf eine spezielle Förderung oder Therapie?",
+          "text": "(4.10) Bekommt oder wartet das Kind auf eine spezielle Förderung oder Therapie?",
           "code": [
             {
               "code": "4.10",
@@ -14343,7 +14312,7 @@
         {
           "linkId": "5.3c",
           "type": "integer",
-          "text": "(5.3c) In welcher SS-Woche wurde Ihr Kind geboren?",
+          "text": "(5.3c) In welcher Schwangerschaftswoche wurde das Kind geboren?",
           "code": [
             {
               "code": "5.3c",
@@ -14392,7 +14361,7 @@
                 }
               ],
               "linkId": "5.5.1",
-              "type": "string",
+              "type": "text",
               "text": "(5.5.1) Welche Auffälligkeit?",
               "code": [
                 {
@@ -14451,7 +14420,7 @@
                 }
               ],
               "linkId": "5.6.1",
-              "type": "string",
+              "type": "text",
               "text": "(5.6.1) Welche Auffälligkeit?",
               "code": [
                 {
@@ -14869,12 +14838,12 @@
           "answerValueSet": "#SEU-UB-GesprocheneSpracheVS"
         },
         {
-          "linkId": "6.1f",
+          "linkId": "6.1e.1",
           "type": "string",
-          "text": "(6.1f) Zu Hause gesprochene Sprache(n) andere",
+          "text": "(6.1e.1) Zu Hause gesprochene Sprache(n) andere",
           "code": [
             {
-              "code": "6.1f",
+              "code": "6.1e.1",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
             }
           ],
@@ -14965,7 +14934,7 @@
           "item": [
             {
               "linkId": "6.4.1",
-              "type": "string",
+              "type": "text",
               "text": "(6.4.1) Welche Sprachauffälligkeiten",
               "code": [
                 {
@@ -15373,18 +15342,6 @@
           "answerValueSet": "#SprechenGelerntVS"
         },
         {
-          "linkId": "7.6a",
-          "type": "choice",
-          "text": "(7.6a) Tags und nachts sauber",
-          "code": [
-            {
-              "code": "7.6a",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "answerValueSet": "#entwicklung-vs"
-        },
-        {
           "linkId": "7.6b",
           "type": "choice",
           "text": "(7.6b) Tags und nachts sauber",
@@ -15655,7 +15612,7 @@
         {
           "linkId": "7.11b",
           "type": "boolean",
-          "text": "(7.11b) Würden Sie sagen, dass Ihr Kind insgesamt gesehen in einem oder mehreren der folgenden Bereiche Schwierigkeiten hat: Stimmung (bedrückt, ängstlich, schwankend, aufbrausend), Konzentration (kann nicht lange stillsitzen, hört beim Vorlesen nicht ausdauernd zu), Verhalten, Umgang mit Anderen?",
+          "text": "(7.11b) Würden Sie sagen, dass das Kind insgesamt gesehen in einem oder mehreren der folgenden Bereiche Schwierigkeiten hat: Stimmung (bedrückt, ängstlich, schwankend, aufbrausend), Konzentration (kann nicht lange stillsitzen, hört beim Vorlesen nicht ausdauernd zu), Verhalten, Umgang mit Anderen?",
           "code": [
             {
               "code": "7.11b",
@@ -15685,7 +15642,7 @@
           "item": [
             {
               "linkId": "7.12.1",
-              "type": "string",
+              "type": "text",
               "text": "(7.12.1) Welche Sorgen",
               "code": [
                 {
@@ -15706,7 +15663,7 @@
         {
           "linkId": "7.13",
           "type": "choice",
-          "text": "(7.13) Zeigte Ihr Kind mit 5 Jahren Sprachauffälligkeiten?",
+          "text": "(7.13) Zeigte das Kind mit 5 Jahren Sprachauffälligkeiten?",
           "code": [
             {
               "code": "7.13",
@@ -15728,7 +15685,7 @@
           "answerValueSet": "#SorgenKindVS",
           "linkId": "7.14",
           "type": "choice",
-          "text": "(7.14) Machen Sie sich Sorgen um Ihr Kind wegen",
+          "text": "(7.14) Machen Sie sich Sorgen um das Kind wegen",
           "code": [
             {
               "code": "7.14",
@@ -15846,7 +15803,7 @@
         },
         {
           "linkId": "8.2c.2",
-          "type": "string",
+          "type": "text",
           "text": "(8.2c.2) Chronische Erkrankung, Grund:",
           "code": [
             {
@@ -15884,7 +15841,7 @@
           "item": [
             {
               "linkId": "8.3.1",
-              "type": "string",
+              "type": "text",
               "text": "(8.3.1) Welche Sehstörung",
               "code": [
                 {
@@ -15915,7 +15872,7 @@
           "item": [
             {
               "linkId": "8.4.1",
-              "type": "string",
+              "type": "text",
               "text": "(8.4.1) Welche Sprachstörung",
               "code": [
                 {
@@ -16008,7 +15965,7 @@
         {
           "linkId": "8.6b",
           "type": "boolean",
-          "text": "(8.6b) Nutzt Ihr Kind Hilfsmittel?",
+          "text": "(8.6b) Nutzt das Kind Hilfsmittel?",
           "code": [
             {
               "code": "8.6b",
@@ -16160,7 +16117,7 @@
           "item": [
             {
               "linkId": "8.9.1",
-              "type": "string",
+              "type": "text",
               "text": "(8.9.1) Welche Hörstörung",
               "code": [
                 {
@@ -16686,7 +16643,7 @@
             },
             {
               "linkId": "8.10ga_g.9",
-              "type": "string",
+              "type": "text",
               "text": "(8.10ga_g.9) wenn ja, welche (nur ärztlich diag. Befunde)",
               "code": [
                 {
@@ -17093,7 +17050,7 @@
         {
           "linkId": "8.14c",
           "type": "open-choice",
-          "text": "(8.14c) Welche der folgenden Krankheiten wurden bei Ihrem Kind jemals ärztlich diagnostiziert?",
+          "text": "(8.14c) Welche der folgenden Krankheiten wurden bei dem Kind jemals ärztlich diagnostiziert?",
           "code": [
             {
               "code": "8.14c",
@@ -17115,7 +17072,7 @@
         {
           "linkId": "8.14d",
           "type": "open-choice",
-          "text": "(8.14d) Welche der Infektionskrankheiten hat Ihr Kind durchgemacht?",
+          "text": "(8.14d) Welche der Infektionskrankheiten hat das Kind durchgemacht?",
           "code": [
             {
               "code": "8.14d",
@@ -17137,7 +17094,7 @@
         {
           "linkId": "8.14a",
           "type": "boolean",
-          "text": "(8.14a) Muss Ihr Kind krankheitsbedingt eine spezielle Diät einhalten?",
+          "text": "(8.14a) Muss das Kind krankheitsbedingt eine spezielle Diät einhalten?",
           "code": [
             {
               "code": "8.14a",
@@ -17158,7 +17115,7 @@
           "item": [
             {
               "linkId": "8.15.1",
-              "type": "string",
+              "type": "text",
               "text": "(8.15.1) Detaillierte Angaben zum Krankenhausaufenthalt?",
               "code": [
                 {
@@ -17223,7 +17180,7 @@
             },
             {
               "linkId": "8.15.3",
-              "type": "string",
+              "type": "text",
               "text": "(8.15.3) Grund für den Krankenhausaufenthalt?",
               "code": [
                 {
@@ -17276,7 +17233,7 @@
           "answerValueSet": "#atopische-erkrankungen-vs",
           "linkId": "8.16a",
           "type": "open-choice",
-          "text": "(8.16a) Besitzt Ihr Kind Allergien?",
+          "text": "(8.16a) Besitzt das Kind Allergien?",
           "code": [
             {
               "code": "8.16a",
@@ -17307,7 +17264,7 @@
           "item": [
             {
               "linkId": "8.16b.1",
-              "type": "string",
+              "type": "text",
               "text": "(8.16b.1) Wenn ja, welche?",
               "code": [
                 {
@@ -17496,7 +17453,7 @@
         {
           "linkId": "8.22a",
           "type": "boolean",
-          "text": "(8.22a) Wurde bei Ihrem Kind eine Behinderung festgestellt?",
+          "text": "(8.22a) Wurde bei dem Kind eine Behinderung festgestellt?",
           "code": [
             {
               "code": "8.22a",
@@ -17515,7 +17472,7 @@
           "item": [
             {
               "linkId": "8.22a.1",
-              "type": "text",
+              "type": "string",
               "text": "(8.22a.1) Welcher Behinderungsgrad?",
               "code": [
                 {
@@ -17536,7 +17493,7 @@
         {
           "linkId": "8.22b",
           "type": "boolean",
-          "text": "(8.22b) Ist Ihr Kind Inhaber eines Schwerbehindertenausweises?",
+          "text": "(8.22b) Ist das Kind Inhaber eines Schwerbehindertenausweises?",
           "code": [
             {
               "code": "8.22b",
@@ -17576,7 +17533,7 @@
         {
           "linkId": "8.22c",
           "type": "boolean",
-          "text": "(8.22c) Beansprucht Ihr Kind Leistungen der Pflegeversicherung?",
+          "text": "(8.22c) Beansprucht das Kind Leistungen der Pflegeversicherung?",
           "code": [
             {
               "code": "8.22c",
@@ -17627,7 +17584,7 @@
         },
         {
           "linkId": "8.23.1",
-          "type": "string",
+          "type": "text",
           "text": "(8.23.1) Welches Medikament",
           "code": [
             {
@@ -17647,7 +17604,7 @@
         {
           "linkId": "8.25a",
           "type": "boolean",
-          "text": "(8.25a) Muss Ihr Kind ein Notfallset mit sich führen?",
+          "text": "(8.25a) Muss das Kind ein Notfallset mit sich führen?",
           "code": [
             {
               "code": "8.25a",
@@ -17851,7 +17808,7 @@
         {
           "linkId": "8.27",
           "type": "boolean",
-          "text": "(8.27) Wurde Ihr Kind operiert",
+          "text": "(8.27) Wurde das Kind operiert",
           "code": [
             {
               "code": "8.27",
@@ -17923,7 +17880,7 @@
         {
           "linkId": "8.27b",
           "type": "boolean",
-          "text": "(8.27b) Wurde Ihr Kind jemals operiert bzw. ist eine Operation geplant?",
+          "text": "(8.27b) Wurde das Kind jemals operiert bzw. ist eine Operation geplant?",
           "code": [
             {
               "code": "8.27b",
@@ -17972,7 +17929,7 @@
         {
           "linkId": "8.28a",
           "type": "boolean",
-          "text": "(8.28a) Hatte Ihr Kind einen Unfall",
+          "text": "(8.28a) Hatte das Kind einen Unfall",
           "code": [
             {
               "code": "8.28a",
@@ -17983,7 +17940,7 @@
         {
           "linkId": "8.28b",
           "type": "boolean",
-          "text": "(8.28b) Hatte  Ihr Kind jemals einen Unfall, der ärztlich behandelt wurde?",
+          "text": "(8.28b) Hatte  das Kind jemals einen Unfall, der ärztlich behandelt wurde?",
           "code": [
             {
               "code": "8.28b",
@@ -18032,7 +17989,7 @@
         {
           "linkId": "8.28.g",
           "type": "group",
-          "text": "(8.28.g) Hatte Ihr Kind einen Unfall",
+          "text": "(8.28.g) Hatte das Kind einen Unfall",
           "code": [
             {
               "code": "8.28.g",
@@ -18104,7 +18061,7 @@
         {
           "linkId": "8.29",
           "type": "open-choice",
-          "text": "(8.29) Hat Ihr Kind häufiger Befindlichkeitsstörungen?",
+          "text": "(8.29) Hat das Kind häufiger Befindlichkeitsstörungen?",
           "code": [
             {
               "code": "8.29",
@@ -18117,7 +18074,7 @@
         {
           "linkId": "8.30",
           "type": "boolean",
-          "text": "(8.30) Wurde Ihr Kind jemals aufgrund von Unfallverletzungen von einem Arzt behandelt?",
+          "text": "(8.30) Wurde das Kind jemals aufgrund von Unfallverletzungen von einem Arzt behandelt?",
           "code": [
             {
               "code": "8.30",
@@ -18137,7 +18094,7 @@
         {
           "linkId": "8.30.1",
           "type": "boolean",
-          "text": "(8.30.1) Nässt Ihr Kind ein?",
+          "text": "(8.30.1) Nässt das Kind ein?",
           "code": [
             {
               "code": "8.30.1",
@@ -18237,7 +18194,7 @@
         {
           "linkId": "8.34a",
           "type": "choice",
-          "text": "(8.34a) Zeigte Ihr Kind in den vergangenen 12 Monaten folgende Verhaltensauffälligkeiten?",
+          "text": "(8.34a) Zeigte das Kind in den vergangenen 12 Monaten folgende Verhaltensauffälligkeiten?",
           "code": [
             {
               "code": "8.34a",
@@ -18638,7 +18595,7 @@
               "item": [
                 {
                   "linkId": "8.43.1",
-                  "type": "string",
+                  "type": "text",
                   "text": "(8.43.1) Sonstiges, und zwar:",
                   "code": [
                     {
@@ -18849,7 +18806,7 @@
           "item": [
             {
               "linkId": "8.51.1",
-              "type": "string",
+              "type": "text",
               "text": "(8.51.1) Sonstiges, und zwar:",
               "code": [
                 {
@@ -18983,7 +18940,7 @@
           "item": [
             {
               "linkId": "8.56.1",
-              "type": "string",
+              "type": "text",
               "text": "(8.56.1) Sonstiges, und zwar:",
               "code": [
                 {
@@ -19069,8 +19026,8 @@
               "item": [
                 {
                   "linkId": "8.57.1",
-                  "type": "string",
-                  "text": "(8.57.1) Wegen welcher Erkrankungen ist Ihr Kind zurzeit in Behandlung??",
+                  "type": "text",
+                  "text": "(8.57.1) Wegen welcher Erkrankungen ist das Kind zurzeit in Behandlung??",
                   "code": [
                     {
                       "code": "8.57.1",
@@ -19229,7 +19186,7 @@
             },
             {
               "linkId": "8.64.1",
-              "type": "string",
+              "type": "text",
               "text": "(8.64.1) Sonstiges, und zwar:",
               "code": [
                 {
@@ -19318,7 +19275,7 @@
         },
         {
           "linkId": "8.68",
-          "type": "string",
+          "type": "text",
           "text": "(8.68) Andere Verletzung",
           "code": [
             {
@@ -19458,7 +19415,7 @@
         },
         {
           "linkId": "8.75",
-          "type": "string",
+          "type": "text",
           "text": "(8.75) Welche Hauterkrankungen",
           "code": [
             {
@@ -19505,7 +19462,7 @@
         },
         {
           "linkId": "8.77",
-          "type": "string",
+          "type": "text",
           "text": "(8.77) Welche orthopädischen Erkrankungen",
           "code": [
             {
@@ -19547,7 +19504,7 @@
             {
               "linkId": "8.79.1",
               "type": "boolean",
-              "text": "(8.79.1) Hatte Ihr Kind irgendwann einmal einen juckenden Hautausschlag, der stärker oder schwächer über mind. 6 Montae auftrat?",
+              "text": "(8.79.1) Hatte das Kind irgendwann einmal einen juckenden Hautausschlag, der stärker oder schwächer über mind. 6 Montae auftrat?",
               "code": [
                 {
                   "code": "8.79.1",
@@ -19567,7 +19524,7 @@
             {
               "linkId": "8.79.2",
               "type": "boolean",
-              "text": "(8.79.2) Trat dieser juckende Hautausschlag bei Ihrem Kind irgendwann einmal an einer der folgenden Körperstellen auf: In der Ellenbeuge, Kniekehle, an den Hand oder Fußgelenken, im Gesicht oder am Hals?",
+              "text": "(8.79.2) Trat dieser juckende Hautausschlag bei dem Kind irgendwann einmal an einer der folgenden Körperstellen auf: In der Ellenbeuge, Kniekehle, an den Hand oder Fußgelenken, im Gesicht oder am Hals?",
               "code": [
                 {
                   "code": "8.79.2",
@@ -19610,7 +19567,7 @@
             {
               "linkId": "8.80.1",
               "type": "boolean",
-              "text": "(8.80.1) Hatte Ihr Kind in den letzten 12 Monaten jemals beim Atmen pfeiffende oder keuchende Geräusche im Brustkorb?",
+              "text": "(8.80.1) Hatte das Kind in den letzten 12 Monaten jemals beim Atmen pfeiffende oder keuchende Geräusche im Brustkorb?",
               "code": [
                 {
                   "code": "8.80.1",
@@ -19630,7 +19587,7 @@
             {
               "linkId": "8.80.2",
               "type": "boolean",
-              "text": "(8.80.2) Hatte Ihr Kind in den letzten 12 Monaten jemals beim Atmen pfeiffende oder keuchende Geräusche im Brustkorb während oder nach körperlicher Anstrengung?",
+              "text": "(8.80.2) Hatte das Kind in den letzten 12 Monaten jemals beim Atmen pfeiffende oder keuchende Geräusche im Brustkorb während oder nach körperlicher Anstrengung?",
               "code": [
                 {
                   "code": "8.80.2",
@@ -19650,7 +19607,7 @@
             {
               "linkId": "8.80.3",
               "type": "boolean",
-              "text": "(8.80.3) Hatte Ihr Kind in den letzten 12 Monaten nachts einen trockenen Reizhusten, obwohl es keine Erkältung oder Bronchitis hatte?",
+              "text": "(8.80.3) Hatte das Kind in den letzten 12 Monaten nachts einen trockenen Reizhusten, obwohl es keine Erkältung oder Bronchitis hatte?",
               "code": [
                 {
                   "code": "8.80.3",
@@ -19686,7 +19643,7 @@
             {
               "linkId": "8.81.1",
               "type": "boolean",
-              "text": "(8.81.1) Hatte Ihr Kind in den letzten 12 Monaten Niesanfälle oder eine laufende, verstopfte oder juckende Nase, obwohl es nicht erkältet war?",
+              "text": "(8.81.1) Hatte das Kind in den letzten 12 Monaten Niesanfälle oder eine laufende, verstopfte oder juckende Nase, obwohl es nicht erkältet war?",
               "code": [
                 {
                   "code": "8.81.1",
@@ -19706,7 +19663,7 @@
             {
               "linkId": "8.81.2",
               "type": "boolean",
-              "text": "(8.81.2) Hatte Ihr Kind in den letzten 12 Monaten gleichzeitig mit diesen Nasenbeschwerden auch juckende oder tränende Augen?",
+              "text": "(8.81.2) Hatte das Kind in den letzten 12 Monaten gleichzeitig mit diesen Nasenbeschwerden auch juckende oder tränende Augen?",
               "code": [
                 {
                   "code": "8.81.2",
@@ -19727,7 +19684,7 @@
         },
         {
           "linkId": "8.82",
-          "type": "string",
+          "type": "text",
           "text": "(8.82) Kur mit welchem Behandlungsschwerpunkt?",
           "code": [
             {
@@ -19836,7 +19793,7 @@
         {
           "linkId": "9.1a",
           "type": "boolean",
-          "text": "(9.1a) Werden oder wurden bei Ihrem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)",
+          "text": "(9.1a) Werden oder wurden bei dem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)",
           "code": [
             {
               "code": "9.1a",
@@ -20589,7 +20546,7 @@
             },
             {
               "linkId": "9.10",
-              "type": "string",
+              "type": "text",
               "text": "(9.10) Sonstige Förderung",
               "code": [
                 {
@@ -20663,7 +20620,7 @@
         {
           "linkId": "9.13a",
           "type": "choice",
-          "text": "(9.13a) Welche Behandlungen oder Unterstützungen hat Ihr Kind jemals erhalten?",
+          "text": "(9.13a) Welche Behandlungen oder Unterstützungen hat das Kind jemals erhalten?",
           "code": [
             {
               "code": "9.13a",
@@ -20814,7 +20771,7 @@
         {
           "linkId": "9a.1a",
           "type": "boolean",
-          "text": "(9a.1a) Werden oder wurden bei Ihrem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)?",
+          "text": "(9a.1a) Werden oder wurden bei dem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)?",
           "code": [
             {
               "code": "9a.1a",
@@ -21546,7 +21503,7 @@
             },
             {
               "linkId": "9a.10",
-              "type": "string",
+              "type": "text",
               "text": "(9a.10) Sonstige Förderung",
               "code": [
                 {
@@ -21620,7 +21577,7 @@
         {
           "linkId": "9a.13a",
           "type": "choice",
-          "text": "(9a.13a) Welche Behandlungen oder Unterstützungen hat Ihr Kind jemals erhalten?",
+          "text": "(9a.13a) Welche Behandlungen oder Unterstützungen hat das Kind jemals erhalten?",
           "code": [
             {
               "code": "9a.13a",
@@ -21737,7 +21694,7 @@
         {
           "linkId": "10.2.1",
           "type": "boolean",
-          "text": "(10.2.1) Mein Kind hat einen eigenen Fernseher?",
+          "text": "(10.2.1) Das Kind hat einen eigenen Fernseher?",
           "code": [
             {
               "code": "10.2.1",
@@ -21804,7 +21761,7 @@
         {
           "linkId": "10.3a",
           "type": "choice",
-          "text": "(10.3a) Wie lange sieht Ihr Kind durchschnittlich pro Tag Fernsehsendungen und Filme an und/oder spielt mit dem Smartphone/Tablet/Computer/ an der Spielkonsole? An einem Wochentag:",
+          "text": "(10.3a) Wie lange sieht das Kind durchschnittlich pro Tag Fernsehsendungen und Filme an und/oder spielt mit dem Smartphone/Tablet/Computer/ an der Spielkonsole? An einem Wochentag:",
           "code": [
             {
               "code": "10.3a",
@@ -21825,7 +21782,7 @@
         {
           "linkId": "10.3b",
           "type": "choice",
-          "text": "(10.3b) Wie lange sieht nutzt Kind Fernseher, Smartphone oder Spielkonsole an einem Wochentag",
+          "text": "(10.3b) Wie lange sieht bzw. nutzt das Kind Fernseher, Smartphone oder Spielkonsole an einem Wochentag",
           "code": [
             {
               "code": "10.3b",
@@ -21846,7 +21803,7 @@
         {
           "linkId": "10.4a",
           "type": "choice",
-          "text": "(10.4a) Wie lange sieht Ihr Kind durchschnittlich pro Tag Fernsehsendungen und Filme an und/oder spielt mit dem Smartphone/Tablet/Computer/ an der Spielkonsole? An einem Samstag/ Sonntag:",
+          "text": "(10.4a) Wie lange sieht das Kind durchschnittlich pro Tag Fernsehsendungen und Filme an und/oder spielt mit dem Smartphone/Tablet/Computer/ an der Spielkonsole? An einem Samstag/ Sonntag:",
           "code": [
             {
               "code": "10.4a",
@@ -21867,7 +21824,7 @@
         {
           "linkId": "10.4b",
           "type": "choice",
-          "text": "(10.4b) Wie lange sieht nutzt Kind Fernseher, Smartphone oder Spielkonsole am Wochenende",
+          "text": "(10.4b) Wie lange sieht bzw. nutzt das Kind Fernseher, Smartphone oder Spielkonsole am Wochenende",
           "code": [
             {
               "code": "10.4b",
@@ -21888,7 +21845,7 @@
         {
           "linkId": "10.4c",
           "type": "choice",
-          "text": "(10.4c) Wie viele Stunden am Tag beschäftigt sich Ihr Kind im Durchschnitt mit elektronischen Geräten? (elektronische Geräte sind Fernsehen, DVD, Computer, Tablet, Smartphone, Playstation und andere) ",
+          "text": "(10.4c) Wie viele Stunden am Tag beschäftigt sich das Kind im Durchschnitt mit elektronischen Geräten? (elektronische Geräte sind Fernsehen, DVD, Computer, Tablet, Smartphone, Playstation und andere) ",
           "code": [
             {
               "code": "10.4c",
@@ -21937,8 +21894,8 @@
         },
         {
           "linkId": "11.3",
-          "type": "string",
-          "text": "(11.3) Name Facharzt",
+          "type": "text",
+          "text": "(11.3) Name Fachärzte",
           "code": [
             {
               "code": "11.3",
@@ -21949,7 +21906,7 @@
         {
           "linkId": "11.4",
           "type": "open-choice",
-          "text": "(11.4) Bei welchen Ärztinnen oder Ärzten haben Sie Ihr Kind in den vergangenen 12 Monaten vorgestellt?",
+          "text": "(11.4) Bei welchen Ärztinnen oder Ärzten haben Sie das Kind in den vergangenen 12 Monaten vorgestellt?",
           "code": [
             {
               "code": "11.4",
@@ -22352,7 +22309,7 @@
         {
           "linkId": "12.19",
           "type": "choice",
-          "text": "(12.19) Wie viele Stunden pro Tag ist Ihr Kind im Freizeitbereich (z.B. Wald oder Garten) körperlich aktiv?",
+          "text": "(12.19) Wie viele Stunden pro Tag ist das Kind im Freizeitbereich (z.B. Wald oder Garten) körperlich aktiv?",
           "code": [
             {
               "code": "12.19",
@@ -22373,7 +22330,7 @@
         {
           "linkId": "12.20",
           "type": "boolean",
-          "text": "(12.20) Ist Ihr Kind Mitglied in einem Sportverein?",
+          "text": "(12.20) Ist das Kind Mitglied in einem Sportverein?",
           "code": [
             {
               "code": "12.20",
@@ -22393,7 +22350,7 @@
         {
           "linkId": "12.21",
           "type": "choice",
-          "text": "(12.21) Wie oft geht Ihr Kind in den Sportverein?",
+          "text": "(12.21) Wie oft geht das Kind in den Sportverein?",
           "code": [
             {
               "code": "12.21",
@@ -22421,7 +22378,7 @@
         {
           "linkId": "12.22",
           "type": "choice",
-          "text": "(12.22) Wie oft trainiert Ihr Kind pro Woche außerhalb der Kita angeleitet?",
+          "text": "(12.22) Wie oft trainiert das Kind pro Woche außerhalb der Kita angeleitet?",
           "code": [
             {
               "code": "12.22",
@@ -22442,7 +22399,7 @@
         {
           "linkId": "12.23",
           "type": "boolean",
-          "text": "(12.23) Fährt Ihr Kind frei Fahrrad",
+          "text": "(12.23) Fährt das Kind frei Fahrrad",
           "code": [
             {
               "code": "12.23",
@@ -22696,7 +22653,7 @@
         },
         {
           "linkId": "13.5.1",
-          "type": "text",
+          "type": "string",
           "text": "(13.5.1) Grund der Erwerbslosigkeit",
           "code": [
             {
@@ -22750,7 +22707,7 @@
         },
         {
           "linkId": "13.6.1",
-          "type": "text",
+          "type": "string",
           "text": "(13.6.1) Grund der Erwerbslosigkeit",
           "code": [
             {

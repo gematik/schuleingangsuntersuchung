@@ -473,7 +473,7 @@
         {
           "linkId": "4.1b",
           "type": "choice",
-          "text": "(4.1b) Wie lange besucht Ihr Kind bis jetzt eine deutschsprachig Kindertageseinrichtung?",
+          "text": "(4.1b) Wie lange besucht das Kind bis jetzt eine deutschsprachig Kindertageseinrichtung?",
           "code": [
             {
               "code": "4.1b",
@@ -527,7 +527,7 @@
         {
           "linkId": "7.12",
           "type": "boolean",
-          "text": "(7.12) Sorgen Sie sich um die Entwicklung ihres Kindes?",
+          "text": "(7.12) Sorgen Sie sich um die Entwicklung des Kindes?",
           "code": [
             {
               "code": "7.12",
@@ -993,7 +993,7 @@
         {
           "linkId": "10.3a",
           "type": "choice",
-          "text": "(10.3a) Wie lange sieht Ihr Kind durchschnittlich pro Tag Fernsehsendungen und Filme an und/oder spielt mit dem Smartphone/Tablet/Computer/ an der Spielkonsole? An einem Wochentag:",
+          "text": "(10.3a) Wie lange sieht das Kind durchschnittlich pro Tag Fernsehsendungen und Filme an und/oder spielt mit dem Smartphone/Tablet/Computer/ an der Spielkonsole? An einem Wochentag:",
           "code": [
             {
               "code": "10.3a",
@@ -1014,7 +1014,7 @@
         {
           "linkId": "10.4a",
           "type": "choice",
-          "text": "(10.4a) Wie lange sieht Ihr Kind durchschnittlich pro Tag Fernsehsendungen und Filme an und/oder spielt mit dem Smartphone/Tablet/Computer/ an der Spielkonsole? An einem Samstag/ Sonntag:",
+          "text": "(10.4a) Wie lange sieht das Kind durchschnittlich pro Tag Fernsehsendungen und Filme an und/oder spielt mit dem Smartphone/Tablet/Computer/ an der Spielkonsole? An einem Samstag/ Sonntag:",
           "code": [
             {
               "code": "10.4a",

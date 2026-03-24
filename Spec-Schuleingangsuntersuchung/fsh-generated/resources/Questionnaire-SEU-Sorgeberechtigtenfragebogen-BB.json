@@ -5631,7 +5631,7 @@
         {
           "linkId": "8.27",
           "type": "boolean",
-          "text": "(8.27) Wurde Ihr Kind operiert",
+          "text": "(8.27) Wurde das Kind operiert",
           "code": [
             {
               "code": "8.27",
@@ -5642,7 +5642,7 @@
         {
           "linkId": "8.28a",
           "type": "boolean",
-          "text": "(8.28a) Hatte Ihr Kind einen Unfall",
+          "text": "(8.28a) Hatte das Kind einen Unfall",
           "code": [
             {
               "code": "8.28a",
@@ -5653,7 +5653,7 @@
         {
           "linkId": "8.28.g",
           "type": "group",
-          "text": "(8.28.g) Hatte Ihr Kind einen Unfall",
+          "text": "(8.28.g) Hatte das Kind einen Unfall",
           "code": [
             {
               "code": "8.28.g",
@@ -5697,7 +5697,7 @@
         },
         {
           "linkId": "8.68",
-          "type": "string",
+          "type": "text",
           "text": "(8.68) Andere Verletzung",
           "code": [
             {
@@ -5840,7 +5840,7 @@
         {
           "linkId": "9a.1a",
           "type": "boolean",
-          "text": "(9a.1a) Werden oder wurden bei Ihrem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)",
+          "text": "(9a.1a) Werden oder wurden bei dem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)",
           "code": [
             {
               "code": "9a.1a",
@@ -6020,7 +6020,7 @@
             },
             {
               "linkId": "9a.10",
-              "type": "string",
+              "type": "text",
               "text": "(9a.10) Sonstige Förderung",
               "code": [
                 {
@@ -6081,7 +6081,7 @@
         {
           "linkId": "10.3b",
           "type": "choice",
-          "text": "(10.3b) Wie lange sieht nutzt Kind Fernseher, Smartphone oder Spielkonsole an einem Wochentag",
+          "text": "(10.3b) Wie lange sieht bzw. nutzt das Kind Fernseher, Smartphone oder Spielkonsole an einem Wochentag",
           "code": [
             {
               "code": "10.3b",
@@ -6102,7 +6102,7 @@
         {
           "linkId": "10.4b",
           "type": "choice",
-          "text": "(10.4b) Wie lange sieht nutzt Kind Fernseher, Smartphone oder Spielkonsole am Wochenende",
+          "text": "(10.4b) Wie lange sieht bzw. nutzt das Kind Fernseher, Smartphone oder Spielkonsole am Wochenende",
           "code": [
             {
               "code": "10.4b",

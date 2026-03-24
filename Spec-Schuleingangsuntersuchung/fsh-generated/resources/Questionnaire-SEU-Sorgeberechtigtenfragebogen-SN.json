@@ -2118,7 +2118,7 @@
         {
           "linkId": "0.1h",
           "type": "display",
-          "text": "Bitte tragen Sie die Grundschule ein, an der Sie Ihr Kind anmelden werden oder bereits angemeldet haben. Die Schule erhält eine Mitteilung über schulrelevante Ergebnisse.",
+          "text": "Bitte tragen Sie die Grundschule ein, an der Sie das Kind anmelden werden oder bereits angemeldet haben. Die Schule erhält eine Mitteilung über schulrelevante Ergebnisse.",
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
@@ -2455,7 +2455,7 @@
         },
         {
           "linkId": "4.6a",
-          "type": "string",
+          "type": "text",
           "text": "(4.6a) Anschrift des Kindergartens",
           "code": [
             {
@@ -2555,7 +2555,7 @@
                 }
               ],
               "linkId": "5.5.1",
-              "type": "string",
+              "type": "text",
               "text": "(5.5.1) Welche Auffälligkeit?",
               "code": [
                 {
@@ -2711,7 +2711,7 @@
           "item": [
             {
               "linkId": "7.12.1",
-              "type": "string",
+              "type": "text",
               "text": "(7.12.1) Welche Sorgen",
               "code": [
                 {
@@ -2755,7 +2755,7 @@
           "item": [
             {
               "linkId": "8.3.1",
-              "type": "string",
+              "type": "text",
               "text": "(8.3.1) Welche Sehstörung",
               "code": [
                 {
@@ -2786,7 +2786,7 @@
           "item": [
             {
               "linkId": "8.9.1",
-              "type": "string",
+              "type": "text",
               "text": "(8.9.1) Welche Hörstörung",
               "code": [
                 {
@@ -2837,7 +2837,7 @@
           "item": [
             {
               "linkId": "8.15.1",
-              "type": "string",
+              "type": "text",
               "text": "(8.15.1) Detaillierte Angaben zum Krankenhausaufenthalt?",
               "code": [
                 {
@@ -2859,7 +2859,7 @@
           "answerValueSet": "#atopische-erkrankungen-vs",
           "linkId": "8.16a",
           "type": "open-choice",
-          "text": "(8.16a) Besitzt Ihr Kind Allergien?",
+          "text": "(8.16a) Besitzt das Kind Allergien?",
           "code": [
             {
               "code": "8.16a",
@@ -2880,7 +2880,7 @@
         },
         {
           "linkId": "8.23.1",
-          "type": "string",
+          "type": "text",
           "text": "(8.23.1) Welches Medikament",
           "code": [
             {
@@ -2900,7 +2900,7 @@
         {
           "linkId": "8.27",
           "type": "boolean",
-          "text": "(8.27) Wurde Ihr Kind operiert",
+          "text": "(8.27) Wurde das Kind operiert",
           "code": [
             {
               "code": "8.27",
@@ -2950,7 +2950,7 @@
         },
         {
           "linkId": "8.75",
-          "type": "string",
+          "type": "text",
           "text": "(8.75) Welche Hauterkrankungen",
           "code": [
             {
@@ -2997,7 +2997,7 @@
         },
         {
           "linkId": "8.77",
-          "type": "string",
+          "type": "text",
           "text": "(8.77) Welche orthopädischen Erkrankungen",
           "code": [
             {
@@ -3038,7 +3038,7 @@
         {
           "linkId": "9.1a",
           "type": "boolean",
-          "text": "(9.1a) Werden oder wurden bei Ihrem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)",
+          "text": "(9.1a) Werden oder wurden bei dem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)",
           "code": [
             {
               "code": "9.1a",
@@ -3189,7 +3189,7 @@
             },
             {
               "linkId": "9.10",
-              "type": "string",
+              "type": "text",
               "text": "(9.10) Sonstige Förderung",
               "code": [
                 {

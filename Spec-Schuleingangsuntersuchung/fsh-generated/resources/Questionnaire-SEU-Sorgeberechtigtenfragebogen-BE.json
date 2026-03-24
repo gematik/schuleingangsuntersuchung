@@ -4102,7 +4102,7 @@
         {
           "linkId": "1.6.3",
           "type": "date",
-          "text": "(1.6.3) Seit wann lebt Ihr Kind in Deutschland (Monat/Jahr)?",
+          "text": "(1.6.3) Seit wann lebt das Kind in Deutschland (Monat/Jahr)?",
           "code": [
             {
               "code": "1.6.3",
@@ -4379,7 +4379,7 @@
           "item": [
             {
               "linkId": "8.23.1",
-              "type": "string",
+              "type": "text",
               "text": "(8.23.1) Welches Medikament",
               "code": [
                 {
@@ -4526,7 +4526,7 @@
           "answerValueSet": "#SorgenKindVS",
           "linkId": "7.14",
           "type": "choice",
-          "text": "(7.14) Machen Sie sich Sorgen um Ihr Kind wegen",
+          "text": "(7.14) Machen Sie sich Sorgen um das Kind wegen",
           "code": [
             {
               "code": "7.14",
@@ -4546,7 +4546,7 @@
         {
           "linkId": "8.30.1",
           "type": "boolean",
-          "text": "(8.30.1) Nässt Ihr Kind ein?",
+          "text": "(8.30.1) Nässt das Kind ein?",
           "code": [
             {
               "code": "8.30.1",
@@ -4621,7 +4621,7 @@
         {
           "linkId": "4.5",
           "type": "boolean",
-          "text": "(4.5) Besucht Ihr Kind eine andere Form der Tagesbetreuung?",
+          "text": "(4.5) Besucht das Kind eine andere Form der Tagesbetreuung?",
           "code": [
             {
               "code": "4.5",
@@ -4834,7 +4834,7 @@
         {
           "linkId": "10.4c",
           "type": "choice",
-          "text": "(10.4c) Wieviele Stunden am Tag beschäftigt sich Ihr Kind im Durchschnitt mit elektronischen Geräten? (elektronische Geräte sind Fernsehen, DVD, Computer, Tablet, Smartphone, Playstation und andere) ",
+          "text": "(10.4c) Wieviele Stunden am Tag beschäftigt sich das Kind im Durchschnitt mit elektronischen Geräten? (elektronische Geräte sind Fernsehen, DVD, Computer, Tablet, Smartphone, Playstation und andere) ",
           "code": [
             {
               "code": "10.4c",
@@ -4855,7 +4855,7 @@
         {
           "linkId": "10.2.1",
           "type": "boolean",
-          "text": "(10.2.1) Mein Kind hat einen eigenen Fernseher?",
+          "text": "(10.2.1) Das Kind hat einen eigenen Fernseher?",
           "code": [
             {
               "code": "10.2.1",

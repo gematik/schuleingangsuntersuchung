@@ -2813,7 +2813,7 @@
           "item": [
             {
               "linkId": "8.15.1",
-              "type": "string",
+              "type": "text",
               "text": "(8.15.1) Detaillierte Angaben zum Krankenhausaufenthalt?",
               "code": [
                 {
@@ -2835,7 +2835,7 @@
           "answerValueSet": "#atopische-erkrankungen-vs",
           "linkId": "8.16a",
           "type": "open-choice",
-          "text": "(8.16a) Besitzt Ihr Kind Allergien?",
+          "text": "(8.16a) Besitzt das Kind Allergien?",
           "code": [
             {
               "code": "8.16a",
@@ -2856,7 +2856,7 @@
         },
         {
           "linkId": "8.23.1",
-          "type": "string",
+          "type": "text",
           "text": "(8.23.1) Welches Medikament",
           "code": [
             {
@@ -2953,7 +2953,7 @@
         },
         {
           "linkId": "9.10",
-          "type": "string",
+          "type": "text",
           "text": "(9.10) Sonstige Förderung",
           "code": [
             {

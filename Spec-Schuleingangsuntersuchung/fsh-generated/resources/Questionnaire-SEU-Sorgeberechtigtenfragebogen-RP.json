@@ -4234,7 +4234,7 @@
         },
         {
           "linkId": "0.15",
-          "type": "string",
+          "type": "text",
           "text": "(0.15) Bemerkung",
           "code": [
             {
@@ -4785,7 +4785,7 @@
             {
               "linkId": "3.2.6",
               "type": "boolean",
-              "text": "(3.2.6) Hat Ihr Kind eine körperliche, geistige oder seelische Behinderung?",
+              "text": "(3.2.6) Hat das Kind eine körperliche, geistige oder seelische Behinderung?",
               "code": [
                 {
                   "code": "3.2.6",
@@ -4802,7 +4802,7 @@
                     }
                   ],
                   "linkId": "3.2.6.1",
-                  "type": "string",
+                  "type": "text",
                   "text": "(3.2.6.1) Welche Behinderung?",
                   "code": [
                     {
@@ -5058,7 +5058,7 @@
                 }
               ],
               "linkId": "5.5.1",
-              "type": "string",
+              "type": "text",
               "text": "(5.5.1) Welche Auffälligkeit?",
               "code": [
                 {
@@ -5089,7 +5089,7 @@
                 }
               ],
               "linkId": "5.6.1",
-              "type": "string",
+              "type": "text",
               "text": "(5.6.1) Welche Auffälligkeit?",
               "code": [
                 {
@@ -5205,7 +5205,7 @@
           "item": [
             {
               "linkId": "6.4.1",
-              "type": "string",
+              "type": "text",
               "text": "(6.4.1) Welche Sprachauffälligkeiten",
               "code": [
                 {
@@ -5448,7 +5448,7 @@
           "item": [
             {
               "linkId": "8.15.1",
-              "type": "string",
+              "type": "text",
               "text": "(8.15.1) Detaillierte Angaben zum Krankenhausaufenthalt?",
               "code": [
                 {
@@ -5470,7 +5470,7 @@
           "answerValueSet": "#atopische-erkrankungen-vs",
           "linkId": "8.16a",
           "type": "open-choice",
-          "text": "(8.16a) Besitzt Ihr Kind Allergien?",
+          "text": "(8.16a) Besitzt das Kind Allergien?",
           "code": [
             {
               "code": "8.16a",
@@ -5491,7 +5491,7 @@
         },
         {
           "linkId": "8.23.1",
-          "type": "string",
+          "type": "text",
           "text": "(8.23.1) Welches Medikament",
           "code": [
             {
@@ -5666,7 +5666,7 @@
         {
           "linkId": "12.23",
           "type": "boolean",
-          "text": "(12.23) Fährt Ihr Kind frei Fahrrad",
+          "text": "(12.23) Fährt das Kind frei Fahrrad",
           "code": [
             {
               "code": "12.23",
