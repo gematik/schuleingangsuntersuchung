@@ -38,7 +38,6 @@ Description: "Sorgeberechtigtenfragebogen"
 * contained[+] = VersorgungsartVS
 * contained[+] = ChronischeKrankheitenVS
 * contained[+] = UeberwiegendGesprocheneSpracheVS
-* contained[+] = EntwicklungVS
 * contained[+] = TagsNachtsSauberVS
 * contained[+] = AtopischeErkrankungenVS
 * contained[+] = AllgemeineBeschwerdenVS
@@ -725,9 +724,6 @@ Description: "Sorgeberechtigtenfragebogen"
   * item[+]
     * insert addItemWithSource(7.5b, #choice, [[Sprechen gelernt (mind. 2-Wort-Sätze, ca. 50 Wörter)]], #DE-ST)
     * answerValueSet = Canonical(SprechenGelerntVS)
-  * item[+]
-    * insert addItem(7.6a, #choice, [[Tags und nachts sauber]])
-    * answerValueSet = Canonical(EntwicklungVS)
   * item[+]
     * insert addItemWithSource(7.6b, #choice, [[Tags und nachts sauber]], #DE-ST)
     * answerValueSet = Canonical(TagsNachtsSauberVS)
