@@ -118,7 +118,7 @@ Description: "SorgeberechtigtenfragebogenBY"
   * item[+] insert addItemWithSource(6.1d, #boolean, [[Kind wächst mehrsprachig auf]], #DE-BY)
   * item[+] insert addItemWithSource(6.1e, #choice, [[Zu Hause gesprochene Sprache(n)]], #DE-BY)
     * answerValueSet = Canonical(SEU_UB_GesprocheneSpracheVS)
-  * item[+] insert addItemWithSource(6.1f, #string, [[Zu Hause gesprochene Sprache(n) andere]], #DE-BY)
+  * item[+] insert addItemWithSource(6.1e.1, #string, [[Zu Hause gesprochene Sprache(n) andere]], #DE-BY)
     * insert enableWhenCode(6.1e, =, SEU_UB_GesprocheneSpracheCS, 2)
     * insert enableWhenCode(6.1e, =, SEU_UB_GesprocheneSpracheCS, 8)
     * enableBehavior = #any
