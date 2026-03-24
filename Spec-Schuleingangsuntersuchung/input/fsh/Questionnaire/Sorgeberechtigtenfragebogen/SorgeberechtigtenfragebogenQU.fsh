@@ -173,7 +173,7 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert initialExpression("%patient.name[0].given[0]")
   * item[+]
     * insert addItem(1.3, #date, Geburtsdatum)
-    * insert initialExpression("%patient.birthdate")
+    * insert initialExpression("%patient.birthDate")
   * item[+]
     * insert addItem(1.4, #choice, Staatsangehörigkeit)
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
