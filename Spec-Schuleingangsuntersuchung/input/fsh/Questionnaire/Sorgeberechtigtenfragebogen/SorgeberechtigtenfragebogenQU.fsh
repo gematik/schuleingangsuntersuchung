@@ -1063,6 +1063,8 @@ Description: "Sorgeberechtigtenfragebogen"
     * item[+]
       * insert addItemWithSource(8.25a.2, #text, [[Namen der Notfallmedikamente]], #DE-TH)
       * insert enableWhenBoolean(8.25a, =, true)
+      
+// Erkrankungen
   * item[+]
     * insert addItem(8.25, #boolean, [[Eine Erkrankung, die in einer Notfallsituation beachtet werden muss]])
   * item[+]
