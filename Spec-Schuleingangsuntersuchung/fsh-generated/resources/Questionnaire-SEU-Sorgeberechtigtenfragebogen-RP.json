@@ -4724,6 +4724,24 @@
           ],
           "item": [
             {
+              "linkId": "3.2.1-info",
+              "type": "display",
+              "text": "Bitte geben Sie an, ob bei einem Familienmitglied ein Brillenträger bekannt ist.",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "code": "help",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
               "linkId": "3.2.1",
               "type": "boolean",
               "text": "(3.2.1) Brillenträger",
@@ -5564,9 +5582,37 @@
       ],
       "item": [
         {
+          "linkId": "9.1a",
+          "type": "boolean",
+          "text": "(9.1a) Werden oder wurden bei dem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)",
+          "code": [
+            {
+              "code": "9.1a",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-SL"
+              }
+            }
+          ],
+          "required": true
+        },
+        {
           "linkId": "9.1a.g",
           "type": "group",
           "text": "(9.1a.g) Therapien",
+          "enableWhen": [
+            {
+              "question": "9.1a",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
           "extension": [
             {
               "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",

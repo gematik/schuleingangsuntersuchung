@@ -2548,6 +2548,35 @@
           ],
           "item": [
             {
+              "linkId": "3.2.1-info",
+              "type": "display",
+              "text": "Bitte geben Sie an, ob bei einem Familienmitglied ein Brillenträger bekannt ist.",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "code": "help",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
+            {
+              "linkId": "3.2.1",
+              "type": "boolean",
+              "text": "(3.2.1) Brillenträger",
+              "code": [
+                {
+                  "code": "3.2.1",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ]
+            },
+            {
               "linkId": "3.2.5",
               "type": "open-choice",
               "text": "(3.2.5) Chronische Erkrankung",

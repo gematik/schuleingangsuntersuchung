@@ -13073,11 +13073,6 @@
               "question": "3.1",
               "operator": ">",
               "answerInteger": 0
-            },
-            {
-              "question": "3.1c",
-              "operator": ">",
-              "answerInteger": 1
             }
           ],
           "enableBehavior": "any",
@@ -13138,6 +13133,24 @@
             }
           ],
           "item": [
+            {
+              "linkId": "3.2.1-info",
+              "type": "display",
+              "text": "Bitte geben Sie an, ob bei einem Familienmitglied ein Brillenträger bekannt ist.",
+              "extension": [
+                {
+                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
+                  "valueCodeableConcept": {
+                    "coding": [
+                      {
+                        "code": "help",
+                        "system": "http://hl7.org/fhir/questionnaire-item-control"
+                      }
+                    ]
+                  }
+                }
+              ]
+            },
             {
               "linkId": "3.2.1",
               "type": "boolean",
@@ -17909,58 +17922,9 @@
           ]
         },
         {
-          "linkId": "8.28b",
-          "type": "boolean",
-          "text": "(8.28b) Hatte  das Kind jemals einen Unfall, der ärztlich behandelt wurde?",
-          "code": [
-            {
-              "code": "8.28b",
-              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "extension": [
-            {
-              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-              "valueCoding": {
-                "system": "urn:iso:std:iso:3166-2:de",
-                "code": "DE-BB"
-              }
-            }
-          ],
-          "item": [
-            {
-              "linkId": "8.28b.1",
-              "type": "text",
-              "text": "(8.28b.1) Falls ja, welche Verletzung und wann?",
-              "code": [
-                {
-                  "code": "8.28b.1",
-                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-                }
-              ],
-              "extension": [
-                {
-                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-                  "valueCoding": {
-                    "system": "urn:iso:std:iso:3166-2:de",
-                    "code": "DE-TH"
-                  }
-                }
-              ],
-              "enableWhen": [
-                {
-                  "question": "8.28b",
-                  "operator": "=",
-                  "answerBoolean": true
-                }
-              ]
-            }
-          ]
-        },
-        {
           "linkId": "8.28.g",
           "type": "group",
-          "text": "(8.28.g) Hatte das Kind einen Unfall",
+          "text": "(8.28.g) Informationen zu Unfällen",
           "code": [
             {
               "code": "8.28.g",
@@ -17970,11 +17934,6 @@
           "enableWhen": [
             {
               "question": "8.28a",
-              "operator": "=",
-              "answerBoolean": true
-            },
-            {
-              "question": "8.28b",
               "operator": "=",
               "answerBoolean": true
             }
@@ -18026,6 +17985,55 @@
                 }
               ],
               "answerValueSet": "#seu-ef-unfall-vs"
+            }
+          ]
+        },
+        {
+          "linkId": "8.28b",
+          "type": "boolean",
+          "text": "(8.28b) Hatte  das Kind jemals einen Unfall, der ärztlich behandelt wurde?",
+          "code": [
+            {
+              "code": "8.28b",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BB"
+              }
+            }
+          ],
+          "item": [
+            {
+              "linkId": "8.28b.1",
+              "type": "text",
+              "text": "(8.28b.1) Falls ja, welche Verletzung und wann?",
+              "code": [
+                {
+                  "code": "8.28b.1",
+                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                }
+              ],
+              "extension": [
+                {
+                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                  "valueCoding": {
+                    "system": "urn:iso:std:iso:3166-2:de",
+                    "code": "DE-TH"
+                  }
+                }
+              ],
+              "enableWhen": [
+                {
+                  "question": "8.28b",
+                  "operator": "=",
+                  "answerBoolean": true
+                }
+              ]
             }
           ]
         },
