@@ -1613,6 +1613,9 @@ Description: "Sorgeberechtigtenfragebogen"
   * item[+]
     * insert addItemWithSource(10.4c, #choice, [[Wie viele Stunden am Tag beschäftigt sich das Kind im Durchschnitt mit elektronischen Geräten? (elektronische Geräte sind Fernsehen, DVD, Computer, Tablet, Smartphone, Playstation und andere) ]], #DE-BE)
     * answerValueSet = Canonical(SEUEFMedienkonsumBerlinVS)
+  * item[+]
+    * insert addItemWithSource(10.5, #choice, [[Wie lange sieht Ihr Kind durchschnittlich pro Tag Fernsehen, Videos, Streamingdienste oder spielt mit der Spielekonsole, dem Smartphone oder anderen elektronischen Geräten?]], #DE-BB)
+    * answerValueSet = Canonical(SEU_EF_ZeitdauerVS)
 //********************************************
 // Arzt
 * item[+]

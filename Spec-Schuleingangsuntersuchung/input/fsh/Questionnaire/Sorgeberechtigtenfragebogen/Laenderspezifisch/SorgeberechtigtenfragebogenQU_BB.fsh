@@ -228,10 +228,7 @@ Description: "Sorgeberechtigtenfragebogen BB"
 * item[+]
   * insert addGroup(10, Medienkonsum)
   * item[+]
-    * insert addItemWithSource(10.3b, #choice, [[Wie lange sieht bzw. nutzt das Kind Fernseher, Smartphone oder Spielkonsole an einem Wochentag]], #DE-BB)
-    * answerValueSet = Canonical(SEU_EF_ZeitdauerVS)
-  * item[+]
-    * insert addItemWithSource(10.4b, #choice, [[Wie lange sieht bzw. nutzt das Kind Fernseher, Smartphone oder Spielkonsole am Wochenende]], #DE-BW)
+    * insert addItemWithSource(10.5, #choice, [[Wie lange sieht das Kind durchschnittlich pro Tag Fernsehen, Videos, Streamingdienste oder spielt mit der Spielekonsole, dem Smartphone oder anderen elektronischen Geräten?]], #DE-BB)
     * answerValueSet = Canonical(SEU_EF_ZeitdauerVS)
 //********************************************
 // Arzt
