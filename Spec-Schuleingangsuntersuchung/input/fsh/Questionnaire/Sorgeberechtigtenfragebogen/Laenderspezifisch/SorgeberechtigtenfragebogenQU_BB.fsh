@@ -120,7 +120,7 @@ Description: "Sorgeberechtigtenfragebogen BB"
 * item[+]
   * insert addItem(7, #group, [[Entwicklung]])
   * item[+]
-    * insert addItem(7.11, #open-choice, [[Auffälligkeit des Verhaltens]])
+    * insert addItemWithSource(7.11d, #open-choice, [[Hatte das Kind in den vergangenen 12 Monaten folgende Verhaltensauffälligkeiten?]], #DE-BB)
     * repeats = true
     * answerValueSet = Canonical(AuffaelligkeitVerhaltenVS)
 //********************************************

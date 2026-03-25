@@ -770,6 +770,10 @@ Description: "Sorgeberechtigtenfragebogen"
   * item[+]
     * insert addItemWithSource(7.11b, #boolean, [[Würden Sie sagen, dass das Kind insgesamt gesehen in einem oder mehreren der folgenden Bereiche Schwierigkeiten hat: Stimmung (bedrückt, ängstlich, schwankend, aufbrausend), Konzentration (kann nicht lange stillsitzen, hört beim Vorlesen nicht ausdauernd zu), Verhalten, Umgang mit Anderen?]], #DE-BY)
   * item[+]
+    * insert addItemWithSource(7.11d, #open-choice, [[Hatte Ihr Kind in den vergangenen 12 Monaten folgende Verhaltensauffälligkeiten?]], #DE-BB)
+    * repeats = true
+    * answerValueSet = Canonical(AuffaelligkeitVerhaltenVS)
+  * item[+]
     * insert addItem(7.12, #boolean, [[Sorgen Sie sich um die Entwicklung ihres Kindes?]])
     * item[+]
       * insert addItem(7.12.1, #text, [[Welche Sorgen]])
