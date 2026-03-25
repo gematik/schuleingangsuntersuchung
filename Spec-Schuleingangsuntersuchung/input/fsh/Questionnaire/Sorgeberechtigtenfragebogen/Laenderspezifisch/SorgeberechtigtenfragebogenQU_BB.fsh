@@ -128,23 +128,9 @@ Description: "Sorgeberechtigtenfragebogen BB"
 * item[+]
   * insert addItem(8, #group, [[Erkrankungen und gesundheitliche Einschränkungen]])
   * item[+]
-    * insert addItem(8.1, #boolean, [[In regelmäßiger ärztlicher bzw. psychologischer Behandlung]])
-  * item[+]
-    * insert addItemWithSource(8.2c, #open-choice, [[Chronische Erkrankung, Fachrichtung]], #DE-BB)
-    * insert enableWhenBoolean(8.1, =, true)
-    * answerValueSet = Canonical(SEU_EF_FachaerzteVS)
-  * item[+]
     * insert addItemWithSource(8.6a, #choice, [[Hilfsmittel?]], #DE-BB)
     * answerValueSet = Canonical(SEU_EF_HilfsmittelVS)
     * repeats = true
-  * item[+]
-    * insert addItem(8.11.g, #group, [[Erkrankungen]])
-    * repeats = true
-    * item[+]
-      * answerValueSet = Canonical(ErkrankungVS)
-      * insert addItem(8.11.g.1, #open-choice, [[Erkrankung]])
-    * item[+]        
-      * insert addItem(8.11.g.3, #boolean, [[Durch Ärzt:in festgestellt]])
   * item[+]
     * insert addItem(8.12.g, #group, [[Infektionskrankheiten]])
     * repeats = true
@@ -158,6 +144,10 @@ Description: "Sorgeberechtigtenfragebogen BB"
       * answerValueSet = Canonical(ErkrankungenLetztesJahrVS)
       * insert addItem(8.13.g.1, #open-choice, [[Erkrankung]])
   * item[+]
+    * insert addItemWithSource(8.14e, #open-choice, [[Welche der folgenden Krankheiten wurden bei dem Kind jemals durch einen Arzt festgestellt?]], #DE-BB)
+    * answerValueSet = Canonical(ErkrankungVS)
+    * repeats = true
+  * item[+]
     * insert addItem(8.18, #boolean, [[Behindertenausweis vorhanden]])
   * item[+]
     * insert addItem(8.19, #integer, [[Grad der Behinderung]])
@@ -167,9 +157,9 @@ Description: "Sorgeberechtigtenfragebogen BB"
   * item[+]
     * insert addItem(8.23, #boolean, [[Regelmäßige Medikamenteneinnahme]])
   * item[+]
-    * insert addItem(8.27, #boolean, [[Wurde das Kind operiert]])
+    * insert addItemWithSource(8.27b, #boolean, [[Wurde das Kind jemals operiert bzw. ist eine Operation geplant?]], #DE-TH)
   * item[+]
-    * insert addItem(8.28a, #boolean, [[Hatte das Kind einen Unfall]])
+    * insert addItemWithSource(8.28b, #boolean, [[Hatte  das Kind jemals einen Unfall, der ärztlich behandelt wurde?]], #DE-BB)
   * item[+]
     * insert addItem(8.28.g, #group, [[Informationen zu Unfällen]])
     * insert enableWhenBoolean(8.28a, =, true)
@@ -214,6 +204,9 @@ Description: "Sorgeberechtigtenfragebogen BB"
 // Arzt
 * item[+]
   * insert addGroup(11, Arzt)
+  * item[+]
+    * insert addItemWithSource(11.4, #open-choice, [[Bei welchen Ärztinnen oder Ärzten haben Sie das Kind in den vergangenen 12 Monaten vorgestellt?]], #DE-TH)
+    * answerValueSet = Canonical(SEU_EF_FachaerzteVS)
 //********************************************
 // Sonstiges
 * item[+]

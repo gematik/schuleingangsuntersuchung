@@ -966,6 +966,10 @@ Description: "Sorgeberechtigtenfragebogen"
     * answerValueSet = Canonical(ErkrankungenTHVS)
     * repeats = true
   * item[+]
+    * insert addItemWithSource(8.14e, #open-choice, [[Welche der folgenden Krankheiten wurden bei Ihrem Kind jemals durch einen Arzt festgestellt?]], #DE-BB)
+    * answerValueSet = Canonical(ErkrankungVS)
+    * repeats = true
+  * item[+]
     * insert addItemWithSource(8.14d, #open-choice, [[Welche der Infektionskrankheiten hat das Kind durchgemacht?]], #DE-TH)
     * answerValueSet = Canonical(InfektionsKrankheitTHVS)
     * repeats = true
@@ -1628,6 +1632,7 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert addItem(11.3, #text, Name Fachärzte)
   * item[+]
     * insert addItemWithSource(11.4, #open-choice, [[Bei welchen Ärztinnen oder Ärzten haben Sie das Kind in den vergangenen 12 Monaten vorgestellt?]], #DE-TH)
+    * answerValueSet = Canonical(SEU_EF_FachaerzteVS)
   * item[+]
     * insert addItemWithSource(11.5, #text, [[Name des behandelnden Kinder- oder Hausarztes und Praxisort:]], #DE-TH)
 //********************************************
