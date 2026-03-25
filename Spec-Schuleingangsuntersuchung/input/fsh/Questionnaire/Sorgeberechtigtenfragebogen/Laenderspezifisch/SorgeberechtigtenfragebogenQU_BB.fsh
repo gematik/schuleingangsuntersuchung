@@ -244,9 +244,6 @@ Description: "Sorgeberechtigtenfragebogen BB"
 * item[+]
   * insert addGroup(12, Sonstiges)
   * item[+]
-    * insert addItem(12.2, #choice, Beratung Sozialpädiatrisches Zentrum SPZ)
-    * answerValueSet = Canonical(GeplantFindetStattAbgeschlossenVS)
-  * item[+]
     * insert addItem(12.3, #boolean, Teilnahme Netzwerk Gesunde Kinder)
     * item[+]
       * insert addItem(12.3.1, #integer, Wie lange?)
