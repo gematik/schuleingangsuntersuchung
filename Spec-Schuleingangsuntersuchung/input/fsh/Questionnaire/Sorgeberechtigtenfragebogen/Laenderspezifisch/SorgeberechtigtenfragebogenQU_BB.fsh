@@ -237,8 +237,6 @@ Description: "Sorgeberechtigtenfragebogen BB"
 // Arzt
 * item[+]
   * insert addGroup(11, Arzt)
-  * item[+]
-    * insert addItem(11.1, #boolean, Hat das Kind bislang ärztliche Behandlung oder Untersützung erhalten?)
 //********************************************
 // Sonstiges
 * item[+]
