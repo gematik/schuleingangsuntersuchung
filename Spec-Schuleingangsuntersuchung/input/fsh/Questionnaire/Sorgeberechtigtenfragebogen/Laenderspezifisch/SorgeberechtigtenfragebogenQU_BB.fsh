@@ -164,6 +164,7 @@ Description: "Sorgeberechtigtenfragebogen BB"
     * insert addItem(8.28.g, #group, [[Informationen zu Unfällen]])
     * insert enableWhenBoolean(8.28a, =, true)
     * enableBehavior = #any
+    * repeats = true
     * item[+]
       * answerValueSet = Canonical(UnfallOrtVS)
       * insert addItem(8.28.g.1, #choice, [[Ort des Unfall]])
