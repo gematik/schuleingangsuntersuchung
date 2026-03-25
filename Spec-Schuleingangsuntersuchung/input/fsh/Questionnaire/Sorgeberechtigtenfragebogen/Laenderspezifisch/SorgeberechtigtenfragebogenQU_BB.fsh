@@ -198,29 +198,9 @@ Description: "Sorgeberechtigtenfragebogen BB"
 * item[+]
   * insert addItemWithSource(9a, #group, [[Förderungen in den vergangenen 12 Monaten]], #DE-BB)
   * item[+]
-    * insert addItemWithSource(9a.1a, #boolean, [[Werden oder wurden bei dem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)]], #DE-SL)    
-  * item[+]
-    * insert addGroup(9a.1a.g, Therapien)
-    * insert enableWhenBoolean(9a.1a, =, true)
-    * insert addSource(#DE-SN)
-    * item[+]
-      * insert addItemWithSource(9a.2aa, #boolean, [[Sprachförderung in der Kita]], #DE-BB)
-    * item[+]
-      * insert addItemWithSource(9a.2ba, #boolean, [[Logopädie]], #DE-BB)
-    * item[+]
-      * insert addItemWithSource(9a.3a, #boolean, [[Frühförderung]], #DE-BB)
-    * item[+]
-      * insert addItemWithSource(9a.4a, #boolean, [[Ergotherapie]], #DE-BB)
-    * item[+]
-      * insert addItemWithSource(9a.6a, #boolean, [[Physiotherapie / Krankengymnastik]], #DE-BB)
-    * item[+]
-      * insert addItemWithSource(9a.7a, #boolean, [[Psychologische Erziehungsberatung]], #DE-BB)
-    * item[+]
-      * insert addItemWithSource(9a.9a, #boolean, [[Integrative Betreuung / Einzelintegration]], #DE-BB)
-    * item[+]
-      * insert addItem(9a.10, #text, [[Sonstige Förderung]])
-    * item[+]
-      * insert addItemWithSource(9a.11, #boolean, [[Fördermaßn. Integration in Regel-Kita]], #DE-SL)
+    * insert addItemWithSource(9a.13a, #choice, [[Welche Behandlungen oder Unterstützungen hat das Kind jemals erhalten?]], #DE-TH)
+    * answerValueSet = Canonical(FoerderungVS)
+    * repeats = true
   * item[+]
     * insert addItemWithSource(9a.14, #boolean, [[Psychiatrische Institutionsambulanz (PIA)]], #DE-BB)
 //********************************************
