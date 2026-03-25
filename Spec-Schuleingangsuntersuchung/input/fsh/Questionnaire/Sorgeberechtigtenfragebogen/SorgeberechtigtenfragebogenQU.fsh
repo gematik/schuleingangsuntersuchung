@@ -1002,11 +1002,9 @@ Description: "Sorgeberechtigtenfragebogen"
 // Familienanamnese
   * item[+]
     * insert addItemWithSource(8.16b, #boolean, [[Gibt es Gesundheitsstörungen in der Familie, von denen Sie wissen oder vermuten, dass sie Auswirkungen auf die Entwicklung oder Belastbarkeit Ihres Kindes haben könnten bzw. im Schulalltag zu berücksichtigen wären (z. B. Sehstörung, Hörstörung, Herz-Kreislauf-Erkrankung, Allergie, Asthma bronchiale, Epilepsie, Depression oder andere psychische Erkrankung, Rheuma, Diabetes mellitus, Krebserkrankung, andere schwere Erkrankung)]], #DE-TH)
-    * required = true
     * item[+]
       * insert addItemWithSource(8.16b.1, #text, [[Wenn ja, welche?]], #DE-TH)
       * insert enableWhenBoolean(8.16b, =, true)
-      * required = true
   
   * item[+]
     * insert addItemWithSource(8.16c, #choice, [[Ärztlich festgestellte Krankheiten]], #DE-ST)
