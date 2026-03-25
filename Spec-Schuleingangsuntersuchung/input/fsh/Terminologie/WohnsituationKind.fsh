@@ -110,7 +110,7 @@ Description: "ValueSet, das verschiedene Wohnsituationen des Kindes enthält."
 * WohnsituationKindCS#vater_mit_partner "Vater mit Partner/in"
 * WohnsituationKindCS#vater_alleinerziehend "Vater alleinerziehend"
 * WohnsituationKindCS#wechselmodell "Wechselmodell"
-* WohnsituationKindCS#heim "Heim"
+* WohnsituationKindCS#heim "Stationäre Einrichtung"
 * WohnsituationKindCS#pflegeeltern "Pflegeeltern"
 * WohnsituationKindCS#andere_familienmitglieder "Andere Familienmitglieder/Verwandte"
 * WohnsituationKindCS#andere "Andere Personen"
@@ -136,7 +136,7 @@ Description: "ValueSet, das verschiedene Wohnsituationen des Kindes enthält."
 * ^expansion.contains[=].display = "Wechselmodell"
 * ^expansion.contains[+].system = Canonical(WohnsituationKindCS)
 * ^expansion.contains[=].code = #heim
-* ^expansion.contains[=].display = "Heim"
+* ^expansion.contains[=].display = "Stationäre Einrichtung"
 * ^expansion.contains[+].system = Canonical(WohnsituationKindCS)
 * ^expansion.contains[=].code = #pflegeeltern
 * ^expansion.contains[=].display = "Pflegeeltern"
