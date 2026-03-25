@@ -103,10 +103,7 @@ Description: "Sorgeberechtigtenfragebogen MV"
   * item[+]
     * insert addItem(3.1.1, #group, Details Geschwister)
     * repeats = true
-    * enableWhen[+]
-      * question = "3.1"
-      * operator = #> 
-      * answerInteger = 0
+    * insert enableWhenInteger(3.1, >, 0)
     * item[+]
       * insert addItem(3.1.1.1, #date, Geburtsdatum des Geschwisters)
   * item[+]
@@ -238,9 +235,8 @@ Description: "Sorgeberechtigtenfragebogen MV"
   * item[+]
     * insert addItem(8.28a, #boolean, [[Hatte das Kind einen Unfall]])
   * item[+]
-    * insert addItem(8.28.g, #group, [[Hatte das Kind einen Unfall]])
+    * insert addItem(8.28.g, #group, [[Informationen zu Unfällen]])
     * insert enableWhenBoolean(8.28a, =, true)
-    //* insert enableWhenBoolean(8.28b, =, true) TODO auskommentiert ohne fachliche überprüfung
     * enableBehavior = #any
     * repeats = true
     * item[+]
@@ -255,8 +251,10 @@ Description: "Sorgeberechtigtenfragebogen MV"
 * item[+]
   * insert addItem(9, #group, [[Förderungen]])
   * item[+]
+    * insert addItemWithSource(9.1a, #boolean, [[Werden oder wurden bei dem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)]], #DE-SL)    
+  * item[+]
     * insert addGroup(9.1a.g, Therapien)
-    //* insert enableWhenBoolean(9.1a, =, true) TODO auskommentiert ohne fachliche überprüfung
+    * insert enableWhenBoolean(9.1a, =, true)
     * insert addSource(#DE-SN)
     * item[+]
       * insert addItem(9.2, #choice, [[Sprachtherapie]])

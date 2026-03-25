@@ -125,10 +125,7 @@ Description: "Sorgeberechtigtenfragebogen HE"
   * item[+]
     * insert addItem(3.1.1, #group, Details Geschwister)
     * repeats = true
-    * enableWhen[+]
-      * question = "3.1"
-      * operator = #> 
-      * answerInteger = 0
+    * insert enableWhenInteger(3.1, >, 0)
     * item[+]
       * insert addItem(3.1.1.1, #date, Geburtsdatum des Geschwisters)
   * item[+]

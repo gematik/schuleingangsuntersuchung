@@ -171,9 +171,8 @@ Description: "Sorgeberechtigtenfragebogen BB"
   * item[+]
     * insert addItem(8.28a, #boolean, [[Hatte das Kind einen Unfall]])
   * item[+]
-    * insert addItem(8.28.g, #group, [[Hatte das Kind einen Unfall]])
+    * insert addItem(8.28.g, #group, [[Informationen zu Unfällen]])
     * insert enableWhenBoolean(8.28a, =, true)
-    //* insert enableWhenBoolean(8.28b, =, true) TODO auskommentiert ohne fachliche überprüfung
     * enableBehavior = #any
     * item[+]
       * answerValueSet = Canonical(UnfallOrtVS)

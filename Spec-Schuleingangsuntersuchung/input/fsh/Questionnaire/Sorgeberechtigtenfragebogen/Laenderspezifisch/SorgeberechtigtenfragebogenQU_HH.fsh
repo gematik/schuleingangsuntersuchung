@@ -176,7 +176,6 @@ Description: "Sorgeberechtigtenfragebogen HH"
     * insert addItem(3.1.1, #group, Details Geschwister)
     * repeats = true
     * insert enableWhenInteger(3.1, >, 0)
-    * insert enableWhenInteger(3.1c, >, 1)
     * enableBehavior = #any
     * item[+]
       * insert addItem(3.1.1.1, #date, Geburtsdatum des Geschwisters)

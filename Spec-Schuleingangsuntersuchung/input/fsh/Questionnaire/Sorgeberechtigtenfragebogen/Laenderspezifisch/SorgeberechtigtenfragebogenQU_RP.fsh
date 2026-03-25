@@ -288,8 +288,11 @@ Description: "Sorgeberechtigtenfragebogen RP"
 * item[+]
   * insert addItem(9, #group, [[Förderungen]])
   * item[+]
+    * insert addItemWithSource(9.1a, #boolean, [[Werden oder wurden bei dem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)]], #DE-SL)
+    * required = true
+  * item[+]
     * insert addGroup(9.1a.g, Therapien)
-    //* insert enableWhenBoolean(9.1a, =, true) TODO auskommentiert ohne fachliche überprüfung
+    * insert enableWhenBoolean(9.1a, =, true)
     * insert addSource(#DE-SN)
     * item[+]
       * insert addItemWithSource(9.3a, #boolean, [[Frühförderung]], #DE-BB)

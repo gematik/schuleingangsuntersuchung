@@ -73,13 +73,14 @@ Description: "Sorgeberechtigtenfragebogen NI"
 * item[+]
   * insert addItem(3, #group, Familiendaten)
   * item[+]
+    * insert addItem(3.1, #integer, Anzahl der Geschwister)
+  * item[+]
     * insert addItemWithSource(3.1c, #integer, [[Kinder im Haushalt]], #DE-HH)
     * required = true
   * item[+]
     * insert addItem(3.1.1, #group, Details Geschwister)
     * repeats = true
-    //* insert enableWhenInteger(3.1, >, 0) TODO auskommentiert ohne fachliche überprüfung
-    * insert enableWhenInteger(3.1c, >, 1)
+    * insert enableWhenInteger(3.1, >, 0)
     * enableBehavior = #any
     * item[+]
       * insert addItem(3.1.1.1, #date, Geburtsdatum des Geschwisters)
