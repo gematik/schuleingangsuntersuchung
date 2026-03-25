@@ -1653,11 +1653,6 @@ Description: "Sorgeberechtigtenfragebogen"
   * item[+]
     * insert addItem(12.4, #boolean, KISS Sprachscreening)
   * item[+]
-    * insert addItemWithSource(12.4.1, #integer, [[Wieviele Personen sind Raucher/Dampfer]], #DE-BE)
-  * item[+]
-    * insert addItem(12.5, #choice, Raucherhaushalt)
-    * answerValueSet = Canonical(HaeufigkeitAuswahlVS)    
-  * item[+]
     * insert addItem(12.6, #text, Stärken/Begabung/Besonderheiten des Kindes)
   * item[+]
     * insert addItem(12.7, #boolean, Regelmäßig Sport)
@@ -1862,3 +1857,8 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert addItemWithSource(13.39, #choice, [[Ort des Rauchens]], #DE-ST)
     * insert enableWhenBoolean(13.38, =, true)
     * answerValueSet = Canonical(RauchortVS)
+  * item[+]
+    * insert addItemWithSource(12.4.1, #integer, [[Wieviele Personen sind Raucher/Dampfer]], #DE-BE)
+  * item[+]
+    * insert addItem(12.5, #choice, [[Raucherhaushalt]])
+    * answerValueSet = Canonical(HaeufigkeitAuswahlVS)
