@@ -4597,7 +4597,7 @@
             {
               "linkId": "3.2a.2",
               "type": "boolean",
-              "text": "(3.2a.2) ► eine Lese-Rechtschreib-Schwäche (Legasthenie)",
+              "text": "(3.2a.2) Eine Lese-Rechtschreib-Schwäche (Legasthenie)",
               "code": [
                 {
                   "code": "3.2a.2",
@@ -4617,7 +4617,7 @@
             {
               "linkId": "3.2a.3",
               "type": "boolean",
-              "text": "(3.2a.3) ► eine Rechenschwäche (Dyskalkulie)",
+              "text": "(3.2a.3) Eine Rechenschwäche (Dyskalkulie)",
               "code": [
                 {
                   "code": "3.2a.3",
@@ -5506,12 +5506,12 @@
               ]
             },
             {
-              "linkId": "8.10ga_g.10",
-              "type": "integer",
-              "text": "(8.10ga_g.10) Alter bei Diagnosestellung (in Jahren)",
+              "linkId": "8.10ga_g.12",
+              "type": "group",
+              "text": "(8.10ga_g.12) Alter bei Diagnosestellung",
               "code": [
                 {
-                  "code": "8.10ga_g.10",
+                  "code": "8.10ga_g.12",
                   "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
                 }
               ],
@@ -5521,14 +5521,6 @@
                   "valueCoding": {
                     "system": "urn:iso:std:iso:3166-2:de",
                     "code": "DE-BY"
-                  }
-                },
-                {
-                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
-                  "valueCoding": {
-                    "code": "a",
-                    "system": "http://unitsofmeasure.org",
-                    "display": "Jahre"
                   }
                 }
               ],
@@ -5577,7 +5569,7 @@
               "enableBehavior": "any",
               "item": [
                 {
-                  "linkId": "8.10ga_g.10H",
+                  "linkId": "8.10ga_g.12-info",
                   "type": "display",
                   "text": "Wurde mehr als 1 Erkrankung mit JA markiert, bitte das Alter bei Diagnosestellung der in der Reihenfolge zuerst aufgeführten Stoffwechselerkrankung angeben.",
                   "extension": [
@@ -5593,95 +5585,76 @@
                       }
                     }
                   ]
-                }
-              ]
-            },
-            {
-              "linkId": "8.10ga_g.11",
-              "type": "integer",
-              "text": "(8.10ga_g.11) Alter bei Diagnosestellung (in Monaten)",
-              "code": [
-                {
-                  "code": "8.10ga_g.11",
-                  "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-                }
-              ],
-              "extension": [
-                {
-                  "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
-                  "valueCoding": {
-                    "system": "urn:iso:std:iso:3166-2:de",
-                    "code": "DE-BY"
-                  }
                 },
                 {
-                  "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
-                  "valueCoding": {
-                    "code": "mo",
-                    "system": "http://unitsofmeasure.org",
-                    "display": "Monate"
-                  }
-                }
-              ],
-              "enableWhen": [
-                {
-                  "question": "8.10ga_g.1",
-                  "operator": "=",
-                  "answerBoolean": true
-                },
-                {
-                  "question": "8.10ga_g.2",
-                  "operator": "=",
-                  "answerBoolean": true
-                },
-                {
-                  "question": "8.10ga_g.3",
-                  "operator": "=",
-                  "answerBoolean": true
-                },
-                {
-                  "question": "8.10ga_g.4",
-                  "operator": "=",
-                  "answerBoolean": true
-                },
-                {
-                  "question": "8.10ga_g.5",
-                  "operator": "=",
-                  "answerBoolean": true
-                },
-                {
-                  "question": "8.10ga_g.6",
-                  "operator": "=",
-                  "answerBoolean": true
-                },
-                {
-                  "question": "8.10ga_g.7",
-                  "operator": "=",
-                  "answerBoolean": true
-                },
-                {
-                  "question": "8.10ga_g.8",
-                  "operator": "=",
-                  "answerBoolean": true
-                }
-              ],
-              "enableBehavior": "any",
-              "item": [
-                {
-                  "linkId": "8.10ga_g.11H",
-                  "type": "display",
-                  "text": "Wurde mehr als 1 Erkrankung mit JA markiert, bitte das Alter bei Diagnosestellung der in der Reihenfolge zuerst aufgeführten Stoffwechselerkrankung angeben.",
+                  "linkId": "8.10ga_g.10",
+                  "type": "integer",
+                  "text": "(8.10ga_g.10) Jahre",
+                  "code": [
+                    {
+                      "code": "8.10ga_g.10",
+                      "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                    }
+                  ],
                   "extension": [
                     {
-                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-itemControl",
-                      "valueCodeableConcept": {
-                        "coding": [
-                          {
-                            "code": "help",
-                            "system": "http://hl7.org/fhir/questionnaire-item-control"
-                          }
-                        ]
+                      "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                      "valueCoding": {
+                        "system": "urn:iso:std:iso:3166-2:de",
+                        "code": "DE-BY"
                       }
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                      "valueCoding": {
+                        "code": "a",
+                        "system": "http://unitsofmeasure.org",
+                        "display": "Jahre"
+                      }
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+                      "valueInteger": 0
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+                      "valueInteger": 7
+                    }
+                  ]
+                },
+                {
+                  "linkId": "8.10ga_g.11",
+                  "type": "integer",
+                  "text": "(8.10ga_g.11) Monate",
+                  "code": [
+                    {
+                      "code": "8.10ga_g.11",
+                      "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+                    }
+                  ],
+                  "extension": [
+                    {
+                      "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+                      "valueCoding": {
+                        "system": "urn:iso:std:iso:3166-2:de",
+                        "code": "DE-BY"
+                      }
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/questionnaire-unit",
+                      "valueCoding": {
+                        "code": "mo",
+                        "system": "http://unitsofmeasure.org",
+                        "display": "Monate"
+                      }
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/minValue",
+                      "valueInteger": 0
+                    },
+                    {
+                      "url": "http://hl7.org/fhir/StructureDefinition/maxValue",
+                      "valueInteger": 12
                     }
                   ]
                 }
