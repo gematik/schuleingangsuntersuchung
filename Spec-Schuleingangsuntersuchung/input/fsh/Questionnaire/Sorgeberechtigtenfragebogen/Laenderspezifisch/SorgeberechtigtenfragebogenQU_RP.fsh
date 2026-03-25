@@ -126,6 +126,7 @@ Description: "Sorgeberechtigtenfragebogen RP"
     * insert addItemWithSource(3.1d, #integer, [[Aktuell im Haushalt lebende Kinder, inklusive des Schuhlpflichtigen]], #DE-RP)
   * item[+]
     * insert addItem(3.2, #group, Familiäre Vorgeschichte)
+    * item[+] insert helpItem(3.2.1-info, [[Bitte geben Sie an, ob bei einem Familienmitglied ein Brillenträger bekannt ist.]])
     * item[+]
       * insert addItem(3.2.1, #boolean, Brillenträger)
     * item[+]

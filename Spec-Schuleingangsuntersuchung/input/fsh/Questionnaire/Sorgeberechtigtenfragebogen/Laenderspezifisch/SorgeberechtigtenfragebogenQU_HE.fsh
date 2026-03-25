@@ -130,8 +130,10 @@ Description: "Sorgeberechtigtenfragebogen HE"
       * insert addItem(3.1.1.1, #date, Geburtsdatum des Geschwisters)
   * item[+]
     * insert addItem(3.2, #group, Familiäre Vorgeschichte)
+    * item[+] insert helpItem(3.2.1-info, [[Bitte geben Sie an, ob bei einem Familienmitglied ein Brillenträger bekannt ist.]])
     * item[+]
       * insert addItem(3.2.1, #boolean, Brillenträger)
+    * item[+]
       * insert addItem(3.2.5, #open-choice, Chronische Erkrankung)
       * answerValueSet = Canonical(ChronischeKrankheitenVS)
       * repeats = true
