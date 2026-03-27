@@ -231,7 +231,7 @@ Description: "Sorgeberechtigtenfragebogen SN"
     * insert addItem(13.1, #choice, [[Schulabschluss 1. Elternteil]])
     * answerValueSet = Canonical(SEU_EF_BildungsabschlussVS)
   * item[+]
-    * insert addItem(13.5, #choice, [[Berufstätigkeit 1. Elternteil]])
+    * insert addItem(13.5, #choice, [[Berufstätigkeit Personensorgeberechtigte Person 1 (Mutter)]])
     * answerValueSet = Canonical(ErwerbsstatusVS)
   * item[+]
     * insert addItemWithSource(13.17, #boolean, [[Deutsche Staatsangehörigkeit? Elternteil 1]], #DE-BW)

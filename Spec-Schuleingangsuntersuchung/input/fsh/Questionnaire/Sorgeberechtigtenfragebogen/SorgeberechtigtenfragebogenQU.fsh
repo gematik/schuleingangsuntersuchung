@@ -1768,7 +1768,7 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert addItem(13.1, #choice, Schulabschluss 1. Elternteil)
     * answerValueSet = Canonical(SEU_EF_BildungsabschlussVS)
   * item[+]
-    * insert addItemWithSource(13.1a, #choice, Schulabschluss 1. Elternteil, #DE-BB)
+    * insert addItemWithSource(13.1a, #choice, [[Schulabschluss Personensorgeberechtigte Person 1 (Mutter)]], #DE-BB)
     * answerValueSet = Canonical(SEU_EF_BildungsabschlussBBVS)
   * item[+]
     * insert addItemWithSource(13.1b, #choice, Schulabschluss 1. Elternteil, #DE-BW)
@@ -1780,7 +1780,7 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert addItem(13.2, #choice, Schulabschluss 2. Elternteil)
     * answerValueSet = Canonical(SEU_EF_BildungsabschlussVS)
   * item[+]
-    * insert addItemWithSource(13.2a, #choice, Schulabschluss 2. Elternteil, #DE-BB)
+    * insert addItemWithSource(13.2a, #choice, [[Schulabschluss Personensorgeberechtigte Person 2 (Vater)]], #DE-BB)
     * answerValueSet = Canonical(SEU_EF_BildungsabschlussBBVS)
   * item[+]
     * insert addItemWithSource(13.2b, #choice, Schulabschluss 2. Elternteil, #DE-BW)
@@ -1789,13 +1789,13 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert addItemWithSource(13.2c, #choice, Schulabschluss Vater/Elternteil B, #DE-BE)
     * answerValueSet = Canonical(SchulabschlussBerlinVS)
   * item[+]
-    * insert addItem(13.3, #choice, Berufsabschluss 1. Elternteil)
+    * insert addItem(13.3, #choice, [[Berufsabschluss Personensorgeberechtigte Person 1 (Mutter)]])
     * answerValueSet = Canonical(SEU_EF_BerufsbildungVS)
   * item[+]
-    * insert addItem(13.4, #choice, Berufsabschluss 2. Elternteil)
+    * insert addItem(13.4, #choice, [[Berufsabschluss Personensorgeberechtigte Person 2 (Vater)]])
     * answerValueSet = Canonical(SEU_EF_BerufsbildungVS)
   * item[+]
-    * insert addItem(13.5, #choice, Berufstätigkeit 1. Elternteil)
+    * insert addItem(13.5, #choice, [[Berufstätigkeit Personensorgeberechtigte Person 1 (Mutter)]])
     * answerValueSet = Canonical(ErwerbsstatusVS)
   * item[+]
     * insert addItem(13.5.1, #string, Grund der Erwerbslosigkeit)
@@ -1804,7 +1804,7 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert addItemWithSource(13.5a, #choice, Berufstätigkeit 1. Elternteil, #DE-BW)
     * answerValueSet = Canonical(ErwerbsstatusInclSonstigesVS)
   * item[+]
-    * insert addItem(13.6, #choice, Berufstätigkeit 2. Elternteil)
+    * insert addItem(13.6, #choice, [[Berufstätigkeit Personensorgeberechtigte Person 2 (Vater)]])
     * answerValueSet = Canonical(ErwerbsstatusVS)
   * item[+]
     * insert addItem(13.6.1, #string, Grund der Erwerbslosigkeit)

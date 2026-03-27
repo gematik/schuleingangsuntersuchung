@@ -139,10 +139,10 @@ Description: "Sorgeberechtigtenfragebogen BE"
       * insert addItemWithSource(13.2c, #choice, Schulabschluss Elternteil B, #DE-BE)
       * answerValueSet = Canonical(SchulabschlussBerlinVS)
   * item[+]
-    * insert addItem(13.3, #choice, Berufsabschluss 1. Elternteil)
+    * insert addItem(13.3, #choice, [[Berufsabschluss Personensorgeberechtigte Person 1 (Mutter)]])
     * answerValueSet = Canonical(SEU_EF_BerufsbildungVS)
   * item[+]
-    * insert addItem(13.4, #choice, Berufsabschluss 2. Elternteil)
+    * insert addItem(13.4, #choice, [[Berufsabschluss Personensorgeberechtigte Person 2 (Vater)]])
     * answerValueSet = Canonical(SEU_EF_BerufsbildungVS)
   * item[+]
     * insert addItemWithSource(13.32c, #choice, [[Berufstätigkeit Mutter]], #DE-BE)

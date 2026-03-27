@@ -260,22 +260,22 @@ Description: "Sorgeberechtigtenfragebogen BB"
 * item[+]
   * insert addGroup(13, Informationen Eltern)
   * item[+]
-    * insert addItemWithSource(13.1a, #choice, Schulabschluss 1. Elternteil, #DE-BB)
+    * insert addItemWithSource(13.1a, #choice, [[Schulabschluss Personensorgeberechtigte Person 1 (Mutter)]], #DE-BB)
     * answerValueSet = Canonical(SEU_EF_BildungsabschlussBBVS)
   * item[+]
-    * insert addItemWithSource(13.2a, #choice, Schulabschluss 2. Elternteil, #DE-BB)
+    * insert addItemWithSource(13.2a, #choice, [[Schulabschluss Personensorgeberechtigte Person 2 (Vater)]], #DE-BB)
     * answerValueSet = Canonical(SEU_EF_BildungsabschlussBBVS)
   * item[+]
-    * insert addItem(13.3, #choice, Berufsabschluss 1. Elternteil)
+    * insert addItem(13.3, #choice, [[Berufsabschluss Personensorgeberechtigte Person 1 (Mutter)]])
     * answerValueSet = Canonical(SEU_EF_BerufsbildungVS)
   * item[+]
-    * insert addItem(13.4, #choice, Berufsabschluss 2. Elternteil)
+    * insert addItem(13.4, #choice, [[Berufsabschluss Personensorgeberechtigte Person 2 (Vater)]])
     * answerValueSet = Canonical(SEU_EF_BerufsbildungVS)
   * item[+]
-    * insert addItem(13.5, #choice, Berufstätigkeit 1. Elternteil)
+    * insert addItem(13.5, #choice, [[Berufstätigkeit Personensorgeberechtigte Person 1 (Mutter)]])
     * answerValueSet = Canonical(ErwerbsstatusVS)
   * item[+]
-    * insert addItem(13.6, #choice, Berufstätigkeit 2. Elternteil)
+    * insert addItem(13.6, #choice, [[Berufstätigkeit Personensorgeberechtigte Person 2 (Vater)]])
     * answerValueSet = Canonical(ErwerbsstatusVS)
   * item[+]
     * insert addItem(13.7, #integer, [[Anzahl der Kinder im Haushalt. Kinder unter 18 Jahren, einzuschulendes Kind mitgerechnet]])

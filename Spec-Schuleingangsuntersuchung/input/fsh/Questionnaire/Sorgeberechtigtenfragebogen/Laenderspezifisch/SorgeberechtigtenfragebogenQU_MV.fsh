@@ -317,5 +317,5 @@ Description: "Sorgeberechtigtenfragebogen MV"
     * insert addItemWithSource(13.5a, #choice, Berufstätigkeit 1. Elternteil, #DE-BW)
     * answerValueSet = Canonical(ErwerbsstatusInclSonstigesVS)
   * item[+]
-    * insert addItem(13.6, #choice, Berufstätigkeit 2. Elternteil)
+    * insert addItem(13.6, #choice, [[Berufstätigkeit Personensorgeberechtigte Person 2 (Vater)]])
     * answerValueSet = Canonical(ErwerbsstatusVS)

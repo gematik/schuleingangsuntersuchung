@@ -329,11 +329,11 @@ Description: "Sorgeberechtigtenfragebogen NI"
     * answerValueSet = Canonical(SEU_EF_BildungsabschlussVS)
     * required = true
   * item[+]
-    * insert addItem(13.5, #choice, Berufstätigkeit 1. Elternteil)
+    * insert addItem(13.5, #choice, [[Berufstätigkeit Personensorgeberechtigte Person 1 (Mutter)]])
     * answerValueSet = Canonical(ErwerbsstatusVS)
     * required = true
   * item[+]
-    * insert addItem(13.6, #choice, Berufstätigkeit 2. Elternteil)
+    * insert addItem(13.6, #choice, [[Berufstätigkeit Personensorgeberechtigte Person 2 (Vater)]])
     * answerValueSet = Canonical(ErwerbsstatusVS)
     * required = true
   * item[+]
