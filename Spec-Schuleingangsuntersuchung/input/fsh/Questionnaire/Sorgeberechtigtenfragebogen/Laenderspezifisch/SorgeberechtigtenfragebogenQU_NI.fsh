@@ -81,7 +81,6 @@ Description: "Sorgeberechtigtenfragebogen NI"
     * insert addItem(3.1.1, #group, Details Geschwister)
     * repeats = true
     * insert enableWhenInteger(3.1, >, 0)
-    * enableBehavior = #any
     * item[+]
       * insert addItem(3.1.1.1, #date, Geburtsdatum des Geschwisters)
       * required = true
@@ -197,7 +196,7 @@ Description: "Sorgeberechtigtenfragebogen NI"
       * answerValueSet = Canonical(VersorgungsartVS)
       * required = true
     * item[+]
-      * insert addItem(8.27.2, #choice, [[Welche Operationen wurden durchgeführt?]])
+      * insert addItem(8.27.2, #open-choice, [[Welche Operationen wurden durchgeführt?]])
       * repeats = true
       * insert enableWhenBoolean(8.27, =, true)
       * answerValueSet = Canonical(SEU_EF_OperationenVS)

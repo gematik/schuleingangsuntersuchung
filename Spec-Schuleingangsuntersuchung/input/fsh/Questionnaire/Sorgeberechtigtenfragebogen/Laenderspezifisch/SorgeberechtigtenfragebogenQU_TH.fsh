@@ -11,6 +11,7 @@ Description: "Sorgeberechtigtenfragebogen TH"
 * contained[+] = GeburtBesonderheitenVS
 * contained[+] = VerhaltensauffaelligkeitenVS
 * contained[+] = FoerderungVS
+* contained[+] = SEU_EF_FachaerzteVS
 * contained[+] = UeberwiegendGesprocheneSpracheVS
 * insert QMeta(1.0.0)
 * id = "SEU-Sorgeberechtigtenfragebogen-TH"
@@ -147,7 +148,7 @@ Description: "Sorgeberechtigtenfragebogen TH"
   * item[+]
     * insert addItemWithSource(8.6b, #boolean, [[Nutzt das Kind Hilfsmittel?]], #DE-TH)
     * item[+]
-      * insert addItemWithSource(8.6b.1, #choice, [[Falls ja, welche?]], #DE-TH)
+      * insert addItemWithSource(8.6b.1, #open-choice, [[Falls ja, welche?]], #DE-TH)
       * insert enableWhenBoolean(8.6b, =, true)
       * answerValueSet = Canonical(SEU_EF_HilfsmittelTHVS)
       * repeats = true
@@ -248,6 +249,7 @@ Description: "Sorgeberechtigtenfragebogen TH"
   * insert addGroup(11, Arzt)
   * item[+]
     * insert addItemWithSource(11.4, #open-choice, [[Bei welchen Ärztinnen oder Ärzten haben Sie das Kind in den vergangenen 12 Monaten vorgestellt?]], #DE-TH)
+    * answerValueSet = Canonical(SEU_EF_FachaerzteVS)
     * required = true
   * item[+]
     * insert addItemWithSource(11.5, #text, [[Name des behandelnden Kinder- oder Hausarztes und Praxisort:]], #DE-TH)

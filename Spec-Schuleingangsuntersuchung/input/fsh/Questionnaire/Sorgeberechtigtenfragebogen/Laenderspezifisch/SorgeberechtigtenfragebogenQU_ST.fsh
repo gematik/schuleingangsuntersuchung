@@ -220,7 +220,7 @@ Description: "Sorgeberechtigtenfragebogen ST"
     * insert addItemWithSource(8.27a, #boolean, [[Ambulante Operation(en)]], #DE-ST)
     * required = true
   * item[+]
-    * insert addItem(8.29, #choice, [[Hat das Kind häufiger Befindlichkeitsstörungen?]])
+    * insert addItem(8.29, #open-choice, [[Hat das Kind häufiger Befindlichkeitsstörungen?]])
     * repeats = true 
     * answerValueSet = Canonical(AllgemeineBeschwerdenVS)
     * required = true

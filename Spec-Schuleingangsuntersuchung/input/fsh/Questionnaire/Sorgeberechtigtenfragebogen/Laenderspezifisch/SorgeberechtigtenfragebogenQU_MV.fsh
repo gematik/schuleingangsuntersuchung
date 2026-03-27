@@ -16,6 +16,7 @@ Description: "Sorgeberechtigtenfragebogen MV"
 * contained[+] = JaNeinWartelisteVS
 * contained[+] = SEU_EF_OperationenVS
 * contained[+] = SEU_EF_BehandlungstypVS
+* contained[+] = ErkrankungVS
 * insert QMeta(1.0.0)
 * id = "SEU-Sorgeberechtigtenfragebogen-MV"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenMV"
@@ -205,7 +206,7 @@ Description: "Sorgeberechtigtenfragebogen MV"
     * insert addItem(8.15, #boolean, [[Krankenhausaufenthalt]])
   * item[+]
     * answerValueSet = Canonical(AtopischeErkrankungenVS)  
-    * insert addItem(8.16a, #choice, [[Besitzt das Kind Allergien?]])
+    * insert addItem(8.16a, #open-choice, [[Besitzt das Kind Allergien?]])
   * item[+]
     // TODO: Einheit für Grad der Behinderung prüfen (GdB ist dimensionslos nach deutschem Recht, ggf. % als UCUM-Einheit)
     * insert addItem(8.19, #integer, [[Grad der Behinderung]])
@@ -228,7 +229,7 @@ Description: "Sorgeberechtigtenfragebogen MV"
   * item[+]
     * insert addItem(8.27, #boolean, [[Wurde das Kind operiert]])
     * item[+]
-      * insert addItem(8.27.2, #choice, [[Welche Operationen wurden durchgeführt?]])
+      * insert addItem(8.27.2, #open-choice, [[Welche Operationen wurden durchgeführt?]])
       * repeats = true
       * insert enableWhenBoolean(8.27, =, true)
       * answerValueSet = Canonical(SEU_EF_OperationenVS)

@@ -134,7 +134,7 @@ Description: "Sorgeberechtigtenfragebogen SN"
     * answerValueSet = Canonical(RechtsLinksHaenderVS)
     * insert addItem(7.9, #choice, [[Links- oder Rechtshänder]])
   * item[+]
-    * insert addItem(7.12, #boolean, [[Sorgen Sie sich um die Entwicklung ihres Kindes?]])
+    * insert addItem(7.12, #boolean, [[Sorgen Sie sich um die Entwicklung des Kindes?]])
     * item[+]
       * insert addItem(7.12.1, #text, [[Welche Sorgen]])
       * insert enableWhenBoolean(7.12, =, true)

@@ -109,6 +109,7 @@ Description: "Sorgeberechtigtenfragebogen"
 * contained[+] = BerufstaetigkeitElternBerlinVS
 * contained[+] = FoerderungVS
 * contained[+] = VerhaltensauffaelligkeitenVS
+* contained[+] = KrankenhausaufenthaltGrundVS
 * insert QMeta(1.0.0)
 * id = "SEU-Sorgeberechtigtenfragebogen"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/Sorgeberechtigtenfragebogen"
@@ -415,7 +416,6 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert addItem(3.1.1, #group, Details Geschwister)
     * repeats = true
     * insert enableWhenInteger(3.1, >, 0)
-    * enableBehavior = #any
     * item[+]
       * insert addItem(3.1.1.1, #date, Geburtsdatum des Geschwisters)
     * item[+]
@@ -815,11 +815,11 @@ Description: "Sorgeberechtigtenfragebogen"
   * item[+]
     * insert addItemWithSource(7.11b, #boolean, [[Würden Sie sagen, dass das Kind insgesamt gesehen in einem oder mehreren der folgenden Bereiche Schwierigkeiten hat: Stimmung (bedrückt, ängstlich, schwankend, aufbrausend), Konzentration (kann nicht lange stillsitzen, hört beim Vorlesen nicht ausdauernd zu), Verhalten, Umgang mit Anderen?]], #DE-BY)
   * item[+]
-    * insert addItemWithSource(7.11d, #open-choice, [[Hatte Ihr Kind in den vergangenen 12 Monaten folgende Verhaltensauffälligkeiten?]], #DE-BB)
+    * insert addItemWithSource(7.11d, #open-choice, [[Hatte das Kind in den vergangenen 12 Monaten folgende Verhaltensauffälligkeiten?]], #DE-BB)
     * repeats = true
     * answerValueSet = Canonical(AuffaelligkeitVerhaltenVS)
   * item[+]
-    * insert addItem(7.12, #boolean, [[Sorgen Sie sich um die Entwicklung ihres Kindes?]])
+    * insert addItem(7.12, #boolean, [[Sorgen Sie sich um die Entwicklung des Kindes?]])
     * item[+]
       * insert addItem(7.12.1, #text, [[Welche Sorgen]])
       * insert enableWhenBoolean(7.12, =, true)
@@ -877,7 +877,7 @@ Description: "Sorgeberechtigtenfragebogen"
     * item[+]
       * insert addItemWithSource(8.6b.1, #open-choice, [[Falls ja, welche?]], #DE-TH)
       * insert enableWhenBoolean(8.6b, =, true)
-      * answerValueSet = Canonical(SEU_EF_HilfsmittelVS)
+      * answerValueSet = Canonical(SEU_EF_HilfsmittelTHVS)
       * repeats = true
 
   * item[+]
@@ -1015,7 +1015,7 @@ Description: "Sorgeberechtigtenfragebogen"
     * answerValueSet = Canonical(ErkrankungenTHVS)
     * repeats = true
   * item[+]
-    * insert addItemWithSource(8.14e, #open-choice, [[Welche der folgenden Krankheiten wurden bei Ihrem Kind jemals durch einen Arzt festgestellt?]], #DE-BB)
+    * insert addItemWithSource(8.14e, #open-choice, [[Welche der folgenden Krankheiten wurden bei dem Kind jemals durch einen Arzt festgestellt?]], #DE-BB)
     * answerValueSet = Canonical(ErkrankungVS)
     * repeats = true
   * item[+]
@@ -1388,7 +1388,7 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert addItemWithSource(9.1b, #choice, [[Teilnahme am Vorkurs Deutsch]], #DE-BY)
     * answerValueSet = Canonical(SEU_UB_TeilnahmeVorkursDeutschVS)
   * item[+]
-    * insert addItemWithSource(9.1c, #choice, [[Sprachtherapie]], #DE-BY)
+    * insert addItemWithSource(9.1c, #choice, [[Sprachtherapie (Logopädie)]], #DE-BY)
     * answerValueSet = Canonical(SEU_EF_NeinAbgeschlossenLaeuftGeplantVS)
   * item[+]
     * insert addItemWithSource(9.1a, #boolean, [[Werden oder wurden bei dem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)]], #DE-SL)    
@@ -1667,7 +1667,7 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert addItemWithSource(10.4c, #choice, [[Wie viele Stunden am Tag beschäftigt sich das Kind im Durchschnitt mit elektronischen Geräten? (elektronische Geräte sind Fernsehen, DVD, Computer, Tablet, Smartphone, Playstation und andere) ]], #DE-BE)
     * answerValueSet = Canonical(SEUEFMedienkonsumBerlinVS)
   * item[+]
-    * insert addItemWithSource(10.5, #choice, [[Wie lange sieht Ihr Kind durchschnittlich pro Tag Fernsehen, Videos, Streamingdienste oder spielt mit der Spielekonsole, dem Smartphone oder anderen elektronischen Geräten?]], #DE-BB)
+    * insert addItemWithSource(10.5, #choice, [[Wie lange sieht das Kind durchschnittlich pro Tag Fernsehen, Videos, Streamingdienste oder spielt mit der Spielekonsole, dem Smartphone oder anderen elektronischen Geräten?]], #DE-BB)
     * answerValueSet = Canonical(SEU_EF_ZeitdauerVS)
 //********************************************
 // Arzt
@@ -1713,7 +1713,6 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert addItemWithSource(12.7a, #boolean, [[Präv. Maßnahmen Regemäßig Sport im Verein]], #DE-SL)
   * item[+]
     * insert addItem(12.8, #text, Sportart und Verein)
-    * insert enableWhenBoolean(12.7, =, true)
   * item[+]
     * insert addItem(12.9, #boolean, Schwimmfähig)
   * item[+]
@@ -1774,7 +1773,7 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert addItemWithSource(13.1b, #choice, Schulabschluss 1. Elternteil, #DE-BW)
     * answerValueSet = Canonical(SEU_EF_BildungsabschlussBWVS)
   * item[+]
-    * insert addItemWithSource(13.1c, #choice, Schulabschluss Mutter/Elternteil A, #DE-BE)
+    * insert addItemWithSource(13.1c, #choice, [[Schulabschluss Personensorgeberechtigte Person 1 (Mutter)]], #DE-BE)
     * answerValueSet = Canonical(SchulabschlussBerlinVS)
   * item[+]
     * insert addItem(13.2, #choice, Schulabschluss 2. Elternteil)
@@ -1786,7 +1785,7 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert addItemWithSource(13.2b, #choice, Schulabschluss 2. Elternteil, #DE-BW)
     * answerValueSet = Canonical(SEU_EF_BildungsabschlussBWVS)
   * item[+]
-    * insert addItemWithSource(13.2c, #choice, Schulabschluss Vater/Elternteil B, #DE-BE)
+    * insert addItemWithSource(13.2c, #choice, [[Schulabschluss Personensorgeberechtigte Person 2 (Vater)]], #DE-BE)
     * answerValueSet = Canonical(SchulabschlussBerlinVS)
   * item[+]
     * insert addItem(13.3, #choice, [[Berufsabschluss Personensorgeberechtigte Person 1 (Mutter)]])
@@ -1877,7 +1876,7 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert addItemWithSource(13.32a, #choice, [[Erwerbstätigkeit Mutter/ Partner]], #DE-ST)
     * answerValueSet = Canonical(ErwerbsstatusAlternativ1VS)
   * item[+]
-    * insert addItemWithSource(13.32c, #choice, [[Berufstätigkeit Mutter/Elternteil A]], #DE-BE)
+    * insert addItemWithSource(13.32c, #choice, [[Berufstätigkeit Personensorgeberechtigte Person 1 (Mutter)]], #DE-BE)
     * answerValueSet = Canonical(BerufstaetigkeitElternBerlinVS)
   * item[+]
     * insert addItemWithSource(13.33, #choice, [[Erwerbsstatus des Vaters]], #DE-HB)
@@ -1886,7 +1885,7 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert addItemWithSource(13.33a, #choice, [[Erwerbstätigkeit Vater/ Partner]], #DE-ST)
     * answerValueSet = Canonical(ErwerbsstatusAlternativ1VS)
   * item[+]
-    * insert addItemWithSource(13.33c, #choice, [[Berufstätigkeit Vater/Elternteil B]], #DE-BE)
+    * insert addItemWithSource(13.33c, #choice, [[Berufstätigkeit Personensorgeberechtigte Person 2 (Vater)]], #DE-BE)
     * answerValueSet = Canonical(BerufstaetigkeitElternBerlinVS)
   * item[+]
     * insert addItemWithSource(13.34, #boolean, [[Mutter in Deutschland geboren]], #DE-HB)
@@ -1911,7 +1910,7 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert enableWhenBoolean(13.38, =, true)
     * answerValueSet = Canonical(RauchortVS)
   * item[+]
-    * insert addItemWithSource(12.4.1, #integer, [[Wieviele Personen sind Raucher/Dampfer]], #DE-BE)
+    * insert addItemWithSource(12.4.1, #integer, [[Wie viele Personen sind Raucher/Dampfer]], #DE-BE)
   * item[+]
     * insert addItem(12.5, #choice, [[Raucherhaushalt]])
     * answerValueSet = Canonical(HaeufigkeitAuswahlVS)

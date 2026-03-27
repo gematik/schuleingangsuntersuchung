@@ -24,6 +24,7 @@ Description: "Sorgeberechtigtenfragebogen BB"
 * contained[+] = SEU_UB_StaatsangehoerigkeitVS
 * contained[+] = DauerStillenVS
 * contained[+] = SEU_EF_ZeitdauerVS
+* contained[+] = FoerderungVS
 * insert QMeta(1.0.0)
 * id = "SEU-Sorgeberechtigtenfragebogen-BB"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenBB"
@@ -280,4 +281,4 @@ Description: "Sorgeberechtigtenfragebogen BB"
   * item[+]
     * insert addItem(13.7, #integer, [[Anzahl der Kinder im Haushalt. Kinder unter 18 Jahren, einzuschulendes Kind mitgerechnet]])
   * item[+]
-    * insert addItem(13.8, #integer, Anzahl der Erwachsene im Haushalt)
+    * insert addItem(13.8, #integer, Anzahl der Erwachsenen im Haushalt)

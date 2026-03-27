@@ -133,10 +133,10 @@ Description: "Sorgeberechtigtenfragebogen BE"
       * insert addItemWithSource(1.12d, #choice, [[Kind lebt überwiegend bei]], #DE-BE)
       * answerValueSet = Canonical(LebensumfeldVS)
     * item[+]
-      * insert addItemWithSource(13.1c, #choice, Schulabschluss Elternteil A, #DE-BE)
+      * insert addItemWithSource(13.1c, #choice, [[Schulabschluss Personensorgeberechtigte Person 1 (Mutter)]], #DE-BE)
       * answerValueSet = Canonical(SchulabschlussBerlinVS)
     * item[+]
-      * insert addItemWithSource(13.2c, #choice, Schulabschluss Elternteil B, #DE-BE)
+      * insert addItemWithSource(13.2c, #choice, [[Schulabschluss Personensorgeberechtigte Person 2 (Vater)]], #DE-BE)
       * answerValueSet = Canonical(SchulabschlussBerlinVS)
   * item[+]
     * insert addItem(13.3, #choice, [[Berufsabschluss Personensorgeberechtigte Person 1 (Mutter)]])
@@ -145,19 +145,19 @@ Description: "Sorgeberechtigtenfragebogen BE"
     * insert addItem(13.4, #choice, [[Berufsabschluss Personensorgeberechtigte Person 2 (Vater)]])
     * answerValueSet = Canonical(SEU_EF_BerufsbildungVS)
   * item[+]
-    * insert addItemWithSource(13.32c, #choice, [[Berufstätigkeit Mutter]], #DE-BE)
+    * insert addItemWithSource(13.32c, #choice, [[Berufstätigkeit Personensorgeberechtigte Person 1 (Mutter)]], #DE-BE)
     * answerValueSet = Canonical(BerufstaetigkeitElternBerlinVS)
   * item[+]
-    * insert addItemWithSource(13.33c, #choice, [[Berufstätigkeit Vater]], #DE-BE)
+    * insert addItemWithSource(13.33c, #choice, [[Berufstätigkeit Personensorgeberechtigte Person 2 (Vater)]], #DE-BE)
     * answerValueSet = Canonical(BerufstaetigkeitElternBerlinVS)
   * item[+]
     * insert addItemWithSource(3.3, #integer, Aktuell im Haushalt lebende Erwachsene, #DE-BB) 
   * item[+]
     * insert addItemWithSource(3.1c, #integer, [[Kinder im Haushalt]], #DE-HH)
   * item[+]
-    * insert addItemWithSource(12.4.1, #integer, [[Wieviele Personen sind Raucher/Dampfer]], #DE-BE)
+    * insert addItemWithSource(12.4.1, #integer, [[Wie viele Personen sind Raucher/Dampfer]], #DE-BE)
   * item[+]
-    * insert addItemWithSource(10.4c, #choice, [[Wieviele Stunden am Tag beschäftigt sich das Kind im Durchschnitt mit elektronischen Geräten? (elektronische Geräte sind Fernsehen, DVD, Computer, Tablet, Smartphone, Playstation und andere) ]], #DE-BE)
+    * insert addItemWithSource(10.4c, #choice, [[Wie viele Stunden am Tag beschäftigt sich das Kind im Durchschnitt mit elektronischen Geräten? (elektronische Geräte sind Fernsehen, DVD, Computer, Tablet, Smartphone, Playstation und andere) ]], #DE-BE)
     * answerValueSet = Canonical(SEUEFMedienkonsumBerlinVS)
   * item[+]
     * insert addItemWithSource(10.2.1, #boolean, [[Das Kind hat einen eigenen Fernseher?]], #DE-BE)

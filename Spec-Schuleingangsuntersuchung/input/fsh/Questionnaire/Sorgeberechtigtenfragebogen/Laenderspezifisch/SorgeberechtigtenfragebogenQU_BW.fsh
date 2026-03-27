@@ -37,7 +37,6 @@ Description: "Sorgeberechtigtenfragebogen BW"
     * insert addItem(3.1.1, #group, [[Details Geschwister]])
     * repeats = true
     * insert enableWhenInteger(3.1, >, 0)
-    * enableBehavior = #any
     * item[+]
       * insert addItem(3.1.1.1, #date, [[Geburtsdatum des Geschwisters]])
 //********************************************
@@ -51,7 +50,7 @@ Description: "Sorgeberechtigtenfragebogen BW"
     * insert addItemWithSource(4.1b, #choice, [[Wie lange besucht das Kind bis jetzt eine deutschsprachig Kindertageseinrichtung?]], #DE-BW)
     * answerValueSet = Canonical(SEU_EF_DauerBWVS)
   * item[+]
-    * insert addItemWithSource(4.10, #boolean, [[Bekommt oder wartet Ihr Kind auf eine spezielle Förderung oder Therapie?]], #DE-SN)
+    * insert addItemWithSource(4.10, #boolean, [[Bekommt oder wartet das Kind auf eine spezielle Förderung oder Therapie?]], #DE-SN)
 //********************************************
 // Entwicklung
 * item[+]
@@ -59,7 +58,7 @@ Description: "Sorgeberechtigtenfragebogen BW"
   * item[+]
     * insert addItem(7.12, #boolean, [[Sorgen Sie sich um die Entwicklung des Kindes?]])
     * item[+]
-      * insert addItem(7.12.1, #string, [[Welche Sorgen]])
+      * insert addItem(7.12.1, #text, [[Welche Sorgen]])
       * insert enableWhenBoolean(7.12, =, true)
 //********************************************
 // Förderungen
