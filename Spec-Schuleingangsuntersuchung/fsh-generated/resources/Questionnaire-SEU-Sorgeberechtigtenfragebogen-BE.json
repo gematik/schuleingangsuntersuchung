@@ -4708,7 +4708,7 @@
         {
           "linkId": "13.3",
           "type": "choice",
-          "text": "(13.3) Berufsabschluss 1. Elternteil",
+          "text": "(13.3) Berufsabschluss Personensorgeberechtigte Person 1 (Mutter)",
           "code": [
             {
               "code": "13.3",
@@ -4720,7 +4720,7 @@
         {
           "linkId": "13.4",
           "type": "choice",
-          "text": "(13.4) Berufsabschluss 2. Elternteil",
+          "text": "(13.4) Berufsabschluss Personensorgeberechtigte Person 2 (Vater)",
           "code": [
             {
               "code": "13.4",

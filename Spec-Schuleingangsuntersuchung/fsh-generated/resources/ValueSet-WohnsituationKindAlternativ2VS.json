@@ -42,7 +42,7 @@
       {
         "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
         "code": "heim",
-        "display": "Heim"
+        "display": "Stationäre Einrichtung"
       },
       {
         "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
@@ -97,7 +97,7 @@
           },
           {
             "code": "heim",
-            "display": "Heim"
+            "display": "Stationäre Einrichtung"
           },
           {
             "code": "pflegeeltern",

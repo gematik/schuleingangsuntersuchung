@@ -1732,6 +1732,1322 @@
     },
     {
       "resourceType": "ValueSet",
+      "id": "destatis-bev-gebietscodes-vs",
+      "status": "draft",
+      "name": "DestatisBEV_GebietscodesVS",
+      "title": "DESTATIS BEV Gebietscodes ValueSet",
+      "description": "ValueSet mit allen Gebieten aus dem DESTATIS BEV-Gebietsschlüssel (Destatis-BEV-Code).",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/destatis-bev-gebietscodes-vs",
+      "expansion": {
+        "timestamp": "2026-03-27T12:00:00+00:00",
+        "contains": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "423",
+            "display": "Afghanistan"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "287",
+            "display": "Ägypten"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "117",
+            "display": "Akrotiri und Dhekelia"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "118",
+            "display": "Åland"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "121",
+            "display": "Albanien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "221",
+            "display": "Algerien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "316",
+            "display": "Amerikanische Jungferninseln"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "517",
+            "display": "Amerikanisch-Samoa"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "123",
+            "display": "Andorra"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "223",
+            "display": "Angola"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "310",
+            "display": "Anguilla"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "320",
+            "display": "Antigua und Barbuda"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "274",
+            "display": "Äquatorialguinea"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "323",
+            "display": "Argentinien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "422",
+            "display": "Armenien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "311",
+            "display": "Aruba"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "425",
+            "display": "Aserbaidschan"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "525",
+            "display": "Ashmore- und Cartierinseln"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "225",
+            "display": "Äthiopien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "523",
+            "display": "Australien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "324",
+            "display": "Bahamas"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "424",
+            "display": "Bahrain"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "460",
+            "display": "Bangladesch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "322",
+            "display": "Barbados"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "169",
+            "display": "Belarus"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "124",
+            "display": "Belgien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "330",
+            "display": "Belize"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "229",
+            "display": "Benin"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "312",
+            "display": "Bermuda"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "426",
+            "display": "Bhutan"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "326",
+            "display": "Bolivien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "344",
+            "display": "Bonaire, Saba, St. Eustatius"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "122",
+            "display": "Bosnien und Herzegowina"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "227",
+            "display": "Botsuana"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "522",
+            "display": "Bouvetinsel"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "327",
+            "display": "Brasilien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "313",
+            "display": "Britische Jungferninseln"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "413",
+            "display": "Britisches Territorium im Indischen Ozean"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "429",
+            "display": "Brunei Darussalam"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "125",
+            "display": "Bulgarien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "258",
+            "display": "Burkina Faso"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "291",
+            "display": "Burundi"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "242",
+            "display": "Cabo Verde"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "332",
+            "display": "Chile"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "479",
+            "display": "China"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "352",
+            "display": "Clipperton"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "527",
+            "display": "Cookinseln"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "334",
+            "display": "Costa Rica"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "231",
+            "display": "Côte d’Ivoire"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "321",
+            "display": "Curaçao"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "126",
+            "display": "Dänemark"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "000",
+            "display": "Deutschland"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "333",
+            "display": "Dominica"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "335",
+            "display": "Dominikanische Republik"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "230",
+            "display": "Dschibuti"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "336",
+            "display": "Ecuador"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "337",
+            "display": "El Salvador"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "224",
+            "display": "Eritrea"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "127",
+            "display": "Estland"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "281",
+            "display": "Eswatini"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "314",
+            "display": "Falklandinseln"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "182",
+            "display": "Färöer"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "526",
+            "display": "Fidschi"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "128",
+            "display": "Finnland"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "129",
+            "display": "Frankreich"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "315",
+            "display": "Französisch-Guayana"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "528",
+            "display": "Französisch-Polynesien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "910",
+            "display": "für interne Zwecke verwendet"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "236",
+            "display": "Gabun"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "237",
+            "display": "Gambia"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "430",
+            "display": "Georgien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "238",
+            "display": "Ghana"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "112",
+            "display": "Gibraltar"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "340",
+            "display": "Grenada"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "134",
+            "display": "Griechenland"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "342",
+            "display": "Grönland"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "317",
+            "display": "Guadeloupe"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "529",
+            "display": "Guam"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "345",
+            "display": "Guatemala"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "113",
+            "display": "Guernsey"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "261",
+            "display": "Guinea"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "259",
+            "display": "Guinea-Bissau"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "114",
+            "display": "Jersey"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "115",
+            "display": "Insel Man"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "116",
+            "display": "Svalbard und Jan Mayen"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "130",
+            "display": "Kroatien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "131",
+            "display": "Slowenien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "135",
+            "display": "Irland"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "136",
+            "display": "Island"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "137",
+            "display": "Italien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "139",
+            "display": "Lettland"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "140",
+            "display": "Montenegro"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "141",
+            "display": "Liechtenstein"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "142",
+            "display": "Litauen"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "143",
+            "display": "Luxemburg"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "144",
+            "display": "Nordmazedonien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "145",
+            "display": "Malta"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "146",
+            "display": "Moldau"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "147",
+            "display": "Monaco"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "148",
+            "display": "Niederlande"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "149",
+            "display": "Norwegen"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "150",
+            "display": "Kosovo"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "151",
+            "display": "Österreich"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "152",
+            "display": "Polen"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "153",
+            "display": "Portugal"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "154",
+            "display": "Rumänien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "155",
+            "display": "Slowakei"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "156",
+            "display": "San Marino"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "157",
+            "display": "Schweden"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "158",
+            "display": "Schweiz"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "160",
+            "display": "Russische Föderation"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "161",
+            "display": "Spanien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "163",
+            "display": "Türkei"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "164",
+            "display": "Tschechien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "165",
+            "display": "Ungarn"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "166",
+            "display": "Ukraine"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "167",
+            "display": "Vatikanstadt"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "168",
+            "display": "Vereinigtes Königreich"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "170",
+            "display": "Serbien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "181",
+            "display": "Zypern"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "211",
+            "display": "Mayotte"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "212",
+            "display": "Westsahara"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "214",
+            "display": "Réunion"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "215",
+            "display": "St. Helena, Ascension und Tristan da Cunha"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "216",
+            "display": "Spanische Hoheitsplätze in Nordafrika"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "226",
+            "display": "Lesotho"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "232",
+            "display": "Nigeria"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "233",
+            "display": "Simbabwe"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "239",
+            "display": "Mauretanien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "243",
+            "display": "Kenia"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "244",
+            "display": "Komoren"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "245",
+            "display": "Kongo"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "246",
+            "display": "Kongo, Demokratische Republik"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "247",
+            "display": "Liberia"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "248",
+            "display": "Libyen"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "249",
+            "display": "Madagaskar"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "251",
+            "display": "Mali"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "252",
+            "display": "Marokko"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "253",
+            "display": "Mauritius"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "254",
+            "display": "Mosambik"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "255",
+            "display": "Niger"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "256",
+            "display": "Malawi"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "257",
+            "display": "Sambia"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "262",
+            "display": "Kamerun"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "263",
+            "display": "Südafrika"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "265",
+            "display": "Ruanda"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "267",
+            "display": "Namibia"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "268",
+            "display": "São Tomé und Príncipe"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "269",
+            "display": "Senegal"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "271",
+            "display": "Seychellen"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "272",
+            "display": "Sierra Leone"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "273",
+            "display": "Somalia"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "277",
+            "display": "Sudan"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "278",
+            "display": "Südsudan"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "282",
+            "display": "Tansania"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "283",
+            "display": "Togo"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "284",
+            "display": "Tschad"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "285",
+            "display": "Tunesien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "286",
+            "display": "Uganda"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "289",
+            "display": "Zentralafrikanische Republik"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "318",
+            "display": "Kaimaninseln"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "319",
+            "display": "Martinique"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "325",
+            "display": "Puerto Rico"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "328",
+            "display": "Guyana"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "329",
+            "display": "St. Barthélemy"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "331",
+            "display": "St. Martin (französischer Teil)"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "338",
+            "display": "St. Pierre und Miquelon"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "339",
+            "display": "Montserrat"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "341",
+            "display": "St. Martin (niederländischer Teil)"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "343",
+            "display": "Navassa"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "346",
+            "display": "Haiti"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "347",
+            "display": "Honduras"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "348",
+            "display": "Kanada"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "349",
+            "display": "Kolumbien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "350",
+            "display": "Turks- und Caicosinseln"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "351",
+            "display": "Kuba"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "353",
+            "display": "Mexiko"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "354",
+            "display": "Nicaragua"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "355",
+            "display": "Jamaika"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "357",
+            "display": "Panama"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "359",
+            "display": "Paraguay"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "361",
+            "display": "Peru"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "364",
+            "display": "Suriname"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "365",
+            "display": "Uruguay"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "366",
+            "display": "St. Lucia"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "367",
+            "display": "Venezuela"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "368",
+            "display": "Vereinigte Staaten"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "369",
+            "display": "St. Vincent und die Grenadinen"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "370",
+            "display": "St. Kitts und Nevis"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "371",
+            "display": "Trinidad und Tobago"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "411",
+            "display": "Hongkong"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "412",
+            "display": "Macau"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "421",
+            "display": "Jemen"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "427",
+            "display": "Myanmar"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "431",
+            "display": "Sri Lanka"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "432",
+            "display": "Vietnam"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "434",
+            "display": "Korea, Demokratische Volksrepublik"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "436",
+            "display": "Indien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "437",
+            "display": "Indonesien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "438",
+            "display": "Irak"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "439",
+            "display": "Iran"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "441",
+            "display": "Israel"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "442",
+            "display": "Japan"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "444",
+            "display": "Kasachstan"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "445",
+            "display": "Jordanien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "446",
+            "display": "Kambodscha"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "447",
+            "display": "Katar"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "448",
+            "display": "Kuwait"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "449",
+            "display": "Laos"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "450",
+            "display": "Kirgisistan"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "451",
+            "display": "Libanon"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "454",
+            "display": "Malediven"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "456",
+            "display": "Oman"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "457",
+            "display": "Mongolei"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "458",
+            "display": "Nepal"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "459",
+            "display": "Palästinensische Gebiete"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "461",
+            "display": "Pakistan"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "462",
+            "display": "Philippinen"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "465",
+            "display": "Taiwan"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "467",
+            "display": "Korea, Republik"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "469",
+            "display": "Vereinigte Arabische Emirate"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "470",
+            "display": "Tadschikistan"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "471",
+            "display": "Turkmenistan"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "472",
+            "display": "Saudi-Arabien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "474",
+            "display": "Singapur"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "475",
+            "display": "Syrien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "476",
+            "display": "Thailand"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "477",
+            "display": "Usbekistan"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "482",
+            "display": "Malaysia"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "483",
+            "display": "Timor-Leste"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "510",
+            "display": "Heard und McDonaldinseln"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "511",
+            "display": "Korallenmeerinseln"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "512",
+            "display": "Kokosinseln"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "513",
+            "display": "Neukaledonien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "514",
+            "display": "Nördliche Marianen"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "515",
+            "display": "Norfolkinsel"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "516",
+            "display": "Pitcairninseln"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "518",
+            "display": "Südgeorgien und die südlichen Sandwichinseln"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "519",
+            "display": "Tokelau"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "520",
+            "display": "Wallis und Futuna"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "521",
+            "display": "Weihnachtsinsel"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "524",
+            "display": "Salomonen"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "530",
+            "display": "Kiribati"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "531",
+            "display": "Nauru"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "532",
+            "display": "Vanuatu"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "533",
+            "display": "Niue"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "534",
+            "display": "Kleinere Amerikanische Überseeinseln"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "536",
+            "display": "Neuseeland"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "537",
+            "display": "Palau"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "538",
+            "display": "Papua-Neuguinea"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "540",
+            "display": "Tuvalu"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "541",
+            "display": "Tonga"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "543",
+            "display": "Samoa"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "544",
+            "display": "Marshallinseln"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "545",
+            "display": "Mikronesien"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "994",
+            "display": "von/nach See"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "996",
+            "display": "unbekanntes Ausland"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "999",
+            "display": "ohne Angabe (Gebiet)"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs",
+            "code": "9999",
+            "display": "Keine Angabe"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/destatis-bev-gebietscodes-cs"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
       "id": "WohnsituationKindVS",
       "status": "draft",
       "name": "WohnsituationKindVS",
@@ -1901,7 +3217,7 @@
           {
             "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
             "code": "heim",
-            "display": "Heim"
+            "display": "Stationäre Einrichtung"
           },
           {
             "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
@@ -1956,7 +3272,7 @@
               },
               {
                 "code": "heim",
-                "display": "Heim"
+                "display": "Stationäre Einrichtung"
               },
               {
                 "code": "pflegeeltern",
@@ -2102,6 +3418,975 @@
         "include": [
           {
             "system": "http://fhir.de/CodeSystem/gender-amtlich-de"
+          }
+        ]
+      }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "iso6391-language-vs",
+      "status": "draft",
+      "name": "ISO6391_LanguageVS",
+      "title": "ISO 639-1 Language ValueSet",
+      "description": "ValueSet containing all language codes from the ISO 639-1 CodeSystem.",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/iso6391-language-vs",
+      "expansion": {
+        "timestamp": "2026-03-27T12:00:00+00:00",
+        "contains": [
+          {
+            "system": "http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor",
+            "code": "NAVU",
+            "display": "keine Angabe"
+          },
+          {
+            "system": "http://hl7.org/fhir/StructureDefinition/iso21090-nullFlavor",
+            "code": "OTH",
+            "display": "Andere"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "ab",
+            "display": "Abchasisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "aa",
+            "display": "Afar"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "af",
+            "display": "Afrikaans"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "ak",
+            "display": "Akan"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "sq",
+            "display": "Albanisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "am",
+            "display": "Amharisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "ar",
+            "display": "Arabisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "an",
+            "display": "Aragonesisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "hy",
+            "display": "Armenisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "az",
+            "display": "Aserbaidschanisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "as",
+            "display": "Assamesisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "ae",
+            "display": "Avestisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "av",
+            "display": "Awarisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "ay",
+            "display": "Aymara"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "bm",
+            "display": "Bambara"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "ba",
+            "display": "Baschkirisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "eu",
+            "display": "Baskisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "be",
+            "display": "Belarussisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "bn",
+            "display": "Bengalisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "bh",
+            "display": "Bihari"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "my",
+            "display": "Birmanisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "bi",
+            "display": "Bislama"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "nb",
+            "display": "Bokmål"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "bs",
+            "display": "Bosnisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "br",
+            "display": "Bretonisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "bg",
+            "display": "Bulgarisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "rm",
+            "display": "Bündnerromanisch, Romanisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "ch",
+            "display": "Chamorro"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "ny",
+            "display": "Chichewa"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "zh",
+            "display": "Chinesisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "cr",
+            "display": "Cree"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "da",
+            "display": "Dänisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "de",
+            "display": "Deutsch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "dv",
+            "display": "Dhivehi"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "dz",
+            "display": "Dzongkha"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "en",
+            "display": "Englisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "eo",
+            "display": "Esperanto"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "et",
+            "display": "Estnisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "ee",
+            "display": "Ewe"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "fo",
+            "display": "Färöisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "fj",
+            "display": "Fidschi"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "fi",
+            "display": "Finnisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "fr",
+            "display": "Französisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "ff",
+            "display": "Fulfulde"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "gl",
+            "display": "Galicisch, Galegisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "ka",
+            "display": "Georgisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "el",
+            "display": "Griechisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "kl",
+            "display": "Grönländisch, Kalaallisut"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "gn",
+            "display": "Guaraní"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "gu",
+            "display": "Gujarati"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "ht",
+            "display": "Haitianisch-Kreolisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "ha",
+            "display": "Hausa"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "he",
+            "display": "Hebräisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "hi",
+            "display": "Hindi"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "ho",
+            "display": "Hiri Motu"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "io",
+            "display": "Ido"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "ig",
+            "display": "Igbo"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "id",
+            "display": "Indonesisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "ia",
+            "display": "Interlingua"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "ie",
+            "display": "Interlingue"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "iu",
+            "display": "Inuktitut"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "ik",
+            "display": "Inupiaq"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "ga",
+            "display": "Irisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "xh",
+            "display": "isiXhosa"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "zu",
+            "display": "isiZulu"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "is",
+            "display": "Isländisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "it",
+            "display": "Italienisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "ja",
+            "display": "Japanisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "jv",
+            "display": "Javanisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "yi",
+            "display": "Jiddisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "kn",
+            "display": "Kannada"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "kr",
+            "display": "Kanuri"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "kk",
+            "display": "Kasachisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "ks",
+            "display": "Kashmiri"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "ca",
+            "display": "Katalanisch, Valencianisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "km",
+            "display": "Khmer"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "kg",
+            "display": "Kikongo"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "ki",
+            "display": "Kikuyu"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "lu",
+            "display": "Kiluba"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "rw",
+            "display": "Kinyarwanda, Ruandisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "cu",
+            "display": "Kirchenslawisch, Altkirchenslawisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "ky",
+            "display": "Kirgisisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "rn",
+            "display": "Kirundi"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "kv",
+            "display": "Komi"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "ko",
+            "display": "Koreanisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "kw",
+            "display": "Kornisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "co",
+            "display": "Korsisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "hr",
+            "display": "Kroatisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "ku",
+            "display": "Kurdisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "lo",
+            "display": "Laotisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "la",
+            "display": "Latein"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "lv",
+            "display": "Lettisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "li",
+            "display": "Limburgisch, Südniederfränkisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "ln",
+            "display": "Lingála"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "lt",
+            "display": "Litauisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "lg",
+            "display": "Luganda"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "lb",
+            "display": "Luxemburgisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "mg",
+            "display": "Malagasy, Malagassi"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "ms",
+            "display": "Malaiisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "ml",
+            "display": "Malayalam"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "mt",
+            "display": "Maltesisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "gv",
+            "display": "Manx,"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "mi",
+            "display": "Maori"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "mr",
+            "display": "Marathi"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "mh",
+            "display": "Marshallesisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "mk",
+            "display": "Mazedonisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "mn",
+            "display": "Mongolisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "na",
+            "display": "Nauruisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "nv",
+            "display": "Navajo"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "ng",
+            "display": "Ndonga"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "ne",
+            "display": "Nepali"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "nl",
+            "display": "Niederländisch, Belgisches Niederländisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "nd",
+            "display": "Nord-Ndebele"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "se",
+            "display": "Nordsamisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "no",
+            "display": "Norwegisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "nn",
+            "display": "Nynorsk"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "oj",
+            "display": "Ojibwe"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "oc",
+            "display": "Okzitanisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "or",
+            "display": "Oriya"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "om",
+            "display": "Oromo"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "kj",
+            "display": "oshiKwanyama"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "os",
+            "display": "Ossetisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "hz",
+            "display": "Otjiherero"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "pi",
+            "display": "Pali"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "pa",
+            "display": "Panjabi, Pandschabi"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "ps",
+            "display": "Paschtunisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "fa",
+            "display": "Persisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "pl",
+            "display": "Polnisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "pt",
+            "display": "Portugiesisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "qu",
+            "display": "Quechua"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "ro",
+            "display": "Rumänisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "ru",
+            "display": "Russisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "sm",
+            "display": "Samoanisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "sg",
+            "display": "Sango"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "sa",
+            "display": "Sanskrit"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "sc",
+            "display": "Sardisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "gd",
+            "display": "Schottisch-gälisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "sv",
+            "display": "Schwedisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "sr",
+            "display": "Serbisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "st",
+            "display": "Sesotho, Süd-Sotho"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "tn",
+            "display": "Setswana"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "sn",
+            "display": "Shona"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "sd",
+            "display": "Sindhi"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "si",
+            "display": "Singhalesisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "ss",
+            "display": "Siswati"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "sk",
+            "display": "Slowakisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "sl",
+            "display": "Slowenisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "so",
+            "display": "Somali"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "we",
+            "display": "Sorbisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "es",
+            "display": "Spanisch, Kastilisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "nr",
+            "display": "Süd-Ndebele"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "su",
+            "display": "Sundanesisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "sw",
+            "display": "Swahili"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "tg",
+            "display": "Tadschikisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "tl",
+            "display": "Tagalog"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "ty",
+            "display": "Tahitianisch, Tahitisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "ta",
+            "display": "Tamil"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "tt",
+            "display": "Tatarisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "te",
+            "display": "Telugu"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "th",
+            "display": "Thai"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "bo",
+            "display": "Tibetisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "ti",
+            "display": "Tigrinya"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "to",
+            "display": "Tongaisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "cs",
+            "display": "Tschechisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "ce",
+            "display": "Tschetschenisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "cv",
+            "display": "Tschuwaschisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "ve",
+            "display": "Tshivenda"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "tr",
+            "display": "Türkisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "tk",
+            "display": "Turkmenisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "tw",
+            "display": "Twi"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "ug",
+            "display": "Uigurisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "uk",
+            "display": "Ukrainisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "hu",
+            "display": "Ungarisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "ur",
+            "display": "Urdu"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "uz",
+            "display": "Usbekisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "vi",
+            "display": "Vietnamesisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "vo",
+            "display": "Volapük"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "cy",
+            "display": "Walisisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "wa",
+            "display": "Wallonisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "fy",
+            "display": "Westfriesisch"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "wo",
+            "display": "Wolof"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "ts",
+            "display": "Xitsonga"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "ii",
+            "display": "Yi"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "yo",
+            "display": "Yoruba"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs",
+            "code": "za",
+            "display": "Zhuang"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v3-NullFlavor",
+            "concept": [
+              {
+                "code": "NAVU",
+                "display": "keine Angabe"
+              },
+              {
+                "code": "OTH",
+                "display": "Andere"
+              }
+            ]
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/iso6391-language-cs"
           }
         ]
       }
@@ -11799,7 +14084,7 @@
             }
           ],
           "enableBehavior": "any",
-          "answerValueSet": "#DeuevAnlage8LaenderkennzeichenVS"
+          "answerValueSet": "#destatis-bev-gebietscodes-vs"
         },
         {
           "linkId": "1.4b",
@@ -11861,6 +14146,46 @@
           ],
           "enableBehavior": "any",
           "answerValueSet": "#DeuevAnlage8LaenderkennzeichenVS"
+        },
+        {
+          "linkId": "1.4b.1a",
+          "type": "choice",
+          "text": "(1.4b.1a) Staatsangehörigkeit Mutter andere",
+          "code": [
+            {
+              "code": "1.4b.1a",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BB"
+              }
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "1.4b",
+              "operator": "=",
+              "answerCoding": {
+                "code": "2",
+                "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-StaatsangehoerigkeitCS"
+              }
+            },
+            {
+              "question": "1.4b",
+              "operator": "=",
+              "answerCoding": {
+                "code": "3",
+                "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-StaatsangehoerigkeitCS"
+              }
+            }
+          ],
+          "enableBehavior": "any",
+          "answerValueSet": "#destatis-bev-gebietscodes-vs"
         },
         {
           "linkId": "1.4b.2",
@@ -11943,6 +14268,46 @@
           ],
           "enableBehavior": "any",
           "answerValueSet": "#DeuevAnlage8LaenderkennzeichenVS"
+        },
+        {
+          "linkId": "1.4c.2a",
+          "type": "choice",
+          "text": "(1.4c.2a) Staatsangehörigkeit Vater andere",
+          "code": [
+            {
+              "code": "1.4c.2a",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BB"
+              }
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "1.4c",
+              "operator": "=",
+              "answerCoding": {
+                "code": "2",
+                "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-StaatsangehoerigkeitCS"
+              }
+            },
+            {
+              "question": "1.4c",
+              "operator": "=",
+              "answerCoding": {
+                "code": "3",
+                "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-StaatsangehoerigkeitCS"
+              }
+            }
+          ],
+          "enableBehavior": "any",
+          "answerValueSet": "#destatis-bev-gebietscodes-vs"
         },
         {
           "linkId": "1.4c.2",
@@ -12031,6 +14396,67 @@
           "answerValueSet": "#seu-ef-alter-kind-einreise-vs"
         },
         {
+          "linkId": "1.5.2",
+          "type": "choice",
+          "text": "(1.5.2) Geburtsland",
+          "code": [
+            {
+              "code": "1.5.2",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BB"
+              }
+            }
+          ],
+          "answerValueSet": "#SEU-UB-StaatsangehoerigkeitVS"
+        },
+        {
+          "linkId": "1.5.2a",
+          "type": "choice",
+          "text": "(1.5.2a) Geburtsland andere",
+          "code": [
+            {
+              "code": "1.5.2a",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BB"
+              }
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "1.5.2",
+              "operator": "=",
+              "answerCoding": {
+                "code": "2",
+                "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-StaatsangehoerigkeitCS"
+              }
+            },
+            {
+              "question": "1.5.2",
+              "operator": "=",
+              "answerCoding": {
+                "code": "3",
+                "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-StaatsangehoerigkeitCS"
+              }
+            }
+          ],
+          "enableBehavior": "any",
+          "answerValueSet": "#destatis-bev-gebietscodes-vs"
+        },
+        {
           "linkId": "1.5a",
           "type": "choice",
           "text": "(1.5a) Geburtsland Mutter",
@@ -12052,6 +14478,67 @@
           "answerValueSet": "#DeuevAnlage8LaenderkennzeichenVS"
         },
         {
+          "linkId": "1.5a.1",
+          "type": "choice",
+          "text": "(1.5a.1) Geburtsland Mutter",
+          "code": [
+            {
+              "code": "1.5a.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BB"
+              }
+            }
+          ],
+          "answerValueSet": "#SEU-UB-StaatsangehoerigkeitVS"
+        },
+        {
+          "linkId": "1.5a.1a",
+          "type": "choice",
+          "text": "(1.5a.1a) Geburtsland Mutter andere",
+          "code": [
+            {
+              "code": "1.5a.1a",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BB"
+              }
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "1.5a.1",
+              "operator": "=",
+              "answerCoding": {
+                "code": "2",
+                "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-StaatsangehoerigkeitCS"
+              }
+            },
+            {
+              "question": "1.5a.1",
+              "operator": "=",
+              "answerCoding": {
+                "code": "3",
+                "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-StaatsangehoerigkeitCS"
+              }
+            }
+          ],
+          "enableBehavior": "any",
+          "answerValueSet": "#destatis-bev-gebietscodes-vs"
+        },
+        {
           "linkId": "1.5b",
           "type": "choice",
           "text": "(1.5b) Geburtsland Vater",
@@ -12071,6 +14558,67 @@
             }
           ],
           "answerValueSet": "#DeuevAnlage8LaenderkennzeichenVS"
+        },
+        {
+          "linkId": "1.5b.1",
+          "type": "choice",
+          "text": "(1.5b.1) Geburtsland Vater",
+          "code": [
+            {
+              "code": "1.5b.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BB"
+              }
+            }
+          ],
+          "answerValueSet": "#SEU-UB-StaatsangehoerigkeitVS"
+        },
+        {
+          "linkId": "1.5b.1a",
+          "type": "choice",
+          "text": "(1.5b.1a) Geburtsland Vater andere",
+          "code": [
+            {
+              "code": "1.5b.1a",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BB"
+              }
+            }
+          ],
+          "enableWhen": [
+            {
+              "question": "1.5b.1",
+              "operator": "=",
+              "answerCoding": {
+                "code": "2",
+                "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-StaatsangehoerigkeitCS"
+              }
+            },
+            {
+              "question": "1.5b.1",
+              "operator": "=",
+              "answerCoding": {
+                "code": "3",
+                "system": "https://www.oegd.de/fhir/seu/CodeSystem/SEU-UB-StaatsangehoerigkeitCS"
+              }
+            }
+          ],
+          "enableBehavior": "any",
+          "answerValueSet": "#destatis-bev-gebietscodes-vs"
         },
         {
           "linkId": "1.5c",
@@ -14755,6 +17303,28 @@
           "repeats": true
         },
         {
+          "linkId": "6.1g",
+          "type": "choice",
+          "text": "(6.1g) Welche Sprachen werden Zuhause gesprochen?",
+          "code": [
+            {
+              "code": "6.1g",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BB"
+              }
+            }
+          ],
+          "answerValueSet": "#iso6391-language-vs",
+          "repeats": true
+        },
+        {
           "linkId": "6.1a",
           "type": "choice",
           "text": "(6.1a) Welche Sprachen wurden mit dem Kind in den ersten 4 Lebensjahren überwiegend gesprochen?",
@@ -15641,6 +18211,28 @@
               }
             }
           ]
+        },
+        {
+          "linkId": "7.11d",
+          "type": "open-choice",
+          "text": "(7.11d) Hatte Ihr Kind in den vergangenen 12 Monaten folgende Verhaltensauffälligkeiten?",
+          "code": [
+            {
+              "code": "7.11d",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BB"
+              }
+            }
+          ],
+          "repeats": true,
+          "answerValueSet": "#AuffaelligkeitVerhaltenVS"
         },
         {
           "linkId": "7.12",
@@ -17053,6 +19645,28 @@
             }
           ],
           "answerValueSet": "#ErkrankungenTHVS",
+          "repeats": true
+        },
+        {
+          "linkId": "8.14e",
+          "type": "open-choice",
+          "text": "(8.14e) Welche der folgenden Krankheiten wurden bei Ihrem Kind jemals durch einen Arzt festgestellt?",
+          "code": [
+            {
+              "code": "8.14e",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BB"
+              }
+            }
+          ],
+          "answerValueSet": "#ErkrankungVS",
           "repeats": true
         },
         {
@@ -21841,6 +24455,27 @@
             }
           ],
           "answerValueSet": "#SEUEFMedienkonsumBerlinVS"
+        },
+        {
+          "linkId": "10.5",
+          "type": "choice",
+          "text": "(10.5) Wie lange sieht Ihr Kind durchschnittlich pro Tag Fernsehen, Videos, Streamingdienste oder spielt mit der Spielekonsole, dem Smartphone oder anderen elektronischen Geräten?",
+          "code": [
+            {
+              "code": "10.5",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-BB"
+              }
+            }
+          ],
+          "answerValueSet": "#seu-ef-zeitdauer-vs"
         }
       ]
     },
@@ -21900,7 +24535,8 @@
                 "code": "DE-TH"
               }
             }
-          ]
+          ],
+          "answerValueSet": "#seu-ef-fachaerzte-vs"
         },
         {
           "linkId": "11.5",
@@ -22427,7 +25063,7 @@
         {
           "linkId": "13.1a",
           "type": "choice",
-          "text": "(13.1a) Schulabschluss 1. Elternteil",
+          "text": "(13.1a) Schulabschluss Personensorgeberechtigte Person 1 (Mutter)",
           "code": [
             {
               "code": "13.1a",
@@ -22502,7 +25138,7 @@
         {
           "linkId": "13.2a",
           "type": "choice",
-          "text": "(13.2a) Schulabschluss 2. Elternteil",
+          "text": "(13.2a) Schulabschluss Personensorgeberechtigte Person 2 (Vater)",
           "code": [
             {
               "code": "13.2a",
@@ -22565,7 +25201,7 @@
         {
           "linkId": "13.3",
           "type": "choice",
-          "text": "(13.3) Berufsabschluss 1. Elternteil",
+          "text": "(13.3) Berufsabschluss Personensorgeberechtigte Person 1 (Mutter)",
           "code": [
             {
               "code": "13.3",
@@ -22577,7 +25213,7 @@
         {
           "linkId": "13.4",
           "type": "choice",
-          "text": "(13.4) Berufsabschluss 2. Elternteil",
+          "text": "(13.4) Berufsabschluss Personensorgeberechtigte Person 2 (Vater)",
           "code": [
             {
               "code": "13.4",
@@ -22589,7 +25225,7 @@
         {
           "linkId": "13.5",
           "type": "choice",
-          "text": "(13.5) Berufstätigkeit 1. Elternteil",
+          "text": "(13.5) Berufstätigkeit Personensorgeberechtigte Person 1 (Mutter)",
           "code": [
             {
               "code": "13.5",
@@ -22643,7 +25279,7 @@
         {
           "linkId": "13.6",
           "type": "choice",
-          "text": "(13.6) Berufstätigkeit 2. Elternteil",
+          "text": "(13.6) Berufstätigkeit Personensorgeberechtigte Person 2 (Vater)",
           "code": [
             {
               "code": "13.6",

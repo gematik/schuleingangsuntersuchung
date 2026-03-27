@@ -4050,7 +4050,7 @@
         {
           "linkId": "13.5",
           "type": "choice",
-          "text": "(13.5) Berufstätigkeit 1. Elternteil",
+          "text": "(13.5) Berufstätigkeit Personensorgeberechtigte Person 1 (Mutter)",
           "code": [
             {
               "code": "13.5",
@@ -4063,7 +4063,7 @@
         {
           "linkId": "13.6",
           "type": "choice",
-          "text": "(13.6) Berufstätigkeit 2. Elternteil",
+          "text": "(13.6) Berufstätigkeit Personensorgeberechtigte Person 2 (Vater)",
           "code": [
             {
               "code": "13.6",
