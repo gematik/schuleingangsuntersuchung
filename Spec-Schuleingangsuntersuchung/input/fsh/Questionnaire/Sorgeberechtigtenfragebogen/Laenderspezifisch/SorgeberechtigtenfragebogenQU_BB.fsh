@@ -5,7 +5,7 @@ Title: "Sorgeberechtigtenfragebogen BB"
 Description: "Sorgeberechtigtenfragebogen BB"
 * contained[+] = DeuevAnlage8LaenderkennzeichenVS
 * contained[+] = WohnsituationKindAlternativ2VS
-* contained[+] = ISO6392_LanguageVS
+* contained[+] = ISO6391_LanguageVS
 * contained[+] = AuffaelligkeitVerhaltenVS
 * contained[+] = ErkrankungVS
 * contained[+] = InfektionsKrankheitVS
@@ -106,15 +106,9 @@ Description: "Sorgeberechtigtenfragebogen BB"
 * item[+]
   * insert addItem(6, #group, [[Sprache]])
   * item[+]
-    * answerValueSet = Canonical(ISO6392_LanguageVS)
-    * insert addItem(6.1, #choice, [[Welche Sprachen werden Zuhause gesprochen?]])
+    * insert addItemWithSource(6.1g, #choice, [[Welche Sprachen werden Zuhause gesprochen?]], #DE-BB)
+    * answerValueSet = Canonical(ISO6391_LanguageVS)
     * repeats = true
-  * item[+]
-    * insert addItemWithSource(6.1b, #choice, [[1. vorrangig in der Familie gesprochene Sprache]], #DE-SL)
-    * answerValueSet = Canonical(ISO6392_LanguageVS)
-  * item[+]
-    * insert addItemWithSource(6.1c, #choice, [[2. vorrangig in der Familie gesprochene Sprache]], #DE-SL)
-    * answerValueSet = Canonical(ISO6392_LanguageVS)
 //********************************************
 // Entwicklung
 * item[+]

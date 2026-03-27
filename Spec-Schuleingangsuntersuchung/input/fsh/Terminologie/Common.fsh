@@ -1,3 +1,763 @@
+CodeSystem: ISO6391_LanguageCS
+Id: iso6391-language-cs
+Title: "ISO 639-1 Language Codes"
+Description: "Language codes according to ISO 639-1."
+* #ab "Abchasisch"
+* #aa "Afar"
+* #af "Afrikaans"
+* #ak "Akan"
+* #sq "Albanisch"
+* #am "Amharisch"
+* #ar "Arabisch"
+* #an "Aragonesisch"
+* #hy "Armenisch"
+* #az "Aserbaidschanisch"
+* #as "Assamesisch"
+* #ae "Avestisch"
+* #av "Awarisch"
+* #ay "Aymara"
+* #bm "Bambara"
+* #ba "Baschkirisch"
+* #eu "Baskisch"
+* #be "Belarussisch"
+* #bn "Bengalisch"
+* #bh "Bihari"
+* #my "Birmanisch"
+* #bi "Bislama"
+* #nb "Bokmål"
+* #bs "Bosnisch"
+* #br "Bretonisch"
+* #bg "Bulgarisch"
+* #rm "Bündnerromanisch, Romanisch"
+* #ch "Chamorro"
+* #ny "Chichewa"
+* #zh "Chinesisch"
+* #cr "Cree"
+* #da "Dänisch"
+* #de "Deutsch"
+* #dv "Dhivehi"
+* #dz "Dzongkha"
+* #en "Englisch"
+* #eo "Esperanto"
+* #et "Estnisch"
+* #ee "Ewe"
+* #fo "Färöisch"
+* #fj "Fidschi"
+* #fi "Finnisch"
+* #fr "Französisch"
+* #ff "Fulfulde"
+* #gl "Galicisch, Galegisch"
+* #ka "Georgisch"
+* #el "Griechisch"
+* #kl "Grönländisch, Kalaallisut"
+* #gn "Guaraní"
+* #gu "Gujarati"
+* #ht "Haitianisch-Kreolisch"
+* #ha "Hausa"
+* #he "Hebräisch"
+* #hi "Hindi"
+* #ho "Hiri Motu"
+* #io "Ido"
+* #ig "Igbo"
+* #id "Indonesisch"
+* #ia "Interlingua"
+* #ie "Interlingue"
+* #iu "Inuktitut"
+* #ik "Inupiaq"
+* #ga "Irisch"
+* #xh "isiXhosa"
+* #zu "isiZulu"
+* #is "Isländisch"
+* #it "Italienisch"
+* #ja "Japanisch"
+* #jv "Javanisch"
+* #yi "Jiddisch"
+* #kn "Kannada"
+* #kr "Kanuri"
+* #kk "Kasachisch"
+* #ks "Kashmiri"
+* #ca "Katalanisch, Valencianisch"
+* #km "Khmer"
+* #kg "Kikongo"
+* #ki "Kikuyu"
+* #lu "Kiluba"
+* #rw "Kinyarwanda, Ruandisch"
+* #cu "Kirchenslawisch, Altkirchenslawisch"
+* #ky "Kirgisisch"
+* #rn "Kirundi"
+* #kv "Komi"
+* #ko "Koreanisch"
+* #kw "Kornisch"
+* #co "Korsisch"
+* #hr "Kroatisch"
+* #ku "Kurdisch"
+* #lo "Laotisch"
+* #la "Latein"
+* #lv "Lettisch"
+* #li "Limburgisch, Südniederfränkisch"
+* #ln "Lingála"
+* #lt "Litauisch"
+* #lg "Luganda"
+* #lb "Luxemburgisch"
+* #mg "Malagasy, Malagassi"
+* #ms "Malaiisch"
+* #ml "Malayalam"
+* #mt "Maltesisch"
+* #gv "Manx,"
+* #mi "Maori"
+* #mr "Marathi"
+* #mh "Marshallesisch"
+* #mk "Mazedonisch"
+* #mn "Mongolisch"
+* #na "Nauruisch"
+* #nv "Navajo"
+* #ng "Ndonga"
+* #ne "Nepali"
+* #nl "Niederländisch, Belgisches Niederländisch"
+* #nd "Nord-Ndebele"
+* #se "Nordsamisch"
+* #no "Norwegisch"
+* #nn "Nynorsk"
+* #oj "Ojibwe"
+* #oc "Okzitanisch"
+* #or "Oriya"
+* #om "Oromo"
+* #kj "oshiKwanyama"
+* #os "Ossetisch"
+* #hz "Otjiherero"
+* #pi "Pali"
+* #pa "Panjabi, Pandschabi"
+* #ps "Paschtunisch"
+* #fa "Persisch"
+* #pl "Polnisch"
+* #pt "Portugiesisch"
+* #qu "Quechua"
+* #ro "Rumänisch"
+* #ru "Russisch"
+* #sm "Samoanisch"
+* #sg "Sango"
+* #sa "Sanskrit"
+* #sc "Sardisch"
+* #gd "Schottisch-gälisch"
+* #sv "Schwedisch"
+* #sr "Serbisch"
+* #st "Sesotho, Süd-Sotho"
+* #tn "Setswana"
+* #sn "Shona"
+* #sd "Sindhi"
+* #si "Singhalesisch"
+* #ss "Siswati"
+* #sk "Slowakisch"
+* #sl "Slowenisch"
+* #so "Somali"
+* #we "Sorbisch"
+* #es "Spanisch, Kastilisch"
+* #nr "Süd-Ndebele"
+* #su "Sundanesisch"
+* #sw "Swahili"
+* #tg "Tadschikisch"
+* #tl "Tagalog"
+* #ty "Tahitianisch, Tahitisch"
+* #ta "Tamil"
+* #tt "Tatarisch"
+* #te "Telugu"
+* #th "Thai"
+* #bo "Tibetisch"
+* #ti "Tigrinya"
+* #to "Tongaisch"
+* #cs "Tschechisch"
+* #ce "Tschetschenisch"
+* #cv "Tschuwaschisch"
+* #ve "Tshivenda"
+* #tr "Türkisch"
+* #tk "Turkmenisch"
+* #tw "Twi"
+* #ug "Uigurisch"
+* #uk "Ukrainisch"
+* #hu "Ungarisch"
+* #ur "Urdu"
+* #uz "Usbekisch"
+* #vi "Vietnamesisch"
+* #vo "Volapük"
+* #cy "Walisisch"
+* #wa "Wallonisch"
+* #fy "Westfriesisch"
+* #wo "Wolof"
+* #ts "Xitsonga"
+* #ii "Yi"
+* #yo "Yoruba"
+* #za "Zhuang"
+
+ValueSet: ISO6391_LanguageVS
+Id: iso6391-language-vs
+Title: "ISO 639-1 Language ValueSet"
+Description: "ValueSet containing all language codes from the ISO 639-1 CodeSystem."
+* NullFlavor#NAVU "keine Angabe"
+* NullFlavor#OTH "Andere"
+* include codes from system ISO6391_LanguageCS
+* ^expansion.timestamp = "2026-03-27T12:00:00+00:00"
+* ^expansion.contains[+].system = Canonical(NullFlavor)
+* ^expansion.contains[=].code = #NAVU
+* ^expansion.contains[=].display = "keine Angabe"
+* ^expansion.contains[+].system = Canonical(NullFlavor)
+* ^expansion.contains[=].code = #OTH
+* ^expansion.contains[=].display = "Andere"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #ab
+* ^expansion.contains[=].display = "Abchasisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #aa
+* ^expansion.contains[=].display = "Afar"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #af
+* ^expansion.contains[=].display = "Afrikaans"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #ak
+* ^expansion.contains[=].display = "Akan"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #sq
+* ^expansion.contains[=].display = "Albanisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #am
+* ^expansion.contains[=].display = "Amharisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #ar
+* ^expansion.contains[=].display = "Arabisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #an
+* ^expansion.contains[=].display = "Aragonesisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #hy
+* ^expansion.contains[=].display = "Armenisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #az
+* ^expansion.contains[=].display = "Aserbaidschanisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #as
+* ^expansion.contains[=].display = "Assamesisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #ae
+* ^expansion.contains[=].display = "Avestisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #av
+* ^expansion.contains[=].display = "Awarisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #ay
+* ^expansion.contains[=].display = "Aymara"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #bm
+* ^expansion.contains[=].display = "Bambara"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #ba
+* ^expansion.contains[=].display = "Baschkirisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #eu
+* ^expansion.contains[=].display = "Baskisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #be
+* ^expansion.contains[=].display = "Belarussisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #bn
+* ^expansion.contains[=].display = "Bengalisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #bh
+* ^expansion.contains[=].display = "Bihari"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #my
+* ^expansion.contains[=].display = "Birmanisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #bi
+* ^expansion.contains[=].display = "Bislama"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #nb
+* ^expansion.contains[=].display = "Bokmål"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #bs
+* ^expansion.contains[=].display = "Bosnisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #br
+* ^expansion.contains[=].display = "Bretonisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #bg
+* ^expansion.contains[=].display = "Bulgarisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #rm
+* ^expansion.contains[=].display = "Bündnerromanisch, Romanisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #ch
+* ^expansion.contains[=].display = "Chamorro"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #ny
+* ^expansion.contains[=].display = "Chichewa"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #zh
+* ^expansion.contains[=].display = "Chinesisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #cr
+* ^expansion.contains[=].display = "Cree"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #da
+* ^expansion.contains[=].display = "Dänisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #de
+* ^expansion.contains[=].display = "Deutsch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #dv
+* ^expansion.contains[=].display = "Dhivehi"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #dz
+* ^expansion.contains[=].display = "Dzongkha"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #en
+* ^expansion.contains[=].display = "Englisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #eo
+* ^expansion.contains[=].display = "Esperanto"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #et
+* ^expansion.contains[=].display = "Estnisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #ee
+* ^expansion.contains[=].display = "Ewe"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #fo
+* ^expansion.contains[=].display = "Färöisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #fj
+* ^expansion.contains[=].display = "Fidschi"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #fi
+* ^expansion.contains[=].display = "Finnisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #fr
+* ^expansion.contains[=].display = "Französisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #ff
+* ^expansion.contains[=].display = "Fulfulde"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #gl
+* ^expansion.contains[=].display = "Galicisch, Galegisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #ka
+* ^expansion.contains[=].display = "Georgisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #el
+* ^expansion.contains[=].display = "Griechisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #kl
+* ^expansion.contains[=].display = "Grönländisch, Kalaallisut"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #gn
+* ^expansion.contains[=].display = "Guaraní"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #gu
+* ^expansion.contains[=].display = "Gujarati"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #ht
+* ^expansion.contains[=].display = "Haitianisch-Kreolisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #ha
+* ^expansion.contains[=].display = "Hausa"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #he
+* ^expansion.contains[=].display = "Hebräisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #hi
+* ^expansion.contains[=].display = "Hindi"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #ho
+* ^expansion.contains[=].display = "Hiri Motu"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #io
+* ^expansion.contains[=].display = "Ido"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #ig
+* ^expansion.contains[=].display = "Igbo"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #id
+* ^expansion.contains[=].display = "Indonesisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #ia
+* ^expansion.contains[=].display = "Interlingua"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #ie
+* ^expansion.contains[=].display = "Interlingue"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #iu
+* ^expansion.contains[=].display = "Inuktitut"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #ik
+* ^expansion.contains[=].display = "Inupiaq"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #ga
+* ^expansion.contains[=].display = "Irisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #xh
+* ^expansion.contains[=].display = "isiXhosa"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #zu
+* ^expansion.contains[=].display = "isiZulu"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #is
+* ^expansion.contains[=].display = "Isländisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #it
+* ^expansion.contains[=].display = "Italienisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #ja
+* ^expansion.contains[=].display = "Japanisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #jv
+* ^expansion.contains[=].display = "Javanisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #yi
+* ^expansion.contains[=].display = "Jiddisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #kn
+* ^expansion.contains[=].display = "Kannada"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #kr
+* ^expansion.contains[=].display = "Kanuri"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #kk
+* ^expansion.contains[=].display = "Kasachisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #ks
+* ^expansion.contains[=].display = "Kashmiri"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #ca
+* ^expansion.contains[=].display = "Katalanisch, Valencianisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #km
+* ^expansion.contains[=].display = "Khmer"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #kg
+* ^expansion.contains[=].display = "Kikongo"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #ki
+* ^expansion.contains[=].display = "Kikuyu"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #lu
+* ^expansion.contains[=].display = "Kiluba"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #rw
+* ^expansion.contains[=].display = "Kinyarwanda, Ruandisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #cu
+* ^expansion.contains[=].display = "Kirchenslawisch, Altkirchenslawisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #ky
+* ^expansion.contains[=].display = "Kirgisisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #rn
+* ^expansion.contains[=].display = "Kirundi"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #kv
+* ^expansion.contains[=].display = "Komi"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #ko
+* ^expansion.contains[=].display = "Koreanisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #kw
+* ^expansion.contains[=].display = "Kornisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #co
+* ^expansion.contains[=].display = "Korsisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #hr
+* ^expansion.contains[=].display = "Kroatisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #ku
+* ^expansion.contains[=].display = "Kurdisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #lo
+* ^expansion.contains[=].display = "Laotisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #la
+* ^expansion.contains[=].display = "Latein"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #lv
+* ^expansion.contains[=].display = "Lettisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #li
+* ^expansion.contains[=].display = "Limburgisch, Südniederfränkisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #ln
+* ^expansion.contains[=].display = "Lingála"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #lt
+* ^expansion.contains[=].display = "Litauisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #lg
+* ^expansion.contains[=].display = "Luganda"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #lb
+* ^expansion.contains[=].display = "Luxemburgisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #mg
+* ^expansion.contains[=].display = "Malagasy, Malagassi"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #ms
+* ^expansion.contains[=].display = "Malaiisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #ml
+* ^expansion.contains[=].display = "Malayalam"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #mt
+* ^expansion.contains[=].display = "Maltesisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #gv
+* ^expansion.contains[=].display = "Manx,"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #mi
+* ^expansion.contains[=].display = "Maori"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #mr
+* ^expansion.contains[=].display = "Marathi"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #mh
+* ^expansion.contains[=].display = "Marshallesisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #mk
+* ^expansion.contains[=].display = "Mazedonisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #mn
+* ^expansion.contains[=].display = "Mongolisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #na
+* ^expansion.contains[=].display = "Nauruisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #nv
+* ^expansion.contains[=].display = "Navajo"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #ng
+* ^expansion.contains[=].display = "Ndonga"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #ne
+* ^expansion.contains[=].display = "Nepali"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #nl
+* ^expansion.contains[=].display = "Niederländisch, Belgisches Niederländisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #nd
+* ^expansion.contains[=].display = "Nord-Ndebele"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #se
+* ^expansion.contains[=].display = "Nordsamisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #no
+* ^expansion.contains[=].display = "Norwegisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #nn
+* ^expansion.contains[=].display = "Nynorsk"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #oj
+* ^expansion.contains[=].display = "Ojibwe"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #oc
+* ^expansion.contains[=].display = "Okzitanisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #or
+* ^expansion.contains[=].display = "Oriya"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #om
+* ^expansion.contains[=].display = "Oromo"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #kj
+* ^expansion.contains[=].display = "oshiKwanyama"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #os
+* ^expansion.contains[=].display = "Ossetisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #hz
+* ^expansion.contains[=].display = "Otjiherero"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #pi
+* ^expansion.contains[=].display = "Pali"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #pa
+* ^expansion.contains[=].display = "Panjabi, Pandschabi"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #ps
+* ^expansion.contains[=].display = "Paschtunisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #fa
+* ^expansion.contains[=].display = "Persisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #pl
+* ^expansion.contains[=].display = "Polnisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #pt
+* ^expansion.contains[=].display = "Portugiesisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #qu
+* ^expansion.contains[=].display = "Quechua"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #ro
+* ^expansion.contains[=].display = "Rumänisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #ru
+* ^expansion.contains[=].display = "Russisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #sm
+* ^expansion.contains[=].display = "Samoanisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #sg
+* ^expansion.contains[=].display = "Sango"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #sa
+* ^expansion.contains[=].display = "Sanskrit"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #sc
+* ^expansion.contains[=].display = "Sardisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #gd
+* ^expansion.contains[=].display = "Schottisch-gälisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #sv
+* ^expansion.contains[=].display = "Schwedisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #sr
+* ^expansion.contains[=].display = "Serbisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #st
+* ^expansion.contains[=].display = "Sesotho, Süd-Sotho"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #tn
+* ^expansion.contains[=].display = "Setswana"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #sn
+* ^expansion.contains[=].display = "Shona"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #sd
+* ^expansion.contains[=].display = "Sindhi"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #si
+* ^expansion.contains[=].display = "Singhalesisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #ss
+* ^expansion.contains[=].display = "Siswati"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #sk
+* ^expansion.contains[=].display = "Slowakisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #sl
+* ^expansion.contains[=].display = "Slowenisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #so
+* ^expansion.contains[=].display = "Somali"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #we
+* ^expansion.contains[=].display = "Sorbisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #es
+* ^expansion.contains[=].display = "Spanisch, Kastilisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #nr
+* ^expansion.contains[=].display = "Süd-Ndebele"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #su
+* ^expansion.contains[=].display = "Sundanesisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #sw
+* ^expansion.contains[=].display = "Swahili"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #tg
+* ^expansion.contains[=].display = "Tadschikisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #tl
+* ^expansion.contains[=].display = "Tagalog"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #ty
+* ^expansion.contains[=].display = "Tahitianisch, Tahitisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #ta
+* ^expansion.contains[=].display = "Tamil"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #tt
+* ^expansion.contains[=].display = "Tatarisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #te
+* ^expansion.contains[=].display = "Telugu"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #th
+* ^expansion.contains[=].display = "Thai"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #bo
+* ^expansion.contains[=].display = "Tibetisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #ti
+* ^expansion.contains[=].display = "Tigrinya"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #to
+* ^expansion.contains[=].display = "Tongaisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #cs
+* ^expansion.contains[=].display = "Tschechisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #ce
+* ^expansion.contains[=].display = "Tschetschenisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #cv
+* ^expansion.contains[=].display = "Tschuwaschisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #ve
+* ^expansion.contains[=].display = "Tshivenda"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #tr
+* ^expansion.contains[=].display = "Türkisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #tk
+* ^expansion.contains[=].display = "Turkmenisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #tw
+* ^expansion.contains[=].display = "Twi"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #ug
+* ^expansion.contains[=].display = "Uigurisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #uk
+* ^expansion.contains[=].display = "Ukrainisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #hu
+* ^expansion.contains[=].display = "Ungarisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #ur
+* ^expansion.contains[=].display = "Urdu"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #uz
+* ^expansion.contains[=].display = "Usbekisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #vi
+* ^expansion.contains[=].display = "Vietnamesisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #vo
+* ^expansion.contains[=].display = "Volapük"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #cy
+* ^expansion.contains[=].display = "Walisisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #wa
+* ^expansion.contains[=].display = "Wallonisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #fy
+* ^expansion.contains[=].display = "Westfriesisch"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #wo
+* ^expansion.contains[=].display = "Wolof"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #ts
+* ^expansion.contains[=].display = "Xitsonga"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #ii
+* ^expansion.contains[=].display = "Yi"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #yo
+* ^expansion.contains[=].display = "Yoruba"
+* ^expansion.contains[+].system = Canonical(ISO6391_LanguageCS)
+* ^expansion.contains[=].code = #za
+* ^expansion.contains[=].display = "Zhuang"
+
 CodeSystem: ISO6392_LanguageCS
 Id: iso6392-language-cs
 Title: "ISO 639-2 Language Codes"

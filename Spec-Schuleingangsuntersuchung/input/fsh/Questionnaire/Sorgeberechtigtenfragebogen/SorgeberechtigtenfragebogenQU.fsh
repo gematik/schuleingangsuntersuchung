@@ -10,6 +10,7 @@ Description: "Sorgeberechtigtenfragebogen"
 * contained[+] = WohnsituationKindAlternativ2VS
 * contained[+] = WohnsituationKindAlternativ3VS
 * contained[+] = GenderDEVS
+* contained[+] = ISO6391_LanguageVS
 * contained[+] = ISO6392_LanguageVS
 * contained[+] = ChronischeErkrankungenVS
 * contained[+] = JaNeinAngemeldetVS
@@ -635,6 +636,10 @@ Description: "Sorgeberechtigtenfragebogen"
   * item[+]
     * insert addItem(6.1, #choice, [[Welche Sprachen werden Zuhause gesprochen?]])
     * answerValueSet = Canonical(ISO6392_LanguageVS)
+    * repeats = true
+  * item[+]
+    * insert addItemWithSource(6.1g, #choice, [[Welche Sprachen werden Zuhause gesprochen?]], #DE-BB)
+    * answerValueSet = Canonical(ISO6391_LanguageVS)
     * repeats = true
   * item[+]
     * insert addItem(6.1a, #choice, [[Welche Sprachen wurden mit dem Kind in den ersten 4 Lebensjahren überwiegend gesprochen?]])
