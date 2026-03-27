@@ -3,7 +3,7 @@ InstanceOf: Questionnaire
 Usage: #example
 Title: "Sorgeberechtigtenfragebogen BB"
 Description: "Sorgeberechtigtenfragebogen BB"
-* contained[+] = DeuevAnlage8LaenderkennzeichenVS
+* contained[+] = DestatisBEV_GebietscodesVS
 * contained[+] = WohnsituationKindAlternativ2VS
 * contained[+] = ISO6391_LanguageVS
 * contained[+] = AuffaelligkeitVerhaltenVS
@@ -56,34 +56,52 @@ Description: "Sorgeberechtigtenfragebogen BB"
     * insert enableWhenCode(1.4a, =, SEU-UB-StaatsangehoerigkeitCS, 2)
     * insert enableWhenCode(1.4a, =, SEU-UB-StaatsangehoerigkeitCS, 3)
     * enableBehavior = #any
-    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
+    * answerValueSet = Canonical(DestatisBEV_GebietscodesVS)
   * item[+]
     * insert addItemWithSource(1.4b, #choice, [[Staatsangehörigkeit Mutter]], #DE-BB)
     * answerValueSet = Canonical(SEU_UB_StaatsangehoerigkeitVS)
   * item[+]
-    * insert addItemWithSource(1.4b.1, #choice, [[Staatsangehörigkeit Mutter andere]], #DE-BB)
+    * insert addItemWithSource(1.4b.1a, #choice, [[Staatsangehörigkeit Mutter andere]], #DE-BB)
     * insert enableWhenCode(1.4b, =, SEU-UB-StaatsangehoerigkeitCS, 2)
     * insert enableWhenCode(1.4b, =, SEU-UB-StaatsangehoerigkeitCS, 3)
     * enableBehavior = #any
-    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
+    * answerValueSet = Canonical(DestatisBEV_GebietscodesVS)
   * item[+]
     * insert addItemWithSource(1.4c, #choice, [[Staatsangehörigkeit Vater]], #DE-BB)
     * answerValueSet = Canonical(SEU_UB_StaatsangehoerigkeitVS)
   * item[+]
-    * insert addItemWithSource(1.4c.1, #choice, [[Staatsangehörigkeit Vater andere]], #DE-BB)
+    * insert addItemWithSource(1.4c.2a, #choice, [[Staatsangehörigkeit Vater andere]], #DE-BB)
     * insert enableWhenCode(1.4c, =, SEU-UB-StaatsangehoerigkeitCS, 2)
     * insert enableWhenCode(1.4c, =, SEU-UB-StaatsangehoerigkeitCS, 3)
     * enableBehavior = #any
-    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
+    * answerValueSet = Canonical(DestatisBEV_GebietscodesVS)
   * item[+]
-    * insert addItem(1.5, #choice, [[Geburtsland]])
-    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
+    * insert addItemWithSource(1.5.2, #choice, [[Geburtsland]], #DE-BB)
+    * answerValueSet = Canonical(SEU_UB_StaatsangehoerigkeitVS)
   * item[+]
-    * insert addItemWithSource(1.5a, #choice, [[Geburtsland Mutter]], #DE-BB)
-    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
+    * insert addItemWithSource(1.5.2a, #choice, [[Geburtsland andere]], #DE-BB)
+    * insert enableWhenCode(1.5.2, =, SEU-UB-StaatsangehoerigkeitCS, 2)
+    * insert enableWhenCode(1.5.2, =, SEU-UB-StaatsangehoerigkeitCS, 3)
+    * enableBehavior = #any
+    * answerValueSet = Canonical(DestatisBEV_GebietscodesVS)
   * item[+]
-    * insert addItemWithSource(1.5b, #choice, [[Geburtsland Vater]], #DE-BB)
-    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
+    * insert addItemWithSource(1.5a.1, #choice, [[Geburtsland Mutter]], #DE-BB)
+    * answerValueSet = Canonical(SEU_UB_StaatsangehoerigkeitVS)
+  * item[+]
+    * insert addItemWithSource(1.5a.1a, #choice, [[Geburtsland Mutter andere]], #DE-BB)
+    * insert enableWhenCode(1.5a.1, =, SEU-UB-StaatsangehoerigkeitCS, 2)
+    * insert enableWhenCode(1.5a.1, =, SEU-UB-StaatsangehoerigkeitCS, 3)
+    * enableBehavior = #any
+    * answerValueSet = Canonical(DestatisBEV_GebietscodesVS)
+  * item[+]
+    * insert addItemWithSource(1.5b.1, #choice, [[Geburtsland Vater]], #DE-BB)
+    * answerValueSet = Canonical(SEU_UB_StaatsangehoerigkeitVS)
+  * item[+]
+    * insert addItemWithSource(1.5b.1a, #choice, [[Geburtsland Vater andere]], #DE-BB)
+    * insert enableWhenCode(1.5b.1, =, SEU-UB-StaatsangehoerigkeitCS, 2)
+    * insert enableWhenCode(1.5b.1, =, SEU-UB-StaatsangehoerigkeitCS, 3)
+    * enableBehavior = #any
+    * answerValueSet = Canonical(DestatisBEV_GebietscodesVS)
   * item[+]
     * insert addItemWithSource(1.12a, #open-choice, [[Kind lebt hauptsächlich bei]], #DE-BB)
     * answerValueSet = Canonical(WohnsituationKindAlternativ2VS)

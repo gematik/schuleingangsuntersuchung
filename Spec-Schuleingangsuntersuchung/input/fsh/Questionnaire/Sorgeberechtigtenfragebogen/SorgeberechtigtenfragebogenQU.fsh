@@ -5,6 +5,7 @@ Title: "Sorgeberechtigtenfragebogen"
 Description: "Sorgeberechtigtenfragebogen"
 * contained[+] = SEU_EF_NeinAbgeschlossenLaeuftGeplantVS
 * contained[+] = DeuevAnlage8LaenderkennzeichenVS
+* contained[+] = DestatisBEV_GebietscodesVS
 * contained[+] = WohnsituationKindVS
 * contained[+] = WohnsituationKindAlternativ1VS
 * contained[+] = WohnsituationKindAlternativ2VS
@@ -186,7 +187,7 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert enableWhenCode(1.4a, =, SEU-UB-StaatsangehoerigkeitCS, 2)
     * insert enableWhenCode(1.4a, =, SEU-UB-StaatsangehoerigkeitCS, 3)
     * enableBehavior = #any
-    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
+    * answerValueSet = Canonical(DestatisBEV_GebietscodesVS)
   * item[+]
     * insert addItemWithSource(1.4b, #choice, [[Staatsangehörigkeit Mutter]], #DE-BB)
     * answerValueSet = Canonical(SEU_UB_StaatsangehoerigkeitVS)
@@ -196,6 +197,12 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert enableWhenCode(1.4b, =, SEU-UB-StaatsangehoerigkeitCS, 3)
     * enableBehavior = #any
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
+  * item[+]
+    * insert addItemWithSource(1.4b.1a, #choice, [[Staatsangehörigkeit Mutter andere]], #DE-BB)
+    * insert enableWhenCode(1.4b, =, SEU-UB-StaatsangehoerigkeitCS, 2)
+    * insert enableWhenCode(1.4b, =, SEU-UB-StaatsangehoerigkeitCS, 3)
+    * enableBehavior = #any
+    * answerValueSet = Canonical(DestatisBEV_GebietscodesVS)
   * item[+]
     * insert addItemWithSource(1.4b.2, #choice, [[Staatsangehörigkeit Mutter]], #DE-SL)
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
@@ -208,6 +215,12 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert enableWhenCode(1.4c, =, SEU-UB-StaatsangehoerigkeitCS, 3)
     * enableBehavior = #any
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
+  * item[+]
+    * insert addItemWithSource(1.4c.2a, #choice, [[Staatsangehörigkeit Vater andere]], #DE-BB)
+    * insert enableWhenCode(1.4c, =, SEU-UB-StaatsangehoerigkeitCS, 2)
+    * insert enableWhenCode(1.4c, =, SEU-UB-StaatsangehoerigkeitCS, 3)
+    * enableBehavior = #any
+    * answerValueSet = Canonical(DestatisBEV_GebietscodesVS)
   * item[+]
     * insert addItemWithSource(1.4c.2, #choice, [[Staatsangehörigkeit Vater]], #DE-SL)
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
@@ -223,11 +236,38 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert enableWhenCode(1.5, =, [[http://fhir.de/CodeSystem/deuev/anlage-8-laenderkennzeichen]], D)
     * answerValueSet = Canonical(SEU_EF_AlterKindEinreiseVS)
   * item[+]
+    * insert addItemWithSource(1.5.2, #choice, [[Geburtsland]], #DE-BB)
+    * answerValueSet = Canonical(SEU_UB_StaatsangehoerigkeitVS)
+  * item[+]
+    * insert addItemWithSource(1.5.2a, #choice, [[Geburtsland andere]], #DE-BB)
+    * insert enableWhenCode(1.5.2, =, SEU-UB-StaatsangehoerigkeitCS, 2)
+    * insert enableWhenCode(1.5.2, =, SEU-UB-StaatsangehoerigkeitCS, 3)
+    * enableBehavior = #any
+    * answerValueSet = Canonical(DestatisBEV_GebietscodesVS)
+  * item[+]
     * insert addItemWithSource(1.5a, #choice, [[Geburtsland Mutter]], #DE-BB)
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
   * item[+]
+    * insert addItemWithSource(1.5a.1, #choice, [[Geburtsland Mutter]], #DE-BB)
+    * answerValueSet = Canonical(SEU_UB_StaatsangehoerigkeitVS)
+  * item[+]
+    * insert addItemWithSource(1.5a.1a, #choice, [[Geburtsland Mutter andere]], #DE-BB)
+    * insert enableWhenCode(1.5a.1, =, SEU-UB-StaatsangehoerigkeitCS, 2)
+    * insert enableWhenCode(1.5a.1, =, SEU-UB-StaatsangehoerigkeitCS, 3)
+    * enableBehavior = #any
+    * answerValueSet = Canonical(DestatisBEV_GebietscodesVS)
+  * item[+]
     * insert addItemWithSource(1.5b, #choice, [[Geburtsland Vater]], #DE-BB)
     * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
+  * item[+]
+    * insert addItemWithSource(1.5b.1, #choice, [[Geburtsland Vater]], #DE-BB)
+    * answerValueSet = Canonical(SEU_UB_StaatsangehoerigkeitVS)
+  * item[+]
+    * insert addItemWithSource(1.5b.1a, #choice, [[Geburtsland Vater andere]], #DE-BB)
+    * insert enableWhenCode(1.5b.1, =, SEU-UB-StaatsangehoerigkeitCS, 2)
+    * insert enableWhenCode(1.5b.1, =, SEU-UB-StaatsangehoerigkeitCS, 3)
+    * enableBehavior = #any
+    * answerValueSet = Canonical(DestatisBEV_GebietscodesVS)
   * item[+] insert addItemWithSource(1.5c, #choice, [[Elternsprache  1]], #DE-BY)
     * answerValueSet = Canonical(SEU_UB_AuswaehlbareElternspracheVS)
   * item[+] insert addItemWithSource(1.5c.1, #string, [[Elternsprache 1 andere]], #DE-BY)
