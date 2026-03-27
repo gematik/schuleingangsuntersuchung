@@ -13542,6 +13542,52 @@
           }
         ]
       }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "KrankenhausaufenthaltGrundVS",
+      "status": "draft",
+      "name": "KrankenhausaufenthaltGrundVS",
+      "title": "KrankenhausaufenthaltGrundVS",
+      "description": "ValueSet, das den Grund des Krankenhausaufenthaltes beschreibt. Es enthält die Kategorien: akute Erkrankung, chronische Krankheit, Unfall, stationäre Operation(en), und sonstiges. Dieses CodeSystem kann verwendet werden, um den Grund eines Krankenhausaufenthaltes zu kategorisieren.",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/KrankenhausaufenthaltGrundVS",
+      "expansion": {
+        "timestamp": "2025-03-04T12:00:00+00:00",
+        "contains": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/KrankenhausaufenthaltGrundCS",
+            "code": "akute_erkrankung",
+            "display": "akute Erkrankung"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/KrankenhausaufenthaltGrundCS",
+            "code": "chronische_krankheit",
+            "display": "chronische Krankheit"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/KrankenhausaufenthaltGrundCS",
+            "code": "unfall",
+            "display": "Unfall"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/KrankenhausaufenthaltGrundCS",
+            "code": "stationaere_operation",
+            "display": "stationäre Operation(en)"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/KrankenhausaufenthaltGrundCS",
+            "code": "sonstiges",
+            "display": "sonstiges"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/KrankenhausaufenthaltGrundCS"
+          }
+        ]
+      }
     }
   ],
   "version": "1.0.0",
@@ -15623,7 +15669,6 @@
               "answerInteger": 0
             }
           ],
-          "enableBehavior": "any",
           "item": [
             {
               "linkId": "3.1.1.1",
@@ -18215,7 +18260,7 @@
         {
           "linkId": "7.11d",
           "type": "open-choice",
-          "text": "(7.11d) Hatte Ihr Kind in den vergangenen 12 Monaten folgende Verhaltensauffälligkeiten?",
+          "text": "(7.11d) Hatte das Kind in den vergangenen 12 Monaten folgende Verhaltensauffälligkeiten?",
           "code": [
             {
               "code": "7.11d",
@@ -18237,7 +18282,7 @@
         {
           "linkId": "7.12",
           "type": "boolean",
-          "text": "(7.12) Sorgen Sie sich um die Entwicklung ihres Kindes?",
+          "text": "(7.12) Sorgen Sie sich um die Entwicklung des Kindes?",
           "code": [
             {
               "code": "7.12",
@@ -18613,7 +18658,7 @@
                   "answerBoolean": true
                 }
               ],
-              "answerValueSet": "#seu-ef-hilfsmittel-vs",
+              "answerValueSet": "#seu-ef-hilfsmittel-th-vs",
               "repeats": true
             }
           ]
@@ -19650,7 +19695,7 @@
         {
           "linkId": "8.14e",
           "type": "open-choice",
-          "text": "(8.14e) Welche der folgenden Krankheiten wurden bei Ihrem Kind jemals durch einen Arzt festgestellt?",
+          "text": "(8.14e) Welche der folgenden Krankheiten wurden bei dem Kind jemals durch einen Arzt festgestellt?",
           "code": [
             {
               "code": "8.14e",
@@ -19813,7 +19858,7 @@
                   "answerBoolean": true
                 }
               ],
-              "answerValueSet": "https://www.oegd.de/fhir/seu/ValueSet/KrankenhausaufenthaltGrundVS",
+              "answerValueSet": "#KrankenhausaufenthaltGrundVS",
               "repeats": true
             }
           ]
@@ -22365,7 +22410,7 @@
         {
           "linkId": "9.1c",
           "type": "choice",
-          "text": "(9.1c) Sprachtherapie",
+          "text": "(9.1c) Sprachtherapie (Logopädie)",
           "code": [
             {
               "code": "9.1c",
@@ -24459,7 +24504,7 @@
         {
           "linkId": "10.5",
           "type": "choice",
-          "text": "(10.5) Wie lange sieht Ihr Kind durchschnittlich pro Tag Fernsehen, Videos, Streamingdienste oder spielt mit der Spielekonsole, dem Smartphone oder anderen elektronischen Geräten?",
+          "text": "(10.5) Wie lange sieht das Kind durchschnittlich pro Tag Fernsehen, Videos, Streamingdienste oder spielt mit der Spielekonsole, dem Smartphone oder anderen elektronischen Geräten?",
           "code": [
             {
               "code": "10.5",
@@ -24691,13 +24736,6 @@
             {
               "code": "12.8",
               "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
-            }
-          ],
-          "enableWhen": [
-            {
-              "question": "12.7",
-              "operator": "=",
-              "answerBoolean": true
             }
           ]
         },
@@ -25105,7 +25143,7 @@
         {
           "linkId": "13.1c",
           "type": "choice",
-          "text": "(13.1c) Schulabschluss Mutter/Elternteil A",
+          "text": "(13.1c) Schulabschluss Personensorgeberechtigte Person 1 (Mutter)",
           "code": [
             {
               "code": "13.1c",
@@ -25180,7 +25218,7 @@
         {
           "linkId": "13.2c",
           "type": "choice",
-          "text": "(13.2c) Schulabschluss Vater/Elternteil B",
+          "text": "(13.2c) Schulabschluss Personensorgeberechtigte Person 2 (Vater)",
           "code": [
             {
               "code": "13.2c",
@@ -25828,7 +25866,7 @@
         {
           "linkId": "13.32c",
           "type": "choice",
-          "text": "(13.32c) Berufstätigkeit Mutter/Elternteil A",
+          "text": "(13.32c) Berufstätigkeit Personensorgeberechtigte Person 1 (Mutter)",
           "code": [
             {
               "code": "13.32c",
@@ -25891,7 +25929,7 @@
         {
           "linkId": "13.33c",
           "type": "choice",
-          "text": "(13.33c) Berufstätigkeit Vater/Elternteil B",
+          "text": "(13.33c) Berufstätigkeit Personensorgeberechtigte Person 2 (Vater)",
           "code": [
             {
               "code": "13.33c",
@@ -26096,7 +26134,7 @@
         {
           "linkId": "12.4.1",
           "type": "integer",
-          "text": "(12.4.1) Wieviele Personen sind Raucher/Dampfer",
+          "text": "(12.4.1) Wie viele Personen sind Raucher/Dampfer",
           "code": [
             {
               "code": "12.4.1",

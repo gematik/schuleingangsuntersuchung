@@ -2492,6 +2492,122 @@
           }
         ]
       }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "ErkrankungVS",
+      "status": "draft",
+      "name": "ErkrankungVS",
+      "title": "ErkrankungVS",
+      "description": "ErkrankungVS",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/ErkrankungVS",
+      "expansion": {
+        "timestamp": "2024-04-04T10:55:53+00:00",
+        "contains": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "epilepsie",
+            "display": "Epilepsie"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "ads_adhs",
+            "display": "ADS/ADHS"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "sprachauffälligkeit",
+            "display": "Sprachauffälligkeit"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "sehstörung",
+            "display": "Sehstörung"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "hörstörung",
+            "display": "Hörstörung"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "herzfehler",
+            "display": "Herzfehler"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "nieren_harnwegerkrankung",
+            "display": "Nieren/Harnwegerkrankung"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "allergischer_schnupfen",
+            "display": "Allergischer Schnupfen"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "asthma",
+            "display": "Asthma"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "allergische_hauterkrankung",
+            "display": "Allergische Hauterkrankung"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "neurodermitis",
+            "display": "Neurodermitis"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "nahrungsmittelallergie",
+            "display": "Nahrungsmittelallergie"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "krebserkrankung",
+            "display": "Krebserkrankung"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "hüfterkrankung",
+            "display": "Hüfterkrankung"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "wirbelsäulenleiden",
+            "display": "Wirbelsäulenleiden"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "bewegungsstörung",
+            "display": "Bewegungsstörung"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "diabetes",
+            "display": "Diabetes"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "ass",
+            "display": "Autismus-Spektrum-Störung (ASS)"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "schilddrüsenfunktionsstörung",
+            "display": "Schilddrüsenfunktionsstörung"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS"
+          }
+        ]
+      }
     }
   ],
   "version": "1.0.0",
@@ -3346,7 +3462,7 @@
           "repeats": true,
           "item": [
             {
-              "answerValueSet": "https://www.oegd.de/fhir/seu/ValueSet/ErkrankungVS",
+              "answerValueSet": "#ErkrankungVS",
               "linkId": "8.11.g.1",
               "type": "open-choice",
               "text": "(8.11.g.1) Erkrankung",
@@ -3399,7 +3515,7 @@
         {
           "answerValueSet": "#atopische-erkrankungen-vs",
           "linkId": "8.16a",
-          "type": "choice",
+          "type": "open-choice",
           "text": "(8.16a) Besitzt das Kind Allergien?",
           "code": [
             {
@@ -3510,7 +3626,7 @@
           "item": [
             {
               "linkId": "8.27.2",
-              "type": "choice",
+              "type": "open-choice",
               "text": "(8.27.2) Welche Operationen wurden durchgeführt?",
               "code": [
                 {

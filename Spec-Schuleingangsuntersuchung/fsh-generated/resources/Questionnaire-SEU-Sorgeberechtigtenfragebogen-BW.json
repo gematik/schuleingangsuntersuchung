@@ -409,7 +409,6 @@
               "answerInteger": 0
             }
           ],
-          "enableBehavior": "any",
           "item": [
             {
               "linkId": "3.1.1.1",
@@ -489,7 +488,7 @@
         {
           "linkId": "4.10",
           "type": "boolean",
-          "text": "(4.10) Bekommt oder wartet Ihr Kind auf eine spezielle Förderung oder Therapie?",
+          "text": "(4.10) Bekommt oder wartet das Kind auf eine spezielle Förderung oder Therapie?",
           "code": [
             {
               "code": "4.10",
@@ -532,7 +531,7 @@
           "item": [
             {
               "linkId": "7.12.1",
-              "type": "string",
+              "type": "text",
               "text": "(7.12.1) Welche Sorgen",
               "code": [
                 {

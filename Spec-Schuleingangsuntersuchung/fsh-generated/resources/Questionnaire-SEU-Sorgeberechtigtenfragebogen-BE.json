@@ -4666,7 +4666,7 @@
         {
           "linkId": "13.1c",
           "type": "choice",
-          "text": "(13.1c) Schulabschluss Elternteil A",
+          "text": "(13.1c) Schulabschluss Personensorgeberechtigte Person 1 (Mutter)",
           "code": [
             {
               "code": "13.1c",
@@ -4687,7 +4687,7 @@
         {
           "linkId": "13.2c",
           "type": "choice",
-          "text": "(13.2c) Schulabschluss Elternteil B",
+          "text": "(13.2c) Schulabschluss Personensorgeberechtigte Person 2 (Vater)",
           "code": [
             {
               "code": "13.2c",
@@ -4732,7 +4732,7 @@
         {
           "linkId": "13.32c",
           "type": "choice",
-          "text": "(13.32c) Berufstätigkeit Mutter",
+          "text": "(13.32c) Berufstätigkeit Personensorgeberechtigte Person 1 (Mutter)",
           "code": [
             {
               "code": "13.32c",
@@ -4753,7 +4753,7 @@
         {
           "linkId": "13.33c",
           "type": "choice",
-          "text": "(13.33c) Berufstätigkeit Vater",
+          "text": "(13.33c) Berufstätigkeit Personensorgeberechtigte Person 2 (Vater)",
           "code": [
             {
               "code": "13.33c",
@@ -4814,7 +4814,7 @@
         {
           "linkId": "12.4.1",
           "type": "integer",
-          "text": "(12.4.1) Wieviele Personen sind Raucher/Dampfer",
+          "text": "(12.4.1) Wie viele Personen sind Raucher/Dampfer",
           "code": [
             {
               "code": "12.4.1",
@@ -4834,7 +4834,7 @@
         {
           "linkId": "10.4c",
           "type": "choice",
-          "text": "(10.4c) Wieviele Stunden am Tag beschäftigt sich das Kind im Durchschnitt mit elektronischen Geräten? (elektronische Geräte sind Fernsehen, DVD, Computer, Tablet, Smartphone, Playstation und andere) ",
+          "text": "(10.4c) Wie viele Stunden am Tag beschäftigt sich das Kind im Durchschnitt mit elektronischen Geräten? (elektronische Geräte sind Fernsehen, DVD, Computer, Tablet, Smartphone, Playstation und andere) ",
           "code": [
             {
               "code": "10.4c",

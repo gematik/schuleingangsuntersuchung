@@ -3691,7 +3691,7 @@
         },
         {
           "linkId": "8.29",
-          "type": "choice",
+          "type": "open-choice",
           "text": "(8.29) Hat das Kind häufiger Befindlichkeitsstörungen?",
           "code": [
             {
