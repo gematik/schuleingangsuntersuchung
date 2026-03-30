@@ -1,0 +1,41 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "WohnsituationKindAlternativ4VS",
+  "id": "WohnsituationKindAlternativ4VS",
+  "title": "WohnsituationKindAlternativ4VS",
+  "description": "ValueSet, das verschiedene Wohnsituationen des Kindes enthält.",
+  "url": "https://www.oegd.de/fhir/seu/ValueSet/WohnsituationKindAlternativ4VS",
+  "expansion": {
+    "timestamp": "2024-04-04T09:24:55+00:00",
+    "contains": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
+        "code": "eltern",
+        "display": "Bei den Eltern"
+      },
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
+        "code": "alleinerziehender_elternteil",
+        "display": "Bei einem Elternteil"
+      }
+    ]
+  },
+  "compose": {
+    "include": [
+      {
+        "system": "https://www.oegd.de/fhir/seu/CodeSystem/WohnsituationKindCS",
+        "concept": [
+          {
+            "code": "eltern",
+            "display": "Bei den Eltern"
+          },
+          {
+            "code": "alleinerziehender_elternteil",
+            "display": "Bei einem Elternteil"
+          }
+        ]
+      }
+    ]
+  }
+}
