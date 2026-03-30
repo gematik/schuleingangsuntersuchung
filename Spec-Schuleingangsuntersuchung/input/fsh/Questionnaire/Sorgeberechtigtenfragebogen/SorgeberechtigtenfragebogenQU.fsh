@@ -10,6 +10,7 @@ Description: "Sorgeberechtigtenfragebogen"
 * contained[+] = WohnsituationKindAlternativ1VS
 * contained[+] = WohnsituationKindAlternativ2VS
 * contained[+] = WohnsituationKindAlternativ3VS
+* contained[+] = WohnsituationKindAlternativ4VS
 * contained[+] = GenderDEVS
 * contained[+] = ISO6391_LanguageVS
 * contained[+] = ISO6392_LanguageVS
@@ -320,6 +321,9 @@ Description: "Sorgeberechtigtenfragebogen"
   * item[+]
     * insert addItemWithSource(1.12d, #choice, [[Kind lebt überwiegend bei]], #DE-BE)
     * answerValueSet = Canonical(LebensumfeldVS)
+  * item[+]
+    * insert addItemWithSource(1.12e, #choice, [[Kind lebt überwiegend bei]], #DE-BW)
+    * answerValueSet = Canonical(WohnsituationKindAlternativ4VS)
   * item[+]
     * insert addItemWithSource(1.13, #string, [[Unterscheidung zwischen Arzt und Koordinator und Hör- und Sehkraft (MFA)]], #DE-NI)
   * item[+]
@@ -686,6 +690,15 @@ Description: "Sorgeberechtigtenfragebogen"
     * answerValueSet = Canonical(UeberwiegendGesprocheneSpracheVS)
     * repeats = true
   * item[+]
+    * insert addItemWithSource(6.1h, #choice, [[Welche Sprache(n) wurde(n) mit Ihrem Kind während der ersten drei Lebensjahre gesprochen (Familiensprache)?]], #DE-BW)
+    * answerValueSet = Canonical(UeberwiegendGesprocheneSpracheVS)
+  * item[+]
+    * insert addItemWithSource(6.1i, #string, [[Welche andere(n) Sprache(n)?]], #DE-BW)
+    * insert enableWhenCode(6.1h, =, SEU_UB_GesprocheneSpracheCS, 2)
+    * insert enableWhenCode(6.1h, =, SEU_UB_GesprocheneSpracheCS, 8)
+    * enableBehavior = #any
+    * repeats = true
+  * item[+]
     * insert addItemWithSource(6.1b, #choice, [[1. vorrangig in der Familie gesprochene Sprache]], #DE-SL)
     * answerValueSet = Canonical(ISO6392_LanguageVS)
   * item[+]
@@ -855,6 +868,9 @@ Description: "Sorgeberechtigtenfragebogen"
     * item[+]
       * insert addItem(8.3.1, #text, [[Welche Sehstörung]])
       * insert enableWhenBoolean(8.3, =, true)
+    * item[+]
+      * insert addItemWithSource(8.3.2, #boolean, [[Ist Ihr Kind deswegen aktuell in Behandlung?]], #DE-BW)
+      * insert enableWhenBoolean(8.3, =, true)
   * item[+]
     * insert addItem(8.4, #boolean, [[Sprachstörung vorhanden?]])
     * item[+]
@@ -868,6 +884,10 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert addItem(8.5, #boolean, [[Schielbehandlung?]])
   * item[+]
     * insert addItem(8.6, #boolean, [[Brillenträger?]])
+    * item[+]
+      * insert addItemWithSource(8.6.1, #integer, [[Wenn ja, in welchem Alter hat Ihr Kind die Sehhilfe bekommen? (in Jahren)]], #DE-BW)
+      * insert enableWhenBoolean(8.6, =, true)
+      * insert uunit(a, "Jahre")
   * item[+]
     * insert addItemWithSource(8.6a, #choice, [[Hilfsmittel?]], #DE-BB)
     * answerValueSet = Canonical(SEU_EF_HilfsmittelVS)
@@ -894,6 +914,9 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert addItem(8.9, #boolean, [[Schwere Hörstörung vorhanden?]])
     * item[+]
       * insert addItem(8.9.1, #text, [[Welche Hörstörung]])
+      * insert enableWhenBoolean(8.9, =, true)
+    * item[+]
+      * insert addItemWithSource(8.9.2, #boolean, [[Ist Ihr Kind deswegen aktuell in Behandlung?]], #DE-BW)
       * insert enableWhenBoolean(8.9, =, true)
   * item[+]
     * insert addItemWithSource(8.9.hoerhilfe, #boolean, [[Hörhilfe]], #DE-BB)       
@@ -1106,7 +1129,7 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert addItem(8.23, #boolean, [[Regelmäßige Medikamenteneinnahme]])
   * item[+]
     * insert addItem(8.23.1, #text, [[Welches Medikament]])
-    * insert enableWhenBoolean(8.23, =, true)   
+    * insert enableWhenBoolean(8.23, =, true)
     * repeats = true
   * item[+]
     * insert addItemWithSource(8.25a, #boolean, [[Muss das Kind ein Notfallset mit sich führen?]], #DE-TH)
@@ -1116,7 +1139,12 @@ Description: "Sorgeberechtigtenfragebogen"
     * item[+]
       * insert addItemWithSource(8.25a.2, #text, [[Namen der Notfallmedikamente]], #DE-TH)
       * insert enableWhenBoolean(8.25a, =, true)
-      
+  * item[+]
+    * insert addItemWithSource(8.24, #boolean, [[Müssen Medikamente während der Zeit in der Kindertages-Einrichtung verabreicht werden?]], #DE-BW)
+  * item[+]
+    * insert addItemWithSource(8.24.1, #string, [[Wenn ja, welche?]], #DE-BW)
+    * insert enableWhenBoolean(8.24, =, true)
+    * repeats = true
 // Erkrankungen
   * item[+]
     * insert addItem(8.25, #boolean, [[Eine Erkrankung, die in einer Notfallsituation beachtet werden muss]])
@@ -1148,6 +1176,9 @@ Description: "Sorgeberechtigtenfragebogen"
       * repeats = true
       * insert enableWhenBoolean(8.27, =, true)
       * answerValueSet = Canonical(SEU_EF_OperationenVS)
+    * item[+]
+      * insert addItemWithSource(8.27.3, #text, [[Wenn ja, warum?]], #DE-BW)
+      * insert enableWhenBoolean(8.27, =, true)
   * item[+]
     * insert addItemWithSource(8.27a, #boolean, [[Ambulante Operation(en)]], #DE-ST)
   * item[+]
@@ -1707,6 +1738,8 @@ Description: "Sorgeberechtigtenfragebogen"
     * insert addItem(12.4, #boolean, KISS Sprachscreening)
   * item[+]
     * insert addItem(12.6, #text, Stärken/Begabung/Besonderheiten des Kindes)
+  * item[+]
+    * insert addItemWithSource(12.6a, #text, [[Was sind Stärken und Begabungen Ihres Kindes?]], #DE-BW)
   * item[+]
     * insert addItem(12.7, #boolean, Regelmäßig Sport)
   * item[+]
