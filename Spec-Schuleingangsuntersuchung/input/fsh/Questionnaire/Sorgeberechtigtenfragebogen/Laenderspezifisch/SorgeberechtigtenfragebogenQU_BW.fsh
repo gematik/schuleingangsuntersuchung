@@ -205,7 +205,7 @@ Description: "Sorgeberechtigtenfragebogen BW"
 * item[+]
   * insert addGroup(12, Sonstiges)
   * item[+]
-    * insert addItemWithSource(12.6a, #text, [[Was sind Stärken und Begabungen Ihres Kindes?]], #DE-BW)
+    * insert addItemWithSource(12.6, #text, [[Was sind Stärken und Begabungen Ihres Kindes?]], #DE-BW)
 //********************************************
 // Informationen Eltern
 * item[+]
