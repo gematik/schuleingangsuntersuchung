@@ -49,7 +49,7 @@ Description: "Sorgeberechtigtenfragebogen BE"
   * item[+]
     * insert addItem(1.6, #boolean, In Deutschland geboren)
   * item[+]
-    * insert addItemWithSource(1.6.3, #date,[[Seit wann lebt Ihr Kind in Deutschland (Monat/Jahr)?]], #DE-BE)
+    * insert addItemWithSource(1.6.3, #date,[[Seit wann lebt das Kind in Deutschland (Monat/Jahr)?]], #DE-BE)
   * item[+]
     * insert addItem(1.1.1, #group, Geschwister unter 18 Jahren)
     * repeats = true
@@ -92,7 +92,7 @@ Description: "Sorgeberechtigtenfragebogen BE"
   * item[+]
     * insert addItem(8.23, #boolean, [[Regelmäßige Medikamenteneinnahme]])
     * item[+]
-      * insert addItem(8.23.1, #string, [[Welches Medikament]])
+      * insert addItem(8.23.1, #text, [[Welches Medikament]])
       * insert enableWhenBoolean(8.23, =, true)   
       * repeats = true
   * item[+]
@@ -112,9 +112,9 @@ Description: "Sorgeberechtigtenfragebogen BE"
     * insert addItemWithSource(9.7a, #boolean, [[Psychologische Erziehungsberatung]], #DE-BB)
   * item[+]
     * answerValueSet = Canonical(SorgenKindVS)
-    * insert addItemWithSource(7.14, #choice, [[Machen Sie sich Sorgen um Ihr Kind wegen]], #DE-BE)
+    * insert addItemWithSource(7.14, #choice, [[Machen Sie sich Sorgen um das Kind wegen]], #DE-BE)
   * item[+]
-    * insert addItemWithSource(8.30.1, #boolean, [[Nässt Ihr Kind ein?]], #DE-BE)
+    * insert addItemWithSource(8.30.1, #boolean, [[Nässt das Kind ein?]], #DE-BE)
 //Betreuung des kindes
 * item[+]
   * insert addItem(5, #group, Betreuung des Kindes)
@@ -125,7 +125,7 @@ Description: "Sorgeberechtigtenfragebogen BE"
   * item[+]
     * insert addItem(4.4, #date, [[Angabe des Datums, seit wann das Kind keine Kita mehr besucht.]])
   * item[+]
-    * insert addItem(4.5, #boolean, Besucht Ihr Kind eine andere Form der Tagesbetreuung?)
+    * insert addItem(4.5, #boolean, Besucht das Kind eine andere Form der Tagesbetreuung?)
 //Lebensumfeld
 * item[+]
   * insert addItem(6, #group, Lebensumfeld)
@@ -133,34 +133,34 @@ Description: "Sorgeberechtigtenfragebogen BE"
       * insert addItemWithSource(1.12d, #choice, [[Kind lebt überwiegend bei]], #DE-BE)
       * answerValueSet = Canonical(LebensumfeldVS)
     * item[+]
-      * insert addItemWithSource(13.1c, #choice, Schulabschluss Elternteil A, #DE-BE)
+      * insert addItemWithSource(13.1c, #choice, [[Schulabschluss Personensorgeberechtigte Person 1 (Mutter)]], #DE-BE)
       * answerValueSet = Canonical(SchulabschlussBerlinVS)
     * item[+]
-      * insert addItemWithSource(13.2c, #choice, Schulabschluss Elternteil B, #DE-BE)
+      * insert addItemWithSource(13.2c, #choice, [[Schulabschluss Personensorgeberechtigte Person 2 (Vater)]], #DE-BE)
       * answerValueSet = Canonical(SchulabschlussBerlinVS)
   * item[+]
-    * insert addItem(13.3, #choice, Berufsabschluss 1. Elternteil)
+    * insert addItem(13.3, #choice, [[Berufsabschluss Personensorgeberechtigte Person 1 (Mutter)]])
     * answerValueSet = Canonical(SEU_EF_BerufsbildungVS)
   * item[+]
-    * insert addItem(13.4, #choice, Berufsabschluss 2. Elternteil)
+    * insert addItem(13.4, #choice, [[Berufsabschluss Personensorgeberechtigte Person 2 (Vater)]])
     * answerValueSet = Canonical(SEU_EF_BerufsbildungVS)
   * item[+]
-    * insert addItemWithSource(13.32c, #choice, [[Berufstätigkeit Mutter]], #DE-BE)
+    * insert addItemWithSource(13.32c, #choice, [[Berufstätigkeit Personensorgeberechtigte Person 1 (Mutter)]], #DE-BE)
     * answerValueSet = Canonical(BerufstaetigkeitElternBerlinVS)
   * item[+]
-    * insert addItemWithSource(13.33c, #choice, [[Berufstätigkeit Vater]], #DE-BE)
+    * insert addItemWithSource(13.33c, #choice, [[Berufstätigkeit Personensorgeberechtigte Person 2 (Vater)]], #DE-BE)
     * answerValueSet = Canonical(BerufstaetigkeitElternBerlinVS)
   * item[+]
     * insert addItemWithSource(3.3, #integer, Aktuell im Haushalt lebende Erwachsene, #DE-BB) 
   * item[+]
     * insert addItemWithSource(3.1c, #integer, [[Kinder im Haushalt]], #DE-HH)
   * item[+]
-    * insert addItemWithSource(12.4.1, #integer, [[Wieviele Personen sind Raucher/Dampfer]], #DE-BE)
+    * insert addItemWithSource(12.4.1, #integer, [[Wie viele Personen sind Raucher/Dampfer]], #DE-BE)
   * item[+]
-    * insert addItemWithSource(10.4c, #choice, [[Wieviele Stunden am Tag beschäftigt sich Ihr Kind im Durchschnitt mit elektronischen Geräten? (elektronische Geräte sind Fernsehen, DVD, Computer, Tablet, Smartphone, Playstation und andere) ]], #DE-BE)
+    * insert addItemWithSource(10.4c, #choice, [[Wie viele Stunden am Tag beschäftigt sich das Kind im Durchschnitt mit elektronischen Geräten? (elektronische Geräte sind Fernsehen, DVD, Computer, Tablet, Smartphone, Playstation und andere) ]], #DE-BE)
     * answerValueSet = Canonical(SEUEFMedienkonsumBerlinVS)
   * item[+]
-    * insert addItemWithSource(10.2.1, #boolean, [[Mein Kind hat einen eigenen Fernseher?]], #DE-BE)
+    * insert addItemWithSource(10.2.1, #boolean, [[Das Kind hat einen eigenen Fernseher?]], #DE-BE)
   * item[+]
     * insert addItemWithSource(10.2.2, #boolean, [[andere eigene elektronische Geräte]], #DE-BE)
   * item[+]

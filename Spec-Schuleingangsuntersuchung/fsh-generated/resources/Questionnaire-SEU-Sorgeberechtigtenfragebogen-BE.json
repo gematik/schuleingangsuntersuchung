@@ -4102,7 +4102,7 @@
         {
           "linkId": "1.6.3",
           "type": "date",
-          "text": "(1.6.3) Seit wann lebt Ihr Kind in Deutschland (Monat/Jahr)?",
+          "text": "(1.6.3) Seit wann lebt das Kind in Deutschland (Monat/Jahr)?",
           "code": [
             {
               "code": "1.6.3",
@@ -4379,7 +4379,7 @@
           "item": [
             {
               "linkId": "8.23.1",
-              "type": "string",
+              "type": "text",
               "text": "(8.23.1) Welches Medikament",
               "code": [
                 {
@@ -4526,7 +4526,7 @@
           "answerValueSet": "#SorgenKindVS",
           "linkId": "7.14",
           "type": "choice",
-          "text": "(7.14) Machen Sie sich Sorgen um Ihr Kind wegen",
+          "text": "(7.14) Machen Sie sich Sorgen um das Kind wegen",
           "code": [
             {
               "code": "7.14",
@@ -4546,7 +4546,7 @@
         {
           "linkId": "8.30.1",
           "type": "boolean",
-          "text": "(8.30.1) Nässt Ihr Kind ein?",
+          "text": "(8.30.1) Nässt das Kind ein?",
           "code": [
             {
               "code": "8.30.1",
@@ -4621,7 +4621,7 @@
         {
           "linkId": "4.5",
           "type": "boolean",
-          "text": "(4.5) Besucht Ihr Kind eine andere Form der Tagesbetreuung?",
+          "text": "(4.5) Besucht das Kind eine andere Form der Tagesbetreuung?",
           "code": [
             {
               "code": "4.5",
@@ -4666,7 +4666,7 @@
         {
           "linkId": "13.1c",
           "type": "choice",
-          "text": "(13.1c) Schulabschluss Elternteil A",
+          "text": "(13.1c) Schulabschluss Personensorgeberechtigte Person 1 (Mutter)",
           "code": [
             {
               "code": "13.1c",
@@ -4687,7 +4687,7 @@
         {
           "linkId": "13.2c",
           "type": "choice",
-          "text": "(13.2c) Schulabschluss Elternteil B",
+          "text": "(13.2c) Schulabschluss Personensorgeberechtigte Person 2 (Vater)",
           "code": [
             {
               "code": "13.2c",
@@ -4708,7 +4708,7 @@
         {
           "linkId": "13.3",
           "type": "choice",
-          "text": "(13.3) Berufsabschluss 1. Elternteil",
+          "text": "(13.3) Berufsabschluss Personensorgeberechtigte Person 1 (Mutter)",
           "code": [
             {
               "code": "13.3",
@@ -4720,7 +4720,7 @@
         {
           "linkId": "13.4",
           "type": "choice",
-          "text": "(13.4) Berufsabschluss 2. Elternteil",
+          "text": "(13.4) Berufsabschluss Personensorgeberechtigte Person 2 (Vater)",
           "code": [
             {
               "code": "13.4",
@@ -4732,7 +4732,7 @@
         {
           "linkId": "13.32c",
           "type": "choice",
-          "text": "(13.32c) Berufstätigkeit Mutter",
+          "text": "(13.32c) Berufstätigkeit Personensorgeberechtigte Person 1 (Mutter)",
           "code": [
             {
               "code": "13.32c",
@@ -4753,7 +4753,7 @@
         {
           "linkId": "13.33c",
           "type": "choice",
-          "text": "(13.33c) Berufstätigkeit Vater",
+          "text": "(13.33c) Berufstätigkeit Personensorgeberechtigte Person 2 (Vater)",
           "code": [
             {
               "code": "13.33c",
@@ -4814,7 +4814,7 @@
         {
           "linkId": "12.4.1",
           "type": "integer",
-          "text": "(12.4.1) Wieviele Personen sind Raucher/Dampfer",
+          "text": "(12.4.1) Wie viele Personen sind Raucher/Dampfer",
           "code": [
             {
               "code": "12.4.1",
@@ -4834,7 +4834,7 @@
         {
           "linkId": "10.4c",
           "type": "choice",
-          "text": "(10.4c) Wieviele Stunden am Tag beschäftigt sich Ihr Kind im Durchschnitt mit elektronischen Geräten? (elektronische Geräte sind Fernsehen, DVD, Computer, Tablet, Smartphone, Playstation und andere) ",
+          "text": "(10.4c) Wie viele Stunden am Tag beschäftigt sich das Kind im Durchschnitt mit elektronischen Geräten? (elektronische Geräte sind Fernsehen, DVD, Computer, Tablet, Smartphone, Playstation und andere) ",
           "code": [
             {
               "code": "10.4c",
@@ -4855,7 +4855,7 @@
         {
           "linkId": "10.2.1",
           "type": "boolean",
-          "text": "(10.2.1) Mein Kind hat einen eigenen Fernseher?",
+          "text": "(10.2.1) Das Kind hat einen eigenen Fernseher?",
           "code": [
             {
               "code": "10.2.1",

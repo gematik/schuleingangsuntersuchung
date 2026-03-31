@@ -74,7 +74,7 @@ Description: "Sorgeberechtigtenfragebogen SL"
       * answerValueSet = Canonical(ChronischeErkrankungenVS)
       * repeats = true
     * item[+]
-      * insert addItemWithSource(3.2.6a, #boolean, [[Liegt bei Ihrem Kind ein Grad der Behinderung/ein Pflegegrad vor?]], #DE-SL)
+      * insert addItemWithSource(3.2.6a, #boolean, [[Liegt bei dem Kind ein Grad der Behinderung/ein Pflegegrad vor?]], #DE-SL)
       * required = true
       * item[+]
         * insert addItemWithSource(3.2.6a.1, #choice, [[Grad der Behinderung]], #DE-SL)
@@ -168,7 +168,7 @@ Description: "Sorgeberechtigtenfragebogen SL"
       * answerValueSet = Canonical(SEU_EF_SpracheVS)
       * required = true
   * item[+]
-    * insert addItem(8.27, #boolean, [[Wurde Ihr Kind operiert]])
+    * insert addItem(8.27, #boolean, [[Wurde das Kind operiert]])
     * required = true
     * item[+]
       * insert addItem(8.27.2, #open-choice, [[Welche Operationen wurden durchgeführt?]])
@@ -176,12 +176,12 @@ Description: "Sorgeberechtigtenfragebogen SL"
       * insert enableWhenBoolean(8.27, =, true)
       * answerValueSet = Canonical(SEU_EF_OperationenVS)
   * item[+]
-    * insert addItemWithSource(8.30, #boolean, [[Wurde Ihr Kind jemals aufgrund von Unfallverletzungen von einem Arzt behandelt?]], #DE-SL)
+    * insert addItemWithSource(8.30, #boolean, [[Wurde das Kind jemals aufgrund von Unfallverletzungen von einem Arzt behandelt?]], #DE-SL)
     * required = true
 
 // Inkontinenz
   * item[+]
-    * insert addItemWithSource(8.30.1, #boolean, [[Nässt Ihr Kind ein?]], #DE-BE)
+    * insert addItemWithSource(8.30.1, #boolean, [[Nässt das Kind ein?]], #DE-BE)
   * item[+]
     * insert addItemWithSource(8.31, #boolean, [[Einnässen tags]], #DE-SL)
     * required = true
@@ -237,7 +237,7 @@ Description: "Sorgeberechtigtenfragebogen SL"
     * item[+]
       * insert addItemWithSource(8.43, #boolean, [[Erkrankungen Sonstige]], #DE-SL)
       * item[+]
-        * insert addItemWithSource(8.43.1, #string, [[Sonstiges, und zwar:]], #DE-SL)
+        * insert addItemWithSource(8.43.1, #text, [[Sonstiges, und zwar:]], #DE-SL)
         * insert enableWhenBoolean(8.43, =, true)
 
 // Operationen
@@ -260,7 +260,7 @@ Description: "Sorgeberechtigtenfragebogen SL"
   * item[+]
     * insert addItemWithSource(8.51, #boolean, [[Operationen Sonstige OP]], #DE-SL)
     * item[+]
-      * insert addItemWithSource(8.51.1, #string, [[Sonstiges, und zwar:]], #DE-SL)
+      * insert addItemWithSource(8.51.1, #text, [[Sonstiges, und zwar:]], #DE-SL)
       * insert enableWhenBoolean(8.51, =, true)
 
 // Unfälle
@@ -286,7 +286,7 @@ Description: "Sorgeberechtigtenfragebogen SL"
     * answerValueSet = Canonical(SEU_EF_UnfallortVS)
     * required = true
     * item[+]
-      * insert addItemWithSource(8.56.1, #string, [[Sonstiges, und zwar:]], #DE-SL)
+      * insert addItemWithSource(8.56.1, #text, [[Sonstiges, und zwar:]], #DE-SL)
       * insert enableWhenExists(8.56)
       * insert enableWhenCode(8.56, !=, SEU_EF_UnfallortCS, nein)
       * insert enableWhenCode(8.56, !=, SEU_EF_UnfallortCS, keine_angabe)
@@ -298,7 +298,7 @@ Description: "Sorgeberechtigtenfragebogen SL"
     * item[+]
       * insert addItemWithSource(8.57, #boolean, [[Reg. Med. Antikonvulsiva]], #DE-SL)
       * item[+]
-        * insert addItem(8.57.1, #string, [[Wegen welcher Erkrankungen ist Ihr Kind zurzeit in Behandlung??]])
+        * insert addItem(8.57.1, #text, [[Wegen welcher Erkrankungen ist das Kind zurzeit in Behandlung??]])
         * insert enableWhenBoolean(8.57, =, true)
     * item[+]
       * insert addItemWithSource(8.58, #boolean, [[Reg. Med. Antiasthmatika/Antiallergika]], #DE-SL)
@@ -315,14 +315,14 @@ Description: "Sorgeberechtigtenfragebogen SL"
     * item[+]
       * insert addItemWithSource(8.64, #boolean, [[Reg. Med. Sonstige]], #DE-SL)
     * item[+]
-      * insert addItemWithSource(8.64.1, #string, [[Sonstiges, und zwar:]], #DE-SL)
+      * insert addItemWithSource(8.64.1, #text, [[Sonstiges, und zwar:]], #DE-SL)
       * insert enableWhenBoolean(8.64, =, true)
 //********************************************
 // Förderungen
 * item[+]
   * insert addItem(9, #group, [[Förderungen]])
   * item[+]
-    * insert addItemWithSource(9.1a, #boolean, [[Werden oder wurden bei Ihrem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)]], #DE-SL)    
+    * insert addItemWithSource(9.1a, #boolean, [[Werden oder wurden bei dem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)]], #DE-SL)    
   * item[+]
     * insert addGroup(9.1a.g, Therapien)
     * insert enableWhenBoolean(9.1a, =, true)

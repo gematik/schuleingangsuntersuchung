@@ -143,7 +143,7 @@ Description: "Sorgeberechtigtenfragebogen ST"
     * required = true
     * item[+]
       * insert enableWhenBoolean(5.6, =, true)
-      * insert addItem(5.6.1, #string, [[Welche Auffälligkeit?]])
+      * insert addItem(5.6.1, #text, [[Welche Auffälligkeit?]])
       * required = true
   * item[+]
     * insert addItemWithSource(5.9, #boolean, [[Mehrlingsgeburt]], #DE-BY)
@@ -189,7 +189,7 @@ Description: "Sorgeberechtigtenfragebogen ST"
       * required = true
   * item[+]
     * answerValueSet = Canonical(AtopischeErkrankungenVS)  
-    * insert addItem(8.16a, #open-choice, [[Besitzt Ihr Kind Allergien?]])
+    * insert addItem(8.16a, #open-choice, [[Besitzt das Kind Allergien?]])
     * required = true
   * item[+]
     * insert addItemWithSource(8.16c, #choice, [[Ärztlich festgestellte Krankheiten]], #DE-ST)
@@ -210,7 +210,7 @@ Description: "Sorgeberechtigtenfragebogen ST"
     * insert addItem(8.23, #boolean, [[Regelmäßige Medikamenteneinnahme]])
     * required = true
   * item[+]
-    * insert addItem(8.23.1, #string, [[Welches Medikament]])
+    * insert addItem(8.23.1, #text, [[Welches Medikament]])
     * insert enableWhenBoolean(8.23, =, true)   
     * repeats = true
     * required = true
@@ -220,7 +220,7 @@ Description: "Sorgeberechtigtenfragebogen ST"
     * insert addItemWithSource(8.27a, #boolean, [[Ambulante Operation(en)]], #DE-ST)
     * required = true
   * item[+]
-    * insert addItem(8.29, #choice, [[Hat Ihr Kind häufiger Befindlichkeitsstörungen?]])
+    * insert addItem(8.29, #open-choice, [[Hat das Kind häufiger Befindlichkeitsstörungen?]])
     * repeats = true 
     * answerValueSet = Canonical(AllgemeineBeschwerdenVS)
     * required = true
@@ -229,7 +229,7 @@ Description: "Sorgeberechtigtenfragebogen ST"
 * item[+]
   * insert addItem(9, #group, [[Förderungen]])
   * item[+]
-    * insert addItemWithSource(9.1a, #boolean, [[Werden oder wurden bei Ihrem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)]], #DE-SL)    
+    * insert addItemWithSource(9.1a, #boolean, [[Werden oder wurden bei dem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)]], #DE-SL)    
     * required = true
   * item[+]
     * insert addGroup(9.1a.g, Therapien)
@@ -256,7 +256,7 @@ Description: "Sorgeberechtigtenfragebogen ST"
       * answerValueSet = Canonical(SEU_EF_NeinAbgeschlossenLaeuftGeplantVS)
       * required = true
     * item[+]
-      * insert addItem(9.10, #string, [[Sonstige Förderung]])
+      * insert addItem(9.10, #text, [[Sonstige Förderung]])
       * required = true
 
 //********************************************

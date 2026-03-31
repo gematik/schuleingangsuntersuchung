@@ -50,7 +50,7 @@ Description: "Sorgeberechtigtenfragebogen HH"
   * item[+]
     * insert addItemWithSource(0.14, #boolean, [[Hat das Kind einen i-Helfer?]], #DE-MV)
   * item[+]
-    * insert addItemWithSource(0.15, #string, [[Bemerkung]], #DE-HH)
+    * insert addItemWithSource(0.15, #text, [[Bemerkung]], #DE-HH)
 //********************************************
 // Personenbezogene Daten Kind
 * item[+]
@@ -176,8 +176,6 @@ Description: "Sorgeberechtigtenfragebogen HH"
     * insert addItem(3.1.1, #group, Details Geschwister)
     * repeats = true
     * insert enableWhenInteger(3.1, >, 0)
-    * insert enableWhenInteger(3.1c, >, 1)
-    * enableBehavior = #any
     * item[+]
       * insert addItem(3.1.1.1, #date, Geburtsdatum des Geschwisters)
     * item[+]
@@ -190,10 +188,10 @@ Description: "Sorgeberechtigtenfragebogen HH"
       * answerValueSet = Canonical(ChronischeErkrankungenVS)
       * repeats = true
     * item[+]
-      * insert addItem(3.2.6, #boolean, [[Hat Ihr Kind eine körperliche, geistige oder seelische Behinderung?]])
+      * insert addItem(3.2.6, #boolean, [[Hat das Kind eine körperliche, geistige oder seelische Behinderung?]])
       * item[+]
         * insert enableWhenBoolean(3.2.6, =, true)
-        * insert addItem(3.2.6.1, #string, Welche Behinderung?)
+        * insert addItem(3.2.6.1, #text, Welche Behinderung?)
   * item[+]
     * insert addItemWithSource(3.3, #integer, Aktuell im Haushalt lebende Erwachsene, #DE-BB)
 //********************************************
@@ -201,7 +199,7 @@ Description: "Sorgeberechtigtenfragebogen HH"
 * item[+]
   * insert addItem(4, #group, Kinderbetreuung)
   * item[+]
-    * insert addItem(4.0a, #boolean, Besucht Ihr Kind weniger als 5 Stunden täglich den Kindergarten?)
+    * insert addItem(4.0a, #boolean, Besucht das Kind weniger als 5 Stunden täglich den Kindergarten?)
   * item[+]
     * insert addItem(4.0b, #boolean, Ist das Kind in einem Kindergarten/einer Kindertageseinrichtung?)
   * item[+]
@@ -214,13 +212,13 @@ Description: "Sorgeberechtigtenfragebogen HH"
       * operator = #=
       * answerBoolean = true
   * item[+]
-    * insert addItemWithSource(4.6a, #string, Anschrift des Kindergartens, #DE-SN)
+    * insert addItemWithSource(4.6a, #text, Anschrift des Kindergartens, #DE-SN)
     * enableWhen[+]
       * question = "4.0b"
       * operator = #=
       * answerBoolean = true
   * item[+]
-    * insert addItemWithSource(4.10, #boolean, [[Bekommt oder wartet Ihr Kind auf eine spezielle Förderung oder Therapie?]], #DE-SN)
+    * insert addItemWithSource(4.10, #boolean, [[Bekommt oder wartet das Kind auf eine spezielle Förderung oder Therapie?]], #DE-SN)
 //********************************************
 // Schwangerschaft und Geburt
 * item[+]
@@ -238,14 +236,14 @@ Description: "Sorgeberechtigtenfragebogen HH"
     * insert uunit(cm, "cm")
     * required = true
   * item[+]
-    * insert addItem(5.3c, #integer, [[In welcher SS-Woche wurde Ihr Kind geboren?]])
+    * insert addItem(5.3c, #integer, [[In welcher Schwangerschaftswoche wurde das Kind geboren?]])
     * insert uunit(wk, "Wochen")
     * required = true
   * item[+]
     * insert addItem(5.5, #boolean, [[Auffälligkeit bei der Geburt]])
     * item[+]
       * insert enableWhenBoolean(5.5, =, true)
-      * insert addItem(5.5.1, #string, [[Welche Auffälligkeit?]])
+      * insert addItem(5.5.1, #text, [[Welche Auffälligkeit?]])
   * item[+]
     * insert addItemWithSource(5.11, #string, [[APGAR]], #DE-HB)
     * insert regEx([["^\\d{2}\\/\\d{2}\\/\\d{2}$"]])

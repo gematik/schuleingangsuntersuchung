@@ -125,16 +125,15 @@ Description: "Sorgeberechtigtenfragebogen HE"
   * item[+]
     * insert addItem(3.1.1, #group, Details Geschwister)
     * repeats = true
-    * enableWhen[+]
-      * question = "3.1"
-      * operator = #> 
-      * answerInteger = 0
+    * insert enableWhenInteger(3.1, >, 0)
     * item[+]
       * insert addItem(3.1.1.1, #date, Geburtsdatum des Geschwisters)
   * item[+]
     * insert addItem(3.2, #group, Familiäre Vorgeschichte)
+    * item[+] insert helpItem(3.2.1-info, [[Bitte geben Sie an, ob bei einem Familienmitglied ein Brillenträger bekannt ist.]])
     * item[+]
       * insert addItem(3.2.1, #boolean, Brillenträger)
+    * item[+]
       * insert addItem(3.2.5, #open-choice, Chronische Erkrankung)
       * answerValueSet = Canonical(ChronischeKrankheitenVS)
       * repeats = true
@@ -194,15 +193,15 @@ Description: "Sorgeberechtigtenfragebogen HE"
   * item[+]
     * insert addItem(8.15, #boolean, [[Krankenhausaufenthalt]])
     * item[+]
-      * insert addItem(8.15.1, #string, [[Detaillierte Angaben zum Krankenhausaufenthalt?]])
+      * insert addItem(8.15.1, #text, [[Detaillierte Angaben zum Krankenhausaufenthalt?]])
       * insert enableWhenBoolean(8.15, =, true)
   * item[+]
     * answerValueSet = Canonical(AtopischeErkrankungenVS)  
-    * insert addItem(8.16a, #open-choice, [[Besitzt Ihr Kind Allergien?]])
+    * insert addItem(8.16a, #open-choice, [[Besitzt das Kind Allergien?]])
   * item[+]
     * insert addItem(8.23, #boolean, [[Regelmäßige Medikamenteneinnahme]])
   * item[+]
-    * insert addItem(8.23.1, #string, [[Welches Medikament]])
+    * insert addItem(8.23.1, #text, [[Welches Medikament]])
     * insert enableWhenBoolean(8.23, =, true)   
     * repeats = true
 //********************************************
@@ -230,7 +229,7 @@ Description: "Sorgeberechtigtenfragebogen HE"
     * answerValueSet = Canonical(SEU_EF_NeinAbgeschlossenLaeuftGeplantVS)
     * required = true
   * item[+]
-    * insert addItem(9.10, #string, [[Sonstige Förderung]])
+    * insert addItem(9.10, #text, [[Sonstige Förderung]])
 //********************************************
 // Arzt
 * item[+]

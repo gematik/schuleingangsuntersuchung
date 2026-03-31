@@ -83,15 +83,15 @@ Description: "SorgeberechtigtenfragebogenBY"
   * item[+]
     * insert addItemWithSource(3.2a, #group, [[Gibt es in der Familie (Eltern, Geschwister)]], #DE-BY)
     * item[+]
-      * insert addItemWithSource(3.2a.2, #boolean, [[► eine Lese-Rechtschreib-Schwäche (Legasthenie)]], #DE-BY)
+      * insert addItemWithSource(3.2a.2, #boolean, [[Eine Lese-Rechtschreib-Schwäche (Legasthenie)]], #DE-BY)
     * item[+]
-      * insert addItemWithSource(3.2a.3, #boolean, [[► eine Rechenschwäche (Dyskalkulie)]], #DE-BY)
+      * insert addItemWithSource(3.2a.3, #boolean, [[Eine Rechenschwäche (Dyskalkulie)]], #DE-BY)
 //********************************************
 // Kinderbetreuung
 * item[+]
   * insert addItem(4, #group, Kinderbetreuung)
   * item[+]
-    * insert addItemWithSource(4.0b.b, #boolean, [[Besucht Ihr Kind derzeit einen Kindergarten?]], #DE-BY)
+    * insert addItemWithSource(4.0b.b, #boolean, [[Besucht das Kind derzeit einen Kindergarten?]], #DE-BY)
   * item[+]
     * insert addItemWithSource(4.1z, #choice, [[Dauer Krippen-/ KITA-/ Kindergartenbesuch (in Jahren)]], #DE-BY)
     * answerValueSet = Canonical(SEU_UB_AntwortKindergartenBesuchVS)
@@ -118,7 +118,7 @@ Description: "SorgeberechtigtenfragebogenBY"
   * item[+] insert addItemWithSource(6.1d, #boolean, [[Kind wächst mehrsprachig auf]], #DE-BY)
   * item[+] insert addItemWithSource(6.1e, #choice, [[Zu Hause gesprochene Sprache(n)]], #DE-BY)
     * answerValueSet = Canonical(SEU_UB_GesprocheneSpracheVS)
-  * item[+] insert addItemWithSource(6.1f, #string, [[Zu Hause gesprochene Sprache(n) andere]], #DE-BY)
+  * item[+] insert addItemWithSource(6.1e.1, #string, [[Zu Hause gesprochene Sprache(n) andere]], #DE-BY)
     * insert enableWhenCode(6.1e, =, SEU_UB_GesprocheneSpracheCS, 2)
     * insert enableWhenCode(6.1e, =, SEU_UB_GesprocheneSpracheCS, 8)
     * enableBehavior = #any
@@ -139,7 +139,7 @@ Description: "SorgeberechtigtenfragebogenBY"
   * item[+] insert addItemWithSource(7.9a, #choice, [[Händigkeit]], #DE-BY)
     * answerValueSet = Canonical(SEU_UB_HaendigkeitVS)
   * item[+]
-    * insert addItemWithSource(7.11b, #boolean, [[Würden Sie sagen, dass Ihr Kind insgesamt gesehen in einem oder mehreren der folgenden Bereiche Schwierigkeiten hat: Stimmung (bedrückt, ängstlich, schwankend, aufbrausend), Konzentration (kann nicht lange stillsitzen, hört beim Vorlesen nicht ausdauernd zu), Verhalten, Umgang mit Anderen?]], #DE-BY)
+    * insert addItemWithSource(7.11b, #boolean, [[Würden Sie sagen, dass das Kind insgesamt gesehen in einem oder mehreren der folgenden Bereiche Schwierigkeiten hat: Stimmung (bedrückt, ängstlich, schwankend, aufbrausend), Konzentration (kann nicht lange stillsitzen, hört beim Vorlesen nicht ausdauernd zu), Verhalten, Umgang mit Anderen?]], #DE-BY)
 //********************************************
 // Erkrankungen und gesundheitliche Einschränkungen
 * item[+]
@@ -173,10 +173,9 @@ Description: "SorgeberechtigtenfragebogenBY"
     * item[+] insert addItemWithSource(8.10ga_g.6, #boolean, [[Diabetes mellitus (Typ 1) (nur ärztlich diag. Befunde angeben)]], #DE-BY)
     * item[+] insert addItemWithSource(8.10ga_g.7, #boolean, [[Diabetes mellitus (Typ 2) (nur ärztlich diag. Befunde angeben)]], #DE-BY)
     * item[+] insert addItemWithSource(8.10ga_g.8, #boolean, [[sonstige Stoffwechselerkrankungen (nur ärztlich diag. Befunde)]], #DE-BY)
-    * item[+] insert addItemWithSource(8.10ga_g.9, #string, [[wenn ja, welche (nur ärztlich diag. Befunde)]], #DE-BY)
+    * item[+] insert addItemWithSource(8.10ga_g.9, #text, [[wenn ja, welche (nur ärztlich diag. Befunde)]], #DE-BY)
       * insert enableWhenBoolean(8.10ga_g.8, =, true)
-    * item[+] insert addItemWithSource(8.10ga_g.10, #integer, [[Alter bei Diagnosestellung (in Jahren)]], #DE-BY)
-      * insert uunit(a, "Jahre")
+    * item[+] insert addItemWithSource(8.10ga_g.12, #group, [[Alter bei Diagnosestellung]], #DE-BY)
       * insert enableWhenBoolean(8.10ga_g.1, =, true)
       * insert enableWhenBoolean(8.10ga_g.2, =, true)
       * insert enableWhenBoolean(8.10ga_g.3, =, true)
@@ -186,19 +185,15 @@ Description: "SorgeberechtigtenfragebogenBY"
       * insert enableWhenBoolean(8.10ga_g.7, =, true)
       * insert enableWhenBoolean(8.10ga_g.8, =, true)
       * enableBehavior = #any
-      * item[+] insert helpItem(8.10ga_g.10H, [[Wurde mehr als 1 Erkrankung mit JA markiert, bitte das Alter bei Diagnosestellung der in der Reihenfolge zuerst aufgeführten Stoffwechselerkrankung angeben.]])
-    * item[+] insert addItemWithSource(8.10ga_g.11, #integer, [[Alter bei Diagnosestellung (in Monaten)]], #DE-BY)
-      * insert uunit(mo, "Monate")
-      * insert enableWhenBoolean(8.10ga_g.1, =, true)
-      * insert enableWhenBoolean(8.10ga_g.2, =, true)
-      * insert enableWhenBoolean(8.10ga_g.3, =, true)
-      * insert enableWhenBoolean(8.10ga_g.4, =, true)
-      * insert enableWhenBoolean(8.10ga_g.5, =, true)
-      * insert enableWhenBoolean(8.10ga_g.6, =, true)
-      * insert enableWhenBoolean(8.10ga_g.7, =, true)
-      * insert enableWhenBoolean(8.10ga_g.8, =, true)
-      * enableBehavior = #any
-      * item[+] insert helpItem(8.10ga_g.11H, [[Wurde mehr als 1 Erkrankung mit JA markiert, bitte das Alter bei Diagnosestellung der in der Reihenfolge zuerst aufgeführten Stoffwechselerkrankung angeben.]])
+      * item[+] insert helpItem(8.10ga_g.12-info, [[Wurde mehr als 1 Erkrankung mit JA markiert, bitte das Alter bei Diagnosestellung der in der Reihenfolge zuerst aufgeführten Stoffwechselerkrankung angeben.]])
+      * item[+] insert addItemWithSource(8.10ga_g.10, #integer, [[Jahre]], #DE-BY)
+        * insert uunit(a, "Jahre")
+        * insert minValueInt(0)
+        * insert maxValueInt(7)
+      * item[+] insert addItemWithSource(8.10ga_g.11, #integer, [[Monate]], #DE-BY)
+        * insert uunit(mo, "Monate")
+        * insert minValueInt(0)
+        * insert maxValueInt(12)
   * item[+]
     * insert addItem(8.14, #boolean, [[Chronische Erkrankung vorhanden]])
     * item[+]
@@ -215,7 +210,7 @@ Description: "SorgeberechtigtenfragebogenBY"
   * item[+]
     * insert addItem(8.23, #boolean, [[Regelmäßige Medikamenteneinnahme]])
   * item[+]
-    * insert addItem(8.23.1, #string, [[Welches Medikament]])
+    * insert addItem(8.23.1, #text, [[Welches Medikament]])
     * insert enableWhenBoolean(8.23, =, true)   
     * repeats = true
   * item[+]

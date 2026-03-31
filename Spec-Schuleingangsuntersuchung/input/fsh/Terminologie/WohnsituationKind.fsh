@@ -110,7 +110,7 @@ Description: "ValueSet, das verschiedene Wohnsituationen des Kindes enthält."
 * WohnsituationKindCS#vater_mit_partner "Vater mit Partner/in"
 * WohnsituationKindCS#vater_alleinerziehend "Vater alleinerziehend"
 * WohnsituationKindCS#wechselmodell "Wechselmodell"
-* WohnsituationKindCS#heim "Heim"
+* WohnsituationKindCS#heim "Stationäre Einrichtung"
 * WohnsituationKindCS#pflegeeltern "Pflegeeltern"
 * WohnsituationKindCS#andere_familienmitglieder "Andere Familienmitglieder/Verwandte"
 * WohnsituationKindCS#andere "Andere Personen"
@@ -136,7 +136,7 @@ Description: "ValueSet, das verschiedene Wohnsituationen des Kindes enthält."
 * ^expansion.contains[=].display = "Wechselmodell"
 * ^expansion.contains[+].system = Canonical(WohnsituationKindCS)
 * ^expansion.contains[=].code = #heim
-* ^expansion.contains[=].display = "Heim"
+* ^expansion.contains[=].display = "Stationäre Einrichtung"
 * ^expansion.contains[+].system = Canonical(WohnsituationKindCS)
 * ^expansion.contains[=].code = #pflegeeltern
 * ^expansion.contains[=].display = "Pflegeeltern"
@@ -174,3 +174,17 @@ Description: "LebensumfeldVS"
 * ^expansion.contains[+].system = Canonical(WohnsituationKindCS)
 * ^expansion.contains[=].code = #heim
 * ^expansion.contains[=].display = "in einer Einrichtung"
+
+ValueSet: WohnsituationKindAlternativ4VS
+Id: WohnsituationKindAlternativ4VS
+Title: "WohnsituationKindAlternativ4VS"
+Description: "ValueSet, das verschiedene Wohnsituationen des Kindes enthält."
+* WohnsituationKindCS#eltern "Bei den Eltern"
+* WohnsituationKindCS#alleinerziehender_elternteil "Bei einem Elternteil"
+* ^expansion.timestamp = "2024-04-04T09:24:55+00:00"
+* ^expansion.contains[+].system = Canonical(WohnsituationKindCS)
+* ^expansion.contains[=].code = #eltern
+* ^expansion.contains[=].display = "Bei den Eltern"
+* ^expansion.contains[+].system = Canonical(WohnsituationKindCS)
+* ^expansion.contains[=].code = #alleinerziehender_elternteil
+* ^expansion.contains[=].display = "Bei einem Elternteil"

@@ -2802,6 +2802,17 @@
       ],
       "item": [
         {
+          "linkId": "3.1",
+          "type": "integer",
+          "text": "(3.1) Anzahl der Geschwister",
+          "code": [
+            {
+              "code": "3.1",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ]
+        },
+        {
           "linkId": "3.1c",
           "type": "integer",
           "text": "(3.1c) Kinder im Haushalt",
@@ -2835,12 +2846,11 @@
           "repeats": true,
           "enableWhen": [
             {
-              "question": "3.1c",
+              "question": "3.1",
               "operator": ">",
-              "answerInteger": 1
+              "answerInteger": 0
             }
           ],
-          "enableBehavior": "any",
           "item": [
             {
               "linkId": "3.1.1.1",
@@ -2883,7 +2893,7 @@
             {
               "linkId": "3.2.4b",
               "type": "boolean",
-              "text": "(3.2.4b) Ist Ihr Kind an Windpocken erkrankt",
+              "text": "(3.2.4b) Ist das Kind an Windpocken erkrankt",
               "code": [
                 {
                   "code": "3.2.4b",
@@ -2904,7 +2914,7 @@
             {
               "linkId": "3.2.6",
               "type": "boolean",
-              "text": "(3.2.6) Hat Ihr Kind eine körperliche, geistige oder seelische Behinderung?",
+              "text": "(3.2.6) Hat das Kind eine körperliche, geistige oder seelische Behinderung?",
               "code": [
                 {
                   "code": "3.2.6",
@@ -2922,7 +2932,7 @@
                     }
                   ],
                   "linkId": "3.2.6.1",
-                  "type": "string",
+                  "type": "text",
                   "text": "(3.2.6.1) Welche Behinderung?",
                   "code": [
                     {
@@ -3058,7 +3068,7 @@
         {
           "linkId": "5.3c",
           "type": "integer",
-          "text": "(5.3c) In welcher SS-Woche wurde Ihr Kind geboren?",
+          "text": "(5.3c) In welcher Schwangerschaftswoche wurde das Kind geboren?",
           "code": [
             {
               "code": "5.3c",
@@ -3098,7 +3108,7 @@
                 }
               ],
               "linkId": "5.5.1",
-              "type": "string",
+              "type": "text",
               "text": "(5.5.1) Welche Auffälligkeit?",
               "code": [
                 {
@@ -3169,7 +3179,7 @@
         {
           "linkId": "7.13",
           "type": "choice",
-          "text": "(7.13) Zeigte Ihr Kind mit 5 Jahren Sprachauffälligkeiten?",
+          "text": "(7.13) Zeigte das Kind mit 5 Jahren Sprachauffälligkeiten?",
           "code": [
             {
               "code": "7.13",
@@ -3284,7 +3294,7 @@
           "item": [
             {
               "linkId": "8.15.1",
-              "type": "string",
+              "type": "text",
               "text": "(8.15.1) Detaillierte Angaben zum Krankenhausaufenthalt?",
               "code": [
                 {
@@ -3356,7 +3366,7 @@
         {
           "linkId": "8.27",
           "type": "boolean",
-          "text": "(8.27) Wurde Ihr Kind operiert",
+          "text": "(8.27) Wurde das Kind operiert",
           "code": [
             {
               "code": "8.27",
@@ -3387,7 +3397,7 @@
             },
             {
               "linkId": "8.27.2",
-              "type": "choice",
+              "type": "open-choice",
               "text": "(8.27.2) Welche Operationen wurden durchgeführt?",
               "code": [
                 {
@@ -3447,7 +3457,7 @@
             {
               "linkId": "8.79.1",
               "type": "boolean",
-              "text": "(8.79.1) Hatte Ihr Kind irgendwann einmal einen juckenden Hautausschlag, der stärker oder schwächer über mind. 6 Montae auftrat?",
+              "text": "(8.79.1) Hatte das Kind irgendwann einmal einen juckenden Hautausschlag, der stärker oder schwächer über mind. 6 Montae auftrat?",
               "code": [
                 {
                   "code": "8.79.1",
@@ -3468,7 +3478,7 @@
             {
               "linkId": "8.79.2",
               "type": "boolean",
-              "text": "(8.79.2) Trat dieser juckende Hautausschlag bei Ihrem Kind irgendwann einmal an einer der folgenden Körperstellen auf: In der Ellenbeuge, Kniekehle, an den Hand oder Fußgelenken, im Gesicht oder am Hals?",
+              "text": "(8.79.2) Trat dieser juckende Hautausschlag bei dem Kind irgendwann einmal an einer der folgenden Körperstellen auf: In der Ellenbeuge, Kniekehle, an den Hand oder Fußgelenken, im Gesicht oder am Hals?",
               "code": [
                 {
                   "code": "8.79.2",
@@ -3512,7 +3522,7 @@
             {
               "linkId": "8.80.1",
               "type": "boolean",
-              "text": "(8.80.1) Hatte Ihr Kind in den letzten 12 Monaten jemals beim Atmen pfeiffende oder keuchende Geräusche im Brustkorb?",
+              "text": "(8.80.1) Hatte das Kind in den letzten 12 Monaten jemals beim Atmen pfeiffende oder keuchende Geräusche im Brustkorb?",
               "code": [
                 {
                   "code": "8.80.1",
@@ -3533,7 +3543,7 @@
             {
               "linkId": "8.80.2",
               "type": "boolean",
-              "text": "(8.80.2) Hatte Ihr Kind in den letzten 12 Monaten jemals beim Atmen pfeiffende oder keuchende Geräusche im Brustkorb während oder nach körperlicher Anstrengung?",
+              "text": "(8.80.2) Hatte das Kind in den letzten 12 Monaten jemals beim Atmen pfeiffende oder keuchende Geräusche im Brustkorb während oder nach körperlicher Anstrengung?",
               "code": [
                 {
                   "code": "8.80.2",
@@ -3554,7 +3564,7 @@
             {
               "linkId": "8.80.3",
               "type": "boolean",
-              "text": "(8.80.3) Hatte Ihr Kind in den letzten 12 Monaten nachts einen trockenen Reizhusten, obwohl es keine Erkältung oder Bronchitis hatte?",
+              "text": "(8.80.3) Hatte das Kind in den letzten 12 Monaten nachts einen trockenen Reizhusten, obwohl es keine Erkältung oder Bronchitis hatte?",
               "code": [
                 {
                   "code": "8.80.3",
@@ -3591,7 +3601,7 @@
             {
               "linkId": "8.81.1",
               "type": "boolean",
-              "text": "(8.81.1) Hatte Ihr Kind in den letzten 12 Monaten Niesanfälle oder eine laufende, verstopfte oder juckende Nase, obwohl es nicht erkältet war?",
+              "text": "(8.81.1) Hatte das Kind in den letzten 12 Monaten Niesanfälle oder eine laufende, verstopfte oder juckende Nase, obwohl es nicht erkältet war?",
               "code": [
                 {
                   "code": "8.81.1",
@@ -3612,7 +3622,7 @@
             {
               "linkId": "8.81.2",
               "type": "boolean",
-              "text": "(8.81.2) Hatte Ihr Kind in den letzten 12 Monaten gleichzeitig mit diesen Nasenbeschwerden auch juckende oder tränende Augen?",
+              "text": "(8.81.2) Hatte das Kind in den letzten 12 Monaten gleichzeitig mit diesen Nasenbeschwerden auch juckende oder tränende Augen?",
               "code": [
                 {
                   "code": "8.81.2",
@@ -3648,7 +3658,7 @@
         {
           "linkId": "9.1a",
           "type": "boolean",
-          "text": "(9.1a) Werden oder wurden bei Ihrem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)",
+          "text": "(9.1a) Werden oder wurden bei dem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)",
           "code": [
             {
               "code": "9.1a",
@@ -3817,7 +3827,7 @@
         {
           "linkId": "10.3a",
           "type": "choice",
-          "text": "(10.3a) Wie lange sieht Ihr Kind durchschnittlich pro Tag Fernsehsendungen und Filme an und/oder spielt mit dem Smartphone/Tablet/Computer/ an der Spielkonsole? An einem Wochentag:",
+          "text": "(10.3a) Wie lange sieht das Kind durchschnittlich pro Tag Fernsehsendungen und Filme an und/oder spielt mit dem Smartphone/Tablet/Computer/ an der Spielkonsole? An einem Wochentag:",
           "code": [
             {
               "code": "10.3a",
@@ -3839,7 +3849,7 @@
         {
           "linkId": "10.3b",
           "type": "choice",
-          "text": "(10.3b) Wie lange sieht nutzt Kind Fernseher, Smartphone oder Spielkonsole an einem Wochentag",
+          "text": "(10.3b) Wie lange sieht bzw. nutzt das Kind Fernseher, Smartphone oder Spielkonsole an einem Wochentag",
           "code": [
             {
               "code": "10.3b",
@@ -3861,7 +3871,7 @@
         {
           "linkId": "10.4a",
           "type": "choice",
-          "text": "(10.4a) Wie lange sieht Ihr Kind durchschnittlich pro Tag Fernsehsendungen und Filme an und/oder spielt mit dem Smartphone/Tablet/Computer/ an der Spielkonsole? An einem Samstag/ Sonntag:",
+          "text": "(10.4a) Wie lange sieht das Kind durchschnittlich pro Tag Fernsehsendungen und Filme an und/oder spielt mit dem Smartphone/Tablet/Computer/ an der Spielkonsole? An einem Samstag/ Sonntag:",
           "code": [
             {
               "code": "10.4a",
@@ -3883,7 +3893,7 @@
         {
           "linkId": "10.4b",
           "type": "choice",
-          "text": "(10.4b) Wie lange sieht nutzt Kind Fernseher, Smartphone oder Spielkonsole am Wochenende",
+          "text": "(10.4b) Wie lange sieht bzw. nutzt das Kind Fernseher, Smartphone oder Spielkonsole am Wochenende",
           "code": [
             {
               "code": "10.4b",
@@ -3912,7 +3922,7 @@
         {
           "linkId": "12.19",
           "type": "choice",
-          "text": "(12.19) Wie viele Stunden pro Tag ist Ihr Kind im Freizeitbereich (z.B. Wald oder Garten) körperlich aktiv?",
+          "text": "(12.19) Wie viele Stunden pro Tag ist das Kind im Freizeitbereich (z.B. Wald oder Garten) körperlich aktiv?",
           "code": [
             {
               "code": "12.19",
@@ -3934,7 +3944,7 @@
         {
           "linkId": "12.20",
           "type": "boolean",
-          "text": "(12.20) Ist Ihr Kind Mitglied in einem Sportverein?",
+          "text": "(12.20) Ist das Kind Mitglied in einem Sportverein?",
           "code": [
             {
               "code": "12.20",
@@ -3955,7 +3965,7 @@
         {
           "linkId": "12.21",
           "type": "choice",
-          "text": "(12.21) Wie oft geht Ihr Kind in den Sportverein?",
+          "text": "(12.21) Wie oft geht das Kind in den Sportverein?",
           "code": [
             {
               "code": "12.21",
@@ -3984,7 +3994,7 @@
         {
           "linkId": "12.22",
           "type": "choice",
-          "text": "(12.22) Wie oft trainiert Ihr Kind pro Woche außerhalb der Kita angeleitet?",
+          "text": "(12.22) Wie oft trainiert das Kind pro Woche außerhalb der Kita angeleitet?",
           "code": [
             {
               "code": "12.22",
@@ -4039,7 +4049,7 @@
         {
           "linkId": "13.5",
           "type": "choice",
-          "text": "(13.5) Berufstätigkeit 1. Elternteil",
+          "text": "(13.5) Berufstätigkeit Personensorgeberechtigte Person 1 (Mutter)",
           "code": [
             {
               "code": "13.5",
@@ -4052,7 +4062,7 @@
         {
           "linkId": "13.6",
           "type": "choice",
-          "text": "(13.6) Berufstätigkeit 2. Elternteil",
+          "text": "(13.6) Berufstätigkeit Personensorgeberechtigte Person 2 (Vater)",
           "code": [
             {
               "code": "13.6",

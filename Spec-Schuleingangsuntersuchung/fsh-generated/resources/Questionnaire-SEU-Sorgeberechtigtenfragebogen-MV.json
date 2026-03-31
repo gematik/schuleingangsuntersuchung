@@ -2492,6 +2492,122 @@
           }
         ]
       }
+    },
+    {
+      "resourceType": "ValueSet",
+      "id": "ErkrankungVS",
+      "status": "draft",
+      "name": "ErkrankungVS",
+      "title": "ErkrankungVS",
+      "description": "ErkrankungVS",
+      "url": "https://www.oegd.de/fhir/seu/ValueSet/ErkrankungVS",
+      "expansion": {
+        "timestamp": "2024-04-04T10:55:53+00:00",
+        "contains": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "epilepsie",
+            "display": "Epilepsie"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "ads_adhs",
+            "display": "ADS/ADHS"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "sprachauffälligkeit",
+            "display": "Sprachauffälligkeit"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "sehstörung",
+            "display": "Sehstörung"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "hörstörung",
+            "display": "Hörstörung"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "herzfehler",
+            "display": "Herzfehler"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "nieren_harnwegerkrankung",
+            "display": "Nieren/Harnwegerkrankung"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "allergischer_schnupfen",
+            "display": "Allergischer Schnupfen"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "asthma",
+            "display": "Asthma"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "allergische_hauterkrankung",
+            "display": "Allergische Hauterkrankung"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "neurodermitis",
+            "display": "Neurodermitis"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "nahrungsmittelallergie",
+            "display": "Nahrungsmittelallergie"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "krebserkrankung",
+            "display": "Krebserkrankung"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "hüfterkrankung",
+            "display": "Hüfterkrankung"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "wirbelsäulenleiden",
+            "display": "Wirbelsäulenleiden"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "bewegungsstörung",
+            "display": "Bewegungsstörung"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "diabetes",
+            "display": "Diabetes"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "ass",
+            "display": "Autismus-Spektrum-Störung (ASS)"
+          },
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS",
+            "code": "schilddrüsenfunktionsstörung",
+            "display": "Schilddrüsenfunktionsstörung"
+          }
+        ]
+      },
+      "compose": {
+        "include": [
+          {
+            "system": "https://www.oegd.de/fhir/seu/CodeSystem/ErkrankungCS"
+          }
+        ]
+      }
     }
   ],
   "version": "1.0.0",
@@ -2921,7 +3037,7 @@
             {
               "linkId": "3.2.6",
               "type": "boolean",
-              "text": "(3.2.6) Hat Ihr Kind eine körperliche, geistige oder seelische Behinderung?",
+              "text": "(3.2.6) Hat das Kind eine körperliche, geistige oder seelische Behinderung?",
               "code": [
                 {
                   "code": "3.2.6",
@@ -2932,7 +3048,7 @@
             {
               "linkId": "3.2.6a",
               "type": "boolean",
-              "text": "(3.2.6a) Liegt bei Ihrem Kind ein Grad der Behinderung/ein Pflegegrad vor?",
+              "text": "(3.2.6a) Liegt bei dem Kind ein Grad der Behinderung/ein Pflegegrad vor?",
               "code": [
                 {
                   "code": "3.2.6a",
@@ -3121,7 +3237,7 @@
                 }
               ],
               "linkId": "5.5.1",
-              "type": "string",
+              "type": "text",
               "text": "(5.5.1) Welche Auffälligkeit?",
               "code": [
                 {
@@ -3152,7 +3268,7 @@
                 }
               ],
               "linkId": "5.6.1",
-              "type": "string",
+              "type": "text",
               "text": "(5.6.1) Welche Auffälligkeit?",
               "code": [
                 {
@@ -3346,7 +3462,7 @@
           "repeats": true,
           "item": [
             {
-              "answerValueSet": "https://www.oegd.de/fhir/seu/ValueSet/ErkrankungVS",
+              "answerValueSet": "#ErkrankungVS",
               "linkId": "8.11.g.1",
               "type": "open-choice",
               "text": "(8.11.g.1) Erkrankung",
@@ -3399,8 +3515,8 @@
         {
           "answerValueSet": "#atopische-erkrankungen-vs",
           "linkId": "8.16a",
-          "type": "choice",
-          "text": "(8.16a) Besitzt Ihr Kind Allergien?",
+          "type": "open-choice",
+          "text": "(8.16a) Besitzt das Kind Allergien?",
           "code": [
             {
               "code": "8.16a",
@@ -3480,7 +3596,7 @@
         },
         {
           "linkId": "8.23.1",
-          "type": "string",
+          "type": "text",
           "text": "(8.23.1) Welches Medikament",
           "code": [
             {
@@ -3500,7 +3616,7 @@
         {
           "linkId": "8.27",
           "type": "boolean",
-          "text": "(8.27) Wurde Ihr Kind operiert",
+          "text": "(8.27) Wurde das Kind operiert",
           "code": [
             {
               "code": "8.27",
@@ -3510,7 +3626,7 @@
           "item": [
             {
               "linkId": "8.27.2",
-              "type": "choice",
+              "type": "open-choice",
               "text": "(8.27.2) Welche Operationen wurden durchgeführt?",
               "code": [
                 {
@@ -3533,7 +3649,7 @@
         {
           "linkId": "8.28a",
           "type": "boolean",
-          "text": "(8.28a) Hatte Ihr Kind einen Unfall",
+          "text": "(8.28a) Hatte das Kind einen Unfall",
           "code": [
             {
               "code": "8.28a",
@@ -3544,7 +3660,7 @@
         {
           "linkId": "8.28.g",
           "type": "group",
-          "text": "(8.28.g) Hatte Ihr Kind einen Unfall",
+          "text": "(8.28.g) Informationen zu Unfällen",
           "code": [
             {
               "code": "8.28.g",
@@ -3629,9 +3745,36 @@
       ],
       "item": [
         {
+          "linkId": "9.1a",
+          "type": "boolean",
+          "text": "(9.1a) Werden oder wurden bei dem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)",
+          "code": [
+            {
+              "code": "9.1a",
+              "system": "https://www.oegd.de/fhir/seu/CodeSystem/Fragen"
+            }
+          ],
+          "extension": [
+            {
+              "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
+              "valueCoding": {
+                "system": "urn:iso:std:iso:3166-2:de",
+                "code": "DE-SL"
+              }
+            }
+          ]
+        },
+        {
           "linkId": "9.1a.g",
           "type": "group",
           "text": "(9.1a.g) Therapien",
+          "enableWhen": [
+            {
+              "question": "9.1a",
+              "operator": "=",
+              "answerBoolean": true
+            }
+          ],
           "extension": [
             {
               "url": "https://www.oegd.de/fhir/seu/StructureDefinition/ItemSource",
@@ -3926,7 +4069,7 @@
         {
           "linkId": "13.6",
           "type": "choice",
-          "text": "(13.6) Berufstätigkeit 2. Elternteil",
+          "text": "(13.6) Berufstätigkeit Personensorgeberechtigte Person 2 (Vater)",
           "code": [
             {
               "code": "13.6",

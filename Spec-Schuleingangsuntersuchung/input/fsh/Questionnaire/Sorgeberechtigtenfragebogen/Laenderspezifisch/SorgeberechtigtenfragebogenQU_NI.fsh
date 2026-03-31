@@ -73,14 +73,14 @@ Description: "Sorgeberechtigtenfragebogen NI"
 * item[+]
   * insert addItem(3, #group, Familiendaten)
   * item[+]
+    * insert addItem(3.1, #integer, Anzahl der Geschwister)
+  * item[+]
     * insert addItemWithSource(3.1c, #integer, [[Kinder im Haushalt]], #DE-HH)
     * required = true
   * item[+]
     * insert addItem(3.1.1, #group, Details Geschwister)
     * repeats = true
-    //* insert enableWhenInteger(3.1, >, 0) TODO auskommentiert ohne fachliche überprüfung
-    * insert enableWhenInteger(3.1c, >, 1)
-    * enableBehavior = #any
+    * insert enableWhenInteger(3.1, >, 0)
     * item[+]
       * insert addItem(3.1.1.1, #date, Geburtsdatum des Geschwisters)
       * required = true
@@ -91,14 +91,14 @@ Description: "Sorgeberechtigtenfragebogen NI"
   * item[+]
     * insert addItem(3.2, #group, Familiäre Vorgeschichte)
     * item[+]
-      * insert addItemWithSource(3.2.4b, #boolean, [[Ist Ihr Kind an Windpocken erkrankt]], #DE-HE)
+      * insert addItemWithSource(3.2.4b, #boolean, [[Ist das Kind an Windpocken erkrankt]], #DE-HE)
       * required = true
     * item[+]
-      * insert addItem(3.2.6, #boolean, [[Hat Ihr Kind eine körperliche, geistige oder seelische Behinderung?]])
+      * insert addItem(3.2.6, #boolean, [[Hat das Kind eine körperliche, geistige oder seelische Behinderung?]])
       * required = true
       * item[+]
         * insert enableWhenBoolean(3.2.6, =, true)
-        * insert addItem(3.2.6.1, #string, Welche Behinderung?)
+        * insert addItem(3.2.6.1, #text, Welche Behinderung?)
         * required = true
 //********************************************
 // Kinderbetreuung
@@ -126,7 +126,7 @@ Description: "Sorgeberechtigtenfragebogen NI"
     * insert uunit(cm, "cm")
     * required = true
   * item[+]
-    * insert addItem(5.3c, #integer, [[In welcher SS-Woche wurde Ihr Kind geboren?]])
+    * insert addItem(5.3c, #integer, [[In welcher Schwangerschaftswoche wurde das Kind geboren?]])
     * insert uunit(wk, "Wochen")
     * required = true
   * item[+]
@@ -134,7 +134,7 @@ Description: "Sorgeberechtigtenfragebogen NI"
     * required = true
     * item[+]
       * insert enableWhenBoolean(5.5, =, true)
-      * insert addItem(5.5.1, #string, [[Welche Auffälligkeit?]])
+      * insert addItem(5.5.1, #text, [[Welche Auffälligkeit?]])
       * required = true
   * item[+]
     * insert addItemWithSource(5.10, #choice, [[Art der Geburt]], #DE-NI)
@@ -148,7 +148,7 @@ Description: "Sorgeberechtigtenfragebogen NI"
     * insert addItemWithSource(7.3a, #boolean, [[Freies Laufen (bis 15 Monate)]], #DE-SL)
     * required = true
   * item[+]
-    * insert addItemWithSource(7.13, #choice, [[Zeigte Ihr Kind mit 5 Jahren Sprachauffälligkeiten?]], #DE-NI)
+    * insert addItemWithSource(7.13, #choice, [[Zeigte das Kind mit 5 Jahren Sprachauffälligkeiten?]], #DE-NI)
     * answerValueSet = Canonical(JaNeinWeissNichtVS)
     * required = true
 //********************************************
@@ -172,7 +172,7 @@ Description: "Sorgeberechtigtenfragebogen NI"
     * insert addItem(8.15, #boolean, [[Krankenhausaufenthalt]])
     * required = true
     * item[+]
-      * insert addItem(8.15.1, #string, [[Detaillierte Angaben zum Krankenhausaufenthalt?]])
+      * insert addItem(8.15.1, #text, [[Detaillierte Angaben zum Krankenhausaufenthalt?]])
       * insert enableWhenBoolean(8.15, =, true)
       * required = true
   * item[+]
@@ -188,7 +188,7 @@ Description: "Sorgeberechtigtenfragebogen NI"
       * insert addItem(8.21.g.1, #text, [[Welche Behinderung]])
       * required = true
   * item[+]
-    * insert addItem(8.27, #boolean, [[Wurde Ihr Kind operiert]])
+    * insert addItem(8.27, #boolean, [[Wurde das Kind operiert]])
     * required = true
     * item[+]
       * insert addItem(8.27.1, #choice, [[Wie fand die Operation statt?]])
@@ -196,7 +196,7 @@ Description: "Sorgeberechtigtenfragebogen NI"
       * answerValueSet = Canonical(VersorgungsartVS)
       * required = true
     * item[+]
-      * insert addItem(8.27.2, #choice, [[Welche Operationen wurden durchgeführt?]])
+      * insert addItem(8.27.2, #open-choice, [[Welche Operationen wurden durchgeführt?]])
       * repeats = true
       * insert enableWhenBoolean(8.27, =, true)
       * answerValueSet = Canonical(SEU_EF_OperationenVS)
@@ -209,39 +209,39 @@ Description: "Sorgeberechtigtenfragebogen NI"
     * insert addGroup(8.79, [[Juckender Hautausschlag]])
     * insert addSource(#DE-NI)
     * item[+]
-      * insert addItemWithSource(8.79.1, #boolean, [[Hatte Ihr Kind irgendwann einmal einen juckenden Hautausschlag, der stärker oder schwächer über mind. 6 Montae auftrat?]], #DE-NI)   
+      * insert addItemWithSource(8.79.1, #boolean, [[Hatte das Kind irgendwann einmal einen juckenden Hautausschlag, der stärker oder schwächer über mind. 6 Montae auftrat?]], #DE-NI)   
       * required = true
     * item[+]
-      * insert addItemWithSource(8.79.2, #boolean, [[Trat dieser juckende Hautausschlag bei Ihrem Kind irgendwann einmal an einer der folgenden Körperstellen auf: In der Ellenbeuge, Kniekehle, an den Hand oder Fußgelenken, im Gesicht oder am Hals?]], #DE-NI)
+      * insert addItemWithSource(8.79.2, #boolean, [[Trat dieser juckende Hautausschlag bei dem Kind irgendwann einmal an einer der folgenden Körperstellen auf: In der Ellenbeuge, Kniekehle, an den Hand oder Fußgelenken, im Gesicht oder am Hals?]], #DE-NI)
       * insert enableWhenBoolean(8.79.1, =, true)
       * required = true
   * item[+]
     * insert addGroup(8.80, [[Geräusche beim Atmen]])
     * insert addSource(#DE-NI)
     * item[+]
-      * insert addItemWithSource(8.80.1, #boolean, [[Hatte Ihr Kind in den letzten 12 Monaten jemals beim Atmen pfeiffende oder keuchende Geräusche im Brustkorb?]], #DE-NI)
+      * insert addItemWithSource(8.80.1, #boolean, [[Hatte das Kind in den letzten 12 Monaten jemals beim Atmen pfeiffende oder keuchende Geräusche im Brustkorb?]], #DE-NI)
       * required = true
     * item[+]
-      * insert addItemWithSource(8.80.2, #boolean, [[Hatte Ihr Kind in den letzten 12 Monaten jemals beim Atmen pfeiffende oder keuchende Geräusche im Brustkorb während oder nach körperlicher Anstrengung?]], #DE-NI)
+      * insert addItemWithSource(8.80.2, #boolean, [[Hatte das Kind in den letzten 12 Monaten jemals beim Atmen pfeiffende oder keuchende Geräusche im Brustkorb während oder nach körperlicher Anstrengung?]], #DE-NI)
       * required = true
     * item[+]
-      * insert addItemWithSource(8.80.3, #boolean, [[Hatte Ihr Kind in den letzten 12 Monaten nachts einen trockenen Reizhusten, obwohl es keine Erkältung oder Bronchitis hatte?]], #DE-NI)
+      * insert addItemWithSource(8.80.3, #boolean, [[Hatte das Kind in den letzten 12 Monaten nachts einen trockenen Reizhusten, obwohl es keine Erkältung oder Bronchitis hatte?]], #DE-NI)
       * required = true
   * item[+]
     * insert addGroup(8.81, [[Niesen, verstopfte Nase]])
     * insert addSource(#DE-NI)
     * item[+]
-      * insert addItemWithSource(8.81.1, #boolean, [[Hatte Ihr Kind in den letzten 12 Monaten Niesanfälle oder eine laufende, verstopfte oder juckende Nase, obwohl es nicht erkältet war?]], #DE-NI)
+      * insert addItemWithSource(8.81.1, #boolean, [[Hatte das Kind in den letzten 12 Monaten Niesanfälle oder eine laufende, verstopfte oder juckende Nase, obwohl es nicht erkältet war?]], #DE-NI)
       * required = true
     * item[+]
-      * insert addItemWithSource(8.81.2, #boolean, [[Hatte Ihr Kind in den letzten 12 Monaten gleichzeitig mit diesen Nasenbeschwerden auch juckende oder tränende Augen?]], #DE-NI)
+      * insert addItemWithSource(8.81.2, #boolean, [[Hatte das Kind in den letzten 12 Monaten gleichzeitig mit diesen Nasenbeschwerden auch juckende oder tränende Augen?]], #DE-NI)
       * required = true
 //********************************************
 // Förderungen
 * item[+]
   * insert addItem(9, #group, [[Förderungen]])
   * item[+]
-    * insert addItemWithSource(9.1a, #boolean, [[Werden oder wurden bei Ihrem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)]], #DE-SL)
+    * insert addItemWithSource(9.1a, #boolean, [[Werden oder wurden bei dem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)]], #DE-SL)
     * required = true
   * item[+]
     * insert addGroup(9.1a.g, Therapien)
@@ -280,19 +280,19 @@ Description: "Sorgeberechtigtenfragebogen NI"
     * insert uunit(h, "Stunden")
     * required = true
   * item[+]
-    * insert addItemWithSource(10.3a, #choice, [[Wie lange sieht Ihr Kind durchschnittlich pro Tag Fernsehsendungen und Filme an und/oder spielt mit dem Smartphone/Tablet/Computer/ an der Spielkonsole? An einem Wochentag:]], #DE-BW)
+    * insert addItemWithSource(10.3a, #choice, [[Wie lange sieht das Kind durchschnittlich pro Tag Fernsehsendungen und Filme an und/oder spielt mit dem Smartphone/Tablet/Computer/ an der Spielkonsole? An einem Wochentag:]], #DE-BW)
     * answerValueSet = Canonical(SEU_EF_MedienkonsumVS)
     * required = true
   * item[+]
-    * insert addItemWithSource(10.3b, #choice, [[Wie lange sieht nutzt Kind Fernseher, Smartphone oder Spielkonsole an einem Wochentag]], #DE-BB)
+    * insert addItemWithSource(10.3b, #choice, [[Wie lange sieht bzw. nutzt das Kind Fernseher, Smartphone oder Spielkonsole an einem Wochentag]], #DE-BB)
     * answerValueSet = Canonical(SEU_EF_ZeitdauerVS)
     * required = true
   * item[+]
-    * insert addItemWithSource(10.4a, #choice, [[Wie lange sieht Ihr Kind durchschnittlich pro Tag Fernsehsendungen und Filme an und/oder spielt mit dem Smartphone/Tablet/Computer/ an der Spielkonsole? An einem Samstag/ Sonntag:]], #DE-BW)
+    * insert addItemWithSource(10.4a, #choice, [[Wie lange sieht das Kind durchschnittlich pro Tag Fernsehsendungen und Filme an und/oder spielt mit dem Smartphone/Tablet/Computer/ an der Spielkonsole? An einem Samstag/ Sonntag:]], #DE-BW)
     * answerValueSet = Canonical(SEU_EF_MedienkonsumVS)
     * required = true
   * item[+]
-    * insert addItemWithSource(10.4b, #choice, [[Wie lange sieht nutzt Kind Fernseher, Smartphone oder Spielkonsole am Wochenende]], #DE-BW)
+    * insert addItemWithSource(10.4b, #choice, [[Wie lange sieht bzw. nutzt das Kind Fernseher, Smartphone oder Spielkonsole am Wochenende]], #DE-BW)
     * answerValueSet = Canonical(SEU_EF_ZeitdauerVS)
     * required = true
 //********************************************
@@ -300,19 +300,19 @@ Description: "Sorgeberechtigtenfragebogen NI"
 * item[+]
   * insert addGroup(12, Sonstiges)
   * item[+]
-    * insert addItemWithSource(12.19, #choice, [[Wie viele Stunden pro Tag ist Ihr Kind im Freizeitbereich (z.B. Wald oder Garten) körperlich aktiv?]], #DE-NI)
+    * insert addItemWithSource(12.19, #choice, [[Wie viele Stunden pro Tag ist das Kind im Freizeitbereich (z.B. Wald oder Garten) körperlich aktiv?]], #DE-NI)
     * answerValueSet = Canonical(WieVieleStundenFreizeitVS)
     * required = true
   * item[+]
-    * insert addItemWithSource(12.20, #boolean, [[Ist Ihr Kind Mitglied in einem Sportverein?]], #DE-NI)
+    * insert addItemWithSource(12.20, #boolean, [[Ist das Kind Mitglied in einem Sportverein?]], #DE-NI)
     * required = true
   * item[+]
-    * insert addItemWithSource(12.21, #choice, [[Wie oft geht Ihr Kind in den Sportverein?]], #DE-NI)
+    * insert addItemWithSource(12.21, #choice, [[Wie oft geht das Kind in den Sportverein?]], #DE-NI)
     * insert enableWhenBoolean(12.20, =, true)
     * answerValueSet = Canonical(WieOftImSportVereinVS)
     * required = true
   * item[+]
-    * insert addItemWithSource(12.22, #choice, [[Wie oft trainiert Ihr Kind pro Woche außerhalb der Kita angeleitet?]], #DE-NI)
+    * insert addItemWithSource(12.22, #choice, [[Wie oft trainiert das Kind pro Woche außerhalb der Kita angeleitet?]], #DE-NI)
     * answerValueSet = Canonical(WieOftTrainingVS)
     * required = true
 //********************************************
@@ -328,11 +328,11 @@ Description: "Sorgeberechtigtenfragebogen NI"
     * answerValueSet = Canonical(SEU_EF_BildungsabschlussVS)
     * required = true
   * item[+]
-    * insert addItem(13.5, #choice, Berufstätigkeit 1. Elternteil)
+    * insert addItem(13.5, #choice, [[Berufstätigkeit Personensorgeberechtigte Person 1 (Mutter)]])
     * answerValueSet = Canonical(ErwerbsstatusVS)
     * required = true
   * item[+]
-    * insert addItem(13.6, #choice, Berufstätigkeit 2. Elternteil)
+    * insert addItem(13.6, #choice, [[Berufstätigkeit Personensorgeberechtigte Person 2 (Vater)]])
     * answerValueSet = Canonical(ErwerbsstatusVS)
     * required = true
   * item[+]

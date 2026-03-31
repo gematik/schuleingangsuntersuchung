@@ -33,7 +33,7 @@ Description: "Sorgeberechtigtenfragebogen RP"
     * insert addItemWithSource(0.13, #string, [[Ort der Untersuchung]], #DE-TH)
     * maxLength = 30
   * item[+]
-    * insert addItemWithSource(0.15, #string, [[Bemerkung]], #DE-HH)
+    * insert addItemWithSource(0.15, #text, [[Bemerkung]], #DE-HH)
 //********************************************
 // Personenbezogene Daten Kind
 * item[+]
@@ -126,6 +126,7 @@ Description: "Sorgeberechtigtenfragebogen RP"
     * insert addItemWithSource(3.1d, #integer, [[Aktuell im Haushalt lebende Kinder, inklusive des Schuhlpflichtigen]], #DE-RP)
   * item[+]
     * insert addItem(3.2, #group, Familiäre Vorgeschichte)
+    * item[+] insert helpItem(3.2.1-info, [[Bitte geben Sie an, ob bei einem Familienmitglied ein Brillenträger bekannt ist.]])
     * item[+]
       * insert addItem(3.2.1, #boolean, Brillenträger)
     * item[+]
@@ -141,10 +142,10 @@ Description: "Sorgeberechtigtenfragebogen RP"
       * answerValueSet = Canonical(ChronischeKrankheitenVS)
       * repeats = true
     * item[+]
-      * insert addItem(3.2.6, #boolean, [[Hat Ihr Kind eine körperliche, geistige oder seelische Behinderung?]])
+      * insert addItem(3.2.6, #boolean, [[Hat das Kind eine körperliche, geistige oder seelische Behinderung?]])
       * item[+]
         * insert enableWhenBoolean(3.2.6, =, true)
-        * insert addItem(3.2.6.1, #string, Welche Behinderung?)
+        * insert addItem(3.2.6.1, #text, Welche Behinderung?)
     * item[+]
       * insert addItem(3.2.7, #boolean, Schilddrüsenerkrankung)
       * item[+]
@@ -189,12 +190,12 @@ Description: "Sorgeberechtigtenfragebogen RP"
     * insert addItem(5.5, #boolean, [[Auffälligkeit bei der Geburt]])
     * item[+]
       * insert enableWhenBoolean(5.5, =, true)
-      * insert addItem(5.5.1, #string, [[Welche Auffälligkeit?]])
+      * insert addItem(5.5.1, #text, [[Welche Auffälligkeit?]])
   * item[+]
     * insert addItem(5.6, #boolean, [[Auffälligkeit/Krankheit in der Schwangerschaft]])
     * item[+]
       * insert enableWhenBoolean(5.6, =, true)
-      * insert addItem(5.6.1, #string, [[Welche Auffälligkeit?]])
+      * insert addItem(5.6.1, #text, [[Welche Auffälligkeit?]])
   * item[+]
     * insert addItem(5.7, #integer, [[Ausschließliches Stillen in Monaten]])
     * insert uunit(mo, "Monate")
@@ -218,7 +219,7 @@ Description: "Sorgeberechtigtenfragebogen RP"
   * item[+]
     * insert addItem(6.4, #boolean, [[Sprachauffälligkeiten]])
     * item[+]
-      * insert addItem(6.4.1, #string, [[Welche Sprachauffälligkeiten]])
+      * insert addItem(6.4.1, #text, [[Welche Sprachauffälligkeiten]])
       * insert enableWhenBoolean(6.4, =, true)
   * item[+]
     * insert addItem(6.5, #boolean, [[Kontakt zu Deutschsprechenden seit Geburt?]])
@@ -266,15 +267,15 @@ Description: "Sorgeberechtigtenfragebogen RP"
   * item[+]
     * insert addItem(8.15, #boolean, [[Krankenhausaufenthalt]])
     * item[+]
-      * insert addItem(8.15.1, #string, [[Detaillierte Angaben zum Krankenhausaufenthalt?]])
+      * insert addItem(8.15.1, #text, [[Detaillierte Angaben zum Krankenhausaufenthalt?]])
       * insert enableWhenBoolean(8.15, =, true)
   * item[+]
     * answerValueSet = Canonical(AtopischeErkrankungenVS)  
-    * insert addItem(8.16a, #open-choice, [[Besitzt Ihr Kind Allergien?]])
+    * insert addItem(8.16a, #open-choice, [[Besitzt das Kind Allergien?]])
   * item[+]
     * insert addItem(8.23, #boolean, [[Regelmäßige Medikamenteneinnahme]])
   * item[+]
-    * insert addItem(8.23.1, #string, [[Welches Medikament]])
+    * insert addItem(8.23.1, #text, [[Welches Medikament]])
     * insert enableWhenBoolean(8.23, =, true)   
     * repeats = true
   * item[+]
@@ -288,8 +289,11 @@ Description: "Sorgeberechtigtenfragebogen RP"
 * item[+]
   * insert addItem(9, #group, [[Förderungen]])
   * item[+]
+    * insert addItemWithSource(9.1a, #boolean, [[Werden oder wurden bei dem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)]], #DE-SL)
+    * required = true
+  * item[+]
     * insert addGroup(9.1a.g, Therapien)
-    //* insert enableWhenBoolean(9.1a, =, true) TODO auskommentiert ohne fachliche überprüfung
+    * insert enableWhenBoolean(9.1a, =, true)
     * insert addSource(#DE-SN)
     * item[+]
       * insert addItemWithSource(9.3a, #boolean, [[Frühförderung]], #DE-BB)
@@ -314,7 +318,7 @@ Description: "Sorgeberechtigtenfragebogen RP"
 * item[+]
   * insert addGroup(12, Sonstiges)
   * item[+]
-    * insert addItemWithSource(12.23, #boolean, [[Fährt Ihr Kind frei Fahrrad]], #DE-HB)
+    * insert addItemWithSource(12.23, #boolean, [[Fährt das Kind frei Fahrrad]], #DE-HB)
     * required = true
 //********************************************
 // Informationen Eltern

@@ -3324,7 +3324,7 @@
                 }
               ],
               "linkId": "5.6.1",
-              "type": "string",
+              "type": "text",
               "text": "(5.6.1) Welche Auffälligkeit?",
               "code": [
                 {
@@ -3538,7 +3538,7 @@
           "answerValueSet": "#atopische-erkrankungen-vs",
           "linkId": "8.16a",
           "type": "open-choice",
-          "text": "(8.16a) Besitzt Ihr Kind Allergien?",
+          "text": "(8.16a) Besitzt das Kind Allergien?",
           "code": [
             {
               "code": "8.16a",
@@ -3630,7 +3630,7 @@
         },
         {
           "linkId": "8.23.1",
-          "type": "string",
+          "type": "text",
           "text": "(8.23.1) Welches Medikament",
           "code": [
             {
@@ -3691,8 +3691,8 @@
         },
         {
           "linkId": "8.29",
-          "type": "choice",
-          "text": "(8.29) Hat Ihr Kind häufiger Befindlichkeitsstörungen?",
+          "type": "open-choice",
+          "text": "(8.29) Hat das Kind häufiger Befindlichkeitsstörungen?",
           "code": [
             {
               "code": "8.29",
@@ -3719,7 +3719,7 @@
         {
           "linkId": "9.1a",
           "type": "boolean",
-          "text": "(9.1a) Werden oder wurden bei Ihrem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)",
+          "text": "(9.1a) Werden oder wurden bei dem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)",
           "code": [
             {
               "code": "9.1a",
@@ -3834,7 +3834,7 @@
             },
             {
               "linkId": "9.10",
-              "type": "string",
+              "type": "text",
               "text": "(9.10) Sonstige Förderung",
               "code": [
                 {

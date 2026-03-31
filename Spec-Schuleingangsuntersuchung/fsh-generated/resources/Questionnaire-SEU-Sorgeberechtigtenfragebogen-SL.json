@@ -4571,7 +4571,7 @@
             {
               "linkId": "3.2.6a",
               "type": "boolean",
-              "text": "(3.2.6a) Liegt bei Ihrem Kind ein Grad der Behinderung/ein Pflegegrad vor?",
+              "text": "(3.2.6a) Liegt bei dem Kind ein Grad der Behinderung/ein Pflegegrad vor?",
               "code": [
                 {
                   "code": "3.2.6a",
@@ -5091,7 +5091,7 @@
         {
           "linkId": "8.27",
           "type": "boolean",
-          "text": "(8.27) Wurde Ihr Kind operiert",
+          "text": "(8.27) Wurde das Kind operiert",
           "code": [
             {
               "code": "8.27",
@@ -5125,7 +5125,7 @@
         {
           "linkId": "8.30",
           "type": "boolean",
-          "text": "(8.30) Wurde Ihr Kind jemals aufgrund von Unfallverletzungen von einem Arzt behandelt?",
+          "text": "(8.30) Wurde das Kind jemals aufgrund von Unfallverletzungen von einem Arzt behandelt?",
           "code": [
             {
               "code": "8.30",
@@ -5146,7 +5146,7 @@
         {
           "linkId": "8.30.1",
           "type": "boolean",
-          "text": "(8.30.1) Nässt Ihr Kind ein?",
+          "text": "(8.30.1) Nässt das Kind ein?",
           "code": [
             {
               "code": "8.30.1",
@@ -5629,7 +5629,7 @@
               "item": [
                 {
                   "linkId": "8.43.1",
-                  "type": "string",
+                  "type": "text",
                   "text": "(8.43.1) Sonstiges, und zwar:",
                   "code": [
                     {
@@ -5840,7 +5840,7 @@
           "item": [
             {
               "linkId": "8.51.1",
-              "type": "string",
+              "type": "text",
               "text": "(8.51.1) Sonstiges, und zwar:",
               "code": [
                 {
@@ -5979,7 +5979,7 @@
           "item": [
             {
               "linkId": "8.56.1",
-              "type": "string",
+              "type": "text",
               "text": "(8.56.1) Sonstiges, und zwar:",
               "code": [
                 {
@@ -6065,8 +6065,8 @@
               "item": [
                 {
                   "linkId": "8.57.1",
-                  "type": "string",
-                  "text": "(8.57.1) Wegen welcher Erkrankungen ist Ihr Kind zurzeit in Behandlung??",
+                  "type": "text",
+                  "text": "(8.57.1) Wegen welcher Erkrankungen ist das Kind zurzeit in Behandlung??",
                   "code": [
                     {
                       "code": "8.57.1",
@@ -6225,7 +6225,7 @@
             },
             {
               "linkId": "8.64.1",
-              "type": "string",
+              "type": "text",
               "text": "(8.64.1) Sonstiges, und zwar:",
               "code": [
                 {
@@ -6268,7 +6268,7 @@
         {
           "linkId": "9.1a",
           "type": "boolean",
-          "text": "(9.1a) Werden oder wurden bei Ihrem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)",
+          "text": "(9.1a) Werden oder wurden bei dem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)",
           "code": [
             {
               "code": "9.1a",

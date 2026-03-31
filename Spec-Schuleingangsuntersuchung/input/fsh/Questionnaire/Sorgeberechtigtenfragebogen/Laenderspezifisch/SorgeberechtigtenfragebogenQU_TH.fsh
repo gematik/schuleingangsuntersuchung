@@ -11,6 +11,7 @@ Description: "Sorgeberechtigtenfragebogen TH"
 * contained[+] = GeburtBesonderheitenVS
 * contained[+] = VerhaltensauffaelligkeitenVS
 * contained[+] = FoerderungVS
+* contained[+] = SEU_EF_FachaerzteVS
 * contained[+] = UeberwiegendGesprocheneSpracheVS
 * insert QMeta(1.0.0)
 * id = "SEU-Sorgeberechtigtenfragebogen-TH"
@@ -88,7 +89,7 @@ Description: "Sorgeberechtigtenfragebogen TH"
 * item[+]
   * insert addItem(4, #group, Kinderbetreuung)
   * item[+]
-    * insert addItemWithSource(4.1e, #choice, [[Besucht Ihr Kind einen Kindergarten oder eine Tagesmutter?]], #DE-TH)
+    * insert addItemWithSource(4.1e, #choice, [[Besucht das Kind einen Kindergarten oder eine Tagesmutter?]], #DE-TH)
     * answerValueSet = Canonical(SEU_EF_DauerTHVS)
     * required = true
 //********************************************
@@ -108,7 +109,7 @@ Description: "Sorgeberechtigtenfragebogen TH"
     * required = true
     * item[+]
       * insert enableWhenBoolean(5.6, =, true)
-      * insert addItem(5.6.1, #string, [[Welche Auffälligkeit?]])
+      * insert addItem(5.6.1, #text, [[Welche Auffälligkeit?]])
       * required = true
 //********************************************
 // Sprache
@@ -145,21 +146,21 @@ Description: "Sorgeberechtigtenfragebogen TH"
   * insert addItem(8, #group, [[Erkrankungen und gesundheitliche Einschränkungen]])
 // Hilfsmittel
   * item[+]
-    * insert addItemWithSource(8.6b, #boolean, [[Nutzt Ihr Kind Hilfsmittel?]], #DE-TH)
+    * insert addItemWithSource(8.6b, #boolean, [[Nutzt das Kind Hilfsmittel?]], #DE-TH)
     * item[+]
-      * insert addItemWithSource(8.6b.1, #choice, [[Falls ja, welche?]], #DE-TH)
+      * insert addItemWithSource(8.6b.1, #open-choice, [[Falls ja, welche?]], #DE-TH)
       * insert enableWhenBoolean(8.6b, =, true)
       * answerValueSet = Canonical(SEU_EF_HilfsmittelTHVS)
       * repeats = true
       * required = true
 // Erkrankungen
   * item[+]
-    * insert addItemWithSource(8.14c, #open-choice, [[Welche der folgenden Krankheiten wurden bei Ihrem Kind jemals ärztlich diagnostiziert?]], #DE-TH)
+    * insert addItemWithSource(8.14c, #open-choice, [[Welche der folgenden Krankheiten wurden bei dem Kind jemals ärztlich diagnostiziert?]], #DE-TH)
     * answerValueSet = Canonical(ErkrankungenTHVS)
     * repeats = true
     * required = true
   * item[+]
-    * insert addItemWithSource(8.14d, #open-choice, [[Welche der Infektionskrankheiten hat Ihr Kind durchgemacht?]], #DE-TH)
+    * insert addItemWithSource(8.14d, #open-choice, [[Welche der Infektionskrankheiten hat das Kind durchgemacht?]], #DE-TH)
     * answerValueSet = Canonical(InfektionsKrankheitTHVS)
     * repeats = true
     * required = true
@@ -168,26 +169,26 @@ Description: "Sorgeberechtigtenfragebogen TH"
     * insert addItemWithSource(8.16b, #boolean, [[Gibt es Gesundheitsstörungen in der Familie, von denen Sie wissen oder vermuten, dass sie Auswirkungen auf die Entwicklung oder Belastbarkeit Ihres Kindes haben könnten bzw. im Schulalltag zu berücksichtigen wären (z. B. Sehstörung, Hörstörung, Herz-Kreislauf-Erkrankung, Allergie, Asthma bronchiale, Epilepsie, Depression oder andere psychische Erkrankung, Rheuma, Diabetes mellitus, Krebserkrankung, andere schwere Erkrankung)]], #DE-TH)
     * required = true
     * item[+]
-      * insert addItemWithSource(8.16b.1, #string, [[Wenn ja, welche?]], #DE-TH)
+      * insert addItemWithSource(8.16b.1, #text, [[Wenn ja, welche?]], #DE-TH)
       * insert enableWhenBoolean(8.16b, =, true)
       * required = true
 // Behinderungen und Pflegegrad
   * item[+]
-    * insert addItemWithSource(8.22a, #boolean, [[Wurde bei Ihrem Kind eine Behinderung festgestellt?]], #DE-TH)
+    * insert addItemWithSource(8.22a, #boolean, [[Wurde bei dem Kind eine Behinderung festgestellt?]], #DE-TH)
     * required = true
     * item[+]
-      * insert addItem(8.22a.1, #text, [[Welcher Behinderungsgrad?]])
+      * insert addItem(8.22a.1, #string, [[Welcher Behinderungsgrad?]])
       * insert enableWhenBoolean(8.22a, =, true)
       * required = true
   * item[+]
-    * insert addItemWithSource(8.22b, #boolean, [[Ist Ihr Kind Inhaber eines Schwerbehindertenausweises?]], #DE-TH)
+    * insert addItemWithSource(8.22b, #boolean, [[Ist das Kind Inhaber eines Schwerbehindertenausweises?]], #DE-TH)
     * required = true
     * item[+]
       * insert addItem(8.22b.1, #integer, [[Welches Merkzeichen?]])
       * insert enableWhenBoolean(8.22b, =, true)
       * required = true
   * item[+]
-    * insert addItemWithSource(8.22c, #boolean, [[Beansprucht Ihr Kind Leistungen der Pflegeversicherung?]], #DE-TH)
+    * insert addItemWithSource(8.22c, #boolean, [[Beansprucht das Kind Leistungen der Pflegeversicherung?]], #DE-TH)
     * required = true
     * item[+]
       * insert addItem(8.22c.1, #choice, [[Welcher Pflegegrad?]])
@@ -199,12 +200,12 @@ Description: "Sorgeberechtigtenfragebogen TH"
     * insert addItem(8.23, #boolean, [[Regelmäßige Medikamenteneinnahme]])
     * required = true
   * item[+]
-    * insert addItem(8.23.1, #string, [[Welches Medikament]])
+    * insert addItem(8.23.1, #text, [[Welches Medikament]])
     * insert enableWhenBoolean(8.23, =, true)
     * repeats = true
     * required = true
   * item[+]
-    * insert addItemWithSource(8.25a, #boolean, [[Muss Ihr Kind ein Notfallset mit sich führen?]], #DE-TH)
+    * insert addItemWithSource(8.25a, #boolean, [[Muss das Kind ein Notfallset mit sich führen?]], #DE-TH)
     * item[+]
       * insert addItemWithSource(8.25a.1, #text, [[Falls ja, warum?]], #DE-TH)
       * insert enableWhenBoolean(8.25a, =, true)
@@ -213,13 +214,13 @@ Description: "Sorgeberechtigtenfragebogen TH"
       * insert enableWhenBoolean(8.25a, =, true)
 // Verhaltensauffälligkeiten
   * item[+]
-    * insert addItemWithSource(8.34a, #choice, [[Zeigte Ihr Kind in den vergangenen 12 Monaten folgende Verhaltensauffälligkeiten?]], #DE-TH)
+    * insert addItemWithSource(8.34a, #choice, [[Zeigte das Kind in den vergangenen 12 Monaten folgende Verhaltensauffälligkeiten?]], #DE-TH)
     * answerValueSet = Canonical(VerhaltensauffaelligkeitenVS)
     * repeats = true
     * required = true
 // Operationen
   * item[+]
-    * insert addItemWithSource(8.27b, #boolean, [[Wurde Ihr Kind jemals operiert bzw. ist eine Operation geplant?]], #DE-TH)
+    * insert addItemWithSource(8.27b, #boolean, [[Wurde das Kind jemals operiert bzw. ist eine Operation geplant?]], #DE-TH)
     * required = true
     * item[+]
       * insert addItemWithSource(8.27b.1, #text, [[Falls ja, welche Operationen und wann?]], #DE-TH)
@@ -227,7 +228,7 @@ Description: "Sorgeberechtigtenfragebogen TH"
       * required = true
 // Unfälle
   * item[+]
-    * insert addItemWithSource(8.28b, #boolean, [[Hatte  Ihr Kind jemals einen Unfall, der ärztlich behandelt wurde?]], #DE-BB)
+    * insert addItemWithSource(8.28b, #boolean, [[Hatte  das Kind jemals einen Unfall, der ärztlich behandelt wurde?]], #DE-BB)
     * required = true
     * item[+]
       * insert addItemWithSource(8.28b.1, #text, [[Falls ja, welche Verletzung und wann?]], #DE-TH)
@@ -238,7 +239,7 @@ Description: "Sorgeberechtigtenfragebogen TH"
 * item[+]
   * insert addItem(9, #group, [[Förderungen]])
   * item[+]
-    * insert addItemWithSource(9.13a, #choice, [[Welche Behandlungen oder Unterstützungen hat Ihr Kind jemals erhalten?]], #DE-TH)
+    * insert addItemWithSource(9.13a, #choice, [[Welche Behandlungen oder Unterstützungen hat das Kind jemals erhalten?]], #DE-TH)
     * answerValueSet = Canonical(FoerderungVS)
     * repeats = true
     * required = true
@@ -247,7 +248,8 @@ Description: "Sorgeberechtigtenfragebogen TH"
 * item[+]
   * insert addGroup(11, Arzt)
   * item[+]
-    * insert addItemWithSource(11.4, #open-choice, [[Bei welchen Ärztinnen oder Ärzten haben Sie Ihr Kind in den vergangenen 12 Monaten vorgestellt?]], #DE-TH)
+    * insert addItemWithSource(11.4, #open-choice, [[Bei welchen Ärztinnen oder Ärzten haben Sie das Kind in den vergangenen 12 Monaten vorgestellt?]], #DE-TH)
+    * answerValueSet = Canonical(SEU_EF_FachaerzteVS)
     * required = true
   * item[+]
     * insert addItemWithSource(11.5, #text, [[Name des behandelnden Kinder- oder Hausarztes und Praxisort:]], #DE-TH)

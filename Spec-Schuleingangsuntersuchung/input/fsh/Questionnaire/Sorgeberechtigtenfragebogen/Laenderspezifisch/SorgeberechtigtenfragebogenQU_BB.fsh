@@ -3,9 +3,9 @@ InstanceOf: Questionnaire
 Usage: #example
 Title: "Sorgeberechtigtenfragebogen BB"
 Description: "Sorgeberechtigtenfragebogen BB"
-* contained[+] = DeuevAnlage8LaenderkennzeichenVS
+* contained[+] = DestatisBEV_GebietscodesVS
 * contained[+] = WohnsituationKindAlternativ2VS
-* contained[+] = ISO6392_LanguageVS
+* contained[+] = ISO6391_LanguageVS
 * contained[+] = AuffaelligkeitVerhaltenVS
 * contained[+] = ErkrankungVS
 * contained[+] = InfektionsKrankheitVS
@@ -24,6 +24,7 @@ Description: "Sorgeberechtigtenfragebogen BB"
 * contained[+] = SEU_UB_StaatsangehoerigkeitVS
 * contained[+] = DauerStillenVS
 * contained[+] = SEU_EF_ZeitdauerVS
+* contained[+] = FoerderungVS
 * insert QMeta(1.0.0)
 * id = "SEU-Sorgeberechtigtenfragebogen-BB"
 * url = "https://www.oegd.de/fhir/seu/Questionnaire/SorgeberechtigtenfragebogenBB"
@@ -56,34 +57,52 @@ Description: "Sorgeberechtigtenfragebogen BB"
     * insert enableWhenCode(1.4a, =, SEU-UB-StaatsangehoerigkeitCS, 2)
     * insert enableWhenCode(1.4a, =, SEU-UB-StaatsangehoerigkeitCS, 3)
     * enableBehavior = #any
-    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
+    * answerValueSet = Canonical(DestatisBEV_GebietscodesVS)
   * item[+]
     * insert addItemWithSource(1.4b, #choice, [[Staatsangehörigkeit Mutter]], #DE-BB)
     * answerValueSet = Canonical(SEU_UB_StaatsangehoerigkeitVS)
   * item[+]
-    * insert addItemWithSource(1.4b.1, #choice, [[Staatsangehörigkeit Mutter andere]], #DE-BB)
+    * insert addItemWithSource(1.4b.1a, #choice, [[Staatsangehörigkeit Mutter andere]], #DE-BB)
     * insert enableWhenCode(1.4b, =, SEU-UB-StaatsangehoerigkeitCS, 2)
     * insert enableWhenCode(1.4b, =, SEU-UB-StaatsangehoerigkeitCS, 3)
     * enableBehavior = #any
-    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
+    * answerValueSet = Canonical(DestatisBEV_GebietscodesVS)
   * item[+]
     * insert addItemWithSource(1.4c, #choice, [[Staatsangehörigkeit Vater]], #DE-BB)
     * answerValueSet = Canonical(SEU_UB_StaatsangehoerigkeitVS)
   * item[+]
-    * insert addItemWithSource(1.4c.1, #choice, [[Staatsangehörigkeit Vater andere]], #DE-BB)
+    * insert addItemWithSource(1.4c.2a, #choice, [[Staatsangehörigkeit Vater andere]], #DE-BB)
     * insert enableWhenCode(1.4c, =, SEU-UB-StaatsangehoerigkeitCS, 2)
     * insert enableWhenCode(1.4c, =, SEU-UB-StaatsangehoerigkeitCS, 3)
     * enableBehavior = #any
-    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
+    * answerValueSet = Canonical(DestatisBEV_GebietscodesVS)
   * item[+]
-    * insert addItem(1.5, #choice, [[Geburtsland]])
-    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
+    * insert addItemWithSource(1.5.2, #choice, [[Geburtsland]], #DE-BB)
+    * answerValueSet = Canonical(SEU_UB_StaatsangehoerigkeitVS)
   * item[+]
-    * insert addItemWithSource(1.5a, #choice, [[Geburtsland Mutter]], #DE-BB)
-    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
+    * insert addItemWithSource(1.5.2a, #choice, [[Geburtsland andere]], #DE-BB)
+    * insert enableWhenCode(1.5.2, =, SEU-UB-StaatsangehoerigkeitCS, 2)
+    * insert enableWhenCode(1.5.2, =, SEU-UB-StaatsangehoerigkeitCS, 3)
+    * enableBehavior = #any
+    * answerValueSet = Canonical(DestatisBEV_GebietscodesVS)
   * item[+]
-    * insert addItemWithSource(1.5b, #choice, [[Geburtsland Vater]], #DE-BB)
-    * answerValueSet = Canonical(DeuevAnlage8LaenderkennzeichenVS)
+    * insert addItemWithSource(1.5a.1, #choice, [[Geburtsland Mutter]], #DE-BB)
+    * answerValueSet = Canonical(SEU_UB_StaatsangehoerigkeitVS)
+  * item[+]
+    * insert addItemWithSource(1.5a.1a, #choice, [[Geburtsland Mutter andere]], #DE-BB)
+    * insert enableWhenCode(1.5a.1, =, SEU-UB-StaatsangehoerigkeitCS, 2)
+    * insert enableWhenCode(1.5a.1, =, SEU-UB-StaatsangehoerigkeitCS, 3)
+    * enableBehavior = #any
+    * answerValueSet = Canonical(DestatisBEV_GebietscodesVS)
+  * item[+]
+    * insert addItemWithSource(1.5b.1, #choice, [[Geburtsland Vater]], #DE-BB)
+    * answerValueSet = Canonical(SEU_UB_StaatsangehoerigkeitVS)
+  * item[+]
+    * insert addItemWithSource(1.5b.1a, #choice, [[Geburtsland Vater andere]], #DE-BB)
+    * insert enableWhenCode(1.5b.1, =, SEU-UB-StaatsangehoerigkeitCS, 2)
+    * insert enableWhenCode(1.5b.1, =, SEU-UB-StaatsangehoerigkeitCS, 3)
+    * enableBehavior = #any
+    * answerValueSet = Canonical(DestatisBEV_GebietscodesVS)
   * item[+]
     * insert addItemWithSource(1.12a, #open-choice, [[Kind lebt hauptsächlich bei]], #DE-BB)
     * answerValueSet = Canonical(WohnsituationKindAlternativ2VS)
@@ -106,21 +125,15 @@ Description: "Sorgeberechtigtenfragebogen BB"
 * item[+]
   * insert addItem(6, #group, [[Sprache]])
   * item[+]
-    * answerValueSet = Canonical(ISO6392_LanguageVS)
-    * insert addItem(6.1, #choice, [[Welche Sprachen werden Zuhause gesprochen?]])
+    * insert addItemWithSource(6.1g, #choice, [[Welche Sprachen werden Zuhause gesprochen?]], #DE-BB)
+    * answerValueSet = Canonical(ISO6391_LanguageVS)
     * repeats = true
-  * item[+]
-    * insert addItemWithSource(6.1b, #choice, [[1. vorrangig in der Familie gesprochene Sprache]], #DE-SL)
-    * answerValueSet = Canonical(ISO6392_LanguageVS)
-  * item[+]
-    * insert addItemWithSource(6.1c, #choice, [[2. vorrangig in der Familie gesprochene Sprache]], #DE-SL)
-    * answerValueSet = Canonical(ISO6392_LanguageVS)
 //********************************************
 // Entwicklung
 * item[+]
   * insert addItem(7, #group, [[Entwicklung]])
   * item[+]
-    * insert addItem(7.11, #open-choice, [[Auffälligkeit des Verhaltens]])
+    * insert addItemWithSource(7.11d, #open-choice, [[Hatte das Kind in den vergangenen 12 Monaten folgende Verhaltensauffälligkeiten?]], #DE-BB)
     * repeats = true
     * answerValueSet = Canonical(AuffaelligkeitVerhaltenVS)
 //********************************************
@@ -128,23 +141,9 @@ Description: "Sorgeberechtigtenfragebogen BB"
 * item[+]
   * insert addItem(8, #group, [[Erkrankungen und gesundheitliche Einschränkungen]])
   * item[+]
-    * insert addItem(8.1, #boolean, [[In regelmäßiger ärztlicher bzw. psychologischer Behandlung]])
-  * item[+]
-    * insert addItemWithSource(8.2c, #open-choice, [[Chronische Erkrankung, Fachrichtung]], #DE-BB)
-    * insert enableWhenBoolean(8.1, =, true)
-    * answerValueSet = Canonical(SEU_EF_FachaerzteVS)
-  * item[+]
     * insert addItemWithSource(8.6a, #choice, [[Hilfsmittel?]], #DE-BB)
     * answerValueSet = Canonical(SEU_EF_HilfsmittelVS)
     * repeats = true
-  * item[+]
-    * insert addItem(8.11.g, #group, [[Erkrankungen]])
-    * repeats = true
-    * item[+]
-      * answerValueSet = Canonical(ErkrankungVS)
-      * insert addItem(8.11.g.1, #open-choice, [[Erkrankung]])
-    * item[+]        
-      * insert addItem(8.11.g.3, #boolean, [[Durch Ärzt:in festgestellt]])
   * item[+]
     * insert addItem(8.12.g, #group, [[Infektionskrankheiten]])
     * repeats = true
@@ -158,6 +157,10 @@ Description: "Sorgeberechtigtenfragebogen BB"
       * answerValueSet = Canonical(ErkrankungenLetztesJahrVS)
       * insert addItem(8.13.g.1, #open-choice, [[Erkrankung]])
   * item[+]
+    * insert addItemWithSource(8.14e, #open-choice, [[Welche der folgenden Krankheiten wurden bei dem Kind jemals durch einen Arzt festgestellt?]], #DE-BB)
+    * answerValueSet = Canonical(ErkrankungVS)
+    * repeats = true
+  * item[+]
     * insert addItem(8.18, #boolean, [[Behindertenausweis vorhanden]])
   * item[+]
     * insert addItem(8.19, #integer, [[Grad der Behinderung]])
@@ -167,14 +170,14 @@ Description: "Sorgeberechtigtenfragebogen BB"
   * item[+]
     * insert addItem(8.23, #boolean, [[Regelmäßige Medikamenteneinnahme]])
   * item[+]
-    * insert addItem(8.27, #boolean, [[Wurde Ihr Kind operiert]])
+    * insert addItemWithSource(8.27b, #boolean, [[Wurde das Kind jemals operiert bzw. ist eine Operation geplant?]], #DE-TH)
   * item[+]
-    * insert addItem(8.28a, #boolean, [[Hatte Ihr Kind einen Unfall]])
+    * insert addItemWithSource(8.28b, #boolean, [[Hatte  das Kind jemals einen Unfall, der ärztlich behandelt wurde?]], #DE-BB)
   * item[+]
-    * insert addItem(8.28.g, #group, [[Hatte Ihr Kind einen Unfall]])
+    * insert addItem(8.28.g, #group, [[Informationen zu Unfällen]])
     * insert enableWhenBoolean(8.28a, =, true)
-    //* insert enableWhenBoolean(8.28b, =, true) TODO auskommentiert ohne fachliche überprüfung
     * enableBehavior = #any
+    * repeats = true
     * item[+]
       * answerValueSet = Canonical(UnfallOrtVS)
       * insert addItem(8.28.g.1, #choice, [[Ort des Unfall]])
@@ -182,7 +185,7 @@ Description: "Sorgeberechtigtenfragebogen BB"
       * answerValueSet = Canonical(UnfallArtVS)
       * insert addItem(8.28.g.2, #choice, [[Art des Unfalls]])
   * item[+]
-    * insert addItemWithSource(8.68, #string, [[Andere Verletzung]], #DE-BB)
+    * insert addItemWithSource(8.68, #text, [[Andere Verletzung]], #DE-BB)
   * item[+]
     * insert addItemWithSource(8.69, #boolean, [[Andere Verletzung: zu Hause]], #DE-BB)
   * item[+]
@@ -199,29 +202,9 @@ Description: "Sorgeberechtigtenfragebogen BB"
 * item[+]
   * insert addItemWithSource(9a, #group, [[Förderungen in den vergangenen 12 Monaten]], #DE-BB)
   * item[+]
-    * insert addItemWithSource(9a.1a, #boolean, [[Werden oder wurden bei Ihrem Kind jemals Förder- oder Heilmaßnahmen durchgeführt? (Mehrfachnennung möglich)]], #DE-SL)    
-  * item[+]
-    * insert addGroup(9a.1a.g, Therapien)
-    * insert enableWhenBoolean(9a.1a, =, true)
-    * insert addSource(#DE-SN)
-    * item[+]
-      * insert addItemWithSource(9a.2aa, #boolean, [[Sprachförderung in der Kita]], #DE-BB)
-    * item[+]
-      * insert addItemWithSource(9a.2ba, #boolean, [[Logopädie]], #DE-BB)
-    * item[+]
-      * insert addItemWithSource(9a.3a, #boolean, [[Frühförderung]], #DE-BB)
-    * item[+]
-      * insert addItemWithSource(9a.4a, #boolean, [[Ergotherapie]], #DE-BB)
-    * item[+]
-      * insert addItemWithSource(9a.6a, #boolean, [[Physiotherapie / Krankengymnastik]], #DE-BB)
-    * item[+]
-      * insert addItemWithSource(9a.7a, #boolean, [[Psychologische Erziehungsberatung]], #DE-BB)
-    * item[+]
-      * insert addItemWithSource(9a.9a, #boolean, [[Integrative Betreuung / Einzelintegration]], #DE-BB)
-    * item[+]
-      * insert addItem(9a.10, #string, [[Sonstige Förderung]])
-    * item[+]
-      * insert addItemWithSource(9a.11, #boolean, [[Fördermaßn. Integration in Regel-Kita]], #DE-SL)
+    * insert addItemWithSource(9a.13a, #choice, [[Welche Behandlungen oder Unterstützungen hat das Kind jemals erhalten?]], #DE-TH)
+    * answerValueSet = Canonical(FoerderungVS)
+    * repeats = true
   * item[+]
     * insert addItemWithSource(9a.14, #boolean, [[Psychiatrische Institutionsambulanz (PIA)]], #DE-BB)
 //********************************************
@@ -229,24 +212,19 @@ Description: "Sorgeberechtigtenfragebogen BB"
 * item[+]
   * insert addGroup(10, Medienkonsum)
   * item[+]
-    * insert addItemWithSource(10.3b, #choice, [[Wie lange sieht nutzt Kind Fernseher, Smartphone oder Spielkonsole an einem Wochentag]], #DE-BB)
-    * answerValueSet = Canonical(SEU_EF_ZeitdauerVS)
-  * item[+]
-    * insert addItemWithSource(10.4b, #choice, [[Wie lange sieht nutzt Kind Fernseher, Smartphone oder Spielkonsole am Wochenende]], #DE-BW)
+    * insert addItemWithSource(10.5, #choice, [[Wie lange sieht das Kind durchschnittlich pro Tag Fernsehen, Videos, Streamingdienste oder spielt mit der Spielekonsole, dem Smartphone oder anderen elektronischen Geräten?]], #DE-BB)
     * answerValueSet = Canonical(SEU_EF_ZeitdauerVS)
 //********************************************
 // Arzt
 * item[+]
   * insert addGroup(11, Arzt)
   * item[+]
-    * insert addItem(11.1, #boolean, Hat das Kind bislang ärztliche Behandlung oder Untersützung erhalten?)
+    * insert addItemWithSource(11.4, #open-choice, [[Bei welchen Ärztinnen oder Ärzten haben Sie das Kind in den vergangenen 12 Monaten vorgestellt?]], #DE-TH)
+    * answerValueSet = Canonical(SEU_EF_FachaerzteVS)
 //********************************************
 // Sonstiges
 * item[+]
   * insert addGroup(12, Sonstiges)
-  * item[+]
-    * insert addItem(12.2, #choice, Beratung Sozialpädiatrisches Zentrum SPZ)
-    * answerValueSet = Canonical(GeplantFindetStattAbgeschlossenVS)
   * item[+]
     * insert addItem(12.3, #boolean, Teilnahme Netzwerk Gesunde Kinder)
     * item[+]
@@ -283,24 +261,24 @@ Description: "Sorgeberechtigtenfragebogen BB"
 * item[+]
   * insert addGroup(13, Informationen Eltern)
   * item[+]
-    * insert addItemWithSource(13.1a, #choice, Schulabschluss 1. Elternteil, #DE-BB)
+    * insert addItemWithSource(13.1a, #choice, [[Schulabschluss Personensorgeberechtigte Person 1 (Mutter)]], #DE-BB)
     * answerValueSet = Canonical(SEU_EF_BildungsabschlussBBVS)
   * item[+]
-    * insert addItemWithSource(13.2a, #choice, Schulabschluss 2. Elternteil, #DE-BB)
+    * insert addItemWithSource(13.2a, #choice, [[Schulabschluss Personensorgeberechtigte Person 2 (Vater)]], #DE-BB)
     * answerValueSet = Canonical(SEU_EF_BildungsabschlussBBVS)
   * item[+]
-    * insert addItem(13.3, #choice, Berufsabschluss 1. Elternteil)
+    * insert addItem(13.3, #choice, [[Berufsabschluss Personensorgeberechtigte Person 1 (Mutter)]])
     * answerValueSet = Canonical(SEU_EF_BerufsbildungVS)
   * item[+]
-    * insert addItem(13.4, #choice, Berufsabschluss 2. Elternteil)
+    * insert addItem(13.4, #choice, [[Berufsabschluss Personensorgeberechtigte Person 2 (Vater)]])
     * answerValueSet = Canonical(SEU_EF_BerufsbildungVS)
   * item[+]
-    * insert addItem(13.5, #choice, Berufstätigkeit 1. Elternteil)
+    * insert addItem(13.5, #choice, [[Berufstätigkeit Personensorgeberechtigte Person 1 (Mutter)]])
     * answerValueSet = Canonical(ErwerbsstatusVS)
   * item[+]
-    * insert addItem(13.6, #choice, Berufstätigkeit 2. Elternteil)
+    * insert addItem(13.6, #choice, [[Berufstätigkeit Personensorgeberechtigte Person 2 (Vater)]])
     * answerValueSet = Canonical(ErwerbsstatusVS)
   * item[+]
     * insert addItem(13.7, #integer, [[Anzahl der Kinder im Haushalt. Kinder unter 18 Jahren, einzuschulendes Kind mitgerechnet]])
   * item[+]
-    * insert addItem(13.8, #integer, Anzahl der Erwachsene im Haushalt)
+    * insert addItem(13.8, #integer, Anzahl der Erwachsenen im Haushalt)

@@ -2274,7 +2274,7 @@
         },
         {
           "linkId": "0.15",
-          "type": "string",
+          "type": "text",
           "text": "(0.15) Bemerkung",
           "code": [
             {
@@ -2996,14 +2996,8 @@
               "question": "3.1",
               "operator": ">",
               "answerInteger": 0
-            },
-            {
-              "question": "3.1c",
-              "operator": ">",
-              "answerInteger": 1
             }
           ],
-          "enableBehavior": "any",
           "item": [
             {
               "linkId": "3.1.1.1",
@@ -3057,7 +3051,7 @@
             {
               "linkId": "3.2.6",
               "type": "boolean",
-              "text": "(3.2.6) Hat Ihr Kind eine körperliche, geistige oder seelische Behinderung?",
+              "text": "(3.2.6) Hat das Kind eine körperliche, geistige oder seelische Behinderung?",
               "code": [
                 {
                   "code": "3.2.6",
@@ -3074,7 +3068,7 @@
                     }
                   ],
                   "linkId": "3.2.6.1",
-                  "type": "string",
+                  "type": "text",
                   "text": "(3.2.6.1) Welche Behinderung?",
                   "code": [
                     {
@@ -3123,7 +3117,7 @@
         {
           "linkId": "4.0a",
           "type": "boolean",
-          "text": "(4.0a) Besucht Ihr Kind weniger als 5 Stunden täglich den Kindergarten?",
+          "text": "(4.0a) Besucht das Kind weniger als 5 Stunden täglich den Kindergarten?",
           "code": [
             {
               "code": "4.0a",
@@ -3183,7 +3177,7 @@
         },
         {
           "linkId": "4.6a",
-          "type": "string",
+          "type": "text",
           "text": "(4.6a) Anschrift des Kindergartens",
           "code": [
             {
@@ -3211,7 +3205,7 @@
         {
           "linkId": "4.10",
           "type": "boolean",
-          "text": "(4.10) Bekommt oder wartet Ihr Kind auf eine spezielle Förderung oder Therapie?",
+          "text": "(4.10) Bekommt oder wartet das Kind auf eine spezielle Förderung oder Therapie?",
           "code": [
             {
               "code": "4.10",
@@ -3310,7 +3304,7 @@
         {
           "linkId": "5.3c",
           "type": "integer",
-          "text": "(5.3c) In welcher SS-Woche wurde Ihr Kind geboren?",
+          "text": "(5.3c) In welcher Schwangerschaftswoche wurde das Kind geboren?",
           "code": [
             {
               "code": "5.3c",
@@ -3349,7 +3343,7 @@
                 }
               ],
               "linkId": "5.5.1",
-              "type": "string",
+              "type": "text",
               "text": "(5.5.1) Welche Auffälligkeit?",
               "code": [
                 {
