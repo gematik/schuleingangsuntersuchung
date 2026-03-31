@@ -157,3 +157,13 @@ RuleSet: QMeta(version)
 * version = "{version}"
 * status = #active
 * experimental = false
+* publisher = "Hessisches Ministerium für Familie, Senioren, Sport, Gesundheit und Pflege, Wiesbaden"
+* copyright = "Hessisches Ministerium für Familie, Senioren, Sport, Gesundheit und Pflege, Wiesbaden"
+* contact
+  * name = "Geschäftsstelle Interoperabilität"
+  * telecom
+    * system = #email
+    * value = "gs-interoperabilitaet@ekom21.de"
+* description = "Maximaldatensatz Sorgeberechtigtenfragebogen für Schuleingangsuntersuchungen mit länderspezifischen Ableitungen"
+* date = "2026-03-31"
+* jurisdiction = urn:iso:std:iso:3166#DEU
