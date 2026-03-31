@@ -25,11 +25,11 @@ Anfangsdatum: September 2023
 
 ### Status
 
-Version: 1.0.0-ballot
+Version: 1.0.0
 
-Reifegrad: Draft 
+Reifegrad: Draft
 
-Abstimmungsverfahren: Kommentierungsverfahren läuft
+Abstimmungsverfahren: Kommentierungsverfahren abgeschlossen
 
 ### Beteiligte Organsisationen
 * ELFA Maßnahme Interoperabilität (Förderprojekt Pakt ÖGD)
